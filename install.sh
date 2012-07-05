@@ -179,7 +179,7 @@ fi
 
 echo "Downloading Chef $version for ${platform}..."
 
-url="http://localhost:4567/download?v=${version}&p=${platform}&pv=${platform_version}"
+url="http://localhost:4567/download?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
 
 if exists wget;
 then
