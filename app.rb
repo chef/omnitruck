@@ -4,7 +4,7 @@ require 'sinatra'
 # serve up the installer script
 #
 get '/install.sh' do
-  
+  send_file 'install.sh'
 end
 
 #
