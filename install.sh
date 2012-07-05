@@ -18,24 +18,24 @@ exists() {
 # Set the filename for a deb, based on version and machine
 deb_filename() {
   filetype="deb"
-  if [ $machine = "x86_64" ];
-  then
-    filename="chef-full_${version}_amd64.deb"
-  else
-    filename="chef-full_${version}_i386.deb"
-  fi
+  # if [ $machine = "x86_64" ];
+  # then
+  #   filename="chef-full_${version}_amd64.deb"
+  # else
+  #   filename="chef-full_${version}_i386.deb"
+  # fi
 }
 
 # Set the filename for an rpm, based on version and machine
 rpm_filename() {
   filetype="rpm"
-  filename="chef-full-${version}.${machine}.rpm"
+  # filename="chef-full-${version}.${machine}.rpm"
 }
 
 # Set the filename for the sh archive
 shell_filename() {
   filetype="sh"
-  filename="chef-full-${version}-${platform}-${platform_version}-${machine}.sh"
+  # filename="chef-full-${version}-${platform}-${platform_version}-${machine}.sh"
 }
 
 report_bug() {
@@ -179,7 +179,7 @@ fi
 
 echo "Downloading Chef $version for ${platform}..."
 
-url="http://s3.amazonaws.com/opscode-full-stack/$platform-$platform_version-$machine/$filename"
+url="http://localhost:4567/download?v=${version}&p=${platform}&pv=${platform_version}"
 
 if exists wget;
 then
