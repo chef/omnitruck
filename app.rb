@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'json'
 
 #
 # serve up the installer script
@@ -17,5 +18,12 @@ end
 # * :platform_version: - The platfrom version to install on
 #
 get '/download' do
-  
+  chef_version     = params['v']
+  platform         = params['p']
+  platform_version = params['pv']
+  machine          = params['m']
+  f = File.read('directory.json')
+  directory = JSON.parse(f)
+  url = directory[platform][platform_version][machine][chef_version]
+  redirect url
 end

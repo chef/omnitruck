@@ -29,18 +29,13 @@ Artifact_directories = ['/debian-6.0.1-i686',
 
 Artifacts = Hash.new {|h,k| h[k] = Hash.new(&h.default_proc) }
 
-def get_url(plat, plat_v, chef_v, arch, ext)
-  # Like this http://opscode-full-stack.s3.amazonaws.com/ubuntu-11.04-x86_64/chef-full-0.10.4-1-ubuntu-11.04-x86_64.sh
-  base = "http://opscode-full-stack.s3.amazonaws.com/"
-  url = "#{base}#{plat}-#{plat_v}-#{arch}/chef-full-#{chef_v}-#{plat}-#{plat_v}-#{arch}#{ext}"
-end
-
 def get_artifacts(directories=Artifact_directories)
   directories.each do |dir|
-    S3.objects(dir).each do |art|
+    S3.objects(dir).each do |artifact|
       # get the useful information from the filename
       # s3 object doesn't provide a nice way to get this otherwise
-      name = art.to_s.split(/\//)[1][0..-3]
+      art = artifact.to_s
+      name = art.split(/\//)[1][0..-3]
       platform = dir[1..-1].split("-")[0]
       extension = name[/\.[[:alpha:]]+\z/]
       if extension == ".gz"
@@ -56,10 +51,15 @@ def get_artifacts(directories=Artifact_directories)
           next
         end
       end
+      if art.include?("server")
+        next
+      end
       platform_version = dir.split("-")[1]
       arch = dir.split("-")[2]
       chef_version = name[/\d+\.\d+\.\d+-?\d?+/].chomp("-")
-      url = get_url(platform, platform_version, chef_version, arch, extension)
+      base = "http://opscode-full-stack.s3.amazonaws.com/"
+      file_dir = art.split("@key=\"")[1].chop.chop
+      url = base + file_dir
       Artifacts[platform][platform_version][arch][chef_version] = url
     end
   end
@@ -67,6 +67,6 @@ end
 
 get_artifacts
 
-File.open("test-tata.json", "w") do |f|
+File.open("directory.json", "w") do |f|
   f.puts JSON.pretty_generate(Artifacts)
 end
