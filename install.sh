@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This is the current stable release to default to, with Omnibus patch level (e.g. 10.12.0-1)
-# Note that the chef-full template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
+# Note that the chef template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
 release_version="10.12.0-1"
 use_shell=0
 
@@ -18,24 +18,24 @@ exists() {
 # Set the filename for a deb, based on version and machine
 deb_filename() {
   filetype="deb"
-  # if [ $machine = "x86_64" ];
-  # then
-  #   filename="chef-full_${version}_amd64.deb"
-  # else
-  #   filename="chef-full_${version}_i386.deb"
-  # fi
+  if [ $machine = "x86_64" ];
+  then
+    filename="chef_${version}_amd64.deb"
+  else
+    filename="chef_${version}_i386.deb"
+  fi
 }
 
 # Set the filename for an rpm, based on version and machine
 rpm_filename() {
   filetype="rpm"
-  # filename="chef-full-${version}.${machine}.rpm"
+  filename="chef-${version}.${machine}.rpm"
 }
 
 # Set the filename for the sh archive
 shell_filename() {
   filetype="sh"
-  # filename="chef-full-${version}-${platform}-${platform_version}-${machine}.sh"
+  filename="chef-${version}-${platform}-${platform_version}-${machine}.sh"
 }
 
 report_bug() {
