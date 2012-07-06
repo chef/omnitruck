@@ -61,7 +61,11 @@ get '/download' do
   raise InvalidPlatformVersion, "#{platform_version}:#{platform}" if plat_version_dir.nil?
   machine_dir = plat_version_dir[machine]
   raise InvalidMachine, machine if machine_dir.nil?
-  chef_version = latest_version(machine_dir.keys) if chef_version.nil?
+  if chef_version.nil?
+    chef_version = latest_version(machine_dir.keys)
+  elsif !chef_version.include?("-")
+    chef_version = latest_iteration(machine_dir.keys, chef_version)
+  end
   url = machine_dir[chef_version]
   raise InvalidChefVersion, chef_version if url.nil?
   redirect url
@@ -102,4 +106,20 @@ def which_bigger(a, b)
     result = result.split("-")[0]
   end
   result
+end
+
+def latest_iteration(versions, chef_version)
+  c_v = chef_version
+  versions.each do |v|
+    if v.include?(chef_version)
+      if v.include?("-")
+        if c_v.include?("-")
+          Integer(v.split("-")[1]) > Integer(c_v.split("-")[1]) ? (c_v = v) : (c_v)
+        else
+          c_v = v
+        end
+      end
+    end
+  end
+  c_v
 end
