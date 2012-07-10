@@ -5,7 +5,7 @@ require 'json'
 
 S3 = UberS3.new({
                   :access_key => ARGV[0],
-                  :secret_access_key => ARGV[1],o
+                  :secret_access_key => ARGV[1],
                   :bucket => 'opscode-full-stack',
                   :adapter => :net_http
                 })
