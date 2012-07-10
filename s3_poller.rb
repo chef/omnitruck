@@ -4,8 +4,8 @@ require 'json'
 # Connect to S3
 
 S3 = UberS3.new({
-                  :access_key => "DONT",
-                  :secret_access_key => "DO THIS AGAIN",
+                  :access_key => ARGV[0],
+                  :secret_access_key => ARGV[1],o
                   :bucket => 'opscode-full-stack',
                   :adapter => :net_http
                 })
@@ -67,6 +67,6 @@ end
 
 get_artifacts
 
-File.open("directory.json", "w") do |f|
+File.open("#{ARGV[2]}/build_list.json", "w") do |f|
   f.puts JSON.pretty_generate(Artifacts)
 end
