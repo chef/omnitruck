@@ -1,4 +1,16 @@
 require 'sinatra'
+#*
+#* The sinatra-contrib gem is not included in the Gemfile.
+#* Gemfiles are used by `bundler`, which we use to manage gem
+#* dependencies on all of our development and production servers. What
+#* will happen if we don't include the dependency in the Gemfile is
+#* that our service will fail to start when we deploy it to production
+#* because it won't be able to find the required gems. To fix this:
+#*
+#* * add "gem sinatra-config" to the Gemfile
+#* * run `bundle install`
+#* * check in both Gemfile and Gemfile.lock
+#*
 require 'sinatra/config_file'
 require 'json'
 
@@ -25,6 +37,16 @@ class Omnitruck < Sinatra::Base
     erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
   end
 
+  #*
+  #* I'm not sure we need 4 individual errors here. It adds a bit of
+  #* complicated logic in the controller for little benefit. What
+  #* would be sufficent would be a single 404 with a message "No
+  #* chef-client $version installer for $platform-$platform_version-$machine"
+  #*
+  #* The only consumer of this service is going to be the `install.sh`
+  #* script, so we don't need to get really fancy here.
+  #*
+
   # Errors to handle bad params
   error InvalidPlatform do
     status 404
@@ -48,6 +70,10 @@ class Omnitruck < Sinatra::Base
     "#{env['sinatra.error'].message} is an invalid Chef version, please try again."
   end
 
+  #*
+  #* the method signature comments should be updated to refelct the
+  #* fact that we take a new additional requests parameter: m
+  #*
   #
   # download an omnibus chef package
   #
@@ -62,6 +88,21 @@ class Omnitruck < Sinatra::Base
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
+
+    #*
+    #* right here, the name of the file is `build_list.json`, but the
+    #* s3 poller utility we pass the filename in as a command
+    #* line argument. This means that to change the location of this
+    #* file, we'll have to change this both here in the controller and
+    #* in the cookbook that generates the cron job and the initial
+    #* execution. We should instead have the source of truth be in one
+    #* location, most likely a configuration file written by the
+    #* cookbook
+    #*
+    #* we could most likely re-use the yaml file for the sinatra
+    #* config. yaml is easy enough to parse from the s3 poller script
+    #* as well
+    #*
     f = File.read('build_list.json')
     directory = JSON.parse(f)
     platform_dir = directory[platform]
@@ -92,7 +133,6 @@ class Omnitruck < Sinatra::Base
   # Returns the most recent chef version of the two passed in
   # Requires version of the form /\d+\.\d+\.\d+-?\d?+/
   #                          eg. 0.10.8, 10.12.0-1
-
   def which_bigger(a, b)
     a_iter = 0
     b_iter = 0
