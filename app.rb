@@ -1,4 +1,5 @@
 require 'sinatra'
+#* #### OC-2101
 #*
 #* The sinatra-contrib gem is not included in the Gemfile.
 #* Gemfiles are used by `bundler`, which we use to manage gem
@@ -37,6 +38,7 @@ class Omnitruck < Sinatra::Base
     erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
   end
 
+  #* #### OC-2103
   #*
   #* I'm not sure we need 4 individual errors here. It adds a bit of
   #* complicated logic in the controller for little benefit. What
@@ -70,6 +72,7 @@ class Omnitruck < Sinatra::Base
     "#{env['sinatra.error'].message} is an invalid Chef version, please try again."
   end
 
+  #* #### OC-2105
   #*
   #* the method signature comments should be updated to refelct the
   #* fact that we take a new additional requests parameter: m
@@ -89,6 +92,7 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
+    #* #### OC-2106
     #*
     #* right here, the name of the file is `build_list.json`, but the
     #* s3 poller utility we pass the filename in as a command
