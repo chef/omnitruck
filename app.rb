@@ -1,7 +1,11 @@
 require 'sinatra'
+require 'sinatra/config_file'
 require 'json'
 
 class Omnitruck < Sinatra::Base
+  register Sinatra::ConfigFile
+
+  config_file './config/config.yml'
 
   class InvalidPlatform < StandardError; end
   class InvalidPlatformVersion < StandardError; end
@@ -11,11 +15,14 @@ class Omnitruck < Sinatra::Base
   set :raise_errors, Proc.new { false }
   set :show_exceptions, false
 
+  RACK_ENV = "development"
+
   #
   # serve up the installer script
   #
   get '/install.sh' do
-    send_file 'install.sh'
+    content_type :sh
+    erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
   end
 
   # Errors to handle bad params
