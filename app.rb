@@ -7,10 +7,7 @@ class Omnitruck < Sinatra::Base
 
   config_file './config/config.yml'
 
-  class InvalidPlatform < StandardError; end
-  class InvalidPlatformVersion < StandardError; end
-  class InvalidMachine < StandardError; end
-  class InvalidChefVersion < StandardError; end
+  class InvalidDownloadPath < StandardError; end
 
   set :raise_errors, Proc.new { false }
   set :show_exceptions, false
@@ -51,79 +48,40 @@ class Omnitruck < Sinatra::Base
 
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
-
-                    if chef_version.nil?
-                      chef_version = latest_version(versions_for_platform.keys)
-                    elsif !chef_version.include?("-")
-                      chef_version = latest_iteration(versions_for_platform.keys, chef_version)
+                    version_arrays =[]
+                    # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
+                    rex = /(\d+).(\d+).(\d+)-?(\d+)?/
+                    versions_for_platform.keys.each do |v|
+                      v_array = v.match(rex)[1..4]
+                      v_array[3] ||= "0"
+                      v_array = v_array.map {|i| i = Integer(i)}
+                      version_arrays << v_array
                     end
-
-                    versions_for_platform[chef_version]
+                    # Turn the chef_version param into an array
+                    unless chef_version.nil?
+                      c_v_array = chef_version.match(rex)[1..4]
+                      c_v_array[3] ||= "0"
+                      c_v_array = c_v_array.map {|i| i = Integer(i)}
+                    end
+                    if chef_version.nil?
+                      c_v_array = version_arrays.max
+                    elsif !chef_version.include?("-")
+                      # Find all of the iterations of the version matching the first three parts of chef_version
+                      matching_versions = version_arrays.find_all {|v| v[0..2] == c_v_array[0..2]}
+                      c_v_array = matching_versions.max_by {|v| v[-1]}
+                    end
+                    # turn chef_version from an array back into a string
+                    chef_version_final = c_v_array[0..2].join('.')
+                    chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
+                    versions_for_platform[chef_version_final]
                   rescue
                     nil
                   end
-
     unless package_url
-      error_message = "No chef-client #{chef_version} installer for #{platform} #{platform_version} #{machine}"
+      error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
 
     redirect package_url
-  end
-
-  # Returns the latest chef version from a list
-  def latest_version(versions)
-    latest = nil
-    versions.each do |v|
-      latest = which_bigger(v, latest)
-    end
-    latest
-  end
-
-  # Returns the most recent chef version of the two passed in
-  # Requires version of the form /\d+\.\d+\.\d+-?\d?+/
-  #                          eg. 0.10.8, 10.12.0-1
-
-  def which_bigger(a, b='0.0.0')
-    a_iter = 0
-    b_iter = 0
-    result = nil
-    if a.include?("-")
-      a_iter = (a.split("-")[1])
-      a = a.split("-")[0]
-    end
-    if b.include?("-")
-      b_iter = (b.split("-")[1])
-      b = b.split("-")[0]
-    end
-    a_parts = a.split(".")
-    b_parts = b.split(".")
-    (0..2).each do |i|
-      Integer(a_parts[i]) > Integer(b_parts[i]) ? (result = "#{a}-#{a_iter}") : (result = "#{b}-#{b_iter}") unless a_parts[i] == b_parts[i]
-      break if !result.nil?
-    end
-    # if execution gets here, aa.aa.aa = bb.bb.bb, go to iteration
-    Integer(a_iter) > Integer(b_iter) ? (result = "#{a}-#{a_iter}") : (result = "#{b}-#{b_iter}") if result.nil?
-    if result[-1] == '0'
-      result = result.split("-")[0]
-    end
-    result
-  end
-
-  # grabs the latest iteration of a given version of chef
-  def latest_iteration(versions, chef_version)
-    c_v = chef_version
-    versions.each do |v|
-      if v.include?(chef_version)
-        if v.include?("-")
-          if c_v.include?("-")
-            Integer(v.split("-")[1]) > Integer(c_v.split("-")[1]) ? (c_v = v) : (c_v)
-          else
-            c_v = v
-          end
-        end
-      end
-    end
-    c_v
   end
 end
