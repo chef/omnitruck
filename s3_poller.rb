@@ -1,5 +1,6 @@
 require 'uber-s3'
 require 'json'
+require 'yaml'
 
 # Connect to S3
 
@@ -67,6 +68,8 @@ end
 
 get_artifacts
 
-File.open("#{ARGV[2]}/build_list.json", "w") do |f|
+build_list_path = YAML.load_file("./config/config.yml")['production']['build_list']
+
+File.open(build_list_path, "w") do |f|
   f.puts JSON.pretty_generate(Artifacts)
 end

@@ -4,3 +4,4 @@ test:
   base_url: 'http://localhost:9393/'
 production:
   base_url: 'http://www.opscode.com/chef/'
+  build_list: 'YOU GOT ME!'
