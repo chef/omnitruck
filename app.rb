@@ -152,6 +152,10 @@ class Omnitruck < Sinatra::Base
     a_parts = a.split(".")
     b_parts = b.split(".")
     (0..2).each do |i|
+      #* #### Holy Shit
+      #*
+      #* we need to have a chat
+      #*
       Integer(a_parts[i]) > Integer(b_parts[i]) ? (result = "#{a}-#{a_iter}") : (result = "#{b}-#{b_iter}") unless a_parts[i] == b_parts[i]
       break if !result.nil?
     end
