@@ -181,8 +181,6 @@ echo "Downloading Chef $version for ${platform}..."
 
 url= <%= "\"#{locals[:base_url]}download?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}\"" %>
 
-#"http://localhost:4567/download?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
-
 if exists wget;
 then
   wget -O /tmp/$filename $url
