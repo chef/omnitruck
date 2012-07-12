@@ -27,8 +27,7 @@ class Omnitruck < Sinatra::Base
 
   error InvalidDownloadPath do
     status 404
-    err = env['sinatra.error'].message.split(":")
-    "No chef-client #{err[0]} installer for #{err[1]}-#{err[2]}-#{err[3]}"
+    env['sinatra.error']
   end
 
   #
@@ -49,26 +48,32 @@ class Omnitruck < Sinatra::Base
 
     f = File.read(settings.build_list)
     directory = JSON.parse(f)
-    platform_dir = directory[platform]
-    error = "#{chef_version}:#{platform}:#{platform_version}:#{machine}"
-    raise InvalidDownloadPath, error if platform_dir.nil?
-    plat_version_dir = platform_dir[platform_version]
-    raise InvalidDownloadPath, error if plat_version_dir.nil?
-    machine_dir = plat_version_dir[machine]
-    raise InvalidDownloadPath, error if machine_dir.nil?
-    if chef_version.nil?
-      chef_version = latest_version(machine_dir.keys)
-    elsif !chef_version.include?("-")
-      chef_version = latest_iteration(machine_dir.keys, chef_version)
+
+    package_url = begin
+                    versions_for_platform = directory[platform][platform_version][machine]
+
+                    if chef_version.nil?
+                      chef_version = latest_version(versions_for_platform.keys)
+                    elsif !chef_version.include?("-")
+                      chef_version = latest_iteration(versions_for_platform.keys, chef_version)
+                    end
+
+                    versions_for_platform[chef_version]
+                  rescue
+                    nil
+                  end
+
+    unless package_url
+      error_message = "No chef-client #{chef_version} installer for #{platform} #{platform_version} #{machine}"
+      raise InvalidDownloadPath, error_message
     end
-    url = machine_dir[chef_version]
-    raise InvalidDownloadPath, error if url.nil?
-    redirect url
+
+    redirect package_url
   end
 
   # Returns the latest chef version from a list
   def latest_version(versions)
-    latest = '0.0.0'
+    latest = nil
     versions.each do |v|
       latest = which_bigger(v, latest)
     end
@@ -79,7 +84,7 @@ class Omnitruck < Sinatra::Base
   # Requires version of the form /\d+\.\d+\.\d+-?\d?+/
   #                          eg. 0.10.8, 10.12.0-1
 
-  def which_bigger(a, b)
+  def which_bigger(a, b='0.0.0')
     a_iter = 0
     b_iter = 0
     result = nil
