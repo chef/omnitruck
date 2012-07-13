@@ -27,6 +27,12 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
+  def version_to_array(v, rex)
+    v_arr = v.match(rex)[1..4]
+    v_arr[3] ||= 0
+    v_arr.map! {|i| i.to_i}
+  end
+
   #
   # download an omnibus chef package
   #
@@ -51,17 +57,15 @@ class Omnitruck < Sinatra::Base
                     version_arrays =[]
                     # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
                     rex = /(\d+).(\d+).(\d+)-?(\d+)?/
-                    versions_for_platform.keys.each do |v|
-                      v_array = v.match(rex)[1..4]
-                      v_array[3] ||= "0"
-                      v_array = v_array.map {|i| i = Integer(i)}
-                      version_arrays << v_array
+                    version_arrays = versions_for_platform.keys.map do |v|
+                      version_to_array(v, rex)
                     end
+                    puts version_arrays.to_s
                     # Turn the chef_version param into an array
                     unless chef_version.nil?
-                      c_v_array = chef_version.match(rex)[1..4]
-                      c_v_array[3] ||= "0"
-                      c_v_array = c_v_array.map {|i| i = Integer(i)}
+                      puts chef_version
+                      c_v_array = version_to_array(chef_version, rex)
+                      puts c_v_array.to_s
                     end
                     if chef_version.nil?
                       c_v_array = version_arrays.max
