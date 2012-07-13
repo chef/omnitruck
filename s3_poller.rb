@@ -2,6 +2,8 @@ require 'uber-s3'
 require 'json'
 require 'yaml'
 
+# ARGV = [aws_access_key_id, aws_secret_access_key, build_list_directory]
+
 # Connect to S3
 
 S3 = UberS3.new({
@@ -70,6 +72,8 @@ get_artifacts
 
 build_list_path = YAML.load_file("./config/config.yml")['production']['build_list']
 
-File.open("#{ARGV[2]}/build_list.json" || build_list_path, "w") do |f|
+path_in = "#{ARGV[2]}/build_list.json" if ARGV[2]
+
+File.open(path_in || build_list_path, "w") do |f|
   f.puts JSON.pretty_generate(Artifacts)
 end
