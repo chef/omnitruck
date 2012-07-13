@@ -70,6 +70,6 @@ get_artifacts
 
 build_list_path = YAML.load_file("./config/config.yml")['production']['build_list']
 
-File.open(build_list_path, "w") do |f|
+File.open("#{ARGV[2]}/build_list.json" || build_list_path, "w") do |f|
   f.puts JSON.pretty_generate(Artifacts)
 end
