@@ -60,12 +60,9 @@ class Omnitruck < Sinatra::Base
                     version_arrays = versions_for_platform.keys.map do |v|
                       version_to_array(v, rex)
                     end
-                    puts version_arrays.to_s
                     # Turn the chef_version param into an array
                     unless chef_version.nil?
-                      puts chef_version
                       c_v_array = version_to_array(chef_version, rex)
-                      puts c_v_array.to_s
                     end
                     if chef_version.nil?
                       c_v_array = version_arrays.max
