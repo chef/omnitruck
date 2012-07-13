@@ -74,14 +74,9 @@ the App" section and follow the instructions to run the s3_poller.
 
 # S3 Poller
 
-The S3 Poller uses UberS3 to access the Omnibus builds on S3. It is currently
-hardcoded to access the 'opscode-full-stack' bucket and has a hardcoded list of
-supported operating_system-architecture pairs. The solaris2-5.9-sparc bucket was
-inaccessable for some reason, so it is commented until that is resolved. The meat of
-the poller is essentially just a bunch of parsing and string crunching.  It pulls
-the relevant information from the each directory and generates a JSON representing
-a four level hash: 'Artifacts[platform][platform_version][architecture][chef_version]'
-and the value at the bottom is the download url without the base, which is handled by
-the Sinatra app.  Because the poller assumes that the packages in S3 are named
-according to our current naming scheme, if said naming scheme is ever changed, the
-parsing might need to change as well.
+The S3 Poller uses UberS3 to access the Omnibus builds on S3. It will look through
+the available artifacts and return a JSON that will map platform, platform version,
+machine architecture, and chef version to the appropriate download url (minus the
+base_url handled by the Sinatra app).  It relies pretty strongly on the current
+naming scheme for chef client artifacts, so if that is ever changed, the parsing
+logic might need to be changed as well.
