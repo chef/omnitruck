@@ -7,18 +7,18 @@ require 'optparse'
 
 # ARGV = [aws_access_key_id, aws_secret_access_key, build_list_directory]
 
-Usage = "Usage: ./s3_poller AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY [BUILD_LIST_DIRECTORY]"
-
 optparse = OptionParser.new do |opts|
-  opts.banner = Usage
-  opts.on('-h', '--help') do
-    puts Usage + "\n\n"
-    puts "Logs into Amazon S3 using the AWS credentials AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY,
-and then outputs a JSON detailing the available chef client artifacts.  The JSON is placed in the
-BUILD_LIST_DIRECTORY if one is specified or otherwise is placed in a directory specified by the app's
-cookbook.\n\n"
-    puts "Subcommands:"
-    puts "  -h,  --help\t\tThis help\n\n"
+  opts.banner = <<-EOF
+Usage: s3_poller AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY [BUILD_LIST_DIRECTORY]"
+
+     AWS_ACCESS_KEY_ID               - AWS access key / user id
+     AWS_SECRET_ACCESS_KEY           - AWS secret access key / password
+     BUILD_LIST_DIRECTORY (optional) - directory location to write build_list.json, overridden by config
+
+EOF
+
+  opts.on_tail('-h', '--help', 'Print this help message') do
+    puts opts
     exit
   end
 end
@@ -37,7 +37,7 @@ begin
 rescue
   puts
   puts "[ERROR] Could not connect to Amazon S3 using access key id #{ARGV[0]} and secret access key #{ARGV[1]}\n\n"
-  puts Usage + "\n\n"
+  puts optparse
   exit
 end
 # List the available artifacts 
