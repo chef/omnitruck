@@ -22,11 +22,9 @@ To get shotgun:
    'gem install shotgun'
 
 In order to run the app, first there must exist a build_list.json file so that the app
-knows what versions are available. The Chef cookbook would normally run the s3 poller
-using the credentials from the aws databag and would specify the directory to place the
-list, but if you want to run it alone to generate the build_list.json file:
+knows what versions are available, so run:
 
-   'ruby s3_poller AWS_ACCESS_ID_KEY AWS_SECRET_ACCESS_KEY ./'
+   './s3_poller'
 
 To run the app locally, run this in the application directory:
 
