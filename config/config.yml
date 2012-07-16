@@ -1,9 +1,0 @@
-development:
-  base_url: 'http://localhost:9393/'
-  build_list: './build_list.json'
-test:
-  base_url: 'http://localhost:9393/'
-  build_list: './build_list.json'
-production:
-  base_url: 'http://www.opscode.com/chef/'
-  build_list: './build_list.json'
