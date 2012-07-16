@@ -1,18 +1,45 @@
+#! /usr/bin/env ruby
+
 require 'uber-s3'
 require 'json'
 require 'yaml'
+require 'optparse'
 
 # ARGV = [aws_access_key_id, aws_secret_access_key, build_list_directory]
 
+Usage = "Usage: ./s3_poller AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY [BUILD_LIST_DIRECTORY]"
+
+optparse = OptionParser.new do |opts|
+  opts.banner = Usage
+  opts.on('-h', '--help') do
+    puts Usage + "\n\n"
+    puts "Logs into Amazon S3 using the AWS credentials AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY,
+and then outputs a JSON detailing the available chef client artifacts.  The JSON is placed in the
+BUILD_LIST_DIRECTORY if one is specified or otherwise is placed in a directory specified by the app's
+cookbook.\n\n"
+    puts "Subcommands:"
+    puts "  -h,  --help\t\tThis help\n\n"
+    exit
+  end
+end
+optparse.parse!
+
 # Connect to S3
-
-S3 = UberS3.new({
-                  :access_key => ARGV[0],
-                  :secret_access_key => ARGV[1],
-                  :bucket => 'opscode-full-stack',
-                  :adapter => :net_http
-                })
-
+begin
+  puts "Validating S3 Credentials..."
+  S3 = UberS3.new({
+                    :access_key => ARGV[0],
+                    :secret_access_key => ARGV[1],
+                    :bucket => 'opscode-full-stack',
+                    :adapter => :net_http
+                  })
+  S3.exists?
+rescue
+  puts
+  puts "[ERROR] Could not connect to Amazon S3 using access key id #{ARGV[0]} and secret access key #{ARGV[1]}\n\n"
+  puts Usage + "\n\n"
+  exit
+end
 # List the available artifacts 
 
 Artifact_directories = ['/debian-6.0.1-i686',
