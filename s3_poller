@@ -1,9 +1,140 @@
 #! /usr/bin/env ruby
 
+require 'bunder/setup'
+require 'rubygems'
 require 'uber-s3'
 require 'json'
 require 'yaml'
 require 'optparse'
+
+class S3Poller
+
+  S3_BASE_URI = "https://s3.amazonaws.com".freeze
+
+  def initialize
+    @options = {}
+    opts = OptionParser.new do |opts|
+      opts.banner = "Usage: s3_poller"
+
+      opts.on_tail('-h', '--help', 'Print this help message') do
+        puts opts
+        exit
+      end
+
+      opts.on('-e ENVIRONMENT', '--environment ENVIRONMENT', 'The environment configuration to load - REQUIRED') do |env|
+        @options[:environment] = env
+      end
+
+      opts.on('-c CONFIG', '--config CONFIG', 'The config file to load - REQUIRED') do |c|
+        @options[:config] = c
+      end
+    end
+
+    # parse the options
+    opts.parse!
+
+    # validate the required options
+    required = [:environment, :config]
+    missing = required.select { |opt| @options[opt].nil? }
+    unless missing.empty?
+      puts "[ERROR] Missing required options: #{missing.join(', ')}"
+      puts opts
+      exit 1
+    end
+
+    # validate that the config file exists
+    unless File.exists?(@options[:config])
+      puts "[ERROR] Config file '#{@options[:config]}' does not exist"
+      puts opts
+      exit 1
+    end
+
+    # load the config from the file
+    @config = YAML.load_file(@options[:config])[@options[:environment]]
+    unless @config
+      puts "[ERROR] Could not load environment '#{@options[:environment]}' from config file '#{@options[:config]}'"
+      puts opts
+      exit 1
+    end
+
+    # create the s3 client
+    @s3_client = UberS3.new({
+                              :access_key => @config['aws_access_key_id'],
+                              :secret_access_key => @config['aws_secret_access_key'],
+                              :bucket => @config['aws_bucket'],
+                              :adapter => :net_http
+                            })
+  end
+
+  def run
+    # debug output
+    # @s3_client.objects('/').each {|o| puts o.key}
+
+    #platform_yaml = @s3_client.get('platform-targets.yaml').value    # load from s3
+    platform_yaml = IO.read('../omnibus-chef/platform-targets.yaml') # load from local fileysystem
+    @platform_targets = stringify(YAML.load(platform_yaml))
+
+    artifact_manifest = {}
+    blank_keys = ["/", "", nil]
+    
+    @platform_targets.each do |(platform,platform_versions)|
+      platform_versions.each do |(platform_version, machine_architectures)|
+        machine_architectures.each do |(machine_architecture, target_platform_versions)|
+          s3_path = "#{platform}/#{platform_version}/#{machine_architecture}/"
+          puts "-- #{s3_path} --"
+
+          s3_object_paths = @s3_client.objects(s3_path).map {|obj| obj.key}
+
+          target_platform_versions.each do |target_platform_version|
+            artifact_manifest[platform] ||= {}
+            artifact_manifest[platform][target_platform_version] ||= {}
+
+            # TODO: we can get in a situation here where multiple
+            # builds target the same platform version / machine
+            # architecture combination. we might want to do something
+            # to ensure that this does not happen. We don't want
+            # builds from multiple platform versions compteting for
+            # build targets
+            artifact_manifest[platform][target_platform_version][machine_architecture] ||= []
+            
+          end
+        end
+      end
+    end
+  end
+
+  private
+  
+  # recursively stringify the key-value pairs in a hash
+  def stringify(obj)
+    case obj
+    when Hash
+      obj.inject({}) do |memo, (k,v)|
+        memo[k.to_s] = stringify(v)
+        memo
+      end
+    when Array
+      obj.map { |i| i.to_s }
+    else
+      obj.to_s
+    end
+  end
+
+  # generate an s3 url based on a given key
+  def s3_url(key)
+    "#{S3_BASE_URI}/#{@config['aws_bucker']}/#{key}"
+  end
+end
+
+if $0 == __FILE__
+  S3Poller.new.run
+end
+
+exit
+
+##################################################
+# BELOW THIS LINE IS PREVIOUS VERSION
+##################################################
 
 Environment = 'development'
 
