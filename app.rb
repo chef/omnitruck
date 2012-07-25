@@ -80,7 +80,7 @@ class Omnitruck < Sinatra::Base
       error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
-
-    redirect package_url
+    base = "http://opscode-omnitruck-test.s3.amazonaws.com"
+    redirect base + package_url
   end
 end
