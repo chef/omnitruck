@@ -12,8 +12,6 @@ class Omnitruck < Sinatra::Base
   set :raise_errors, Proc.new { false }
   set :show_exceptions, false
 
-  RACK_ENV = "development"
-
   #
   # serve up the installer script
   #

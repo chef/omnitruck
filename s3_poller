@@ -14,8 +14,8 @@ Optparse = OptionParser.new do |opts|
     puts opts
     exit
   end
-  opts.on('-e ENVIRONMENT', ['development', 'production'], 
-          "Specify this application's environment (development, production)") do |e|
+  opts.on('-e ENVIRONMENT', 
+          "Specify this application's environment") do |e|
     Environment = e
   end
 end
