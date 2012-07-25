@@ -5,77 +5,103 @@ require 'json'
 require 'yaml'
 require 'optparse'
 
-Environment = 'development'
+class S3Poller
 
-Optparse = OptionParser.new do |opts|
-  opts.banner = "Usage: s3_poller"
+  def initialize
+    @options = {}
 
-  opts.on_tail('-h', '--help', 'Print this help message') do
-    puts opts
-    exit
+    optparse = OptionParser.new do |opts|
+      opts.banner = "Usage: s3_poller"
+
+      opts.on_tail('-h', '--help', 'Print this help message') do
+        puts opts
+        exit
+      end
+      opts.on('-e ENVIRONMENT', 
+              "Specify this application's environment - REQUIRED") do |e|
+        @options[:environment] = e
+      end
+    end
+    optparse.parse!
+
+    @options[:config] = "./config/config.yml"
+
+    required = [:environment, :config]
+    missing = required.select { |opt| @options[opt].nil? }
+    unless missing.empty?
+      puts "[ERROR] Missing required options: #{missing.join(', ')}"
+      puts optparse
+      exit 1
+    end
+
+    unless File.exists?(@options[:config])
+      puts "[ERROR] Config file could not be found at #{@options[:config]}"
+      puts optparse
+      exit 1
+    end
+
+    @config = YAML.load_file(@options[:config])[@options[:environment]]
+    @platform_support = "/platform-support"
+
+    # Create S3 client
+    @s3 = UberS3.new({
+                       :access_key => @config['aws_access_key_id'],
+                       :secret_access_key => @config['aws_secret_access_key'],
+                       :bucket => @config['aws_bucket'],
+                       :adapter => :net_http
+                     })
   end
-  opts.on('-e ENVIRONMENT', 
-          "Specify this application's environment") do |e|
-    Environment = e
-  end
-end
-Optparse.parse!
 
-settings = YAML.load_file("./config/config.yml")[Environment]
-Access_key = settings['aws_access_key_id']
-Secret_access_key = settings['aws_secret_access_key']
-Bucket = settings['aws_bucket']
-Platform_support = "/platform-support"
-
-# Connect to S3
-
-S3 = UberS3.new({
-                  :access_key => Access_key,
-                  :secret_access_key => Secret_access_key,
-                  :bucket => Bucket,
-                  :adapter => :net_http
-                })
-
-class ::Hash
   # Define a deep merge for nested hashes
-  def deep_merge(other)
-    result = dup
-    other.keys.each do |key|
-      result[key] = if self[key].is_a? Hash and other[key].is_a? Hash
-                      result[key].deep_merge(other[key])
+  def deep_merge(h1, h2)
+    result = h1.dup
+    h2.keys.each do |key|
+      result[key] = if h1[key].is_a? Hash and h2[key].is_a? Hash
+                      deep_merge(result[key], h2[key])
                     else
-                      other[key]
+                      h2[key]
                     end
     end
     result
   end
-end
 
-def get_artifacts
-  result = Hash.new
-  begin
-    # S3.objects(Platform_support).each was acting oddly, so I used this to work around it.
-    S3.objects(Platform_support).to_a[1..-1].each do |support|
-      hash = JSON.parse(support.value)
-      result = result.deep_merge(hash)
-    end
-    result
-  rescue UberS3::Error::Standard => e
-    puts e.message
-    puts <<EOF
+  # Grabs the platform support json files from S3, merges them, and returns one big hash
+  def get_artifacts
+    result = Hash.new
+    begin
+      # This array contains the platform-support directory along with the JSON files,
+      # so I need to get rid of the objects that aren't JSON files.
+      support_files = @s3.objects(@platform_support).to_a
+      support_files.delete_if { |o| not o.key.match(/\.json/) }
+      support_files.each do |support|
+        hash = JSON.parse(support.value)
+        result = deep_merge(result, hash)
+      end
+      result
+    rescue UberS3::Error::Standard => e
+      puts e.message
+      puts <<EOF
 [ERROR] Problem connecting to S3 using these credentials:
-            aws access key id:      #{Access_key}
-            aws secret access key:  #{Secret_access_key}
-            bucket:                 #{Bucket}
+            aws access key id:      #{@config['aws_access_key_id']}
+            aws secret access key:  #{@config['aws_secret_access_key']}
+            bucket:                 #{@config['aws_bucket']}
 
 Please check your credentials.
 EOF
-    exit
+      exit
+    end
+  end
+
+  # Run the S3 Poller, generating build_list.json
+  def run
+    File.open(@config['build_list'], "w") do |f|
+      f.puts JSON.pretty_generate(get_artifacts)
+    end
   end
 end
 
-build_list_path = settings['build_list']
-
-File.open(build_list_path, "w") do |f|
-  f.puts JSON.pretty_generate(get_artifacts)
+if $0 == __FILE__
+  S3Poller.new.run
 end
+
+exit
