@@ -87,7 +87,7 @@ class Omnitruck < Sinatra::Base
     logger.info "Downloading - platform: #{platform} #{platform_version}, machine: #{machine}, chef version: #{chef_version_final}"
 
 # TODO: Switch the two lines below for deployment
-#    base = "http://opscode-full-stack.s3.amazonaws.com"
+#    base = "http://#{aws_bucket}.s3.amazonaws.com"
     base = ""
     redirect base + package_url
   end
