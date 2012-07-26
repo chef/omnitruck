@@ -11,11 +11,13 @@ class Omnitruck < Sinatra::Base
 
   set :raise_errors, Proc.new { false }
   set :show_exceptions, false
+  enable :logging
 
   #
   # serve up the installer script
   #
   get '/install.sh' do
+    logger.info "install.sh"
     content_type :sh
     erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
   end
@@ -47,7 +49,9 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    f = File.read(settings.build_list)
+# TODO: Switch the two lines below for deployment
+#    f = File.read(settings.build_list)
+    f = File.read("tmp/build_list_old.json")
     directory = JSON.parse(f)
 
     package_url = begin
@@ -80,7 +84,11 @@ class Omnitruck < Sinatra::Base
       error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
-    base = "http://opscode-omnitruck-test.s3.amazonaws.com"
+    logger.info "Downloading - platform: #{platform} #{platform_version}, machine: #{machine}, chef version: #{chef_version_final}"
+
+# TODO: Switch the two lines below for deployment
+#    base = "http://opscode-full-stack.s3.amazonaws.com"
+    base = ""
     redirect base + package_url
   end
 end
