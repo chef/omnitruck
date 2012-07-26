@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/config_file'
 require 'json'
+require 'pp'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -49,11 +50,11 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-# TODO: Switch the two lines below for deployment
-#    f = File.read(settings.build_list)
-    f = File.read("tmp/build_list_old.json")
+    puts chef_version + " C_V IN"
+    f = File.read(settings.build_list)
+#    f = File.read("tmp/build_list_old.json")
     directory = JSON.parse(f)
-
+    pp directory
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
                     version_arrays =[]
@@ -86,9 +87,8 @@ class Omnitruck < Sinatra::Base
     end
     logger.info "Downloading - platform: #{platform} #{platform_version}, machine: #{machine}, chef version: #{chef_version_final}"
 
-# TODO: Switch the two lines below for deployment
-#    base = "http://#{aws_bucket}.s3.amazonaws.com"
-    base = ""
+    base = "http://#{settings.aws_bucket}.s3.amazonaws.com"
+#    base = ""
     redirect base + package_url
   end
 end
