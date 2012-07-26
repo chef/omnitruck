@@ -50,11 +50,8 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    puts chef_version + " C_V IN"
     f = File.read(settings.build_list)
-#    f = File.read("tmp/build_list_old.json")
     directory = JSON.parse(f)
-    pp directory
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
                     version_arrays =[]
@@ -88,7 +85,6 @@ class Omnitruck < Sinatra::Base
     logger.info "Downloading - platform: #{platform} #{platform_version}, machine: #{machine}, chef version: #{chef_version_final}"
 
     base = "http://#{settings.aws_bucket}.s3.amazonaws.com"
-#    base = ""
     redirect base + package_url
   end
 end
