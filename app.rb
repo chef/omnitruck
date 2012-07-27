@@ -9,16 +9,16 @@ class Omnitruck < Sinatra::Base
   config_file './config/config.yml'
 
   class InvalidDownloadPath < StandardError; end
-
-  set :raise_errors, Proc.new { false }
-  set :show_exceptions, false
-  enable :logging
+  configure do
+    set :raise_errors, Proc.new { false }
+    set :show_exceptions, false
+    enable :logging
+  end
 
   #
   # serve up the installer script
   #
   get '/install.sh' do
-    logger.info "install.sh"
     content_type :sh
     erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
   end
@@ -50,8 +50,7 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    f = File.read(settings.build_list)
-    directory = JSON.parse(f)
+    directory = JSON.parse(File.read(settings.build_list))
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
                     version_arrays =[]
@@ -82,9 +81,15 @@ class Omnitruck < Sinatra::Base
       error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
-    logger.info "Downloading - platform: #{platform} #{platform_version}, machine: #{machine}, chef version: #{chef_version_final}"
 
     base = "http://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
+
+  get '/_status' do
+    directory = JSON.parse(File.read(settings.build_list))
+    status = { :timestamp => directory['run_data']['timestamp'] }
+    JSON.pretty_generate(status)
+  end
+
 end
