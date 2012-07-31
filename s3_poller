@@ -11,7 +11,7 @@ class S3Poller
     @options = {}
 
     optparse = OptionParser.new do |opts|
-      opts.banner = "Usage: s3_poller"
+      opts.banner = "Usage: #{$0} -e <environment>"
 
       opts.on_tail('-h', '--help', 'Print this help message') do
         puts opts
