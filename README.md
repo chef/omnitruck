@@ -31,7 +31,12 @@ To run the app locally, run this in the application directory:
    'shotgun config.ru'
 
 This will launch a Rack server that will run the Omnitruck app at http://localhost:9393/
-(the port number will only be 9393 if using shotgun, it will vary with other methods)
+(the port number will only be 9393 if using shotgun, it will vary with other methods). 
+
+<b>NOTE: The unfortunate thing about shotgun is that it does not output any default logging.
+To see the default logging, you will need to just run unicorn without shotgun:</b>
+
+   'unicorn'
 
 # Working with the app
 
@@ -47,7 +52,7 @@ to access the routes. Again, port will vary depending on how you run the app, th
 highly recommend shotgun. Shotgun will allow you to make a change to the code without
 needing to restart the server to make another request.
 
-## install.sh route
+## /install.sh
 
 To test the install.sh route, simply navigate to:
 
@@ -57,7 +62,7 @@ This will render the install.sh.erb temlate with the appropriate base url for ch
 client downloads. This base url is contained in a config.yml and depends on your
 environment (development, test, or production).
 
-## download route
+## /download
 
 To test the download route, the url is:
 
@@ -70,11 +75,24 @@ route needs to have access to the build_list.json in order to run, so make sure 
 you have one in the same directory as the app. If you don't, go back to the "Running
 the App" section and follow the instructions to run the s3_poller.
 
+## /full_list endpoint
+
+<http://localhost:9393/full_list>
+
+This endpoint provides the list of available builds for the install page.
+
+## /_status endpoint
+
+<http://localhost:9393/_status>
+
+This endpoint provides information about the status of the app.
+
 # S3 Poller
 
-The S3 Poller uses UberS3 to access the Omnibus builds on S3. It will look through
-the available artifacts and return a JSON that will map platform, platform version,
-machine architecture, and chef version to the appropriate download url (minus the
-base_url handled by the Sinatra app).  It relies pretty strongly on the current
-naming scheme for chef client artifacts, so if that is ever changed, the parsing
-logic might need to be changed as well.
+The S3 Poller uses UberS3 to access S3. The credentials to connect to S3 will be
+pulled from config/config.yml. For development and testing purposes, you can edit
+the config.yml.example to use the correct credentials and target the right bucket.
+
+The S3 Poller will merge the platform support files located in the "/platform_support"
+directory of the S3 bucket to create one large list that is organized by target
+platform. It is this list that gets passed on to the Sinatra app.
