@@ -86,6 +86,12 @@ class Omnitruck < Sinatra::Base
     redirect base + package_url
   end
 
+  get '/full_list' do
+    directory = JSON.parse(File.read(settings.build_list))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
   get '/_status' do
     directory = JSON.parse(File.read(settings.build_list))
     status = { :timestamp => directory['run_data']['timestamp'] }
