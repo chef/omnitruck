@@ -77,8 +77,6 @@ class S3Poller
         hash = JSON.parse(support.value)
         result = deep_merge(result, hash)
       end
-      result['run_data'] = Hash.new
-      result['run_data']['succeeded'] = true
       result
     rescue UberS3::Error::Standard => e
       puts e.message
@@ -98,6 +96,7 @@ EOF
   def run
     File.open(@config['build_list'], "w") do |f|
       directory = get_artifacts
+      # Timestamp used for the status page to make sure the list is up to date.
       directory['run_data'] = { :timestamp => Time.now.to_s }
       f.puts JSON.pretty_generate(directory)
     end
