@@ -28,6 +28,8 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
+
+  # Helper to turn a chef version into an array for comparison with other versions
   def version_to_array(v, rex)
     v_arr = v.match(rex)[1..4]
     v_arr[3] ||= 0
@@ -86,12 +88,18 @@ class Omnitruck < Sinatra::Base
     redirect base + package_url
   end
 
+  #
+  # Returns the JSON minus run data to populate the install page build list
+  #
   get '/full_list' do
     directory = JSON.parse(File.read(settings.build_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
 
+  #
+  # Status endpoint used by nagios to check on the app.
+  #
   get '/_status' do
     directory = JSON.parse(File.read(settings.build_list))
     status = { :timestamp => directory['run_data']['timestamp'] }
