@@ -55,28 +55,33 @@ class Omnitruck < Sinatra::Base
     directory = JSON.parse(File.read(settings.build_list))
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
-                    version_arrays =[]
-                    # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
-                    rex = /(\d+).(\d+).(\d+)-?(\d+)?/
-                    version_arrays = versions_for_platform.keys.map do |v|
-                      version_to_array(v, rex)
-                    end
-                    # Turn the chef_version param into an array
-                    unless chef_version.nil?
-                      c_v_array = version_to_array(chef_version, rex)
-                    end
-                    if chef_version.nil?
-                      c_v_array = version_arrays.max
-                    elsif !chef_version.include?("-")
+                    if chef_version.include?("-") or chef_version.include?("rc")
+                      versions_for_platform[chef_version]
+                    else
+                      version_arrays =[]
+                      # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
+                      rex = /(\d+).(\d+).(\d+)-?(\d+)?/
+                      version_arrays = versions_for_platform.keys.map do |v|
+                        version_to_array(v, rex) unless v.include?("rc")
+                      end
+                      # Turn the chef_version param into an array
+                      unless chef_version.nil?
+                        c_v_array = version_to_array(chef_version, rex)
+                      end
+                      if chef_version.nil?
+                        c_v_array = version_arrays.max
+                      end
                       # Find all of the iterations of the version matching the first three parts of chef_version
                       matching_versions = version_arrays.find_all {|v| v[0..2] == c_v_array[0..2]}
+                      # Grabs the max iteration number
                       c_v_array = matching_versions.max_by {|v| v[-1]}
+                      # turn chef_version from an array back into a string
+                      chef_version_final = c_v_array[0..2].join('.')
+                      chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
+                      versions_for_platform[chef_version_final]
                     end
-                    # turn chef_version from an array back into a string
-                    chef_version_final = c_v_array[0..2].join('.')
-                    chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
-                    versions_for_platform[chef_version_final]
                   rescue
+                    # package_url gets set to nil, error gets raised
                     nil
                   end
     unless package_url
