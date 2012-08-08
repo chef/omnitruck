@@ -32,6 +32,13 @@ rpm_filename() {
   filename="chef-${version}.${machine}.rpm"
 }
 
+# Set the filename for a Solaris SVR4 package, based on version and machine
+svr4_filename() {
+  PATH=/usr/sfw/bin:$PATH
+  filetype="solaris"
+  filename="chef-${version}.${machine}.solaris"
+}
+
 # Set the filename for the sh archive
 shell_filename() {
   filetype="sh"
@@ -99,14 +106,13 @@ then
 elif [ -f "/usr/bin/sw_vers" ];
 then
   platform="mac_os_x"
-  
   # Matching the tab-space with sed is error-prone
   platform_version=$(sw_vers | awk '/^ProductVersion:/ { print $2 }')
 
   major_version=$(echo $platform_version | cut -d. -f1,2)
   case $major_version in
-    "10.6") platform_version="10.6.8" ;;
-    "10.7") platform_version="10.7.2" ;;
+    "10.6") platform_version="10.6" ;;
+    "10.7") platform_version="10.7" ;;
     *) echo "No builds for platform: $major_version"
        report_bug
        exit 1
@@ -118,6 +124,11 @@ then
   if [ $x86_64 -eq 1 ]; then
     machine="x86_64"
   fi
+elif [ -f "/etc/release" ];
+then
+  platform="solaris2"
+  machine=$(/usr/bin/uname -p)
+  platform_version=$(/usr/bin/uname -r)
 fi
 
 if [ "x$platform" = "x" ];
@@ -133,21 +144,14 @@ major_version=$(echo $platform_version | cut -d. -f1)
 case $platform in
   "el")
     case $major_version in
-      "5") platform_version="5.7" ;;
-      "6") platform_version="6.2" ;;
+      "5") platform_version="5" ;;
+      "6") platform_version="6" ;;
     esac
     ;;
   "debian")
     case $major_version in
-      "5") platform_version="6.0.1";;
-      "6") platform_version="6.0.1";;
-    esac
-    ;;
-  "ubuntu")
-    case $platform_version in
-      "10.10") platform_version="10.04";;
-      "11.10") platform_version="11.04";;
-      "12.04") platform_version="11.04";;
+      "5") platform_version="6";;
+      "6") platform_version="6";;
     esac
     ;;
 esac
@@ -173,6 +177,7 @@ else
     "debian") deb_filename ;;
     "el") rpm_filename ;;
     "fedora") rpm_filename ;;
+    "solaris2") svr4_filename ;;
     *) shell_filename ;;
   esac
 fi
@@ -206,6 +211,10 @@ echo "Installing Chef $version"
 case "$filetype" in
   "rpm") rpm -Uvh /tmp/$filename ;;
   "deb") dpkg -i /tmp/$filename ;;
+  "solaris") echo "conflict=nocheck" > /tmp/nocheck
+	     echo "action=nocheck" >> /tmp/nocheck
+	     pkgadd -a /tmp/nocheck -G -d /tmp/$filename all
+	     ;;
   "sh" ) bash /tmp/$filename ;;
 esac
 

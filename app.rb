@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/config_file'
 require 'json'
+require 'pp'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -8,9 +9,11 @@ class Omnitruck < Sinatra::Base
   config_file './config/config.yml'
 
   class InvalidDownloadPath < StandardError; end
-
-  set :raise_errors, Proc.new { false }
-  set :show_exceptions, false
+  configure do
+    set :raise_errors, Proc.new { false }
+    set :show_exceptions, false
+    enable :logging
+  end
 
   #
   # serve up the installer script
@@ -25,6 +28,8 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
+
+  # Helper to turn a chef version into an array for comparison with other versions
   def version_to_array(v, rex)
     v_arr = v.match(rex)[1..4]
     v_arr[3] ||= 0
@@ -47,33 +52,36 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    f = File.read(settings.build_list)
-    directory = JSON.parse(f)
-
+    directory = JSON.parse(File.read(settings.build_list))
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
-                    version_arrays =[]
-                    # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
-                    rex = /(\d+).(\d+).(\d+)-?(\d+)?/
-                    version_arrays = versions_for_platform.keys.map do |v|
-                      version_to_array(v, rex)
-                    end
-                    # Turn the chef_version param into an array
-                    unless chef_version.nil?
-                      c_v_array = version_to_array(chef_version, rex)
-                    end
-                    if chef_version.nil?
-                      c_v_array = version_arrays.max
-                    elsif !chef_version.include?("-")
+                    if chef_version.include?("-") or chef_version.include?("rc")
+                      versions_for_platform[chef_version]
+                    else
+                      version_arrays =[]
+                      # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
+                      rex = /(\d+).(\d+).(\d+)-?(\d+)?/
+                      version_arrays = versions_for_platform.keys.map do |v|
+                        version_to_array(v, rex) unless v.include?("rc")
+                      end
+                      # Turn the chef_version param into an array
+                      unless chef_version.nil?
+                        c_v_array = version_to_array(chef_version, rex)
+                      end
+                      if chef_version.nil?
+                        c_v_array = version_arrays.max
+                      end
                       # Find all of the iterations of the version matching the first three parts of chef_version
                       matching_versions = version_arrays.find_all {|v| v[0..2] == c_v_array[0..2]}
+                      # Grabs the max iteration number
                       c_v_array = matching_versions.max_by {|v| v[-1]}
+                      # turn chef_version from an array back into a string
+                      chef_version_final = c_v_array[0..2].join('.')
+                      chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
+                      versions_for_platform[chef_version_final]
                     end
-                    # turn chef_version from an array back into a string
-                    chef_version_final = c_v_array[0..2].join('.')
-                    chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
-                    versions_for_platform[chef_version_final]
                   rescue
+                    # package_url gets set to nil, error gets raised
                     nil
                   end
     unless package_url
@@ -81,6 +89,26 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, error_message
     end
 
-    redirect package_url
+    base = "http://#{settings.aws_bucket}.s3.amazonaws.com"
+    redirect base + package_url
   end
+
+  #
+  # Returns the JSON minus run data to populate the install page build list
+  #
+  get '/full_list' do
+    directory = JSON.parse(File.read(settings.build_list))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
+  #
+  # Status endpoint used by nagios to check on the app.
+  #
+  get '/_status' do
+    directory = JSON.parse(File.read(settings.build_list))
+    status = { :timestamp => directory['run_data']['timestamp'] }
+    JSON.pretty_generate(status)
+  end
+
 end
