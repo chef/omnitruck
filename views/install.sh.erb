@@ -3,7 +3,6 @@
 # This is the current stable release to default to, with Omnibus patch level (e.g. 10.12.0-1)
 # Note that the chef template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
 release_version="10.12.0-1"
-use_shell=0
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
 exists() {
@@ -40,8 +39,8 @@ svr4_filename() {
 }
 
 # Set the filename for the sh archive
-shell_filename() {
-  filetype="sh"
+tarball_filename() {
+  filetype="tar.gz"
   filename="chef-${version}-${platform}-${platform_version}-${machine}.sh"
 }
 
@@ -60,10 +59,9 @@ while getopts sv: opt
 do
   case "$opt" in
     v)  version="$OPTARG";;
-    s)  use_shell=1;;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-s] [-v version]"
+      "usage: $0 [-v version]"
       exit 1;;
   esac
 done
@@ -168,19 +166,14 @@ then
     version=$release_version
 fi
 
-if [ $use_shell = 1 ];
-then
-  shell_filename
-else
-  case $platform in
+case $platform in
     "ubuntu") deb_filename ;;
     "debian") deb_filename ;;
     "el") rpm_filename ;;
     "fedora") rpm_filename ;;
     "solaris2") svr4_filename ;;
-    *) shell_filename ;;
-  esac
-fi
+    *) tarball_filename ;;
+esac
 
 echo "Downloading Chef $version for ${platform}..."
 
@@ -215,7 +208,7 @@ case "$filetype" in
 	     echo "action=nocheck" >> /tmp/nocheck
 	     pkgadd -a /tmp/nocheck -G -d /tmp/$filename all
 	     ;;
-  "sh" ) bash /tmp/$filename ;;
+  "tarball" ) bash /tmp/$filename ;;
 esac
 
 if [ $? -ne 0 ];
