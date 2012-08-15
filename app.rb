@@ -89,7 +89,7 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, error_message
     end
 
-    base = "http://#{settings.aws_bucket}.s3.amazonaws.com"
+    base = "https://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
 
