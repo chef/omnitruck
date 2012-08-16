@@ -24,7 +24,9 @@ To get shotgun:
 In order to run the app, first there must exist a build_list.json file so that the app
 knows what versions are available, so run:
 
-   './s3_poller'
+   './s3_poller -e development'
+
+See the S3 Poller section later in this document for more information.
 
 To run the app locally, run this in the application directory:
 
