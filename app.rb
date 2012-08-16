@@ -55,15 +55,21 @@ class Omnitruck < Sinatra::Base
     directory = JSON.parse(File.read(settings.build_list))
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
-                    if chef_version and ( chef_version.include?("-") or chef_version.include?("rc") )
+                    # Rubygems considers any version with an alpha character to be a non-stable release
+                    # Thus we will exclude these builds unless the user explicitly chooses them
+                    if chef_version and ( chef_version.include?("-") or chef_version.match(/[[:alpha:]]/) )
                       versions_for_platform[chef_version]
                     else
                       version_arrays =[]
                       # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
                       rex = /(\d+).(\d+).(\d+)-?(\d+)?/
                       version_arrays = versions_for_platform.keys.map do |v|
-                        version_to_array(v, rex) unless v.include?("rc")
+                        # exclude versions such as x.y.z.beta.0 and x.y.z.rc.1
+                        next if v.match(/[[:alpha:]]/)
+                        version_to_array(v, rex)
                       end
+                      # Remove nils left behind by prior match
+                      version_arrays.delete_if { |v| v == nil }
                       # Turn the chef_version param into an array
                       unless chef_version.nil?
                         c_v_array = version_to_array(chef_version, rex)
@@ -88,7 +94,6 @@ class Omnitruck < Sinatra::Base
       error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
-
     base = "https://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
