@@ -55,7 +55,7 @@ class Omnitruck < Sinatra::Base
     directory = JSON.parse(File.read(settings.build_list))
     package_url = begin
                     versions_for_platform = directory[platform][platform_version][machine]
-                    if chef_version.include?("-") or chef_version.include?("rc")
+                    if chef_version and ( chef_version.include?("-") or chef_version.include?("rc") )
                       versions_for_platform[chef_version]
                     else
                       version_arrays =[]
