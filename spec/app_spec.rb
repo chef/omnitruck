@@ -56,6 +56,13 @@ describe 'Omnitruck' do
       last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8.rc.0-1.el5.x86_64.rpm'
     end
 
+    it "should return the latest stable (numeric) version if version is empty string" do
+      get '/download', :v => "", :p => "el", :pv => "5", :m => "x86_64"
+      last_response.should be_redirect
+      follow_redirect!
+      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm'
+    end
+
     it "should return the latest stable (numeric) version if no version is specified" do
       get '/download', :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect

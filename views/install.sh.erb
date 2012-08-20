@@ -2,7 +2,6 @@
 
 # This is the current stable release to default to, with Omnibus patch level (e.g. 10.12.0-1)
 # Note that the chef template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
-release_version="10.12.0-1"
 use_shell=0
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
@@ -161,11 +160,6 @@ then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
-fi
-
-if [ -z "$version" ];
-then
-    version=$release_version
 fi
 
 if [ $use_shell = 1 ];

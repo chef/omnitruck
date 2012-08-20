@@ -71,10 +71,10 @@ class Omnitruck < Sinatra::Base
                       # Remove nils left behind by prior match
                       version_arrays.delete_if { |v| v == nil }
                       # Turn the chef_version param into an array
-                      unless chef_version.nil?
+                      unless chef_version.nil? || chef_version == ""
                         c_v_array = version_to_array(chef_version, rex)
                       end
-                      if chef_version.nil?
+                      if chef_version.nil? || chef_version == ""
                         c_v_array = version_arrays.max
                       end
                       # Find all of the iterations of the version matching the first three parts of chef_version
