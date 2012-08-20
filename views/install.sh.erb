@@ -191,7 +191,7 @@ then
   wget -O /tmp/$filename $url
 elif exists curl;
 then
-  curl $url > /tmp/$filename
+  curl -L $url > /tmp/$filename
 else
   echo "Cannot find wget or curl - cannot install Chef!"
   exit 5
