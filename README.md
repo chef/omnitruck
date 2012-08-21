@@ -98,3 +98,9 @@ the config.yml.example to use the correct credentials and target the right bucke
 The S3 Poller will merge the platform support files located in the "/platform_support"
 directory of the S3 bucket to create one large list that is organized by target
 platform. It is this list that gets passed on to the Sinatra app.
+
+# Unit tests
+
+There are unit tests in the spec/ directory which can be run by running 'rspec'
+in the top directory of the project. Default values are stored in the .rspec 
+file.
