@@ -23,7 +23,7 @@ class Omnitruck < Sinatra::Base
     erb :'install.sh', {
       :layout => :'install.sh',
       :locals => {
-        :download_url => url('/download')
+        :download_url => url("#{settings.virtual_path}/download")
       }
     }
   end
