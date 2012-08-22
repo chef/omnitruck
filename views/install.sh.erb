@@ -178,7 +178,7 @@ fi
 
 echo "Downloading Chef $version for ${platform}..."
 
-url="https://<%= locals[:base_url] %>download?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
+url="<%= locals[:download_url] %>?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
 
 if exists wget;
 then

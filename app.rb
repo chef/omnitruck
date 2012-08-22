@@ -20,7 +20,12 @@ class Omnitruck < Sinatra::Base
   #
   get '/install.sh' do
     content_type :sh
-    erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
+    erb :'install.sh', {
+      :layout => :'install.sh',
+      :locals => {
+        :download_url => url('/download')
+      }
+    }
   end
 
   error InvalidDownloadPath do
