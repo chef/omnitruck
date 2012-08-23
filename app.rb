@@ -20,7 +20,12 @@ class Omnitruck < Sinatra::Base
   #
   get '/install.sh' do
     content_type :sh
-    erb :'install.sh', { :layout => :'install.sh', :locals => { :base_url => settings.base_url } }
+    erb :'install.sh', {
+      :layout => :'install.sh',
+      :locals => {
+        :download_url => url("#{settings.virtual_path}/download")
+      }
+    }
   end
 
   error InvalidDownloadPath do
@@ -94,7 +99,7 @@ class Omnitruck < Sinatra::Base
       error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
       raise InvalidDownloadPath, error_message
     end
-    base = "https://#{settings.aws_bucket}.s3.amazonaws.com"
+    base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
 
