@@ -106,8 +106,17 @@ class Omnitruck < Sinatra::Base
   #
   # Returns the JSON minus run data to populate the install page build list
   #
-  get '/full_list' do
+  get '/full_client_list' do
     directory = JSON.parse(File.read(settings.build_list))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
+  #
+  # Returns the server JSON minus run data to populate the install page build list
+  #
+  get '/full_server_list' do
+    directory = JSON.parse(File.read(settings.build_server_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
