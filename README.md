@@ -77,11 +77,17 @@ route needs to have access to the build_list.json in order to run, so make sure 
 you have one in the same directory as the app. If you don't, go back to the "Running
 the App" section and follow the instructions to run the s3_poller.
 
-## /full_list endpoint
+## /full_client_list endpoint
 
-<http://localhost:9393/full_list>
+<http://localhost:9393/full_client_list>
 
-This endpoint provides the list of available builds for the install page.
+This endpoint provides the list of available client builds for the install page.
+
+## /full_server_list endpoint
+
+<http://localhost:9393/full_server_list>
+
+This endpoint provides the list of available server builds for the install page.
 
 ## /_status endpoint
 
