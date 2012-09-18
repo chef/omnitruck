@@ -41,7 +41,8 @@ class S3Poller
     end
 
     @config = YAML.load_file(@options[:config])[@options[:environment]]
-    @platform_support = "/platform-support"
+    @platform_client_support = "/chef-platform-support"
+    @platform_server_support = "/chef-server-platform-support"
 
     # Create S3 client
     @s3 = UberS3.new({
@@ -66,12 +67,12 @@ class S3Poller
   end
 
   # Grabs the platform support json files from S3, merges them, and returns one big hash
-  def get_artifacts
+  def get_artifacts(platform_support)
     result = Hash.new
     begin
       # This array contains the platform-support directory along with the JSON files,
       # so I need to get rid of the objects that aren't JSON files.
-      support_files = @s3.objects(@platform_support).to_a
+      support_files = @s3.objects(platform_support).to_a
       support_files.delete_if { |o| not o.key.match(/\.json/) }
       support_files.each do |support|
         hash = JSON.parse(support.value)
@@ -92,10 +93,16 @@ EOF
     end
   end
 
-  # Run the S3 Poller, generating build_list.json
+  # Run the S3 Poller, generating build_list.json and build_server_list.json
   def run
-    File.open(@config['build_list'], "w") do |f|
-      directory = get_artifacts
+    build_json(@config['build_list'], @platform_client_support) 
+    build_json(@config['build_server_list'], @platform_server_support)
+  end
+
+  # Builds the json and writes it to build_list_path
+  def build_json(build_list_path, platform_support)
+    File.open(build_list_path, "w") do |f|
+      directory = get_artifacts(platform_support)
       # Timestamp used for the status page to make sure the list is up to date.
       directory['run_data'] = { :timestamp => Time.now.to_s }
       f.puts JSON.pretty_generate(directory)
