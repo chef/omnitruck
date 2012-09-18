@@ -113,6 +113,17 @@ class Omnitruck < Sinatra::Base
   end
 
   #
+  # TODO: redundant end-point to be deleted. Currently included for
+  # backwards compatibility.
+  #
+  get '/full_list' do
+    directory = JSON.parse(File.read(settings.build_list))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
+
+  #
   # Returns the server JSON minus run data to populate the install page build list
   #
   get '/full_server_list' do
