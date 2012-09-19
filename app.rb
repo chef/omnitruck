@@ -133,6 +133,14 @@ class Omnitruck < Sinatra::Base
   end
 
   #
+  # Returns the server JSON minus run data to populate the install page build list
+  #
+  get '/human_readable_list' do
+    directory = JSON.parse(File.read(settings.human_readable_list))
+    JSON.pretty_generate(directory)
+  end
+
+  #
   # Status endpoint used by nagios to check on the app.
   #
   get '/_status' do
