@@ -97,6 +97,14 @@ EOF
   def run
     build_json(@config['build_list'], @platform_client_support) 
     build_json(@config['build_server_list'], @platform_server_support)
+    File.open(@config['human_readable_list'], "w") do |f|
+      f.puts JSON.pretty_generate({ 'el' => 'Enterprise Linux',
+                                    'debian' => 'Debian',
+                                    'mac_os_x' => 'OS X',
+                                    'ubuntu' => 'Ubuntu',
+                                    'solaris2' => 'Solaris',
+                                  })
+    end
   end
 
   # Builds the json and writes it to build_list_path
