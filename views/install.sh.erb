@@ -112,6 +112,7 @@ then
   case $major_version in
     "10.6") platform_version="10.6" ;;
     "10.7") platform_version="10.7" ;;
+    "10.8") platform_version="10.7" ;;
     *) echo "No builds for platform: $major_version"
        report_bug
        exit 1
@@ -128,6 +129,16 @@ then
   platform="solaris2"
   machine=$(/usr/bin/uname -p)
   platform_version=$(/usr/bin/uname -r)
+elif [ -f "/etc/SuSE-release" ];
+then
+  if grep -q 'Enterprise' /etc/SuSE-release;
+  then
+      platform="sles"
+      platform_version=$(awk '/^VERSION/ {V = $3}; /^PATCHLEVEL/ {P = $3}; END {print V "." P}' /etc/SuSE-release)
+  else
+      platform="suse"
+      platform_version=$(awk '/^VERSION =/ { print $3 }' /etc/SuSE-release)
+  fi
 fi
 
 if [ "x$platform" = "x" ];
@@ -170,6 +181,8 @@ else
     "ubuntu") deb_filename ;;
     "debian") deb_filename ;;
     "el") rpm_filename ;;
+    "suse") rpm_filename ;;
+    "sles") rpm_filename ;;
     "fedora") rpm_filename ;;
     "solaris2") svr4_filename ;;
     *) shell_filename ;;

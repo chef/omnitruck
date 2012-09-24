@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'uri'
 
 describe 'Omnitruck' do
   def app
@@ -46,35 +47,40 @@ describe 'Omnitruck' do
       get '/download', :v => "10.12.0-1", :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
       follow_redirect!
-      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.12.0-1.el5.x86_64.rpm'
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.12.0-1.el5.x86_64.rpm'
     end
 
     it "should return a rc/beta version if specified" do
       get '/download', :v => "10.14.8.rc.0-1", :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
       follow_redirect!
-      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8.rc.0-1.el5.x86_64.rpm'
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8.rc.0-1.el5.x86_64.rpm'
     end
 
     it "should return the latest stable (numeric) version if version is empty string" do
       get '/download', :v => "", :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
       follow_redirect!
-      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm'
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm'
     end
 
     it "should return the latest stable (numeric) version if no version is specified" do
       get '/download', :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
       follow_redirect!
-      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm'
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm'
     end
 
     it "should return the latest iteration if no iteration is specified (x.y.z-iteration)" do
       get '/download', :v => "10.12.0", :p => "el", :pv => "6", :m => "i686"
       last_response.should be_redirect
       follow_redirect!
-      last_request.url.should == 'https://opscode-omnitruck-test.s3.amazonaws.com/el/6/i686/chef-10.12.0-10.el6.i686.rpm'
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/6/i686/chef-10.12.0-10.el6.i686.rpm'
     end
 
   end
