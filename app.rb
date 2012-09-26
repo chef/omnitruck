@@ -135,16 +135,16 @@ class Omnitruck < Sinatra::Base
   #
   # Returns the server JSON minus run data to populate the install page build list
   #
-  get '/human_readable_list' do
-    directory = JSON.parse(File.read(settings.human_readable_list))
+  get '/chef_platform_names' do
+    directory = JSON.parse(File.read(settings.chef_platform_names))
     JSON.pretty_generate(directory)
   end
 
   #
   # Returns the server JSON minus run data to populate the install page build list
   #
-  get '/human_readable_server_list' do
-    directory = JSON.parse(File.read(settings.human_readable_server_list))
+  get '/chef_server_platform_names' do
+    directory = JSON.parse(File.read(settings.chef_server_platform_names))
     JSON.pretty_generate(directory)
   end
 

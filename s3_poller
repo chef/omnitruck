@@ -43,8 +43,8 @@ class S3Poller
     @config = YAML.load_file(@options[:config])[@options[:environment]]
     @platform_client_support = "/chef-platform-support"
     @platform_server_support = "/chef-server-platform-support"
-    @human_redable_list = "/chef-platform-support/chef-platform-name.json"
-    @human_redable_server_list = "/chef-platform-support/chef-server-platform-name.json"
+    @human_redable_list = "/chef-platform-support/chef-platform-names.json"
+    @human_redable_server_list = "/chef-platform-support/chef-server-platform-names.json"
 
     # Create S3 client
     @s3 = UberS3.new({
@@ -76,9 +76,9 @@ class S3Poller
       # so I need to get rid of the objects that aren't JSON files.
       support_files = @s3.objects(platform_support).to_a
       support_files.delete_if { |o| not o.key.match(/\.json/) }
-      # We don't want to include any platform-name.json files, as these
+      # We don't want to include any platform-names.json files, as these
       # contain info pertaining to human-readable names. Not relevent here.
-      support_files.delete_if { |o| o.key.match("platform-name.json") }
+      support_files.delete_if { |o| o.key.match("platform-names.json") }
       support_files.each do |support|
         hash = JSON.parse(support.value)
         result = deep_merge(result, hash)
