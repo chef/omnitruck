@@ -43,6 +43,8 @@ class S3Poller
     @config = YAML.load_file(@options[:config])[@options[:environment]]
     @platform_client_support = "/chef-platform-support"
     @platform_server_support = "/chef-server-platform-support"
+    @human_redable_list = "/chef-platform-support/chef-platform-name.json"
+    @human_redable_server_list = "/chef-platform-support/chef-server-platform-name.json"
 
     # Create S3 client
     @s3 = UberS3.new({
@@ -74,6 +76,9 @@ class S3Poller
       # so I need to get rid of the objects that aren't JSON files.
       support_files = @s3.objects(platform_support).to_a
       support_files.delete_if { |o| not o.key.match(/\.json/) }
+      # We don't want to include any platform-name.json files, as these
+      # contain info pertaining to human-readable names. Not relevent here.
+      support_files.delete_if { |o| o.key.match("platform-name.json") }
       support_files.each do |support|
         hash = JSON.parse(support.value)
         result = deep_merge(result, hash)
@@ -97,13 +102,13 @@ EOF
   def run
     build_json(@config['build_list'], @platform_client_support) 
     build_json(@config['build_server_list'], @platform_server_support)
+
+    #Grab the human readable json files directly
     File.open(@config['human_readable_list'], "w") do |f|
-      f.puts JSON.pretty_generate({ 'el' => 'Enterprise Linux',
-                                    'debian' => 'Debian',
-                                    'mac_os_x' => 'OS X',
-                                    'ubuntu' => 'Ubuntu',
-                                    'solaris2' => 'Solaris',
-                                  })
+      f.puts JSON.pretty_generate(JSON.parse(@s3.object(@human_readable_list).value))
+    end
+    File.open(@config['human_readable_server_list'], "w") do |f|
+      f.puts JSON.pretty_generate(JSON.parse(@s3.object(@human_readable_server_list).value))
     end
   end
 
