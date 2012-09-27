@@ -136,16 +136,28 @@ class Omnitruck < Sinatra::Base
   # Returns the server JSON minus run data to populate the install page build list
   #
   get '/chef_platform_names' do
-    directory = JSON.parse(File.read(settings.chef_platform_names))
-    JSON.pretty_generate(directory)
+    if File.exists?(settings.chef_platform_names)
+      directory = JSON.parse(File.read(settings.chef_platform_names))
+      JSON.pretty_generate(directory)
+    else
+      status 404
+      env['sinatra.error']
+      'File not found on server.'
+    end
   end
 
   #
   # Returns the server JSON minus run data to populate the install page build list
   #
   get '/chef_server_platform_names' do
-    directory = JSON.parse(File.read(settings.chef_server_platform_names))
-    JSON.pretty_generate(directory)
+    if File.exists?(settings.chef_server_platform_names)
+      directory = JSON.parse(File.read(settings.chef_server_platform_names))
+      JSON.pretty_generate(directory)
+    else
+      status 404
+      env['sinatra.error']
+      'File not found on server.'
+    end
   end
 
 

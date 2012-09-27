@@ -43,8 +43,8 @@ class S3Poller
     @config = YAML.load_file(@options[:config])[@options[:environment]]
     @platform_client_support = "/chef-platform-support"
     @platform_server_support = "/chef-server-platform-support"
-    @human_redable_list = "/chef-platform-support/chef-platform-names.json"
-    @human_redable_server_list = "/chef-platform-support/chef-server-platform-names.json"
+    @chef_platform_names = "/chef-platform-support/chef-platform-names.json"
+    @chef_server_platform_names = "/chef-platform-support/chef-server-platform-names.json"
 
     # Create S3 client
     @s3 = UberS3.new({
@@ -104,11 +104,15 @@ EOF
     build_json(@config['build_server_list'], @platform_server_support)
 
     #Grab the human readable json files directly
-    File.open(@config['human_readable_list'], "w") do |f|
-      f.puts JSON.pretty_generate(JSON.parse(@s3.object(@human_readable_list).value))
+    if @s3.exists?(@chef_platform_names)
+      File.open(@config['chef_platform_names'], "w") do |f|
+        f.puts JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
+      end
     end
-    File.open(@config['human_readable_server_list'], "w") do |f|
-      f.puts JSON.pretty_generate(JSON.parse(@s3.object(@human_readable_server_list).value))
+    if @s3.exists?(@chef_server_platform_names)
+      File.open(@config['chef_server_platform_names'], "w") do |f|
+        f.puts JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
+      end
     end
   end
 
