@@ -77,17 +77,21 @@ route needs to have access to the build_list.json in order to run, so make sure 
 you have one in the same directory as the app. If you don't, go back to the "Running
 the App" section and follow the instructions to run the s3_poller.
 
-## /full_client_list endpoint
+## /chef_platform_names endpoint
 
 <http://localhost:9393/full_client_list>
 
-This endpoint provides the list of available client builds for the install page.
+This endpoint provides the list of available client builds for the install page. 
+Will return 404 with a file not found message if ./chef_platform_names.json do not
+exist, which is usually because it is not in s3.
 
-## /full_server_list endpoint
+## /chef_server_platform_names endpoint
 
 <http://localhost:9393/full_server_list>
 
 This endpoint provides the list of available server builds for the install page.
+Will return 404 with a file not found message if ./chef_server_platform_names.json do not
+exist, which is usually because it is not in s3.
 
 ## /_status endpoint
 
