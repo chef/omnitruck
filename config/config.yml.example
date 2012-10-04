@@ -1,6 +1,7 @@
 development:
   virtual_path: ''
   build_list: './build_list.json'
+  build_server_list: './build_server_list.json'
   chef_platform_names: './chef-platform-names.json'
   chef_server_platform_names: './chef-server-platform-names.json'		     
   aws_access_key_id: 'key_goes_here'
