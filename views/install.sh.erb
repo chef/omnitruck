@@ -192,15 +192,16 @@ fi
 echo "Downloading Chef $version for ${platform}..."
 
 url="<%= locals[:download_url] %>?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
+tmp_dir=$(mktemp -d -t tmp.XXXXXXXX || echo "/tmp")
 
 if exists wget;
 then
   downloader="wget"
-  wget -O /tmp/$filename $url 2>/tmp/stderr
+  wget -O "$tmp_dir/$filename" $url 2>/tmp/stderr
 elif exists curl;
 then
   downloader="curl"
-  curl -L $url > /tmp/$filename
+  curl -L $url > "$tmp_dir/$filename"
 else
   echo "Cannot find wget or curl - cannot install Chef!"
   exit 5
@@ -218,8 +219,8 @@ unable_to_retrieve_package() {
 if [ $downloader == "curl" ]
 then
   #do curl stuff
-  grep "The specified key does not exist." /tmp/$filename 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s /tmp/$filename ]
+  grep "The specified key does not exist." "$tmp_dir/$filename" 2>&1 >/dev/null
+  if [ $? -eq 0 ] || [ ! -s "$tmp_dir/$filename" ]
   then
     unable_to_retrieve_package
   fi
@@ -227,7 +228,7 @@ elif [ $downloader == "wget" ]
 then
   #do wget stuff
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s /tmp/$filename ]
+  if [ $? -eq 0 ] || [ ! -s "$tmp_dir/$filename" ]
   then
     unable_to_retrieve_package
   fi
@@ -235,14 +236,19 @@ fi
 
 echo "Installing Chef $version"
 case "$filetype" in
-  "rpm") rpm -Uvh /tmp/$filename ;;
-  "deb") dpkg -i /tmp/$filename ;;
+  "rpm") rpm -Uvh "$tmp_dir/$filename" ;;
+  "deb") dpkg -i "$tmp_dir/$filename" ;;
   "solaris") echo "conflict=nocheck" > /tmp/nocheck
 	     echo "action=nocheck" >> /tmp/nocheck
-	     pkgadd -n -d /tmp/$filename -a /tmp/nocheck chef
+	     pkgadd -n -d "$tmp_dir/$filename" -a /tmp/nocheck chef
 	     ;;
-  "sh" ) bash /tmp/$filename ;;
+  "sh" ) bash "$tmp_dir/$filename" ;;
 esac
+
+if [ "$tmp_dir" != "/tmp" ];
+then
+  rm -r "$tmp_dir"
+fi
 
 if [ $? -ne 0 ];
 then
