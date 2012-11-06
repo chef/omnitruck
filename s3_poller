@@ -105,23 +105,25 @@ EOF
 
     #Grab the human readable json files directly
     if @s3.exists?(@chef_platform_names)
+      client_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
       File.open(@config['chef_platform_names'], "w") do |f|
-        f.puts JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
+        f.puts client_platform_data
       end
     end
     if @s3.exists?(@chef_server_platform_names)
+      server_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
       File.open(@config['chef_server_platform_names'], "w") do |f|
-        f.puts JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
+        f.puts server_platform_data
       end
     end
   end
 
   # Builds the json and writes it to build_list_path
   def build_json(build_list_path, platform_support)
+    directory = get_artifacts(platform_support)
+    # Timestamp used for the status page to make sure the list is up to date.
+    directory['run_data'] = { :timestamp => Time.now.to_s }
     File.open(build_list_path, "w") do |f|
-      directory = get_artifacts(platform_support)
-      # Timestamp used for the status page to make sure the list is up to date.
-      directory['run_data'] = { :timestamp => Time.now.to_s }
       f.puts JSON.pretty_generate(directory)
     end
   end
