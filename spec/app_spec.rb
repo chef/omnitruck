@@ -21,7 +21,8 @@ describe 'Omnitruck' do
       build_list_json = { 'run_data' => { 'timestamp' => 'Thu Aug 16 11:48:08 -0700 2012' }, 
                           'el' => { '5' => { 'x86_64' => { '10.12.0-1' => '/el/5/x86_64/chef-10.12.0-1.el5.x86_64.rpm',
                                                            '10.14.8-1' => '/el/5/x86_64/chef-10.14.8-1.el5.x86_64.rpm',
-                                                           '10.14.10.rc.0-1' => '/el/5/x86_64/chef-10.14.10.rc.0-1.el5.x86_64.rpm' },
+                                                           '10.14.10.rc.0-1' => '/el/5/x86_64/chef-10.14.10.rc.0-1.el5.x86_64.rpm',
+                                                           '10,version-regex-is-fun' => '/el/5/x86_64/chef-10,version-regex-is-fun.el5.x86_64.rpm' },
                                              'i686' => { '10.12.0-1' => '/el/5/x86_64/chef-10.12.0-1.el5.i686.rpm',
                                                          '10.14.8-1' => '/el/5/x86_64/chef-10.14.8-1.el5.i686.rpm',
                                                          '10.14.10.rc.0-1' => '/el/5/x86_64/chef-10.14.10.rc.0-1.el5.i686.rpm' },
@@ -74,6 +75,14 @@ describe 'Omnitruck' do
       last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10.14.10.rc.0-1.el5.x86_64.rpm'
     end
 
+    it "should return a specific version if specified, even if it doesn't match a version regex" do
+      get '/download', :v => "10,version-regex-is-fun", :p => "el", :pv => "5", :m => "x86_64"
+      last_response.should be_redirect
+      follow_redirect!
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-10,version-regex-is-fun.el5.x86_64.rpm'
+    end
+
     it "should return the latest stable (numeric) version if version is empty string" do
       get '/download', :v => "", :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
@@ -113,7 +122,8 @@ describe 'Omnitruck' do
       build_server_list_json = { 'run_data' => { 'timestamp' => 'Thu Aug 16 11:48:08 -0700 2012' }, 
                                  'el' => { '5' => { 'x86_64' => { '11.0.0-1' => '/el/5/x86_64/chef-server-11.0.0-1.el5.x86_64.rpm',
                                                                   '11.1.0.rc.0-1' => '/el/5/x86_64/chef-server-11.1.0.rc.0-1.el5.x86_64.rpm',
-                                                                  '11.2.0-alpha-1-g123456' => '/el/5/x86_64/chef-server-11.2.0-alpha-1-g123456-1.el5.x86_64.rpm' }
+                                                                  '11.2.0-alpha-1-g123456' => '/el/5/x86_64/chef-server-11.2.0-alpha-1-g123456-1.el5.x86_64.rpm',
+                                                                  '11,version-regex-is-fun' => '/el/5/x86_64/chef-server-11,version-regex-is-fun.el5.x86_64.rpm' }
                                                   },
                                            '6' => { 'i686' => { '11.0.0-1' => '/el/6/i686/chef-server-11.0.0-1.el6.i686.rpm',
                                                                 '11.0.0-10' => '/el/6/i686/chef-server-11.0.0-10.el6.i686.rpm' }
@@ -159,6 +169,14 @@ describe 'Omnitruck' do
       follow_redirect!
       http_type_string = URI.split(last_request.url)[0]
       last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-server-11.1.0.rc.0-1.el5.x86_64.rpm'
+    end
+
+    it "should return a specific version if specified, even if it doesn't match a version regex" do
+      get '/download-server', :v => "11,version-regex-is-fun", :p => "el", :pv => "5", :m => "x86_64"
+      last_response.should be_redirect
+      follow_redirect!
+      http_type_string = URI.split(last_request.url)[0]
+      last_request.url.should == http_type_string + '://opscode-omnitruck-test.s3.amazonaws.com/el/5/x86_64/chef-server-11,version-regex-is-fun.el5.x86_64.rpm'
     end
 
     it "should return an alpha version if specified" do

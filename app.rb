@@ -131,7 +131,7 @@ class Omnitruck < Sinatra::Base
   def version_to_array(v, prerelease)
     # parse as the test regex only if 'prerelease' is enabled.
     if prerelease
-      # e.g., 11.0.0-alpha-1-g092c123
+      # e.g., 11.0.0-alpha-1-g092c123 -> [11, 0, 0, "alpha", 1, "g092c123"]
       match = v.match(VERSION_TEST_REGEX)
       if match
         v_arr = match[1..6]
@@ -145,7 +145,8 @@ class Omnitruck < Sinatra::Base
 
     # otherwise, fall back to the normal regex.
     if !match
-      # e.g., "10.14.4" or "10.16.2-1"
+      # e.g., "10.14.4" -> [10, 14, 4]
+      #  or "10.16.2-1" -> [10, 16, 2, 1]
       match = v.match(VERSION_REGEX)
       if match
         v_arr = match[1..4]
