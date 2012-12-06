@@ -125,12 +125,12 @@ class Omnitruck < Sinatra::Base
   # HELPER METHODS
   # ---
   VERSION_REGEX = /^(\d+).(\d+).(\d+)-?(\d+)?$/
-  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)-(alpha|beta|rc)-(\d+)-(\w+)$/
+  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)(?:-|\.)(alpha|beta|rc)(?:-|\.)(\d+)(-(\w+)?)$/
 
   # Helper to turn a chef version into an array for comparison with other versions
-  def version_to_array(v, include_test)
-    # parse as the test regex only if 'include_test' is enabled.
-    if include_test
+  def version_to_array(v, prerelease)
+    # parse as the test regex only if 'prerelease' is enabled.
+    if prerelease
       # e.g., 11.0.0-alpha-1-g092c123
       match = v.match(VERSION_TEST_REGEX)
       if match
@@ -166,7 +166,7 @@ class Omnitruck < Sinatra::Base
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
-    include_test     = params['include-test']
+    prerelease       = params['prerelease']
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
@@ -182,8 +182,8 @@ class Omnitruck < Sinatra::Base
     version_arrays_available = versions_available.keys.inject({}) do |res, version_string|
       # version_to_array will return nil if the version passed it
       # doesn't match the appropriate regex, and it will also filter
-      # out test versions unless include_test is true.
-      version_array = version_to_array(version_string, include_test)
+      # out test versions unless prerelease is true.
+      version_array = version_to_array(version_string, prerelease)
       if version_array
         res[version_array] = versions_available[version_string]
       end
@@ -200,7 +200,7 @@ class Omnitruck < Sinatra::Base
       requested_version_array = if chef_version.nil? || chef_version == ""
                                   version_arrays_available.keys.max
                                 else
-                                  version_to_array(chef_version, include_test)
+                                  version_to_array(chef_version, prerelease)
                                 end
 
       # Find all of the iterations of the version matching the first three parts of chef_version
