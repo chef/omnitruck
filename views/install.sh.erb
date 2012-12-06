@@ -6,7 +6,7 @@ use_shell=0
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
 exists() {
-  if command -v $1 &>/dev/null
+  if command -v $1 >/dev/null 2>&1
   then
     return 0
   else
@@ -17,7 +17,7 @@ exists() {
 # Set the filename for a deb, based on version and machine
 deb_filename() {
   filetype="deb"
-  if [ $machine = "x86_64" ];
+  if [ "$machine" = "x86_64" ];
   then
     filename="chef_${version}_amd64.deb"
   else
@@ -68,7 +68,7 @@ do
 done
 shift `expr $OPTIND - 1`
 
-machine=$(echo -e `uname -m`)
+machine=$(printf `uname -m`)
 
 # Retrieve Platform and Platform Version
 if [ -f "/etc/lsb-release" ];
@@ -78,7 +78,7 @@ then
 elif [ -f "/etc/debian_version" ];
 then
   platform="debian"
-  platform_version=$(echo -e `cat /etc/debian_version`)
+  platform_version=$(printf `cat /etc/debian_version`)
 elif [ -f "/etc/redhat-release" ];
 then
   platform=$(sed 's/^\(.\+\) release.*/\1/' /etc/redhat-release | tr '[A-Z]' '[a-z]')
@@ -216,7 +216,7 @@ unable_to_retrieve_package() {
   exit 1
 }
 
-if [ $downloader == "curl" ]
+if [ "$downloader" = "curl" ]
 then
   #do curl stuff
   grep "The specified key does not exist." "$tmp_dir/$filename" 2>&1 >/dev/null
@@ -224,7 +224,7 @@ then
   then
     unable_to_retrieve_package
   fi
-elif [ $downloader == "wget" ]
+elif [ "$downloader" = "wget" ]
 then
   #do wget stuff
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
