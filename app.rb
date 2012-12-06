@@ -124,8 +124,8 @@ class Omnitruck < Sinatra::Base
   # ---
   # HELPER METHODS
   # ---
-  VERSION_REGEX = /(\d+).(\d+).(\d+)-?(\d+)?/
-  VERSION_TEST_REGEX = /(\d+).(\d+).(\d+)-(alpha|beta|rc)-(\d+)-(\w+)/
+  VERSION_REGEX = /^(\d+).(\d+).(\d+)-?(\d+)?$/
+  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)-(alpha|beta|rc)-(\d+)-(\w+)$/
 
   # Helper to turn a chef version into an array for comparison with other versions
   def version_to_array(v, include_test)
@@ -175,16 +175,17 @@ class Omnitruck < Sinatra::Base
     end
 
     # Pull out the map, which is a string version -> URL; Convert it
-    # to a mapping of version_array -> URL. e.g. {"10.14.2-2" =>
-    # "..."} would become {[10, 14, 2, 2] => "..."}
+    # to a mapping of version_array -> URL.
+    #         e.g. {"10.14.2-2" => "..."} 
+    # would become {[10, 14, 2, 2] => "..."}
     versions_available = build_hash[platform][platform_version][machine]
     version_arrays_available = versions_available.keys.inject({}) do |res, version_string|
-      # Skip versions which are in development -- ones that have alpha
-      # characters in them, unless 'include-test' is specified.
-      if version_string == "-" || (!include_test && version_string.match(/[[:alpha:]]/))
-        # skip it.
-      else
-        res[version_to_array(version_string, include_test)] = versions_available[version_string]
+      # version_to_array will return nil if the version passed it
+      # doesn't match the appropriate regex, and it will also filter
+      # out test versions unless include_test is true.
+      version_array = version_to_array(version_string, include_test)
+      if version_array
+        res[version_array] = versions_available[version_string]
       end
       res
     end
