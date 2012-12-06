@@ -129,6 +129,8 @@ class Omnitruck < Sinatra::Base
 
   # Helper to turn a chef version into an array for comparison with other versions
   def version_to_array(v, prerelease)
+    match = nil
+
     # parse as the test regex only if 'prerelease' is enabled.
     if prerelease
       # e.g., 11.0.0-alpha-1-g092c123 -> [11, 0, 0, "alpha", 1, "g092c123"]
