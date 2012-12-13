@@ -34,13 +34,6 @@ class Omnitruck < Sinatra::Base
   end
 
 
-  # Helper to turn a chef version into an array for comparison with other versions
-  def version_to_array(v, rex)
-    v_arr = v.match(rex)[1..4]
-    v_arr[3] ||= 0
-    v_arr.map! {|i| i.to_i}
-  end
-
   #
   # download an omnibus chef package
   #
@@ -52,55 +45,11 @@ class Omnitruck < Sinatra::Base
   # * :machine:          - The machine architecture to install on
   #
   get '/download' do
-    chef_version     = params['v']
-    platform         = params['p']
-    platform_version = params['pv']
-    machine          = params['m']
+    handle_download("chef-client", JSON.parse(File.read(settings.build_list)))
+  end
 
-    directory = JSON.parse(File.read(settings.build_list))
-    package_url = begin
-                    versions_for_platform = directory[platform][platform_version][machine]
-                    # Rubygems considers any version with an alpha character to be a non-stable release
-                    # Thus we will exclude these builds unless the user explicitly chooses them
-                    if chef_version and ( chef_version.include?("-") or chef_version.match(/[[:alpha:]]/) )
-                      versions_for_platform[chef_version]
-                    else
-                      version_arrays =[]
-                      # Turn the versions into arrays for comparison i.e. "10.12.0-4" => [10,12,0,4]
-                      rex = /(\d+).(\d+).(\d+)-?(\d+)?/
-                      version_arrays = versions_for_platform.keys.map do |v|
-                        # exclude versions such as x.y.z.beta.0 and x.y.z.rc.1
-                        next if v.match(/[[:alpha:]]/)
-                        version_to_array(v, rex)
-                      end
-                      # Remove nils left behind by prior match
-                      version_arrays.delete_if { |v| v == nil }
-                      # Turn the chef_version param into an array
-                      unless chef_version.nil? || chef_version == ""
-                        c_v_array = version_to_array(chef_version, rex)
-                      end
-                      if chef_version.nil? || chef_version == ""
-                        c_v_array = version_arrays.max
-                      end
-                      # Find all of the iterations of the version matching the first three parts of chef_version
-                      matching_versions = version_arrays.find_all {|v| v[0..2] == c_v_array[0..2]}
-                      # Grabs the max iteration number
-                      c_v_array = matching_versions.max_by {|v| v[-1]}
-                      # turn chef_version from an array back into a string
-                      chef_version_final = c_v_array[0..2].join('.')
-                      chef_version_final += "-#{c_v_array[-1]}" unless c_v_array[-1] == 0
-                      versions_for_platform[chef_version_final]
-                    end
-                  rescue
-                    # package_url gets set to nil, error gets raised
-                    nil
-                  end
-    unless package_url
-      error_message = "No chef-client #{chef_version_final} installer for #{platform} #{platform_version} #{machine}"
-      raise InvalidDownloadPath, error_message
-    end
-    base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
-    redirect base + package_url
+  get '/download-server' do
+    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list)))
   end
 
   #
@@ -168,6 +117,112 @@ class Omnitruck < Sinatra::Base
     directory = JSON.parse(File.read(settings.build_list))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
+  end
+
+
+
+  # ---
+  # HELPER METHODS
+  # ---
+  VERSION_REGEX = /^(\d+).(\d+).(\d+)-?(\d+)?$/
+  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)(?:-|\.)(alpha|beta|rc)(?:-|\.)(\d+)(-(\w+)?)$/
+
+  # Helper to turn a chef version into an array for comparison with other versions
+  def version_to_array(v, prerelease)
+    match = nil
+
+    # parse as the test regex only if 'prerelease' is enabled.
+    if prerelease
+      # e.g., 11.0.0-alpha-1-g092c123 -> [11, 0, 0, "alpha", 1, "g092c123"]
+      match = v.match(VERSION_TEST_REGEX)
+      if match
+        v_arr = match[1..6]
+        # The things that are supposed to be integers should get
+        # turned into integers, so they sort correctly.
+        [0, 1, 2, 4].each do |i|
+          v_arr[i] = v_arr[i].to_i
+        end
+      end
+    end
+
+    # otherwise, fall back to the normal regex.
+    if !match
+      # e.g., "10.14.4" -> [10, 14, 4]
+      #  or "10.16.2-1" -> [10, 16, 2, 1]
+      match = v.match(VERSION_REGEX)
+      if match
+        v_arr = match[1..4]
+        v_arr[3] ||= 0
+        # The things that are supposed to be integers should get
+        # turned into integers, so they sort correctly.
+        v_arr.map! {|v| v.to_i}
+      end
+    end
+    v_arr
+  end
+
+  # Take the input architecture, and an optional version (latest is
+  # default), and redirect to an appropriate build. This is called for
+  # both /download
+  def handle_download(name, build_hash)
+    chef_version     = params['v']
+    platform         = params['p']
+    platform_version = params['pv']
+    machine          = params['m']
+    prerelease       = params['prerelease']
+
+    error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
+
+    if !build_hash[platform] || !build_hash[platform][platform_version] || !build_hash[platform][platform_version][machine]
+      raise InvalidDownloadPath, error_msg
+    end
+
+    # Pull out the map, which is a string version -> URL; Convert it
+    # to a mapping of version_array -> URL.
+    #         e.g. {"10.14.2-2" => "..."} 
+    # would become {[10, 14, 2, 2] => "..."}
+    versions_available = build_hash[platform][platform_version][machine]
+    version_arrays_available = versions_available.keys.inject({}) do |res, version_string|
+      # version_to_array will return nil if the version passed it
+      # doesn't match the appropriate regex, and it will also filter
+      # out test versions unless prerelease is true.
+      version_array = version_to_array(version_string, prerelease)
+      if version_array
+        res[version_array] = versions_available[version_string]
+      end
+      res
+    end
+
+    # Rubygems considers any version with an alpha character to be a
+    # non-stable release. Thus we will exclude these builds unless the
+    # user explicitly chooses them
+    if chef_version && ( chef_version.include?("-") || chef_version.match(/[[:alpha:]]/) )
+      package_url = versions_available[chef_version]
+    else
+      # Turn the chef_version param into an array
+      requested_version_array = if chef_version.nil? || chef_version == ""
+                                  version_arrays_available.keys.max
+                                else
+                                  version_to_array(chef_version, prerelease)
+                                end
+
+      # Find all of the iterations of the version matching the first three parts of chef_version
+      matching_versions = version_arrays_available.keys.find_all {|v| v[0..2] == requested_version_array[0..2]}
+
+      # Grabs the max iteration number
+      requested_version_array = matching_versions.max_by {|v| v[-1]}
+
+      # Now look it up based on the version we've found.
+      package_url = version_arrays_available[requested_version_array]
+    end
+
+    # If we didn't find anything, throw an error.
+    unless package_url
+      raise InvalidDownloadPath, error_msg
+    end
+
+    base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
+    redirect base + package_url
   end
 
 end
