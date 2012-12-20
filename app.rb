@@ -3,6 +3,8 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
+require 'opscode/semver'
+
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
 
@@ -124,52 +126,85 @@ class Omnitruck < Sinatra::Base
   # ---
   # HELPER METHODS
   # ---
-  VERSION_REGEX = /^(\d+).(\d+).(\d+)-?(\d+)?$/
-  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)(?:-|\.)(alpha|beta|rc)(?:-|\.)(\d+)(-(\w+)?)$/
 
-  # Helper to turn a chef version into an array for comparison with other versions
-  def version_to_array(v, prerelease)
-    match = nil
+  #  
+  # +version_hash+: a hash of SemVer object to URL path
+  #
+  # +given_version+: String form of a semantic version that we can use
+  # for filtering.  If it is a release version (e.g. "1.0.0"), we'll
+  # keep only versions from the hash that share the same major, minor,
+  # and patch versions.  If it's a pre-release
+  def filter_semvers(version_hash, given_version, prerelease, use_nightlies)
 
-    # parse as the test regex only if 'prerelease' is enabled.
-    if prerelease
-      # e.g., 11.0.0-alpha-1-g092c123 -> [11, 0, 0, "alpha", 1, "g092c123"]
-      match = v.match(VERSION_TEST_REGEX)
-      if match
-        v_arr = match[1..6]
-        # The things that are supposed to be integers should get
-        # turned into integers, so they sort correctly.
-        [0, 1, 2, 4].each do |i|
-          v_arr[i] = v_arr[i].to_i
+    filtering_version = if given_version.nil? || given_version == "latest"
+                          nil
+                        else
+                          Opscode::SemVer.new(given_version)
+                        end
+
+    # If we've requested a nightly (whether for a pre-release or release),
+    # there's no sense doing any other filtering
+    if filtering_version && filtering_version.nightly?
+      return version_hash[filtering_version]
+    end
+
+    # If we've requested a prerelease, we only need to see if we want
+    # a nightly or not.  If so, keep only the nightlies for that
+    # prerelease, and then take the most recent.  Otherwise, just
+    # return the specified prerelease version
+    if filtering_version && filtering_version.prerelease?
+      if use_nightlies
+        filtered = version_hash.select do |version, url_path|
+          filtering_version.in_same_release_tree(version) && filtering_version.prerelease == version.prerelease
         end
+        return version_hash[filtered.keys.max]
+      else
+        return version_hash[filtering_version]
       end
     end
 
-    # otherwise, fall back to the normal regex.
-    if !match
-      # e.g., "10.14.4" -> [10, 14, 4]
-      #  or "10.16.2-1" -> [10, 16, 2, 1]
-      match = v.match(VERSION_REGEX)
-      if match
-        v_arr = match[1..4]
-        v_arr[3] ||= 0
-        # The things that are supposed to be integers should get
-        # turned into integers, so they sort correctly.
-        v_arr.map! {|v| v.to_i}
-      end
+    # If we've gotten this far, we're either just interested in
+    # variations on a specific release, or the latest of all releases
+    # (depending on various combinations of prerelease and nightly
+    # status)
+    filtered = version_hash.select do |version, url_path|
+
+      # If we're given a version to filter by, then we're only
+      # interested in other versions that share the same major, minor,
+      # and patch versions.
+      #
+      # If we weren't given a version to filter by, then we don't
+      # care, and we'll take everything
+      in_release_tree = filtering_version ? filtering_version.in_same_release_tree(version) : true
+
+      (if prerelease && use_nightlies
+         version.prerelease? && version.nightly?
+       elsif !prerelease && use_nightlies
+         !version.prerelease? && version.nightly?
+       elsif prerelease && !use_nightlies
+         version.prerelease? && !version.nightly?
+       elsif !prerelease && !use_nightlies
+         version.release?
+       end) && in_release_tree
     end
-    v_arr
+
+    # return the best match (i.e., the most recent thing, subject to
+    # our filtering parameters)
+    filtered[filtered.keys.max]
   end
+
 
   # Take the input architecture, and an optional version (latest is
   # default), and redirect to an appropriate build. This is called for
   # both /download
   def handle_download(name, build_hash)
-    chef_version     = params['v']
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
-    prerelease       = params['prerelease']
+
+    chef_version     = params['v']
+    prerelease       = params['prerelease'] == "true"
+    use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
@@ -177,52 +212,22 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, error_msg
     end
 
-    # Pull out the map, which is a string version -> URL; Convert it
-    # to a mapping of version_array -> URL.
-    #         e.g. {"10.14.2-2" => "..."} 
-    # would become {[10, 14, 2, 2] => "..."}
-    versions_available = build_hash[platform][platform_version][machine]
-    version_arrays_available = versions_available.keys.inject({}) do |res, version_string|
-      # version_to_array will return nil if the version passed it
-      # doesn't match the appropriate regex, and it will also filter
-      # out test versions unless prerelease is true.
-      version_array = version_to_array(version_string, prerelease)
-      if version_array
-        res[version_array] = versions_available[version_string]
-      end
-      res
+    raw_versions_available = build_hash[platform][platform_version][machine]
+
+    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+      version_string, url_path = kv
+      version = Opscode::SemVer.new(version_string)
+      acc[version] = url_path
+      acc
     end
 
-    # Rubygems considers any version with an alpha character to be a
-    # non-stable release. Thus we will exclude these builds unless the
-    # user explicitly chooses them
-    if chef_version && ( chef_version.include?("-") || chef_version.match(/[[:alpha:]]/) )
-      package_url = versions_available[chef_version]
-    else
-      # Turn the chef_version param into an array
-      requested_version_array = if chef_version.nil? || chef_version == ""
-                                  version_arrays_available.keys.max
-                                else
-                                  version_to_array(chef_version, prerelease)
-                                end
+    package_url = filter_semvers(semvers_available, chef_version, prerelease, use_nightlies)
 
-      # Find all of the iterations of the version matching the first three parts of chef_version
-      matching_versions = version_arrays_available.keys.find_all {|v| v[0..2] == requested_version_array[0..2]}
-
-      # Grabs the max iteration number
-      requested_version_array = matching_versions.max_by {|v| v[-1]}
-
-      # Now look it up based on the version we've found.
-      package_url = version_arrays_available[requested_version_array]
-    end
-
-    # If we didn't find anything, throw an error.
     unless package_url
       raise InvalidDownloadPath, error_msg
-    end
+    end    
 
     base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
-
 end
