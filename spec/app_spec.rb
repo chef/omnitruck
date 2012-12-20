@@ -455,6 +455,12 @@ describe 'Omnitruck' do
   end
 
   describe "/full_list" do
+
+    before :each do
+      # Use our dummy data
+      Omnitruck.stub!(:build_list).and_return(client_data("build_list"))
+    end
+
     it "endpoint should exist" do
       get '/full_list'
       last_response.should be_ok
