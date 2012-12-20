@@ -1,6 +1,6 @@
 require 'opscode/semver'
 
-describe Opscode::SemVer, :focus do
+describe Opscode::SemVer do
   context "#initialize" do
     it "works for 1.0.0" do
       s = Opscode::SemVer.new("1.0.0")
