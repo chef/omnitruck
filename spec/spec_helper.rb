@@ -1,5 +1,8 @@
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
+
+#require File.join(File.dirname(__FILE__), '..', 'lib', 'opscode', 'semver.rb')
+
 require 'sinatra'
 require 'rack/test'
 
@@ -18,6 +21,10 @@ module Opscode
       # Returns the contents of the given server data JSON file as a string
       def server_data(name)
         File.join(SPEC_DATA, "server_data", "#{name}.json")
+      end
+
+      def client_data(name)
+        File.join(SPEC_DATA, "client_data", "#{name}.json")
       end
 
     end

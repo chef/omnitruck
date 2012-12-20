@@ -462,16 +462,21 @@ describe 'Omnitruck' do
   end
 
   describe "/_status" do
+    let(:endpoint){"/_status"}
+
+    before :each do
+      # Use our dummy data
+      Omnitruck.stub!(:build_list).and_return(client_data("build_list"))
+    end
+
     it "endpoint should exist" do
-      get '/_status'
+      get endpoint
       last_response.should be_ok
     end
 
     it "returns the timestamp of the last poller run" do
-      build_list_json = '{ "run_data": { "timestamp": "Thu Aug 16 11:48:08 -0700 2012" } }'
-      File.stub!(:read).and_return(build_list_json)
-      get '/_status'
-      JSON.parse(last_response.body).should == JSON.parse(build_list_json)['run_data']
+      get endpoint
+      JSON.parse(last_response.body)["timestamp"].should == "Thu Aug 16 11:48:08 -0700 2012" 
     end
   end
 end
