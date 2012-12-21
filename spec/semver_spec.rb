@@ -159,4 +159,22 @@ describe Opscode::SemVer do
     end
     
   end
+
+  describe "Opscode::SemVer.as_semver_string", :focus do
+    require 'opscode/git_describe_version'
+    
+    context "translating a GitDescribeVersion" do
+      let(:git_describe_version_string){"10.16.2-49-g21353f0-1"}
+      let(:git_describe){Opscode::GitDescribeVersion.new(git_describe_version_string)}
+      
+      it "generates a semver for a release nightly" do
+        string = Opscode::SemVer.as_semver_string(git_describe)
+        string.should eq "10.16.2+49.g21353f0.1"
+        semver = Opscode::SemVer.new(string)
+        (semver.nightly?).should be_true
+        (semver.prerelease?).should be_false
+      end
+    end
+  end
+  
 end

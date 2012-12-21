@@ -5,6 +5,13 @@ module Opscode
 
     SEMVER_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:\-([\dA-Za-z\-\.]+))?(?:\+([\dA-Za-z\-\.]+))?$/
 
+    def self.as_semver_string(v)
+      raise ArgumentError unless v.is_a? Version
+      s = [v.major, v.minor, v.patch].join(".")
+      s += "-#{v.prerelease}" if v.prerelease
+      s += "+#{v.build}" if v.build
+      s
+    end
 
     def initialize(version)
       match = version.match(SEMVER_REGEX)
