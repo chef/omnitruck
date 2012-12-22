@@ -1,9 +1,5 @@
 require 'json'
-require 'opscode/version'
-require 'opscode/semver'
-require 'opscode/opscode_semver'
-require 'opscode/git_describe_version'
-require 'opscode/rubygems_version'
+require 'opscode/versions'
 
 module Opscode
 
@@ -92,22 +88,22 @@ module Opscode
         begin
           if v.start_with?("10.")
             begin 
-              ver = Opscode::RubygemsVersion.new(v)
+              ver = Opscode::Versions::RubygemsVersion.new(v)
               valid << ver
             rescue
-              ver = Opscode::GitDescribeVersion.new(v)
+              ver = Opscode::Versions::GitDescribeVersion.new(v)
               valid << ver
             end
           elsif v.start_with?("11.")
             begin
-              ver = Opscode::GitDescribeVersion.new(v)
+              ver = Opscode::Versions::GitDescribeVersion.new(v)
               valid << ver
             rescue
               begin
-                ver = Opscode::OpscodeSemVer.new(v)
+                ver = Opscode::Versions::OpscodeSemVer.new(v)
                 valid << ver
               rescue
-                ver = Opscode::SemVer.new(v)
+                ver = Opscode::Versions::SemVer.new(v)
                 valid << ver
               end
             end

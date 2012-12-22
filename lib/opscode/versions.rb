@@ -1,0 +1,5 @@
+require 'opscode/versions/version'
+require 'opscode/versions/semver'
+require 'opscode/versions/opscode_semver'
+require 'opscode/versions/rubygems_version'
+require 'opscode/versions/git_describe_version'

@@ -1,6 +1,6 @@
-require 'opscode/rubygems_version'
+require 'opscode/versions'
 
-describe Opscode::RubygemsVersion do
+describe Opscode::Versions::RubygemsVersion do
   context "#initialize" do    
     versions = [
                 ["10.1.1",         [10,1,1, nil, nil]],
@@ -20,7 +20,7 @@ describe Opscode::RubygemsVersion do
       major, minor, patch, prerelease, build = pieces
 
       it "works for #{version_string}" do
-        v = Opscode::RubygemsVersion.new(version_string)
+        v = Opscode::Versions::RubygemsVersion.new(version_string)
         v.major.should eq major
         v.minor.should eq minor
         v.patch.should eq patch

@@ -3,8 +3,7 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
-require 'opscode/semver'
-require 'opscode/opscode_semver'
+require 'opscode/versions'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -158,19 +157,19 @@ class Omnitruck < Sinatra::Base
   def janky_workaround_for_processing_all_our_different_version_strings(version_string)
     if version_string.start_with?("10.")
       begin
-        Opscode::RubygemsVersion.new(version_string)
+        Opscode::Versions::RubygemsVersion.new(version_string)
       rescue
-        Opscode::GitDescribeVersion.new(version_string)
+        Opscode::Versions::GitDescribeVersion.new(version_string)
       end
     elsif version_string.start_with?("11.")
       begin
-        Opscode::GitDescribeVersion.new(version_string)
+        Opscode::Versions::GitDescribeVersion.new(version_string)
       rescue
         begin
           # Note: This is the single version format we should converge upon
-          Opscode::OpscodeSemVer.new(version_string)
+          Opscode::Versions::OpscodeSemVer.new(version_string)
         rescue
-          Opscode::SemVer.new(version_string)
+          Opscode::Versions::SemVer.new(version_string)
         end
       end
     else
@@ -179,7 +178,7 @@ class Omnitruck < Sinatra::Base
   end
 
   # Convert the given +chef_version+ parameter string into a
-  # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
+  # +Opscode::Versions::Version+ object.  Returns +nil+ if +chef_version+ is
   # either +nil+ or the String +"latest"+.
   def resolve_version(chef_version)
     if chef_version.nil? || chef_version == "latest"
@@ -219,10 +218,10 @@ class Omnitruck < Sinatra::Base
       acc
     end
 
-    target = Opscode::Version.find_target_version(semvers_available.keys,
-                                                  chef_version,
-                                                  prerelease, 
-                                                  use_nightlies)
+    target = Opscode::Versions::Version.find_target_version(semvers_available.keys,
+                                                            chef_version,
+                                                            prerelease, 
+                                                            use_nightlies)
     
     package_url = semvers_available[target]
 
