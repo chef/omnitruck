@@ -4,6 +4,7 @@ require 'json'
 require 'pp'
 
 require 'opscode/semver'
+require 'opscode/opscode_semver'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -63,6 +64,8 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
+
+  # TODO: why not do a permanent redirect here instead?
   #
   # TODO: redundant end-point to be deleted. Currently included for
   # backwards compatibility.
@@ -121,78 +124,70 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(status)
   end
 
-
-
   # ---
   # HELPER METHODS
   # ---
 
-  #  
-  # +version_hash+: a hash of SemVer object to URL path
+  ######################## NOTICE ##############################################
   #
-  # +given_version+: String form of a semantic version that we can use
-  # for filtering.  If it is a release version (e.g. "1.0.0"), we'll
-  # keep only versions from the hash that share the same major, minor,
-  # and patch versions.  If it's a pre-release
-  def filter_semvers(version_hash, given_version, prerelease, use_nightlies)
+  # The following is an intentionally horrible method, both in name
+  # and implementation, in the hopes that its continuing presence will
+  # be a persistent goad to clean up the variety of version strings we
+  # have in Omnitruck, and converge upon a single uniform scheme.
+  #
+  ##############################################################################
 
-    filtering_version = if given_version.nil? || given_version == "latest"
-                          nil
-                        else
-                          Opscode::SemVer.new(given_version)
-                        end
-
-    # If we've requested a nightly (whether for a pre-release or release),
-    # there's no sense doing any other filtering
-    if filtering_version && filtering_version.nightly?
-      return version_hash[filtering_version]
-    end
-
-    # If we've requested a prerelease, we only need to see if we want
-    # a nightly or not.  If so, keep only the nightlies for that
-    # prerelease, and then take the most recent.  Otherwise, just
-    # return the specified prerelease version
-    if filtering_version && filtering_version.prerelease?
-      if use_nightlies
-        filtered = version_hash.select do |version, url_path|
-          filtering_version.in_same_release_tree(version) && filtering_version.prerelease == version.prerelease
-        end
-        return version_hash[filtered.keys.max]
-      else
-        return version_hash[filtering_version]
+  # Handles the unification of the various versions in Omnitruck **AT
+  # THE TIME OF WRITING** (late December 2012).  All the versions in
+  # the 10.x line are mostly Rubygems-style versions, whereas most of
+  # the ones in the 11.x line are 'git describe'-based, with more
+  # recent ones transitioning to a more proper SemVer-style scheme.
+  #
+  # Eventually, we will converge on the +OpscodeSemVer+ style, which has
+  # recently been added to our Omnibus build system.  This version is
+  # SemVer compliant, but enforces Opscode-specific conventions for
+  # pre-release and build specifiers.
+  # 
+  # Once we phase out the other versioning schemes, this method can go
+  # away completely in favor of direct instantiation of an
+  # +OpscodeSemVer+ object.
+  #
+  # Note that there is no support in this method for 12.x versions; if
+  # this code is still around when Chef 12 comes out, we have larger
+  # problems :)
+  def janky_workaround_for_processing_all_our_different_version_strings(version_string)
+    if version_string.start_with?("10.")
+      begin
+        Opscode::RubygemsVersion.new(version_string)
+      rescue
+        Opscode::GitDescribeVersion.new(version_string)
       end
+    elsif version_string.start_with?("11.")
+      begin
+        Opscode::GitDescribeVersion.new(version_string)
+      rescue
+        begin
+          # Note: This is the single version format we should converge upon
+          Opscode::OpscodeSemVer.new(version_string)
+        rescue
+          Opscode::SemVer.new(version_string)
+        end
+      end
+    else
+      raise Error, "Unsupported version format #{version_string}"
     end
-
-    # If we've gotten this far, we're either just interested in
-    # variations on a specific release, or the latest of all releases
-    # (depending on various combinations of prerelease and nightly
-    # status)
-    filtered = version_hash.select do |version, url_path|
-
-      # If we're given a version to filter by, then we're only
-      # interested in other versions that share the same major, minor,
-      # and patch versions.
-      #
-      # If we weren't given a version to filter by, then we don't
-      # care, and we'll take everything
-      in_release_tree = filtering_version ? filtering_version.in_same_release_tree(version) : true
-
-      (if prerelease && use_nightlies
-         version.prerelease? && version.nightly?
-       elsif !prerelease && use_nightlies
-         !version.prerelease? && version.nightly?
-       elsif prerelease && !use_nightlies
-         version.prerelease? && !version.nightly?
-       elsif !prerelease && !use_nightlies
-         version.release?
-       end) && in_release_tree
-    end
-
-    # return the best match (i.e., the most recent thing, subject to
-    # our filtering parameters)
-    filtered[filtered.keys.max]
   end
 
+  # Convert the given +chef_version+ parameter string into a
+  # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
+  # either +nil+ or the String +"latest"+.
+  def resolve_version(chef_version)
+    if chef_version.nil? || chef_version == "latest"
+      nil
+    else
+      janky_workaround_for_processing_all_our_different_version_strings(chef_version)
+    end
+  end
 
   # Take the input architecture, and an optional version (latest is
   # default), and redirect to an appropriate build. This is called for
@@ -208,20 +203,28 @@ class Omnitruck < Sinatra::Base
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
+    # TODO: Handle invalid chef_version strings
+    chef_version = resolve_version(chef_version)
+
     if !build_hash[platform] || !build_hash[platform][platform_version] || !build_hash[platform][platform_version][machine]
       raise InvalidDownloadPath, error_msg
     end
 
     raw_versions_available = build_hash[platform][platform_version][machine]
-
+    
     semvers_available = raw_versions_available.reduce({}) do |acc, kv|
       version_string, url_path = kv
-      version = Opscode::SemVer.new(version_string)
+      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
       acc[version] = url_path
       acc
     end
 
-    package_url = filter_semvers(semvers_available, chef_version, prerelease, use_nightlies)
+    target = Opscode::Version.find_target_version(semvers_available.keys,
+                                                  chef_version,
+                                                  prerelease, 
+                                                  use_nightlies)
+    
+    package_url = semvers_available[target]
 
     unless package_url
       raise InvalidDownloadPath, error_msg
