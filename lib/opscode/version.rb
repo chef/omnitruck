@@ -8,21 +8,43 @@ module Opscode
       raise Error, "You must override the initializer!"
     end
 
+    # Is this an official release?
+    def release?
+      @prerelease.nil? && @build.nil?
+    end
+    
+    # Is this an official pre-release? (i.e., not a nightly build)
     def prerelease?
-      !!@prerelease
+      @prerelease && @build.nil?
     end
 
+    # Is this a nightly build of a release?
+    def release_nightly?
+      @prerelease.nil? && @build
+    end
+
+    # Is this a nightly build of a pre-release?
+    def prerelease_nightly?
+      @prerelease && @build
+    end
+
+    # Is this a nightly build (either of a release or a pre-release)?
     def nightly?
       !!@build
     end
 
-    def release?
-      @prerelease.nil? && @build.nil?
+    # Returns +true+ if +other+ and this +Version+ share the same
+    # major, minor, and patch values.  Prerelease and build specifiers
+    # are not taken into consideration.
+    def in_same_release_line?(other)
+      @major == other.major && @minor == other.minor && @patch == other.patch
     end
 
-    def in_same_release_tree(other)
-      raise(ArgumentError, "Must compare with Version")unless other.is_a?(Version)
-      @major == other.major && @minor == other.minor && @patch == other.patch
+    # Returns +true+ if +other+ and this +Version+ share the same
+    # major, minor, patch, and prerelease values.  Build specifiers
+    # are not taken into consideration.
+    def in_same_prerelease_line?(other)
+      @major == other.major && @minor == other.minor && @patch == other.patch && @prerelease == other.prerelease
     end
 
     def to_s
