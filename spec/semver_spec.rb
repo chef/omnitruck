@@ -45,9 +45,10 @@ describe Opscode::SemVer do
   end
 
   context "#to_s" do
-
-    ["1.0.0", "1.0.0-alpha.1", "1.0.0-alpha.1+build.123", "1.0.0+build.456"].each do |v|
-
+    ["1.0.0",
+     "1.0.0-alpha.1",
+     "1.0.0-alpha.1+build.123",
+     "1.0.0+build.456"].each do |v|
       it "reconstructs the initial input of #{v}" do
         Opscode::SemVer.new(v).to_s.should == v
       end
@@ -102,6 +103,8 @@ describe Opscode::SemVer do
         let(:version){"1.0.0"}
         its(:release?){should be_true}
         its(:prerelease?){should be_false}
+        its(:release_nightly?){should be_false}
+        its(:prerelease_nightly?){should be_false}
         its(:nightly?){should be_false}
       end
 
@@ -109,20 +112,26 @@ describe Opscode::SemVer do
         let(:version){"1.0.0-alpha.1"}
         its(:release?){should be_false}
         its(:prerelease?){should be_true}
+        its(:release_nightly?){should be_false}
+        its(:prerelease_nightly?){should be_false}
         its(:nightly?){should be_false}
       end
 
       context "Nightly pre-release build" do
         let(:version){"1.0.0-alpha.1+build.123"}
         its(:release?){should be_false}
-        its(:prerelease?){should be_true}
+        its(:prerelease?){should be_false}
+        its(:release_nightly?){should be_false}
+        its(:prerelease_nightly?){should be_true}
         its(:nightly?){should be_true}
       end
 
-      context "Nightly build" do
+      context "Nightly release build" do
         let(:version){"1.0.0+build.123"}
         its(:release?){should be_false}
         its(:prerelease?){should be_false}
+        its(:release_nightly?){should be_true}
+        its(:prerelease_nightly?){should be_false}
         its(:nightly?){should be_true}
       end
     end
@@ -134,33 +143,41 @@ describe Opscode::SemVer do
         end
       end
 
-      context "prereleases only (includes nightlies)" do
+      context "prereleases only" do
         it "works" do
-          semvers.select(&:prerelease?).sort.should eq(["1.0.0-alpha",
-                                                        "1.0.0-alpha.1",
-                                                        "1.0.0-beta.2",
-                                                        "1.0.0-beta.11",
-                                                        "1.0.0-rc.1",
-                                                        "1.0.0-rc.1+build.1"].map{|v| Opscode::SemVer.new(v)})
+          filtered = semvers.select(&:prerelease?)
+          filtered.sort.should eq(["1.0.0-alpha",
+                                   "1.0.0-alpha.1",
+                                   "1.0.0-beta.2",
+                                   "1.0.0-beta.11",
+                                   "1.0.0-rc.1" 
+                                  ].map{|v| Opscode::SemVer.new(v)})
         end
       end
 
-      context "release nightlies" do
+      context "release nightlies only" do
         it "works" do
-          filtered = semvers.select{|v| v.nightly? && !v.prerelease?}
+          filtered = semvers.select(&:release_nightly?)
           filtered.sort.should eq(["1.0.0+0.3.7",
                                    "1.3.7+build",
                                    "1.3.7+build.2.b8f12d7",
-                                   "1.3.7+build.11.e0f985a"].map{|v| Opscode::SemVer.new(v)})
+                                   "1.3.7+build.11.e0f985a"
+                                  ].map{|v| Opscode::SemVer.new(v)})
         end
       end
-      
+
+      context "prereleases nightlies only" do
+        it "works" do
+          filtered = semvers.select(&:prerelease_nightly?)
+          filtered.should eq [Opscode::SemVer.new("1.0.0-rc.1+build.1")]
+        end
+      end
       
     end
     
   end
 
-  describe "Opscode::SemVer.as_semver_string", :focus do
+  describe "Opscode::SemVer.as_semver_string" do
     require 'opscode/git_describe_version'
     
     context "translating a GitDescribeVersion" do
@@ -171,8 +188,7 @@ describe Opscode::SemVer do
         string = Opscode::SemVer.as_semver_string(git_describe)
         string.should eq "10.16.2+49.g21353f0.1"
         semver = Opscode::SemVer.new(string)
-        (semver.nightly?).should be_true
-        (semver.prerelease?).should be_false
+        (semver.release_nightly?).should be_true
       end
     end
   end
