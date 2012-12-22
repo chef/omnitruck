@@ -181,24 +181,24 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as "12.0.0-rc.1"
+                should_retrieve_latest_as "11.0.0-rc.1"
               end
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as "12.0.0-rc.1+20121225164140.git.207.694b062"
+                should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
               end
               
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as "12.0.0"
+                should_retrieve_latest_as "11.0.0"
               end
               
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as "12.0.0+20130101164140.git.207.694b062"
+                should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
               end
             end # without an explicit version
 

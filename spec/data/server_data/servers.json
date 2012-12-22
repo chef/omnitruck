@@ -35,27 +35,30 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
-	  
+
+	  "10.12.0-1"					: "/ubuntu/10.04/x86_64/chef-server_10.12.0-1.ubuntu.10.04_amd64.deb",
+	  "10.14.0-1"					: "/ubuntu/10.04/x86_64/chef-server_10.14.0-1.ubuntu.10.04_amd64.deb",
+	  "10.14.0.rc.0-1"				: "/ubuntu/10.04/x86_64/chef-server_10.14.0.rc.0-1.ubuntu.10.04_amd64.deb",
+	  "10.14.0.rc.1-1"				: "/ubuntu/10.04/x86_64/chef-server_10.14.0.rc.1-1.ubuntu.10.04_amd64.deb",
+	  "10.14.2-1"					: "/ubuntu/10.04/x86_64/chef-server_10.14.2-1.ubuntu.10.04_amd64.deb",
+	  "10.14.4-1"					: "/ubuntu/10.04/x86_64/chef-server_10.14.4-1.ubuntu.10.04_amd64.deb",
+	  "10.14.4-2"					: "/ubuntu/10.04/x86_64/chef-server_10.14.4-2.ubuntu.10.04_amd64.deb",
+	  "10.16.0-1"					: "/ubuntu/10.04/x86_64/chef-server_10.16.0-1.ubuntu.10.04_amd64.deb",
+	  "10.16.0.rc.0-1"				: "/ubuntu/10.04/x86_64/chef-server_10.16.0.rc.0-0.ubuntu.10.04_amd64.deb",
+	  "10.16.0.rc.1-1"				: "/ubuntu/10.04/x86_64/chef-server_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
+	  "10.16.2-1"					: "/ubuntu/10.04/x86_64/chef-server_10.16.2-1.ubuntu.10.04_amd64.deb",
+	  "10.16.2-49-g21353f0-1"			: "/ubuntu/10.04/x86_64/chef-server_10.16.2-49-g21353f0-1.ubuntu.10.04_amd6",
+
 	  "11.0.0-alpha"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-1.ubuntu.10.04_amd64.deb",
-          "11.0.0-alpha.1"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha.1-1.ubuntu.10.04_amd64.deb",
-          "11.0.0-beta.2"		 		: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2-1.ubuntu.10.04_amd64.deb",
-          "11.0.0-beta.2+build.123"       		: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2+build.123-1.ubuntu.10.04_amd64.deb",
-          "11.0.0-beta.11"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.11-1.ubuntu.10.04_amd64.deb",
+	  "11.0.0-alpha.1"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha.1-1.ubuntu.10.04_amd64.deb",
+	  "11.0.0-beta.2"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2-1.ubuntu.10.04_amd64.deb",
+	  "11.0.0-beta.2+build.123"			: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2+build.123-1.ubuntu.10.04_amd64.deb",
+	  "11.0.0-beta.11"				: "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.11-1.ubuntu.10.04_amd64.deb",
 	  "11.0.0-rc.1"					: "/ubuntu/10.04/x86_64/chef-server_11.0.0-rc.1-1.ubuntu.10.04_amd64.deb",
 	  "11.0.0-rc.1+20121225164140.git.207.694b062"	: "/ubuntu/10.04/x86_64/chef-server_11.0.0-rc.1+20121225164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
 	  "11.0.0"					: "/ubuntu/10.04/x86_64/chef-server_11.0.0-1.ubuntu.10.04_amd64.deb",
 	  "11.0.0+20130101164140.git.207.694b062"	: "/ubuntu/10.04/x86_64/chef-server_11.0.0+20130101164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
-	  "11.0.0+20130101164140.git.2.deadbee"		: "/ubuntu/10.04/x86_64/chef-server_11.0.0+20130101164140.git.2.deadbee-1.ubuntu.10.04_amd64.deb",
-
-	  "12.0.0-alpha"				: "/ubuntu/10.04/x86_64/chef-server_12.0.0-alpha-1.ubuntu.10.04_amd64.deb",
-          "12.0.0-alpha.1"				: "/ubuntu/10.04/x86_64/chef-server_12.0.0-alpha.1-1.ubuntu.10.04_amd64.deb",
-          "12.0.0-beta.2"		 		: "/ubuntu/10.04/x86_64/chef-server_12.0.0-beta.2-1.ubuntu.10.04_amd64.deb",
-          "12.0.0-beta.11"				: "/ubuntu/10.04/x86_64/chef-server_12.0.0-beta.11-1.ubuntu.10.04_amd64.deb",
-	  "12.0.0-rc.1"					: "/ubuntu/10.04/x86_64/chef-server_12.0.0-rc.1-1.ubuntu.10.04_amd64.deb",
-	  "12.0.0-rc.1+20121225164140.git.207.694b062"	: "/ubuntu/10.04/x86_64/chef-server_12.0.0-rc.1+20121225164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
-	  "12.0.0"					: "/ubuntu/10.04/x86_64/chef-server_12.0.0-1.ubuntu.10.04_amd64.deb",
-	  "12.0.0+20130101164140.git.207.694b062"	: "/ubuntu/10.04/x86_64/chef-server_12.0.0+20130101164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
-	  "12.0.0+20130101164140.git.2.deadbee"		: "/ubuntu/10.04/x86_64/chef-server_12.0.0++20130101164140.git.2.deadbee-1.ubuntu.10.04_amd64.deb"
+	  "11.0.0+20130101164140.git.2.deadbee"		: "/ubuntu/10.04/x86_64/chef-server_11.0.0+20130101164140.git.2.deadbee-1.ubuntu.10.04_amd64.deb"
 
       },
       "i686": {
