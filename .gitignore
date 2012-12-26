@@ -1,2 +1,6 @@
 config/config.yml
 rspec.failures
+
+# Bundler-related ignores
+bin/*
+.bundle
