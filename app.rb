@@ -146,7 +146,7 @@ class Omnitruck < Sinatra::Base
   # recently been added to our Omnibus build system.  This version is
   # SemVer compliant, but enforces Opscode-specific conventions for
   # pre-release and build specifiers.
-  # 
+  #
   # Once we phase out the other versioning schemes, this method can go
   # away completely in favor of direct instantiation of an
   # +OpscodeSemVer+ object.
@@ -210,7 +210,7 @@ class Omnitruck < Sinatra::Base
     end
 
     raw_versions_available = build_hash[platform][platform_version][machine]
-    
+
     semvers_available = raw_versions_available.reduce({}) do |acc, kv|
       version_string, url_path = kv
       version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
@@ -220,14 +220,14 @@ class Omnitruck < Sinatra::Base
 
     target = Opscode::Versions::Version.find_target_version(semvers_available.keys,
                                                             chef_version,
-                                                            prerelease, 
+                                                            prerelease,
                                                             use_nightlies)
-    
+
     package_url = semvers_available[target]
 
     unless package_url
       raise InvalidDownloadPath, error_msg
-    end    
+    end
 
     base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url

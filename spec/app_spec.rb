@@ -100,7 +100,7 @@ describe 'Omnitruck' do
       # Use our dummy data
       Omnitruck.stub!(:build_server_list).and_return(server_data("servers"))
     end
-    
+
     # Helper lets to make parameter declaration and handling easier
     let(:platform){ nil }
     let(:package_type){ nil }
@@ -124,7 +124,7 @@ describe 'Omnitruck' do
 
     # To handle situations where e.g., 'x86_64' is used in an installer name as 'amd64'
     let(:architecture_alt){ architecture }
-    
+
     # You can ignore this for now... we only have "1" iterations so
     # far.  This is more for self-documenting purposes than anything
     # else.
@@ -142,7 +142,7 @@ describe 'Omnitruck' do
           last_request.url.should == http_type_string + "://#{Omnitruck.aws_bucket}.s3.amazonaws.com/#{platform}/#{platform_version}/#{architecture}/chef-server_#{expected_version}-#{iteration_number}.#{platform}.#{platform_version}_#{architecture_alt}.#{package_type}"
         end
       end
-      
+
       describe "Ubuntu" do
         let(:platform){"ubuntu"}
         let(:package_type){"deb"}
@@ -165,13 +165,13 @@ describe 'Omnitruck' do
                 let(:nightlies){true}
                 should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
               end
-              
+
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
                 should_retrieve_latest_as "11.0.0"
               end
-              
+
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
@@ -207,28 +207,28 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
                 end
               end # proper release
-            
+
               context "that is a pre-release" do
                 let(:chef_version){"11.0.0-rc.1"}
-                
+
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-rc.1"
                 end
-                
+
                 context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
                   should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
                 end
-                
+
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-rc.1"
                 end
-              
+
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
@@ -238,53 +238,53 @@ describe 'Omnitruck' do
 
               context "that is a another pre-release that's earlier than the last one" do
                 let(:chef_version){"11.0.0-beta.2"}
-                
+
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-beta.2"
                 end
-                
+
                 context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
                   should_retrieve_latest_as "11.0.0-beta.2+build.123"
                 end
-                
+
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-beta.2"
                 end
-              
+
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
                   should_retrieve_latest_as "11.0.0-beta.2+build.123"
                 end
               end # another pre-release
-              
+
               context "that is a release nightly" do
                 let(:chef_version){"11.0.0+20130101164140.git.2.deadbee"}
-                
+
                 context "filtering for latest pre-release in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
                 end
-                
+
                 context "filtering for latest pre-release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){true}
                   should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
                 end
-                
+
                 context "filtering for latest release in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
                 end
-                
+
                 context "filtering for latest release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
@@ -294,25 +294,25 @@ describe 'Omnitruck' do
 
               context "that is a pre-release nightly" do
                 let(:chef_version){"11.0.0-rc.1+20121225164140.git.207.694b062"}
-                
+
                 context "filtering for latest pre-release in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
                 end
-                
+
                 context "filtering for latest pre-release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){true}
                   should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
                 end
-                
+
                 context "filtering for latest release in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
                   should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
                 end
-                
+
                 context "filtering for latest release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
@@ -326,7 +326,7 @@ describe 'Omnitruck' do
       end # Ubuntu
     end # /download-server
   end # Semantic Versioning Support
-  
+
   describe "/download-server" do
     before :each do
       # Use our dummy data
@@ -441,7 +441,7 @@ describe 'Omnitruck' do
 
     it "returns the timestamp of the last poller run" do
       get endpoint
-      JSON.parse(last_response.body)["timestamp"].should == "Thu Aug 16 11:48:08 -0700 2012" 
+      JSON.parse(last_response.body)["timestamp"].should == "Thu Aug 16 11:48:08 -0700 2012"
     end
   end
 end

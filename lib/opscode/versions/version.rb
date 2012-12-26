@@ -13,7 +13,7 @@ module Opscode
       def release?
         @prerelease.nil? && @build.nil?
       end
-      
+
       # Is this an official pre-release? (i.e., not a nightly build)
       def prerelease?
         @prerelease && @build.nil?
@@ -51,7 +51,7 @@ module Opscode
       def to_s
         raise Error, "You must override #to_s"
       end
-      
+
       def <=>(other)
 
         # First, perform comparisons based on major, minor, and patch
@@ -109,7 +109,7 @@ module Opscode
         # If we get down here, they're both equal
         return 0
       end
-      
+
       def eql?(other)
         @major == other.major &&
           @minor == other.minor &&
@@ -121,7 +121,7 @@ module Opscode
       def hash
         to_s.hash
       end
-      
+
       # Select the most recent version from +all_versions+ that satisfies
       # the filtering constraints provided by +filter_version+,
       # +use_prereleases+, and +use_nightlies+.
@@ -133,7 +133,7 @@ module Opscode
       # +use_prereleases+ determines whether or not we want to keep or
       # discard versions from +all_versions+ that have pre-release
       # specifiers.
-      # 
+      #
       # +use_nightlies+ determines whether or not we want to keep or
       # discard versions from +all_versions+ that have build specifiers.
       #
@@ -193,7 +193,7 @@ module Opscode
                               else
                                 true
                               end
-            
+
             in_release_line && if use_prereleases && use_nightlies
                                  v.prerelease_nightly?
                                elsif !use_prereleases && use_nightlies
@@ -216,15 +216,15 @@ module Opscode
       private
 
       # If a String +n+ can be parsed as an Integer do so; otherwise, do
-      # nothing.  
-      # 
+      # nothing.
+      #
       # (+nil+ is a valid input.)
       def maybe_int(n)
         Integer(n)
       rescue
         n
       end
-      
+
       # Compares prerelease and build version component strings
       # according to semver 2.0.0-rc.1 semantics.
       #
@@ -243,9 +243,9 @@ module Opscode
       def compare_dot_components(a_item, b_item)
         a_components = a_item.split(".")
         b_components = b_item.split(".")
-        
+
         max_length = [a_components.length, b_components.length].max
-        
+
         (0..(max_length-1)).each do |i|
           # Convert the ith component into a number if possible
           a = maybe_int(a_components[i])
@@ -272,7 +272,7 @@ module Opscode
           #
           if a.is_a?(Integer) && b.is_a?(String)
             # a_item was "smaller"
-            return -1 
+            return -1
           elsif a.is_a?(String) && b.is_a?(Integer)
             # b_item was "smaller"
             return 1
@@ -281,12 +281,12 @@ module Opscode
             return comp unless comp == 0
           end
         end # each
-        
+
         # We've compared all components of both strings; if we've gotten
         # down here, they're totally the same
         return 0
       end
-      
+
     end
   end
 end
