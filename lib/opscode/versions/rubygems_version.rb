@@ -10,7 +10,7 @@ module Opscode
         
         @input = version
         
-        @major, @minor, @patch, @prerelease, @build = match[1..5]
+        @major, @minor, @patch, @prerelease, @iteration = match[1..5]
         @major, @minor, @patch = [@major, @minor, @patch].map(&:to_i)
         
         # Do not convert @build to an integer; SemVer sorting logic will handle the conversion

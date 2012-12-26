@@ -3,7 +3,7 @@ module Opscode
     class Version
       include Comparable
 
-      attr_reader :major, :minor, :patch, :prerelease, :build
+      attr_reader :major, :minor, :patch, :prerelease, :build, :iteration
 
       def initialize(version)
         raise Error, "You must override the initializer!"
@@ -91,6 +91,19 @@ module Opscode
         elsif @build && other.build
           build_ver = compare_dot_components(@build, other.build)
           return build_ver unless build_ver == 0
+        end
+
+        # Some older version formats improperly include a package iteration in
+        # the version string. This is different than a build specifier and
+        # valid release versions may include an iteration. We'll transparently
+        # handle this case and compare iterations if it was parsed by the
+        # implementation class.
+        if @iteration.nil? && other.iteration
+          return -1
+        elsif @iteration && other.iteration.nil?
+          return 1
+        elsif @iteration && other.iteration
+          return @iteration <=> other.iteration
         end
 
         # If we get down here, they're both equal

@@ -1,7 +1,7 @@
 require 'opscode/versions'
 
 describe Opscode::Versions::RubygemsVersion do
-  context "#initialize" do    
+  context "#initialize" do
     versions = [
                 ["10.1.1",         [10,1,1, nil, nil]],
                 ["10.1.1.alpha.1", [10,1,1, "alpha.1", nil]],
@@ -17,7 +17,7 @@ describe Opscode::Versions::RubygemsVersion do
 
     versions.each do |input|
       version_string, pieces = input
-      major, minor, patch, prerelease, build = pieces
+      major, minor, patch, prerelease, iteration = pieces
 
       it "works for #{version_string}" do
         v = Opscode::Versions::RubygemsVersion.new(version_string)
@@ -25,7 +25,8 @@ describe Opscode::Versions::RubygemsVersion do
         v.minor.should eq minor
         v.patch.should eq patch
         v.prerelease.should eq prerelease
-        v.build.should eq build
+        v.build.should be_nil
+        v.iteration.should eq iteration
       end
     end
   end
