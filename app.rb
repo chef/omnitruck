@@ -179,9 +179,9 @@ class Omnitruck < Sinatra::Base
 
   # Convert the given +chef_version+ parameter string into a
   # +Opscode::Versions::Version+ object.  Returns +nil+ if +chef_version+ is
-  # either +nil+ or the String +"latest"+.
+  # either +nil+, +blank+ or the String +"latest"+.
   def resolve_version(chef_version)
-    if chef_version.nil? || chef_version == "latest"
+    if chef_version.nil? || chef_version.empty? || chef_version.to_s == "latest"
       nil
     else
       janky_workaround_for_processing_all_our_different_version_strings(chef_version)
