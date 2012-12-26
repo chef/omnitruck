@@ -173,7 +173,7 @@ class Omnitruck < Sinatra::Base
         end
       end
     else
-      raise Error, "Unsupported version format #{version_string}"
+      raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
     end
   end
 

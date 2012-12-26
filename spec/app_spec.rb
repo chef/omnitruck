@@ -44,6 +44,11 @@ describe 'Omnitruck' do
       last_response.status.should == 404
     end
 
+    it "should return 404 an invalid version is passed" do
+      get '/download', :v => "poopypants", :p => "el", :pv => "5", :m => "x86_64"
+      last_response.status.should == 404
+    end
+
     it "should return the version specified" do
       get '/download', :v => "10.12.0-1", :p => "el", :pv => "5", :m => "x86_64"
       last_response.should be_redirect
@@ -352,6 +357,11 @@ describe 'Omnitruck' do
 
     it "should return 404 an unknown machine is passed" do
       get '/download-server', :p => "el", :pv => "5", :m => "unknown"
+      last_response.status.should == 404
+    end
+
+    it "should return 404 an invalid version is passed" do
+      get '/download-server', :v => "poopypants", :p => "el", :pv => "5", :m => "x86_64"
       last_response.status.should == 404
     end
 
