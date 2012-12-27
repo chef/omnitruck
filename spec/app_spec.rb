@@ -100,6 +100,35 @@ describe 'Omnitruck' do
               end
             end # without an explicit version
 
+            context "with a version of 'latest'" do
+
+              let(:chef_version){"latest"}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_as "10.16.0.rc.1"
+              end
+
+              context "pre-release nightlies" do
+                let(:prerelease){true}
+                let(:nightlies){true}
+                should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as "10.16.4"
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_as "10.16.2-49-g21353f0"
+              end
+            end # with a version of 'latest'
+
             context "with an explicit version" do
               context "that is a proper release" do
                 let(:chef_version){"10.16.0"}
@@ -286,6 +315,33 @@ describe 'Omnitruck' do
                 should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
               end
             end # without an explicit version
+
+            context "with a version of 'latest'" do
+              let(:chef_version){"latest"}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_as "11.0.0-rc.1"
+              end
+              context "pre-release nightlies" do
+                let(:prerelease){true}
+                let(:nightlies){true}
+                should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as "11.0.0"
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
+              end
+            end # with a version of 'latest'
 
             context "with an explicit version" do
               context "that is a proper release" do
