@@ -119,7 +119,7 @@ module Opscode
       end
 
       def hash
-        to_s.hash
+        [@major, @minor, @patch, @prerelease, @build].compact.join(".").hash
       end
 
       # Select the most recent version from +all_versions+ that satisfies
