@@ -6,13 +6,6 @@ describe 'Omnitruck' do
     Omnitruck
   end
 
-  describe "/install.sh" do
-    it "endpoint should exist" do
-      get '/install.sh'
-      last_response.should be_ok
-    end
-  end
-
   describe "download endpoints" do
 
     def self.should_retrieve_latest_as(expected_version)
@@ -55,7 +48,7 @@ describe 'Omnitruck' do
     # else.
     let(:iteration_number){1}
 
-    describe "/download" do
+    describe "client" do
       let(:endpoint){"/download"}
       let(:project){ "chef" }
 
@@ -247,7 +240,7 @@ describe 'Omnitruck' do
       end # EL
     end # /download
 
-    describe "/download-server" do
+    describe "server" do
       let(:endpoint){"/download-server"}
       let(:project){ "chef-server" }
 
@@ -436,10 +429,53 @@ describe 'Omnitruck' do
 
   end # download endpoints
 
-  describe "/full_list" do
+  describe "full list endpoints" do
+    describe "client" do
+      let(:endpoint){ "/full_client_list" }
 
-    it "endpoint should exist" do
-      get '/full_list'
+      it "exists" do
+        get endpoint
+        last_response.should be_ok
+      end
+
+      it "returns JSON data" do
+        get endpoint
+        last_response.header['Content-Type'].should include 'application/json'
+      end
+
+      context "legacy version" do
+        let(:endpoint){ "/full_list" }
+
+        it "exists" do
+          get endpoint
+          last_response.should be_ok
+        end
+
+        it "returns JSON data" do
+          get endpoint
+          last_response.header['Content-Type'].should include 'application/json'
+        end
+      end
+    end
+
+    describe "server" do
+      let(:endpoint){ "/full_server_list" }
+
+      it "exists" do
+        get endpoint
+        last_response.should be_ok
+      end
+
+      it "returns JSON data" do
+        get endpoint
+        last_response.header['Content-Type'].should include 'application/json'
+      end
+    end
+  end
+
+  describe "/install.sh" do
+    it "exists" do
+      get '/install.sh'
       last_response.should be_ok
     end
   end
@@ -447,9 +483,14 @@ describe 'Omnitruck' do
   describe "/_status" do
     let(:endpoint){"/_status"}
 
-    it "endpoint should exist" do
+    it "exists" do
       get endpoint
       last_response.should be_ok
+    end
+
+    it "returns JSON data" do
+      get endpoint
+      last_response.header['Content-Type'].should include 'application/json'
     end
 
     it "returns the timestamp of the last poller run" do

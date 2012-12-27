@@ -58,6 +58,7 @@ class Omnitruck < Sinatra::Base
   # Returns the JSON minus run data to populate the install page build list
   #
   get '/full_client_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
@@ -70,6 +71,7 @@ class Omnitruck < Sinatra::Base
   # backwards compatibility.
   #
   get '/full_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
@@ -80,6 +82,7 @@ class Omnitruck < Sinatra::Base
   # Returns the server JSON minus run data to populate the install page build list
   #
   get '/full_server_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_server_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
@@ -118,6 +121,7 @@ class Omnitruck < Sinatra::Base
   # Status endpoint used by nagios to check on the app.
   #
   get '/_status' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
