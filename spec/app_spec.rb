@@ -8,7 +8,9 @@ describe 'Omnitruck' do
 
   describe "download endpoints" do
 
-    def self.should_retrieve_latest_as(expected_version)
+    def self.should_retrieve_latest_as(expected_version, options={})
+      let(:iteration_number){ options[:iteration] || 1}
+
       it "should retrieve latest as #{expected_version}" do
         get(endpoint, params)
         last_response.should be_redirect
@@ -49,11 +51,6 @@ describe 'Omnitruck' do
 
     # To handle situations where e.g., 'x86_64' is used in an installer name as 'amd64'
     let(:architecture_alt){ architecture }
-
-    # You can ignore this for now... we only have "1" iterations so
-    # far.  This is more for self-documenting purposes than anything
-    # else.
-    let(:iteration_number){1}
 
     describe "client" do
       let(:endpoint){"/download"}
@@ -269,6 +266,16 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
               end # pre-release nightly
+
+              context "that has multiple build iterations" do
+                let(:chef_version){"10.14.4"}
+                let(:prerelease){false}
+                let(:nightlies){false}
+
+                context "returns the latest build iteration" do
+                  should_retrieve_latest_as "10.14.4", :iteration => 2
+                end
+              end
             end # with a explicit version
 
           end # x86_64
