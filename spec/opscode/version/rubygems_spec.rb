@@ -1,6 +1,6 @@
-require 'opscode/versions'
+require 'opscode/version'
 
-describe Opscode::Versions::RubygemsVersion do
+describe Opscode::Version::Rubygems do
   context "#initialize" do
     versions = [
                 ["10.1.1",         [10,1,1, nil, nil]],
@@ -20,7 +20,7 @@ describe Opscode::Versions::RubygemsVersion do
       major, minor, patch, prerelease, iteration = pieces
 
       it "works for #{version_string}" do
-        v = Opscode::Versions::RubygemsVersion.new(version_string)
+        v = Opscode::Version::Rubygems.new(version_string)
         v.major.should eq major
         v.minor.should eq minor
         v.patch.should eq patch
@@ -28,6 +28,18 @@ describe Opscode::Versions::RubygemsVersion do
         v.build.should be_nil
         v.iteration.should eq iteration
       end
+    end
+  end
+
+  describe "translating to a SemVer string" do
+    let(:rubygems_version_string){"10.1.1.alpha.2"}
+    let(:rubygems_version){Opscode::Version::Rubygems.new(rubygems_version_string)}
+
+    it "generates a semver for a prerelease" do
+      string = rubygems_version.to_semver_string
+      string.should eq "10.1.1-alpha.2"
+      semver = Opscode::Version::SemVer.new(string)
+      (semver.prerelease?).should be_true
     end
   end
 end

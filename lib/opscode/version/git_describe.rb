@@ -1,6 +1,6 @@
 module Opscode
-  module Versions
-    class GitDescribeVersion < Version
+  class Version
+    class GitDescribe < Version
 
       # This class is basically to handle the handful of variations we
       # currently have in Omnitruck that are based on 'git describe'

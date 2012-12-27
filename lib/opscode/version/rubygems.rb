@@ -1,6 +1,6 @@
 module Opscode
-  module Versions
-    class RubygemsVersion < Version
+  class Version
+    class Rubygems < Version
 
       OPSCODE_RUBYGEMS_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:\.((?:alpha|beta|rc)\.\d+))?(?:\-(\d+))?$/
 

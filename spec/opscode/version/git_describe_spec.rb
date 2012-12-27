@@ -1,11 +1,11 @@
-require 'opscode/versions'
+require 'opscode/version'
 
 # TODO: Need to test with regex_2 and regex_3 (see the code)
 
-describe Opscode::Versions::GitDescribeVersion do
+describe Opscode::Version::GitDescribe do
   context "#initialize" do
 
-    subject{ Opscode::Versions::GitDescribeVersion.new(version_string) }
+    subject{ Opscode::Version::GitDescribe.new(version_string) }
 
     context "10.16.2-49-g21353f0-1" do
       let(:version_string) { "10.16.2-49-g21353f0-1" }
@@ -69,7 +69,7 @@ describe Opscode::Versions::GitDescribeVersion do
 
     def self.should_fail_for(version, reason=nil)
       it "fails for #{version}#{reason ? " (" + reason + ")" : ""}" do
-        expect {Opscode::Versions::GitDescribeVersion.new(version)}.to raise_error(ArgumentError, "'#{version}' is not a valid Opscode 'git-describe' version string!")
+        expect {Opscode::Version::GitDescribe.new(version)}.to raise_error(ArgumentError, "'#{version}' is not a valid Opscode 'git-describe' version string!")
       end
     end
 
@@ -99,7 +99,7 @@ describe Opscode::Versions::GitDescribeVersion do
 
   context "PARSING AS SEMVER" do
     it "works for 10.16.2-49-g21353f0-1, but THIS WON'T COMPARE NICELY WITH OTHER PROPER SemVers!" do
-      s = Opscode::Versions::SemVer.new("10.16.2-49-g21353f0-1")
+      s = Opscode::Version::SemVer.new("10.16.2-49-g21353f0-1")
       s.major.should eq 10
       s.minor.should eq 16
       s.patch.should eq 2
@@ -111,7 +111,7 @@ describe Opscode::Versions::GitDescribeVersion do
   context "#to_s" do
     ["10.16.2-49-g21353f0-1"].each do |v|
       it "reconstructs the initial input of #{v}" do
-        Opscode::Versions::GitDescribeVersion.new(v).to_s.should == v
+        Opscode::Version::GitDescribe.new(v).to_s.should == v
       end
     end
   end
@@ -128,7 +128,7 @@ describe Opscode::Versions::GitDescribeVersion do
               "9.0.1-2-gdeadbe2-1", # Don't expect to actually see this, but what the hell...
               "9.1.1-2-g1234567-1"
              ]
-  let(:git_describe_versions){versions.map{|v| Opscode::Versions::GitDescribeVersion.new(v)}}
+  let(:git_describe_versions){versions.map{|v| Opscode::Version::GitDescribe.new(v)}}
   let(:sorted_versions) do
     ["9.0.1-1-gdeadbee-1",
      "9.0.1-2-gdeadbe1-1",
@@ -140,7 +140,7 @@ describe Opscode::Versions::GitDescribeVersion do
      "10.5.7-2-g21353f0-1",
      "10.20.2-2-gbbbbbbb-1",
      "10.20.2-3-gaaaaaaa-1"
-    ].map{|v| Opscode::Versions::GitDescribeVersion.new(v)}
+    ].map{|v| Opscode::Version::GitDescribe.new(v)}
   end
 
   describe "<=>" do
@@ -149,11 +149,11 @@ describe Opscode::Versions::GitDescribeVersion do
     end
 
     it "finds the min" do
-      git_describe_versions.min.should eq Opscode::Versions::GitDescribeVersion.new("9.0.1-1-gdeadbee-1")
+      git_describe_versions.min.should eq Opscode::Version::GitDescribe.new("9.0.1-1-gdeadbee-1")
     end
 
     it "finds the max" do
-      git_describe_versions.max.should eq Opscode::Versions::GitDescribeVersion.new("10.20.2-3-gaaaaaaa-1")
+      git_describe_versions.max.should eq Opscode::Version::GitDescribe.new("10.20.2-3-gaaaaaaa-1")
     end
   end
 
@@ -162,7 +162,7 @@ describe Opscode::Versions::GitDescribeVersion do
     context "no GitDescribeVersion can be a proper release" do
       versions.each do |v|
         it "#{v} isn't a release" do
-          Opscode::Versions::GitDescribeVersion.new(v).release?.should be_false
+          Opscode::Version::GitDescribe.new(v).release?.should be_false
         end
       end
     end
@@ -170,7 +170,7 @@ describe Opscode::Versions::GitDescribeVersion do
     context "no GitDescribeVersion can be a proper pre-release" do
       versions.each do |v|
         it "#{v} isn't a pre-release" do
-          Opscode::Versions::GitDescribeVersion.new(v).prerelease?.should be_false
+          Opscode::Version::GitDescribe.new(v).prerelease?.should be_false
         end
       end
     end
@@ -178,9 +178,21 @@ describe Opscode::Versions::GitDescribeVersion do
     context "every GitDescribeVersion is a nightly release" do
       versions.each do |v|
         it "#{v} is a nightly" do
-          Opscode::Versions::GitDescribeVersion.new(v).nightly?.should be_true
+          Opscode::Version::GitDescribe.new(v).nightly?.should be_true
         end
       end
+    end
+  end
+
+  describe "translating to a SemVer string" do
+    let(:git_describe_version_string){"10.16.2-49-g21353f0-1"}
+    let(:git_describe){Opscode::Version::GitDescribe.new(git_describe_version_string)}
+
+    it "generates a semver for a release nightly" do
+      string = git_describe.to_semver_string
+      string.should eq "10.16.2+49.g21353f0.1"
+      semver = Opscode::Version::SemVer.new(string)
+      (semver.release_nightly?).should be_true
     end
   end
 

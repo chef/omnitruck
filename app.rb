@@ -3,7 +3,7 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
-require 'opscode/versions'
+require 'opscode/version'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -161,19 +161,19 @@ class Omnitruck < Sinatra::Base
   def janky_workaround_for_processing_all_our_different_version_strings(version_string)
     if version_string.start_with?("10.")
       begin
-        Opscode::Versions::RubygemsVersion.new(version_string)
+        Opscode::Version::Rubygems.new(version_string)
       rescue
-        Opscode::Versions::GitDescribeVersion.new(version_string)
+        Opscode::Version::GitDescribe.new(version_string)
       end
     elsif version_string.start_with?("11.")
       begin
-        Opscode::Versions::GitDescribeVersion.new(version_string)
+        Opscode::Version::GitDescribe.new(version_string)
       rescue
         begin
           # Note: This is the single version format we should converge upon
-          Opscode::Versions::OpscodeSemVer.new(version_string)
+          Opscode::Version::OpscodeSemVer.new(version_string)
         rescue
-          Opscode::Versions::SemVer.new(version_string)
+          Opscode::Version::SemVer.new(version_string)
         end
       end
     else
@@ -182,7 +182,7 @@ class Omnitruck < Sinatra::Base
   end
 
   # Convert the given +chef_version+ parameter string into a
-  # +Opscode::Versions::Version+ object.  Returns +nil+ if +chef_version+ is
+  # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
   # either +nil+, +blank+ or the String +"latest"+.
   def resolve_version(chef_version)
     if chef_version.nil? || chef_version.empty? || chef_version.to_s == "latest"
@@ -222,7 +222,7 @@ class Omnitruck < Sinatra::Base
       acc
     end
 
-    target = Opscode::Versions::Version.find_target_version(semvers_available.keys,
+    target = Opscode::Version.find_target_version(semvers_available.keys,
                                                             chef_version,
                                                             prerelease,
                                                             use_nightlies)

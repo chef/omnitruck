@@ -88,22 +88,22 @@ module Opscode
         begin
           if v.start_with?("10.")
             begin 
-              ver = Opscode::Versions::RubygemsVersion.new(v)
+              ver = Opscode::Version::Rubygems.new(v)
               valid << ver
             rescue
-              ver = Opscode::Versions::GitDescribeVersion.new(v)
+              ver = Opscode::Version::GitDescribe.new(v)
               valid << ver
             end
           elsif v.start_with?("11.")
             begin
-              ver = Opscode::Versions::GitDescribeVersion.new(v)
+              ver = Opscode::Version::GitDescribe.new(v)
               valid << ver
             rescue
               begin
-                ver = Opscode::Versions::OpscodeSemVer.new(v)
+                ver = Opscode::Version::OpscodeSemVer.new(v)
                 valid << ver
               rescue
-                ver = Opscode::Versions::SemVer.new(v)
+                ver = Opscode::Version::SemVer.new(v)
                 valid << ver
               end
             end

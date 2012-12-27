@@ -1,9 +1,9 @@
-require 'opscode/versions'
+require 'opscode/version'
 
-describe Opscode::Versions::SemVer do
+describe Opscode::Version::SemVer do
   context "#initialize" do
     it "works for 1.0.0" do
-      s = Opscode::Versions::SemVer.new("1.0.0")
+      s = Opscode::Version::SemVer.new("1.0.0")
       s.major.should eq 1
       s.minor.should eq 0
       s.patch.should eq 0
@@ -12,7 +12,7 @@ describe Opscode::Versions::SemVer do
     end
 
     it "works for 1.0.0-alpha.1" do
-      s = Opscode::Versions::SemVer.new("1.0.0-alpha.1")
+      s = Opscode::Version::SemVer.new("1.0.0-alpha.1")
       s.major.should eq 1
       s.minor.should eq 0
       s.patch.should eq 0
@@ -21,26 +21,26 @@ describe Opscode::Versions::SemVer do
     end
 
     it "works for 1.0.0-alpha.1+build.deadbeef" do
-      s = Opscode::Versions::SemVer.new("1.0.0-alpha.1+build.deadbeef")
+      s = Opscode::Version::SemVer.new("1.0.0-alpha.1+build.deadbeef")
       s.major.should eq 1
       s.minor.should eq 0
       s.patch.should eq 0
       s.prerelease.should eq "alpha.1"
       s.build.should eq "build.deadbeef"
     end
-    
+
     it "works for 1.0.0+build.deadbeef" do
-      s = Opscode::Versions::SemVer.new("1.0.0+build.deadbeef")
+      s = Opscode::Version::SemVer.new("1.0.0+build.deadbeef")
       s.major.should eq 1
       s.minor.should eq 0
       s.patch.should eq 0
       s.prerelease.should be_nil
       s.build.should eq "build.deadbeef"
     end
-    
+
     it "rejects bogus input" do
       v = "One.does.not-simply+implement.SemVer"
-      expect { Opscode::Versions::SemVer.new(v) }.to raise_error(ArgumentError, "'#{v}' is not a valid semver version string!")
+      expect { Opscode::Version::SemVer.new(v) }.to raise_error(ArgumentError, "'#{v}' is not a valid semver version string!")
     end
   end
 
@@ -50,14 +50,14 @@ describe Opscode::Versions::SemVer do
      "1.0.0-alpha.1+build.123",
      "1.0.0+build.456"].each do |v|
       it "reconstructs the initial input of #{v}" do
-        Opscode::Versions::SemVer.new(v).to_s.should == v
+        Opscode::Version::SemVer.new(v).to_s.should == v
       end
     end
   end
-  
+
   context "SemVer 2.0.0-rc1 Examples" do
     let(:versions){["1.0.0-beta.2",
-                    "1.0.0-alpha", 
+                    "1.0.0-alpha",
                     "1.0.0-rc.1+build.1",
                     "1.0.0",
                     "1.0.0-beta.11",
@@ -67,38 +67,38 @@ describe Opscode::Versions::SemVer do
                     "1.3.7+build.2.b8f12d7",
                     "1.3.7+build.11.e0f985a",
                     "1.3.7+build"]}
-    let(:semvers){versions.map{|v| Opscode::Versions::SemVer.new(v)}}
+    let(:semvers){versions.map{|v| Opscode::Version::SemVer.new(v)}}
     let(:sorted_semvers) do
-      ["1.0.0-alpha", 
+      ["1.0.0-alpha",
        "1.0.0-alpha.1",
        "1.0.0-beta.2",
-       "1.0.0-beta.11",                                                  
+       "1.0.0-beta.11",
        "1.0.0-rc.1",
        "1.0.0-rc.1+build.1",
        "1.0.0",
        "1.0.0+0.3.7",
        "1.3.7+build",
        "1.3.7+build.2.b8f12d7",
-       "1.3.7+build.11.e0f985a"].map{|v| Opscode::Versions::SemVer.new(v)}
+       "1.3.7+build.11.e0f985a"].map{|v| Opscode::Version::SemVer.new(v)}
     end
-    
+
     describe "<=>" do
       it "sorts all properly" do
         semvers.sort.should eq sorted_semvers
       end
 
       it "finds the min" do
-        semvers.min.should eq Opscode::Versions::SemVer.new("1.0.0-alpha")
+        semvers.min.should eq Opscode::Version::SemVer.new("1.0.0-alpha")
       end
 
       it "finds the max" do
-        semvers.max.should eq Opscode::Versions::SemVer.new("1.3.7+build.11.e0f985a")
+        semvers.max.should eq Opscode::Version::SemVer.new("1.3.7+build.11.e0f985a")
       end
     end
 
     describe "build qualifiers" do
-      subject{Opscode::Versions::SemVer.new(version)}
-    
+      subject{Opscode::Version::SemVer.new(version)}
+
       context "Release" do
         let(:version){"1.0.0"}
         its(:release?){should be_true}
@@ -139,7 +139,7 @@ describe Opscode::Versions::SemVer do
     describe "Filtering by Build Qualifiers" do
       context "releases only" do
         it "works" do
-          semvers.select(&:release?).should eq [Opscode::Versions::SemVer.new("1.0.0")]
+          semvers.select(&:release?).should eq [Opscode::Version::SemVer.new("1.0.0")]
         end
       end
 
@@ -150,8 +150,8 @@ describe Opscode::Versions::SemVer do
                                    "1.0.0-alpha.1",
                                    "1.0.0-beta.2",
                                    "1.0.0-beta.11",
-                                   "1.0.0-rc.1" 
-                                  ].map{|v| Opscode::Versions::SemVer.new(v)})
+                                   "1.0.0-rc.1"
+                                  ].map{|v| Opscode::Version::SemVer.new(v)})
         end
       end
 
@@ -162,33 +162,19 @@ describe Opscode::Versions::SemVer do
                                    "1.3.7+build",
                                    "1.3.7+build.2.b8f12d7",
                                    "1.3.7+build.11.e0f985a"
-                                  ].map{|v| Opscode::Versions::SemVer.new(v)})
+                                  ].map{|v| Opscode::Version::SemVer.new(v)})
         end
       end
 
       context "prereleases nightlies only" do
         it "works" do
           filtered = semvers.select(&:prerelease_nightly?)
-          filtered.should eq [Opscode::Versions::SemVer.new("1.0.0-rc.1+build.1")]
+          filtered.should eq [Opscode::Version::SemVer.new("1.0.0-rc.1+build.1")]
         end
       end
-      
+
     end
-    
+
   end
 
-  describe "Opscode::Versions::SemVer.as_semver_string" do
-    context "translating a GitDescribeVersion" do
-      let(:git_describe_version_string){"10.16.2-49-g21353f0-1"}
-      let(:git_describe){Opscode::Versions::GitDescribeVersion.new(git_describe_version_string)}
-      
-      it "generates a semver for a release nightly" do
-        string = Opscode::Versions::SemVer.as_semver_string(git_describe)
-        string.should eq "10.16.2+49.g21353f0.1"
-        semver = Opscode::Versions::SemVer.new(string)
-        (semver.release_nightly?).should be_true
-      end
-    end
-  end
-  
 end
