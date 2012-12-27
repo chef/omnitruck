@@ -15,7 +15,14 @@ describe 'Omnitruck' do
         follow_redirect!
         http_type_string = URI.split(last_request.url)[0]
         omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_bucket}.s3.amazonaws.com"
-        last_request.url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-|_]#{Regexp.escape(expected_version)}-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[\.|_]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+        # This really sucks but the git describe string embedded in package names differs
+        # between platforms. For example:
+        #
+        #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
+        #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
+        #
+        expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
+        last_request.url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
     end
 
@@ -74,22 +81,22 @@ describe 'Omnitruck' do
                 should_retrieve_latest_as "10.16.0.rc.1"
               end
 
-              context "pre-release nightlies", :pending => "NEEDS FIXTURE DATA" do
+              context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
               end
 
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as "10.16.2"
+                should_retrieve_latest_as "10.16.4"
               end
 
-              context "releases nightlies", :pending => "NEEDS FIXTURE DATA" do
+              context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
+                should_retrieve_latest_as "10.16.2-49-g21353f0"
               end
             end # without an explicit version
 
@@ -103,10 +110,10 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1"
                 end
 
-                context "filtering for latest pre-release nightly in this line", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -115,10 +122,10 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0"
                 end
 
-                context "filtering for latest release nightly in this line", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest release nightly in this line" do
                   let(:prerelease){false}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0+20130101164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0-49-g21353f0"
                 end
               end # proper release
 
@@ -131,10 +138,10 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1"
                 end
 
-                context "filtering for latest pre-release nightly in this line", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
@@ -143,10 +150,10 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1"
                 end
 
-                context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
               end # pre-release
 
@@ -159,10 +166,10 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1"
                 end
 
-                context "filtering for latest pre-release nightly in this line", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-beta.2+build.123"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
@@ -171,66 +178,66 @@ describe 'Omnitruck' do
                   should_retrieve_latest_as "10.16.0.rc.1"
                 end
 
-                context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)", :pending => "NEEDS FIXTURE DATA" do
+                context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-beta.2+build.123"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
               end # another pre-release
 
-              context "that is a release nightly", :pending => "NEEDS FIXTURE DATA" do
-                let(:chef_version){"11.0.0+20130101164140.git.2.deadbee"}
+              context "that is a release nightly" do
+                let(:chef_version){"10.16.2-49-g21353f0-1"}
 
                 context "filtering for latest pre-release in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
+                  should_retrieve_latest_as "10.16.2-49-g21353f0"
                 end
 
                 context "filtering for latest pre-release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
+                  should_retrieve_latest_as "10.16.2-49-g21353f0"
                 end
 
                 context "filtering for latest release in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
+                  should_retrieve_latest_as "10.16.2-49-g21353f0"
                 end
 
                 context "filtering for latest release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0+20130101164140.git.2.deadbee"
+                  should_retrieve_latest_as "10.16.2-49-g21353f0"
                 end
               end # release nightly
 
-              context "that is a pre-release nightly", :pending => "NEEDS FIXTURE DATA" do
-                let(:chef_version){"11.0.0-rc.1+20121225164140.git.207.694b062"}
+              context "that is a pre-release nightly" do
+                let(:chef_version){"10.16.0.rc.1-49-g21353f0-1"}
 
                 context "filtering for latest pre-release in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest pre-release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest release in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
 
                 context "filtering for latest release nightly in this line has no effect (returns the exact version)" do
                   let(:prerelease){false}
                   let(:nightlies){true}
-                  should_retrieve_latest_as "11.0.0-rc.1+20121225164140.git.207.694b062"
+                  should_retrieve_latest_as "10.16.0.rc.1-49-g21353f0"
                 end
               end # pre-release nightly
             end # with a explicit version
