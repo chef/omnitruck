@@ -56,11 +56,6 @@ describe 'Omnitruck' do
     let(:iteration_number){1}
 
     describe "/download" do
-      before :each do
-        # Use our dummy data
-        Omnitruck.stub!(:build_list).and_return(client_data("build_list"))
-      end
-
       let(:endpoint){"/download"}
       let(:project){ "chef" }
 
@@ -253,11 +248,6 @@ describe 'Omnitruck' do
     end # /download
 
     describe "/download-server" do
-      before :each do
-        # Use our dummy data
-        Omnitruck.stub!(:build_server_list).and_return(server_data("servers"))
-      end
-
       let(:endpoint){"/download-server"}
       let(:project){ "chef-server" }
 
@@ -448,11 +438,6 @@ describe 'Omnitruck' do
 
   describe "/full_list" do
 
-    before :each do
-      # Use our dummy data
-      Omnitruck.stub!(:build_list).and_return(client_data("build_list"))
-    end
-
     it "endpoint should exist" do
       get '/full_list'
       last_response.should be_ok
@@ -461,11 +446,6 @@ describe 'Omnitruck' do
 
   describe "/_status" do
     let(:endpoint){"/_status"}
-
-    before :each do
-      # Use our dummy data
-      Omnitruck.stub!(:build_list).and_return(client_data("build_list"))
-    end
 
     it "endpoint should exist" do
       get endpoint
