@@ -3,6 +3,8 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
+require 'opscode/version'
+
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
 
@@ -56,16 +58,20 @@ class Omnitruck < Sinatra::Base
   # Returns the JSON minus run data to populate the install page build list
   #
   get '/full_client_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
 
+
+  # TODO: why not do a permanent redirect here instead?
   #
   # TODO: redundant end-point to be deleted. Currently included for
   # backwards compatibility.
   #
   get '/full_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
@@ -76,6 +82,7 @@ class Omnitruck < Sinatra::Base
   # Returns the server JSON minus run data to populate the install page build list
   #
   get '/full_server_list' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_server_list))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
@@ -114,109 +121,108 @@ class Omnitruck < Sinatra::Base
   # Status endpoint used by nagios to check on the app.
   #
   get '/_status' do
+    content_type :json
     directory = JSON.parse(File.read(settings.build_list))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
 
-
-
   # ---
   # HELPER METHODS
   # ---
-  VERSION_REGEX = /^(\d+).(\d+).(\d+)-?(\d+)?$/
-  VERSION_TEST_REGEX = /^(\d+).(\d+).(\d+)(?:-|\.)(alpha|beta|rc)(?:-|\.)(\d+)(-(\w+)?)$/
 
-  # Helper to turn a chef version into an array for comparison with other versions
-  def version_to_array(v, prerelease)
-    match = nil
+  ######################## NOTICE ##############################################
+  #
+  # The following is an intentionally horrible method, both in name
+  # and implementation, in the hopes that its continuing presence will
+  # be a persistent goad to clean up the variety of version strings we
+  # have in Omnitruck, and converge upon a single uniform scheme.
+  #
+  ##############################################################################
 
-    # parse as the test regex only if 'prerelease' is enabled.
-    if prerelease
-      # e.g., 11.0.0-alpha-1-g092c123 -> [11, 0, 0, "alpha", 1, "g092c123"]
-      match = v.match(VERSION_TEST_REGEX)
-      if match
-        v_arr = match[1..6]
-        # The things that are supposed to be integers should get
-        # turned into integers, so they sort correctly.
-        [0, 1, 2, 4].each do |i|
-          v_arr[i] = v_arr[i].to_i
+  # Handles the unification of the various versions in Omnitruck **AT
+  # THE TIME OF WRITING** (late December 2012).  All the versions in
+  # the 10.x line are mostly Rubygems-style versions, whereas most of
+  # the ones in the 11.x line are 'git describe'-based, with more
+  # recent ones transitioning to a more proper SemVer-style scheme.
+  #
+  # Eventually, we will converge on the +OpscodeSemVer+ style, which has
+  # recently been added to our Omnibus build system.  This version is
+  # SemVer compliant, but enforces Opscode-specific conventions for
+  # pre-release and build specifiers.
+  #
+  # Once we phase out the other versioning schemes, this method can go
+  # away completely in favor of direct instantiation of an
+  # +OpscodeSemVer+ object.
+  def janky_workaround_for_processing_all_our_different_version_strings(version_string)
+    v = [
+          Opscode::Version::Rubygems,
+          Opscode::Version::GitDescribe,
+          Opscode::Version::OpscodeSemVer,
+          Opscode::Version::SemVer
+        ].each do |version|
+          begin
+            break version.new(version_string)
+          rescue
+            next nil
+          end
         end
-      end
-    end
 
-    # otherwise, fall back to the normal regex.
-    if !match
-      # e.g., "10.14.4" -> [10, 14, 4]
-      #  or "10.16.2-1" -> [10, 16, 2, 1]
-      match = v.match(VERSION_REGEX)
-      if match
-        v_arr = match[1..4]
-        v_arr[3] ||= 0
-        # The things that are supposed to be integers should get
-        # turned into integers, so they sort correctly.
-        v_arr.map! {|v| v.to_i}
-      end
+    if v.nil?
+      raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
+    else
+      return v
     end
-    v_arr
+  end
+
+  # Convert the given +chef_version+ parameter string into a
+  # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
+  # either +nil+, +blank+ or the String +"latest"+.
+  def resolve_version(chef_version)
+    if chef_version.nil? || chef_version.empty? || chef_version.to_s == "latest"
+      nil
+    else
+      janky_workaround_for_processing_all_our_different_version_strings(chef_version)
+    end
   end
 
   # Take the input architecture, and an optional version (latest is
   # default), and redirect to an appropriate build. This is called for
   # both /download
   def handle_download(name, build_hash)
-    chef_version     = params['v']
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
-    prerelease       = params['prerelease']
+
+    chef_version     = params['v']
+    prerelease       = params['prerelease'] == "true"
+    use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
+
+    # TODO: Handle invalid chef_version strings
+    chef_version = resolve_version(chef_version)
 
     if !build_hash[platform] || !build_hash[platform][platform_version] || !build_hash[platform][platform_version][machine]
       raise InvalidDownloadPath, error_msg
     end
 
-    # Pull out the map, which is a string version -> URL; Convert it
-    # to a mapping of version_array -> URL.
-    #         e.g. {"10.14.2-2" => "..."} 
-    # would become {[10, 14, 2, 2] => "..."}
-    versions_available = build_hash[platform][platform_version][machine]
-    version_arrays_available = versions_available.keys.inject({}) do |res, version_string|
-      # version_to_array will return nil if the version passed it
-      # doesn't match the appropriate regex, and it will also filter
-      # out test versions unless prerelease is true.
-      version_array = version_to_array(version_string, prerelease)
-      if version_array
-        res[version_array] = versions_available[version_string]
-      end
-      res
+    raw_versions_available = build_hash[platform][platform_version][machine]
+
+    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+      version_string, url_path = kv
+      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
+      acc[version] = url_path
+      acc
     end
 
-    # Rubygems considers any version with an alpha character to be a
-    # non-stable release. Thus we will exclude these builds unless the
-    # user explicitly chooses them
-    if chef_version && ( chef_version.include?("-") || chef_version.match(/[[:alpha:]]/) )
-      package_url = versions_available[chef_version]
-    else
-      # Turn the chef_version param into an array
-      requested_version_array = if chef_version.nil? || chef_version == ""
-                                  version_arrays_available.keys.max
-                                else
-                                  version_to_array(chef_version, prerelease)
-                                end
+    target = Opscode::Version.find_target_version(semvers_available.keys,
+                                                            chef_version,
+                                                            prerelease,
+                                                            use_nightlies)
 
-      # Find all of the iterations of the version matching the first three parts of chef_version
-      matching_versions = version_arrays_available.keys.find_all {|v| v[0..2] == requested_version_array[0..2]}
+    package_url = semvers_available[target]
 
-      # Grabs the max iteration number
-      requested_version_array = matching_versions.max_by {|v| v[-1]}
-
-      # Now look it up based on the version we've found.
-      package_url = version_arrays_available[requested_version_array]
-    end
-
-    # If we didn't find anything, throw an error.
     unless package_url
       raise InvalidDownloadPath, error_msg
     end
@@ -224,5 +230,4 @@ class Omnitruck < Sinatra::Base
     base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
-
 end
