@@ -154,30 +154,24 @@ class Omnitruck < Sinatra::Base
   # Once we phase out the other versioning schemes, this method can go
   # away completely in favor of direct instantiation of an
   # +OpscodeSemVer+ object.
-  #
-  # Note that there is no support in this method for 12.x versions; if
-  # this code is still around when Chef 12 comes out, we have larger
-  # problems :)
   def janky_workaround_for_processing_all_our_different_version_strings(version_string)
-    if version_string.start_with?("10.")
-      begin
-        Opscode::Version::Rubygems.new(version_string)
-      rescue
-        Opscode::Version::GitDescribe.new(version_string)
-      end
-    elsif version_string.start_with?("11.")
-      begin
-        Opscode::Version::GitDescribe.new(version_string)
-      rescue
-        begin
-          # Note: This is the single version format we should converge upon
-          Opscode::Version::OpscodeSemVer.new(version_string)
-        rescue
-          Opscode::Version::SemVer.new(version_string)
+    v = [
+          Opscode::Version::Rubygems,
+          Opscode::Version::GitDescribe,
+          Opscode::Version::OpscodeSemVer,
+          Opscode::Version::SemVer
+        ].each do |version|
+          begin
+            break version.new(version_string)
+          rescue
+            next nil
+          end
         end
-      end
-    else
+
+    if v.nil?
       raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
+    else
+      return v
     end
   end
 
