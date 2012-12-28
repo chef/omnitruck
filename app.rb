@@ -227,6 +227,10 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, error_msg
     end
 
+    # Ensure all pluses in package name are replaced by the URL-encoded version
+    # This works around a bug in S3:
+    # https://forums.aws.amazon.com/message.jspa?messageID=207700
+    package_url.gsub!(/\+/, "%2B")
     base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
     redirect base + package_url
   end
