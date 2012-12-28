@@ -8,6 +8,7 @@ gem 'json'
 
 group :test do
   gem 'rspec'
+  gem 'rspec-rerun'
   gem 'rack-test'
 end
 
