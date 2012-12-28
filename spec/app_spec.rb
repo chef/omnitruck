@@ -24,6 +24,7 @@ describe 'Omnitruck' do
         #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
         #
         expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
+        expected_version_variations.gsub!(/\+/, "%2B")
         last_request.url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
     end
