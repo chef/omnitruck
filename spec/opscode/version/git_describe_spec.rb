@@ -7,6 +7,18 @@ describe Opscode::Version::GitDescribe do
 
     subject{ Opscode::Version::GitDescribe.new(version_string) }
 
+    context "0.10.8-231-g59d6185" do
+      let(:version_string) { "0.10.8-231-g59d6185" }
+      its(:major){ should eq 0 }
+      its(:minor){ should eq 10 }
+      its(:patch){ should eq 8 }
+      its(:prerelease){ should be_nil }
+      its(:build){ should eq "231.g59d6185.0" }
+      its(:commits_since){ should eq 231 }
+      its(:commit_sha){ should eq "59d6185" }
+      its(:iteration){ should eq 0 }
+    end
+
     context "10.16.2-49-g21353f0-1" do
       let(:version_string) { "10.16.2-49-g21353f0-1" }
       its(:major){ should eq 10 }
