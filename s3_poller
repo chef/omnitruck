@@ -80,6 +80,11 @@ class S3Poller
       # contain info pertaining to human-readable names. Not relevent here.
       support_files.delete_if { |o| o.key.match("platform-names.json") }
       support_files.each do |support|
+        # This works around a bug in S3 where all pluses are improperly
+        # interpreted as spaces in the path name. This should be considered a
+        # bug in S3 as the actual W3 URI spec says this should only occur in
+        # query strings.
+        support.key = support.key.gsub(/\+/, "%2B")
         hash = JSON.parse(support.value)
         result = deep_merge(result, hash)
       end
