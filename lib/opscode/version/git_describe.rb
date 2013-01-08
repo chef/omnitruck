@@ -5,11 +5,21 @@ module Opscode
       # This class is basically to handle the handful of variations we
       # currently have in Omnitruck that are based on 'git describe'
       # output.
-
-      # 10.16.2-49-g21353f0-1
-      # 10.16.2.rc.1-49-g21353f0-1
-      # 11.0.0-alpha-10-g642ffed
-      # 11.0.0-alpha.1-1-gcea071e
+      #
+      # SUPPORTED FORMATS:
+      #
+      #    MAJOR.MINOR.PATCH.PRERELEASE-COMMITS_SINCE-gGIT_SHA
+      #    MAJOR.MINOR.PATCH-PRERELEASE-COMMITS_SINCE-gGIT_SHA
+      #    MAJOR.MINOR.PATCH.PRERELEASE-COMMITS_SINCE-gGIT_SHA-ITERATION
+      #    MAJOR.MINOR.PATCH-PRERELEASE-COMMITS_SINCE-gGIT_SHA-ITERATION
+      #
+      # EXAMPLES:
+      #
+      #    10.16.2-49-g21353f0-1
+      #    10.16.2.rc.1-49-g21353f0-1
+      #    11.0.0-alpha-10-g642ffed
+      #    11.0.0-alpha.1-1-gcea071e
+      #
       OPSCODE_GIT_DESCRIBE_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:-|.)?(.+)?\-(\d+)\-g([a-g0-9]{7})(?:-|.)?(\d+)?$/
 
       attr_reader :commits_since, :commit_sha, :iteration
