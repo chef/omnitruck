@@ -10,5 +10,6 @@ group :test do
   gem 'rspec'
   gem 'rspec-rerun'
   gem 'rack-test'
+  gem 'rspec_junit_formatter'
 end
 
