@@ -2,6 +2,17 @@ module Opscode
   class Version
     class Rubygems < Version
 
+      # SUPPORTED FORMATS:
+      #
+      #    MAJOR.MINOR.PATCH.PRERELEASE
+      #    MAJOR.MINOR.PATCH.PRERELEASE-ITERATION
+      #
+      # EXAMPLES:
+      #
+      #    10.1.1
+      #    10.1.1.alpha.1
+      #    10.16.2-1
+      #
       OPSCODE_RUBYGEMS_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:\.((?:alpha|beta|rc)\.\d+))?(?:\-(\d+))?$/
 
       def initialize(version)
