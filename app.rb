@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'json'
 require 'pp'
+require 'gabba'
 
 require 'opscode/version'
 
@@ -226,6 +227,9 @@ class Omnitruck < Sinatra::Base
     unless package_url
       raise InvalidDownloadPath, error_msg
     end
+
+    # Send download event to google analytics
+    Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", chef_version, true)
 
     # Ensure all pluses in package name are replaced by the URL-encoded version
     # This works around a bug in S3:
