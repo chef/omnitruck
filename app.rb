@@ -229,7 +229,11 @@ class Omnitruck < Sinatra::Base
     end
 
     # Send download event to google analytics
-    Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", chef_version, true)
+    begin
+      Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", chef_version, true)
+    rescue
+      puts "[ERROR] Gabba Google Analytics event handling failed!"
+    end
 
     # Ensure all pluses in package name are replaced by the URL-encoded version
     # This works around a bug in S3:
