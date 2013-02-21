@@ -230,7 +230,7 @@ class Omnitruck < Sinatra::Base
 
     # Send download event to google analytics
     begin
-      Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", chef_version, true)
+      Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", "#{platform}/#{platform_version}/#{machine}/#{chef_version}", true)
     rescue
       puts "[ERROR] Gabba Google Analytics event handling failed!"
     end
