@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+Kernel.trap(:INT) do
+  exit 1
+end
+
+$:.unshift File.expand_path("../../lib", __FILE__)
+require 'rubygems'
+require 'omnitruck-verifier/bucket_lister'
+
+require 'pp'
+
+pp OmnitruckVerifier::BucketLister.new("opscode-omnitruck-release").fetch
