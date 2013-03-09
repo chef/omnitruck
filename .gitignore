@@ -4,3 +4,7 @@ rspec.failures
 # Bundler-related ignores
 bin/*
 .bundle
+
+# app-specific ignores:
+build*list.json
+release-metadata-cache/*
