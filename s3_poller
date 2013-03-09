@@ -1,11 +1,20 @@
 #! /usr/bin/env ruby
 
-require 'uber-s3'
-require 'json'
+require 'yajl'
 require 'yaml'
 require 'optparse'
 
+require File.expand_path("../omnitruck-verifier/lib/omnitruck-verifier/bucket_lister", __FILE__)
+
 class S3Poller
+
+  CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
+  CHEF_PLATFORM_NAMES = "/chef-platform-support/chef-platform-names.json"
+
+  CHEF_SERVER_RELEASE_MANIFESTS = "/chef-server-platform-support"
+  CHEF_SERVER_PLATFORM_NAMES = "/chef-platform-support/chef-server-platform-names.json"
+
+  attr_reader :config
 
   def initialize
     @options = {}
@@ -41,86 +50,39 @@ class S3Poller
     end
 
     @config = YAML.load_file(@options[:config])[@options[:environment]]
-    @platform_client_support = "/chef-platform-support"
-    @platform_server_support = "/chef-server-platform-support"
-    @chef_platform_names = "/chef-platform-support/chef-platform-names.json"
-    @chef_server_platform_names = "/chef-platform-support/chef-server-platform-names.json"
+
+    @all_manifests = nil
 
     # Create S3 client
-    @s3 = UberS3.new({
-                       :access_key => @config['aws_access_key_id'],
-                       :secret_access_key => @config['aws_secret_access_key'],
-                       :bucket => @config['aws_bucket'],
-                       :adapter => :net_http
-                     })
+    @s3 = OmnitruckVerifier::BucketLister.new(bucket_name)
   end
 
-  # Define a deep merge for nested hashes
-  def deep_merge(h1, h2)
-    result = h1.dup
-    h2.keys.each do |key|
-      result[key] = if h1[key].is_a? Hash and h2[key].is_a? Hash
-                      deep_merge(result[key], h2[key])
-                    else
-                      h2[key]
-                    end
-    end
-    result
-  end
-
-  # Grabs the platform support json files from S3, merges them, and returns one big hash
-  def get_artifacts(platform_support)
-    result = Hash.new
-    begin
-      # This array contains the platform-support directory along with the JSON files,
-      # so I need to get rid of the objects that aren't JSON files.
-      support_files = @s3.objects(platform_support).to_a
-      support_files.delete_if { |o| not o.key.match(/\.json/) }
-      # We don't want to include any platform-names.json files, as these
-      # contain info pertaining to human-readable names. Not relevent here.
-      support_files.delete_if { |o| o.key.match("platform-names.json") }
-      support_files.each do |support|
-        # This works around a bug in S3 where all pluses are improperly
-        # interpreted as spaces in the path name. This should be considered a
-        # bug in S3 as the actual W3 URI spec says this should only occur in
-        # query strings.
-        support.key = support.key.gsub(/\+/, "%2B")
-        hash = JSON.parse(support.value)
-        result = deep_merge(result, hash)
-      end
-      result
-    rescue UberS3::Error::Standard => e
-      puts e.message
-      puts <<EOF
-[ERROR] Problem connecting to S3 using these credentials:
-            aws access key id:      #{@config['aws_access_key_id']}
-            aws secret access key:  #{@config['aws_secret_access_key']}
-            bucket:                 #{@config['aws_bucket']}
-
-Please check your credentials.
-EOF
-      exit
-    end
-  end
-
-  # Run the S3 Poller, generating build_list.json and build_server_list.json
   def run
-    build_json(@config['build_list'], @platform_client_support) 
-    build_json(@config['build_server_list'], @platform_server_support)
+    client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    write_data(config['build_list'], client_collection.generate_combined_manifest)
+    server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    write_data(config['build_server_list'], server_collection.generate_combined_manifest)
+    update_platform_name_maps
+  end
 
-    #Grab the human readable json files directly
-    if @s3.exists?(@chef_platform_names)
-      client_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
-      File.open(@config['chef_platform_names'], "w") do |f|
-        f.puts client_platform_data
-      end
-    end
-    if @s3.exists?(@chef_server_platform_names)
-      server_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
-      File.open(@config['chef_server_platform_names'], "w") do |f|
-        f.puts server_platform_data
-      end
-    end
+  def update_platform_name_maps
+    puts "TODO: update platform name maps..."
+    ## TODO: release.rb needs to be updated to upload the platform name mapping
+    ## file to the new metadata bucket
+    ####
+    ##  #Grab the human readable json files directly
+    ##  if @s3.exists?(@chef_platform_names)
+    ##    client_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
+    ##    File.open(@config['chef_platform_names'], "w") do |f|
+    ##      f.puts client_platform_data
+    ##    end
+    ##  end
+    ##  if @s3.exists?(@chef_server_platform_names)
+    ##    server_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
+    ##    File.open(@config['chef_server_platform_names'], "w") do |f|
+    ##      f.puts server_platform_data
+    ##    end
+    ##  end
   end
 
   # Builds the json and writes it to build_list_path
@@ -132,6 +94,134 @@ EOF
       f.puts JSON.pretty_generate(directory)
     end
   end
+
+  def write_data(path, data)
+    File.open(path, "w") { |f| Yajl::Encoder.encode(data, f, :pretty => true) }
+  end
+
+  def bucket_name
+    config['aws_bucket']
+  end
+
+  def all_manifests
+    return @all_manifests unless @all_manifests.nil?
+    keys = []
+    @s3.fetch do |key, md5|
+      keys << key
+    end
+    @all_manifests = keys.select {|k| k =~ /\.json\Z/ and k !~ /platform-names.json/ }
+  end
+
+  class Project
+
+    attr_reader :manifest_path
+    attr_reader :bucket_name
+
+    def initialize(manifest_path, bucket_name, remote_objects)
+      @manifest_path = manifest_path
+      @bucket_name = bucket_name
+      @remote_objects = remote_objects
+      @remote_manifests = nil
+    end
+
+    def debug(message)
+      # TODO: turn this off for cron
+      puts message
+    end
+
+    def generate_combined_manifest
+      update_cache
+
+      # after updating cache, we have the same manifests as remote
+      remote_manifests.inject({}) do |combined_manifest_data, manifest|
+        manifest_file = cache_path_for_manifest(manifest)
+        manifest_data = Yajl::Parser.parse(File.read(manifest_file))
+        deep_merge(combined_manifest_data, manifest_data)
+      end
+    end
+
+    def update_cache
+      create_cache_dirs
+      manifests_to_delete = local_manifests - remote_manifests
+      manifests_to_fetch = remote_manifests - local_manifests
+      debug("Files to delete:\n#{manifests_to_delete.map{|f| "* #{f}"}.join("\n")}")
+      debug("Files to fetch:\n#{manifests_to_fetch.map{|f| "* #{f}"}.join("\n")}")
+      manifests_to_delete.each {|m| delete_manifest(m) }
+      manifests_to_fetch.each {|f| fetch_manifest(f) }
+    end
+
+    def create_cache_dirs
+      parent = File.dirname(cache_dir)
+      [parent, cache_dir].each do |dir|
+        Dir.mkdir(dir, 0700) unless File.exist?(dir)
+      end
+    end
+
+    def delete_manifest(manifest)
+      File.unlink(cache_path_for_manifest(manifest))
+    end
+
+    def cache_dir
+      File.expand_path("../release-metadata-cache/#{manifest_path}", __FILE__)
+    end
+
+    def cache_path_for_manifest(manifest_name)
+      File.join(cache_dir, manifest_name)
+    end
+
+    def s3_url_for_manifest(manifest_name)
+      key = File.join(manifest_path, manifest_name)
+      key = key.gsub(/\+/, "%2B")
+      "https://#{bucket_name}.s3.amazonaws.com/#{key}"
+    end
+
+    def fetch_manifest(manifest)
+      local_path = nil
+      local_path = cache_path_for_manifest(manifest)
+      debug("Downloading manifest to #{local_path}")
+      File.open(local_path, "w+") do |f|
+        f.print get_remote_manifest(manifest)
+      end
+    rescue Exception
+      File.unlink(local_path) if local_path && File.exist?(local_path)
+      raise
+    end
+
+    def get_remote_manifest(manifest)
+      url = s3_url_for_manifest(manifest)
+      debug "Fetching from #{url}"
+      RestClient.get(url)
+    rescue RestClient::Exception => e
+      debug "Error fetching #{url}"
+      debug(e)
+      raise
+    end
+
+    def local_manifests
+      Dir["#{cache_dir}/*"].map { |m| File.basename(m) }
+    end
+
+    def remote_manifests
+      return @remote_manifests unless @remote_manifests.nil?
+      keys_for_project = @remote_objects.select { |key| File.dirname(key) == manifest_path }
+      @remote_manifests = keys_for_project.map { |k| File.basename(k) }
+    end
+
+    # Define a deep merge for nested hashes
+    def deep_merge(h1, h2)
+      result = h1.dup
+      h2.keys.each do |key|
+        result[key] = if h1[key].is_a? Hash and h2[key].is_a? Hash
+                        deep_merge(result[key], h2[key])
+                      else
+                        h2[key]
+                      end
+      end
+      result
+    end
+
+  end
+
 end
 
 if $0 == __FILE__
