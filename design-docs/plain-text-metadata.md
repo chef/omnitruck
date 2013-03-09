@@ -19,3 +19,9 @@ with `\t`):
     md5\t6856a1b03fcb6d1efee50650b01e713c
     sha256\tf93823ad63e87c885b7077364e0aac0ce2ddddb7f05aa1761d225d46f8fbab8a
 
+## Reading Values
+
+Given the above format, we can extract the value for a key using `awk`:
+
+    awk '$1 == "md5" { print $2 }' metadata.txt
+
