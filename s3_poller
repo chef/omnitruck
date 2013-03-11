@@ -59,10 +59,33 @@ class S3Poller
 
   def run
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    write_data(config['build_list'], client_collection.generate_combined_manifest)
+    client_json = client_collection.generate_combined_manifest
+    write_data(config['build_list'], client_json)
+    write_data(config['build_list_v1'], parse_to_v1_format(client_json))
+
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    write_data(config['build_server_list'], server_collection.generate_combined_manifest)
+    server_json = server_collection.generate_combined_manifest
+    write_data(config['build_server_list'], server_json)
+    write_data(config['build_server_list_v1'], parse_to_v1_format(server_json))
+
     update_platform_name_maps
+  end
+
+  # parses v2 JSON format to v1 format
+  def parse_to_v1_format(input_json)
+    json = input_json.clone
+    # discusting nested loops, but much easier than writing a generic DFS solution or something
+    json.each do |key, value1|
+      if key.to_s != "run_data"
+        value1.each_value do |value2|
+          value2.each_value do |value3|
+            value3.each do |k, v|
+              value3[k] = v["relpath"]
+            end
+          end
+        end
+      end
+    end
   end
 
   def update_platform_name_maps

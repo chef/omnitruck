@@ -59,7 +59,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/full_client_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
@@ -72,7 +72,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/full_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
@@ -83,7 +83,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/full_server_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_server_list))
+    directory = JSON.parse(File.read(settings.build_server_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
