@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'json'
 require 'pp'
+require 'gabba'
 
 require 'opscode/version'
 
@@ -225,6 +226,13 @@ class Omnitruck < Sinatra::Base
 
     unless package_url
       raise InvalidDownloadPath, error_msg
+    end
+
+    # Send download event to google analytics
+    begin
+      Gabba::Gabba.new("UA-6369228-7", "opscode.com").event(name, "download", "#{platform}/#{platform_version}/#{machine}/#{chef_version}", true)
+    rescue
+      puts "[ERROR] Gabba Google Analytics event handling failed!"
     end
 
     # Ensure all pluses in package name are replaced by the URL-encoded version
