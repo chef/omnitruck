@@ -85,17 +85,8 @@ class S3Poller
     ##  end
   end
 
-  # Builds the json and writes it to build_list_path
-  def build_json(build_list_path, platform_support)
-    directory = get_artifacts(platform_support)
-    # Timestamp used for the status page to make sure the list is up to date.
-    directory['run_data'] = { :timestamp => Time.now.to_s }
-    File.open(build_list_path, "w") do |f|
-      f.puts JSON.pretty_generate(directory)
-    end
-  end
-
   def write_data(path, data)
+    data[:run_data] = { :timestamp => Time.now.to_s }
     File.open(path, "w") { |f| Yajl::Encoder.encode(data, f, :pretty => true) }
   end
 
