@@ -21,7 +21,7 @@ To get shotgun:
 
    'gem install shotgun'
 
-In order to run the app, first there must exist a build_list.json file so that the app
+In order to run the app, we must first build the various build_*list*.json files so that the app
 knows what versions are available, so run:
 
    './s3_poller -e development'

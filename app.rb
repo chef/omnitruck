@@ -47,11 +47,11 @@ class Omnitruck < Sinatra::Base
   # * :machine:          - The machine architecture to install on
   #
   get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list)))
+    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v2)))
   end
 
   get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list)))
+    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
   end
 
   #
@@ -122,7 +122,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v2))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end

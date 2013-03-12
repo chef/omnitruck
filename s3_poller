@@ -60,12 +60,12 @@ class S3Poller
   def run
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
     client_json = client_collection.generate_combined_manifest
-    write_data(config['build_list'], client_json)
+    write_data(config['build_list_v2'], client_json)
     write_data(config['build_list_v1'], parse_to_v1_format(client_json))
 
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
     server_json = server_collection.generate_combined_manifest
-    write_data(config['build_server_list'], server_json)
+    write_data(config['build_server_list_v2'], server_json)
     write_data(config['build_server_list_v1'], parse_to_v1_format(server_json))
 
     update_platform_name_maps
