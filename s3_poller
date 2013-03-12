@@ -59,21 +59,22 @@ class S3Poller
 
   def run
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    client_json = client_collection.generate_combined_manifest
-    write_data(config['build_list_v2'], client_json)
-    write_data(config['build_list_v1'], parse_to_v1_format(client_json))
+    client_json_v2 = client_collection.generate_combined_manifest
+    write_data(config['build_list_v2'], client_json_v2)
+    client_json_v1 = client_collection.generate_combined_manifest
+    write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
 
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    server_json = server_collection.generate_combined_manifest
-    write_data(config['build_server_list_v2'], server_json)
-    write_data(config['build_server_list_v1'], parse_to_v1_format(server_json))
+    server_json_v2 = server_collection.generate_combined_manifest
+    write_data(config['build_server_list_v2'], server_json_v2)
+    server_json_v1 = server_collection.generate_combined_manifest
+    write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
 
     update_platform_name_maps
   end
 
   # parses v2 JSON format to v1 format
-  def parse_to_v1_format(input_json)
-    json = input_json.clone
+  def parse_to_v1_format!(json)
     # discusting nested loops, but much easier than writing a generic DFS solution or something
     json.each do |key, value1|
       if key.to_s != "run_data"
