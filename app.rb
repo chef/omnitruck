@@ -55,7 +55,8 @@ class Omnitruck < Sinatra::Base
   get '/metadata' do
     package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
     if request.accept? 'text/plain'
-      "url\t#{package_info['relpath']}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+      full_url = convert_relpath_to_url(package_info["relpath"])
+      "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
     else
       JSON.pretty_generate(package_info)
     end
@@ -64,7 +65,8 @@ class Omnitruck < Sinatra::Base
   get '/metadata-server' do
     package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_server_list_v2)))
     if request.accept? 'text/plain'
-      "url\t#{package_info['relpath']}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+      full_url = convert_relpath_to_url(package_info["relpath"])
+      "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
     else
       JSON.pretty_generate(package_info)
     end
@@ -245,14 +247,18 @@ class Omnitruck < Sinatra::Base
     package_info
   end
 
-  def handle_download(name, build_hash)
-    package_url = get_package_info(name, build_hash)
-
+  def convert_relpath_to_url(relpath)
     # Ensure all pluses in package name are replaced by the URL-encoded version
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
-    package_url.gsub!(/\+/, "%2B")
+    relpath.gsub!(/\+/, "%2B")
     base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
-    redirect base + package_url
+    base + relpath
+  end
+
+  def handle_download(name, build_hash)
+    package_url = get_package_info(name, build_hash)
+    full_url = convert_relpath_to_url(package_url)
+    redirect full_url
   end
 end
