@@ -58,13 +58,18 @@ class S3Poller
   end
 
   def run
+    # update server and client cache
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    client_collection.update_cache
+    server_collection.update_cache
+
+    # generate manifests then json including backwards-compatible
     client_json_v2 = client_collection.generate_combined_manifest
     write_data(config['build_list_v2'], client_json_v2)
     client_json_v1 = client_collection.generate_combined_manifest
     write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
 
-    server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
     server_json_v2 = server_collection.generate_combined_manifest
     write_data(config['build_server_list_v2'], server_json_v2)
     server_json_v1 = server_collection.generate_combined_manifest
@@ -144,8 +149,6 @@ class S3Poller
     end
 
     def generate_combined_manifest
-      update_cache
-
       # after updating cache, we have the same manifests as remote
       remote_manifests.inject({}) do |combined_manifest_data, manifest|
         manifest_file = cache_path_for_manifest(manifest)
