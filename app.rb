@@ -36,22 +36,38 @@ class Omnitruck < Sinatra::Base
   end
 
 
+  # == Params, applies to /download, /download-server,
+  # /metadata, and /metadata-server endpoints
   #
-  # download an omnibus chef package
-  #
-  # == Params
-  #
-  # * :version:          - The version of Chef to download
-  # * :platform:         - The platform to install on
-  # * :platform_version: - The platfrom version to install on
-  # * :machine:          - The machine architecture to install on
+  # * :v:  - The version of Chef to download
+  # * :p:  - The platform to install on
+  # * :pv: - The platfrom version to install on
+  # * :m:  - The machine architecture to install on
   #
   get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v1)))
   end
 
   get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
+    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
+  end
+
+  get '/metadata' do
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    if request.accept? 'text/plain'
+      "url\t#{package_info['relpath']}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+    else
+      JSON.pretty_generate(package_info)
+    end
+  end
+
+  get '/metadata-server' do
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_server_list_v2)))
+    if request.accept? 'text/plain'
+      "url\t#{package_info['relpath']}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+    else
+      JSON.pretty_generate(package_info)
+    end
   end
 
   #
@@ -187,9 +203,9 @@ class Omnitruck < Sinatra::Base
   end
 
   # Take the input architecture, and an optional version (latest is
-  # default), and redirect to an appropriate build. This is called for
-  # both /download
-  def handle_download(name, build_hash)
+  # default), and returns the bottom level of the hash, if v1, this is simply the 
+  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
+  def get_package_info(name, build_hash)
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
@@ -220,12 +236,17 @@ class Omnitruck < Sinatra::Base
                                                             chef_version,
                                                             prerelease,
                                                             use_nightlies)
+    package_info = semvers_available[target]
 
-    package_url = semvers_available[target]
-
-    unless package_url
+    unless package_info
       raise InvalidDownloadPath, error_msg
     end
+
+    package_info
+  end
+
+  def handle_download(name, build_hash)
+    package_url = get_package_info(name, build_hash)
 
     # Ensure all pluses in package name are replaced by the URL-encoded version
     # This works around a bug in S3:
