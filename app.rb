@@ -55,8 +55,7 @@ class Omnitruck < Sinatra::Base
   get '/metadata' do
     package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
     if request.accept? 'text/plain'
-      full_url = convert_relpath_to_url(package_info["relpath"])
-      "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+      parse_plain_text(package_info)
     else
       JSON.pretty_generate(package_info)
     end
@@ -65,13 +64,12 @@ class Omnitruck < Sinatra::Base
   get '/metadata-server' do
     package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_server_list_v2)))
     if request.accept? 'text/plain'
-      full_url = convert_relpath_to_url(package_info["relpath"])
-      "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}"
+      parse_plain_text(package_info)
     else
       JSON.pretty_generate(package_info)
     end
   end
-
+  
   #
   # Returns the JSON minus run data to populate the install page build list
   #
@@ -260,5 +258,11 @@ class Omnitruck < Sinatra::Base
     package_url = get_package_info(name, build_hash)
     full_url = convert_relpath_to_url(package_url)
     redirect full_url
+  end
+
+  # parses package_info hash into plaintext string
+  def parse_plain_text(package_info)
+    full_url = convert_relpath_to_url(package_info["relpath"])
+    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
   end
 end
