@@ -76,13 +76,12 @@ class S3Poller
   # parses v2 JSON format to v1 format
   def parse_to_v1_format!(json)
     # discusting nested loops, but much easier than writing a generic DFS solution or something
-    json.each do |key, value1|
-      if key.to_s != "run_data"
-        value1.each_value do |value2|
-          value2.each_value do |value3|
-            value3.each do |k, v|
-              value3[k] = v["relpath"]
-            end
+    json.each do |platform, platform_value|
+      next if platform.to_s == "run_data"
+      platform_value.each_value do |platform_version_value|
+        platform_version_value.each_value do |architecture_value|
+          architecture_value.each do |chef_version, chef_version_value|
+            architecture_value[chef_version] = chef_version_value["relpath"]
           end
         end
       end
