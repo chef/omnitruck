@@ -9,10 +9,10 @@ require File.expand_path("../omnitruck-verifier/lib/omnitruck-verifier/bucket_li
 class S3Poller
 
   CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
-  CHEF_PLATFORM_NAMES = "/chef-platform-support/chef-platform-names.json"
+  CHEF_PLATFORM_NAMES = "chef-platform-names.json"
 
   CHEF_SERVER_RELEASE_MANIFESTS = "/chef-server-platform-support"
-  CHEF_SERVER_PLATFORM_NAMES = "/chef-platform-support/chef-server-platform-names.json"
+  CHEF_SERVER_PLATFORM_NAMES = "chef-server-platform-names.json"
 
   attr_reader :config
 
@@ -75,7 +75,7 @@ class S3Poller
     server_json_v1 = server_collection.generate_combined_manifest
     write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
 
-    update_platform_name_maps
+    update_platform_name_maps(client_collection, server_collection)
   end
 
   # parses v2 JSON format to v1 format
@@ -93,24 +93,18 @@ class S3Poller
     end
   end
 
-  def update_platform_name_maps
-    puts "TODO: update platform name maps..."
-    ## TODO: release.rb needs to be updated to upload the platform name mapping
-    ## file to the new metadata bucket
-    ####
-    ##  #Grab the human readable json files directly
-    ##  if @s3.exists?(@chef_platform_names)
-    ##    client_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_platform_names).value))
-    ##    File.open(@config['chef_platform_names'], "w") do |f|
-    ##      f.puts client_platform_data
-    ##    end
-    ##  end
-    ##  if @s3.exists?(@chef_server_platform_names)
-    ##    server_platform_data = JSON.pretty_generate(JSON.parse(@s3.object(@chef_server_platform_names).value))
-    ##    File.open(@config['chef_server_platform_names'], "w") do |f|
-    ##      f.puts server_platform_data
-    ##    end
-    ##  end
+  # Grab the human readable json files directly
+  def update_platform_name_maps(client_collection, server_collection)
+    client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
+    File.open(@config['chef_platform_names'], "w") do |f|
+      f.puts client_names_manifest
+    end
+    
+    # TODO: uncomment once server is working under new metadata bucket!
+    # server_names_manifest = server_collection.get_remote_manifest(CHEF_SERVER_PLATFORM_NAMES)
+    # File.open(@config['chef_server_platform_names'], "w") do |f|
+    #   f.puts server_platform_manifest
+    # end
   end
 
   def write_data(path, data)
