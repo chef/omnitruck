@@ -5,8 +5,6 @@ METADATA_BUCKET = "opscode-omnibus-package-metadata"
 METADATA_PATH = "chef-release-manifest"
 BASEPATH= "#{METADATA_PATH}/"
 RELEASE_REGEX = %r[#{Regexp.escape(BASEPATH)}(.+).json]
-CACHE_DIR = File.expand_path("~/.omnibus-verify")
-METADATA_CACHE = File.expand_path("release_metadata", CACHE_DIR)
 
 module OmnitruckVerifier
   class MetadataFile
