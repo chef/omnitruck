@@ -114,3 +114,13 @@ platform. It is this list that gets passed on to the Sinatra app.
 There are unit tests in the spec/ directory which can be run by running 'rspec'
 in the top directory of the project. Default values are stored in the .rspec 
 file.
+
+Backup
+------
+
+A tool for pulling all the builds from s3 and putting them into a file and directory
+format that omnibus-chef/jenkins/release.rb can parse. This is useful for, say, 
+re-initializing the metadata or moving between s3 buckets / accounts (was originally
+written to add checksums to the package metadata).
+
+See backup/readme.md for more info.
