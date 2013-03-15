@@ -1,4 +1,4 @@
-Omnitruck Backup Utility - Tyler Cloke <tyler@opscode.com>
+Omnitruck Backup Utility
 ==========================================================
 
 As stated in the main readme, the original purpose of this was to 
@@ -6,7 +6,7 @@ re-upload via omnibus so that it re-parsed all the packages into
 a format omnibus understands, originally to back-populate checksums.
 
 The end goal is to parse the packages into the omnibus dir structure of:
-<CHEF_PACKAGE_VERSION>/<JENKINS_FILTER>/pkg/<PACKAGE_FILENAME>
+CHEF_PACKAGE_VERSION/JENKINS_FILTER/pkg/PACKAGE_FILENAME
 
 Where an example of JENKINS_FILTER is a folder named:
 build_os=centos-5,machine_architecture=x64,role=oss-builder
@@ -24,7 +24,7 @@ we must create a backwards mapping between the two.
 So, in order to put the files in a format omnibus will understand
 we must reverse the json in omnibus so that we can map the hash from
 a build manifest i.e. OS => OS_VERSION => ARCH => CHEF_VERSION => FILENAME
-to <CHEF_PACKAGE_VERSION>/<JENKINS_FILTER>/pkg/<PACKAGE_FILENAME>.
+to CHEF_PACKAGE_VERSION/JENKINS_FILTER/pkg/PACKAGE_FILENAME.
 
 The script reverse-release-json.rb accomplishes this and outputs to reversed.json.
 
@@ -47,7 +47,7 @@ Now, we must set up s3cmd.
 
 2.   mv ../config/s3cfg.example ../config/s3cfg
      emacs ../config/s3cfg
-     # replace <BUCKET-ACCOUNT-KEY-HERE> and <BUCKET-SECRET-KEY-HERE> with real values
+     # replace BUCKET-ACCOUNT-KEY-HERE and BUCKET-SECRET-KEY-HERE with real values
 
 Now we have s3cmd configured. Next we will run a script that will pull down _every_ 
 manifest for both server and client, parse it, and download every package into 
@@ -65,5 +65,5 @@ s3://opscode-omnitruck-release/chef-server-platform-support/*.json excluding che
 
 and put them in the omnibus format of 
 
-<CHEF_PACKAGE_VERSION>/<JENKINS_FILTER>/pkg/<PACKAGE_FILENAME> with the help of s3-parse-manifest-json.rb.
+CHEF_PACKAGE_VERSION/JENKINS_FILTER/pkg/PACKAGE_FILENAME with the help of s3-parse-manifest-json.rb.
 
