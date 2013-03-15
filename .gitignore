@@ -17,3 +17,9 @@ s3-server-backup
 backup-error-log
 client_migrate_manifest_names
 server_migrate_manifest_names
+
+# Ignore emacs temp files
+*~
+*.rb#
+.#*
+[#]*[#]
