@@ -15,7 +15,7 @@ Usage
 -----
 
 **If you want to understand the utility, follow along, if not, just
-follow the numbered steps.**
+follow steps in code blocks.**
 
 Unfortunately, the naming conventions between omnibus and omnitruck
 are wildly inconsistent ("intel" maps to "i386" for example). Therefore, 
@@ -30,13 +30,14 @@ The script reverse-release-json.rb accomplishes this and outputs to reversed.jso
 
 So, move the json from omnibus for server and client.
 
+**Step 1**
 
-1.  # if your omnibus-chef is out of date...should probably just do this anyway
+    # if your omnibus-chef is out of date...should probably just do this anyway
     # cd omnibus-chef && git pull --rebase && cd opscode-omnitruck
-    cd backup
-    mv omnibus-chef/jenkins/chef.json 
-    ruby reverse-release-json.rb chef.json
-    mv reversed.json chef-reversed.json
+  	cd backup
+  	mv omnibus-chef/jenkins/chef.json 
+  	ruby reverse-release-json.rb chef.json
+  	mv reversed.json chef-reversed.json
 
     # repeat for server
     mv omnibus-chef/jenkins/chef-server.json
@@ -45,17 +46,21 @@ So, move the json from omnibus for server and client.
 
 Now, we must set up s3cmd. 
 
-2.   mv ../config/s3cfg.example ../config/s3cfg
-     emacs ../config/s3cfg
-     # replace BUCKET-ACCOUNT-KEY-HERE and BUCKET-SECRET-KEY-HERE with real values
+**Step 2**
+
+    mv ../config/s3cfg.example ../config/s3cfg
+    emacs ../config/s3cfg
+    # replace BUCKET-ACCOUNT-KEY-HERE and BUCKET-SECRET-KEY-HERE with real values
 
 Now we have s3cmd configured. Next we will run a script that will pull down _every_ 
 manifest for both server and client, parse it, and download every package into 
 backup/s3-client-backup and backup/s3-server-backup into a format that works for omnibus.
 
-3.   # change permissions if necessary with
-     # chmod +x backup-s3-bucket.sh
-     ./backup-s3-bucket.sh
+**Step 3**
+
+    # change permissions if necessary with
+    # chmod +x backup-s3-bucket.sh
+    ./backup-s3-bucket.sh
 
 And now wait until you are an old man or woman! It will grab every server and client
 build from:
@@ -63,7 +68,9 @@ build from:
 s3://opscode-omnitruck-release/chef-platform-support/*.json excluding chef-platform json files and
 s3://opscode-omnitruck-release/chef-server-platform-support/*.json excluding chef-platform json files
 
-and put them in the omnibus format of 
+and put them in the omnibus format of :
 
-CHEF_PACKAGE_VERSION/JENKINS_FILTER/pkg/PACKAGE_FILENAME with the help of s3-parse-manifest-json.rb.
+CHEF_PACKAGE_VERSION/JENKINS_FILTER/pkg/PACKAGE_FILENAME
+
+with the help of s3-parse-manifest-json.rb.
 
