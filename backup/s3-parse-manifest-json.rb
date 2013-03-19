@@ -30,6 +30,7 @@ file.each_line do |line|
   filename = "#{ARGV[4]}/#{parts[parts.length-1]}".strip
 
   file_found = false
+  filename = filename.gsub(/\+/, "%2B") 
   begin
     # get the json from the current release manifest
     json = JSON.parse(s3.get(filename).value)
@@ -39,9 +40,8 @@ file.each_line do |line|
     `echo "COULD NOT OPEN S3 FILE #{filename}" >> backup-error-log`
   end
 
-  puts "Downloading all files from #{filename}".green
-
   if file_found
+    puts "Downloading all files from #{filename}".green
     # for each platform => plat_version => architecture => chef_version
     json.each do |platform, platform_value|
       platform_value.each do |platform_version, platform_version_value| 
@@ -72,10 +72,10 @@ file.each_line do |line|
             # rip that sucker down from s3 and into your output path, if you haven't dl-ed it yet
             if not directory_exists 
               begin
-                `wget https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} -O #{output_dir}/#{file_name}`
+                `wget https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value.gsub(/\+/, "%2B")} -O #{output_dir}/#{file_name}`
               rescue
-                puts  "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}".red
-                `echo "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}" >> backup-error-log`
+                puts  "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value.gsub(/\+/, "%2B")} to file #{file_name}".red
+                `echo "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value.gsub(/\+/, "%2B")} to file #{file_name}" >> backup-error-log`
               end
             end
           end
