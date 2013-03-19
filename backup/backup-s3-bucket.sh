@@ -8,10 +8,6 @@
 #
 #!/bin/bash
 
-# grab the s3 key from s3cfg
-SECRET_KEY=`grep secret_key ../config/s3cfg | cut -d ' ' -f 3`
-ACCESS_KEY=`grep access_key ../config/s3cfg | cut -d ' ' -f 3`
-
 # make backup dirs and files
 mkdir s3-client-backup
 mkdir s3-server-backup
@@ -22,9 +18,9 @@ touch backup-error-log
 s3cmd ls -c ../config/s3cfg s3://opscode-omnitruck-release/chef-platform-support/ | tr -s ' ' | cut -d ' ' -f 4 | grep .json | grep -v chef-platform-names.json > client_migrate_manifest_names
 
 # parse client_migrate_manifest_names, and backup all the builds to s3-client-backup
-ruby s3-parse-manifest-json.rb "client_migrate_manifest_names" $ACCESS_KEY $SECRET_KEY "opscode-omnitruck-release" "chef-platform-support" "s3-client-backup" "chef-reversed.json"
+ruby s3-parse-manifest-json.rb "client_migrate_manifest_names" "opscode-omnitruck-release" "chef-platform-support" "s3-client-backup" "chef-reversed.json"
 
 # do a similar thing for server
 s3cmd ls -c ../config/s3cfg s3://opscode-omnitruck-release/chef-server-platform-support/ | tr -s ' ' | cut -d ' ' -f 4 | grep .json | grep -v chef-server-platform-names.json > server_migrate_manifest_names
 
-ruby s3-parse-manifest-json.rb "server_migrate_manifest_names" $ACCESS_KEY $SECRET_KEY "opscode-omnitruck-release" "chef-server-platform-support" "s3-server-backup" "chef-server-reversed.json"
+ruby s3-parse-manifest-json.rb "server_migrate_manifest_names" "opscode-omnitruck-release" "chef-server-platform-support" "s3-server-backup" "chef-server-reversed.json"

@@ -1,6 +1,6 @@
 # Author: Tyler Cloke <tyler@opscode.com>
 #
-# Usage: ruby s3-parse-manifest-json.rb s3-filenames-file s3-access-key s3-secret-key s3-bucket-name s3-sub-bucket-name output-dir reversed-ruby (see reverse-release-json.rb for last arg help)
+# Usage: ruby s3-parse-manifest-json.rb s3-filenames-file s3-bucket-name s3-sub-bucket-name output-dir reversed-ruby (see reverse-release-json.rb for last arg help)
 #
 # Ruby script that parses .json manifest files from s3, downloads each file 
 # endpoint in the json from s3 and stores them in the format required for 
@@ -11,23 +11,27 @@ require "JSON"
 require "colorize"
 require 'fileutils'
 
+# grab the s3 key from s3cfg
+SECRET_KEY=`grep secret_key ../config/s3cfg | cut -d ' ' -f 3`
+ACCESS_KEY=`grep access_key ../config/s3cfg | cut -d ' ' -f 3`
+
 s3 = UberS3.new({
-  :access_key         => ARGV[1],
-  :secret_access_key  => ARGV[2],
-  :bucket             => ARGV[3],
+  :access_key         => ACCESS_KEY.strip,
+  :secret_access_key  => SECRET_KEY.strip,
+  :bucket             => ARGV[1],
   :adapter            => :net_http
 })
 
 # file where each line is a ruby release version
 file = File.open(ARGV[0]).read
 # inverse of omnibus-chef/jenkins/release.rb file
-reversed_json = JSON.parse(File.open(ARGV[6]).read)
+reversed_json = JSON.parse(File.open(ARGV[4]).read)
 
 # for each release manifest
 file.each_line do |line|
   parts = line.split('/')
   # get the release manifest file name
-  filename = "#{ARGV[4]}/#{parts[parts.length-1]}".strip
+  filename = "#{ARGV[2]}/#{parts[parts.length-1]}".strip
 
   file_found = false
   filename = filename.gsub(/\+/, "%2B") 
@@ -50,7 +54,7 @@ file.each_line do |line|
             # get the name of the omnibus version dir
             omnibus_dir = reversed_json[platform][platform_version][arch]
             # get the output path in omnibus format (see readme if interested in format)
-            output_dir = "#{ARGV[5]}/#{chef_version}/#{omnibus_dir}/pkg/"
+            output_dir = "#{ARGV[3]}/#{chef_version}/#{omnibus_dir}/pkg/"
 
             # get the name of the chef build file
             file_name = chef_version_value.split("/")[-1]
