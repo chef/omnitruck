@@ -35,7 +35,7 @@ file.each_line do |line|
     json = JSON.parse(s3.get(filename).value)
     file_found = true
   rescue
-    puts "COULD NOT OPEN S3 FILE #{filename}".red
+    puts  "COULD NOT OPEN S3 FILE #{filename}".red
     `echo "COULD NOT OPEN S3 FILE #{filename}" >> backup-error-log`
   end
 
@@ -51,23 +51,32 @@ file.each_line do |line|
             omnibus_dir = reversed_json[platform][platform_version][arch]
             # get the output path in omnibus format (see readme if interested in format)
             output_dir = "#{ARGV[5]}/#{chef_version}/#{omnibus_dir}/pkg/"
-            
-            # make output path if it doesn't exist
-            begin 
-              FileUtils.mkdir_p(output_dir)
-            rescue
-              puts "Directory already exists".red
-            end
 
             # get the name of the chef build file
             file_name = chef_version_value.split("/")[-1]
             
-            # rip that sucker down from s3 and into your output path
+            # make output path if it doesn't exist
+            directory_exists = false
             begin
-              `wget https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} -O #{output_dir}/#{file_name}`
+              if File.directory? output_dir
+                directory_exists = true
+                raise
+              end
+              FileUtils.mkdir_p(output_dir)
             rescue
-              puts "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}".red
-              `echo "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}" >> backup-error-log`
+              puts  "Directory already exists, not downloading #{file_name}".yellow
+              `echo "Directory already exists, not downloading #{file_name}" >> backup-error-log`
+              break
+            end
+            
+            # rip that sucker down from s3 and into your output path, if you haven't dl-ed it yet
+            if not directory_exists 
+              begin
+                `wget https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} -O #{output_dir}/#{file_name}`
+              rescue
+                puts  "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}".red
+                `echo "Failed to download https://opscode-omnitruck-release.s3.amazonaws.com#{chef_version_value} to file #{file_name}" >> backup-error-log`
+              end
             end
           end
         end
