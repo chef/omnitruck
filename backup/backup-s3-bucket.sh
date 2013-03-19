@@ -19,7 +19,7 @@ touch backup-error-log
 
 # grab all the .json files from opscode-omnitruck-release 
 # and each file name on a line in client_migrate_manifest_names
-s3cmd ls -c ../config/s3cfg s3://opscode-omnitruck-release/chef-platform-support/ | tr -s ' ' | cut -d ' ' -f 4 | grep .json | grep -v *chef-platform* > client_migrate_manifest_names
+s3cmd ls -c ../config/s3cfg s3://opscode-omnitruck-release/chef-platform-support/ | tr -s ' ' | cut -d ' ' -f 4 | grep .json | grep -v chef-platform-names.json > client_migrate_manifest_names
 
 # parse client_migrate_manifest_names, and backup all the builds to s3-client-backup
 ruby s3-parse-manifest-json.rb "client_migrate_manifest_names" $ACCESS_KEY $SECRET_KEY "opscode-omnitruck-release" "chef-platform-support" "s3-client-backup" "chef-reversed.json"
