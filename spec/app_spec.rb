@@ -11,7 +11,7 @@ describe 'Omnitruck' do
     def self.should_retrieve_latest_as(expected_version, options={})
       let(:iteration_number){ options[:iteration] || 1}
 
-      it "should retrieve latest as #{expected_version}" do
+      it "should serve a redirect to the correct URI for package #{expected_version}" do
         get(endpoint, params)
         last_response.should be_redirect
         follow_redirect!
@@ -26,6 +26,27 @@ describe 'Omnitruck' do
         expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
         expected_version_variations.gsub!(/\+/, "%2B")
         last_request.url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+      end
+
+      it "should serve JSON metadata with a URI for package #{expected_version}" do
+        get(metadata_endpoint, params)
+        #last_response.should be_redirect
+        #follow_redirect!
+        metadata_json = last_response.body
+        # parse it
+        #
+        pkg_url = parsed_json["url"]
+        http_type_string = URI.split(last_request.url)[0]
+        omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
+        # This really sucks but the git describe string embedded in package names differs
+        # between platforms. For example:
+        #
+        #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
+        #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
+        #
+        expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
+        expected_version_variations.gsub!(/\+/, "%2B")
+        pkg_url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
     end
 
