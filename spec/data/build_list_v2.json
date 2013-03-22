@@ -1,0 +1,1838 @@
+{
+  "debian": {
+    "6": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.12.0-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.14.0-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.14.0.rc.0-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/debian/6/x86_64/chef_10.14.0.rc.1-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/debian/6/x86_64/chef_10.14.2-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/debian/6/x86_64/chef_10.14.4-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/debian/6/x86_64/chef_10.14.4-2.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.0-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.0.rc.0-0.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.0.rc.1-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.2-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.2-49-g21353f0-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/debian/6/x86_64/chef_10.16.4-1.debian.6.0.5_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/debian/6/i686/chef_10.12.0-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/debian/6/i686/chef_10.14.0-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/debian/6/i686/chef_10.14.0.rc.0-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/debian/6/i686/chef_10.14.0.rc.1-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/debian/6/i686/chef_10.14.2-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/debian/6/i686/chef_10.14.4-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/debian/6/i686/chef_10.14.4-2.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/debian/6/i686/chef_10.16.0-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/debian/6/i686/chef_10.16.0.rc.0-0.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/debian/6/i686/chef_10.16.0.rc.1-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/debian/6/i686/chef_10.16.2-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/debian/6/i686/chef_10.16.2-49-g21353f0-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/debian/6/i686/chef_10.16.4-1.debian.6.0.5_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "el": {
+    "5": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.12.0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.0.rc.0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.0.rc.1-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.2-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.4-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/5/x86_64/chef-10.14.4-2.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0.rc.0-0.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0.rc.1-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-49-g21353f0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0.rc.1_49_g21353f0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-49-g21353f0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0_49_g21353f0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.2-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/el/5/i686/chef-10.12.0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/el/5/i686/chef-10.14.0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/el/5/i686/chef-10.14.0.rc.0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/el/5/i686/chef-10.14.0.rc.1-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/el/5/i686/chef-10.14.2-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/el/5/i686/chef-10.14.4-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/5/i686/chef-10.14.4-2.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/5/i686/chef-10.16.0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/5/i686/chef-10.16.0.rc.0-0.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/5/i686/chef-10.16.0.rc.1-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/5/i686/chef-10.16.2-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/5/i686/chef-10.16.2_49_g21353f0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/5/i686/chef-10.16.4-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.12.0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.0.rc.0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.0.rc.1-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.2-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.4-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/6/x86_64/chef-10.14.4-2.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0.rc.0-0.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0.rc.1-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.2-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.2_49_g21353f0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.4-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/el/6/i686/chef-10.12.0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/el/6/i686/chef-10.14.0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/el/6/i686/chef-10.14.0.rc.0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/el/6/i686/chef-10.14.0.rc.1-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/el/6/i686/chef-10.14.2-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/el/6/i686/chef-10.14.4-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/6/i686/chef-10.14.4-2.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/6/i686/chef-10.16.0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/6/i686/chef-10.16.0.rc.0-0.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/6/i686/chef-10.16.0.rc.1-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/6/i686/chef-10.16.2-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/6/i686/chef-10.16.2_49_g21353f0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/6/i686/chef-10.16.4-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "10.6": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-full-10.12.0-1-mac_os_x-10.6.8-x86_64.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.0_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.0.rc.0_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.0.rc.1_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.2_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.4_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.14.4_2.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.0_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.0.rc.0_0.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.0.rc.1_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.2_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.2-49-g21353f0_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.4_1.mac_os_x.10.6.8.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "10.7": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-full-10.12.0-1-mac_os_x-10.7.2-x86_64.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.0_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.0.rc.0_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.0.rc.1_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.2_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.4_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.14.4_2.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.0_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.0.rc.0_0.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.0.rc.1_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.2_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.2-49-g21353f0_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.4_1.mac_os_x.10.7.2.sh",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.12.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0.rc.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.4-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.4-2.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0.rc.0-0.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.2-49-g21353f0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.4-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.12.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0.rc.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0.rc.1-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.2-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.4-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.4-2.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0.rc.0-0.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0.rc.1-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.2-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.2-49-g21353f0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.4-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "10.10": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.12.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0.rc.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.4-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.14.4-2.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0.rc.0-0.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.2-49-g21353f0-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.16.4-1.ubuntu.10.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.12.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0.rc.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.0.rc.1-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.2-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.4-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.14.4-2.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0.rc.0-0.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.0.rc.1-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.2-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.2-49-g21353f0-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/10.04/i686/chef_10.16.4-1.ubuntu.10.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "11.04": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.12.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-2.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.0-0.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-2.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.0-0.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "11.10": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.12.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-2.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.0-0.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-2.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.0-0.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.12.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.14.4-2.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.0-0.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.0.rc.1-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.14.4-2.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.0-0.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.0.rc.1-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.2-49-g21353f0-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "12.10": {
+      "i686": {
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.16.4-1.ubuntu.11.04_i386.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "x86_64": {
+        "10.16.4-1": {
+          "relpath": "/ubuntu/11.04/x86_64/chef_10.16.4-1.ubuntu.11.04_amd64.deb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.9": {
+      "sparc": {
+        "10.14.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-2.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.0-0.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-49-g21353f0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "5.11": {
+      "sparc": {
+        "10.14.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-2.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.0-0.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-49-g21353f0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i386": {
+        "10.14.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0.rc.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0.rc.1-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.2-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.4-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.4-2.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0.rc.0-0.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0.rc.1-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.2-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.2-49-g21353f0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.4-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "5.10": {
+      "sparc": {
+        "10.14.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.14.4-2.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.0-0.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.0.rc.1-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.2-49-g21353f0-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/solaris2/5.9/sparc/chef_10.16.4-1.solaris2.5.9_sparc.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i386": {
+        "10.14.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0.rc.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.0.rc.1-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.2-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.2-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.4-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/solaris2/5.10/i386/chef_10.14.4-2.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0.rc.0-0.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.0.rc.1-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.2-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.2-49-g21353f0-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/solaris2/5.10/i386/chef_10.16.4-1.solaris2.5.10_i386.solaris",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "sles": {
+    "11.2": {
+      "x86_64": {
+        "10.14.4-1": {
+          "relpath": "/el/5/x86_64/chef-10.14.4-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/5/x86_64/chef-10.14.4-2.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0.rc.0-0.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.0.rc.1-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.2-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.14.4-1": {
+          "relpath": "/el/5/i686/chef-10.14.4-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/5/i686/chef-10.14.4-2.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/5/i686/chef-10.16.0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/5/i686/chef-10.16.0.rc.0-0.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/5/i686/chef-10.16.0.rc.1-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/5/i686/chef-10.16.2-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/5/i686/chef-10.16.2_49_g21353f0-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/5/i686/chef-10.16.4-1.el5.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "suse": {
+    "12.1": {
+      "x86_64": {
+        "10.14.4-1": {
+          "relpath": "/el/6/x86_64/chef-10.14.4-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/6/x86_64/chef-10.14.4-2.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0.rc.0-0.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.0.rc.1-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.2-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.2_49_g21353f0-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/6/x86_64/chef-10.16.4-1.el6.x86_64.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "i686": {
+        "10.14.4-1": {
+          "relpath": "/el/6/i686/chef-10.14.4-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.14.4-2": {
+          "relpath": "/el/6/i686/chef-10.14.4-2.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0-1": {
+          "relpath": "/el/6/i686/chef-10.16.0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/el/6/i686/chef-10.16.0.rc.0-0.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/el/6/i686/chef-10.16.0.rc.1-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-1": {
+          "relpath": "/el/6/i686/chef-10.16.2-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/el/6/i686/chef-10.16.2_49_g21353f0-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/el/6/i686/chef-10.16.4-1.el6.i686.rpm",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  },
+  "windows": {
+    "2008": {
+      "i686": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "x86_64": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "2003r2": {
+      "i686": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      },
+      "x86_64": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "2008r2": {
+      "x86_64": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    },
+    "2012": {
+      "x86_64": {
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        },
+        "10.16.4-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+          "md5": "2d84ede3f9930079ce91c857c868fb6e",
+          "sha256": "34eb2d8b1485ecac4444d3a92dea48e242c5477fab564f84d74500e2b1a7df67"
+        }
+      }
+    }
+  }
+}
