@@ -138,7 +138,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v2))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
