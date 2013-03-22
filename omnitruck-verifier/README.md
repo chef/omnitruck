@@ -34,7 +34,7 @@ sums) is planned.
 ## Running It
 
 This is a ruby project using bundler, so `bundle install` to acquire
-deps. Run `bin/quick-verify` to run the verifier.
+deps. Run `bin/verify-quick` to run the verifier.
 
 ### In Production
 
