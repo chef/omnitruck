@@ -24,13 +24,15 @@ module OmnitruckVerifier
     end
 
     attr_reader :version
+    attr_reader :project
 
-    def initialize(version)
+    def initialize(project, version)
+      @project = project
       @version = version
     end
 
     def store
-      FileUtils.mkdir(metadata_dir) unless File.directory?(metadata_dir)
+      FileUtils.mkdir_p(metadata_dir) unless File.directory?(metadata_dir)
       yield self
     rescue Exception
       FileUtils.rm_rf(metadata_dir)
@@ -38,7 +40,7 @@ module OmnitruckVerifier
     end
 
     def metadata_dir
-      File.join(self.class.metadata_cache, version)
+      File.join(self.class.metadata_cache, project, version)
     end
 
     def already_cached?
