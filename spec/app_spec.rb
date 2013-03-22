@@ -16,7 +16,7 @@ describe 'Omnitruck' do
         last_response.should be_redirect
         follow_redirect!
         http_type_string = URI.split(last_request.url)[0]
-        omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_bucket}.s3.amazonaws.com"
+        omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
         # This really sucks but the git describe string embedded in package names differs
         # between platforms. For example:
         #

@@ -113,7 +113,7 @@ class S3Poller
   end
 
   def bucket_name
-    config['aws_bucket']
+    config['aws_metadata_bucket']
   end
 
   def all_manifests
