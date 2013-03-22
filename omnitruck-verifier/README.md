@@ -34,10 +34,33 @@ sums) is planned.
 ## Running It
 
 This is a ruby project using bundler, so `bundle install` to acquire
-deps. Run `bin/quick_verify` to run the verifier. Options/arguments are
-currently TBD.
+deps. Run `bin/quick-verify` to run the verifier.
 
 ### In Production
 
-TBD.
+By default, `verify-quick` produces verbose output with statistics about
+the number of releases and packages available, and detailed information
+about checksum mismatches. This output is suitable for testing the
+verifier or manually verifying packages, but not for nagios. To enable
+nagios formatted output add the `--nagios` command line flag.
+
+`verify-quick` caches checksums in `~/.omnibus-verify` by default. In
+production we will want to configure it to store data elsewhere. This
+can be configured using the `-c CACHE_DIR` command line option.
+
+## Impending Multipart Upload Doom
+
+If files are uploaded using multipart uploads, AWS uses a different
+system to compute the etag of the file, so it is no longer the MD5 of
+the file. This sucks for us, because we want to compare the MD5 of the
+file on S3 with the one we computed when uploading the file. Our current
+release process involves using `s3cmd` to upload the file. Newer
+versions of `s3cmd` will start automatically using multipart uploads for
+all files larger than 15 MB. Luckily, we can configure the old behavior,
+but `s3cmd` doesn't accept unknown command line options, so we can't
+prepare in advance without upgrading `s3cmd`.
+
+References:
+* http://s3tools.org/s3cmd-110b2-released
+* https://forums.aws.amazon.com/thread.jspa?messageID=293789
 
