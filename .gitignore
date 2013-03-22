@@ -8,6 +8,7 @@ bin/*
 
 # app-specific ignores:
 build*list.json
+build*list_v?.json
 release-metadata-cache/*
 chef-*platform-names.json
 
