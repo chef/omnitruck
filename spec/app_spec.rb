@@ -34,7 +34,7 @@ describe 'Omnitruck' do
         #follow_redirect!
         metadata_json = last_response.body
         # parse it
-        #
+        parsed_json = JSON.parse(metadata_json)
         pkg_url = parsed_json["url"]
         http_type_string = URI.split(last_request.url)[0]
         omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
@@ -48,6 +48,27 @@ describe 'Omnitruck' do
         expected_version_variations.gsub!(/\+/, "%2B")
         pkg_url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
+
+      # it "should serve plain text metadata with a URI for package #{expected_version}" do
+      #   get(metadata_endpoint, params, "HTTP_ACCEPT" => "text/plain")
+      #   #last_response.should be_redirect
+      #   #follow_redirect!
+      #   text_metadata = last_response.body
+      #   # parse it
+      #   #
+      #   pkg_url = parsed_json["url"]
+      #   http_type_string = URI.split(last_request.url)[0]
+      #   omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
+      #   # This really sucks but the git describe string embedded in package names differs
+      #   # between platforms. For example:
+      #   #
+      #   #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
+      #   #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
+      #   #
+      #   expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
+      #   expected_version_variations.gsub!(/\+/, "%2B")
+      #   pkg_url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+      # end
     end
 
     # Helper lets to make parameter declaration and handling easier
@@ -76,6 +97,7 @@ describe 'Omnitruck' do
 
     describe "client" do
       let(:endpoint){"/download"}
+      let(:metadata_endpoint){"/metadata"}
       let(:project){ "chef" }
 
       describe "el" do
@@ -307,6 +329,7 @@ describe 'Omnitruck' do
 
     describe "server" do
       let(:endpoint){"/download-server"}
+      let(:metadata_endpoint) {"metadata-server"}
       let(:project){ "chef-server" }
 
       describe "Ubuntu" do
