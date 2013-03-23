@@ -7,8 +7,8 @@ bin/*
 .bundle
 
 # app-specific ignores:
-build*list.json
-build*list_v?.json
+/build*list.json
+/build*list_v?.json
 release-metadata-cache/*
 chef-*platform-names.json
 
