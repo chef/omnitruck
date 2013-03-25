@@ -7,6 +7,7 @@ gem 'unicorn'
 gem 'json'
 gem 'colorize'
 gem 'yajl-ruby'
+gem "rest-client"
 
 group :test do
   gem 'rspec'
