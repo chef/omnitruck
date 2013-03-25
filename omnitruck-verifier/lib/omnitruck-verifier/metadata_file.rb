@@ -2,41 +2,43 @@ require 'digest'
 require 'yajl'
 
 METADATA_BUCKET = "opscode-omnibus-package-metadata"
-METADATA_PATH = "chef-release-manifest"
-BASEPATH= "#{METADATA_PATH}/"
-RELEASE_REGEX = %r[#{Regexp.escape(BASEPATH)}(.+).json]
-CACHE_DIR = File.expand_path("~/.omnibus-verify")
-METADATA_CACHE = File.expand_path("release_metadata", CACHE_DIR)
+RELEASE_REGEX = %r[(.+)\-release\-manifest\/(.+).json]
+
+SKIP_FILES = %r[chef\-.*platform\-names\.json]
 
 module OmnitruckVerifier
   class MetadataFile
     def self.all
       files = []
       BucketLister.new(METADATA_BUCKET).fetch do |key, md5|
+        next if key =~ SKIP_FILES
         files << from_s3_key(key, md5)
       end
       files
     end
 
     def self.from_s3_key(key, md5)
-      version = RELEASE_REGEX.match(key)[1]
+      matches = RELEASE_REGEX.match(key)
+      project, version = matches[1], matches[2]
       url = "https://#{METADATA_BUCKET}.s3.amazonaws.com/#{key}"
-      new(url, version, md5)
+      new(url, project, version, md5)
     end
 
     attr_reader :url
+    attr_reader :project
     attr_reader :version
     attr_reader :remote_md5
     attr_reader :cache
 
-    def initialize(url, version, remote_md5)
-      @url = url
+    def initialize(url, project, version, remote_md5)
+      @url = url.gsub("+", "%2b")
+      @project = project
       @version = version
       @remote_md5 = remote_md5
     end
 
     def cache
-      @cache ||= MetadataCache.new(version)
+      @cache ||= MetadataCache.new(project, version)
     end
 
     def cached?
@@ -54,12 +56,19 @@ module OmnitruckVerifier
     def fetch
       cache.store do |c|
         File.open(cached_metadata, "w+") do |f|
-          f.print(RestClient.get(url))
+          f.print(download_metadata)
         end
         File.open(c.md5_file, "w+") { |f| f.print("#{md5}\n") }
         File.open(c.sha256_file, "w+") { |f| f.print("#{sha256}\n") }
         File.open(c.sha512_file, "w+") { |f| f.print("#{sha512}\n") }
       end
+    end
+
+    def download_metadata
+      RestClient.get(url)
+    rescue Exception
+      $stderr.puts "Error fetching #{url}"
+      raise
     end
 
     def package_checksums

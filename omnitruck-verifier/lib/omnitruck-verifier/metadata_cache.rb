@@ -3,22 +3,36 @@ require 'fileutils'
 module OmnitruckVerifier
   class MetadataCache
 
-    CACHE_DIR = File.expand_path("~/.omnibus-verify")
-    METADATA_CACHE = File.expand_path("release_metadata", CACHE_DIR)
+
+    @cache_dir = "~/.omnibus-verify"
+
+    def self.cache_dir=(new_cache_dir)
+      @cache_dir = new_cache_dir
+    end
+
+    def self.cache_dir
+      File.expand_path(@cache_dir)
+    end
+
+    def self.metadata_cache
+      File.expand_path("release_metadata", cache_dir)
+    end
 
     # Ensure top-level cache dir is created
     def self.ensure_created
-      FileUtils.mkdir_p(METADATA_CACHE)
+      FileUtils.mkdir_p(metadata_cache)
     end
 
     attr_reader :version
+    attr_reader :project
 
-    def initialize(version)
+    def initialize(project, version)
+      @project = project
       @version = version
     end
 
     def store
-      FileUtils.mkdir(metadata_dir) unless File.directory?(metadata_dir)
+      FileUtils.mkdir_p(metadata_dir) unless File.directory?(metadata_dir)
       yield self
     rescue Exception
       FileUtils.rm_rf(metadata_dir)
@@ -26,7 +40,7 @@ module OmnitruckVerifier
     end
 
     def metadata_dir
-      File.join(METADATA_CACHE, version)
+      File.join(self.class.metadata_cache, project, version)
     end
 
     def already_cached?

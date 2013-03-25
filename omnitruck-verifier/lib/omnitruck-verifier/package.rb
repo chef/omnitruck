@@ -3,7 +3,7 @@ require 'omnitruck-verifier/bucket_lister'
 module OmnitruckVerifier
   class Package < Struct.new(:key, :md5)
 
-    PUBLISHED_PKG_BUCKET = "opscode-omnitruck-release".freeze
+    PUBLISHED_PKG_BUCKET = "opscode-omnibus-packages".freeze
 
     def self.all_by_relpath
       packages_by_relpath = {}

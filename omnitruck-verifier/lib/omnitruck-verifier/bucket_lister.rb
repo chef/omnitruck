@@ -72,7 +72,7 @@ module OmnitruckVerifier
     # we have to hack around that.
     def escape_marker(marker)
       marker = URI.escape(marker)
-      marker.gsub("+", "%2B") 
+      marker.gsub("+", "%2b")
     end
   end
 end

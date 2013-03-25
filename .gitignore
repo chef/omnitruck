@@ -1,6 +1,27 @@
 config/config.yml
+config/s3cfg
 rspec.failures
 
 # Bundler-related ignores
 bin/*
 .bundle
+
+# app-specific ignores:
+/build*list.json
+/build*list_v?.json
+release-metadata-cache/*
+chef-*platform-names.json
+
+# ignore backup dirs and files
+s3-client-backup
+s3-server-backup
+backup-error-log
+client_migrate_manifest_names
+server_migrate_manifest_names
+*reversed.json
+
+# Ignore emacs temp files
+*~
+*.rb#
+.#*
+[#]*[#]
