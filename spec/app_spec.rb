@@ -8,24 +8,31 @@ describe 'Omnitruck' do
 
   describe "download endpoints" do
 
+    # This really sucks but the git describe string embedded in package names differs
+    # between platforms. For example:
+    #
+    #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
+    #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
+    #
+    def url_regex_for(expected_version)
+      expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
+      expected_version_variations.gsub!(/\+/, "%2B")
+      /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+    end
+
     def self.should_retrieve_latest_as(expected_version, options={})
       let(:iteration_number){ options[:iteration] || 1}
+      let(:expected_md5) { options[:md5] }
+      let(:expected_sha256) { options[:sha256] }
+      let(:http_type_string) { "http" }
+      let(:omnitruck_host_path)  { "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com" }
 
       it "should serve a redirect to the correct URI for package #{expected_version}" do
         get(endpoint, params)
         last_response.should be_redirect
         follow_redirect!
-        http_type_string = URI.split(last_request.url)[0]
-        omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
-        # This really sucks but the git describe string embedded in package names differs
-        # between platforms. For example:
-        #
-        #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
-        #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
-        #
-        expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
-        expected_version_variations.gsub!(/\+/, "%2B")
-        last_request.url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+
+        last_request.url.should =~ url_regex_for(expected_version)
       end
 
       it "should serve JSON metadata with a URI for package #{expected_version}" do
@@ -36,39 +43,35 @@ describe 'Omnitruck' do
         # parse it
         parsed_json = JSON.parse(metadata_json)
         pkg_url = parsed_json["url"]
-        http_type_string = URI.split(last_request.url)[0]
-        omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
-        # This really sucks but the git describe string embedded in package names differs
-        # between platforms. For example:
-        #
-        #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
-        #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
-        #
-        expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
-        expected_version_variations.gsub!(/\+/, "%2B")
-        pkg_url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+
+        pkg_url.should =~ url_regex_for(expected_version)
+
+        # TODO: remove when done
+        pp :pkg_url => pkg_url, :json_md5 => parsed_json["md5"], :json_sha256 => parsed_json["sha256"]
+
+        pending("rm me for assertions about cksums")
+        parsed_json["sha256"].should == expected_sha256
+        parsed_json["md5"].should == expected_md5
       end
 
-      # it "should serve plain text metadata with a URI for package #{expected_version}" do
-      #   get(metadata_endpoint, params, "HTTP_ACCEPT" => "text/plain")
-      #   #last_response.should be_redirect
-      #   #follow_redirect!
-      #   text_metadata = last_response.body
-      #   # parse it
-      #   #
-      #   pkg_url = parsed_json["url"]
-      #   http_type_string = URI.split(last_request.url)[0]
-      #   omnitruck_host_path = "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com"
-      #   # This really sucks but the git describe string embedded in package names differs
-      #   # between platforms. For example:
-      #   #
-      #   #    ubuntu -> chef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb
-      #   #    el     -> chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm
-      #   #
-      #   expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
-      #   expected_version_variations.gsub!(/\+/, "%2B")
-      #   pkg_url.should =~ /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
-      # end
+      it "should serve plain text metadata with a URI for package #{expected_version}" do
+        get(metadata_endpoint, params, "HTTP_ACCEPT" => "text/plain")
+        #last_response.should be_redirect
+        #follow_redirect!
+        text_metadata = last_response.body
+        parsed_metadata = text_metadata.lines.inject({}) do |metadata, line|
+          key, value = line.strip.split("\t")
+          metadata[key] = value
+          metadata
+        end
+
+        pkg_url = parsed_metadata["url"]
+        pkg_url.should =~ url_regex_for(expected_version)
+
+        pending("rm me for assertions about cksums")
+        parsed_metadata["sha256"].should == expected_sha256
+        parsed_metadata["md5"].should == expected_md5
+      end
     end
 
     # Helper lets to make parameter declaration and handling easier
