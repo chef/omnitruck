@@ -36,30 +36,48 @@ class Omnitruck < Sinatra::Base
   end
 
 
+  # == Params, applies to /download, /download-server,
+  # /metadata, and /metadata-server endpoints
   #
-  # download an omnibus chef package
-  #
-  # == Params
-  #
-  # * :version:          - The version of Chef to download
-  # * :platform:         - The platform to install on
-  # * :platform_version: - The platfrom version to install on
-  # * :machine:          - The machine architecture to install on
+  # * :v:  - The version of Chef to download
+  # * :p:  - The platform to install on
+  # * :pv: - The platfrom version to install on
+  # * :m:  - The machine architecture to install on
   #
   get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list)))
+    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v1)))
   end
 
   get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list)))
+    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
   end
 
+  get '/metadata' do
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
+    if request.accept? 'text/plain'
+      parse_plain_text(package_info)
+    else
+      JSON.pretty_generate(package_info)
+    end
+  end
+
+  get '/metadata-server' do
+    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
+    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
+    if request.accept? 'text/plain'
+      parse_plain_text(package_info)
+    else
+      JSON.pretty_generate(package_info)
+    end
+  end
+  
   #
   # Returns the JSON minus run data to populate the install page build list
   #
   get '/full_client_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
@@ -72,7 +90,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/full_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
@@ -83,7 +101,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/full_server_list' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_server_list))
+    directory = JSON.parse(File.read(settings.build_server_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
@@ -122,7 +140,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list))
+    directory = JSON.parse(File.read(settings.build_list_v1))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
@@ -187,9 +205,9 @@ class Omnitruck < Sinatra::Base
   end
 
   # Take the input architecture, and an optional version (latest is
-  # default), and redirect to an appropriate build. This is called for
-  # both /download
-  def handle_download(name, build_hash)
+  # default), and returns the bottom level of the hash, if v1, this is simply the 
+  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
+  def get_package_info(name, build_hash)
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
@@ -220,18 +238,33 @@ class Omnitruck < Sinatra::Base
                                                             chef_version,
                                                             prerelease,
                                                             use_nightlies)
+    package_info = semvers_available[target]
 
-    package_url = semvers_available[target]
-
-    unless package_url
+    unless package_info
       raise InvalidDownloadPath, error_msg
     end
 
+    package_info
+  end
+
+  def convert_relpath_to_url(relpath)
     # Ensure all pluses in package name are replaced by the URL-encoded version
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
-    package_url.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{settings.aws_bucket}.s3.amazonaws.com"
-    redirect base + package_url
+    relpath.gsub!(/\+/, "%2B")
+    base = "#{request.scheme}://#{settings.aws_packages_bucket}.s3.amazonaws.com"
+    base + relpath
+  end
+
+  def handle_download(name, build_hash)
+    package_url = get_package_info(name, build_hash)
+    full_url = convert_relpath_to_url(package_url)
+    redirect full_url
+  end
+
+  # parses package_info hash into plaintext string
+  def parse_plain_text(package_info)
+    full_url = convert_relpath_to_url(package_info["relpath"])
+    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
   end
 end
