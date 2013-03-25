@@ -9,6 +9,7 @@ GEM
     json (1.6.5)
     kgio (2.7.4)
     mime-types (1.18)
+    nokogiri (1.5.6)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -57,6 +58,7 @@ PLATFORMS
 DEPENDENCIES
   colorize
   json
+  nokogiri
   rack-test
   rest-client
   rspec

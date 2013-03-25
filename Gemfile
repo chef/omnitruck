@@ -8,6 +8,7 @@ gem 'json'
 gem 'colorize'
 gem 'yajl-ruby'
 gem "rest-client"
+gem 'nokogiri'
 
 group :test do
   gem 'rspec'
