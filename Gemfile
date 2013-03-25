@@ -6,6 +6,7 @@ gem 'uber-s3'
 gem 'unicorn'
 gem 'json'
 gem 'colorize'
+gem 'yajl-ruby'
 
 group :test do
   gem 'rspec'
