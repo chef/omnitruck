@@ -1,3 +1,9 @@
+# gen_v2_data.rb
+# usage: ruby gen_v2_data.rb V1_FILE
+# (prints to stdout)
+# To write generated v2 data for use w/ specs:
+# ruby gen_v2_data.rb V1_FILE > V2_FILE
+
 require 'rubygems'
 require 'yajl'
 require 'digest'
@@ -5,11 +11,11 @@ require 'stringio'
 require 'pp'
 
 def md5(string)
-  @md5 ||= digest(Digest::MD5, StringIO.new(string))
+  digest(Digest::MD5, StringIO.new(string))
 end
 
 def sha256(string)
-  @sha256 ||= digest(Digest::SHA256, StringIO.new(string))
+  digest(Digest::SHA256, StringIO.new(string))
 end
 
 def digest(digest_class, io)
@@ -34,4 +40,8 @@ v1_client.each_value do |builds_by_distro_version|
   end
 end
 
-puts Yajl::Encoder.encode(v1_client, :pretty => true)
+begin
+  puts Yajl::Encoder.encode(v1_client, :pretty => true)
+rescue Errno::EPIPE
+  exit 0
+end
