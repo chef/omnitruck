@@ -7,7 +7,7 @@
 # omnibus' RELEASE.rb script. See backup/README.md for details.
 #
 require "uber-s3"
-require "JSON"
+require "json"
 require "colorize"
 require 'fileutils'
 
