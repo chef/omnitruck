@@ -138,12 +138,23 @@ module OmnitruckVerifier
         published_packages.size - expected_cksums.size
       end
 
+      def unverifiable_packages
+        published_packages.keys.select {|p| !expected_cksums.any? {|m| m["relpath"] == p } }
+      end
+
       def published_packages
         @published_packages ||= Package.all_by_relpath
       end
 
       def expected_cksums
-        @expected_cksums ||= metadata_files.map { |m| m.package_checksums }.flatten
+        @expected_cksums ||= begin
+          expected_cksums_by_relpath = {}
+          metadata_with_duplicates = metadata_files.map { |m| m.package_checksums }.flatten
+          metadata_with_duplicates.each do |metadata|
+            expected_cksums_by_relpath[metadata["relpath"]] ||= metadata
+          end
+          expected_cksums_by_relpath.values
+        end
       end
 
       def fetch_new_release_metadata
