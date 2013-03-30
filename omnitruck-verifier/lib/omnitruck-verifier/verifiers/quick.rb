@@ -9,6 +9,8 @@ module OmnitruckVerifier
     class Quick
 
 
+      # Convenience wrapper for creating a new Verifiers::Quick object and
+      # running it.
       def self.run(argv)
         new(argv).run
       end
@@ -17,6 +19,8 @@ module OmnitruckVerifier
       attr_reader :invalid_packages
       attr_reader :options
 
+      # Create a new Verifiers::Quick object. +argv+ is expected to be an Array
+      # of strings (e.g., ARGV).
       def initialize(argv)
         @metadata_files, @new_files, @existing_files = nil, nil, nil
         @invalid_metadata_files = []
@@ -48,10 +52,20 @@ module OmnitruckVerifier
         end
       end
 
+      # Parse command line options (as specified by +argv+ passed to the
+      # constructor)
       def parse_opts
         option_parser.parse(@argv)
       end
 
+      # Main entry point. Updates the metadata cache with any new metadata
+      # files that have been published, then lists all of the packages in S3
+      # and compares the MD5 given by S3 with the "correct" one in the
+      # metadata. Metadata files are themselves checked for correct MD5 as
+      # well. Diagnostic information is printed to STDOUT, though the format
+      # varies depending on user-supplied options.
+      #
+      # This method exits the program when finished.
       def run
         parse_opts
 
@@ -66,6 +80,7 @@ module OmnitruckVerifier
         error!
       end
 
+      # Writes an error or success message and exits the program.
       def error!
         # Some checksums did not match?
         if !(invalid_packages.empty? && invalid_metadata_files.empty?)
@@ -81,6 +96,8 @@ module OmnitruckVerifier
         end
       end
 
+      # Writes a success message. Exact output depends on whether nagios mode
+      # is enabled.
       def success_message
         if nagios_mode?
           puts "OK: All packages match checksums"
@@ -89,6 +106,8 @@ module OmnitruckVerifier
         end
       end
 
+      # Writes an error message explaining that some unverifiable packages
+      # exist. Output depends on whether nagios mode is enabled.
       def unverifiable_packages_message
         if nagios_mode?
           puts "CRIT: available metadata ok, but #{unverifiable_package_count} packages cannot be verified"
@@ -97,6 +116,8 @@ module OmnitruckVerifier
         end
       end
 
+      # Writes an error message. Exact output varies depending on whether
+      # nagios mode is enabled.
       def error_message
         if nagios_mode?
           puts "CRIT: #{invalid_metadata_files.size} metadata files and #{invalid_packages.size} packages with invalid checksums"
@@ -110,10 +131,12 @@ module OmnitruckVerifier
         end
       end
 
+      # True if Nagios format output is configured, false otherwise.
       def nagios_mode?
         options[:nagios]
       end
 
+      # Emit a message to STDOUT, when not in nagios mode.
       def msg(message)
         puts message unless nagios_mode?
       end
@@ -134,18 +157,38 @@ module OmnitruckVerifier
 
       end
 
+      # Returns an Integer number of packages that exist in S3 but do not have
+      # any metadata entry.
       def unverifiable_package_count
         published_packages.size - expected_cksums.size
       end
 
+      # Gives an Array of package objects that do not have any corresponding
+      # metadata entries (as determined by comparing with #expected_cksums)
       def unverifiable_packages
         published_packages.keys.select {|p| !expected_cksums.any? {|m| m["relpath"] == p } }
       end
 
+      # Gives a Hash of Package objects representing all packages found by
+      # listing the packages S3 bucket. The Hash keys are the relative paths to
+      # the package (s3 object keys).
+      #
+      # === Return Type:
+      # { "$distro/$distro_version/$cpu_arch/$package_name" => Package, ... }
       def published_packages
         @published_packages ||= Package.all_by_relpath
       end
 
+      # Gives an Array of Hashes containing the metadata (with expected md5 and
+      # sha256) of all packages for which metadata is available. The result is
+      # generated such that packages with more than one platform (e.g., we
+      # build sparc packages on Solaris 9 and distribute them for all Solaris
+      # versions) will only appear once in the result.
+      #
+      # === Return Type:
+      # [ {"relpath" => "$distro/$distro_version/$cpu_arch/$package_name",
+      #    "md5"     => "$pkg_md5",
+      #    "sha256"  => "$pkg_sha256" }, ... ]
       def expected_cksums
         @expected_cksums ||= begin
           expected_cksums_by_relpath = {}
@@ -157,12 +200,16 @@ module OmnitruckVerifier
         end
       end
 
+      # Iterates of the list of #new_files, downloading the files from S3 to
+      # the local metadata cache.
       def fetch_new_release_metadata
         return false if new_files.empty?
         msg "Caching metadata for new releases"
         new_files.each {|f| f.fetch}
       end
 
+      # Iterates over the list of #existing_files verifying their MD5 checksums
+      # against the MD5 returned by S3.
       def verify_existing_release_metadata
         return false if existing_files.empty?
         msg "Verifying cached release metadata"
@@ -171,6 +218,9 @@ module OmnitruckVerifier
       end
 
 
+      # Returns an Array of MetadataFile objects representing all known
+      # metadata files. When first called, it also collects Arrays of existing
+      # (already cached) and new metadata files.
       def metadata_files
         return @metadata_files unless @metadata_files.nil?
         @metadata_files = MetadataFile.all
@@ -184,11 +234,15 @@ module OmnitruckVerifier
         end
       end
 
+      # Returns an Array of MetadataFile objects representing metadata files
+      # that have already been cached locally.
       def existing_files
         metadata_files if @existing_files.nil?
         @existing_files
       end
 
+      # Returns an Array of MetadataFile objects representing metadata files
+      # that have not yet been cached locally.
       def new_files
         metadata_files if @existing_files.nil?
         @new_files
