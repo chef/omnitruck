@@ -22,7 +22,7 @@ module OmnitruckVerifier
     end
 
     def valid_pkg_name?
-      key !~ /^chef/
+      key !~ /^logs/ and key != "README.md" and key !~ /test.*txt/ and key !~ /chef.*platform\-support/
     end
 
     def valid_md5?

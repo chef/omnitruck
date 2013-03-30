@@ -87,7 +87,7 @@ module OmnitruckVerifier
 
     # Does a quick check that the metadata file hasn't been tampered with by
     # checking the md5 from amazon against what we have cached. MD5 isn't
-    # especially strong nowadays, so we supplement this with SHA-2 based
+    # especially strong nowadays, so we need supplement this with SHA2 based
     # verification; however, S3 gives you the md5 of a file for free.
     def quick_verify
       cached_md5 == remote_md5 and remote_md5 == md5
