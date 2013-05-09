@@ -18,10 +18,13 @@ module OmnitruckVerifier
     end
 
     def self.from_s3_key(key, md5)
-      matches = RELEASE_REGEX.match(key)
-      project, version = matches[1], matches[2]
-      url = "https://#{METADATA_BUCKET}.s3.amazonaws.com/#{key}"
-      new(url, project, version, md5)
+      if matches = RELEASE_REGEX.match(key)
+        project, version = matches[1], matches[2]
+        url = "https://#{METADATA_BUCKET}.s3.amazonaws.com/#{key}"
+        new(url, project, version, md5)
+      else
+        raise "Bad metadata file: #{key} #{md5}"
+      end
     end
 
     attr_reader :url
