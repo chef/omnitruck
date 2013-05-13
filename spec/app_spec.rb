@@ -36,7 +36,7 @@ describe 'Omnitruck' do
       end
 
       it "should serve JSON metadata with a URI for package #{expected_version}" do
-        get(metadata_endpoint, params)
+        get(metadata_endpoint, params, "HTTP_ACCEPT" => "application/json")
         metadata_json = last_response.body
         parsed_json = JSON.parse(metadata_json)
 

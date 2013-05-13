@@ -173,18 +173,19 @@ class Omnitruck < Sinatra::Base
   # away completely in favor of direct instantiation of an
   # +OpscodeSemVer+ object.
   def janky_workaround_for_processing_all_our_different_version_strings(version_string)
-    v = [
-          Opscode::Version::Rubygems,
-          Opscode::Version::GitDescribe,
-          Opscode::Version::OpscodeSemVer,
-          Opscode::Version::SemVer
-        ].each do |version|
-          begin
-            break version.new(version_string)
-          rescue
-            next nil
-          end
-        end
+    v = nil
+    [
+      Opscode::Version::Rubygems,
+      Opscode::Version::GitDescribe,
+      Opscode::Version::OpscodeSemVer,
+      Opscode::Version::SemVer
+    ].each do |version|
+      begin
+        break v = version.new(version_string)
+      rescue
+        nil
+      end
+    end
 
     if v.nil?
       raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
