@@ -113,6 +113,9 @@ module OmnitruckVerifier
           puts "CRIT: available metadata ok, but #{unverifiable_package_count} packages cannot be verified"
         else
           msg "unverifiable_packages: #{unverifiable_package_count}"
+          unverifiable_packages.each do |pkg|
+            msg "* #{pkg}"
+          end
         end
       end
 
