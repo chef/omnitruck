@@ -27,6 +27,7 @@ module OmnitruckVerifier
         @invalid_packages = []
         @argv = argv
         @options = {}
+        @exception = nil
       end
 
       def option_parser
@@ -69,21 +70,30 @@ module OmnitruckVerifier
       def run
         parse_opts
 
-        MetadataCache.ensure_created
-        msg "total_releases: #{metadata_files.size}"
-        msg "known_releases: #{existing_files.size}"
-        msg "new_releases: #{new_files.size}"
+        begin
+          MetadataCache.ensure_created
+          msg "total_releases: #{metadata_files.size}"
+          msg "known_releases: #{existing_files.size}"
+          msg "new_releases: #{new_files.size}"
 
-        fetch_new_release_metadata
-        verify_existing_release_metadata
-        verify_packages
-        error!
+          fetch_new_release_metadata
+          verify_existing_release_metadata
+          verify_packages
+        rescue Exception => e
+          @exception = e
+        ensure
+          error!
+        end
       end
 
       # Writes an error or success message and exits the program.
       def error!
+        # Unhandled exception
+        if @exception
+          exception_message
+          exit 2
         # Some checksums did not match?
-        if !(invalid_packages.empty? && invalid_metadata_files.empty?)
+        elsif !(invalid_packages.empty? && invalid_metadata_files.empty?)
           error_message
           exit 2
         # We don't have checksums for some packages?
@@ -131,6 +141,15 @@ module OmnitruckVerifier
           invalid_packages.each do |pkg|
             msg pkg.explain_error
           end
+        end
+      end
+
+      def exception_message
+        if nagios_mode?
+          puts "CRIT: unhandled exception in package verification: #{@exception}"
+        else
+          puts "#{@exception.class}: #{@exception}"
+          puts @exception.backtrace.map {|l| "\t#{l}" }
         end
       end
 
