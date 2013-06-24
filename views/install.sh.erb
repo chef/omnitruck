@@ -142,6 +142,9 @@ then
       platform="suse"
       platform_version=$(awk '/^VERSION =/ { print $3 }' /etc/SuSE-release)
   fi
+elif [ "$(uname -s)" == "FreeBSD" ]; then
+  platform="freebsd"
+  platform_version=$(uname -r | sed 's/-.*//')
 fi
 
 if [ "x$platform" = "x" ];
@@ -165,6 +168,12 @@ case $platform in
     case $major_version in
       "5") platform_version="6";;
       "6") platform_version="6";;
+    esac
+    ;;
+  "freebsd")
+    case $major_version in
+      "8") platform_version="8" ;;
+      "9") platform_version="9" ;;
     esac
     ;;
 esac
