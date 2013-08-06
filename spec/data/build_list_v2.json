@@ -66,6 +66,11 @@
           "relpath": "/debian/6/x86_64/chef_10.16.4-1.debian.6.0.5_amd64.deb",
           "md5": "c61fbbb504358df2b8186a212c46c642",
           "sha256": "3936452d84491598aa54c91d26f301eadf2fccbaf23070a24088ed3a0eccac0c"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/debian/6/x86_64/chef_11.6.0.hotfix.1-1.debian.6.0.5_amd64.deb",
+          "md5": "8a034cfcf3af2b24acae0ead8001f44d",
+          "sha256": "a6c5c50d9be92641fc108508def811af497f714bf6d695fc09d6e8b6b28b6a3e"
         }
       },
       "i686": {
@@ -133,6 +138,11 @@
           "relpath": "/debian/6/i686/chef_10.16.4-1.debian.6.0.5_i386.deb",
           "md5": "d72bfc461235aefc45da31fa6d5423ab",
           "sha256": "8e6f34a40c55bee097ef036b0d1cabb7dce1eb37c81c177c47175a2f30e5db40"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/debian/6/i686/chef_11.6.0.hotfix.1-1.debian.6.0.5_i386.deb",
+          "md5": "d17f4f9c7ceef779c01a0ad01bf060e6",
+          "sha256": "a3afa4523b5cc4362c2d765c30940f4b8eb035f1b6e6a4abdf567db03eb2caaf"
         }
       }
     }
@@ -214,6 +224,11 @@
           "relpath": "/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm",
           "md5": "dab02655a8671e9a2cf782f94fd22ff9",
           "sha256": "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/el/5/x86_64/chef-11.6.0.hotfix.1-1.el5.x86_64.rpm",
+          "md5": "049d0bcf9eef19052231f1a31fbbce79",
+          "sha256": "1fe4dec7d791e3858f11ef40da6eeee20a3d5ede3a3cfea996351d87e29a8ae1"
         }
       },
       "i686": {
@@ -281,6 +296,11 @@
           "relpath": "/el/5/i686/chef-10.16.4-1.el5.i686.rpm",
           "md5": "650095fbe40a0ea97af8247d5982105a",
           "sha256": "a6478ee12e46b17ec8035e33d93327896484bdd4d761fa096447036600de52fe"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/el/5/i686/chef-11.6.0.hotfix.1-1.el5.i686.rpm",
+          "md5": "8e2d9430488d47fe850936b9c3bd5bcf",
+          "sha256": "16dae81d0e52a6ccbe0703333a207a5890336fe9a77a6ebe1cd8865887f87506"
         }
       }
     },
@@ -350,6 +370,11 @@
           "relpath": "/el/6/x86_64/chef-10.16.4-1.el6.x86_64.rpm",
           "md5": "1e9a5ccadc6cf36650afca54afaa27c0",
           "sha256": "da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/el/6/x86_64/chef-11.6.0.hotfix.1-1.el6.x86_64.rpm",
+          "md5": "bf5544f97e498cb7cb3b02f9fa646570",
+          "sha256": "2420d0c51a9992c5e1e2b0e6874582aae0732b3afe9a13d7de2ea92de7d01d85"
         }
       },
       "i686": {
@@ -417,6 +442,11 @@
           "relpath": "/el/6/i686/chef-10.16.4-1.el6.i686.rpm",
           "md5": "cbdeba9189ee5946fcc4fa07be1744e5",
           "sha256": "c2900795c48a58c26b219c3e0206d90606b3e2f42fe9bcb25f0ddda8a3368a10"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/el/6/i686/chef-11.6.0.hotfix.1-1.el6.i686.rpm",
+          "md5": "c14bb1735628808b6c0af47e8806c492",
+          "sha256": "75cdbd25561a62f25069da993594a16f969b93dd0db20f7997aa81cd0610e509"
         }
       }
     }
@@ -488,6 +518,11 @@
           "relpath": "/mac_os_x/10.6/x86_64/chef-10.16.4_1.mac_os_x.10.6.8.sh",
           "md5": "ff3b7951d4f76a773ebd5cb17d563218",
           "sha256": "020e14efd1671f219a3a663f69e44380f95b0e4b773f142a1dca1888617f6a84"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/mac_os_x/10.6/x86_64/chef-11.6.0.hotfix.1_1.mac_os_x.10.6.8.sh",
+          "md5": "3486ca45bbdcfd86260434f136d153ed",
+          "sha256": "099aa266c98acda6c34d5901c2fc31fae0c25d7c2261e77e8515307a946bc789"
         }
       }
     },
@@ -557,6 +592,11 @@
           "relpath": "/mac_os_x/10.7/x86_64/chef-10.16.4_1.mac_os_x.10.7.2.sh",
           "md5": "99492c4bb8b0a367666aee10a51b71d1",
           "sha256": "a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/mac_os_x/10.7/x86_64/chef-11.6.0.hotfix.1_1.mac_os_x.10.7.2.sh",
+          "md5": "e575bc8569edec38dd3057f1c29f5a09",
+          "sha256": "8cd8183b79d1b4a26f5edbff7f04ec959222e6785eaa02ce7354b9cd5055bd5f"
         }
       }
     }
@@ -1765,6 +1805,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       },
       "x86_64": {
@@ -1777,6 +1822,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       }
     },
@@ -1791,6 +1841,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       },
       "x86_64": {
@@ -1803,6 +1858,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       }
     },
@@ -1817,6 +1877,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       }
     },
@@ -1831,6 +1896,11 @@
           "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
           "md5": "fdd0362f422c7115cad9d24bd60751ba",
           "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        },
+        "11.6.0.hotfix.1-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
+          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
+          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
         }
       }
     }

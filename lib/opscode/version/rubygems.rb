@@ -13,7 +13,7 @@ module Opscode
       #    10.1.1.alpha.1
       #    10.16.2-1
       #
-      OPSCODE_RUBYGEMS_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:\.((?:alpha|beta|rc)\.\d+))?(?:\-(\d+))?$/
+      OPSCODE_RUBYGEMS_REGEX = /^(\d+)\.(\d+)\.(\d+)(?:\.((?:alpha|beta|rc|hotfix)\.\d+))?(?:\-(\d+))?$/
 
       def initialize(version)
         match = version.match(OPSCODE_RUBYGEMS_REGEX)

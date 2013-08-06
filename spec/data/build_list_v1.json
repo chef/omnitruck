@@ -15,7 +15,8 @@
         "10.16.0.rc.1-1": "/debian/6/x86_64/chef_10.16.0.rc.1-1.debian.6.0.5_amd64.deb",
         "10.16.2-1": "/debian/6/x86_64/chef_10.16.2-1.debian.6.0.5_amd64.deb",
         "10.16.2-49-g21353f0-1": "/debian/6/x86_64/chef_10.16.2-49-g21353f0-1.debian.6.0.5_amd64.deb",
-        "10.16.4-1": "/debian/6/x86_64/chef_10.16.4-1.debian.6.0.5_amd64.deb"
+        "10.16.4-1": "/debian/6/x86_64/chef_10.16.4-1.debian.6.0.5_amd64.deb",
+        "11.6.0.hotfix.1-1": "/debian/6/x86_64/chef_11.6.0.hotfix.1-1.debian.6.0.5_amd64.deb"
       },
       "i686": {
         "10.12.0-1": "/debian/6/i686/chef_10.12.0-1.debian.6.0.5_i386.deb",
@@ -30,7 +31,8 @@
         "10.16.0.rc.1-1": "/debian/6/i686/chef_10.16.0.rc.1-1.debian.6.0.5_i386.deb",
         "10.16.2-1": "/debian/6/i686/chef_10.16.2-1.debian.6.0.5_i386.deb",
         "10.16.2-49-g21353f0-1": "/debian/6/i686/chef_10.16.2-49-g21353f0-1.debian.6.0.5_i386.deb",
-        "10.16.4-1": "/debian/6/i686/chef_10.16.4-1.debian.6.0.5_i386.deb"
+        "10.16.4-1": "/debian/6/i686/chef_10.16.4-1.debian.6.0.5_i386.deb",
+        "11.6.0.hotfix.1-1": "/debian/6/i686/chef_11.6.0.hotfix.1-1.debian.6.0.5_i386.deb"
       }
     }
   },
@@ -51,7 +53,8 @@
         "10.16.0-49-g21353f0-1": "/el/5/x86_64/chef-10.16.0_49_g21353f0-1.el5.x86_64.rpm",
         "10.16.2-1": "/el/5/x86_64/chef-10.16.2-1.el5.x86_64.rpm",
         "10.16.2-49-g21353f0-1": "/el/5/x86_64/chef-10.16.2_49_g21353f0-1.el5.x86_64.rpm",
-        "10.16.4-1": "/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm"
+        "10.16.4-1": "/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm",
+        "11.6.0.hotfix.1-1": "/el/5/x86_64/chef-11.6.0.hotfix.1-1.el5.x86_64.rpm"
       },
       "i686": {
         "10.12.0-1": "/el/5/i686/chef-10.12.0-1.el5.i686.rpm",
@@ -66,7 +69,8 @@
         "10.16.0.rc.1-1": "/el/5/i686/chef-10.16.0.rc.1-1.el5.i686.rpm",
         "10.16.2-1": "/el/5/i686/chef-10.16.2-1.el5.i686.rpm",
         "10.16.2-49-g21353f0-1": "/el/5/i686/chef-10.16.2_49_g21353f0-1.el5.i686.rpm",
-        "10.16.4-1": "/el/5/i686/chef-10.16.4-1.el5.i686.rpm"
+        "10.16.4-1": "/el/5/i686/chef-10.16.4-1.el5.i686.rpm",
+        "11.6.0.hotfix.1-1": "/el/5/i686/chef-11.6.0.hotfix.1-1.el5.i686.rpm"
       }
     },
     "6": {
@@ -83,7 +87,8 @@
         "10.16.0.rc.1-1": "/el/6/x86_64/chef-10.16.0.rc.1-1.el6.x86_64.rpm",
         "10.16.2-1": "/el/6/x86_64/chef-10.16.2-1.el6.x86_64.rpm",
         "10.16.2-49-g21353f0-1": "/el/6/x86_64/chef-10.16.2_49_g21353f0-1.el6.x86_64.rpm",
-        "10.16.4-1": "/el/6/x86_64/chef-10.16.4-1.el6.x86_64.rpm"
+        "10.16.4-1": "/el/6/x86_64/chef-10.16.4-1.el6.x86_64.rpm",
+        "11.6.0.hotfix.1-1": "/el/6/x86_64/chef-11.6.0.hotfix.1-1.el6.x86_64.rpm"
       },
       "i686": {
         "10.12.0-1": "/el/6/i686/chef-10.12.0-1.el6.i686.rpm",
@@ -98,7 +103,8 @@
         "10.16.0.rc.1-1": "/el/6/i686/chef-10.16.0.rc.1-1.el6.i686.rpm",
         "10.16.2-1": "/el/6/i686/chef-10.16.2-1.el6.i686.rpm",
         "10.16.2-49-g21353f0-1": "/el/6/i686/chef-10.16.2_49_g21353f0-1.el6.i686.rpm",
-        "10.16.4-1": "/el/6/i686/chef-10.16.4-1.el6.i686.rpm"
+        "10.16.4-1": "/el/6/i686/chef-10.16.4-1.el6.i686.rpm",
+        "11.6.0.hotfix.1-1": "/el/6/i686/chef-11.6.0.hotfix.1-1.el6.i686.rpm"
       }
     }
   },
@@ -117,7 +123,8 @@
         "10.16.0.rc.1-1": "/mac_os_x/10.6/x86_64/chef-10.16.0.rc.1_1.mac_os_x.10.6.8.sh",
         "10.16.2-1": "/mac_os_x/10.6/x86_64/chef-10.16.2_1.mac_os_x.10.6.8.sh",
         "10.16.2-49-g21353f0-1": "/mac_os_x/10.6/x86_64/chef-10.16.2-49-g21353f0_1.mac_os_x.10.6.8.sh",
-        "10.16.4-1": "/mac_os_x/10.6/x86_64/chef-10.16.4_1.mac_os_x.10.6.8.sh"
+        "10.16.4-1": "/mac_os_x/10.6/x86_64/chef-10.16.4_1.mac_os_x.10.6.8.sh",
+        "11.6.0.hotfix.1-1": "/mac_os_x/10.6/x86_64/chef-11.6.0.hotfix.1_1.mac_os_x.10.6.8.sh"
       }
     },
     "10.7": {
@@ -134,7 +141,8 @@
         "10.16.0.rc.1-1": "/mac_os_x/10.7/x86_64/chef-10.16.0.rc.1_1.mac_os_x.10.7.2.sh",
         "10.16.2-1": "/mac_os_x/10.7/x86_64/chef-10.16.2_1.mac_os_x.10.7.2.sh",
         "10.16.2-49-g21353f0-1": "/mac_os_x/10.7/x86_64/chef-10.16.2-49-g21353f0_1.mac_os_x.10.7.2.sh",
-        "10.16.4-1": "/mac_os_x/10.7/x86_64/chef-10.16.4_1.mac_os_x.10.7.2.sh"
+        "10.16.4-1": "/mac_os_x/10.7/x86_64/chef-10.16.4_1.mac_os_x.10.7.2.sh",
+        "11.6.0.hotfix.1-1": "/mac_os_x/10.7/x86_64/chef-11.6.0.hotfix.1_1.mac_os_x.10.7.2.sh"
       }
     }
   },
@@ -438,33 +446,39 @@
     "2008": {
       "i686": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       },
       "x86_64": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       }
     },
     "2003r2": {
       "i686": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       },
       "x86_64": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       }
     },
     "2008r2": {
       "x86_64": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       }
     },
     "2012": {
       "x86_64": {
         "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb"
+        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
+        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
       }
     }
   }
