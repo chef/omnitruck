@@ -40,6 +40,11 @@ svr4_filename() {
   filename="chef-${version}.${machine}.solaris"
 }
 
+aix_filename() {
+  filetype="bff"
+  filename="chef-${version}.${machine}.bff"
+}
+
 # Set the filename for the sh archive
 shell_filename() {
   filetype="sh"
@@ -75,16 +80,13 @@ machine=`uname -m`
 os=`uname -s`
 
 # Retrieve Platform and Platform Version
-if [ -f "/etc/lsb-release" ] && grep -q DISTRIB_ID /etc/lsb-release;
-then
+if [ -f "/etc/lsb-release" ] && grep -q DISTRIB_ID /etc/lsb-release; then
   platform=`grep DISTRIB_ID /etc/lsb-release | cut -d "=" -f 2 | tr '[A-Z]' '[a-z]'`
   platform_version=`grep DISTRIB_RELEASE /etc/lsb-release | cut -d "=" -f 2`
-elif [ -f "/etc/debian_version" ];
-then
+elif [ -f "/etc/debian_version" ]; then
   platform="debian"
   platform_version=`cat /etc/debian_version`
-elif [ -f "/etc/redhat-release" ];
-then
+elif [ -f "/etc/redhat-release" ]; then
   platform=`sed 's/^\(.\+\) release.*/\1/' /etc/redhat-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/redhat-release`
 
@@ -95,8 +97,7 @@ then
     platform_version="6.0"
   fi
   platform="el"
-elif [ -f "/etc/system-release" ];
-then
+elif [ -f "/etc/system-release" ]; then
   platform=`sed 's/^\(.\+\) release.\+/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   # amazon is built off of fedora, so act like RHEL
@@ -106,8 +107,7 @@ then
     platform_version="6.0"
   fi
 # Apple OS X
-elif [ -f "/usr/bin/sw_vers" ];
-then
+elif [ -f "/usr/bin/sw_vers" ]; then
   platform="mac_os_x"
   # Matching the tab-space with sed is error-prone
   platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }'`
@@ -127,13 +127,11 @@ then
   if [ $x86_64 -eq 1 ]; then
     machine="x86_64"
   fi
-elif [ -f "/etc/release" ];
-then
+elif [ -f "/etc/release" ]; then
   platform="solaris2"
   machine=`/usr/bin/uname -p`
   platform_version=`/usr/bin/uname -r`
-elif [ -f "/etc/SuSE-release" ];
-then
+elif [ -f "/etc/SuSE-release" ]; then
   if grep -q 'Enterprise' /etc/SuSE-release;
   then
       platform="sles"
@@ -145,6 +143,10 @@ then
 elif [ "x$os" = "xFreeBSD" ]; then
   platform="freebsd"
   platform_version=`uname -r | sed 's/-.*//'`
+elif [ "x$os" = "xAIX" ]; then
+  platform="aix"
+  platform_version=`uname -v`
+  machine="ppc"
 fi
 
 if [ "x$platform" = "x" ];
@@ -198,6 +200,7 @@ else
     "sles") rpm_filename ;;
     "fedora") rpm_filename ;;
     "solaris2") svr4_filename ;;
+    "aix") aix_filename ;;
     *) shell_filename ;;
   esac
 fi
@@ -207,9 +210,9 @@ echo "Downloading Chef $version for ${platform}..."
 url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
 
 if [ "x$TMPDIR" = "x" ]; then
-  tmp=$TMPDIR
-else
   tmp="/tmp"
+else
+  tmp=$TMPDIR
 fi
 
 # secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
