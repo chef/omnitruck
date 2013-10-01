@@ -161,10 +161,7 @@ fi
 major_version=`echo $platform_version | cut -d. -f1`
 case $platform in
   "el")
-    case $major_version in
-      "5") platform_version="5" ;;
-      "6") platform_version="6" ;;
-    esac
+    platform_version=$major_version
     ;;
   "debian")
     case $major_version in
@@ -174,10 +171,13 @@ case $platform in
     esac
     ;;
   "freebsd")
-    case $major_version in
-      "8") platform_version="8" ;;
-      "9") platform_version="9" ;;
-    esac
+    platform_version=$major_version
+    ;;
+  "sles")
+    platform_version=$major_version
+    ;;
+  "suse")
+    platform_version=$major_version
     ;;
 esac
 
