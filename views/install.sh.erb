@@ -152,8 +152,7 @@ elif [ "x$os" = "xAIX" ]; then
   machine="ppc"
 fi
 
-if [ "x$platform" = "x" ];
-then
+if [ "x$platform" = "x" ]; then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
@@ -184,15 +183,13 @@ case $platform in
     ;;
 esac
 
-if [ "x$platform_version" = "x" ];
-then
+if [ "x$platform_version" = "x" ]; then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
 fi
 
-if [ $use_shell = 1 ];
-then
+if [ $use_shell = 1 ]; then
   shell_filename
 else
   case $platform in
