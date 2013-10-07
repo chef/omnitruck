@@ -233,64 +233,73 @@ unable_to_retrieve_package() {
 do_wget() {
   wget -O "$2" "$1" 2>/tmp/stderr
   # check for bad return status
-  [ $? -ne 0 ] && unable_to_retrieve_package
+  [ $? -ne 0 ] && return 1
   # check for 404 or empty file
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
   if [ $? -eq 0 ] || [ ! -s "$2" ]; then
-    unable_to_retrieve_package
+    return 1
   fi
+  return 0
 }
 
 # do_curl(URL, FILENAME)
 do_curl() {
   curl -L "$1" > "$2"
   # check for bad return status
-  [ $? -ne 0 ] && unable_to_retrieve_package
+  [ $? -ne 0 ] && return 1
   # check for bad output or empty file
   grep "The specified key does not exist." "$2" 2>&1 >/dev/null
   if [ $? -eq 0 ] || [ ! -s "$2" ]; then
-    unable_to_retrieve_package
+    return 1
   fi
+  return 0
 }
 
 # do_curl(URL, FILENAME)
 do_perl() {
   perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2"
   # check for bad return status
-  [ $? -ne 0 ] && unable_to_retrieve_package
+  [ $? -ne 0 ] && return 1
   # check for bad output or empty file
   # grep "The specified key does not exist." "$2" 2>&1 >/dev/null
   # if [ $? -eq 0 ] || [ ! -s "$2" ]; then
   #   unable_to_retrieve_package
   # fi
+  return 0
 }
 
 # do_curl(URL, FILENAME)
 do_python() {
   python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2"
   # check for bad return status
-  [ $? -ne 0 ] && unable_to_retrieve_package
+  [ $? -ne 0 ] && return 1
   # check for bad output or empty file
   #grep "The specified key does not exist." "$2" 2>&1 >/dev/null
   #if [ $? -eq 0 ] || [ ! -s "$2" ]; then
   #  unable_to_retrieve_package
   #fi
+  return 0
 }
 
 # do_download(URL, FILENAME)
 do_download() {
-  if [ "x$downloader" = "xcurl" ]; then
-    do_curl($1, $2)
-  elif [ "x$downloader" = "xwget" ]; then
-    do_wget($1, $2)
-  elif [ "x$downloader" = "xperl" ]; then
-    do_perl($1, $2)
-  elif [ "x$downloader" = "xpython" ]; then
-    do_python($1, $2)
-  else
-    echo "Only know how to download via curl, wget, perl and python!"
-    exit 5
+  if exists wget; then
+    do_wget($1, $2) && return 0
   fi
+
+  if exists curl; then
+    do_curl($1, $2) && return 0
+  fi
+
+  if exists perl; then
+    do_perl($1, $2) && return 0
+  fi
+
+  if exists python; then
+    do_python($1, $2) && return 0
+  fi
+
+  unable_to_retrieve_package
 }
 
 # install_file(TYPE, FILENAME)
@@ -319,19 +328,6 @@ install_file() {
     exit 1
   fi
 }
-
-if exists wget; then
-  downloader="wget"
-elif exists curl; then
-  downloader="curl"
-elif exists perl; then
-  downloader="perl"
-elif exists python; then
-  downloder="python"
-else
-  echo "Cannot find wget, curl, perl or python - cannot install Chef!"
-  exit 5
-fi
 
 if [ "x$cmdline_filename" = "x" ]; then
   do_download("$url", "$tmp_dir/$filename")
