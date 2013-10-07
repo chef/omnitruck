@@ -65,9 +65,11 @@ report_bug() {
 while getopts spv: opt
 do
   case "$opt" in
+
     v)  version="$OPTARG";;
     s)  use_shell=1;;
     p)  prerelease="true";;
+    f)  cmdline_filename="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
       "usage: $0 [-s] [-v version]"
@@ -220,21 +222,6 @@ fi
 tmp_dir="$tmp/install.sh.$$"
 (umask 077 && mkdir $tmp_dir) || exit 1
 
-if exists wget;
-then
-  downloader="wget"
-  wget -O "$tmp_dir/$filename" "$url" 2>/tmp/stderr
-elif exists curl;
-then
-  downloader="curl"
-  curl -L "$url" > "$tmp_dir/$filename"
-else
-  echo "Cannot find wget or curl - cannot install Chef!"
-  exit 5
-fi
-
-# Check to see if we got a 404 or an empty file
-
 unable_to_retrieve_package() {
   echo "Unable to retrieve a valid package!"
   report_bug
@@ -242,43 +229,87 @@ unable_to_retrieve_package() {
   exit 1
 }
 
-if [ "$downloader" = "curl" ]
-then
-  #do curl stuff
-  grep "The specified key does not exist." "$tmp_dir/$filename" 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s "$tmp_dir/$filename" ]
-  then
-    unable_to_retrieve_package
-  fi
-elif [ "$downloader" = "wget" ]
-then
-  #do wget stuff
+# do_wget(URL, FILENAME)
+do_wget() {
+  wget -O "$2" "$1" 2>/tmp/stderr
+  # check for bad return status
+  [ $? -ne 0 ] && unable_to_retrieve_package
+  # check for 404 or empty file
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s "$tmp_dir/$filename" ]
-  then
+  if [ $? -eq 0 ] || [ ! -s "$2" ]; then
     unable_to_retrieve_package
   fi
+}
+
+# do_curl(URL, FILENAME)
+do_curl() {
+  curl -L "$1" > "$2"
+  # check for bad return status
+  [ $? -ne 0 ] && unable_to_retrieve_package
+  # check for bad output or empty file
+  grep "The specified key does not exist." "$2" 2>&1 >/dev/null
+  if [ $? -eq 0 ] || [ ! -s "$2" ]; then
+    unable_to_retrieve_package
+  fi
+}
+
+# do_download(URL, FILENAME)
+do_download() {
+  if [ "x$downloader" = "xcurl" ]; then
+    do_curl($1, $2)
+  elif [ "x$downloader" = "xwget" ]; then
+    do_wget($1, $2)
+  else
+    echo "Only know how to download via curl or wget!"
+    exit 5
+  fi
+}
+
+# install_file(TYPE, FILENAME)
+# TYPE is "rpm", "deb", "solaris", or "sh"
+install_file() {
+  echo "Installing Chef $version"
+  case "$1" in
+    "rpm")
+      rpm -Uvh "$2"
+      ;;
+    "deb")
+      dpkg -i "$2"
+      ;;
+    "solaris")
+      echo "conflict=nocheck" > /tmp/nocheck
+      echo "action=nocheck" >> /tmp/nocheck
+      pkgadd -n -d "$2" -a /tmp/nocheck chef
+      ;;
+    "sh" )
+      bash "$2"
+      ;;
+  esac
+  if [ $? -ne 0 ]; then
+    echo "Installation failed"
+    report_bug
+    exit 1
+  fi
+}
+
+if exists wget; then
+  downloader="wget"
+elif exists curl; then
+  downloader="curl"
+else
+  echo "Cannot find wget or curl - cannot install Chef!"
+  exit 5
 fi
 
-echo "Installing Chef $version"
-case "$filetype" in
-  "rpm") rpm -Uvh "$tmp_dir/$filename" ;;
-  "deb") dpkg -i "$tmp_dir/$filename" ;;
-  "solaris") echo "conflict=nocheck" > /tmp/nocheck
-	     echo "action=nocheck" >> /tmp/nocheck
-	     pkgadd -n -d "$tmp_dir/$filename" -a /tmp/nocheck chef
-	     ;;
-  "sh" ) bash "$tmp_dir/$filename" ;;
-esac
-
-if [ "$tmp_dir" != "/tmp" ];
-then
-  rm -r "$tmp_dir"
+if [ "x$cmdline_filename" = "x" ]; then
+  do_download("$url", "$tmp_dir/$filename")
+  install_file($filetype, "$tmp_dir/$filename")
+  if [ "$tmp_dir" != "/tmp" ];
+  then
+    rm -r "$tmp_dir"
+  fi
+else
+  do_download("$url", "$cmdline_filename")
+  install_file($filetype, "$cmdline_filename")
 fi
 
-if [ $? -ne 0 ];
-then
-  echo "Installation failed"
-  report_bug
-  exit 1
-fi
