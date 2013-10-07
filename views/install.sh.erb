@@ -303,6 +303,7 @@ install_file() {
     "solaris")
       echo "conflict=nocheck" > /tmp/nocheck
       echo "action=nocheck" >> /tmp/nocheck
+      echo "mail=" >> /tmp/nocheck
       pkgadd -n -d "$2" -a /tmp/nocheck chef
       ;;
     "sh" )
