@@ -294,7 +294,7 @@ install_file() {
   echo "Installing Chef $version"
   case "$1" in
     "rpm")
-      rpm -Uvh "$2"
+      rpm -Uvh --oldpackage "$2"
       ;;
     "deb")
       dpkg -i "$2"
