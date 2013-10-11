@@ -307,7 +307,7 @@ install_file() {
       pkgadd -n -d "$2" -a /tmp/nocheck chef
       ;;
     "sh" )
-      bash "$2"
+      sh "$2"
       ;;
   esac
   if [ $? -ne 0 ]; then
