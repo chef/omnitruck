@@ -1,4 +1,12 @@
 #!/bin/sh
+# WARNING: REQUIRES /bin/sh
+#
+# - must run on /bin/sh on solaris 9
+# - must run on /bin/sh on AIX 6.x
+# - if you think you are a bash wizard, you probably do not understand
+#   this programming language.  do not touch.
+# - if you are under 40, get peer review from your elders.
+#
 
 # This is the current stable release to default to, with Omnibus patch level (e.g. 10.12.0-1)
 # Note that the chef template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
@@ -19,8 +27,7 @@ exists() {
 # Set the filename for a deb, based on version and machine
 deb_filename() {
   filetype="deb"
-  if [ "$machine" = "x86_64" ];
-  then
+  if test "$machine" = "x86_64"; then
     filename="chef_${version}_amd64.deb"
   else
     filename="chef_${version}_i386.deb"
@@ -62,7 +69,7 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts spv: opt
+while getopts spv:f: opt
 do
   case "$opt" in
 
@@ -72,7 +79,7 @@ do
     f)  cmdline_filename="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-s] [-v version]"
+      "usage: $0 [-s] [-p] [-v version] [-f filename]"
       exit 1;;
   esac
 done
@@ -82,34 +89,32 @@ machine=`uname -m`
 os=`uname -s`
 
 # Retrieve Platform and Platform Version
-if [ -f "/etc/lsb-release" ] && grep -q DISTRIB_ID /etc/lsb-release; then
+if test -f "/etc/lsb-release" && grep -q DISTRIB_ID /etc/lsb-release; then
   platform=`grep DISTRIB_ID /etc/lsb-release | cut -d "=" -f 2 | tr '[A-Z]' '[a-z]'`
   platform_version=`grep DISTRIB_RELEASE /etc/lsb-release | cut -d "=" -f 2`
-elif [ -f "/etc/debian_version" ]; then
+elif test -f "/etc/debian_version"; then
   platform="debian"
   platform_version=`cat /etc/debian_version`
-elif [ -f "/etc/redhat-release" ]; then
+elif test -f "/etc/redhat-release"; then
   platform=`sed 's/^\(.\+\) release.*/\1/' /etc/redhat-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/redhat-release`
 
   # If /etc/redhat-release exists, we act like RHEL by default
-  if [ "$platform" = "fedora" ];
-  then
+  if test "$platform" = "fedora"; then
     # Change platform version for use below.
     platform_version="6.0"
   fi
   platform="el"
-elif [ -f "/etc/system-release" ]; then
+elif test -f "/etc/system-release"; then
   platform=`sed 's/^\(.\+\) release.\+/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   # amazon is built off of fedora, so act like RHEL
-  if [ "$platform" = "amazon linux ami" ];
-  then
+  if test "$platform" = "amazon linux ami"; then
     platform="el"
     platform_version="6.0"
   fi
 # Apple OS X
-elif [ -f "/usr/bin/sw_vers" ]; then
+elif test -f "/usr/bin/sw_vers"; then
   platform="mac_os_x"
   # Matching the tab-space with sed is error-prone
   platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }'`
@@ -127,14 +132,14 @@ elif [ -f "/usr/bin/sw_vers" ]; then
 
   # x86_64 Apple hardware often runs 32-bit kernels (see OHAI-63)
   x86_64=`sysctl -n hw.optional.x86_64`
-  if [ $x86_64 -eq 1 ]; then
+  if test $x86_64 -eq 1; then
     machine="x86_64"
   fi
-elif [ -f "/etc/release" ]; then
+elif test -f "/etc/release"; then
   platform="solaris2"
   machine=`/usr/bin/uname -p`
   platform_version=`/usr/bin/uname -r`
-elif [ -f "/etc/SuSE-release" ]; then
+elif test -f "/etc/SuSE-release"; then
   if grep -q 'Enterprise' /etc/SuSE-release;
   then
       platform="sles"
@@ -143,16 +148,16 @@ elif [ -f "/etc/SuSE-release" ]; then
       platform="suse"
       platform_version=`awk '/^VERSION =/ { print $3 }' /etc/SuSE-release`
   fi
-elif [ "x$os" = "xFreeBSD" ]; then
+elif test "x$os" = "xFreeBSD"; then
   platform="freebsd"
   platform_version=`uname -r | sed 's/-.*//'`
-elif [ "x$os" = "xAIX" ]; then
+elif test "x$os" = "xAIX"; then
   platform="aix"
   platform_version=`uname -v`
   machine="ppc"
 fi
 
-if [ "x$platform" = "x" ]; then
+if test "x$platform" = "x"; then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
@@ -183,13 +188,14 @@ case $platform in
     ;;
 esac
 
-if [ "x$platform_version" = "x" ]; then
+if test "x$platform_version" = "x"; then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
 fi
 
-if [ $use_shell = 1 ]; then
+
+if test $use_shell = 1; then
   shell_filename
 else
   case $platform in
@@ -209,6 +215,16 @@ echo "Downloading Chef $version for ${platform}..."
 
 url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
 
+if test "x$platform" = "xsolaris2"; then
+  # hack up the path on Solaris to find wget
+  PATH=/usr/csw/bin:$PATH
+  export PATH
+  if test "x$platform_version" = "x5.9"; then
+    # solaris 9 lacks openssl
+    url=`echo $url | sed -e 's/https/http/'`
+  fi
+fi
+
 unable_to_retrieve_package() {
   echo "Unable to retrieve a valid package!"
   report_bug
@@ -216,109 +232,124 @@ unable_to_retrieve_package() {
   exit 1
 }
 
-# do_wget(URL, FILENAME)
+# do_wget URL FILENAME
 do_wget() {
+  echo "trying wget..."
   wget -O "$2" "$1" 2>/tmp/stderr
   # check for bad return status
-  [ $? -ne 0 ] && return 1
+  test $? -ne 0 && return 1
   # check for 404 or empty file
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s "$2" ]; then
+  if test $? -eq 0 || test ! -s "$2"; then
     return 1
   fi
   return 0
 }
 
-# do_curl(URL, FILENAME)
+# do_curl URL FILENAME
 do_curl() {
+  echo "trying curl..."
   curl -L "$1" > "$2"
   # check for bad return status
   [ $? -ne 0 ] && return 1
   # check for bad output or empty file
   grep "The specified key does not exist." "$2" 2>&1 >/dev/null
-  if [ $? -eq 0 ] || [ ! -s "$2" ]; then
+  if test $? -eq 0 || test ! -s "$2"; then
     return 1
   fi
   return 0
 }
 
-# do_curl(URL, FILENAME)
+# do_curl URL FILENAME
 do_perl() {
+  echo "trying perl..."
   perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2"
   # check for bad return status
-  [ $? -ne 0 ] && return 1
+  test $? -ne 0 && return 1
   # check for bad output or empty file
   # grep "The specified key does not exist." "$2" 2>&1 >/dev/null
-  # if [ $? -eq 0 ] || [ ! -s "$2" ]; then
+  # if test $? -eq 0 || test ! -s "$2"; then
   #   unable_to_retrieve_package
   # fi
   return 0
 }
 
-# do_curl(URL, FILENAME)
+# do_curl URL FILENAME
 do_python() {
+  echo "trying python..."
   python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2"
   # check for bad return status
-  [ $? -ne 0 ] && return 1
+  test $? -ne 0 && return 1
   # check for bad output or empty file
   #grep "The specified key does not exist." "$2" 2>&1 >/dev/null
-  #if [ $? -eq 0 ] || [ ! -s "$2" ]; then
+  #if test $? -eq 0 || test ! -s "$2"; then
   #  unable_to_retrieve_package
   #fi
   return 0
 }
 
-# do_download(URL, FILENAME)
+# do_download URL FILENAME
 do_download() {
+  echo "downloading $1"
+  echo "  to file $2"
+
+  # we try all of these until we get success.
+  # perl, in particular may be present but LWP::Simple may not be installed
+
   if exists wget; then
-    do_wget($1, $2) && return 0
+    do_wget $1 $2 && return 0
   fi
 
   if exists curl; then
-    do_curl($1, $2) && return 0
+    do_curl $1 $2 && return 0
   fi
 
   if exists perl; then
-    do_perl($1, $2) && return 0
+    do_perl $1 $2 && return 0
   fi
 
   if exists python; then
-    do_python($1, $2) && return 0
+    do_python $1 $2 && return 0
   fi
 
   unable_to_retrieve_package
 }
 
-# install_file(TYPE, FILENAME)
+# install_file TYPE FILENAME
 # TYPE is "rpm", "deb", "solaris", or "sh"
 install_file() {
   echo "Installing Chef $version"
   case "$1" in
     "rpm")
+      echo "installing with rpm..."
       rpm -Uvh --oldpackage "$2"
       ;;
     "deb")
+      echo "installing with dpkg..."
       dpkg -i "$2"
       ;;
     "solaris")
+      echo "installing with pkgadd..."
       echo "conflict=nocheck" > /tmp/nocheck
       echo "action=nocheck" >> /tmp/nocheck
       echo "mail=" >> /tmp/nocheck
+      pkgrm -a /tmp/nocheck -n chef || true
       pkgadd -n -d "$2" -a /tmp/nocheck chef
       ;;
     "sh" )
+      echo "installing with sh..."
       sh "$2"
       ;;
   esac
-  if [ $? -ne 0 ]; then
+  if test $? -ne 0; then
     echo "Installation failed"
     report_bug
     exit 1
   fi
 }
 
-if [ "x$cmdline_filename" = "x" ]; then
-  if [ "x$TMPDIR" = "x" ]; then
+if test "x$cmdline_filename" = "x"; then
+  if test "x$TMPDIR" = "x"; then
     tmp="/tmp"
   else
     tmp=$TMPDIR
@@ -326,17 +357,15 @@ if [ "x$cmdline_filename" = "x" ]; then
   # secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
   tmp_dir="$tmp/install.sh.$$"
   (umask 077 && mkdir $tmp_dir) || exit 1
-  $download_filename = "$tmp_dir/$filename"
+  download_filename="$tmp_dir/$filename"
 else
-  $download_filename = "$cmdline_filename"
+  download_filename="$cmdline_filename"
 fi
 
-echo "Downloading to $download_filename..."
+do_download "$url"  "$download_filename"
+install_file $filetype "$download_filename"
 
-do_download("$url", "$download_filename")
-install_file($filetype, "$download_filename")
-
-if [ "x$tmp_dir" != "x" ]; then
+if test "x$tmp_dir" != "x"; then
   rm -r "$tmp_dir"
 fi
 
