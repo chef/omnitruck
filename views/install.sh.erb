@@ -260,6 +260,15 @@ do_curl() {
   return 0
 }
 
+# do_fetch URL FILENAME
+do_fetch() {
+  echo "trying fetch..."
+  fetch -o "$2" "$1" 2>/tmp/stderr
+  # check for bad return status
+  test $? -ne 0 && return 1
+  return 0
+}
+
 # do_curl URL FILENAME
 do_perl() {
   echo "trying perl..."
@@ -302,6 +311,10 @@ do_download() {
 
   if exists curl; then
     do_curl $1 $2 && return 0
+  fi
+
+  if exists fetch; then
+    do_fetch $1 $2 && return 0
   fi
 
   if exists perl; then
