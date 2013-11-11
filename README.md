@@ -193,3 +193,7 @@ The omnitruck-verifier directory contains a tool for verifying that
 packages on S3 have not been tampered with by comparing their checksums
 to the checksums specified by a cached copy of the metadata files. See
 the README in that directory for more info.
+
+## License
+Apache 2 Licensed. See LICENSE for full details.
+
