@@ -16,6 +16,7 @@ GEM
     rack-test (0.6.1)
       rack (>= 1.0)
     raindrops (0.10.0)
+    rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (2.12.0)
@@ -60,6 +61,7 @@ DEPENDENCIES
   json
   nokogiri
   rack-test
+  rake
   rest-client
   rspec
   rspec-rerun

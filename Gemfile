@@ -9,6 +9,7 @@ gem 'colorize'
 gem 'yajl-ruby'
 gem "rest-client"
 gem 'nokogiri'
+gem 'rake'
 
 group :test do
   gem 'rspec'
