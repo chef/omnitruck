@@ -443,7 +443,7 @@ do_download "$metadata_url"  "$metadata_filename"
 
 cat "$metadata_filename"
 
-download_url=`grep '^url' "$metadata_filename" | awk '{ print $2 }'`
+download_url=`awk '$1 == "url" { print $2 }' "$metadata_filename"`
 
 if test "x$platform" = "xsolaris2"; then
   if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
@@ -454,8 +454,8 @@ fi
 
 do_download "$download_url"  "$download_filename"
 
-sha256=`grep '^sha256' "$metadata_filename" | awk '{ print $2 }'`
-md5=`grep '^md5' "$metadata_filename" | awk '{ print $2 }'`
+sha256=`awk '$1 == "sha256" { print $2 }' "$metadata_filename"`
+md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
 
 do_checksum "$download_filename" "$sha256" "$md5"
 
