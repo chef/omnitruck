@@ -229,19 +229,17 @@ else
   esac
 fi
 
-echo "Downloading Chef $version for ${platform}..."
-
-url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
-
 if test "x$platform" = "xsolaris2"; then
   # hack up the path on Solaris to find wget
   PATH=/usr/csw/bin:$PATH
   export PATH
-  if test "x$platform_version" = "x5.9"; then
-    # solaris 9 lacks openssl
-    url=`echo $url | sed -e 's/https/http/'`
-  fi
 fi
+
+checksum_mismatch() {
+  echo "Package checksum mismatch!"
+  report_bug
+  exit 1
+}
 
 unable_to_retrieve_package() {
   echo "Unable to retrieve a valid package!"
@@ -315,6 +313,40 @@ do_python() {
   return 0
 }
 
+do_checksum() {
+  if exists sha256sum; then
+    checksum=`sha256sum $1 | awk '{ print $1 }'`
+    if test "x$checksum" != "x$2"; then
+      checksum_mismatch
+    else
+      echo "Checksum compare with sha256sum succeeded."
+    fi
+  elif exists shasum; then
+    checksum=`shasum -a 256 $1 | awk '{ print $1 }'`
+    if test "x$checksum" != "x$2"; then
+      checksum_mismatch
+    else
+      echo "Checksum compare with shasum succeeded."
+    fi
+  elif exists md5sum; then
+    checksum=`md5sum $1 | awk '{ print $1 }'`
+    if test "x$checksum" != "x$3"; then
+      checksum_mismatch
+    else
+      echo "Checksum compare with md5sum succeeded."
+    fi
+  elif exists md5; then
+    checksum=`md5$1 | awk '{ print $4 }'`
+    if test "x$checksum" != "x$3"; then
+      checksum_mismatch
+    else
+      echo "Checksum compare with md5 succeeded."
+    fi
+  else
+    echo "WARNING: could not find a valid checksum program, pre-install shasum, md5sum or md5 in your O/S image to get valdation..."
+  fi
+}
+
 # do_download URL FILENAME
 do_download() {
   echo "downloading $1"
@@ -379,21 +411,54 @@ install_file() {
   fi
 }
 
+echo "Downloading Chef $version for ${platform}..."
+
+if test "x$TMPDIR" = "x"; then
+  tmp="/tmp"
+else
+  tmp=$TMPDIR
+fi
+# secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
+tmp_dir="$tmp/install.sh.$$"
+(umask 077 && mkdir $tmp_dir) || exit 1
+
+metadata_filename="$tmp_dir/metadata.txt"
+
 if test "x$cmdline_filename" = "x"; then
-  if test "x$TMPDIR" = "x"; then
-    tmp="/tmp"
-  else
-    tmp=$TMPDIR
-  fi
-  # secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
-  tmp_dir="$tmp/install.sh.$$"
-  (umask 077 && mkdir $tmp_dir) || exit 1
   download_filename="$tmp_dir/$filename"
 else
   download_filename="$cmdline_filename"
 fi
 
-do_download "$url"  "$download_filename"
+metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+
+if test "x$platform" = "xsolaris2"; then
+  if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
+    # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
+    metadata_url=`echo $url | sed -e 's/https/http/'`
+  fi
+fi
+
+do_download "$metadata_url"  "$metadata_filename"
+
+cat "$metadata_filename"
+
+download_url=`grep '^url' "$metadata_filename" | awk '{ print $2 }'`
+
+if test "x$platform" = "xsolaris2"; then
+  if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
+    # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
+    download_url=`echo $url | sed -e 's/https/http/'`
+  fi
+fi
+
+do_download "$download_url"  "$download_filename"
+
+sha256=`grep '^sha256' "$metadata_filename" | awk '{ print $2 }'`
+md5=`grep '^md5' "$metadata_filename" | awk '{ print $2 }'`
+
+do_checksum "$download_filename" "$sha256" "$md5"
+
 install_file $filetype "$download_filename"
 
 if test "x$tmp_dir" != "x"; then

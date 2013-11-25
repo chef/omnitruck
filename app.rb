@@ -46,7 +46,7 @@ class Omnitruck < Sinatra::Base
     erb :'install.sh', {
       :layout => :'install.sh',
       :locals => {
-        :download_url => url("#{settings.virtual_path}/download")
+        :download_url => url("#{settings.virtual_path}/metadata")
       }
     }
   end
@@ -92,7 +92,7 @@ class Omnitruck < Sinatra::Base
       JSON.pretty_generate(package_info)
     end
   end
-  
+
   #
   # Returns the JSON minus run data to populate the install page build list
   #
@@ -227,7 +227,7 @@ class Omnitruck < Sinatra::Base
   end
 
   # Take the input architecture, and an optional version (latest is
-  # default), and returns the bottom level of the hash, if v1, this is simply the 
+  # default), and returns the bottom level of the hash, if v1, this is simply the
   # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
   def get_package_info(name, build_hash)
     platform         = params['p']
