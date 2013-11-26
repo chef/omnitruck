@@ -33,11 +33,14 @@ class Omnitruck < Sinatra::Base
 
   class InvalidDownloadPath < StandardError; end
   configure do
-    set :raise_errors, Proc.new { false }
+    set :raise_errors, false
     set :show_exceptions, false
     enable :logging
   end
 
+  configure :development, :test do
+    set :raise_errors, true  # needed to get accurate backtraces out of rspec
+  end
   #
   # serve up the installer script
   #
@@ -74,7 +77,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info_yolo("chef-client", JSON.parse(File.read(settings.build_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -224,6 +227,131 @@ class Omnitruck < Sinatra::Base
     else
       janky_workaround_for_processing_all_our_different_version_strings(chef_version)
     end
+  end
+
+  class PlatformVersion
+    include Comparable
+
+    attr :platform, :version, :yolo, :major_only
+
+    def initialize(platform, version)
+      @platform = platform
+      @version = version
+      # FIXME: use polymorphism
+      case platform
+      when "el", "freebsd", "sles", "suse"
+        @major_only = true
+      else
+        @major_only = false
+      end
+    end
+
+    # platform versions may match when the strings do not match, sort order may not be what
+    # you expect if you're trying to compare minor versions of EL/SuSE/etc...
+    def <=>(otherVer)
+      raise "attempt to compare platform_versions between different platforms" if self.platform != otherVer.platform
+      if (major_only)
+        Gem::Version.new(self.major) <=> Gem::Version.new(otherVer.major)
+      else
+        Gem::Version.new(self.version) <=> Gem::Version.new(otherVer.version)
+      end
+    end
+
+    def matchdata
+      /^([^\.]*)(\.([^\.]*))*/.match(version)
+    end
+
+    def major
+      matchdata[1]
+    end
+
+    def minor
+      matchdata[2]
+    end
+
+    def patch
+      matchdata[2]
+    end
+
+    def yolo?
+      yolo
+    end
+
+    def self.map_to_parent_distro(platform, version)
+      # FIXME: use polymorphism with class-per-platform instead of massive case structure
+      yolo = false
+      case platform
+      when "el", "debian", "freebsd", "mac_os_x", "ubuntu", "solaris2", "sles", "suse", "windows"
+        # these are our "native" platform names
+        self.new(platform, version)
+      when "linuxmint"
+        yolo = true
+        if version.to_i % 2 == 0
+          # even numbers map to .10's in ubuntu: 16 = "13.10", 14 = "12.10", etc
+          minor_rev = "10"
+        else
+          minor_rev = "04"
+        end
+        # and here's the magic to find the major version number
+        major_rev = ((version.to_i + 11)/ 2).floor.to_s
+        self.new("ubuntu", "#{major_rev}.#{minor_rev}")
+      end
+    end
+  end
+
+  # Similar to get_package_info() but searches for the best fit platform_version, it does not require an
+  # exact match.
+  def get_package_info_yolo(name, build_hash)
+    platform         = params['p']
+    platform_version = params['pv']
+    machine          = params['m']
+
+    chef_version     = params['v']
+    prerelease       = params['prerelease'] == "true"
+    use_nightlies    = params['nightlies'] == "true"
+
+    error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
+
+    desired_platform_version = PlatformVersion.map_to_parent_distro(platform, platform_version)
+
+    parent_platform = desired_platform_version.platform
+
+    chef_version = resolve_version(chef_version)
+
+    if !build_hash[parent_platform]
+      raise InvalidDownloadPath, error_msg
+    end
+
+    platform_versions_available = build_hash[parent_platform].keys
+
+    platform_versions_available.select! {|pv| PlatformVersion.new(parent_platform, pv) == desired_platform_version }
+
+    parent_platform_version = platform_versions_available.first
+
+    if !parent_platform_version || !build_hash[parent_platform][parent_platform_version] || !build_hash[parent_platform][parent_platform_version][machine]
+      raise InvalidDownloadPath, error_msg
+    end
+
+    raw_versions_available = build_hash[parent_platform][parent_platform_version][machine]
+
+    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+      version_string, url_path = kv
+      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
+      acc[version] = url_path
+      acc
+    end
+
+    target = Opscode::Version.find_target_version(semvers_available.keys,
+                                                            chef_version,
+                                                            prerelease,
+                                                            use_nightlies)
+    package_info = semvers_available[target]
+
+    unless package_info
+      raise InvalidDownloadPath, error_msg
+    end
+
+    package_info
   end
 
   # Take the input architecture, and an optional version (latest is

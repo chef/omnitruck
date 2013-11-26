@@ -38,23 +38,17 @@ describe 'Omnitruck' do
     def url_regex_for(expected_version)
       expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
       expected_version_variations.gsub!(/\+/, "%2B")
-      /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(platform)}\.?#{Regexp.escape(platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+      mapped_platform = ( platform == "suse" ) ?  "el" : platform
+      mapped_platform_version = ( platform == "suse" ) ?  "6" : platform_version
+      /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
     end
 
-    def self.should_retrieve_latest_as(expected_version, options={})
+    def self.should_retrieve_latest_metadata_as(expected_version, options={})
       let(:iteration_number){ options[:iteration] || 1}
       let(:expected_md5) { options[:md5] }
       let(:expected_sha256) { options[:sha256] }
       let(:http_type_string) { "http" }
       let(:omnitruck_host_path)  { "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com" }
-
-      it "should serve a redirect to the correct URI for package #{expected_version}" do
-        get(endpoint, params)
-        last_response.should be_redirect
-        follow_redirect!
-
-        last_request.url.should =~ url_regex_for(expected_version)
-      end
 
       it "should serve JSON metadata with a URI for package #{expected_version}" do
         get(metadata_endpoint, params, "HTTP_ACCEPT" => "application/json")
@@ -85,6 +79,24 @@ describe 'Omnitruck' do
       end
     end
 
+    def self.should_retrieve_latest_as(expected_version, options={})
+      let(:iteration_number){ options[:iteration] || 1}
+      let(:expected_md5) { options[:md5] }
+      let(:expected_sha256) { options[:sha256] }
+      let(:http_type_string) { "http" }
+      let(:omnitruck_host_path)  { "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com" }
+
+      it "should serve a redirect to the correct URI for package #{expected_version}" do
+        get(endpoint, params)
+        last_response.should be_redirect
+        follow_redirect!
+
+        last_request.url.should =~ url_regex_for(expected_version)
+      end
+
+      should_retrieve_latest_metadata_as(expected_version, options)
+    end
+
     # Helper lets to make parameter declaration and handling easier
     let(:platform){ nil }
     let(:package_type){ nil }
@@ -113,6 +125,131 @@ describe 'Omnitruck' do
       let(:endpoint){"/download"}
       let(:metadata_endpoint){"/metadata"}
       let(:project){ "chef" }
+
+      describe "suse" do
+        let(:platform){"suse"}
+        let(:package_type){"rpm"}
+
+        context "12.1" do
+          let(:platform_version){"12.1"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+              end
+            end
+          end
+        end
+
+        # 12.0 exercises major_only mode since only 12.1 exists -- this tests matching by major version going forwards
+        context "12.0" do
+          let(:platform_version){"12.0"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+              end
+            end
+          end
+        end
+
+        # 12.2 exercises major_only mode since only 12.1 exists -- this tests matching by major version going backwards
+        context "12.2" do
+          let(:platform_version){"12.2"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+              end
+            end
+          end
+        end
+      end
+
+      describe "Linux Mint" do
+        let(:platform){"linuxmint"}
+        let(:package_type){"deb"}
+        context "9" do  # this translates to ubuntu 10.04
+          let(:platform_version){"9"}
+          context "x86_64" do
+            let(:architecture){"x86_64"}
+            let(:architecture_alt){"amd64"}
+
+            context "without an explicit version" do
+              let(:chef_version){nil}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+              end
+              context "pre-release nightlies" do
+                let(:prerelease){true}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("11.0.0",  {:md5=>"9d8040305ca61d88dcd2bb126d8e0289", :sha256=>"b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"})
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
+              end
+            end
+          end
+        end
+
+        context "16" do  # this is a yolo-mode translated version number download with a twist
+          let(:platform_version){"16"}
+          context "x86_64" do
+            let(:architecture){"x86_64"}
+            let(:architecture_alt){"amd64"}
+
+            context "without an explicit version" do
+              let(:chef_version){nil}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+              end
+            end
+          end
+        end
+      end
+
 
       describe "el" do
         let(:platform){"el"}
@@ -349,6 +486,7 @@ describe 'Omnitruck' do
       describe "Ubuntu" do
         let(:platform){"ubuntu"}
         let(:package_type){"deb"}
+
         context "10.04" do
           let(:platform_version){"10.04"}
           context "x86_64" do
