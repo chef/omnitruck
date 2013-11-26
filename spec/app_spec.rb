@@ -38,8 +38,8 @@ describe 'Omnitruck' do
     def url_regex_for(expected_version)
       expected_version_variations = Regexp.escape(expected_version).gsub(/\\-|_/, "[_-]")
       expected_version_variations.gsub!(/\+/, "%2B")
-      mapped_platform = ( platform == "suse" ) ?  "el" : platform
-      mapped_platform_version = ( platform == "suse" ) ?  "6" : platform_version
+      mapped_platform =  alt_platform ? alt_platform : platform
+      mapped_platform_version = alt_platform_version ? alt_platform_version : platform_version
       /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
     end
 
@@ -99,8 +99,10 @@ describe 'Omnitruck' do
 
     # Helper lets to make parameter declaration and handling easier
     let(:platform){ nil }
+    let(:alt_platform){ nil }
     let(:package_type){ nil }
     let(:platform_version){ nil }
+    let(:alt_platform_version){ nil }
     let(:architecture){ nil }
     let(:chef_version){ nil }
     let(:prerelease){ nil }
@@ -128,10 +130,12 @@ describe 'Omnitruck' do
 
       describe "suse" do
         let(:platform){"suse"}
+        let(:alt_platform){"el"}
         let(:package_type){"rpm"}
 
         context "12.1" do
           let(:platform_version){"12.1"}
+          let(:alt_platform_version){"6"}
 
           context "x86_64" do
 
@@ -153,6 +157,7 @@ describe 'Omnitruck' do
         # 12.0 exercises major_only mode since only 12.1 exists -- this tests matching by major version going forwards
         context "12.0" do
           let(:platform_version){"12.0"}
+          let(:alt_platform_version){"6"}
 
           context "x86_64" do
 
@@ -174,6 +179,7 @@ describe 'Omnitruck' do
         # 12.2 exercises major_only mode since only 12.1 exists -- this tests matching by major version going backwards
         context "12.2" do
           let(:platform_version){"12.2"}
+          let(:alt_platform_version){"6"}
 
           context "x86_64" do
 
@@ -193,63 +199,138 @@ describe 'Omnitruck' do
         end
       end
 
+      shared_examples_for "ubuntu 12.04" do
+        context "x86_64" do
+          let(:alt_platform){"ubuntu"}
+          let(:alt_platform_version){"12.04"}
+          let(:architecture){"x86_64"}
+          let(:architecture_alt){"amd64"}
+
+          context "without an explicit version" do
+            let(:chef_version){nil}
+
+            context "pre-releases" do
+              let(:prerelease){true}
+              let(:nightlies){false}
+              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+            end
+
+            context "releases" do
+              let(:prerelease){false}
+              let(:nightlies){false}
+              should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+            end
+
+            context "releases nightlies" do
+              let(:prerelease){false}
+              let(:nightlies){true}
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+            end
+          end # without an explicit version
+
+          context "with a version of 'latest'" do
+            let(:chef_version){"latest"}
+
+            context "pre-releases" do
+              let(:prerelease){true}
+              let(:nightlies){false}
+              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+            end
+
+            context "releases" do
+              let(:prerelease){false}
+              let(:nightlies){false}
+              should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+            end
+
+            context "releases nightlies" do
+              let(:prerelease){false}
+              let(:nightlies){true}
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+            end
+          end # with a version of 'latest'
+
+          context "with an explicit version" do
+            context "that is a proper release" do
+              let(:chef_version){"10.16.0"}
+
+              context "filtering for latest pre-release in this line" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+
+              context "filtering for latest release in this line (i.e., this exact thing)" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+              end
+
+              context "filtering for latest release nightly in this line" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+              end
+            end # proper release
+
+            context "that is a pre-release" do
+              let(:chef_version){"10.16.0.rc.1"}
+
+              context "filtering for latest pre-release in this line (i.e., this exact thing)" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+
+              context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+
+              context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+            end # pre-release
+
+          end # with a explicit version
+        end # x86_64
+      end # Ubuntu 12.04
+
       describe "Linux Mint" do
         let(:platform){"linuxmint"}
         let(:package_type){"deb"}
-        context "9" do  # this translates to ubuntu 10.04
-          let(:platform_version){"9"}
-          context "x86_64" do
-            let(:architecture){"x86_64"}
-            let(:architecture_alt){"amd64"}
+        context "13" do  # this translates to ubuntu 12.04
+          let(:platform_version){"13"}
 
-            context "without an explicit version" do
-              let(:chef_version){nil}
-
-              context "pre-releases" do
-                let(:prerelease){true}
-                let(:nightlies){false}
-                should_retrieve_latest_metadata_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
-              end
-              context "pre-release nightlies" do
-                let(:prerelease){true}
-                let(:nightlies){true}
-                should_retrieve_latest_metadata_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
-              end
-
-              context "releases" do
-                let(:prerelease){false}
-                let(:nightlies){false}
-                should_retrieve_latest_metadata_as("11.0.0",  {:md5=>"9d8040305ca61d88dcd2bb126d8e0289", :sha256=>"b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"})
-              end
-
-              context "releases nightlies" do
-                let(:prerelease){false}
-                let(:nightlies){true}
-                should_retrieve_latest_metadata_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
-              end
-            end
-          end
+          it_behaves_like "ubuntu 12.04"
         end
 
         context "16" do  # this is a yolo-mode translated version number download with a twist
-          let(:platform_version){"16"}
-          context "x86_64" do
-            let(:architecture){"x86_64"}
-            let(:architecture_alt){"amd64"}
+          let(:platform_version){"14"}
 
-            context "without an explicit version" do
-              let(:chef_version){nil}
-
-              context "pre-releases" do
-                let(:prerelease){true}
-                let(:nightlies){false}
-                should_retrieve_latest_metadata_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
-              end
-            end
-          end
+          it_behaves_like "ubuntu 12.04"
         end
       end
 
+      describe "Ubuntu" do
+        let(:platform){"ubuntu"}
+        let(:package_type){"deb"}
+
+        context "12.04" do
+          let(:platform_version){"12.04"}
+
+          it_behaves_like "ubuntu 12.04"
+        end
+
+        context "12.10" do  # yolo mode
+          let(:platform_version){"12.10"}
+
+          it_behaves_like "ubuntu 12.04"
+        end
+      end
 
       describe "el" do
         let(:platform){"el"}
