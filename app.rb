@@ -324,9 +324,15 @@ class Omnitruck < Sinatra::Base
 
     platform_versions_available = build_hash[parent_platform].keys
 
-    platform_versions_available.select! {|pv| PlatformVersion.new(parent_platform, pv) == desired_platform_version }
+    platform_versions_available.select! {|pv| PlatformVersion.new(parent_platform, pv) <= desired_platform_version }
+
+    platform_versions_available.sort! {|pv1,pv2| PlatformVersion.new(parent_platform, pv2) <=> PlatformVersion.new(parent_platform, pv1) }
 
     parent_platform_version = platform_versions_available.first
+
+    if PlatformVersion.new(parent_platform, parent_platform_version) != desired_platform_version
+      puts "YOLO!!!!!!!!!"
+    end
 
     if !parent_platform_version || !build_hash[parent_platform][parent_platform_version] || !build_hash[parent_platform][parent_platform_version][machine]
       raise InvalidDownloadPath, error_msg
