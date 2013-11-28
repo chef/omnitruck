@@ -25,6 +25,7 @@ require 'json'
 require 'pp'
 
 require 'opscode/version'
+require 'platform_dsl'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -229,76 +230,6 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  class PlatformVersion
-    include Comparable
-
-    attr :platform, :version, :yolo, :major_only
-
-    def initialize(platform, version)
-      @platform = platform
-      @version = version
-      # FIXME: use polymorphism
-      case platform
-      when "el", "freebsd", "sles", "suse"
-        @major_only = true
-      else
-        @major_only = false
-      end
-    end
-
-    # platform versions may match when the strings do not match, sort order may not be what
-    # you expect if you're trying to compare minor versions of EL/SuSE/etc...
-    def <=>(otherVer)
-      raise "attempt to compare platform_versions between different platforms" if self.platform != otherVer.platform
-      if (major_only)
-        Gem::Version.new(self.major) <=> Gem::Version.new(otherVer.major)
-      else
-        Gem::Version.new(self.version) <=> Gem::Version.new(otherVer.version)
-      end
-    end
-
-    def matchdata
-      /^([^\.]*)(\.([^\.]*))*/.match(version)
-    end
-
-    def major
-      matchdata[1]
-    end
-
-    def minor
-      matchdata[2]
-    end
-
-    def patch
-      matchdata[2]
-    end
-
-    def yolo?
-      yolo
-    end
-
-    def self.map_to_parent_distro(platform, version)
-      # FIXME: use polymorphism with class-per-platform instead of massive case structure
-      yolo = false
-      case platform
-      when "el", "debian", "freebsd", "mac_os_x", "ubuntu", "solaris2", "sles", "suse", "windows"
-        # these are our "native" platform names
-        self.new(platform, version)
-      when "linuxmint"
-        yolo = true
-        if version.to_i % 2 == 0
-          # even numbers map to .10's in ubuntu: 16 = "13.10", 14 = "12.10", etc
-          minor_rev = "10"
-        else
-          minor_rev = "04"
-        end
-        # and here's the magic to find the major version number
-        major_rev = ((version.to_i + 11)/ 2).floor.to_s
-        self.new("ubuntu", "#{major_rev}.#{minor_rev}")
-      end
-    end
-  end
-
   # Similar to get_package_info() but searches for the best fit platform_version, it does not require an
   # exact match.
   def get_package_info_yolo(name, build_hash)
@@ -312,33 +243,32 @@ class Omnitruck < Sinatra::Base
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
-    desired_platform_version = PlatformVersion.map_to_parent_distro(platform, platform_version)
+    dsl = PlatformDSL.new()
+    dsl.from_file("platforms.rb")
+    pv = dsl.new_platform_version(platform, platform_version)
 
-    parent_platform = desired_platform_version.platform
+    remapped_platform = pv.mapped_name
 
     chef_version = resolve_version(chef_version)
 
-    if !build_hash[parent_platform]
+    if !build_hash[remapped_platform]
       raise InvalidDownloadPath, error_msg
     end
 
-    platform_versions_available = build_hash[parent_platform].keys
+    distro_versions_available = build_hash[remapped_platform].keys
 
-    platform_versions_available.select! {|pv| PlatformVersion.new(parent_platform, pv) <= desired_platform_version }
+    distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
 
-    platform_versions_available.sort! {|pv1,pv2| PlatformVersion.new(parent_platform, pv2) <=> PlatformVersion.new(parent_platform, pv1) }
+    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
 
-    parent_platform_version = platform_versions_available.first
+    # TODO? we could walk down the distro_versions until we find one that passes the semver filter in case someone asks for a stupidly old chef version on a new platform...
+    remapped_platform_version = distro_versions_available.first
 
-    if PlatformVersion.new(parent_platform, parent_platform_version) != desired_platform_version
-      puts "YOLO!!!!!!!!!"
-    end
-
-    if !parent_platform_version || !build_hash[parent_platform][parent_platform_version] || !build_hash[parent_platform][parent_platform_version][machine]
+    if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
       raise InvalidDownloadPath, error_msg
     end
 
-    raw_versions_available = build_hash[parent_platform][parent_platform_version][machine]
+    raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
 
     semvers_available = raw_versions_available.reduce({}) do |acc, kv|
       version_string, url_path = kv
@@ -355,6 +285,15 @@ class Omnitruck < Sinatra::Base
 
     unless package_info
       raise InvalidDownloadPath, error_msg
+    end
+
+    # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
+    if dsl.new_platform_version(remapped_platform, remapped_platform_version) != pv
+      # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
+      package_info[:yolo] = true
+    elsif pv.yolo
+      # for some distros they are always yolo (linux mint, etc)
+      package_info[:yolo] = true
     end
 
     package_info
