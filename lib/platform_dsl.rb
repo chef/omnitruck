@@ -104,7 +104,7 @@ class PlatformDSL
     end
 
     def platform(name, &block)
-      platform_spec = PlatformDSL::PlatformSpec.new(name)
+      platform_spec = Class.new(PlatformDSL::PlatformSpec).new(name)
       platform_spec.instance_eval(&block) if block_given?
       platform_dsl.build(platform_spec)
     end
@@ -200,7 +200,7 @@ class PlatformDSL
   end
 
   def from_file(filename)
-    PlatformDSL::FileDSL.new(self).instance_eval(IO.read(filename), filename, 1)
+    Class.new(PlatformDSL::FileDSL).new(self).instance_eval(IO.read(filename), filename, 1)
   end
 end
 
