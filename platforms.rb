@@ -9,6 +9,8 @@
 #
 # - these are first-class platforms that we have builders and testers for
 #
+
+# NB: this platform name is deprecated, convert to using "redhat" like ohai
 platform "el" do
   major_only true
 end
@@ -19,6 +21,7 @@ end
 
 platform "ubuntu"
 
+# NB: this platform name is deprecated, convert to using "darwin" like ohai
 platform "mac_os_x"
 
 platform "solaris2"
@@ -47,6 +50,11 @@ end
 #
 # These are RHEL clones that we know will work + SuSE that we test on
 #
+
+platform "darwin" do
+  remap "mac_os_x"
+end
+
 platform "enterpriseenterprise" do  # alias for "oracle"
   major_only true
   remap "el"
@@ -121,4 +129,6 @@ end
 # - gentoo
 # - debian/ubuntu/rhel ARM/PPC
 # - redhat ARM/PPC
-
+# - HPUX
+# - openbsd
+# - netbsd
