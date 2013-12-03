@@ -295,6 +295,15 @@ describe 'Omnitruck' do
               end
             end # pre-release
 
+            context "that is ancient and only in a very old version" do
+              let(:chef_version){"10.10.0"}  # this is only available in ubuntu 10.04, so we have to search upwards through platform versions to find it
+              context "filtering for latest release in this line (i.e., this exact thing)" do
+                let(:alt_platform_version){"10.04"}
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.10.0",  {:md5=>"93616058a2ba09a6abccef7651fdae38", :sha256=>"9ee398d806bb377d190e92cd09e7b4a8571d4b328cd580a716425818e6124779"})
+              end
+            end
           end # with a explicit version
         end # x86_64
       end # Ubuntu 12.04

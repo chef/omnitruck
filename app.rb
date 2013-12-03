@@ -78,7 +78,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata' do
-    package_info = get_package_info_yolo("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -88,7 +88,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
+    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), false)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -230,9 +230,10 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  # Similar to get_package_info() but searches for the best fit platform_version, it does not require an
-  # exact match.
-  def get_package_info_yolo(name, build_hash)
+  # Take the input architecture, and an optional version (latest is
+  # default), and returns the bottom level of the hash, if v1, this is simply the
+  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
+  def get_package_info(name, build_hash, yolo = false)
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
@@ -242,101 +243,85 @@ class Omnitruck < Sinatra::Base
     use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
+
+    chef_version = resolve_version(chef_version)
 
     dsl = PlatformDSL.new()
     dsl.from_file("platforms.rb")
     pv = dsl.new_platform_version(platform, platform_version)
 
+    # this maps "linuxmint" onto "ubuntu", "scientific" onto "el", etc
     remapped_platform = pv.mapped_name
 
-    chef_version = resolve_version(chef_version)
-
     if !build_hash[remapped_platform]
-      raise InvalidDownloadPath, error_msg
+      raise InvalidDownloadPath, "Cannot find any chef versions for mapped platform #{pv.mapped_name}: #{error_msg}"
     end
 
     distro_versions_available = build_hash[remapped_platform].keys
 
-    distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
+    if (yolo)
+      # if we're in yolo mode then ubuntu 13.04 is <= 13.10 so we'll ship 13.04 if we can't find 13.10
+      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
+    else
+      # if we're not in yolo mode then we must match exactly
+      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) == pv }
+    end
 
+    if distro_versions_available.length == 0
+      raise InvalidDownloadPath, "Cannot find any available chef versions for this mapped platform version #{pv.mapped_name} #{pv.mapped_version}: #{error_msg}"
+    end
+
+    # sort so that the first available version is the highest (pick 13.04 before 10.04)
     distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
 
-    # TODO? we could walk down the distro_versions until we find one that passes the semver filter in case someone asks for a stupidly old chef version on a new platform...
-    remapped_platform_version = distro_versions_available.first
+    # walk through all the distro versions until we find a candidate (if someone specifies a very old chef version we will find it on some
+    # very old distro if you are in yolo mode)
+    package_info = nil
+    pv_selected = nil
 
-    if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
-      raise InvalidDownloadPath, error_msg
+    distro_versions_available.each do |remapped_platform_version|
+      pv_selected = remapped_platform_version
+
+      if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
+        next
+      end
+
+      raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
+
+      next if !raw_versions_available
+
+      semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+        version_string, url_path = kv
+        version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
+        acc[version] = url_path
+        acc
+      end
+
+      next if !semvers_available
+
+      target = Opscode::Version.find_target_version(semvers_available.keys,
+                                                    chef_version,
+                                                    prerelease,
+                                                    use_nightlies)
+
+      next if !target
+
+      package_info = semvers_available[target]
+
+      break if package_info
     end
-
-    raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
-
-    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
-      version_string, url_path = kv
-      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
-      acc[version] = url_path
-      acc
-    end
-
-    target = Opscode::Version.find_target_version(semvers_available.keys,
-                                                            chef_version,
-                                                            prerelease,
-                                                            use_nightlies)
-    package_info = semvers_available[target]
 
     unless package_info
-      raise InvalidDownloadPath, error_msg
+      raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
     end
 
     # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
-    if dsl.new_platform_version(remapped_platform, remapped_platform_version) != pv
+    if dsl.new_platform_version(remapped_platform, pv_selected) != pv
       # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
       package_info[:yolo] = true
     elsif pv.yolo
       # for some distros they are always yolo (linux mint, etc)
       package_info[:yolo] = true
-    end
-
-    package_info
-  end
-
-  # Take the input architecture, and an optional version (latest is
-  # default), and returns the bottom level of the hash, if v1, this is simply the
-  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
-  def get_package_info(name, build_hash)
-    platform         = params['p']
-    platform_version = params['pv']
-    machine          = params['m']
-
-    chef_version     = params['v']
-    prerelease       = params['prerelease'] == "true"
-    use_nightlies    = params['nightlies'] == "true"
-
-    error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
-
-    # TODO: Handle invalid chef_version strings
-    chef_version = resolve_version(chef_version)
-
-    if !build_hash[platform] || !build_hash[platform][platform_version] || !build_hash[platform][platform_version][machine]
-      raise InvalidDownloadPath, error_msg
-    end
-
-    raw_versions_available = build_hash[platform][platform_version][machine]
-
-    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
-      version_string, url_path = kv
-      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
-      acc[version] = url_path
-      acc
-    end
-
-    target = Opscode::Version.find_target_version(semvers_available.keys,
-                                                            chef_version,
-                                                            prerelease,
-                                                            use_nightlies)
-    package_info = semvers_available[target]
-
-    unless package_info
-      raise InvalidDownloadPath, error_msg
     end
 
     package_info

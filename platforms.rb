@@ -71,12 +71,14 @@ platform "scientific" do
 end
 
 platform "suse" do
+  major_only true
   remap "el"
   # FIXME: with some old enough version we should return 5
   version_remap 6
 end
 
 platform "sles" do
+  major_only true
   remap "el"
   # FIXME: with some old enough version we should return 5
   version_remap 6

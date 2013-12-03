@@ -48,15 +48,15 @@ class PlatformDSL
     end
 
     def mapped_major
-      matchdata[1]
+      mapped_matchdata[1]
     end
 
     def mapped_minor
-      matchdata[2]
+      mapped_matchdata[2]
     end
 
     def mapped_patch
-      matchdata[3]
+      mapped_matchdata[3]
     end
 
     def name
