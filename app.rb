@@ -1,4 +1,4 @@
-#--
+#  --
 # Author:: Tyler Cloke (tyler@opscode.com)
 # Author:: Stephen Delano (stephen@opscode.com)
 # Author:: Seth Chisamore (sethc@opscode.com)
@@ -203,7 +203,8 @@ class Omnitruck < Sinatra::Base
       Opscode::Version::Rubygems,
       Opscode::Version::GitDescribe,
       Opscode::Version::OpscodeSemVer,
-      Opscode::Version::SemVer
+      Opscode::Version::SemVer,
+      Opscode::Version::Incomplete
     ].each do |version|
       begin
         break v = version.new(version_string)
@@ -232,7 +233,19 @@ class Omnitruck < Sinatra::Base
 
   # Take the input architecture, and an optional version (latest is
   # default), and returns the bottom level of the hash, if v1, this is simply the
-  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
+  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums.
+  #
+  # The third argument is yolo mode.  False is strict mode and only packages that
+  # have been explicitly Q/A tested by Opscode are returned.  In yolo mode you
+  # get various kinds of promotion of packages to package versions that we expect
+  # to work, but have not tested.  So in yolo mode you get Ubuntu 14.04 and
+  # Mac 10.10 working out of the box on release day by using prior Ubuntu and Mac
+  # omnibus packages.  We also map linux mint versions onto their ubuntu versions and
+  # will ship those packages.  We set a flag in the output of the metadata endpoint
+  # in order to signal to the client (i.e. install.sh) that we've served up a package
+  # url using the yolo-mode algorithm.  Then the client can use this to display a
+  # banner warning the end user that the package that they're using is untested.
+  #
   def get_package_info(name, build_hash, yolo = false)
     platform         = params['p']
     platform_version = params['pv']
