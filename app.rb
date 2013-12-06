@@ -1,4 +1,4 @@
-#--
+#  --
 # Author:: Tyler Cloke (tyler@opscode.com)
 # Author:: Stephen Delano (stephen@opscode.com)
 # Author:: Seth Chisamore (sethc@opscode.com)
@@ -25,6 +25,7 @@ require 'json'
 require 'pp'
 
 require 'opscode/version'
+require 'platform_dsl'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -33,11 +34,14 @@ class Omnitruck < Sinatra::Base
 
   class InvalidDownloadPath < StandardError; end
   configure do
-    set :raise_errors, Proc.new { false }
+    set :raise_errors, false
     set :show_exceptions, false
     enable :logging
   end
 
+  configure :development, :test do
+    set :raise_errors, true  # needed to get accurate backtraces out of rspec
+  end
   #
   # serve up the installer script
   #
@@ -46,7 +50,7 @@ class Omnitruck < Sinatra::Base
     erb :'install.sh', {
       :layout => :'install.sh',
       :locals => {
-        :download_url => url("#{settings.virtual_path}/download")
+        :download_url => url("#{settings.virtual_path}/metadata")
       }
     }
   end
@@ -74,7 +78,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -84,7 +88,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
+    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), false)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -92,7 +96,7 @@ class Omnitruck < Sinatra::Base
       JSON.pretty_generate(package_info)
     end
   end
-  
+
   #
   # Returns the JSON minus run data to populate the install page build list
   #
@@ -199,7 +203,8 @@ class Omnitruck < Sinatra::Base
       Opscode::Version::Rubygems,
       Opscode::Version::GitDescribe,
       Opscode::Version::OpscodeSemVer,
-      Opscode::Version::SemVer
+      Opscode::Version::SemVer,
+      Opscode::Version::Incomplete
     ].each do |version|
       begin
         break v = version.new(version_string)
@@ -227,9 +232,21 @@ class Omnitruck < Sinatra::Base
   end
 
   # Take the input architecture, and an optional version (latest is
-  # default), and returns the bottom level of the hash, if v1, this is simply the 
-  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums
-  def get_package_info(name, build_hash)
+  # default), and returns the bottom level of the hash, if v1, this is simply the
+  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums.
+  #
+  # The third argument is yolo mode.  False is strict mode and only packages that
+  # have been explicitly Q/A tested by Opscode are returned.  In yolo mode you
+  # get various kinds of promotion of packages to package versions that we expect
+  # to work, but have not tested.  So in yolo mode you get Ubuntu 14.04 and
+  # Mac 10.10 working out of the box on release day by using prior Ubuntu and Mac
+  # omnibus packages.  We also map linux mint versions onto their ubuntu versions and
+  # will ship those packages.  We set a flag in the output of the metadata endpoint
+  # in order to signal to the client (i.e. install.sh) that we've served up a package
+  # url using the yolo-mode algorithm.  Then the client can use this to display a
+  # banner warning the end user that the package that they're using is untested.
+  #
+  def get_package_info(name, build_hash, yolo = false)
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
@@ -240,30 +257,84 @@ class Omnitruck < Sinatra::Base
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
-    # TODO: Handle invalid chef_version strings
     chef_version = resolve_version(chef_version)
 
-    if !build_hash[platform] || !build_hash[platform][platform_version] || !build_hash[platform][platform_version][machine]
-      raise InvalidDownloadPath, error_msg
+    dsl = PlatformDSL.new()
+    dsl.from_file("platforms.rb")
+    pv = dsl.new_platform_version(platform, platform_version)
+
+    # this maps "linuxmint" onto "ubuntu", "scientific" onto "el", etc
+    remapped_platform = pv.mapped_name
+
+    if !build_hash[remapped_platform]
+      raise InvalidDownloadPath, "Cannot find any chef versions for mapped platform #{pv.mapped_name}: #{error_msg}"
     end
 
-    raw_versions_available = build_hash[platform][platform_version][machine]
+    distro_versions_available = build_hash[remapped_platform].keys
 
-    semvers_available = raw_versions_available.reduce({}) do |acc, kv|
-      version_string, url_path = kv
-      version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
-      acc[version] = url_path
-      acc
+    if (yolo)
+      # if we're in yolo mode then ubuntu 13.04 is <= 13.10 so we'll ship 13.04 if we can't find 13.10
+      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
+    else
+      # if we're not in yolo mode then we must match exactly
+      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) == pv }
     end
 
-    target = Opscode::Version.find_target_version(semvers_available.keys,
-                                                            chef_version,
-                                                            prerelease,
-                                                            use_nightlies)
-    package_info = semvers_available[target]
+    if distro_versions_available.length == 0
+      raise InvalidDownloadPath, "Cannot find any available chef versions for this mapped platform version #{pv.mapped_name} #{pv.mapped_version}: #{error_msg}"
+    end
+
+    # sort so that the first available version is the highest (pick 13.04 before 10.04)
+    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
+
+    # walk through all the distro versions until we find a candidate (if someone specifies a very old chef version we will find it on some
+    # very old distro if you are in yolo mode)
+    package_info = nil
+    pv_selected = nil
+
+    distro_versions_available.each do |remapped_platform_version|
+      pv_selected = remapped_platform_version
+
+      if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
+        next
+      end
+
+      raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
+
+      next if !raw_versions_available
+
+      semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+        version_string, url_path = kv
+        version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
+        acc[version] = url_path
+        acc
+      end
+
+      next if !semvers_available
+
+      target = Opscode::Version.find_target_version(semvers_available.keys,
+                                                    chef_version,
+                                                    prerelease,
+                                                    use_nightlies)
+
+      next if !target
+
+      package_info = semvers_available[target]
+
+      break if package_info
+    end
 
     unless package_info
-      raise InvalidDownloadPath, error_msg
+      raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
+    end
+
+    # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
+    if dsl.new_platform_version(remapped_platform, pv_selected) != pv
+      # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
+      package_info[:yolo] = true
+    elsif pv.yolo
+      # for some distros they are always yolo (linux mint, etc)
+      package_info[:yolo] = true
     end
 
     package_info

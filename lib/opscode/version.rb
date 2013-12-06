@@ -23,6 +23,7 @@ require 'opscode/version/semver'
 require 'opscode/version/opscode_semver'
 require 'opscode/version/rubygems'
 require 'opscode/version/git_describe'
+require 'opscode/version/incomplete'
 
 module Opscode
   class Version
@@ -74,7 +75,10 @@ module Opscode
     # major, minor, and patch values.  Prerelease and build specifiers
     # are not taken into consideration.
     def in_same_release_line?(other)
-      @major == other.major && @minor == other.minor && @patch == other.patch
+      @major == other.major &&
+        # minor and patch always match if one or the other is nil (~>-like behavior)
+        ( @minor.nil? || other.minor.nil? || @minor == other.minor ) &&
+        ( @patch.nil? || other.patch.nil? || @patch == other.patch )
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
