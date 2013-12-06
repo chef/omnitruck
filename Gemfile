@@ -1,6 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'sinatra'
+# tracking master because of this bug:
+# https://github.com/sinatra/sinatra/pull/805
+# once 1.4.5 is released, this should stop
+gem 'sinatra', :github => 'sinatra/sinatra'
 gem 'sinatra-contrib'
 gem 'uber-s3'
 gem 'unicorn'
