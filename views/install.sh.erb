@@ -61,7 +61,6 @@ rpm_filename() {
 
 # Set the filename for a Solaris SVR4 package, based on version and machine
 svr4_filename() {
-  PATH=/usr/sfw/bin:$PATH
   filetype="solaris"
   filename="chef-${version}.${machine}.solaris"
 }
@@ -231,7 +230,7 @@ fi
 
 if test "x$platform" = "xsolaris2"; then
   # hack up the path on Solaris to find wget
-  PATH=/usr/csw/bin:$PATH
+  PATH=/usr/sfw/bin:$PATH
   export PATH
 fi
 
