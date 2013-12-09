@@ -8,7 +8,7 @@ class PlatformDSL
     attr_accessor :version
 
     def initialize(version)
-      @version = version
+      @version = version.dup
     end
 
     def mapped_version
