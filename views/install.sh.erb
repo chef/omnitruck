@@ -434,7 +434,7 @@ metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}
 if test "x$platform" = "xsolaris2"; then
   if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
     # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
-    metadata_url=`echo $url | sed -e 's/https/http/'`
+    metadata_url=`echo $metadata_url | sed -e 's/https/http/'`
   fi
 fi
 
@@ -447,7 +447,7 @@ download_url=`awk '$1 == "url" { print $2 }' "$metadata_filename"`
 if test "x$platform" = "xsolaris2"; then
   if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
     # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
-    download_url=`echo $url | sed -e 's/https/http/'`
+    download_url=`echo $download_url | sed -e 's/https/http/'`
   fi
 fi
 
