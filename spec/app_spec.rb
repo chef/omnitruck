@@ -40,7 +40,11 @@ describe 'Omnitruck' do
       expected_version_variations.gsub!(/\+/, "%2B")
       mapped_platform =  alt_platform ? alt_platform : platform
       mapped_platform_version = alt_platform_version ? alt_platform_version : platform_version
-      /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+      if mapped_platform =~ /windows/
+        /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/chef-client-#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.#{package_type}/
+      else
+        /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
+      end
     end
 
     def self.should_retrieve_latest_metadata_as(expected_version, options={})
@@ -360,6 +364,40 @@ describe 'Omnitruck' do
           let(:platform_version){"12.10"}
 
           it_behaves_like "ubuntu 12.04"
+        end
+      end
+
+      describe "Windows" do
+        let(:platform){"windows"}
+        let(:package_type){"msi"}
+        context "2008r2" do
+          let(:platform_version){"2008r2"}
+          context "x86_64" do
+            let(:architecture){"x86_64"}
+            #let(:architecture_alt){"amd64"}
+
+            context "without an explicit version" do
+              let(:chef_version){nil}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("11.8.2.rc.0",  {:iteration => "2", :md5=>"63efd66df27611935ee12bf9cb9912bc", :sha256=>"9eb24c1023f2e512bd8ae8b5cf0d657fb5f40d7dcaa8a29e8b839846d82cf0fe"})
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("11.4.0-18-gdf096fa",  {:md5=>"8cb5496e9ff5228f587960375dc0daed", :sha256=>"ff18820f4b4399df51e7b515cd5881c658a4768d4516c63adaed429aa840b713"})
+              end
+            end # without an explicit version
+          end
         end
       end
 

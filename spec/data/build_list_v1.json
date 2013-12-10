@@ -457,9 +457,14 @@
     },
     "2008r2": {
       "x86_64": {
-        "10.16.2-49-g21353f0-1": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-        "10.16.4-1": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
-        "11.6.0.hotfix.1-1": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi"
+        "11.4.0-18-gdf096fa-1": "/windows/2008r2/x86_64/chef-client-11.4.0-18-gdf096fa-1.windows.msi",
+        "11.8.0-1": "/windows/2008r2/x86_64/chef-client-11.8.0-1.windows.msi",
+        "11.8.0.rc.2-1": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.2-1.windows.msi",
+        "11.8.0.rc.3-1": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.3-1.windows.msi",
+        "11.8.0.rc.4-1": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.4-1.windows.msi",
+        "11.8.2-1": "/windows/2008r2/x86_64/chef-client-11.8.2-1.windows.msi",
+        "11.8.2.rc.0-1": "/windows/2008r2/x86_64/chef-client-11.8.2.rc.0-1.windows.msi",
+        "11.8.2.rc.0-2": "/windows/2008r2/x86_64/chef-client-11.8.2.rc.1-1.windows.msi"
       }
     },
     "2012": {

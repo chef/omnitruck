@@ -1842,20 +1842,45 @@
     },
     "2008r2": {
       "x86_64": {
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.2-49-g21353f0.msi",
-          "md5": "fc3a5d0071bba9afdf13b6c8301386b3",
-          "sha256": "c1fb2447764744d743f6035cdcea1d3ba47326fb3126c915a555cfc38aab48ae"
+        "11.4.0-18-gdf096fa-1": {
+          "md5": "8cb5496e9ff5228f587960375dc0daed",
+          "sha256": "ff18820f4b4399df51e7b515cd5881c658a4768d4516c63adaed429aa840b713",
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.4.0-18-gdf096fa-1.windows.msi"
         },
-        "10.16.4-1": {
-          "relpath": "/windows/2008r2/x86_64/chef-client-10.16.4.wixpdb",
-          "md5": "fdd0362f422c7115cad9d24bd60751ba",
-          "sha256": "9780abd50dbbf2a36d90ad4c15eaf07a03e60b8224a5969fd2489950b58e9bcc"
+        "11.8.0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.0-1.windows.msi",
+          "md5": "58babfc5eca746bcf35b1357f06e1059",
+          "sha256": "ac076630c498c66262b6b3374c9fa4a284e106674c6fc1ec4b1995b6ae089dfb"
         },
-        "11.6.0.hotfix.1-1": {
-          "relpath": "/windows/2008r2/x86_64/chef-client-11.6.0.hotfix.1-1.windows.msi",
-          "md5": "3009fbbad8b3c8892f94b7ac6d722642",
-          "sha256": "5cfdf1d6aa1a158b810abf256699ad9d78518b923a2c8b3efbd1d991aa1a501b"
+        "11.8.0.rc.2-1": {
+          "md5": "e3b7702f75cc1fd6364a1822c9d0de8d",
+          "sha256": "a955f4b177bedb91c054da1e1a944f939fb1e21ca820ea023f63a4613d9b41cb",
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.2-1.windows.msi"
+        },
+        "11.8.0.rc.3-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.3-1.windows.msi",
+          "sha256": "276f42d15cdc89c6b47c84e7f6c9fd928bd20e272ea731fb5aeb619b376eabf0",
+          "md5": "6941fcc04a2b01987867dfe137daa52c"
+        },
+        "11.8.0.rc.4-1": {
+          "sha256": "7724909876fb732e0218be46e56e980e0c464c4b248ddcd3b893bd92c57474bf",
+          "md5": "9f465a7b04f942d8ea9269aa330edffd",
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.0.rc.4-1.windows.msi"
+        },
+        "11.8.2-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.2-1.windows.msi",
+          "md5": "9379bb583ec0767463c2b5512c906b73",
+          "sha256": "f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"
+        },
+        "11.8.2.rc.0-1": {
+          "sha256": "d459873e337b678d023ab600f71e382976e0b028477714935d4298d5fb809156",
+          "md5": "1e5b62c912a11839b6a25a8ae83bca67",
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.2.rc.0-1.windows.msi"
+        },
+        "11.8.2.rc.0-2": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-11.8.2.rc.0-2.windows.msi",
+          "sha256": "9eb24c1023f2e512bd8ae8b5cf0d657fb5f40d7dcaa8a29e8b839846d82cf0fe",
+          "md5": "63efd66df27611935ee12bf9cb9912bc"
         }
       }
     },

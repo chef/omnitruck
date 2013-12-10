@@ -80,9 +80,12 @@ class PlatformDSL
     def <=>(otherVer)
       raise "comparison between incompatible platform versions:\n#{self}#{otherVer}" if self.mapped_name != otherVer.mapped_name
       if (major_only)
-        Gem::Version.new(self.mapped_major) <=> Gem::Version.new(otherVer.mapped_major)
+        self.mapped_major <=> otherVer.mapped_major
       else
-        Gem::Version.new(self.mapped_version) <=> Gem::Version.new(otherVer.mapped_version)
+        ret = self.mapped_major <=> otherVer.mapped_major
+        ret = self.mapped_minor <=> otherVer.mapped_minor if ret == 0 && self.mapped_minor
+        ret = self.mapped_patch <=> otherVer.mapped_patch if ret == 0 && self.mapped_patch
+        ret
       end
     end
 
