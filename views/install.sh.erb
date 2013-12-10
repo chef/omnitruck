@@ -458,9 +458,11 @@ md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
 
 do_checksum "$download_filename" "$sha256" "$md5"
 
-if grep yolo "$metadata_filename"; then
+if grep yolo "$metadata_filename" >/dev/null; then
+  echo
   echo "WARNING: Chef-Client has not been regression tested on this O/S Distribution"
   echo "WARNING: Do not use this configuration for Production Applications.  Use at your own risk."
+  echo
 fi
 
 install_file $filetype "$download_filename"
