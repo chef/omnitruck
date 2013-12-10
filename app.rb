@@ -331,10 +331,10 @@ class Omnitruck < Sinatra::Base
     # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
     if dsl.new_platform_version(remapped_platform, pv_selected) != pv
       # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
-      package_info[:yolo] = true
+      package_info['yolo'] = true
     elsif pv.yolo
       # for some distros they are always yolo (linux mint, etc)
-      package_info[:yolo] = true
+      package_info['yolo'] = true
     end
 
     package_info
@@ -358,6 +358,8 @@ class Omnitruck < Sinatra::Base
   # parses package_info hash into plaintext string
   def parse_plain_text(package_info)
     full_url = convert_relpath_to_url(package_info["relpath"])
-    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
+    ret = "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
+    ret << "yolo\ttrue\n" if package_info['yolo']
+    ret
   end
 end
