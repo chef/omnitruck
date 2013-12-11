@@ -335,7 +335,7 @@ do_checksum() {
       echo "Checksum compare with md5sum succeeded."
     fi
   elif exists md5; then
-    checksum=`md5$1 | awk '{ print $4 }'`
+    checksum=`md5 $1 | awk '{ print $4 }'`
     if test "x$checksum" != "x$3"; then
       checksum_mismatch
     else
