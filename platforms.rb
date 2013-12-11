@@ -84,6 +84,12 @@ platform "sles" do
   version_remap 6
 end
 
+platform "amazon" do
+  remap "el"
+  # FIXME: with some old enough version we should return 5
+  version_remap 6
+end
+
 # Unsupported Variants
 #
 # These most likely work, everything below this line has yolo on for all versions
@@ -93,13 +99,6 @@ platform "xenserver" do
   yolo true
   remap "el"
   version_remap 5
-end
-
-platform "amazon" do
-  yolo true
-  remap "el"
-  # FIXME: with some old enough version we should return 5
-  version_remap 6
 end
 
 platform "fedora" do
