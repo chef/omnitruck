@@ -52,7 +52,7 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts pv:f:P: opt
+while getopts pv:f:d:P: opt
 do
   case "$opt" in
 
@@ -60,9 +60,10 @@ do
     p)  prerelease="true";;
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
+    d)  cmdline_dl_dir="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-p] [-v version] [-f filename]"
+      "usage: $0 [-p] [-v version] [-f filename | -d download_dir]"
       exit 1;;
   esac
 done
@@ -462,10 +463,12 @@ fi
 filename=`echo $download_url | sed -e 's/^.*\///'`
 filetype=`echo $filename | sed -e 's/^.*\.//'`
 
-if test "x$cmdline_filename" = "x"; then
-  download_filename="$tmp_dir/$filename"
-else
+if test "x$cmdline_filename" != "x"; then
   download_filename="$cmdline_filename"
+elif test "x$cmdline_dl_dir" != "x"; then
+  download_filename="$cmdline_dl_dir/$filename"
+else
+  download_filename="$tmp_dir/$filename"
 fi
 
 do_download "$download_url"  "$download_filename"
