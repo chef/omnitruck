@@ -395,7 +395,7 @@ install_file() {
       echo "conflict=nocheck" > /tmp/nocheck
       echo "action=nocheck" >> /tmp/nocheck
       echo "mail=" >> /tmp/nocheck
-      pkgrm -a /tmp/nocheck -n chef || true
+      pkgrm -a /tmp/nocheck -n chef >/dev/null 2>&1 || true
       pkgadd -n -d "$2" -a /tmp/nocheck chef
       ;;
     "sh" )
