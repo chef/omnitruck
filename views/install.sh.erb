@@ -426,7 +426,7 @@ install_file() {
   case "$1" in
     "rpm")
       echo "installing with rpm..."
-      rpm -Uvh --oldpackage "$2"
+      rpm -Uvh --oldpackage --replacepkgs "$2"
       ;;
     "deb")
       echo "installing with dpkg..."
