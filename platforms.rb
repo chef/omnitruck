@@ -81,7 +81,9 @@ platform "sles" do
   major_only true
   remap "el"
   # FIXME: with some old enough version we should return 5
-  version_remap 6
+  version_remap do |version|
+    version.to_f <= 10 ? 5 : 6
+  end
 end
 
 platform "amazon" do
