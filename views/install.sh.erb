@@ -27,10 +27,6 @@
 # limitations under the License.
 #
 
-# This is the current stable release to default to, with Omnibus patch level (e.g. 10.12.0-1)
-# Note that the chef template downloads 'x.y.z' not 'x.y.z-r' which should be a duplicate of the latest -r
-use_shell=0
-
 prerelease="false"
 
 project="chef"
@@ -45,39 +41,6 @@ exists() {
   fi
 }
 
-# Set the filename for a deb, based on version and machine
-deb_filename() {
-  filetype="deb"
-  if test "$machine" = "x86_64"; then
-    filename="chef_${version}_amd64.deb"
-  else
-    filename="chef_${version}_i386.deb"
-  fi
-}
-
-# Set the filename for an rpm, based on version and machine
-rpm_filename() {
-  filetype="rpm"
-  filename="chef-${version}.${machine}.rpm"
-}
-
-# Set the filename for a Solaris SVR4 package, based on version and machine
-svr4_filename() {
-  filetype="solaris"
-  filename="chef-${version}.${machine}.solaris"
-}
-
-aix_filename() {
-  filetype="bff"
-  filename="chef-${version}.${machine}.bff"
-}
-
-# Set the filename for the sh archive
-shell_filename() {
-  filetype="sh"
-  filename="chef-${version}-${platform}-${platform_version}-${machine}.sh"
-}
-
 report_bug() {
   echo "Please file a bug report at http://tickets.opscode.com"
   echo "Project: Chef"
@@ -89,18 +52,18 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts spv:f:p: opt
+while getopts pv:f:d:P: opt
 do
   case "$opt" in
 
     v)  version="$OPTARG";;
-    s)  use_shell=1;;
     p)  prerelease="true";;
     f)  cmdline_filename="$OPTARG";;
-    p)  project="$OPTARG";;
+    P)  project="$OPTARG";;
+    d)  cmdline_dl_dir="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-s] [-p] [-v version] [-f filename]"
+      "usage: $0 [-p] [-v version] [-f filename | -d download_dir]"
       exit 1;;
   esac
 done
@@ -212,23 +175,6 @@ if test "x$platform_version" = "x"; then
   echo "Unable to determine platform version!"
   report_bug
   exit 1
-fi
-
-
-if test $use_shell = 1; then
-  shell_filename
-else
-  case $platform in
-    "ubuntu") deb_filename ;;
-    "debian") deb_filename ;;
-    "el") rpm_filename ;;
-    "suse") rpm_filename ;;
-    "sles") rpm_filename ;;
-    "fedora") rpm_filename ;;
-    "solaris2") svr4_filename ;;
-    "aix") aix_filename ;;
-    *) shell_filename ;;
-  esac
 fi
 
 if test "x$platform" = "xsolaris2"; then
@@ -447,6 +393,11 @@ install_file() {
       echo "installing with sh..."
       sh "$2"
       ;;
+    *)
+      echo "Unknown filetype: $1"
+      report_bug
+      exit 1
+      ;;
   esac
   if test $? -ne 0; then
     echo "Installation failed"
@@ -467,12 +418,6 @@ tmp_dir="$tmp/install.sh.$$"
 (umask 077 && mkdir $tmp_dir) || exit 1
 
 metadata_filename="$tmp_dir/metadata.txt"
-
-if test "x$cmdline_filename" = "x"; then
-  download_filename="$tmp_dir/$filename"
-else
-  download_filename="$cmdline_filename"
-fi
 
 case "$project" in
   "chef")
@@ -513,6 +458,17 @@ if test "x$platform" = "xsolaris2"; then
     # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
     download_url=`echo $download_url | sed -e 's/https/http/'`
   fi
+fi
+
+filename=`echo $download_url | sed -e 's/^.*\///'`
+filetype=`echo $filename | sed -e 's/^.*\.//'`
+
+if test "x$cmdline_filename" != "x"; then
+  download_filename="$cmdline_filename"
+elif test "x$cmdline_dl_dir" != "x"; then
+  download_filename="$cmdline_dl_dir/$filename"
+else
+  download_filename="$tmp_dir/$filename"
 fi
 
 do_download "$download_url"  "$download_filename"
