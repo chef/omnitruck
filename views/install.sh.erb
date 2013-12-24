@@ -33,6 +33,8 @@ use_shell=0
 
 prerelease="false"
 
+project="chef"
+
 # Check whether a command exists - returns 0 if it does, 1 if it does not
 exists() {
   if command -v $1 >/dev/null 2>&1
@@ -87,7 +89,7 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts spv:f: opt
+while getopts spv:f:p: opt
 do
   case "$opt" in
 
@@ -95,6 +97,7 @@ do
     s)  use_shell=1;;
     p)  prerelease="true";;
     f)  cmdline_filename="$OPTARG";;
+    p)  project="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
       "usage: $0 [-s] [-p] [-v version] [-f filename]"
@@ -471,7 +474,15 @@ else
   download_filename="$cmdline_filename"
 fi
 
-metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+case "$project" in
+  "chef")
+    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    ;;
+  "server")
+    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    ;;
+    *)
+esac
 
 if test "x$platform" = "xsolaris2"; then
   if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
