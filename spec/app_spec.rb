@@ -132,6 +132,55 @@ describe 'Omnitruck' do
       let(:metadata_endpoint){"/metadata"}
       let(:project){ "chef" }
 
+      describe "sles" do
+        let(:platform){"sles"}
+        let(:alt_platform){"el"}
+        let(:package_type){"rpm"}
+
+        context "11.0" do
+          let(:platform_version){"11.0"}
+          let(:alt_platform_version){"6"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+              end
+            end
+          end
+        end
+
+        context "10.0" do
+          let(:platform_version){"10.0"}
+          let(:alt_platform_version){"5"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              end
+            end
+          end
+        end
+
+      end
+
       describe "suse" do
         let(:platform){"suse"}
         let(:alt_platform){"el"}

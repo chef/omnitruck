@@ -82,7 +82,7 @@ platform "sles" do
   remap "el"
   # FIXME: with some old enough version we should return 5
   version_remap do |version|
-    version.to_f <= 10 ? 5 : 6
+    version.to_f <= 10 ? "5" : "6"
   end
 end
 
