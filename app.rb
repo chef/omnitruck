@@ -88,7 +88,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), false)
+    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
