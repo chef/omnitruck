@@ -463,6 +463,7 @@ fi
 filename=`echo $download_url | sed -e 's/^.*\///'`
 filetype=`echo $filename | sed -e 's/^.*\.//'`
 
+# use either $tmp_dir, the provided directory (-d) or the provided filename (-f)
 if test "x$cmdline_filename" != "x"; then
   download_filename="$cmdline_filename"
 elif test "x$cmdline_dl_dir" != "x"; then
@@ -470,6 +471,10 @@ elif test "x$cmdline_dl_dir" != "x"; then
 else
   download_filename="$tmp_dir/$filename"
 fi
+
+# ensure the parent directory where to download the installer always exists
+download_dir=`dirname $download_filename`
+(umask 077 && mkdir -p $download_dir) || exit 1
 
 do_download "$download_url"  "$download_filename"
 
