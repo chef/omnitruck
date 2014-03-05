@@ -471,7 +471,7 @@ md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
 # check if we have that file locally available and if so verify the checksum
 cached_file_available="false"
 if test -f $download_filename; then
-  echo "$filename already exists, verifiying checksum..."
+  echo "$download_filename already exists, verifiying checksum..."
   if do_checksum "$download_filename" "$sha256" "$md5"; then
     echo "checksum compare succeeded, using existing file!"
     cached_file_available="true"
