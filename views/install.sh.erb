@@ -305,35 +305,24 @@ do_python() {
 
 do_checksum() {
   if exists sha256sum; then
+    echo "Comparing checksum with sha256sum..."
     checksum=`sha256sum $1 | awk '{ print $1 }'`
-    if test "x$checksum" != "x$2"; then
-      checksum_mismatch
-    else
-      echo "Checksum compare with sha256sum succeeded."
-    fi
+    return `test "x$checksum" = "x$2"`
   elif exists shasum; then
+    echo "Comparing checksum with shasum..."
     checksum=`shasum -a 256 $1 | awk '{ print $1 }'`
-    if test "x$checksum" != "x$2"; then
-      checksum_mismatch
-    else
-      echo "Checksum compare with shasum succeeded."
-    fi
+    return `test "x$checksum" = "x$2"`
   elif exists md5sum; then
+    echo "Comparing checksum with md5sum..."
     checksum=`md5sum $1 | awk '{ print $1 }'`
-    if test "x$checksum" != "x$3"; then
-      checksum_mismatch
-    else
-      echo "Checksum compare with md5sum succeeded."
-    fi
+    return `test "x$checksum" != "x$3"`
   elif exists md5; then
+    echo "Comparing checksum with md5..."
     checksum=`md5 $1 | awk '{ print $4 }'`
-    if test "x$checksum" != "x$3"; then
-      checksum_mismatch
-    else
-      echo "Checksum compare with md5 succeeded."
-    fi
+    return `test "x$checksum" != "x$3"`
   else
     echo "WARNING: could not find a valid checksum program, pre-install shasum, md5sum or md5 in your O/S image to get valdation..."
+    return 0
   fi
 }
 
@@ -463,6 +452,7 @@ fi
 filename=`echo $download_url | sed -e 's/^.*\///'`
 filetype=`echo $filename | sed -e 's/^.*\.//'`
 
+# use either $tmp_dir, the provided directory (-d) or the provided filename (-f)
 if test "x$cmdline_filename" != "x"; then
   download_filename="$cmdline_filename"
 elif test "x$cmdline_dl_dir" != "x"; then
@@ -471,12 +461,30 @@ else
   download_filename="$tmp_dir/$filename"
 fi
 
-do_download "$download_url"  "$download_filename"
+# ensure the parent directory where to download the installer always exists
+download_dir=`dirname $download_filename`
+(umask 077 && mkdir -p $download_dir) || exit 1
 
 sha256=`awk '$1 == "sha256" { print $2 }' "$metadata_filename"`
 md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
 
-do_checksum "$download_filename" "$sha256" "$md5"
+# check if we have that file locally available and if so verify the checksum
+cached_file_available="false"
+if test -f $download_filename; then
+  echo "$download_filename already exists, verifiying checksum..."
+  if do_checksum "$download_filename" "$sha256" "$md5"; then
+    echo "checksum compare succeeded, using existing file!"
+    cached_file_available="true"
+  else
+    echo "checksum mismatch, downloading latest version of the file"
+  fi
+fi
+
+# download if no local version of the file available
+if test "x$cached_file_available" != "xtrue"; then
+  do_download "$download_url"  "$download_filename"
+  do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
+fi
 
 if grep yolo "$metadata_filename" >/dev/null; then
   echo
