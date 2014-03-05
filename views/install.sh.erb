@@ -318,7 +318,7 @@ do_checksum() {
     return `test "x$checksum" != "x$3"`
   elif exists md5; then
     echo "Comparing checksum with md5..."
-    checksum=`md5 $1 | awk '{ print $1 }'`
+    checksum=`md5 $1 | awk '{ print $4 }'`
     return `test "x$checksum" != "x$3"`
   else
     echo "WARNING: could not find a valid checksum program, pre-install shasum, md5sum or md5 in your O/S image to get valdation..."
