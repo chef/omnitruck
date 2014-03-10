@@ -120,6 +120,13 @@ platform "linuxmint" do
   end
 end
 
+# Univention Corporate Server is predominantly used in German
+# FIXME: version_remapping to correct debian version ideally needed
+platform "univention" do
+  yolo true
+  remap "debian"
+end
+
 # this'll magically work if we ever publish ARM debian builds
 platform "raspbian" do
   yolo true
