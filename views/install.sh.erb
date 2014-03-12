@@ -318,6 +318,7 @@ do_checksum() {
     return `test "x$checksum" != "x$3"`
   elif exists md5; then
     echo "Comparing checksum with md5..."
+    # this is for md5 utility on MacOSX (OSX 10.6-10.10) and $4 is the correct field
     checksum=`md5 $1 | awk '{ print $4 }'`
     return `test "x$checksum" != "x$3"`
   else
