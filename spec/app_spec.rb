@@ -414,6 +414,17 @@ describe 'Omnitruck' do
 
           it_behaves_like "ubuntu 12.04"
         end
+
+        # What we're testing on this next one is if yolo is sorting numerically or lexicographically
+        # If we're getting string compares we'll get "10.04" as our yolo version, but we want to do a
+        # numeric compare and get 12.04 instead:
+        #   String (Wrong): "101" < "10" < "12"
+        #   Integer (Right): 10 < 12 < 101
+        context "101.04" do
+          let(:platform_version){"101.04"}
+
+          it_behaves_like "ubuntu 12.04"
+        end
       end
 
       describe "Windows" do

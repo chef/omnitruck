@@ -75,19 +75,35 @@ class PlatformDSL
       raise NotImplementedError, "must be implemented by subclass"
     end
 
+    def self.is_integer?(val)
+      !!(val =~ /^[-+]?[0-9]+$/)
+    end
+
+    # We may have versions with strings (e.g. "2008r2") that we can't ignore, so only use
+    # integer sorting when we know we have integer sorting (and this might need to be extended
+    # to be smarter at some point and have different functions for different platforms)
+    def favor_integer_sorting(a, b)
+      if self.class.is_integer?(a) && self.class.is_integer?(b)
+        a.to_i <=> b.to_i
+      else
+        a <=> b
+      end
+    end
+
     # platform versions may match when the strings do not match, sort order may not be what
     # you expect if you're trying to compare minor versions of EL/SuSE/etc...
     def <=>(otherVer)
       raise "comparison between incompatible platform versions:\n#{self}#{otherVer}" if self.mapped_name != otherVer.mapped_name
       if (major_only)
-        self.mapped_major <=> otherVer.mapped_major
+        favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
       else
-        ret = self.mapped_major <=> otherVer.mapped_major
-        ret = self.mapped_minor <=> otherVer.mapped_minor if ret == 0 && self.mapped_minor
-        ret = self.mapped_patch <=> otherVer.mapped_patch if ret == 0 && self.mapped_patch
+        ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
+        ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor) if ret == 0 && self.mapped_minor
+        ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch) if ret == 0 && self.mapped_patch
         ret
       end
     end
+
 
     def inspect
       "name:           #{name}\n" +
