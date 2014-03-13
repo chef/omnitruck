@@ -379,6 +379,10 @@ install_file() {
       pkgrm -a /tmp/nocheck -n chef >/dev/null 2>&1 || true
       pkgadd -n -d "$2" -a /tmp/nocheck chef
       ;;
+    "pkg")
+      echo "installing with installer..."
+      cd / && /usr/sbin/installer -pkg "$2" -target /
+      ;;
     "sh" )
       echo "installing with sh..."
       sh "$2"
