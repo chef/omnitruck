@@ -419,6 +419,8 @@ case "$project" in
     ;;
   "server")
     metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+  "chefdk")
+    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
     *)
 esac
