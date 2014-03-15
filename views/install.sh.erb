@@ -119,7 +119,7 @@ elif test -f "/usr/bin/sw_vers"; then
     machine="x86_64"
   fi
 elif cat "/etc/release" | grep SmartOS; then
-  platform="smartmachine"
+  platform="smartos"
   machine=`/usr/bin/uname -p`
   platform_version=`cat /etc/product | grep ^Image | awk '{ print $3 }'`
 elif test -f "/etc/release"; then
