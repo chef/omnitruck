@@ -118,10 +118,10 @@ elif test -f "/usr/bin/sw_vers"; then
   if test $x86_64 -eq 1; then
     machine="x86_64"
   fi
-elif cat "/etc/release" | grep SmartOS; then
+elif grep -q SmartOS /etc/release; then
   platform="smartos"
   machine=`/usr/bin/uname -p`
-  platform_version=`cat /etc/product | grep ^Image | awk '{ print $3 }'`
+  platform_version=`grep ^Image /etc/product | awk '{ print $3 }'`
 elif test -f "/etc/release"; then
   platform="solaris2"
   machine=`/usr/bin/uname -p`
