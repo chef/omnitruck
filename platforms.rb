@@ -125,6 +125,7 @@ end
 platform "univention" do
   yolo true
   remap "debian"
+  version_remap 6
 end
 
 # this'll magically work if we ever publish ARM debian builds
