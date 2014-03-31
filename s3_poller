@@ -64,7 +64,7 @@ class S3Poller
     # update server and client cache
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    server_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
 
     client_collection.update_cache
     server_collection.update_cache
