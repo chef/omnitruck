@@ -329,19 +329,12 @@ class Omnitruck < Sinatra::Base
     end
 
     # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
-    if dsl.new_platform_version(remapped_platform, pv_selected) != pv
-      # if we're not in yolo mode (right now server) we don't return yolo results and raise instead
+    if dsl.new_platform_version(remapped_platform, pv_selected) != pv || pv.yolo
+      # if we're not in yolo mode we don't return yolo results and raise instead
       unless (yolo)
         raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
       end
       # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
-      package_info['yolo'] = true
-    elsif pv.yolo
-      # if we're not in yolo mode (right now server) we don't return yolo results and raise instead
-      unless (yolo)
-        raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
-      end
-      # for some distros they are always yolo (linux mint, etc)
       package_info['yolo'] = true
     end
 
