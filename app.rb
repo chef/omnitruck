@@ -77,6 +77,10 @@ class Omnitruck < Sinatra::Base
     handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
   end
 
+  get '/download-chefdk' do
+    handle_download("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v1)))
+  end
+
   get '/metadata' do
     package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
@@ -89,6 +93,16 @@ class Omnitruck < Sinatra::Base
 
   get '/metadata-server' do
     package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), true)
+    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
+    if request.accept? 'text/plain'
+      parse_plain_text(package_info)
+    else
+      JSON.pretty_generate(package_info)
+    end
+  end
+
+  get '/metadata-chefdk' do
+    package_info = get_package_info("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -120,7 +134,6 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
-
   #
   # Returns the server JSON minus run data to populate the install page build list
   #
@@ -130,6 +143,17 @@ class Omnitruck < Sinatra::Base
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
+
+  #
+  # Returns the chefdk JSON minus run data to populate the install page build list
+  #
+  get '/full_chefdk_list' do
+    content_type :json
+    directory = JSON.parse(File.read(settings.build_chefdk_list_v1))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
 
   #
   # Returns the server JSON minus run data to populate the install page build list
@@ -151,6 +175,20 @@ class Omnitruck < Sinatra::Base
   get '/chef_server_platform_names' do
     if File.exists?(settings.chef_server_platform_names)
       directory = JSON.parse(File.read(settings.chef_server_platform_names))
+      JSON.pretty_generate(directory)
+    else
+      status 404
+      env['sinatra.error']
+      'File not found on server.'
+    end
+  end
+
+  #
+  # Returns the chefdk JSON minus run data to populate the install page build list
+  #
+  get '/chef_chefdk_platform_names' do
+    if File.exists?(settings.chef_chefdk_platform_names)
+      directory = JSON.parse(File.read(settings.chef_chefdk_platform_names))
       JSON.pretty_generate(directory)
     else
       status 404
