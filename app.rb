@@ -186,9 +186,9 @@ class Omnitruck < Sinatra::Base
   #
   # Returns the chefdk JSON minus run data to populate the install page build list
   #
-  get '/chef_chefdk_platform_names' do
-    if File.exists?(settings.chef_chefdk_platform_names)
-      directory = JSON.parse(File.read(settings.chef_chefdk_platform_names))
+  get '/chefdk_platform_names' do
+    if File.exists?(settings.chefdk_platform_names)
+      directory = JSON.parse(File.read(settings.chefdk_platform_names))
       JSON.pretty_generate(directory)
     else
       status 404

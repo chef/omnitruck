@@ -948,6 +948,20 @@ describe 'Omnitruck' do
         last_response.header['Content-Type'].should include 'application/json'
       end
     end
+
+    describe "chefdk" do
+      let(:endpoint){ "/full_chefdk_list" }
+
+      it "exists" do
+        get endpoint
+        last_response.should be_ok
+      end
+
+      it "returns JSON data" do
+        get endpoint
+        last_response.header['Content-Type'].should include 'application/json'
+      end
+    end
   end
 
   describe "/install.sh" do
