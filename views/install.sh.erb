@@ -85,6 +85,7 @@ elif test -f "/etc/redhat-release"; then
 
   # If /etc/redhat-release exists, we act like RHEL by default
   if test "$platform" = "fedora"; then
+    # FIXME: remove client side platform_version mangling and hard coded yolo
     # Change platform version for use below.
     platform_version="6.0"
   fi
@@ -94,6 +95,7 @@ elif test -f "/etc/system-release"; then
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   # amazon is built off of fedora, so act like RHEL
   if test "$platform" = "amazon linux ami"; then
+    # FIXME: remove client side platform_version mangling and hard coded yolo
     platform="el"
     platform_version="6.0"
   fi
@@ -144,6 +146,7 @@ case $platform in
     platform_version=$major_version
     ;;
   "debian")
+    # FIXME: remove client-side yolo here
     case $major_version in
       "5") platform_version="6";;
       "6") platform_version="6";;
