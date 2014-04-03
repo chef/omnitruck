@@ -101,17 +101,7 @@ elif test -f "/etc/system-release"; then
 elif test -f "/usr/bin/sw_vers"; then
   platform="mac_os_x"
   # Matching the tab-space with sed is error-prone
-  platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }'`
-
-  major_version=`echo $platform_version | cut -d. -f1,2`
-  case $major_version in
-    "10.6") platform_version="10.6" ;;
-    "10.7"|"10.8"|"10.9") platform_version="10.7" ;;
-    *) echo "No builds for platform: $major_version"
-       report_bug
-       exit 1
-       ;;
-  esac
+  platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }' | cut -d. -f1,2`
 
   # x86_64 Apple hardware often runs 32-bit kernels (see OHAI-63)
   x86_64=`sysctl -n hw.optional.x86_64`
