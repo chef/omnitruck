@@ -380,6 +380,13 @@ install_file() {
       echo "installing with installer..."
       cd / && /usr/sbin/installer -pkg "$2" -target /
       ;;
+    "dmg")
+      echo "installing dmg file..."
+      hdiutil detach "/Volumes/chef_software" || true
+      hdiutil attach "$2" -mountpoint "/Volumes/chef_software"
+      cd / && /usr/sbin/installer -pkg `find "/Volumes/chef_software" -name \*.pkg` -target /
+      hdiutil detach "/Volumes/chef_software"
+      ;;
     "sh" )
       echo "installing with sh..."
       sh "$2"
