@@ -118,6 +118,10 @@ elif test -f "/usr/bin/sw_vers"; then
   if test $x86_64 -eq 1; then
     machine="x86_64"
   fi
+elif grep -q SmartOS /etc/release; then
+  platform="smartos"
+  machine=`/usr/bin/uname -p`
+  platform_version=`grep ^Image /etc/product | awk '{ print $3 }'`
 elif test -f "/etc/release"; then
   platform="solaris2"
   machine=`/usr/bin/uname -p`
@@ -507,4 +511,3 @@ install_file $filetype "$download_filename"
 if test "x$tmp_dir" != "x"; then
   rm -r "$tmp_dir"
 fi
-
