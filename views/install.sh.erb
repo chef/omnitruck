@@ -29,6 +29,8 @@
 
 prerelease="false"
 
+nightlies="false"
+
 project="chef"
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
@@ -58,6 +60,7 @@ do
 
     v)  version="$OPTARG";;
     p)  prerelease="true";;
+    n)  nightlies="true";;
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
@@ -409,13 +412,13 @@ metadata_filename="$tmp_dir/metadata.txt"
 
 case "$project" in
   "chef")
-    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
   "server")
-    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
   "chefdk")
-    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
     *)
 esac
