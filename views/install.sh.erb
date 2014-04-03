@@ -382,7 +382,7 @@ install_file() {
       ;;
     "dmg")
       echo "installing dmg file..."
-      hdiutil detach "/Volumes/chef_software" || true
+      hdiutil detach "/Volumes/chef_software" >/dev/null 2>&1 || true
       hdiutil attach "$2" -mountpoint "/Volumes/chef_software"
       cd / && /usr/sbin/installer -pkg `find "/Volumes/chef_software" -name \*.pkg` -target /
       hdiutil detach "/Volumes/chef_software"
