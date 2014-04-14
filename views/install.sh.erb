@@ -75,7 +75,19 @@ shift `expr $OPTIND - 1`
 machine=`uname -m`
 os=`uname -s`
 
-# Retrieve Platform and Platform Version
+#
+# Platform and Platform Version detection
+#
+# NOTE: This should now match ohai platform and platform_version matching.
+# do not invented new platform and platform_version schemas, just make this behave
+# like what ohai returns as platform and platform_version for the server.
+#
+# ALSO NOTE: Do not mangle platform or platform_version here.  It is less error
+# prone and more future-proof to do that in the server, and then all omnitruck clients
+# will 'inherit' the changes (install.sh is not the only client of the omnitruck
+# endpoint out there).
+#
+
 if test -f "/etc/lsb-release" && grep -q DISTRIB_ID /etc/lsb-release; then
   platform=`grep DISTRIB_ID /etc/lsb-release | cut -d "=" -f 2 | tr '[A-Z]' '[a-z]'`
   platform_version=`grep DISTRIB_RELEASE /etc/lsb-release | cut -d "=" -f 2`
@@ -88,17 +100,19 @@ elif test -f "/etc/redhat-release"; then
 
   # If /etc/redhat-release exists, we act like RHEL by default
   if test "$platform" = "fedora"; then
+    # FIXME: stop remapping fedora to el
     # FIXME: remove client side platform_version mangling and hard coded yolo
     # Change platform version for use below.
     platform_version="6.0"
   fi
+  # FIXME: use "redhat"
   platform="el"
 elif test -f "/etc/system-release"; then
   platform=`sed 's/^\(.\+\) release.\+/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   # amazon is built off of fedora, so act like RHEL
   if test "$platform" = "amazon linux ami"; then
-    # FIXME: remove client side platform_version mangling and hard coded yolo
+    # FIXME: remove client side platform_version mangling and hard coded yolo, and remapping to deprecated "el"
     platform="el"
     platform_version="6.0"
   fi
@@ -145,17 +159,27 @@ if test "x$platform" = "x"; then
   exit 1
 fi
 
-# Mangle $platform_version to pull the correct build
-# for various platforms
+#
+# NOTE: platform manging in the install.sh is DEPRECATED
+#
+# - install.sh should be true to ohai and should not remap
+#   platform or platform versions.
+#
+# - remapping platform and mangling platform version numbers is
+#   now the complete responsibility of the server-side endpoints
+#
+
 major_version=`echo $platform_version | cut -d. -f1`
 case $platform in
+  # FIXME: should remove this case statement completely
   "el")
+    # FIXME:  "el" is deprecated, should use "redhat"
     platform_version=$major_version
     ;;
   "debian")
     # FIXME: remove client-side yolo here
     case $major_version in
-      "5") platform_version="6";;
+      "5") platform_version="6";;  # FIXME: need to port this "reverse-yolo" into platform.rb
       "6") platform_version="6";;
       "7") platform_version="6";;
     esac
