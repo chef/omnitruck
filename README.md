@@ -248,6 +248,59 @@ the 'opscode-omnibus-package-metadata-test' bucket for dev/preprod and
 buckets to be publicly listable and the release manifests to be publicly
 readable.
 
+# Platform mapping
+
+The PlatformDSL class implements a DSL for describing mapping between different
+platforms.  The configuration is in the root of the project in the `platforms.rb`
+configuration file.  All platforms must be defined in this file even if no 
+manipulation is done to remap the platform name or platform version.
+
+The platform DSL allow for remapping platform_version strings to strip out the 
+minor versions (making RHEL 6.4 and RHEL 6.5 be considered the same version --
+something that is not true for Ubuntu 12.04 and Ubuntu 12.10).  It also allows
+for remapping the platform name (making centos, oracle, scientific, etc all
+map onto the "el" platform).  It can also do arbitrary remapping of the platform
+version either onto a fixed number (serving RHEL6 binaries to all Amazon platforms
+currently), or via a function that can take the source platform version number
+and process it to produce a version to use internally (this is used to map
+Linux Mint versions onto their corresponding Ubuntu versions).
+
+The convention is to keep the platform names that install.sh supplies consistent
+with ohai platform names.
+
+This convention was not always applied consistently in the past, so that "el" is the
+internal name for RHEL artifacts.  The install.sh code has been changed so that "el" is
+no longer a distro name which install.sh detects (but omnitruck will still respond to
+"el" like it is a platform of "redhat").
+
+All of the platform name and platform_version mangling should be moved from install.sh
+into this configuration file.
+
+# "Yolo" mode
+
+We only test certain artifacts running on certain distros and do not have complete coverage
+across all distros that can run omnibus artifacts.  For example, we do no testing of Linux
+Mint at all.  We also lag the distribution release, since getting a new tester into our
+CI testing is not as easy as it should be (particularly for distros like Mac OSX where we
+have laptops running jenkins as testers -- although this is getting better virtualized 
+now).  What "yolo" mode does is offer an artifact that we believe will work fine on the
+distribution, and will warn that user that we have not tested on that platform.
+
+This will also let users deploy old versions of Chef on new distros where we never tested
+those old versions on that distro.  The previous distro version will get promoted by
+yolo.
+
+Packages which have been yolo-promoted have "yolo: true" in their JSON output from the
+metadata endpoint.  The install.sh script will also print a banner warning if it encounters
+a yolo mode package.  It is up to the end user as to if they're willing to accept the
+risk of installing yolo-promoted packages (generally desktops and testing infrastruture
+is fine, but production infastructure use is discouraged).
+
+Yolo mode does occasionally cause issues, and the compiler toolchain and native gem
+installation is one possible cause of trouble, e.g.:
+
+http://www.getchef.com/blog/2014/03/26/breaking-changes-xcode-5-1-osx/
+
 # Unit tests
 
 There are unit tests in the spec/ directory which can be run by running 'rspec'
