@@ -42,6 +42,8 @@ describe 'Omnitruck' do
       mapped_platform_version = alt_platform_version ? alt_platform_version : platform_version
       if mapped_platform =~ /windows/
         /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/chef-client-#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.#{package_type}/
+      elsif mapped_platform =~ /mac_os_x/
+        /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}\.#{package_type}/
       else
         /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
@@ -689,6 +691,49 @@ describe 'Omnitruck' do
     end # /download
 
     describe "server" do
+      let(:endpoint){"/download-chefdk"}
+      let(:metadata_endpoint) {"metadata-chefdk"}
+      let(:project){ "chefdk" }
+
+      describe "Mac OSX" do
+        let(:platform){"mac_os_x"}
+        let(:package_type){"dmg"}
+        context "10.9" do
+          let(:platform_version){"10.9"}
+          let(:alt_platform_version){"10.9.2"}
+          context "x86_64" do
+            let(:architecture){"x86_64"}
+            context "without an explicit version" do
+              let(:chef_version){nil}
+#              context "pre-releases" do
+#                let(:prerelease){true}
+#                let(:nightlies){false}
+#                should_retrieve_latest_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+#              end
+#              context "pre-release nightlies" do
+#                let(:prerelease){true}
+#                let(:nightlies){true}
+#                should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+#              end
+#
+#              context "releases" do
+#                let(:prerelease){false}
+#                let(:nightlies){false}
+#                should_retrieve_latest_as("11.0.0",  {:md5=>"9d8040305ca61d88dcd2bb126d8e0289", :sha256=>"b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"})
+#              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_as("11.6.0+20140402075145.git.162.26629e3", {:md5=>"9cb782ac06b1447b1a4b657c4025ff23", :sha256=>"115ea5a53a8da80a7e958d16921f746ab5379d2eee047528b7f5df52c71db641"})
+              end
+            end
+          end
+        end
+      end
+    end
+
+    describe "server" do
       let(:endpoint){"/download-server"}
       let(:metadata_endpoint) {"metadata-server"}
       let(:project){ "chef-server" }
@@ -937,6 +982,20 @@ describe 'Omnitruck' do
 
     describe "server" do
       let(:endpoint){ "/full_server_list" }
+
+      it "exists" do
+        get endpoint
+        last_response.should be_ok
+      end
+
+      it "returns JSON data" do
+        get endpoint
+        last_response.header['Content-Type'].should include 'application/json'
+      end
+    end
+
+    describe "chefdk" do
+      let(:endpoint){ "/full_chefdk_list" }
 
       it "exists" do
         get endpoint

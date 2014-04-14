@@ -29,6 +29,8 @@
 
 prerelease="false"
 
+nightlies="false"
+
 project="chef"
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
@@ -52,12 +54,13 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts pv:f:d:P: opt
+while getopts pnv:f:d:P: opt
 do
   case "$opt" in
 
     v)  version="$OPTARG";;
     p)  prerelease="true";;
+    n)  nightlies="true";;
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
@@ -85,6 +88,7 @@ elif test -f "/etc/redhat-release"; then
 
   # If /etc/redhat-release exists, we act like RHEL by default
   if test "$platform" = "fedora"; then
+    # FIXME: remove client side platform_version mangling and hard coded yolo
     # Change platform version for use below.
     platform_version="6.0"
   fi
@@ -94,6 +98,7 @@ elif test -f "/etc/system-release"; then
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   # amazon is built off of fedora, so act like RHEL
   if test "$platform" = "amazon linux ami"; then
+    # FIXME: remove client side platform_version mangling and hard coded yolo
     platform="el"
     platform_version="6.0"
   fi
@@ -101,17 +106,7 @@ elif test -f "/etc/system-release"; then
 elif test -f "/usr/bin/sw_vers"; then
   platform="mac_os_x"
   # Matching the tab-space with sed is error-prone
-  platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }'`
-
-  major_version=`echo $platform_version | cut -d. -f1,2`
-  case $major_version in
-    "10.6") platform_version="10.6" ;;
-    "10.7"|"10.8"|"10.9") platform_version="10.7" ;;
-    *) echo "No builds for platform: $major_version"
-       report_bug
-       exit 1
-       ;;
-  esac
+  platform_version=`sw_vers | awk '/^ProductVersion:/ { print $2 }' | cut -d. -f1,2`
 
   # x86_64 Apple hardware often runs 32-bit kernels (see OHAI-63)
   x86_64=`sysctl -n hw.optional.x86_64`
@@ -158,6 +153,7 @@ case $platform in
     platform_version=$major_version
     ;;
   "debian")
+    # FIXME: remove client-side yolo here
     case $major_version in
       "5") platform_version="6";;
       "6") platform_version="6";;
@@ -388,6 +384,13 @@ install_file() {
       echo "installing with installer..."
       cd / && /usr/sbin/installer -pkg "$2" -target /
       ;;
+    "dmg")
+      echo "installing dmg file..."
+      hdiutil detach "/Volumes/chef_software" >/dev/null 2>&1 || true
+      hdiutil attach "$2" -mountpoint "/Volumes/chef_software"
+      cd / && /usr/sbin/installer -pkg `find "/Volumes/chef_software" -name \*.pkg` -target /
+      hdiutil detach "/Volumes/chef_software"
+      ;;
     "sh" )
       echo "installing with sh..."
       sh "$2"
@@ -420,13 +423,13 @@ metadata_filename="$tmp_dir/metadata.txt"
 
 case "$project" in
   "chef")
-    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
   "server")
-    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
   "chefdk")
-    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&p=${platform}&pv=${platform_version}&m=${machine}"
+    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
     *)
 esac
