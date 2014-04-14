@@ -25,7 +25,7 @@ require 'yajl'
 METADATA_BUCKET = "opscode-omnibus-package-metadata"
 RELEASE_REGEX = %r[(.+)\-release\-manifest\/(.+).json]
 
-SKIP_FILES = %r[chef\-.*platform\-names\.json]
+SKIP_FILES = %r[.*platform\-names\.json]
 
 module OmnitruckVerifier
   class MetadataFile
