@@ -61,21 +61,14 @@ module Opscode
       !!@build
     end
 
-    # Returns +true+ if +other+ and this +Version+ share the same
-    # major, minor, and patch values.  Prerelease and build specifiers
-    # are not taken into consideration.
-    def in_same_release_line?(other)
+    # Fuzzy matching against a filter version, nil values are essentially wildcards.
+    def filter_match?(other)
       @major == other.major &&
         # minor and patch always match if one or the other is nil (~>-like behavior)
         ( @minor.nil? || other.minor.nil? || @minor == other.minor ) &&
-        ( @patch.nil? || other.patch.nil? || @patch == other.patch )
-    end
-
-    # Returns +true+ if +other+ and this +Version+ share the same
-    # major, minor, patch, and prerelease values.  Build specifiers
-    # are not taken into consideration.
-    def in_same_prerelease_line?(other)
-      @major == other.major && @minor == other.minor && @patch == other.patch && @prerelease == other.prerelease
+        ( @patch.nil? || other.patch.nil? || @patch == other.patch ) &&
+        ( @prerelease.nil? || other.prerelease.nil? || @prerelease == other.prerelease ) &&
+        ( @build.nil? || other.build.nil? || @build == other.build )
     end
 
     def to_s
@@ -279,49 +272,37 @@ module Opscode
     # In all cases, the returned +Opscode::Version+ is the most recent
     # one in +all_versions+ that satisfies the given constraints.
     def self.find_target_version(all_versions, filter_version, use_prereleases, use_nightlies)
-      if filter_version && filter_version.build
-        # If we've requested a nightly (whether for a pre-release or release),
-        # there's no sense doing any other filtering; just return that version
-        filter_version
-      elsif filter_version && filter_version.prerelease
-        # If we've requested a prerelease, we only need to see if we want
-        # a nightly build or not.  If so, keep only the nightlies for that
-        # prerelease, and then take the most recent.  Otherwise, just
-        # return the specified prerelease version
-        if use_nightlies
-          all_versions.select{|v| v.in_same_prerelease_line?(filter_version)}.max
-        else
-          filter_version
-        end
-      else
-        # If we've gotten this far, we're either just interested in
-        # variations on a specific release, or the latest of all versions
-        # (depending on various combinations of prerelease and nightly
-        # status)
-        all_versions.select do |v|
-          # If we're given a version to filter by, then we're only
-          # interested in other versions that share the same major, minor,
-          # and patch versions.
-          #
-          # If we weren't given a version to filter by, then we don't
-          # care, and we'll take everything
-          in_release_line = if filter_version
-                              filter_version.in_same_release_line?(v)
-                            else
-                              true
-                            end
 
-          in_release_line && if use_prereleases && use_nightlies
-                               v.prerelease_nightly?
-                             elsif !use_prereleases && use_nightlies
-                               v.release_nightly?
-                             elsif use_prereleases && !use_nightlies
-                               v.prerelease?
-                             elsif !use_prereleases && !use_nightlies
-                               v.release?
-                             end
-        end.max
-      end
+      # first filter based on fuzzy matching our explicit filter_version if we have one
+      filtered_versions =
+        if filter_version
+          all_versions.select { |v| v.filter_match?(filter_version) }
+        else
+          all_versions
+        end
+
+      # then filter based on use_prerelases and/or use_nightlies and return the maximum
+      filtered_versions.select do |v|
+        if use_prereleases
+          if use_nightlies
+            # prereleases and nightlies: give back the absolute latest
+            true
+          else
+            # prereleases and not nightlies: give back latest release or prerelease
+            # (excludes nightlies for releases and nightlies for prereleases)
+            v.release? || v.prerelease?
+          end
+        else
+          if use_nightlies
+            # nightlies and not prereleases: give back latest release or nightly release
+            # (excludes prereleases and nightlies of prereleases
+            v.release? || v.release_nightly?
+          else
+            # not nightlies and not prerelease: just the release version
+            v.release?
+          end
+        end
+      end.max
     end
   end
 end
