@@ -28,8 +28,6 @@ require 'opscode/version/incomplete'
 module Opscode
   class Version
 
-    OPSCODE_HOTFIX_REGEX = /^(hotfix)(\.\d+)?$/
-
     include Comparable
 
     attr_reader :major, :minor, :patch, :prerelease, :build, :iteration
@@ -45,10 +43,7 @@ module Opscode
 
     # Is this an official pre-release? (i.e., not a nightly build)
     def prerelease?
-      # Unfortunately we are classifying our hotfix releases using the
-      # @prerelease field. So make sure hotfix releases are not served
-      # as prerelease.
-      @prerelease && !hotfix_release? && @build.nil?
+      @prerelease && @build.nil?
     end
 
     # Is this a nightly build of a release?
@@ -64,11 +59,6 @@ module Opscode
     # Is this a nightly build (either of a release or a pre-release)?
     def nightly?
       !!@build
-    end
-
-    # Hotfix releases have @prerelease == "hotfix.1"
-    def hotfix_release?
-      @prerelease && @prerelease.match(OPSCODE_HOTFIX_REGEX)
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
