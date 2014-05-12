@@ -26,6 +26,11 @@ platform "mac_os_x"
 
 platform "solaris2"
 
+platform "smartos" do
+  remap "solaris2"
+  version_remap "5.10"
+end
+
 platform "windows"
 
 platform "freebsd" do
