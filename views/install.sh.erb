@@ -127,14 +127,15 @@ elif test -f "/usr/bin/sw_vers"; then
   if test $x86_64 -eq 1; then
     machine="x86_64"
   fi
-elif grep -q SmartOS /etc/release; then
-  platform="smartos"
-  machine=`/usr/bin/uname -p`
-  platform_version=`grep ^Image /etc/product | awk '{ print $3 }'`
 elif test -f "/etc/release"; then
-  platform="solaris2"
   machine=`/usr/bin/uname -p`
-  platform_version=`/usr/bin/uname -r`
+  if grep -q SmartOS /etc/release; then
+    platform="smartos"
+    platform_version=`grep ^Image /etc/product | awk '{ print $3 }'`
+  else
+    platform="solaris2"
+    platform_version=`/usr/bin/uname -r`
+  fi
 elif test -f "/etc/SuSE-release"; then
   if grep -q 'Enterprise' /etc/SuSE-release;
   then
