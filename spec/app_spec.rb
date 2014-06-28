@@ -733,6 +733,140 @@ describe 'Omnitruck' do
       end
     end
 
+    describe "container" do
+      let(:endpoint) {"/download-container"}
+      let(:metadata_endpoint) {"metadata-container"}
+      let(:project) {"chef-container"}
+
+      describe "Ubuntu" do
+        let(:platform) {"ubuntu"}
+        let(:package_type) {"deb"}
+
+        context "12.04" do
+          let(:platform_version) {"12.04"}
+          context "x86_64" do
+            let(:alt_platform){"ubuntu"}
+            let(:alt_platform_version){"12.04"}
+            let(:architecture){"x86_64"}
+            let(:architecture_alt){"amd64"}
+
+            context "without an explicit version" do
+              let(:chef_version){nil}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+              end
+            end # without an explicit version
+
+            context "with a version of 'latest'" do
+              let(:chef_version){"latest"}
+
+              context "pre-releases" do
+                let(:prerelease){true}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              end
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+              end
+
+              context "releases nightlies" do
+                let(:prerelease){false}
+                let(:nightlies){true}
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+              end
+            end # with a version of 'latest'
+
+            context "with an explicit version" do
+              context "that is a proper release" do
+                let(:chef_version){"10.16.0"}
+
+                context "filtering for latest pre-release in this line" do
+                  let(:prerelease){true}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                end
+
+                context "filtering for latest release in this line (i.e., this exact thing)" do
+                  let(:prerelease){false}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+                end
+
+                context "filtering for latest release nightly in this line" do
+                  let(:prerelease){false}
+                  let(:nightlies){true}
+                  should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+                end
+              end # proper release
+
+              context "that is a pre-release" do
+                let(:chef_version){"10.16.0.rc.1"}
+
+                context "filtering for latest pre-release in this line (i.e., this exact thing)" do
+                  let(:prerelease){true}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                end
+
+                context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
+                  let(:prerelease){false}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                end
+
+                context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
+                  let(:prerelease){false}
+                  let(:nightlies){true}
+                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                end
+              end # pre-release
+
+              context "that is not fully qualified" do
+                let(:chef_version){"10"}
+
+                context "filtering for latest pre-release in this line" do
+                  let(:prerelease){true}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                end
+
+                context "filtering for latest release in this line" do
+                  let(:prerelease){false}
+                  let(:nightlies){false}
+                  should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+                end
+
+                context "filtering for latest release nightly in this line" do
+                  let(:prerelease){false}
+                  let(:nightlies){true}
+                  should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
+                end
+              end # pre-release
+            end # with a explicit version
+          end # x86_64
+        end # 12.04
+      end # Ubuntu
+    end # container
+
+
     describe "server" do
       let(:endpoint){"/download-server"}
       let(:metadata_endpoint) {"metadata-server"}
@@ -996,6 +1130,20 @@ describe 'Omnitruck' do
 
     describe "chefdk" do
       let(:endpoint){ "/full_chefdk_list" }
+
+      it "exists" do
+        get endpoint
+        last_response.should be_ok
+      end
+
+      it "returns JSON data" do
+        get endpoint
+        last_response.header['Content-Type'].should include 'application/json'
+      end
+    end
+
+    describe "container" do
+      let(:endpoint) {"/full_container_list"}
 
       it "exists" do
         get endpoint
