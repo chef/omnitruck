@@ -455,6 +455,9 @@ case "$project" in
   "chefdk")
     metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
+  "container")
+    metadata_url="<%= locals[:download_url] %>-container?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+    ;;
     *)
 esac
 
