@@ -17,6 +17,9 @@ class S3Poller
   CHEFDK_RELEASE_MANIFESTS = "chefdk-release-manifest"
   CHEFDK_PLATFORM_NAMES = "chefdk-platform-names.json"
 
+  CHEF_CONTAINER_RELEASE_MANIFESTS = "chef-container-release-manifest"
+  CHEF_CONTAINER_PLATFORM_NAMES = "chef-container-platform-names.json"
+
   attr_reader :config
 
   def initialize
@@ -65,10 +68,12 @@ class S3Poller
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
     chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    container_collection = Project.new(CHEF_CONTAINER_RELEASE_MANIFESTS, bucket_name, all_manifests)
 
     client_collection.update_cache
     server_collection.update_cache
     chefdk_collection.update_cache
+    container_collection.update_cache
 
     # generate manifests then json including backwards-compatible
     client_json_v2 = client_collection.generate_combined_manifest
@@ -86,7 +91,12 @@ class S3Poller
     chefdk_json_v1 = chefdk_collection.generate_combined_manifest
     write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v1))
 
-    update_platform_name_maps(client_collection, server_collection, chefdk_collection)
+    container_json_v2 = container_collection.generate_combined_manifest
+    write_data(config['build_container_list_v2'], container_json_v2)
+    container_json_v1 = container_collection.generate_combined_manifest
+    write_data(config['build_container_list_v1'], parse_to_v1_format!(container_json_v1))
+
+    update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection)
   end
 
   # parses v2 JSON format to v1 format
@@ -105,7 +115,7 @@ class S3Poller
   end
 
   # Grab the human readable json files directly
-  def update_platform_name_maps(client_collection, server_collection, chefdk_collection)
+  def update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection)
     client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
     File.open(@config['chef_platform_names'], "w") do |f|
       f.puts client_names_manifest
@@ -119,6 +129,11 @@ class S3Poller
     chefdk_names_manifest = chefdk_collection.get_remote_manifest(CHEFDK_PLATFORM_NAMES)
     File.open(@config['chefdk_platform_names'], "w") do |f|
       f.puts chefdk_names_manifest
+    end
+
+    container_names_manifest = container_collection.get_remote_manifest(CHEF_CONTAINER_PLATFORM_NAMES)
+    File.open(@config['chef_container_platform_names'], "w") do |f|
+      f.puts container_names_manifest
     end
   end
 
