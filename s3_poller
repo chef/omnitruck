@@ -106,7 +106,7 @@ class S3Poller
     container_json_v1 = container_collection.generate_combined_manifest
     write_data(config['build_container_list_v1'], parse_to_v1_format!(container_json_v1))
 
-    update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection)
+    update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
   end
 
   # parses v2 JSON format to v1 format
@@ -125,7 +125,7 @@ class S3Poller
   end
 
   # Grab the human readable json files directly
-  def update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection)
+  def update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
     client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
     File.open(@config['chef_platform_names'], "w") do |f|
       f.puts client_names_manifest
