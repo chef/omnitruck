@@ -199,7 +199,7 @@ class S3Poller
     def update_cache
       create_cache_dirs
       if remote_manifests.length == 0
-        debug("Remote manifest was empty, if this occurs, please check your config file.")
+        debug("Remote manifest was empty for s3://#{bucket_name}/#{manifest_path}, if this occurs, please check your config file.")
       end
       manifests_to_delete = local_manifests - remote_manifests
       manifests_to_fetch = remote_manifests - local_manifests
