@@ -11,6 +11,9 @@ class S3Poller
   CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
   CHEF_PLATFORM_NAMES = "chef-platform-names.json"
 
+  ANGRYCHEF_RELEASE_MANIFESTS = "angrychef-release-manifest"
+  ANGRYCHEF_PLATFORM_NAMES = "angrychef-platform-names.json"
+
   CHEF_SERVER_RELEASE_MANIFESTS = "chef-server-release-manifest"
   CHEF_SERVER_PLATFORM_NAMES = "chef-server-platform-names.json"
 
@@ -66,11 +69,13 @@ class S3Poller
   def run
     # update server and client cache
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    angrychef_collection = Project.new(ANGRYCHEF_RELEASE_MANIFESTS, bucket_name, all_manifests)
     server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
     chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
     container_collection = Project.new(CHEF_CONTAINER_RELEASE_MANIFESTS, bucket_name, all_manifests)
 
     client_collection.update_cache
+    angrychef_collection.update_cache
     server_collection.update_cache
     chefdk_collection.update_cache
     container_collection.update_cache
@@ -80,6 +85,11 @@ class S3Poller
     write_data(config['build_list_v2'], client_json_v2)
     client_json_v1 = client_collection.generate_combined_manifest
     write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
+
+    angrychef_json_v2 = angrychef_collection.generate_combined_manifest
+    write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
+    angrychef_json_v1 = angrychef_collection.generate_combined_manifest
+    write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v1))
 
     server_json_v2 = server_collection.generate_combined_manifest
     write_data(config['build_server_list_v2'], server_json_v2)
@@ -119,6 +129,11 @@ class S3Poller
     client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
     File.open(@config['chef_platform_names'], "w") do |f|
       f.puts client_names_manifest
+    end
+
+    angrychef_names_manifest = angrychef_collection.get_remote_manifest(ANGRYCHEF_PLATFORM_NAMES)
+    File.open(@config['angrychef_platform_names'], "w") do |f|
+      f.puts angrychef_names_manifest
     end
 
     server_names_manifest = server_collection.get_remote_manifest(CHEF_SERVER_PLATFORM_NAMES)
