@@ -113,7 +113,7 @@ elif test -f "/etc/redhat-release"; then
     # FIXME: use "redhat"
     platform="el"
   fi
-  
+
 elif test -f "/etc/system-release"; then
   platform=`sed 's/^\(.\+\) release.\+/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
   platform_version=`sed 's/^.\+ release \([.0-9]\+\).*/\1/' /etc/system-release | tr '[A-Z]' '[a-z]'`
@@ -456,6 +456,9 @@ metadata_filename="$tmp_dir/metadata.txt"
 case "$project" in
   "chef")
     metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+    ;;
+  "angrychef")
+    metadata_url="<%= locals[:download_url] %>-angrychef?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
   "server")
     metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"

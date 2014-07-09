@@ -31,10 +31,12 @@ SPEC_DATA = File.expand_path(File.join(File.dirname(__FILE__), "data"))
 
 Omnitruck.set :virtual_path, ''
 Omnitruck.set :build_list_v1, File.join(SPEC_DATA, 'build_list_v1.json')
+Omnitruck.set :build_angrychef_list_v1, File.join(SPEC_DATA, 'build_angrychef_list_v1.json')
 Omnitruck.set :build_server_list_v1, File.join(SPEC_DATA, 'build_server_list_v1.json')
 Omnitruck.set :build_chefdk_list_v1, File.join(SPEC_DATA, 'build_chefdk_list_v1.json')
 Omnitruck.set :build_container_list_v1, File.join(SPEC_DATA, 'build_container_list_v1.json')
 Omnitruck.set :build_list_v2, File.join(SPEC_DATA, 'build_list_v2.json')
+Omnitruck.set :build_angrychef_list_v2, File.join(SPEC_DATA, 'build_angrychef_list_v2.json')
 Omnitruck.set :build_server_list_v2, File.join(SPEC_DATA, 'build_server_list_v2.json')
 Omnitruck.set :build_chefdk_list_v2, File.join(SPEC_DATA, 'build_chefdk_list_v2.json')
 Omnitruck.set :build_container_list_v2, File.join(SPEC_DATA, 'build_container_list_v2.json')

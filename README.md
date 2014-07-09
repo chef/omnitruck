@@ -116,6 +116,36 @@ The document returned by this endpoint is essentially a verbatim copy of
 ./chef-platform-names.json; a 404 is returned if this file does not
 exist on the server.
 
+## /metadata-angrychef endpoint
+
+<http://localhost:9393/metadata-angrychef>
+
+This endpoint functions similarly to the /metadata endpoint but serves
+data about angrychef packages.  It takes all the same options.
+
+This endpoint generates its data from build_angrychef_list_v2.json.
+
+## /full_angrychef_list endpoint
+
+<http://localhost:9393/full_angrychef_list>
+
+This endpoint provides the list of available angrychef builds for the install page.
+Will return 404 with a file not found message if
+./build_angrychef_list_v1.json does not exist, which is usually because the
+s3 poller has not run or is misconfigured.
+
+## /angrychef_platform_names endpoint
+
+<http://localhost:9393/angrychef_platform_names>
+
+This endpoint returns a mapping of short platform names, such as "el" to
+long names, such as "Enterprise Linux". This is used by the install page
+on the corpsite to populate the drop down boxes for the install list.
+
+The document returned by this endpoint is essentially a verbatim copy of
+./angrychef-platform-names.json; a 404 is returned if this file does
+not exist on the server.
+
 ## /metadata-server endpoint
 
 <http://localhost:9393/metadata-server>
