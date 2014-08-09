@@ -108,6 +108,12 @@ platform "xenserver" do
   version_remap 5
 end
 
+platform "coreos" do
+  yolo true
+  remap "el"
+  version_remap 6
+end
+
 platform "fedora" do
   yolo true
   remap "el"
