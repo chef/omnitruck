@@ -73,6 +73,26 @@ machine=`uname -m`
 os=`uname -s`
 
 #
+# Max Version check to catch people working off of master of a new major
+# version when we haven't released one yet (and keep them out of our Issue
+# tracker).
+#
+
+if test "$version" -ge "12"; then
+  echo ""
+  echo "You are asking to install Chef version $version which is not released."
+  echo ""
+  echo "This is most likely due to installing chef off of the master branch."
+  echo "If you want to continue using an unstable development branch of Chef"
+  echo "you must set this in your knife.rb:"
+  echo ""
+  echo "knife[:bootstrap_version] = \"11\""
+  echo ""
+  exit 1
+fi
+
+
+#
 # Platform and Platform Version detection
 #
 # NOTE: This should now match ohai platform and platform_version matching.
