@@ -27,36 +27,36 @@ class PlatformDSL
 
     # these functions operate on the given version that has not been remapped
     def matchdata
-      /^([^\.]*)(\.([^\.]*))*/.match(version)
+      version.split(".")
     end
 
     def major
-      matchdata[1]
+      matchdata[0]
     end
 
     def minor
-      matchdata[2]
+      matchdata[1]
     end
 
     def patch
-      matchdata[3]
+      matchdata[2]
     end
 
     # these functions operate on the remapped distro version
     def mapped_matchdata
-      /^([^\.]*)(\.([^\.]*))*/.match(mapped_version)
+      mapped_version.split(".")
     end
 
     def mapped_major
-      mapped_matchdata[1]
+      mapped_matchdata[0]
     end
 
     def mapped_minor
-      mapped_matchdata[2]
+      mapped_matchdata[1]
     end
 
     def mapped_patch
-      mapped_matchdata[3]
+      mapped_matchdata[2]
     end
 
     def name
@@ -222,4 +222,3 @@ class PlatformDSL
     Class.new(PlatformDSL::FileDSL).new(self).instance_eval(IO.read(filename), filename, 1)
   end
 end
-
