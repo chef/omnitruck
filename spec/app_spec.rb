@@ -44,7 +44,7 @@ describe 'Omnitruck' do
         omg_stupid_windows_project = project == 'chef' ? "chef-client" : project
         /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(omg_stupid_windows_project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.#{package_type}/
       elsif mapped_platform =~ /mac_os_x/
-        /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}\.#{package_type}/
+        /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version[/^\d+\.\d/])}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}[-_]#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}\.#{package_type}/
       else
         /#{Regexp.escape(omnitruck_host_path)}\/#{Regexp.escape(mapped_platform)}\/#{Regexp.escape(mapped_platform_version)}\/#{Regexp.escape(architecture)}\/#{Regexp.escape(project)}[-_]#{expected_version_variations}\-#{iteration_number}\.#{Regexp.escape(mapped_platform)}\.?#{Regexp.escape(mapped_platform_version)}[._]#{Regexp.escape(architecture_alt)}\.#{package_type}/
       end
@@ -134,6 +134,54 @@ describe 'Omnitruck' do
       let(:endpoint){"/download"}
       let(:metadata_endpoint){"/metadata"}
       let(:project){ "chef" }
+
+      describe "mac_os_x" do
+        let(:platform){"mac_os_x"}
+        let(:alt_platform){"mac_os_x"}
+        let(:package_type){"sh"}
+
+        context "10.7" do
+          let(:platform_version){"10.7"}
+          let(:alt_platform_version){"10.7.2"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as("10.16.4", { :md5=>"99492c4bb8b0a367666aee10a51b71d1", :sha256=>"a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286" })
+              end
+            end
+          end
+        end
+
+        context "10.10" do
+          let(:platform_version){"10.10"}
+          let(:alt_platform_version){"10.7.2"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            context "without an explicit version" do
+
+              let(:chef_version){nil}
+
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"99492c4bb8b0a367666aee10a51b71d1", :sha256=>"a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286" })
+              end
+            end
+          end
+        end
+      end
 
       describe "sles" do
         let(:platform){"sles"}
@@ -1252,7 +1300,7 @@ describe 'Omnitruck' do
       end # EL
     end # /angrychef
 
-    describe "server" do
+    describe "chefdk" do
       let(:endpoint){"/download-chefdk"}
       let(:metadata_endpoint) {"metadata-chefdk"}
       let(:project){ "chefdk" }
