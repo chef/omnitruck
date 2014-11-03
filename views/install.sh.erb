@@ -154,8 +154,8 @@ elif test "x$os" = "xFreeBSD"; then
   platform_version=`uname -r | sed 's/-.*//'`
 elif test "x$os" = "xAIX"; then
   platform="aix"
-  platform_version=`uname -v`
-  machine="ppc"
+  platform_version="${uname -v}.${uname -r}"
+  machine="powerpc"
 fi
 
 if test "x$platform" = "x"; then
