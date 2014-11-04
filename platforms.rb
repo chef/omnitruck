@@ -47,9 +47,7 @@ platform "centos" do
   remap "el"
 end
 
-platform "aix" do
-  major_only true
-end
+platform "aix"
 
 # Supported Variants
 #
