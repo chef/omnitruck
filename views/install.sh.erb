@@ -213,8 +213,8 @@ if test "x$platform_version" = "x"; then
 fi
 
 if test "x$platform" = "xsolaris2"; then
-  # hack up the path on Solaris to find wget
-  PATH=/usr/sfw/bin:$PATH
+  # hack up the path on Solaris to find wget, pkgadd
+  PATH=/usr/sfw/bin:/usr/sbin:$PATH
   export PATH
 fi
 
