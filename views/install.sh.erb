@@ -72,6 +72,15 @@ shift `expr $OPTIND - 1`
 machine=`uname -m`
 os=`uname -s`
 
+if test "x$TMPDIR" = "x"; then
+  tmp="/tmp"
+else
+  tmp=$TMPDIR
+fi
+# secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
+tmp_dir="$tmp/install.sh.$$"
+(umask 077 && mkdir $tmp_dir) || exit 1
+
 #
 # Platform and Platform Version detection
 #
@@ -233,20 +242,20 @@ unable_to_retrieve_package() {
 
 capture_tmp_stderr() {
   # spool up /tmp/stderr from all the commands we called
-  if test -f "/tmp/stderr"; then
-    output=`cat /tmp/stderr`
+  if test -f "$tmp_dir/stderr"; then
+    output=`cat $tmp_dir/stderr`
     stderr_results="${stderr_results}\nSTDERR from $1:\n\n$output\n"
-    rm /tmp/stderr
+    rm $tmp_dir/stderr
   fi
 }
 
 # do_wget URL FILENAME
 do_wget() {
   echo "trying wget..."
-  wget -O "$2" "$1" 2>/tmp/stderr
+  wget -O "$2" "$1" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
-  grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
+  grep "ERROR 404" $tmp_dir/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
     unable_to_retrieve_package
@@ -264,10 +273,10 @@ do_wget() {
 # do_curl URL FILENAME
 do_curl() {
   echo "trying curl..."
-  curl -sL -D /tmp/stderr "$1" > "$2"
+  curl -sL -D $tmp_dir/stderr "$1" > "$2"
   rc=$?
   # check for 404
-  grep "404 Not Found" /tmp/stderr 2>&1 >/dev/null
+  grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
     unable_to_retrieve_package
@@ -285,7 +294,7 @@ do_curl() {
 # do_fetch URL FILENAME
 do_fetch() {
   echo "trying fetch..."
-  fetch -o "$2" "$1" 2>/tmp/stderr
+  fetch -o "$2" "$1" 2>$tmp_dir/stderr
   # check for bad return status
   test $? -ne 0 && return 1
   return 0
@@ -294,10 +303,10 @@ do_fetch() {
 # do_curl URL FILENAME
 do_perl() {
   echo "trying perl..."
-  perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2" 2>/tmp/stderr
+  perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
-  grep "404 Not Found" /tmp/stderr 2>&1 >/dev/null
+  grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
     unable_to_retrieve_package
@@ -315,10 +324,10 @@ do_perl() {
 # do_curl URL FILENAME
 do_python() {
   echo "trying python..."
-  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>/tmp/stderr
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
-  grep "HTTP Error 404" /tmp/stderr 2>&1 >/dev/null
+  grep "HTTP Error 404" $tmp_dir/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
     unable_to_retrieve_package
@@ -403,11 +412,11 @@ install_file() {
       ;;
     "solaris")
       echo "installing with pkgadd..."
-      echo "conflict=nocheck" > /tmp/nocheck
-      echo "action=nocheck" >> /tmp/nocheck
-      echo "mail=" >> /tmp/nocheck
-      pkgrm -a /tmp/nocheck -n chef >/dev/null 2>&1 || true
-      pkgadd -n -d "$2" -a /tmp/nocheck chef
+      echo "conflict=nocheck" > $tmp_dir/nocheck
+      echo "action=nocheck" >> $tmp_dir/nocheck
+      echo "mail=" >> $tmp_dir/nocheck
+      pkgrm -a $tmp_dir/nocheck -n chef >/dev/null 2>&1 || true
+      pkgadd -n -d "$2" -a $tmp_dir/nocheck chef
       ;;
     "pkg")
       echo "installing with installer..."
@@ -439,14 +448,6 @@ install_file() {
 
 echo "Downloading Chef $version for ${platform}..."
 
-if test "x$TMPDIR" = "x"; then
-  tmp="/tmp"
-else
-  tmp=$TMPDIR
-fi
-# secure-ish temp dir creation without having mktemp available (DDoS-able but not expliotable)
-tmp_dir="$tmp/install.sh.$$"
-(umask 077 && mkdir $tmp_dir) || exit 1
 
 metadata_filename="$tmp_dir/metadata.txt"
 
