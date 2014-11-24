@@ -68,7 +68,7 @@ environment (development, test, or production).
 
 The typical format of the metadata URL is:
 
-   <http://localhost:9393/metadat?v=CHEF_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
+   <http://localhost:9393/metadata?v=CHEF_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
 
 Optional parameters:
 
