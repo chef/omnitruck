@@ -231,6 +231,37 @@ unable_to_retrieve_package() {
   exit 1
 }
 
+http_404_error() {
+  echo "Omnitruck artifact does not exist for version $version on platform $platform"
+  echo ""
+  echo "Either this means:"
+  echo "   - We do not support $platform"
+  echo "   - We do not have an artifact for $version"
+  echo ""
+  echo "This is most likely the latter case due to running a prerelease or rc version of chef"
+  echo "or a gem version which was only pushed to rubygems and not omnitruck."
+  echo ""
+  echo "You may be able to set your knife[:bootstrap_version] to the most recent stable"
+  echo "release of Chef to fix this problem (or the most recent stable major version number)"
+  echo ""
+  echo "You can also take the Metadata URL below and simply modify the '&v=<number>' parameter"
+  echo "until you successfully get a URL that does not 404 (e.g. via curl or wget).  You should"
+  echo "be able to use '&v=11' succesfully (or '&v=12' after roughly mid-Dec 2014)."
+  echo ""
+  echo "If you cannot fix this problem by setting the bootstrap_version correctly it most"
+  echo "likely means that we do not support $platform"
+  echo ""
+  # deliberately do not call report_bug to suppress bug report noise.
+  echo "Metadata URL: $metadata_url"
+  if test "x$download_url" != "x"; then
+    echo "Download URL: $download_url"
+  fi
+  if test "x$stderr_results" != "x"; then
+    echo "\nDEBUG OUTPUT FOLLOWS:\n$stderr_results"
+  fi
+  exit 1
+}
+
 capture_tmp_stderr() {
   # spool up /tmp/stderr from all the commands we called
   if test -f "/tmp/stderr"; then
@@ -249,7 +280,7 @@ do_wget() {
   grep "ERROR 404" /tmp/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
-    unable_to_retrieve_package
+    http_404_error
   fi
 
   # check for bad return status or empty output
@@ -270,7 +301,7 @@ do_curl() {
   grep "404 Not Found" /tmp/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
-    unable_to_retrieve_package
+    http_404_error
   fi
 
   # check for bad return status or empty output
@@ -300,7 +331,7 @@ do_perl() {
   grep "404 Not Found" /tmp/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
-    unable_to_retrieve_package
+    http_404_error
   fi
 
   # check for bad return status or empty output
@@ -321,7 +352,7 @@ do_python() {
   grep "HTTP Error 404" /tmp/stderr 2>&1 >/dev/null
   if test $? -eq 0; then
     echo "ERROR 404"
-    unable_to_retrieve_package
+    http_404_error
   fi
 
   # check for bad return status or empty output
