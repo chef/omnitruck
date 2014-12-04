@@ -419,8 +419,8 @@ class Omnitruck < Sinatra::Base
 
       semvers_available = raw_versions_available.reduce({}) do |acc, kv|
         version_string, url_path = kv
-        version = janky_workaround_for_processing_all_our_different_version_strings(version_string)
-        acc[version] = url_path
+        version = janky_workaround_for_processing_all_our_different_version_strings(version_string) rescue nil
+        acc[version] = url_path unless version.nil?
         acc
       end
 
