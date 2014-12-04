@@ -564,6 +564,11 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
+        "-": {
+          "relpath": "/ubuntu/10.04/x86_64/chef_10.10.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "93616058a2ba09a6abccef7651fdae38",
+          "sha256": "9ee398d806bb377d190e92cd09e7b4a8571d4b328cd580a716425818e6124779"
+        },
         "10.10.0-1": {
           "relpath": "/ubuntu/10.04/x86_64/chef_10.10.0-1.ubuntu.10.04_amd64.deb",
           "md5": "93616058a2ba09a6abccef7651fdae38",
