@@ -436,7 +436,7 @@ do_download() {
 }
 
 # install_file TYPE FILENAME
-# TYPE is "rpm", "deb", "solaris", or "sh"
+# TYPE is "rpm", "deb", "solaris", "sh", etc.
 install_file() {
   echo "Installing Chef $version"
   case "$1" in
@@ -447,6 +447,10 @@ install_file() {
     "deb")
       echo "installing with dpkg..."
       dpkg -i "$2"
+      ;;
+    "bff")
+      echo "installing with installp..."
+      installp -aXYgd "$2" all
       ;;
     "solaris")
       echo "installing with pkgadd..."
