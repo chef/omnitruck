@@ -143,6 +143,13 @@ platform "raspbian" do
   remap "debian"
 end
 
+# see #81
+platform "cumulus networks" do
+  yolo true
+  remap "debian"
+  version_remap 7
+end
+
 # these are unsupported because we have no build infrastructure for them:
 # - slackware
 # - arch
