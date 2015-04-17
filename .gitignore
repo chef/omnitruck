@@ -14,10 +14,8 @@ chef-*platform-names.json
 
 # ignore backup dirs and files
 s3-client-backup
-s3-server-backup
 backup-error-log
 client_migrate_manifest_names
-server_migrate_manifest_names
 *reversed.json
 
 # Ignore emacs temp files

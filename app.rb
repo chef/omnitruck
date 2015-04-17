@@ -61,8 +61,7 @@ class Omnitruck < Sinatra::Base
   end
 
 
-  # == Params, applies to /download, /download-server,
-  # /metadata, and /metadata-server endpoints
+  # == Params, applies to /download, /download*, /metadata* endpoints
   #
   # * :v:  - The version of Chef to download
   # * :p:  - The platform to install on
@@ -75,10 +74,6 @@ class Omnitruck < Sinatra::Base
 
   get '/download-angrychef' do
     handle_download("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v1)))
-  end
-
-  get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
   end
 
   get '/download-chefdk' do
@@ -101,16 +96,6 @@ class Omnitruck < Sinatra::Base
 
   get '/metadata-angrychef' do
     package_info = get_package_info("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v2)), true)
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
-  end
-
-  get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), true)
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -173,16 +158,6 @@ class Omnitruck < Sinatra::Base
   end
 
   #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/full_server_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_server_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
   # Returns the chefdk JSON minus run data to populate the install page build list
   #
   get '/full_chefdk_list' do
@@ -223,20 +198,6 @@ class Omnitruck < Sinatra::Base
   get '/angrychef_platform_names' do
     if File.exists?(settings.chef_platform_names)
       directory = JSON.parse(File.read(settings.chef_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/chef_server_platform_names' do
-    if File.exists?(settings.chef_server_platform_names)
-      directory = JSON.parse(File.read(settings.chef_server_platform_names))
       JSON.pretty_generate(directory)
     else
       status 404

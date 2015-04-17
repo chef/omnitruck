@@ -146,36 +146,6 @@ The document returned by this endpoint is essentially a verbatim copy of
 ./angrychef-platform-names.json; a 404 is returned if this file does
 not exist on the server.
 
-## /metadata-server endpoint
-
-<http://localhost:9393/metadata-server>
-
-This endpoint functions similarly to the /metadata endpoint but serves
-data about chef-server packages.  It takes all the same options.
-
-This endpoint generates its data from build_server_list_v2.json.
-
-## /full_server_list endpoint
-
-<http://localhost:9393/full_server_list>
-
-This endpoint provides the list of available server builds for the install page.
-Will return 404 with a file not found message if
-./build_server_list_v1.json does not exist, which is usually because the
-s3 poller has not run or is misconfigured.
-
-## /chef_server_platform_names endpoint
-
-<http://localhost:9393/chef_server_platform_names>
-
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
-
-The document returned by this endpoint is essentially a verbatim copy of
-./chef-server-platform-names.json; a 404 is returned if this file does
-not exist on the server.
-
 ## /metadata-chefdk endpoint
 
 <http://localhost:9393/metadata-chefdk>
@@ -265,14 +235,6 @@ route needs to have access to the build_list_v1.json in order to run, so make su
 you have one in the same directory as the app. If you don't, go back to the "Running
 the App" section and follow the instructions to run the s3_poller.
 
-## /download-server
-
-To test the download-server route, the url is:
-
-   <http://localhost:9393/download-server?v=CHEF_SERVER_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
-
-Similar to the /download endpoint only it pulls data from build_server_list_v1.json.
-
 ## /download-chefdk
 
 To test the download route, the url is:
@@ -298,8 +260,6 @@ configurable, but we generally use:
 
 * build_list_v1.json
 * build_list_v2.json
-* build_server_list_v1.json
-* build_server_list_v2.json
 * build_chefdk_list_v1.json
 * build_chefdk_list_v2.json
 * build_chef_container_list_v1.json
@@ -308,12 +268,11 @@ configurable, but we generally use:
 
 The v1 versions of the package lists have checksum information stripped
 so that the omnitruck app does not need to do any processing when
-serving the full_client_list or full_server_list endpoints (the
-documents served by these endpoints omit checksums for compatiblity
-reasons).
+serving the full_client_list endpoints (the documents served by these
+endpoints omit checksums for compatiblity reasons).
 
 Release manifests have keys like
-"{chef,chef-server}-release-manifest/$VERSION.json". We currently use
+"{chef}-release-manifest/$VERSION.json". We currently use
 the 'opscode-omnibus-package-metadata-test' bucket for dev/preprod and
 "opscode-omnibus-package-metadata' for prod. The S3 poller expects these
 buckets to be publicly listable and the release manifests to be publicly

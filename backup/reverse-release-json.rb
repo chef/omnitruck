@@ -21,8 +21,8 @@
 
 # Author Tyler Cloke <tyler@opscode.com>
 #
-# Reverses omnibus-chef/jenkins/chef.json or chef-server.json from format:
-# 
+# Reverses omnibus-chef/jenkins/chef.json from format:
+#
 #"build_os=centos-5,machine_architecture=x64,role=oss-builder": [
 #       [
 #            "el",
