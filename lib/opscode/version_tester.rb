@@ -31,14 +31,9 @@ module Opscode
   module VersionTester
 
     CLIENT_URL = "http://www.opscode.com/chef/full_client_list"
-    SERVER_URL = "http://www.opscode.com/chef/full_server_list"
 
     def self.current_client_versions
       versions_from_url(CLIENT_URL)
-    end
-
-    def self.current_server_versions
-      versions_from_url(SERVER_URL)
     end
 
     def self.versions_from_url(url)
@@ -65,7 +60,7 @@ module Opscode
     end
 
     def self.test_with_version(version_class)
-      version_strings = current_client_versions | current_server_versions
+      version_strings = current_client_versions
 
       valid, invalid = [], []
 
@@ -99,7 +94,7 @@ module Opscode
     end
 
     def self.test_all
-      version_strings = current_client_versions | current_server_versions
+      version_strings = current_client_versions
 
       valid, invalid = [], []
 
