@@ -97,30 +97,23 @@ end
 
 # Unsupported Variants
 #
-# These most likely work, everything below this line has yolo on for all versions
-# so that it prints a warning when installing.
-#
 platform "xenserver" do
-  yolo true
   remap "el"
   version_remap 5
 end
 
 platform "coreos" do
-  yolo true
   remap "el"
   version_remap 6
 end
 
 platform "fedora" do
-  yolo true
   remap "el"
   # FIXME: with some old enough version we should return 5
   version_remap 6
 end
 
 platform "linuxmint" do
-  yolo true
   remap "ubuntu"
   version_remap do |version|
     minor_rev = ( version.to_i % 2 == 0 ) ? "10" : "04"
@@ -132,20 +125,17 @@ end
 # Univention Corporate Server is predominantly used in German
 # FIXME: version_remapping to correct debian version ideally needed
 platform "univention" do
-  yolo true
   remap "debian"
   version_remap 6
 end
 
 # this'll magically work if we ever publish ARM debian builds
 platform "raspbian" do
-  yolo true
   remap "debian"
 end
 
 # see #81
 platform "cumulus networks" do
-  yolo true
   remap "debian"
   version_remap 7
 end

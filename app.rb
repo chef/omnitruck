@@ -90,7 +90,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)), true)
+    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -100,7 +100,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-angrychef' do
-    package_info = get_package_info("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v2)), true)
+    package_info = get_package_info("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -110,7 +110,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)), true)
+    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -120,7 +120,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-chefdk' do
-    package_info = get_package_info("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v2)), true)
+    package_info = get_package_info("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -130,7 +130,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata-container' do
-    package_info = get_package_info("chef-container", JSON.parse(File.read(settings.build_container_list_v2)), true)
+    package_info = get_package_info("chef-container", JSON.parse(File.read(settings.build_container_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -348,19 +348,7 @@ class Omnitruck < Sinatra::Base
   # Take the input architecture, and an optional version (latest is
   # default), and returns the bottom level of the hash, if v1, this is simply the
   # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums.
-  #
-  # The third argument is yolo mode.  False is strict mode and only packages that
-  # have been explicitly Q/A tested by Opscode are returned.  In yolo mode you
-  # get various kinds of promotion of packages to package versions that we expect
-  # to work, but have not tested.  So in yolo mode you get Ubuntu 14.04 and
-  # Mac 10.10 working out of the box on release day by using prior Ubuntu and Mac
-  # omnibus packages.  We also map linux mint versions onto their ubuntu versions and
-  # will ship those packages.  We set a flag in the output of the metadata endpoint
-  # in order to signal to the client (i.e. install.sh) that we've served up a package
-  # url using the yolo-mode algorithm.  Then the client can use this to display a
-  # banner warning the end user that the package that they're using is untested.
-  #
-  def get_package_info(name, build_hash, yolo = false)
+  def get_package_info(name, build_hash)
     platform         = params['p']
     platform_version = params['pv']
     machine          = params['m']
@@ -386,13 +374,9 @@ class Omnitruck < Sinatra::Base
 
     distro_versions_available = build_hash[remapped_platform].keys
 
-    if (yolo)
-      # if we're in yolo mode then ubuntu 13.04 is <= 13.10 so we'll ship 13.04 if we can't find 13.10
-      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
-    else
-      # if we're not in yolo mode then we must match exactly
-      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) == pv }
-    end
+    # pick all distros that are <= the current distro (shipping artifacts
+    # for el6 to el7 is fine, but shipping el7 to el6 is bad)
+    distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
 
     if distro_versions_available.length == 0
       raise InvalidDownloadPath, "Cannot find any available chef versions for this mapped platform version #{pv.mapped_name} #{pv.mapped_version}: #{error_msg}"
@@ -401,8 +385,7 @@ class Omnitruck < Sinatra::Base
     # sort so that the first available version is the highest (pick 13.04 before 10.04)
     distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
 
-    # walk through all the distro versions until we find a candidate (if someone specifies a very old chef version we will find it on some
-    # very old distro if you are in yolo mode)
+    # walk through all the distro versions until we find a candidate
     package_info = nil
     pv_selected = nil
 
@@ -442,16 +425,6 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
     end
 
-    # yolo = "you only live one" or "you oughta look out" ( https://www.youtube.com/watch?v=z5Otla5157c )
-    if dsl.new_platform_version(remapped_platform, pv_selected) != pv || pv.yolo
-      # if we're not in yolo mode we don't return yolo results and raise instead
-      unless (yolo)
-        raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
-      end
-      # if the distro platform versions don't match then we are in yolo mode (installing ubuntu 13.04 on unbuntu 13.10 or whatever)
-      package_info['yolo'] = true
-    end
-
     package_info
   end
 
@@ -474,7 +447,6 @@ class Omnitruck < Sinatra::Base
   def parse_plain_text(package_info)
     full_url = convert_relpath_to_url(package_info["relpath"])
     ret = "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
-    ret << "yolo\ttrue\n" if package_info['yolo']
     ret
   end
 end
