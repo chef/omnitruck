@@ -65,9 +65,6 @@ class PlatformDSL
     def major_only
       raise NotImplementedError, "must be implemented by subclass"
     end
-    def yolo
-      raise NotImplementedError, "must be implemented by subclass"
-    end
     def remap
       raise NotImplementedError, "must be implemented by subclass"
     end
@@ -110,8 +107,7 @@ class PlatformDSL
       "version:        #{version}\n" +
       "mapped name:    #{mapped_name}\n" +
       "mapped version: #{mapped_version}\n" +
-      "major_only:     #{major_only}\n" +
-      "yolo:           #{yolo}\n"
+      "major_only:     #{major_only}\n"
     end
   end
 
@@ -133,7 +129,6 @@ class PlatformDSL
     def initialize(name)
       @name = name
       @major_only = false
-      @yolo = false
       @remap = nil
       @version_remap = nil
     end
@@ -173,14 +168,6 @@ class PlatformDSL
       end
       @version_remap
     end
-
-    def yolo(opt = nil)
-      unless opt.nil?
-        raise "yolo must be true or false" unless opt.instance_of?(TrueClass) || opt.instance_of?(FalseClass)
-        @yolo = opt
-      end
-      @yolo
-    end
   end
 
   def initialize
@@ -193,14 +180,12 @@ class PlatformDSL
     major_only = platform_spec.major_only
     remap = platform_spec.remap
     version_remap = platform_spec.version_remap
-    yolo = platform_spec.yolo
     klass.class_eval do
       define_singleton_method :name do name end
       define_method :name do name end
       define_method :major_only do major_only end
       define_method :remap do remap end
       define_method :version_remap do version_remap end
-      define_method :yolo do yolo end
     end
     add_platform_version(klass)
   end
