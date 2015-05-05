@@ -16,7 +16,9 @@ gem 'rake'
 
 group :test do
   gem 'rspec'
+  gem 'rspec-legacy_formatters'
   gem 'rspec-rerun'
+  gem 'rspec-its'
   gem 'rack-test'
   gem 'rspec_junit_formatter'
 end

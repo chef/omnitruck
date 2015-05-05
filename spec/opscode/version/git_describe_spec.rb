@@ -195,7 +195,7 @@ describe Opscode::Version::GitDescribe do
     context "no GitDescribeVersion can be a proper release" do
       versions.each do |v|
         it "#{v} isn't a release" do
-          Opscode::Version::GitDescribe.new(v).release?.should be_false
+          Opscode::Version::GitDescribe.new(v).release?.should be false
         end
       end
     end
@@ -203,7 +203,7 @@ describe Opscode::Version::GitDescribe do
     context "no GitDescribeVersion can be a proper pre-release" do
       versions.each do |v|
         it "#{v} isn't a pre-release" do
-          Opscode::Version::GitDescribe.new(v).prerelease?.should be_false
+          Opscode::Version::GitDescribe.new(v).prerelease?.should be_falsey
         end
       end
     end
@@ -211,7 +211,7 @@ describe Opscode::Version::GitDescribe do
     context "every GitDescribeVersion is a nightly release" do
       versions.each do |v|
         it "#{v} is a nightly" do
-          Opscode::Version::GitDescribe.new(v).nightly?.should be_true
+          Opscode::Version::GitDescribe.new(v).nightly?.should be true
         end
       end
     end
@@ -225,7 +225,7 @@ describe Opscode::Version::GitDescribe do
       string = git_describe.to_semver_string
       string.should eq "10.16.2+49.g21353f0.1"
       semver = Opscode::Version::SemVer.new(string)
-      (semver.release_nightly?).should be_true
+      (semver.release_nightly?).should be_truthy
     end
   end
 

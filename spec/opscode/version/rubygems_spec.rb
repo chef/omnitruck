@@ -60,7 +60,7 @@ describe Opscode::Version::Rubygems do
       string = rubygems_version.to_semver_string
       string.should eq "10.1.1-alpha.2"
       semver = Opscode::Version::SemVer.new(string)
-      (semver.prerelease?).should be_true
+      (semver.prerelease?).should be true
     end
   end
 end

@@ -122,38 +122,38 @@ describe Opscode::Version::SemVer do
 
       context "Release" do
         let(:version){"1.0.0"}
-        its(:release?){should be_true}
-        its(:prerelease?){should be_false}
-        its(:release_nightly?){should be_false}
-        its(:prerelease_nightly?){should be_false}
-        its(:nightly?){should be_false}
+        its(:release?){should be true}
+        its(:prerelease?){should be_falsey}
+        its(:release_nightly?){should be_falsey}
+        its(:prerelease_nightly?){should be_falsey}
+        its(:nightly?){should be_falsey}
       end
 
       context "Pre-release" do
         let(:version){"1.0.0-alpha.1"}
-        its(:release?){should be_false}
-        its(:prerelease?){should be_true}
-        its(:release_nightly?){should be_false}
-        its(:prerelease_nightly?){should be_false}
-        its(:nightly?){should be_false}
+        its(:release?){should be false}
+        its(:prerelease?){should be true}
+        its(:release_nightly?){should be false}
+        its(:prerelease_nightly?){should be_falsey}
+        its(:nightly?){should be false}
       end
 
       context "Nightly pre-release build" do
         let(:version){"1.0.0-alpha.1+build.123"}
-        its(:release?){should be_false}
-        its(:prerelease?){should be_false}
-        its(:release_nightly?){should be_false}
-        its(:prerelease_nightly?){should be_true}
-        its(:nightly?){should be_true}
+        its(:release?){should be false}
+        its(:prerelease?){should be false}
+        its(:release_nightly?){should be false}
+        its(:prerelease_nightly?){should be_truthy}
+        its(:nightly?){should be true}
       end
 
       context "Nightly release build" do
         let(:version){"1.0.0+build.123"}
-        its(:release?){should be_false}
-        its(:prerelease?){should be_false}
-        its(:release_nightly?){should be_true}
-        its(:prerelease_nightly?){should be_false}
-        its(:nightly?){should be_true}
+        its(:release?){should be false}
+        its(:prerelease?){should be_falsey}
+        its(:release_nightly?){should be_truthy}
+        its(:prerelease_nightly?){should be_falsey}
+        its(:nightly?){should be true}
       end
     end
 
