@@ -382,12 +382,14 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, "Cannot find any available chef versions for this mapped platform version #{pv.mapped_name} #{pv.mapped_version}: #{error_msg}"
     end
 
-    # sort so that the first available version is the highest (pick 13.04 before 10.04)
-    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
+    # walk forwards through the pv list (10.04 then 10.10, etc)
+    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v1) <=> dsl.new_platform_version(remapped_platform, v2) }
 
     # walk through all the distro versions until we find a candidate
     package_info = nil
     pv_selected = nil
+
+    semvers_available = {}
 
     distro_versions_available.each do |remapped_platform_version|
       pv_selected = remapped_platform_version
@@ -400,26 +402,30 @@ class Omnitruck < Sinatra::Base
 
       next if !raw_versions_available
 
-      semvers_available = raw_versions_available.reduce({}) do |acc, kv|
+      pv_semvers = raw_versions_available.reduce({}) do |acc, kv|
         version_string, url_path = kv
         version = janky_workaround_for_processing_all_our_different_version_strings(version_string) rescue nil
         acc[version] = url_path unless version.nil?
         acc
       end
 
-      next if !semvers_available
+      next if !pv_semvers
 
-      target = Opscode::Version.find_target_version(semvers_available.keys,
-                                                    chef_version,
-                                                    prerelease,
-                                                    use_nightlies)
-
-      next if !target
-
-      package_info = semvers_available[target]
-
-      break if package_info
+      semvers_available.merge!(pv_semvers)
     end
+
+    target = Opscode::Version.find_target_version(
+      semvers_available.keys,
+      chef_version,
+      prerelease,
+      use_nightlies
+    )
+
+    unless target
+      raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
+    end
+
+    package_info = semvers_available[target]
 
     unless package_info
       raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
