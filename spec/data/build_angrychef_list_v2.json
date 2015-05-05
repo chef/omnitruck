@@ -335,21 +335,6 @@
           "relpath": "/el/6/x86_64/angrychef-10.16.0.rc.1-1.el6.x86_64.rpm",
           "md5": "9062c110ec842579efc45c96f7f8cafe",
           "sha256": "aa780f29509cf23e908d21fdd1c8e3f5d3bccc7e9c043e798491e2091494132f"
-        },
-        "10.16.2-1": {
-          "relpath": "/el/6/x86_64/angrychef-10.16.2-1.el6.x86_64.rpm",
-          "md5": "8bd013956069bf5f7e5ad3907f554333",
-          "sha256": "cf3e587be3d2f90aeb06f364c92edf2d259e48a0e7554297a5197931932db7b1"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/el/6/x86_64/angrychef-10.16.2_49_g21353f0-1.el6.x86_64.rpm",
-          "md5": "0204ec2894765ca2ad70180707d8f62f",
-          "sha256": "9ae6d25e2e5b37989750c090aea2d8cc6ed97df1df420deecb62e0f17af7ef05"
-        },
-        "10.16.4-1": {
-          "relpath": "/el/6/x86_64/angrychef-10.16.4-1.el6.x86_64.rpm",
-          "md5": "1e9a5ccadc6cf36650afca54afaa27c0",
-          "sha256": "da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927"
         }
       },
       "i686": {
@@ -402,21 +387,6 @@
           "relpath": "/el/6/i686/angrychef-10.16.0.rc.1-1.el6.i686.rpm",
           "md5": "096b0b58926a4d869cc33520a58506dc",
           "sha256": "c02bfb72de68f44e57036f626082d4f82ba36d6c633377f79bd59800e8ab238c"
-        },
-        "10.16.2-1": {
-          "relpath": "/el/6/i686/angrychef-10.16.2-1.el6.i686.rpm",
-          "md5": "a1d6989147452405d301836223ade1a4",
-          "sha256": "4d271dcd312b412be692c05c48ab142166fca2717c871f5646b813fd08c7f66c"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/el/6/i686/angrychef-10.16.2_49_g21353f0-1.el6.i686.rpm",
-          "md5": "6ae316f7e17ff282d613324315f0a7cf",
-          "sha256": "391342825a5474af25e5378a12ea5a72316ee1896f5ec691dab2677513f6de8f"
-        },
-        "10.16.4-1": {
-          "relpath": "/el/6/i686/angrychef-10.16.4-1.el6.i686.rpm",
-          "md5": "cbdeba9189ee5946fcc4fa07be1744e5",
-          "sha256": "c2900795c48a58c26b219c3e0206d90606b3e2f42fe9bcb25f0ddda8a3368a10"
         }
       }
     }
@@ -618,21 +588,6 @@
           "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
           "md5": "661f2d41bc75609dbbdf2e02f6972f81",
           "sha256": "46751328b50acca78798617b47642d055bc0e98af7362d5cd19c9d3c29435cce"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.2-1.ubuntu.10.04_amd64.deb",
-          "md5": "629d0b2485fb284923babc8cdea389ee",
-          "sha256": "01ec06b8b0d184dc30eaa2940e469777ed737ad81d274364bf672f08d340b6b8"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.2-49-g21353f0-1.ubuntu.10.04_amd64.deb",
-          "md5": "647b8aac988aaaa3e889654f69b97869",
-          "sha256": "0f86708b77e87374b05b11b77dc6c54a82654bfbf17e976aa096cf9d433adbd9"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.4-1.ubuntu.10.04_amd64.deb",
-          "md5": "bc20ef526f63dfd225592cc2ab2f0dd9",
-          "sha256": "f262c3d93cc82ece3285ce98965b823fb2891b9f23a5b23d8dc76f84dbfacfcf"
         }
       },
       "i686": {
@@ -690,21 +645,6 @@
           "relpath": "/ubuntu/10.04/i686/angrychef_10.16.0.rc.1-1.ubuntu.10.04_i386.deb",
           "md5": "4a10af03d7642a2e1b25bbb44ab93432",
           "sha256": "4f62c4b47586d26b604c84ffc2f077563d5d53164f69fc9534cdff2ee9107e0e"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.2-1.ubuntu.10.04_i386.deb",
-          "md5": "7dfb4c7c8fe7c67bbb782b1577858755",
-          "sha256": "97a1b0f3bf93f7cce5f4905f7f8bf65cd23eae4c35953950c8beea32435d89c2"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.2-49-g21353f0-1.ubuntu.10.04_i386.deb",
-          "md5": "53d9fe4921bc31bb1efdd20bfcb7f439",
-          "sha256": "27aa19f82a96ee4ba012b9802b4ef301acc9f36e39995ad9e5b4f07f235827a2"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.4-1.ubuntu.10.04_i386.deb",
-          "md5": "8c1716ede8e9ecc33da42cf48abd8862",
-          "sha256": "81308e2d097882a4809cc5c7f12031a4a7d642eeb1ea2ac8ebd0bc5d469e0eb9"
         }
       }
     },
@@ -759,21 +699,6 @@
           "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
           "md5": "661f2d41bc75609dbbdf2e02f6972f81",
           "sha256": "46751328b50acca78798617b47642d055bc0e98af7362d5cd19c9d3c29435cce"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.2-1.ubuntu.10.04_amd64.deb",
-          "md5": "629d0b2485fb284923babc8cdea389ee",
-          "sha256": "01ec06b8b0d184dc30eaa2940e469777ed737ad81d274364bf672f08d340b6b8"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.2-49-g21353f0-1.ubuntu.10.04_amd64.deb",
-          "md5": "647b8aac988aaaa3e889654f69b97869",
-          "sha256": "0f86708b77e87374b05b11b77dc6c54a82654bfbf17e976aa096cf9d433adbd9"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/10.04/x86_64/angrychef_10.16.4-1.ubuntu.10.04_amd64.deb",
-          "md5": "bc20ef526f63dfd225592cc2ab2f0dd9",
-          "sha256": "f262c3d93cc82ece3285ce98965b823fb2891b9f23a5b23d8dc76f84dbfacfcf"
         }
       },
       "i686": {
@@ -826,21 +751,6 @@
           "relpath": "/ubuntu/10.04/i686/angrychef_10.16.0.rc.1-1.ubuntu.10.04_i386.deb",
           "md5": "4a10af03d7642a2e1b25bbb44ab93432",
           "sha256": "4f62c4b47586d26b604c84ffc2f077563d5d53164f69fc9534cdff2ee9107e0e"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.2-1.ubuntu.10.04_i386.deb",
-          "md5": "7dfb4c7c8fe7c67bbb782b1577858755",
-          "sha256": "97a1b0f3bf93f7cce5f4905f7f8bf65cd23eae4c35953950c8beea32435d89c2"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.2-49-g21353f0-1.ubuntu.10.04_i386.deb",
-          "md5": "53d9fe4921bc31bb1efdd20bfcb7f439",
-          "sha256": "27aa19f82a96ee4ba012b9802b4ef301acc9f36e39995ad9e5b4f07f235827a2"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/10.04/i686/angrychef_10.16.4-1.ubuntu.10.04_i386.deb",
-          "md5": "8c1716ede8e9ecc33da42cf48abd8862",
-          "sha256": "81308e2d097882a4809cc5c7f12031a4a7d642eeb1ea2ac8ebd0bc5d469e0eb9"
         }
       }
     },
@@ -895,21 +805,6 @@
           "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.0.rc.1-1.ubuntu.11.04_amd64.deb",
           "md5": "4104b6049b49029a6d3c75f1f0d07b3c",
           "sha256": "fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.2-1.ubuntu.11.04_amd64.deb",
-          "md5": "05f4c71d6d2698055d9a2543b088e4e2",
-          "sha256": "6a869e9cad820a65b4e7b64f8c053b72aa310f35d1c7c28d6258e8c83f0a0c6b"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb",
-          "md5": "7a55604de777203008f9689e23aae585",
-          "sha256": "147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.4-1.ubuntu.11.04_amd64.deb",
-          "md5": "00d73d3bdd2d7b255a06cde8a9c5d399",
-          "sha256": "8df306dac4a48ad32f300dacfd566c8971ba132ba75d820c4e9fb3e79add37ba"
         }
       },
       "i686": {
@@ -962,21 +857,6 @@
           "relpath": "/ubuntu/11.04/i686/angrychef_10.16.0.rc.1-1.ubuntu.11.04_i386.deb",
           "md5": "75ee21a16f3bc323b3b1d7fb505c34c6",
           "sha256": "d1a392b3ddc7dc66881067ec0cf93bb8397b669f719ae65bf2da522538dfef74"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.2-1.ubuntu.11.04_i386.deb",
-          "md5": "540992d21355ee57e5b032e893178bce",
-          "sha256": "01d7b1eddda3fc4b9abcee84b97c3f712f1b7e9cadb96c84b64f32bd5bddddf8"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.2-49-g21353f0-1.ubuntu.11.04_i386.deb",
-          "md5": "cfd2c9e703909c0695ffedb73533006a",
-          "sha256": "4bb8eb98e44e0abcfffbe292b22564e9f4b00efed5d95fe96f4b2939a0ba11c2"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.4-1.ubuntu.11.04_i386.deb",
-          "md5": "ddd1d9384e3c79707916f4b6834eedb5",
-          "sha256": "30cbc9e047bf611c7d203be9cc78329f8fa82571889e0153d95d269dd363fd0a"
         }
       }
     },
@@ -1031,21 +911,6 @@
           "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.0.rc.1-1.ubuntu.11.04_amd64.deb",
           "md5": "4104b6049b49029a6d3c75f1f0d07b3c",
           "sha256": "fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.2-1.ubuntu.11.04_amd64.deb",
-          "md5": "05f4c71d6d2698055d9a2543b088e4e2",
-          "sha256": "6a869e9cad820a65b4e7b64f8c053b72aa310f35d1c7c28d6258e8c83f0a0c6b"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.2-49-g21353f0-1.ubuntu.11.04_amd64.deb",
-          "md5": "7a55604de777203008f9689e23aae585",
-          "sha256": "147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/11.04/x86_64/angrychef_10.16.4-1.ubuntu.11.04_amd64.deb",
-          "md5": "00d73d3bdd2d7b255a06cde8a9c5d399",
-          "sha256": "8df306dac4a48ad32f300dacfd566c8971ba132ba75d820c4e9fb3e79add37ba"
         }
       },
       "i686": {
@@ -1098,21 +963,6 @@
           "relpath": "/ubuntu/11.04/i686/angrychef_10.16.0.rc.1-1.ubuntu.11.04_i386.deb",
           "md5": "75ee21a16f3bc323b3b1d7fb505c34c6",
           "sha256": "d1a392b3ddc7dc66881067ec0cf93bb8397b669f719ae65bf2da522538dfef74"
-        },
-        "10.16.2-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.2-1.ubuntu.11.04_i386.deb",
-          "md5": "540992d21355ee57e5b032e893178bce",
-          "sha256": "01d7b1eddda3fc4b9abcee84b97c3f712f1b7e9cadb96c84b64f32bd5bddddf8"
-        },
-        "10.16.2-49-g21353f0-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.2-49-g21353f0-1.ubuntu.11.04_i386.deb",
-          "md5": "cfd2c9e703909c0695ffedb73533006a",
-          "sha256": "4bb8eb98e44e0abcfffbe292b22564e9f4b00efed5d95fe96f4b2939a0ba11c2"
-        },
-        "10.16.4-1": {
-          "relpath": "/ubuntu/11.04/i686/angrychef_10.16.4-1.ubuntu.11.04_i386.deb",
-          "md5": "ddd1d9384e3c79707916f4b6834eedb5",
-          "sha256": "30cbc9e047bf611c7d203be9cc78329f8fa82571889e0153d95d269dd363fd0a"
         }
       }
     },

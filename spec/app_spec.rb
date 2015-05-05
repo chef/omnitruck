@@ -190,7 +190,7 @@ describe 'Omnitruck' do
 
         context "11.0" do
           let(:platform_version){"11.0"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -203,7 +203,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -239,7 +239,7 @@ describe 'Omnitruck' do
 
         context "12.1" do
           let(:platform_version){"12.1"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -252,7 +252,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -261,7 +261,7 @@ describe 'Omnitruck' do
         # 12.0 exercises major_only mode since only 12.1 exists -- this tests matching by major version going forwards
         context "12.0" do
           let(:platform_version){"12.0"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -274,7 +274,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -283,7 +283,7 @@ describe 'Omnitruck' do
         # 12.2 exercises major_only mode since only 12.1 exists -- this tests matching by major version going backwards
         context "12.2" do
           let(:platform_version){"12.2"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -296,7 +296,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -736,6 +736,26 @@ describe 'Omnitruck' do
 
           end # x86_64
         end # 5
+        context "6" do
+          let(:platform_version){"6"}
+          let(:alt_platform_version){"5"}
+
+          context "x86_64" do
+
+            let(:architecture){"x86_64"}
+
+            # in the data we only have 10.16.0 versions for el6, but we expect to see
+            # 10.16.4 versions from el5 served up
+            context "without an explicit version" do
+              let(:chef_version){nil}
+              context "releases" do
+                let(:prerelease){false}
+                let(:nightlies){false}
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              end
+            end # without an explicit version
+          end # x86_64
+        end # 6
       end # EL
     end # /download
 
@@ -751,7 +771,7 @@ describe 'Omnitruck' do
 
         context "11.0" do
           let(:platform_version){"11.0"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -764,7 +784,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -800,7 +820,7 @@ describe 'Omnitruck' do
 
         context "12.1" do
           let(:platform_version){"12.1"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -813,7 +833,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -822,7 +842,7 @@ describe 'Omnitruck' do
         # 12.0 exercises major_only mode since only 12.1 exists -- this tests matching by major version going forwards
         context "12.0" do
           let(:platform_version){"12.0"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -835,7 +855,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
@@ -844,7 +864,7 @@ describe 'Omnitruck' do
         # 12.2 exercises major_only mode since only 12.1 exists -- this tests matching by major version going backwards
         context "12.2" do
           let(:platform_version){"12.2"}
-          let(:alt_platform_version){"6"}
+          let(:alt_platform_version){"5"}
 
           context "x86_64" do
 
@@ -857,7 +877,7 @@ describe 'Omnitruck' do
               context "releases" do
                 let(:prerelease){false}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.4", { :md5=>"1e9a5ccadc6cf36650afca54afaa27c0", :sha256=>"da409259b0fe874b38da97ab609bf719877158d8e2ec971bc858752d8dfc4927" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end
           end
