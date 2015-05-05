@@ -13,6 +13,7 @@
 # NB: this platform name is deprecated, convert to using "redhat" like ohai
 platform "el" do
   major_only true
+  yolo true
 end
 
 platform "debian" do
@@ -38,11 +39,13 @@ platform "freebsd" do
 end
 
 platform "redhat" do
+  yolo true
   major_only true
   remap "el"
 end
 
 platform "centos" do
+  yolo true
   major_only true
   remap "el"
 end
