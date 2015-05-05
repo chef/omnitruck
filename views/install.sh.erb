@@ -580,13 +580,6 @@ if test "x$cached_file_available" != "xtrue"; then
   do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
 fi
 
-if grep yolo "$metadata_filename" >/dev/null; then
-  echo
-  echo "WARNING: Chef-Client has not been regression tested on this O/S Distribution"
-  echo "WARNING: Do not use this configuration for Production Applications.  Use at your own risk."
-  echo
-fi
-
 if test "x$version" = "x"; then
   echo
   echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
