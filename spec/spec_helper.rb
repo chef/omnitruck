@@ -50,5 +50,7 @@ RSpec.configure do |conf|
 
   conf.filter_run :focus => true
   conf.run_all_when_everything_filtered = true
-  conf.treat_symbols_as_metadata_keys_with_true_values = true
+  conf.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
 end
