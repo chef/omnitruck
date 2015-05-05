@@ -63,10 +63,10 @@ describe 'Omnitruck' do
         parsed_json = JSON.parse(metadata_json)
 
         pkg_url = parsed_json["url"]
-        pkg_url.should =~ url_regex_for(expected_version)
+        expect(pkg_url).to match(url_regex_for(expected_version))
 
-        parsed_json["sha256"].should == expected_sha256
-        parsed_json["md5"].should == expected_md5
+        expect(parsed_json["sha256"]).to eq(expected_sha256)
+        expect(parsed_json["md5"]).to eq(expected_md5)
       end
 
       it "should serve plain text metadata with a URI for package #{expected_version}" do
@@ -79,10 +79,10 @@ describe 'Omnitruck' do
         end
 
         pkg_url = parsed_metadata["url"]
-        pkg_url.should =~ url_regex_for(expected_version)
+        expect(pkg_url).to match(url_regex_for(expected_version))
 
-        parsed_metadata["sha256"].should == expected_sha256
-        parsed_metadata["md5"].should == expected_md5
+        expect(parsed_metadata["sha256"]).to eq(expected_sha256)
+        expect(parsed_metadata["md5"]).to eq(expected_md5)
       end
     end
 
@@ -95,10 +95,10 @@ describe 'Omnitruck' do
 
       it "should serve a redirect to the correct URI for package #{expected_version}" do
         get(endpoint, params)
-        last_response.should be_redirect
+        expect(last_response).to be_redirect
         follow_redirect!
 
-        last_request.url.should =~ url_regex_for(expected_version)
+        expect(last_request.url).to match(url_regex_for(expected_version))
       end
 
       should_retrieve_latest_metadata_as(expected_version, options)
@@ -1701,12 +1701,12 @@ describe 'Omnitruck' do
 
       it "exists" do
         get endpoint
-        last_response.should be_ok
+        expect(last_response).to be_ok
       end
 
       it "returns JSON data" do
         get endpoint
-        last_response.header['Content-Type'].should include 'application/json'
+        expect(last_response.header['Content-Type']).to include 'application/json'
       end
 
       context "legacy version" do
@@ -1714,12 +1714,12 @@ describe 'Omnitruck' do
 
         it "exists" do
           get endpoint
-          last_response.should be_ok
+          expect(last_response).to be_ok
         end
 
         it "returns JSON data" do
           get endpoint
-          last_response.header['Content-Type'].should include 'application/json'
+          expect(last_response.header['Content-Type']).to include 'application/json'
         end
       end
     end
@@ -1729,12 +1729,12 @@ describe 'Omnitruck' do
 
       it "exists" do
         get endpoint
-        last_response.should be_ok
+        expect(last_response).to be_ok
       end
 
       it "returns JSON data" do
         get endpoint
-        last_response.header['Content-Type'].should include 'application/json'
+        expect(last_response.header['Content-Type']).to include 'application/json'
       end
     end
 
@@ -1743,12 +1743,12 @@ describe 'Omnitruck' do
 
       it "exists" do
         get endpoint
-        last_response.should be_ok
+        expect(last_response).to be_ok
       end
 
       it "returns JSON data" do
         get endpoint
-        last_response.header['Content-Type'].should include 'application/json'
+        expect(last_response.header['Content-Type']).to include 'application/json'
       end
     end
 
@@ -1757,12 +1757,12 @@ describe 'Omnitruck' do
 
       it "exists" do
         get endpoint
-        last_response.should be_ok
+        expect(last_response).to be_ok
       end
 
       it "returns JSON data" do
         get endpoint
-        last_response.header['Content-Type'].should include 'application/json'
+        expect(last_response.header['Content-Type']).to include 'application/json'
       end
     end
 
@@ -1771,12 +1771,12 @@ describe 'Omnitruck' do
 
       it "exists" do
         get endpoint
-        last_response.should be_ok
+        expect(last_response).to be_ok
       end
 
       it "returns JSON data" do
         get endpoint
-        last_response.header['Content-Type'].should include 'application/json'
+        expect(last_response.header['Content-Type']).to include 'application/json'
       end
     end
   end
@@ -1784,7 +1784,7 @@ describe 'Omnitruck' do
   describe "/install.sh" do
     it "exists" do
       get '/install.sh'
-      last_response.should be_ok
+      expect(last_response).to be_ok
     end
   end
 
@@ -1793,17 +1793,17 @@ describe 'Omnitruck' do
 
     it "exists" do
       get endpoint
-      last_response.should be_ok
+      expect(last_response).to be_ok
     end
 
     it "returns JSON data" do
       get endpoint
-      last_response.header['Content-Type'].should include 'application/json'
+      expect(last_response.header['Content-Type']).to include 'application/json'
     end
 
     it "returns the timestamp of the last poller run" do
       get endpoint
-      JSON.parse(last_response.body)["timestamp"].should == "Thu Aug 16 11:48:08 -0700 2012"
+      expect(JSON.parse(last_response.body)["timestamp"]).to eq("Thu Aug 16 11:48:08 -0700 2012")
     end
   end
 end
