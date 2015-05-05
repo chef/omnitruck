@@ -133,18 +133,18 @@ describe Opscode::Version::GitDescribe do
   context "PARSING AS SEMVER" do
     it "works for 10.16.2-49-g21353f0-1, but THIS WON'T COMPARE NICELY WITH OTHER PROPER SemVers!" do
       s = Opscode::Version::SemVer.new("10.16.2-49-g21353f0-1")
-      s.major.should eq 10
-      s.minor.should eq 16
-      s.patch.should eq 2
-      s.prerelease.should eq "49-g21353f0-1"
-      s.build.should be_nil
+      expect(s.major).to eq 10
+      expect(s.minor).to eq 16
+      expect(s.patch).to eq 2
+      expect(s.prerelease).to eq "49-g21353f0-1"
+      expect(s.build).to be_nil
     end
   end
 
   context "#to_s" do
     ["10.16.2-49-g21353f0-1"].each do |v|
       it "reconstructs the initial input of #{v}" do
-        Opscode::Version::GitDescribe.new(v).to_s.should == v
+        expect(Opscode::Version::GitDescribe.new(v).to_s).to eq(v)
       end
     end
   end
@@ -178,15 +178,15 @@ describe Opscode::Version::GitDescribe do
 
   describe "<=>" do
     it "sorts all properly" do
-      git_describe_versions.sort.should eq sorted_versions
+      expect(git_describe_versions.sort).to eq sorted_versions
     end
 
     it "finds the min" do
-      git_describe_versions.min.should eq Opscode::Version::GitDescribe.new("9.0.1-1-gdeadbee-1")
+      expect(git_describe_versions.min).to eq Opscode::Version::GitDescribe.new("9.0.1-1-gdeadbee-1")
     end
 
     it "finds the max" do
-      git_describe_versions.max.should eq Opscode::Version::GitDescribe.new("10.20.2-3-gaaaaaaa-1")
+      expect(git_describe_versions.max).to eq Opscode::Version::GitDescribe.new("10.20.2-3-gaaaaaaa-1")
     end
   end
 
@@ -195,7 +195,7 @@ describe Opscode::Version::GitDescribe do
     context "no GitDescribeVersion can be a proper release" do
       versions.each do |v|
         it "#{v} isn't a release" do
-          Opscode::Version::GitDescribe.new(v).release?.should be false
+          expect(Opscode::Version::GitDescribe.new(v).release?).to be false
         end
       end
     end
@@ -203,7 +203,7 @@ describe Opscode::Version::GitDescribe do
     context "no GitDescribeVersion can be a proper pre-release" do
       versions.each do |v|
         it "#{v} isn't a pre-release" do
-          Opscode::Version::GitDescribe.new(v).prerelease?.should be_falsey
+          expect(Opscode::Version::GitDescribe.new(v).prerelease?).to be_falsey
         end
       end
     end
@@ -211,7 +211,7 @@ describe Opscode::Version::GitDescribe do
     context "every GitDescribeVersion is a nightly release" do
       versions.each do |v|
         it "#{v} is a nightly" do
-          Opscode::Version::GitDescribe.new(v).nightly?.should be true
+          expect(Opscode::Version::GitDescribe.new(v).nightly?).to be true
         end
       end
     end
@@ -223,9 +223,9 @@ describe Opscode::Version::GitDescribe do
 
     it "generates a semver for a release nightly" do
       string = git_describe.to_semver_string
-      string.should eq "10.16.2+49.g21353f0.1"
+      expect(string).to eq "10.16.2+49.g21353f0.1"
       semver = Opscode::Version::SemVer.new(string)
-      (semver.release_nightly?).should be_truthy
+      expect(semver.release_nightly?).to be_truthy
     end
   end
 

@@ -25,38 +25,38 @@ describe Opscode::Version::SemVer do
   context "#initialize" do
     it "works for 1.0.0" do
       s = Opscode::Version::SemVer.new("1.0.0")
-      s.major.should eq 1
-      s.minor.should eq 0
-      s.patch.should eq 0
-      s.prerelease.should be_nil
-      s.build.should be_nil
+      expect(s.major).to eq 1
+      expect(s.minor).to eq 0
+      expect(s.patch).to eq 0
+      expect(s.prerelease).to be_nil
+      expect(s.build).to be_nil
     end
 
     it "works for 1.0.0-alpha.1" do
       s = Opscode::Version::SemVer.new("1.0.0-alpha.1")
-      s.major.should eq 1
-      s.minor.should eq 0
-      s.patch.should eq 0
-      s.prerelease.should eq "alpha.1"
-      s.build.should be_nil
+      expect(s.major).to eq 1
+      expect(s.minor).to eq 0
+      expect(s.patch).to eq 0
+      expect(s.prerelease).to eq "alpha.1"
+      expect(s.build).to be_nil
     end
 
     it "works for 1.0.0-alpha.1+build.deadbeef" do
       s = Opscode::Version::SemVer.new("1.0.0-alpha.1+build.deadbeef")
-      s.major.should eq 1
-      s.minor.should eq 0
-      s.patch.should eq 0
-      s.prerelease.should eq "alpha.1"
-      s.build.should eq "build.deadbeef"
+      expect(s.major).to eq 1
+      expect(s.minor).to eq 0
+      expect(s.patch).to eq 0
+      expect(s.prerelease).to eq "alpha.1"
+      expect(s.build).to eq "build.deadbeef"
     end
 
     it "works for 1.0.0+build.deadbeef" do
       s = Opscode::Version::SemVer.new("1.0.0+build.deadbeef")
-      s.major.should eq 1
-      s.minor.should eq 0
-      s.patch.should eq 0
-      s.prerelease.should be_nil
-      s.build.should eq "build.deadbeef"
+      expect(s.major).to eq 1
+      expect(s.minor).to eq 0
+      expect(s.patch).to eq 0
+      expect(s.prerelease).to be_nil
+      expect(s.build).to eq "build.deadbeef"
     end
 
     it "rejects bogus input" do
@@ -71,7 +71,7 @@ describe Opscode::Version::SemVer do
      "1.0.0-alpha.1+build.123",
      "1.0.0+build.456"].each do |v|
       it "reconstructs the initial input of #{v}" do
-        Opscode::Version::SemVer.new(v).to_s.should == v
+        expect(Opscode::Version::SemVer.new(v).to_s).to eq(v)
       end
     end
   end
@@ -105,15 +105,15 @@ describe Opscode::Version::SemVer do
 
     describe "<=>" do
       it "sorts all properly" do
-        semvers.sort.should eq sorted_semvers
+        expect(semvers.sort).to eq sorted_semvers
       end
 
       it "finds the min" do
-        semvers.min.should eq Opscode::Version::SemVer.new("1.0.0-alpha")
+        expect(semvers.min).to eq Opscode::Version::SemVer.new("1.0.0-alpha")
       end
 
       it "finds the max" do
-        semvers.max.should eq Opscode::Version::SemVer.new("1.3.7+build.11.e0f985a")
+        expect(semvers.max).to eq Opscode::Version::SemVer.new("1.3.7+build.11.e0f985a")
       end
     end
 
@@ -160,14 +160,14 @@ describe Opscode::Version::SemVer do
     describe "Filtering by Build Qualifiers" do
       context "releases only" do
         it "works" do
-          semvers.select(&:release?).should eq [Opscode::Version::SemVer.new("1.0.0")]
+          expect(semvers.select(&:release?)).to eq [Opscode::Version::SemVer.new("1.0.0")]
         end
       end
 
       context "prereleases only" do
         it "works" do
           filtered = semvers.select(&:prerelease?)
-          filtered.sort.should eq(["1.0.0-alpha",
+          expect(filtered.sort).to eq(["1.0.0-alpha",
                                    "1.0.0-alpha.1",
                                    "1.0.0-beta.2",
                                    "1.0.0-beta.11",
@@ -179,7 +179,7 @@ describe Opscode::Version::SemVer do
       context "release nightlies only" do
         it "works" do
           filtered = semvers.select(&:release_nightly?)
-          filtered.sort.should eq(["1.0.0+0.3.7",
+          expect(filtered.sort).to eq(["1.0.0+0.3.7",
                                    "1.3.7+build",
                                    "1.3.7+build.2.b8f12d7",
                                    "1.3.7+build.11.e0f985a"
@@ -190,7 +190,7 @@ describe Opscode::Version::SemVer do
       context "prereleases nightlies only" do
         it "works" do
           filtered = semvers.select(&:prerelease_nightly?)
-          filtered.should eq [Opscode::Version::SemVer.new("1.0.0-rc.1+build.1")]
+          expect(filtered).to eq [Opscode::Version::SemVer.new("1.0.0-rc.1+build.1")]
         end
       end
 

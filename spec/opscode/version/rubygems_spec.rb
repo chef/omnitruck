@@ -42,12 +42,12 @@ describe Opscode::Version::Rubygems do
 
       it "works for #{version_string}" do
         v = Opscode::Version::Rubygems.new(version_string)
-        v.major.should eq major
-        v.minor.should eq minor
-        v.patch.should eq patch
-        v.prerelease.should eq prerelease
-        v.build.should be_nil
-        v.iteration.should eq iteration
+        expect(v.major).to eq major
+        expect(v.minor).to eq minor
+        expect(v.patch).to eq patch
+        expect(v.prerelease).to eq prerelease
+        expect(v.build).to be_nil
+        expect(v.iteration).to eq iteration
       end
     end
   end
@@ -58,9 +58,9 @@ describe Opscode::Version::Rubygems do
 
     it "generates a semver for a prerelease" do
       string = rubygems_version.to_semver_string
-      string.should eq "10.1.1-alpha.2"
+      expect(string).to eq "10.1.1-alpha.2"
       semver = Opscode::Version::SemVer.new(string)
-      (semver.prerelease?).should be true
+      expect(semver.prerelease?).to be true
     end
   end
 end
