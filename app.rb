@@ -384,14 +384,16 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, "Cannot find any chef versions for mapped platform #{pv.mapped_name}: #{error_msg}"
     end
 
-    distro_versions_available = build_hash[remapped_platform].keys
+    distro_versions_available = build_hash[remapped_platform].keys.map do |v| 
+      dsl.new_platform_version(remapped_platform, v)
+    end
 
     if (yolo)
       # if we're in yolo mode then ubuntu 13.04 is <= 13.10 so we'll ship 13.04 if we can't find 13.10
-      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
+      distro_versions_available.select! {|v| v <= pv }
     else
       # if we're not in yolo mode then we must match exactly
-      distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) == pv }
+      distro_versions_available.select! {|v| v == pv }
     end
 
     if distro_versions_available.length == 0
@@ -399,7 +401,7 @@ class Omnitruck < Sinatra::Base
     end
 
     # sort so that the first available version is the highest (pick 13.04 before 10.04)
-    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v2) <=> dsl.new_platform_version(remapped_platform, v1) }
+    distro_versions_available.sort! {|v1,v2| v2 <=> v1 }
 
     # walk through all the distro versions until we find a candidate (if someone specifies a very old chef version we will find it on some
     # very old distro if you are in yolo mode)
@@ -407,13 +409,13 @@ class Omnitruck < Sinatra::Base
     pv_selected = nil
 
     distro_versions_available.each do |remapped_platform_version|
-      pv_selected = remapped_platform_version
+      pv_selected = remapped_platform_version.mapped_version
 
-      if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
+      if !pv_selected || !build_hash[remapped_platform][pv_selected] || !build_hash[remapped_platform][pv_selected][machine]
         next
       end
 
-      raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
+      raw_versions_available = build_hash[remapped_platform][pv_selected][machine]
 
       next if !raw_versions_available
 
@@ -437,6 +439,7 @@ class Omnitruck < Sinatra::Base
 
       break if package_info
     end
+
 
     unless package_info
       raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"

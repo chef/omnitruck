@@ -13,6 +13,9 @@
 # NB: this platform name is deprecated, convert to using "redhat" like ohai
 platform "el" do
   major_only true
+  version_remap do |version|
+    version == "7" ? "6" : version
+  end
 end
 
 platform "debian" do
