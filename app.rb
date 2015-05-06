@@ -417,8 +417,7 @@ class Omnitruck < Sinatra::Base
     target = Opscode::Version.find_target_version(
       semvers_available.keys,
       chef_version,
-      prerelease,
-      use_nightlies
+      prerelease || use_nightlies
     )
 
     unless target
