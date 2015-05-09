@@ -240,59 +240,44 @@ module Opscode
     ###########################################################################
 
     # Select the most recent version from +all_versions+ that satisfies
-    # the filtering constraints provided by +filter_version+,
-    # +use_prereleases+, and +use_nightlies+.
+    # the filtering constraints provided by +filter_version+ and +allow_all+.
     #
     # +all_versions+ is an array of +Opscode::Version+ objects.  This is
     # the "world" of versions we will be filtering to produce the final
     # target version.
     #
-    # +use_prereleases+ determines whether or not we want to keep or
-    # discard versions from +all_versions+ that have pre-release
-    # specifiers.
-    #
-    # +use_nightlies+ determines whether or not we want to keep or
-    # discard versions from +all_versions+ that have build specifiers.
+    # +allow_all+ determines if we include the whole world in what we return
+    # or if we only return releases.
     #
     # +filter_version+ is a +Opscode::Version+ (or nil) that provides more
     # fine-grained filtering.
     #
     # If +filter_version+ specifies a release (e.g. 1.0.0), then the
     # target version that is returned will be in the same "release line"
-    # (it will have the same major, minor, and patch versions), subject
-    # to filtering by +use_prereleases+ and +use_nightlies+.
+    # (it will have the same major, minor, and patch versions).
     #
     # If +filter_version+ specifies a pre-release (e.g.,
     # 1.0.0-alpha.1), the returned target version will be in the same
-    # "pre-release line", and will only be subject to further filtering
-    # by +use_nightlies+; that is, +use_prereleases+ is completely
-    # ignored.
+    # "pre-release line", and will also include any nightly builds.
     #
     # If +filter_version+ specifies a nightly build version (whether it
     # is a pre-release or not), no filtering is performed at all, and
-    # +filter_version+ *is* the target version; +use_prereleases+ and
-    # +use_nightlies+ are both ignored.
+    # +filter_version+ *is* the target version
     #
-    # If +filter_version+ is +nil+, then only +use_prereleases+ and
-    # +use_nightlies+ are used for filtering.
+    # If +filter_version+ is +nil+, then only +allow_all+ is used for
+    # filtering.
     #
     # In all cases, the returned +Opscode::Version+ is the most recent
     # one in +all_versions+ that satisfies the given constraints.
-    def self.find_target_version(all_versions, filter_version, use_prereleases, use_nightlies)
+    def self.find_target_version(all_versions, filter_version, allow_all)
       if filter_version && filter_version.build
         # If we've requested a nightly (whether for a pre-release or release),
         # there's no sense doing any other filtering; just return that version
         filter_version
       elsif filter_version && filter_version.prerelease
-        # If we've requested a prerelease, we only need to see if we want
-        # a nightly build or not.  If so, keep only the nightlies for that
-        # prerelease, and then take the most recent.  Otherwise, just
-        # return the specified prerelease version
-        if use_nightlies
-          all_versions.select{|v| v.in_same_prerelease_line?(filter_version)}.max
-        else
-          filter_version
-        end
+        # If we've requested a prerelease, include the latest nightlies on that
+        # prerelease as well.
+        all_versions.select{|v| v.in_same_prerelease_line?(filter_version)}.max
       else
         # If we've gotten this far, we're either just interested in
         # variations on a specific release, or the latest of all versions
@@ -311,15 +296,7 @@ module Opscode
                               true
                             end
 
-          in_release_line && if use_prereleases && use_nightlies
-                               v.prerelease_nightly?
-                             elsif !use_prereleases && use_nightlies
-                               v.release_nightly?
-                             elsif use_prereleases && !use_nightlies
-                               v.prerelease?
-                             elsif !use_prereleases && !use_nightlies
-                               v.release?
-                             end
+          in_release_line && (allow_all || v.release?)
         end.max
       end
     end

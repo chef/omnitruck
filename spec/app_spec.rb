@@ -316,7 +316,7 @@ describe 'Omnitruck' do
             context "pre-releases" do
               let(:prerelease){true}
               let(:nightlies){false}
-              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
             end
 
             context "releases" do
@@ -338,7 +338,7 @@ describe 'Omnitruck' do
             context "pre-releases" do
               let(:prerelease){true}
               let(:nightlies){false}
-              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
             end
 
             context "releases" do
@@ -361,7 +361,7 @@ describe 'Omnitruck' do
               context "filtering for latest pre-release in this line" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -415,7 +415,7 @@ describe 'Omnitruck' do
               context "filtering for latest pre-release in this line" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "filtering for latest release in this line" do
@@ -493,7 +493,7 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("11.8.2.rc.0",  {:iteration => "2", :md5=>"63efd66df27611935ee12bf9cb9912bc", :sha256=>"9eb24c1023f2e512bd8ae8b5cf0d657fb5f40d7dcaa8a29e8b839846d82cf0fe"})
+                should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
               end
 
               context "releases" do
@@ -505,7 +505,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_metadata_as("11.4.0-18-gdf096fa",  {:md5=>"8cb5496e9ff5228f587960375dc0daed", :sha256=>"ff18820f4b4399df51e7b515cd5881c658a4768d4516c63adaed429aa840b713"})
+                should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
               end
             end # without an explicit version
           end
@@ -531,13 +531,13 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.0.rc.1", { :md5 => "a4afeaefeec1862d138335664582d90d", :sha256 => "d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
 
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0", { :md5 => "d951f01022512a72cfe71060c6267931", :sha256 => "b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
 
               context "releases" do
@@ -549,7 +549,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.2-49-g21353f0", { :md5=>"b5a5b48097c49b82d96b4ddc3c852855", :sha256=>"d3edd44115b36569e353bcb0312d5c9c73a011edd6d119561e9bca8b959203f2" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end # without an explicit version
 
@@ -560,13 +560,13 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.0.rc.1", {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
 
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
 
               context "releases" do
@@ -578,7 +578,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.2-49-g21353f0", {:md5=>"b5a5b48097c49b82d96b4ddc3c852855", :sha256=>"d3edd44115b36569e353bcb0312d5c9c73a011edd6d119561e9bca8b959203f2"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
             end # with a version of 'latest'
 
@@ -589,13 +589,13 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0-49-g21353f0", { :md5=>"e236fdb22ebc9d79ff496791043969c4", :sha256=>"b3c77c18e50633d0b55487ccdc1ccb015449a1673677f9f7eb58b9b36041f2cd"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
+                  should_retrieve_latest_as("10.16.0-49-g21353f0", { :md5=>"e236fdb22ebc9d79ff496791043969c4", :sha256=>"b3c77c18e50633d0b55487ccdc1ccb015449a1673677f9f7eb58b9b36041f2cd"})
                 end
 
                 context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -617,7 +617,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1", { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -629,7 +629,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
@@ -645,7 +645,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1", { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  { :md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -657,7 +657,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  { :md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
@@ -897,7 +897,7 @@ describe 'Omnitruck' do
             context "pre-releases" do
               let(:prerelease){true}
               let(:nightlies){false}
-              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
             end
 
             context "releases" do
@@ -919,7 +919,7 @@ describe 'Omnitruck' do
             context "pre-releases" do
               let(:prerelease){true}
               let(:nightlies){false}
-              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
             end
 
             context "releases" do
@@ -942,7 +942,7 @@ describe 'Omnitruck' do
               context "filtering for latest pre-release in this line" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -996,7 +996,7 @@ describe 'Omnitruck' do
               context "filtering for latest pre-release in this line" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "filtering for latest release in this line" do
@@ -1074,7 +1074,7 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("11.8.2.rc.0",  {:iteration => "2", :md5=>"63efd66df27611935ee12bf9cb9912bc", :sha256=>"9eb24c1023f2e512bd8ae8b5cf0d657fb5f40d7dcaa8a29e8b839846d82cf0fe"})
+                should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
               end
 
               context "releases" do
@@ -1086,7 +1086,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_metadata_as("11.4.0-18-gdf096fa",  {:md5=>"8cb5496e9ff5228f587960375dc0daed", :sha256=>"ff18820f4b4399df51e7b515cd5881c658a4768d4516c63adaed429aa840b713"})
+                should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
               end
             end # without an explicit version
           end
@@ -1112,13 +1112,13 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.0.rc.1", { :md5 => "a4afeaefeec1862d138335664582d90d", :sha256 => "d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
 
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0", { :md5 => "d951f01022512a72cfe71060c6267931", :sha256 => "b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
 
               context "releases" do
@@ -1130,7 +1130,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.2-49-g21353f0", { :md5=>"b5a5b48097c49b82d96b4ddc3c852855", :sha256=>"d3edd44115b36569e353bcb0312d5c9c73a011edd6d119561e9bca8b959203f2" })
+                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
               end
             end # without an explicit version
 
@@ -1141,13 +1141,13 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("10.16.0.rc.1", {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
 
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
 
               context "releases" do
@@ -1159,7 +1159,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as("10.16.2-49-g21353f0", {:md5=>"b5a5b48097c49b82d96b4ddc3c852855", :sha256=>"d3edd44115b36569e353bcb0312d5c9c73a011edd6d119561e9bca8b959203f2"})
+                should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
               end
             end # with a version of 'latest'
 
@@ -1170,13 +1170,13 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0-49-g21353f0", { :md5=>"e236fdb22ebc9d79ff496791043969c4", :sha256=>"b3c77c18e50633d0b55487ccdc1ccb015449a1673677f9f7eb58b9b36041f2cd"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
+                  should_retrieve_latest_as("10.16.0-49-g21353f0", { :md5=>"e236fdb22ebc9d79ff496791043969c4", :sha256=>"b3c77c18e50633d0b55487ccdc1ccb015449a1673677f9f7eb58b9b36041f2cd"})
                 end
 
                 context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -1198,7 +1198,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1", { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -1210,7 +1210,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  {:md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
@@ -1226,7 +1226,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1", { :md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  { :md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -1238,7 +1238,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("10.16.0.rc.1",  {:md5=>"a4afeaefeec1862d138335664582d90d", :sha256=>"d1757dfc375c7e4fca9fbd473e85ece37ffff6687f1b2a8cdc4c4c8c7e8705d9"})
+                  should_retrieve_latest_as("10.16.0.rc.1-49-g21353f0",  { :md5=>"d951f01022512a72cfe71060c6267931", :sha256=>"b3b3640a7f769468618027d781cdccab65940f0661cfa577f2c8379bd6473575"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
@@ -1386,7 +1386,7 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "releases" do
@@ -1408,7 +1408,7 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
               end
 
               context "releases" do
@@ -1431,7 +1431,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                  should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
                 end
 
                 context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -1475,7 +1475,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+                  should_retrieve_latest_metadata_as("10.16.0-49-g21353f0",  {:md5=>"7a55604de777203008f9689e23aae585", :sha256=>"147f678b606a5992fac283306026fabdf799dadda458d6383346a95f42b9f9db"})
                 end
 
                 context "filtering for latest release in this line" do
@@ -1518,12 +1518,12 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("11.0.0-rc.1", { :md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062", { :md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
               end
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062", { :md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
               end
 
               context "releases" do
@@ -1535,7 +1535,7 @@ describe 'Omnitruck' do
               context "releases nightlies" do
                 let(:prerelease){false}
                 let(:nightlies){true}
-                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
+                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062", { :md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
               end
             end # without an explicit version
 
@@ -1545,12 +1545,12 @@ describe 'Omnitruck' do
               context "pre-releases" do
                 let(:prerelease){true}
                 let(:nightlies){false}
-                should_retrieve_latest_as("11.0.0-rc.1",  {:md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062", { :md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
               end
               context "pre-release nightlies" do
                 let(:prerelease){true}
                 let(:nightlies){true}
-                should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+                should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062", { :md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
               end
 
               context "releases" do
@@ -1573,13 +1573,13 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("11.0.0-rc.1",  {:md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                  should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
                   let(:prerelease){true}
                   let(:nightlies){true}
-                  should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+                  should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
                 end
 
                 context "filtering for latest release in this line (i.e., this exact thing)" do
@@ -1601,7 +1601,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("11.0.0-rc.1",  {:md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                  should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -1613,7 +1613,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("11.0.0-rc.1",  {:md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                  should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
@@ -1629,7 +1629,7 @@ describe 'Omnitruck' do
                 context "filtering for latest pre-release in this line (i.e., this exact thing)" do
                   let(:prerelease){true}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("11.0.0-beta.2", { :md5=>"db5dcf80210976404e271002d5d7d555", :sha256=>"bb63051ede7f816d1af414aef0d8a31292fdb1d559db38f20ef94fc09decdf66"})
+                  should_retrieve_latest_as("11.0.0-beta.2+build.123",  {:md5=>"d108dfe721e3a684a96a149a5d953751", :sha256=>"c97ea1e9b7e55cc0c4c4251811a41ec963e58f0e9d79145a147181d7b0e60934"})
                 end
 
                 context "filtering for latest pre-release nightly in this line" do
@@ -1641,7 +1641,7 @@ describe 'Omnitruck' do
                 context "filtering for latest release in this line (i.e., the 'prerelease' parameter is meaningless)" do
                   let(:prerelease){false}
                   let(:nightlies){false}
-                  should_retrieve_latest_as("11.0.0-beta.2", { :md5=>"db5dcf80210976404e271002d5d7d555", :sha256=>"bb63051ede7f816d1af414aef0d8a31292fdb1d559db38f20ef94fc09decdf66"})
+                  should_retrieve_latest_as("11.0.0-beta.2+build.123",  {:md5=>"d108dfe721e3a684a96a149a5d953751", :sha256=>"c97ea1e9b7e55cc0c4c4251811a41ec963e58f0e9d79145a147181d7b0e60934"})
                 end
 
                 context "filtering for latest release nightly in this line (i.e., the 'prerelease' parameter is meaningless yet again)" do
