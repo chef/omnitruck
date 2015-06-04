@@ -75,7 +75,13 @@ module Opscode
     # major, minor, patch, and prerelease values.  Build specifiers
     # are not taken into consideration.
     def in_same_prerelease_line?(other)
-      @major == other.major && @minor == other.minor && @patch == other.patch && @prerelease == other.prerelease
+      @major == other.major && @minor == other.minor && @patch == other.patch && prerelease_eql(other)
+    end
+
+    def prerelease_eql(other)
+      my_prerelease = @prerelease.gsub(/-\d*\z/, '') if @prerelease
+      other_prerelease = other.prerelease.gsub(/-\d*\z/, '') if other.prerelease
+      my_prerelease == other_prerelease
     end
 
     def to_s
