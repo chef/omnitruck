@@ -19,128 +19,101 @@
 # limitations under the License.
 #
 
-require 'opscode/version/semver'
-require 'opscode/version/opscode_semver'
-require 'opscode/version/rubygems'
-require 'opscode/version/git_describe'
+require 'mixlib/versioning'
 require 'opscode/version/incomplete'
+require 'forwardable'
 
 module Opscode
   class Version
+    SUPPORTED_FORMATS = Mixlib::Versioning::DEFAULT_FORMATS + [
+      Opscode::Version::Incomplete
+    ]
+    extend Forwardable
 
     include Comparable
 
-    attr_reader :major, :minor, :patch, :prerelease, :build, :iteration
+    delegate [:major,
+              :minor,
+              :patch,
+              :prerelease,
+              :build,
+              :release?,
+              :prerelease?,
+              :input,
+              :to_semver_string
+    ] => :mixlib_version
 
-    def initialize(version)
-      raise Error, "You must override the initializer!"
-    end
+    attr_reader :iteration
 
-    # Is this an official release?
-    def release?
-      @prerelease.nil? && @build.nil?
-    end
+    attr_reader :mixlib_version
 
-    # Is this an official pre-release? (i.e., not a nightly build)
-    def prerelease?
-      @prerelease && @build.nil?
+    def initialize(version, iteration)
+      @mixlib_version = version
+      @iteration = iteration.to_i
     end
 
     # Is this a nightly build of a release?
     def release_nightly?
-      @prerelease.nil? && @build
+      prerelease.nil? && build
     end
 
     # Is this a nightly build of a pre-release?
     def prerelease_nightly?
-      @prerelease && @build
+      prerelease && build
     end
 
     # Is this a nightly build (either of a release or a pre-release)?
     def nightly?
-      !!@build
+      !!build
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
     # major, minor, and patch values.  Prerelease and build specifiers
     # are not taken into consideration.
     def in_same_release_line?(other)
-      @major == other.major &&
+      major == other.major &&
         # minor and patch always match if one or the other is nil (~>-like behavior)
-        ( @minor.nil? || other.minor.nil? || @minor == other.minor ) &&
-        ( @patch.nil? || other.patch.nil? || @patch == other.patch )
+        ( minor.nil? || other.minor.nil? || minor == other.minor ) &&
+        ( patch.nil? || other.patch.nil? || patch == other.patch )
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
     # major, minor, patch, and prerelease values.  Build specifiers
     # are not taken into consideration.
     def in_same_prerelease_line?(other)
-      @major == other.major && @minor == other.minor && @patch == other.patch && @prerelease == other.prerelease
+      major == other.major && minor == other.minor && patch == other.patch && prerelease == other.prerelease
+    end
+
+    def prerelease_eql(other)
+
     end
 
     def to_s
-      raise Error, "You must override #to_s"
-    end
-
-    def to_semver_string
-      s = [@major, @minor, @patch].join(".")
-      s += "-#{@prerelease}" if @prerelease
-      s += "+#{@build}" if @build
-      s
+      if iteration.nil?
+        input
+      else
+        "#{input}-#{iteration}"
+      end
     end
 
     def <=>(other)
 
       # First, perform comparisons based on major, minor, and patch
       # versions.  These are always presnt and always non-nil
-      maj = @major <=> other.major
-      return maj unless maj == 0
-
-      min = @minor <=> other.minor
-      return min unless min == 0
-
-      pat = @patch <=> other.patch
-      return pat unless pat == 0
-
-      # Next compare pre-release specifiers.  A pre-release sorts
-      # before a release (e.g. 1.0.0-alpha.1 comes before 1.0.0), so
-      # we need to take nil into account in our comparison.
-      #
-      # If both have pre-release specifiers, we need to compare both
-      # on the basis of each component of the specifiers.
-      if @prerelease && other.prerelease.nil?
-        return -1
-      elsif @prerelease.nil? && other.prerelease
-        return 1
-      elsif @prerelease && other.prerelease
-        pre = compare_dot_components(@prerelease, other.prerelease)
-        return pre unless pre == 0
-      end
-
-      # Build specifiers are compared like pre-release specifiers,
-      # except that builds sort *after* everything else
-      # (e.g. 1.0.0+build.123 comes after 1.0.0, and
-      # 1.0.0-alpha.1+build.123 comes after 1.0.0-alpha.1)
-      if @build.nil? && other.build
-        return -1
-      elsif @build && other.build.nil?
-        return 1
-      elsif @build && other.build
-        build_ver = compare_dot_components(@build, other.build)
-        return build_ver unless build_ver == 0
-      end
+      cmp = mixlib_version <=> other.mixlib_version
+      return cmp unless cmp == 0
 
       # Some older version formats improperly include a package iteration in
       # the version string. This is different than a build specifier and
       # valid release versions may include an iteration. We'll transparently
       # handle this case and compare iterations if it was parsed by the
       # implementation class.
-      if @iteration.nil? && other.iteration
+      if iteration.nil? && other.iteration
         return -1
-      elsif @iteration && other.iteration.nil?
+      elsif iteration && other.iteration.nil?
         return 1
-      elsif @iteration && other.iteration
-        return @iteration <=> other.iteration
+      elsif iteration && other.iteration
+        return iteration <=> other.iteration
       end
 
       # If we get down here, they're both equal
@@ -148,92 +121,15 @@ module Opscode
     end
 
     def eql?(other)
-      @major == other.major &&
-        @minor == other.minor &&
-        @patch == other.patch &&
-        @prerelease == other.prerelease &&
-        @build == other.build
+      mixlib_version.eql?(other) &&
+        iteration == other.iteration
     end
 
     def hash
-      [@major, @minor, @patch, @prerelease, @build].compact.join(".").hash
+      [major, minor, patch, prerelease, build].compact.join(".").hash
     end
 
     ###########################################################################
-
-    private
-
-    # If a String +n+ can be parsed as an Integer do so; otherwise, do
-    # nothing.
-    #
-    # (+nil+ is a valid input.)
-    def maybe_int(n)
-      Integer(n)
-    rescue
-      n
-    end
-
-    # Compares prerelease and build version component strings
-    # according to semver 2.0.0-rc.1 semantics.
-    #
-    # Returns -1, 0, or 1, just like the spaceship operator (+<=>+),
-    # and is used in the implemntation of +<=>+ for this class.
-    #
-    # Prerelease and build specifiers are dot-separated strings.
-    # Numeric components are sorted numerically; otherwise, sorting is
-    # standard ASCII order.  Numerical components have a lower
-    # precedence than string components.
-    #
-    # See http://www.semver.org for more.
-    #
-    # Both +a_item+ and +b_item+ should be Strings; +nil+ is not a
-    # valid input.
-    def compare_dot_components(a_item, b_item)
-      a_components = a_item.split(".")
-      b_components = b_item.split(".")
-
-      max_length = [a_components.length, b_components.length].max
-
-      (0..(max_length-1)).each do |i|
-        # Convert the ith component into a number if possible
-        a = maybe_int(a_components[i])
-        b = maybe_int(b_components[i])
-
-        # Since the components may be of differing lengths, the
-        # shorter one will yield +nil+ at some point as we iterate.
-        if a.nil? && !b.nil?
-          # a_item was shorter
-          return -1
-        elsif !a.nil? && b.nil?
-          # b_item was shorter
-          return 1
-        end
-
-        # Now we need to compare appropriately based on type.
-        #
-        # Numbers have lower precedence than strings; therefore, if
-        # the components are of differnt types (String vs. Integer),
-        # we just return -1 for the numeric one and we're done.
-        #
-        # If both are the same type (Integer vs. Integer, or String
-        # vs. String), we can just use the native comparison.
-        #
-        if a.is_a?(Integer) && b.is_a?(String)
-          # a_item was "smaller"
-          return -1
-        elsif a.is_a?(String) && b.is_a?(Integer)
-          # b_item was "smaller"
-          return 1
-        else
-          comp = a <=> b
-          return comp unless comp == 0
-        end
-      end # each
-
-      # We've compared all components of both strings; if we've gotten
-      # down here, they're totally the same
-      return 0
-    end
 
     ###########################################################################
     # Class Methods
@@ -298,6 +194,20 @@ module Opscode
 
           in_release_line && (allow_all || v.release?)
         end.max
+      end
+    end
+
+    def self.parse(version_str)
+      # Mixlib::Versioning thinks the iterations at the end of
+      # our semvered omnibus package names are prereleases.
+      # This class will take responsibility of managing the iteration.
+      match = version_str.match /(.*)-(\d*)\z/
+      if match.nil?
+        version = Mixlib::Versioning.parse(version_str, SUPPORTED_FORMATS)
+        Opscode::Version.new(version, nil) if version
+      else
+        version = Mixlib::Versioning.parse(match[1], SUPPORTED_FORMATS)
+        Opscode::Version.new(version, match[2]) if version
       end
     end
   end

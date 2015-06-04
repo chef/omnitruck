@@ -19,9 +19,11 @@
 # limitations under the License.
 #
 
+require 'mixlib/versioning'
+
 module Opscode
   class Version
-    class Incomplete < Version
+    class Incomplete < Mixlib::Versioning::Format
 
       # SUPPORTED FORMATS:
       #
@@ -37,7 +39,7 @@ module Opscode
 
       def initialize(version)
         match = version.match(OPSCODE_INCOMPLETE_REGEX)
-        raise ArgumentError, "'#{version}' is not a valid Opscode Incomplete version string!" unless match
+        raise Mixlib::Versioning::ParseError, "'#{version}' is not a valid Opscode Incomplete version string!" unless match
 
         @input = version
 
