@@ -13,6 +13,7 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'nokogiri'
 gem 'rake'
+gem 'mixlib-versioning', '~> 1.1.0'
 
 group :test do
   gem 'rspec'
