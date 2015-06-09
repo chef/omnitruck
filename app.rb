@@ -34,6 +34,7 @@ class Omnitruck < Sinatra::Base
   config_file './config/config.yml'
 
   class InvalidDownloadPath < StandardError; end
+  class InvalidRequest < StandardError; end
   configure do
     set :raise_errors, false
     set :show_exceptions, false
@@ -61,6 +62,10 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
+  error InvalidRequest do
+    status 400
+    env['sinatra.error']
+  end
 
   # == Params, applies to /download, /download-server,
   # /metadata, and /metadata-server endpoints
@@ -352,6 +357,14 @@ class Omnitruck < Sinatra::Base
     dsl = PlatformDSL.new()
     dsl.from_file("platforms.rb")
     pv = dsl.new_platform_version(platform, platform_version)
+
+    if !platform || !platform_version || !machine
+      raise InvalidRequest, "You must specify all (platform, platform_version, machine). Got #{platform}, #{platform_version}, #{machine}"
+    end
+
+    if !pv
+      raise InvalidDownloadPath, "Could not find specified platform (#{platform},#{platform_version},#{machine})"
+    end
 
     # this maps "linuxmint" onto "ubuntu", "scientific" onto "el", etc
     remapped_platform = pv.mapped_name

@@ -200,7 +200,7 @@ class PlatformDSL
 
   def new_platform_version(platform, version)
     klass = find_platform_version(platform)
-    klass.new(version)
+    klass.new(version) if klass
   end
 
   def from_file(filename)
