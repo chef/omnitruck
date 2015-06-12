@@ -25,7 +25,11 @@ require 'forwardable'
 
 module Opscode
   class Version
-    SUPPORTED_FORMATS = Mixlib::Versioning::DEFAULT_FORMATS + [
+    SUPPORTED_FORMATS = [
+      Mixlib::Versioning::Format::Rubygems,
+      Mixlib::Versioning::Format::GitDescribe,
+      Mixlib::Versioning::Format::OpscodeSemVer,
+      Mixlib::Versioning::Format::SemVer,
       Opscode::Version::Incomplete
     ]
     extend Forwardable
