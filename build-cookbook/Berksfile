@@ -1,0 +1,7 @@
+source "https://supermarket.chef.io"
+
+metadata
+
+cookbook 'delivery-truck', github: 'opscode-cookbooks/delivery-truck'
+cookbook 'delivery-sugar', github: 'chef-cookbooks/delivery-sugar'
+cookbook 'route53', git: 'https://github.com/pburkholder/route53.git', branch: 'pdb/nononokogiri'
