@@ -96,3 +96,6 @@ execute 'install bundler' do
   command '/usr/bin/gem install bundler'
   not_if { File::exists?('/usr/local/bin/bundle') }
 end
+
+# NOKOGIRI!!!!!
+package 'zlib1g-dev'
