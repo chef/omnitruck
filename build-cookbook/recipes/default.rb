@@ -91,3 +91,8 @@ end
 Chef_Delivery::ClientHelper.leave_client_mode_as_delivery
 
 include_recipe 'brightbox-ruby::default'
+
+execute 'install bundler' do
+  command '/usr/bin/gem install bundler'
+  not_if { File::exists?('/usr/local/bin/bundle') }
+end
