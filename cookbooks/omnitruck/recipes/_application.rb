@@ -93,4 +93,6 @@ artifact_deploy 'omnitruck' do
   }
 end
 
-
+cookbook_file '/etc/cron.d/s3_poller-cron' do
+  mode '0755'
+end
