@@ -52,6 +52,8 @@ template "/srv/omnitruck/shared/s3_poller_config.yml" do
   owner 'omnitruck'
   group 'omnitruck'
   mode '0755'
+
+  notifies :usr2, 'runit_service[omnitruck]', :delayed
 end
 
 # Omnitruck webapp configuration
@@ -61,6 +63,8 @@ unicorn_config "/srv/omnitruck/shared/unicorn.rb" do
   owner 'omnitruck'
   group 'omnitruck'
   mode  '0755'
+
+  notifies :usr2, 'runit_service[omnitruck]', :delayed
 end
 
 release = {
@@ -95,4 +99,10 @@ end
 
 cookbook_file '/etc/cron.d/s3_poller-cron' do
   mode '0755'
+end
+
+runit_service 'omnitruck' do
+  default_logger true
+  log_timeout 60
+  action [:enable, :up]
 end
