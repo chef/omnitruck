@@ -67,10 +67,7 @@ unicorn_config "/srv/omnitruck/shared/unicorn.rb" do
   notifies :usr2, 'runit_service[omnitruck]', :delayed
 end
 
-release = {
-  'version' => '2015-06-24_1829',
-  'artifact_location' => 'https://s3.amazonaws.com/omnitruck-artifacts/omnitruck-2015-06-24_1829.tar.gz'
-}
+release = data_bag_item('omnitruck', node['applications']['omnitruck'])
 
 artifact_deploy 'omnitruck' do
   version release['version']
