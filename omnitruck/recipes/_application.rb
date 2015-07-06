@@ -93,6 +93,8 @@ artifact_deploy 'omnitruck' do
       user    "omnitruck"
       group   "omnitruck"
       cwd     release_path
+      retries 3
+      retry_delay 10
     end
   }
 end
