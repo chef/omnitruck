@@ -105,6 +105,19 @@ end
 
 runit_service 'omnitruck' do
   default_logger true
-  log_timeout 60
-  action [:enable, :up]
+  log_timeout 3600
+end
+
+ruby_block 'wait for service' do
+  block do
+    [1, 2, 4].take_while do |s|
+      sleep(s)
+      !::File.exists?('/etc/sv/omnitruck/supervise/ok')
+    end
+
+    raise "Timed out waiting for service" unless ::File.exists?('/etc/sv/omnitruck/supervise/ok')
+  end
+  not_if do
+    ::File.exists?('/etc/sv/omnitruck/supervise/ok')
+  end
 end
