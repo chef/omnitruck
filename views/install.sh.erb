@@ -236,6 +236,7 @@ checksum_mismatch() {
 
 unable_to_retrieve_package() {
   echo "Unable to retrieve a valid package!"
+
   report_bug
   echo "Metadata URL: $metadata_url"
   if test "x$download_url" != "x"; then
@@ -433,7 +434,7 @@ do_download() {
     do_python $1 $2 && return 0
   fi
 
-  unable_to_retrieve_package
+  return 1
 }
 
 # install_file TYPE FILENAME
@@ -520,7 +521,7 @@ if test "x$platform" = "xsolaris2"; then
   fi
 fi
 
-do_download "$metadata_url"  "$metadata_filename"
+do_download "$metadata_url"  "$metadata_filename" || unable_to_retrieve_package
 
 cat "$metadata_filename"
 
@@ -577,7 +578,7 @@ fi
 
 # download if no local version of the file available
 if test "x$cached_file_available" != "xtrue"; then
-  do_download "$download_url"  "$download_filename"
+  do_download "$download_url"  "$download_filename" || unable_to_retrieve_package
   do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
 fi
 
