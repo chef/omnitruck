@@ -490,7 +490,6 @@ install_file() {
 
 echo "Downloading Chef $version for ${platform}..."
 
-
 metadata_filename="$tmp_dir/metadata.txt"
 
 case "$project" in
@@ -505,9 +504,6 @@ case "$project" in
     ;;
   "chefdk")
     metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "container")
-    metadata_url="<%= locals[:download_url] %>-container?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
     ;;
     *)
 esac
