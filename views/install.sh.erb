@@ -343,7 +343,7 @@ do_fetch() {
 # do_curl URL FILENAME
 do_perl() {
   echo "trying perl..."
-  perl -e 'use LWP::Simple qw($ua); $ua->timeout($ARGV[1]); print get($ARGV[0]);' "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
+  perl -e 'use LWP::Simple qw($ua get); $ua->timeout($ARGV[1]); print get($ARGV[0]);' "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
   grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
