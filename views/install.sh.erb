@@ -549,7 +549,18 @@ if test "x$platform" = "xsolaris2"; then
   fi
 fi
 
-do_download "$metadata_url"  "$metadata_filename" || unable_to_retrieve_package
+# get metadata, use cached metadata if metadata download failed.
+if do_download "$metadata_url" "${metadata_filename}.new"; then
+  mv "${metadata_filename}.new" "$metadata_filename"
+else
+  rm -f "${metadata_filename}.new"
+
+  if test -f "$metadata_filename"; then
+    echo "Failed to get most up to date metadata, using cached metadata."
+  else
+    unable_to_retrieve_package
+  fi
+fi
 
 cat "$metadata_filename"
 
