@@ -492,8 +492,36 @@ install_file() {
 
 echo "Downloading Chef $version for ${platform}..."
 
+# Create metadata filename
+metadata_filename="metadata"
 
-metadata_filename="$tmp_dir/metadata.txt"
+if test "x$project" != "xchef"; then
+  metadata_filename="${metadata_filename}-$project"
+fi
+
+if test "x$version" = "x"; then
+  metadata_filename="${metadata_filename}-latest"
+else
+  metadata_filename="${metadata_filename}-${version}"
+fi
+
+metadata_filename="${metadata_filename}-${platform}-${platform_version}-${machine}"
+
+if test "x$prerelease" = "xtrue"; then
+  metadata_filename="${metadata_filename}-preleases"
+fi
+if test "x$nightlies" = "xtrue"; then
+  metadata_filename="${metadata_filename}-nightlies"
+fi
+
+metadata_filename="${metadata_filename}.txt"
+
+# Prepend path to metadata filename
+if test "x$cmdline_dl_dir" != "x"; then
+  metadata_filename="$cmdline_dl_dir/$metadata_filename"
+else
+  metadata_filename="$tmp_dir/$metadata_filename"
+fi
 
 case "$project" in
   "chef")
