@@ -26,6 +26,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+download_timeout=10
 
 prerelease="false"
 
@@ -290,7 +291,7 @@ capture_tmp_stderr() {
 # do_wget URL FILENAME
 do_wget() {
   echo "trying wget..."
-  wget -O "$2" "$1" 2>$tmp_dir/stderr
+  wget -t 1 -T $download_timeout -O "$2" "$1" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
   grep "ERROR 404" $tmp_dir/stderr 2>&1 >/dev/null
@@ -311,7 +312,7 @@ do_wget() {
 # do_curl URL FILENAME
 do_curl() {
   echo "trying curl..."
-  curl -sL -D $tmp_dir/stderr "$1" > "$2"
+  curl -sL --connect-timeout $download_timeout -D $tmp_dir/stderr "$1" > "$2"
   rc=$?
   # check for 404
   grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
@@ -332,7 +333,7 @@ do_curl() {
 # do_fetch URL FILENAME
 do_fetch() {
   echo "trying fetch..."
-  fetch -o "$2" "$1" 2>$tmp_dir/stderr
+  fetch -T $download_timeout -o "$2" "$1" 2>$tmp_dir/stderr
   # check for bad return status
   test $? -ne 0 && return 1
   return 0
@@ -341,7 +342,7 @@ do_fetch() {
 # do_curl URL FILENAME
 do_perl() {
   echo "trying perl..."
-  perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2" 2>$tmp_dir/stderr
+  perl -e 'use LWP::Simple qw($ua); $ua->timeout($ARGV[1]); print get($ARGV[0]);' "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
   grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
@@ -362,7 +363,7 @@ do_perl() {
 # do_curl URL FILENAME
 do_python() {
   echo "trying python..."
-  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>$tmp_dir/stderr
+  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1], timeout=sys.argv[2]).read())" "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
   rc=$?
   # check for 404
   grep "HTTP Error 404" $tmp_dir/stderr 2>&1 >/dev/null
