@@ -58,7 +58,7 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts pnv:f:d:P: opt
+while getopts pnv:f:d:P:t: opt
 do
   case "$opt" in
 
@@ -68,9 +68,10 @@ do
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
+    t)  download_timeout="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-p] [-v version] [-f filename | -d download_dir]"
+      "usage: $0 [-p] [-v version] [-t connection_timeout] [-f filename | -d download_dir]"
       exit 1;;
   esac
 done
