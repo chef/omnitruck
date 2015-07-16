@@ -1,0 +1,246 @@
+new-module -name ChefOmniTruck -scriptblock {
+function New-Uri {
+  param ($baseuri, $newuri)
+  
+  new-object System.Uri $baseuri, $newuri
+}
+
+function Get-WebContent {
+  param ($uri, $filepath)
+  $proxy = New-Object -TypeName System.Net.WebProxy
+  $wc = new-object System.Net.WebClient
+  $proxy.Address = $env:http_proxy
+  $wc.Proxy = $proxy
+  
+  try { 
+    if ([string]::IsNullOrEmpty($filepath)) {
+      $wc.downloadstring($uri)
+    }
+    else {
+      $wc.downloadfile($uri, $filepath)
+    }
+  }
+  catch {
+    $exception = $_.Exception
+    Write-Host "There was an error: "
+    do {
+      Write-Host "`t$($exception.message)"
+      $exception = $exception.innerexception
+    } while ($exception)
+    throw "Failed to download from $uri."
+  }
+} 
+
+function Get-ChefProjectMetadata {
+  <#
+    .SYNOPSIS
+    Get metadata for Chef Client, Chef Development Kit, or AngryChef
+    .DESCRIPTION
+    Get metadata for Chef Client, Chef Development Kit, or AngryChef
+    .EXAMPLE
+    iex (new-object net.webclient).downloadstring('https:/www.chef.io/chef/install.ps1'); Get-ChefProjectMetadata
+    
+    Gets the download url, MD5 checksum, and SHA256 checksum for the specified project and version.
+    .EXAMPLE
+    iex (irm 'https://www.chef.io/chef/install.ps1'); Install-ChefProject -project ChefDK -p
+    
+    Gets the download url, MD5 checksum, and SHA256 checksum for the specified project and version.
+  #>
+  [cmdletbinding()]
+  param (
+    # Base url to retrieve metadata from.
+    [uri]$base_server_uri = '<%= locals[:download_url] %>', 
+    # Version of the application to install
+    # This parameter is optional, if not supplied it will provide the latest version,
+    # and if an iteration number is not specified, it will grab the latest available iteration.
+    # Partial version numbers are also acceptable (using v=11 
+    # will grab the latest 11.x client which matches the other flags).
+    [string]
+    $version,
+    # Project to install
+    # chef - Chef Client
+    # chefdk - Chef Development Kit
+    # angrychef - AngryChef
+    # server and container are not valid windows targets
+    [validateset('chef', 'chefdk', 'angrychef')]
+    [string]
+    $project = 'chef',
+    [switch]
+    $prerelease, 
+    [switch]
+    $nightlies 
+  )
+  
+  # PowerShell is only on Windows ATM
+  $platform = 'windows'
+  Write-Verbose "Platform: $platform"
+  
+  # TODO: No Win10 build endpoint yet
+  switch -regex ((get-wmiobject win32_operatingsystem).version) {
+    '10\.0\.\d+' {$platform_version = '2012r2'}
+    '6\.3\.\d+'  {$platform_version = '2012r2'}
+    '6\.2\.\d+'  {$platform_version = '2012'}
+    '6\.1\.\d+'  {$platform_version = '2008r2'}
+    '6\.0\.\d+'  {$platform_version = '2008'}
+  }
+  Write-Verbose "Platform Version: $platform_version"
+  
+  # TODO: When we ship a 64 bit ruby for Windows.
+  $machine = 'x86_64'
+  Write-Verbose "Machine: $machine"
+  
+  Write-Verbose "Project: $project"
+  switch ($project) {
+    'chef'      {$metadata_base_url = "metadata"}
+    'angrychef' {$metadata_base_url = "metadata-angrychef"}
+    'server'    {$metadata_base_url = "metadata-server"} 
+    'chefdk'    {$metadata_base_url = "metadata-chefdk"}
+  }
+  $metadata_array = ("?v=$($version)", 
+    "prerelease=$($prerelease.tostring().tolower())",
+    "nightlies=$($nightlies.tostring().tolower())",
+    "p=$platform",
+    "pv=$platform_version",
+    "m=$machine")
+  $metadata_base_url += [string]::join('&', $metadata_array)
+  $metadata_url = new-uri $base_server_uri $metadata_base_url
+  
+  
+  Write-Verbose "Downloading $project details from $metadata_url"
+  $package_metadata = (Get-WebContent $metadata_url).trim() -split '\n' | 
+    foreach { $hash = @{} } {$key, $value = $_ -split '\s+'; $hash.Add($key, $value)} {$hash}
+  
+  Write-Verbose "Project details: "
+  foreach ($key in $package_metadata.keys) {
+    Write-Verbose "`t$key = $($package_metadata[$key])"
+  }
+  $package_metadata
+}
+
+function Test-ChefProjectPackage {
+  [cmdletbinding()]
+  param ($Path, $Algorithm = 'SHA256', $Hash)
+  
+  if (-not (get-command get-filehash))   {
+    function disposable($o){($o -is [IDisposable]) -and (($o | get-member | foreach-object {$_.name}) -contains 'Dispose')}
+    function use($obj, [scriptblock]$sb){try {& $sb} catch [exception]{throw $_} finally {if (disposable $obj) {$obj.Dispose()}} }
+    function Get-FileHash ($Path, $Algorithm) {
+      $Path = (resolve-path $path).providerpath
+      $hash = @{Algorithm = $Algorithm; Path = $Path}
+      if ($Algorithm -like 'MD5') {
+        use ($c = New-Object -TypeName Security.Cryptography.MD5CryptoServiceProvider) {
+          use ($in = (gi $path).OpenRead()) {
+            $hash.Hash = ([BitConverter]::ToString($c.ComputeHash($in))).Replace("-", "").ToUpper()
+          }
+        }
+      }
+      elseif ($Algorithm -like 'SHA256') {
+        use ($c = New-Object -TypeName Security.Cryptography.SHA256CryptoServiceProvider) {
+          use ($in = (gi $path).OpenRead()) {
+            $hash.Hash = ([BitConverter]::ToString($c.ComputeHash($in))).Replace("-", "").ToUpper()
+          }
+        }
+      }
+      new-object PSObject -Property $hash
+    }
+  } 
+  Write-Verbose "Testing the $Algorithm hash for $path."
+  $ActualHash = (Get-FileHash -Algorithm $Algorithm -Path $Path).Hash.ToLower()
+  Write-Verbose "`tDesired Hash - '$hash'"
+  Write-Verbose "`tActual Hash  - '$ActualHash'"
+  $Valid = $ActualHash -eq $Hash
+  if (-not $Valid) {
+    Write-Error "Failed to validate the downloaded installer.  The expected $Algorithm hash was '$Hash' and the actual hash was '$ActualHash' for $path"
+  }
+  return $Valid
+}
+
+function Install-ChefProject {
+  <#
+    .SYNOPSIS
+    Install Chef Client, Chef Development Kit, or AngryChef
+    .DESCRIPTION
+    Install Chef Client, Chef Development Kit, or AngryChef
+    .EXAMPLE
+    iex (new-object net.webclient).downloadstring('https:/www.chef.io/chef/install.ps1'); Install-ChefProject
+    
+    Installs the latest version of Chef Client.
+    .EXAMPLE
+    iex (irm 'https://www.chef.io/chef/install.ps1'); Install-ChefProject -project ChefDK -p
+    
+    Installs the latest pre-release build of the Chef Development Kit
+  #>
+  [cmdletbinding(SupportsShouldProcess=$true)]
+  param (
+    # Version of the application to install
+    # This parameter is optional, if not supplied it will provide the latest version,
+    # and if an iteration number is not specified, it will grab the latest available iteration.
+    # Partial version numbers are also acceptable (using v=11 
+    # will grab the latest 11.x client which matches the other flags).
+    [string]
+    $version,
+    # Project to install
+    # chef - Chef Client
+    # chefdk - Chef Development Kit
+    # angrychef - AngryChef
+    # server and container are not valid windows targets
+    [validateset('chef', 'chefdk', 'angrychef')]
+    [string]
+    $project = 'chef',
+    # Full path for the downloaded installer.
+    [string]
+    $filename,
+    # Full path to the location to download the installer
+    [string]
+    $download_directory = $env:temp,
+    [switch]
+    $prerelease, 
+    [switch]
+    $nightlies
+  )
+  
+  $package_metadata = Get-ChefProjectMetadata -project $project -version $version -prerelease:$prerelease -nightlies:$nightlies
+  
+  if (-not [string]::IsNullOrEmpty($filename)) {
+    $download_directory = split-path $filename
+    $filename = split-path $filename -leaf
+    if ([string]::IsNullOrEmpty($download_directory)) {
+      $download_directory = $pwd
+    }
+  }
+  else {
+    $filename = ($package_metadata.url -split '/')[-1]
+  }
+  Write-Verbose "Download directory: $download_directory"
+  Write-Verbose "Filename: $filename"
+  
+  if (-not (test-path $download_directory)) {
+    mkdir $download_directory
+  }
+  $download_directory = (resolve-path $download_directory).providerpath
+  $download_destination = join-path $download_directory $filename
+  
+  if ((test-path $download_destination) -and 
+    (Test-ChefProjectPackage -Path $download_destination -Algorithm 'SHA256' -Hash $package_metadata.sha256 -ea SilentlyContinue)){
+    Write-Verbose "Found existing valid installer at $download_destination."
+  }
+  else {
+    if ($pscmdlet.ShouldProcess("$($package_metadata.url)", "Download $project")) {
+      Write-Verbose "Downloading $project from $($package_metadata.url) to $download_destination."
+      Get-WebContent $package_metadata.url -filepath $download_destination
+    }
+  }
+  
+  if ($pscmdlet.ShouldProcess("$download_destination", "Installing")){
+    if (Test-ChefProjectPackage -Path $download_destination -Algorithm 'SHA256' -Hash $package_metadata.sha256) {
+      Write-Host "Installing $project from $download_destination"
+      msiexec /qn /i $download_destination
+    }
+    else {
+      throw "Failed to validate the downloaded installer for $project."
+    }
+  }
+}
+set-alias install -value Install-ChefProject
+export-modulemember -function 'Install-ChefProject','Get-ChefProjectMetadata' -alias 'install'
+}
