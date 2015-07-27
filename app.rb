@@ -55,6 +55,16 @@ class Omnitruck < Sinatra::Base
     }
   end
 
+  get '/install.ps1' do
+    content_type :txt
+    erb :'install.ps1', {
+      :layout => :'install.ps1',
+      :locals => {
+        :download_url => url("#{settings.virtual_path}/metadata")
+      }
+    }
+  end
+  
   error InvalidDownloadPath do
     status 404
     env['sinatra.error']
