@@ -173,14 +173,10 @@ elif test "x$os" = "xAIX"; then
   machine="powerpc"
 elif test -f "/etc/os-release"; then
   . /etc/os-release
-  if test "x$ID_LIKE" != "x"; then
-    case $ID_LIKE in
-      "cisco-wrlinux")
-        platform="cisco-wrlinux"
-        # 3.4.43-WR5.0.1.13_standard  -->  5
-        platform_version=`uname -r | sed 's/.*-WR\([0-9]\+\).*/\1/'`
-        ;;
-    esac
+  if test "x$ID_LIKE" = "xwrlinux" || test "x$ID_LIKE" = "xcisco-wrlinux"; then
+    platform="wrlinux"
+    # 3.4.43-WR5.0.1.13_standard  -->  5
+    platform_version=`uname -r | sed 's/.*-WR\([0-9]\+\).*/\1/'`
   fi
 fi
 
@@ -452,7 +448,7 @@ install_file() {
   echo "Installing Chef $version"
   case "$1" in
     "rpm")
-      if test "x$platform" = "xcisco-wrlinux"; then
+      if test "x$platform" = "xwrlinux"; then
         echo "installing with yum..."
         yum install -yv "$2"
       else
