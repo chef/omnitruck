@@ -104,6 +104,44 @@ describe 'Omnitruck' do
       should_retrieve_latest_metadata_as(expected_version, options)
     end
 
+    def self.should_fail_with(expected_status_code)
+      it "should have status code #{expected_status_code}" do
+        get(endpoint, params)
+        expect(last_response.status).to eq(expected_status_code)
+      end
+    end
+
+    shared_examples "an omnibus package endpoint" do
+      describe "errors" do
+        let(:platform){"foo"}
+        let(:platform_version){"bar"}
+        let(:architecture){"baz"}
+
+        context "invalid request" do
+          context "platform not specified" do
+            let(:platform) { nil }
+            should_fail_with(400)
+          end
+
+          context "platform version not specified" do
+            let(:platform_version) { nil }
+            should_fail_with(400)
+          end
+
+          context "architecture not specified" do
+            let(:architecture) { nil }
+            should_fail_with(400)
+          end
+        end
+
+        context "not found" do
+          context "when (platform, platform_version, architecture) does not exist" do
+            should_fail_with(404)
+          end
+        end
+      end
+    end
+
     # Helper lets to make parameter declaration and handling easier
     let(:platform){ nil }
     let(:alt_platform){ nil }
@@ -134,6 +172,8 @@ describe 'Omnitruck' do
       let(:endpoint){"/download"}
       let(:metadata_endpoint){"/metadata"}
       let(:project){ "chef" }
+
+      it_behaves_like "an omnibus package endpoint"
 
       describe "mac_os_x" do
         let(:platform){"mac_os_x"}
@@ -764,6 +804,8 @@ describe 'Omnitruck' do
       let(:metadata_endpoint){"/metadata-angrychef"}
       let(:project){ "angrychef" }
 
+      it_behaves_like "an omnibus package endpoint"
+
       describe "sles" do
         let(:platform){"sles"}
         let(:alt_platform){"el"}
@@ -1325,6 +1367,8 @@ describe 'Omnitruck' do
       let(:metadata_endpoint) {"metadata-chefdk"}
       let(:project){ "chefdk" }
 
+      it_behaves_like "an omnibus package endpoint"
+
       describe "Mac OSX" do
         let(:platform){"mac_os_x"}
         let(:package_type){"dmg"}
@@ -1367,6 +1411,8 @@ describe 'Omnitruck' do
       let(:endpoint) {"/download-container"}
       let(:metadata_endpoint) {"metadata-container"}
       let(:project) {"chef-container"}
+
+      it_behaves_like "an omnibus package endpoint"
 
       describe "Ubuntu" do
         let(:platform) {"ubuntu"}
@@ -1501,6 +1547,8 @@ describe 'Omnitruck' do
       let(:endpoint){"/download-server"}
       let(:metadata_endpoint) {"metadata-server"}
       let(:project){ "chef-server" }
+
+      it_behaves_like "an omnibus package endpoint"
 
       describe "Ubuntu" do
         let(:platform){"ubuntu"}
