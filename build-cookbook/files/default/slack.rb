@@ -14,7 +14,7 @@ module BuildCookbook
       @webhook_url = options[:webhook_url]
       @username = options[:username] || 'delivery'
       @channels = options[:channels] || '#delivery'
-      @icon_emoj = options[:icon_emoj] || ":chef:"
+      @icon_emoj = options[:icon_emoj] || ":delivery:"
     end
 
     def report
