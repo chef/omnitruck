@@ -68,18 +68,18 @@ aws_key_pair node['delivery']['change']['project']  do
   allow_overwrite false
 end
 
-['current', 'stable'].each do |rel|
+['current', 'stable'].each do |channel|
 
   domain_name = 'chef.io'
-  fqdn = "#{rel}.#{instance_name}.#{domain_name}"
-  origin_fqdn = "#{rel}.#{instance_name}-origin.#{domain_name}"
+  fqdn = "#{channel}.#{instance_name}.#{domain_name}"
+  origin_fqdn = "#{channel}.#{instance_name}-origin.#{domain_name}"
 
   subnets = []
   instances = []
 
   machine_batch do
     1.upto(3) do |i|
-      machine "#{rel}-#{instance_name}-#{i}" do
+      machine "#{channel}-#{instance_name}-#{i}" do
         action :setup
         chef_environment delivery_environment
         machine_options CIAInfra.machine_options(node, 'us-west-2', i)
@@ -89,11 +89,11 @@ end
       end
 
       subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
-      instances << "#{rel}-#{instance_name}-#{i}"
+      instances << "#{channel}-#{instance_name}-#{i}"
     end
   end
 
-  load_balancer "#{rel}-#{instance_name}-elb" do
+  load_balancer "#{channel}-#{instance_name}-elb" do
     load_balancer_options \
       listeners: [{
         port: 80,
@@ -118,7 +118,7 @@ end
 
   route53_record origin_fqdn do
     name "#{origin_fqdn}."
-    value lazy { client.load_balancers["#{rel}-#{instance_name}-elb"].dns_name }
+    value lazy { client.load_balancers["#{channel}-#{instance_name}-elb"].dns_name }
     aws_access_key_id aws_creds['access_key_id']
     aws_secret_access_key aws_creds['secret_access_key']
     type 'CNAME'

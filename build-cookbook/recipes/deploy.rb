@@ -43,14 +43,14 @@ file ssh_public_key_path do
   mode '0644'
 end
 
-['current', 'stable'].each do |rel|
+['current', 'stable'].each do |channel|
 
   domain_name = 'chef.io'
-  fqdn = "#{rel}.#{instance_name}.#{domain_name}"
+  fqdn = "#{channel}.#{instance_name}.#{domain_name}"
 
   machine_batch do
     1.upto(3) do |i|
-      machine "#{rel}-#{instance_name}-#{i}" do
+      machine "#{channel}-#{instance_name}-#{i}" do
         action :converge
         chef_environment delivery_environment
         machine_options CIAInfra.machine_options(node, 'us-west-2')
