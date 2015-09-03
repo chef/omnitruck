@@ -83,7 +83,6 @@ end
         action :setup
         chef_environment delivery_environment
         machine_options CIAInfra.machine_options(node, 'us-west-2', i)
-        run_list ['recipe[cia_infra::base]', 'recipe[omnitruck::default]']
         files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
         converge false
       end
