@@ -4,19 +4,22 @@ include_recipe 'delivery-truck::provision'
 
 Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
 
-hipchat_creds = encrypted_data_bag_item_for_environment('cia-creds','hipchat')
-aws_creds = encrypted_data_bag_item_for_environment('cia-creds','chef-aws')
+aws_creds = encrypted_data_bag_item_for_environment('cia-creds','chef-secure')
+slack_creds = encrypted_data_bag_item_for_environment('cia-creds','slack')
+fastly_creds = encrypted_data_bag_item_for_environment('cia-creds','fastly')
 
-if node['delivery']['change']['stage'] == 'acceptance'
-  hipchat_msg 'Notify Hipchat' do
-    room hipchat_creds['room']
-    token hipchat_creds['token']
-    nickname 'Delivery'
-    message "<strong>[#{node['delivery']['change']['project']}] (#{node['delivery']['change']['stage']}:#{node['delivery']['change']['phase']})</strong> Beginning Provisioning"
-    color 'green'
-    notify false
-    sensitive true
-  end
+if ['union', 'rehearsal', 'delivered'].include?(node['delivery']['change']['stage'])
+  slack_channels = slack_creds['channels'].push('#operations')
+else
+  slack_channels = slack_creds['channels']
+end
+
+chef_slack_notify 'Notify Slack' do
+  channels slack_channels
+  webhook_url slack_creds['webhook_url']
+  username slack_creds['username']
+  message "*[#{node['delivery']['change']['project']}] (#{node['delivery']['change']['stage']}:#{node['delivery']['change']['phase']})* Provisioning Begun"
+  sensitive true
 end
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
@@ -36,12 +39,11 @@ with_chef_server Chef::Config[:chef_server_url],
   ssl_verify_mode: :verify_none,
   verify_api_cert: false
 
+
 if node['delivery']['change']['stage'] == 'delivered'
-  bucket_name = node['delivery']['change']['project'].gsub(/_/, '-')
-  instance_name = bucket_name
+  instance_name = node['delivery']['change']['project'].gsub(/_/, '-')
 else
-  bucket_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}"
-  instance_name = bucket_name
+  instance_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}"
 end
 
 directory File.join(node['delivery']['workspace']['cache'], '.ssh')
@@ -66,47 +68,161 @@ aws_key_pair node['delivery']['change']['project']  do
   allow_overwrite false
 end
 
-machine instance_name do
-  action :setup
-  chef_environment delivery_environment
-  machine_options ssh_username: 'ubuntu',
-    location: 'us-west-2a',
-    convergence_options: {ssl_verify_mode: :verify_none},
-    use_private_ip_for_ssh: true,
-    bootstrap_options: {
-      image_id: 'ami-b9471c89',
-      instance_type: 't2.micro',
-      subnet_id: 'subnet-d7059db2',
-      security_group_ids: ['sg-96274af3'],
-      associate_public_ip_address: true,
-      key_name: node['delivery']['change']['project']
-    }
-  run_list ['recipe[an_project::default]']
-  converge false
-end
+['current', 'stable'].each do |rel|
 
-load_balancer "#{instance_name}-elb" do
-  load_balancer_options \
-    listeners: [{
-      port: 80,
-      protocol: :http,
-      instance_port: 80,
-      instance_protocol: :http
-    }],
-    subnets: ['subnet-d7059db2'],
-    security_groups: ['sg-96274af3'],
-    scheme: 'internet-facing'
-  machines [instance_name]
-end
+  domain_name = 'chef.io'
+  fqdn = "#{rel}.#{instance_name}.#{domain_name}"
+  origin_fqdn = "#{rel}.#{instance_name}-origin.#{domain_name}"
 
-client = AWS::ELB.new(region: 'us-west-2')
+  subnets = []
+  instances = []
 
-route53_record "#{instance_name}.chefdemo.net" do
-  name "#{instance_name}.chefdemo.net."
-  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
-  aws_access_key_id aws_creds['access_key_id']
-  aws_secret_access_key aws_creds['secret_access_key']
-  type 'CNAME'
-  zone_id 'Z20GXCA1KGHB6A'
-  sensitive true
+  machine_batch do
+    1.upto(3) do |i|
+      machine "#{rel}-#{instance_name}-#{i}" do
+        action :setup
+        chef_environment delivery_environment
+        machine_options CIAInfra.machine_options(node, 'us-west-2', i)
+        run_list ['recipe[cia_infra::base]', 'recipe[omnitruck::default]']
+        files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+        converge false
+      end
+
+      subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
+      instances << "#{rel}-#{instance_name}-#{i}"
+    end
+  end
+
+  load_balancer "#{rel}-#{instance_name}-elb" do
+    load_balancer_options \
+      listeners: [{
+        port: 80,
+        protocol: :http,
+        instance_port: 80,
+        instance_protocol: :http
+      },
+      {
+        port: 443,
+        protocol: :https,
+        instance_port: 80,
+        instance_protocol: :http,
+        server_certificate: CIAInfra.cert_arn
+      }],
+      subnets: subnets,
+      security_groups: CIAInfra.security_groups(node, 'us-west-2'),
+      scheme: 'internet-facing'
+    machines instances
+  end
+
+  client = AWS::ELB.new(region: 'us-west-2')
+
+  route53_record origin_fqdn do
+    name "#{origin_fqdn}."
+    value lazy { client.load_balancers["#{rel}-#{instance_name}-elb"].dns_name }
+    aws_access_key_id aws_creds['access_key_id']
+    aws_secret_access_key aws_creds['secret_access_key']
+    type 'CNAME'
+    zone_id aws_creds['route53'][domain_name]
+    sensitive true
+  end
+
+  ### Fastly Setup
+  fastly_service = fastly_service fqdn do
+    api_key fastly_creds['api_key']
+    sensitive true
+  end
+
+  fastly_domain fqdn do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_backend origin_fqdn do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    address origin_fqdn
+    port 80
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_request_setting 'force_ssl' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    force_ssl true
+    default_host origin_fqdn
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_cache_setting 'ttl' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    ttl 600 # 10 mins
+    stale_ttl 21600 # 6 hrs
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_s3_logging 's3_logging' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    gzip_level 9
+    access_key fastly_creds['logging']['s3']['access_key']
+    secret_key fastly_creds['logging']['s3']['secret_key']
+    bucket_name fastly_creds['logging']['s3']['bucket_name']
+    path "/#{fqdn}"
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  embargo = fastly_condition 'embargo' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    type 'request'
+    statement 'geoip.country_code == "CU" || geoip.country_code == "SD" || geoip.country_code == "SY" || geoip.country_code == "KP" || geoip.country_code == "IR"'
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_response 'embargo' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    request_condition embargo.name
+    status 404
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  app_status = fastly_condition 'app_status' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    type 'cache'
+    statement 'req.url ~ "^/status"'
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  fastly_cache_setting 'app_status' do
+    api_key fastly_creds['api_key']
+    service fastly_service.name
+    ttl 0
+    stale_ttl 0
+    cache_action 'pass'
+    cache_condition app_status.name
+    sensitive true
+    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+  end
+
+  route53_record fqdn do
+    name "#{fqdn}."
+    value 'g.global-ssl.fastly.net'
+    aws_access_key_id aws_creds['access_key_id']
+    aws_secret_access_key aws_creds['secret_access_key']
+    type 'CNAME'
+    zone_id aws_creds['route53'][domain_name]
+    sensitive true
+  end
 end

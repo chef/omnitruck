@@ -5,8 +5,6 @@
       "path": ".delivery/build-cookbook"
   },
   "skip_phases": [
-    "provision",
-    "deploy",
     "smoke",
     "functional",
     "quality"

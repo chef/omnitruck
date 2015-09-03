@@ -14,7 +14,7 @@ execute 'syntax' do
   command "find . -name \\*.rb -exec ruby -c {} \\;"
   cwd node['delivery_builder']['repo']
   environment({
-    "PATH" => '/opt/chef/embedded/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
+    "PATH" => '/opt/chefdk/embedded/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
   })
   user node['delivery_builder']['build_user']
 end
