@@ -8,5 +8,10 @@
     "smoke",
     "functional",
     "quality"
-  ]
+  ],
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true
+    }
+  }
 }
