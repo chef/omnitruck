@@ -58,7 +58,7 @@ end
 
 # Omnitruck webapp configuration
 unicorn_config "/srv/omnitruck/shared/unicorn.rb" do
-  listen 4880 => { :backlog => 1024, :tcp_nodelay => true }
+  listen '/tmp/.omnitruck.sock.0' => { :backlog => 1024, :tcp_nodelay => true }
   worker_processes 8
   owner 'omnitruck'
   group 'omnitruck'

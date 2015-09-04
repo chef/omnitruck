@@ -6,4 +6,5 @@
 
 include_recipe 'omnitruck::_users'
 include_recipe 'omnitruck::_ruby'
+include_recipe 'omnitruck::_nginx'
 include_recipe 'omnitruck::_application'
