@@ -38,6 +38,8 @@ chef_gem 'aws-sdk' do
   compile_time true
 end
 
+include_recipe 'fastly::default'
+
 # We enter client mode, which means we are now talking to the delivery chef server
 # instead of the chef-zero invocation this run was started in context of.
 Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
