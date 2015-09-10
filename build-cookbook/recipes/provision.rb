@@ -68,160 +68,148 @@ aws_key_pair node['delivery']['change']['project']  do
   allow_overwrite false
 end
 
-['current', 'stable'].each do |channel|
+domain_name = 'chef.io'
+fqdn = "#{instance_name}.#{domain_name}"
+origin_fqdn = "#{instance_name}-origin.#{domain_name}"
 
-  domain_name = 'chef.io'
-  fqdn = "#{channel}.#{instance_name}.#{domain_name}"
-  origin_fqdn = "#{channel}.#{instance_name}-origin.#{domain_name}"
+subnets = []
+instances = []
 
-  subnets = []
-  instances = []
-
-  machine_batch do
-    1.upto(3) do |i|
-      machine "#{channel}-#{instance_name}-#{i}" do
-        action :setup
-        chef_environment delivery_environment
-        machine_options CIAInfra.machine_options(node, 'us-west-2', i)
-        files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-        converge false
-      end
-
-      subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
-      instances << "#{channel}-#{instance_name}-#{i}"
+machine_batch do
+  1.upto(3) do |i|
+    machine "#{instance_name}-#{i}" do
+      action :setup
+      chef_environment delivery_environment
+      machine_options CIAInfra.machine_options(node, 'us-west-2', i)
+      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+      converge false
     end
-  end
 
-  load_balancer "#{channel}-#{instance_name}-elb" do
-    load_balancer_options \
-      listeners: [{
-        port: 80,
-        protocol: :http,
-        instance_port: 80,
-        instance_protocol: :http
-      },
-      {
-        port: 443,
-        protocol: :https,
-        instance_port: 80,
-        instance_protocol: :http,
-        server_certificate: CIAInfra.cert_arn
-      }],
-      subnets: subnets,
-      security_groups: CIAInfra.security_groups(node, 'us-west-2'),
-      scheme: 'internet-facing'
-    machines instances
+    subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
+    instances << "#{instance_name}-#{i}"
   end
+end
 
-  client = AWS::ELB.new(region: 'us-west-2')
+load_balancer "#{instance_name}-elb" do
+  load_balancer_options \
+    listeners: [{
+      port: 80,
+      protocol: :http,
+      instance_port: 80,
+      instance_protocol: :http
+    },
+    {
+      port: 443,
+      protocol: :https,
+      instance_port: 80,
+      instance_protocol: :http,
+      server_certificate: CIAInfra.cert_arn
+    }],
+    subnets: subnets,
+    security_groups: CIAInfra.security_groups(node, 'us-west-2'),
+    scheme: 'internet-facing'
+  machines instances
+end
 
-  route53_record origin_fqdn do
-    name "#{origin_fqdn}."
-    value lazy { client.load_balancers["#{channel}-#{instance_name}-elb"].dns_name }
-    aws_access_key_id aws_creds['access_key_id']
-    aws_secret_access_key aws_creds['secret_access_key']
-    type 'CNAME'
-    zone_id aws_creds['route53'][domain_name]
-    sensitive true
-  end
+client = AWS::ELB.new(region: 'us-west-2')
 
-  ### Fastly Setup
-  fastly_service = fastly_service fqdn do
-    api_key fastly_creds['api_key']
-    sensitive true
-  end
+route53_record origin_fqdn do
+  name "#{origin_fqdn}."
+  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
+  aws_access_key_id aws_creds['access_key_id']
+  aws_secret_access_key aws_creds['secret_access_key']
+  type 'CNAME'
+  zone_id aws_creds['route53'][domain_name]
+  sensitive true
+end
 
-  fastly_domain fqdn do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+### Fastly Setup
+fastly_service = fastly_service fqdn do
+  api_key fastly_creds['api_key']
+  sensitive true
+end
 
-  fastly_backend origin_fqdn do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    address origin_fqdn
-    port 80
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_domain fqdn do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  fastly_request_setting 'force_ssl' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    force_ssl true
-    default_host origin_fqdn
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_backend origin_fqdn do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  address origin_fqdn
+  port 80
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  fastly_cache_setting 'ttl' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    ttl 600 # 10 mins
-    stale_ttl 21600 # 6 hrs
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_cache_setting 'ttl' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  ttl 600 # 10 mins
+  stale_ttl 21600 # 6 hrs
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  fastly_s3_logging 's3_logging' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    gzip_level 9
-    access_key fastly_creds['logging']['s3']['access_key']
-    secret_key fastly_creds['logging']['s3']['secret_key']
-    bucket_name fastly_creds['logging']['s3']['bucket_name']
-    path "/#{fqdn}"
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_s3_logging 's3_logging' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  gzip_level 9
+  access_key fastly_creds['logging']['s3']['access_key']
+  secret_key fastly_creds['logging']['s3']['secret_key']
+  bucket_name fastly_creds['logging']['s3']['bucket_name']
+  path "/#{fqdn}"
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  embargo = fastly_condition 'embargo' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    type 'request'
-    statement 'geoip.country_code == "CU" || geoip.country_code == "SD" || geoip.country_code == "SY" || geoip.country_code == "KP" || geoip.country_code == "IR"'
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+embargo = fastly_condition 'embargo' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  type 'request'
+  statement 'geoip.country_code == "CU" || geoip.country_code == "SD" || geoip.country_code == "SY" || geoip.country_code == "KP" || geoip.country_code == "IR"'
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  fastly_response 'embargo' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    request_condition embargo.name
-    status 404
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_response 'embargo' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  request_condition embargo.name
+  status 404
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  app_status = fastly_condition 'app_status' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    type 'cache'
-    statement 'req.url ~ "^/status"'
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+app_status = fastly_condition 'app_status' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  type 'cache'
+  statement 'req.url ~ "^/status"'
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  fastly_cache_setting 'app_status' do
-    api_key fastly_creds['api_key']
-    service fastly_service.name
-    ttl 0
-    stale_ttl 0
-    cache_action 'pass'
-    cache_condition app_status.name
-    sensitive true
-    notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
-  end
+fastly_cache_setting 'app_status' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  ttl 0
+  stale_ttl 0
+  cache_action 'pass'
+  cache_condition app_status.name
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
 
-  route53_record fqdn do
-    name "#{fqdn}."
-    value 'g.global-ssl.fastly.net'
-    aws_access_key_id aws_creds['access_key_id']
-    aws_secret_access_key aws_creds['secret_access_key']
-    type 'CNAME'
-    zone_id aws_creds['route53'][domain_name]
-    sensitive true
-  end
+route53_record fqdn do
+  name "#{fqdn}."
+  value 'g.global-ssl.fastly.net'
+  aws_access_key_id aws_creds['access_key_id']
+  aws_secret_access_key aws_creds['secret_access_key']
+  type 'CNAME'
+  zone_id aws_creds['route53'][domain_name]
+  sensitive true
 end

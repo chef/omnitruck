@@ -43,28 +43,25 @@ file ssh_public_key_path do
   mode '0644'
 end
 
-['current', 'stable'].each do |channel|
 
-  domain_name = 'chef.io'
-  fqdn = "#{channel}.#{instance_name}.#{domain_name}"
+domain_name = 'chef.io'
+fqdn = "#{instance_name}.#{domain_name}"
 
-  machine_batch do
-    1.upto(3) do |i|
-      machine "#{channel}-#{instance_name}-#{i}" do
-        action :converge
-        chef_environment delivery_environment
-        machine_options CIAInfra.machine_options(node, 'us-west-2')
-        files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-        run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
-        converge true
-      end
+machine_batch do
+  1.upto(3) do |i|
+    machine "#{instance_name}-#{i}" do
+      action :converge
+      chef_environment delivery_environment
+      machine_options CIAInfra.machine_options(node, 'us-west-2')
+      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+      run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
+      converge true
     end
-  end
-
-  fastly_service fqdn do
-    action :purge_all
-    api_key fastly_creds['api_key']
-    sensitive true
   end
 end
 
+fastly_service fqdn do
+  action :purge_all
+  api_key fastly_creds['api_key']
+  sensitive true
+end
