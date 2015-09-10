@@ -80,7 +80,8 @@ class Omnitruck < Sinatra::Base
   # * :m:  - The machine architecture to install on
   #
   get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v1)))
+    handle_download("chef-client", JSON.parse(
+      File.read(channel_manifest_file(settings.build_list_v1))))
   end
 
   get '/download-angrychef' do
@@ -100,7 +101,8 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info("chef-client", JSON.parse(
+      File.read(channel_manifest_file(settings.build_list_v2))))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -344,6 +346,26 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  def channel
+    if params['prerelease'] == "true" || params['nightlies'] == "true"
+      'current'
+    else
+      'stable'
+    end
+  end
+
+  def channel_manifest_file(f)
+    "#{f}.#{channel}"
+  end
+
+  def aws_packages_bucket
+    channels = settings.channels.inject({}) do |memo, m|
+      memo[m.keys.first] = m[m.keys.first]
+      memo
+    end
+    channels[channel]['aws_packages_bucket']
+  end
+
   # Convert the given +chef_version+ parameter string into a
   # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
   # either +nil+, +blank+ or the String +"latest"+.
@@ -448,7 +470,7 @@ class Omnitruck < Sinatra::Base
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
     relpath.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{settings.aws_packages_bucket}.s3.amazonaws.com"
+    base = "#{request.scheme}://#{aws_packages_bucket}.s3.amazonaws.com"
     base + relpath
   end
 

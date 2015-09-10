@@ -60,53 +60,56 @@ class S3Poller
 
     @config = YAML.load_file(@options[:config])[@options[:environment]]
 
-    @all_manifests = nil
-
-    # Create S3 client
-    @s3 = OmnitruckVerifier::BucketLister.new(bucket_name)
   end
 
   def run
+    channels.each do |channel|
     # update server and client cache
-    client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    angrychef_collection = Project.new(ANGRYCHEF_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    container_collection = Project.new(CHEF_CONTAINER_RELEASE_MANIFESTS, bucket_name, all_manifests)
+      client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, channel)
+    #angrychef_collection = Project.new(ANGRYCHEF_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    #server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    #chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
+    #container_collection = Project.new(CHEF_CONTAINER_RELEASE_MANIFESTS, bucket_name, all_manifests)
 
-    client_collection.update_cache
-    angrychef_collection.update_cache
-    server_collection.update_cache
-    chefdk_collection.update_cache
-    container_collection.update_cache
+      client_collection.update_cache
+    #angrychef_collection.update_cache
+    #server_collection.update_cache
+    #chefdk_collection.update_cache
+    #container_collection.update_cache
 
     # generate manifests then json including backwards-compatible
-    client_json_v2 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v2'], client_json_v2)
-    client_json_v1 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
+      client_json_v2 = client_collection.generate_combined_manifest
+      write_data("#{config['build_list_v2']}.#{channel.name}", client_json_v2)
+      client_json_v1 = client_collection.generate_combined_manifest
+      write_data("#{config['build_list_v1']}.#{channel.name}", parse_to_v1_format!(client_json_v1))
 
-    angrychef_json_v2 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
-    angrychef_json_v1 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v1))
+      client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
+      File.open("#{@config['chef_platform_names']}.#{channel.name}", "w") do |f|
+        f.puts client_names_manifest
+      end
+    end
 
-    server_json_v2 = server_collection.generate_combined_manifest
-    write_data(config['build_server_list_v2'], server_json_v2)
-    server_json_v1 = server_collection.generate_combined_manifest
-    write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
+    #angrychef_json_v2 = angrychef_collection.generate_combined_manifest
+    #write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
+    #angrychef_json_v1 = angrychef_collection.generate_combined_manifest
+    #write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v1))
 
-    chefdk_json_v2 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v2'], chefdk_json_v2)
-    chefdk_json_v1 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v1))
+    #server_json_v2 = server_collection.generate_combined_manifest
+    #write_data(config['build_server_list_v2'], server_json_v2)
+    #server_json_v1 = server_collection.generate_combined_manifest
+    #write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
 
-    container_json_v2 = container_collection.generate_combined_manifest
-    write_data(config['build_container_list_v2'], container_json_v2)
-    container_json_v1 = container_collection.generate_combined_manifest
-    write_data(config['build_container_list_v1'], parse_to_v1_format!(container_json_v1))
+    #chefdk_json_v2 = chefdk_collection.generate_combined_manifest
+    #write_data(config['build_chefdk_list_v2'], chefdk_json_v2)
+    #chefdk_json_v1 = chefdk_collection.generate_combined_manifest
+    #write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v1))
 
-    update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
+    #container_json_v2 = container_collection.generate_combined_manifest
+    #write_data(config['build_container_list_v2'], container_json_v2)
+    #container_json_v1 = container_collection.generate_combined_manifest
+    #write_data(config['build_container_list_v1'], parse_to_v1_format!(container_json_v1))
+
+    #update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
   end
 
   # parses v2 JSON format to v1 format
@@ -157,29 +160,48 @@ class S3Poller
     File.open(path, "w") { |f| Yajl::Encoder.encode(data, f, :pretty => true) }
   end
 
-  def bucket_name
-    config['aws_metadata_bucket']
+  def channels
+    config['channels'].map do |channel|
+      channel_name = channel.keys.first
+      bucket_name = channel[channel_name]['aws_metadata_bucket']
+      Channel.new(channel_name, bucket_name)
+    end
   end
 
-  def all_manifests
-    return @all_manifests unless @all_manifests.nil?
-    keys = []
-    @s3.fetch do |key, md5|
-      keys << key
+  class Channel
+    attr_reader :name
+    attr_reader :bucket_name
+
+    def initialize(channel_name, bucket_name)
+      @name = channel_name
+      @bucket_name = bucket_name
+      @all_manifests = nil
+      @s3 = OmnitruckVerifier::BucketLister.new(bucket_name)
     end
-    @all_manifests = keys.select {|k| k =~ /\.json\Z/ and k !~ /platform-names.json/ }
+
+    def all_manifests
+      return @all_manifests unless @all_manifests.nil?
+      keys = []
+      @s3.fetch do |key, md5|
+        keys << key
+      end
+      @all_manifests = keys.select {|k| k =~ /\.json\Z/ and k !~ /platform-names.json/ }
+    end
   end
 
   class Project
 
     attr_reader :manifest_path
-    attr_reader :bucket_name
+    attr_reader :channel
 
-    def initialize(manifest_path, bucket_name, remote_objects)
+    def initialize(manifest_path, channel)
       @manifest_path = manifest_path
-      @bucket_name = bucket_name
-      @remote_objects = remote_objects
+      @channel = channel
       @remote_manifests = nil
+    end
+
+    def bucket_name
+      channel.bucket_name
     end
 
     def debug(message)
@@ -210,10 +232,7 @@ class S3Poller
     end
 
     def create_cache_dirs
-      parent = File.dirname(cache_dir)
-      [parent, cache_dir].each do |dir|
-        Dir.mkdir(dir, 0700) unless File.exist?(dir)
-      end
+      FileUtils.mkdir_p(cache_dir, mode: 0700)
     end
 
     def delete_manifest(manifest)
@@ -221,7 +240,7 @@ class S3Poller
     end
 
     def cache_dir
-      File.expand_path("../release-metadata-cache/#{manifest_path}", __FILE__)
+      File.expand_path("../release-metadata-cache/#{channel.name}/#{manifest_path}", __FILE__)
     end
 
     def cache_path_for_manifest(manifest_name)
@@ -260,9 +279,13 @@ class S3Poller
       Dir["#{cache_dir}/*"].map { |m| File.basename(m) }
     end
 
+    def remote_objects
+      channel.all_manifests
+    end
+
     def remote_manifests
       return @remote_manifests unless @remote_manifests.nil?
-      keys_for_project = @remote_objects.select { |key| File.dirname(key) == manifest_path }
+      keys_for_project = remote_objects.select { |key| File.dirname(key) == manifest_path }
       @remote_manifests = keys_for_project.map { |k| File.basename(k) }
     end
 
