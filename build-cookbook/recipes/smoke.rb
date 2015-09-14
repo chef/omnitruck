@@ -3,22 +3,34 @@ include_recipe 'chef-sugar::default'
 
 Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
 
-hipchat_creds = encrypted_data_bag_item_for_environment('cia-creds','hipchat')
-
-ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
-
-ssh = encrypted_data_bag_item_for_environment('cia-creds', 'aws-ssh')
-ssh_private_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', node['delivery']['change']['project'])
-ssh_public_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', "#{node['delivery']['change']['project']}.pub")
+site_name = 'omnitruck'
+domain_name = 'chef.io'
 
 if node['delivery']['change']['stage'] == 'delivered'
   bucket_name = node['delivery']['change']['project'].gsub(/_/, '-')
-  instance_name = bucket_name
+  fqdn = "#{site_name}.#{domain_name}"
 else
   bucket_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}"
-  instance_name = bucket_name
+  fqdn = "#{site_name}-#{node['delivery']['change']['stage']}.#{domain_name}"
 end
 
-instance = search(:node, "name:#{instance_name}").first
+ruby_block 'check for a 200' do
+  block do
+    require 'rspec'
+    require 'net/http'
 
-# This is going to need actual tests
+    RSpec.describe "Omnitruck API" do
+      it 'install.sh should return 200 over http' do
+        uri = URI("http://#{fqdn}/install.sh")
+        response = Net::HTTP.get_response(uri)
+        expect(response.code.to_i).to eq(200)
+      end
+
+      it 'install.sh should return 200 over https' do
+        uri = URI("https://#{fqdn}/install.sh")
+        response = Net::HTTP.get_response(uri)
+        expect(response.code.to_i).to eq(200)
+      end
+    end
+  end
+end
