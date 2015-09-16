@@ -31,19 +31,11 @@ SPEC_DATA = File.expand_path(File.join(File.dirname(__FILE__), "data"))
 # values from config/config.yml and make you a sad.
 
 Omnitruck.set :virtual_path, ''
-Omnitruck.set :build_list_v1, File.join(SPEC_DATA, 'build_list_v1.json')
-Omnitruck.set :build_angrychef_list_v1, File.join(SPEC_DATA, 'build_angrychef_list_v1.json')
-Omnitruck.set :build_server_list_v1, File.join(SPEC_DATA, 'build_server_list_v1.json')
-Omnitruck.set :build_chefdk_list_v1, File.join(SPEC_DATA, 'build_chefdk_list_v1.json')
-Omnitruck.set :build_container_list_v1, File.join(SPEC_DATA, 'build_container_list_v1.json')
-Omnitruck.set :build_list_v2, File.join(SPEC_DATA, 'build_list_v2.json')
-Omnitruck.set :build_angrychef_list_v2, File.join(SPEC_DATA, 'build_angrychef_list_v2.json')
-Omnitruck.set :build_server_list_v2, File.join(SPEC_DATA, 'build_server_list_v2.json')
-Omnitruck.set :build_chefdk_list_v2, File.join(SPEC_DATA, 'build_chefdk_list_v2.json')
-Omnitruck.set :build_container_list_v2, File.join(SPEC_DATA, 'build_container_list_v2.json')
+Omnitruck.set :metadata_dir, SPEC_DATA
 Omnitruck.set :aws_access_key_id, ''
 Omnitruck.set :aws_secret_access_key, ''
 Omnitruck.set :aws_packages_bucket, 'opscode-omnibus-packages-test'
+Omnitruck.set :projects, ['chef', 'server', 'chefdk', 'angrychef', 'container']
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods

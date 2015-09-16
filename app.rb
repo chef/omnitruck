@@ -71,37 +71,18 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
-
-  # == Params, applies to /download, /download-server,
-  # /metadata, and /metadata-server endpoints
-  #
-  # * :v:  - The version of Chef to download
-  # * :p:  - The platform to install on
-  # * :pv: - The platfrom version to install on
-  # * :m:  - The machine architecture to install on
-  #
   get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v1)))
+    pass unless project_allowed('chef')
+    handle_download('chef', JSON.parse(File.read(build_list_v1('chef'))))
   end
 
-  get '/download-angrychef' do
-    handle_download("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v1)))
-  end
-
-  get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
-  end
-
-  get '/download-chefdk' do
-    handle_download("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v1)))
-  end
-
-  get '/download-container' do
-    handle_download("chef-container", JSON.parse(File.read(settings.build_container_list_v1)))
+  get '/download-:project' do
+    pass unless project_allowed(project)
+    handle_download(project, JSON.parse(File.read(build_list_v1(project))))
   end
 
   get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info('chef', JSON.parse(File.read(build_list_v2('chef'))))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -110,8 +91,10 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get '/metadata-angrychef' do
-    package_info = get_package_info("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v2)))
+  get '/metadata-:project' do
+    pass unless project_allowed(project)
+
+    package_info = get_package_info(project, JSON.parse(File.read(build_list_v2(project))))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -120,34 +103,24 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
+  def project_allowed(project_name)
+    settings.projects.include? project_name
   end
 
-  get '/metadata-chefdk' do
-    package_info = get_package_info("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
+  def build_list_v1(project_name)
+    File.join(metadata_dir, "build_#{project_name}_list_v1.json")
   end
 
-  get '/metadata-container' do
-    package_info = get_package_info("chef-container", JSON.parse(File.read(settings.build_container_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
+  def build_list_v2(project_name)
+    File.join(metadata_dir, "build_#{project_name}_list_v2.json")
+  end
+
+  def metadata_dir
+    settings.metadata_dir || './'
+  end
+
+  def project
+    params['project']
   end
 
   #
@@ -290,7 +263,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
+    directory = JSON.parse(File.read(build_list_v1('chef')))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
