@@ -103,42 +103,12 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  # TODO: Replace with redirect
-  get '/full_client_list' do
-    content_type :json
-    directory = JSON.parse(File.read(build_list_v1('chef')))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-
-  # TODO: Replace with redirect
-  get '/full_list' do
-    content_type :json
-    directory = JSON.parse(File.read(build_list_v1('chef')))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
   get "/full_:project\\_list" do
     pass unless project_allowed(project)
     content_type :json
     directory = JSON.parse(File.read(build_list_v1(project)))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
-  end
-
-  # TODO: Replace with redirect
-  get '/chef_server_platform_names' do
-    platform_names_path = platform_names('server')
-    if File.exists?(platform_names_path)
-      directory = JSON.parse(File.read(platform_names_path))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
   end
 
   get '/:project\\_platform_names' do
@@ -163,6 +133,54 @@ class Omnitruck < Sinatra::Base
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
+
+  #########################################################################
+  # BEGIN LEGACY REDIRECTS
+  #
+  # These routes existed at a time when Omnitruck did not support 1..n
+  # projects. Any new applications should use the project-based variant
+  # which each of these internally redirect to.
+  #
+  #########################################################################
+
+  get '/download' do
+    status, headers, body = call env.merge("PATH_INFO" => '/download-chef')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/download-server' do
+    status, headers, body = call env.merge("PATH_INFO" => '/download-chef-server')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/metadata' do
+    status, headers, body = call env.merge("PATH_INFO" => '/metadata-chef')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/metadata-server' do
+    status, headers, body = call env.merge("PATH_INFO" => '/metadata-chef-server')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/full_client_list' do
+    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_list')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/full_list' do
+    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_list')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  get '/full_server_list' do
+    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_server_list')
+    [status, headers, body.map(&:upcase)]
+  end
+
+  #########################################################################
+  # END LEGACY REDIRECTS
+  #########################################################################
 
   # ---
   # HELPER METHODS
