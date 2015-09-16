@@ -17,10 +17,3 @@ development:
   chef_server_platform_names: './chef_server_platform_names.json'
   aws_metadata_bucket: 'opscode-omnibus-package-metadata'
   aws_packages_bucket: 'opscode-omnibus-packages'
-
-  projects:
-    - chef
-    - chef-server
-    - chefdk
-    - angrychef
-    - container

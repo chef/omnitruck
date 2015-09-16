@@ -164,7 +164,7 @@ class Omnitruck < Sinatra::Base
   # ---
 
   def project_allowed(project)
-    settings.projects.include? project.name
+    Chef::Project::PROJECTS.include? project.name
   end
 
   def metadata_dir

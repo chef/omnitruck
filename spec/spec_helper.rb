@@ -35,7 +35,6 @@ Omnitruck.set :metadata_dir, SPEC_DATA
 Omnitruck.set :aws_access_key_id, ''
 Omnitruck.set :aws_secret_access_key, ''
 Omnitruck.set :aws_packages_bucket, 'opscode-omnibus-packages-test'
-Omnitruck.set :projects, ['chef', 'server', 'chefdk', 'angrychef', 'container']
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
