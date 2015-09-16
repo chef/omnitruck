@@ -166,17 +166,15 @@ class Omnitruck < Sinatra::Base
   end
 
   def channel
-    @channel ||= Chef::Channel.new(
+    Chef::Channel.new(
       'stable', metadata_dir, settings.aws_metadata_bucket,
       settings.aws_packages_bucket
     )
   end
 
   def project
-    @project ||= begin
-      project_name = params['project'].gsub('-', '_')
-      Chef::Project.load(project_name, channel)
-    end
+    project_name = params['project'].gsub('-', '_')
+    Chef::Project.load(project_name, channel)
   end
 
   ######################## NOTICE ##############################################
