@@ -1,6 +1,6 @@
 class Chef
   class Project
-    PROJECTS = ['chef', 'chef-server', 'chefdk', 'angrychef', 'container']
+    PROJECTS = ['chef', 'chef-server', 'chefdk', 'angrychef']
 
     attr_reader :name
     attr_reader :build_list_v1
