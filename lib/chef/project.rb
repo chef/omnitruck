@@ -17,9 +17,9 @@ class Chef
       Chef::Project.new(
         name,
         channel,
-        channel.metadata_file("build_#{name}_list_v1.json"),
-        channel.metadata_file("build_#{name}_list_v2.json"),
-        channel.metadata_file("#{name}_platform_names.json")
+        channel.metadata_file("build-#{name}-list-v1.json"),
+        channel.metadata_file("build-#{name}-list-v2.json"),
+        channel.metadata_file("#{name}-platform-names.json")
       )
     end
   end

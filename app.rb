@@ -173,7 +173,7 @@ class Omnitruck < Sinatra::Base
   end
 
   def project
-    project_name = params['project'].gsub('-', '_')
+    project_name = params['project'].gsub('_', '-')
     Chef::Project.load(project_name, channel)
   end
 
