@@ -193,7 +193,7 @@ class Omnitruck < Sinatra::Base
   end
 
   def project
-    params['project']
+    params['project'].gsub('-', '_')
   end
 
 
