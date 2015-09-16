@@ -28,6 +28,9 @@ require 'opscode/version'
 require 'platform_dsl'
 require 'mixlib/versioning'
 
+require 'chef/project'
+require 'chef/channel'
+
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
 
@@ -73,13 +76,13 @@ class Omnitruck < Sinatra::Base
 
   get '/download-:project' do
     pass unless project_allowed(project)
-    handle_download(project, JSON.parse(File.read(build_list_v1(project))))
+    handle_download(project, JSON.parse(File.read(project.build_list_v1)))
   end
 
   get '/metadata-:project' do
     pass unless project_allowed(project)
 
-    package_info = get_package_info(project, JSON.parse(File.read(build_list_v2(project))))
+    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -91,16 +94,15 @@ class Omnitruck < Sinatra::Base
   get "/full_:project\\_list" do
     pass unless project_allowed(project)
     content_type :json
-    directory = JSON.parse(File.read(build_list_v1(project)))
+    directory = JSON.parse(File.read(project.build_list_v1))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
 
   get '/:project\\_platform_names' do
     pass unless project_allowed(project)
-    platform_names_path = platform_names(params[:project])
-    if File.exists?(platform_names_path)
-      directory = JSON.parse(File.read(platform_names_path))
+    if File.exists?(project.platform_names)
+      directory = JSON.parse(File.read(project.platform_names))
       JSON.pretty_generate(directory)
     else
       status 404
@@ -114,7 +116,7 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(build_list_v1('chef')))
+    directory = JSON.parse(File.read(Chef::Project.load('chef', channel).build_list_v1))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
@@ -151,20 +153,8 @@ class Omnitruck < Sinatra::Base
   # HELPER METHODS
   # ---
 
-  def project_allowed(project_name)
-    settings.projects.include? project_name
-  end
-
-  def build_list_v1(project_name)
-    File.join(metadata_dir, "build_#{project_name}_list_v1.json")
-  end
-
-  def build_list_v2(project_name)
-    File.join(metadata_dir, "build_#{project_name}_list_v2.json")
-  end
-
-  def platform_names(project_name)
-    File.join(metadata_dir, "#{project_name}_platform_names.json")
+  def project_allowed(project)
+    settings.projects.include? project.name
   end
 
   def metadata_dir
@@ -175,11 +165,19 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  def project
-    params['project'].gsub('-', '_')
+  def channel
+    @channel ||= Chef::Channel.new(
+      'stable', metadata_dir, settings.aws_metadata_bucket,
+      settings.aws_packages_bucket
+    )
   end
 
-
+  def project
+    @project ||= begin
+      project_name = params['project'].gsub('-', '_')
+      Chef::Project.load(project_name, channel)
+    end
+  end
 
   ######################## NOTICE ##############################################
   #
@@ -318,7 +316,7 @@ class Omnitruck < Sinatra::Base
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
     relpath.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{settings.aws_packages_bucket}.s3.amazonaws.com"
+    base = "#{request.scheme}://#{channel.aws_packages_bucket}.s3.amazonaws.com"
     base + relpath
   end
 
