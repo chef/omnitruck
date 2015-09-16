@@ -65,30 +65,15 @@ class Omnitruck < Sinatra::Base
       }
     }
   end
-  
+
   error InvalidDownloadPath do
     status 404
     env['sinatra.error']
   end
 
-  get '/download' do
-    pass unless project_allowed('chef')
-    handle_download('chef', JSON.parse(File.read(build_list_v1('chef'))))
-  end
-
   get '/download-:project' do
     pass unless project_allowed(project)
     handle_download(project, JSON.parse(File.read(build_list_v1(project))))
-  end
-
-  get '/metadata' do
-    package_info = get_package_info('chef', JSON.parse(File.read(build_list_v2('chef'))))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
   end
 
   get '/metadata-:project' do
@@ -143,39 +128,19 @@ class Omnitruck < Sinatra::Base
   #
   #########################################################################
 
-  get '/download' do
-    status, headers, body = call env.merge("PATH_INFO" => '/download-chef')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/download-server' do
-    status, headers, body = call env.merge("PATH_INFO" => '/download-chef-server')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/metadata' do
-    status, headers, body = call env.merge("PATH_INFO" => '/metadata-chef')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/metadata-server' do
-    status, headers, body = call env.merge("PATH_INFO" => '/metadata-chef-server')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/full_client_list' do
-    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_list')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/full_list' do
-    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_list')
-    [status, headers, body.map(&:upcase)]
-  end
-
-  get '/full_server_list' do
-    status, headers, body = call env.merge("PATH_INFO" => '/full_chef_server_list')
-    [status, headers, body.map(&:upcase)]
+  {
+    '/download' => '/download-chef',
+    '/metadata' => '/metadata-chef',
+    '/download-server' => '/download-chef-server',
+    '/metadata-server' => '/metadata-chef-server',
+    '/full_client_list' => '/full_chef_list',
+    '/full_list' => '/full_chef_list',
+    '/full_server_list' => '/full_chef_server_list'
+  }.each do |(legacy_endpoint, endpoint)|
+    get(legacy_endpoint) do
+      status, headers, body = call env.merge("PATH_INFO" => endpoint)
+      [status, headers, body]
+    end
   end
 
   #########################################################################
