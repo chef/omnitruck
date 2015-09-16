@@ -128,6 +128,32 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
+  # TODO: Replace with redirect
+  get '/chef_server_platform_names' do
+    platform_names_path = platform_names('server')
+    if File.exists?(platform_names_path)
+      directory = JSON.parse(File.read(platform_names_path))
+      JSON.pretty_generate(directory)
+    else
+      status 404
+      env['sinatra.error']
+      'File not found on server.'
+    end
+  end
+
+  get '/:project\\_platform_names' do
+    pass unless project_allowed(project)
+    platform_names_path = platform_names(params[:project])
+    if File.exists?(platform_names_path)
+      directory = JSON.parse(File.read(platform_names_path))
+      JSON.pretty_generate(directory)
+    else
+      status 404
+      env['sinatra.error']
+      'File not found on server.'
+    end
+  end
+
   def project_allowed(project_name)
     settings.projects.include? project_name
   end
@@ -138,6 +164,10 @@ class Omnitruck < Sinatra::Base
 
   def build_list_v2(project_name)
     File.join(metadata_dir, "build_#{project_name}_list_v2.json")
+  end
+
+  def platform_names(project_name)
+    File.join(metadata_dir, "#{project_name}_platform_names.json")
   end
 
   def metadata_dir
@@ -151,77 +181,6 @@ class Omnitruck < Sinatra::Base
   def project
     params['project']
   end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/chef_platform_names' do
-    if File.exists?(settings.chef_platform_names)
-      directory = JSON.parse(File.read(settings.chef_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/angrychef_platform_names' do
-    if File.exists?(settings.chef_platform_names)
-      directory = JSON.parse(File.read(settings.chef_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/chef_server_platform_names' do
-    if File.exists?(settings.chef_server_platform_names)
-      directory = JSON.parse(File.read(settings.chef_server_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the chefdk JSON minus run data to populate the install page build list
-  #
-  get '/chefdk_platform_names' do
-    if File.exists?(settings.chefdk_platform_names)
-      directory = JSON.parse(File.read(settings.chefdk_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the chef-container JSON minus run data to populate the install page build list
-  #
-  get '/chef_container_platform_names' do
-    if File.exists?(settings.chef_container_platform_names)
-      directory = JSON.parse(File.read(settings.chef_container_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
 
   #
   # Status endpoint used by nagios to check on the app.
