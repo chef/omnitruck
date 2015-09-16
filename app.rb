@@ -91,7 +91,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get "/full_:project\\_list" do
+  get "/full-:project-list" do
     pass unless project_allowed(project)
     content_type :json
     directory = JSON.parse(File.read(project.build_list_v1))
@@ -99,7 +99,7 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
-  get '/:project\\_platform_names' do
+  get '/:project-platform-names' do
     pass unless project_allowed(project)
     if File.exists?(project.platform_names)
       directory = JSON.parse(File.read(project.platform_names))
@@ -135,14 +135,24 @@ class Omnitruck < Sinatra::Base
     '/metadata' => '/metadata-chef',
     '/download-server' => '/download-chef-server',
     '/metadata-server' => '/metadata-chef-server',
-    '/full_client_list' => '/full_chef_list',
-    '/full_list' => '/full_chef_list',
-    '/full_server_list' => '/full_chef_server_list'
+    '/full_client_list' => '/full-chef-list',
+    '/full_list' => '/full-chef-list',
+    '/full_server_list' => '/full-chef-server-list'
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
       [status, headers, body]
     end
+  end
+
+  get "/full_:project\\_list" do
+    status, headers, body = call env.merge("PATH_INFO" => "/full-#{project.name}-list")
+    [status, headers, body]
+  end
+
+  get '/:project\\_platform_names' do
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}-platform-names")
+    [status, headers, body]
   end
 
   #########################################################################
