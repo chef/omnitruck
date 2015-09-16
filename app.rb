@@ -103,6 +103,31 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  # TODO: Replace with redirect
+  get '/full_client_list' do
+    content_type :json
+    directory = JSON.parse(File.read(build_list_v1('chef')))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
+
+  # TODO: Replace with redirect
+  get '/full_list' do
+    content_type :json
+    directory = JSON.parse(File.read(build_list_v1('chef')))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
+  get "/full_:project\\_list" do
+    pass unless project_allowed(project)
+    content_type :json
+    directory = JSON.parse(File.read(build_list_v1(project)))
+    directory.delete('run_data')
+    JSON.pretty_generate(directory)
+  end
+
   def project_allowed(project_name)
     settings.projects.include? project_name
   end
@@ -126,70 +151,6 @@ class Omnitruck < Sinatra::Base
   def project
     params['project']
   end
-
-  #
-  # Returns the JSON minus run data to populate the install page build list
-  #
-  get '/full_client_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-
-  # TODO: why not do a permanent redirect here instead?
-  #
-  # TODO: redundant end-point to be deleted. Currently included for
-  # backwards compatibility.
-  #
-  get '/full_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the JSON minus run data to populate the install page build list
-  #
-  get '/full_angrychef_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_angrychef_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/full_server_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_server_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the chefdk JSON minus run data to populate the install page build list
-  #
-  get '/full_chefdk_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_chefdk_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-
-  # Returns the chef-container JSON minus run data to populate the install page build list
-  #
-  get '/full_container_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_container_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
 
   #
   # Returns the server JSON minus run data to populate the install page build list
