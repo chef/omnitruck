@@ -116,7 +116,11 @@ class Omnitruck < Sinatra::Base
   end
 
   def metadata_dir
-    settings.metadata_dir || './'
+    if settings.respond_to?(:metadata_dir)
+      settings.metadata_dir
+    else
+      './'
+    end
   end
 
   def project
