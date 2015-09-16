@@ -26,6 +26,7 @@ require 'pp'
 
 require 'opscode/version'
 require 'platform_dsl'
+require 'mixlib/versioning'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -322,20 +323,7 @@ class Omnitruck < Sinatra::Base
   # away completely in favor of direct instantiation of an
   # +OpscodeSemVer+ object.
   def janky_workaround_for_processing_all_our_different_version_strings(version_string)
-    v = nil
-    [
-      Opscode::Version::Rubygems,
-      Opscode::Version::GitDescribe,
-      Opscode::Version::OpscodeSemVer,
-      Opscode::Version::SemVer,
-      Opscode::Version::Incomplete
-    ].each do |version|
-      begin
-        break v = version.new(version_string)
-      rescue
-        nil
-      end
-    end
+    v = Opscode::Version.parse(version_string)
 
     if v.nil?
       raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
