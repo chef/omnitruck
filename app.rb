@@ -154,6 +154,20 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  #
+  # Status endpoint used by nagios to check on the app.
+  #
+  get '/_status' do
+    content_type :json
+    directory = JSON.parse(File.read(build_list_v1('chef')))
+    status = { :timestamp => directory['run_data']['timestamp'] }
+    JSON.pretty_generate(status)
+  end
+
+  # ---
+  # HELPER METHODS
+  # ---
+
   def project_allowed(project_name)
     settings.projects.include? project_name
   end
@@ -182,19 +196,7 @@ class Omnitruck < Sinatra::Base
     params['project']
   end
 
-  #
-  # Status endpoint used by nagios to check on the app.
-  #
-  get '/_status' do
-    content_type :json
-    directory = JSON.parse(File.read(build_list_v1('chef')))
-    status = { :timestamp => directory['run_data']['timestamp'] }
-    JSON.pretty_generate(status)
-  end
 
-  # ---
-  # HELPER METHODS
-  # ---
 
   ######################## NOTICE ##############################################
   #
