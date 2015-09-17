@@ -2,6 +2,8 @@ require File.expand_path("../../../omnitruck-verifier/lib/omnitruck-verifier/buc
 
 class Chef
   class Channel
+    class ManifestNotFound < Exception; end
+
     attr_reader :name
     attr_reader :aws_metadata_bucket
     attr_reader :aws_packages_bucket
@@ -34,7 +36,11 @@ class Chef
     rescue RestClient::Exception => e
       debug "Error fetching #{url}"
       debug(e)
-      raise
+      if e.http_code == 404
+        raise ManifestNotFound
+      else
+        raise
+      end
     end
 
     def s3_url_for_manifest(key)

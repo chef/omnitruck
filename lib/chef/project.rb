@@ -21,13 +21,17 @@ class Chef
                        keys_for_project.map { |k| File.basename(k) }
                      end
       if @manifests.length == 0
-        debug("Remote manifest was empty for s3://#{bucket_name}/#{release_manifest_name}, if this occurs, please check your config file.")
+        debug("Remote manifest was empty for #{release_manifest_name} in the channel '#{channel.name}")
       end
       @manifests
     end
 
     def get_platform_names
-      channel.download_manifest(key_for("#{name}-platform-names.json"))
+      begin
+        channel.download_manifest(key_for("#{name}-platform-names.json"))
+      rescue Chef::Channel::ManifestNotFound => e
+        '{}'
+      end
     end
 
     def download_manifest(manifest)
