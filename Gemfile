@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 # tracking master because of this bug:
 # https://github.com/sinatra/sinatra/pull/805
