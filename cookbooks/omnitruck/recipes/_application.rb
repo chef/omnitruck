@@ -30,23 +30,11 @@ template "/srv/omnitruck/shared/s3_poller_config.yml" do
   variables(
     :app_environment => "production",
     :virtual_path => "/chef",
-    :build_list_v1 => "#{s3_poller_path}/build_list_v1.json",
-    :build_list_v2 => "#{s3_poller_path}/build_list_v2.json",
-    :build_server_list_v1 => "#{s3_poller_path}/build_server_list_v1.json",
-    :build_server_list_v2 => "#{s3_poller_path}/build_server_list_v2.json",
-    :build_chefdk_list_v1 => "#{s3_poller_path}/build_chefdk_list_v1.json",
-    :build_chefdk_list_v2 => "#{s3_poller_path}/build_chefdk_list_v2.json",
-    :build_container_list_v1 => "#{s3_poller_path}/build_container_list_v1.json",
-    :build_container_list_v2 => "#{s3_poller_path}/build_container_list_v2.json",
-    :build_angrychef_list_v1 => "#{s3_poller_path}/build_angrychef_list_v1.json",
-    :build_angrychef_list_v2 => "#{s3_poller_path}/build_angrychef_list_v2.json",
-    :chef_platform_names => "#{s3_poller_path}/chef-platform-names.json",
-    :chef_server_platform_names => "#{s3_poller_path}/chef-server-platform-names.json",
-    :chefdk_platform_names => "#{s3_poller_path}/chefdk-platform-names.json",
-    :chef_container_platform_names => "#{s3_poller_path}/chef-container-platform-names.json",
-    :angrychef_platform_names => "#{s3_poller_path}/angrychef-platform-names.json",
-    :aws_metadata_bucket => 'opscode-omnibus-package-metadata',
-    :aws_packages_bucket => 'opscode-omnibus-packages'
+    :metadata_dir => s3_poller_path,
+    :stable_aws_metadata_bucket => 'opscode-omnibus-package-metadata',
+    :stable_aws_packages_bucket => 'opscode-omnibus-packages',
+    :current_aws_metadata_bucket => 'opscode-omnibus-package-metadata-current',
+    :current_aws_packages_bucket => 'opscode-omnibus-packages-current',
   )
   action :create
   owner 'omnitruck'

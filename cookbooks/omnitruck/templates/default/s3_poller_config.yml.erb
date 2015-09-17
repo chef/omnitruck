@@ -1,19 +1,11 @@
 <%= @app_environment %>:
   virtual_path: '<%= @virtual_path %>'
-  build_list_v1: '<%= @build_list_v1 %>'
-  build_list_v2: '<%= @build_list_v2 %>'
-  build_server_list_v1: '<%= @build_server_list_v1 %>'
-  build_server_list_v2: '<%= @build_server_list_v2 %>'
-  build_chefdk_list_v1: '<%= @build_chefdk_list_v1 %>'
-  build_chefdk_list_v2: '<%= @build_chefdk_list_v2 %>'
-  build_container_list_v1: '<%= @build_container_list_v1 %>'
-  build_container_list_v2: '<%= @build_container_list_v2 %>'
-  build_angrychef_list_v1: '<%= @build_angrychef_list_v1 %>'
-  build_angrychef_list_v2: '<%= @build_angrychef_list_v2 %>'
-  chef_platform_names: '<%= @chef_platform_names %>'
-  chef_server_platform_names: '<%= @chef_server_platform_names %>'
-  chefdk_platform_names: '<%= @chefdk_platform_names %>'
-  chef_container_platform_names: '<%= @chef_container_platform_names %>'
-  angrychef_platform_names: '<%= @angrychef_platform_names %>'
-  aws_metadata_bucket: '<%= @aws_metadata_bucket %>'
-  aws_packages_bucket: '<%= @aws_packages_bucket%>'
+  metadata_dir: '<%= @metadata_dir %>'
+
+  channels:
+    stable:
+      aws_metadata_bucket: '<%= @stable_aws_metadata_bucket %>'
+      aws_packages_bucket: '<%= @stable_aws_packages_bucket %>'
+    current:
+      aws_metadata_bucket: '<%= @current_aws_metadata_bucket %>'
+      aws_packages_bucket: '<%= @current_aws_packages_bucket %>'
