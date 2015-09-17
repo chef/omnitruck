@@ -1,19 +1,12 @@
 development:
   virtual_path: ''
-  build_list_v2: './build_chef_list_v2.json'
-  build_server_list_v2: './build_chef_server_list_v2.json'
-  build_chefdk_list_v2: './build_chefdk_list_v2.json'
-  build_angrychef_list_v2: './build_angrychef_list_v2.json'
-  build_container_list_v2: './build_container_list_v2.json'
-  build_list_v1: './build_chef_list_v1.json'
-  build_server_list_v1: './build_chef_server_list_v1.json'
-  build_chefdk_list_v1: './build_chefdk_list_v1.json'
-  build_angrychef_list_v1: './build_angrychef_list_v1.json'
-  build_container_list_v1: './build_container_list_v1.json'
-  chef_platform_names: './chef_platform_names.json'
-  chef_container_platform_names: './container_platform_names.json'
-  chefdk_platform_names: './chefdk_platform_names.json'
-  angrychef_platform_names: './angrychef_platform_names.json'
-  chef_server_platform_names: './chef_server_platform_names.json'
-  aws_metadata_bucket: 'opscode-omnibus-package-metadata'
-  aws_packages_bucket: 'opscode-omnibus-packages'
+
+  metadata_dir: './metadata_dir'
+
+  channels:
+    stable:
+      aws_metadata_bucket: 'opscode-omnibus-package-metadata'
+      aws_packages_bucket: 'opscode-omnibus-packages'
+    current:
+      aws_metadata_bucket: 'opscode-omnibus-package-metadata-current'
+      aws_packages_bucket: 'opscode-omnibus-packages-current'
