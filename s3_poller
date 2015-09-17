@@ -4,9 +4,11 @@ require 'yajl'
 require 'yaml'
 require 'optparse'
 
-require_relative 'lib/chef/project'
-require_relative 'lib/chef/project_cache'
-require_relative 'lib/chef/channel'
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
+
+require 'chef/project'
+require 'chef/project_cache'
+require 'chef/channel'
 
 class S3Poller
 
