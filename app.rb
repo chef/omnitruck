@@ -178,10 +178,17 @@ class Omnitruck < Sinatra::Base
   end
 
   def channel
-    Chef::Channel.new(
-      'stable', settings.channels['stable']['aws_metadata_bucket'],
-      settings.channels['stable']['aws_packages_bucket']
-    )
+    if params['prerelease'] == 'true' || params['nightlies'] == 'true'
+      Chef::Channel.new(
+        'current', settings.channels['current']['aws_metadata_bucket'],
+        settings.channels['current']['aws_packages_bucket']
+      )
+    else
+      Chef::Channel.new(
+        'stable', settings.channels['stable']['aws_metadata_bucket'],
+        settings.channels['stable']['aws_packages_bucket']
+      )
+    end
   end
 
   def project
