@@ -39,6 +39,10 @@ Omnitruck.set :channels, {
   'stable' => {
     'aws_packages_bucket' => 'opscode-omnibus-packages-test',
     'aws_metadata_bucket' => 'opscode-omnibus-metadata-test'
+  },
+  'current' => {
+    'aws_packages_bucket' => 'opscode-omnibus-packages-test',
+    'aws_metadata_bucket' => 'opscode-omnibus-metadata-test'
   }
 }
 
