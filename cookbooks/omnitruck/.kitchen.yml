@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    data_bags_path: test/integration/default/data_bags
+    run_list:
+      - recipe[omnitruck::default]
+    attributes:
+      applications:
+        omnitruck: 2015-06-24_1829

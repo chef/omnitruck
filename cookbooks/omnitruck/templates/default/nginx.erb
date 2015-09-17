@@ -1,0 +1,32 @@
+client_max_body_size 250m;
+
+upstream unicorn {
+server unix:/tmp/.<%= @project_name %>.sock.0;
+}
+
+server {
+  listen 80 default_server;
+  proxy_set_header        Host            $host;
+  proxy_set_header        X-Real-IP       $remote_addr;
+  proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header        X-Forwarded-Proto https;
+  proxy_pass_request_headers on;
+  proxy_connect_timeout   90;
+  proxy_send_timeout      90;
+  proxy_read_timeout      90;
+
+  location / {
+    proxy_set_header HOST $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
+    proxy_pass http://unicorn;
+    proxy_redirect off;
+
+    # to serve gzipped text and json responses
+    gzip on;
+    gzip_min_length 1000;
+    gzip_proxied expired no-cache no-store private auth;
+    gzip_types text/plain application/json;
+  }
+}

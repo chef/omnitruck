@@ -1,0 +1,11 @@
+<%= @app_environment %>:
+  virtual_path: '<%= @virtual_path %>'
+  metadata_dir: '<%= @metadata_dir %>'
+
+  channels:
+    stable:
+      aws_metadata_bucket: '<%= @stable_aws_metadata_bucket %>'
+      aws_packages_bucket: '<%= @stable_aws_packages_bucket %>'
+    current:
+      aws_metadata_bucket: '<%= @current_aws_metadata_bucket %>'
+      aws_packages_bucket: '<%= @current_aws_packages_bucket %>'
