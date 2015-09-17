@@ -4,25 +4,13 @@ require 'yajl'
 require 'yaml'
 require 'optparse'
 
-require File.expand_path("../omnitruck-verifier/lib/omnitruck-verifier/bucket_lister", __FILE__)
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
+
+require 'chef/project'
+require 'chef/project_cache'
+require 'chef/channel'
 
 class S3Poller
-
-  CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
-  CHEF_PLATFORM_NAMES = "chef-platform-names.json"
-
-  ANGRYCHEF_RELEASE_MANIFESTS = "angrychef-release-manifest"
-  ANGRYCHEF_PLATFORM_NAMES = "angrychef-platform-names.json"
-
-  CHEF_SERVER_RELEASE_MANIFESTS = "chef-server-release-manifest"
-  CHEF_SERVER_PLATFORM_NAMES = "chef-server-platform-names.json"
-
-  CHEFDK_RELEASE_MANIFESTS = "chefdk-release-manifest"
-  CHEFDK_PLATFORM_NAMES = "chefdk-platform-names.json"
-
-  CHEF_CONTAINER_RELEASE_MANIFESTS = "chef-container-release-manifest"
-  CHEF_CONTAINER_PLATFORM_NAMES = "chef-container-platform-names.json"
-
   attr_reader :config
 
   def initialize
@@ -59,228 +47,35 @@ class S3Poller
     end
 
     @config = YAML.load_file(@options[:config])[@options[:environment]]
-
-    @all_manifests = nil
-
-    # Create S3 client
-    @s3 = OmnitruckVerifier::BucketLister.new(bucket_name)
   end
 
   def run
-    # update server and client cache
-    client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    angrychef_collection = Project.new(ANGRYCHEF_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    server_collection = Project.new(CHEF_SERVER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    chefdk_collection = Project.new(CHEFDK_RELEASE_MANIFESTS, bucket_name, all_manifests)
-    container_collection = Project.new(CHEF_CONTAINER_RELEASE_MANIFESTS, bucket_name, all_manifests)
-
-    client_collection.update_cache
-    angrychef_collection.update_cache
-    server_collection.update_cache
-    chefdk_collection.update_cache
-    container_collection.update_cache
-
-    # generate manifests then json including backwards-compatible
-    client_json_v2 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v2'], client_json_v2)
-    client_json_v1 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
-
-    angrychef_json_v2 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
-    angrychef_json_v1 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v1))
-
-    server_json_v2 = server_collection.generate_combined_manifest
-    write_data(config['build_server_list_v2'], server_json_v2)
-    server_json_v1 = server_collection.generate_combined_manifest
-    write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
-
-    chefdk_json_v2 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v2'], chefdk_json_v2)
-    chefdk_json_v1 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v1))
-
-    container_json_v2 = container_collection.generate_combined_manifest
-    write_data(config['build_container_list_v2'], container_json_v2)
-    container_json_v1 = container_collection.generate_combined_manifest
-    write_data(config['build_container_list_v1'], parse_to_v1_format!(container_json_v1))
-
-    update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
-  end
-
-  # parses v2 JSON format to v1 format
-  def parse_to_v1_format!(json)
-    # discusting nested loops, but much easier than writing a generic DFS solution or something
-    json.each do |platform, platform_value|
-      next if platform.to_s == "run_data"
-      platform_value.each_value do |platform_version_value|
-        platform_version_value.each_value do |architecture_value|
-          architecture_value.each do |chef_version, chef_version_value|
-            architecture_value[chef_version] = chef_version_value["relpath"]
-          end
-        end
+    channels.each do |channel|
+      all_project_caches_for_channel(channel).each do |project_cache|
+        project_cache.update
       end
     end
   end
 
-  # Grab the human readable json files directly
-  def update_platform_name_maps(client_collection, server_collection, chefdk_collection, container_collection, angrychef_collection)
-    client_names_manifest = client_collection.get_remote_manifest(CHEF_PLATFORM_NAMES)
-    File.open(@config['chef_platform_names'], "w") do |f|
-      f.puts client_names_manifest
-    end
-
-    angrychef_names_manifest = angrychef_collection.get_remote_manifest(ANGRYCHEF_PLATFORM_NAMES)
-    File.open(@config['angrychef_platform_names'], "w") do |f|
-      f.puts angrychef_names_manifest
-    end
-
-    server_names_manifest = server_collection.get_remote_manifest(CHEF_SERVER_PLATFORM_NAMES)
-    File.open(@config['chef_server_platform_names'], "w") do |f|
-      f.puts server_names_manifest
-    end
-
-    chefdk_names_manifest = chefdk_collection.get_remote_manifest(CHEFDK_PLATFORM_NAMES)
-    File.open(@config['chefdk_platform_names'], "w") do |f|
-      f.puts chefdk_names_manifest
-    end
-
-    container_names_manifest = container_collection.get_remote_manifest(CHEF_CONTAINER_PLATFORM_NAMES)
-    File.open(@config['chef_container_platform_names'], "w") do |f|
-      f.puts container_names_manifest
+  def all_project_caches_for_channel(channel)
+    Chef::Project::PROJECTS.map do |project_name|
+      Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
     end
   end
 
-  def write_data(path, data)
-    data[:run_data] = { :timestamp => Time.now.to_s }
-    File.open(path, "w") { |f| Yajl::Encoder.encode(data, f, :pretty => true) }
+  def metadata_dir
+    config['metadata_dir']
   end
 
-  def bucket_name
-    config['aws_metadata_bucket']
+  def channels
+    config['channels'].map do |(channel_name, channel_info)|
+      Chef::Channel.new(
+        channel_name,
+        channel_info['aws_metadata_bucket'],
+        channel_info['aws_packages_bucket']
+      )
+    end
   end
-
-  def all_manifests
-    return @all_manifests unless @all_manifests.nil?
-    keys = []
-    @s3.fetch do |key, md5|
-      keys << key
-    end
-    @all_manifests = keys.select {|k| k =~ /\.json\Z/ and k !~ /platform-names.json/ }
-  end
-
-  class Project
-
-    attr_reader :manifest_path
-    attr_reader :bucket_name
-
-    def initialize(manifest_path, bucket_name, remote_objects)
-      @manifest_path = manifest_path
-      @bucket_name = bucket_name
-      @remote_objects = remote_objects
-      @remote_manifests = nil
-    end
-
-    def debug(message)
-      # TODO: turn this off for cron
-      puts message
-    end
-
-    def generate_combined_manifest
-      # after updating cache, we have the same manifests as remote
-      remote_manifests.inject({}) do |combined_manifest_data, manifest|
-        manifest_file = cache_path_for_manifest(manifest)
-        manifest_data = Yajl::Parser.parse(File.read(manifest_file))
-        deep_merge(combined_manifest_data, manifest_data)
-      end
-    end
-
-    def update_cache
-      create_cache_dirs
-      if remote_manifests.length == 0
-        debug("Remote manifest was empty for s3://#{bucket_name}/#{manifest_path}, if this occurs, please check your config file.")
-      end
-      manifests_to_delete = local_manifests - remote_manifests
-      manifests_to_fetch = remote_manifests - local_manifests
-      debug("Files to delete:\n#{manifests_to_delete.map{|f| "* #{f}"}.join("\n")}")
-      debug("Files to fetch:\n#{manifests_to_fetch.map{|f| "* #{f}"}.join("\n")}")
-      manifests_to_delete.each {|m| delete_manifest(m) }
-      manifests_to_fetch.each {|f| fetch_manifest(f) }
-    end
-
-    def create_cache_dirs
-      parent = File.dirname(cache_dir)
-      [parent, cache_dir].each do |dir|
-        Dir.mkdir(dir, 0700) unless File.exist?(dir)
-      end
-    end
-
-    def delete_manifest(manifest)
-      File.unlink(cache_path_for_manifest(manifest))
-    end
-
-    def cache_dir
-      File.expand_path("../release-metadata-cache/#{manifest_path}", __FILE__)
-    end
-
-    def cache_path_for_manifest(manifest_name)
-      File.join(cache_dir, manifest_name)
-    end
-
-    def s3_url_for_manifest(manifest_name)
-      key = File.join(manifest_path, manifest_name)
-      key = key.gsub(/\+/, "%2B")
-      "https://#{bucket_name}.s3.amazonaws.com/#{key}"
-    end
-
-    def fetch_manifest(manifest)
-      local_path = nil
-      local_path = cache_path_for_manifest(manifest)
-      debug("Downloading manifest to #{local_path}")
-      File.open(local_path, "w+") do |f|
-        f.print get_remote_manifest(manifest)
-      end
-    rescue Exception
-      File.unlink(local_path) if local_path && File.exist?(local_path)
-      raise
-    end
-
-    def get_remote_manifest(manifest)
-      url = s3_url_for_manifest(manifest)
-      debug "Fetching from #{url}"
-      RestClient.get(url)
-    rescue RestClient::Exception => e
-      debug "Error fetching #{url}"
-      debug(e)
-      raise
-    end
-
-    def local_manifests
-      Dir["#{cache_dir}/*"].map { |m| File.basename(m) }
-    end
-
-    def remote_manifests
-      return @remote_manifests unless @remote_manifests.nil?
-      keys_for_project = @remote_objects.select { |key| File.dirname(key) == manifest_path }
-      @remote_manifests = keys_for_project.map { |k| File.basename(k) }
-    end
-
-    # Define a deep merge for nested hashes
-    def deep_merge(h1, h2)
-      result = h1.dup
-      h2.keys.each do |key|
-        result[key] = if h1[key].is_a? Hash and h2[key].is_a? Hash
-                        deep_merge(result[key], h2[key])
-                      else
-                        h2[key]
-                      end
-      end
-      result
-    end
-
-  end
-
 end
 
 if $0 == __FILE__

@@ -28,12 +28,18 @@ require 'opscode/version'
 require 'platform_dsl'
 require 'mixlib/versioning'
 
+require 'chef/project'
+require 'chef/project_cache'
+require 'chef/channel'
+
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
 
   config_file './config/config.yml'
 
   class InvalidDownloadPath < StandardError; end
+  class InvalidChannelName < StandardError; end
+
   configure do
     set :raise_errors, false
     set :show_exceptions, false
@@ -65,43 +71,26 @@ class Omnitruck < Sinatra::Base
       }
     }
   end
-  
+
   error InvalidDownloadPath do
     status 404
     env['sinatra.error']
   end
 
-
-  # == Params, applies to /download, /download-server,
-  # /metadata, and /metadata-server endpoints
-  #
-  # * :v:  - The version of Chef to download
-  # * :p:  - The platform to install on
-  # * :pv: - The platfrom version to install on
-  # * :m:  - The machine architecture to install on
-  #
-  get '/download' do
-    handle_download("chef-client", JSON.parse(File.read(settings.build_list_v1)))
+  error InvalidChannelName do
+    status 404
+    env['sinatra.error']
   end
 
-  get '/download-angrychef' do
-    handle_download("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v1)))
+  get /(?<channel>\/[\w]+)?\/download-(?<project>[\w-]+)/ do
+    pass unless project_allowed(project)
+    handle_download(project, JSON.parse(File.read(project.build_list_v1_path)))
   end
 
-  get '/download-server' do
-    handle_download("chef-server", JSON.parse(File.read(settings.build_server_list_v1)))
-  end
+  get /(?<channel>\/[\w]+)?\/metadata-(?<project>[\w-]+)/ do
+    pass unless project_allowed(project)
 
-  get '/download-chefdk' do
-    handle_download("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v1)))
-  end
-
-  get '/download-container' do
-    handle_download("chef-container", JSON.parse(File.read(settings.build_container_list_v1)))
-  end
-
-  get '/metadata' do
-    package_info = get_package_info("chef-client", JSON.parse(File.read(settings.build_list_v2)))
+    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2_path)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -110,116 +99,18 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get '/metadata-angrychef' do
-    package_info = get_package_info("angrychef", JSON.parse(File.read(settings.build_angrychef_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
-  end
-
-  get '/metadata-server' do
-    package_info = get_package_info("chef-server", JSON.parse(File.read(settings.build_server_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
-  end
-
-  get '/metadata-chefdk' do
-    package_info = get_package_info("chef-chefdk", JSON.parse(File.read(settings.build_chefdk_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
-  end
-
-  get '/metadata-container' do
-    package_info = get_package_info("chef-container", JSON.parse(File.read(settings.build_container_list_v2)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    if request.accept? 'text/plain'
-      parse_plain_text(package_info)
-    else
-      JSON.pretty_generate(package_info)
-    end
-  end
-
-  #
-  # Returns the JSON minus run data to populate the install page build list
-  #
-  get '/full_client_list' do
+  get /(?<channel>\/[\w]+)?\/full-(?<project>[\w-]+)-list/ do
+    pass unless project_allowed(project)
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
+    directory = JSON.parse(File.read(project.build_list_v1_path))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
 
-
-  # TODO: why not do a permanent redirect here instead?
-  #
-  # TODO: redundant end-point to be deleted. Currently included for
-  # backwards compatibility.
-  #
-  get '/full_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the JSON minus run data to populate the install page build list
-  #
-  get '/full_angrychef_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_angrychef_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/full_server_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_server_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-  #
-  # Returns the chefdk JSON minus run data to populate the install page build list
-  #
-  get '/full_chefdk_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_chefdk_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-
-  # Returns the chef-container JSON minus run data to populate the install page build list
-  #
-  get '/full_container_list' do
-    content_type :json
-    directory = JSON.parse(File.read(settings.build_container_list_v1))
-    directory.delete('run_data')
-    JSON.pretty_generate(directory)
-  end
-
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/chef_platform_names' do
-    if File.exists?(settings.chef_platform_names)
-      directory = JSON.parse(File.read(settings.chef_platform_names))
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)-platform-names/ do
+    pass unless project_allowed(project)
+    if File.exists?(project.platform_names_path)
+      directory = JSON.parse(File.read(project.platform_names_path))
       JSON.pretty_generate(directory)
     else
       status 404
@@ -227,77 +118,98 @@ class Omnitruck < Sinatra::Base
       'File not found on server.'
     end
   end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/angrychef_platform_names' do
-    if File.exists?(settings.chef_platform_names)
-      directory = JSON.parse(File.read(settings.chef_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the server JSON minus run data to populate the install page build list
-  #
-  get '/chef_server_platform_names' do
-    if File.exists?(settings.chef_server_platform_names)
-      directory = JSON.parse(File.read(settings.chef_server_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the chefdk JSON minus run data to populate the install page build list
-  #
-  get '/chefdk_platform_names' do
-    if File.exists?(settings.chefdk_platform_names)
-      directory = JSON.parse(File.read(settings.chefdk_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
-  #
-  # Returns the chef-container JSON minus run data to populate the install page build list
-  #
-  get '/chef_container_platform_names' do
-    if File.exists?(settings.chef_container_platform_names)
-      directory = JSON.parse(File.read(settings.chef_container_platform_names))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
-  end
-
 
   #
   # Status endpoint used by nagios to check on the app.
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(settings.build_list_v1))
+    directory = JSON.parse(File.read(
+      Chef::ProjectCache.for_project('chef', channel, metadata_dir).build_list_v1_path))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
 
+  #########################################################################
+  # BEGIN LEGACY REDIRECTS
+  #
+  # These routes existed at a time when Omnitruck did not support 1..n
+  # projects. Any new applications should use the project-based variant
+  # which each of these internally redirect to.
+  #
+  #########################################################################
+
+  {
+    '/download' => '/download-chef',
+    '/metadata' => '/metadata-chef',
+    '/download-server' => '/download-chef-server',
+    '/metadata-server' => '/metadata-chef-server',
+    '/full_client_list' => '/full-chef-list',
+    '/full_list' => '/full-chef-list',
+    '/full_server_list' => '/full-chef-server-list'
+  }.each do |(legacy_endpoint, endpoint)|
+    get(legacy_endpoint) do
+      status, headers, body = call env.merge("PATH_INFO" => endpoint)
+      [status, headers, body]
+    end
+  end
+
+  get "/full_:project\\_list" do
+    status, headers, body = call env.merge("PATH_INFO" => "/full-#{project.name}-list")
+    [status, headers, body]
+  end
+
+  get '/:project\\_platform_names' do
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}-platform-names")
+    [status, headers, body]
+  end
+
+  #########################################################################
+  # END LEGACY REDIRECTS
+  #########################################################################
+
   # ---
   # HELPER METHODS
   # ---
+
+  def project_allowed(project)
+    Chef::Project::PROJECTS.include? project.name
+  end
+
+  def metadata_dir
+    if settings.respond_to?(:metadata_dir)
+      settings.metadata_dir
+    else
+      './'
+    end
+  end
+
+  def channel
+    if params['channel']
+      channel_for(params['channel'].gsub('/',''))
+    else
+      if params['prerelease'] == 'true' || params['nightlies'] == 'true'
+        channel_for('current')
+      else
+        channel_for('stable')
+      end
+    end
+  end
+
+  def channel_for(channel_name)
+    unless settings.channels.include?(channel_name)
+      raise InvalidChannelName, "Unknown channel '#{channel_name}'"
+    end
+    Chef::Channel.new(
+        channel_name, settings.channels[channel_name]['aws_metadata_bucket'],
+        settings.channels[channel_name]['aws_packages_bucket']
+      )
+  end
+
+  def project
+    project_name = params['project'].gsub('_', '-')
+    Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
+  end
 
   ######################## NOTICE ##############################################
   #
@@ -415,7 +327,7 @@ class Omnitruck < Sinatra::Base
     target = Opscode::Version.find_target_version(
       semvers_available.keys,
       chef_version,
-      prerelease || use_nightlies
+      prerelease || use_nightlies || channel.name == 'current'
     )
 
     unless target
@@ -436,7 +348,7 @@ class Omnitruck < Sinatra::Base
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
     relpath.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{settings.aws_packages_bucket}.s3.amazonaws.com"
+    base = "#{request.scheme}://#{channel.aws_packages_bucket}.s3.amazonaws.com"
     base + relpath
   end
 

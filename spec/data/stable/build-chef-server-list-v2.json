@@ -1,0 +1,611 @@
+{
+  "el": {
+    "5": {
+      "x86_64": {
+        "": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.8+20130510085727.git.10.115aaf4-1.el5.x86_64.rpm",
+          "md5": "2d3a4d821041b1b02fa05d169b90dfb4",
+          "sha256": "7d3b64cd108445da532b9411016dc982c4385b8a8ce1baeb10cac6c271242974"
+        },
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_10_g642ffed-1.el5.x86_64.rpm",
+          "md5": "c97287748df333d059af4435db26d33f",
+          "sha256": "2c9f27f98f40f978b5875ed638906e6f52de7936cfbe66672330a88c71e28e64"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_12_gdec9c4d-1.el5.x86_64.rpm",
+          "md5": "6e997b6ef465198b2d0e04fe1ebb3f4d",
+          "sha256": "70d0ccfcb9c41e41ae4b95c8d4987c24fd04c177970407f1dee0375f29845cbe"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_14_ga07db29-1.el5.x86_64.rpm",
+          "md5": "059840ff0cf485c30b6cd678949c5a01",
+          "sha256": "fe872e6b8baea53d8d7eb917428f3e80b4884fc56a744c3e8fb476bea5b5947b"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_17_g8a26870-1.el5.x86_64.rpm",
+          "md5": "9a94d8e043f1dcec6f3ed3ec4e215861",
+          "sha256": "1aa0d35a7ce77b940909edb536f0df8795753123e8fcb3c791a5cff802007dc7"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_18_gf1122fd-1.el5.x86_64.rpm",
+          "md5": "67504f806e951cf4a6b3e2baccb436f9",
+          "sha256": "fe90ab59da95d0d7e8ff546021263f80203069a9a35881864c7ac68de8fe9ff7"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha_22_ged9e6b4-1.el5.x86_64.rpm",
+          "md5": "c3b5286e2890cfc6ab6fdb33bd1a2440",
+          "sha256": "c667b1e08e5c2e9496fd4a047e55a2f446b03341ec39c3805612a7aa4f80a631"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/el/5/x86_64/chef-server-11.0.0_alpha.1_1_gcea071e-1.el5.x86_64.rpm",
+          "md5": "593b99c377a1b5272a7c1e2fb59c52b8",
+          "sha256": "f8cbc0e45aaccf4d17850f88fbb66f8f464641f56bfc95b90b54eade15cf9241"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_10_g642ffed-1.el6.x86_64.rpm",
+          "md5": "4f3243ba35b51633d169d73b83d5eeda",
+          "sha256": "1072b5173c02b039c30b99ec966b524211736d1b749b89f596d8445254344b18"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_12_gdec9c4d-1.el6.x86_64.rpm",
+          "md5": "26192c6c779fc3d038c8218a81bb464b",
+          "sha256": "067ef8bb9a4d9d28383d045127ee477cadccc27004667e4a5d09a4a0785a2a4e"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_14_ga07db29-1.el6.x86_64.rpm",
+          "md5": "a9ed411a32c47163b5306565cf814f11",
+          "sha256": "4b0733fed434c1d2aa3a1d7c6d8fad53d5019e0f825ef827e3ad52e4ff3d1219"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_17_g8a26870-1.el6.x86_64.rpm",
+          "md5": "d85235f0f5cd087120e89e93c2c222e8",
+          "sha256": "7c397fd07a867940de63673e53bdccec489b4030ca3b2f7abd15dfbdae7703b1"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_18_gf1122fd-1.el6.x86_64.rpm",
+          "md5": "260ffe145f47ccd73c742cae6e3e7d99",
+          "sha256": "e6a8544abd0730ad1526ef89225471bf9215eab39f174b93b89237613d7eb423"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha_22_ged9e6b4-1.el6.x86_64.rpm",
+          "md5": "e1f1eda9dcc72e385f10d281c79c7f9f",
+          "sha256": "8af123580b269475120c73c94da4ad6455afb34dda8d944ae946a8861d0b8c2c"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/el/6/x86_64/chef-server-11.0.0_alpha.1_1_gcea071e-1.el6.x86_64.rpm",
+          "md5": "86f0ff2f3fe0543d21a8ce1668aff98d",
+          "sha256": "3becfa3dbf28644fc5c10abea891566f367d316edcbc3aef90d03060798c0e62"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_10_g642ffed-1.el6.i686.rpm",
+          "md5": "e9047a3ea7158e11c356f3a5bf09a0c6",
+          "sha256": "6e7bc25650236538ec76f0ba1d1033645d41839a0aaf7988244de37fff4ce123"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_12_gdec9c4d-1.el6.i686.rpm",
+          "md5": "c1190b553955f3ed9bbaf1d5ff9b9fcb",
+          "sha256": "bdb401b5eb73c9c9b6b3d3d70c24f853405671b22c8191d13e9ee47fe1c0334d"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_14_ga07db29-1.el6.i686.rpm",
+          "md5": "2564354fa11dd521c192bbbfa5a77744",
+          "sha256": "53b92eafdc1a311c8534931c1b0067b316d59560e22a7b9bfc1e45475886eba4"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_17_g8a26870-1.el6.i686.rpm",
+          "md5": "9c6d86f9d4dc13a6415695b4ef91e6ce",
+          "sha256": "ed9cb80d71e1e36d60009c807a73b073c01f172e398e43254833aba3f1b268e3"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_18_gf1122fd-1.el6.i686.rpm",
+          "md5": "7672185591cbe2f8c0a0625a54c2c743",
+          "sha256": "bcb728ace6a797c6470f2263ca9048a4dc1bdcdd19d92034ae7ea25f6ca7cd29"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha_22_ged9e6b4-1.el6.i686.rpm",
+          "md5": "ec20d35c9ccb02b382cef0bb0420384f",
+          "sha256": "5dd0aa8329b2e2ab0e984d988fef14225fc064a65fa4d07317933eade8d043cb"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/el/6/i686/chef-server-11.0.0_alpha.1_1_gcea071e-1.el6.i686.rpm",
+          "md5": "9a353eabea3e64e76b1d068ad7e261a7",
+          "sha256": "19833671ea9ef13006001113b31d826b785a7aa186739056e35e4c6cbeb72f92"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "10.12.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.12.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "99e2cb26891ea6165cd87139875bd56d",
+          "sha256": "221089bf511a075de2e80dc69da227a5b4354ff36196b0823fd54bebb46a5c7f"
+        },
+        "10.14.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "8ec542aed9e9be24467c9973effe7772",
+          "sha256": "7be794296274db6c5f9fbb7c4d360971908ac2070b484b31d6e852ec0e1f499b"
+        },
+        "10.14.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.0.rc.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "b30af567a00d40b1275a852962440a54",
+          "sha256": "02b03808fc8cce78afc592f213e1d6a990a4f7f68c7a9235f6e04373213ea673"
+        },
+        "10.14.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "b9448bb589b9e57d667d8f474b968a39",
+          "sha256": "6a1d37e9c484404613f8306f6e9f8cf4deabcd72bd802adc357a369de53ce8bf"
+        },
+        "10.14.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "f8e516acbe9867f9b6014850bb32b89c",
+          "sha256": "dd3805ca8f8cc579537b40c08bd5c89fd1c23700c0475afadef89c30d73c0e76"
+        },
+        "10.14.4-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.4-1.ubuntu.10.04_amd64.deb",
+          "md5": "dd2d621d23c1a217b83fea8a2db38dc4",
+          "sha256": "5036c78acf4edee9baede3de0b97670949a57ed384acd8d7b2237bb5baab5825"
+        },
+        "10.14.4-2": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.14.4-2.ubuntu.10.04_amd64.deb",
+          "md5": "79fa4ae5e378f6ba404668118e94a92a",
+          "sha256": "a6576c766001b7f4f47fec59c2b6220d6c58d0bbf0de23adf949fed4c4e6330f"
+        },
+        "10.16.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.16.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "7f0272609f3b370b812e1da01aa6dfc9",
+          "sha256": "f31f4c8c4aa6b48246e91aedc452f69cf8f09479fab73787c50cd59ffcc749e2"
+        },
+        "10.16.0.rc.0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.16.0.rc.0-0.ubuntu.10.04_amd64.deb",
+          "md5": "d821639e86471c1352f6a5f5bd2cbfcd",
+          "sha256": "8d9b3823b30d8a76fe90cb243d4762c6ed9872e41e630bd4ecdb6a603b104cc3"
+        },
+        "10.16.0.rc.1-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.16.0.rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "9787b8513673338aa0da3d36e8257dd8",
+          "sha256": "367a95eae333378f6afb3d3680268d65920d00cdd5803206d2f526ec66bb727d"
+        },
+        "10.16.2-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.16.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "d8948e174ce6e0f569ecd14bb2a4a048",
+          "sha256": "e70558fa8f7bd26d053fc175d74d89cee0bde9147a95cd530b619f778b389534"
+        },
+        "10.16.2-49-g21353f0-1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_10.16.2-49-g21353f0-1.ubuntu.10.04_amd6",
+          "md5": "f8c32a86133415a9cf7404e7f2673059",
+          "sha256": "0dadfb352384f842b71a759bb5a709391a090df9755b231ef53832ca27cbc71d"
+        },
+        "11.0.0-alpha": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-1.ubuntu.10.04_amd64.deb",
+          "md5": "8edf525258b4d09bd4697cb268c23dee",
+          "sha256": "106cc0b6c1e11c5c90a25ca74f582d26bf8d5ec92c0fd1bdcb75e1098901ce2a"
+        },
+        "11.0.0-alpha.1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "30bad7737e7802fdd5dd490f5bb0754b",
+          "sha256": "8adc2ebafa283728e266019623cc8c66aa12d3e253a5618a80bf9dc72918ea22"
+        },
+        "11.0.0-beta.2": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2-1.ubuntu.10.04_amd64.deb",
+          "md5": "db5dcf80210976404e271002d5d7d555",
+          "sha256": "bb63051ede7f816d1af414aef0d8a31292fdb1d559db38f20ef94fc09decdf66"
+        },
+        "11.0.0-beta.2+build.123": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.2+build.123-1.ubuntu.10.04_amd64.deb",
+          "md5": "d108dfe721e3a684a96a149a5d953751",
+          "sha256": "c97ea1e9b7e55cc0c4c4251811a41ec963e58f0e9d79145a147181d7b0e60934"
+        },
+        "11.0.0-beta.11": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-beta.11-1.ubuntu.10.04_amd64.deb",
+          "md5": "c151b252afe9a4bf7a240846e71c0351",
+          "sha256": "72149ac0e5403afd331f843cca2f979047005d1b26fdf571ad31dc7a82803d2c"
+        },
+        "11.0.0-rc.1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-rc.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "0a858c2effa80bbd6687433fcaa752b7",
+          "sha256": "dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"
+        },
+        "11.0.0-rc.1+20121225164140.git.207.694b062": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-rc.1+20121225164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
+          "md5": "44fd74dfe688c558a6469db2072774fb",
+          "sha256": "bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"
+        },
+        "11.0.0": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-1.ubuntu.10.04_amd64.deb",
+          "md5": "9d8040305ca61d88dcd2bb126d8e0289",
+          "sha256": "b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"
+        },
+        "11.0.0+20130101164140.git.207.694b062": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0+20130101164140.git.207.694b062-1.ubuntu.10.04_amd64.deb",
+          "md5": "c782dee98817f43b0227b88b926de29f",
+          "sha256": "a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"
+        },
+        "11.0.0+20130101164140.git.2.deadbee": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0+20130101164140.git.2.deadbee-1.ubuntu.10.04_amd64.deb",
+          "md5": "574dd623e52052d92e3bffa45fbafd1b",
+          "sha256": "296072ba9560fe70c574b8b45461e5667add7eb688e059fd458262cc4e294c76"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.10.04_i386.deb",
+          "md5": "62f3e2b81bf7b387212780e0ef4a7abf",
+          "sha256": "8357a342ff78001b3db006b6c5aaaf7ddb75bf9154c9ab9d1f24d5a3b3583c2a"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.10.04_i386.deb",
+          "md5": "44bd7a34f64e2c5e40cada9461b1885b",
+          "sha256": "455789e9c7d6b39435a03b7a6694f8eebee949c772e052fb6dff4526a02e6bce"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.10.04_i386.deb",
+          "md5": "803fceb5e4dfe3678dc6b812b012102a",
+          "sha256": "0ca8de86b84323da4fb16676d8906548e5ac0f09d7b827b1f6f61b5f52ed8259"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.10.04_i386.deb",
+          "md5": "cf7f2744aef734196aeadaf094567541",
+          "sha256": "5c19da489604bee8277f0f773abb315071d671da2546db74f1f80c8797bcdc74"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.10.04_i386.deb",
+          "md5": "ed6bbf892e2aee2500e287e2315ec077",
+          "sha256": "b9316d05bdd7fea3469a609a98ee85798c8ad74bf4454ed568a703d9f34b1fb6"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.10.04_i386.deb",
+          "md5": "e8bcc519c496180bcd7ddc45e73a509f",
+          "sha256": "b1146c5ea0d0e18a4973e42088cd6375ac0be76cb48c9d4401aa8dc1580fccd7"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.10.04_i386.deb",
+          "md5": "b0457b46af6a0cd531240d183557b64f",
+          "sha256": "edfb39e40173fa4a1eed079c2f1dac9ea5dd0bb270b3d1d201b7ce7e4c043673"
+        }
+      }
+    },
+    "11.04": {
+      "x86_64": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.11.04_amd64.deb",
+          "md5": "caebaacee4b42ed88c54e4d0b9339750",
+          "sha256": "d779e7890ac61de8a9d6d02a6c63d5299aad3521860926580783cc27822bf135"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_amd64.deb",
+          "md5": "aaa280ba73d89529bce08afd34cda467",
+          "sha256": "cd65ab37b2e10ecec4c12b368eb5f371a060597e563c39de8ca7df2a25eaeaf5"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_amd64.deb",
+          "md5": "a50d58443c7408ee4e40257b89d9d441",
+          "sha256": "e3e70e0c64bad81fc91956b25bfa2e28df63a5579a6ccadd936960d382eec932"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.11.04_amd64.deb",
+          "md5": "aee830d88bf7d78fe6d646c240231b8d",
+          "sha256": "4a4d938355168fbb0ec5931216e310634cf4c0491e202e3a53824aff4b71db8d"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.11.04_amd64.deb",
+          "md5": "7572a291c8b36f27addb2741b566c4b6",
+          "sha256": "ce072ef4f62f2b0d0818d2f8f9f1925a54eae6575dfcc0300810d895859e8a9e"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.11.04_amd64.deb",
+          "md5": "0088fe98139a8707011c1f06ee8197ea",
+          "sha256": "efc4f416431ae2871715cc27c63cb9fdc39dd1aeab561522ede988ff3eeee52c"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.11.04_amd64.deb",
+          "md5": "d02db3f1e92bc0d1c771253f29d2b8cf",
+          "sha256": "e269d7f669db3ded103adb7f4a82e14b6a1513c60c146ab35e5569a8360af8f0"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.11.04_i386.deb",
+          "md5": "94c9f30a1cded58abaa33cda91e2f875",
+          "sha256": "d877c5926d5ed9f3298cb4dad54dda8d8bd58303b8815454e79876657667c6de"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_i386.deb",
+          "md5": "8181346926388b3d05d470ca329988f7",
+          "sha256": "b0ead4ec5197d25ed2f889db2b6f588534f6cfb29ba463a35c90928ee98f7a73"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_i386.deb",
+          "md5": "2578109819528da70b94011daadc4c26",
+          "sha256": "31a9c4decb344d5c866670bf26abe60feb508c01a667bb0f4dccb0b5192eb43c"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.11.04_i386.deb",
+          "md5": "fc0590fba5fd107e4b95177b001f2442",
+          "sha256": "72948543ddc8078243888aaf47898f376acdd7d458c336c419da337e1fbb5b93"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.11.04_i386.deb",
+          "md5": "c3133e12e515a75cd41dd445245e0f46",
+          "sha256": "5dc498dcb44ee33fd8d691634ffdd27aa290da621d1ecb15fe0221e5862ec460"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.11.04_i386.deb",
+          "md5": "7c8451c01cf51cd711d10716a4b58e1a",
+          "sha256": "5ca9e05b0f9f941b3003670114ec898df375d2be160e43501d89fba617444a41"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.11.04_i386.deb",
+          "md5": "0c1de046d1616e5347db3c4d9f58e767",
+          "sha256": "97c345f968df5b07a0bb6f1ca413831caa1a8e132212376af579d5bd917b44da"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.12.04_amd64.deb",
+          "md5": "49198dc932c5ef9b91f34f009f169194",
+          "sha256": "f85ac412a607bd468d30ca70e99fee096440e637c08d74d3d6d7cfa991647540"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_amd64.deb",
+          "md5": "aaa280ba73d89529bce08afd34cda467",
+          "sha256": "cd65ab37b2e10ecec4c12b368eb5f371a060597e563c39de8ca7df2a25eaeaf5"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_amd64.deb",
+          "md5": "a50d58443c7408ee4e40257b89d9d441",
+          "sha256": "e3e70e0c64bad81fc91956b25bfa2e28df63a5579a6ccadd936960d382eec932"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.11.04_amd64.deb",
+          "md5": "aee830d88bf7d78fe6d646c240231b8d",
+          "sha256": "4a4d938355168fbb0ec5931216e310634cf4c0491e202e3a53824aff4b71db8d"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.11.04_amd64.deb",
+          "md5": "7572a291c8b36f27addb2741b566c4b6",
+          "sha256": "ce072ef4f62f2b0d0818d2f8f9f1925a54eae6575dfcc0300810d895859e8a9e"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.12.04_amd64.deb",
+          "md5": "d73fc70abfc80b57e851b58160c4c6ee",
+          "sha256": "4663b04de5cd1850f9928b6cf666a66beda64234e09594d1d24e5eccaa4c98b3"
+        },
+        "11.0.0-alpha-59-gf55b180": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha-59-gf55b180-1.ubuntu.12.04_amd64.deb",
+          "md5": "82ebfe8fae8ccfc352ef60faf533dd4b",
+          "sha256": "2fe9d08847b422f35e4af6907027f1f0733803402a488fae46c0f24d8a7c2192"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.12.04_amd64.deb",
+          "md5": "65c2976401838b4b2347af880e3b8ecf",
+          "sha256": "e89333a9cff2aca15f7acd605b9f821c08f00c4c3c96bc5595b7ec6736f69d5e"
+        },
+        "11.0.0-alpha.1": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha.1-1.ubuntu.12.04_amd64.deb",
+          "md5": "d07d74a24a11152147b4347eb67d9217",
+          "sha256": "dc904706696adc7004f5933abb5fb2414d76f8a3b1fb5a9da2881138b584f521"
+        },
+        "11.0.0-alpha2": {
+          "relpath": "/ubuntu/12.04/x86_64/chef-server_11.0.0-alpha2-1.ubuntu.12.04_amd64.deb",
+          "md5": "6b738e44805ece94c512093dcabd4f93",
+          "sha256": "6a5c47fd3ecc59358300ff6f11115c5b08b8bda338307328af6e7676cc3fddab"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/12.04/i686/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.12.04_i386.deb",
+          "md5": "df39fa7f49b368daffc1444a993bd4ba",
+          "sha256": "4524bd6f1cc0d49177f9921ed11e16e344dfc593670cf484942d4fb029d21156"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_i386.deb",
+          "md5": "8181346926388b3d05d470ca329988f7",
+          "sha256": "b0ead4ec5197d25ed2f889db2b6f588534f6cfb29ba463a35c90928ee98f7a73"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_i386.deb",
+          "md5": "2578109819528da70b94011daadc4c26",
+          "sha256": "31a9c4decb344d5c866670bf26abe60feb508c01a667bb0f4dccb0b5192eb43c"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/12.04/i686/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.12.04_i386.deb",
+          "md5": "20907d54134018dea4adda35c8c9dca7",
+          "sha256": "285f7557ada0715f0ef26e81628cd2ca134c6b7a5c27c4242ab1df08e6dcbb99"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/12.04/i686/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.12.04_i386.deb",
+          "md5": "c56fafd8117ea78a68442ca51e7a1c0c",
+          "sha256": "e93c15d89117bdbe8ecfce24f8380ba35126ac9dc22aaecc73a51ea118bbf5ce"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.11.04_i386.deb",
+          "md5": "7c8451c01cf51cd711d10716a4b58e1a",
+          "sha256": "5ca9e05b0f9f941b3003670114ec898df375d2be160e43501d89fba617444a41"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/12.04/i686/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.12.04_i386.deb",
+          "md5": "b7fcd066e38727d181ef7dbd8f707e19",
+          "sha256": "794fea66f5d838498cac100811b5eda2eb783d724b74707ccdd65bc7fb0a9995"
+        }
+      }
+    },
+    "10.10": {
+      "x86_64": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.10.04_amd64.deb",
+          "md5": "8cd014a4500a38f6675ea16d2eedfbff",
+          "sha256": "fcad77a40ba56f77e4c39567e5461cbaee21b1700f0e20eeccc5abf543a770da"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.10.04_amd64.deb",
+          "md5": "3e121dc6931b0ee4182c245b7cdeb667",
+          "sha256": "3d4a5cf2a7b4a936a9c8042dff8fcffed12a563254965b02d19aace0ade239c3"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.10.04_amd64.deb",
+          "md5": "755c1b099cce74ef7f792f4065f8ee9f",
+          "sha256": "031d03d70c416cf6aedeb8bc9da73583ebb605ba8980164655795ddc55cd927a"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.10.04_amd64.deb",
+          "md5": "ffb78434ee100a39536bd2e9a6d8b15f",
+          "sha256": "22817d540ccda3babb3b5014933e8f2d5e501e1fa00bcbe06d737323fed346c4"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.10.04_amd64.deb",
+          "md5": "b41eba79ee807826b2a3ad08bfbf7822",
+          "sha256": "d6f6867c93a84e3490729d3d299cf292ba4e45e7c0c72a081f4bf51ee731ac1b"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.10.04_amd64.deb",
+          "md5": "e96f3a279a50a023fc3e0fe141ca8fa7",
+          "sha256": "1b38196554db82a3ca0881e6a428d81ae8ae995f362414ccca81d0f94ec08f83"
+        },
+        "11.0.0-alpha-59-gf55b180": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha-59-gf55b180-1.ubuntu.10.04_amd64.deb",
+          "md5": "83192ec2e386b2b7cc1f104fba0f16ef",
+          "sha256": "3aa60b7612d3b301f855240e7f222a7e19c04c9ee21caf8ffe00bb4b4ebe99bd"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.10.04_amd64.deb",
+          "md5": "ddc46f65e2890499b8073d0811e9a6aa",
+          "sha256": "c01d4955814da8387a4bfaf5deea47eab627e88a309e98a7d47c8154abe90f7d"
+        },
+        "11.0.0-alpha.1": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha.1-1.ubuntu.10.04_amd64.deb",
+          "md5": "30bad7737e7802fdd5dd490f5bb0754b",
+          "sha256": "8adc2ebafa283728e266019623cc8c66aa12d3e253a5618a80bf9dc72918ea22"
+        },
+        "11.0.0-alpha2": {
+          "relpath": "/ubuntu/10.04/x86_64/chef-server_11.0.0-alpha2-1.ubuntu.10.04_amd64.deb",
+          "md5": "cb0bc6a8907b80b2c1eb4294053865cd",
+          "sha256": "e6fd93773f639111502700c4577de3b3110b55c829e0578f0999b205e39a6722"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.10.04_i386.deb",
+          "md5": "62f3e2b81bf7b387212780e0ef4a7abf",
+          "sha256": "8357a342ff78001b3db006b6c5aaaf7ddb75bf9154c9ab9d1f24d5a3b3583c2a"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.10.04_i386.deb",
+          "md5": "44bd7a34f64e2c5e40cada9461b1885b",
+          "sha256": "455789e9c7d6b39435a03b7a6694f8eebee949c772e052fb6dff4526a02e6bce"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.10.04_i386.deb",
+          "md5": "803fceb5e4dfe3678dc6b812b012102a",
+          "sha256": "0ca8de86b84323da4fb16676d8906548e5ac0f09d7b827b1f6f61b5f52ed8259"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.10.04_i386.deb",
+          "md5": "cf7f2744aef734196aeadaf094567541",
+          "sha256": "5c19da489604bee8277f0f773abb315071d671da2546db74f1f80c8797bcdc74"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.10.04_i386.deb",
+          "md5": "ed6bbf892e2aee2500e287e2315ec077",
+          "sha256": "b9316d05bdd7fea3469a609a98ee85798c8ad74bf4454ed568a703d9f34b1fb6"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.10.04_i386.deb",
+          "md5": "e8bcc519c496180bcd7ddc45e73a509f",
+          "sha256": "b1146c5ea0d0e18a4973e42088cd6375ac0be76cb48c9d4401aa8dc1580fccd7"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/10.04/i686/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.10.04_i386.deb",
+          "md5": "b0457b46af6a0cd531240d183557b64f",
+          "sha256": "edfb39e40173fa4a1eed079c2f1dac9ea5dd0bb270b3d1d201b7ce7e4c043673"
+        }
+      }
+    },
+    "11.10": {
+      "x86_64": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.11.04_amd64.deb",
+          "md5": "caebaacee4b42ed88c54e4d0b9339750",
+          "sha256": "d779e7890ac61de8a9d6d02a6c63d5299aad3521860926580783cc27822bf135"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_amd64.deb",
+          "md5": "aaa280ba73d89529bce08afd34cda467",
+          "sha256": "cd65ab37b2e10ecec4c12b368eb5f371a060597e563c39de8ca7df2a25eaeaf5"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_amd64.deb",
+          "md5": "a50d58443c7408ee4e40257b89d9d441",
+          "sha256": "e3e70e0c64bad81fc91956b25bfa2e28df63a5579a6ccadd936960d382eec932"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.11.04_amd64.deb",
+          "md5": "aee830d88bf7d78fe6d646c240231b8d",
+          "sha256": "4a4d938355168fbb0ec5931216e310634cf4c0491e202e3a53824aff4b71db8d"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.11.04_amd64.deb",
+          "md5": "7572a291c8b36f27addb2741b566c4b6",
+          "sha256": "ce072ef4f62f2b0d0818d2f8f9f1925a54eae6575dfcc0300810d895859e8a9e"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.11.04_amd64.deb",
+          "md5": "0088fe98139a8707011c1f06ee8197ea",
+          "sha256": "efc4f416431ae2871715cc27c63cb9fdc39dd1aeab561522ede988ff3eeee52c"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/11.04/x86_64/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.11.04_amd64.deb",
+          "md5": "d02db3f1e92bc0d1c771253f29d2b8cf",
+          "sha256": "e269d7f669db3ded103adb7f4a82e14b6a1513c60c146ab35e5569a8360af8f0"
+        }
+      },
+      "i686": {
+        "11.0.0-alpha-10-g642ffed": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-10-g642ffed-1.ubuntu.11.04_i386.deb",
+          "md5": "94c9f30a1cded58abaa33cda91e2f875",
+          "sha256": "d877c5926d5ed9f3298cb4dad54dda8d8bd58303b8815454e79876657667c6de"
+        },
+        "11.0.0-alpha-12-gdec9c4d": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-12-gdec9c4d-1.ubuntu.11.04_i386.deb",
+          "md5": "8181346926388b3d05d470ca329988f7",
+          "sha256": "b0ead4ec5197d25ed2f889db2b6f588534f6cfb29ba463a35c90928ee98f7a73"
+        },
+        "11.0.0-alpha-14-ga07db29": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-14-ga07db29-1.ubuntu.11.04_i386.deb",
+          "md5": "2578109819528da70b94011daadc4c26",
+          "sha256": "31a9c4decb344d5c866670bf26abe60feb508c01a667bb0f4dccb0b5192eb43c"
+        },
+        "11.0.0-alpha-17-g8a26870": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-17-g8a26870-1.ubuntu.11.04_i386.deb",
+          "md5": "fc0590fba5fd107e4b95177b001f2442",
+          "sha256": "72948543ddc8078243888aaf47898f376acdd7d458c336c419da337e1fbb5b93"
+        },
+        "11.0.0-alpha-18-gf1122fd": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-18-gf1122fd-1.ubuntu.11.04_i386.deb",
+          "md5": "c3133e12e515a75cd41dd445245e0f46",
+          "sha256": "5dc498dcb44ee33fd8d691634ffdd27aa290da621d1ecb15fe0221e5862ec460"
+        },
+        "11.0.0-alpha-22-ged9e6b4": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha-22-ged9e6b4-1.ubuntu.11.04_i386.deb",
+          "md5": "7c8451c01cf51cd711d10716a4b58e1a",
+          "sha256": "5ca9e05b0f9f941b3003670114ec898df375d2be160e43501d89fba617444a41"
+        },
+        "11.0.0-alpha.1-1-gcea071e": {
+          "relpath": "/ubuntu/11.04/i686/chef-server_11.0.0-alpha.1-1-gcea071e-1.ubuntu.11.04_i386.deb",
+          "md5": "0c1de046d1616e5347db3c4d9f58e767",
+          "sha256": "97c345f968df5b07a0bb6f1ca413831caa1a8e132212376af579d5bd917b44da"
+        }
+      }
+    }
+  }
+}
