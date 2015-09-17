@@ -38,6 +38,8 @@ class Omnitruck < Sinatra::Base
   config_file './config/config.yml'
 
   class InvalidDownloadPath < StandardError; end
+  class InvalidChannelName < StandardError; end
+
   configure do
     set :raise_errors, false
     set :show_exceptions, false
@@ -75,12 +77,17 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
-  get '/download-:project' do
+  error InvalidChannelName do
+    status 404
+    env['sinatra.error']
+  end
+
+  get /(?<channel>\/[\w]+)?\/download-(?<project>[\w-]+)/ do
     pass unless project_allowed(project)
     handle_download(project, JSON.parse(File.read(project.build_list_v1_path)))
   end
 
-  get '/metadata-:project' do
+  get /(?<channel>\/[\w]+)?\/metadata-(?<project>[\w-]+)/ do
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2_path)))
@@ -92,7 +99,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get "/full-:project-list" do
+  get /(?<channel>\/[\w]+)?\/full-(?<project>[\w-]+)-list/ do
     pass unless project_allowed(project)
     content_type :json
     directory = JSON.parse(File.read(project.build_list_v1_path))
@@ -100,7 +107,7 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
-  get '/:project-platform-names' do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)-platform-names/ do
     pass unless project_allowed(project)
     if File.exists?(project.platform_names_path)
       directory = JSON.parse(File.read(project.platform_names_path))
@@ -178,17 +185,25 @@ class Omnitruck < Sinatra::Base
   end
 
   def channel
-    if params['prerelease'] == 'true' || params['nightlies'] == 'true'
-      Chef::Channel.new(
-        'current', settings.channels['current']['aws_metadata_bucket'],
-        settings.channels['current']['aws_packages_bucket']
-      )
+    if params['channel']
+      channel_for(params['channel'].gsub('/',''))
     else
-      Chef::Channel.new(
-        'stable', settings.channels['stable']['aws_metadata_bucket'],
-        settings.channels['stable']['aws_packages_bucket']
-      )
+      if params['prerelease'] == 'true' || params['nightlies'] == 'true'
+        channel_for('current')
+      else
+        channel_for('stable')
+      end
     end
+  end
+
+  def channel_for(channel_name)
+    unless settings.channels.include?(channel_name)
+      raise InvalidChannelName, "Unknown channel '#{channel_name}'"
+    end
+    Chef::Channel.new(
+        channel_name, settings.channels[channel_name]['aws_metadata_bucket'],
+        settings.channels[channel_name]['aws_packages_bucket']
+      )
   end
 
   def project
@@ -312,7 +327,7 @@ class Omnitruck < Sinatra::Base
     target = Opscode::Version.find_target_version(
       semvers_available.keys,
       chef_version,
-      prerelease || use_nightlies
+      prerelease || use_nightlies || channel.name == 'current'
     )
 
     unless target
