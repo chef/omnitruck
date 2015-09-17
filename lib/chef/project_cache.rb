@@ -1,3 +1,5 @@
+require 'chef/project'
+
 class Chef
   class ProjectCache
     attr_reader :project
@@ -12,13 +14,36 @@ class Chef
       update_cache
       json_v2 = generate_combined_manifest
 
-      write_data(project.build_list_v2, json_v2)
-      write_data(project.build_list_v1, parse_to_v1_format!(json_v2))
+      write_data(build_list_v2_path, json_v2)
+      write_data(build_list_v1_path, parse_to_v1_format!(json_v2))
 
-      File.open(project.platform_names, "w") do |f|
+      File.open(platform_names_path, "w") do |f|
         f.puts project.get_platform_names
       end
     end
+
+    def name
+      project.name
+    end
+
+    def build_list_v1_path
+      metadata_file("build-#{project.name}-list-v1.json")
+    end
+
+    def build_list_v2_path
+      metadata_file("build-#{project.name}-list-v2.json")
+    end
+
+    def platform_names_path
+      metadata_file("#{project.name}-platform-names.json")
+    end
+
+    def self.for_project(project_name, channel, metadata_dir)
+      project = Chef::Project.new(project_name, channel)
+      Chef::ProjectCache.new(project, metadata_dir)
+    end
+
+    private
 
     # parses v2 JSON format to v1 format
     def parse_to_v1_format!(json)

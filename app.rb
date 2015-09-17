@@ -29,6 +29,7 @@ require 'platform_dsl'
 require 'mixlib/versioning'
 
 require 'chef/project'
+require 'chef/project_cache'
 require 'chef/channel'
 
 class Omnitruck < Sinatra::Base
@@ -76,13 +77,13 @@ class Omnitruck < Sinatra::Base
 
   get '/download-:project' do
     pass unless project_allowed(project)
-    handle_download(project, JSON.parse(File.read(project.build_list_v1)))
+    handle_download(project, JSON.parse(File.read(project.build_list_v1_path)))
   end
 
   get '/metadata-:project' do
     pass unless project_allowed(project)
 
-    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2)))
+    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2_path)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -94,15 +95,15 @@ class Omnitruck < Sinatra::Base
   get "/full-:project-list" do
     pass unless project_allowed(project)
     content_type :json
-    directory = JSON.parse(File.read(project.build_list_v1))
+    directory = JSON.parse(File.read(project.build_list_v1_path))
     directory.delete('run_data')
     JSON.pretty_generate(directory)
   end
 
   get '/:project-platform-names' do
     pass unless project_allowed(project)
-    if File.exists?(project.platform_names)
-      directory = JSON.parse(File.read(project.platform_names))
+    if File.exists?(project.platform_names_path)
+      directory = JSON.parse(File.read(project.platform_names_path))
       JSON.pretty_generate(directory)
     else
       status 404
@@ -116,7 +117,8 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(Chef::Project.load('chef', channel).build_list_v1))
+    directory = JSON.parse(File.read(
+      Chef::ProjectCache.for_project('chef', channel, metadata_dir).build_list_v1_path))
     status = { :timestamp => directory['run_data']['timestamp'] }
     JSON.pretty_generate(status)
   end
@@ -177,14 +179,14 @@ class Omnitruck < Sinatra::Base
 
   def channel
     Chef::Channel.new(
-      'stable', metadata_dir, settings.channels['stable']['aws_metadata_bucket'],
+      'stable', settings.channels['stable']['aws_metadata_bucket'],
       settings.channels['stable']['aws_packages_bucket']
     )
   end
 
   def project
     project_name = params['project'].gsub('_', '-')
-    Chef::Project.load(project_name, channel)
+    Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
   end
 
   ######################## NOTICE ##############################################

@@ -3,21 +3,15 @@ require File.expand_path("../../../omnitruck-verifier/lib/omnitruck-verifier/buc
 class Chef
   class Channel
     attr_reader :name
-    attr_reader :metadata_dir
     attr_reader :aws_metadata_bucket
     attr_reader :aws_packages_bucket
 
-    def initialize(name, metadata_dir, aws_metadata_bucket, aws_packages_bucket)
+    def initialize(name, aws_metadata_bucket, aws_packages_bucket)
       @name = name
-      @metadata_dir = metadata_dir
       @aws_metadata_bucket = aws_metadata_bucket
       @aws_packages_bucket = aws_packages_bucket
 
       @s3 = OmnitruckVerifier::BucketLister.new(aws_metadata_bucket)
-    end
-
-    def metadata_file(path)
-      File.join(metadata_dir, name, path)
     end
 
     # Return all release manifests in the s3 bucket for the given channel

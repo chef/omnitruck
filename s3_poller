@@ -65,9 +65,15 @@ class S3Poller
 
   def run
     channels.each do |channel|
-      Chef::Project::all_projects_for_channel(channel).each do |project|
-        Chef::ProjectCache.new(project, metadata_dir).update
+      all_project_caches_for_channel(channel).each do |project_cache|
+        project_cache.update
       end
+    end
+  end
+
+  def all_project_caches_for_channel(channel)
+    Chef::Project::PROJECTS.map do |project_name|
+      Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
     end
   end
 
@@ -79,7 +85,6 @@ class S3Poller
     config['channels'].map do |(channel_name, channel_info)|
       Chef::Channel.new(
         channel_name,
-        metadata_dir,
         channel_info['aws_metadata_bucket'],
         channel_info['aws_packages_bucket']
       )
