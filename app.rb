@@ -177,8 +177,8 @@ class Omnitruck < Sinatra::Base
 
   def channel
     Chef::Channel.new(
-      'stable', metadata_dir, settings.aws_metadata_bucket,
-      settings.aws_packages_bucket
+      'stable', metadata_dir, settings.channels['stable']['aws_metadata_bucket'],
+      settings.channels['stable']['aws_packages_bucket']
     )
   end
 
