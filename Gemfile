@@ -18,9 +18,12 @@ gem 'mixlib-versioning', '~> 1.1.0'
 group :test do
   gem 'rspec'
   gem 'rspec-legacy_formatters'
-  gem 'rspec-rerun'
+  gem 'rspec-rerun', '~> 0.3.0'
   gem 'rspec-its'
   gem 'rack-test'
   gem 'rspec_junit_formatter'
 end
 
+group :security do
+  gem 'bundler-audit'
+end
