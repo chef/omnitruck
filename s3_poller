@@ -11,22 +11,6 @@ require 'chef/project_cache'
 require 'chef/channel'
 
 class S3Poller
-
-  CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
-  CHEF_PLATFORM_NAMES = "chef-platform-names.json"
-
-  ANGRYCHEF_RELEASE_MANIFESTS = "angrychef-release-manifest"
-  ANGRYCHEF_PLATFORM_NAMES = "angrychef-platform-names.json"
-
-  CHEF_SERVER_RELEASE_MANIFESTS = "chef-server-release-manifest"
-  CHEF_SERVER_PLATFORM_NAMES = "chef-server-platform-names.json"
-
-  CHEFDK_RELEASE_MANIFESTS = "chefdk-release-manifest"
-  CHEFDK_PLATFORM_NAMES = "chefdk-platform-names.json"
-
-  CHEF_CONTAINER_RELEASE_MANIFESTS = "chef-container-release-manifest"
-  CHEF_CONTAINER_PLATFORM_NAMES = "chef-container-platform-names.json"
-
   attr_reader :config
 
   def initialize
