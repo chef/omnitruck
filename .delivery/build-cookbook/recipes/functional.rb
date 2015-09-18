@@ -11,7 +11,7 @@ else
   slack_channels = slack_creds['channels']
 end
 
-site_name = 'learn'
+site_name = 'omnitruck'
 domain_name = 'chef.io'
 
 if node['delivery']['change']['stage'] == 'delivered'
