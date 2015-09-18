@@ -4,6 +4,8 @@ class Chef
   class Channel
     class ManifestNotFound < Exception; end
 
+    KNOWN_CHANNELS = %w( current stable )
+
     attr_reader :name
     attr_reader :aws_metadata_bucket
     attr_reader :aws_packages_bucket
@@ -23,7 +25,7 @@ class Chef
                            @s3.fetch do |key, md5|
                              keys << key
                            end
-                           @all_manifests = keys.select do |k| 
+                           @all_manifests = keys.select do |k|
                              k =~ /\.json\Z/ and k !~ /platform-names.json/
                            end
                          end
