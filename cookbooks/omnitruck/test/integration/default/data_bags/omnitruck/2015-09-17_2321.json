@@ -1,0 +1,45 @@
+{
+  "id": "2015-09-17_2321",
+  "version": "2015-09-17_2321",
+  "artifact_location": "https://s3.amazonaws.com/omnitruck-artifacts/omnitruck-2015-09-17_2321.tar.gz",
+  "artifact_checksum": "5d95e1b3b4e092bb5f29d5aeffed6877f860c8fa85da5d1e16399afe6f9ad5ee",
+  "artifact_type": "http",
+  "delivery_data": {
+    "workspace": {
+      "root": "/var/opt/delivery/workspace/delivery.chef.co/chef/CIA/omnitruck/master/build/publish",
+      "chef": "/var/opt/delivery/workspace/delivery.chef.co/chef/CIA/omnitruck/master/build/publish/chef",
+      "cache": "/var/opt/delivery/workspace/delivery.chef.co/chef/CIA/omnitruck/master/build/publish/cache",
+      "repo": "/var/opt/delivery/workspace/delivery.chef.co/chef/CIA/omnitruck/master/build/publish/repo",
+      "ssh_wrapper": "/var/opt/delivery/workspace/delivery.chef.co/chef/CIA/omnitruck/master/build/publish/bin/git_ssh"
+    },
+    "change": {
+      "enterprise": "chef",
+      "organization": "CIA",
+      "project": "omnitruck",
+      "pipeline": "master",
+      "change_id": "47f2d7e3-2fb8-4e15-b2a4-a9ee9007f301",
+      "patchset_number": "latest",
+      "stage": "build",
+      "phase": "publish",
+      "git_url": "ssh://builder@chef@delivery.chef.co:8989/chef/CIA/omnitruck",
+      "sha": "3488e4e2d3071a367ba6cdca25acbaf495459433",
+      "patchset_branch": ""
+    },
+    "config": {
+      "build_cookbook": {
+        "name": "build-cookbook",
+        "path": ".delivery/build-cookbook"
+      },
+      "delivery-truck": {
+        "publish": {
+          "chef_server": true,
+          "github": "chef/omnitruck"
+        }
+      },
+      "skip_phases": [
+        "quality"
+      ],
+      "version": "2"
+    }
+  }
+}
