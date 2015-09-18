@@ -197,7 +197,7 @@ class Omnitruck < Sinatra::Base
   end
 
   def channel_for(channel_name)
-    unless settings.channels.include?(channel_name)
+    unless Chef::Channel::KNOWN_CHANNELS.include?(channel_name) && settings.channels.include?(channel_name)
       raise InvalidChannelName, "Unknown channel '#{channel_name}'"
     end
     Chef::Channel.new(
