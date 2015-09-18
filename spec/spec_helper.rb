@@ -34,15 +34,15 @@ Omnitruck.set :virtual_path, ''
 Omnitruck.set :metadata_dir, SPEC_DATA
 Omnitruck.set :aws_access_key_id, ''
 Omnitruck.set :aws_secret_access_key, ''
-Omnitruck.set :aws_packages_bucket, 'opscode-omnibus-packages-test'
+Omnitruck.set :aws_packages_bucket, 'opscode-omnibus-packages'
 Omnitruck.set :channels, {
   'stable' => {
-    'aws_packages_bucket' => 'opscode-omnibus-packages-test',
-    'aws_metadata_bucket' => 'opscode-omnibus-metadata-test'
+    'aws_packages_bucket' => 'opscode-omnibus-packages',
+    'aws_metadata_bucket' => 'opscode-omnibus-metadata'
   },
   'current' => {
-    'aws_packages_bucket' => 'opscode-omnibus-packages-test',
-    'aws_metadata_bucket' => 'opscode-omnibus-metadata-test'
+    'aws_packages_bucket' => 'opscode-omnibus-packages-current',
+    'aws_metadata_bucket' => 'opscode-omnibus-metadata-current'
   }
 }
 
