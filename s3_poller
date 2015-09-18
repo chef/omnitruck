@@ -66,6 +66,39 @@ class S3Poller
     @s3 = OmnitruckVerifier::BucketLister.new(bucket_name)
   end
 
+  # Chef Client 12.5 and later publishes 32 bit windows msi's under
+  # architecture i386. People will get 64 bit packages fix they
+  # ask for x86_64 starting in Chef 13.
+  def fixup_client_manifest!(manifest)
+    fix_windows_manfiest!(manifest, Gem::Version.new('13.0.0'))
+  end
+
+  # Chef Client 0.8.0 and later publishes 32 bit windows msi's under
+  # architecture i386.
+  def fixup_chefdk_manifest!(manifest)
+    fix_windows_manfiest!(manifest)
+  end
+
+  def fix_windows_manfiest!(manifest, fix_up_to_version=:all)
+    manifest['windows'].keys.each do |platform_version|
+      i386_releases = manifest['windows'][platform_version]['i386'] || {}
+
+      pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
+        if fix_up_to_version == :all || Gem::Version.new(version.split('+')[0]) < fix_up_to_version
+          memo[version] = metadata
+        end
+        memo
+      end
+
+      if manifest['windows'][platform_version]['x86_64']
+        manifest['windows'][platform_version]['x86_64'].merge!(pre_x64_releases)
+      else
+        manifest['windows'][platform_version]['x86_64'] = pre_x64_releases
+      end
+    end
+    manifest
+  end
+
   def run
     # update server and client cache
     client_collection = Project.new(CHEF_CLIENT_RELEASE_MANIFESTS, bucket_name, all_manifests)
@@ -81,25 +114,25 @@ class S3Poller
     container_collection.update_cache
 
     # generate manifests then json including backwards-compatible
-    client_json_v2 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v2'], client_json_v2)
-    client_json_v1 = client_collection.generate_combined_manifest
-    write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v1))
+    fixup_client_manifest!(client_collection.generate_combined_manifest).tap do |client_json_v2|
+      write_data(config['build_list_v2'], client_json_v2)
+      write_data(config['build_list_v1'], parse_to_v1_format!(client_json_v2))
+    end
 
-    angrychef_json_v2 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
-    angrychef_json_v1 = angrychef_collection.generate_combined_manifest
-    write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v1))
+    fixup_client_manifest!(angrychef_collection.generate_combined_manifest).tap do |angrychef_json_v2|
+      write_data(config['build_angrychef_list_v2'], angrychef_json_v2)
+      write_data(config['build_angrychef_list_v1'], parse_to_v1_format!(angrychef_json_v2))
+    end
 
     server_json_v2 = server_collection.generate_combined_manifest
     write_data(config['build_server_list_v2'], server_json_v2)
     server_json_v1 = server_collection.generate_combined_manifest
     write_data(config['build_server_list_v1'], parse_to_v1_format!(server_json_v1))
 
-    chefdk_json_v2 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v2'], chefdk_json_v2)
-    chefdk_json_v1 = chefdk_collection.generate_combined_manifest
-    write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v1))
+    fixup_chefdk_manifest!(chefdk_collection.generate_combined_manifest).tap do |chefdk_json_v2|
+      write_data(config['build_chefdk_list_v2'], chefdk_json_v2)
+      write_data(config['build_chefdk_list_v1'], parse_to_v1_format!(chefdk_json_v2))
+    end
 
     container_json_v2 = container_collection.generate_combined_manifest
     write_data(config['build_container_list_v2'], container_json_v2)
