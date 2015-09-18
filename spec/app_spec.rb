@@ -130,9 +130,10 @@ describe 'Omnitruck' do
     # To handle situations where e.g., 'x86_64' is used in an installer name as 'amd64'
     let(:architecture_alt){ architecture }
 
-    describe "client" do
-      let(:endpoint){"/download"}
-      let(:metadata_endpoint){"/metadata"}
+    let(:endpoint){"/download-#{project}"}
+    let(:metadata_endpoint){"/metadata-#{project}"}
+
+    describe "chef" do
       let(:project){ "chef" }
 
       describe "mac_os_x" do
@@ -436,8 +437,6 @@ describe 'Omnitruck' do
     end # /download
 
     describe "angrychef" do
-      let(:endpoint){"/download-angrychef"}
-      let(:metadata_endpoint){"/metadata-angrychef"}
       let(:project){ "angrychef" }
 
       describe "sles" do
@@ -743,9 +742,7 @@ describe 'Omnitruck' do
       end
     end
 
-    describe "server" do
-      let(:endpoint){"/download-server"}
-      let(:metadata_endpoint) {"metadata-server"}
+    describe "chef-server" do
       let(:project){ "chef-server" }
 
       describe "Ubuntu" do
@@ -810,73 +807,20 @@ describe 'Omnitruck' do
   end # download endpoints
 
   describe "full list endpoints" do
-    describe "client" do
-      let(:endpoint){ "/full_client_list" }
-
-      it "exists" do
-        get endpoint
-        expect(last_response).to be_ok
-      end
-
-      it "returns JSON data" do
-        get endpoint
-        expect(last_response.header['Content-Type']).to include 'application/json'
-      end
-
-      context "legacy version" do
-        let(:endpoint){ "/full_list" }
+    Chef::Project::PROJECTS.each do |project|
+      describe project do
+        let(:endpoint){ "/full-#{project}-list" }
 
         it "exists" do
           get endpoint
           expect(last_response).to be_ok
         end
 
-        it "returns JSON data" do
+        it "returns the correct JSON data" do
           get endpoint
           expect(last_response.header['Content-Type']).to include 'application/json'
+          expect(last_response.body).to match(project)
         end
-      end
-    end
-
-    describe "angrychef" do
-      let(:endpoint){ "/full_angrychef_list" }
-
-      it "exists" do
-        get endpoint
-        expect(last_response).to be_ok
-      end
-
-      it "returns JSON data" do
-        get endpoint
-        expect(last_response.header['Content-Type']).to include 'application/json'
-      end
-    end
-
-    describe "server" do
-      let(:endpoint){ "/full_server_list" }
-
-      it "exists" do
-        get endpoint
-        expect(last_response).to be_ok
-      end
-
-      it "returns JSON data" do
-        get endpoint
-        expect(last_response.header['Content-Type']).to include 'application/json'
-      end
-    end
-
-    describe "chefdk" do
-      let(:endpoint){ "/full_chefdk_list" }
-
-      it "exists" do
-        get endpoint
-        expect(last_response).to be_ok
-      end
-
-      it "returns JSON data" do
-        get endpoint
-        expect(last_response.header['Content-Type']).to include 'application/json'
       end
     end
   end
