@@ -29,7 +29,7 @@ template "/srv/omnitruck/shared/s3_poller_config.yml" do
   source "s3_poller_config.yml.erb"
   variables(
     :app_environment => "production",
-    :virtual_path => "/chef",
+    :virtual_path => "",
     :metadata_dir => s3_poller_path,
     :stable_aws_metadata_bucket => 'opscode-omnibus-package-metadata',
     :stable_aws_packages_bucket => 'opscode-omnibus-packages',
