@@ -1,6 +1,6 @@
 class Chef
   class Project
-    PROJECTS = ['chef', 'chef-server', 'chefdk', 'angrychef']
+    KNOWN_PROJECTS = %w( chef chef-server chefdk angrychef )
 
     attr_reader :name
     attr_reader :channel

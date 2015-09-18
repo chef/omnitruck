@@ -805,7 +805,7 @@ describe 'Omnitruck' do
   end # download endpoints
 
   describe "full list endpoints" do
-    Chef::Project::PROJECTS.each do |project|
+    Chef::Project::KNOWN_PROJECTS.each do |project|
       describe project do
         let(:endpoint){ "/stable/full-#{project}-list" }
 
