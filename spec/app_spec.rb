@@ -848,4 +848,44 @@ describe 'Omnitruck' do
       expect(JSON.parse(last_response.body)["timestamp"]).to eq("Thu Aug 16 11:48:08 -0700 2012")
     end
   end
+
+  describe "legacy behavior" do
+    let(:endpoint){ "/metadata" }
+    let(:project){ "chef" }
+
+    let(:platform){ "ubuntu" }
+    let(:platform_version){ "12.04" }
+    let(:architecture){ "x86_64" }
+
+    let(:prerelease){ nil }
+    let(:nightlies){ nil }
+
+    let(:params) do
+      params = {}
+      params[:p] = platform if platform
+      params[:pv] = platform_version if platform_version
+      params[:m] = architecture if architecture
+      params[:prerelease] = prerelease unless prerelease.nil? # could be false, explicitly
+      params[:nightlies] = nightlies unless nightlies.nil?    # could be false, explicitly
+      params
+    end
+
+    describe "nightlies param" do
+      let(:nightlies) { true }
+
+      it "returns a package from the current channel" do
+        get(endpoint, params)
+        expect(last_response.body).to match("opscode-omnibus-packages-current")
+      end
+    end
+
+    describe "prerelease param" do
+      let(:prerelease) { true }
+
+      it "returns a package from the current channel" do
+        get(endpoint, params)
+        expect(last_response.body).to match("opscode-omnibus-packages-current")
+      end
+    end
+  end
 end
