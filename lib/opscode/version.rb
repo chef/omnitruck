@@ -144,7 +144,10 @@ module Opscode
     # In all cases, the returned +Opscode::Version+ is the most recent
     # one in +all_versions+ that satisfies the given constraints.
     def self.find_target_version(all_versions, filter_version, allow_all)
-      if filter_version && filter_version.build
+      # If the filter version is an exact match return it
+      if filter_version && all_versions.include?(filter_version)
+        filter_version
+      elsif filter_version && filter_version.build
         # If we've requested a nightly (whether for a pre-release or release),
         # there's no sense doing any other filtering; just return that version
         filter_version
