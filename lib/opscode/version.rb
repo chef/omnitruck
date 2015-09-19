@@ -47,12 +47,11 @@ module Opscode
     ] => :mixlib_version
 
     attr_reader :iteration
-
     attr_reader :mixlib_version
 
     def initialize(version, iteration)
       @mixlib_version = version
-      @iteration = iteration.to_i
+      @iteration = iteration.to_i unless iteration.nil?
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
