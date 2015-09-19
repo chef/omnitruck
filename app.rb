@@ -229,19 +229,19 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    chef_version     = params['v']
+    project_version     = params['v']
     prerelease       = params['prerelease'] == "true"
     use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
-    # Convert the given +chef_version+ parameter string into a
-    # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
+    # Convert the given +project_version+ parameter string into a
+    # +Opscode::Version+ object.  Returns +nil+ if +project_version+ is
     # either +nil+, +blank+ or the String +"latest"+.
-    chef_version = if chef_version.nil? || chef_version.empty? || chef_version.to_s == "latest"
+    project_version = if project_version.nil? || project_version.empty? || project_version.to_s == "latest"
       nil
     else
-      parse_version_string(chef_version)
+      parse_version_string(project_version)
     end
 
     dsl = PlatformDSL.new()
@@ -299,7 +299,7 @@ class Omnitruck < Sinatra::Base
 
     target = Opscode::Version.find_target_version(
       semvers_available.keys,
-      chef_version,
+      project_version,
       true,
     )
 
