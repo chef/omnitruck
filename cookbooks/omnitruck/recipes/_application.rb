@@ -82,6 +82,8 @@ artifact_deploy 'omnitruck' do
       retry_delay 10
     end
   }
+
+  notifies :usr2, 'runit_service[omnitruck]', :delayed
 end
 
 cookbook_file '/etc/cron.d/s3_poller-cron' do
