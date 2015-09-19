@@ -136,11 +136,49 @@ fastly_domain fqdn do
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
 
-fastly_backend origin_fqdn do
+use_https = fastly_condition 'use_https' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  type 'request'
+  statement 'req.http.Fastly-SSL'
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
+
+use_http = fastly_condition 'use_http' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  type 'request'
+  statement '!req.http.Fastly-SSL'
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
+
+fastly_backend "#{origin_fqdn}-80" do
   api_key fastly_creds['api_key']
   service fastly_service.name
   address origin_fqdn
   port 80
+  request_condition = use_http.name
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
+
+fastly_backend "#{origin_fqdn}-443" do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  address origin_fqdn
+  port 443
+  ssl true
+  request_condition = use_https.name
+  sensitive true
+  notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
+end
+
+fastly_request_setting 'cache_key' do
+  api_key fastly_creds['api_key']
+  service fastly_service.name
+  hash_keys 'req.url, req.http.host, req.http.Fastly-SSL'
   sensitive true
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
