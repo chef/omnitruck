@@ -97,9 +97,11 @@ module Opscode
     end
 
     def eql?(other)
-      mixlib_version.eql?(other) &&
-        iteration == other.iteration
+      mixlib_version.eql?(other.mixlib_version) &&
+        (iteration.nil? || other.iteration.nil? || iteration == other.iteration)
     end
+
+    alias_method :==, :eql?
 
     def hash
       [major, minor, patch, prerelease, build].compact.join(".").hash
