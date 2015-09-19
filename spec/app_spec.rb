@@ -565,7 +565,7 @@ describe 'Omnitruck' do
     let(:project){ "chef" }
 
     let(:platform){ "ubuntu" }
-    let(:platform_version){ "12.04" }
+    let(:platform_version){ "10.04" }
     let(:architecture){ "x86_64" }
 
     let(:prerelease){ nil }
@@ -581,21 +581,45 @@ describe 'Omnitruck' do
       params
     end
 
-    describe "nightlies param" do
-      let(:nightlies) { true }
+    %w(
+      nightlies
+      prerelease
+    ).each do |legacy_param|
 
-      it "returns a package from the current channel" do
-        get(endpoint, params)
-        expect(last_response.body).to match("opscode-omnibus-packages-current")
+      describe "#{legacy_param} param" do
+        let(legacy_param.to_sym) { true }
+
+        it "returns a package from the current channel" do
+          get(endpoint, params)
+          expect(last_response.body).to match("opscode-omnibus-packages-current")
+        end
       end
+
     end
 
-    describe "prerelease param" do
-      let(:prerelease) { true }
+    {
+      '/download' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_10.16.0-1.ubuntu.10.04_amd64.deb',
+      '/download-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.0.0%2B20130101164140.git.207.694b062-1.ubuntu.10.04_amd64.deb',
+      '/metadata' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_10.16.0-1.ubuntu.10.04_amd64.deb',
+      '/metadata-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.0.0%2B20130101164140.git.207.694b062-1.ubuntu.10.04_amd64.deb',
+      '/full_client_list' => '/ubuntu/12.04/x86_64/chef_10.16.0-1.ubuntu.12.04_amd64.deb',
+      '/full_list' => '/ubuntu/12.04/x86_64/chef_10.16.0-1.ubuntu.12.04_amd64.deb',
+      '/full_server_list' => '/ubuntu/10.04/x86_64/chef-server_11.0.0-1.ubuntu.10.04_amd64.deb',
+    }.each do |legacy_endpoint, response_match_data|
 
-      it "returns a package from the current channel" do
-        get(endpoint, params)
-        expect(last_response.body).to match("opscode-omnibus-packages-current")
+      describe "legacy endpoint #{legacy_endpoint}" do
+        let(:endpoint) { legacy_endpoint }
+
+        it "returns the correct response data" do
+          get(endpoint, params)
+
+          if legacy_endpoint =~ /download/
+            follow_redirect!
+            expect(last_request.url).to match(response_match_data)
+          else
+            expect(last_response.body).to match(response_match_data)
+          end
+        end
       end
     end
   end
