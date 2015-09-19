@@ -41,7 +41,7 @@ template "/srv/omnitruck/shared/s3_poller_config.yml" do
   group 'omnitruck'
   mode '0755'
 
-  notifies :usr2, 'runit_service[omnitruck]', :delayed
+  notifies :restart, 'runit_service[omnitruck]', :delayed
 end
 
 # Omnitruck webapp configuration
@@ -52,7 +52,7 @@ unicorn_config "/srv/omnitruck/shared/unicorn.rb" do
   group 'omnitruck'
   mode  '0755'
 
-  notifies :usr2, 'runit_service[omnitruck]', :delayed
+  notifies :restart, 'runit_service[omnitruck]', :delayed
 end
 
 release = data_bag_item('omnitruck', node['applications']['omnitruck'])
@@ -83,7 +83,7 @@ artifact_deploy 'omnitruck' do
     end
   }
 
-  notifies :usr2, 'runit_service[omnitruck]', :delayed
+  notifies :restart, 'runit_service[omnitruck]', :delayed
 end
 
 cookbook_file '/etc/cron.d/s3_poller-cron' do
