@@ -6,6 +6,9 @@ require 'optparse'
 
 require File.expand_path("../omnitruck-verifier/lib/omnitruck-verifier/bucket_lister", __FILE__)
 
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
+require 'opscode/version'
+
 class S3Poller
 
   CHEF_CLIENT_RELEASE_MANIFESTS = "chef-release-manifest"
@@ -70,7 +73,7 @@ class S3Poller
   # architecture i386. People will get 64 bit packages fix they
   # ask for x86_64 starting in Chef 13.
   def fixup_client_manifest!(manifest)
-    fix_windows_manfiest!(manifest, Gem::Version.new('13.0.0'))
+    fix_windows_manfiest!(manifest, parse_version('13.0.0'))
   end
 
   # Chef Client 0.8.0 and later publishes 32 bit windows msi's under
@@ -79,12 +82,35 @@ class S3Poller
     fix_windows_manfiest!(manifest)
   end
 
+  def parse_version(version_string)
+    v = nil
+    [
+      Opscode::Version::Rubygems,
+      Opscode::Version::GitDescribe,
+      Opscode::Version::OpscodeSemVer,
+      Opscode::Version::SemVer,
+      Opscode::Version::Incomplete
+    ].each do |version|
+      begin
+        break v = version.new(version_string)
+      rescue
+        nil
+      end
+    end
+
+    if v.nil?
+      raise "Unsupported version format '#{version_string}'"
+    else
+      return v
+    end
+  end
+
   def fix_windows_manfiest!(manifest, fix_up_to_version=:all)
     manifest['windows'].keys.each do |platform_version|
       i386_releases = manifest['windows'][platform_version]['i386'] || {}
 
       pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
-        if fix_up_to_version == :all || Gem::Version.new(version.split('+')[0]) < fix_up_to_version
+        if fix_up_to_version == :all || parse_version(version.split('+')[0]) < fix_up_to_version
           memo[version] = metadata
         end
         memo
