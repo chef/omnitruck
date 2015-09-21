@@ -44,8 +44,8 @@ function start {
     restart
   else
     echo 'Starting new Unicorn instance'
-    cd /srv/omnitruck/current
-    exec chpst -u omnitruck -P /usr/local/bin/bundle exec unicorn -E production -c /srv/omnitruck/current/config/unicorn.rb /srv/omnitruck/current/config.ru
+    cd <%= @options[:release_path] %>
+  exec chpst -u omnitruck -P /usr/local/bin/bundle exec unicorn -E production -c <%= @options[:release_path] %>/config/unicorn.rb <%= @options[:release_path] %>/config.ru
     sleep 3
     CUR_PID=$(cat $CUR_PID_FILE)
   fi
