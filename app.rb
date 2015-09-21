@@ -173,7 +173,7 @@ class Omnitruck < Sinatra::Base
   # ---
 
   def project_allowed(project)
-    Chef::Project::PROJECTS.include? project.name
+    Chef::Project::KNOWN_PROJECTS.include? project.name
   end
 
   def metadata_dir
@@ -197,7 +197,7 @@ class Omnitruck < Sinatra::Base
   end
 
   def channel_for(channel_name)
-    unless settings.channels.include?(channel_name)
+    unless Chef::Channel::KNOWN_CHANNELS.include?(channel_name) && settings.channels.include?(channel_name)
       raise InvalidChannelName, "Unknown channel '#{channel_name}'"
     end
     Chef::Channel.new(
@@ -211,47 +211,13 @@ class Omnitruck < Sinatra::Base
     Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
   end
 
-  ######################## NOTICE ##############################################
-  #
-  # The following is an intentionally horrible method, both in name
-  # and implementation, in the hopes that its continuing presence will
-  # be a persistent goad to clean up the variety of version strings we
-  # have in Omnitruck, and converge upon a single uniform scheme.
-  #
-  ##############################################################################
-
-  # Handles the unification of the various versions in Omnitruck **AT
-  # THE TIME OF WRITING** (late December 2012).  All the versions in
-  # the 10.x line are mostly Rubygems-style versions, whereas most of
-  # the ones in the 11.x line are 'git describe'-based, with more
-  # recent ones transitioning to a more proper SemVer-style scheme.
-  #
-  # Eventually, we will converge on the +OpscodeSemVer+ style, which has
-  # recently been added to our Omnibus build system.  This version is
-  # SemVer compliant, but enforces Opscode-specific conventions for
-  # pre-release and build specifiers.
-  #
-  # Once we phase out the other versioning schemes, this method can go
-  # away completely in favor of direct instantiation of an
-  # +OpscodeSemVer+ object.
-  def janky_workaround_for_processing_all_our_different_version_strings(version_string)
+  def parse_version_string(version_string)
     v = Opscode::Version.parse(version_string)
 
     if v.nil?
       raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
     else
       return v
-    end
-  end
-
-  # Convert the given +chef_version+ parameter string into a
-  # +Opscode::Version+ object.  Returns +nil+ if +chef_version+ is
-  # either +nil+, +blank+ or the String +"latest"+.
-  def resolve_version(chef_version)
-    if chef_version.nil? || chef_version.empty? || chef_version.to_s == "latest"
-      nil
-    else
-      janky_workaround_for_processing_all_our_different_version_strings(chef_version)
     end
   end
 
@@ -263,13 +229,20 @@ class Omnitruck < Sinatra::Base
     platform_version = params['pv']
     machine          = params['m']
 
-    chef_version     = params['v']
+    project_version     = params['v']
     prerelease       = params['prerelease'] == "true"
     use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
-    chef_version = resolve_version(chef_version)
+    # Convert the given +project_version+ parameter string into a
+    # +Opscode::Version+ object.  Returns +nil+ if +project_version+ is
+    # either +nil+, +blank+ or the String +"latest"+.
+    project_version = if project_version.nil? || project_version.empty? || project_version.to_s == "latest"
+      nil
+    else
+      parse_version_string(project_version)
+    end
 
     dsl = PlatformDSL.new()
     dsl.from_file("platforms.rb")
@@ -314,7 +287,7 @@ class Omnitruck < Sinatra::Base
 
       pv_semvers = raw_versions_available.reduce({}) do |acc, kv|
         version_string, url_path = kv
-        version = janky_workaround_for_processing_all_our_different_version_strings(version_string) rescue nil
+        version = parse_version_string(version_string) rescue nil
         acc[version] = url_path unless version.nil?
         acc
       end
@@ -326,8 +299,8 @@ class Omnitruck < Sinatra::Base
 
     target = Opscode::Version.find_target_version(
       semvers_available.keys,
-      chef_version,
-      prerelease || use_nightlies || channel.name == 'current'
+      project_version,
+      true,
     )
 
     unless target

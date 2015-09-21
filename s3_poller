@@ -58,7 +58,7 @@ class S3Poller
   end
 
   def all_project_caches_for_channel(channel)
-    Chef::Project::PROJECTS.map do |project_name|
+    Chef::Project::KNOWN_PROJECTS.map do |project_name|
       Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
     end
   end

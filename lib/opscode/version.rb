@@ -38,33 +38,20 @@ module Opscode
               :prerelease,
               :build,
               :release?,
+              :release_nightly?,
               :prerelease?,
+              :prerelease_nightly?,
               :input,
-              :to_semver_string
+              :in_same_prerelease_line?,
+              :to_semver_string,
     ] => :mixlib_version
 
     attr_reader :iteration
-
     attr_reader :mixlib_version
 
     def initialize(version, iteration)
       @mixlib_version = version
-      @iteration = iteration.to_i
-    end
-
-    # Is this a nightly build of a release?
-    def release_nightly?
-      prerelease.nil? && build
-    end
-
-    # Is this a nightly build of a pre-release?
-    def prerelease_nightly?
-      prerelease && build
-    end
-
-    # Is this a nightly build (either of a release or a pre-release)?
-    def nightly?
-      !!build
+      @iteration = iteration.to_i unless iteration.nil?
     end
 
     # Returns +true+ if +other+ and this +Version+ share the same
@@ -75,17 +62,6 @@ module Opscode
         # minor and patch always match if one or the other is nil (~>-like behavior)
         ( minor.nil? || other.minor.nil? || minor == other.minor ) &&
         ( patch.nil? || other.patch.nil? || patch == other.patch )
-    end
-
-    # Returns +true+ if +other+ and this +Version+ share the same
-    # major, minor, patch, and prerelease values.  Build specifiers
-    # are not taken into consideration.
-    def in_same_prerelease_line?(other)
-      major == other.major && minor == other.minor && patch == other.patch && prerelease == other.prerelease
-    end
-
-    def prerelease_eql(other)
-
     end
 
     def to_s
@@ -121,9 +97,11 @@ module Opscode
     end
 
     def eql?(other)
-      mixlib_version.eql?(other) &&
-        iteration == other.iteration
+      mixlib_version.eql?(other.mixlib_version) &&
+        (iteration.nil? || other.iteration.nil? || iteration == other.iteration)
     end
+
+    alias_method :==, :eql?
 
     def hash
       [major, minor, patch, prerelease, build].compact.join(".").hash
@@ -166,7 +144,10 @@ module Opscode
     # In all cases, the returned +Opscode::Version+ is the most recent
     # one in +all_versions+ that satisfies the given constraints.
     def self.find_target_version(all_versions, filter_version, allow_all)
-      if filter_version && filter_version.build
+      # If the filter version is an exact match return it
+      if filter_version && all_versions.include?(filter_version)
+        filter_version
+      elsif filter_version && filter_version.build
         # If we've requested a nightly (whether for a pre-release or release),
         # there's no sense doing any other filtering; just return that version
         filter_version
