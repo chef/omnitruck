@@ -24,12 +24,6 @@ directory s3_poller_cache_path do
   group 'omnitruck'
 end
 
-runit_service 'omnitruck' do
-  default_logger true
-  log_timeout 3600
-  action :create
-end
-
 release = data_bag_item('omnitruck', node['applications']['omnitruck'])
 
 artifact_deploy 'omnitruck' do
@@ -110,8 +104,6 @@ artifact_deploy 'omnitruck' do
     end
 
     runit_service 'omnitruck' do
-      default_logger true
-      log_timeout 3600
       action :restart
     end
   }
