@@ -9,6 +9,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'chef/project'
 require 'chef/project_cache'
 require 'chef/channel'
+require 'opscode/version'
 
 class S3Poller
   attr_reader :config
@@ -52,7 +53,13 @@ class S3Poller
   def run
     channels.each do |channel|
       all_project_caches_for_channel(channel).each do |project_cache|
-        project_cache.update
+        if project_cache.name == 'chef'
+          project_cache.update(Opscode::Version.parse('13.0.0'))
+        elsif project_cache.name == 'chefdk'
+          project_cache.update(:all)
+        else
+          project_cache.update
+        end
       end
     end
   end

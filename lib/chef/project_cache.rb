@@ -1,4 +1,5 @@
 require 'chef/project'
+require 'opscode/version'
 
 class Chef
   class ProjectCache
@@ -10,9 +11,33 @@ class Chef
       @metadata_dir = metadata_dir
     end
 
-    def update
+    def fix_windows_manifest!(manifest, fix_up_to_version=:all)
+      manifest['windows'].keys.each do |platform_version|
+        i386_releases = manifest['windows'][platform_version]['i386'] || {}
+
+        pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
+          if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
+            memo[version] = metadata
+          end
+          memo
+        end
+
+        if manifest['windows'][platform_version]['x86_64']
+          manifest['windows'][platform_version]['x86_64'].merge!(pre_x64_releases)
+        else
+          manifest['windows'][platform_version]['x86_64'] = pre_x64_releases
+        end
+      end
+      manifest
+    end
+
+    def update(remap_up_to=nil)
       update_cache
-      json_v2 = generate_combined_manifest
+      json_v2 = if remap_up_to
+                  fix_windows_manifest!(generate_combined_manifest, remap_up_to)
+                else
+                  generate_combined_manifest
+                end
 
       write_data(build_list_v2_path, json_v2)
       write_data(build_list_v1_path, parse_to_v1_format!(json_v2))
