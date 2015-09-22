@@ -57,19 +57,22 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts pnv:f:d:P: opt
+while getopts pnv:f:d:P:m:u: opt
 do
   case "$opt" in
 
     v)  version="$OPTARG";;
     p)  prerelease="true";;
     n)  nightlies="true";;
-    f)  cmdline_filename="$OPTARG";;
+    f)  package_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
+    m)  mode="$OPTARG";;
+    s)  sha256="$OPTARG";;
+    S)  md5="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-p] [-v version] [-f filename | -d download_dir]"
+      "usage: $0 [-p] [-v version] [-f filename | -d download_dir] [-m detect]"
       exit 1;;
   esac
 done
@@ -220,6 +223,14 @@ if test "x$platform_version" = "x"; then
   report_bug
   exit 1
 fi
+
+# If we're in detect-only mode, print the platform, platform_version and machine.
+if test "x$mode" = "xdetect"; then
+  echo "platform=$platform"
+  echo "platform_version=$platform_version"
+  echo "machine=$machine"
+  exit 0
+end
 
 if test "x$platform" = "xsolaris2"; then
   # hack up the path on Solaris to find wget, pkgadd
@@ -488,113 +499,111 @@ install_file() {
   fi
 }
 
-echo "Downloading Chef $version for ${platform}..."
-
-
-metadata_filename="$tmp_dir/metadata.txt"
-
-case "$project" in
-  "chef")
-    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "angrychef")
-    metadata_url="<%= locals[:download_url] %>-angrychef?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "server")
-    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "chefdk")
-    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "container")
-    metadata_url="<%= locals[:download_url] %>-container?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-    *)
-esac
-
-if test "x$platform" = "xsolaris2"; then
-  if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
-    # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
-    metadata_url=`echo $metadata_url | sed -e 's/https/http/'`
-  fi
-fi
-
-do_download "$metadata_url"  "$metadata_filename"
-
-cat "$metadata_filename"
-
-# check that all the mandatory fields in the downloaded metadata are there
-if grep '^url' $metadata_filename > /dev/null && grep '^sha256' $metadata_filename > /dev/null && grep '^md5' $metadata_filename > /dev/null; then
-  echo "downloaded metadata file looks valid..."
-else
-  echo "downloaded metadata file is corrupted or an uncaught error was encountered in downloading the file..."
-  # this generally means one of the download methods downloaded a 404 or something like that and then reported a successful exit code,
-  # and this should be fixed in the function that was doing the download.
-  report_bug
-  exit 1
-fi
-
-download_url=`awk '$1 == "url" { print $2 }' "$metadata_filename"`
-
-if test "x$platform" = "xsolaris2"; then
-  if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
-    # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
-    download_url=`echo $download_url | sed -e 's/https/http/'`
-  fi
-fi
-
-filename=`echo $download_url | sed -e 's/^.*\///'`
-filetype=`echo $filename | sed -e 's/^.*\.//'`
-
-# use either $tmp_dir, the provided directory (-d) or the provided filename (-f)
-if test "x$cmdline_filename" != "x"; then
-  download_filename="$cmdline_filename"
-elif test "x$cmdline_dl_dir" != "x"; then
-  download_filename="$cmdline_dl_dir/$filename"
-else
-  download_filename="$tmp_dir/$filename"
-fi
-
-# ensure the parent directory where to download the installer always exists
-download_dir=`dirname $download_filename`
-(umask 077 && mkdir -p $download_dir) || exit 1
-
-sha256=`awk '$1 == "sha256" { print $2 }' "$metadata_filename"`
-md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
-
-# check if we have that file locally available and if so verify the checksum
-cached_file_available="false"
-if test -f $download_filename; then
-  echo "$download_filename already exists, verifiying checksum..."
-  if do_checksum "$download_filename" "$sha256" "$md5"; then
-    echo "checksum compare succeeded, using existing file!"
-    cached_file_available="true"
+# If we were passed package_filename and checksums, don't grab metadata or download.
+if test "x$package_filename" != "x" && test "x$sha256" != "x" -o "x$md5" != "x"; then
+  if test -f $package_filename; then
+    echo "$package_filename already exists, verifying checksum..."
+    echo "Using Chef package at $package_filename for ${platform} ..."
   else
-    echo "checksum mismatch, downloading latest version of the file"
+    echo "$package_filename does not exist, cannot install"
+    exit 1
   fi
-fi
+else
+  echo "Downloading Chef $version for ${platform}..."
 
-# download if no local version of the file available
-if test "x$cached_file_available" != "xtrue"; then
-  do_download "$download_url"  "$download_filename"
-  do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
-fi
+  case "$project" in
+    "chef")
+      metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+      ;;
+    "angrychef")
+      metadata_url="<%= locals[:download_url] %>-angrychef?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+      ;;
+    "server")
+      metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+      ;;
+    "chefdk")
+      metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+      ;;
+    "container")
+      metadata_url="<%= locals[:download_url] %>-container?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
+      ;;
+      *)
+  esac
 
-if test "x$version" = "x"; then
-  echo
-  echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
-  echo
-  echo "You are installing an omnibus package without a version pin.  If you are installing"
-  echo "on production servers via an automated process this is DANGEROUS and you will"
-  echo "be upgraded without warning on new releases, even to new major releases."
-  echo "Letting the version float is only appropriate in desktop, test, development or"
-  echo "CI/CD environments."
-  echo
-  echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
-  echo
-fi
+  if test "x$platform" = "xsolaris2"; then
+    if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
+      # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
+      metadata_url=`echo $metadata_url | sed -e 's/https/http/'`
+    fi
+  fi
 
-install_file $filetype "$download_filename"
+  do_download "$metadata_url" "$metadata_filename"
+
+  cat "$metadata_filename"
+
+  # check that all the mandatory fields in the downloaded metadata are there
+  if grep '^url' $metadata_filename > /dev/null && grep '^sha256' $metadata_filename > /dev/null && grep '^md5' $metadata_filename > /dev/null; then
+    echo "downloaded metadata file looks valid..."
+  else
+    echo "downloaded metadata file is corrupted or an uncaught error was encountered in downloading the file..."
+    # this generally means one of the download methods downloaded a 404 or something like that and then reported a successful exit code,
+    # and this should be fixed in the function that was doing the download.
+    report_bug
+    exit 1
+  fi
+
+  download_url=`awk '$1 == "url" { print $2 }' "$metadata_filename"`
+
+  if test "x$platform" = "xsolaris2"; then
+    if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then
+      # solaris 9 lacks openssl, solaris 10 lacks recent enough credentials - your base O/S is completely insecure, please upgrade
+      download_url=`echo $download_url | sed -e 's/https/http/'`
+    fi
+  fi
+
+  filename=`echo $download_url | sed -e 's/^.*\///'`
+  filetype=`echo $filename | sed -e 's/^.*\.//'`
+
+  # use either $tmp_dir, the provided directory (-d) or the provided filename (-f)
+  if test "x$package_filename" == "x"; then
+    if test "x$cmdline_dl_dir" != "x"; then
+      package_filename="$cmdline_dl_dir/$filename"
+    else
+      package_filename="$tmp_dir/$filename"
+    fi
+  fi
+
+  # ensure the parent directory where to download the installer always exists
+  download_dir=`dirname $package_filename`
+  (umask 077 && mkdir -p $download_dir) || exit 1
+
+  sha256=`awk '$1 == "sha256" { print $2 }' "$metadata_filename"`
+  md5=`awk '$1 == "md5" { print $2 }' "$metadata_filename"`
+
+  # check if we have that file locally available and if so verify the checksum
+  if test -f $package_filename; then
+    echo "$package_filename already exists, verifying checksum..."
+    if do_checksum "$package_filename" "$sha256" "$md5"; then
+      echo "checksum compare succeeded, using existing file!"
+    else
+      echo "checksum mismatch, downloading latest version of the file"
+      do_download "$download_url"  "$package_filename"
+    fi
+  else
+    do_download "$download_url"  "$package_filename"
+  fi
+
+  if grep yolo "$metadata_filename" >/dev/null; then
+    echo
+    echo "WARNING: Chef-Client has not been regression tested on this O/S Distribution"
+    echo "WARNING: Do not use this configuration for Production Applications.  Use at your own risk."
+    echo
+  fi
+}
+
+do_checksum "$package_filename" "$sha256" "$md5" || checksum_mismatch
+
+install_file $filetype "$package_filename"
 
 if test "x$tmp_dir" != "x"; then
   rm -r "$tmp_dir"
