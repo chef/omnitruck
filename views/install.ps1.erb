@@ -234,7 +234,10 @@ function Install-ChefProject {
   if ($pscmdlet.ShouldProcess("$download_destination", "Installing")){
     if (Test-ChefProjectPackage -Path $download_destination -Algorithm 'SHA256' -Hash $package_metadata.sha256) {
       Write-Host "Installing $project from $download_destination"
-      msiexec /qn /i $download_destination
+      $p = Start-Process -FilePath "msiexec" -ArgumentList "/qn /i $download_destination" -Passthru -Wait
+      if ($p.ExitCode -ne 0) {
+        throw "msiexec was not successful. Received exit code $($p.ExitCode)"
+      }
     }
     else {
       throw "Failed to validate the downloaded installer for $project."
