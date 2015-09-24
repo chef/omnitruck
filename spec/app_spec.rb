@@ -67,6 +67,7 @@ describe 'Omnitruck' do
 
         expect(parsed_json["sha256"]).to eq(expected_sha256)
         expect(parsed_json["md5"]).to eq(expected_md5)
+        expect(parsed_json["version"]).not_to be_nil
       end
 
       it "should serve plain text metadata with a URI for package #{expected_version}" do
@@ -83,6 +84,7 @@ describe 'Omnitruck' do
 
         expect(parsed_metadata["sha256"]).to eq(expected_sha256)
         expect(parsed_metadata["md5"]).to eq(expected_md5)
+        expect(parsed_metadata["version"]).not_to be_nil
       end
     end
 
