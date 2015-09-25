@@ -52,6 +52,9 @@ machine_batch do
     machine "#{instance_name}-#{i}" do
       action :converge
       chef_environment delivery_environment
+      attribute 'delivery_org', node['delivery']['change']['organization']
+      attribute 'project', node['delivery']['change']['project']
+      tags node['delivery']['change']['organization'], node['delivery']['change']['project']
       machine_options CIAInfra.machine_options(node, 'us-west-2')
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
       run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
