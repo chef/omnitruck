@@ -313,6 +313,13 @@ class Omnitruck < Sinatra::Base
       raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
     end
 
+    if package_info.is_a?(Hash)
+      # Append version to the package_info if we are returning a hash
+      # In v1 this returns a url and there are some tests still exercising
+      # this code path.
+      package_info["version"] = target
+    end
+
     package_info
   end
 
@@ -334,7 +341,6 @@ class Omnitruck < Sinatra::Base
   # parses package_info hash into plaintext string
   def parse_plain_text(package_info)
     full_url = convert_relpath_to_url(package_info["relpath"])
-    ret = "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\n"
-    ret
+    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\nversion\t#{package_info['version']}"
   end
 end
