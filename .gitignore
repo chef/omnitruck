@@ -25,3 +25,6 @@ server_migrate_manifest_names
 *.rb#
 .#*
 [#]*[#]
+
+# Ignore dev files
+metadata_dir/

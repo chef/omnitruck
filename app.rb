@@ -84,13 +84,16 @@ class Omnitruck < Sinatra::Base
 
   get /(?<channel>\/[\w]+)?\/download-(?<project>[\w-]+)/ do
     pass unless project_allowed(project)
-    handle_download(project, JSON.parse(File.read(project.build_list_v1_path)))
+
+    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
+    full_url = convert_relpath_to_url(package_info["relpath"])
+    redirect full_url
   end
 
   get /(?<channel>\/[\w]+)?\/metadata-(?<project>[\w-]+)/ do
     pass unless project_allowed(project)
 
-    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_v2_path)))
+    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
     package_info["url"] = convert_relpath_to_url(package_info["relpath"])
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -102,8 +105,9 @@ class Omnitruck < Sinatra::Base
   get /(?<channel>\/[\w]+)?\/full-(?<project>[\w-]+)-list/ do
     pass unless project_allowed(project)
     content_type :json
-    directory = JSON.parse(File.read(project.build_list_v1_path))
+    directory = JSON.parse(File.read(project.build_list_path))
     directory.delete('run_data')
+    extract_build_list!(directory)
     JSON.pretty_generate(directory)
   end
 
@@ -124,9 +128,9 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    directory = JSON.parse(File.read(
-      Chef::ProjectCache.for_project('chef', channel, metadata_dir).build_list_v1_path))
-    status = { :timestamp => directory['run_data']['timestamp'] }
+    status = {
+      :timestamp => Chef::ProjectCache.for_project('chef', channel, metadata_dir).timestamp
+    }
     JSON.pretty_generate(status)
   end
 
@@ -221,6 +225,20 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  def extract_build_list!(json)
+    # nested loops, but much easier than writing a generic DFS solution or something
+    json.each do |platform, platform_value|
+      next if platform.to_s == "run_data"
+      platform_value.each_value do |platform_version_value|
+        platform_version_value.each_value do |architecture_value|
+          architecture_value.each do |chef_version, chef_version_value|
+            architecture_value[chef_version] = chef_version_value["relpath"]
+          end
+        end
+      end
+    end
+  end
+
   # Take the input architecture, and an optional version (latest is
   # default), and returns the bottom level of the hash, if v1, this is simply the
   # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums.
@@ -230,8 +248,6 @@ class Omnitruck < Sinatra::Base
     machine          = params['m']
 
     project_version     = params['v']
-    prerelease       = params['prerelease'] == "true"
-    use_nightlies    = params['nightlies'] == "true"
 
     error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
 
@@ -330,12 +346,6 @@ class Omnitruck < Sinatra::Base
     relpath.gsub!(/\+/, "%2B")
     base = "#{request.scheme}://#{channel.aws_packages_bucket}.s3.amazonaws.com"
     base + relpath
-  end
-
-  def handle_download(name, build_hash)
-    package_url = get_package_info(name, build_hash)
-    full_url = convert_relpath_to_url(package_url)
-    redirect full_url
   end
 
   # parses package_info hash into plaintext string
