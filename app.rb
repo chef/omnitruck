@@ -31,6 +31,7 @@ require 'mixlib/versioning'
 require 'chef/project'
 require 'chef/project_cache'
 require 'chef/channel'
+require 'chef/version_resolver'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
@@ -215,16 +216,6 @@ class Omnitruck < Sinatra::Base
     Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
   end
 
-  def parse_version_string(version_string)
-    v = Opscode::Version.parse(version_string)
-
-    if v.nil?
-      raise InvalidDownloadPath, "Unsupported version format '#{version_string}'"
-    else
-      return v
-    end
-  end
-
   def extract_build_list!(json)
     # nested loops, but much easier than writing a generic DFS solution or something
     json.each do |platform, platform_value|
@@ -239,104 +230,11 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  # Take the input architecture, and an optional version (latest is
-  # default), and returns the bottom level of the hash, if v1, this is simply the
-  # s3 url (aka relpath), if v2, it is a hash of the relpath and checksums.
   def get_package_info(name, build_hash)
-    platform         = params['p']
-    platform_version = params['pv']
-    machine          = params['m']
-
-    project_version     = params['v']
-
-    error_msg = "No #{name} installer for platform #{platform}, platform_version #{platform_version}, machine #{machine}"
-
-    # Convert the given +project_version+ parameter string into a
-    # +Opscode::Version+ object.  Returns +nil+ if +project_version+ is
-    # either +nil+, +blank+ or the String +"latest"+.
-    project_version = if project_version.nil? || project_version.empty? || project_version.to_s == "latest"
-      nil
-    else
-      parse_version_string(project_version)
-    end
-
-    dsl = PlatformDSL.new()
-    dsl.from_file("platforms.rb")
-    pv = dsl.new_platform_version(platform, platform_version)
-
-    # this maps "linuxmint" onto "ubuntu", "scientific" onto "el", etc
-    remapped_platform = pv.mapped_name
-
-    if !build_hash[remapped_platform]
-      raise InvalidDownloadPath, "Cannot find any chef versions for mapped platform #{pv.mapped_name}: #{error_msg}"
-    end
-
-    distro_versions_available = build_hash[remapped_platform].keys
-
-    # pick all distros that are <= the current distro (shipping artifacts
-    # for el6 to el7 is fine, but shipping el7 to el6 is bad)
-    distro_versions_available.select! {|v| dsl.new_platform_version(remapped_platform, v) <= pv }
-
-    if distro_versions_available.length == 0
-      raise InvalidDownloadPath, "Cannot find any available chef versions for this mapped platform version #{pv.mapped_name} #{pv.mapped_version}: #{error_msg}"
-    end
-
-    # walk forwards through the pv list (10.04 then 10.10, etc)
-    distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(remapped_platform, v1) <=> dsl.new_platform_version(remapped_platform, v2) }
-
-    # walk through all the distro versions until we find a candidate
-    package_info = nil
-    pv_selected = nil
-
-    semvers_available = {}
-
-    distro_versions_available.each do |remapped_platform_version|
-      pv_selected = remapped_platform_version
-
-      if !remapped_platform_version || !build_hash[remapped_platform][remapped_platform_version] || !build_hash[remapped_platform][remapped_platform_version][machine]
-        next
-      end
-
-      raw_versions_available = build_hash[remapped_platform][remapped_platform_version][machine]
-
-      next if !raw_versions_available
-
-      pv_semvers = raw_versions_available.reduce({}) do |acc, kv|
-        version_string, url_path = kv
-        version = parse_version_string(version_string) rescue nil
-        acc[version] = url_path unless version.nil?
-        acc
-      end
-
-      next if !pv_semvers
-
-      semvers_available.merge!(pv_semvers)
-    end
-
-    target = Opscode::Version.find_target_version(
-      semvers_available.keys,
-      project_version,
-      true,
-    )
-
-    unless target
-      raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
-    end
-
-    package_info = semvers_available[target]
-
-    unless package_info
-      raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{error_msg}"
-    end
-
-    if package_info.is_a?(Hash)
-      # Append version to the package_info if we are returning a hash
-      # In v1 this returns a url and there are some tests still exercising
-      # this code path.
-      package_info["version"] = target
-    end
-
-    package_info
+    Chef::VersionResolver.new(
+      params['v'], build_hash,
+      platform_string: params['p'], platform_version_string: params['pv'], machine_string: params['m']
+    ).package_info
   end
 
   def convert_relpath_to_url(relpath)
