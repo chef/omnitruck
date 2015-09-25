@@ -39,8 +39,7 @@ class Chef
                   generate_combined_manifest
                 end
 
-      write_data(build_list_v2_path, json_v2)
-      write_data(build_list_v1_path, parse_to_v1_format!(json_v2))
+      write_data(build_list_path, json_v2)
 
       File.open(platform_names_path, "w") do |f|
         f.puts project.get_platform_names
@@ -51,12 +50,8 @@ class Chef
       project.name
     end
 
-    def build_list_v1_path
-      metadata_file("build-#{project.name}-list-v1.json")
-    end
-
-    def build_list_v2_path
-      metadata_file("build-#{project.name}-list-v2.json")
+    def build_list_path
+      metadata_file("build-#{project.name}-list.json")
     end
 
     def platform_names_path
@@ -68,22 +63,11 @@ class Chef
       Chef::ProjectCache.new(project, metadata_dir)
     end
 
-    private
-
-    # parses v2 JSON format to v1 format
-    def parse_to_v1_format!(json)
-      # discusting nested loops, but much easier than writing a generic DFS solution or something
-      json.each do |platform, platform_value|
-        next if platform.to_s == "run_data"
-        platform_value.each_value do |platform_version_value|
-          platform_version_value.each_value do |architecture_value|
-            architecture_value.each do |chef_version, chef_version_value|
-              architecture_value[chef_version] = chef_version_value["relpath"]
-            end
-          end
-        end
-      end
+    def timestamp
+      JSON.parse(File.read(build_list_path))['run_data']['timestamp']
     end
+
+    private
 
     def write_data(path, data)
       data[:run_data] = { :timestamp => Time.now.to_s }
