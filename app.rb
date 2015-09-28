@@ -83,7 +83,7 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
-  get /(?<channel>\/[\w]+)?\/download-(?<project>[\w-]+)/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download/ do
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
@@ -91,7 +91,7 @@ class Omnitruck < Sinatra::Base
     redirect full_url
   end
 
-  get /(?<channel>\/[\w]+)?\/metadata-(?<project>[\w-]+)/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata/ do
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
@@ -103,7 +103,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/full-(?<project>[\w-]+)-list/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions/ do
     pass unless project_allowed(project)
     content_type :json
     directory = JSON.parse(File.read(project.build_list_path))
@@ -112,7 +112,7 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(directory)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)-platform-names/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
     pass unless project_allowed(project)
     if File.exists?(project.platform_names_path)
       directory = JSON.parse(File.read(project.platform_names_path))
@@ -145,13 +145,13 @@ class Omnitruck < Sinatra::Base
   #########################################################################
 
   {
-    '/download' => '/download-chef',
-    '/metadata' => '/metadata-chef',
-    '/download-server' => '/download-chef-server',
-    '/metadata-server' => '/metadata-chef-server',
-    '/full_client_list' => '/full-chef-list',
-    '/full_list' => '/full-chef-list',
-    '/full_server_list' => '/full-chef-server-list'
+    '/download' => '/chef/download',
+    '/metadata' => '/chef/metadata',
+    '/download-server' => '/chef-server/download',
+    '/metadata-server' => '/chef-server/metadata',
+    '/full_client_list' => '/chef/versions',
+    '/full_list' => '/chef/versions',
+    '/full_server_list' => '/chef-server/versions'
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
@@ -160,12 +160,12 @@ class Omnitruck < Sinatra::Base
   end
 
   get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/full-#{project.name}-list")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
     [status, headers, body]
   end
 
   get '/:project\\_platform_names' do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}-platform-names")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/platforms")
     [status, headers, body]
   end
 

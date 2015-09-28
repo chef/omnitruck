@@ -132,8 +132,8 @@ describe 'Omnitruck' do
     # To handle situations where e.g., 'x86_64' is used in an installer name as 'amd64'
     let(:architecture_alt){ architecture }
 
-    let(:endpoint){"/stable/download-#{project}"}
-    let(:metadata_endpoint){"/stable/metadata-#{project}"}
+    let(:endpoint){"/stable/#{project}/download"}
+    let(:metadata_endpoint){"/stable/#{project}/metadata"}
 
     describe "chef" do
       let(:project){ "chef" }
@@ -520,7 +520,7 @@ describe 'Omnitruck' do
   describe "full list endpoints" do
     Chef::Project::KNOWN_PROJECTS.each do |project|
       describe project do
-        let(:endpoint){ "/stable/full-#{project}-list" }
+        let(:endpoint){ "/stable/#{project}/versions" }
 
         it "exists" do
           get endpoint
