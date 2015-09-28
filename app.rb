@@ -50,27 +50,31 @@ class Omnitruck < Sinatra::Base
   configure :development, :test do
     set :raise_errors, true  # needed to get accurate backtraces out of rspec
   end
+
   #
   # serve up the installer script
   #
-  get '/install.sh' do
-    content_type :sh
-    erb :'install.sh', {
-      layout: :'install.sh',
-      locals: {
-        download_url: url("#{settings.virtual_path}/metadata")
-      }
+  get /install\.(?<extension>[\w]+)/ do
+    template_vars = {
+      base_url: url(settings.virtual_path),
     }
-  end
 
-  get '/install.ps1' do
-    content_type :txt
-    erb :'install.ps1', {
-      layout: :'install.ps1',
-      locals: {
-        download_url: url("#{settings.virtual_path}/metadata")
+    case params['extension']
+    when 'sh'
+      content_type :sh
+      erb :'install.sh', {
+        layout: :'install.sh',
+        locals: template_vars
       }
-    }
+    when 'ps1'
+      content_type :txt
+      erb :'install.ps1', {
+        layout: :'install.ps1',
+        locals: template_vars
+      }
+    else
+      halt 404
+    end
   end
 
   error InvalidDownloadPath do
