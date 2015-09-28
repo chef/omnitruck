@@ -26,6 +26,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+download_timeout=0
 
 prerelease="false"
 
@@ -57,7 +58,7 @@ report_bug() {
 }
 
 # Get command line arguments
-while getopts pnv:f:d:P: opt
+while getopts pnv:f:d:P:t: opt
 do
   case "$opt" in
 
@@ -67,9 +68,10 @@ do
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
+    t)  download_timeout="$OPTARG";;
     \?)   # unknown flag
       echo >&2 \
-      "usage: $0 [-p] [-v version] [-f filename | -d download_dir]"
+      "usage: $0 [-p] [-v version] [-t connection_timeout] [-f filename | -d download_dir]"
       exit 1;;
   esac
 done
@@ -235,6 +237,7 @@ checksum_mismatch() {
 
 unable_to_retrieve_package() {
   echo "Unable to retrieve a valid package!"
+
   report_bug
   echo "Metadata URL: $metadata_url"
   if test "x$download_url" != "x"; then
@@ -290,7 +293,12 @@ capture_tmp_stderr() {
 # do_wget URL FILENAME
 do_wget() {
   echo "trying wget..."
-  wget -O "$2" "$1" 2>$tmp_dir/stderr
+  if test $download_timeout -eq 0; then
+    wget -t 1 -O "$2" "$1" 2>$tmp_dir/stderr
+  else
+    wget -t 1 -T $download_timeout -O "$2" "$1" 2>$tmp_dir/stderr
+  fi
+
   rc=$?
   # check for 404
   grep "ERROR 404" $tmp_dir/stderr 2>&1 >/dev/null
@@ -311,7 +319,12 @@ do_wget() {
 # do_curl URL FILENAME
 do_curl() {
   echo "trying curl..."
-  curl -sL -D $tmp_dir/stderr "$1" > "$2"
+  if test $download_timeout -eq 0; then
+    curl -sL -D $tmp_dir/stderr "$1" > "$2"
+  else
+    curl -sL --connect-timeout $download_timeout -D $tmp_dir/stderr "$1" > "$2"
+  fi
+
   rc=$?
   # check for 404
   grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
@@ -332,7 +345,12 @@ do_curl() {
 # do_fetch URL FILENAME
 do_fetch() {
   echo "trying fetch..."
-  fetch -o "$2" "$1" 2>$tmp_dir/stderr
+  if test $download_timeout -eq 0; then
+    fetch -o "$2" "$1" 2>$tmp_dir/stderr
+  else
+    fetch -T $download_timeout -o "$2" "$1" 2>$tmp_dir/stderr
+  fi
+
   # check for bad return status
   test $? -ne 0 && return 1
   return 0
@@ -341,7 +359,12 @@ do_fetch() {
 # do_curl URL FILENAME
 do_perl() {
   echo "trying perl..."
-  perl -e 'use LWP::Simple; getprint($ARGV[0]);' "$1" > "$2" 2>$tmp_dir/stderr
+  if test $download_timeout -eq 0; then
+    perl -e 'use LWP::Simple qw($ua get); print get($ARGV[0]);' "$1" > "$2" 2>$tmp_dir/stderr
+  else
+    perl -e 'use LWP::Simple qw($ua get); $ua->timeout($ARGV[1]); print get($ARGV[0]);' "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
+  fi
+
   rc=$?
   # check for 404
   grep "404 Not Found" $tmp_dir/stderr 2>&1 >/dev/null
@@ -362,7 +385,12 @@ do_perl() {
 # do_curl URL FILENAME
 do_python() {
   echo "trying python..."
-  python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>$tmp_dir/stderr
+  if test $download_timeout -eq 0; then
+    python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1]).read())" "$1" > "$2" 2>$tmp_dir/stderr
+  else
+    python -c "import sys,urllib2 ; sys.stdout.write(urllib2.urlopen(sys.argv[1], timeout=float(sys.argv[2])).read())" "$1" "$download_timeout" > "$2" 2>$tmp_dir/stderr
+  fi
+
   rc=$?
   # check for 404
   grep "HTTP Error 404" $tmp_dir/stderr 2>&1 >/dev/null
@@ -432,7 +460,7 @@ do_download() {
     do_python $1 $2 && return 0
   fi
 
-  unable_to_retrieve_package
+  return 1
 }
 
 # install_file TYPE FILENAME
@@ -490,8 +518,36 @@ install_file() {
 
 echo "Downloading Chef $version for ${platform}..."
 
+# Create metadata filename
+metadata_filename="metadata"
 
-metadata_filename="$tmp_dir/metadata.txt"
+if test "x$project" != "xchef"; then
+  metadata_filename="${metadata_filename}-$project"
+fi
+
+if test "x$version" = "x"; then
+  metadata_filename="${metadata_filename}-latest"
+else
+  metadata_filename="${metadata_filename}-${version}"
+fi
+
+metadata_filename="${metadata_filename}-${platform}-${platform_version}-${machine}"
+
+if test "x$prerelease" = "xtrue"; then
+  metadata_filename="${metadata_filename}-preleases"
+fi
+if test "x$nightlies" = "xtrue"; then
+  metadata_filename="${metadata_filename}-nightlies"
+fi
+
+metadata_filename="${metadata_filename}.txt"
+
+# Prepend path to metadata filename
+if test "x$cmdline_dl_dir" != "x"; then
+  metadata_filename="$cmdline_dl_dir/$metadata_filename"
+else
+  metadata_filename="$tmp_dir/$metadata_filename"
+fi
 
 case "$project" in
   "chef")
@@ -519,7 +575,18 @@ if test "x$platform" = "xsolaris2"; then
   fi
 fi
 
-do_download "$metadata_url"  "$metadata_filename"
+# get metadata, use cached metadata if metadata download failed.
+if do_download "$metadata_url" "${metadata_filename}.new"; then
+  mv "${metadata_filename}.new" "$metadata_filename"
+else
+  rm -f "${metadata_filename}.new"
+
+  if test -f "$metadata_filename"; then
+    echo "Failed to get most up to date metadata, using cached metadata."
+  else
+    unable_to_retrieve_package
+  fi
+fi
 
 cat "$metadata_filename"
 
@@ -576,7 +643,7 @@ fi
 
 # download if no local version of the file available
 if test "x$cached_file_available" != "xtrue"; then
-  do_download "$download_url"  "$download_filename"
+  do_download "$download_url"  "$download_filename" || unable_to_retrieve_package
   do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
 fi
 
