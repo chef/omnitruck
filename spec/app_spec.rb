@@ -153,7 +153,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("10.16.4", { :md5=>"99492c4bb8b0a367666aee10a51b71d1", :sha256=>"a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286" })
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "99492c4bb8b0a367666aee10a51b71d1",
+                sha256: "a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286"
+              )
             end
           end
         end
@@ -168,7 +172,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_metadata_as("10.16.4", { :md5=>"99492c4bb8b0a367666aee10a51b71d1", :sha256=>"a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286" })
+              should_retrieve_latest_metadata_as(
+                "10.16.4",
+                md5: "99492c4bb8b0a367666aee10a51b71d1",
+                sha256: "a821fef229c6382cf437fad0457ce00ac465280e8f517f2897df3614deef3286"
+              )
             end
           end
         end
@@ -190,7 +198,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end
           end
         end
@@ -227,7 +239,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end
           end
         end
@@ -243,7 +259,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end
           end
         end
@@ -259,7 +279,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_metadata_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              should_retrieve_latest_metadata_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end
           end
         end
@@ -275,13 +299,21 @@ describe 'Omnitruck' do
           context "without an explicit version" do
             let(:project_version){nil}
 
-            should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+            should_retrieve_latest_metadata_as(
+              "10.16.0",
+              md5: "4de84ac3683e0c18160e64c00cad6ad6",
+              sha256: "29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"
+            )
           end # without an explicit version
 
           context "with a version of 'latest'" do
             let(:project_version){"latest"}
 
-            should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+            should_retrieve_latest_metadata_as(
+              "10.16.0",
+              md5: "4de84ac3683e0c18160e64c00cad6ad6",
+              sha256: "29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"
+            )
           end
 
           context "with an explicit version" do
@@ -289,26 +321,42 @@ describe 'Omnitruck' do
             context "that is a proper release" do
               let(:project_version){"10.16.0"}
 
-              should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+              should_retrieve_latest_metadata_as(
+                "10.16.0",
+                md5: "4de84ac3683e0c18160e64c00cad6ad6",
+                sha256: "29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"
+              )
             end
 
             context "that is a pre-release" do
               let(:project_version){"10.16.0.rc.1"}
 
-              should_retrieve_latest_metadata_as("10.16.0.rc.1",  {:md5=>"4104b6049b49029a6d3c75f1f0d07b3c", :sha256=>"fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"})
+              should_retrieve_latest_metadata_as(
+                "10.16.0.rc.1",
+                md5: "4104b6049b49029a6d3c75f1f0d07b3c",
+                sha256: "fe1c2d4692d8419b6ee3b344efe83bfb1dd1c3aef61f70289b74ee5caad1e414"
+              )
             end
 
             context "that is ancient and only in a very old version" do
               let(:project_version){"10.10.0"}  # this is only available in ubuntu 10.04, so we have to search upwards through platform versions to find it
               let(:alt_platform_version){"10.04"}
 
-              should_retrieve_latest_metadata_as("10.10.0",  {:md5=>"93616058a2ba09a6abccef7651fdae38", :sha256=>"9ee398d806bb377d190e92cd09e7b4a8571d4b328cd580a716425818e6124779"})
+              should_retrieve_latest_metadata_as(
+                "10.10.0",
+                md5: "93616058a2ba09a6abccef7651fdae38",
+                sha256: "9ee398d806bb377d190e92cd09e7b4a8571d4b328cd580a716425818e6124779"
+              )
             end
 
             context "that is not fully qualified" do
               let(:project_version){"10"}
 
-              should_retrieve_latest_metadata_as("10.16.0",  {:md5=>"4de84ac3683e0c18160e64c00cad6ad6", :sha256=>"29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"})
+              should_retrieve_latest_metadata_as(
+                "10.16.0",
+                md5: "4de84ac3683e0c18160e64c00cad6ad6",
+                sha256: "29dd37432ca48632671ee493cd366995bd986f94f6384b7ad4c0a411368848d9"
+              )
             end
           end # with a explicit version
         end # x86_64
@@ -369,7 +417,11 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_metadata_as("11.8.2",  {:md5=>"9379bb583ec0767463c2b5512c906b73", :sha256=>"f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"})
+              should_retrieve_latest_metadata_as(
+                "11.8.2",
+                md5: "9379bb583ec0767463c2b5512c906b73",
+                sha256: "f78b708c8aae9c30fe344155c7e3358d6843785815c995a16f92f711d1bd529d"
+              )
             end # without an explicit version
           end
         end
@@ -389,27 +441,44 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end # without an explicit version
 
             context "with a version of 'latest'" do
               let(:project_version){"latest"}
 
-              should_retrieve_latest_as("10.16.4", {:md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"})
+              should_retrieve_latest_as(
+                "10.16.4",
+                md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+              )
             end # with a version of 'latest'
 
             context "with an explicit version" do
               context "that is a proper release" do
                 let(:project_version){"10.16.0"}
 
-                should_retrieve_latest_as("10.16.0", { :md5=>"9103b2024b6f7d6e16ef8c6c0f7c0519", :sha256=>"7905c0298580ce79a549284d7090fa9b72ff4a12127b1fba3b4612023294091d"})
+                should_retrieve_latest_as(
+                  "10.16.0",
+                  md5: "9103b2024b6f7d6e16ef8c6c0f7c0519",
+                  sha256: "7905c0298580ce79a549284d7090fa9b72ff4a12127b1fba3b4612023294091d"
+                )
               end # proper release
 
               context "that has multiple build iterations" do
                 let(:project_version){"10.14.4"}
 
                 context "returns the latest build iteration" do
-                  should_retrieve_latest_as("10.14.4", {:iteration => 2, :md5=>"040507d279dc7d279768befa39c89970", :sha256=>"0261dc02b14f039cef0b0a144ad14be9de4bcd7f884c17b14d3c25213385bc80"})
+                  should_retrieve_latest_as(
+                    "10.14.4",
+                    iteration: 2,
+                    md5: "040507d279dc7d279768befa39c89970",
+                    sha256: "0261dc02b14f039cef0b0a144ad14be9de4bcd7f884c17b14d3c25213385bc80"
+                  )
                 end
               end
             end # with a explicit version
@@ -430,7 +499,11 @@ describe 'Omnitruck' do
               let(:project_version){nil}
               context "releases" do
 
-                should_retrieve_latest_as("10.16.4", { :md5=>"dab02655a8671e9a2cf782f94fd22ff9", :sha256=>"59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc" })
+                should_retrieve_latest_as(
+                  "10.16.4",
+                  md5: "dab02655a8671e9a2cf782f94fd22ff9",
+                  sha256: "59b41393af85183c59f8d247df72863f687676ed07d960339d17b727e33ee9bc"
+                )
               end
             end # without an explicit version
           end # x86_64
@@ -475,38 +548,62 @@ describe 'Omnitruck' do
             context "without an explicit version" do
               let(:project_version){nil}
 
-              should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
+              should_retrieve_latest_as(
+                "11.0.0+20130101164140.git.207.694b062",
+                md5: "c782dee98817f43b0227b88b926de29f",
+                sha256: "a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"
+              )
             end # without an explicit version
 
             context "with a version of 'latest'" do
               let(:project_version){"latest"}
 
-              should_retrieve_latest_as("11.0.0+20130101164140.git.207.694b062",  {:md5=>"c782dee98817f43b0227b88b926de29f", :sha256=>"a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"})
+              should_retrieve_latest_as(
+                "11.0.0+20130101164140.git.207.694b062",
+                md5: "c782dee98817f43b0227b88b926de29f",
+                sha256: "a401655b5fd5dfcccb0811c8059e4ed53d47d264457734c00258f217d26a5e1e"
+              )
             end # with a version of 'latest'
 
             context "with an explicit version" do
               context "that is a proper release" do
                 let(:project_version){"11.0.0"}
 
-                should_retrieve_latest_as("11.0.0",  {:md5=>"9d8040305ca61d88dcd2bb126d8e0289", :sha256=>"b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"})
+                should_retrieve_latest_as(
+                  "11.0.0",
+                  md5: "9d8040305ca61d88dcd2bb126d8e0289",
+                  sha256: "b7e6384942609a7930f1ef0ae8574bd87f6db0ea2a456f407d0339ca5b8c7fcf"
+                )
               end # proper release
 
               context "that is a pre-release" do
                 let(:project_version){"11.0.0-rc.1"}
 
-                should_retrieve_latest_as("11.0.0-rc.1",  {:md5=>"0a858c2effa80bbd6687433fcaa752b7", :sha256=>"dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"})
+                should_retrieve_latest_as(
+                  "11.0.0-rc.1",
+                  md5: "0a858c2effa80bbd6687433fcaa752b7",
+                  sha256: "dacff5d6c852585b55b49915ed1ad83fd15286a8a21913f52a8ef6d811edbd9c"
+                )
               end # pre-release
 
               context "that is a release nightly" do
                 let(:project_version){"11.0.0+20130101164140.git.2.deadbee"}
 
-                should_retrieve_latest_as("11.0.0+20130101164140.git.2.deadbee",  {:md5=>"574dd623e52052d92e3bffa45fbafd1b", :sha256=>"296072ba9560fe70c574b8b45461e5667add7eb688e059fd458262cc4e294c76"})
+                should_retrieve_latest_as(
+                  "11.0.0+20130101164140.git.2.deadbee",
+                  md5: "574dd623e52052d92e3bffa45fbafd1b",
+                  sha256: "296072ba9560fe70c574b8b45461e5667add7eb688e059fd458262cc4e294c76"
+                )
               end # release nightly
 
               context "that is a pre-release nightly" do
                 let(:project_version){"11.0.0-rc.1+20121225164140.git.207.694b062"}
 
-                should_retrieve_latest_as("11.0.0-rc.1+20121225164140.git.207.694b062",  {:md5=>"44fd74dfe688c558a6469db2072774fb", :sha256=>"bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"})
+                should_retrieve_latest_as(
+                  "11.0.0-rc.1+20121225164140.git.207.694b062",
+                  md5: "44fd74dfe688c558a6469db2072774fb",
+                  sha256: "bae7d25d9c9e32b5f1320fda1d82cdba59c574a1838242a4f03366e0007034c6"
+                )
               end # pre-release nightly
             end # with a explicit version
 
