@@ -27,10 +27,7 @@
 # limitations under the License.
 #
 
-prerelease="false"
-
-nightlies="false"
-
+channel="stable"
 project="chef"
 
 # Check whether a command exists - returns 0 if it does, 1 if it does not
@@ -46,9 +43,9 @@ exists() {
 report_bug() {
   echo "Version: $version"
   echo ""
-  echo "Please file a Bug Report at https://github.com/opscode/opscode-omnitruck/issues/new"
-  echo "Alternatively, feel free to open a Support Ticket at https://www.getchef.com/support/tickets"
-  echo "More Chef support resources can be found at https://www.getchef.com/support"
+  echo "Please file a Bug Report at https://github.com/chef/omnitruck/issues/new"
+  echo "Alternatively, feel free to open a Support Ticket at https://www.chef.io/support/tickets"
+  echo "More Chef support resources can be found at https://www.chef.io/support"
   echo ""
   echo "Please include as many details about the problem as possible i.e., how to reproduce"
   echo "the problem (if possible), type of the Operating System and its version, etc.,"
@@ -62,8 +59,9 @@ do
   case "$opt" in
 
     v)  version="$OPTARG";;
-    p)  prerelease="true";;
-    n)  nightlies="true";;
+    c)  channel="$OPTARG";;
+    p)  channel="current";;
+    n)  channel="current";;
     f)  cmdline_filename="$OPTARG";;
     P)  project="$OPTARG";;
     d)  cmdline_dl_dir="$OPTARG";;
@@ -438,7 +436,7 @@ do_download() {
 # install_file TYPE FILENAME
 # TYPE is "rpm", "deb", "solaris", "sh", etc.
 install_file() {
-  echo "Installing Chef $version"
+  echo "Installing $project $version"
   case "$1" in
     "rpm")
       echo "installing with rpm..."
@@ -488,29 +486,10 @@ install_file() {
   fi
 }
 
-echo "Downloading Chef $version for ${platform}..."
-
+echo "Downloading $project $version for ${platform}..."
 
 metadata_filename="$tmp_dir/metadata.txt"
-
-case "$project" in
-  "chef")
-    metadata_url="<%= locals[:download_url] %>?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "angrychef")
-    metadata_url="<%= locals[:download_url] %>-angrychef?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "server")
-    metadata_url="<%= locals[:download_url] %>-server?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "chefdk")
-    metadata_url="<%= locals[:download_url] %>-chefdk?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-  "container")
-    metadata_url="<%= locals[:download_url] %>-container?v=${version}&prerelease=${prerelease}&nightlies=${nightlies}&p=${platform}&pv=${platform_version}&m=${machine}"
-    ;;
-    *)
-esac
+metadata_url="<%= locals[:base_url] %>${channel}/${project}/metadata?v=${version}&p=${platform}&pv=${platform_version}&m=${machine}"
 
 if test "x$platform" = "xsolaris2"; then
   if test "x$platform_version" = "x5.9" -o "x$platform_version" = "x5.10"; then

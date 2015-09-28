@@ -633,10 +633,26 @@ describe 'Omnitruck' do
     end
   end
 
-  describe "/install.sh" do
-    it "exists" do
-      get '/install.sh'
-      expect(last_response).to be_ok
+
+  describe "install script" do
+    %w(
+      sh
+      ps1
+    ).each do |extension|
+      context "/install.#{extension}" do
+        let(:install_script) { "/install.#{extension}" }
+        it "exists" do
+          get install_script
+          expect(last_response).to be_ok
+        end
+      end
+    end
+
+    context "unknown extension" do
+      it "returns a 404" do
+        get "/stable/chef/install.poop"
+        expect(last_response).to be_not_found
+      end
     end
   end
 
