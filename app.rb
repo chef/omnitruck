@@ -56,9 +56,9 @@ class Omnitruck < Sinatra::Base
   get '/install.sh' do
     content_type :sh
     erb :'install.sh', {
-      :layout => :'install.sh',
-      :locals => {
-        :download_url => url("#{settings.virtual_path}/metadata")
+      layout: :'install.sh',
+      locals: {
+        download_url: url("#{settings.virtual_path}/metadata")
       }
     }
   end
@@ -66,9 +66,9 @@ class Omnitruck < Sinatra::Base
   get '/install.ps1' do
     content_type :txt
     erb :'install.ps1', {
-      :layout => :'install.ps1',
-      :locals => {
-        :download_url => url("#{settings.virtual_path}/metadata")
+      layout: :'install.ps1',
+      locals: {
+        download_url: url("#{settings.virtual_path}/metadata")
       }
     }
   end
