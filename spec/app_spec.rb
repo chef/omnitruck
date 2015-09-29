@@ -54,6 +54,7 @@ describe 'Omnitruck' do
       let(:iteration_number){ options[:iteration] || 1}
       let(:expected_md5) { options[:md5] }
       let(:expected_sha256) { options[:sha256] }
+      let(:expected_version) { options[:version] }
       let(:http_type_string) { "http" }
       let(:omnitruck_host_path)  { "#{http_type_string}://#{Omnitruck.aws_packages_bucket}.s3.amazonaws.com" }
 
@@ -67,7 +68,7 @@ describe 'Omnitruck' do
 
         expect(parsed_json["sha256"]).to eq(expected_sha256)
         expect(parsed_json["md5"]).to eq(expected_md5)
-        expect(parsed_json["version"]).not_to be_nil
+        expect(parsed_json["version"]).to eq(expected_version)
       end
 
       it "should serve plain text metadata with a URI for package #{expected_version}" do
@@ -614,7 +615,7 @@ describe 'Omnitruck' do
 
   end # download endpoints
 
-  describe "full list endpoints" do
+  describe "/<CHANNEL>/<PROJECT>/versions endpoint" do
     Chef::Project::KNOWN_PROJECTS.each do |project|
       describe project do
         let(:endpoint){ "/stable/#{project}/versions" }

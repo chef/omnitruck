@@ -64,6 +64,10 @@ module Opscode
         ( patch.nil? || other.patch.nil? || patch == other.patch )
     end
 
+    def to_semver
+      mixlib_version.to_s
+    end
+
     def to_s
       if iteration.nil?
         input

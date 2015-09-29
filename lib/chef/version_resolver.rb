@@ -53,7 +53,7 @@ class Chef
       end
 
       # add "version" field to the package_info
-      available_versions[target_version].merge("version" => target_version)
+      available_versions[target_version].merge("version" => target_version.to_semver)
     end
 
     private
