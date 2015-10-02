@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'opscode/version'
+require 'chef/version'
 
 context 'Opscode::Version' do
   def self.version_resolution_case(expected, version_list)
@@ -64,10 +64,10 @@ context 'Opscode::Version' do
 
     version_resolution_case('12.1.2', %w{12.1.2 12.1.2+20150906090309})
     version_resolution_case('12.1.2', %w{12.1.2 12.1.2+20150906090309-1})
-    version_resolution_case('12.1.2-1', %w{12.1.2-1 12.1.2+20150906090309})
-    version_resolution_case('12.1.2-1', %w{12.1.2-1 12.1.2+20150906090309-1})
+    version_resolution_case('12.1.2', %w{12.1.2-1 12.1.2+20150906090309})
+    version_resolution_case('12.1.2', %w{12.1.2-1 12.1.2+20150906090309-1})
     version_resolution_case('12.1.2', %w{12.1.2-1 12.1.2})
-    version_resolution_case('12.1.2-2', %w{12.1.2-1 12.1.2-2})
+    version_resolution_case('12.1.2', %w{12.1.2-1 12.1.2-2})
     version_resolution_case('12.1.2+20150906090309', %w{12.1.2+20150906090309 12.1.2+20150905090309})
     version_resolution_case('12.1.2+20150906090309-1', %w{12.1.2+20150906090309-1 12.1.2+20150906090309})
     version_resolution_case('12.1.2+20150906090309-1', %w{12.1.2+20150906090309-1 12.1.2+20150905090309-1})

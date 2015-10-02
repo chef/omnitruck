@@ -70,7 +70,7 @@ context 'Chef::VersionResolver' do
   end
 
   context 'package_info' do
-    # package selection is extensively tested under opscode/version_spec
+    # package selection is extensively tested under chef/version_spec
     # here we only test to see if the output is correctly formatted
     it 'returns all the metadata and version' do
       info = version_resolver.package_info

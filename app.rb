@@ -24,7 +24,7 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
-require 'opscode/version'
+require 'chef/version'
 require 'platform_dsl'
 require 'mixlib/versioning'
 

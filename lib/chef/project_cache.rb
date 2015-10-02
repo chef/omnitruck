@@ -1,5 +1,5 @@
 require 'chef/project'
-require 'opscode/version'
+require 'chef/version'
 
 class Chef
   class ProjectCache

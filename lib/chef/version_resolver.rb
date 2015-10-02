@@ -1,4 +1,4 @@
-require 'opscode/version'
+require 'chef/version'
 require 'platform_dsl'
 
 class Chef
