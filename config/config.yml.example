@@ -2,6 +2,15 @@ development:
   virtual_path: ''
 
   metadata_dir: './metadata_dir'
+  
+#
+# Uncomment to define a single project or subset of projects.
+#
+# projects:
+#   - chef
+#   - chef-server
+#   - chefdk
+#   - angrychef
 
   channels:
     stable:

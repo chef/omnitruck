@@ -13,6 +13,7 @@ require 'opscode/version'
 
 class S3Poller
   attr_reader :config
+  attr_writer :projects
 
   def initialize
     @options = {}
@@ -65,9 +66,13 @@ class S3Poller
   end
 
   def all_project_caches_for_channel(channel)
-    Chef::Project::KNOWN_PROJECTS.map do |project_name|
+    projects.map do |project_name|
       Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
     end
+  end
+
+  def projects
+    config.fetch('projects', Chef::Project::KNOWN_PROJECTS)
   end
 
   def metadata_dir
