@@ -13,7 +13,6 @@ require 'opscode/version'
 
 class S3Poller
   attr_reader :config
-  attr_writer :projects
 
   def initialize
     @options = {}
