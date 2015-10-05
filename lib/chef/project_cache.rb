@@ -12,20 +12,22 @@ class Chef
     end
 
     def fix_windows_manifest!(manifest, fix_up_to_version=:all)
-      manifest['windows'].keys.each do |platform_version|
-        i386_releases = manifest['windows'][platform_version]['i386'] || {}
+      unless manifest['windows'].nil? 
+        manifest['windows'].keys.each do |platform_version|
+          i386_releases = manifest['windows'][platform_version]['i386'] || {}
 
-        pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
-          if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
-            memo[version] = metadata
+          pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
+            if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
+              memo[version] = metadata
+            end
+            memo
           end
-          memo
-        end
 
-        if manifest['windows'][platform_version]['x86_64']
-          manifest['windows'][platform_version]['x86_64'].merge!(pre_x64_releases)
-        else
-          manifest['windows'][platform_version]['x86_64'] = pre_x64_releases
+          if manifest['windows'][platform_version]['x86_64']
+            manifest['windows'][platform_version]['x86_64'].merge!(pre_x64_releases)
+          else
+            manifest['windows'][platform_version]['x86_64'] = pre_x64_releases
+          end
         end
       end
       manifest
