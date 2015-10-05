@@ -1,9 +1,10 @@
-require 'opscode/version'
+require 'chef/version'
 require 'platform_dsl'
 
 class Chef
   class VersionResolver
     class InvalidDownloadPath < StandardError; end
+    class InvalidPlatform < StandardError; end
 
     # Resolves a version and returns the following information for the found
     # package(s).
@@ -20,12 +21,6 @@ class Chef
     attr_reader :machine_architecture
     attr_reader :friendly_error_msg
     attr_reader :dsl
-
-    def self.test
-      require 'json'
-      list = JSON.parse(File.read('./metadata_dir/stable/build-chef-list.json'))
-      Chef::VersionResolver.new('latest', list, platform_string: 'mac_os_x', platform_version_string: '10.10', machine_string: 'x86_64').package_info
-    end
 
     def initialize(version_string, build_map, platform_string: nil, platform_version_string: nil, machine_string: nil)
       @dsl = PlatformDSL.new()
@@ -56,8 +51,6 @@ class Chef
       available_versions[target_version].merge("version" => target_version.to_semver)
     end
 
-    private
-
     # Translates the given version_string into an Opscode::Version.
     # Sets the version to nil if we are looking for the :latest version.
     def parse_version_string(version_string)
@@ -72,7 +65,11 @@ class Chef
 
     # Create a PlatformVersion object from the given strings.
     def find_platform_version(platform_string, platform_version_string)
-      dsl.new_platform_version(platform_string, platform_version_string)
+      begin
+        dsl.new_platform_version(platform_string, platform_version_string)
+      rescue
+        raise InvalidPlatform, "Platform information not found for #{platform_string}, #{platform_version_string}"
+      end
     end
 
     # Finds all the available distro versions available from the build map

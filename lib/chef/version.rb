@@ -20,7 +20,7 @@
 #
 
 require 'mixlib/versioning'
-require 'opscode/version/incomplete'
+require 'chef/version/incomplete'
 require 'forwardable'
 
 module Opscode

@@ -1,4 +1,4 @@
-require File.expand_path("../../../omnitruck-verifier/lib/omnitruck-verifier/bucket_lister", __FILE__)
+require 'chef/bucket_lister'
 
 class Chef
   class Channel
@@ -15,7 +15,7 @@ class Chef
       @aws_metadata_bucket = aws_metadata_bucket
       @aws_packages_bucket = aws_packages_bucket
 
-      @s3 = OmnitruckVerifier::BucketLister.new(aws_metadata_bucket)
+      @s3 = Chef::BucketLister.new(aws_metadata_bucket)
     end
 
     # Return all release manifests in the s3 bucket for the given channel

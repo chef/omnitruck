@@ -31,7 +31,10 @@ platform "smartos" do
   version_remap "5.10"
 end
 
-platform "windows"
+# We map all the windows versions to 2008r2
+platform "windows" do
+  version_remap "2008r2"
+end
 
 platform "freebsd" do
   major_only true
