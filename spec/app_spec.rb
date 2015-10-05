@@ -310,6 +310,31 @@ context 'Omnitruck' do
             end
           end
 
+          # Here we are testing an edge condition of yolo mode.
+          # Cache has 12.6.1 version for 13.04 but it does not have it for 14.04
+          # Yolo mode should serve the 13.04 artifact when asked latest on 14.04
+          context 'for 14.04' do
+            let(:platform_version) { '14.04' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'with "latest"' do
+                let(:project_version) { 'latest' }
+                let(:expected_info) do
+                  {
+                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
+                    sha256: '44448a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e',
+                    md5: '44449f54115d754373c9891b8759497c',
+                    version: '12.6.1'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+
           # What we're testing on this next one is if yolo is sorting numerically or lexicographically
           # If we're getting string compares we'll get "10.04" as our yolo version, but we want to do a
           # numeric compare and get 12.04 instead:
@@ -325,10 +350,10 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/14.04/x86_64/chef_12.4.3-1_amd64.deb',
-                    sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
-                    md5: 'd5f74a74ed2a405ffa47ae7ba2de1747',
-                    version: '12.4.3'
+                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
+                    sha256: '44448a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e',
+                    md5: '44449f54115d754373c9891b8759497c',
+                    version: '12.6.1'
                   }
                 end
 
