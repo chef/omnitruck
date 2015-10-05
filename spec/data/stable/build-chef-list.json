@@ -570,6 +570,11 @@
   "ubuntu": {
     "12.04": {
       "i686": {
+        "-1": {
+          "relpath": "/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
+          "md5": "b7460470e7248072d2eab0eeedfe6f64",
+          "sha256": "b0e42848326071afba736159a9c575a5fec8a6c8ce23d2c20bd1c9360ab2b7eb"
+        },
         "10.12.0-1": {
           "relpath": "/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
           "md5": "b7460470e7248072d2eab0eeedfe6f64",
