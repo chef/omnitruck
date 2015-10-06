@@ -99,7 +99,7 @@ class Omnitruck < Sinatra::Base
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
-    package_info["url"] = convert_relpath_to_url(package_info["relpath"])
+    decorate_url!(package_info)
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
     else
@@ -107,13 +107,23 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/full_list/ do
     pass unless project_allowed(project)
     content_type :json
+
     directory = JSON.parse(File.read(project.build_list_path))
     directory.delete('run_data')
     extract_build_list!(directory)
     JSON.pretty_generate(directory)
+  end
+
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions/ do
+    pass unless project_allowed(project)
+    content_type :json
+
+    package_list_info = get_package_list(project, JSON.parse(File.read(project.build_list_path)))
+    decorate_url!(package_list_info)
+    JSON.pretty_generate(package_list_info)
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
@@ -153,9 +163,9 @@ class Omnitruck < Sinatra::Base
     '/metadata' => '/chef/metadata',
     '/download-server' => '/chef-server/download',
     '/metadata-server' => '/chef-server/metadata',
-    '/full_client_list' => '/chef/versions',
-    '/full_list' => '/chef/versions',
-    '/full_server_list' => '/chef-server/versions'
+    '/full_client_list' => '/chef/full_list',
+    '/full_list' => '/chef/full_list',
+    '/full_server_list' => '/chef-server/full_list'
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
@@ -164,7 +174,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/full_list")
     [status, headers, body]
   end
 
@@ -236,9 +246,22 @@ class Omnitruck < Sinatra::Base
 
   def get_package_info(name, build_hash)
     Chef::VersionResolver.new(
-      params['v'], build_hash,
-      platform_string: params['p'], platform_version_string: params['pv'], machine_string: params['m']
-    ).package_info
+      params['v'], build_hash
+    ).package_info(params['p'], params['pv'], params['m'])
+  end
+
+  def get_package_list(name, build_hash)
+    Chef::VersionResolver.new(params['v'], build_hash).package_list
+  end
+
+  def decorate_url!(package_info)
+    if package_info.keys.include? 'relpath'
+      package_info["url"] = convert_relpath_to_url(package_info["relpath"])
+    else
+      package_info.each do |key, value|
+        decorate_url!(value)
+      end
+    end
   end
 
   def convert_relpath_to_url(relpath)

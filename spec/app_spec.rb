@@ -606,25 +606,58 @@ context 'Omnitruck' do
 
   end
 
-  context "/<CHANNEL>/<PROJECT>/versions endpoint" do
+  context '/<CHANNEL>/<PROJECT>/versions endpoint' do
     Chef::Project::KNOWN_PROJECTS.each do |project|
-      context project do
+      context "for #{project}" do
         let(:endpoint){ "/stable/#{project}/versions" }
 
         it "exists" do
-          get endpoint
+          get(endpoint)
           expect(last_response).to be_ok
         end
 
         it "returns the correct JSON data" do
-          get endpoint
+          get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
           expect(last_response.body).to match(project)
         end
       end
     end
-  end
 
+    context "for chef" do
+      let(:endpoint) { '/stable/chef/versions' }
+      let(:params) { { v: version } }
+
+      [ nil, 'latest', '12', '12.2', '12.2.1'].each do |version|
+        context "with version #{version.inspect}" do
+          let(:version) { version }
+
+          it 'returns one version for each platform, platform_version and architecture' do
+            get(endpoint, params)
+            metadata_json = last_response.body
+            parsed_json = JSON.parse(metadata_json)
+
+            %w{ubuntu debian el mac_os_x solaris2 windows freebsd aix}.each do |platform|
+              expect(parsed_json[platform]).to be_a(Hash)
+
+              parsed_json[platform].each do |platform_version, data|
+                parsed_json[platform][platform_version].each do |arch, data|
+                  build_info = parsed_json[platform][platform_version][arch]
+
+                  expect(build_info['relpath']).to be_a(String)
+                  expect(build_info['md5']).to be_a(String)
+                  expect(build_info['sha256']).to be_a(String)
+                  expect(build_info['url']).to be_a(String)
+                  expect(build_info['version']).to be_a(String)
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+
+  end
 
   context "install script" do
     %w(
