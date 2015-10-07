@@ -606,25 +606,99 @@ context 'Omnitruck' do
 
   end
 
-  context "/<CHANNEL>/<PROJECT>/versions endpoint" do
+  context '/<CHANNEL>/<PROJECT>/versions endpoint' do
     Chef::Project::KNOWN_PROJECTS.each do |project|
-      context project do
+      context "for #{project}" do
         let(:endpoint){ "/stable/#{project}/versions" }
 
         it "exists" do
-          get endpoint
+          get(endpoint)
           expect(last_response).to be_ok
         end
 
         it "returns the correct JSON data" do
-          get endpoint
+          get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
           expect(last_response.body).to match(project)
         end
       end
     end
-  end
 
+    context "for chef" do
+      let(:endpoint) { '/stable/chef/versions' }
+      let(:params) { { v: version } }
+      let(:versions_output) {
+        get(endpoint, params)
+        metadata_json = last_response.body
+        JSON.parse(metadata_json)
+      }
+
+      [ nil, 'latest', '12'].each do |version|
+        context "with version #{version.inspect}" do
+          let(:version) { version }
+          let(:expected_versions) {
+            JSON.parse(File.read(File.join(SPEC_DATA, "version_info/chef-latest.json")))
+          }
+
+          it 'returns the latest version for each platform, platform_version and architecture' do
+            versions_output.each do |p, data|
+              data.each do |pv, data|
+                data.each do |m, metadata|
+                  expect(metadata['relpath']).to be_a(String)
+                  expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                  expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                  expect(metadata['url']).to match 'http'
+                  # over the course of time we have stopped publishing builds on some
+                  # platform versions so we use a file to read the expected versions
+                  # for each platform
+                  expect(metadata['version']).to eq(expected_versions[p][pv][m])
+                end
+              end
+            end
+          end
+        end
+      end
+
+      context 'with version 12.1' do
+        let(:version) { '12.1' }
+
+        it 'returns the latest starting with 12.2 for each platform, platform_version and architecture' do
+          versions_output.each do |p, data|
+            data.each do |pv, data|
+              data.each do |m, metadata|
+                expect(metadata['relpath']).to be_a(String)
+                expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                expect(metadata['url']).to match 'http'
+                # 12.1.2 is the latest on the 12.1.X series
+                expect(metadata['version']).to eq('12.1.2')
+              end
+            end
+          end
+        end
+      end
+
+      context 'with version 12.0.1' do
+        let(:version) { '12.0.1' }
+
+        it 'returns version 12.0.1 for each platform, platform_version and architecture' do
+          versions_output.each do |p, data|
+            data.each do |pv, data|
+              data.each do |m, metadata|
+                expect(metadata['relpath']).to be_a(String)
+                expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                expect(metadata['url']).to match 'http'
+                # We expect the exact version here
+                expect(metadata['version']).to eq('12.0.1')
+              end
+            end
+          end
+        end
+      end
+    end
+
+  end
 
   context "install script" do
     %w(
@@ -744,10 +818,12 @@ context 'Omnitruck' do
             # we check a certain hash structure that needs to be present in these endpoints
             parsed_json.each do |platform, data|
               data.each do |platform_version, data|
-                data.each do |architecture, data|
-                  data.each do |version, partial_path|
-                    expect(partial_path).to be_a(String)
-                  end
+                data.each do |architecture, metadata|
+                  expect(metadata['url']).to be_a(String)
+                  expect(metadata['md5']).to be_a(String)
+                  expect(metadata['sha256']).to be_a(String)
+                  expect(metadata['relpath']).to be_a(String)
+                  expect(metadata['version']).to be_a(String)
                 end
               end
             end
