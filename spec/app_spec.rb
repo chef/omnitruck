@@ -627,29 +627,70 @@ context 'Omnitruck' do
     context "for chef" do
       let(:endpoint) { '/stable/chef/versions' }
       let(:params) { { v: version } }
+      let(:versions_output) {
+        get(endpoint, params)
+        metadata_json = last_response.body
+        JSON.parse(metadata_json)
+      }
 
-      [ nil, 'latest', '12', '12.2', '12.2.1'].each do |version|
+      [ nil, 'latest', '12'].each do |version|
         context "with version #{version.inspect}" do
           let(:version) { version }
+          let(:expected_versions) {
+            JSON.parse(File.read(File.join(SPEC_DATA, "version_info/chef-latest.json")))
+          }
 
-          it 'returns one version for each platform, platform_version and architecture' do
-            get(endpoint, params)
-            metadata_json = last_response.body
-            parsed_json = JSON.parse(metadata_json)
-
-            %w{ubuntu debian el mac_os_x solaris2 windows freebsd aix}.each do |platform|
-              expect(parsed_json[platform]).to be_a(Hash)
-
-              parsed_json[platform].each do |platform_version, data|
-                parsed_json[platform][platform_version].each do |arch, data|
-                  build_info = parsed_json[platform][platform_version][arch]
-
-                  expect(build_info['relpath']).to be_a(String)
-                  expect(build_info['md5']).to be_a(String)
-                  expect(build_info['sha256']).to be_a(String)
-                  expect(build_info['url']).to be_a(String)
-                  expect(build_info['version']).to be_a(String)
+          it 'returns the latest version for each platform, platform_version and architecture' do
+            versions_output.each do |p, data|
+              data.each do |pv, data|
+                data.each do |m, metadata|
+                  expect(metadata['relpath']).to be_a(String)
+                  expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                  expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                  expect(metadata['url']).to match 'http'
+                  # over the course of time we have stopped publishing builds on some
+                  # platform versions so we use a file to read the expected versions
+                  # for each platform
+                  expect(metadata['version']).to eq(expected_versions[p][pv][m])
                 end
+              end
+            end
+          end
+        end
+      end
+
+      context 'with version 12.1' do
+        let(:version) { '12.1' }
+
+        it 'returns the latest starting with 12.2 for each platform, platform_version and architecture' do
+          versions_output.each do |p, data|
+            data.each do |pv, data|
+              data.each do |m, metadata|
+                expect(metadata['relpath']).to be_a(String)
+                expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                expect(metadata['url']).to match 'http'
+                # 12.1.2 is the latest on the 12.1.X series
+                expect(metadata['version']).to eq('12.1.2')
+              end
+            end
+          end
+        end
+      end
+
+      context 'with version 12.0.1' do
+        let(:version) { '12.0.1' }
+
+        it 'returns version 12.0.1 for each platform, platform_version and architecture' do
+          versions_output.each do |p, data|
+            data.each do |pv, data|
+              data.each do |m, metadata|
+                expect(metadata['relpath']).to be_a(String)
+                expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                expect(metadata['url']).to match 'http'
+                # We expect the exact version here
+                expect(metadata['version']).to eq('12.0.1')
               end
             end
           end
