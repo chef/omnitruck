@@ -818,10 +818,12 @@ context 'Omnitruck' do
             # we check a certain hash structure that needs to be present in these endpoints
             parsed_json.each do |platform, data|
               data.each do |platform_version, data|
-                data.each do |architecture, data|
-                  data.each do |version, partial_path|
-                    expect(partial_path).to be_a(String)
-                  end
+                data.each do |architecture, metadata|
+                  expect(metadata['url']).to be_a(String)
+                  expect(metadata['md5']).to be_a(String)
+                  expect(metadata['sha256']).to be_a(String)
+                  expect(metadata['relpath']).to be_a(String)
+                  expect(metadata['version']).to be_a(String)
                 end
               end
             end

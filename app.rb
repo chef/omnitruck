@@ -107,16 +107,6 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/full_list/ do
-    pass unless project_allowed(project)
-    content_type :json
-
-    directory = JSON.parse(File.read(project.build_list_path))
-    directory.delete('run_data')
-    extract_build_list!(directory)
-    JSON.pretty_generate(directory)
-  end
-
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions/ do
     pass unless project_allowed(project)
     content_type :json
@@ -163,9 +153,9 @@ class Omnitruck < Sinatra::Base
     '/metadata' => '/chef/metadata',
     '/download-server' => '/chef-server/download',
     '/metadata-server' => '/chef-server/metadata',
-    '/full_client_list' => '/chef/full_list',
-    '/full_list' => '/chef/full_list',
-    '/full_server_list' => '/chef-server/full_list'
+    '/full_client_list' => '/chef/versions',
+    '/full_list' => '/chef/versions',
+    '/full_server_list' => '/chef-server/versions'
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
@@ -174,7 +164,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/full_list")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
     [status, headers, body]
   end
 
@@ -228,20 +218,6 @@ class Omnitruck < Sinatra::Base
   def project
     project_name = params['project'].gsub('_', '-')
     Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
-  end
-
-  def extract_build_list!(json)
-    # nested loops, but much easier than writing a generic DFS solution or something
-    json.each do |platform, platform_value|
-      next if platform.to_s == "run_data"
-      platform_value.each_value do |platform_version_value|
-        platform_version_value.each_value do |architecture_value|
-          architecture_value.each do |chef_version, chef_version_value|
-            architecture_value[chef_version] = chef_version_value["relpath"]
-          end
-        end
-      end
-    end
   end
 
   def get_package_info(name, build_hash)
