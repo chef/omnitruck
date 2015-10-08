@@ -1,4 +1,26 @@
 {
+  "suse": {
+    "12.1": {
+      "i686": {
+        "0.3.0-1": {
+          "relpath": "/el/6/x86_64/chefdk-0.3.0-1.x86_64.rpm",
+          "md5": "62fc6db2e7c3467f26a090755af55c97",
+          "sha256": "99b53c708afc7fb5b7c01ec86a550bcbfe1a7c8176fc45723c0b92335b43ee3a"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.11": {
+      "sparc": {
+        "0.3.3-1": {
+          "relpath": "/el/6/x86_64/chefdk-0.3.0-1.x86_64.rpm",
+          "md5": "62fc6db2e7c3467f26a090755af55c97",
+          "sha256": "99b53c708afc7fb5b7c01ec86a550bcbfe1a7c8176fc45723c0b92335b43ee3a"
+        }
+      }
+    }
+  },
   "el": {
     "6": {
       "x86_64": {

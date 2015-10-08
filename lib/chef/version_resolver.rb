@@ -47,23 +47,51 @@ class Chef
       # We will walk through the build_map and return the matching
       # version for all available platform, platform_version and architecture
       target_versions = {}
+
+      # Overtime we have stopped publishing versions for some platforms. We
+      # would like to make sure that we are returning a consistent version
+      # across all platforms that is we do not want to return 12.4.3 for a
+      # platform and 12.0.3 for others. So we keep track of the latest version
+      # and drop all the versions smaller than that.
+      latest_version = nil
+
       build_map.each do |platform, platform_data|
         next if platform == 'run_data'
 
         platform_data.each do |platform_version, platform_version_data|
           platform_version_data.each do |architecture, raw_metadata|
-            version = find_target_version_in(raw_metadata)
+            version_metadata = find_target_version_in(raw_metadata)
 
-            unless version.nil?
-              target_versions[platform] ||= {}
-              target_versions[platform][platform_version] ||= {}
-              target_versions[platform][platform_version][architecture] = version
+            unless version_metadata.nil?
+              version = parse_version_string(version_metadata['version'])
+              if latest_version.nil? || latest_version <= version
+                latest_version = version
+
+                target_versions[platform] ||= {}
+                target_versions[platform][platform_version] ||= {}
+                target_versions[platform][platform_version][architecture] = version_metadata
+              end
             end
           end
         end
       end
 
-      target_versions
+      # We might still have versions other than the latest_version in our map.
+      # Let's drop all the other versions.
+      output = {}
+      target_versions.each do |p, p_data|
+        p_data.each do |pv, pv_data|
+          pv_data.each do |m, metadata|
+            if metadata['version'] == latest_version.to_s
+              output[p] ||= {}
+              output[p][pv] ||= {}
+              output[p][pv][m] = metadata
+            end
+          end
+        end
+      end
+
+      output
     end
 
     # Finds the raw metadata info for the given platform, platform_version
