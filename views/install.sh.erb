@@ -110,8 +110,6 @@ elif test -f "/etc/redhat-release"; then
 
   # If /etc/redhat-release exists, we act like RHEL by default
   if test "$platform" = "fedora"; then
-    # FIXME: stop remapping fedora to el
-    # FIXME: remove client side platform_version mangling and hard coded yolo
     # Change platform version for use below.
     platform_version="6.0"
   fi
@@ -119,9 +117,6 @@ elif test -f "/etc/redhat-release"; then
   if test "$platform" = "xenserver"; then
     # Current XenServer 6.2 is based on CentOS 5, platform is not reset to "el" server should hanlde response
     platform="xenserver"
-  else
-    # FIXME: use "redhat"
-    platform="el"
   fi
 
 elif test -f "/etc/system-release"; then
@@ -440,7 +435,13 @@ install_file() {
   case "$1" in
     "rpm")
       echo "installing with rpm..."
-      rpm -Uvh --oldpackage --replacepkgs "$2"
+      rpmcmd="rpm -Uvh --oldpackage --replacepkgs"
+      # RPM Arch is evaluated incorrectly on some
+      # RPM based distros for armv7.
+      if test "$machine" == "armv7l" -a "$platform" == "fedora" ; then
+        rpmcmd="$rpmcmd --ignorearch"
+      fi
+      $rpmcmd "$2"
       ;;
     "deb")
       echo "installing with dpkg..."
