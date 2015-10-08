@@ -775,6 +775,7 @@ context 'Omnitruck' do
     {
       '/download' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
       '/download-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.1.6-1_amd64.deb',
+      '/download-chefdk' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.8.1-1_amd64.deb',
       '/metadata' => {
         url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
         sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
@@ -786,6 +787,12 @@ context 'Omnitruck' do
         sha256: 'b0a27a0b04c30c102d65fa7e2f2f40f64e9cdde7ff07a453a91e1113b52929d8',
         md5: 'd07cf230410b55bd8939ab29d65a3cc5',
         version: '11.1.6'
+      },
+      '/metadata-chefdk' => {
+          url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.8.1-1_amd64.deb',
+          sha256: '704cd19f9d803ab481c8628c21226e6a968e4c11b10df435cc39fe79c3e3e90a',
+          md5: "4d975341d5f545b04d5828045a2f2555",
+          version: '0.8.1'
       },
       '/full_client_list' => nil,
       '/full_list' => nil,
