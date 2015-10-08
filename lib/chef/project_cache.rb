@@ -1,5 +1,5 @@
 require 'chef/project'
-require 'opscode/version'
+require 'chef/version'
 
 class Chef
   class ProjectCache
@@ -12,23 +12,34 @@ class Chef
     end
 
     def fix_windows_manifest!(manifest, fix_up_to_version=:all)
-      unless manifest['windows'].nil? 
-        manifest['windows'].keys.each do |platform_version|
-          i386_releases = manifest['windows'][platform_version]['i386'] || {}
-
-          pre_x64_releases = i386_releases.inject({}) do |memo, (version, metadata)|
-            if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
-              memo[version] = metadata
+      builds_32bit = {}
+      builds_64bit = {}
+      unless manifest['windows'].nil?       
+        manifest['windows'].each do |platform_version, build_data|
+          build_data.each do |architecture, builds|
+            builds.each do |version, build|
+              if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
+                builds_32bit[version] = build
+                builds_64bit[version] = build
+              else
+                if architecture == 'x86_64'
+                  builds_64bit[version] = build
+                else
+                  builds_32bit[version] = build
+                end
+              end
             end
-            memo
-          end
-
-          if manifest['windows'][platform_version]['x86_64']
-            manifest['windows'][platform_version]['x86_64'].merge!(pre_x64_releases)
-          else
-            manifest['windows'][platform_version]['x86_64'] = pre_x64_releases
           end
         end
+
+
+        manifest['windows'] = {
+          '2008r2' => {
+            'i686'   => builds_32bit,
+            'i386'   => builds_32bit,
+            'x86_64' => builds_64bit
+          }
+        }
       end
       manifest
     end

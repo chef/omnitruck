@@ -25,7 +25,7 @@ require 'restclient'
 require 'nokogiri'
 require 'uri'
 
-module OmnitruckVerifier
+class Chef
 
   # == BucketLister
   # List some S3 buckets. There are plenty of other S3 tools out there but we

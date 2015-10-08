@@ -1,9 +1,10 @@
-require 'opscode/version'
+require 'chef/version'
 require 'platform_dsl'
 
 class Chef
   class VersionResolver
     class InvalidDownloadPath < StandardError; end
+    class InvalidPlatform < StandardError; end
 
     # Resolves a version and returns the following information for the found
     # package(s).
@@ -14,49 +15,144 @@ class Chef
     #   version:  ""
     # }
 
-    attr_reader :version
-    attr_reader :build_map
-    attr_reader :platform_version
-    attr_reader :machine_architecture
-    attr_reader :friendly_error_msg
     attr_reader :dsl
+    attr_reader :friendly_error_msg
 
-    def self.test
-      require 'json'
-      list = JSON.parse(File.read('./metadata_dir/stable/build-chef-list.json'))
-      Chef::VersionResolver.new('latest', list, platform_string: 'mac_os_x', platform_version_string: '10.10', machine_string: 'x86_64').package_info
-    end
+    attr_reader :build_map
+    attr_reader :target_version
 
-    def initialize(version_string, build_map, platform_string: nil, platform_version_string: nil, machine_string: nil)
+    def initialize(version_string, build_map)
       @dsl = PlatformDSL.new()
       dsl.from_file("platforms.rb")
       @build_map = build_map
-      @version = parse_version_string(version_string)
-      @friendly_error_msg = "No installer for platform #{platform_string}, platform_version #{platform_version_string}, machine #{machine_string}"
-      @platform_version = find_platform_version(platform_string, platform_version_string)
-      @machine_architecture = machine_string
+      @target_version = parse_version_string(version_string)
     end
 
-    def package_info
-      available_versions = find_available_versions
+    def package_info(platform_string, platform_version_string, machine_string)
+      @friendly_error_msg = "No installer for platform #{platform_string}, platform_version #{platform_version_string}, machine #{machine_string}"
 
-      # We send a list of versions to the Opscode::Version and use it to
-      # select the version that matches the criteria.
-      target_version = Opscode::Version.find_target_version(
-        available_versions.keys,
-        version,
-        true,
-      )
+      target_platform = find_platform_version(platform_string, platform_version_string)
 
-      unless target_version
+      version_metadata = find_raw_metadata_for(target_platform, machine_string)
+      version = find_target_version_in(version_metadata)
+
+      if version.nil?
         raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{friendly_error_msg}"
       end
 
-      # add "version" field to the package_info
-      available_versions[target_version].merge("version" => target_version.to_semver)
+      version
     end
 
-    private
+    def package_list
+      # We will walk through the build_map and return the matching
+      # version for all available platform, platform_version and architecture
+      target_versions = {}
+      build_map.each do |platform, platform_data|
+        next if platform == 'run_data'
+
+        platform_data.each do |platform_version, platform_version_data|
+          platform_version_data.each do |architecture, raw_metadata|
+            version = find_target_version_in(raw_metadata)
+
+            unless version.nil?
+              target_versions[platform] ||= {}
+              target_versions[platform][platform_version] ||= {}
+              target_versions[platform][platform_version][architecture] = version
+            end
+          end
+        end
+      end
+
+      target_versions
+    end
+
+    # Finds the raw metadata info for the given platform, platform_version
+    # and machine_architecture
+    def find_raw_metadata_for(target_platform, target_architecture)
+      # omnitruck has some core platforms like ubuntu, windows, ...
+      # and some secondary platforms that map onto core platforms like linuxmint, scientific
+      # mapped_name will return the original name if it is not mapped
+      core_platform = target_platform.mapped_name
+
+      # first make sure we have some builds available for the given platform
+      if !build_map[core_platform]
+        raise InvalidDownloadPath, "Cannot find any chef versions for core platform #{core_platform}: #{friendly_error_msg}"
+      end
+
+      # get all the available distro versions
+      distro_versions_available = build_map[core_platform].keys
+
+      # select only the packages from the distro versions that are <= the version we are looking for
+      # we do not want to select el7 packages for el6 platform
+      distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v) <= target_platform }
+
+      if distro_versions_available.length == 0
+        raise InvalidDownloadPath, "Cannot find any available chef versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
+      end
+
+      # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
+      distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1) <=> dsl.new_platform_version(core_platform, v2) }
+
+      # Now filter out the metadata based on architecture
+      raw_metadata = { }
+      distro_versions_available.each do |version|
+        next if build_map[core_platform][version][target_architecture].nil?
+
+        # Note that we do not want to make a deep merge here. We want the
+        # information coming from the build_map override the ones that are
+        # already in raw_metadata because we have sorted
+        # distro_versions_available and the later ones will be the correct ones.
+        raw_metadata.merge!(build_map[core_platform][version][target_architecture])
+      end
+
+      raw_metadata
+    end
+
+    # Get raw metadata in the form below:
+    # "10.12.0-1": {
+    #   "relpath": "/el/6/x86_64/chef-10.12.0-1.el6.x86_64.rpm",
+    #   "md5": "abd5482366275f06245c54b2d8b83b04",
+    #   "sha256": "5260a494b5616325b9cda49a99c23f2238ba2119c8248988ce09a32e9cca56dd"
+    # },
+    # "10.14.0-1": {
+    #   "relpath": "/el/6/x86_64/chef-10.14.0-1.el6.x86_64.rpm",
+    #   "md5": "5c8a8977f69af9c25a213bf4a6c3a8ce",
+    #   "sha256": "1aa82745c605b173550fa5c7d5b74909e3fd7f7bfad5e06c4d8a047d06fd40d6"
+    # }
+    # Finds the target version and returns it as below:
+    # {
+    #   "relpath": "/el/6/x86_64/chef-10.14.0-1.el6.x86_64.rpm",
+    #   "md5": "5c8a8977f69af9c25a213bf4a6c3a8ce",
+    #   "sha256": "1aa82745c605b173550fa5c7d5b74909e3fd7f7bfad5e06c4d8a047d06fd40d6",
+    #   "version": "10.14.0"
+    # }
+    # Notice the extra "version" field that does not include the iteration number.
+    def find_target_version_in(raw_version_metadata)
+      available_versions = { }
+
+      raw_version_metadata.each do |raw_version, version_info|
+        version = Opscode::Version.parse(raw_version)
+
+        # save this version only if the version string is parsable
+        available_versions[version] = version_info unless version.nil?
+      end
+
+      # We send a list of versions to the Opscode::Version and use it to
+      # select the version that matches the criteria.
+      found_version = Opscode::Version.find_target_version(
+        available_versions.keys,
+        target_version,
+        true,
+      )
+
+      if found_version
+        available_versions[found_version].merge("version" => found_version.to_semver)
+      else
+        nil
+      end
+    end
+
+    # HELPERS
 
     # Translates the given version_string into an Opscode::Version.
     # Sets the version to nil if we are looking for the :latest version.
@@ -72,61 +168,11 @@ class Chef
 
     # Create a PlatformVersion object from the given strings.
     def find_platform_version(platform_string, platform_version_string)
-      dsl.new_platform_version(platform_string, platform_version_string)
-    end
-
-    # Finds all the available distro versions available from the build map
-    def find_available_distro_versions
-      # omnitruck has some core platforms like ubuntu, windows, ...
-      # and some secondary platforms that map onto core platforms like linuxmint, scientific
-      # mapped_name will return the original name if it is not mapped
-      core_platform = platform_version.mapped_name
-
-      # first make sure we have some builds available for the given platform
-      if !build_map[core_platform]
-        raise InvalidDownloadPath, "Cannot find any chef versions for core platform #{core_platform}: #{friendly_error_msg}"
-      end
-
-      # get all the available distro versions
-      distro_versions_available = build_map[core_platform].keys
-
-      # select only the packages from the distro versions that are <= the version we are looking for
-      # we do not want to select el7 packages for el6 platform
-      distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v) <= platform_version }
-
-      if distro_versions_available.length == 0
-        raise InvalidDownloadPath, "Cannot find any available chef versions for this platform version #{platform_version.mapped_name} #{platform_version.mapped_version}: #{friendly_error_msg}"
-      end
-
-      # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
-      distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1) <=> dsl.new_platform_version(core_platform, v2) }
-
-      # Return the sorted distro versions with their package information
-      distro_versions_available.map do |version|
-        build_map[core_platform][version]
+      begin
+        dsl.new_platform_version(platform_string, platform_version_string)
+      rescue
+        raise InvalidPlatform, "Platform information not found for #{platform_string}, #{platform_version_string}"
       end
     end
-
-    # Walks through all matching distro versions and collects the available versions
-    # in a hash indexed by the version itself.
-    def find_available_versions
-      available_versions = { }
-
-      find_available_distro_versions.each do |distro_version|
-        # if the machine architecture does not map, do not collect any versions
-        # from this distro_version.
-        next if distro_version[machine_architecture].nil?
-
-        distro_version[machine_architecture].each do |raw_version, version_info|
-          version = Opscode::Version.parse(raw_version)
-
-          # save this version only if the version string is parsable
-          available_versions[version] = version_info unless version.nil?
-        end
-      end
-
-      available_versions
-    end
-
   end
 end

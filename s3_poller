@@ -9,7 +9,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'chef/project'
 require 'chef/project_cache'
 require 'chef/channel'
-require 'opscode/version'
+require 'chef/version'
 
 class S3Poller
   attr_reader :config
