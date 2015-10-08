@@ -796,7 +796,8 @@ context 'Omnitruck' do
       },
       '/full_client_list' => nil,
       '/full_list' => nil,
-      '/full_server_list' => nil
+      '/full_chefdk_list' => nil,
+      '/full_server_list' => nil,
     }.each do |legacy_endpoint, response_match_data|
 
       context "legacy endpoint #{legacy_endpoint}" do
