@@ -173,7 +173,7 @@ class Chef
         true,
       )
 
-      if found_version
+      if found_version && available_versions[found_version]
         available_versions[found_version].merge("version" => found_version.to_semver)
       else
         nil
