@@ -626,7 +626,7 @@ context 'Omnitruck' do
 
     # Let's test with chefdk because chef manifest have a 12.6.1 entry in it which
     # limits the information we are getting out of this endpoint.
-    context "for chefdk" do
+    context "for stable chefdk" do
       let(:endpoint) { '/stable/chefdk/versions' }
       let(:params) { { v: version } }
       let(:versions_output) {
@@ -649,9 +649,6 @@ context 'Omnitruck' do
                   expect(metadata['md5']).to match /^[0-9a-f]{32}$/
                   expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
                   expect(metadata['url']).to match 'http'
-                  # over the course of time we have stopped publishing builds on some
-                  # platform versions so we use a file to read the expected versions
-                  # for each platform
                   expect(metadata['version']).to eq('0.8.1')
                 end
               end
@@ -703,6 +700,37 @@ context 'Omnitruck' do
       end
     end
 
+    context "for current chefdk" do
+      let(:endpoint) { '/current/chefdk/versions' }
+      let(:params) { { v: version } }
+      let(:versions_output) {
+        get(endpoint, params)
+        metadata_json = last_response.body
+        JSON.parse(metadata_json)
+      }
+
+      # This version does not exist for Mac OS X. This case tests a corner case
+      # where a version is not available for a specific platform but available
+      # for others. Note that we check we get 4 platforms instead of 5.
+      context "with full integration version" do
+        let(:version) { '0.8.0+20150927085010' }
+        it 'returns the exact version for each platform, platform_version and architecture' do
+          expect(versions_output.keys.length).to eq(4)
+
+          versions_output.each do |p, data|
+            data.each do |pv, data|
+              data.each do |m, metadata|
+                expect(metadata['relpath']).to be_a(String)
+                expect(metadata['md5']).to match /^[0-9a-f]{32}$/
+                expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
+                expect(metadata['url']).to match 'http'
+                expect(metadata['version']).to eq('0.8.0+20150927085010')
+              end
+            end
+          end
+        end
+      end
+    end
   end
 
   context "install script" do
