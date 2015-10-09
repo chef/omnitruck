@@ -829,7 +829,7 @@ context 'Omnitruck' do
         let(:endpoint) { legacy_endpoint }
 
         it "returns the correct response data" do
-          get(endpoint, params)
+          get(endpoint, params, "HTTP_ACCEPT" => "text/plain")
 
           if legacy_endpoint =~ /download/
             follow_redirect!
