@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 # once 1.4.5 is released, this should stop
 gem 'sinatra', :git => 'https://github.com/sinatra/sinatra.git', :branch => 'master'
 gem 'sinatra-contrib'
+gem 'rack-ssl', '~> 1.4.1'
 gem 'uber-s3'
 gem 'unicorn'
 gem 'json'
