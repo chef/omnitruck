@@ -19,6 +19,7 @@
 # limitations under the License.
 #
 
+require 'rack/ssl'
 require 'sinatra'
 require 'sinatra/config_file'
 require 'json'
@@ -49,6 +50,10 @@ class Omnitruck < Sinatra::Base
 
   configure :development, :test do
     set :raise_errors, true  # needed to get accurate backtraces out of rspec
+  end
+
+  configure :production do
+    use Rack::SSL
   end
 
   #

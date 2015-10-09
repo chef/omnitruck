@@ -34,6 +34,8 @@ GEM
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
+    rack-ssl (1.4.1)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     raindrops (0.15.0)
@@ -95,6 +97,7 @@ DEPENDENCIES
   json
   mixlib-versioning (~> 1.1.0)
   nokogiri
+  rack-ssl (~> 1.4.1)
   rack-test
   rake
   rest-client
@@ -110,4 +113,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
