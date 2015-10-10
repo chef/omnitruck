@@ -100,10 +100,10 @@ class Omnitruck < Sinatra::Base
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
     decorate_url!(package_info)
-    if request.accept? 'application/json'
-      JSON.pretty_generate(package_info)
-    else
+    if request.accept? 'text/plain'
       parse_plain_text(package_info)
+    else
+      JSON.pretty_generate(package_info)
     end
   end
 
