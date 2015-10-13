@@ -245,7 +245,7 @@ class Omnitruck < Sinatra::Base
     # This works around a bug in S3:
     # https://forums.aws.amazon.com/message.jspa?messageID=207700
     relpath.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{channel.aws_packages_bucket}.s3.amazonaws.com"
+    base = "https://#{channel.aws_packages_bucket}.s3.amazonaws.com"
     base + relpath
   end
 
