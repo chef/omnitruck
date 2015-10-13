@@ -181,7 +181,7 @@ end
 fastly_request_setting 'cache_key' do
   api_key fastly_creds['api_key']
   service fastly_service.name
-  hash_keys 'req.url, req.http.host, req.http.Fastly-SSL, req.http.accept'
+  hash_keys 'req.url, req.http.host, req.http.Fastly-SSL, req.http.accept, req.http.Accept-Encoding'
   sensitive true
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
