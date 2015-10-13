@@ -162,7 +162,7 @@ fastly_backend "#{origin_fqdn}-80" do
   service fastly_service.name
   address origin_fqdn
   port 80
-  request_condition = use_http.name
+  request_condition use_http.name
   sensitive true
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
@@ -173,7 +173,7 @@ fastly_backend "#{origin_fqdn}-443" do
   address origin_fqdn
   port 443
   ssl true
-  request_condition = use_https.name
+  request_condition use_https.name
   sensitive true
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
@@ -229,7 +229,7 @@ app_status = fastly_condition 'app_status' do
   api_key fastly_creds['api_key']
   service fastly_service.name
   type 'cache'
-  statement 'req.url ~ "^/status"'
+  statement 'req.url ~ "^/_status"'
   sensitive true
   notifies :activate_latest, "fastly_service[#{fqdn}]", :delayed
 end
