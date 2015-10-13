@@ -108,7 +108,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.7/x86_64/chef-12.2.1-1.dmg',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.7/x86_64/chef-12.2.1-1.dmg',
                     sha256: '53034d6e1eea0028666caee43b99f43d2ca9dd24b260bc53ae5fad1075e83923',
                     md5: 'd00335944b2999d0511e6db30d1e71dc',
                     version: '12.2.1'
@@ -131,7 +131,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.11/x86_64/chef-12.4.3-1.dmg',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.11/x86_64/chef-12.4.3-1.dmg',
                     sha256: '32d290cb5648ea600d976717fa32fc1e213e4452f10dc7b481f4e9aa7200293c',
                     md5: 'e0caf8a0bd8b4140191fdfe7946da27c',
                     version: '12.4.3'
@@ -158,7 +158,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
                     sha256: '221890739edadcf46501154c8cbdba771612140364ca4afa8290327c4703a1ee',
                     md5: 'a71d6c0039753ad207848ca385bd0432',
                     version: '12.4.3'
@@ -184,7 +184,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
                     sha256: '221890739edadcf46501154c8cbdba771612140364ca4afa8290327c4703a1ee',
                     md5: 'a71d6c0039753ad207848ca385bd0432',
                     version: '12.4.3'
@@ -207,7 +207,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
                     sha256: '221890739edadcf46501154c8cbdba771612140364ca4afa8290327c4703a1ee',
                     md5: 'a71d6c0039753ad207848ca385bd0432',
                     version: '12.4.3'
@@ -230,7 +230,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
                     sha256: '221890739edadcf46501154c8cbdba771612140364ca4afa8290327c4703a1ee',
                     md5: 'a71d6c0039753ad207848ca385bd0432',
                     version: '12.4.3'
@@ -256,7 +256,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
                     sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
                     md5: 'd5f74a74ed2a405ffa47ae7ba2de1747',
                     version: '12.4.3'
@@ -270,7 +270,7 @@ context 'Omnitruck' do
                 let(:project_version) { 'latest' }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
                     sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
                     md5: 'd5f74a74ed2a405ffa47ae7ba2de1747',
                     version: '12.4.3'
@@ -284,7 +284,7 @@ context 'Omnitruck' do
                 let(:project_version) { '12.1' }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.1.2-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.1.2-1_amd64.deb',
                     sha256: '4a92cdd99d337ac51529ca7fa402e2470e1a4e99a63d4260c81f275e047f4fb4',
                     md5: 'bbcc53f35e17b7bfe96bc2329854cb1b',
                     version: '12.1.2'
@@ -298,7 +298,7 @@ context 'Omnitruck' do
                 let(:project_version) { '10.24.0' }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/11.04/x86_64/chef_10.24.0-1.ubuntu.11.04_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/11.04/x86_64/chef_10.24.0-1.ubuntu.11.04_amd64.deb',
                     sha256: '4afb1aae6409a33b511d932ce670d1e1c7c8c69daf36647606d65e6f6ef36313',
                     md5: '244446bd643339fc5e68201d4855ac25',
                     version: '10.24.0'
@@ -323,7 +323,7 @@ context 'Omnitruck' do
                 let(:project_version) { 'latest' }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
                     sha256: '44448a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e',
                     md5: '44449f54115d754373c9891b8759497c',
                     version: '12.6.1'
@@ -350,7 +350,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_12.6.1-1_amd64.deb',
                     sha256: '44448a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e',
                     md5: '44449f54115d754373c9891b8759497c',
                     version: '12.6.1'
@@ -379,7 +379,7 @@ context 'Omnitruck' do
                     let(:project_version) { nil }
                     let(:expected_info) do
                       {
-                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.4.3-1-x86.msi',
+                        url: 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.4.3-1-x86.msi',
                         sha256: '010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37',
                         md5: '42be33c3fe1174b2b8c437b29cf42e84',
                         version: '12.4.3'
@@ -393,7 +393,7 @@ context 'Omnitruck' do
                     let(:project_version) { '12.4.1' }
                     let(:expected_info) do
                       {
-                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chef-client-12.4.1-1.msi',
+                        url: 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chef-client-12.4.1-1.msi',
                         sha256: 'f02f5243f16b860e1d208e7d078b8bf0600c60159d49141b678391936b0afff2',
                         md5: '4d9d2320ad9f86f942bb4b12e34bc221',
                         version: '12.4.1'
@@ -425,7 +425,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages-current.s3.amazonaws.com/solaris2/5.11/sun4v/chef-12.4.3%2B20150930210020-1.sun4v.solaris',
+                    url: 'https://opscode-omnibus-packages-current.s3.amazonaws.com/solaris2/5.11/sun4v/chef-12.4.3%2B20150930210020-1.sun4v.solaris',
                     sha256: '0b47b33151c7714b753061d2a80ab79c8efd23f800610a23ad32b5d6d19cc671',
                     md5: '27bad1563bff9b6cf499c4ede54b1a1d',
                     version: '12.4.3+20150930210020'
@@ -459,7 +459,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chefdk-0.8.1-1-x86.msi',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chefdk-0.8.1-1-x86.msi',
                     sha256: '4861563c12cfa9fc27df602a19e19906b7297150f19a00f45dc41c1121d25e2e',
                     md5: '6fc01d690fb8f7e1e8b9e657dc6c807c',
                     version: '0.8.1'
@@ -489,7 +489,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages-current.s3.amazonaws.com/mac_os_x/10.10/x86_64/chefdk-0.8.0%2B20150930085008-1.dmg',
+                    url: 'https://opscode-omnibus-packages-current.s3.amazonaws.com/mac_os_x/10.10/x86_64/chefdk-0.8.0%2B20150930085008-1.dmg',
                     sha256: 'bd763a3c107172e28a49596fb0fcdf58803eb898a2e2b5f002803dd38cc0b9e6',
                     md5: 'b9a0bc6f034bb8d2124a2246f5c5ecd2',
                     version: '0.8.0+20150930085008'
@@ -523,7 +523,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-server-11.1.6-1.el6.x86_64.rpm',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-server-11.1.6-1.el6.x86_64.rpm',
                     sha256: 'd4f9c9515dd8035acd4b38098fd2f243f26fb925ae15e47817f93d73cf9a850c',
                     md5: '46306e25be913efe0ffca5aa98f42c85',
                     version: '11.1.6'
@@ -559,7 +559,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/angrychef_12.2.1-1_amd64.deb',
+                    url: 'https://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/angrychef_12.2.1-1_amd64.deb',
                     sha256: 'da3affb7301c8a7ccb105c15da4229091c8ba8573e124fe07b5044e2869080e4',
                     md5: '1047a611391f8d1f154bd17dc80f05be',
                     version: '12.2.1'
@@ -589,7 +589,7 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'http://opscode-omnibus-packages-current.s3.amazonaws.com/freebsd/10/amd64/angrychef-12.5.0%2B20150910004014_1.amd64.sh',
+                    url: 'https://opscode-omnibus-packages-current.s3.amazonaws.com/freebsd/10/amd64/angrychef-12.5.0%2B20150910004014_1.amd64.sh',
                     sha256: '3f5e8ccbbfb3034545f0099b396c0c281807658e434394621c6ee7b8d07a2c14',
                     md5: 'c1f95d1f4dc68c42478ce8254b8b36d2',
                     version: '12.5.0+20150910004014'
@@ -806,16 +806,16 @@ context 'Omnitruck' do
     end
 
     {
-      '/download' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_12.4.3-1_amd64.deb',
-      '/download-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.1.6-1_amd64.deb',
+      '/download' => 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_12.4.3-1_amd64.deb',
+      '/download-server' => 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.1.6-1_amd64.deb',
       '/metadata' => {
-        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_12.4.3-1_amd64.deb',
+        url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_12.4.3-1_amd64.deb',
         sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
         md5: 'd5f74a74ed2a405ffa47ae7ba2de1747',
         version: '12.4.3'
       },
       '/metadata-server' => {
-        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.1.6-1_amd64.deb',
+        url: 'https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef-server_11.1.6-1_amd64.deb',
         sha256: 'ae2b6d893241de8eeb05aee8f00b947034f88097d9b61e5ea2ad511352a58b3f',
         md5: '5f77ef54091a7445ad7eef6f7de699bd',
         version: '11.1.6'
