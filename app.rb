@@ -24,6 +24,11 @@ require 'sinatra/config_file'
 require 'json'
 require 'pp'
 
+require 'logger'
+require 'statsd'
+require 'trashed'
+require 'trashed/reporter'
+
 require 'chef/version'
 require 'platform_dsl'
 require 'mixlib/versioning'
@@ -45,6 +50,17 @@ class Omnitruck < Sinatra::Base
     set :raise_errors, false
     set :show_exceptions, false
     enable :logging
+
+    set :logging, nil
+    logger = Logger.new STDOUT
+    logger.level = Logger::INFO
+    logger.datetime_format = '%a %d-%m-%Y %H%M '
+    set :logging, logger
+
+    reporter = Trashed::Reporter.new
+    reporter.logger = logger
+    reporter.statsd = Statsd.new('localhost', 8125)
+    use Trashed::Rack, reporter
   end
 
   configure :development, :test do
