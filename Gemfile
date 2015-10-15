@@ -14,6 +14,7 @@ gem "rest-client"
 gem 'nokogiri'
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
+gem 'trashed'
 
 group :test do
   gem 'rspec'
