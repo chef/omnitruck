@@ -559,7 +559,7 @@ if test "x$cached_file_available" != "xtrue"; then
   do_checksum "$download_filename" "$sha256" "$md5" || checksum_mismatch
 fi
 
-if test "x$version" = "x"; then
+if test "x$version" = "x" -a "x$CI" != "xtrue"; then
   echo
   echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
   echo
