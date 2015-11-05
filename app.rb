@@ -268,6 +268,6 @@ class Omnitruck < Sinatra::Base
   # parses package_info hash into plaintext string
   def parse_plain_text(package_info)
     full_url = convert_relpath_to_url(package_info["relpath"])
-    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\nversion\t#{package_info['version']}"
+    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\nversion\t#{package_info['version']}\n"
   end
 end
