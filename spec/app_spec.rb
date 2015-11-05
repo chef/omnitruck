@@ -171,6 +171,33 @@ context 'Omnitruck' do
           end
         end
 
+        # Binary compatible platform remapping so that AIX 7.1 gets 6.1 packages
+        context 'for aix' do
+          let(:platform) { 'aix' }
+
+          context 'for 7.1' do
+            let(:platform_version) { '7.1' }
+
+            context 'for powerpc' do
+              let(:architecture) { 'powerpc' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/aix/6.1/powerpc/chef-12.4.3-1.powerpc.bff',
+                    sha256: 'fb1a8789e0036f3594d0c2aaf5f28f31a89d025284c515d9fe6cf6f5e1271f83',
+                    md5: '617e90221cb17afa43ba002dd4d13e3d',
+                    version: '12.4.3'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
         context 'for suse' do
           let(:platform) { 'suse' }
 

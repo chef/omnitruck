@@ -50,7 +50,9 @@ platform "centos" do
   remap "el"
 end
 
-platform "aix"
+platform "aix" do
+  version_remap "6.1"
+end
 
 # Supported Variants
 #
