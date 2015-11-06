@@ -410,12 +410,12 @@ do_download() {
   # we try all of these until we get success.
   # perl, in particular may be present but LWP::Simple may not be installed
 
-  if exists wget; then
-    do_wget $1 $2 && return 0
-  fi
-
   if exists curl; then
     do_curl $1 $2 && return 0
+  fi
+
+  if exists wget; then
+    do_wget $1 $2 && return 0
   fi
 
   if exists fetch; then
