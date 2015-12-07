@@ -32,6 +32,7 @@ require 'trashed/reporter'
 require 'chef/version'
 require 'platform_dsl'
 require 'mixlib/versioning'
+require 'mixlib/install'
 
 require 'chef/project'
 require 'chef/project_cache'
@@ -71,23 +72,13 @@ class Omnitruck < Sinatra::Base
   # serve up the installer script
   #
   get /install\.(?<extension>[\w]+)/ do
-    template_vars = {
-      base_url: url(settings.virtual_path),
-    }
-
     case params['extension']
     when 'sh'
       content_type :sh
-      erb :'install.sh', {
-        layout: :'install.sh',
-        locals: template_vars
-      }
+      prepare_install_sh
     when 'ps1'
       content_type :txt
-      erb :'install.ps1', {
-        layout: :'install.ps1',
-        locals: template_vars
-      }
+      prepare_install_ps1
     else
       halt 404
     end
@@ -269,5 +260,13 @@ class Omnitruck < Sinatra::Base
   def parse_plain_text(package_info)
     full_url = convert_relpath_to_url(package_info["relpath"])
     "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\nversion\t#{package_info['version']}"
+  end
+
+  def prepare_install_sh
+    Mixlib::Install.install_sh(base_url: url(settings.virtual_path))
+  end
+
+  def prepare_install_ps1
+    Mixlib::Install.install_ps1(base_url: url(settings.virtual_path))
   end
 end

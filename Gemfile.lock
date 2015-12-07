@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/chef/mixlib-install.git
+  revision: 8d2cc5e76ab47f47e5bbdbe6a3098059bfb7d1af
+  specs:
+    mixlib-install (0.8.0.alpha.2)
+      artifactory (~> 2.3.0)
+      mixlib-versioning (~> 1.1.0)
+
+GIT
   remote: https://github.com/sinatra/sinatra.git
   revision: 1d48ab2929614c679a4ed6cb827131ab10f1af05
   branch: master
@@ -11,6 +19,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    artifactory (2.3.2)
     backports (3.6.6)
     builder (3.2.2)
     bundler-audit (0.4.0)
@@ -96,6 +105,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
+  mixlib-install!
   mixlib-versioning (~> 1.1.0)
   nokogiri
   rack-test
