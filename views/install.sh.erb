@@ -169,6 +169,13 @@ elif test "x$os" = "xAIX"; then
   platform="aix"
   platform_version="`uname -v`.`uname -r`"
   machine="powerpc"
+elif test -f "/etc/os-release"; then
+  . /etc/os-release
+  if test "x$ID_LIKE" = "xwrlinux" || test "x$ID_LIKE" = "xcisco-wrlinux"; then
+    platform="wrlinux"
+    # 3.4.43-WR5.0.1.13_standard  -->  5
+    platform_version=`uname -r | sed 's/.*-WR\([0-9]\+\).*/\1/'`
+  fi
 fi
 
 if test "x$platform" = "x"; then
@@ -439,8 +446,13 @@ install_file() {
   echo "Installing $project $version"
   case "$1" in
     "rpm")
-      echo "installing with rpm..."
-      rpm -Uvh --oldpackage --replacepkgs "$2"
+      if test "x$platform" = "xwrlinux"; then
+        echo "installing with yum..."
+        yum install -yv "$2"
+      else
+        echo "installing with rpm..."
+        rpm -Uvh --oldpackage --replacepkgs "$2"
+      fi
       ;;
     "deb")
       echo "installing with dpkg..."
