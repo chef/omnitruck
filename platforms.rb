@@ -52,6 +52,14 @@ end
 
 platform "aix"
 
+platform "nexus" do
+  major_only true
+end
+
+platform "ios_xr" do
+  major_only true
+end
+
 # Supported Variants
 #
 # These are RHEL clones that we know will work + SuSE that we test on

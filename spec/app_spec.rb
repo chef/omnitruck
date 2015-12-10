@@ -407,6 +407,58 @@ context 'Omnitruck' do
             end
           end
         end
+
+        context 'for nexus' do
+          let(:platform) { 'nexus' }
+
+          context 'for 7.0(3)I2(2)' do
+            let(:platform_version) { '7.0(3)I2(2)' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/nexus/7/x86_64/chef-12.5.1-1.nexus7.x86_64.rpm',
+                    sha256: '4d696c9d1ea78b6b595e529ad45b9ce3d7d1b120f6fb70df2281e3ac75cb196d',
+                    md5: '565a0be0b0201322d6de5a99e8b655c8',
+                    version: '12.5.1'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
+        context 'for ios_xr' do
+          let(:platform) { 'ios_xr' }
+
+          context 'for 6.0.0.14I' do
+            let(:platform_version) { '6.0.0.14I' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ios_xr/6/x86_64/chef-12.5.1-1.ios_xr6.x86_64.rpm',
+                    sha256: '0011ce68c2b73d3feec788abd3856b5d98d35394225fe5b1a134714a8aa30c26',
+                    md5: '0f2a4d7c90204e01343f449150c48c1c',
+                    version: '12.5.1'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
       end
 
       context 'for current' do
