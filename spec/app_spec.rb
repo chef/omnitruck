@@ -874,7 +874,14 @@ context 'Omnitruck' do
       },
       '/full_client_list' => nil,
       '/full_list' => nil,
-      '/full_server_list' => nil
+      '/full_server_list' => nil,
+      '/chef/full_client_list' => nil,
+      '/chef/full_list' => nil,
+      '/chef/full_server_list' => nil,
+      '/chef_platform_names' => nil,
+      '/chef_server_platform_names' => nil,
+      '/chef/chef_platform_names' => nil,
+      '/chef/chef_server_platform_names' => nil
     }.each do |legacy_endpoint, response_match_data|
 
       context "legacy endpoint #{legacy_endpoint}" do
@@ -897,6 +904,9 @@ context 'Omnitruck' do
             expect(parsed_metadata['sha256']).to eq(response_match_data[:sha256])
             expect(parsed_metadata['md5']).to eq(response_match_data[:md5])
             expect(parsed_metadata['version']).to eq(response_match_data[:version])
+          elsif legacy_endpoint =~ /platform_names/
+            # we check that response is valid JSON.
+            expect{JSON.parse(last_response.body)}.not_to raise_error
           else
             parsed_json = JSON.parse(last_response.body)
 

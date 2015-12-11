@@ -10,7 +10,6 @@ bin/*
 /build*list.json
 /build*list_v?.json
 release-metadata-cache/*
-chef-*platform-names.json
 
 # ignore backup dirs and files
 s3-client-backup

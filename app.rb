@@ -162,7 +162,14 @@ class Omnitruck < Sinatra::Base
     '/metadata-server' => '/chef-server/metadata',
     '/full_client_list' => '/chef/versions',
     '/full_list' => '/chef/versions',
-    '/full_server_list' => '/chef-server/versions'
+    '/full_server_list' => '/chef-server/versions',
+    '/chef/full_client_list' => '/chef/versions',
+    '/chef/full_list' => '/chef/versions',
+    '/chef/full_server_list' => '/chef-server/versions',
+    '/chef_platform_names' => '/chef/platforms',
+    '/chef_server_platform_names' => '/chef-server/platforms',
+    '/chef/chef_platform_names' => '/chef/platforms',
+    '/chef/chef_server_platform_names' => '/chef-server/platforms',
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
