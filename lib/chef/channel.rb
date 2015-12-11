@@ -9,11 +9,14 @@ class Chef
     attr_reader :name
     attr_reader :aws_metadata_bucket
     attr_reader :aws_packages_bucket
+    attr_reader :manifest_metadata
+    attr_reader :s3
 
     def initialize(name, aws_metadata_bucket, aws_packages_bucket)
       @name = name
       @aws_metadata_bucket = aws_metadata_bucket
       @aws_packages_bucket = aws_packages_bucket
+      @manifest_metadata = {}
 
       @s3 = Chef::BucketLister.new(aws_metadata_bucket)
     end
@@ -21,11 +24,10 @@ class Chef
     # Return all release manifests in the s3 bucket for the given channel
     def manifests
       @manifests ||= begin
-                           keys = []
-                           @s3.fetch do |key, md5|
-                             keys << key
+                           s3.fetch do |key, md5, last_modified|
+                             @manifest_metadata[key] = { md5: md5, last_modified: last_modified }
                            end
-                           @all_manifests = keys.select do |k|
+                           @manifest_metadata.keys.select do |k|
                              k =~ /\.json\Z/ and k !~ /platform-names.json/
                            end
                          end
@@ -52,6 +54,14 @@ class Chef
 
     def debug(msg)
       puts msg
+    end
+
+    def manifest_md5_for(key)
+      manifest_metadata.key?(key) ? manifest_metadata[key][:md5] : nil
+    end
+
+    def manifest_last_modified_for(key)
+      manifest_metadata.key?(key) ? manifest_metadata[key][:last_modified] : nil
     end
   end
 end

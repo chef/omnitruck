@@ -1,5 +1,6 @@
 require 'chef/project'
 require 'chef/version'
+require 'digest'
 
 class Chef
   class ProjectCache
@@ -63,11 +64,11 @@ class Chef
     end
 
     def build_list_path
-      metadata_file("build-#{project.name}-list.json")
+      metadata_file("build-#{name}-list.json")
     end
 
     def platform_names_path
-      metadata_file("#{project.name}-platform-names.json")
+      metadata_file("#{name}-platform-names.json")
     end
 
     def self.for_project(project_name, channel, metadata_dir)
@@ -98,11 +99,59 @@ class Chef
     def update_cache
       create_cache_dirs
       manifests_to_delete = local_manifests - project.manifests
-      manifests_to_fetch = project.manifests - local_manifests
       debug("Files to delete:\n#{manifests_to_delete.map{|f| "* #{f}"}.join("\n")}")
       debug("Files to fetch:\n#{manifests_to_fetch.map{|f| "* #{f}"}.join("\n")}")
       manifests_to_delete.each {|m| delete_manifest(m) }
       manifests_to_fetch.each {|f| fetch_manifest(f) }
+    end
+
+    def manifests_to_fetch
+      @fetch_list ||= project.manifests.select { |manifest| should_fetch_manifest?(manifest) }
+    end
+
+    def should_fetch_manifest?(manifest)
+      if !local_manifest_exists?(manifest)
+        true
+      elsif have_both_md5s_for?(manifest)
+        !manifest_md5_matches?(manifest)
+      else
+        remote_manifest_newer?(manifest)
+      end
+    end
+
+    def local_manifest_exists?(manifest)
+      File.exist?(cache_path_for_manifest(manifest))
+    end
+
+    def local_manifest_md5_for(manifest)
+      return unless local_manifest_exists?(manifest)
+      Digest::MD5.file(cache_path_for_manifest(manifest))
+    end
+
+    def have_both_md5s_for?(manifest)
+      !local_manifest_md5_for(manifest).nil? && !project.manifest_md5_for(manifest).nil?
+    end
+
+    def manifest_md5_matches?(manifest)
+      local_manifest_md5_for(manifest) == project.manifest_md5_for(manifest)
+    end
+
+    def local_manifest_mtime(manifest)
+      return unless local_manifest_exists?(manifest)
+      File.mtime(cache_path_for_manifest(manifest))
+    end
+
+    def remote_manifest_newer?(manifest)
+      local  = local_manifest_mtime(manifest)
+      remote = project.manifest_last_modified_for(manifest)
+
+      if !local
+        true
+      elsif !remote
+        false
+      else
+        remote > local
+      end
     end
 
     def fetch_manifest(manifest)

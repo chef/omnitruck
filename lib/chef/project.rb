@@ -21,7 +21,7 @@ class Chef
                        keys_for_project.map { |k| File.basename(k) }
                      end
       if @manifests.length == 0
-        debug("Remote manifest was empty for #{release_manifest_name} in the channel '#{channel.name}")
+        debug("Remote manifest was empty for #{release_manifest_name} in the channel '#{channel.name}'")
       end
       @manifests
     end
@@ -44,6 +44,14 @@ class Chef
 
     def key_for(manifest)
       File.join(release_manifest_name, manifest)
+    end
+
+    def manifest_md5_for(key)
+      channel.manifest_md5_for("#{release_manifest_name}/#{key}")
+    end
+
+    def manifest_last_modified_for(key)
+      channel.manifest_last_modified_for("#{release_manifest_name}/#{key}")
     end
   end
 end
