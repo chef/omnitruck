@@ -21,6 +21,7 @@
 
 # -*- coding: UTF-8 -*-
 
+require 'date'
 require 'restclient'
 require 'nokogiri'
 require 'uri'
@@ -48,6 +49,7 @@ class Chef
 
     KEY = "Key".freeze
     ETAG = "ETag".freeze
+    LASTMODIFIED = "LastModified".freeze
 
     attr_reader :bucket_name
 
@@ -62,7 +64,7 @@ class Chef
         truncated, contents = fetch_next(marker)
         contents.each do |item|
           marker = key_of(item)
-          yield key_of(item), etag_of(item)
+          yield key_of(item), etag_of(item), last_modified_of(item)
         end
       end
     end
@@ -75,6 +77,13 @@ class Chef
 
     def etag_of(element)
       element.xpath(ETAG).text.gsub('"', '')
+    end
+
+    def last_modified_of(element)
+      last_modified = element.xpath(LASTMODIFIED).text
+      return nil if last_modified.empty?
+
+      DateTime.rfc3339(last_modified).to_time
     end
 
     def fetch_next(from_marker)
