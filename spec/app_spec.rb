@@ -860,6 +860,7 @@ context 'Omnitruck' do
     {
       '/download' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
       '/download-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.1.6-1_amd64.deb',
+      '/chef/download-server' => 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.1.6-1_amd64.deb',
       '/metadata' => {
         url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_12.4.3-1_amd64.deb',
         sha256: 'de772b659e09b0ead5a116585f0f610ab74c82cb313a7bf7c747a6eb94db59df',
@@ -867,6 +868,12 @@ context 'Omnitruck' do
         version: '12.4.3'
       },
       '/metadata-server' => {
+        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.1.6-1_amd64.deb',
+        sha256: 'b0a27a0b04c30c102d65fa7e2f2f40f64e9cdde7ff07a453a91e1113b52929d8',
+        md5: 'd07cf230410b55bd8939ab29d65a3cc5',
+        version: '11.1.6'
+      },
+      '/chef/metadata-server' => {
         url: 'http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.1.6-1_amd64.deb',
         sha256: 'b0a27a0b04c30c102d65fa7e2f2f40f64e9cdde7ff07a453a91e1113b52929d8',
         md5: 'd07cf230410b55bd8939ab29d65a3cc5',

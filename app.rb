@@ -100,6 +100,8 @@ class Omnitruck < Sinatra::Base
     '/chef/download-container' => '/container/download',
     '/chef/metadata-angrychef' => '/angrychef/metadata',
     '/chef/download-angrychef' => '/angrychef/download',
+    '/chef/download-server' => '/chef-server/download',
+    '/chef/metadata-server' => '/chef-server/metadata',
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
