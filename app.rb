@@ -166,6 +166,8 @@ class Omnitruck < Sinatra::Base
     '/chef/full_client_list' => '/chef/versions',
     '/chef/full_list' => '/chef/versions',
     '/chef/full_server_list' => '/chef-server/versions',
+    '/metadata-chefdk' => '/chefdk/metadata',
+    '/download-chefdk' => '/chefdk/download',
     '/chef_platform_names' => '/chef/platforms',
     '/chef_server_platform_names' => '/chef-server/platforms',
     '/chef/chef_platform_names' => '/chef/platforms',
