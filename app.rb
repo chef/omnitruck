@@ -149,7 +149,7 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
@@ -157,7 +157,7 @@ class Omnitruck < Sinatra::Base
     redirect full_url
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
     pass unless project_allowed(project)
 
     package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
@@ -169,7 +169,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
     pass unless project_allowed(project)
     content_type :json
 
@@ -178,7 +178,7 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(package_list_info)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms\/?$/ do
     pass unless project_allowed(project)
     if File.exists?(project.platform_names_path)
       directory = JSON.parse(File.read(project.platform_names_path))
