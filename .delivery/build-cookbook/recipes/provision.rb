@@ -56,6 +56,7 @@ end
 domain_name = 'chef.io'
 fqdn = "#{instance_name}.#{domain_name}"
 origin_fqdn = "#{instance_name}-origin.#{domain_name}"
+direct_fqdn = "#{instance_name}-direct.#{domain_name}"
 
 subnets = []
 instances = []
@@ -103,6 +104,16 @@ client = AWS::ELB.new(region: 'us-west-2')
 
 route53_record origin_fqdn do
   name "#{origin_fqdn}."
+  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
+  aws_access_key_id aws_creds['access_key_id']
+  aws_secret_access_key aws_creds['secret_access_key']
+  type 'CNAME'
+  zone_id aws_creds['route53'][domain_name]
+  sensitive true
+end
+
+route53_record direct_fqdn do
+  name "#{direct_fqdn}."
   value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
   aws_access_key_id aws_creds['access_key_id']
   aws_secret_access_key aws_creds['secret_access_key']
