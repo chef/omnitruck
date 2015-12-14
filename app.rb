@@ -68,6 +68,61 @@ class Omnitruck < Sinatra::Base
     set :raise_errors, true  # needed to get accurate backtraces out of rspec
   end
 
+  #########################################################################
+  # BEGIN LEGACY REDIRECTS
+  #
+  # These routes existed at a time when Omnitruck did not support 1..n
+  # projects. Any new applications should use the project-based variant
+  # which each of these internally redirect to.
+  #
+  #########################################################################
+
+  {
+    '/download' => '/chef/download',
+    '/metadata' => '/chef/metadata',
+    '/download-server' => '/chef-server/download',
+    '/metadata-server' => '/chef-server/metadata',
+    '/full_client_list' => '/chef/versions',
+    '/full_list' => '/chef/versions',
+    '/full_server_list' => '/chef-server/versions',
+    '/chef/full_client_list' => '/chef/versions',
+    '/chef/full_list' => '/chef/versions',
+    '/chef/full_server_list' => '/chef-server/versions',
+    '/metadata-chefdk' => '/chefdk/metadata',
+    '/download-chefdk' => '/chefdk/download',
+    '/chef_platform_names' => '/chef/platforms',
+    '/chef_server_platform_names' => '/chef-server/platforms',
+    '/chef/chef_platform_names' => '/chef/platforms',
+    '/chef/chef_server_platform_names' => '/chef-server/platforms',
+    '/chef/metadata-chefdk' => '/chefdk/metadata',
+    '/chef/download-chefdk' => '/chefdk/download',
+    '/chef/metadata-container' => '/container/metadata',
+    '/chef/download-container' => '/container/download',
+    '/chef/metadata-angrychef' => '/angrychef/metadata',
+    '/chef/download-angrychef' => '/angrychef/download',
+  }.each do |(legacy_endpoint, endpoint)|
+    get(legacy_endpoint) do
+      status, headers, body = call env.merge("PATH_INFO" => endpoint)
+      [status, headers, body]
+    end
+  end
+
+  get "/full_:project\\_list" do
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
+    [status, headers, body]
+  end
+
+  get '/:project\\_platform_names' do
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/platforms")
+    [status, headers, body]
+  end
+
+  #########################################################################
+  # END LEGACY REDIRECTS
+  #########################################################################
+
+
+
   #
   # serve up the installer script
   #
@@ -145,55 +200,6 @@ class Omnitruck < Sinatra::Base
     }
     JSON.pretty_generate(status)
   end
-
-  #########################################################################
-  # BEGIN LEGACY REDIRECTS
-  #
-  # These routes existed at a time when Omnitruck did not support 1..n
-  # projects. Any new applications should use the project-based variant
-  # which each of these internally redirect to.
-  #
-  #########################################################################
-
-  {
-    '/download' => '/chef/download',
-    '/metadata' => '/chef/metadata',
-    '/download-server' => '/chef-server/download',
-    '/metadata-server' => '/chef-server/metadata',
-    '/full_client_list' => '/chef/versions',
-    '/full_list' => '/chef/versions',
-    '/full_server_list' => '/chef-server/versions',
-    '/chef/full_client_list' => '/chef/versions',
-    '/chef/full_list' => '/chef/versions',
-    '/chef/full_server_list' => '/chef-server/versions',
-    '/metadata-chefdk' => '/chefdk/metadata',
-    '/download-chefdk' => '/chefdk/download',
-    '/chef_platform_names' => '/chef/platforms',
-    '/chef_server_platform_names' => '/chef-server/platforms',
-    '/chef/chef_platform_names' => '/chef/platforms',
-    '/chef/chef_server_platform_names' => '/chef-server/platforms',
-    '/chef/metadata-chefdk' => '/chefdk/metadata',
-    '/chef/download-chefdk' => '/chefdk/download',
-  }.each do |(legacy_endpoint, endpoint)|
-    get(legacy_endpoint) do
-      status, headers, body = call env.merge("PATH_INFO" => endpoint)
-      [status, headers, body]
-    end
-  end
-
-  get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
-    [status, headers, body]
-  end
-
-  get '/:project\\_platform_names' do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/platforms")
-    [status, headers, body]
-  end
-
-  #########################################################################
-  # END LEGACY REDIRECTS
-  #########################################################################
 
   # ---
   # HELPER METHODS
