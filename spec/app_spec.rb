@@ -881,7 +881,9 @@ context 'Omnitruck' do
       '/chef_platform_names' => nil,
       '/chef_server_platform_names' => nil,
       '/chef/chef_platform_names' => nil,
-      '/chef/chef_server_platform_names' => nil
+      '/chef/chef_server_platform_names' => nil,
+      '/full_chefdk_list' => nil,
+      '/full_server_list' => nil,
     }.each do |legacy_endpoint, response_match_data|
 
       context "legacy endpoint #{legacy_endpoint}" do
