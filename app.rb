@@ -172,6 +172,8 @@ class Omnitruck < Sinatra::Base
     '/chef_server_platform_names' => '/chef-server/platforms',
     '/chef/chef_platform_names' => '/chef/platforms',
     '/chef/chef_server_platform_names' => '/chef-server/platforms',
+    '/chef/metadata-chefdk' => '/chefdk/metadata',
+    '/chef/download-chefdk' => '/chefdk/download',
   }.each do |(legacy_endpoint, endpoint)|
     get(legacy_endpoint) do
       status, headers, body = call env.merge("PATH_INFO" => endpoint)
