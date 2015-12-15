@@ -109,6 +109,14 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  get '/chef/install.msi' do
+    redirect to('/chef/download?p=windows&pv=2008r2&m=x86_64')
+  end
+
+  get '/install.msi' do
+    redirect to('/download?p=windows&pv=2008r2&m=x86_64')
+  end
+
   get "/full_:project\\_list" do
     status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
     [status, headers, body]
