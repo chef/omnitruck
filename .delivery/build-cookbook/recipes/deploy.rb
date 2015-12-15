@@ -48,7 +48,7 @@ domain_name = 'chef.io'
 fqdn = "#{instance_name}.#{domain_name}"
 
 machine_batch do
-  1.upto(3) do |i|
+  1.upto(instance_quantity) do |i|
     machine "#{instance_name}-#{i}" do
       action :converge
       chef_environment delivery_environment

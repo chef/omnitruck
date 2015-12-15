@@ -62,7 +62,7 @@ subnets = []
 instances = []
 
 machine_batch do
-  1.upto(3) do |i|
+  1.upto(instance_quantity) do |i|
     machine "#{instance_name}-#{i}" do
       action :setup
       chef_environment delivery_environment
