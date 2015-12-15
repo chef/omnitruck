@@ -66,7 +66,7 @@ end
 
 def instance_quantity
   if delivered_stage?
-    6
+    3
   else
     3
   end
