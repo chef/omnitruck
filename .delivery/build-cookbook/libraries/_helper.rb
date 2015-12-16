@@ -79,3 +79,11 @@ def delivered_stage?
     false
   end
 end
+
+def sns_topic
+  if delivered_stage?
+    'arn:aws:sns:us-west-2:109983887395:cia-alert'
+  else
+    'arn:aws:sns:us-west-2:109983887395:cia-notify'
+  end
+end
