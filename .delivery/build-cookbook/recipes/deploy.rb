@@ -75,8 +75,9 @@ ruby_block 'Add ELB Monitoring' do
 
     require 'aws-sdk'
 
-    cloudwatch = Aws::CloudWatch::Client.new(
-      region: 'us-west-2'
+    cloudwatch = ::Aws::CloudWatch::Client.new(
+      region: 'us-west-2',
+      credentials: ::Aws::SharedCredentials.new(path: ENV["AWS_CONFIG_FILE"])
     )
 
     cloudwatch.put_metric_alarm({
