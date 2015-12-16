@@ -68,3 +68,58 @@ fastly_service fqdn do
   api_key fastly_creds['api_key']
   sensitive true
 end
+
+# Monitoring
+ruby_block 'Add ELB Monitoring' do
+  block do
+
+    require 'aws-sdk'
+
+    cloudwatch = Aws::CloudWatch::Client.new(
+      region: 'us-west-2'
+    )
+
+    cloudwatch.put_metric_alarm({
+      alarm_name: "#{instance_name}-elb-500s",
+      alarm_description: "Sum of 500s is Greater than 50 for the last 2 minutes on #{instance_name}-elb",
+      actions_enabled: true,
+      ok_actions: [sns_topic],
+      alarm_actions: [sns_topic],
+      metric_name: "HTTPCode_Backend_5XX",
+      namespace: "AWS/ELB",
+      statistic: "Sum",
+      dimensions: [
+        {
+          name: "LoadBalancerName",
+          value: "#{instance_name}-elb",
+        },
+      ],
+      period: 60,
+      evaluation_periods: 2,
+      threshold: 50.0,
+      comparison_operator: "GreaterThanOrEqualToThreshold",
+    })
+
+    cloudwatch.put_metric_alarm({
+      alarm_name: "#{instance_name}-elb-latency",
+      alarm_description: "Average latency on #{instance_name}-elb is greater than 500ms for the last 2 minutes",
+      actions_enabled: true,
+      ok_actions: [sns_topic],
+      alarm_actions: [sns_topic],
+      metric_name: "Latency",
+      namespace: "AWS/ELB",
+      statistic: "Average",
+      dimensions: [
+        {
+          name: "LoadBalancerName",
+          value: "#{instance_name}-elb",
+        },
+      ],
+      period: 60,
+      unit: "Seconds",
+      evaluation_periods: 2,
+      threshold: 0.5,
+      comparison_operator: "GreaterThanOrEqualToThreshold",
+    })
+  end
+end
