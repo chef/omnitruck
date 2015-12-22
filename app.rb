@@ -153,6 +153,11 @@ class Omnitruck < Sinatra::Base
     env['sinatra.error']
   end
 
+  error Chef::VersionResolver::InvalidPlatform do
+    status 404
+    env['sinatra.error']
+  end
+
   error InvalidChannelName do
     status 404
     env['sinatra.error']
