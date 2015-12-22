@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: 7bedc46ef10033036d289822af209ec06bcac40a
+  revision: 22deaa5856527953a3ad6f94659400517abd071d
   branch: master
   specs:
     mixlib-install (0.8.0.alpha.2)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/sinatra/sinatra.git
-  revision: 1d48ab2929614c679a4ed6cb827131ab10f1af05
+  revision: 8035f839fd8a63fd3791c901cf5ed09617e72e13
   branch: master
   specs:
     sinatra (1.4.6)
@@ -21,14 +21,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     artifactory (2.3.2)
-    backports (3.6.6)
+    backports (3.6.7)
     builder (3.2.2)
     bundler-audit (0.4.0)
       bundler (~> 1.2)
       thor (~> 0.18)
     colorize (0.7.7)
     diff-lcs (1.2.5)
-    domain_name (0.5.24)
+    domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -38,8 +38,8 @@ GEM
     mini_portile2 (2.0.0)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
-    netrc (0.10.3)
-    nokogiri (1.6.7)
+    netrc (0.11.0)
+    nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.5.5)
     rack-protection (1.5.3)
@@ -52,27 +52,26 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rspec (3.3.0)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-    rspec-core (3.3.2)
-      rspec-support (~> 3.3.0)
-    rspec-expectations (3.3.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
+      rspec-support (~> 3.4.0)
     rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-legacy_formatters (1.0.0)
-      rspec-core (>= 3.0.0.beta2)
-      rspec-support (>= 3.0.0.beta2)
-    rspec-mocks (3.3.2)
+    rspec-legacy_formatters (1.0.1)
+      rspec (~> 3.0)
+    rspec-mocks (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.3.0)
+      rspec-support (~> 3.4.0)
     rspec-rerun (0.3.1)
       rspec
-    rspec-support (3.3.0)
+    rspec-support (3.4.1)
     rspec_junit_formatter (0.2.3)
       builder (< 4)
       rspec-core (>= 2, < 4, != 2.12.0)
@@ -93,7 +92,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
-    unicorn (4.9.0)
+    unicorn (5.0.1)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
