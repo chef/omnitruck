@@ -44,7 +44,6 @@ class Omnitruck < Sinatra::Base
 
   config_file './config/config.yml'
 
-  class InvalidDownloadPath < StandardError; end
   class InvalidChannelName < StandardError; end
 
   configure do
@@ -149,7 +148,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  error InvalidDownloadPath do
+  error Chef::VersionResolver::InvalidDownloadPath do
     status 404
     env['sinatra.error']
   end

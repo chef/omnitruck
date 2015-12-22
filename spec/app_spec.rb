@@ -87,6 +87,27 @@ context 'Omnitruck' do
           expect(parsed_metadata['version']).to eq(expected_info[:version])
         end
       end
+
+      context "an incorrect version" do
+        let(:endpoint) { "/#{channel}/#{project}/download" }
+
+        context "download" do
+          it "should 404" do
+            params['v'] = '0.0.0'
+            get(endpoint, params)
+            expect(last_response).to be_not_found
+          end
+        end
+
+        context "metadata" do
+          let(:endpoint) { "/#{channel}/#{project}/metadata" }
+          it "should 404" do
+            params['v'] = '0.0.0'
+            get(endpoint, params)
+            expect(last_response).to be_not_found
+          end
+        end
+      end
     end
 
     context "for chef" do
