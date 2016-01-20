@@ -124,10 +124,17 @@ if node['brightbox-ruby']['rubygems_version']
   end
 end
 
-node['brightbox-ruby']['gems'].each do |gem|
-  gem_package gem do
-    action :upgrade
-    gem_binary '/usr/bin/gem'
+# install some default gems, such as bundler and rake.
+# While you would expect brightbox-ruby cookbook to do this,
+# it will not work properly if you upgrade ruby on the system
+# which requires the "update-alternatives" command above.
+# So... we do it again! But we don't use gem_package because
+# brightbox-ruby::default already used them and resource-cloning
+# will bite us.
+node['brightbox-ruby']['gems'].each do |gem_name|
+  execute "gem install #{gem_name}" do
+    command "/usr/bin/gem install #{gem_name}"
+    action :run
   end
 end
 
