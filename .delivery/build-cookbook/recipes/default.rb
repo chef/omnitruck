@@ -3,7 +3,7 @@
 # Welcome to omnitruck
 #
 # This is the default recipe. It is the only recipe that runs as root. Here we
-# install all the components we need to be functional or have to be done as 
+# install all the components we need to be functional or have to be done as
 # root.
 #
 ################################################################################
@@ -75,7 +75,7 @@ execute 'install awscli' do
   not_if { File::exists?('/usr/local/bin/aws') }
 end
 
-# chef-provisioning requires an aws config file. This generates the content for 
+# chef-provisioning requires an aws config file. This generates the content for
 # that file.
 aws_config_contents = <<EOF
 [default]
@@ -97,6 +97,11 @@ end
 # but it seems like a good idea.
 Chef_Delivery::ClientHelper.leave_client_mode_as_delivery
 
+# install brightbox-ruby
+# NOTE: ensure the same version is set here as is set in the omnitruck
+# cookbook itself to ensure the vendored bundle is built with and
+# consumed by the same ruby version.
+node.override['brightbox-ruby']['version'] = '2.2'
 include_recipe 'brightbox-ruby::default'
 
 # Enable Debug Goodness
@@ -126,4 +131,3 @@ end
 
 # NOKOGIRI!!!!!
 package 'zlib1g-dev'
-
