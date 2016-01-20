@@ -105,9 +105,11 @@ ruby_version = '2.2'
 node.override['brightbox-ruby']['version'] = ruby_version
 include_recipe 'brightbox-ruby::default'
 
-execute "update alternatives to ruby #{ruby_version}" do
-  command "update-alternatives --set ruby /usr/bin/ruby#{ruby_version}"
-  action :run
+%w(ruby gem).each do |pkg|
+  execute "update alternatives for #{pkg} to version #{ruby_version}" do
+    command "update-alternatives --set #{pkg} /usr/bin/#{pkg}#{ruby_version}"
+    action :run
+  end
 end
 
 # Enable Debug Goodness
