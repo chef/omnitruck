@@ -15,32 +15,33 @@ class Chef
     def fix_windows_manifest!(manifest, fix_up_to_version=:all)
       builds_32bit = {}
       builds_64bit = {}
-
-      manifest['windows'].each do |platform_version, build_data|
-        build_data.each do |architecture, builds|
-          builds.each do |version, build|
-            if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
-              builds_32bit[version] = build
-              builds_64bit[version] = build
-            else
-              if architecture == 'x86_64'
+      unless manifest['windows'].nil?       
+        manifest['windows'].each do |platform_version, build_data|
+          build_data.each do |architecture, builds|
+            builds.each do |version, build|
+              if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
+                builds_32bit[version] = build
                 builds_64bit[version] = build
               else
-                builds_32bit[version] = build
+                if architecture == 'x86_64'
+                  builds_64bit[version] = build
+                else
+                  builds_32bit[version] = build
+                end
               end
             end
           end
         end
-      end
 
-      manifest['windows'] = {
-        '2008r2' => {
-          'i686'   => builds_32bit,
-          'i386'   => builds_32bit,
-          'x86_64' => builds_64bit
+
+        manifest['windows'] = {
+          '2008r2' => {
+            'i686'   => builds_32bit,
+            'i386'   => builds_32bit,
+            'x86_64' => builds_64bit
+          }
         }
-      }
-
+      end
       manifest
     end
 
