@@ -53,13 +53,7 @@ class S3Poller
   def run
     channels.each do |channel|
       all_project_caches_for_channel(channel).each do |project_cache|
-        if project_cache.name == 'chef'
-          project_cache.update(Opscode::Version.parse('13.0.0'))
-        elsif project_cache.name == 'chefdk'
-          project_cache.update(:all)
-        else
-          project_cache.update
-        end
+        project_cache.update
       end
     end
   end

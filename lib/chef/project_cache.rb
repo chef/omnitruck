@@ -12,22 +12,25 @@ class Chef
       @metadata_dir = metadata_dir
     end
 
-    def fix_windows_manifest!(manifest, fix_up_to_version=:all)
+    # This method ensures that we do not have i686 as architecture in manifests.
+    # We are not supposed to have it anyways but maybe some older version of
+    # projects still has it.
+    def fix_windows_manifest!(manifest)
+      return manifest if manifest['windows'].nil?
+
       builds_32bit = {}
       builds_64bit = {}
 
       manifest['windows'].each do |platform_version, build_data|
         build_data.each do |architecture, builds|
           builds.each do |version, build|
-            if  :all == fix_up_to_version || Opscode::Version.parse(version) < fix_up_to_version
-              builds_32bit[version] = build
+            case architecture
+            when 'x86_64'
               builds_64bit[version] = build
+            when 'i386', 'i686'
+              builds_32bit[version] = build
             else
-              if architecture == 'x86_64'
-                builds_64bit[version] = build
-              else
-                builds_32bit[version] = build
-              end
+              raise "Unknown Windows architecture '#{architecture}'"
             end
           end
         end
@@ -35,7 +38,6 @@ class Chef
 
       manifest['windows'] = {
         '2008r2' => {
-          'i686'   => builds_32bit,
           'i386'   => builds_32bit,
           'x86_64' => builds_64bit
         }
@@ -44,13 +46,10 @@ class Chef
       manifest
     end
 
-    def update(remap_up_to=nil)
+    def update
       update_cache
-      json_v2 = if remap_up_to
-                  fix_windows_manifest!(generate_combined_manifest, remap_up_to)
-                else
-                  generate_combined_manifest
-                end
+
+      json_v2 = fix_windows_manifest!(generate_combined_manifest)
 
       write_data(build_list_path, json_v2)
 
