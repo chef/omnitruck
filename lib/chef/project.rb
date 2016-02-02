@@ -1,6 +1,15 @@
 class Chef
   class Project
-    KNOWN_PROJECTS = %w( chef chef-server chefdk angrychef )
+    KNOWN_PROJECTS = %w(
+      angrychef
+      angry-omnibus-toolchain
+      chef
+      chef-server
+      chefdk
+      delivery-cli
+      omnibus-toolchain
+      push-jobs-client
+    )
 
     attr_reader :name
     attr_reader :channel
