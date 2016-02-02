@@ -448,6 +448,27 @@ context 'Omnitruck' do
               end
             end
           end
+
+          context 'stable channel with 32 and 64 bit artifacts' do
+            let(:platform_version) { "2008r2" }
+            let(:endpoint) { "/#{channel}/#{project}/metadata" }
+
+            %w{i386 i686 x86_64}.each do |arch|
+              context "for #{arch}" do
+                let(:architecture) { arch }
+
+                it 'should return 32 bit artifact' do
+                  get(endpoint, params, "HTTP_ACCEPT" => "application/json")
+                  metadata_json = last_response.body
+                  parsed_json = JSON.parse(metadata_json)
+
+                  expect(parsed_json['url']).to match(/i386/)
+                  expect(parsed_json['url']).not_to match(/i686/)
+                  expect(parsed_json['url']).not_to match(/x86_64/)
+                end
+              end
+            end
+          end
         end
 
         context 'for nexus' do
@@ -527,6 +548,45 @@ context 'Omnitruck' do
                 end
 
                 it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
+        context 'for windows' do
+          let(:platform) { 'windows' }
+
+          context 'current channel with 32 and 64 bit artifacts' do
+            let(:platform_version) { "2008r2" }
+            let(:endpoint) { "/#{channel}/#{project}/metadata" }
+
+            %w{i386 i686}.each do |arch|
+              context "for #{arch}" do
+                let(:architecture) { arch }
+
+                it 'should return 32 bit artifact' do
+                  get(endpoint, params, "HTTP_ACCEPT" => "application/json")
+                  metadata_json = last_response.body
+                  parsed_json = JSON.parse(metadata_json)
+
+                  expect(parsed_json['url']).to match(/i386/)
+                  expect(parsed_json['url']).not_to match(/i686/)
+                  expect(parsed_json['url']).not_to match(/x86_64/)
+                end
+              end
+            end
+
+            context "for x86_64" do
+              let(:architecture) { "x86_64" }
+
+              it 'should return 64 bit artifact' do
+                get(endpoint, params, "HTTP_ACCEPT" => "application/json")
+                metadata_json = last_response.body
+                parsed_json = JSON.parse(metadata_json)
+
+                expect(parsed_json['url']).not_to match(/i386/)
+                expect(parsed_json['url']).not_to match(/i686/)
+                expect(parsed_json['url']).to match(/x86_64/)
               end
             end
           end

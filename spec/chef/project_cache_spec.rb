@@ -22,6 +22,7 @@ describe Chef::ProjectCache do
       allow(project_cache).to receive(:write_data)
       allow(project_cache).to receive(:build_list_path)
       allow(project_cache).to receive(:platform_names_path)
+      expect(project_cache).to receive(:fix_windows_manifest!)
       allow(File).to receive(:open)
     end
 
@@ -30,16 +31,12 @@ describe Chef::ProjectCache do
       project_cache.update
     end
 
-    it 'fixes the windows manifest if a remap version is provided' do
-      expect(project_cache).to receive(:fix_windows_manifest!)
-      project_cache.update('remap_version')
-    end
-
     it 'writes out the build list' do
       allow(project_cache).to receive(:build_list_path).and_return('/path/to/build_list')
       allow(project_cache).to receive(:generate_combined_manifest).and_return('manifest_data')
+      allow(project_cache).to receive(:fix_windows_manifest!).with('manifest_data').and_return('modified_manifest_data')
 
-      expect(project_cache).to receive(:write_data).with('/path/to/build_list', 'manifest_data')
+      expect(project_cache).to receive(:write_data).with('/path/to/build_list', 'modified_manifest_data')
       project_cache.update
     end
 
