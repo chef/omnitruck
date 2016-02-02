@@ -1,0 +1,42 @@
+{
+    "el": {
+        "7": {
+            "x86_64": {
+                "1.0.0": {
+                    "relpath": "/el/7/x86_64/push-jobs-client-1.0.0-1.el6.x86_64.rpm",
+                    "md5": "1a5379e6a0a682eeb183f7b0e8c25d0d",
+                    "sha256": "ae5849da823a579e56db61b25248eb607dbd9616a126e55f29469948db609f8b"
+                }
+            }
+        },
+        "6": {
+            "x86_64": {
+                "1.0.0": {
+                    "relpath": "/el/6/x86_64/push-jobs-client-1.0.0-1.el6.x86_64.rpm",
+                    "md5": "1a5379e6a0a682eeb183f7b0e8c25d0d",
+                    "sha256": "ae5849da823a579e56db61b25248eb607dbd9616a126e55f29469948db609f8b"
+                }
+            }
+        }
+    },
+    "ubuntu": {
+        "12.04": {
+            "x86_64": {
+                "1.0.0": {
+                    "relpath": "/ubuntu/12.04/x86_64/push-jobs-client-1.0.0-1_amd64.deb",
+                    "md5": "b6022fecfaee9dde1d1e93c43cf238be",
+                    "sha256": "2dc80f29b98fa0aa13b0cc5a8ead237989697222a416cc4d500081d78355f4b2"
+                }
+            }
+        },
+        "14.04": {
+            "x86_64": {
+                "1.0.0": {
+                    "relpath": "/ubuntu/14.04/x86_64/push-jobs-client-1.0.0-1_amd64.deb",
+                    "md5": "b6022fecfaee9dde1d1e93c43cf238be",
+                    "sha256": "2dc80f29b98fa0aa13b0cc5a8ead237989697222a416cc4d500081d78355f4b2"
+                }
+            }
+        }
+    }
+}

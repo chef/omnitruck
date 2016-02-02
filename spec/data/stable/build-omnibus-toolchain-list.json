@@ -1,0 +1,217 @@
+{
+    "debian": {
+        "7": {
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/debian/7/x86_64/angry-omnibus-toolchain_1.1.2-1_amd64.deb",
+                    "md5": "f62306c20d3caeb3b8dda530f1f6daa5",
+                    "sha256": "9aeab2a4403bb3282ee4970342c78db202738d3f6799d2a35f1fb0ee196feb7d"
+                }
+            },
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/debian/7/i686/angry-omnibus-toolchain_1.1.2-1_i386.deb",
+                    "md5": "5ba432755f3c7b7193fee5225473a55a",
+                    "sha256": "804af8bbefbce9789c96baff11fb2a64a806efe4b88def1a51f4352fddf5ea51"
+                }
+            }
+        },
+        "6": {
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/debian/6/x86_64/angry-omnibus-toolchain_1.1.2-1_amd64.deb",
+                    "md5": "f62306c20d3caeb3b8dda530f1f6daa5",
+                    "sha256": "9aeab2a4403bb3282ee4970342c78db202738d3f6799d2a35f1fb0ee196feb7d"
+                }
+            },
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/debian/6/i686/angry-omnibus-toolchain_1.1.2-1_i386.deb",
+                    "md5": "5ba432755f3c7b7193fee5225473a55a",
+                    "sha256": "804af8bbefbce9789c96baff11fb2a64a806efe4b88def1a51f4352fddf5ea51"
+                }
+            }
+        }
+    },
+    "freebsd": {
+        "9": {
+            "amd64": {
+                "1.1.2-1": {
+                    "relpath": "/freebsd/9/amd64/angry-omnibus-toolchain-1.1.2_1.amd64.sh",
+                    "md5": "53b56f15473895e5dc169d93c5c91281",
+                    "sha256": "92bb12a66462fc2290de23b735ef5daae60083d9bd956011e9eab714ac19492a"
+                }
+            },
+            "i386": {
+                "1.1.2-1": {
+                    "relpath": "/freebsd/9/i386/angry-omnibus-toolchain-1.1.2_1.i386.sh",
+                    "md5": "f54a1a0b31e7e653b5ce522184526f35",
+                    "sha256": "f19e090909532984fe288f6f83341d34b8a604d5a4f76c7c86e7d9e06e26f9f5"
+                }
+            }
+        },
+        "10": {
+            "i386": {
+                "1.1.2-1": {
+                    "relpath": "/freebsd/10/i386/angry-omnibus-toolchain-1.1.2_1.i386.sh",
+                    "md5": "03cf457899c2bf2c27bcf60f6eff3d48",
+                    "sha256": "6b82554eb4838435e209f7dee2108bc24b467ba7b6e107317d2803abc041ecf2"
+                }
+            },
+            "amd64": {
+                "1.1.2-1": {
+                    "relpath": "/freebsd/10/amd64/angry-omnibus-toolchain-1.1.2_1.amd64.sh",
+                    "md5": "bc798970cc74f4aa9161b31ae44a0f45",
+                    "sha256": "1615cb6426ac02f7ea5e299e93ed5f9dd3999635c2369954c56b39c5e4786d15"
+                }
+            }
+        }
+    },
+    "ubuntu": {
+        "10.04": {
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/10.04/x86_64/angry-omnibus-toolchain_1.1.2-1_amd64.deb",
+                    "md5": "f0df3dd90db86f896e188ce28dcfbfcd",
+                    "sha256": "a73ab13ec74a8bbb8bc45296917e24c68389399be773e1f7686b583d659498a3"
+                }
+            },
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/10.04/i686/angry-omnibus-toolchain_1.1.2-1_i386.deb",
+                    "md5": "f2fd79c7caba3e4a6672b51661b818fc",
+                    "sha256": "99fc78baf318b81915b7c11b3a28c6fc9be174d6ac235d1e78ef0acf828ebfdd"
+                }
+            }
+        },
+        "14.04": {
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/14.04/i686/angry-omnibus-toolchain_1.1.2-1_i386.deb",
+                    "md5": "f2fd79c7caba3e4a6672b51661b818fc",
+                    "sha256": "99fc78baf318b81915b7c11b3a28c6fc9be174d6ac235d1e78ef0acf828ebfdd"
+                }
+            },
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/14.04/x86_64/angry-omnibus-toolchain_1.1.2-1_amd64.deb",
+                    "md5": "f0df3dd90db86f896e188ce28dcfbfcd",
+                    "sha256": "a73ab13ec74a8bbb8bc45296917e24c68389399be773e1f7686b583d659498a3"
+                }
+            }
+        },
+        "12.04": {
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/12.04/i686/angry-omnibus-toolchain_1.1.2-1_i386.deb",
+                    "md5": "f2fd79c7caba3e4a6672b51661b818fc",
+                    "sha256": "99fc78baf318b81915b7c11b3a28c6fc9be174d6ac235d1e78ef0acf828ebfdd"
+                }
+            },
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/ubuntu/12.04/x86_64/angry-omnibus-toolchain_1.1.2-1_amd64.deb",
+                    "md5": "f0df3dd90db86f896e188ce28dcfbfcd",
+                    "sha256": "a73ab13ec74a8bbb8bc45296917e24c68389399be773e1f7686b583d659498a3"
+                }
+            }
+        }
+    },
+    "el": {
+        "6": {
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/el/6/i686/angry-omnibus-toolchain-1.1.2-1.el6.i386.rpm",
+                    "md5": "168c13ee18ec81c92dd79daef9783727",
+                    "sha256": "ecb9d9a78d4f9c41325dfa8ac1d7ccab7067c88e50fab966de308c5e7bea275f"
+                }
+            },
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/el/6/x86_64/angry-omnibus-toolchain-1.1.2-1.el6.x86_64.rpm",
+                    "md5": "2be0d17c40efed691d3dfb2ae6567f80",
+                    "sha256": "26da006c9df426ef7190af024358e1df7af1b86ea7508854c5a0eb6607de76cb"
+                }
+            }
+        },
+        "7": {
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/el/7/x86_64/angry-omnibus-toolchain-1.1.2-1.el7.x86_64.rpm",
+                    "md5": "da4a5b749ea3dd2b72773cf18f4b9f58",
+                    "sha256": "11735a513b8ce76584408999672b508c3041a8a8c84aad65378fa7b4524d9173"
+                }
+            }
+        },
+        "5": {
+            "x86_64": {
+                "1.1.2-1": {
+                    "relpath": "/el/5/x86_64/angry-omnibus-toolchain-1.1.2-1.el5.x86_64.rpm",
+                    "md5": "eeef526250bb4921a2db1c17ae654863",
+                    "sha256": "4545f53aa1780ce4cda0999c8157dda96a83ad7f95be6f90f5ea779a13153570"
+                }
+            },
+            "i686": {
+                "1.1.2-1": {
+                    "relpath": "/el/5/i686/angry-omnibus-toolchain-1.1.2-1.el5.i386.rpm",
+                    "md5": "93ec670af82bdd2c48c21b1640b3c242",
+                    "sha256": "88894f2b2fa5efda00396c312ba0d6b79f75ccfa66242ad5b77e6041978dec52"
+                }
+            }
+        }
+    },
+    "solaris2": {
+        "5.11": {
+            "i386": {
+                "1.1.2-1": {
+                    "relpath": "/solaris2/5.11/i386/angry-omnibus-toolchain-1.1.2-1.i386.solaris",
+                    "md5": "180a673bee12a18d0b5a681efb795aee",
+                    "sha256": "257cbe6bd43b2b7422befe7d8819b917297fd17952fb7de9a578255d55f6e9e9"
+                }
+            },
+            "sparc": {
+                "1.1.2-1": {
+                    "relpath": "/solaris2/5.11/sparc/angry-omnibus-toolchain-1.1.2-1.sparc.solaris",
+                    "md5": "fdfd71f6091c1c27a7d32238f0d6b049",
+                    "sha256": "ac7591070fa2a96e806ae70f9b811c3fc1c57842ae7a1a1cce7b500640c902ba"
+                }
+            }
+        },
+        "5.10": {
+            "i386": {
+                "1.1.2-1": {
+                    "relpath": "/solaris2/5.10/i386/angry-omnibus-toolchain-1.1.2-1.i386.solaris",
+                    "md5": "180a673bee12a18d0b5a681efb795aee",
+                    "sha256": "257cbe6bd43b2b7422befe7d8819b917297fd17952fb7de9a578255d55f6e9e9"
+                }
+            },
+            "sparc": {
+                "1.1.2-1": {
+                    "relpath": "/solaris2/5.10/sparc/angry-omnibus-toolchain-1.1.2-1.sparc.solaris",
+                    "md5": "fdfd71f6091c1c27a7d32238f0d6b049",
+                    "sha256": "ac7591070fa2a96e806ae70f9b811c3fc1c57842ae7a1a1cce7b500640c902ba"
+                }
+            }
+        }
+    },
+    "aix": {
+        "7.1": {
+            "powerpc": {
+                "1.1.2-1": {
+                    "relpath": "/aix/7.1/powerpc/angry-omnibus-toolchain-1.1.2-1.powerpc.bff",
+                    "md5": "0a6f77b0245dab5f612da8c887cc50eb",
+                    "sha256": "330e509019341a730f81f9f7fe71b5e15f21bbbddb6a301417a86f11e5122876"
+                }
+            }
+        },
+        "6.1": {
+            "powerpc": {
+                "1.1.2-1": {
+                    "relpath": "/aix/6.1/powerpc/angry-omnibus-toolchain-1.1.2-1.powerpc.bff",
+                    "md5": "0a6f77b0245dab5f612da8c887cc50eb",
+                    "sha256": "330e509019341a730f81f9f7fe71b5e15f21bbbddb6a301417a86f11e5122876"
+                }
+            }
+        }
+    }
+}
