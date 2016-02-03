@@ -11834,6 +11834,11 @@
           "relpath": "/windows/2012r2/i386/chef-client-12.4.3-1-x86.msi",
           "md5": "42be33c3fe1174b2b8c437b29cf42e84",
           "sha256": "010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37"
+        },
+        "12.6.1-1": {
+          "relpath": "/windows/2012r2/i386/chef-client-12.6.1-1-x86.msi",
+          "md5": "00000000fe1174b2b8c437b29cf42e84",
+          "sha256": "010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37"
         }
       },
       "x86_64": {
@@ -12140,6 +12145,11 @@
         "12.4.3-1": {
           "relpath": "/windows/2012r2/i386/chef-client-12.4.3-1-x86.msi",
           "md5": "42be33c3fe1174b2b8c437b29cf42e84",
+          "sha256": "010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37"
+        },
+        "12.6.1-1": {
+          "relpath": "/windows/2012r2/i386/chef-client-12.6.1-1-x86.msi",
+          "md5": "fffffffffe1174b2b8c437b29cf42e84",
           "sha256": "010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37"
         }
       }
