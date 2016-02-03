@@ -27,6 +27,14 @@ class Chef
             case architecture
             when 'x86_64'
               builds_64bit[version] = build
+
+              # Prior to 12.6.0 we have sometimes posted some windows builds
+              # only for x86_64. We need to make sure these builds are also
+              # distributed for i386 since prior to 12.6.0 we only had a single
+              # windows build that works for all platforms.
+              if Opscode::Version.parse(version) <= Opscode::Version.parse("12.6.0")
+                builds_32bit[version] = build
+              end
             when 'i386', 'i686'
               builds_32bit[version] = build
             else

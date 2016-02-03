@@ -421,10 +421,10 @@ context 'Omnitruck' do
                     let(:project_version) { nil }
                     let(:expected_info) do
                       {
-                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.4.3-1-x86.msi',
+                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.6.1-1-x86.msi',
                         sha256: '010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37',
-                        md5: '42be33c3fe1174b2b8c437b29cf42e84',
-                        version: '12.4.3'
+                        md5: '00000000fe1174b2b8c437b29cf42e84',
+                        version: '12.6.1'
                       }
                     end
 
@@ -467,6 +467,24 @@ context 'Omnitruck' do
                   expect(parsed_json['url']).not_to match(/x86_64/)
                 end
               end
+            end
+
+            context 'for version greater than 12.6.0' do
+              let(:version) { "12.6.1" }
+              let(:architecture) { "x86_64" }
+
+              it 'should return 32 bit artifact' do
+                get(endpoint, params, "HTTP_ACCEPT" => "application/json")
+                metadata_json = last_response.body
+                parsed_json = JSON.parse(metadata_json)
+
+                # Note that we have:
+                # 00000000fe1174b2b8c437b29cf42e84 => i386
+                # fffffffffe1174b2b8c437b29cf42e84 => x86_64
+                # in our stable/build-chef-list.json for 12.6.1
+                expect(parsed_json['md5']).to eq("00000000fe1174b2b8c437b29cf42e84")
+              end
+
             end
           end
         end
