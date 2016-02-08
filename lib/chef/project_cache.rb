@@ -37,6 +37,9 @@ class Chef
               end
             when 'i386', 'i686'
               builds_32bit[version] = build
+              if project.name == 'chefdk'
+                builds_64bit[version] = build
+              end
             else
               raise "Unknown Windows architecture '#{architecture}'"
             end
