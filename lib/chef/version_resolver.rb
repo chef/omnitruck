@@ -17,15 +17,16 @@ class Chef
 
     attr_reader :dsl
     attr_reader :friendly_error_msg
-
     attr_reader :build_map
     attr_reader :target_version
+    attr_reader :channel
 
-    def initialize(version_string, build_map)
+    def initialize(version_string, build_map, channel)
       @dsl = PlatformDSL.new()
       dsl.from_file("platforms.rb")
       @build_map = build_map
       @target_version = parse_version_string(version_string)
+      @channel = channel
     end
 
     def package_info(platform_string, platform_version_string, machine_string)
@@ -121,6 +122,11 @@ class Chef
       # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
       distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1) <=> dsl.new_platform_version(core_platform, v2) }
 
+      # Windows has the requirement that we not return x86_64 packages from the
+      # stable channel until Chef 12.9+.  See the description in project_cache.rb
+      # for more detail.
+      target_architecture = modify_arch_for_windows(target_platform, target_architecture, build_map[core_platform])
+
       # Now filter out the metadata based on architecture
       raw_metadata = { }
       distro_versions_available.each do |version|
@@ -201,6 +207,36 @@ class Chef
       rescue
         raise InvalidPlatform, "Platform information not found for #{platform_string}, #{platform_version_string}"
       end
+    end
+
+    def modify_arch_for_windows(target_platform, target_architecture, windows_metadata)
+      if target_platform.name == "windows" && target_architecture == "x86_64" && channel == "stable"
+        available_12_9 = begin
+          available = false
+          windows_metadata.each do |windows_version, architectures|
+            available = true if architectures[target_architecture].keys.find {|v| Opscode::Version.parse(v) >= Opscode::Version.parse("12.9.0") }
+          end
+          available
+        end
+
+        if target_version.nil?
+          # if target_version == nil then the user wants the latest, and if
+          # 12.9 isn't out yet then we don't want to give them x86_64
+          target_architecture = "i386" if !available_12_9
+        # because target_version can be a partial version (EG, 12.8) we have to
+        # do our own comparison here since the comparison operator assumes that
+        # major, minor and patch are all filled
+        elsif target_version.major < 12
+          target_architecture = "i386"
+        elsif target_version.major == 12
+          if target_version.minor.nil?
+            target_architecture = "i386" if !available_12_9
+          elsif target_version.minor < 9
+            target_architecture = "i386"
+          end
+        end
+      end
+      target_architecture
     end
   end
 end

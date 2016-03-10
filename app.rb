@@ -259,22 +259,22 @@ class Omnitruck < Sinatra::Base
   end
 
   def get_package_info(project, build_hash)
-    # Windows artifacts require special handling based on channel and architecture.
-    # 1-) For stable channel we always return 32-bit artifacts
-    # 2-) Internally we always use i386 to represent 32-bit artifacts, not i686
-    m = if params["p"] == "windows" && (channel.name == "stable" || params["m"] == "i686")
+    # Windows artifacts require special handling
+    # 1) If no architecture is provided we default to i386
+    # 2) Internally we always use i386 to represent 32-bit artifacts, not i686
+    m = if params["p"] == "windows" && (params["m"].nil? || params["m"].empty? || params["m"] == "i686")
           "i386"
         else
           params['m']
         end
 
     Chef::VersionResolver.new(
-      params['v'], build_hash
+      params['v'], build_hash, project.project.channel.name
     ).package_info(params['p'], params['pv'], m)
   end
 
-  def get_package_list(name, build_hash)
-    Chef::VersionResolver.new(params['v'], build_hash).package_list
+  def get_package_list(project, build_hash)
+    Chef::VersionResolver.new(params['v'], build_hash, project.project.channel.name).package_list
   end
 
   def decorate_url!(package_info)

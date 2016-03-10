@@ -1601,78 +1601,6 @@
   },
   "windows": {
     "2008r2": {
-      "i686": {
-        "11.18.14+20150905090307-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150905090307-1.msi",
-          "md5": "13ce178471d8f087707fb92f11fe188d",
-          "sha256": "7179e7577cc0caa9a0f82019e6d7f5e344eb65c42a574f1b7f90fa26ab0656c0"
-        },
-        "11.18.14+20150906090309-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150906090309-1.msi",
-          "md5": "25abbb3fc42f576e0e7b0f3dfea0ae05",
-          "sha256": "4bdf4a1c62f325317669dd4e566073be5e690926ed6f959c21e60ef10e42516f"
-        },
-        "11.18.14+20150907090310-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150907090310-1.msi",
-          "md5": "e9bbdc394d9059d6efeaddb4cfee69f9",
-          "sha256": "512aaa38f7d878d7b8cd02e1d147cede577cd9f4292f0570848a08e6a52966ed"
-        },
-        "11.18.14+20150908090309-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150908090309-1.msi",
-          "md5": "e61abfe8353a0487e4737151b23e4c08",
-          "sha256": "5d8b273361b72e3ed0d40a623c8cb65b3dc9e14b96cdf5f0cf9400af8c371d10"
-        },
-        "11.18.14+20150909090309-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150909090309-1.msi",
-          "md5": "a2c5c541e7e2f1da7fedd33f0257a394",
-          "sha256": "978dbafc1779a267bc8311fbf5627a4c97438d0ec55bdc16af15a06a4a21e88b"
-        },
-        "11.18.14+20150910090309-1": {
-          "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150910090309-1.msi",
-          "md5": "b6a7ea14c17db32b359b1b25417fc89e",
-          "sha256": "4a7a766c624ce3bdae537a52190ad7617912ecf1bc7bd98497536a01ecaa8c08"
-        },
-        "12.4.3+20150923191019-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150923191019-1-x86.msi",
-          "md5": "5220ab5a8b42a31391582bdff73126c9",
-          "sha256": "ab5eebf519a42f11a2c38c38147cdc77e61b68514888841a3c00dbb785a33f40"
-        },
-        "12.4.3+20150926083009-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150926083009-1-x86.msi",
-          "md5": "63424e85b6d55b8ad33190fb7bd4dab5",
-          "sha256": "2aa64ef420383402db18ee381f35473d4223604ce9399801761e7f6e7e3112aa"
-        },
-        "12.4.3+20150927083010-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150927083010-1-x86.msi",
-          "md5": "14f7eae3b01e76b43728bd804da266b1",
-          "sha256": "09229737dca0683423240b50f31a863b71d1242ab49d96cbb7745fb0c35194ed"
-        },
-        "12.4.3+20150928083008-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150928083008-1-x86.msi",
-          "md5": "18ac466669869eaf73ede3bbf1c468ba",
-          "sha256": "4d33e74f15b58474c6f611738200587ebdefe42740bfb4b30bf901f48d0431f4"
-        },
-        "12.4.3+20150929231019-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150929231019-1-x86.msi",
-          "md5": "5f4fbbbeb4d31a4b159799a0337330ca",
-          "sha256": "a7a7c9020aa04f643dd515bbb8f4c1c68b6156e42c25cad42ef38e287962449e"
-        },
-        "12.4.3+20150930083012-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150930083012-1-x86.msi",
-          "md5": "f874ec1af03f859fceeb354df94f3bc6",
-          "sha256": "66a4fa8ececba69c37f310398c62c7c9003179ce923aeb46bbce6e5c9d3c3b1f"
-        },
-        "12.4.3+20150930204019-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150930204019-1-x86.msi",
-          "md5": "0c65cdf4d59880220d420a4cab5ca3de",
-          "sha256": "2232d87155257e7c8c9133888fba308f29ed3072894196f918a784d6f0bf4b49"
-        },
-        "12.4.3+20150930210020-1": {
-          "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150930210020-1-x86.msi",
-          "md5": "a5cd86e980fdddd3cc87f6f00c4be364",
-          "sha256": "c2d62310a8d6225c97f693725d3fcbfd6487c8babc2a0c4e4541cad5b5f21661"
-        }
-      },
       "i386": {
         "11.18.14+20150905090307-1": {
           "relpath": "/windows/2012r2/x86_64/chef-client-11.18.14+20150905090307-1.msi",
@@ -1743,6 +1671,111 @@
           "relpath": "/windows/2012r2/i386/chef-client-12.4.3+20150930210020-1-x86.msi",
           "md5": "a5cd86e980fdddd3cc87f6f00c4be364",
           "sha256": "c2d62310a8d6225c97f693725d3fcbfd6487c8babc2a0c4e4541cad5b5f21661"
+        },
+        "12.7.2+20160216120041-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.7.2+20160216120041-1-x86.msi",
+          "md5": "c5d77990d0dd40352685fead2cb6ab54",
+          "sha256": "4a71d53e3b985c0e39f7fbcbfe95b2282359da789a11804684a332091838b393"
+        },
+        "12.8.0+20160225040042-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160225040042-1-x86.msi",
+          "md5": "3e60a7ab6ce417472e7ec8ecab109542",
+          "sha256": "6df2485699e916e93670b4a3fceb39c2ec41fff7cd09effa2fd806496531c198"
+        },
+        "12.8.0+20160225170054-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160225170054-1-x86.msi",
+          "md5": "94aa330055a725a435ade47905f43fa6",
+          "sha256": "405f538fe6fa74fe13e47a0a97bf0b85692093ae2e9587f18acc13f32ab0e160"
+        },
+        "12.8.0+20160225200053-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160225200053-1-x86.msi",
+          "md5": "a5e83c7161fee1de7cab29faad955e57",
+          "sha256": "baa49b09d0d0fbaccfba954c5a4932f177ccb931be0e0f4ec454055f63822a33"
+        },
+        "12.8.0+20160226183043-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160226183043-1-x86.msi",
+          "md5": "b540d2fad6700c096650fa6efc79e276",
+          "sha256": "446a5d5f48e8a9cbf186b2e5d19d52420975ed841c6ea40c642e2280a7479225"
+        },
+        "12.8.0+20160226203041-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160226203041-1-x86.msi",
+          "md5": "fb5eb8cc2e908b5a7d573d3e3e900d84",
+          "sha256": "9434bac05fc7f276b98b50a8125b96a584c34e83aa532cb991475b9d76a91810"
+        },
+        "12.8.0+20160229220050-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160229220050-1-x86.msi",
+          "md5": "c27326872efeffc47e0d55dd3f8aa417",
+          "sha256": "f03574d06168390cf139a25fc18816c2a8f8aeddc32de891d98b48e8915c3ca3"
+        },
+        "12.8.0+20160301003037-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160301003037-1-x86.msi",
+          "md5": "d8ea56e482f7995016e0fa3d76033472",
+          "sha256": "aa26cb1ac9232861ceb59f431105a2af0bc91d4674fa1af35e8d8303bd3808e5"
+        },
+        "12.8.0+20160302180046-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160302180046-1-x86.msi",
+          "md5": "eb6ea72bc11108a7a347259a96192908",
+          "sha256": "72bdf5826c58523cda51feb4e1a0edca6808ad31a41d10510c80b93cffda68c2"
+        },
+        "12.8.0+20160303013045-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160303013045-1-x86.msi",
+          "md5": "536fd0b4dd19f83e25a3ae164669bc3f",
+          "sha256": "00d2a4dfe2a1e816e2d5a6cb321951afea8466ad28e5571e121a5104e23f2e5e"
+        },
+        "12.8.0+20160304103050-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160304103050-1-x86.msi",
+          "md5": "37dd8c368b72862a5fd2deb61e673efe",
+          "sha256": "f415f2a96b0efc846e40ad0d810d2c2d71c264d5390ecc782774b4a0df641c55"
+        },
+        "12.8.0+20160304190053-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160304190053-1-x86.msi",
+          "md5": "7e896e6dbb6ad34de9619d2984986775",
+          "sha256": "0b3dde9c29a3a7d6b9cba9d3f5fcc5d1104eddeb817618026b3d6f963ebb8f7c"
+        },
+        "12.8.0+20160304193041-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160304193041-1-x86.msi",
+          "md5": "d58057aa12718fd3c77e1b0e09b635de",
+          "sha256": "4823bb80499b5f6739d1992ab70410f16e02756ce07dc80294d8b0923671f06f"
+        },
+        "12.8.0+20160305010043-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0+20160305010043-1-x86.msi",
+          "md5": "aeaf279ec55c78ab3994ca1158682ae0",
+          "sha256": "5d2a463a2642ae540410d56f6c732bf91df3e32445bcf6940443cf35256bef3b"
+        },
+        "12.8.0-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.0-1-x86.msi",
+          "md5": "ae5103b12905cf2ce452028477fa68c1",
+          "sha256": "aad32495bf685f9568c25c76197b8c0f5c638f4287bb356641b97660406d9634"
+        },
+        "12.8.1+20160308173101-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.1+20160308173101-1-x86.msi",
+          "md5": "633254180ef532bc0f1236fc128fb4c8",
+          "sha256": "0d8f2ca1ce2a5237e3121363dae5826b8baa947b14d607bf9043b516ed9fdeb8"
+        },
+        "12.8.1+20160308180049-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.1+20160308180049-1-x86.msi",
+          "md5": "8943cb4f401cdb7b01edd3d98bb839f5",
+          "sha256": "358c6669d8cbcd72666a572dea84f90022d2a2b13f658a95bec78f66e48d02f0"
+        },
+        "12.8.1+20160316160105-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.8.1+20160316160105-1-x86.msi",
+          "md5": "a5cc276309e52f95e1e316b8f7530569",
+          "sha256": "9a99ce6bda1747a7b0a1a09b01e3c85afe6ff128cf34ef78da90328c7b358e1b"
+        },
+        "12.9.0+20160315210100-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.9.0+20160315210100-1-x86.msi",
+          "md5": "9ba512518dcaaf36301ce002412b61f4",
+          "sha256": "abc1270e543a57d2b9231ad7f3cbf5534186cf9086cb844cf2aa6b1adf5a40de"
+        },
+        "12.9.0+20160316013049-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.9.0+20160316013049-1-x86.msi",
+          "md5": "ccc3b9833911492e61ef254234ee7ba1",
+          "sha256": "3c199d72f8bb2d9824278af1ca4b156c472550bdae2066ee32e3a9c4582bb7ce"
+        },
+        "12.9.0+20160316120100-1": {
+          "relpath": "/windows/2008r2/i386/chef-client-12.9.0+20160316120100-1-x86.msi",
+          "md5": "3e3737b47848459dcb0e533bc199c23e",
+          "sha256": "aac9130a4fca4452661188e05309b93d332ea9b731f7cbb3e1399385dd99df8a"
         }
       },
       "x86_64": {
@@ -1815,6 +1848,111 @@
           "relpath": "/windows/2012r2/x86_64/chef-client-12.4.3+20150930210020-1-x86.msi",
           "md5": "a5cd86e980fdddd3cc87f6f00c4be364",
           "sha256": "c2d62310a8d6225c97f693725d3fcbfd6487c8babc2a0c4e4541cad5b5f21661"
+        },
+        "12.7.2+20160216120041-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.7.2+20160216120041-1-x64.msi",
+          "md5": "cd48b73f5f4ed20d02eebb33147e66b8",
+          "sha256": "9b67e7cf80defc2963b1b5a235cd7135ffbd4f449059c489da87840f2f3b1403"
+        },
+        "12.8.0+20160225040042-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160225040042-1-x64.msi",
+          "md5": "095cded688ae729d97d6e5f83c3204d2",
+          "sha256": "beb4146756a83e43c555bc7bfbec00a3f3c48b00fedb4f145934cf3afab2946f"
+        },
+        "12.8.0+20160225170054-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160225170054-1-x64.msi",
+          "md5": "19cc87d3d2bf4cc2b4be536f06c57d17",
+          "sha256": "e4cd2a81a305a519e849da7fb58d79266eca43fafae485490104da292324406f"
+        },
+        "12.8.0+20160225200053-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160225200053-1-x64.msi",
+          "md5": "605f65dbc732f5c5af6686fabce8329d",
+          "sha256": "fa6e6a86043a6022ec5a090ee7a1b1475dd6ec615f58ee5a61b8d46548544952"
+        },
+        "12.8.0+20160226183043-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160226183043-1-x64.msi",
+          "md5": "3af39776589e72f74d0bc85fde1788ac",
+          "sha256": "d45db1935591689f841ee2adc45eaf839a645ffee2d88a0fb9511830920f44c0"
+        },
+        "12.8.0+20160226203041-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160226203041-1-x64.msi",
+          "md5": "dac0c279e6984d13692547437949152b",
+          "sha256": "16e98ff6d10b8c17ad74bcd82229618bca13b229ad0657157897e857a02efc55"
+        },
+        "12.8.0+20160229220050-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160229220050-1-x64.msi",
+          "md5": "93ffe820ff0bb8577dc7b9c7d9a40379",
+          "sha256": "401e773689e13842329c84e7c1c78716e3d7ecce700c66951875720fa53cf72c"
+        },
+        "12.8.0+20160301003037-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160301003037-1-x64.msi",
+          "md5": "6a88cc268f51d548d966d1f3d28469a7",
+          "sha256": "fbdfa877170cae482198d95145dbf1ef493c8312cddad1d128e3faa3bb0ae61f"
+        },
+        "12.8.0+20160302180046-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160302180046-1-x64.msi",
+          "md5": "35f07e204976de1002a862e3d43a6ab6",
+          "sha256": "8b08a6132c53a7bbaa964fcbb9b5c7c906ae871f59079575f539b4496ce850f1"
+        },
+        "12.8.0+20160303013045-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160303013045-1-x64.msi",
+          "md5": "7a7d03d7b531b5153ab3234b50ab6b8d",
+          "sha256": "4d9f03db28a933961f5c01b206d5375b6cbad8e047dbf71cba57bbdae9dbd677"
+        },
+        "12.8.0+20160304103050-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160304103050-1-x64.msi",
+          "md5": "548483c49e6ef1cb1e9188e612bcda3a",
+          "sha256": "ba6138bbae226266e3b5196bce60d8452c46330e2fae6790ddafaa97c31aa24b"
+        },
+        "12.8.0+20160304190053-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160304190053-1-x64.msi",
+          "md5": "4b3baf1a853ca6a334e216aceecfd1ab",
+          "sha256": "944a21431389ac00a06a5b5733b21048d5263f09e886252feae6d77458063198"
+        },
+        "12.8.0+20160304193041-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160304193041-1-x64.msi",
+          "md5": "be51cef106f206b3004fcf13171301eb",
+          "sha256": "4e30363276d77d5c0abfc1d9effd714a14defdc6c8ad2022b948fb2194ca9e4c"
+        },
+        "12.8.0+20160305010043-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0+20160305010043-1-x64.msi",
+          "md5": "dac8f7693ac1904bf0a6962cb766f964",
+          "sha256": "b320e8dad43799dbaa955191bc0c351f89114290f31c83ba525bf677869cbc88"
+        },
+        "12.8.0-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.0-1-x64.msi",
+          "md5": "e8d9732275efd434e7b8d5fa69abbeee",
+          "sha256": "bfaa3c482585a61aa051659c72b5e14017a814d6fb357a77fc8280d01a065d39"
+        },
+        "12.8.1+20160308173101-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.1+20160308173101-1-x64.msi",
+          "md5": "6e20602ab1caf4bb3ac3cce1b5a60c45",
+          "sha256": "fc323770cd8193f3ed787154720e17e9f3cbe85b6e18fd87002ebb564aa58d4f"
+        },
+        "12.8.1+20160308180049-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.1+20160308180049-1-x64.msi",
+          "md5": "2d786d3108af2f80dd3c13d07fd22730",
+          "sha256": "e244ce3b6e277c0d73b5bac52a439f76ba051c3307e2350ed10556f7f84c1ab0"
+        },
+        "12.8.1+20160316160105-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.8.1+20160316160105-1-x64.msi",
+          "md5": "60206dac5b949c1b89347a22a62ac203",
+          "sha256": "fd412114f47fe6d457255209efd6f005c8a77bfa130fc7daefd8529b139d48f5"
+        },
+        "12.9.0+20160315210100-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.9.0+20160315210100-1-x64.msi",
+          "md5": "b1639d65ca0c1db21596a71b9da039f7",
+          "sha256": "7134561e850640b7893b268ef2c4fc0787f95fdf763fae70ceff5a17cc1c7063"
+        },
+        "12.9.0+20160316013049-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.9.0+20160316013049-1-x64.msi",
+          "md5": "215e3cbe306d2aa9b0957c6465a835be",
+          "sha256": "a16ca247620fb4aefdde52d95bc9d79b11bd53bab29c09c96f7d57672f0f9aa3"
+        },
+        "12.9.0+20160316120100-1": {
+          "relpath": "/windows/2008r2/x86_64/chef-client-12.9.0+20160316120100-1-x64.msi",
+          "md5": "1f774c592301f3c4245ebdaf8fd4b774",
+          "sha256": "1e95dacbf13e5cf43eea492406a265f33f5141477cde338393d7015fcd46319c"
         }
       }
     }
