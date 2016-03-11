@@ -409,11 +409,11 @@ context 'Omnitruck' do
           let(:platform) { 'windows' }
 
           %w{2008r2 2012 2012r2 8 7 2003r2 2012r2}.each do |windows_platform_version|
-            %w{x86_64 i386 i686}.each do |architecture|
 
-              context "for #{windows_platform_version}" do
-                let(:platform_version) { windows_platform_version }
+            context "for #{windows_platform_version}" do
+              let(:platform_version) { windows_platform_version }
 
+              %w{i386 i686}.each do |architecture|
                 context "for #{architecture}" do
                   let(:architecture) { architecture }
 
@@ -421,10 +421,10 @@ context 'Omnitruck' do
                     let(:project_version) { nil }
                     let(:expected_info) do
                       {
-                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.6.1-1-x86.msi',
-                        sha256: '010925f18c1b7c70abff698960108a2f8687accf1be0250309d832d0f60add37',
-                        md5: '00000000fe1174b2b8c437b29cf42e84',
-                        version: '12.6.1'
+                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.8.1-1-x86.msi',
+                        sha256: '8206e7027c15465131721ccc4cec2a0a8a0c5163b35c859dd362b196c07040fa',
+                        md5: '458177d3b21888c17fd79660781d06eb',
+                        version: '12.8.1'
                       }
                     end
 
@@ -432,13 +432,13 @@ context 'Omnitruck' do
                   end
 
                   context 'with specific version' do
-                    let(:project_version) { '12.4.1' }
+                    let(:project_version) { '12.6.0' }
                     let(:expected_info) do
                       {
-                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chef-client-12.4.1-1.msi',
-                        sha256: 'f02f5243f16b860e1d208e7d078b8bf0600c60159d49141b678391936b0afff2',
-                        md5: '4d9d2320ad9f86f942bb4b12e34bc221',
-                        version: '12.4.1'
+                        url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.6.0-1-x86.msi',
+                        sha256: '6027cd360f43a2cde90e978ac9891459e8b3b33e4df34cb1a5b78a6c8427c03b',
+                        md5: '276ced0f1f531989541580808b9b97b6',
+                        version: '12.6.0'
                       }
                     end
 
@@ -446,43 +446,50 @@ context 'Omnitruck' do
                   end
                 end
               end
-            end
-          end
 
-          context 'stable channel with 32 and 64 bit artifacts' do
-            let(:platform_version) { "2008r2" }
-            let(:endpoint) { "/#{channel}/#{project}/metadata" }
+              context "for x86_64" do
+                let(:architecture) { 'x86_64' }
 
-            %w{i386 i686 x86_64}.each do |arch|
-              context "for #{arch}" do
-                let(:architecture) { arch }
+                context 'without a version' do
+                  let(:project_version) { nil }
+                  let(:expected_info) do
+                    {
+                      url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/x86_64/chef-client-12.8.1-1-x64.msi',
+                      sha256: '05aa2cd84842dcfa51ad1bbbf1f7fe54102a46bee11d4e0819561f88b284fec4',
+                      md5: 'cf356a44978254a3629e3f4e7a2ff9a0',
+                      version: '12.8.1'
+                    }
+                  end
 
-                it 'should return 32 bit artifact' do
-                  get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-                  metadata_json = last_response.body
-                  parsed_json = JSON.parse(metadata_json)
-
-                  expect(parsed_json['url']).to match(/i386/)
-                  expect(parsed_json['url']).not_to match(/i686/)
-                  expect(parsed_json['url']).not_to match(/x86_64/)
+                  it_behaves_like 'a correct package info'
                 end
-              end
-            end
 
-            context 'for version greater than 12.6.0' do
-              let(:version) { "12.6.1" }
-              let(:architecture) { "x86_64" }
+                context 'with specific version' do
+                  let(:project_version) { '12.7.2' }
+                  let(:expected_info) do
+                    {
+                      url: 'http://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/x86_64/chef-client-12.7.2-1-x64.msi',
+                      sha256: '8f16a1a8523b3a158e88dedcab234d9403cedf624d654c88ee5854e2d8065571',
+                      md5: '9a784f18a1629e7819dc39d11db5dc79',
+                      version: '12.7.2'
+                    }
+                  end
 
-              it 'should return 32 bit artifact' do
-                get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-                metadata_json = last_response.body
-                parsed_json = JSON.parse(metadata_json)
+                  it_behaves_like 'a correct package info'
+                end
 
-                # Note that we have:
-                # 00000000fe1174b2b8c437b29cf42e84 => i386
-                # fffffffffe1174b2b8c437b29cf42e84 => x86_64
-                # in our stable/build-chef-list.json for 12.6.1
-                expect(parsed_json['md5']).to eq("00000000fe1174b2b8c437b29cf42e84")
+                context 'with a version older or equal to 12.6.0' do
+                  let(:project_version) { '12.6.0' }
+                  let(:endpoint) { "/#{channel}/#{project}/download" }
+
+                  context "download" do
+                    it "should 404" do
+                      params['v'] = project_version
+                      get(endpoint, params)
+                      expect(last_response).to be_not_found
+                    end
+                  end
+                end
               end
 
             end
