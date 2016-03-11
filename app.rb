@@ -260,7 +260,7 @@ class Omnitruck < Sinatra::Base
 
   def get_package_info(project, build_hash)
     # Windows artifacts require special handling based on channel and architecture.
-    # 2-) Internally we always use i386 to represent 32-bit artifacts, not i686
+    # Internally we always use i386 to represent 32-bit artifacts, not i686
     m = if params["p"] == "windows" && params["m"] == "i686"
           "i386"
         else
