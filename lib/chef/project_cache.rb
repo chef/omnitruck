@@ -26,14 +26,27 @@ class Chef
           builds.each do |version, build|
             case architecture
             when 'x86_64'
-              builds_64bit[version] = build
-
-              # Prior to 12.6.0 we have sometimes posted some windows builds
-              # only for x86_64. We need to make sure these builds are also
-              # distributed for i386 since prior to 12.6.0 we only had a single
-              # windows build that works for all platforms.
-              if Opscode::Version.parse(version) <= Opscode::Version.parse("12.6.0")
+              if %w{chef angrychef}.include?(project.name)
+                if Opscode::Version.parse(version) <= Opscode::Version.parse("12.6.0")
+                  # Including and prior to Chef 12.6.0 we only had 1 Windows build that worked for
+                  # all architectures and versions.  It was a 32-bit build but was sometimes
+                  # marked in the 64-bit manifest, so we need to copy all old 64-bit builds
+                  # into the 32-bit manifest.
+                  builds_32bit[version] = build
+                else
+                  # Now that we _actually_ have 64-bit builds we also want to
+                  # exclude all the old 32-bit builds from the 64-bit manifest
+                  builds_64bit[version] = build
+                end
+              elsif project.name == 'chefdk'
+                # ChefDK is still only built to produce a 32-bit package.  But like Chef,
+                # it works on both 32-bit systems and 64-bit systems.  It also may
+                # sometimes be tagged as x86_64 or i386.  But we want to use each
+                # package for all customer architectures.
                 builds_32bit[version] = build
+                builds_64bit[version] = build
+              else
+                builds_64bit[version] = build
               end
             when 'i386', 'i686'
               builds_32bit[version] = build
