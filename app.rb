@@ -109,11 +109,13 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/chef/install.msi' do
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=x86_64')
+    # default to 32-bit architecture for now
+    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
   end
 
   get '/install.msi' do
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=x86_64')
+    # default to 32-bit architecture for now
+    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
   end
 
   get "/full_:project\\_list" do
