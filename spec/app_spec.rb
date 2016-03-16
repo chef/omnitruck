@@ -1006,8 +1006,8 @@ context 'Omnitruck' do
         md5: 'd07cf230410b55bd8939ab29d65a3cc5',
         version: '11.1.6'
       },
-      '/chef/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
-      '/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
+      '/chef/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=x86_64',
+      '/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=x86_64',
       '/full_client_list' => nil,
       '/full_list' => nil,
       '/full_server_list' => nil,
