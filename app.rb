@@ -109,13 +109,11 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/chef/install.msi' do
-    # default to 32-bit architecture for now
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
+    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=x86_64')
   end
 
   get '/install.msi' do
-    # default to 32-bit architecture for now
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
+    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=x86_64')
   end
 
   get "/full_:project\\_list" do
@@ -262,8 +260,9 @@ class Omnitruck < Sinatra::Base
 
   def get_package_info(project, build_hash)
     # Windows artifacts require special handling based on channel and architecture.
-    # Internally we always use i386 to represent 32-bit artifacts, not i686
-    m = if params["p"] == "windows" && params["m"] == "i686"
+    # 1-) For stable channel we always return 32-bit artifacts
+    # 2-) Internally we always use i386 to represent 32-bit artifacts, not i686
+    m = if params["p"] == "windows" && (channel.name == "stable" || params["m"] == "i686")
           "i386"
         else
           params['m']
