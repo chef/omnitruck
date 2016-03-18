@@ -15,6 +15,7 @@ class Chef
     # This method ensures that we do not have i686 as architecture in manifests.
     # We are not supposed to have it anyways but maybe some older version of
     # projects still has it.
+    # TODO fix description
     def fix_windows_manifest!(manifest)
       return manifest if manifest['windows'].nil?
 
@@ -26,14 +27,39 @@ class Chef
           builds.each do |version, build|
             case architecture
             when 'x86_64'
-              builds_64bit[version] = build
-
-              # Prior to 12.6.0 we have sometimes posted some windows builds
-              # only for x86_64. We need to make sure these builds are also
-              # distributed for i386 since prior to 12.6.0 we only had a single
-              # windows build that works for all platforms.
-              if Opscode::Version.parse(version) <= Opscode::Version.parse("12.6.0")
+              if %w{chef angrychef}.include?(project.name)
+                # In the beginning (Chef 10) there was only 1 Chef package
+                # architecture, and it was 32 bit. However, it was always stored
+                # under the x86_64 manifest architecture and it was returned for
+                # both x86_64 and i386 requests (1 package was used for both 32
+                # and 64 bit Windows machines). This continued until Chef 12.4.2
+                # - this was the first package to be stored under the i386
+                # manifest architecture. There was still only 1 package and it
+                # was 32 bit, but now it had the correct manifest architecture.
+                # Starting with Chef 12.7 we started building 2 packages for Chef
+                # - a 32 bit package for i386 architecture and a 64 bit package
+                # for x86_64 architecture.
+                #
+                # Until Chef reaches version 12.9 we want to continue servering
+                # all stable channel requests _only_ with the 32 bit package,
+                # regardless of whether the user specifies x86_64 or i386
+                # architecture. Once Chef 12.9 is released we will start returning
+                # the correct package based upon requested architecture but only
+                # for version 12.9+
+                if Opscode::Version.parse(version) >= Opscode::Version.parse("12.7.0")
+                  builds_64bit[version] = build
+                else
+                  builds_32bit[version] ||= build
+                end
+              elsif project.name == 'chefdk'
+                # ChefDK is still only built to produce a 32-bit package. But like Chef,
+                # it works on both 32-bit systems and 64-bit systems. It also may
+                # sometimes be tagged as x86_64 or i386. But we want to use each
+                # package for all customer architectures.
                 builds_32bit[version] = build
+                builds_64bit[version] = build
+              else
+                builds_64bit[version] = build
               end
             when 'i386', 'i686'
               builds_32bit[version] = build
