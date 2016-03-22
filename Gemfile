@@ -14,7 +14,7 @@ gem "rest-client"
 gem 'nokogiri'
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :branch => 'master'
+gem 'mixlib-install', path: "../../github/mixlib-install"
 gem 'trashed'
 
 group :test do
@@ -29,3 +29,5 @@ end
 group :security do
   gem 'bundler-audit'
 end
+
+gem "pry"
