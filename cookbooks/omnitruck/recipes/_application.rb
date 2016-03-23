@@ -10,16 +10,16 @@ directory '/srv/omnitruck/shared/pids' do
   group 'omnitruck'
 end
 
-# S3 Poller configuration
-s3_poller_path = "/srv/omnitruck/shared/s3_poller_data/"
-s3_poller_cache_path = "#{s3_poller_path}/cache"
+# Poller configuration
+poller_path = "/srv/omnitruck/shared/poller_data/"
+poller_cache_path = "#{poller_path}/cache"
 
-directory s3_poller_path do
+directory poller_path do
   owner 'omnitruck'
   group 'omnitruck'
 end
 
-directory s3_poller_cache_path do
+directory poller_cache_path do
   owner 'omnitruck'
   group 'omnitruck'
 end
@@ -36,8 +36,8 @@ artifact_deploy 'omnitruck' do
 
   symlinks(
     'unicorn.rb' => 'config/unicorn.rb',
-    's3_poller_config.yml' => 'config/config.yml',
-    's3_poller_data/cache' => 'release-metadata-cache'
+    'poller_config.yml' => 'config/config.yml',
+    'poller_data/cache' => 'release-metadata-cache'
   )
 
   before_symlink Proc.new {
@@ -50,16 +50,12 @@ artifact_deploy 'omnitruck' do
       mode  '0755'
     end
 
-    template "/srv/omnitruck/shared/s3_poller_config.yml" do
-      source "s3_poller_config.yml.erb"
+    template "/srv/omnitruck/shared/poller_config.yml" do
+      source "poller_config.yml.erb"
       variables(
         :app_environment => "production",
         :virtual_path => "",
-        :metadata_dir => s3_poller_path,
-        :stable_aws_metadata_bucket => 'opscode-omnibus-package-metadata',
-        :stable_aws_packages_bucket => 'opscode-omnibus-packages',
-        :current_aws_metadata_bucket => 'opscode-omnibus-package-metadata-current',
-        :current_aws_packages_bucket => 'opscode-omnibus-packages-current',
+        :metadata_dir => poller_path,
       )
       action :create
       owner 'omnitruck'
@@ -67,14 +63,19 @@ artifact_deploy 'omnitruck' do
       mode '0755'
     end
 
-    cookbook_file '/etc/cron.d/s3_poller-cron' do
+    cookbook_file '/etc/cron.d/poller-cron' do
       mode '0755'
+    end
+
+    # remove the historical s3_poller cron job.
+    file '/etc/cron.d/s3_poller-cron' do
+      action :delete
     end
   }
 
   restart Proc.new {
-    execute 's3_poller' do
-      command "env PATH=/usr/local/bin:$PATH bundle exec ./s3_poller -e production"
+    execute 'poller' do
+      command "env PATH=/usr/local/bin:$PATH bundle exec ./poller -e production"
       user    "omnitruck"
       group   "omnitruck"
       cwd     release_path
@@ -108,4 +109,3 @@ artifact_deploy 'omnitruck' do
     end
   }
 end
-

@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/chef/mixlib-install.git
+  revision: 0a821c261f17ccc4034b2d8f48d73fb19d751d2e
+  branch: master
+  specs:
+    mixlib-install (0.8.0.alpha.7)
+      artifactory (~> 2.3.0)
+      mixlib-versioning (~> 1.1.0)
+
+GIT
   remote: https://github.com/sinatra/sinatra.git
   revision: 8035f839fd8a63fd3791c901cf5ed09617e72e13
   branch: master
@@ -7,13 +16,6 @@ GIT
       rack (~> 1.5, >= 1.5.4, < 1.6)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-
-PATH
-  remote: ../../github/mixlib-install
-  specs:
-    mixlib-install (0.8.0.alpha.7)
-      artifactory (~> 2.3.0)
-      mixlib-versioning (~> 1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -24,7 +26,6 @@ GEM
     bundler-audit (0.4.0)
       bundler (~> 1.2)
       thor (~> 0.18)
-    coderay (1.1.1)
     colorize (0.7.7)
     diff-lcs (1.2.5)
     domain_name (0.5.25)
@@ -33,18 +34,10 @@ GEM
       domain_name (~> 0.5)
     json (1.8.3)
     kgio (2.10.0)
-    method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile2 (2.0.0)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
     netrc (0.11.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
-    pry (0.10.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
@@ -86,14 +79,11 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
-    slop (3.6.0)
     statsd-ruby (1.2.1)
     thor (0.19.1)
     tilt (2.0.1)
     trashed (3.2.5)
       statsd-ruby (~> 1.1)
-    uber-s3 (0.2.4)
-      mime-types (~> 1.17)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
@@ -112,8 +102,6 @@ DEPENDENCIES
   json
   mixlib-install!
   mixlib-versioning (~> 1.1.0)
-  nokogiri
-  pry
   rack-test
   rake
   rest-client
@@ -125,7 +113,6 @@ DEPENDENCIES
   sinatra!
   sinatra-contrib
   trashed
-  uber-s3
   unicorn
   yajl-ruby
 

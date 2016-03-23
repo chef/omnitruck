@@ -136,8 +136,14 @@ class Chef
       data = nil
       begin
         data = bintray_backend.bintray_get("/#{channel_name}/#{project_name}")
-      rescue # TODO: Specific exception types here.
-        puts "No available versions for '#{project_name}' - '#{channel_name}'"
+      rescue Net::HTTPServerException => e
+        # bintray returns 404 when there is no available versions for a
+        # given product & channel
+        if e.response.code == "404"
+          puts "No available versions for '#{project_name}' - '#{channel_name}'"
+        else
+          raise e
+        end
       end
       data.nil? ? [ ] : data["versions"]
     end

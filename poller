@@ -6,12 +6,10 @@ require 'optparse'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 
-require 'chef/project'
-require 'chef/project_cache'
-require 'chef/channel'
+require 'chef/cache'
 require 'chef/version'
 
-class S3Poller
+class Poller
   attr_reader :config
 
   def initialize
@@ -51,36 +49,12 @@ class S3Poller
   end
 
   def run
-    channels.each do |channel|
-      all_project_caches_for_channel(channel).each do |project_cache|
-        project_cache.update
-      end
-    end
-  end
-
-  def all_project_caches_for_channel(channel)
-    Chef::Project::KNOWN_PROJECTS.map do |project_name|
-      Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
-    end
-  end
-
-  def metadata_dir
-    config['metadata_dir']
-  end
-
-  def channels
-    config['channels'].map do |(channel_name, channel_info)|
-      Chef::Channel.new(
-        channel_name,
-        channel_info['aws_metadata_bucket'],
-        channel_info['aws_packages_bucket']
-      )
-    end
+    Chef::Cache.new(config['metadata_dir']).update
   end
 end
 
 if $0 == __FILE__
-  S3Poller.new.run
+  Poller.new.run
 end
 
 exit
