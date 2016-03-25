@@ -1,364 +1,166 @@
-# Introduction
+**omnitruck** makes it easy to download and install omnibus artifacts. It provides an API to query the available versions of artifacts, get detailed information about the available versions and download them.
 
-The purpose of this project is to automate the release process of Omnibus artifacts.
-This web service handles the mapping from platform, platform version, chef version,
-and architecture to the appropriate artifact. This mapping relies on the new
-standardized naming scheme for Omnibus artifacts. Instead of needing to modify
-the install.sh script, the process gets simplified to one click. Chef version is
-an optional parameter, if it isn't provided, the app will serve up the latest
-iteration of the latest version of chef client. If no iteration number is specified,
-it will serve the latest iteration of the specified version.
+Powered by [Sinatra](https://www.sinatrarb.com/).
 
-This web app runs on Sinatra, a very light Ruby web app framework that runs on Rack,
-and uses Unicorn.
+## Endpoints
 
-# Running the app
+### `/install.sh` & `/install.ps1`
 
-To run the app for development, shotgun is a very useful tool. It handles each request
-in a new process to reload the application each time a new request is made, that way you
-don't have to start and stop the server every time you want to test a change youve made.
-To get shotgun:
+Renders the install script for Chef packages.
 
-   'gem install shotgun'
+`mixlib-install` is used under to covers to generate the scripts. The base url for the scripts will be equivalent to the base url of the running omnitruck instance.
 
-In order to run the app, we must first build the various build_*list*.json files so that the app
-knows what versions are available, so run:
+### `/$channel/$project/metadata`
 
-   './poller -e development'
+Returns package information based on the provided parameters. Returned information can be `json` or `txt` and it looks like:
 
-See the S3 Poller section later in this document for more information.
+```
+json:
+{
+  "url": "...",
+  "sha1":	"...",
+  "sha256": "...",
+  "version": "..."
+}
 
-To run the app locally, run this in the application directory:
+text:
+url\t...\nsha1\t...\nsha256\t...\nversion\t...\n
+```
 
-   'shotgun config.ru'
+Supported parameters are:
 
-This will launch a Rack server that will run the Omnitruck app at http://localhost:9393/
-(the port number will only be 9393 if using shotgun, it will vary with other methods).
+|      | Description |
+|------|-------------|
+| `v`  |  Version string. It can be full (12.9.2) or partial (12). If omitted, the latest version will be used. |
+| `p`  |  Platform string. |
+| `pv` | Platform version string.  |
+| `m`  | Architecture string.  |
 
-<b>NOTE: The unfortunate thing about shotgun is that it does not output any default logging.
-To see the default logging, you will need to just run unicorn without shotgun:</b>
+`v` is the most tricky one:
 
-   'unicorn'
+* If omitted omnitruck will return information for the latest available version.
+* When set to a full version string, omnitruck will return information for that specific version.
+* When set to a partial string, omnitruck will return information for the latest version available that is matching the given string. E.g. if `"12"` is given, omnitruck will return the latest `"12.X.Y"` and if `"12.6"` is given, omnitruck will return the latest `"12.6.Y"`.
 
-# Working with the app
+The values that `p`, `pv` & `m` can take include but are not limited to:
 
-## Sinatra
+`p` => "aix", "debian", "el", "freebsd", "ios_xr", "mac_os_x", "nexus", "solaris2", "ubuntu", "windows", "solaris", "sles", "suse"
 
-This is the first project that we have done using Sinatra. For documentation, look here,
-starting with the README: <http://www.sinatrarb.com/>
+`pv` => `MAJOR.MINOR` version of the platform. E.g. "6.1", "7.1" for "aix", "6", "7", "8" for debian. For windows "2008r2"
 
-There are only two routes that this app provides - one to serve up the install.sh script,
-and one to download the chef client that will be specified by the install script. For
-dev and testing purposes, open a browser and use the base url <http://localhost:9393/>
-to access the routes. Again, port will vary depending on how you run the app, though I
-highly recommend shotgun. Shotgun will allow you to make a change to the code without
-needing to restart the server to make another request.
+`m` => "x86_64", "i386", "powerpc", "sparc", "ppc64le", "ppc64"
 
-## /install.sh
+### `/$channel/$project/download`
 
-To test the install.sh route, simply navigate to:
+Supports the same options with the `/$channel/$project/metadata` endpoint and instead of returning package information, it returns a redirect to the `"url"` set in the package information.
 
-<http://localhost:9393/install.sh>
+### `/$channel/$project/versions`
 
-This will render the install.sh.erb temlate with the appropriate base url for chef
-client downloads. This base url is contained in a config.yml and depends on your
-environment (development, test, or production).
+This api is similar to `/$channel/$project/metadata` but instead of returning information about a single package, it returns information about all packages that have the same version number.
 
-## /metadata endpoint
+Response is an array of objects returned by `/$channel/$project/metadata` endpoint. Supports `v` but does not support `p`, `pv` or `m`.
 
-The typical format of the metadata URL is:
+### `/_status`
 
-   <http://localhost:9393/metadata?v=CHEF_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
+Return the status of the application in `json` format.
 
-Optional parameters:
+## Deprecated Endpoints
 
-   * `&nightlies=true`
-   * `&prereleases=true`
+Historically omnitruck supported different naming conventions in its endpoints. So we have a big set deprecated endpoints. These endpoints are currently working and they are redirected to one of the supported endpoints.
 
-As mentioned above, the CHEF_VERSION parameter is optional, if not supplied it will
-provide the latest version, and if an iteration number is not specified, it will grab
-the latest available iteration.  Partial version numbers are also acceptable (using v=11
-will grab the latest 11.x client which matches the other flags).
+* /download
+* /metadata
+* /download-server
+* /metadata-server
+* /full_client_list
+* /full_list
+* /full_server_list
+* /chef/full_client_list
+* /chef/full_list
+* /chef/full_server_list
+* /metadata-chefdk
+* /download-chefdk
+* /chef_platform_names
+* /chef_server_platform_names
+* /chef/chef_platform_names
+* /chef/chef_server_platform_names
+* /chef/metadata-chefdk
+* /chef/download-chefdk
+* /chef/metadata-container
+* /chef/download-container
+* /chef/metadata-angrychef
+* /chef/download-angrychef
+* /chef/download-server
+* /chef/metadata-server
+* /chef/install.msi
+* /install.msi
+* /full_$project_list
+* /$project_platform_names
+* /$channel/$project/platforms
 
-If `&nightlies=true` or `&prereleases=true` then the endpoint will serve nightlies and/or prereleases and
-only nightlies or prereleases (will not serve releases).  If both are specified then only packages
-which are nightlies of prerelease versions will be served.  Prereleases are packages which have a
-prerelease version identifier (e.g. 11.12.2.rc0).  Nightlies have a timestamp and gitsha
-(11.12.2+20130101164140.git.2.deadbee).
+## Poller
 
-The order of the parameters does not matter. This route needs to have access to the
-build_list_v2.json in order to run, so make sure that you have one in the same directory as the app.
-If you don't, see to the "Running the App" section and follow the instructions to
-run the `poller`.
+`./poller` is a tool that populates a cache with information about the available versions of Chef packages. In production is runs every 5 minutes with a cron job.
 
-This endpoint returns a JSON or plain text document containing a URL to the desired
-package along with a MD5 and SHA2-256 checksum of the package.  Clients should make a request
-to download the package from the URL and then validate the MD5 or SHA2-256.
+It polls <https://bintray.com/chef> and creates files named `$channel\$project-manifest.json` under the configured metadata directory.
 
-## /full_client_list endpoint
+## Version Resolution
 
-<http://localhost:9393/full_client_list>
+Version resolution is the most complex and fragile section of omnitruck. In addition to handling historical differences between the packages published by Chef (different package naming conventions, different metadata, different architecture naming) it supports some interesting logic to find the right package for a given platform.
 
-This endpoint provides the list of available client builds for the install page.
-Will return 404 with a file not found message if ./build_list_v1.json
-does not exist, which is usually because the s3 poller has not run or is
-misconfigured.
+### Platform Mapping
 
-## /chef_platform_names endpoint
+`PlatformDSL` and the main configuration file `platforms.rb` gives omnitruck the ability to map builds released for a platform to be available for another platform. Some of the use cases enabled in `platforms.rb` are:
 
-<http://localhost:9393/chef_platform_names>
+* Making RHEL 6.4 and RHEL 6.5 be considered the same version but not considering Ubuntu 12.04 and Ubuntu 12.10 as same.
+* Making centos, oracle, scientific, etc all map to the "el" platform.
 
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
+The convention is to keep the platform names that install.sh supplies consistent with ohai platform names.
 
-The document returned by this endpoint is essentially a verbatim copy of
-./chef-platform-names.json; a 404 is returned if this file does not
-exist on the server.
-
-## /metadata-angrychef endpoint
-
-<http://localhost:9393/metadata-angrychef>
-
-This endpoint functions similarly to the /metadata endpoint but serves
-data about angrychef packages.  It takes all the same options.
-
-This endpoint generates its data from build_angrychef_list_v2.json.
-
-## /full_angrychef_list endpoint
-
-<http://localhost:9393/full_angrychef_list>
-
-This endpoint provides the list of available angrychef builds for the install page.
-Will return 404 with a file not found message if
-./build_angrychef_list_v1.json does not exist, which is usually because the
-s3 poller has not run or is misconfigured.
-
-## /angrychef_platform_names endpoint
-
-<http://localhost:9393/angrychef_platform_names>
-
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
-
-The document returned by this endpoint is essentially a verbatim copy of
-./angrychef-platform-names.json; a 404 is returned if this file does
-not exist on the server.
-
-## /metadata-server endpoint
-
-<http://localhost:9393/metadata-server>
-
-This endpoint functions similarly to the /metadata endpoint but serves
-data about chef-server packages.  It takes all the same options.
-
-This endpoint generates its data from build_server_list_v2.json.
-
-## /full_server_list endpoint
-
-<http://localhost:9393/full_server_list>
-
-This endpoint provides the list of available server builds for the install page.
-Will return 404 with a file not found message if
-./build_server_list_v1.json does not exist, which is usually because the
-s3 poller has not run or is misconfigured.
-
-## /chef_server_platform_names endpoint
-
-<http://localhost:9393/chef_server_platform_names>
-
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
-
-The document returned by this endpoint is essentially a verbatim copy of
-./chef-server-platform-names.json; a 404 is returned if this file does
-not exist on the server.
-
-## /metadata-chefdk endpoint
-
-<http://localhost:9393/metadata-chefdk>
-
-This endpoint functions similarly to the /metadata endpoint but serves
-data about chefdk packages.  It takes all the same options.
-
-This endpoint generates its data from build_chefdk_list_v2.json.
-
-## /full_chefdk_list endpoint
-
-<http://localhost:9393/full_chefdk_list>
-
-This endpoint provides the list of available chefdk builds for the install page.
-Will return 404 with a file not found message if
-./build_chefdk_list_v1.json does not exist, which is usually because the
-s3 poller has not run or is misconfigured.
-
-## /chef_chefdk_platform_names endpoint
-
-<http://localhost:9393/chefdk_platform_names>
-
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
-
-The document returned by this endpoint is essentially a verbatim copy of
-./chefdk-platform-names.json; a 404 is returned if this file does
-not exist on the server.
-
-## /metadata-container endpoint
-
-<http://localhost:9393/metadata-container>
-
-This endpoint functions similarly to the /metadata endpoint but serves
-data about chef-container packages.  It takes all the same options.
-
-This endpoint generates its data from build_container_list_v2.json.
-
-## /full_container_list endpoint
-
-<http://localhost:9393/full_container_list>
-
-This endpoint provides the list of available chef-container builds for the install page.
-Will return 404 with a file not found message if
-./build_container_list_v1.json does not exist, which is usually because the
-s3 poller has not run or is misconfigured.
-
-## /chef_container_platform_names endpoint
-
-<http://localhost:9393/chef_container_platform_names>
-
-This endpoint returns a mapping of short platform names, such as "el" to
-long names, such as "Enterprise Linux". This is used by the install page
-on the corpsite to populate the drop down boxes for the install list.
-
-The document returned by this endpoint is essentially a verbatim copy of
-./chef-container-platform-names.json; a 404 is returned if this file does
-not exist on the server.
-
-## /_status endpoint
-
-<http://localhost:9393/_status>
-
-This endpoint provides information about the status of the app.
-
-# Deprecated URLs
-
-These download urls should not be used.  The corresponding /metadata endpoints should be
-hit instead, and then clients should pull the url to download out of the returned json.
-
-These endpoints are not feature compatible and there is no "yolo mode" for the download
-endpoints (new versions of operating systems do not automatically get old package versions
-promoted to them).  It will appear that many downloads are "broken" if clients hit the
-download endpoint directly.
-
-## /download
-
-To test the download route, the url is:
-
-   <http://localhost:9393/download?v=CHEF_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
-
-As mentioned above, the CHEF_VERSION parameter is optional, if not supplied it will
-provide the latest version, and if an iteration number is not specified, it will grab
-the latest available iteration. The order of the parameters does not matter. This
-route needs to have access to the build_list_v1.json in order to run, so make sure that
-you have one in the same directory as the app. If you don't, go back to the "Running
-the App" section and follow the instructions to run the poller.
-
-## /download-server
-
-To test the download-server route, the url is:
-
-   <http://localhost:9393/download-server?v=CHEF_SERVER_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
-
-Similar to the /download endpoint only it pulls data from build_server_list_v1.json.
-
-## /download-chefdk
-
-To test the download route, the url is:
-
-   <http://localhost:9393/download?v=CHEF_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
-
-Similar to the /download endpoint only it pulls data from build_chefdk_list_v1.json.
-
-## /download-container
-
-To test the download route, the url is:
-
-   <http://localhost:9393/download?v=CHEF_CONTAINER_VERSION&p=PLATFORM&pv=PLATFORM_VERSION&m=MACHINE_ARCHITECTURE>
-
-Similar to the /download endpoint only it pulls data from build_container_list_v1.json.
-
-# Poller
-
-The Poller lists release manifests (generated by `jenkins/release.rb`
-in the omnibus-chef project) and merges them into a combined list of
-available packages. The names of the combined package lists are
-configurable, but we generally use:
-
-* chef-manifest.json
-* chefdk-manifest.json
-* chef-server-manifest.json
-* angrychef-manifest.json
-
-# Platform mapping
-
-The PlatformDSL class implements a DSL for describing mapping between different
-platforms.  The configuration is in the root of the project in the `platforms.rb`
-configuration file.  All platforms must be defined in this file even if no
-manipulation is done to remap the platform name or platform version.
-
-The platform DSL allow for remapping platform_version strings to strip out the
-minor versions (making RHEL 6.4 and RHEL 6.5 be considered the same version --
-something that is not true for Ubuntu 12.04 and Ubuntu 12.10).  It also allows
-for remapping the platform name (making centos, oracle, scientific, etc all
-map onto the "el" platform).  It can also do arbitrary remapping of the platform
-version either onto a fixed number (serving RHEL6 binaries to all Amazon platforms
-currently), or via a function that can take the source platform version number
-and process it to produce a version to use internally (this is used to map
-Linux Mint versions onto their corresponding Ubuntu versions).
-
-The convention is to keep the platform names that install.sh supplies consistent
-with ohai platform names.
-
-This convention was not always applied consistently in the past, so that "el" is the
-internal name for RHEL artifacts.  The install.sh code has been changed so that "el" is
-no longer a distro name which install.sh detects (but omnitruck will still respond to
+This convention was not always applied consistently in the past, so that "el" is the internal name for RHEL artifacts.  The install.sh code has been changed so that "el" is no longer a distro name which install.sh detects (but omnitruck will still respond to
 "el" like it is a platform of "redhat").
 
-All of the platform name and platform_version mangling should be moved from install.sh
-into this configuration file.
+All of the platform name and platform_version mangling should be moved from install.sh into this configuration file.
 
-# "Yolo" mode
+### "Yolo" mode
 
-We only test certain artifacts running on certain distros and do not have complete coverage
-across all distros that can run omnibus artifacts.  For example, we do no testing of Linux
-Mint at all.  We also lag the distribution release, since getting a new tester into our
-CI testing is not as easy as it should be (particularly for distros like Mac OSX where we
-have laptops running jenkins as testers -- although this is getting better virtualized
-now).  What "yolo" mode does is offer an artifact that we believe will work fine on the
-distribution, and will warn that user that we have not tested on that platform.
+We only test certain artifacts running on certain distros and do not have complete coverage across all distros that can run omnibus artifacts.  For example, we do no testing of Linux Mint at all.  We also lag the distribution release, since getting a new tester into our CI testing is not as easy as it should be (particularly for distros like Mac OSX where we have laptops running jenkins as testers -- although this is getting better virtualized now).  What "yolo" mode does is offer an artifact that we believe will work fine on the distribution, and will warn that user that we have not tested on that platform.
 
-This will also let users deploy old versions of Chef on new distros where we never tested
-those old versions on that distro.  The previous distro version will get promoted by
-yolo.
+This will also let users deploy old versions of Chef on new distros where we never tested those old versions on that distro.  The previous distro version will get promoted by yolo.
 
-Packages which have been yolo-promoted have "yolo: true" in their JSON output from the
-metadata endpoint.  The install.sh script will also print a banner warning if it encounters
-a yolo mode package.  It is up to the end user as to if they're willing to accept the
-risk of installing yolo-promoted packages (generally desktops and testing infrastruture
-is fine, but production infastructure use is discouraged).
+Packages which have been yolo-promoted have "yolo: true" in their JSON output from the metadata endpoint.  The install.sh script prints a banner warning if it encounters a yolo mode package.  It is up to the end user as to if they're willing to accept the risk of installing yolo-promoted packages (generally desktops and testing infrastruture is fine, but production infastructure use is discouraged).
 
-Yolo mode does occasionally cause issues, and the compiler toolchain and native gem
-installation is one possible cause of trouble, e.g.:
+## Development
 
-http://www.getchef.com/blog/2014/03/26/breaking-changes-xcode-5-1-osx/
+### Running the app
 
-# Unit tests
+There are two parts to running omnitruck.
 
-There are unit tests in the spec/ directory which can be run by running 'rspec'
-in the top directory of the project. Default values are stored in the .rspec
-file.
+First, you need to populate its cache. In production this is handled by a cron job. For development, you need to do this manually:
+
+```bash
+bundle install
+bundle exec ./poller -e development
+```
+
+Second part is to run omnitruck web server. In production it runs in unicorn. For development, you have two options:
+
+1. `shotgun` does not output any of the logs, but reloads the application for each request so that you do not need to reload the application when you change a file.
+2. `unicorn` gives you all the logs but requires you to restart when you change a file.
+
+#### Using `shotgun`
+
+```bash
+gem install shotgun
+shotgun config.ru
+```
+
+#### Using `unicorn`
+
+```bash
+bundle install
+bundle exec unicorn
+```
 
 ## License
 Apache 2 Licensed. See LICENSE for full details.
