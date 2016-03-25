@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: 7471dc41987de810b0dba2e62cd95baa9887f9b1
+  revision: 0a821c261f17ccc4034b2d8f48d73fb19d751d2e
   branch: master
   specs:
     mixlib-install (0.8.0.alpha.7)
@@ -35,12 +35,9 @@ GEM
     json (1.8.3)
     kgio (2.10.0)
     mime-types (1.25.1)
-    mini_portile2 (2.0.0)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
     netrc (0.11.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
@@ -87,8 +84,6 @@ GEM
     tilt (2.0.1)
     trashed (3.2.5)
       statsd-ruby (~> 1.1)
-    uber-s3 (0.2.4)
-      mime-types (~> 1.17)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
@@ -107,7 +102,6 @@ DEPENDENCIES
   json
   mixlib-install!
   mixlib-versioning (~> 1.1.0)
-  nokogiri
   rack-test
   rake
   rest-client
@@ -119,9 +113,8 @@ DEPENDENCIES
   sinatra!
   sinatra-contrib
   trashed
-  uber-s3
   unicorn
   yajl-ruby
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

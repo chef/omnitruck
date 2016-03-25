@@ -34,9 +34,7 @@ require 'platform_dsl'
 require 'mixlib/versioning'
 require 'mixlib/install'
 
-require 'chef/project'
-require 'chef/project_cache'
-require 'chef/channel'
+require 'chef/cache'
 require 'chef/version_resolver'
 
 class Omnitruck < Sinatra::Base
@@ -119,12 +117,12 @@ class Omnitruck < Sinatra::Base
   end
 
   get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/versions")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project}/versions")
     [status, headers, body]
   end
 
   get '/:project\\_platform_names' do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project.name}/platforms")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project}/platforms")
     [status, headers, body]
   end
 
@@ -132,10 +130,8 @@ class Omnitruck < Sinatra::Base
   # END LEGACY REDIRECTS
   #########################################################################
 
-
-
   #
-  # serve up the installer script
+  # Serve up the installer script
   #
   get /install\.(?<extension>[\w]+)/ do
     case params['extension']
@@ -150,34 +146,36 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  error Chef::VersionResolver::InvalidDownloadPath do
-    status 404
-    env['sinatra.error']
+  #
+  # Handling specific exceptions raised
+  #
+  [
+    Chef::VersionResolver::InvalidDownloadPath,
+    Chef::VersionResolver::InvalidPlatform,
+    Chef::Cache::MissingManifestFile,
+    InvalidChannelName
+  ].each do |exception_class|
+    error exception_class do
+      status 404
+      env['sinatra.error']
+    end
   end
 
-  error Chef::VersionResolver::InvalidPlatform do
-    status 404
-    env['sinatra.error']
-  end
-
-  error InvalidChannelName do
-    status 404
-    env['sinatra.error']
-  end
+  #########################################################################
+  # Endpoints
+  #########################################################################
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
     pass unless project_allowed(project)
 
-    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
-    full_url = convert_relpath_to_url(package_info["relpath"])
-    redirect full_url
+    package_info = get_package_info
+    redirect package_info["url"]
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
     pass unless project_allowed(project)
 
-    package_info = get_package_info(project, JSON.parse(File.read(project.build_list_path)))
-    decorate_url!(package_info)
+    package_info = get_package_info
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
     else
@@ -189,21 +187,33 @@ class Omnitruck < Sinatra::Base
     pass unless project_allowed(project)
     content_type :json
 
-    package_list_info = get_package_list(project, JSON.parse(File.read(project.build_list_path)))
-    decorate_url!(package_list_info)
+    package_list_info = get_package_list
     JSON.pretty_generate(package_list_info)
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms\/?$/ do
     pass unless project_allowed(project)
-    if File.exists?(project.platform_names_path)
-      directory = JSON.parse(File.read(project.platform_names_path))
-      JSON.pretty_generate(directory)
-    else
-      status 404
-      env['sinatra.error']
-      'File not found on server.'
-    end
+
+    # Historically this endpoint was being used by chef-web-downloads to
+    # extend the platform keys with a human friendly versions.
+    # Now that this functionality is not needed anymore we can deprecate this
+    # endpoint. However in order not to break others who might be calling into
+    # this we return our full set of platform key to user friendly platform
+    # name mappings.
+    JSON.pretty_generate({
+      "aix"       => "AIX",
+      "el"        => "Enterprise Linux",
+      "debian"    => "Debian",
+      "freebsd"   => "FreeBSD",
+      "ios_xr"    => "Cisco IOS-XR",
+      "mac_os_x"  => "OS X",
+      "nexus"     => "Cisco NX-OS",
+      "ubuntu"    => "Ubuntu",
+      "solaris2"  => "Solaris",
+      "sles"      => "SUSE Enterprise",
+      "suse"      => "openSUSE",
+      "windows"   => "Windows"
+    })
   end
 
   #
@@ -211,20 +221,42 @@ class Omnitruck < Sinatra::Base
   #
   get '/_status' do
     content_type :json
-    status = {
-      :timestamp => Chef::ProjectCache.for_project('chef', channel, metadata_dir).timestamp
-    }
-    JSON.pretty_generate(status)
+
+    JSON.pretty_generate({
+      :timestamp => cache.last_modified_for('chef', 'stable')
+    })
   end
 
-  # ---
-  # HELPER METHODS
-  # ---
+  #########################################################################
+  # Helper Methods
+  #########################################################################
 
+  #
+  # Returns the instance of Chef::Cache that app is using
+  #
+  def cache
+    @cache ||= Chef::Cache.new(metadata_dir)
+  end
+
+  #
+  # Returns if the given project is known by the app.
+  #
+  # @parameter [String] project
+  #   Name of the project.
+  #
+  # @return [Boolean]
+  #   true if the project is known, false otherwise.
+  #
   def project_allowed(project)
-    Chef::Project::KNOWN_PROJECTS.include? project.name
+    Chef::Cache::KNOWN_PROJECTS.include? project
   end
 
+  #
+  # Returns the metadata directory being used.
+  #
+  # @return [String]
+  #   File path to the metadata directory.
+  #
   def metadata_dir
     if settings.respond_to?(:metadata_dir)
       settings.metadata_dir
@@ -233,34 +265,47 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  #
+  # Returns the name of the channel current request is pointing to.
+  #
+  # @return [String]
+  #   Name of the channel.
+  #
   def channel
     if params['channel']
-      channel_for(params['channel'].gsub('/',''))
+      params['channel'].gsub('/','')
     else
       if params['prerelease'] == 'true' || params['nightlies'] == 'true'
-        channel_for('current')
+        'current'
       else
-        channel_for('stable')
+        'stable'
       end
     end
   end
 
-  def channel_for(channel_name)
-    unless Chef::Channel::KNOWN_CHANNELS.include?(channel_name) && settings.channels.include?(channel_name)
-      raise InvalidChannelName, "Unknown channel '#{channel_name}'"
-    end
-    Chef::Channel.new(
-        channel_name, settings.channels[channel_name]['aws_metadata_bucket'],
-        settings.channels[channel_name]['aws_packages_bucket']
-      )
-  end
-
+  #
+  # Returns the name of the project current request is pointing to.
+  #
+  # @return [String]
+  #   Name of the project.
+  #
   def project
-    project_name = params['project'].gsub('_', '-')
-    Chef::ProjectCache.for_project(project_name, channel, metadata_dir)
+    params['project'].gsub('_', '-')
   end
 
-  def get_package_info(project, build_hash)
+  #
+  # Returns the information for a single package in the form of a Hash.
+  #
+  # @example {
+  #   url:      "",
+  #   sha1:     "",
+  #   sha256:   "",
+  #   version:  ""
+  # }
+  #
+  # @return [Hash]
+  #
+  def get_package_info
     # Windows artifacts require special handling
     # 1) If no architecture is provided we default to i386
     # 2) Internally we always use i386 to represent 32-bit artifacts, not i686
@@ -271,43 +316,78 @@ class Omnitruck < Sinatra::Base
         end
 
     Chef::VersionResolver.new(
-      params['v'], build_hash, project.project.channel.name
+      params['v'], cache.manifest_for(project, channel), channel
     ).package_info(params['p'], params['pv'], m)
   end
 
-  def get_package_list(project, build_hash)
-    Chef::VersionResolver.new(params['v'], build_hash, project.project.channel.name).package_list
+  #
+  # Returns information about all available packages for a version.
+  # version is either provided or calculated from the supported parameters.
+  #
+  # @example
+  # {
+  #   "ubuntu": {
+  #     "12.04": {
+  #       "i686": {
+  #         "url": "...",
+  #         ...
+  #       },
+  #       "x86_64": {
+  #         "url": "...",
+  #         ...
+  #       }
+  #     },
+  #     "10.04": {
+  #       ...
+  #     }
+  #   },
+  #   "windows": {
+  #     ...
+  #   }
+  #   ...
+  # }
+  #
+  # @return [Hash]
+  #
+  def get_package_list
+    Chef::VersionResolver.new(params['v'], cache.manifest_for(project, channel), project).package_list
   end
 
-  def decorate_url!(package_info)
-    if package_info.keys.include? 'relpath'
-      package_info["url"] = convert_relpath_to_url(package_info["relpath"])
-    else
-      package_info.each do |key, value|
-        decorate_url!(value)
-      end
+  #
+  # Parses given data into plain text.
+  #
+  # @parameter [Hash] data
+  #
+  # @return [String]
+  #   Each key and value is separated by `\t` and each pair is separated
+  #     by `\n`.
+  #
+  def parse_plain_text(data)
+    output = [ ]
+
+    data.each do |key, value|
+      output << "#{key}\t#{value}"
     end
+
+    output.join("\n")
   end
 
-  def convert_relpath_to_url(relpath)
-    # Ensure all pluses in package name are replaced by the URL-encoded version
-    # This works around a bug in S3:
-    # https://forums.aws.amazon.com/message.jspa?messageID=207700
-    relpath.gsub!(/\+/, "%2B")
-    base = "#{request.scheme}://#{channel.aws_packages_bucket}.s3.amazonaws.com"
-    base + relpath
-  end
-
-  # parses package_info hash into plaintext string
-  def parse_plain_text(package_info)
-    full_url = convert_relpath_to_url(package_info["relpath"])
-    "url\t#{full_url}\nmd5\t#{package_info['md5']}\nsha256\t#{package_info['sha256']}\nversion\t#{package_info['version']}"
-  end
-
+  #
+  # Returns the install.sh script to be returned
+  #
+  # @return [String]
+  #   Contents of the install.sh script
+  #
   def prepare_install_sh
     Mixlib::Install.install_sh(base_url: url(settings.virtual_path))
   end
 
+  #
+  # Returns the install.ps1 script to be returned
+  #
+  # @return [String]
+  #   Contents of the install.ps1 script
+  #
   def prepare_install_ps1
     Mixlib::Install.install_ps1(base_url: url(settings.virtual_path))
   end

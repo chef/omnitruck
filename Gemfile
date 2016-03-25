@@ -5,13 +5,11 @@ source 'https://rubygems.org'
 # once 1.4.5 is released, this should stop
 gem 'sinatra', :git => 'https://github.com/sinatra/sinatra.git', :branch => 'master'
 gem 'sinatra-contrib'
-gem 'uber-s3'
 gem 'unicorn'
 gem 'json'
 gem 'colorize'
 gem 'yajl-ruby'
 gem "rest-client"
-gem 'nokogiri'
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
 gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :branch => 'master'

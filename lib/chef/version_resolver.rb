@@ -10,7 +10,7 @@ class Chef
     # package(s).
     # {
     #   url:      "",
-    #   md5:      "",
+    #   sha1:     "",
     #   sha256:   "",
     #   version:  ""
     # }

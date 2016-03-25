@@ -1,0 +1,566 @@
+{
+  "aix": {
+    "6.1": {
+      "powerpc": {
+        "1.1.5": {
+          "sha1": "67308735c66c4b49a5a58038ac940148ade95894",
+          "sha256": "8218db038645bd9716dec078d5917b7dbce971d3fc647cbbf153fc93650f9b77",
+          "url": "https://packages.chef.io/stable/aix/6.1/omnibus-toolchain-1.1.5-1.powerpc.bff"
+        },
+        "1.1.3": {
+          "sha1": "0acd26c1d7022029e5abacdbf4d53bba6c77ccb1",
+          "sha256": "292e3dfbc90921e0458942411bd510abfd187f7c9d85fe5c4a0daa0338886eff",
+          "url": "https://packages.chef.io/stable/aix/6.1/omnibus-toolchain-1.1.3-1.powerpc.bff"
+        },
+        "1.1.2": {
+          "sha1": "413eddd556fa22de909723c498daf280597ac4d6",
+          "sha256": "0fd21265dcb068cd4e9adca9495189b2ec8b50dd1428a111900af0ca77d84488",
+          "url": "https://packages.chef.io/stable/aix/6.1/omnibus-toolchain-1.1.2-1.powerpc.bff"
+        }
+      }
+    },
+    "7.1": {
+      "powerpc": {
+        "1.1.5": {
+          "sha1": "67308735c66c4b49a5a58038ac940148ade95894",
+          "sha256": "8218db038645bd9716dec078d5917b7dbce971d3fc647cbbf153fc93650f9b77",
+          "url": "https://packages.chef.io/stable/aix/7.1/omnibus-toolchain-1.1.5-1.powerpc.bff"
+        },
+        "1.1.3": {
+          "sha1": "0acd26c1d7022029e5abacdbf4d53bba6c77ccb1",
+          "sha256": "292e3dfbc90921e0458942411bd510abfd187f7c9d85fe5c4a0daa0338886eff",
+          "url": "https://packages.chef.io/stable/aix/7.1/omnibus-toolchain-1.1.3-1.powerpc.bff"
+        },
+        "1.1.2": {
+          "sha1": "413eddd556fa22de909723c498daf280597ac4d6",
+          "sha256": "0fd21265dcb068cd4e9adca9495189b2ec8b50dd1428a111900af0ca77d84488",
+          "url": "https://packages.chef.io/stable/aix/7.1/omnibus-toolchain-1.1.2-1.powerpc.bff"
+        }
+      }
+    }
+  },
+  "debian": {
+    "6": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "242709ed36560a973a426809e0d604dff52ff313",
+          "sha256": "99a38c6281304f2ac9dc95c324e5e645894aaaea331c815e5613c59a4df61bd5",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "350330a4b4e68f721ff361880a0a68b70b4538f6",
+          "sha256": "1e4b4efe47eca64267e6d99ea5ea38c73709c84be42cf3b32e0af399b80b5e64",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.3-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "f4cbbc4630dfc823b37f409c9cae94eeb52e1efd",
+          "sha256": "2f8ad120ce7df09a7e93c68d50270f874db7ae67ba4936ca8328ad2270e148d4",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.2-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "2f0297b877822a1e167a4bd8d3850cb7d8c28081",
+          "sha256": "87f22d1b20ceef154c2e9dfc0e06569cc7922a722c5e9012c8843e6f61b0f438",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "c11269b4fad243e16eb186d98375986630812776",
+          "sha256": "45b7d8a61a2cf3cc15a53624600fa4ada777622af5d3c0972d238646e897ee43",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.3-1_i386.deb"
+        },
+        "1.1.2": {
+          "sha1": "2aa0978cbbfe5bd5e39128fbe31596be7553e329",
+          "sha256": "4e20db6c4b44c8c14058b57a39efc58dc8f3629fe2d6d53410080ae31343c813",
+          "url": "https://packages.chef.io/stable/debian/6/omnibus-toolchain_1.1.2-1_i386.deb"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "242709ed36560a973a426809e0d604dff52ff313",
+          "sha256": "99a38c6281304f2ac9dc95c324e5e645894aaaea331c815e5613c59a4df61bd5",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "350330a4b4e68f721ff361880a0a68b70b4538f6",
+          "sha256": "1e4b4efe47eca64267e6d99ea5ea38c73709c84be42cf3b32e0af399b80b5e64",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.3-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "f4cbbc4630dfc823b37f409c9cae94eeb52e1efd",
+          "sha256": "2f8ad120ce7df09a7e93c68d50270f874db7ae67ba4936ca8328ad2270e148d4",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.2-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "2f0297b877822a1e167a4bd8d3850cb7d8c28081",
+          "sha256": "87f22d1b20ceef154c2e9dfc0e06569cc7922a722c5e9012c8843e6f61b0f438",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "c11269b4fad243e16eb186d98375986630812776",
+          "sha256": "45b7d8a61a2cf3cc15a53624600fa4ada777622af5d3c0972d238646e897ee43",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.3-1_i386.deb"
+        },
+        "1.1.2": {
+          "sha1": "2aa0978cbbfe5bd5e39128fbe31596be7553e329",
+          "sha256": "4e20db6c4b44c8c14058b57a39efc58dc8f3629fe2d6d53410080ae31343c813",
+          "url": "https://packages.chef.io/stable/debian/7/omnibus-toolchain_1.1.2-1_i386.deb"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "242709ed36560a973a426809e0d604dff52ff313",
+          "sha256": "99a38c6281304f2ac9dc95c324e5e645894aaaea331c815e5613c59a4df61bd5",
+          "url": "https://packages.chef.io/stable/debian/8/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "350330a4b4e68f721ff361880a0a68b70b4538f6",
+          "sha256": "1e4b4efe47eca64267e6d99ea5ea38c73709c84be42cf3b32e0af399b80b5e64",
+          "url": "https://packages.chef.io/stable/debian/8/omnibus-toolchain_1.1.3-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "2f0297b877822a1e167a4bd8d3850cb7d8c28081",
+          "sha256": "87f22d1b20ceef154c2e9dfc0e06569cc7922a722c5e9012c8843e6f61b0f438",
+          "url": "https://packages.chef.io/stable/debian/8/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "c11269b4fad243e16eb186d98375986630812776",
+          "sha256": "45b7d8a61a2cf3cc15a53624600fa4ada777622af5d3c0972d238646e897ee43",
+          "url": "https://packages.chef.io/stable/debian/8/omnibus-toolchain_1.1.3-1_i386.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "5": {
+      "i386": {
+        "1.1.5": {
+          "sha1": "997553fe1a466bd28105749247305dd049e899aa",
+          "sha256": "a33cc99be96431fa1f4217047fe85bc767c08ffcc4a9cf3a3de4eac7da386267",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.5-1.el5.i386.rpm"
+        },
+        "1.1.3": {
+          "sha1": "c0112bb569f10e2f8a7d0e9573fb2ef1d14284ce",
+          "sha256": "df41c8c6be68d77e64508c4640ecd1412fcd8786af399587d79536498d11c2b2",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.3-1.el5.i386.rpm"
+        },
+        "1.1.2": {
+          "sha1": "25cbfadb306a23b32d3c9e0774c5564102ee57da",
+          "sha256": "eefcffb62005f5ef6b12bc0c5dfc516212e9b9fc5181dea0024fe4e6d6c15a64",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.2-1.el5.i386.rpm"
+        }
+      },
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "e407c56f9d6e2271e6301edafead2db552abd21c",
+          "sha256": "5f04074c40b884576db25f69a42d0f276bd5071c1a19f585db6dece86bb3b08d",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.5-1.el5.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "a1968753876cb54199e49ad4d86949110e2d71a4",
+          "sha256": "a7386f8a017e628e58344c80e151b834eb7cae602f36ae2bb7bba76f0e9111da",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.3-1.el5.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "f952a5532dab81a4afb384323ba0c4a75f2d2b01",
+          "sha256": "06ace6c46ac5e4f0ccbae6ba980af2dfc307c938fe0986e9d2ef37500f811cb1",
+          "url": "https://packages.chef.io/stable/el/5/omnibus-toolchain-1.1.2-1.el5.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "i386": {
+        "1.1.5": {
+          "sha1": "c1b31a1bb13bf4395885bef45b5af6598cc6046e",
+          "sha256": "746f8f6385bdda0eb4954da38500a13ecc1d9bc580869e6a52eea0e66ab24642",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.5-1.el6.i386.rpm"
+        },
+        "1.1.3": {
+          "sha1": "4f695e78749bb96256d86213af995257b1cc05ca",
+          "sha256": "4b774b6be711baa6e45ff960c23d2c3cc4082334ed8b3e323441fcfdbdfede77",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.3-1.el6.i386.rpm"
+        },
+        "1.1.2": {
+          "sha1": "72c2e5b2a3f2c551400ef959b8b03803f6c81661",
+          "sha256": "b41430bf4bf89adf5c754a6731120842c97c8b064740bc338942b7a3074223e8",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.2-1.el6.i386.rpm"
+        }
+      },
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "7424bf1eca3ce9b4d15bbd550121a514c72e49c1",
+          "sha256": "a2f752f971fa2631199b57869f359a89065373669fe4b7420341b24044c28337",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.5-1.el6.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "5cc9d8c60f5c63f02047ceea25836075d41ace70",
+          "sha256": "9276ce2eae152747a7ef8c3b8ab75d08ecb7d7921e47a1695f149b8990e51b3b",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.3-1.el6.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "a4a3e1c5410eecd73eafd0e5c32f20dd5edcfdb6",
+          "sha256": "fdfcf22ed1c55162775b0252747fabbcddbdc99b5b337e0bd978c3e673a82504",
+          "url": "https://packages.chef.io/stable/el/6/omnibus-toolchain-1.1.2-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "73d3d1ecd868017dc6ccbc75220eaae32e3cf103",
+          "sha256": "daaad3aa02c844d864f1f7875c5901fcf1acbfedfd3d9b12664e85bc4881f7b1",
+          "url": "https://packages.chef.io/stable/el/7/omnibus-toolchain-1.1.5-1.el7.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "c6ea1661b4713de5cae6e635d253aa33e4d17340",
+          "sha256": "eeff90fe655eaaa0047078b8372e4841e942cbbdd7a07fb9c038a0ea467cf987",
+          "url": "https://packages.chef.io/stable/el/7/omnibus-toolchain-1.1.3-1.el7.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "d5fe02b4d0b63b1ea2d2ff73e82f5047ba3c086f",
+          "sha256": "943d1bc6643a4047836ea59b85420f04016b0baf712f09d2058c4047f464d7b7",
+          "url": "https://packages.chef.io/stable/el/7/omnibus-toolchain-1.1.2-1.el7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "freebsd": {
+    "10": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "2486aab490ba16220382065a0a6bdeb93e55d8fe",
+          "sha256": "5ce84f3d262e96644ba9c4dd7bf9505111d00a9ec287dd092f9c8a71175e29f9",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.5_1.amd64.sh"
+        },
+        "1.1.3": {
+          "sha1": "3ec28b4bd325528cdf2010eceed7c9eb43d62b5f",
+          "sha256": "66418c5b71646354a59001dbe96afcd96c61f23b5ca06388f4d5f0a27e013b41",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.3_1.amd64.sh"
+        },
+        "1.1.2": {
+          "sha1": "671d661201f74a65f1eb75849e34d8e2f5c6dc9c",
+          "sha256": "c9dd6ce60acc04904882a50b3b4d3def952ce0187181eaa4a2c343d07be7e631",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.2_1.amd64.sh"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "1711dcd67f78424a8d2dd596a0669ff382bb97d9",
+          "sha256": "d0cf4301e0b963fad75dd148de0e90dd09402878481eb52b1bf8841c959289d9",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.5_1.i386.sh"
+        },
+        "1.1.3": {
+          "sha1": "5a46a24e86b7bde9f4b1b88ef1805c6e00c0f4c3",
+          "sha256": "02ede2193f84788930fd391156613bc7604176b43f27959f75383b5418149940",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.3_1.i386.sh"
+        },
+        "1.1.2": {
+          "sha1": "d8b9a8bd639ffeb92bb0e2dea97611312c0b3598",
+          "sha256": "ff937b899dd37817b5423431b600a4c01fc2bbd2c4a1b9ec713feed500bd464d",
+          "url": "https://packages.chef.io/stable/freebsd/10/omnibus-toolchain-1.1.2_1.i386.sh"
+        }
+      }
+    },
+    "9": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "2da1c3d517ea61fdc50538ab56e2fbc7dd7e5807",
+          "sha256": "cfcae7297652f03bf1a347ca2166490c26be21a83601b6dba3f77626d4559469",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.5_1.amd64.sh"
+        },
+        "1.1.3": {
+          "sha1": "b5852b322c912c5166e1c55744eb48abe9e2bf4e",
+          "sha256": "5bc91bb34508e5a9654ea5ca1463de491d1428d44cb2b3c888352aa53c136140",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.3_1.amd64.sh"
+        },
+        "1.1.2": {
+          "sha1": "5fbedf13560c81fd9b91f849d5da6ab8bbfc5b7d",
+          "sha256": "fa82e1a5900cd5df29c785d83ce74188ce0348e17842e9d73b2986e8c6fd8cd9",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.2_1.amd64.sh"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "006d938918ce4ea2a69d39507d017323f7bc4b2b",
+          "sha256": "4ff000c939143dc4186179a179d7a3a2e7548f8068090b98862a01bd2e01bfb0",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.5_1.i386.sh"
+        },
+        "1.1.3": {
+          "sha1": "436363b50701034576177344569a9c854a697c9b",
+          "sha256": "2fce60f4f35a70e18769bfc328fbed4166a8c0e1d6581c58c9b6d39f0701421f",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.3_1.i386.sh"
+        },
+        "1.1.2": {
+          "sha1": "ae8af183f87c850c1a5475727e8fd5809afe07b2",
+          "sha256": "d9ad6d1bba69e868ea5a4a1e9cbe5b35d94326a5336be7d4dc0e73421ddccc4c",
+          "url": "https://packages.chef.io/stable/freebsd/9/omnibus-toolchain-1.1.2_1.i386.sh"
+        }
+      }
+    }
+  },
+  "ios_xr": {
+    "6": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "c792421ede380b193d029723fd1d7caf29557068",
+          "sha256": "a7fd811d2e6282f06ccc903deff4a692365758c133beb348fd59600fea178815",
+          "url": "https://packages.chef.io/stable/ios_xr/6/omnibus-toolchain-1.1.5-1.ios_xr6.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "6c72d33ac5b38d36862f0adb490dbe8f47c9e45c",
+          "sha256": "bfb2102b186ecb172e5c1811efe819ab0f8665ec29681d979925c738c998e3ba",
+          "url": "https://packages.chef.io/stable/ios_xr/6/omnibus-toolchain-1.1.3-1.ios_xr6.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "10.10": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "ea2623ca8e0d311ea27d45580373e69fcf7a7825",
+          "sha256": "670a2f05382ba82fcce4d79a4a4ccbdc5a15d0fd5e1534af70c3f8486dc2e975",
+          "url": "https://packages.chef.io/stable/mac_os_x/10.10/omnibus-toolchain-1.1.5-1.dmg"
+        }
+      }
+    },
+    "10.11": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "ea2623ca8e0d311ea27d45580373e69fcf7a7825",
+          "sha256": "670a2f05382ba82fcce4d79a4a4ccbdc5a15d0fd5e1534af70c3f8486dc2e975",
+          "url": "https://packages.chef.io/stable/mac_os_x/10.11/omnibus-toolchain-1.1.5-1.dmg"
+        }
+      }
+    },
+    "10.8": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "ea2623ca8e0d311ea27d45580373e69fcf7a7825",
+          "sha256": "670a2f05382ba82fcce4d79a4a4ccbdc5a15d0fd5e1534af70c3f8486dc2e975",
+          "url": "https://packages.chef.io/stable/mac_os_x/10.8/omnibus-toolchain-1.1.5-1.dmg"
+        }
+      }
+    },
+    "10.9": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "ea2623ca8e0d311ea27d45580373e69fcf7a7825",
+          "sha256": "670a2f05382ba82fcce4d79a4a4ccbdc5a15d0fd5e1534af70c3f8486dc2e975",
+          "url": "https://packages.chef.io/stable/mac_os_x/10.9/omnibus-toolchain-1.1.5-1.dmg"
+        }
+      }
+    }
+  },
+  "nexus": {
+    "7": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "0ab282ed5c0d06b5903147e76fad099ac83d7160",
+          "sha256": "d85cf3d74de06934497c00c12fc36b47d5397c70ebf06d34ec0efea8d9561673",
+          "url": "https://packages.chef.io/stable/nexus/7/omnibus-toolchain-1.1.5-1.nexus7.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "c104135d844e6ea957268f9005f9c54c26f59daf",
+          "sha256": "2de8b7b43c3395e412ec8c0d7b6f41b764739b802839fddf8a8412b63517157c",
+          "url": "https://packages.chef.io/stable/nexus/7/omnibus-toolchain-1.1.3-1.nexus7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.10": {
+      "i386": {
+        "1.1.5": {
+          "sha1": "926b59fad92b3c6c35cab2bddadee653b4f383ec",
+          "sha256": "2d454a67faea82bd4d519bcb860c0767742cd26c3caeb8b481262fbf021163bb",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.5-1.i386.solaris"
+        },
+        "1.1.3": {
+          "sha1": "624d4d955b5d240efcf2c54e226e544a450efdac",
+          "sha256": "4672a4d8653028dbeb0c379f483f5c62334b6443ae2668b9dfafb35e04885b4c",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.3-1.i386.solaris"
+        },
+        "1.1.2": {
+          "sha1": "2f6fc7262c3e9eda64591800b94d200e5cd1b986",
+          "sha256": "13a3e42475e7cd2c4dc949969fcffd57608a0af29f7c5d2b7bdd1a01c3fae1cc",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.2-1.i386.solaris"
+        }
+      },
+      "sparc": {
+        "1.1.5": {
+          "sha1": "ff3db4d72d8d05375a904a4211b9e2bcb04ef08d",
+          "sha256": "6a50d3f42eb7e20ee38c7edf32ff8df59f0ba39bd9e01a6c2590e7f01184a3fc",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.5-1.sparc.solaris"
+        },
+        "1.1.3": {
+          "sha1": "dd33805ae33f0cf51b9dfaa54f80b4f94ab01e5f",
+          "sha256": "dafee32c0031740f69dc769085b8bd07df5614319804ce34cbc0b70d56413168",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.3-1.sparc.solaris"
+        },
+        "1.1.2": {
+          "sha1": "5dff345d9a7033a5c1960c71704fe0e9aaa77179",
+          "sha256": "bef7d0934c093b6b33a571ba0c94dcf05d01f55708765e9d8fc0a2a65ddd8ea5",
+          "url": "https://packages.chef.io/stable/solaris2/5.10/omnibus-toolchain-1.1.2-1.sparc.solaris"
+        }
+      }
+    },
+    "5.11": {
+      "i386": {
+        "1.1.5": {
+          "sha1": "926b59fad92b3c6c35cab2bddadee653b4f383ec",
+          "sha256": "2d454a67faea82bd4d519bcb860c0767742cd26c3caeb8b481262fbf021163bb",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.5-1.i386.solaris"
+        },
+        "1.1.3": {
+          "sha1": "624d4d955b5d240efcf2c54e226e544a450efdac",
+          "sha256": "4672a4d8653028dbeb0c379f483f5c62334b6443ae2668b9dfafb35e04885b4c",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.3-1.i386.solaris"
+        },
+        "1.1.2": {
+          "sha1": "2f6fc7262c3e9eda64591800b94d200e5cd1b986",
+          "sha256": "13a3e42475e7cd2c4dc949969fcffd57608a0af29f7c5d2b7bdd1a01c3fae1cc",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.2-1.i386.solaris"
+        }
+      },
+      "sparc": {
+        "1.1.5": {
+          "sha1": "ff3db4d72d8d05375a904a4211b9e2bcb04ef08d",
+          "sha256": "6a50d3f42eb7e20ee38c7edf32ff8df59f0ba39bd9e01a6c2590e7f01184a3fc",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.5-1.sparc.solaris"
+        },
+        "1.1.3": {
+          "sha1": "dd33805ae33f0cf51b9dfaa54f80b4f94ab01e5f",
+          "sha256": "dafee32c0031740f69dc769085b8bd07df5614319804ce34cbc0b70d56413168",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.3-1.sparc.solaris"
+        },
+        "1.1.2": {
+          "sha1": "5dff345d9a7033a5c1960c71704fe0e9aaa77179",
+          "sha256": "bef7d0934c093b6b33a571ba0c94dcf05d01f55708765e9d8fc0a2a65ddd8ea5",
+          "url": "https://packages.chef.io/stable/solaris2/5.11/omnibus-toolchain-1.1.2-1.sparc.solaris"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "5fca4de6aa79c658ad6b072278b37022b3eb3c45",
+          "sha256": "f0c0d8e9ffa5d9eef6b6d63df31da71fe2a2fbb470d8011ab27a00a6e2fb9ba0",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "2a21374ad1d542d4cfcb84b44d93d6f2a1412eb8",
+          "sha256": "c84cf100c68a9321d24669a862bb766273010cb8bc86279d27e9390d3bf61e99",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.3-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "317bfbe02dd2ba795f963e171be2e0585bb756cb",
+          "sha256": "1b9b87bbd02586bcf5bcded85d13e4aa9ee4b94602f8f0a3e621eeb24375497f",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.2-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "9e71b5fa1f84320681ae212776f77c1c32f47b1c",
+          "sha256": "528894481f48255b23d4845b6123ed1f6a3a8ea063eaacc138b795484a93b513",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "e250168f822dee830c938639fb18720c90f1c18a",
+          "sha256": "022be294083c3e41a0c622e2b3d36af7f07c0c9a4c6066ebd7bee9a2c3afc15d",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.3-1_i386.deb"
+        },
+        "1.1.2": {
+          "sha1": "4db891b6ed3341a7a364e47e63261ab939142a0c",
+          "sha256": "d426fdcc7f8696ee76f68131508486df9ed7cdb6b32d918a58f4b9d27f2d134a",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/omnibus-toolchain_1.1.2-1_i386.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "5fca4de6aa79c658ad6b072278b37022b3eb3c45",
+          "sha256": "f0c0d8e9ffa5d9eef6b6d63df31da71fe2a2fbb470d8011ab27a00a6e2fb9ba0",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "2a21374ad1d542d4cfcb84b44d93d6f2a1412eb8",
+          "sha256": "c84cf100c68a9321d24669a862bb766273010cb8bc86279d27e9390d3bf61e99",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.3-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "317bfbe02dd2ba795f963e171be2e0585bb756cb",
+          "sha256": "1b9b87bbd02586bcf5bcded85d13e4aa9ee4b94602f8f0a3e621eeb24375497f",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.2-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "9e71b5fa1f84320681ae212776f77c1c32f47b1c",
+          "sha256": "528894481f48255b23d4845b6123ed1f6a3a8ea063eaacc138b795484a93b513",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "e250168f822dee830c938639fb18720c90f1c18a",
+          "sha256": "022be294083c3e41a0c622e2b3d36af7f07c0c9a4c6066ebd7bee9a2c3afc15d",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.3-1_i386.deb"
+        },
+        "1.1.2": {
+          "sha1": "4db891b6ed3341a7a364e47e63261ab939142a0c",
+          "sha256": "d426fdcc7f8696ee76f68131508486df9ed7cdb6b32d918a58f4b9d27f2d134a",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/omnibus-toolchain_1.1.2-1_i386.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.1.5": {
+          "sha1": "5fca4de6aa79c658ad6b072278b37022b3eb3c45",
+          "sha256": "f0c0d8e9ffa5d9eef6b6d63df31da71fe2a2fbb470d8011ab27a00a6e2fb9ba0",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.5-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "2a21374ad1d542d4cfcb84b44d93d6f2a1412eb8",
+          "sha256": "c84cf100c68a9321d24669a862bb766273010cb8bc86279d27e9390d3bf61e99",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.3-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "317bfbe02dd2ba795f963e171be2e0585bb756cb",
+          "sha256": "1b9b87bbd02586bcf5bcded85d13e4aa9ee4b94602f8f0a3e621eeb24375497f",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.2-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.1.5": {
+          "sha1": "9e71b5fa1f84320681ae212776f77c1c32f47b1c",
+          "sha256": "528894481f48255b23d4845b6123ed1f6a3a8ea063eaacc138b795484a93b513",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.5-1_i386.deb"
+        },
+        "1.1.3": {
+          "sha1": "e250168f822dee830c938639fb18720c90f1c18a",
+          "sha256": "022be294083c3e41a0c622e2b3d36af7f07c0c9a4c6066ebd7bee9a2c3afc15d",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.3-1_i386.deb"
+        },
+        "1.1.2": {
+          "sha1": "4db891b6ed3341a7a364e47e63261ab939142a0c",
+          "sha256": "d426fdcc7f8696ee76f68131508486df9ed7cdb6b32d918a58f4b9d27f2d134a",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/omnibus-toolchain_1.1.2-1_i386.deb"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2016-03-23 14:27:40 -0700"
+  }
+}
