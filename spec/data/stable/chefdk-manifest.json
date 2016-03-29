@@ -1,7 +1,7 @@
 {
   "suse": {
     "12.1": {
-      "i686": {
+      "i386": {
         "0.3.0-1": {
           "url": "https://packages.chef.io/stable/el/6/x86_64/chefdk-0.3.0-1.x86_64.rpm",
           "sha1": "62fc6db2e7c3467f26a090755af55c97",
@@ -665,7 +665,7 @@
   },
   "windows": {
     "2008r2": {
-      "i686": {
+      "i386": {
         "0.2.0": {
           "url": "https://packages.chef.io/stable/windows/2008r2/x86_64/chefdk-windows-0.2.0-2.windows.msi",
           "sha1": "5254205166263c930e924bb0464dfcec",

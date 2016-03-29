@@ -315,6 +315,10 @@ class Omnitruck < Sinatra::Base
           params['m']
         end
 
+    # For some platforms architecture is reported as i686. Internally however
+    # we only use i386.
+    m = "i386" if m == "i686"
+
     Chef::VersionResolver.new(
       params['v'], cache.manifest_for(project, channel), channel
     ).package_info(params['p'], params['pv'], m)

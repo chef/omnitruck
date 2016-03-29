@@ -1,7 +1,7 @@
 {
   "suse": {
     "12.1": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/el/6/i686/chef-10.12.0-1.el6.i686.rpm",
           "sha1": "d37f42581f2cf12f7a6a974d51408d1f",
@@ -569,7 +569,7 @@
   },
   "ubuntu": {
     "12.04": {
-      "i686": {
+      "i386": {
         "-1": {
           "url": "https://packages.chef.io/stable/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
           "sha1": "b7460470e7248072d2eab0eeedfe6f64",
@@ -1270,7 +1270,7 @@
       }
     },
     "10.10": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/chef_10.12.0-1.ubuntu.10.04_i386.deb",
           "sha1": "baa52f2ead3b350e9d5cfd248dbcc784",
@@ -1896,7 +1896,7 @@
       }
     },
     "10.04": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/chef_10.12.0-1.ubuntu.10.04_i386.deb",
           "sha1": "baa52f2ead3b350e9d5cfd248dbcc784",
@@ -2592,7 +2592,7 @@
       }
     },
     "11.10": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
           "sha1": "b7460470e7248072d2eab0eeedfe6f64",
@@ -3108,7 +3108,7 @@
       }
     },
     "12.10": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
           "sha1": "b7460470e7248072d2eab0eeedfe6f64",
@@ -3734,7 +3734,7 @@
       }
     },
     "11.04": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/ubuntu/11.04/i686/chef_10.12.0-1.ubuntu.11.04_i386.deb",
           "sha1": "b7460470e7248072d2eab0eeedfe6f64",
@@ -4452,7 +4452,7 @@
           "sha256": "44448a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e"
         }
       },
-      "i686": {
+      "i386": {
         "10.28.0-1": {
           "sha256": "1926467f06621352cf8e83b9f6ba67029de2e383a4a7acd61e09eb88b81cdb56",
           "sha1": "f64700c1c142ebe3615c72a65a61ad20",
@@ -4808,7 +4808,7 @@
           "sha256": "8e0a8a2477c11615f86ffe686a68fa6636112ba82ebe6bb22daa5dd416f3c13e"
         }
       },
-      "i686": {
+      "i386": {
         "10.30.2-1": {
           "sha256": "6c4e1510625c4d694a4f42000c5ba2fbc18d1155bfda38de6b5bcbcee6c554a4",
           "url": "https://packages.chef.io/stable/ubuntu/13.04/i686/chef_10.30.2-1.ubuntu.13.04_i386.deb",
@@ -4977,7 +4977,7 @@
       }
     },
     "14.04": {
-      "i686": {
+      "i386": {
         "10.32.2-1": {
           "sha256": "20c0e751dbfb8d9e4a338fb6b4c6cf379d708167dbc553704c70f7a0bfc13b89",
           "sha1": "8fcfc35738ed027fa1ff8eb9e4a2adc6",
@@ -5315,7 +5315,7 @@
   },
   "debian": {
     "6": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/debian/6/i686/chef_10.12.0-1.debian.6.0.5_i386.deb",
           "sha1": "7294070371a89c37a563aa924f60c981",
@@ -6228,7 +6228,7 @@
           "sha256": "52fe842beeb95fd86405437a39368782bb32f3e3ab533ee14ad025384bae3ad4"
         }
       },
-      "i686": {
+      "i386": {
         "10.28.0-1": {
           "sha256": "29607135ef1b3110b479d055828d38b67b28f40227a2beb9af4d50cc0654a435",
           "sha1": "f06a185b650b3d7552c57cdb56447fc6",
@@ -6449,7 +6449,7 @@
   },
   "el": {
     "5": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/el/5/i686/chef-10.12.0-1.el5.i686.rpm",
           "sha1": "ea133dde59dc89ec654ac53f53555937",
@@ -7145,7 +7145,7 @@
       }
     },
     "6": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/el/6/i686/chef-10.12.0-1.el6.i686.rpm",
           "sha1": "d37f42581f2cf12f7a6a974d51408d1f",
@@ -8963,7 +8963,7 @@
   },
   "sles": {
     "11.2": {
-      "i686": {
+      "i386": {
         "10.12.0-1": {
           "url": "https://packages.chef.io/stable/el/5/i686/chef-10.12.0-1.el5.i686.rpm",
           "sha1": "ea133dde59dc89ec654ac53f53555937",
