@@ -1,7 +1,7 @@
 {
   "debian": {
     "6": {
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/debian/6/i686/angrychef_12.5.0+20150910004014-1_i386.deb",
           "sha1": "d32ce85aee25f2b9128c6d035dfee654",
@@ -24,7 +24,7 @@
           "sha256": "77d5fec88db415c0f22fb3226827f56e372a2e136792280ab17221f7c2194902"
         }
       },
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/debian/7/i686/angrychef_12.5.0+20150910004014-1_i386.deb",
           "sha1": "d32ce85aee25f2b9128c6d035dfee654",
@@ -136,7 +136,7 @@
       }
     },
     "5": {
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/el/5/i686/angrychef-12.5.0+20150910004014-1.el5.i386.rpm",
           "sha1": "f90f983ca23c0de05f60a7199e47044d",
@@ -159,7 +159,7 @@
           "sha256": "d2a439e4e655508cdf130ebfae562042fa720710b27c98893c0ed8a5542a8a68"
         }
       },
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/el/6/i686/angrychef-12.5.0+20150910004014-1.el6.i386.rpm",
           "sha1": "b603ff40b71b88f146dbdcb8995628c2",
@@ -170,7 +170,7 @@
   },
   "ubuntu": {
     "14.04": {
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/ubuntu/14.04/i686/angrychef_12.5.0+20150910004014-1_i386.deb",
           "sha1": "ff8ac0f2dadf5cdccb4a09c2d2d832b8",
@@ -186,7 +186,7 @@
       }
     },
     "10.04": {
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/ubuntu/10.04/i686/angrychef_12.5.0+20150910004014-1_i386.deb",
           "sha1": "ff8ac0f2dadf5cdccb4a09c2d2d832b8",
@@ -209,7 +209,7 @@
           "sha256": "4b5be10837b9a83e587c626388078f0ed51c3f3da2bcd348cf6d70cf5738a94c"
         }
       },
-      "i686": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/ubuntu/12.04/i686/angrychef_12.5.0+20150910004014-1_i386.deb",
           "sha1": "ff8ac0f2dadf5cdccb4a09c2d2d832b8",
