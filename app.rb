@@ -312,12 +312,14 @@ class Omnitruck < Sinatra::Base
     m = if params["p"] == "windows" && (params["m"].nil? || params["m"].empty? || params["m"] == "i686")
           "i386"
         else
-          params['m']
+          # Map `uname -m` returned architectures into our internal representations
+          case params["m"]
+          when *%w{ x86_64 amd64 x64 }    then 'x86_64'
+          when *%w{ i386 x86 i86pc i686 } then 'i386'
+          when *%w{ sparc sun4u sun4v }   then 'sparc'
+          else params["m"]
+          end
         end
-
-    # For some platforms architecture is reported as i686. Internally however
-    # we only use i386.
-    m = "i386" if m == "i686"
 
     Chef::VersionResolver.new(
       params['v'], cache.manifest_for(project, channel), channel

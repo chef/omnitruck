@@ -456,7 +456,7 @@
           "sha256": "16d95d313b7d6e64c9d34b2773975f98f1358ba4ea60fbc0cc89c3a9fc742f94"
         }
       },
-      "amd64": {
+      "x86_64": {
         "12.0.0-1": {
           "url": "https://packages.chef.io/stable/freebsd/9/amd64/angrychef-12.0.0_1.amd64.sh",
           "sha1": "e132996d55081756165df7456940fd54",
@@ -492,7 +492,7 @@
           "sha256": "4282e38834f5e6b2d895d358a4f03f661841e682431fa5edc56c0b3c6d5b8829"
         }
       },
-      "amd64": {
+      "x86_64": {
         "12.0.0-1": {
           "url": "https://packages.chef.io/stable/freebsd/10/amd64/angrychef-12.0.0_1.amd64.sh",
           "sha1": "e28c1a50f884361b2f313d5988795024",

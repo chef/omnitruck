@@ -10195,7 +10195,7 @@
           "sha256": "99a5368d35c85e72778202c98b2a96cdc863c7b6cf1048f72bbc031c80c1cc0b"
         }
       },
-      "sun4v": {
+      "sparc": {
         "12.4.2-1": {
           "url": "https://packages.chef.io/stable/solaris2/5.11/sun4v/chef-12.4.2-1.sun4v.solaris",
           "sha1": "319d821f3089021c56959580bb9f11aa",
@@ -10207,7 +10207,7 @@
           "sha256": "e8e602bd96d03e25951cca5c35a37a5d84dadec072698bbdc9593b8a072e5edb"
         }
       },
-      "i86pc": {
+      "i386": {
         "12.4.2-1": {
           "url": "https://packages.chef.io/stable/solaris2/5.11/i86pc/chef-12.4.2-1.i86pc.solaris",
           "sha1": "46ada9d1befd8782df4b6ff4336535ae",
@@ -10885,7 +10885,7 @@
           "sha256": "99a5368d35c85e72778202c98b2a96cdc863c7b6cf1048f72bbc031c80c1cc0b"
         }
       },
-      "i86pc": {
+      "i386": {
         "12.4.2-1": {
           "url": "https://packages.chef.io/stable/solaris2/5.10/i86pc/chef-12.4.2-1.i86pc.solaris",
           "sha1": "46ada9d1befd8782df4b6ff4336535ae",
@@ -10897,7 +10897,7 @@
           "sha256": "7f3a34ae599cfdb831aa866eb326648c2b9f95d06b1573f809dc2a175a299ca3"
         }
       },
-      "sun4v": {
+      "sparc": {
         "12.4.2-1": {
           "url": "https://packages.chef.io/stable/solaris2/5.10/sun4v/chef-12.4.2-1.sun4v.solaris",
           "sha1": "319d821f3089021c56959580bb9f11aa",
@@ -11797,7 +11797,7 @@
           "sha256": "7ba69664663c92afafde723b131332400603118d0e9e1f81188661b339233f89"
         }
       },
-      "amd64": {
+      "x86_64": {
         "10.28.0-1": {
           "sha256": "d48e89e1e21c8d55765b15b2f5ad4649c035ca8dd87911a0053713aa370a07a6",
           "sha1": "3ecd5195bc1bbb98266c32e7d099c2bf",
@@ -12021,7 +12021,7 @@
       }
     },
     "10": {
-      "amd64": {
+      "x86_64": {
         "12.3.0-1": {
           "url": "https://packages.chef.io/stable/freebsd/10/amd64/chef-12.3.0_1.amd64.sh",
           "sha1": "6e9d332e6147d20c13a96bcc8772e84c",
