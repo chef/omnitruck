@@ -35,14 +35,14 @@
   },
   "solaris2": {
     "5.11": {
-      "sun4v": {
+      "sparc": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/solaris2/5.11/sun4v/angrychef-12.5.0+20150910004014-1.sun4v.solaris",
           "sha1": "aac3800fe89b8b99665197f9a877628a",
           "sha256": "12d47b0211a6f2e763ade73048ff198c5ccc535aaa4a9c14344a692e191a4941"
         }
       },
-      "i86pc": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/solaris2/5.11/i86pc/angrychef-12.5.0+20150910004014-1.i86pc.solaris",
           "sha1": "664aa4b275d8f0eaf675037bfffac01a",
@@ -51,14 +51,14 @@
       }
     },
     "5.10": {
-      "i86pc": {
+      "i386": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/solaris2/5.10/i86pc/angrychef-12.5.0+20150910004014-1.i86pc.solaris",
           "sha1": "664aa4b275d8f0eaf675037bfffac01a",
           "sha256": "57ab6678d738a2f8027a557970684f94194cbe4904f5eadabd04b6f065cbd0bb"
         }
       },
-      "sun4v": {
+      "sparc": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/solaris2/5.10/sun4v/angrychef-12.5.0+20150910004014-1.sun4v.solaris",
           "sha1": "aac3800fe89b8b99665197f9a877628a",
@@ -227,7 +227,7 @@
           "sha256": "c43c3108a1a8448fb8a04bfd68d7849b8d1bb6b92e94809d22bd379c7e67d640"
         }
       },
-      "amd64": {
+      "x86_64": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/freebsd/10/amd64/angrychef-12.5.0+20150910004014_1.amd64.sh",
           "sha1": "c1f95d1f4dc68c42478ce8254b8b36d2",
@@ -236,7 +236,7 @@
       }
     },
     "9": {
-      "amd64": {
+      "x86_64": {
         "12.5.0+20150910004014-1": {
           "url": "https://packages.chef.io/current/freebsd/9/amd64/angrychef-12.5.0+20150910004014_1.amd64.sh",
           "sha1": "5c9d8ef4fcf23d4e0f1c295eda2de092",
