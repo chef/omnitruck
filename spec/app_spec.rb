@@ -27,6 +27,17 @@ context 'Omnitruck' do
     Omnitruck
   end
 
+  context "products endpoint" do
+    it "returns all the products" do
+      get("/products")
+
+      response = JSON.parse(last_response.body)
+      Chef::Cache::KNOWN_PROJECTS.each do |project|
+        response.include?(project)
+      end
+    end
+  end
+
   context "download / metadata endpoints" do
     let(:channel) { nil }
     let(:project){ nil }

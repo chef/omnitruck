@@ -227,6 +227,12 @@ class Omnitruck < Sinatra::Base
     })
   end
 
+  get '/products' do
+    content_type :json
+
+    JSON.pretty_generate(Chef::Cache::KNOWN_PROJECTS)
+  end
+
   #########################################################################
   # Helper Methods
   #########################################################################
