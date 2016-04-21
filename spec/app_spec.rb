@@ -862,7 +862,8 @@ context 'Omnitruck' do
         it "returns the correct JSON data" do
           get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
-          expect(last_response.body).to match(project)
+          response = JSON.parse(last_response.body)
+          expect(last_response.body).to match(project) unless response.empty?
         end
       end
     end
