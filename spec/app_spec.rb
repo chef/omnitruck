@@ -27,6 +27,17 @@ context 'Omnitruck' do
     Omnitruck
   end
 
+  context "products endpoint" do
+    it "returns all the products" do
+      get("/products")
+
+      response = JSON.parse(last_response.body)
+      Chef::Cache::KNOWN_PROJECTS.each do |project|
+        response.include?(project)
+      end
+    end
+  end
+
   context "download / metadata endpoints" do
     let(:channel) { nil }
     let(:project){ nil }
@@ -862,7 +873,8 @@ context 'Omnitruck' do
         it "returns the correct JSON data" do
           get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
-          expect(last_response.body).to match(project)
+          response = JSON.parse(last_response.body)
+          expect(last_response.body).to match(project) unless response.empty?
         end
       end
     end

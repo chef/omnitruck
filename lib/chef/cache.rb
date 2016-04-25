@@ -16,21 +16,13 @@
 
 require "fileutils"
 require "chef/project_manifest"
+require "mixlib/install/product"
 
 class Chef
   class Cache
     class MissingManifestFile < StandardError; end
 
-    KNOWN_PROJECTS = %w(
-      angrychef
-      angry-omnibus-toolchain
-      chef
-      chef-server
-      chefdk
-      delivery-cli
-      omnibus-toolchain
-      push-jobs-client
-    )
+    KNOWN_PROJECTS = PRODUCT_MATRIX.products
 
     KNOWN_CHANNELS = %w(
       current

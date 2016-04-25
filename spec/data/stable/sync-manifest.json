@@ -1,0 +1,137 @@
+{
+  "el": {
+    "5": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "136d5516bb26c3f3837873134e7ddcc96f1a1c6e",
+          "sha256": "b483720cb84e677c6af2c3f7bc6bffbbfb5339c4ecc28a7270a387f38420ad57",
+          "url": "http://chef.bintray.com/stable/el/5/chef-sync-1.0.0~rc.7-1.el5.x86_64.rpm"
+        },
+        "1.0.0-rc.6": {
+          "sha1": "1719ce1486fd0d0695f16ccb29141ca2b388b026",
+          "sha256": "af405b9ea4edc67e602f40ea4fdda4fd2b6ba93b43b3430220bad8a6ec4e7e35",
+          "url": "http://chef.bintray.com/stable/el/5/chef-sync-1.0.0~rc.6-1.el5.x86_64.rpm"
+        },
+        "1.0.0-rc.5": {
+          "sha1": "7521da20e2f316c071c9ff21f3a40dce2554a1d4",
+          "sha256": "2123211215ff67193cdfeb51370f54b8bea68604b591bdf49054b0f7ebe313ed",
+          "url": "http://chef.bintray.com/stable/el/5/chef-sync-1.0.0_rc.5-1.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "1d43ff7df35b49d9b76e33de7cee7773b296569a",
+          "sha256": "6dfb8c1b4c983367aeb9e7e150979bc23469ecca2c242f4d779478a26dc06e79",
+          "url": "https://packages.chef.io/stable/el/6/chef-sync-1.0.0~rc.7-1.el6.x86_64.rpm"
+        },
+        "1.0.0-rc.6": {
+          "sha1": "1719ce1486fd0d0695f16ccb29141ca2b388b026",
+          "sha256": "af405b9ea4edc67e602f40ea4fdda4fd2b6ba93b43b3430220bad8a6ec4e7e35",
+          "url": "https://packages.chef.io/stable/el/6/chef-sync-1.0.0~rc.6-1.el5.x86_64.rpm"
+        },
+        "1.0.0-rc.5": {
+          "sha1": "7521da20e2f316c071c9ff21f3a40dce2554a1d4",
+          "sha256": "2123211215ff67193cdfeb51370f54b8bea68604b591bdf49054b0f7ebe313ed",
+          "url": "https://packages.chef.io/stable/el/6/chef-sync-1.0.0_rc.5-1.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "102e398e15e8f537fcf291331a5df2378f52a6fd",
+          "sha256": "79fbb440d94453d86f7bff55f91331f4daf399c62596ce92cb8e7112d75c9ca3",
+          "url": "https://packages.chef.io/stable/el/7/chef-sync-1.0.0~rc.7-1.el7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "fc4708ecccac40eab497628e5847609f5e27bfc8",
+          "sha256": "adcbebd503dadb006eca15bd09962611d6a53b9adcb60bd8a07d07e7bf8f4243",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-sync_1.0.0~rc.7-1_amd64.deb"
+        },
+        "1.0.0-rc.6": {
+          "sha1": "7bc621d0d9066023ddbb7661b89665d175a131c6",
+          "sha256": "3fbe808fc535827ab790d9e3760e438ba430cbf02c4e05403c8a7dac24cf6780",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-sync_1.0.0~rc.6-1_amd64.deb"
+        },
+        "1.0.0-rc.5": {
+          "sha1": "c928345222ae942250c170af3d7e3ecdd350a140",
+          "sha256": "efcd8bec4ce5c571b90bc9ba92423d8194b77ab0eedaf7cf7965944ed75092cf",
+          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-sync_1.0.0-rc.5-1_amd64.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "fc4708ecccac40eab497628e5847609f5e27bfc8",
+          "sha256": "adcbebd503dadb006eca15bd09962611d6a53b9adcb60bd8a07d07e7bf8f4243",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-sync_1.0.0~rc.7-1_amd64.deb"
+        },
+        "1.0.0-rc.6": {
+          "sha1": "7bc621d0d9066023ddbb7661b89665d175a131c6",
+          "sha256": "3fbe808fc535827ab790d9e3760e438ba430cbf02c4e05403c8a7dac24cf6780",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-sync_1.0.0~rc.6-1_amd64.deb"
+        },
+        "1.0.0-rc.5": {
+          "sha1": "c928345222ae942250c170af3d7e3ecdd350a140",
+          "sha256": "efcd8bec4ce5c571b90bc9ba92423d8194b77ab0eedaf7cf7965944ed75092cf",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-sync_1.0.0-rc.5-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.0.0-rc.7": {
+          "sha1": "fc4708ecccac40eab497628e5847609f5e27bfc8",
+          "sha256": "adcbebd503dadb006eca15bd09962611d6a53b9adcb60bd8a07d07e7bf8f4243",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-sync_1.0.0~rc.7-1_amd64.deb"
+        },
+        "1.0.0-rc.6": {
+          "sha1": "7bc621d0d9066023ddbb7661b89665d175a131c6",
+          "sha256": "3fbe808fc535827ab790d9e3760e438ba430cbf02c4e05403c8a7dac24cf6780",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-sync_1.0.0~rc.6-1_amd64.deb"
+        },
+        "1.0.0-rc.5": {
+          "sha1": "c928345222ae942250c170af3d7e3ecdd350a140",
+          "sha256": "efcd8bec4ce5c571b90bc9ba92423d8194b77ab0eedaf7cf7965944ed75092cf",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-sync_1.0.0-rc.5-1_amd64.deb"
+        }
+      }
+    },
+    "11.04": {
+      "x86_64": {
+        "1.0.0-rc.5": {
+          "sha1": "c928345222ae942250c170af3d7e3ecdd350a140",
+          "sha256": "efcd8bec4ce5c571b90bc9ba92423d8194b77ab0eedaf7cf7965944ed75092cf",
+          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-sync_1.0.0-rc.5-1_amd64.deb"
+        },
+        "1.0.0-rc.3": {
+          "sha1": "7e24f1d1f1890bfec4b23d985193b09d0d3cccb0",
+          "sha256": "c75fc8aefe1d827f7bf401007fb10ab84d5efca232a86e3d88cd62cdc5e7e23b",
+          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-sync_1.0.0-rc.3-1_amd64.deb"
+        },
+        "1.0.0-rc.2": {
+          "sha1": "2f1f7ea8d07be6fec62860043f312811a9d7d5f1",
+          "sha256": "669eae9968a7b343deee72585da399147d9c0dd4c2f214a6ae48c705e5e96d21",
+          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-sync_1.0.0-rc.2-1_amd64.deb"
+        },
+        "1.0.0-rc.1": {
+          "sha1": "10475086e0c16b0b825ff63ba789f3d292acb0ec",
+          "sha256": "d86ad305f3f25753db37df848400c86c9f3e86a514f0060618cb8e6eea98a04b",
+          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-sync_1.0.0-rc.1-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2016-04-21 11:48:35 -0700"
+  }
+}

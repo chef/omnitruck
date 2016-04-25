@@ -1,0 +1,385 @@
+{
+  "el": {
+    "6": {
+      "x86_64": {
+        "1.1.2": {
+          "sha1": "44b21a77f0eb47b11cdd2729b92becb4c7342e1f",
+          "sha256": "0c889c35466ef1d884f5866fafa8198250f12a489257d7fe2669c16b9e6162c4",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-1.1.2-1.el6.x86_64.rpm"
+        },
+        "1.0.11": {
+          "sha1": "70260079082b9f3d94026081ac8c50913465d903",
+          "sha256": "0b4d6c23cf25ca8d28179e24220b818996343badc58449b9b363b5b5f79ea4ec",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-1.0.11-1.el6.x86_64.rpm"
+        },
+        "1.0.4": {
+          "sha1": "96a3b91767d31fdb645bf4c01df5967202e28c6f",
+          "sha256": "fee7727bf716e76a514d34d4e14f0b2efd203477449650ef2c6d2ce7dc5b59ac",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-1.0.4-1.el6.x86_64.rpm"
+        },
+        "0.16.9": {
+          "sha1": "34327a0d2eb9e19c34ed8faabc5b84522e70d7b4",
+          "sha256": "3c863f8d245ed1dbd9bf54ac4566b89f83d60545a39ad8fa32bc4cee7b0ec3c4",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.16.9-1.el6.x86_64.rpm"
+        },
+        "0.15.18": {
+          "sha1": "349675bce6aa1c6439ca9e81ea8e4855d2cacbd4",
+          "sha256": "5182d45f23b1890756884a6199f7a2f2b2a7392530e72a6a275e656f0a177e7d",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.15.18-1.el6.x86_64.rpm"
+        },
+        "0.15.13": {
+          "sha1": "0fc5a71db07fed315cba9b16c71db93dd4ddb07e",
+          "sha256": "768d3dc4d5d102a9ec748a7b863e6664b27554617d015a63430804b1b0c670aa",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.15.13-1.el6.x86_64.rpm"
+        },
+        "0.14.5": {
+          "sha1": "08a09bed80ead07f0a67633b6a2928b7a4c822bb",
+          "sha256": "180dad8318ec4cb51deaa67dfbb922c267ea8fafa6c1f8577753378839a65e87",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.14.5-1.el6.x86_64.rpm"
+        },
+        "0.14.1": {
+          "sha1": "e107a6e0e1e5681b4627f5130e3ec24eef5a3723",
+          "sha256": "d2a81f223ff47647b880cfdad7b366b8ffdcc90ec82a78b42f216249da0ca4cb",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.14.1-1.el6.x86_64.rpm"
+        },
+        "0.11.1": {
+          "sha1": "27a13cc694d662da403a61048aaf9f8387f0b5c7",
+          "sha256": "7bce60acbb27b545a7791219b22137e2e640f8d8e40cda36a09cf445f3413236",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.11.1-1.el6.x86_64.rpm"
+        },
+        "0.10.4": {
+          "sha1": "cdd74f193ff3e0c27e348a3efa2709ab7cdc6c4a",
+          "sha256": "0c6e442c8a66171ca3d32b9c3c25391a08998c73565196c2dfbbbc1cdd3f2510",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.10.4-1.el6.x86_64.rpm"
+        },
+        "0.9.11": {
+          "sha1": "1689fa8c116f6a4cc41120c98ed7bba945a04148",
+          "sha256": "3c0883fc54724b52282552ee90154169d3d9c21250061a1143d2fd3853ec47e0",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.11-1.el6.x86_64.rpm"
+        },
+        "0.9.10": {
+          "sha1": "ab2ec6547b6fb70b4a7310a03b1cf9df2e9147b8",
+          "sha256": "885e54a1dbcb9da4f50cbc0c9a52e5ea0d63184023b9291d4bb581cf99a96ca2",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.10-1.el6.x86_64.rpm"
+        },
+        "0.9.9": {
+          "sha1": "1b36ddd674dbb67e3e0ce0aa362ff6eb41e62062",
+          "sha256": "7b508ade5b642350f318fcafae3eefcf4e62118b83353c4aee701ac22c3fba73",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.9-1.el6.x86_64.rpm"
+        },
+        "0.9.7": {
+          "sha1": "0ae23f2c204ff8bfe7780391e5baa23ea99c3cc0",
+          "sha256": "eefe13f983889ca81bb9ec6ca123e371d54286b90bece3999259eeb5f5523b8d",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.7-1.el6.x86_64.rpm"
+        },
+        "0.9.6": {
+          "sha1": "31de9416a4fb971ea3cbd85f2b24a3142db4706c",
+          "sha256": "6ecc9200fd599e46c9d55a3c74c7af1773041bd8b363e298df0ce56481221e92",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.6-1.el6.x86_64.rpm"
+        },
+        "0.9.5": {
+          "sha1": "7047e2488468dff004a5e5d132a77e35e994251d",
+          "sha256": "811c0ff9e32bbd276888d707a5fb2bf955539fdbb916415827c9a47bf130c118",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.5-1.el6.x86_64.rpm"
+        },
+        "0.9.1": {
+          "sha1": "9e3a6cb660cb42b233b6504cfb9d60c12f2abb38",
+          "sha256": "5989d098c6ab515da530a7d4f145734058e4fec1fd6854911a200bca48fc7bf2",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.1-1.el6.x86_64.rpm"
+        },
+        "0.9.0": {
+          "sha1": "6bc003b574e152870eeb8d9b73092a8db2e032a5",
+          "sha256": "af05d36e6ec5252290aee6abf4f2c2ad47d7e6285da37f71294e6d14e4618217",
+          "url": "https://packages.chef.io/stable/el/6/chef-compliance-0.9.0-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.1.2": {
+          "sha1": "735ae549eb5983d61123630310bc02a31db7ed6f",
+          "sha256": "6f59c088485dfe841a7e520594bc1e8a25c13b783de59103aecea0c0a06dedd7",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-1.1.2-1.el7.x86_64.rpm"
+        },
+        "1.0.11": {
+          "sha1": "71209be54db2ad70c311f4617c06e75698507148",
+          "sha256": "4f4f23374264dde5936268525decdcc7375f0331566addcd006592af74ce5f21",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-1.0.11-1.el7.x86_64.rpm"
+        },
+        "1.0.4": {
+          "sha1": "134d995c0a46738366755bcf18e803c3d0e0eda1",
+          "sha256": "9fe1fa951b97d9b0b3c3494d49d9e9ccd4135d3c4e07fbe3c99e7d6f3f688705",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-1.0.4-1.el7.x86_64.rpm"
+        },
+        "0.16.9": {
+          "sha1": "82c6201472542b8e5f3490f568aa5f4ec94d185d",
+          "sha256": "f84c3bd1bad364fcec240a2c51fe16860119549e48d6dc66578198db62f09801",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.16.9-1.el7.x86_64.rpm"
+        },
+        "0.15.18": {
+          "sha1": "75705ceb5441980d026556774ef55ae9f4c954a1",
+          "sha256": "ef35956bfbb1bdba6bfd50af864c6f5ff200cda51c851ba1c14ea4f8328b4197",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.15.18-1.el7.x86_64.rpm"
+        },
+        "0.15.13": {
+          "sha1": "4f51cc4947bddda5511b289dde76088771d5facd",
+          "sha256": "a83adc55b042226d29b0b102d9be0c2442b5009e4c49c6075ec8e2030efe0ab8",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.15.13-1.el7.x86_64.rpm"
+        },
+        "0.14.5": {
+          "sha1": "053a3fe5d14064aed878e96668eb4672055c6aaf",
+          "sha256": "1d5971a5900e3f74a585d362432c78555dc761a1869ff6676783a14845b3d6b3",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.14.5-1.el7.x86_64.rpm"
+        },
+        "0.14.1": {
+          "sha1": "eca1180cfd49be8a09565b1eb7e8de1b369a4aaf",
+          "sha256": "8252a1e2f133447a15cd2dfbd2420fde623c5ce2a1546e1e04be9666493cf2a6",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.14.1-1.el7.x86_64.rpm"
+        },
+        "0.11.1": {
+          "sha1": "34f2f4e02f5ecf28c80c6e18f5e5704bd0ebdaeb",
+          "sha256": "a37025a005016e92d7546ef17cf29768958f81019a4898e5b4e9df33df45f217",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.11.1-1.el7.x86_64.rpm"
+        },
+        "0.10.4": {
+          "sha1": "8bbcd8565c61cc541affbf4288263db4d28dcfc5",
+          "sha256": "a563dd15391072bded32e346f4cc57c9e985091be21c68e85d9273a0e5b76442",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.10.4-1.el7.x86_64.rpm"
+        },
+        "0.9.11": {
+          "sha1": "dccfe1ca6073966fbdab2d9332395d1fd0066011",
+          "sha256": "f09c5b5361b75a1f35f9d324e1c8fc53cb3b2b01b26edeabe90d074999dfcef9",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.11-1.el7.x86_64.rpm"
+        },
+        "0.9.10": {
+          "sha1": "c0494becec6a9086c9f8cfd8ff783d4f775b9c19",
+          "sha256": "68bcd81d57845efa5d8ca412e72f4f57fbb0e7a41da7cf80432f92e2b582d8b7",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.10-1.el7.x86_64.rpm"
+        },
+        "0.9.9": {
+          "sha1": "9e4ba0e2b9db65444843be8f396f51981d031b10",
+          "sha256": "bde732e413dd495fb9117d9bb8f6579d5de733db6d60683aa3b7124ea35dd478",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.9-1.el7.x86_64.rpm"
+        },
+        "0.9.7": {
+          "sha1": "a53583418e3321aaf9b196ec69ce1421e211c174",
+          "sha256": "614ed9a65fda5905a3d8433e7e9f40c9cbc0ae8c50e137f2ed2fee878e6b043a",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.7-1.el7.x86_64.rpm"
+        },
+        "0.9.6": {
+          "sha1": "d8bff3f266e88bb10b82d5c5272f38527fbb4bf5",
+          "sha256": "efd4fa8d562395a1dbb64bfae5f756df442b0b61606c9365ed8d5045c3d7a814",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.6-1.el7.x86_64.rpm"
+        },
+        "0.9.5": {
+          "sha1": "3f54e8d0267eb8e035c7e0c8f8c2259abdfbe2b1",
+          "sha256": "33442893fea346642a98955e6f7ac51a9051f245c97abaad8e9e02cca60e9067",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.5-1.el7.x86_64.rpm"
+        },
+        "0.9.1": {
+          "sha1": "eb8122b6cc170249b8bafcbc9926804b7548c7ec",
+          "sha256": "ad72a9536ae675a07e0b120c6689386777a6a41ec3381014619ccc5474473871",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.1-1.el7.x86_64.rpm"
+        },
+        "0.9.0": {
+          "sha1": "715ee4ae195f9643122fe9edc1b1f7cb7e60d7ea",
+          "sha256": "861ee25de2e629ef0ee15e45225cc7162c5530b912906011e9441780838914ad",
+          "url": "https://packages.chef.io/stable/el/7/chef-compliance-0.9.0-1.el7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "1.1.2": {
+          "sha1": "16a2af683a7daa1f4fdcb009d86cfc2110da7302",
+          "sha256": "006dcd39d46a6bc84dbc33006466d04a1a647969a8f399ed0cf6914b909f36fb",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_1.1.2-1_amd64.deb"
+        },
+        "1.0.11": {
+          "sha1": "22cac3909e0263fb85a5e0919f55467bf13cea53",
+          "sha256": "7f6cdfd56cdb0af6953aa66be4778a9e6af628fd6903d3369c5a9c1bddf3822b",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_1.0.11-1_amd64.deb"
+        },
+        "1.0.4": {
+          "sha1": "f8183d1bb6af1cca7a71821c07b62d168a73b759",
+          "sha256": "a0cdaa391028778bfcf7c1c3b828f83ad9a176af02d0e4edbdfa85afed3b238f",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_1.0.4-1_amd64.deb"
+        },
+        "0.16.9": {
+          "sha1": "90ae5a07ec9713b2e13e0db2ffa9154336e0ab18",
+          "sha256": "1e71380edb1071cb1bbd15bf9acc95dce74ad8cc8324f94e1ff3dc91e59b0756",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.16.9-1_amd64.deb"
+        },
+        "0.15.18": {
+          "sha1": "eca531429ec0fbc4429fc06b621ffc4b0499a579",
+          "sha256": "2bf78b89c8aac34c501c16f55246ab6bcc9a1f1709fad1bc94e24cc2c0c7c4fe",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.15.18-1_amd64.deb"
+        },
+        "0.15.13": {
+          "sha1": "9a47c55a06f6fdba0c6ee7a8a6742752b474c826",
+          "sha256": "8d6f7cc0c2eee3fba967524d760a7e7e1cbc42d55ed3066542363a56bd7c3b16",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.15.13-1_amd64.deb"
+        },
+        "0.14.5": {
+          "sha1": "84484e94836fcdba0b2183695e58aedec4026f97",
+          "sha256": "0a5a7d95db156c2ed5a4439896e108cfce3062c5a82f102bb0e2e4ecbc1f6c22",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.14.5-1_amd64.deb"
+        },
+        "0.14.1": {
+          "sha1": "9eeeca38e378e5c5711e41b6b841df26aee2aa46",
+          "sha256": "8434e114bf20341cf9da92153d61b56c518fe235b91122581e9c6c471f7c9bd1",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.14.1-1_amd64.deb"
+        },
+        "0.11.1": {
+          "sha1": "3e59ddb12a835f7c9a274254489788b426284fde",
+          "sha256": "0c35854776812b34018f138728d5c69ce2ba70d43e6a34886a26f29295f6a51f",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.11.1-1_amd64.deb"
+        },
+        "0.10.4": {
+          "sha1": "ce074f7e68b2ea2cfcd17594011386a47e6603bf",
+          "sha256": "f1e1c7cb42ab8db6d55a5ecf8bfb91d38b332ad63c946a616a1017ed5108e3f4",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.10.4-1_amd64.deb"
+        },
+        "0.9.11": {
+          "sha1": "19daf3d7fb6bf239e6ad75873e48d9d20f0b6fa8",
+          "sha256": "ec5685f6cc8ff3f31df10bbd4280e40e57440488da497d8a0dfa6752b3df0d6b",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.11-1_amd64.deb"
+        },
+        "0.9.10": {
+          "sha1": "5a2a53e311eb2f548543e490180b67bfdf95fa78",
+          "sha256": "8d8263f248798eb7b68cc50b5e4d43d1fdc29d40267cee21a67833b30c7990dd",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.10-1_amd64.deb"
+        },
+        "0.9.9": {
+          "sha1": "3aa8d7cfc66180663f5521c0e178755140a4c218",
+          "sha256": "6e4a2755de93a1afa9d2df8375eb46176d519176e73cf6c9dea45113e0ba5c2a",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.9-1_amd64.deb"
+        },
+        "0.9.7": {
+          "sha1": "3d7a3227b67aee7f4c489b3e0c41925d5dde21f0",
+          "sha256": "315d5c48fb64b0f61b11d45b35fbed05c9752f7ffeb4fb1cfc8260ab547e909b",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.7-1_amd64.deb"
+        },
+        "0.9.6": {
+          "sha1": "06d05d8aebf89d3d4535f616d572f2c013ca58dc",
+          "sha256": "211c29b7f43e97f8e7012c834e3364134d7065ef46f6ee0216f9d3f82b50a351",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.6-1_amd64.deb"
+        },
+        "0.9.5": {
+          "sha1": "576696bb8eea2b76753507303b1e3c5ddd257df0",
+          "sha256": "2fbf9bcf0c053d5ef3e24ec5b8fa6edba33101513da94efadd32e6ca8683c5cf",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.5-1_amd64.deb"
+        },
+        "0.9.1": {
+          "sha1": "b79803fdead68506ac3eeb621dc680a342b006d2",
+          "sha256": "b2dfaffe2153c078be0feb5a8c87926b7c0d4554ed4bdd7c6c31ff481893da6c",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.1-1_amd64.deb"
+        },
+        "0.9.0": {
+          "sha1": "34aebc952bf75d6dea300f7ee148536a11181797",
+          "sha256": "9b30d1ed55b392af339d0dcc152b618ea0cf609967d5ec4c9c69773a67f9656f",
+          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-compliance_0.9.0-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.1.2": {
+          "sha1": "16a2af683a7daa1f4fdcb009d86cfc2110da7302",
+          "sha256": "006dcd39d46a6bc84dbc33006466d04a1a647969a8f399ed0cf6914b909f36fb",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_1.1.2-1_amd64.deb"
+        },
+        "1.0.11": {
+          "sha1": "22cac3909e0263fb85a5e0919f55467bf13cea53",
+          "sha256": "7f6cdfd56cdb0af6953aa66be4778a9e6af628fd6903d3369c5a9c1bddf3822b",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_1.0.11-1_amd64.deb"
+        },
+        "1.0.4": {
+          "sha1": "f8183d1bb6af1cca7a71821c07b62d168a73b759",
+          "sha256": "a0cdaa391028778bfcf7c1c3b828f83ad9a176af02d0e4edbdfa85afed3b238f",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_1.0.4-1_amd64.deb"
+        },
+        "0.16.9": {
+          "sha1": "90ae5a07ec9713b2e13e0db2ffa9154336e0ab18",
+          "sha256": "1e71380edb1071cb1bbd15bf9acc95dce74ad8cc8324f94e1ff3dc91e59b0756",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.16.9-1_amd64.deb"
+        },
+        "0.15.18": {
+          "sha1": "eca531429ec0fbc4429fc06b621ffc4b0499a579",
+          "sha256": "2bf78b89c8aac34c501c16f55246ab6bcc9a1f1709fad1bc94e24cc2c0c7c4fe",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.15.18-1_amd64.deb"
+        },
+        "0.15.13": {
+          "sha1": "9a47c55a06f6fdba0c6ee7a8a6742752b474c826",
+          "sha256": "8d6f7cc0c2eee3fba967524d760a7e7e1cbc42d55ed3066542363a56bd7c3b16",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.15.13-1_amd64.deb"
+        },
+        "0.14.5": {
+          "sha1": "84484e94836fcdba0b2183695e58aedec4026f97",
+          "sha256": "0a5a7d95db156c2ed5a4439896e108cfce3062c5a82f102bb0e2e4ecbc1f6c22",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.14.5-1_amd64.deb"
+        },
+        "0.14.1": {
+          "sha1": "9eeeca38e378e5c5711e41b6b841df26aee2aa46",
+          "sha256": "8434e114bf20341cf9da92153d61b56c518fe235b91122581e9c6c471f7c9bd1",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.14.1-1_amd64.deb"
+        },
+        "0.11.1": {
+          "sha1": "3e59ddb12a835f7c9a274254489788b426284fde",
+          "sha256": "0c35854776812b34018f138728d5c69ce2ba70d43e6a34886a26f29295f6a51f",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.11.1-1_amd64.deb"
+        },
+        "0.10.4": {
+          "sha1": "ce074f7e68b2ea2cfcd17594011386a47e6603bf",
+          "sha256": "f1e1c7cb42ab8db6d55a5ecf8bfb91d38b332ad63c946a616a1017ed5108e3f4",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.10.4-1_amd64.deb"
+        },
+        "0.9.11": {
+          "sha1": "19daf3d7fb6bf239e6ad75873e48d9d20f0b6fa8",
+          "sha256": "ec5685f6cc8ff3f31df10bbd4280e40e57440488da497d8a0dfa6752b3df0d6b",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.11-1_amd64.deb"
+        },
+        "0.9.10": {
+          "sha1": "5a2a53e311eb2f548543e490180b67bfdf95fa78",
+          "sha256": "8d8263f248798eb7b68cc50b5e4d43d1fdc29d40267cee21a67833b30c7990dd",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.10-1_amd64.deb"
+        },
+        "0.9.9": {
+          "sha1": "3aa8d7cfc66180663f5521c0e178755140a4c218",
+          "sha256": "6e4a2755de93a1afa9d2df8375eb46176d519176e73cf6c9dea45113e0ba5c2a",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.9-1_amd64.deb"
+        },
+        "0.9.7": {
+          "sha1": "3d7a3227b67aee7f4c489b3e0c41925d5dde21f0",
+          "sha256": "315d5c48fb64b0f61b11d45b35fbed05c9752f7ffeb4fb1cfc8260ab547e909b",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.7-1_amd64.deb"
+        },
+        "0.9.6": {
+          "sha1": "06d05d8aebf89d3d4535f616d572f2c013ca58dc",
+          "sha256": "211c29b7f43e97f8e7012c834e3364134d7065ef46f6ee0216f9d3f82b50a351",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.6-1_amd64.deb"
+        },
+        "0.9.5": {
+          "sha1": "576696bb8eea2b76753507303b1e3c5ddd257df0",
+          "sha256": "2fbf9bcf0c053d5ef3e24ec5b8fa6edba33101513da94efadd32e6ca8683c5cf",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.5-1_amd64.deb"
+        },
+        "0.9.1": {
+          "sha1": "b79803fdead68506ac3eeb621dc680a342b006d2",
+          "sha256": "b2dfaffe2153c078be0feb5a8c87926b7c0d4554ed4bdd7c6c31ff481893da6c",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.1-1_amd64.deb"
+        },
+        "0.9.0": {
+          "sha1": "34aebc952bf75d6dea300f7ee148536a11181797",
+          "sha256": "9b30d1ed55b392af339d0dcc152b618ea0cf609967d5ec4c9c69773a67f9656f",
+          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-compliance_0.9.0-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2016-04-21 11:46:09 -0700"
+  }
+}
