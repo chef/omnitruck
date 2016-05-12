@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-# tracking master because of this bug:
-# https://github.com/sinatra/sinatra/pull/805
-# once 1.4.5 is released, this should stop
-gem 'sinatra', :git => 'https://github.com/sinatra/sinatra.git', :branch => 'master'
+gem 'sinatra', '~> 1.4.7'
 gem 'sinatra-contrib'
 gem 'unicorn'
 gem 'json'
