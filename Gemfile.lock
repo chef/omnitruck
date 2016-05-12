@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: c2ec3cc1e3f67fd75f150ad89cbdb1938c580bf8
+  revision: e4a3db4863ea14e65d27d5af2f36ab97e4f18b5a
   branch: master
   specs:
-    mixlib-install (1.0.9)
+    mixlib-install (1.0.11)
       artifactory
       mixlib-shellout
       mixlib-versioning
@@ -113,4 +113,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.11.2
+   1.12.3
