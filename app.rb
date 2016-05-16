@@ -328,7 +328,7 @@ class Omnitruck < Sinatra::Base
         end
 
     Chef::VersionResolver.new(
-      params['v'], cache.manifest_for(project, channel), channel
+      params['v'], cache.manifest_for(project, channel), channel, project
     ).package_info(params['p'], params['pv'], m)
   end
 
@@ -362,7 +362,7 @@ class Omnitruck < Sinatra::Base
   # @return [Hash]
   #
   def get_package_list
-    Chef::VersionResolver.new(params['v'], cache.manifest_for(project, channel), project).package_list
+    Chef::VersionResolver.new(params['v'], cache.manifest_for(project, channel), channel, project).package_list
   end
 
   #

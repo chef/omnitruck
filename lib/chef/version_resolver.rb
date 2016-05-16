@@ -20,13 +20,15 @@ class Chef
     attr_reader :build_map
     attr_reader :target_version
     attr_reader :channel
+    attr_reader :project
 
-    def initialize(version_string, build_map, channel)
+    def initialize(version_string, build_map, channel, project)
       @dsl = PlatformDSL.new()
       dsl.from_file("platforms.rb")
       @build_map = build_map
       @target_version = parse_version_string(version_string)
       @channel = channel
+      @project = project
     end
 
     def package_info(platform_string, platform_version_string, machine_string)
@@ -122,10 +124,12 @@ class Chef
       # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
       distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1) <=> dsl.new_platform_version(core_platform, v2) }
 
-      # Windows has the requirement that we not return x86_64 packages from the
-      # stable channel until Chef 12.9+.  See the description in project_cache.rb
-      # for more detail.
-      target_architecture = modify_arch_for_windows(target_platform, target_architecture, build_map[core_platform])
+      if project == "chef"
+        # Windows has the requirement that we not return x86_64 packages from the
+        # stable channel until Chef 12.9+.  See the description in project_cache.rb
+        # for more detail.
+        target_architecture = modify_arch_for_windows(target_platform, target_architecture, build_map[core_platform])
+      end
 
       # Now filter out the metadata based on architecture
       raw_metadata = { }

@@ -184,6 +184,20 @@
       }
     }
   },
+  "windows": {
+    "2008r2": {
+      "i386": {
+
+      },
+      "x86_64": {
+        "0.0.15": {
+          "sha1": "938f7e459871bb21c8db6f6f802229a8c4d74187",
+          "sha256": "a6e113f5e2b499ee74a856100589c7c060daa48484c36caa337fad7baadbc1b4",
+          "url": "https://packages.chef.io/stable/windows/2012r2/delivery-cli-0.0.15-1-x64.msi"
+        }
+      }
+    }
+  },
   "run_data": {
     "timestamp": "2016-03-23 14:27:38 -0700"
   }
