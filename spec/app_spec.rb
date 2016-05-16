@@ -858,6 +858,27 @@ context 'Omnitruck' do
       end
     end
 
+    # We need to return all versions of 64-bit artifacts on stable channel
+    # except chef after a specific version.
+    context "for delivery-cli 64-bit artifacts" do
+      let(:project) { "delivery-cli" }
+      let(:channel) { 'stable' }
+      let(:platform) { 'windows' }
+      let(:platform_version) { '2008r2' }
+      let(:architecture) { 'x86_64' }
+      let(:project_version) { nil }
+      let(:expected_info) do
+        {
+          url: 'https://packages.chef.io/stable/windows/2012r2/delivery-cli-0.0.15-1-x64.msi',
+          sha256: 'a6e113f5e2b499ee74a856100589c7c060daa48484c36caa337fad7baadbc1b4',
+          sha1: '938f7e459871bb21c8db6f6f802229a8c4d74187',
+          version: '0.0.15'
+        }
+      end
+
+      it_behaves_like 'a correct package info'
+    end
+
   end
 
   context '/<CHANNEL>/<PROJECT>/versions endpoint' do
