@@ -2,7 +2,7 @@ include_recipe 'build-cookbook::_handler'
 include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::provision'
 
-Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
+load_delivery_chef_config
 
 aws_creds = encrypted_data_bag_item_for_environment('cia-creds','chef-secure')
 fastly_creds = encrypted_data_bag_item_for_environment('cia-creds','fastly')

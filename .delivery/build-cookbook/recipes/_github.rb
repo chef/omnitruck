@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
+load_delivery_chef_config
 include_recipe 'chef-sugar::default'
 
 # Load Chef Sugar's core_extensions so we can call `String#flush` on heredocs
@@ -49,4 +49,3 @@ file "#{build_user_home}/.ssh/config" do
   group 'root'
   mode  '0600'
 end
-Chef_Delivery::ClientHelper.leave_client_mode_as_delivery

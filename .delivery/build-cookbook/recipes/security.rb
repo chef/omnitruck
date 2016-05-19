@@ -8,7 +8,7 @@
 # Are you seeing a patern yet?
 include_recipe 'build-cookbook::_handler'
 
-include_recipe 'build-cookbook::_install_dependencies'
+include_recipe 'cia_infra::bundler_install_deps'
 
 execute 'bundler-audit' do
   command "bundle exec bundle-audit update && bundle exec bundle-audit check"

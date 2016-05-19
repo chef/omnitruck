@@ -1,6 +1,6 @@
 include_recipe 'chef-sugar::default'
 
-Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
+load_delivery_chef_config
 
 slack_creds = encrypted_data_bag_item_for_environment('cia-creds','slack')
 
@@ -21,5 +21,3 @@ chef_handler "BuildCookbook::SlackHandler" do
   sensitive true
   action :enable
 end
-
-Chef_Delivery::ClientHelper.leave_client_mode_as_delivery

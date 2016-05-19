@@ -10,7 +10,7 @@ include_recipe 'build-cookbook::_handler'
 # Run lint against the cookbooks
 include_recipe 'delivery-truck::lint'
 
-include_recipe 'build-cookbook::_install_dependencies'
+include_recipe 'cia_infra::bundler_install_deps'
 
 #TODO rubocop all the things!
 #execute 'lint' do

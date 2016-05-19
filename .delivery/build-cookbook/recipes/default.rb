@@ -40,9 +40,7 @@ end
 
 include_recipe 'fastly::default'
 
-# We enter client mode, which means we are now talking to the delivery chef server
-# instead of the chef-zero invocation this run was started in context of.
-Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
+load_delivery_chef_config
 
 # We need slack creds later on, so we get them here.
 slack_creds = encrypted_data_bag_item_for_environment('cia-creds','slack')
@@ -92,9 +90,5 @@ file aws_config_filename do
   sensitive true
   content aws_config_contents
 end
-
-# Here we leave client mode. I don't actually understand the implications of not leaving,
-# but it seems like a good idea.
-Chef_Delivery::ClientHelper.leave_client_mode_as_delivery
 
 include_recipe 'cia_infra::ruby'
