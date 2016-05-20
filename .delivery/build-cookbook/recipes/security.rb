@@ -1,12 +1,8 @@
-
 ################################################################################
 # Welcome to the security phase
 #
 # This recipe is run as the delivery user
 ################################################################################
-
-# Are you seeing a patern yet?
-include_recipe 'build-cookbook::_handler'
 
 include_recipe 'cia_infra::bundler_install_deps'
 

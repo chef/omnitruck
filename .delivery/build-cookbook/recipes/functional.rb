@@ -1,15 +1,6 @@
-include_recipe 'build-cookbook::_handler'
 include_recipe 'chef-sugar::default'
 
 load_delivery_chef_config
-
-slack_creds = encrypted_data_bag_item_for_environment('cia-creds','slack')
-
-if ['union', 'rehearsal', 'delivered'].include?(node['delivery']['change']['stage'])
-  slack_channels = slack_creds['channels'].push('#operations')
-else
-  slack_channels = slack_creds['channels']
-end
 
 site_name = 'omnitruck'
 domain_name = 'chef.io'
@@ -39,25 +30,5 @@ ruby_block 'check some things we broke' do
         fail "GET #{uri} returned #{response.code.to_i} instead of a 404"
       end
     end
-  end
-end
-
-case node['delivery']['change']['stage']
-when 'acceptance'
-  chef_slack_notify 'Notify Slack' do
-    channels slack_channels
-    webhook_url slack_creds['webhook_url']
-    username slack_creds['username']
-    message "*[#{node['delivery']['change']['project']}] (#{node['delivery']['change']['stage']}:#{node['delivery']['change']['phase']})* <a href=\"https://#{fqdn}\">https://#{fqdn}</a> is now ready for delivery! Please visit <a href=\"#{change_url}\">Deliver it!</a>"
-    sensitive true
-  end
-
-when 'delivered'
-  chef_slack_notify 'Notify Slack' do
-    channels slack_channels
-    webhook_url slack_creds['webhook_url']
-    username slack_creds['username']
-    message "*[#{node['delivery']['change']['project']}] (#{node['delivery']['change']['stage']}:#{node['delivery']['change']['phase']})* <a href=\"https://#{fqdn}\">https://#{fqdn}</a> is now Delivered!"
-    sensitive true
   end
 end
