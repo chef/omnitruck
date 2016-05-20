@@ -3,7 +3,7 @@ include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::deploy'
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
-Chef_Delivery::ClientHelper.enter_client_mode_as_delivery
+load_delivery_chef_config
 fastly_creds = encrypted_data_bag_item_for_environment('cia-creds','fastly')
 
 ssh = encrypted_data_bag_item_for_environment('cia-creds', 'aws-ssh')

@@ -10,7 +10,7 @@ include_recipe 'build-cookbook::_handler'
 # Run unit tests on the cookbooks that are in cookbooks/
 include_recipe 'delivery-truck::unit'
 
-include_recipe 'build-cookbook::_install_dependencies'
+include_recipe 'cia_infra::bundler_install_deps'
 
 execute 'run rspec' do
   command "bundle exec rake spec"
