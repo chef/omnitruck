@@ -17,16 +17,9 @@ include_recipe 'chef-sugar::default'
 # recipe so we are only going to get converge time exceptions.
 include_recipe 'chef_handler::default'
 
-# We setup some github keys so that we can pull down private cookbooks and repos
-# from github as the chef-delivery user.
-include_recipe 'build-cookbook::_github'
-
 # We include the delivery-truck default recipe so any setup that delivery-truck
 # needs gets done.
 include_recipe 'delivery-truck::default'
-
-# We want to update slack so we do the setup here.
-include_recipe 'chef_slack::default'
 
 # We use the route53 resource later on so we need to include it here to get gems
 # and other dependencies installed.
@@ -42,27 +35,8 @@ include_recipe 'fastly::default'
 
 load_delivery_chef_config
 
-# We need slack creds later on, so we get them here.
-slack_creds = encrypted_data_bag_item_for_environment('cia-creds','slack')
-
 # We need aws creds so we get them here.
 aws_creds = encrypted_data_bag_item_for_environment('cia-creds', 'chef-cia')
-
-cookbook_file 'slack.rb' do
-  path File.join(node['chef_handler']['handler_path'], 'slack.rb')
-end.run_action(:create)
-
-chef_handler "BuildCookbook::SlackHandler" do
-  source File.join(node["chef_handler"]["handler_path"], 'slack.rb')
-  arguments [
-    :webhook_url => slack_creds['webhook_url'],
-    :channels  => slack_creds['channels'],
-    :username => slack_creds['username']
-  ]
-  supports :exception => true
-  sensitive true
-  action :enable
-end
 
 # Here we are installing the aws cli that is needed durring publish. The python
 # install is actually done during the setup of the build nodes.

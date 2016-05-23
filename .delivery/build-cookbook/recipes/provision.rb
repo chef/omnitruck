@@ -1,4 +1,3 @@
-include_recipe 'build-cookbook::_handler'
 include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::provision'
 
