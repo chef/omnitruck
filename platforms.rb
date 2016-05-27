@@ -157,6 +157,14 @@ platform "arista_eos" do
   version_remap 6
 end
 
+# cumulus linux 3.0.0 and later is debian 8
+platform "cumulus linux" do
+  remap "debian"
+  version_remap do |version|
+    (version.split('.')[0].to_i >= 3) ? 8 : 7
+  end
+end
+
 # these are unsupported because we have no build infrastructure for them:
 # - slackware
 # - arch
