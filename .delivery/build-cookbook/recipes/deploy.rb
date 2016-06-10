@@ -1,5 +1,4 @@
 include_recipe 'chef-sugar::default'
-include_recipe 'delivery-truck::deploy'
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
 load_delivery_chef_config
