@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: 58af8b0e03d99553468c2d40941950ed4170ebf6
+  revision: c4f48b4de0f7e6c6b8b8ad2761fd8ace46c38a3d
   branch: master
   specs:
-    mixlib-install (1.0.11)
+    mixlib-install (1.0.13)
       artifactory
       mixlib-shellout
       mixlib-versioning
