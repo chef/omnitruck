@@ -1,6 +1,7 @@
 require 'yajl'
 require "mixlib/install/options"
-require "mixlib/install/backend/bintray"
+require "mixlib/install/backend/artifactory"
+require "mixlib/install/product"
 
 require "benchmark"
 class Chef
@@ -16,7 +17,7 @@ class Chef
     end
 
     #
-    # Constructs a build manifest for given product & channel from bintray.
+    # Constructs a build manifest for given product & channel from artifactory.
     #
     # @return [void]
     #
@@ -100,7 +101,7 @@ class Chef
     end
 
     #
-    # This method generates a project manifest using info from Bintray.
+    # This method generates a project manifest using info from Artifactory.
     #
     # @return [ProjectManifest]
     #
@@ -133,30 +134,25 @@ class Chef
     # @return [Array[String]]
     #   List of available versions
     def available_versions
-      data = nil
-      begin
-        data = bintray_backend.bintray_get("/#{channel_name}/#{project_name}")
-      rescue Net::HTTPServerException => e
-        # bintray returns 404 when there is no available versions for a
-        # given product & channel
-        if e.response.code == "404"
-          puts "No available versions for '#{project_name}' - '#{channel_name}'"
-        else
-          raise e
+      versions = [ ]
+      PRODUCT_MATRIX.lookup(project_name).known_omnibus_projects.each do |project|
+        begin
+          data = artifactory_backend.get("/api/search/versions?g=com.getchef&a=#{project}&repos=omnibus-#{channel_name}-local")
+        rescue Artifactory::Error::HTTPError => e
+          # Artifactory returns 404 when there is no available versions for a
+          # given product & channel
+          if e.code == "404" || e.message =~ /404/
+            puts "No available versions for '#{project_name}' - '#{channel_name}'"
+            break
+          else
+            raise e
+          end
         end
-      end
-      data.nil? ? [ ] : data["versions"]
-    end
 
-    #
-    # Returns build information for a given project, channel and version
-    #
-    # @param [String] version
-    #
-    # @return [Hash]
-    #   Bintray JSON response for the given version.
-    def build_info_for(version)
-      bintray_backend(version).bintray_get("/#{channel_name}/#{project_name}/versions/#{version}")
+        versions << data.collect { |d| d["version"] }
+      end
+
+      versions.flatten
     end
 
     #
@@ -167,18 +163,18 @@ class Chef
     # @return [Array<Mixlib::Install::ArtifactInfo>]
     #   List of information for available artifacts
     def artifacts_for(version)
-      bintray_backend(version).info
+      artifactory_backend(version).info
     end
 
     #
-    # Returns a Mixlib::Install::Backend::Bintray instance which can be used
-    # to make calls to Bintray for a given project, channel and version
+    # Returns a Mixlib::Install::Backend::Artifactory instance which can be used
+    # to make calls to Artifactory for a given project, channel and version
     #
     # @param [String] version
     #
-    # @return [Mixlib::Install::Backend::Bintray]
+    # @return [Mixlib::Install::Backend::Artifactory]
     #
-    def bintray_backend(version = nil)
+    def artifactory_backend(version = nil)
       opt = {
         product_name: project_name,
         channel: channel_name.to_sym
@@ -187,7 +183,7 @@ class Chef
       end
 
       options = Mixlib::Install::Options.new(opt)
-      Mixlib::Install::Backend::Bintray.new(options)
+      Mixlib::Install::Backend::Artifactory.new(options)
     end
 
     #
