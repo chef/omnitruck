@@ -1,3 +1,6 @@
+# WIP/TEMP We only want this pipeline to support an acceptance environment
+return unless node['delivery']['change']['stage'] == 'acceptance'
+
 include_recipe 'chef-sugar::default'
 
 load_delivery_chef_config

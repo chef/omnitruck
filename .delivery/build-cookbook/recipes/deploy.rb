@@ -1,3 +1,6 @@
+# WIP/TEMP We only want this pipeline to support an acceptance environment
+return unless node['delivery']['change']['stage'] == 'acceptance'
+
 include_recipe 'chef-sugar::default'
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
