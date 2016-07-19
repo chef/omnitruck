@@ -587,6 +587,11 @@
           "url": "https://packages.chef.io/stable/windows/2008r2/x86_64/angrychef-12.2.1-1.msi",
           "sha1": "0898b52ce5d2865f8c6eaf248c0a2ad5",
           "sha256": "d455f529ab9b199f99207c7f1233a8d4d9e7b24deb65444805d93077ccebe71b"
+        },
+        "12.9.38-1": {
+          "url": "https://packages.chef.io/stable/windows/2012r2/angrychef-12.9.38-1-x64.msi",
+          "sha1": "aa83af2ecdb6cbec643c1fda1d69c55834e692c2",
+          "sha256": "841d6bfc20fb89f7eaa61820d0f5d44bc60e0d67631a58e2920440974e7cba2b"
         }
       }
     }
