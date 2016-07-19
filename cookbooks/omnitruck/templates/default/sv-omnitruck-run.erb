@@ -11,6 +11,9 @@ RUNIT_PID=$$
 CUR_PID_FILE=/srv/omnitruck/shared/pids/omnitruck.pid
 OLD_PID_FILE=$CUR_PID_FILE.oldbin
 
+# TEMPORARILY POINT AT OUR NEW PACKAGE ROUTER ACCEPTANCE
+export ARTIFACTORY_ENDPOINT=http://packages-acceptance.chef.io
+
 echo "Runit service restarted (PID: $RUNIT_PID)"
 
 function is_unicorn_alive {
@@ -45,7 +48,7 @@ function start {
   else
     echo 'Starting new Unicorn instance'
     cd <%= @options[:release_path] %>
-  exec chpst -u omnitruck -P /usr/local/bin/bundle exec unicorn -E production -c <%= @options[:release_path] %>/config/unicorn.rb <%= @options[:release_path] %>/config.ru
+    exec chpst -u omnitruck -P /usr/local/bin/bundle exec unicorn -E production -c <%= @options[:release_path] %>/config/unicorn.rb <%= @options[:release_path] %>/config.ru
     sleep 3
     CUR_PID=$(cat $CUR_PID_FILE)
   fi

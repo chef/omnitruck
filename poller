@@ -15,6 +15,9 @@ class Poller
   def initialize
     @options = {}
 
+    # TODO: set ARTIFACTORY_ENDPOINT for testing
+    ENV["ARTIFACTORY_ENDPOINT"] = "http://packages-acceptance.chef.io"
+
     optparse = OptionParser.new do |opts|
       opts.banner = "Usage: #{$0} -e <environment>"
 
