@@ -1,3 +1,6 @@
+# WIP/TEMP We only want this pipeline to support an acceptance environment
+return unless node['delivery']['change']['stage'] == 'acceptance'
+
 include_recipe 'chef-sugar::default'
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
@@ -22,7 +25,7 @@ with_chef_server Chef::Config[:chef_server_url],
 if node['delivery']['change']['stage'] == 'delivered'
   instance_name = node['delivery']['change']['project'].gsub(/_/, '-')
 else
-  instance_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}"
+  instance_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}2"
 end
 
 directory File.join(node['delivery']['workspace']['cache'], '.ssh')

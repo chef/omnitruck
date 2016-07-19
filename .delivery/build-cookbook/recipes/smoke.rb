@@ -1,3 +1,6 @@
+# WIP/TEMP We only want this pipeline to support an acceptance environment
+return unless node['delivery']['change']['stage'] == 'acceptance'
+
 include_recipe 'chef-sugar::default'
 
 load_delivery_chef_config
@@ -10,7 +13,7 @@ if node['delivery']['change']['stage'] == 'delivered'
   fqdn = "#{site_name}.#{domain_name}"
 else
   bucket_name = "#{node['delivery']['change']['project'].gsub(/_/, '-')}-#{node['delivery']['change']['stage']}"
-  fqdn = "#{site_name}-#{node['delivery']['change']['stage']}.#{domain_name}"
+  fqdn = "#{site_name}-#{node['delivery']['change']['stage']}2.#{domain_name}"
 end
 
 ruby_block 'check for a 200' do

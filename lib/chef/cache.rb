@@ -27,6 +27,7 @@ class Chef
     KNOWN_CHANNELS = %w(
       current
       stable
+      unstable
     )
 
     attr_reader :metadata_dir
