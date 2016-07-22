@@ -1,6 +1,6 @@
 require 'yajl'
-require "mixlib/install/options"
-require "mixlib/install/backend/bintray"
+require "mixlib/install"
+require "mixlib/install/product"
 
 require "benchmark"
 class Chef
@@ -108,7 +108,7 @@ class Chef
       available_versions.each do |version|
         puts "Processing #{project_name} - #{channel_name} - #{version}"
 
-        Array(artifacts_for(version)).each do |artifact|
+        artifacts_for(version).each do |artifact|
           p = artifact.platform
           pv = artifact.platform_version
           m = artifact.architecture
@@ -133,30 +133,10 @@ class Chef
     # @return [Array[String]]
     #   List of available versions
     def available_versions
-      data = nil
-      begin
-        data = bintray_backend.bintray_get("/#{channel_name}/#{project_name}")
-      rescue Net::HTTPServerException => e
-        # bintray returns 404 when there is no available versions for a
-        # given product & channel
-        if e.response.code == "404"
-          puts "No available versions for '#{project_name}' - '#{channel_name}'"
-        else
-          raise e
-        end
-      end
-      data.nil? ? [ ] : data["versions"]
-    end
-
-    #
-    # Returns build information for a given project, channel and version
-    #
-    # @param [String] version
-    #
-    # @return [Hash]
-    #   Bintray JSON response for the given version.
-    def build_info_for(version)
-      bintray_backend(version).bintray_get("/#{channel_name}/#{project_name}/versions/#{version}")
+      Mixlib::Install.new(
+        product_name: project_name,
+        channel: channel_name.to_sym
+      ).available_versions
     end
 
     #
@@ -167,27 +147,13 @@ class Chef
     # @return [Array<Mixlib::Install::ArtifactInfo>]
     #   List of information for available artifacts
     def artifacts_for(version)
-      bintray_backend(version).info
-    end
-
-    #
-    # Returns a Mixlib::Install::Backend::Bintray instance which can be used
-    # to make calls to Bintray for a given project, channel and version
-    #
-    # @param [String] version
-    #
-    # @return [Mixlib::Install::Backend::Bintray]
-    #
-    def bintray_backend(version = nil)
-      opt = {
+      artifacts = Mixlib::Install.new(
         product_name: project_name,
-        channel: channel_name.to_sym
-      }.tap do |c|
-        c[:product_version] = version if version
-      end
+        channel: channel_name.to_sym,
+        product_version: version
+      ).artifact_info
 
-      options = Mixlib::Install::Options.new(opt)
-      Mixlib::Install::Backend::Bintray.new(options)
+      Array(artifacts)
     end
 
     #

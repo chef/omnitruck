@@ -11,6 +11,10 @@ RUNIT_PID=$$
 CUR_PID_FILE=/srv/omnitruck/shared/pids/omnitruck.pid
 OLD_PID_FILE=$CUR_PID_FILE.oldbin
 
+# Point to packages-acceptance.chef.io
+export ARTIFACTORY_ENDPOINT=http://packages-acceptance.chef.io
+export FULL_ARTIFACTORY=true
+
 echo "Runit service restarted (PID: $RUNIT_PID)"
 
 function is_unicorn_alive {
