@@ -1,6 +1,5 @@
 require 'yajl'
-require "mixlib/install/options"
-require "mixlib/install/backend/artifactory"
+require "mixlib/install"
 require "mixlib/install/product"
 
 require "benchmark"
@@ -109,7 +108,7 @@ class Chef
       available_versions.each do |version|
         puts "Processing #{project_name} - #{channel_name} - #{version}"
 
-        Array(artifacts_for(version)).each do |artifact|
+        artifacts_for(version).each do |artifact|
           p = artifact.platform
           pv = artifact.platform_version
           m = artifact.architecture
@@ -134,25 +133,10 @@ class Chef
     # @return [Array[String]]
     #   List of available versions
     def available_versions
-      versions = [ ]
-      PRODUCT_MATRIX.lookup(project_name).known_omnibus_projects.each do |project|
-        begin
-          data = artifactory_backend.get("/api/search/versions?g=com.getchef&a=#{project}&repos=omnibus-#{channel_name}-local")
-        rescue Artifactory::Error::HTTPError => e
-          # Artifactory returns 404 when there is no available versions for a
-          # given product & channel
-          if e.code == "404" || e.message =~ /404/
-            puts "No available versions for '#{project_name}' - '#{channel_name}'"
-            break
-          else
-            raise e
-          end
-        end
-
-        versions << data.collect { |d| d["version"] }
-      end
-
-      versions.flatten
+      Mixlib::Install.new(
+        product_name: project_name,
+        channel: channel_name.to_sym
+      ).available_versions
     end
 
     #
@@ -163,27 +147,13 @@ class Chef
     # @return [Array<Mixlib::Install::ArtifactInfo>]
     #   List of information for available artifacts
     def artifacts_for(version)
-      artifactory_backend(version).info
-    end
-
-    #
-    # Returns a Mixlib::Install::Backend::Artifactory instance which can be used
-    # to make calls to Artifactory for a given project, channel and version
-    #
-    # @param [String] version
-    #
-    # @return [Mixlib::Install::Backend::Artifactory]
-    #
-    def artifactory_backend(version = nil)
-      opt = {
+      artifacts = Mixlib::Install.new(
         product_name: project_name,
-        channel: channel_name.to_sym
-      }.tap do |c|
-        c[:product_version] = version if version
-      end
+        channel: channel_name.to_sym,
+        product_version: version
+      ).artifact_info
 
-      options = Mixlib::Install::Options.new(opt)
-      Mixlib::Install::Backend::Artifactory.new(options)
+      Array(artifacts)
     end
 
     #

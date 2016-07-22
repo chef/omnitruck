@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: 771fc1c65f6bc42073211fd9502014ae5d897919
-  ref: 771fc1c65f6bc42073211fd9502014ae5d897919
+  revision: c7a4a3d9db896675166aae51845e10311ec01374
+  branch: sersut/package-router
   specs:
     mixlib-install (1.1.0)
       artifactory
@@ -113,4 +113,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.12.3
+   1.12.5

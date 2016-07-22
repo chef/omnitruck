@@ -9,7 +9,7 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :ref => '771fc1c65f6bc42073211fd9502014ae5d897919'
+gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :branch => 'sersut/package-router'
 gem 'trashed'
 
 group :test do
