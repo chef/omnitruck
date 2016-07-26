@@ -56,6 +56,7 @@ artifact_deploy 'omnitruck' do
         :app_environment => "production",
         :virtual_path => "",
         :metadata_dir => poller_path,
+        :unified_backend => node["omnitruck"]["unified_backend"]
       )
       action :create
       owner 'omnitruck'
@@ -87,7 +88,10 @@ artifact_deploy 'omnitruck' do
       default_logger true
       log_timeout 3600
       action :enable
-      options({ :release_path => release_path })
+      options({
+        :release_path => release_path,
+        :unified_backend => node["omnitruck"]["unified_backend"]
+      })
     end
 
     ruby_block 'wait for service' do
