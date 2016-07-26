@@ -52,6 +52,10 @@ machine_batch do
       chef_environment delivery_environment
       attribute 'delivery_org', node['delivery']['change']['organization']
       attribute 'project', node['delivery']['change']['project']
+      # Enable unified_backend feature flag in the acceptance stage
+      # See `attribute` property documentation at https://docs.chef.io/resource_machine.html
+      # for an explanation on why we are using %w{ } here...
+      attribute %w{omnitruck unified_backend}, true if node['delivery']['change']['stage'] == 'acceptance'
       tags node['delivery']['change']['organization'], node['delivery']['change']['project']
       machine_options CIAInfra.machine_options(node, 'us-west-2')
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'

@@ -11,9 +11,11 @@ RUNIT_PID=$$
 CUR_PID_FILE=/srv/omnitruck/shared/pids/omnitruck.pid
 OLD_PID_FILE=$CUR_PID_FILE.oldbin
 
+<% if @options[:unified_backend] %>
 # Point to packages-acceptance.chef.io
-export ARTIFACTORY_ENDPOINT=http://packages-acceptance.chef.io
-export FULL_ARTIFACTORY=true
+export ARTIFACTORY_ENDPOINT=https://packages-acceptance.chef.io
+export MIXLIB_INSTALL_UNIFIED_BACKEND=true
+<% end %>
 
 echo "Runit service restarted (PID: $RUNIT_PID)"
 

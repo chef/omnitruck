@@ -36,9 +36,21 @@ class Chef
     #
     # @param [String] metadata_dir
     #   the directory which will be used to create files in & read files from.
+    # @param [Boolean] unified_backend
+    #   flag to enable unified_backend feature.
     #
-    def initialize(metadata_dir = "./metadata_dir")
+    def initialize(metadata_dir = "./metadata_dir", unified_backend = false)
       @metadata_dir = metadata_dir
+
+      # We have this logic here because we would like to be able to easily
+      # write a spec against this.
+      if unified_backend
+        ENV["ARTIFACTORY_ENDPOINT"] = "https://packages-acceptance.chef.io"
+        ENV["MIXLIB_INSTALL_UNIFIED_BACKEND"] = "true"
+      else
+        ENV.delete("ARTIFACTORY_ENDPOINT")
+        ENV.delete("MIXLIB_INSTALL_UNIFIED_BACKEND")
+      end
 
       KNOWN_CHANNELS.each do |channel|
         FileUtils.mkdir_p(File.join(metadata_dir, channel))

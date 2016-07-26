@@ -15,10 +15,6 @@ class Poller
   def initialize
     @options = {}
 
-    # TODO: set ARTIFACTORY_ENDPOINT for testing
-    ENV["ARTIFACTORY_ENDPOINT"] = "http://packages-acceptance.chef.io"
-    ENV["FULL_ARTIFACTORY"] = "true"
-
     optparse = OptionParser.new do |opts|
       opts.banner = "Usage: #{$0} -e <environment>"
 
@@ -53,7 +49,7 @@ class Poller
   end
 
   def run
-    Chef::Cache.new(config['metadata_dir']).update
+    Chef::Cache.new(config['metadata_dir'], config["unified_backend"]).update
   end
 end
 
