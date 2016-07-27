@@ -1,4 +1,5 @@
 require 'yajl'
+require "mixlib/install"
 require "mixlib/install/options"
 require "mixlib/install/backend/bintray"
 
@@ -108,7 +109,7 @@ class Chef
       available_versions.each do |version|
         puts "Processing #{project_name} - #{channel_name} - #{version}"
 
-        Array(artifacts_for(version)).each do |artifact|
+        artifacts_for(version).each do |artifact|
           p = artifact.platform
           pv = artifact.platform_version
           m = artifact.architecture
@@ -128,35 +129,46 @@ class Chef
     end
 
     #
+    # Returns if unified_backend is enabled. We will use this information
+    # to select the backend we will query when populating the version
+    # information.
+    #
+    # Yes this is not the best way to do this but we are hoping this to be
+    # short lived therefore making the least invasive change.
+    #
+    # @return Boolean
+    #   true if unified_backend is enabled, false otherwise.
+    def unified_backend?
+      ENV["MIXLIB_INSTALL_UNIFIED_BACKEND"]
+    end
+
+    #
     # Returns list of available versions for a given project & channel
     #
     # @return [Array[String]]
     #   List of available versions
     def available_versions
-      data = nil
-      begin
-        data = bintray_backend.bintray_get("/#{channel_name}/#{project_name}")
-      rescue Net::HTTPServerException => e
-        # bintray returns 404 when there is no available versions for a
-        # given product & channel
-        if e.response.code == "404"
-          puts "No available versions for '#{project_name}' - '#{channel_name}'"
-        else
-          raise e
+      if unified_backend?
+        Mixlib::Install.new(
+          product_name: project_name,
+          channel: channel_name.to_sym
+        ).available_versions
+      else
+        data = nil
+        begin
+          data = bintray_backend.bintray_get("/#{channel_name}/#{project_name}")
+        rescue Net::HTTPServerException => e
+          # bintray returns 404 when there is no available versions for a
+          # given product & channel
+          if e.response.code == "404"
+            puts "No available versions for '#{project_name}' - '#{channel_name}'"
+          else
+            raise e
+          end
         end
-      end
-      data.nil? ? [ ] : data["versions"]
-    end
 
-    #
-    # Returns build information for a given project, channel and version
-    #
-    # @param [String] version
-    #
-    # @return [Hash]
-    #   Bintray JSON response for the given version.
-    def build_info_for(version)
-      bintray_backend(version).bintray_get("/#{channel_name}/#{project_name}/versions/#{version}")
+        data.nil? ? [ ] : data["versions"]
+      end
     end
 
     #
@@ -167,7 +179,17 @@ class Chef
     # @return [Array<Mixlib::Install::ArtifactInfo>]
     #   List of information for available artifacts
     def artifacts_for(version)
-      bintray_backend(version).info
+      artifacts = if unified_backend?
+         Mixlib::Install.new(
+          product_name: project_name,
+          channel: channel_name.to_sym,
+          product_version: version
+        ).artifact_info
+      else
+        bintray_backend(version).info
+      end
+
+      Array(artifacts)
     end
 
     #
