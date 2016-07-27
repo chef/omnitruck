@@ -49,7 +49,7 @@ class Poller
   end
 
   def run
-    Chef::Cache.new(config['metadata_dir']).update
+    Chef::Cache.new(config['metadata_dir'], config["unified_backend"]).update
   end
 end
 
