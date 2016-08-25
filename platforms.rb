@@ -151,6 +151,16 @@ platform "cumulus networks" do
   version_remap 7
 end
 
+# cumulus linux 3.0.0 and later is debian 8
+platform "cumulus linux" do
+  remap "debian"
+  if version.split('.')[0].to_i >= 3
+      version_remap 8
+  else
+      version_remap 7
+  end
+end
+
 # these are unsupported because we have no build infrastructure for them:
 # - slackware
 # - arch
