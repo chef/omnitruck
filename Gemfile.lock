@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: bf749c93aee7e88990cc5049fdb61bc7c625c5af
-  branch: master
+  revision: 6e245b7a470d49174673de21d90792e2fada86f1
+  branch: pw/package-router
   specs:
-    mixlib-install (1.1.0)
+    mixlib-install (2.0.0)
       artifactory
       mixlib-shellout
       mixlib-versioning
@@ -11,7 +11,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    artifactory (2.3.3)
+    artifactory (2.5.0)
     backports (3.6.7)
     builder (3.2.2)
     bundler-audit (0.4.0)
@@ -26,7 +26,7 @@ GEM
     json (1.8.3)
     kgio (2.10.0)
     mime-types (1.25.1)
-    mixlib-shellout (2.2.6)
+    mixlib-shellout (2.2.7)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
     netrc (0.11.0)

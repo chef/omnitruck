@@ -9,7 +9,8 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :branch => 'master'
+# Update to mixlib-install 2.0.0 when released!
+gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :branch => 'pw/package-router'
 gem 'trashed'
 
 group :test do

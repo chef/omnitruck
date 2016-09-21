@@ -296,7 +296,14 @@ class Omnitruck < Sinatra::Base
   #   Name of the project.
   #
   def project
-    params['project'].gsub('_', '-')
+    # "automate" is not a published artifact, but is a valid product
+    # in mixlib-install where "automate" mimics the product metadata of "delivery".
+    # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
+    if params['project'] == 'automate'
+      params['project'].gsub('automate', 'delivery')
+    else
+      params['project'].gsub('_', '-')
+    end
   end
 
   #

@@ -55,8 +55,7 @@ artifact_deploy 'omnitruck' do
       variables(
         :app_environment => "production",
         :virtual_path => "",
-        :metadata_dir => poller_path,
-        :unified_backend => node["omnitruck"]["unified_backend"]
+        :metadata_dir => poller_path
       )
       action :create
       owner 'omnitruck'
@@ -89,8 +88,7 @@ artifact_deploy 'omnitruck' do
       log_timeout 3600
       action :enable
       options({
-        :release_path => release_path,
-        :unified_backend => node["omnitruck"]["unified_backend"]
+        :release_path => release_path
       })
     end
 

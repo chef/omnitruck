@@ -895,7 +895,12 @@ context 'Omnitruck' do
           get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
           response = JSON.parse(last_response.body)
-          expect(last_response.body).to match(project) unless response.empty?
+          # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
+          if project == 'automate'
+            expect(last_response.body).to match('delivery') unless response.empty?
+          else
+            expect(last_response.body).to match(project) unless response.empty?
+          end
         end
       end
     end
