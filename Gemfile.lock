@@ -1,13 +1,3 @@
-GIT
-  remote: https://github.com/chef/mixlib-install.git
-  revision: 6e245b7a470d49174673de21d90792e2fada86f1
-  branch: pw/package-router
-  specs:
-    mixlib-install (2.0.0)
-      artifactory
-      mixlib-shellout
-      mixlib-versioning
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,6 +16,10 @@ GEM
     json (1.8.3)
     kgio (2.10.0)
     mime-types (1.25.1)
+    mixlib-install (2.0.0)
+      artifactory
+      mixlib-shellout
+      mixlib-versioning
     mixlib-shellout (2.2.7)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
@@ -96,7 +90,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
-  mixlib-install!
+  mixlib-install (~> 2.0.0)
   mixlib-versioning (~> 1.1.0)
   rack-test
   rake
