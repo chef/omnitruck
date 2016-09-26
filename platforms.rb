@@ -151,6 +151,12 @@ platform "cumulus networks" do
   version_remap 7
 end
 
+platform "arista_eos" do
+  major_only true
+  remap "el"
+  version_remap 6
+end
+
 # these are unsupported because we have no build infrastructure for them:
 # - slackware
 # - arch
