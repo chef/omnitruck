@@ -74,6 +74,15 @@ artifact_deploy 'omnitruck' do
   }
 
   restart Proc.new {
+    execute 'bundler cleanup' do
+      command "rm -rf .bundle bin"
+      user    "omnitruck"
+      group   "omnitruck"
+      retries 3
+      retry_delay 10
+    end
+
+
     execute 'poller' do
       command "env PATH=/usr/local/bin:$PATH bundle exec ./poller -e production"
       user    "omnitruck"
