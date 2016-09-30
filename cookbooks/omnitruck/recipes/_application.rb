@@ -74,8 +74,6 @@ artifact_deploy 'omnitruck' do
   }
 
   restart Proc.new {
-    include_recipe 'cia_infra::bundler_install_deps'
-
     execute 'poller' do
       command "env PATH=/usr/local/bin:$PATH bundle exec ./poller -e production"
       user    "omnitruck"
