@@ -145,12 +145,6 @@ platform "raspbian" do
   remap "debian"
 end
 
-# see #81
-platform "cumulus networks" do
-  remap "debian"
-  version_remap 7
-end
-
 platform "arista_eos" do
   major_only true
   remap "el"
@@ -158,11 +152,16 @@ platform "arista_eos" do
 end
 
 # cumulus linux 3.0.0 and later is debian 8
-platform "cumulus linux" do
+platform "cumulus_linux" do
   remap "debian"
   version_remap do |version|
-    (version.split('.')[0].to_i >= 3) ? 8 : 7
+    (version.split('.')[0].to_i >= 3) ? "8" : "7"
   end
+end
+
+platform "cumulus_networks" do
+  remap "debian"
+  version_remap 7
 end
 
 # these are unsupported because we have no build infrastructure for them:
