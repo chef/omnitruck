@@ -16,10 +16,11 @@ GEM
     json (1.8.3)
     kgio (2.10.0)
     mime-types (1.25.1)
-    mixlib-install (2.0.4)
+    mixlib-install (2.1.1)
       artifactory
       mixlib-shellout
       mixlib-versioning
+      thor
     mixlib-shellout (2.2.7)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
@@ -90,7 +91,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
-  mixlib-install (~> 2.0.0)
+  mixlib-install (~> 2.1)
   mixlib-versioning (~> 1.1.0)
   rack-test
   rake
@@ -107,4 +108,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.13.2
+   1.13.5
