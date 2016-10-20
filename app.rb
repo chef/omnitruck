@@ -398,7 +398,7 @@ class Omnitruck < Sinatra::Base
   #   Contents of the install.sh script
   #
   def prepare_install_sh
-    Mixlib::Install.install_sh(base_url: url(settings.virtual_path))
+    Mixlib::Install.install_sh(base_url: url(settings.virtual_path).chomp('/'))
   end
 
   #
@@ -408,6 +408,6 @@ class Omnitruck < Sinatra::Base
   #   Contents of the install.ps1 script
   #
   def prepare_install_ps1
-    Mixlib::Install.install_ps1(base_url: url(settings.virtual_path))
+    Mixlib::Install.install_ps1(base_url: url(settings.virtual_path).chomp('/'))
   end
 end
