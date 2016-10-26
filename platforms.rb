@@ -87,16 +87,21 @@ end
 platform "suse" do
   major_only true
   remap "el"
-  version_remap do |version|
-    version.to_f <= 11 ? "5" : "6"
+  version_remap do |opts|
+    opts[:version].to_f <= 11 ? "5" : "6"
   end
 end
 
 platform "sles" do
   major_only true
-  remap "el"
-  version_remap do |version|
-    version.to_f <= 10 ? "5" : "6"
+  # call the name method on the Platform subclass to get the DSL block's platform name
+  remap { |opts| opts[:architecture] == "s390x" ? name : "el" }
+  version_remap do |opts|
+    if opts[:architecture] == "s390x"
+      opts[:version]
+    else
+      opts[:version].to_f <= 10 ? "5" : "6"
+    end
   end
 end
 
@@ -126,9 +131,9 @@ end
 
 platform "linuxmint" do
   remap "ubuntu"
-  version_remap do |version|
-    minor_rev = ( version.to_i % 2 == 0 ) ? "10" : "04"
-    major_rev = ( (version.to_i + 11) / 2 ).floor.to_s
+  version_remap do |opts|
+    minor_rev = ( opts[:version].to_i % 2 == 0 ) ? "10" : "04"
+    major_rev = ( (opts[:version].to_i + 11) / 2 ).floor.to_s
     "#{major_rev}.#{minor_rev}"
   end
 end
@@ -154,8 +159,8 @@ end
 # cumulus linux 3.0.0 and later is debian 8
 platform "cumulus_linux" do
   remap "debian"
-  version_remap do |version|
-    (version.split('.')[0].to_i >= 3) ? "8" : "7"
+  version_remap do |opts|
+    (opts[:version].split('.')[0].to_i >= 3) ? "8" : "7"
   end
 end
 
