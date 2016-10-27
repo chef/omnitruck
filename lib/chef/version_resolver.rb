@@ -34,7 +34,7 @@ class Chef
     def package_info(platform_string, platform_version_string, machine_string)
       @friendly_error_msg = "No installer for platform #{platform_string}, platform_version #{platform_version_string}, machine #{machine_string}"
 
-      target_platform = find_platform_version(platform_string, platform_version_string)
+      target_platform = find_platform_version(platform_string, platform_version_string, machine_string)
 
       version_metadata = find_raw_metadata_for(target_platform, machine_string)
       version = find_target_version_in(version_metadata)
@@ -115,14 +115,14 @@ class Chef
 
       # select only the packages from the distro versions that are <= the version we are looking for
       # we do not want to select el7 packages for el6 platform
-      distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v) <= target_platform }
+      distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v, target_architecture) <= target_platform }
 
       if distro_versions_available.length == 0
         raise InvalidDownloadPath, "Cannot find any available chef versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
       end
 
       # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
-      distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1) <=> dsl.new_platform_version(core_platform, v2) }
+      distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1, target_architecture) <=> dsl.new_platform_version(core_platform, v2, target_architecture) }
 
       if project == "chef"
         # Windows has the requirement that we not return x86_64 packages from the
@@ -205,11 +205,11 @@ class Chef
     end
 
     # Create a PlatformVersion object from the given strings.
-    def find_platform_version(platform_string, platform_version_string)
+    def find_platform_version(platform_string, platform_version_string, machine_string)
       begin
-        dsl.new_platform_version(platform_string, platform_version_string)
+        dsl.new_platform_version(platform_string, platform_version_string, machine_string)
       rescue
-        raise InvalidPlatform, "Platform information not found for #{platform_string}, #{platform_version_string}"
+        raise InvalidPlatform, "Platform information not found for #{platform_string}, #{platform_version_string}, #{machine_string}"
       end
     end
 

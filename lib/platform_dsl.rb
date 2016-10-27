@@ -5,24 +5,30 @@ class PlatformDSL
   class PlatformVersion
     include Comparable
 
-    attr_accessor :version
+    attr_accessor :opts
 
-    def initialize(version)
-      @version = version.dup
+    def initialize(opts)
+      @opts = opts
     end
 
     def mapped_version
       if version_remap.nil?
-        version
+        opts[:version]
       elsif version_remap.is_a?(Proc)
-        version_remap.call(version)
+        version_remap.call(opts)
       else
         version_remap
       end
     end
 
     def mapped_name
-      remap || name
+      if remap.nil?
+        name
+      elsif remap.is_a?(Proc)
+        remap.call(opts)
+      else
+        remap
+      end
     end
 
     # these functions operate on the given version that has not been remapped
@@ -101,13 +107,13 @@ class PlatformDSL
       end
     end
 
-
     def inspect
       "name:           #{name}\n" +
-      "version:        #{version}\n" +
+      "version:        #{opts[:version]}\n" +
       "mapped name:    #{mapped_name}\n" +
       "mapped version: #{mapped_version}\n" +
-      "major_only:     #{major_only}\n"
+      "major_only:     #{major_only}\n" +
+      "architecture:   #{opts[:architecture]}\n"
     end
   end
 
@@ -126,7 +132,7 @@ class PlatformDSL
   end
 
   class PlatformSpec
-    def initialize(name)
+    def initialize(name, opts = {})
       @name = name
       @major_only = false
       @remap = nil
@@ -149,10 +155,14 @@ class PlatformDSL
       @major_only
     end
 
-    def remap(opt = nil)
-      unless opt.nil?
-        raise "remapped platform name must be a string" unless opt.instance_of?(String)
-        @remap = opt
+    def remap(opt = nil, &block)
+      if !opt.nil? || block_given?
+        if !opt.nil?
+          raise "remapped platform name must be a string" unless opt.instance_of?(String)
+          @remap = opt
+        elsif block_given?
+          @remap = block
+        end
       end
       @remap
     end
@@ -198,9 +208,9 @@ class PlatformDSL
     platform_version_collection.select {|klass| klass.name == platform}.first
   end
 
-  def new_platform_version(platform, version)
+  def new_platform_version(platform, version, architecture)
     klass = find_platform_version(platform)
-    klass.new(version)
+    klass.new(version: version, architecture: architecture)
   end
 
   def from_file(filename)
