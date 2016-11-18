@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    artifactory (2.5.0)
+    artifactory (2.5.1)
     backports (3.6.7)
     builder (3.2.2)
     bundler-audit (0.4.0)
@@ -16,7 +16,7 @@ GEM
     json (1.8.3)
     kgio (2.10.0)
     mime-types (1.25.1)
-    mixlib-install (2.1.4)
+    mixlib-install (2.1.7)
       artifactory
       mixlib-shellout
       mixlib-versioning
