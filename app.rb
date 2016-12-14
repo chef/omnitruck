@@ -296,14 +296,21 @@ class Omnitruck < Sinatra::Base
   #   Name of the project.
   #
   def project
-    # "automate" is not a published artifact, but is a valid product
-    # in mixlib-install where "automate" mimics the product metadata of "delivery".
-    # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
+    # Chef Automate is published as an artifact 'automate' since version x.y.z
+    # In order to maintain backward conpatibility with it's previous name
+    # 'delivery' we swap the project name back to 'delivery' for versions
+    # older than x.y.z. Likewise if the request is for 'delivery' newer
+    # than x.y.z we swap the project name to 'automate.'
     if params['project'] == 'automate'
-      params['project'].gsub('automate', 'delivery')
-    else
-      params['project'].gsub('_', '-')
+       if Gem::Version.new(params['v']) < Gem::Version.new('0.0.1')
+          params['project'].gsub('automate', 'delivery')
+       end
+    elsif params['project'] == 'delivery'
+      if Gem::Version.new(params['v']) >= Gem::Version.new('0.0.1')
+        params['project'].gsub('delivery', 'automate')
+      end
     end
+      params['project'].gsub('_', '-')
   end
 
   #

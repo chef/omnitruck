@@ -758,6 +758,74 @@ context 'Omnitruck' do
       end
     end
 
+    context 'for automate' do
+      let(:project) { "automate" }
+
+      context 'for stable' do
+        let(:channel) { 'stable' }
+
+        context 'for el' do
+          let(:platform) { 'el' }
+
+          context 'for 6' do
+            let(:platform_version) { '6' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    version: '0.4.199',
+                    sha1: 'f515826ef21192ca33be39771228e1af1c2e7c10',
+                    sha256: '8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391',
+                    url: 'https://packages.chef.io/stable/el/6/automate-0.4.199-1.el6.x86_64.rpm'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+      end
+    end
+
+    context 'for delivery' do
+      let(:project) { "delivery" }
+
+      context 'for stable' do
+        let(:channel) { 'stable' }
+
+        context 'for el' do
+          let(:platform) { 'el' }
+
+          context 'for 6' do
+            let(:platform_version) { '6' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    version: '0.4.199',
+                    sha1: 'f515826ef21192ca33be39771228e1af1c2e7c10',
+                    sha256: '8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391',
+                    url: 'https://packages.chef.io/stable/el/6/delivery-0.4.199-1.el6.x86_64.rpm'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+      end
+    end
+
     context 'for chef-server' do
       let(:project) { "chef-server" }
 
@@ -895,12 +963,7 @@ context 'Omnitruck' do
           get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
           response = JSON.parse(last_response.body)
-          # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
-          if project == 'automate'
-            expect(last_response.body).to match('delivery') unless response.empty?
-          else
-            expect(last_response.body).to match(project) unless response.empty?
-          end
+          expect(last_response.body).to match(project) unless response.empty?
         end
       end
     end
