@@ -21,15 +21,8 @@ include_recipe 'chef_handler::default'
 # needs gets done.
 include_recipe 'delivery-truck::default'
 
-# We use the route53 resource later on so we need to include it here to get gems
-# and other dependencies installed.
-#include_recipe 'route53::default'
-
-chef_gem 'aws-sdk' do
-  action :install
-  version '~> 2'
-  compile_time true
-end
+# We include habitat-build default recipe to get habitat installed.
+include_recipe 'habitat-build::default'
 
 include_recipe 'fastly::default'
 
@@ -38,31 +31,10 @@ load_delivery_chef_config
 # We need aws creds so we get them here.
 aws_creds = encrypted_data_bag_item_for_environment('cia-creds', 'chef-cia')
 
-# Here we are installing the aws cli that is needed durring publish. The python
-# install is actually done during the setup of the build nodes.
-#
-# TODO Move the python recipe back into the build cookbook
-execute 'install awscli' do
-  command 'pip install awscli'
-  not_if { File::exists?('/usr/local/bin/aws') }
-end
-
-# chef-provisioning requires an aws config file. This generates the content for
-# that file.
-aws_config_contents = <<EOF
-[default]
-region = us-east-1
-aws_access_key_id = #{aws_creds['access_key_id']}
-aws_secret_access_key = #{aws_creds['secret_access_key']}
-EOF
-
-# This figures out where we are going to put the config file.
-aws_config_filename = File.join(node['delivery']['workspace']['root'], 'aws_config')
-
-# And here we write it out.
-file aws_config_filename do
+template File.join(node['delivery']['workspace']['root'], 'aws_config') do
+  source 'aws_config.erb'
+  variables aws_creds: aws_creds
   sensitive true
-  content aws_config_contents
 end
 
 include_recipe 'cia_infra::ruby'

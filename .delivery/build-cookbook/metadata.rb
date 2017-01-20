@@ -15,3 +15,6 @@ depends 'brightbox-ruby'
 depends 'cia_infra'
 depends 'fastly'
 depends 'fancy_execute'
+depends 'habitat-build'
+
+gem 'aws-sdk', '~> 2'
