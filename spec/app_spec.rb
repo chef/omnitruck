@@ -885,22 +885,18 @@ context 'Omnitruck' do
     Chef::Cache::KNOWN_PROJECTS.each do |project|
       context "for #{project}" do
         let(:endpoint){ "/stable/#{project}/versions" }
+        let(:params){ { v: "0.0.0" } }
 
         it "exists" do
-          get(endpoint)
+          get(endpoint, params)
           expect(last_response).to be_ok
         end
 
         it "returns the correct JSON data" do
-          get(endpoint)
+          get(endpoint, params)
           expect(last_response.header['Content-Type']).to include 'application/json'
           response = JSON.parse(last_response.body)
-          # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
-          if project == 'automate'
-            expect(last_response.body).to match('delivery') unless response.empty?
-          else
-            expect(last_response.body).to match(project) unless response.empty?
-          end
+          expect(last_response.body).to match(project) unless response.empty?
         end
       end
     end
