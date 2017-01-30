@@ -142,6 +142,65 @@ context 'Omnitruck' do
       end
     end
 
+    context 'automate and delivery' do
+      let(:channel) { 'stable' }
+      let(:platform) { 'el' }
+      let(:platform_version) { '6' }
+      let(:architecture) { 'x86_64' }
+
+      shared_examples_for 'automate and delivery compatibility' do
+        context 'without a version' do
+          let(:project_version) { nil }
+          let(:expected_info) do
+            {
+              url: 'https://packages.chef.io/stable/el/6/automate-0.7.0-1.el6.x86_64.rpm',
+              sha256: 'sha256',
+              sha1: 'sha1',
+              version: '0.7.0'
+            }
+          end
+
+          it_behaves_like 'a correct package info'
+        end
+
+        context 'automate version' do
+          let(:project_version) { '0.7.0' }
+          let(:expected_info) do
+            {
+              url: 'https://packages.chef.io/stable/el/6/automate-0.7.0-1.el6.x86_64.rpm',
+              sha256: 'sha256',
+              sha1: 'sha1',
+              version: '0.7.0'
+            }
+          end
+
+          it_behaves_like 'a correct package info'
+        end
+
+        context 'delivery version' do
+          let(:project_version) { '0.4.199' }
+          let(:expected_info) do
+            {
+              url: 'https://packages.chef.io/stable/el/6/delivery-0.4.199-1.el6.x86_64.rpm',
+              sha256: '8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391',
+              sha1: 'f515826ef21192ca33be39771228e1af1c2e7c10',
+              version: '0.4.199'
+            }
+          end
+
+          it_behaves_like 'a correct package info'
+        end
+      end
+
+      %w(automate delivery).each do |proj|
+        context "for #{proj}" do
+          let(:project) { proj }
+
+          it_behaves_like 'automate and delivery compatibility'
+        end
+      end
+    end
+
     context "for chef" do
       let(:project) { "chef" }
 
@@ -895,12 +954,7 @@ context 'Omnitruck' do
           get(endpoint)
           expect(last_response.header['Content-Type']).to include 'application/json'
           response = JSON.parse(last_response.body)
-          # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
-          if project == 'automate'
-            expect(last_response.body).to match('delivery') unless response.empty?
-          else
-            expect(last_response.body).to match(project) unless response.empty?
-          end
+          expect(last_response.body).to match(project) unless response.empty?
         end
       end
     end

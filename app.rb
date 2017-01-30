@@ -296,14 +296,7 @@ class Omnitruck < Sinatra::Base
   #   Name of the project.
   #
   def project
-    # "automate" is not a published artifact, but is a valid product
-    # in mixlib-install where "automate" mimics the product metadata of "delivery".
-    # Until "automate" is published the omnitruck api needs to translate "automate" to "delivery".
-    if params['project'] == 'automate'
-      params['project'].gsub('automate', 'delivery')
-    else
-      params['project'].gsub('_', '-')
-    end
+    params['project'].gsub('_', '-')
   end
 
   #
@@ -334,8 +327,21 @@ class Omnitruck < Sinatra::Base
           end
         end
 
+    # We need to manage automate/delivery this in this method, not #project.
+    # This logic is dependent on having the version param (params['v']) set.
+    # If we try to handle this in #project we have to make an assumption to
+    # always return automate results when the VERSIONS api is called for delivery.
+    current_project = project
+    if current_project == 'automate' || current_project == 'delivery'
+      # default delivery as automate
+      current_project = 'automate' if current_project == 'delivery'
+      if params['v']
+        current_project = 'delivery' if Mixlib::Versioning.parse(params['v']) < Mixlib::Versioning.parse('0.7.0')
+      end
+    end
+
     Chef::VersionResolver.new(
-      params['v'], cache.manifest_for(project, channel), channel, project
+      params['v'], cache.manifest_for(current_project, channel), channel, current_project
     ).package_info(params['p'], params['pv'], m)
   end
 
