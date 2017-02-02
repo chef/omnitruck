@@ -341,15 +341,12 @@ class Omnitruck < Sinatra::Base
     if %w{automate delivery}.include?(project)
       current_version = current_version_resolver.target_version
 
-      # If current version is nil we assume latest - automate
+      # default project
+      current_project = 'automate'
+
+      # If current version is nil we assume latest - automate. Otherwise, check which project it should be
       if current_version
-        current_project = if current_version < Opscode::Version.parse('0.7.0')
-                            'delivery'
-                          else
-                            'automate'
-                          end
-      else
-        current_project = 'automate'
+        current_project = 'delivery' if current_version < Opscode::Version.parse('0.7.0')
       end
 
       # Recreate the VersionResolver if the projects don't match
