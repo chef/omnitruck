@@ -327,22 +327,43 @@ class Omnitruck < Sinatra::Base
           end
         end
 
+    # Create VersionResolver here to utilize #parse_version_string
+    current_version_resolver = Chef::VersionResolver.new(
+      params['v'],
+      cache.manifest_for(project, channel),
+      channel,
+      project
+    )
+
     # We need to manage automate/delivery this in this method, not #project.
-    # This logic is dependent on having the version param (params['v']) set.
     # If we try to handle this in #project we have to make an assumption to
     # always return automate results when the VERSIONS api is called for delivery.
-    current_project = project
-    if current_project == 'automate' || current_project == 'delivery'
-      # default delivery as automate
-      current_project = 'automate' if current_project == 'delivery'
-      if params['v']
-        current_project = 'delivery' if Mixlib::Versioning.parse(params['v']) < Mixlib::Versioning.parse('0.7.0')
+    if %w{automate delivery}.include?(project)
+      current_version = current_version_resolver.target_version
+
+      # If current version is nil we assume latest - automate
+      if current_version
+        current_project = if current_version < Opscode::Version.parse('0.7.0')
+                            'delivery'
+                          else
+                            'automate'
+                          end
+      else
+        current_project = 'automate'
+      end
+
+      # Recreate the VersionResolver if the projects don't match
+      unless project == current_project
+        current_version_resolver = Chef::VersionResolver.new(
+          params['v'],
+          cache.manifest_for(current_project, channel),
+          channel,
+          current_project
+        )
       end
     end
 
-    Chef::VersionResolver.new(
-      params['v'], cache.manifest_for(current_project, channel), channel, current_project
-    ).package_info(params['p'], params['pv'], m)
+    current_version_resolver.package_info(params['p'], params['pv'], m)
   end
 
   #

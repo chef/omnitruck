@@ -163,6 +163,20 @@ context 'Omnitruck' do
           it_behaves_like 'a correct package info'
         end
 
+        context 'latest version' do
+          let(:project_version) { 'latest' }
+          let(:expected_info) do
+            {
+              url: 'https://packages.chef.io/stable/el/6/automate-0.7.0-1.el6.x86_64.rpm',
+              sha256: 'sha256',
+              sha1: 'sha1',
+              version: '0.7.0'
+            }
+          end
+
+          it_behaves_like 'a correct package info'
+        end
+
         context 'automate version' do
           let(:project_version) { '0.7.0' }
           let(:expected_info) do
