@@ -54,3 +54,7 @@ hab_service 'chef-es/omnitruck-unicorn-proxy' do
   )
   action [:enable, :start]
 end
+
+cookbook_file '/etc/cron.d/poller-cron' do
+  mode '0755'
+end
