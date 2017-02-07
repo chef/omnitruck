@@ -70,7 +70,7 @@ do_build() {
   export GEM_HOME=${pkg_prefix}/vendor/bundle
   export GEM_PATH=${_bundler_dir}:${GEM_HOME}
 
-  bundle install --jobs 2 --retry 5 --path vendor/bundle --binstubs
+  bundle install --jobs 2 --retry 5 --deployment --binstubs
 }
 
 do_install() {
