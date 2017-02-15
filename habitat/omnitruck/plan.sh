@@ -44,7 +44,11 @@ pkg_svc_user="hab"
 pkg_svc_group=$pkg_svc_user
 
 pkg_lib_dirs=(lib)
-pkg_expose=(80)
+pkg_exports=(
+  [port]=port
+)
+
+pkg_expose=(port)
 
 do_verify() {
   pkg_version=`git rev-list master --count`

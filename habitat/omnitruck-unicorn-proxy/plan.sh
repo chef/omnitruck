@@ -29,6 +29,11 @@ pkg_svc_run="nginx -c ${pkg_svc_config_path}/nginx.conf"
 pkg_svc_user="root"
 pkg_svc_group=$pkg_svc_user
 
+pkg_exports=(
+  [port]=server.listen
+)
+pkg_exposes=(port)
+
 do_verify() {
   return 0
 }
