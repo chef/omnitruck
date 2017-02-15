@@ -9,4 +9,28 @@
 
 include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::publish'
-include_recipe 'habitat-build::publish'
+
+# custom publish steps instead of using `habitat-build::publish`,
+# because we're multipackage.
+
+return unless changed_habitat_files?
+
+project_secrets = get_project_secrets
+origin = 'delivery'
+
+if habitat_origin_key?
+  keyname = project_secrets['habitat']['keyname']
+  origin = keyname.split('-')[0...-1].join('-')
+end
+
+%w{omnitruck omnitruck-unicorn-proxy}.each do |pkg|
+  hab_build pkg do
+    origin origin
+    plan_dir ::File.join(habitat_plan_dir, pkg)
+    home_dir delivery_workspace
+    auth_token project_secrets['habitat']['depot_token']
+    url node['habitat-build']['depot-url']
+    only_if { habitat_depot_token? }
+    action [:build, :publish]
+  end
+end
