@@ -16,16 +16,16 @@ include_recipe 'delivery-truck::publish'
 return unless changed_habitat_files?
 
 project_secrets = get_project_secrets
-origin = 'delivery'
+_origin = 'delivery'
 
 if habitat_origin_key?
   keyname = project_secrets['habitat']['keyname']
-  origin = keyname.split('-')[0...-1].join('-')
+  _origin = keyname.split('-')[0...-1].join('-')
 end
 
 %w{omnitruck omnitruck-unicorn-proxy}.each do |pkg|
   hab_build pkg do
-    origin origin
+    origin _origin
     plan_dir ::File.join(habitat_plan_dir, pkg)
     home_dir delivery_workspace
     cwd node['delivery']['workspace']['repo']
