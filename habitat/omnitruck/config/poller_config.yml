@@ -1,0 +1,3 @@
+{{cfg.app_environment}}:
+  virtual_path: '{{cfg.poller.virtual_path}}'
+  metadata_dir: '{{cfg.poller.metadata_dir}}'

@@ -15,3 +15,5 @@ execute 'syntax' do
   })
   user node['delivery_builder']['build_user']
 end
+
+include_recipe 'habitat-build::syntax'

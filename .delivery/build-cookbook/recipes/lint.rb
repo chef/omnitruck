@@ -6,7 +6,7 @@
 
 # Run lint against the cookbooks
 include_recipe 'delivery-truck::lint'
-
+include_recipe 'habitat-build::lint'
 include_recipe 'cia_infra::bundler_install_deps'
 
 #TODO rubocop all the things!
