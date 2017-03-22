@@ -28,7 +28,7 @@ hab_package 'chef-es/omnitruck' do
   # end
 end
 
-hab_package ' chef-es/omnitruck-unicorn-proxy' do
+hab_package 'chef-es/omnitruck-unicorn-proxy' do
   # if release
   # version [release['artifact']['pkg_version'], release['artifact']['pkg_release']].join('/')
   # end
