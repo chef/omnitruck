@@ -28,6 +28,7 @@ end
     origin origin
     plan_dir ::File.join(habitat_plan_dir, pkg)
     home_dir delivery_workspace
+    cwd node['delivery']['workspace']['repo']
     auth_token project_secrets['habitat']['depot_token']
     url node['habitat-build']['depot-url']
     only_if { habitat_depot_token? }
