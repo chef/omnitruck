@@ -39,7 +39,7 @@ hab_service 'chef-es/omnitruck' do
 end
 
 hab_service 'chef-es/omnitruck-unicorn-proxy' do
-  unit_content(
+  unit_content(lazy {
     {
       Unit: {
         Description: 'Nginx proxy for Unicorn',
@@ -51,7 +51,7 @@ hab_service 'chef-es/omnitruck-unicorn-proxy' do
         Restart: "on-failure"
       }
     }
-  )
+    })
   action [:enable, :start]
 end
 
