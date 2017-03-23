@@ -79,6 +79,8 @@ do_build() {
 
 do_install() {
   cp -R . "${pkg_prefix}/static"
+  # sometimes gem authors commit and release files that aren't "other" readable.
+  find ${pkg_prefix}/static -not -perm -o+r -exec chmod o+r {} \;
 
   for binstub in ${pkg_prefix}/static/bin/*; do
     build_line "Setting shebang for ${binstub} to 'ruby'"
