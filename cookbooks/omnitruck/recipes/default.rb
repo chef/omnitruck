@@ -34,11 +34,11 @@ hab_package 'chef-es/omnitruck-unicorn-proxy' do
   # end
 end
 
-hab_service_systemd 'chef-es/omnitruck' do
+hab_service 'chef-es/omnitruck' do
   action [:enable, :start]
 end
 
-hab_service_systemd 'chef-es/omnitruck-unicorn-proxy' do
+hab_service 'chef-es/omnitruck-unicorn-proxy' do
   unit_content(lazy {
     {
       Unit: {
