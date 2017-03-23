@@ -50,7 +50,9 @@ platform "centos" do
   remap "el"
 end
 
-platform "aix"
+platform "aix" do
+  version_remap "6.1"
+end
 
 platform "nexus" do
   major_only true
