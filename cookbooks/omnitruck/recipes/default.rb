@@ -35,6 +35,22 @@ hab_package 'chef-es/omnitruck-unicorn-proxy' do
 end
 
 hab_service 'chef-es/omnitruck' do
+  unit_content(lazy {
+    {
+      Unit: {
+        Description: 'omnitruck',
+        After: 'network.target audit.service omnitruck.service'
+      },
+      Service: {
+        Environment: [
+          "SSL_CERT_FILE=#{hab('pkg', 'path', 'core/cacerts').stdout.chomp}/ssl/cert.pem",
+          "HOME=/hab"
+        ],
+        ExecStart: "/bin/hab start chef-es/omnitruck",
+        Restart: "on-failure"
+      }
+    }
+    })
   action [:enable, :start]
 end
 
