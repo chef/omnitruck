@@ -50,7 +50,8 @@ hab_service 'chef-es/omnitruck' do
         Restart: "on-failure"
       }
     }
-    })
+    }
+  )
   action [:enable, :start]
 end
 
@@ -67,7 +68,8 @@ hab_service 'chef-es/omnitruck-unicorn-proxy' do
         Restart: "on-failure"
       }
     }
-    })
+    }
+  )
   action [:enable, :start]
 end
 
