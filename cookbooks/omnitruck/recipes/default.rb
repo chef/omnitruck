@@ -3,12 +3,6 @@
 # Recipe:: default
 #
 
-begin
-  release = data_bag_item('omnitruck', node['applications']['omnitruck'])
-rescue
-  release = nil
-end
-
 group 'hab'
 
 user 'hab' do
@@ -21,17 +15,11 @@ hab_install 'habitat' do
 end
 
 hab_package 'chef-es/omnitruck' do
-  # TODO: (jtimberman) We need multi-component building, which means
-  # we'll have multiple artifacts.
-  # if release
-  # version version [release['artifact']['pkg_version'], release['artifact']['pkg_release']].join('/')
-  # end
+  version node['applications']['omnitruck']
 end
 
 hab_package 'chef-es/omnitruck-unicorn-proxy' do
-  # if release
-  # version [release['artifact']['pkg_version'], release['artifact']['pkg_release']].join('/')
-  # end
+  version node['applications']['omnitruck-unicorn-proxy']
 end
 
 hab_service 'chef-es/omnitruck' do
