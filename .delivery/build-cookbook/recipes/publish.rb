@@ -13,8 +13,6 @@ include_recipe 'delivery-truck::publish'
 # custom publish steps instead of using `habitat-build::publish`,
 # because we're multipackage.
 
-return unless changed_habitat_files?
-
 project_secrets = get_project_secrets
 _origin = 'delivery'
 
