@@ -78,48 +78,48 @@ machine_batch do
   end
 end
 
-load_balancer "#{instance_name}-elb" do
-  load_balancer_options \
-    listeners: [{
-      port: 80,
-      protocol: :http,
-      instance_port: 80,
-      instance_protocol: :http
-    },
-    {
-      port: 443,
-      protocol: :https,
-      instance_port: 80,
-      instance_protocol: :http,
-      server_certificate: CIAInfra.cert_arn
-    }],
-    subnets: subnets,
-    security_groups: CIAInfra.security_groups(node, 'us-west-2'),
-    scheme: 'internet-facing'
-  machines instances
-end
-
-client = AWS::ELB.new(region: 'us-west-2')
-
-route53_record origin_fqdn do
-  name "#{origin_fqdn}."
-  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
-  aws_access_key_id aws_creds['access_key_id']
-  aws_secret_access_key aws_creds['secret_access_key']
-  type 'CNAME'
-  zone_id aws_creds['route53'][domain_name]
-  sensitive true
-end
-
-route53_record direct_fqdn do
-  name "#{direct_fqdn}."
-  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
-  aws_access_key_id aws_creds['access_key_id']
-  aws_secret_access_key aws_creds['secret_access_key']
-  type 'CNAME'
-  zone_id aws_creds['route53'][domain_name]
-  sensitive true
-end
+#load_balancer "#{instance_name}-elb" do
+#  load_balancer_options \
+#    listeners: [{
+#      port: 80,
+#      protocol: :http,
+#      instance_port: 80,
+#      instance_protocol: :http
+#    },
+#    {
+#      port: 443,
+#      protocol: :https,
+#      instance_port: 80,
+#      instance_protocol: :http,
+#      server_certificate: CIAInfra.cert_arn
+#    }],
+#    subnets: subnets,
+#    security_groups: CIAInfra.security_groups(node, 'us-west-2'),
+#    scheme: 'internet-facing'
+#  machines instances
+#end
+#
+#client = AWS::ELB.new(region: 'us-west-2')
+#
+#route53_record origin_fqdn do
+#  name "#{origin_fqdn}."
+#  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
+#  aws_access_key_id aws_creds['access_key_id']
+#  aws_secret_access_key aws_creds['secret_access_key']
+#  type 'CNAME'
+#  zone_id aws_creds['route53'][domain_name]
+#  sensitive true
+#end
+#
+#route53_record direct_fqdn do
+#  name "#{direct_fqdn}."
+#  value lazy { client.load_balancers["#{instance_name}-elb"].dns_name }
+#  aws_access_key_id aws_creds['access_key_id']
+#  aws_secret_access_key aws_creds['secret_access_key']
+#  type 'CNAME'
+#  zone_id aws_creds['route53'][domain_name]
+#  sensitive true
+#end
 
 ### Fastly Setup
 fastly_service = fastly_service fqdn do
