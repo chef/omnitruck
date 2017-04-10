@@ -1,2 +1,0 @@
-PATH=/usr/local/bin:/usr/local/sbin/:/usr/bin:/usr/sbin/:/bin:/sbin
-*/5 * * * * omnitruck cd /srv/omnitruck/current/ && /usr/local/bin/bundle exec ./poller -e production > /dev/null 2>&1
