@@ -6,6 +6,7 @@ description      'Installs/Configures build-cookbook'
 long_description 'Installs/Configures build-cookbook'
 version          '0.1.0'
 
+depends 'delivery-sugar', '= 1.3.2'
 depends 'delivery-truck'
 depends 'chef_handler'
 depends 'chef-sugar'
