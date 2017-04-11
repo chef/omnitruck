@@ -5,7 +5,4 @@ metadata
 cookbook 'oc-users', git: 'git@github.com:opscode-cookbooks/oc-users.git'
 cookbook 'cia_infra', git: 'git@github.com:chef-cookbooks/cia_infra.git'
 cookbook 'brightbox-ruby', github: 'Padgett/brightbox-ruby-cookbook', branch: 'boolean-generate-binstubs'
-
-# TODO: (jtimberman) remove this pin when ChefDK is updated to Chef
-# 13. internal ref issue POOL-571.
-cookbook 'delivery-sugar', github: 'chef-cookbooks/delivery-sugar', ref: '89da6f837e73e299a6a8f0122831031747f5d3a0'
+cookbook 'delivery-sugar', github: 'chef-cookbooks/delivery-sugar'
