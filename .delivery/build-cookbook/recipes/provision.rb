@@ -60,22 +60,20 @@ direct_fqdn = "#{instance_name}-direct.#{domain_name}"
 subnets = []
 instances = []
 
-machine_batch do
-  1.upto(instance_quantity) do |i|
-    machine "#{instance_name}-#{i}" do
-      action :setup
-      chef_environment delivery_environment
-      attribute 'delivery_org', node['delivery']['change']['organization']
-      attribute 'project', node['delivery']['change']['project']
-      tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-      machine_options CIAInfra.machine_options(node, 'us-west-2', i)
-      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-      converge false
-    end
-
-    subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
-    instances << "#{instance_name}-#{i}"
+1.upto(instance_quantity) do |i|
+  machine "#{instance_name}-#{i}" do
+    action :setup
+    chef_environment delivery_environment
+    attribute 'delivery_org', node['delivery']['change']['organization']
+    attribute 'project', node['delivery']['change']['project']
+    tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+    machine_options CIAInfra.machine_options(node, 'us-west-2', i)
+    files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+    converge false
   end
+
+  subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
+  instances << "#{instance_name}-#{i}"
 end
 
 #load_balancer "#{instance_name}-elb" do
