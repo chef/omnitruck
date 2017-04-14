@@ -68,34 +68,7 @@ machine_batch do
       attribute 'delivery_org', node['delivery']['change']['organization']
       attribute 'project', node['delivery']['change']['project']
       tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-      # Reduce magic to hardcoded things for now to test
-      machine_options(
-        {
-          :ssh_username=>"ubuntu",
-          :convergence_options=>{
-            :chef_version=>"12.19.36",
-            :ssl_verify_mode=>:verify_none,
-            :chef_config_text=>"encrypted_data_bag_secret File.join(File.dirname(__FILE__), 'encrypted_data_bag_secret')"
-          },
-          :use_private_ip_for_ssh=>true,
-          :bootstrap_options=>{
-            :image_id=>"ami-7ac6491a",
-            :availability_zone=>"us-west-2a",
-            :instance_type=>nil,
-            :subnet_id=>"subnet-5834542f",
-            :security_group_ids=>["sg-9d9223f9"],
-            :key_name=>"omnitruck"
-          },
-          :aws_tags=>{
-            "X-Dept"=>"CIA",
-            "X-Contact"=>"Christopher Webber",
-            "X-Application"=>"omnitruck",
-            "X-Project"=>"omnitruck",
-            "X-Production"=>false,
-            "X-Environment"=>delivery_environment
-          }
-        }
-      )
+      machine_options CIAInfra.machine_options(node, 'us-west-2', i)
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
       converge false
     end
