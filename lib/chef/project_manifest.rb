@@ -138,6 +138,9 @@ class Chef
         product_name: project_name,
         channel: channel_name.to_sym
       ).available_versions
+    rescue Mixlib::Install::Backend::ArtifactsNotFound
+      # Return an empty array if no artifacts are found
+      []
     end
 
     #
