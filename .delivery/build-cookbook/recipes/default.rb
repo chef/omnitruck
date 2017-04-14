@@ -38,3 +38,8 @@ template File.join(node['delivery']['workspace']['root'], 'aws_config') do
 end
 
 include_recipe 'cia_infra::ruby'
+
+#### LOGGING OUTPUT FOR DEBUGGING PURPOSES
+log "aws machine option" do
+  message CIAInfra.machine_options(node, 'us-west-2', 1).inspect
+end
