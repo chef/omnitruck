@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache2'
 description 'Installs/Configures omnitruck'
 long_description 'Installs/Configures omnitruck'
-version '0.3.11'
+version '0.3.12'
 
 depends 'brightbox-ruby', '~> 1.2'
 depends 'runit', '~> 1.7'
