@@ -43,8 +43,8 @@ include_recipe 'cia_infra::ruby'
 %w[
   /hab/studios/omnitruck-build-publish
   /hab/studios/omnitruck-build-publish/src
-].each do |u|
-  execute u do
+].each do |v|
+  execute "umount #{v}" do
     returns [0,1]
   end
 end
