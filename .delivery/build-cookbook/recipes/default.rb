@@ -38,3 +38,13 @@ template File.join(node['delivery']['workspace']['root'], 'aws_config') do
 end
 
 include_recipe 'cia_infra::ruby'
+
+# Cleanup, just incase
+%w[
+  /hab/studios/omnitruck-build-publish
+  /hab/studios/omnitruck-build-publish/src
+].each do |u|
+  execute u do
+    returns [0,1]
+  end
+end
