@@ -37,7 +37,7 @@ pkg_deps=(
   core/glibc
   core/coreutils
   # omnitruck needs a particular version of Ruby
-  core/ruby/2.3.1
+  core/ruby
 )
 
 pkg_svc_user="hab"
