@@ -15,4 +15,4 @@ suites:
       - recipe[omnitruck::default]
     attributes:
       applications:
-        omnitruck: 2015-09-19_1623
+        omnitruck: 873/20170420131452
