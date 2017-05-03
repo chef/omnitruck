@@ -18,7 +18,6 @@ pkg_name=omnitruck
 pkg_origin=chef-es
 pkg_version=undefined
 pkg_shasum=undefined
-pkg_source=nosuchfile.tar.gz
 pkg_upstream_url="https://github.com/chef/omnitruck"
 pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"
 pkg_description="API to query available versions of Omnibus artifacts"
@@ -30,14 +29,15 @@ pkg_build_deps=(
   core/make
   core/git
 )
-
 pkg_deps=(
-  core/bundler
+
   core/cacerts
   core/glibc
   core/coreutils
-  # omnitruck needs a particular version of Ruby
-  core/ruby/2.3.1
+  # omnitruck needs a particular version of bundler and ruby, there
+  # are issues with json in ruby 2.4 that we need to resolve first.
+  core/bundler/1.13.7/20170104000124
+  core/ruby/2.3.1/20161214031900
 )
 
 pkg_svc_user="hab"
@@ -55,10 +55,12 @@ do_verify() {
   pkg_dirname="${pkg_name}-${pkg_version}"
   pkg_prefix="$HAB_PKG_PATH/${pkg_origin}/${pkg_name}/${pkg_version}/${pkg_release}"
   pkg_artifact="$HAB_CACHE_ARTIFACT_PATH/${pkg_origin}-${pkg_name}-${pkg_version}-${pkg_release}-${pkg_target}.${_artifact_ext}"
+attach
 }
 
 do_prepare() {
   pushd $PLAN_CONTEXT/../.. > /dev/null
+  mkdir -pv "$HAB_CACHE_SRC_PATH/${pkg_name}-${pkg_version}"
   tar -cvf - --exclude=.[a-z]* --exclude=results --exclude=cookbooks --exclude=spec --exclude=habitat . | (cd $HAB_CACHE_SRC_PATH/${pkg_name}-${pkg_version} && tar -xf - .)
   popd > /dev/null
 }
