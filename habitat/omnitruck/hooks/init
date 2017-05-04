@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export HOME="/hab"
+
 echo "Removing previous version deployed at {{pkg.svc_static_path}}"
 rm -rf {{pkg.svc_static_path}}/* {{pkg.svc_static_path}}/.bundle
 

@@ -8,6 +8,7 @@ group 'hab'
 user 'hab' do
   group 'hab'
   home '/hab'
+  system true
 end
 
 hab_install 'habitat' do
