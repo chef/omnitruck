@@ -30,6 +30,6 @@ end
     auth_token project_secrets['habitat']['depot_token']
     depot_url node['habitat-build']['depot-url']
     only_if { habitat_depot_token? }
-    action [:build, :publish]
+    action [:build, :publish, :save_application_release]
   end
 end
