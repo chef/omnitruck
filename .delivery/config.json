@@ -7,6 +7,15 @@
   "skip_phases": [
     "quality"
   ],
+  "job_dispatch": {
+    "version": "v2",
+    "filters": {
+      "default": {
+        "platform": ["ubuntu"],
+        "platform_version": ["16.04"]
+      }
+    }
+  },
   "delivery-truck": {
     "publish": {
       "chef_server": true,
