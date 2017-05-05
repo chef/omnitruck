@@ -18,7 +18,6 @@ pkg_name=omnitruck
 pkg_origin=chef-es
 pkg_version=undefined
 pkg_shasum=undefined
-pkg_source=nosuchfile.tar.gz
 pkg_upstream_url="https://github.com/chef/omnitruck"
 pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"
 pkg_description="API to query available versions of Omnibus artifacts"
