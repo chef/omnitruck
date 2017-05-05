@@ -46,5 +46,6 @@ include_recipe 'cia_infra::ruby'
 ].each do |v|
   execute "umount #{v}" do
     returns [0,1]
+    ignore_failure true
   end
 end
