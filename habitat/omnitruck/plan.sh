@@ -65,6 +65,8 @@ do_prepare() {
 }
 
 do_build() {
+  pushd "$HAB_CACHE_SRC_PATH/${pkg_name}-${pkg_version}" > /dev/null
+
   # shellcheck disable=SC2153
   export CPPFLAGS="${CPPFLAGS} ${CFLAGS}"
 
@@ -76,9 +78,13 @@ do_build() {
   export GEM_PATH=${_bundler_dir}:${GEM_HOME}
 
   bundle install --jobs 2 --retry 5 --deployment --binstubs
+
+  popd > /dev/null
 }
 
 do_install() {
+  pushd "$HAB_CACHE_SRC_PATH/${pkg_name}-${pkg_version}" > /dev/null
+
   cp -R . "${pkg_prefix}/static"
   # sometimes gem authors commit and release files that aren't "other" readable.
   find ${pkg_prefix}/static -not -perm -o+r -exec chmod o+r {} \;
@@ -89,6 +95,7 @@ do_install() {
   done
 
   fix_interpreter ${pkg_prefix}/static/poller core/coreutils bin/env
+  popd > /dev/null
 }
 
 do_download() {
