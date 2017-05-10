@@ -28,6 +28,10 @@ hab_sup 'default'
 hab_service 'chef-es/omnitruck'
 hab_service 'chef-es/omnitruck-unicorn-proxy'
 
+cookbook_file '/usr/local/bin/poller-cron.sh' do
+  mode '0755'
+end
+
 cookbook_file '/etc/cron.d/poller-cron' do
   mode '0755'
 end
