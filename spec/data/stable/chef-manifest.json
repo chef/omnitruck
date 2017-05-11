@@ -8964,589 +8964,567 @@
   "sles": {
     "11.2": {
       "i386": {
-        "12.0.3": {
-          "sha1": "724ac9fa973e2d34ff02e54111de96dfa73e86c6",
-          "sha256": "3fb6a9c26af0cc684aa82245b142d6b30ccc5573e9e9cd2dffec0d4e1f671648",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.3/sles/11.2/chef-12.0.3-1.i686.rpm"
-        }
-      },
-      "x86_64": {
-        "12.0.3": {
-          "sha1": "5ea3fc0ed2b5f0a06d5e416a0a0653244c02e906",
-          "sha256": "7ee1659b4271e8f24c45f074d0c524a727c1eb7fab334833155cdb8ce0339df8",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.3/sles/11.2/chef-12.0.3-1.x86_64.rpm"
-        }
-      }
-    },
-    "11": {
-      "i386": {
-        "10.12.0": {
-          "sha1": "520682a77b2db4f63c2994a0281cc9efead14d98",
-          "sha256": "aa0bd65d0eb91721199cf16465e7eea5749f545fe330b6a52ba5be275af0b51b",
-          "url": "https://packages.chef.io/files/stable/chef/10.12.0/sles/11/chef-10.12.0-1.el5.i686.rpm"
+        "10.12.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.12.0-1.el5.i686.rpm",
+          "sha1": "ea133dde59dc89ec654ac53f53555937",
+          "sha256": "aa0bd65d0eb91721199cf16465e7eea5749f545fe330b6a52ba5be275af0b51b"
         },
-        "10.14.0": {
-          "sha1": "2bbbb9328d3206073d27236d0dad9ea40bb40d50",
-          "sha256": "1549067fc3cac71b5431e63a3bcba93d51f312754f0d4ab4ccd5253dacc1cd0b",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.0/sles/11/chef-10.14.0-1.el5.i686.rpm"
+        "10.14.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.14.0-1.el5.i686.rpm",
+          "sha1": "439ef533d05041b53404ca584a65854b",
+          "sha256": "1549067fc3cac71b5431e63a3bcba93d51f312754f0d4ab4ccd5253dacc1cd0b"
         },
-        "10.14.2": {
-          "sha1": "97f6aa6974de2e66663e4f6771fcc5ccfc734f6f",
-          "sha256": "97a8a7148a63f336d960f48dc0c1e07c3b2854299ede81bba0d6efeeba2baa8c",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.2/sles/11/chef-10.14.2-1.el5.i686.rpm"
+        "10.14.2-1": {
+          "sha1": "4e6441aa11c211e3af95e31eea7885c0",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.14.2-1.el5.i686.rpm",
+          "sha256": "97a8a7148a63f336d960f48dc0c1e07c3b2854299ede81bba0d6efeeba2baa8c"
         },
-        "10.14.4": {
-          "sha1": "8c3d513cce8752990bcf666f37a931a23c49d7b0",
+        "10.14.4-1": {
+          "sha256": "c36462df8debd47880b6a3a4395cfd69b6bc8d5f4dd75ea56fcfa5e79da66372",
+          "sha1": "2ddf852066f8b005b046b931c84a86f0",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.14.4-1.el5.i686.rpm"
+        },
+        "10.14.4-2": {
+          "sha1": "b44cc60db6126f6ecf1e2a7c625434e3",
           "sha256": "b0e4072f6faa975c4cc4ebacc0770c0e3b960da2c9fbb9ab0e0834445d465750",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.4/sles/11/chef-10.14.4-2.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.14.4-2.el5.i686.rpm"
         },
-        "10.16.0": {
-          "sha1": "7dbdb53d997f1851ed539161c1894b094586dac5",
+        "10.16.0-1": {
           "sha256": "6aca75c0b749317d5250327dcd6fe926648e63cc912c06878b6144289384d759",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.0/sles/11/chef-10.16.0-1.el5.i686.rpm"
+          "sha1": "d31f7478fe66ce6f632aee0cc883bf6f",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.16.0-1.el5.i686.rpm"
         },
-        "10.16.2": {
-          "sha1": "2f262d54b45bd6835746cfc6c69ce2f154fed445",
-          "sha256": "fd23b6fbc7c1be7612856e0df63517ce0c0b2caf0f5e1b8c99549dfaaeb85ad5",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.2/sles/11/chef-10.16.2-1.el5.i686.rpm"
+        "10.16.2-1": {
+          "sha1": "8a61906c2010a5a25fbdad668623cc97",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.16.2-1.el5.i686.rpm",
+          "sha256": "fd23b6fbc7c1be7612856e0df63517ce0c0b2caf0f5e1b8c99549dfaaeb85ad5"
         },
-        "10.16.4": {
-          "sha1": "e1649ebd7a09536c4b9f335e494bf400a64a20d8",
+        "10.16.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.16.4-1.el5.i686.rpm",
+          "sha1": "5b0a69813070f435f5589b883dc0a45a",
+          "sha256": "1f61a21483802c8f186267d5b753b79a8c16fd530711915b60a2059bd63b947c"
+        },
+        "10.16.4-2": {
           "sha256": "2c2fa05b6a8fe53c4728a29afbb777459a0f7caf1921754d4d3f21af22c2a81f",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.4/sles/11/chef-10.16.4-2.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.16.4-2.el5.i686.rpm",
+          "sha1": "040bfecdebeb128297ce6529c6f98bf6"
         },
-        "10.16.6": {
-          "sha1": "989ea0d179f4168e05fb739bac8af05e25ae7e57",
+        "10.16.6-1": {
           "sha256": "c7faf8dd272a2c1dd70a4df0765b639b8fa889407401211787bfafbb2488e489",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.6/sles/11/chef-10.16.6-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.16.6-1.el5.i686.rpm",
+          "sha1": "f3171e97af9faeff985d48b99e9f522c"
         },
-        "10.18.0": {
-          "sha1": "9392e7746b91c7bff11cba0f6877fb9307a8bacb",
+        "10.18.0-1": {
           "sha256": "0b01d32163768f2edd7c916439ce00779191bbda34849246fb2f88ca4cb2fab4",
-          "url": "https://packages.chef.io/files/stable/chef/10.18.0/sles/11/chef-10.18.0-1.el5.i686.rpm"
+          "sha1": "55494f44f73cfa27ffa2062d070b4581",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.18.0-1.el5.i686.rpm"
         },
-        "10.18.2": {
-          "sha1": "f311ed702c9a2ac52206bc933bb46c3b1ea9928a",
+        "10.18.2-1": {
+          "sha256": "337338cf3d44733ad7aacf13308695965c1db843e6932e17185927e912cacbfd",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.18.2-1.el5.i686.rpm",
+          "sha1": "c474f56a00b5fb2d5bfcf637a56d2dc6"
+        },
+        "10.18.2-2": {
           "sha256": "47464c10c4f21a96f9e06cf104eccde608b5eb14bf50c30c2a14e63723a7af71",
-          "url": "https://packages.chef.io/files/stable/chef/10.18.2/sles/11/chef-10.18.2-2.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.18.2-2.el5.i686.rpm",
+          "sha1": "d7ffd2a3b706e574cff81f66891a8c6d"
         },
-        "10.20.0": {
-          "sha1": "0c720d2403c9106dab1e84fcc7837e1b0d7f508d",
+        "10.20.0-1": {
           "sha256": "abccccf8b4312503a1bdcb34cac67e41db8360d7ad75762e02672cc920088c54",
-          "url": "https://packages.chef.io/files/stable/chef/10.20.0/sles/11/chef-10.20.0-1.el5.i686.rpm"
+          "sha1": "420beb33f7c6783602b70dbb9ce4a5ca",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.20.0-1.el5.i686.rpm"
         },
-        "10.22.0": {
-          "sha1": "f075d92d20e562ddefdf13bf9121ad2c61dfad6b",
+        "10.22.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.22.0-1.el5.i686.rpm",
           "sha256": "59ebe6917953a5229e37adcc0024d79321673fd3aab54da306730e1802431b78",
-          "url": "https://packages.chef.io/files/stable/chef/10.22.0/sles/11/chef-10.22.0-1.el5.i686.rpm"
+          "sha1": "363eed2dfe5cf8bb3c69ab822b110502"
         },
-        "10.24.0": {
-          "sha1": "d080e6633632037612083ad5bb062d040323a561",
-          "sha256": "20ce68fef1959e14f66b94e558c6c655475412de6ab8cea85c0472b7e6dcd27c",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.0/sles/11/chef-10.24.0-1.el5.i686.rpm"
+        "10.24.0-1": {
+          "sha1": "5c32a85bb9a9eed2a13a938f873ee00c",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.24.0-1.el5.i686.rpm",
+          "sha256": "20ce68fef1959e14f66b94e558c6c655475412de6ab8cea85c0472b7e6dcd27c"
         },
-        "10.24.2": {
-          "sha1": "451106a6c6c70e9ae07c887dcf6d5702ad497d0e",
+        "10.24.2-1": {
           "sha256": "32ee979c5a26a4f64dbeef7d4f5267c88a65b598ac6f5e79d0462645a20863a1",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.2/sles/11/chef-10.24.2-1.el5.i686.rpm"
+          "sha1": "bcea45e1a3a5151fe7ffa1e4f9d3615d",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.24.2-1.el5.i686.rpm"
         },
-        "10.24.4": {
-          "sha1": "abe8c74ec7aa253fb5c2a1af1df1c50993042f5f",
+        "10.24.4-1": {
+          "sha1": "c5840d26613b3d355843b5866f63aca4",
           "sha256": "38a4eccf424932f19a866c8592f9c6c67d75de455df6bd1b5559bd8b467264d8",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.4/sles/11/chef-10.24.4-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.24.4-1.el5.i686.rpm"
         },
-        "10.26.0": {
-          "sha1": "ff40f65276b3674afd07b7b0fe6dcd6d67ab83e7",
-          "sha256": "cdf5764bba098741b1187e501d7e18d5c25927205f0f5dfc57357f5516fdf8ad",
-          "url": "https://packages.chef.io/files/stable/chef/10.26.0/sles/11/chef-10.26.0-1.el5.i686.rpm"
+        "10.26.0-1": {
+          "sha1": "572c840ed36dc72e4d648b7a1aed9f3d",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.26.0-1.el5.i686.rpm",
+          "sha256": "cdf5764bba098741b1187e501d7e18d5c25927205f0f5dfc57357f5516fdf8ad"
         },
-        "10.28.0": {
-          "sha1": "9560af2c4cc1d7fe55496938d270dfd3b4588280",
+        "10.28.0-1": {
           "sha256": "113669ebc3efcaa459c3e7aa0d95efe1e8d490c5b8f169e35797715342aaf9cf",
-          "url": "https://packages.chef.io/files/stable/chef/10.28.0/sles/11/chef-10.28.0-1.el5.i686.rpm"
+          "sha1": "662c150c4a99fdf6b42a915824d0a448",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.28.0-1.el5.i686.rpm"
         },
-        "10.28.2": {
-          "sha1": "9dbe17c40af2bb0228bba22c98a5a10f051a16ab",
+        "10.28.2-1": {
           "sha256": "e9801a0984ff44ea3c2634deb841cbc465275e56f6966fe824eeece486e45d48",
-          "url": "https://packages.chef.io/files/stable/chef/10.28.2/sles/11/chef-10.28.2-1.el5.i686.rpm"
+          "sha1": "97847cf6b5f8446ad2f157e4e0704959",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.28.2-1.el5.i686.rpm"
         },
-        "10.30.2": {
-          "sha1": "39a4d46b182f9331d9090ffdfc53a3d52956952c",
+        "10.30.2-1": {
           "sha256": "257ac345a08112cb700e97beed1829a30da43d4daf8340d0ab333988a178b4d5",
-          "url": "https://packages.chef.io/files/stable/chef/10.30.2/sles/11/chef-10.30.2-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.30.2-1.el5.i686.rpm",
+          "sha1": "89c5cbab1a8fb5351f06090922ece8c1"
         },
-        "10.30.4": {
-          "sha1": "10a664037639a11d76534b83073764da12979c62",
+        "10.30.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.30.4-1.el5.i686.rpm",
           "sha256": "f4f43474f8842630d04bed6d2d16516ce8f2e0ddea42fcda6267fc358875c746",
-          "url": "https://packages.chef.io/files/stable/chef/10.30.4/sles/11/chef-10.30.4-1.el5.i686.rpm"
+          "sha1": "ecbf60092b882a17fa6d3b5d41fa672f"
         },
-        "10.32.2": {
-          "sha1": "649be06131a60e3ba35dd3ceebc0608a6b2abefa",
-          "sha256": "dd762b206ea97187fe47a7c5e8d3a4ca483cd8fbeae0dfbdc00e7d7036b1b4bf",
-          "url": "https://packages.chef.io/files/stable/chef/10.32.2/sles/11/chef-10.32.2-3.el5.i686.rpm"
+        "10.32.2-1": {
+          "sha256": "979a1cbe600256a0bfb20d31ed511442b98307cc34a00ce780861a96acaeb061",
+          "sha1": "42def5c4317e065ee68aec8386ef5052",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.32.2-1.el5.i686.rpm"
         },
-        "10.34.0": {
-          "sha1": "7577bc122cb0daa2c413fb943870ba2bce98ce65",
+        "10.32.2-2": {
+          "sha256": "877a3504a56024de75438409c1a608eda744f7f073a9a57e3e868b401109c8b0",
+          "sha1": "fc2c164e0019f7b669bcef4d76d480bb",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.32.2-2.el5.i686.rpm"
+        },
+        "10.32.2-3": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.32.2-3.el5.i686.rpm",
+          "sha1": "a2ef84b1aca7054ef42f737cd3782b02",
+          "sha256": "dd762b206ea97187fe47a7c5e8d3a4ca483cd8fbeae0dfbdc00e7d7036b1b4bf"
+        },
+        "10.34.0-1": {
+          "sha1": "20e5253a9a03fba987c7c80685c1a45a",
           "sha256": "385f8fdf9bece2de82e7d8464c9a9c60db0f495b7808e7eb5af6d1c6875abf1f",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.0/sles/11/chef-10.34.0-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.34.0-1.el5.i686.rpm"
         },
-        "10.34.2": {
-          "sha1": "bd7c56cc341d41e7e1370ce2b75fee801a48d075",
-          "sha256": "8fcd56a1297a6ce7928d4e0cc2703b863a7abc0954a979bb7706494a14e73ab4",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.2/sles/11/chef-10.34.2-1.el5.i686.rpm"
+        "10.34.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.34.2-1.el5.i686.rpm",
+          "sha1": "68144754252bf0f679501c30387783af",
+          "sha256": "8fcd56a1297a6ce7928d4e0cc2703b863a7abc0954a979bb7706494a14e73ab4"
         },
-        "10.34.4": {
-          "sha1": "0d3b0973b063270a6bf1cc41f3f9d18bd4c82cc8",
-          "sha256": "44cfd721eb449be4f77f76c6f356023df8947345b448bb29ceac34e894b3c633",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.4/sles/11/chef-10.34.4-1.el5.i686.rpm"
+        "10.34.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.34.4-1.el5.i686.rpm",
+          "sha1": "9505f335a3841a0b1e670a2e771e09aa",
+          "sha256": "44cfd721eb449be4f77f76c6f356023df8947345b448bb29ceac34e894b3c633"
         },
-        "11.0.0": {
-          "sha1": "0ab11da1288870984ce5c4754d1078b6d1aa6b99",
-          "sha256": "e4dc1fb08c91ecb09efda6460905407ec8d93fee833fac74a0503558bee8ff4a",
-          "url": "https://packages.chef.io/files/stable/chef/11.0.0/sles/11/chef-11.0.0-1.el5.i686.rpm"
+        "10.34.6-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-10.34.6-1.el5.i686.rpm",
+          "sha1": "ec810658eda685bb61bc2a6ef443f0b7",
+          "sha256": "cf630c1ef52f7acc70afd5edaadd3832799745f674de66c18a117bb6cf83743e"
         },
-        "11.2.0": {
-          "sha1": "7feef41492c8b1460c13eb766c2b323fbca3de8e",
-          "sha256": "7d6c33af785ec400d66c40b1a341e9775855515706446a2374fd5a47c8b5a91c",
-          "url": "https://packages.chef.io/files/stable/chef/11.2.0/sles/11/chef-11.2.0-1.el5.i686.rpm"
+        "11.0.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.0.0-1.el5.i686.rpm",
+          "sha1": "2abbe632154c11e5dee428c81e728ff7",
+          "sha256": "e4dc1fb08c91ecb09efda6460905407ec8d93fee833fac74a0503558bee8ff4a"
         },
-        "11.4.0": {
-          "sha1": "651320ce6abffa4d97700581e37b20fa5ce94eeb",
-          "sha256": "9192de0f0a1b82d68ad1cb8beafa43c0d1066acb411aa0b556334996dc6ad310",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.0/sles/11/chef-11.4.0-1.el5.i686.rpm"
-        },
-        "11.4.2": {
-          "sha1": "b441022cdb3f60b2b76a7f283a7e39b2d26386c5",
-          "sha256": "b125b675faf50dad38464e580ba4a8fc300fdcc8d0e9ad4219b881e7ea2c05b0",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.2/sles/11/chef-11.4.2-1.el5.i686.rpm"
-        },
-        "11.4.4": {
-          "sha1": "9436779738426a0f1ad755828a7e9bdf5ec2f395",
-          "sha256": "398c7e24a2b83e99f65289f11e3ae784fc68a21d931879f5c81a6ae905254b72",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.4/sles/11/chef-11.4.4-2.el5.i686.rpm"
-        },
-        "11.10.0": {
-          "sha1": "4e8526393c6d773a9f09624b52720c4265dab545",
+        "11.10.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.10.0-1.el5.i686.rpm",
           "sha256": "9fde59c0c4e8b078e9ee32018df3e3be8c913c40898523862fe6af36a8578806",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.0/sles/11/chef-11.10.0-1.el5.i686.rpm"
+          "sha1": "b66ea9c3e2a7636b73c2b1f9bedf3260"
         },
-        "11.10.2": {
-          "sha1": "937d0106f0d0d2409607dfde4c8f1530855b2d57",
-          "sha256": "d1a1d8cff30f658ac1ba87957cac3559c35d8d210fec3ba5a9ada43d4cf65cdd",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.2/sles/11/chef-11.10.2-1.el5.i686.rpm"
+        "11.10.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.10.2-1.el5.i686.rpm",
+          "sha1": "6267184bc97dfcdf3573400371bbbee9",
+          "sha256": "d1a1d8cff30f658ac1ba87957cac3559c35d8d210fec3ba5a9ada43d4cf65cdd"
         },
-        "11.10.4": {
-          "sha1": "0b1ddde756ca3212c6ef041b52a53cc60f972feb",
+        "11.10.4-1": {
           "sha256": "576da61725431d4591b3c3e6acb9160eda39679e79d35a8b552376cb0ffb791f",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.4/sles/11/chef-11.10.4-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.10.4-1.el5.i686.rpm",
+          "sha1": "743c035fd3ee01633c42237cb6de0096"
         },
-        "11.12.0": {
-          "sha1": "5c3383fc8c25f0bcf80d9d32c791f3bd09abd7c6",
+        "11.12.0-1": {
+          "sha1": "2d87172ad8edb3d96f0bf9a605362b84",
           "sha256": "d6e69ea7dba3a94912705160c5bc73e9506efd3059c89c4e677f2ffb34635ece",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.0/sles/11/chef-11.12.0-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.12.0-1.el5.i686.rpm"
         },
-        "11.12.2": {
-          "sha1": "adae583c3ea945c880fcdf443f785f6f3409fdfd",
-          "sha256": "0c434ebcb6cd9cbd1e63ca685ed6190bf3f8ea2cd5683efefc8387222f0c873b",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.2/sles/11/chef-11.12.2-1.el5.i686.rpm"
+        "11.12.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.12.2-1.el5.i686.rpm",
+          "sha1": "24e16736fa3825db6090f1db878b38f1",
+          "sha256": "0c434ebcb6cd9cbd1e63ca685ed6190bf3f8ea2cd5683efefc8387222f0c873b"
         },
-        "11.12.4": {
-          "sha1": "9ef9a2231d3eb5cd565aa675af13e60101b8a296",
+        "11.12.4-1": {
+          "sha1": "8a35ec0918f0847675753e957df3a9c3",
           "sha256": "653a7cf250c14683615c950b464fe84bd6a57f0dcbe9e3f4de1bc84a20397730",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.4/sles/11/chef-11.12.4-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.12.4-1.el5.i686.rpm"
         },
-        "11.12.8": {
-          "sha1": "f56f07e22e26ef11e082139fac6944e225f3b979",
-          "sha256": "29313b6664ea5ecff278ee8681f1293b5617b04d221e412d9f7eff33dd3dca90",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.8/sles/11/chef-11.12.8-2.el5.i686.rpm"
+        "11.12.8-1": {
+          "sha1": "5642f799b23ba059acdeb25a0c3d5158",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.12.8-1.el5.i686.rpm",
+          "sha256": "56838f9facb8b62842cb0749a2865144dad8d7ff65a995576b13088efc691f6e"
         },
-        "11.14.2": {
-          "sha1": "09580df5932b7de04a627d7a5c9e5282defad5fc",
+        "11.12.8-2": {
+          "sha1": "55ccc7555ffea5ffd7b944d7643a1d7f",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.12.8-2.el5.i686.rpm",
+          "sha256": "29313b6664ea5ecff278ee8681f1293b5617b04d221e412d9f7eff33dd3dca90"
+        },
+        "11.14.2-1": {
+          "sha1": "f98608fda3808b7d750836c694727384",
           "sha256": "b48a30c39895a5ce27ecf91abc111046b0da24d87238bfb63ce22444642c07fb",
-          "url": "https://packages.chef.io/files/stable/chef/11.14.2/sles/11/chef-11.14.2-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.14.2-1.el5.i686.rpm"
         },
-        "11.14.6": {
-          "sha1": "23af2191625d511c55699380fef9e60b4ee6020e",
+        "11.14.6-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.14.6-1.el5.i686.rpm",
           "sha256": "995328b03cc7af15f3456932b1348e0b7ef10ecc3285b2808b34ba93e0089ee5",
-          "url": "https://packages.chef.io/files/stable/chef/11.14.6/sles/11/chef-11.14.6-1.el5.i686.rpm"
+          "sha1": "0bf5f368eb725b81cbaa255d99462dee"
         },
-        "11.16.0": {
-          "sha1": "5f0c2038d00c98374ff35261e52ae626c596dad9",
-          "sha256": "627fc570db5d56f6614067ec7abc67afa66ae3bd28e5dc9a0c2baabb038b28b4",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.0/sles/11/chef-11.16.0-1.el5.i686.rpm"
+        "11.16.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.16.0-1.el5.i686.rpm",
+          "sha1": "4ceb380627568cdd71d761de1adb92d4",
+          "sha256": "627fc570db5d56f6614067ec7abc67afa66ae3bd28e5dc9a0c2baabb038b28b4"
         },
-        "11.16.2": {
-          "sha1": "9e1811406c742486831efc393bc1ad1583d0c490",
-          "sha256": "95fed8ea6cf76b211ec07df029ed18cc9092c849cd09f46b5540ddf42ee7f040",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.2/sles/11/chef-11.16.2-1.el5.i686.rpm"
+        "11.16.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.16.2-1.el5.i686.rpm",
+          "sha1": "a090ad30497904c4b248e1f22e4dfab0",
+          "sha256": "95fed8ea6cf76b211ec07df029ed18cc9092c849cd09f46b5540ddf42ee7f040"
         },
-        "11.16.4": {
-          "sha1": "b94bf51f905f264d9b8a3a4591f4877c4014bd8c",
-          "sha256": "733508a72f16d998d6713a72b514e439f473fb1da5a7593b7c340a0c09cad4ef",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.4/sles/11/chef-11.16.4-1.el5.i686.rpm"
+        "11.16.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.16.4-1.el5.i686.rpm",
+          "sha1": "b83a4dd153f65ef771af50f082951cae",
+          "sha256": "733508a72f16d998d6713a72b514e439f473fb1da5a7593b7c340a0c09cad4ef"
         },
-        "11.6.0": {
-          "sha1": "67d187afa97a4118d383a3500d1cf0e858eca01e",
-          "sha256": "b64688e9ab99db766f65dcba4c54f21a2bc5b7153b4f1249a835eeca5db387cd",
-          "url": "https://packages.chef.io/files/stable/chef/11.6.0/sles/11/chef-11.6.0-1.el5.i686.rpm"
+        "11.2.0-1": {
+          "sha256": "7d6c33af785ec400d66c40b1a341e9775855515706446a2374fd5a47c8b5a91c",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.2.0-1.el5.i686.rpm",
+          "sha1": "5808118032aa83a87438ccbbf285910c"
         },
-        "11.6.2": {
-          "sha1": "09df1eaa9602e08c031a06ad048a25fe3f6f788c",
+        "11.4.0-1": {
+          "sha1": "c6fbc5ef10f5ce34416fb1ea9f577eb3",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.4.0-1.el5.i686.rpm",
+          "sha256": "9192de0f0a1b82d68ad1cb8beafa43c0d1066acb411aa0b556334996dc6ad310"
+        },
+        "11.4.2-1": {
+          "sha1": "dd086dd6a01eb112fd8dbd7b6b23986a",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.4.2-1.el5.i686.rpm",
+          "sha256": "b125b675faf50dad38464e580ba4a8fc300fdcc8d0e9ad4219b881e7ea2c05b0"
+        },
+        "11.4.4-1": {
+          "sha1": "70ac2c84926733c3917cbaaf95729231",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.4.4-1.el5.i686.rpm",
+          "sha256": "a79cdeb8efa4ac7ff32bdc5d7f3f5488bad8de4f8b96029e24b2d4b1ccfe2a79"
+        },
+        "11.4.4-2": {
+          "sha1": "03069e8c8560d99c73d97023f080987b",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.4.4-2.el5.i686.rpm",
+          "sha256": "398c7e24a2b83e99f65289f11e3ae784fc68a21d931879f5c81a6ae905254b72"
+        },
+        "11.6.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.6.0-1.el5.i686.rpm",
+          "sha1": "903bcc7cd9cbc0478ac1d3c8328e2781",
+          "sha256": "b64688e9ab99db766f65dcba4c54f21a2bc5b7153b4f1249a835eeca5db387cd"
+        },
+        "11.6.2-1": {
           "sha256": "f81552d059a38eea04acc4d5f34d59d7e269ae4d089b7336ef5eb024f5a2083b",
-          "url": "https://packages.chef.io/files/stable/chef/11.6.2/sles/11/chef-11.6.2-1.el5.i686.rpm"
+          "sha1": "6c5202c361a672abe3f29ba4c7b4432d",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.6.2-1.el5.i686.rpm"
         },
-        "11.8.0": {
-          "sha1": "35ad95f0ad8686a62c059f98e1f6753fa1790662",
-          "sha256": "522f1eec773c48ee29c5f6d380df1fc4701550d3e57a181bae38fa1a10a02469",
-          "url": "https://packages.chef.io/files/stable/chef/11.8.0/sles/11/chef-11.8.0-1.el5.i686.rpm"
+        "11.8.0-1": {
+          "sha1": "0c9d30ddd44199b470846100e536f77b",
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.8.0-1.el5.i686.rpm",
+          "sha256": "522f1eec773c48ee29c5f6d380df1fc4701550d3e57a181bae38fa1a10a02469"
         },
-        "11.8.2": {
-          "sha1": "b91cfd4c95b2ad91a68baa571c7b7ce54e595293",
+        "11.8.2-1": {
           "sha256": "f4c1ed54904f6e1648e14dece384940f2c09919b3f6c95956d4e5c3f85948589",
-          "url": "https://packages.chef.io/files/stable/chef/11.8.2/sles/11/chef-11.8.2-1.el5.i686.rpm"
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-11.8.2-1.el5.i686.rpm",
+          "sha1": "25bb01ca0f5d2bc693757d2674cec9fa"
         },
-        "10.34.6": {
-          "sha1": "d95c7df3601ff20cdec1c3b8337d71ec09450fb8",
-          "sha256": "cf630c1ef52f7acc70afd5edaadd3832799745f674de66c18a117bb6cf83743e",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.6/sles/11/chef-10.34.6-1.el5.i686.rpm"
+        "12.0.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-12.0.0-1.i686.rpm",
+          "sha1": "e3b3c68052943ede50705a6c2cfdd9aa",
+          "sha256": "e14e7ef94a3521e3bb9b4b3cc72361bf7772452674cc7457661b844ecec0fa21"
         },
-        "12.0.0": {
-          "sha1": "1a8b370dab447e42ac06b81f37489ea6da0017f1",
-          "sha256": "e14e7ef94a3521e3bb9b4b3cc72361bf7772452674cc7457661b844ecec0fa21",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.0/sles/11/chef-12.0.0-1.i686.rpm"
+        "12.0.1-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-12.0.1-1.i686.rpm",
+          "sha1": "dcb8c0a0a3e6dd266798060067b286ca",
+          "sha256": "93f86c7b5e6f77aca4a3f35366488c802f4fb38848bdb925235c8d716bb5ae33"
         },
-        "12.0.1": {
-          "sha1": "0d0c41f69d1ae38b9e30a87b3d38be0ca2e1dd7e",
-          "sha256": "93f86c7b5e6f77aca4a3f35366488c802f4fb38848bdb925235c8d716bb5ae33",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.1/sles/11/chef-12.0.1-1.i686.rpm"
+        "12.0.3-1": {
+          "url": "https://packages.chef.io/stable/el/5/i686/chef-12.0.3-1.i686.rpm",
+          "sha1": "6a87b7aa65088f36f4d179270d0bb94d",
+          "sha256": "3fb6a9c26af0cc684aa82245b142d6b30ccc5573e9e9cd2dffec0d4e1f671648"
         }
       },
       "x86_64": {
-        "10.12.0": {
-          "sha1": "0e8d2a202cd5c209171b13c7804985f8c43d9874",
-          "sha256": "6047a88dd52d9bf33e4c30de36c57fa7308477e73cec07f1703eaba1e1bb366a",
-          "url": "https://packages.chef.io/files/stable/chef/10.12.0/sles/11/chef-10.12.0-1.el5.x86_64.rpm"
+        "10.12.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.12.0-1.el5.x86_64.rpm",
+          "sha1": "25887ebd80bbb488b88b9360a837d736",
+          "sha256": "6047a88dd52d9bf33e4c30de36c57fa7308477e73cec07f1703eaba1e1bb366a"
         },
-        "10.14.0": {
-          "sha1": "025bccd4dd955d6d9e238e9fd32bd6ac79462274",
-          "sha256": "91a44b990a56aa74398ba7be33b2d51e391b06a19a3054ed959180572d8e085d",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.0/sles/11/chef-10.14.0-1.el5.x86_64.rpm"
+        "10.14.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.14.0-1.el5.x86_64.rpm",
+          "sha1": "8b9a0c30f23a81b7487c86997fbfebd5",
+          "sha256": "91a44b990a56aa74398ba7be33b2d51e391b06a19a3054ed959180572d8e085d"
         },
-        "10.14.2": {
-          "sha1": "847f82d00e057aa79359634fe022965ea2eb913a",
-          "sha256": "b43725fed8a0cb9adb79c575704d7794cd0a971a13d4eacbef411b6d37d47b09",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.2/sles/11/chef-10.14.2-1.el5.x86_64.rpm"
+        "10.14.2-1": {
+          "sha1": "04d4769fc986cdb96708ba3d9de72225",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.14.2-1.el5.x86_64.rpm",
+          "sha256": "b43725fed8a0cb9adb79c575704d7794cd0a971a13d4eacbef411b6d37d47b09"
         },
-        "10.14.4": {
-          "sha1": "beb706441dda65bccfa89a0096fd1914e109477f",
+        "10.14.4-1": {
+          "sha256": "38c056f0f3e06cb54c7b4bc31a19f8b6550aba3c59752a1d15ba15173de043cc",
+          "sha1": "e522a6ad3191be2531c6198997d3ff00",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.14.4-1.el5.x86_64.rpm"
+        },
+        "10.14.4-2": {
+          "sha1": "88b017289d76235736b13a391639365a",
           "sha256": "2fb9ff44509217a5e68ec575bd24a79360955cc5652d2e63dd390ac156ba0415",
-          "url": "https://packages.chef.io/files/stable/chef/10.14.4/sles/11/chef-10.14.4-2.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.14.4-2.el5.x86_64.rpm"
         },
-        "10.16.0": {
-          "sha1": "65652285ad14ba424c823b35d9e01c28c048cdea",
+        "10.16.0-1": {
           "sha256": "7062fc5603e7fcf9ab8b81d48b4d375887abb32ed18e935d6d4f935da9c4dca8",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.0/sles/11/chef-10.16.0-1.el5.x86_64.rpm"
+          "sha1": "6a37fe2ff92ed597d25399ba927c8822",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.16.0-1.el5.x86_64.rpm"
         },
-        "10.16.2": {
-          "sha1": "0f08d4fda737d79fffb593822d7cc69d0248ce96",
-          "sha256": "0665393d6c1640e3cdf913e7dc93d281e5252efd4c134de884d0439504484454",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.2/sles/11/chef-10.16.2-1.el5.x86_64.rpm"
+        "10.16.2-1": {
+          "sha1": "8d196a6eddbdd27b302107e8350d6cf6",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.16.2-1.el5.x86_64.rpm",
+          "sha256": "0665393d6c1640e3cdf913e7dc93d281e5252efd4c134de884d0439504484454"
         },
-        "10.16.4": {
-          "sha1": "174a82aa6de1c4be23147cd1a922ad06e3f1c124",
+        "10.16.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.16.4-1.el5.x86_64.rpm",
+          "sha1": "1434ec7e6e3a6aef0f1526e32e335a32",
+          "sha256": "e215114f64c86393671adf2e4c4926f89ed6f34e58160f46c0a97cd9e6c0e727"
+        },
+        "10.16.4-2": {
           "sha256": "d64f8c20b7732b9374b803706878c51edd7bed99350f1dc53986b3cbb52baa7e",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.4/sles/11/chef-10.16.4-2.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.16.4-2.el5.x86_64.rpm",
+          "sha1": "1f754775f2d0463b7f4d72f49a1ec6ee"
         },
-        "10.16.6": {
-          "sha1": "019a48737e57b456190c9c7787e17dbb975a068a",
+        "10.16.6-1": {
           "sha256": "74095cc9acfbdf17b79f2c4b1d35a5f184b3ac1d9ad8b50686353d355b27c6f8",
-          "url": "https://packages.chef.io/files/stable/chef/10.16.6/sles/11/chef-10.16.6-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.16.6-1.el5.x86_64.rpm",
+          "sha1": "6dbf17229b28ec503daef6beb19cebcf"
         },
-        "10.18.0": {
-          "sha1": "a7524a85ab7e1ac8acd963e95f026bf3758db7f0",
+        "10.18.0-1": {
           "sha256": "4f54c90b75280d41ec0d02c367d38fe31c5fe0d5d4399bc1439d17c063c74866",
-          "url": "https://packages.chef.io/files/stable/chef/10.18.0/sles/11/chef-10.18.0-1.el5.x86_64.rpm"
+          "sha1": "62f9d80561b98099b20b3aebe9464f2e",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.18.0-1.el5.x86_64.rpm"
         },
-        "10.18.2": {
-          "sha1": "aa8a2a838817d52c1655ad7b0024bb5a8237bff2",
+        "10.18.2-1": {
+          "sha256": "5f02807a9d6529fe702736bc5379df1d0e700e5bdbf47ef7e9ce93ed2421435b",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.18.2-1.el5.x86_64.rpm",
+          "sha1": "99b9ef501c3c65bdb8b5844b558df8f3"
+        },
+        "10.18.2-2": {
           "sha256": "2a3fb92f122e4626e257339f32c68678a5143febd99a2d35a2ad28926a406054",
-          "url": "https://packages.chef.io/files/stable/chef/10.18.2/sles/11/chef-10.18.2-2.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.18.2-2.el5.x86_64.rpm",
+          "sha1": "c67924a50d34767ced8934e882f1ae87"
         },
-        "10.20.0": {
-          "sha1": "ba20281177dc1b148f6044e103562d03fa5670c8",
+        "10.20.0-1": {
           "sha256": "962db398597b2f40c7e809cf0a0524b97c94cc80546cbb1370fed00bf958c664",
-          "url": "https://packages.chef.io/files/stable/chef/10.20.0/sles/11/chef-10.20.0-1.el5.x86_64.rpm"
+          "sha1": "e5180a4b03219fd100544006b8b5baae",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.20.0-1.el5.x86_64.rpm"
         },
-        "10.22.0": {
-          "sha1": "fcec0b90019b0663bd59835ae155bd8518a8044a",
+        "10.22.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.22.0-1.el5.x86_64.rpm",
           "sha256": "7aa3ac2ba6009e987a031a78a3a107774597e001801c21dff5339af75777c758",
-          "url": "https://packages.chef.io/files/stable/chef/10.22.0/sles/11/chef-10.22.0-1.el5.x86_64.rpm"
+          "sha1": "4ea51559b6247d93ba688750ba7ca004"
         },
-        "10.24.0": {
-          "sha1": "babfc3e7199243c7205f80c315aa561db5819652",
-          "sha256": "d245e5c127abe89a8f6bf2a3fd151e32a37aa038c3be97e34823492e23d0d9dd",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.0/sles/11/chef-10.24.0-1.el5.x86_64.rpm"
+        "10.24.0-1": {
+          "sha1": "caaaa2cf36dde1837b4d559d840d0424",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.24.0-1.el5.x86_64.rpm",
+          "sha256": "d245e5c127abe89a8f6bf2a3fd151e32a37aa038c3be97e34823492e23d0d9dd"
         },
-        "10.24.2": {
-          "sha1": "34c022a5e2fb3665670cfddf04c44e52398e8152",
+        "10.24.2-1": {
           "sha256": "67f2bb4a48d8b434a81918c814173725c019f144f6d8c4a906b3d1d8bb118873",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.2/sles/11/chef-10.24.2-1.el5.x86_64.rpm"
+          "sha1": "e9121c3ed13d31550658e923f907a1cf",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.24.2-1.el5.x86_64.rpm"
         },
-        "10.24.4": {
-          "sha1": "7c236c85e5b17dd50cc957c1865600ec575509a6",
+        "10.24.4-1": {
+          "sha1": "0863999625e98103bcb9722423d2c20b",
           "sha256": "08241957ae1da402cd65a4aea1fa3f8e78a480a97a6be1c1cb97bce198330c65",
-          "url": "https://packages.chef.io/files/stable/chef/10.24.4/sles/11/chef-10.24.4-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.24.4-1.el5.x86_64.rpm"
         },
-        "10.26.0": {
-          "sha1": "7a0aa438fd88e43d8fe6db544827b7bbb33c8712",
-          "sha256": "810f63daff2c15a9094180c465560d92bf38e58dda22cafca22bf84d06710557",
-          "url": "https://packages.chef.io/files/stable/chef/10.26.0/sles/11/chef-10.26.0-1.el5.x86_64.rpm"
+        "10.26.0-1": {
+          "sha1": "2073b609b4e0c3fb5fc16ca361e82df1",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.26.0-1.el5.x86_64.rpm",
+          "sha256": "810f63daff2c15a9094180c465560d92bf38e58dda22cafca22bf84d06710557"
         },
-        "10.28.0": {
-          "sha1": "af3f479cbadac1d1b09cb195a4de1849e654d782",
+        "10.28.0-1": {
           "sha256": "6afc994236eb6806cded11faa396b2d0e4eb7c4e4e7b3ac98cbc0a694236bc83",
-          "url": "https://packages.chef.io/files/stable/chef/10.28.0/sles/11/chef-10.28.0-1.el5.x86_64.rpm"
+          "sha1": "532d6e1d2a6262828106337f3d609024",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.28.0-1.el5.x86_64.rpm"
         },
-        "10.28.2": {
-          "sha1": "073c567f82051e5b136217d7b29be97414cd2723",
+        "10.28.2-1": {
           "sha256": "0d6a6180d793b0528ff014f212d1e10860f1689f6309caf4597b05a198286803",
-          "url": "https://packages.chef.io/files/stable/chef/10.28.2/sles/11/chef-10.28.2-1.el5.x86_64.rpm"
+          "sha1": "492731414cee5a53477789327e94801b",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.28.2-1.el5.x86_64.rpm"
         },
-        "10.30.2": {
-          "sha1": "77d6a4fab0d01e6c39b65f83a7995741e17fd09c",
+        "10.30.2-1": {
           "sha256": "64b32368a5d2601c1f33f7a6b4a112c8d4c9ca74783c92d606df6adc3c820ffc",
-          "url": "https://packages.chef.io/files/stable/chef/10.30.2/sles/11/chef-10.30.2-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.30.2-1.el5.x86_64.rpm",
+          "sha1": "55b4cb907ea84bd7a10f00068edbb7e0"
         },
-        "10.30.4": {
-          "sha1": "859d19ac5f79ed7f555b5e8c8b420ad9cc719801",
+        "10.30.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.30.4-1.el5.x86_64.rpm",
           "sha256": "d0347c01776c32373ea8198ede2817a262e22587ae54bb911ebfb9a4674a1609",
-          "url": "https://packages.chef.io/files/stable/chef/10.30.4/sles/11/chef-10.30.4-1.el5.x86_64.rpm"
+          "sha1": "5b512fd32a5af4bbfce2667bec455537"
         },
-        "10.32.2": {
-          "sha1": "5bb792d18ed36c465fd2a898a5956b81d1a82a20",
-          "sha256": "01fe7772aec07062e5590be3c9a8c205f37eb051bba6256522ecba2ada37969a",
-          "url": "https://packages.chef.io/files/stable/chef/10.32.2/sles/11/chef-10.32.2-3.el5.x86_64.rpm"
+        "10.32.2-1": {
+          "sha256": "5dc9101548c014a5a9a3b1c25ec32137d929420f7dfa6b3c0136fc2d17fad8bd",
+          "sha1": "a19eaf978dcddbcba5ee45dcba8fd1c7",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.32.2-1.el5.x86_64.rpm"
         },
-        "10.34.0": {
-          "sha1": "86f92b127c3611e537ce989af2ff38d2c4c4113a",
+        "10.32.2-2": {
+          "sha256": "8decb786e04bea86bbba0ef13314698ad6b87aee87727a05fcdc37b84a853513",
+          "sha1": "261144eb8cdca73e24041986cf1160c9",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.32.2-2.el5.x86_64.rpm"
+        },
+        "10.32.2-3": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.32.2-3.el5.x86_64.rpm",
+          "sha1": "664adf50cb33560603924e2f8d0460a3",
+          "sha256": "01fe7772aec07062e5590be3c9a8c205f37eb051bba6256522ecba2ada37969a"
+        },
+        "10.34.0-1": {
+          "sha1": "a24e0c777d2caefa83e1243125082e2c",
           "sha256": "073d97410372cee149b0030c23951b7aeea108b329327a5e5d078cd917534b68",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.0/sles/11/chef-10.34.0-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.34.0-1.el5.x86_64.rpm"
         },
-        "10.34.2": {
-          "sha1": "2c52e98df7fd6db1e95e1c12bab2803a0a4c9ccb",
-          "sha256": "7d5279f9781a260a74157e63ea7ef8df98689dcc5518b6976c6a3a65932ccc8a",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.2/sles/11/chef-10.34.2-1.el5.x86_64.rpm"
+        "10.34.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.34.2-1.el5.x86_64.rpm",
+          "sha1": "1f9374d153c62575aa129df6cc80d3cd",
+          "sha256": "7d5279f9781a260a74157e63ea7ef8df98689dcc5518b6976c6a3a65932ccc8a"
         },
-        "10.34.4": {
-          "sha1": "cb4cc834d48e86ed69badbe884180d0a46a46e3b",
-          "sha256": "79a41eb0caa1fc01e22f626ed64d326f99eb7a00c7863e68d4cb07f8038cc81b",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.4/sles/11/chef-10.34.4-1.el5.x86_64.rpm"
+        "10.34.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.34.4-1.el5.x86_64.rpm",
+          "sha1": "4d7d16b69a0fbebcbdd4bc4d31a21624",
+          "sha256": "79a41eb0caa1fc01e22f626ed64d326f99eb7a00c7863e68d4cb07f8038cc81b"
         },
-        "11.0.0": {
-          "sha1": "34546f69c958dcd45e7ce5e87f03c8053e44c6eb",
-          "sha256": "e632aeccb0ffa2a87c3917946b746999ef2c16f7376f48679243b9ef810f7747",
-          "url": "https://packages.chef.io/files/stable/chef/11.0.0/sles/11/chef-11.0.0-1.el5.x86_64.rpm"
+        "10.34.6-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-10.34.6-1.el5.x86_64.rpm",
+          "sha1": "5c1f95a1d9041fd268eb2a8ba8eb969d",
+          "sha256": "df4112650a63428b9c40df41c9cf8d318d826aeb22e65d9fed6e0f3926732873"
         },
-        "11.2.0": {
-          "sha1": "0e45b2814233956add73cb239a6e0c73407402ea",
-          "sha256": "25b088e42e498ba7466a523bebca08f5d6a1dc661a4f0dc1d94d140747fe6c00",
-          "url": "https://packages.chef.io/files/stable/chef/11.2.0/sles/11/chef-11.2.0-1.el5.x86_64.rpm"
+        "11.0.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.0.0-1.el5.x86_64.rpm",
+          "sha1": "488ed5466b9d157df37feb37aaaf3bb5",
+          "sha256": "e632aeccb0ffa2a87c3917946b746999ef2c16f7376f48679243b9ef810f7747"
         },
-        "11.4.0": {
-          "sha1": "16f1dd724da379c87e4e657a7f5b2f758599634e",
-          "sha256": "981f3587bea5b767af48c9702b01298ff81c5cb3b058c1eb9dee603a25a549bd",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.0/sles/11/chef-11.4.0-1.el5.x86_64.rpm"
-        },
-        "11.4.2": {
-          "sha1": "aa422925fc812cfc230cbbde334f0d5f6fbd731d",
-          "sha256": "becd3bc4f4672d5a6945a09a7b85f094df326680413f7ca95660f53adcab1863",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.2/sles/11/chef-11.4.2-1.el5.x86_64.rpm"
-        },
-        "11.4.4": {
-          "sha1": "040bb9e96b33e74c6f1e26711173471b6e163f99",
-          "sha256": "dd225b3a75a049fae856c38d0401287faac93741d10def26006e34e8c0df68aa",
-          "url": "https://packages.chef.io/files/stable/chef/11.4.4/sles/11/chef-11.4.4-2.el5.x86_64.rpm"
-        },
-        "11.10.0": {
-          "sha1": "5314718fa1fe986485d9feb1efd91ff2bc8cdc54",
+        "11.10.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.10.0-1.el5.x86_64.rpm",
           "sha256": "2dcb3993f8f7552f3d04dcec4bb67b12d93d8d5a47a1baa115aa0f45e1b89780",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.0/sles/11/chef-11.10.0-1.el5.x86_64.rpm"
+          "sha1": "38cfa9f204210af90c97ff93b8118c9b"
         },
-        "11.10.2": {
-          "sha1": "be5902a6c7cba6a569db94ece3535bffc7c3d03c",
-          "sha256": "972fa3219b5effee7e0e965fea6b989960558f68e67fe70d36733a13bbcf2f7e",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.2/sles/11/chef-11.10.2-1.el5.x86_64.rpm"
+        "11.10.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.10.2-1.el5.x86_64.rpm",
+          "sha1": "f82f225b8710315beacf706289f9f590",
+          "sha256": "972fa3219b5effee7e0e965fea6b989960558f68e67fe70d36733a13bbcf2f7e"
         },
-        "11.10.4": {
-          "sha1": "f50cbd05ca24943bdef5663b775ebd22c4fcc2cf",
+        "11.10.4-1": {
           "sha256": "67a28bac9549cd819e4cd0b19ae5d1f8e9fd1041c4456ace965772aba10021ca",
-          "url": "https://packages.chef.io/files/stable/chef/11.10.4/sles/11/chef-11.10.4-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.10.4-1.el5.x86_64.rpm",
+          "sha1": "8a368de9325fa7cdd73b48496141d7e7"
         },
-        "11.12.0": {
-          "sha1": "7b66938d7c9a9b71d3b89039d7f707a242f9a1b1",
+        "11.12.0-1": {
+          "sha1": "71360fd2f6d3cbba7fcae518838603bc",
           "sha256": "3b98d70491a53617c75621ad9870a4ddd257677eab49c68d56750af4e3677110",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.0/sles/11/chef-11.12.0-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.12.0-1.el5.x86_64.rpm"
         },
-        "11.12.2": {
-          "sha1": "bb783ce3b1348a9ec4ef15f92651a8dda5113387",
-          "sha256": "95bf3b0cc71281d806255a35f0797a33be40cdd5edb30dd3fb224f916148c5fb",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.2/sles/11/chef-11.12.2-1.el5.x86_64.rpm"
+        "11.12.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.12.2-1.el5.x86_64.rpm",
+          "sha1": "7c70498a1dff7204cabdb00016c4a67e",
+          "sha256": "95bf3b0cc71281d806255a35f0797a33be40cdd5edb30dd3fb224f916148c5fb"
         },
-        "11.12.4": {
-          "sha1": "eb7d8a4f5babc9adac95ff0c302b58c044d05dd6",
+        "11.12.4-1": {
+          "sha1": "62e5709238a326aa69aed9e29c4404a5",
           "sha256": "53f1970baa8f3968a064cc8eb0aa5b71067184573140b86b9a8db4b637bac22f",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.4/sles/11/chef-11.12.4-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.12.4-1.el5.x86_64.rpm"
         },
-        "11.12.8": {
-          "sha1": "3d86740097ae1c590c2e037ff93735d7442433d0",
-          "sha256": "860eacafc82b58fff9c758a24deed76990a073d7d92c7f74202aa2afde466b9a",
-          "url": "https://packages.chef.io/files/stable/chef/11.12.8/sles/11/chef-11.12.8-2.el5.x86_64.rpm"
+        "11.12.8-1": {
+          "sha1": "e9e7e48bb4e2a699b69d5fb95c078d59",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.12.8-1.el5.x86_64.rpm",
+          "sha256": "8c3d52e0033c3d56ac95fa7e63586e87012c0a86e1dcaaf76e27bf5e7c1919ed"
         },
-        "11.14.2": {
-          "sha1": "2d490c6cd0da04d5bc6b4077de7920a49eff3940",
+        "11.12.8-2": {
+          "sha1": "d5b1993f869b3d8bf2acaecc439743ee",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.12.8-2.el5.x86_64.rpm",
+          "sha256": "860eacafc82b58fff9c758a24deed76990a073d7d92c7f74202aa2afde466b9a"
+        },
+        "11.14.2-1": {
+          "sha1": "4848339c0bd9a77a12a1222d119c7fb3",
           "sha256": "90bcdc18de38031ef90f26217a384e5d546f629edb1df5daf9a35ed1f9aee0d7",
-          "url": "https://packages.chef.io/files/stable/chef/11.14.2/sles/11/chef-11.14.2-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.14.2-1.el5.x86_64.rpm"
         },
-        "11.14.6": {
-          "sha1": "92cefcfd9de9b5b2cd5030c4ff488938f075a218",
+        "11.14.6-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.14.6-1.el5.x86_64.rpm",
           "sha256": "d57da008c1ac79bf759bc1558f757dfe48266cfe665ef1d2d42e42dc0a91e0ef",
-          "url": "https://packages.chef.io/files/stable/chef/11.14.6/sles/11/chef-11.14.6-1.el5.x86_64.rpm"
+          "sha1": "c4877b3191f7e646f4630e2290b2cf19"
         },
-        "11.16.0": {
-          "sha1": "99908b6fc633f74147a8bc994861e347f81f98c4",
-          "sha256": "fb2609c200d521fb23698b21393ca7737a1c14d7646d2e2022772389b43f8a06",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.0/sles/11/chef-11.16.0-1.el5.x86_64.rpm"
+        "11.16.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.16.0-1.el5.x86_64.rpm",
+          "sha1": "00ac390f3c2eece971246e7248b686ac",
+          "sha256": "fb2609c200d521fb23698b21393ca7737a1c14d7646d2e2022772389b43f8a06"
         },
-        "11.16.2": {
-          "sha1": "626db104d9a6ca710dce876351aeef295eafea88",
-          "sha256": "31a2a2bebfadb275f5d001b4b2dfc4e51e9b19dfff0464216f5668bcfb51990a",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.2/sles/11/chef-11.16.2-1.el5.x86_64.rpm"
+        "11.16.2-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.16.2-1.el5.x86_64.rpm",
+          "sha1": "1a30ebc654254d7d9c185b6f39415ee0",
+          "sha256": "31a2a2bebfadb275f5d001b4b2dfc4e51e9b19dfff0464216f5668bcfb51990a"
         },
-        "11.16.4": {
-          "sha1": "1880e854bd7a7f62037bf318537ab0dc913f437a",
-          "sha256": "b144aaea6432e3f50a87ad7a8870e0bf8cb05686f2eec11b9b53a21568a568e4",
-          "url": "https://packages.chef.io/files/stable/chef/11.16.4/sles/11/chef-11.16.4-1.el5.x86_64.rpm"
+        "11.16.4-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.16.4-1.el5.x86_64.rpm",
+          "sha1": "35d15561a002a8bb186ab279219f3b86",
+          "sha256": "b144aaea6432e3f50a87ad7a8870e0bf8cb05686f2eec11b9b53a21568a568e4"
         },
-        "11.6.0": {
-          "sha1": "544f075152210322e5a025d47500d00f93a7c8da",
-          "sha256": "ad0fb4a842706ce7534e36e044d64c55c856bb0368e3f985615fe1b2abe1e49e",
-          "url": "https://packages.chef.io/files/stable/chef/11.6.0/sles/11/chef-11.6.0-1.el5.x86_64.rpm"
+        "11.2.0-1": {
+          "sha256": "25b088e42e498ba7466a523bebca08f5d6a1dc661a4f0dc1d94d140747fe6c00",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.2.0-1.el5.x86_64.rpm",
+          "sha1": "7c2a8e40c40814a24216d057781c3d38"
         },
-        "11.6.2": {
-          "sha1": "beed2b376a03f8b18de21a15cc06af1e28c32f3e",
+        "11.4.0-1": {
+          "sha1": "b2eff287f8fc23c3be246631fdc57a60",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.4.0-1.el5.x86_64.rpm",
+          "sha256": "981f3587bea5b767af48c9702b01298ff81c5cb3b058c1eb9dee603a25a549bd"
+        },
+        "11.4.2-1": {
+          "sha1": "27acd509e355e810b79eb804c54397ac",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.4.2-1.el5.x86_64.rpm",
+          "sha256": "becd3bc4f4672d5a6945a09a7b85f094df326680413f7ca95660f53adcab1863"
+        },
+        "11.4.4-1": {
+          "sha1": "f1502f294dc35292dc308c98aab41ed6",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.4.4-1.el5.x86_64.rpm",
+          "sha256": "37497bbf6b910f3b0bf836fe359641cf264bb47706385f4ee1a0682d4f289004"
+        },
+        "11.4.4-2": {
+          "sha1": "0daee202aaa6c1f01710ef98dbb78398",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.4.4-2.el5.x86_64.rpm",
+          "sha256": "dd225b3a75a049fae856c38d0401287faac93741d10def26006e34e8c0df68aa"
+        },
+        "11.6.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.6.0-1.el5.x86_64.rpm",
+          "sha1": "9cf3e6429982d2a4cb6a2d6e921feba7",
+          "sha256": "ad0fb4a842706ce7534e36e044d64c55c856bb0368e3f985615fe1b2abe1e49e"
+        },
+        "11.6.2-1": {
           "sha256": "0c678514b88fc5ff71ed9e8ec3e9289c5b65a306b633ad7a1612648036ee0937",
-          "url": "https://packages.chef.io/files/stable/chef/11.6.2/sles/11/chef-11.6.2-1.el5.x86_64.rpm"
+          "sha1": "58d96c70aa662289da866a121b23f124",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.6.2-1.el5.x86_64.rpm"
         },
-        "11.8.0": {
-          "sha1": "0754da8281ec5dfe1ced54a457bd0b4dc1d74225",
-          "sha256": "68deff3464c4c6bd8a59ba5d39c9b04a55ba98239492614248b9a08ed7d0771e",
-          "url": "https://packages.chef.io/files/stable/chef/11.8.0/sles/11/chef-11.8.0-1.el5.x86_64.rpm"
+        "11.8.0-1": {
+          "sha1": "563054af75e618ddcd126a4d9317c11c",
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.8.0-1.el5.x86_64.rpm",
+          "sha256": "68deff3464c4c6bd8a59ba5d39c9b04a55ba98239492614248b9a08ed7d0771e"
         },
-        "11.8.2": {
-          "sha1": "2b8d63d478407fc1ae5ae88cddf72d9dfe3231cb",
+        "11.8.2-1": {
           "sha256": "a024749aef1401f605a0c9a4e5e21cf318917a4277cce70db1044af0be682d55",
-          "url": "https://packages.chef.io/files/stable/chef/11.8.2/sles/11/chef-11.8.2-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-11.8.2-1.el5.x86_64.rpm",
+          "sha1": "fc9baa4cb01a715826514f3125b7801a"
         },
-        "10.34.6": {
-          "sha1": "ec130b2db778b9c39f33e450819cb74ad020259d",
-          "sha256": "df4112650a63428b9c40df41c9cf8d318d826aeb22e65d9fed6e0f3926732873",
-          "url": "https://packages.chef.io/files/stable/chef/10.34.6/sles/11/chef-10.34.6-1.el5.x86_64.rpm"
+        "12.0.0-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-12.0.0-1.x86_64.rpm",
+          "sha1": "fb3f17347adacfe79adc635ff3d2bd1f",
+          "sha256": "59a6ee5009a412815ae2251cf03966573d3720f7deca644cbb920e72a68283a7"
         },
-        "12.0.0": {
-          "sha1": "eb5bb0ab498e158b81d92d18fcbafc0328bb5544",
-          "sha256": "59a6ee5009a412815ae2251cf03966573d3720f7deca644cbb920e72a68283a7",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.0/sles/11/chef-12.0.0-1.x86_64.rpm"
+        "12.0.1-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-12.0.1-1.x86_64.rpm",
+          "sha1": "4978b3ab99baf1b10c1ad6243335b9c8",
+          "sha256": "f1f775fc3aeb60a97f5727f37fd98a7c5435676ada6f221943c8716bbdbbc9dc"
         },
-        "12.0.1": {
-          "sha1": "9ae748a55c3050f4221218d8e6d9893faedb143c",
-          "sha256": "f1f775fc3aeb60a97f5727f37fd98a7c5435676ada6f221943c8716bbdbbc9dc",
-          "url": "https://packages.chef.io/files/stable/chef/12.0.1/sles/11/chef-12.0.1-1.x86_64.rpm"
-        }
-      },
-      "s390x": {
-        "12.16.42": {
-          "sha1": "d462c195dbc40e36ae98f29afec75367248441ff",
-          "sha256": "076a474c9eef6eab9a9572b071d171875ab58013f32bf2bcb5aac1fdad4ceb84",
-          "url": "https://packages.chef.io/files/stable/chef/12.16.42/sles/11/chef-12.16.42-1.sles11.s390x.rpm"
-        },
-        "12.17.44": {
-          "sha1": "9e50225d5ee897426d9405f27d20ed95e27127f1",
-          "sha256": "bdcd7b58aec7caa6995f0d2eac5321ce568480a3e27d493fe12ec7ded4a09e05",
-          "url": "https://packages.chef.io/files/stable/chef/12.17.44/sles/11/chef-12.17.44-1.sles11.s390x.rpm"
-        },
-        "12.18.31": {
-          "sha1": "fcbda6a61c11cae0a916eda0a2fd395c72adb963",
-          "sha256": "5b35a434cf2c80c0bc7143a3305fb2f1553caf700eb17de4ea3c1b6d1134fbbd",
-          "url": "https://packages.chef.io/files/stable/chef/12.18.31/sles/11/chef-12.18.31-1.sles11.s390x.rpm"
-        },
-        "12.19.33": {
-          "sha1": "86c77aa2874d58da9f3d4a3ec891e5b93fd5538f",
-          "sha256": "c5c18ccbba1c3d48ceb2369e30b806002c140d603c4f0502d47e1030aaadb772",
-          "url": "https://packages.chef.io/files/stable/chef/12.19.33/sles/11/chef-12.19.33-1.sles11.s390x.rpm"
-        },
-        "12.19.36": {
-          "sha1": "bfd3228323104788463c84b0323506bb3852ccf8",
-          "sha256": "e0231dffca169c920ae4a53c3025f490029633e72194e40374bfa6290c416b49",
-          "url": "https://packages.chef.io/files/stable/chef/12.19.36/sles/11/chef-12.19.36-1.sles11.s390x.rpm"
-        },
-        "13.0.113": {
-          "sha1": "61540998498c22096190be040ef607e7ade2f5ea",
-          "sha256": "a3ecce078b28276f1b625418c47c6210d26fb212a9a55462074307106b64dd35",
-          "url": "https://packages.chef.io/files/stable/chef/13.0.113/sles/11/chef-13.0.113-1.sles11.s390x.rpm"
-        },
-        "13.0.118": {
-          "sha1": "7bab806b5344ddacd77cb921a47c0639755a424d",
-          "sha256": "697736106c4cea942c3f5043c54fef77411c893cf19d95c4dc589a7982dae47a",
-          "url": "https://packages.chef.io/files/stable/chef/13.0.118/sles/11/chef-13.0.118-1.sles11.s390x.rpm"
-        },
-        "12.20.3": {
-          "sha1": "1922315d51bbeb23b96bde1dc8926b89b6e1668f",
-          "sha256": "220f0ba4c364d8da16fef6299e08026b76befc786bb4bd9c489cec4d32bcf2e1",
-          "url": "https://packages.chef.io/files/stable/chef/12.20.3/sles/11/chef-12.20.3-1.sles11.s390x.rpm"
-        }
-      }
-    },
-    "12": {
-      "s390x": {
-        "12.16.42": {
-          "sha1": "8f64f440d8ba607bfb0ab8592246d4a3417d94d8",
-          "sha256": "ea5844d55fa9c61d898985cd04f88f337661461a739eef56f72e8c88ab78e476",
-          "url": "https://packages.chef.io/files/stable/chef/12.16.42/sles/12/chef-12.16.42-1.sles12.s390x.rpm"
-        },
-        "12.17.44": {
-          "sha1": "b25588c1fe0edadebfb2628972ed95efa7a4cfb3",
-          "sha256": "a44084f491b797e5f80ab4ff1c6a92b20019e8e0fe9eb94017bf80f4ae88b4cc",
-          "url": "https://packages.chef.io/files/stable/chef/12.17.44/sles/12/chef-12.17.44-1.sles12.s390x.rpm"
-        },
-        "12.18.31": {
-          "sha1": "954503d86fdad1a5266a779716afa587a576192e",
-          "sha256": "978ac7a1b2191b3628a6982c0616643fd641883b4bfeb56fcaac3102eab519d6",
-          "url": "https://packages.chef.io/files/stable/chef/12.18.31/sles/12/chef-12.18.31-1.sles12.s390x.rpm"
-        },
-        "12.19.33": {
-          "sha1": "7fe12c47af09930cd322a991a4aaed9af7d5d8b8",
-          "sha256": "49169602c12349073b360bd1c3ec7ea57724c3c76f0750d4bbe9426fc36f4239",
-          "url": "https://packages.chef.io/files/stable/chef/12.19.33/sles/12/chef-12.19.33-1.sles12.s390x.rpm"
-        },
-        "12.19.36": {
-          "sha1": "4e1c2d6ecf3cae6a44725dacd495c0408d682853",
-          "sha256": "4908f731c2b1245c5f18d03b35d67105d0928ce5ec7aec40b3d8f331242e0cc5",
-          "url": "https://packages.chef.io/files/stable/chef/12.19.36/sles/12/chef-12.19.36-1.sles12.s390x.rpm"
-        },
-        "13.0.113": {
-          "sha1": "dcd32a155c5cd18fa64393bcc5b5ca06ef88cc63",
-          "sha256": "53cc376f1c04438864e9207e0896a8927ac154f96bcd8b7c9424a7f88c552af6",
-          "url": "https://packages.chef.io/files/stable/chef/13.0.113/sles/12/chef-13.0.113-1.sles12.s390x.rpm"
-        },
-        "13.0.118": {
-          "sha1": "72a124b221c27e51161cec9b46324520f10ea9d3",
-          "sha256": "0b2ff6893f6b924f98a80a8814a336e3978ad3b0553cd989be40a4a51a124de0",
-          "url": "https://packages.chef.io/files/stable/chef/13.0.118/sles/12/chef-13.0.118-1.sles12.s390x.rpm"
-        },
-        "12.20.3": {
-          "sha1": "44e71054fbe63c020b1fd00b014f2698faa8fec2",
-          "sha256": "0ec6034ec8babe71ce0c4483f0558a372dfa899465a68af66f9e00503172b04e",
-          "url": "https://packages.chef.io/files/stable/chef/12.20.3/sles/12/chef-12.20.3-1.sles12.s390x.rpm"
+        "12.0.3-1": {
+          "url": "https://packages.chef.io/stable/el/5/x86_64/chef-12.0.3-1.x86_64.rpm",
+          "sha1": "7c1302e1f66e04288f8201b77413a45e",
+          "sha256": "7ee1659b4271e8f24c45f074d0c524a727c1eb7fab334833155cdb8ce0339df8"
         }
       }
     }
