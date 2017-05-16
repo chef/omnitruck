@@ -100,7 +100,7 @@ platform "sles" do
     if opts[:architecture] == "s390x"
       opts[:version]
     else
-      opts[:version].to_f <= 10 ? "5" : "6"
+      opts[:version].to_f <= 11 ? "5" : "6"
     end
   end
 end
