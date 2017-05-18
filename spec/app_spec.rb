@@ -284,9 +284,9 @@ context 'Omnitruck' do
                 let(:project_version) { nil }
                 let(:expected_info) do
                   {
-                    url: 'https://packages.chef.io/stable/el/6/i686/chef-12.4.3-1.el6.i386.rpm',
-                    sha256: '221890739edadcf46501154c8cbdba771612140364ca4afa8290327c4703a1ee',
-                    sha1: 'a71d6c0039753ad207848ca385bd0432',
+                    url: 'https://packages.chef.io/stable/el/5/i686/chef-12.4.3-1.el5.i386.rpm',
+                    sha256: 'ecd2cc4aa3606d74f697304cb1b18f9d2e5799d0906b8962052069ddf848fbd3',
+                    sha1: '90d6fc91edff9d81d901ca9d71325347',
                     version: '12.4.3'
                   }
                 end
