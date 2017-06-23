@@ -312,6 +312,8 @@ class Omnitruck < Sinatra::Base
   # @return [Hash]
   #
   def get_package_info
+    current_project = project
+
     # Windows artifacts require special handling
     # 1) If no architecture is provided we default to i386
     # 2) Internally we always use i386 to represent 32-bit artifacts, not i686
@@ -327,40 +329,27 @@ class Omnitruck < Sinatra::Base
           end
         end
 
-    # Create VersionResolver here to utilize #parse_version_string
-    current_version_resolver = Chef::VersionResolver.new(
-      params['v'],
-      cache.manifest_for(project, channel),
-      channel,
-      project
-    )
-
     # We need to manage automate/delivery this in this method, not #project.
     # If we try to handle this in #project we have to make an assumption to
     # always return automate results when the VERSIONS api is called for delivery.
     if %w{automate delivery}.include?(project)
-      current_version = current_version_resolver.target_version
+      current_version = Opscode::Version.parse(params['v'])
 
       # default project
       current_project = 'automate'
 
       # If current version is nil we assume latest - automate. Otherwise, check which project it should be
-      if current_version
-        current_project = 'delivery' if current_version < Opscode::Version.parse('0.7.0')
-      end
-
-      # Recreate the VersionResolver if the projects don't match
-      unless project == current_project
-        current_version_resolver = Chef::VersionResolver.new(
-          params['v'],
-          cache.manifest_for(current_project, channel),
-          channel,
-          current_project
-        )
+      if current_version && (current_version < Opscode::Version.parse('0.7.0'))
+        current_project = 'delivery'
       end
     end
 
-    current_version_resolver.package_info(params['p'], params['pv'], m)
+    Chef::VersionResolver.new(
+      params['v'],
+      cache.manifest_for(current_project, channel),
+      channel,
+      current_project
+    ).package_info(params['p'], params['pv'], m)
   end
 
   #
