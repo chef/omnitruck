@@ -1,0 +1,393 @@
+{
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/ubuntu/12.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "1589efadb852c0a5164416760f8c50bc1ccb7a5a",
+          "sha256": "8f7d907372035761d28dc434ee83c516e2e7d1c277ef2e284bfb06016740f217",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/ubuntu/12.04/opscode-reporting_1.7.2+20170616224318.git.1.1805653-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "e36ee23eb199955a07f837918dd689151f51e36d",
+          "sha256": "2ceb02e948bb5eab30829861cd5a8a157fe6e19fa60cc404b8166343041884b2",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/ubuntu/12.04/opscode-reporting_1.7.2+20170616230854.git.3.c52f317-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/12.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/ubuntu/12.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3/ubuntu/12.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/ubuntu/12.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/ubuntu/12.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/ubuntu/14.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "1589efadb852c0a5164416760f8c50bc1ccb7a5a",
+          "sha256": "8f7d907372035761d28dc434ee83c516e2e7d1c277ef2e284bfb06016740f217",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/ubuntu/14.04/opscode-reporting_1.7.2+20170616224318.git.1.1805653-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "e36ee23eb199955a07f837918dd689151f51e36d",
+          "sha256": "2ceb02e948bb5eab30829861cd5a8a157fe6e19fa60cc404b8166343041884b2",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/ubuntu/14.04/opscode-reporting_1.7.2+20170616230854.git.3.c52f317-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/14.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/ubuntu/14.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3/ubuntu/14.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/ubuntu/14.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/ubuntu/14.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/ubuntu/16.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "1589efadb852c0a5164416760f8c50bc1ccb7a5a",
+          "sha256": "8f7d907372035761d28dc434ee83c516e2e7d1c277ef2e284bfb06016740f217",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/ubuntu/16.04/opscode-reporting_1.7.2+20170616224318.git.1.1805653-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "e36ee23eb199955a07f837918dd689151f51e36d",
+          "sha256": "2ceb02e948bb5eab30829861cd5a8a157fe6e19fa60cc404b8166343041884b2",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/ubuntu/16.04/opscode-reporting_1.7.2+20170616230854.git.3.c52f317-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/16.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/ubuntu/16.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3/ubuntu/16.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/ubuntu/16.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/ubuntu/16.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "6": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "15fbf157580a692f03eaf68a9f9f8b2184645e67",
+          "sha256": "2d1ad10693a8eb8bde3854d570967a3c73d289a277ce5c090fd9f46bbce86367",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/el/6/opscode-reporting-1.7.2+20170616083707-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "9b12eede2531b7bccd38b7820908c5c4ab5f19ec",
+          "sha256": "a10f96ccd2cf539a12e6412c109d3f609002ffaf694031e167a7822b2e45452b",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/el/6/opscode-reporting-1.7.2+20170616224318.git.1.1805653-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "da9d1f6b1bc2407c810fb0a20674d75d69414a3c",
+          "sha256": "2cef6214cbd882d80208e31e3df476fdefd95b433be57625a6319524d2daf58f",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "4504d18365ce44311db2e007e65ae3f7ac3f1380",
+          "sha256": "5816c9f45a878be7da25cb6aaba8511a68ea88c7e96b319f6da0dcccd41e1eec",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/el/6/opscode-reporting-1.7.2+20170616230854.git.3.c52f317-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "180a771eb1cca129a2522a178b2d747ec1f2dffe",
+          "sha256": "d5b26d0d69fff2bc0ccd44666011b52166de269cfe0eac7690b3b3980aa6560f",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "5e91d23ee75ee9bed668011209976a34ba141f59",
+          "sha256": "a12db0192d50bd8f891588bc306dd143515179c819d53b047de765b4c1cfac7e",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "a0335f745edc9b33c5275937045ac7d3b4ac4788",
+          "sha256": "3db181f73c76950d9827243cc8c8de5d0e968dfccdf18e5d2d21453578180353",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "58a98b69eaaebaa1ae85cea2d654c5bdb71f3b4d",
+          "sha256": "f085971cd9688f2b6bae7613f94fd49abda26072f4f3507225c5d40de8506769",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/6/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "52d13bbf62ea51f52291c1a41fa306997c637241",
+          "sha256": "7557f29ec58727db360e79eecf27e348e5848395828b1c42417dfc566a75bf6d",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/el/6/opscode-reporting-1.7.3+20170619201018-1.el6.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "3e4ad887e3b9be9478f75d1bd89bb8089f0cd664",
+          "sha256": "9de5ece640d6c24c10539f66f9f7827268b0ee089fb46ff96c9263fe738b61a3",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3/el/6/opscode-reporting-1.7.3-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "4ba116f6a81bd785800f77d33a82a76d2cc404bb",
+          "sha256": "c8184504d3051b9a5e5f423b321c8ca0d464df78f8906cb063f7e0dd3f1789dc",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/el/6/opscode-reporting-1.7.3+20170620083710-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "1cf9d91842975751b988da9c3154862a0768de1a",
+          "sha256": "3cebb1a513f76604059dc5225e97f12718fc9efbffb31bd598d0f82c9a31c59b",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/el/6/opscode-reporting-1.7.3+20170622083709-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "44b16e5f2257a1381244e7b0eaa056ca0caf5fc0",
+          "sha256": "d3c533a583ed231864bfea4e48c044f97d6dbe20fa86616e596b302ca35ce058",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/el/7/opscode-reporting-1.7.2+20170616083707-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "71b920194b22765c9f468bd11155c01aba299a6a",
+          "sha256": "85b5c271464600e03b37a355cc015b2a8252310d4fb563499427d13b44e63008",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/el/7/opscode-reporting-1.7.2+20170616224318.git.1.1805653-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "605a72df0498bfc3338b8d3bf26eb92b6f8412b0",
+          "sha256": "9cc38320def6348cfc89719ba5e0861e5c293e1bcffd8028eac7afd705decfe2",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "0699cefebe97253f03f0d62005024d9e911a4175",
+          "sha256": "30db394f144d64ff20b4de8823268269992d0441272972d07a40ae97f2322c96",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/el/7/opscode-reporting-1.7.2+20170616230854.git.3.c52f317-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "6d9ef9fad92de613a85eaf3e84fe25cd8ddf0436",
+          "sha256": "2207b3b6f86d91c22440c5bf3d28cf1036af663882484fd74ce570ff5af2389e",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "0b8345fb30569f15bdc02baa39ee2994f03165a9",
+          "sha256": "6d097d555d1ad41620a722c0cece092c154b13f7a5e99c719faa2509761ac380",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "c2e1162f63a29e33bba895860c77075412b5e84a",
+          "sha256": "2d8b3f3d64e8e4047bcf63a55024c405356afd33a3fa0917d1bf940f72f05954",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "857efc9d21a09ef92118ed904f3c7cfc2ad69471",
+          "sha256": "5ec5ca4c42c6ad958ea58c3a9ec27afef6f81eb739d1ce536811cae3fe16b789",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/7/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "7581ca51cb4a08e5b448b1e8852fda32cd78ef51",
+          "sha256": "2692f8ebff3753b7630933c02dca258a31dba8953ab7bb4d5aedb32d49c89ac4",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/el/7/opscode-reporting-1.7.3+20170619201018-1.el7.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "1d24b11e1a71f340f9515374ba90cbea28a808c0",
+          "sha256": "35cb88c83c54090e6b851f0632f8b1ebbce41f283f9772168f66be2217f73a0b",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3/el/7/opscode-reporting-1.7.3-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "06d42cd5324dda40585ee951154cff9ca4ecdfd3",
+          "sha256": "e41ffdd15d8ef99e1c55d84d72ce3e7baabecd3239332441b7991b2093700cb3",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/el/7/opscode-reporting-1.7.3+20170620083710-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "706f06cadaab5df74019b1540a1f60d5db18c5b0",
+          "sha256": "3450985339db7ab884f25ff088f1de0475cac909c90c2925d023ad47f2e9e737",
+          "url": "https://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/el/7/opscode-reporting-1.7.3+20170622083709-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "5": {
+      "x86_64": {
+        "1.7.2+20170616083707": {
+          "sha1": "0be4b4dd875031d1678842e70d5d21db35d2f1ef",
+          "sha256": "53d58ad8f5081673e141f8a19098a2a6ae70c46d56ce8917557fa36d28390024",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616083707/el/5/opscode-reporting-1.7.2+20170616083707-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170616224318.git.1.1805653": {
+          "sha1": "5017685d7b32a1375cc37ec78aefec38a5a92672",
+          "sha256": "ee902f9be2382e5551561f6e66b848657e44c235cd362d5cf45ff79b6ec4049e",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616224318.git.1.1805653/el/5/opscode-reporting-1.7.2+20170616224318.git.1.1805653-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "e28be6f18b88d8f0d600450bd15392a5dc9dc682",
+          "sha256": "c09cb38f0bd881107660ec64cd639db338568d96152a9ddc90ffc0a901d2e67e",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170616230854.git.3.c52f317": {
+          "sha1": "f98e83d02bd697e23f66b506715cec55f699da8c",
+          "sha256": "263899d0bff36bfd206b84b9304da6c14048bc893476badfb9e2b9a6879e678c",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170616230854.git.3.c52f317/el/5/opscode-reporting-1.7.2+20170616230854.git.3.c52f317-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "62e144d53f7a0c1536c231919eecd941b0d544c8",
+          "sha256": "f4524ac60126e17b1c15737639b9b059a893196ed6fcc4052164f4d4beb9ae1b",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "7bc24e3169567264f1297d3cd76a77e5b56b9c1c",
+          "sha256": "dc36e05c7e83407f97dcde08640764bba3429608f5f4fbe2fe553e2ce09085ed",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "781a622abd76dfe38e368554fca4c99b8b738547",
+          "sha256": "4695c0883a263813cece0e01eec3e43d145c3765115880647693c959607daf1e",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "88931072c1abd49410e07c5bd6f8072b9b3b0f7c",
+          "sha256": "517dce8c9d1c1559479eaa38275065deda2bf3ef45e4ae5a618959735681f57c",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/5/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "30c7259515bd7b0c185fc380b2f768c20e9d0634",
+          "sha256": "ade5e4ea6e18717280ecad32f128033d909803e2bbcfc6cfde95a6b08f1fb637",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170619201018/el/5/opscode-reporting-1.7.3+20170619201018-1.el5.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "0d8fc6936ef06a8566ac61db8c720fcbc7b083e6",
+          "sha256": "1373eee003e7266275799cede60fd54e22cc813c462f3dc4c8ec5b0c28131bff",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.3/el/5/opscode-reporting-1.7.3-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "4e764517b5a81a580b86b3d6cd809917417bdfac",
+          "sha256": "48d0b1b9611f9a554306b230db3557f2acea57a3e48ca446f63618ed290e74a9",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170620083710/el/5/opscode-reporting-1.7.3+20170620083710-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "3420104a65839b761766c87d15cf7afc53b4b95a",
+          "sha256": "814d6a099db04d52eab01cce2487d39abedf12a4e289d720e1afce82e88b0568",
+          "url": "http://packages.chef.io/files/unstable/opscode-reporting/1.7.3+20170622083709/el/5/opscode-reporting-1.7.3+20170622083709-1.el5.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:04:16 -0700"
+  }
+}

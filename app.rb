@@ -3,7 +3,7 @@
 # Author:: Stephen Delano (stephen@opscode.com)
 # Author:: Seth Chisamore (sethc@opscode.com)
 # Author:: Lamont Granquist (lamont@opscode.com)
-# Copyright:: Copyright (c) 2010-2013 Chef Software, Inc.
+# Copyright:: Copyright (c) 2010-2017 Chef Software, Inc.
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -312,36 +312,72 @@ class Omnitruck < Sinatra::Base
   # @return [Hash]
   #
   def get_package_info
+    # Set params to variables that may be modified
     current_project = project
+    current_platform = params['p']
+    current_platform_version = params['pv']
+    current_arch = params['m']
+
+    # Create VersionResolver here to take advantage of #parse_version_string
+    # method which is called in the constructor. This will return nil or an Opscode::Version instance
+    opscode_version = Chef::VersionResolver.new(
+      params['v'],
+      cache.manifest_for(current_project, channel),
+      channel,
+      current_project
+    ).target_version
+
+    # Set ceiling version if nil in place of latest version. This makes comparisons easier.
+    opscode_version = Opscode::Version.parse('999.999.999') if opscode_version.nil?
 
     # Windows artifacts require special handling
     # 1) If no architecture is provided we default to i386
     # 2) Internally we always use i386 to represent 32-bit artifacts, not i686
-    m = if params["p"] == "windows" && (params["m"].nil? || params["m"].empty? || params["m"] == "i686")
-          "i386"
-        else
-          # Map `uname -m` returned architectures into our internal representations
-          case params["m"]
-          when *%w{ x86_64 amd64 x64 }    then 'x86_64'
-          when *%w{ i386 x86 i86pc i686 } then 'i386'
-          when *%w{ sparc sun4u sun4v }   then 'sparc'
-          else params["m"]
-          end
-        end
+    current_arch = if params["p"] == "windows" &&
+      (current_arch.nil? || current_arch.empty? || current_arch == "i686")
+                     "i386"
+                   else
+                     # Map `uname -m` returned architectures into our internal representations
+                     case current_arch
+                     when *%w{ x86_64 amd64 x64 }    then 'x86_64'
+                     when *%w{ i386 x86 i86pc i686 } then 'i386'
+                     when *%w{ sparc sun4u sun4v }   then 'sparc'
+                     else current_arch
+                     end
+                   end
+
+    # SLES/SUSE requests may need to be modified before returning metadata.
+    # If s390x architecture is requested we never modify the metadata.
+    if %{sles suse}.include?(current_platform) && current_arch != "s390x"
+      current_platform = 'sles'
+      # Here we map specific project versions that started building
+      # native SLES packages. This is used to determine which projects
+      # need to be remapped to EL before a certain version.
+      native_sles_project_version = {
+        "automate" => "0.8.5",
+        "chef" => "12.21.1",
+        "chef-server" => "12.14.0",
+        "chefdk" => "1.3.43",
+        "inspec" => "1.20.0",
+      }
+
+      sles_project_version = native_sles_project_version[current_project]
+
+      # Remap to EL if a native SLES project is not found or
+      # if the native SLES project version is less than the pinned version.
+      if sles_project_version.nil? ||
+           (opscode_version < Opscode::Version.parse(sles_project_version))
+        current_platform = "el"
+        # SLES platform versions map to different EL versions
+        current_platform_version = current_platform_version.to_f <= 11 ? "5" : "6"
+      end
+    end
 
     # We need to manage automate/delivery this in this method, not #project.
     # If we try to handle this in #project we have to make an assumption to
     # always return automate results when the VERSIONS api is called for delivery.
     if %w{automate delivery}.include?(project)
-      current_version = Opscode::Version.parse(params['v'])
-
-      # default project
-      current_project = 'automate'
-
-      # If current version is nil we assume latest - automate. Otherwise, check which project it should be
-      if current_version && (current_version < Opscode::Version.parse('0.7.0'))
-        current_project = 'delivery'
-      end
+      current_project = opscode_version < Opscode::Version.parse('0.7.0') ? 'delivery' : 'automate'
     end
 
     Chef::VersionResolver.new(
@@ -349,7 +385,7 @@ class Omnitruck < Sinatra::Base
       cache.manifest_for(current_project, channel),
       channel,
       current_project
-    ).package_info(params['p'], params['pv'], m)
+    ).package_info(current_platform, current_platform_version, current_arch)
   end
 
   #

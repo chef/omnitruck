@@ -1,0 +1,1116 @@
+{
+  "sles": {
+    "12": {
+      "s390x": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "8ebb50c421633de5ff37b1727029aa659e636923",
+          "sha256": "5700425155e46c0b595a876e458d19867a0e780e4f64f2132068d89cb354f8c3",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/sles/12/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sles12.s390x.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "0b45c71ae346ac6ce2dfd3f04005062ea90b301e",
+          "sha256": "70f3e0bf696e379835634bdffc464e0b9bb9a148506cd0b82b2b39f7e8134068",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sles12.s390x.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "d13186fd2634538dae67126a717bbe7c88a0dd78",
+          "sha256": "b7a4d08deac1aa6d3a2f2e1732863212ccaf4286853044ff72d65922e8528412",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/sles/12/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sles12.s390x.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "b72baa4d578d7278e3c0b3e51a2d99e555ce3477",
+          "sha256": "c9448235ec0cc33f8c076159d0159dd86e786b6cade798ca926a5de62a032c82",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sles12.s390x.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "af5a839febdbee5f1cc73fe3e6d75a92ccc46694",
+          "sha256": "d7889c00257828fdc5eddf897b65783feab3463cf52d08eda75a63488a025cba",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sles12.s390x.rpm"
+        }
+      },
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "8262d5389dda0e2cc6007d381d014209bc69de63",
+          "sha256": "80e8a068afea3209ba737e023dffeadf605c913f77dd69ded81848187c929934",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/sles/12/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sles12.x86_64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "2e6c54a8126de0219cc0917ee5a10260eeb5cdbd",
+          "sha256": "52e0fa1950faf60ebd158e079c21b33b02cc347fc3d01f89b1be140266eda5fb",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sles12.x86_64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "c3dd8d63cb7e46f065419881b713a5b4d6bdb995",
+          "sha256": "be8841ce8e656091954670cd55fd10e0aa8ce953ec67942a4f8f36bae25171fc",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/sles/12/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sles12.x86_64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "96e437853de2a4a7179f7c8af7489b7bcb2045d1",
+          "sha256": "39e5e0e1ca16fb6b07bf37d8a7feecc0c1afadaa5da70bdfc841449d8f878f09",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sles12.x86_64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "e4155a313d8d071cac4cf0f85609950feaa7f49b",
+          "sha256": "330fe4a209c4354c24f11ab602ca0242b4d932352f67c158ae2cfc66def90c4e",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/sles/12/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sles12.x86_64.rpm"
+        }
+      }
+    },
+    "11": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "3053305fdc126f465b92024355fa46b30946760f",
+          "sha256": "fd68c114b9fb25524f28a670cc27a8174c54618d57db7441e234b2e8164ce4c6",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/sles/11/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sles11.x86_64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "579a36aa67d357b83d29776bf988c5abd1ea43ab",
+          "sha256": "4996cfcc6e7b683e47f5e48c693465ee33aaed9b1fea6b7262ea40dcfc974db3",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sles11.x86_64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "f4f60b23ac6b363d1cae26023bc00e77c3b368f4",
+          "sha256": "8bd0d40dc1cf5f95f247afb9a83439dc16e264cf4d07c052884755a8de426305",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/sles/11/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sles11.x86_64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "53d5698853bd912bea510f255671a06a324b752c",
+          "sha256": "2bd697ae8b18a61c429882565f75b393a2ad27fa3a7a1a4cb61bce8944e62427",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sles11.x86_64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "2fd308e1db40e79d7fb90facbd3288c73ff08a7a",
+          "sha256": "e790422bcdda69596a5a8a0744ecf24e9f61eebd1fc52dea28256c697e26fd31",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sles11.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "77c9ced029b6cdb1418a3b2e8f9bf9947a184506",
+          "sha256": "856cc0400f4e6ff79e7f36e4d42777880c4fd751403cd231aa40cf3c8e28fc0a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/sles/11/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sles11.s390x.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "88c52a28f6db41b0ab82ec3dfadeeba64ea995fa",
+          "sha256": "29dbeb1f22070d7aa8bba5bfd49ef8872c54efb1785540f982f04a25a4d05725",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sles11.s390x.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "11ffe76d5971b131adb14567ef8add5cdfb3a466",
+          "sha256": "a4af1642832f0bb83485c5a9ab8be60d55d27e7482e3ddec5abe2ecd4ed26d37",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/sles/11/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sles11.s390x.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "e549f5590a0211f800a68f026db8be7227ebc92e",
+          "sha256": "644a39e28b5c82928b23abbab520bf619a659a554f0c8f0472bf540fdcc99e6f",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sles11.s390x.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "09e9a7b5b64919eeef0c647a711c8a8f6cebeb9c",
+          "sha256": "453be7ad767723449e0481c31c399bd41baced6a7cd8acb6a4494c62add16718",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/sles/11/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sles11.s390x.rpm"
+        }
+      }
+    }
+  },
+  "el": {
+    "7": {
+      "s390x": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "9a4cc22fdee07fcc19312a3774af8590b19ec146",
+          "sha256": "54396b9cbd670f468b1fa57bff9bd1a18c11ca22c966b1045846b78d02544285",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/7/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el7.s390x.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "f85856b48a0c223faa4230982d3abfcb946bd389",
+          "sha256": "57268a510e55b663e2d6c7c16a4cc5aad8a62622dd3a783d413ae1ba943dc22c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/7/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el7.s390x.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "76d774f3154d40c3392e70afe5777583ad75744c",
+          "sha256": "69dca5756fc2928f8a4de21b98d23788be7be22d76b3a58778226029f21edd13",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/7/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el7.s390x.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "29a0c30061be575b7f960969c4ee38e8b2798572",
+          "sha256": "047904589d76d0fb060a001d9ac8f3a332345a6efa6fef395892d80b13b66217",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/7/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el7.s390x.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "3e98c30815f0d0503553d33b820ee5ab62b5f709",
+          "sha256": "9fd4b17d50f149735ab3555473ed91eb4655b54bcba42f5651d38b864b39570f",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/7/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el7.s390x.rpm"
+        }
+      },
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "ca7eec44e3a88b5f0ac9d1ff9f53fc3273eb9104",
+          "sha256": "3fa872c1dcaacb8d0f3a9df390a8ae63a759088fd3d573c1b8268a2ccab9c641",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/7/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el7.x86_64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "372687c0922586850e9f2becce10271b51527a0f",
+          "sha256": "73f1d2ee643b7ba343da6556d129afc565c3acd9e499764d0cfdd4d7a87c5a64",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/7/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el7.x86_64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "cf787ae044c1cb8f651e7f1890e0499742f0a05d",
+          "sha256": "da5508fd6a72b4ae47e3a4fea3492112359c2844163139320e32286d8555d11a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/7/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el7.x86_64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "f332c0acae6a5b85061b18fe5f2305fea0412155",
+          "sha256": "9c719beeb9dfcb94c49f330724545300fca1377f319d58efd373b72ab5e79f93",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/7/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el7.x86_64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "d205aef0a32496cb06ba43df2359d0ac4e0150af",
+          "sha256": "4e190728730531bfdfa0ac97f910587da2542a2c9f187d861f39336042384647",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/7/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el7.x86_64.rpm"
+        }
+      },
+      "ppc64le": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "9a8e9088efd7418be6437739f900b7eb7fd1fda2",
+          "sha256": "a736e9400bdf662c1d2525dab37deb4ad6d95664fe5c10d79ba93a1700a27478",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/7/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el7.ppc64le.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "9e70edd2b92fe4acba139d2e722ab285b6b6e5e2",
+          "sha256": "6dfa35df5a39a8012cf725275ab1602dfae6fa1527b843d8a31d95a80c027195",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/7/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el7.ppc64le.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "a96bfe63f254255d7154374f69c440f3c8e2845f",
+          "sha256": "0319922d26f562daeb95776fca2a4b0eaadae0cceeae8e5ad05bdf0b66a91c96",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/7/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el7.ppc64le.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "056b66ff0354349d2936975670b8d2c12aa016bd",
+          "sha256": "0c96fd99ff4b161b8182796dd5222c074cef9e3de72479ed3501ec7b00e40561",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/7/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el7.ppc64le.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "b6d3b2146d97c6e243375cc72aa31fde7eef3346",
+          "sha256": "6cb5e647f713d51d173afbba92a70139a5620fd577ac6a9ffdd28de1dc577925",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/7/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el7.ppc64le.rpm"
+        }
+      },
+      "ppc64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "afd3ce7c7008ac29fbefb751763de108a5056d4f",
+          "sha256": "60a809abb006d23e4d46b010468fe8ce51661e658de9a4d6ad763c81a7d28c0a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/7/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el7.ppc64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "132fa58ce5b794ffe47eb22505c0f7c8da2993b6",
+          "sha256": "89472b9619c623557425eda07071e3e30ad9efc91ce10000cf1ad3ff16bc4d80",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/7/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el7.ppc64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "7aceaf2d2af08ff76e6501deede712d9cc56f0df",
+          "sha256": "47d924bc6a3bc288cdc3a18530da18660215012357cbf8bb3f943ac2f1392f0c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/7/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el7.ppc64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "8825c465d017e9f0af46fbe0723d6a79727d8330",
+          "sha256": "9f0320ddf8098ebed2b3cdd089358a4a688e62a3d3c14dfae38b1d59a8451587",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/7/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el7.ppc64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "af833e88c1c804cf75a8c8a88c75ed88c434781c",
+          "sha256": "e67225710261465c107fca101798ead49c10ce2578d037eafca1788f389fafd8",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/7/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el7.ppc64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "d2fb34809fcea87dd29b6c056554a2d0cf2de1b9",
+          "sha256": "b567aca6ea68264c6024c35e2f4b7f33040a227844be5f9499d9086668611390",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/6/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el6.x86_64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "8d422f911a24bfb5982e3edaf03b30f3eeae0b77",
+          "sha256": "72900c9411ae885647b9d05b5a49a18e6aaaf5a3b04e82d108cd2fe43be29736",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/6/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el6.x86_64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "7d810efa25750ec654e26c066b0ff8cb6c3d9bb1",
+          "sha256": "ce3ae10b7889e4bc52211faedad7b7e0d2f3cfdb9a448be8046c7c0909b19d97",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/6/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el6.x86_64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "ce3dc62c8ad7f7904f1d40371d28a08773f9716b",
+          "sha256": "1ea01b207db1d9be2c1fd57b8d1808c91423907a247d511e39a4e2f7a554a433",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/6/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el6.x86_64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "5ea7181b39ea94ebedcec350fa43c06be3c4a082",
+          "sha256": "acb458f5aca82f10f10aed98f646d44dee105bdbc7cfd76ab8e2d3c261bafde9",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/6/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el6.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "055458290f41a57c195619977f07e62b0db9d73b",
+          "sha256": "8f383de00e118b8a18cb4cfe5d2e6285b89afd89443ab6b99079f96928033a71",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/6/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el6.s390x.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "0e8b52bbeb91f82a74e6a86b8ef294c34cea8a58",
+          "sha256": "5ee36903ebb4271cb4d75c7ad7c3aa307b03eb64324c2d0767b9aed24eb6d56c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/6/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el6.s390x.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "3c1f6484ad7bfd1fa4c12ddfe279f4bd8f70c6bc",
+          "sha256": "2fdf89db0075c4e333f86a58bb9138bac71145f54d65b86cc91a567a5d357da0",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/6/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el6.s390x.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "ca306555aea4afb1935594c9f10197b08b956565",
+          "sha256": "e0a8bec17514913a0d81422901632012b7d2a37e7f61f12f5a9406d2d4c215b1",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/6/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el6.s390x.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "394912b95688977ea7495089317d5fc324b89e4b",
+          "sha256": "5d59b5ca1b9814ae37ce47506eb687872656ccbe4e7564f8316fd0965e98e49d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/6/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el6.s390x.rpm"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "f466110240b647db8bf5ce9d9f16e4c17fe56d0e",
+          "sha256": "81b63e60ecbe1de7dc2a51c25e8a6a941a96153abf3ffff742ce07a6ced55ad9",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/6/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el6.i386.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "2b12a8e225ac4d8def47252d11dd4d3e829b3fa8",
+          "sha256": "29722e773f47c4fca6a02d272fa68bcc2d993f2094a5769330262668bf27ac42",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/6/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el6.i386.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "f945cfaf3b3643c1be95455b75b0cae53a694345",
+          "sha256": "bd768adc2b60664b721509c2ad411fc202e89e6369edd64dac752fd54776975d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/6/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el6.i386.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "98a47ac201982925f13ce8ef9cf37827c9171509",
+          "sha256": "e078af37cfd85c0293794ee958bc82b5127f1fbfe899042744cd974d8347e08d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/6/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el6.i386.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "073162def71c43626ef1e5717123dfb484985723",
+          "sha256": "349e9629218d83e7a0ac970455c56f88ed71df8fa9a56d762aace386ec948a83",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/6/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el6.i386.rpm"
+        }
+      }
+    },
+    "5": {
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "1879702f39892bfdc77b03dc869f2b63e4b6bdbc",
+          "sha256": "69efe212d7d17520b982231b43f304265de137e282d9c17c5f259d0e444c570e",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/5/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el5.i386.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "e48218b23a6bfdd99ec401597ce4f52808285f33",
+          "sha256": "89234bd0c6a834528951c7db4dc2efc0d1a040e97e90d85b36bc7f09fa2df4e1",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/5/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el5.i386.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "f1a0d1eabe44775d3779aab7a054bb9905fba05d",
+          "sha256": "612d5082e9994b65d1b16997ced5926d286db3a7bdcd25424579732c1a668ccf",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/5/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el5.i386.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "b9c0ab503edaec6cee0ad0700ae864b0d4bd1bd5",
+          "sha256": "085de5deb10e52a791ae4b3ccbfbee6aeae006d837ef5570d369a29f38964833",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/5/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el5.i386.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "8b96352e9d74d2817706b06a1da9de445f9b05b5",
+          "sha256": "d676b04b18c7c8a69e08a9cc15cd42f00cce45daf881ce9dfd28235cfead8028",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/5/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el5.i386.rpm"
+        }
+      },
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "b15ce0b15f5d8e8c85ff0ac2f82bb3dcb29135c4",
+          "sha256": "010e69fab219ba292449cdc7aa5ecbac9626fd98e92b23917b28fe8a53d59d6f",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/el/5/harmony-0.1.0+20170618083611.git.37.056dc3f-1.el5.x86_64.rpm"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "a310f025586b452edddda689527b669bfc448ac8",
+          "sha256": "5179483690e94008d954dddea2356491c8ef8e34c6fae99c341a3a4362139978",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/el/5/harmony-0.1.0+20170619083609.git.37.056dc3f-1.el5.x86_64.rpm"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "cd0d74d0ef7445d5cfb7fd414cf332b8bdf6c494",
+          "sha256": "df607f115ceb5dc83ed28716431dd916f7d44550c0ca52f5303dd5b1697249b4",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/el/5/harmony-0.1.0+20170620083608.git.37.056dc3f-1.el5.x86_64.rpm"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "b215d90a269a94bf412d32a4bb1daf5ca4a75af1",
+          "sha256": "da10ab2fcd6865448bcbf76d600810fe3d888bd55cd54dc5fa8b4ab4dc1aec92",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/el/5/harmony-0.1.0+20170621083609.git.37.056dc3f-1.el5.x86_64.rpm"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "aa049d7d17750afeb293db31809b19d078189426",
+          "sha256": "1912e7208aa392ac7af3b1484e1d7d6ee17bab487429863ea59bcb8319a1c61a",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/el/5/harmony-0.1.0+20170622083609.git.37.056dc3f-1.el5.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "10b40ca6abc04094361280487b90ee775e8b1be9",
+          "sha256": "26ab3bca6568b92553c456f3051ea023a946932194a9907934b87d591cdc1210",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "d8801911f9466f2fa95094987b189e3d5e15a8fc",
+          "sha256": "8665b513dbec0f7d1600c509fe48f388cfa5e6a2108d6965d62e844cb4babfb0",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "c57a3d4390b9d749a8256674aace3a97eeec974a",
+          "sha256": "280d3f0bf30df4341e7c4f3603e794a1ea4e49d62c254d623a1243b1e60dfaf2",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "a7d08c1d74ff386d2e48cbdbcf5d43a58d1015af",
+          "sha256": "b36c6c382217786eff2c1b1b8b868c5871fe7ba92831a9dd364f5bdae91ec9de",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c2b7ddd35e6529a0efea4d21f84b4ed59b739bb2",
+          "sha256": "a03e5abf70db7e716e72f5aac1b48b88f1df31680bd799b8313353d791597082",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "5186e1d86004007f7dfc23df4b6171c2d5b0126a",
+          "sha256": "a91d309fcbda83398b2e1afb91dba6d4157ca391a38ca96424e1b064c3f54e3b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "955232ea58828ae7a05dc38cf228dbac2bcf7e5b",
+          "sha256": "6893c0d172ea2c49faa3893f0ef8dc7c7a9855192fc2e93b22edb492f5c2eb58",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "089cbdb5543d4a8b13cca66dcb193b82f5519f8a",
+          "sha256": "426877ed46564d55a87a356b4c1587f69a249385593158b942252f461d280025",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "53654066965b568be050fa6cd7ff371f3b27b831",
+          "sha256": "70049e86abdf8f02ec28c0e661df6b76398e1e4b02dca874567c4f0af9e7063c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "5e02a8c0396e823527e6f8279a3f2478bfbdf7f4",
+          "sha256": "23916e335b6003a1d3dccb1228c9e99105b4c0105beeb28cff98e251fa5bd7ec",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/12.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_i386.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "10b40ca6abc04094361280487b90ee775e8b1be9",
+          "sha256": "26ab3bca6568b92553c456f3051ea023a946932194a9907934b87d591cdc1210",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "d8801911f9466f2fa95094987b189e3d5e15a8fc",
+          "sha256": "8665b513dbec0f7d1600c509fe48f388cfa5e6a2108d6965d62e844cb4babfb0",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "c57a3d4390b9d749a8256674aace3a97eeec974a",
+          "sha256": "280d3f0bf30df4341e7c4f3603e794a1ea4e49d62c254d623a1243b1e60dfaf2",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "a7d08c1d74ff386d2e48cbdbcf5d43a58d1015af",
+          "sha256": "b36c6c382217786eff2c1b1b8b868c5871fe7ba92831a9dd364f5bdae91ec9de",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c2b7ddd35e6529a0efea4d21f84b4ed59b739bb2",
+          "sha256": "a03e5abf70db7e716e72f5aac1b48b88f1df31680bd799b8313353d791597082",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_amd64.deb"
+        }
+      },
+      "ppc64le": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "4d415d0da8a1c5cf6b68a6774136dad34ed7cee9",
+          "sha256": "0ffa0ff33cc07c77c036d7ef436a53881beb6ebb7db021ff8bc5dc6852476bc4",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_ppc64el.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "699a1bd922b50fa89dc20f69557caea0532b07bb",
+          "sha256": "ca19b26f68faac3f834cfc84c815f09c364ef39e9ed38cb267ce2bab5f6f52e0",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_ppc64el.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "fbfd753166e724060ba624b8427c3f307f4bfbaf",
+          "sha256": "e203634adda14a047d6af1028b16092c871d038cf150830e06b11c08026e1bae",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_ppc64el.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "d478b9be4ceb8b3261103d3db7a651cb182b59a1",
+          "sha256": "f05c12b6d3516c28df19c628c23c27077d3080a4c9c7315c7ec744cf8b25ee7d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_ppc64el.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "7bdbd86c595b228c91ce102db024abb2b959a963",
+          "sha256": "8d8dcc478e779b13b482d18e0b23895ba27a8b625d5120273c6a83cf9d1282f9",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_ppc64el.deb"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "5186e1d86004007f7dfc23df4b6171c2d5b0126a",
+          "sha256": "a91d309fcbda83398b2e1afb91dba6d4157ca391a38ca96424e1b064c3f54e3b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "955232ea58828ae7a05dc38cf228dbac2bcf7e5b",
+          "sha256": "6893c0d172ea2c49faa3893f0ef8dc7c7a9855192fc2e93b22edb492f5c2eb58",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "089cbdb5543d4a8b13cca66dcb193b82f5519f8a",
+          "sha256": "426877ed46564d55a87a356b4c1587f69a249385593158b942252f461d280025",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "53654066965b568be050fa6cd7ff371f3b27b831",
+          "sha256": "70049e86abdf8f02ec28c0e661df6b76398e1e4b02dca874567c4f0af9e7063c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "5e02a8c0396e823527e6f8279a3f2478bfbdf7f4",
+          "sha256": "23916e335b6003a1d3dccb1228c9e99105b4c0105beeb28cff98e251fa5bd7ec",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/14.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_i386.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "10b40ca6abc04094361280487b90ee775e8b1be9",
+          "sha256": "26ab3bca6568b92553c456f3051ea023a946932194a9907934b87d591cdc1210",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "d8801911f9466f2fa95094987b189e3d5e15a8fc",
+          "sha256": "8665b513dbec0f7d1600c509fe48f388cfa5e6a2108d6965d62e844cb4babfb0",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "c57a3d4390b9d749a8256674aace3a97eeec974a",
+          "sha256": "280d3f0bf30df4341e7c4f3603e794a1ea4e49d62c254d623a1243b1e60dfaf2",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "a7d08c1d74ff386d2e48cbdbcf5d43a58d1015af",
+          "sha256": "b36c6c382217786eff2c1b1b8b868c5871fe7ba92831a9dd364f5bdae91ec9de",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c2b7ddd35e6529a0efea4d21f84b4ed59b739bb2",
+          "sha256": "a03e5abf70db7e716e72f5aac1b48b88f1df31680bd799b8313353d791597082",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "5186e1d86004007f7dfc23df4b6171c2d5b0126a",
+          "sha256": "a91d309fcbda83398b2e1afb91dba6d4157ca391a38ca96424e1b064c3f54e3b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170618083611.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "955232ea58828ae7a05dc38cf228dbac2bcf7e5b",
+          "sha256": "6893c0d172ea2c49faa3893f0ef8dc7c7a9855192fc2e93b22edb492f5c2eb58",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170619083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "089cbdb5543d4a8b13cca66dcb193b82f5519f8a",
+          "sha256": "426877ed46564d55a87a356b4c1587f69a249385593158b942252f461d280025",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170620083608.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "53654066965b568be050fa6cd7ff371f3b27b831",
+          "sha256": "70049e86abdf8f02ec28c0e661df6b76398e1e4b02dca874567c4f0af9e7063c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170621083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "5e02a8c0396e823527e6f8279a3f2478bfbdf7f4",
+          "sha256": "23916e335b6003a1d3dccb1228c9e99105b4c0105beeb28cff98e251fa5bd7ec",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/ubuntu/16.04/harmony_0.1.0+20170622083609.git.37.056dc3f-1_i386.deb"
+        }
+      }
+    }
+  },
+  "debian": {
+    "7": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "9685098a6823ccc0f29fd2d4c301886edc4f2cb8",
+          "sha256": "7e76e10926d598bc34f6763c111aaf6d29e9579acb3b56fdf2f7b73492c82589",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/debian/7/harmony_0.1.0+20170618083611.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "f5896bd55c4ee3404836028b13e856e8e7783566",
+          "sha256": "682ea528989c40d524f92fb0067cd31296d411e76632dd82cbf4e80b65ac9ffc",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170619083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "f12d93841e6921799e37ed4ee597f20e9489fb09",
+          "sha256": "e0aeaa36734ebd8ab03862d28074d83d0c138f2f278cf72bc49dd865cdaf3d0d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/debian/7/harmony_0.1.0+20170620083608.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "7b4f086fa943281c8cfffce2aa4d26594364cf84",
+          "sha256": "bce4434c36a58a31902b1487c00c64cffe65ba8a1ddf105b81d314724116e156",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170621083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "174da311488509dd57476a07a6edd9f7e66c8126",
+          "sha256": "7a8975233883253f0839a9adcd0e1053c35599d5a808426183d4fb602f5033dd",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170622083609.git.37.056dc3f-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "aec04bc663aaa817840bcf4954a828d951804e2e",
+          "sha256": "7dbf01ef487a12bae1bb165532c2de59fa614ebec7687c4c2c8857c6b74d1c8b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/debian/7/harmony_0.1.0+20170618083611.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "05e15379fa03de165ea4a558207b22be7b6dbfd3",
+          "sha256": "1e445ae0a87397f5c8e530ac73f8dc2558027f568f61a2c9e1f3ef4af200729d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170619083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "0b6de6023d6e7e3787ee2573fdc0c46e4b1c5f16",
+          "sha256": "54e5d54ce4f9210c0444709c2c53f60110287b507132f6448c9567a6077afe1b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/debian/7/harmony_0.1.0+20170620083608.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "b9edd0dfce15c17ade5a6514cb65aecf0230ea26",
+          "sha256": "1fefb46a2c7af6703cf569979eaef7dff746bb9c5a8f07d3351dad34db5e8864",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170621083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "d511e88db4b0dbed6b7c51afd68f0f26f19fbde8",
+          "sha256": "e63489f806cf2d2a9ddb84a7517e4d5deab0a4eaf61e4726f4e3b2d259742c16",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/debian/7/harmony_0.1.0+20170622083609.git.37.056dc3f-1_i386.deb"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "9685098a6823ccc0f29fd2d4c301886edc4f2cb8",
+          "sha256": "7e76e10926d598bc34f6763c111aaf6d29e9579acb3b56fdf2f7b73492c82589",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/debian/8/harmony_0.1.0+20170618083611.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "f5896bd55c4ee3404836028b13e856e8e7783566",
+          "sha256": "682ea528989c40d524f92fb0067cd31296d411e76632dd82cbf4e80b65ac9ffc",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170619083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "f12d93841e6921799e37ed4ee597f20e9489fb09",
+          "sha256": "e0aeaa36734ebd8ab03862d28074d83d0c138f2f278cf72bc49dd865cdaf3d0d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/debian/8/harmony_0.1.0+20170620083608.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "7b4f086fa943281c8cfffce2aa4d26594364cf84",
+          "sha256": "bce4434c36a58a31902b1487c00c64cffe65ba8a1ddf105b81d314724116e156",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170621083609.git.37.056dc3f-1_amd64.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "174da311488509dd57476a07a6edd9f7e66c8126",
+          "sha256": "7a8975233883253f0839a9adcd0e1053c35599d5a808426183d4fb602f5033dd",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170622083609.git.37.056dc3f-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "aec04bc663aaa817840bcf4954a828d951804e2e",
+          "sha256": "7dbf01ef487a12bae1bb165532c2de59fa614ebec7687c4c2c8857c6b74d1c8b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/debian/8/harmony_0.1.0+20170618083611.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "05e15379fa03de165ea4a558207b22be7b6dbfd3",
+          "sha256": "1e445ae0a87397f5c8e530ac73f8dc2558027f568f61a2c9e1f3ef4af200729d",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170619083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "0b6de6023d6e7e3787ee2573fdc0c46e4b1c5f16",
+          "sha256": "54e5d54ce4f9210c0444709c2c53f60110287b507132f6448c9567a6077afe1b",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/debian/8/harmony_0.1.0+20170620083608.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "b9edd0dfce15c17ade5a6514cb65aecf0230ea26",
+          "sha256": "1fefb46a2c7af6703cf569979eaef7dff746bb9c5a8f07d3351dad34db5e8864",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170621083609.git.37.056dc3f-1_i386.deb"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "d511e88db4b0dbed6b7c51afd68f0f26f19fbde8",
+          "sha256": "e63489f806cf2d2a9ddb84a7517e4d5deab0a4eaf61e4726f4e3b2d259742c16",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/debian/8/harmony_0.1.0+20170622083609.git.37.056dc3f-1_i386.deb"
+        }
+      }
+    }
+  },
+  "freebsd": {
+    "9": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "3cbf3b2ea358058984d84e7d708c853156fae058",
+          "sha256": "2389e7cc0ca4eab9797e0c9665f91887914175902414114df6e22db31399c4d6",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170618083611.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "72e12be75c6a68b5f71685e7de483b2d0b10104b",
+          "sha256": "8261b49066d585da96092bdb3b07ae7c552758c76f5b6ca8e0eee446f9b6c292",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170619083609.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "4374c02b011577d84a1bf77765508cf983ced6cc",
+          "sha256": "51e6d5216a3d6d0fc3c5060359bd1627ae562af345147fa187e25ce73219eb48",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170620083608.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "8a5d32bd1a0870e4ad4c36e3d810ef83a91abeaa",
+          "sha256": "313251b12977c3efc2a6c2bf41eb3fe8c1cabf5d81135ce4aaa044f3d50a538b",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170621083609.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "8a79b325ca27069614b3619a718b5343fb5c7ac4",
+          "sha256": "ebc807cbbaf65e61fc1046fa39cf4ec1ef85b3791d946673d0a9a6555cbff2de",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170622083609.git.37.056dc3f_1.amd64.sh"
+        }
+      },
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "e418f8216b367aa838d4569bcf325ef751223960",
+          "sha256": "eaed0308641a0e0357a00297a952ced9cc0b8485d224949359e2b069068714b8",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170618083611.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "174ea0c2bed244c311020cf8ff6a8b5dacc001e7",
+          "sha256": "026f184c957e8bf6c9b0ef0cb2653528498d52ce51b23134d5150e1e51293885",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170619083609.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "9ba080e004395248c4008d8c77d80817536300eb",
+          "sha256": "a3c49f3970f05b8942f7d2dd2c7b1d2c4a302084c278c8241ba1fb9fdc0f3640",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170620083608.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "767152838d49b1bb97c2d16960b06c30101094a3",
+          "sha256": "0f87806d175faaef7a304e0425a74cb660d634fdd27a28acb9cc8ccad8f9869e",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170621083609.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "eb697a3c9fff2abca2ca7850d066c1dfb1a104a7",
+          "sha256": "03c73149362c569c5ed3e1f7ea20f36fb679b68381dbb267c88ac5eb2165631e",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/freebsd/9/harmony-0.1.0+20170622083609.git.37.056dc3f_1.i386.sh"
+        }
+      }
+    },
+    "10": {
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "4c80da680b3289445f4c9add5165e4d55b4b304c",
+          "sha256": "bbdd899a1b41285248da145611217fa004bd5de4778c96ce95c046b7dd681ad5",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170618083611.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "e5c172a78f7a4319e2ebdb88546876ae66ecbe57",
+          "sha256": "bad3a845f4d561fc37e9f3144faf6159cef5be2f97fa9c0bc32947affb210619",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170619083609.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "97b99979c0c522e8801300c0a892f08d8377e0dc",
+          "sha256": "96726332f57a552ee7e20514bf040d30e05004f64a325cc5792f779ce4a2d767",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170620083608.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "dea2de8bc51afaa8e4c2b5b0a22ceffd87ec8e67",
+          "sha256": "8f66d59fecd2fe4fcb3967c704699edf187be58fef142a1533c746b2cb5cd485",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170621083609.git.37.056dc3f_1.i386.sh"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "47c3e755577c08986472c4bd651d0c3f04a5007d",
+          "sha256": "40e0b78f799e62304074a6cc65e128c1e095eab7bb06d0c31e37f1f0c4db01ef",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170622083609.git.37.056dc3f_1.i386.sh"
+        }
+      },
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "cff4ab90b16e044ecfe39b500b6ae9220907e7c0",
+          "sha256": "6db9ae989cf6ce996202e301fead9f1db590fee06b9b5ed9805ebef51b8a2d57",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170618083611.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "95ea593e54fb3604f940a5f8fbc085ce0f9b6ca6",
+          "sha256": "f980841454fdf7835e64ab0b2e0279bacc3b2951842396e9471664a7e2534c97",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170619083609.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "9a983ec56b27d832ce7e7b61b250ae061cf152c3",
+          "sha256": "ab91e25bd593147c29d9d5125a6ff5ac06d83cec0248dafeda219db92042deb6",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170620083608.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "fd7a6fcdbbb35f28b8c12bc4aff6155017493157",
+          "sha256": "97a6f96be04b773bb1bdc359c5104b0b282a0159b7cc5ff572c1235d36fb01f5",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170621083609.git.37.056dc3f_1.amd64.sh"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "edffefa3586ba29591b091090b4ab08242b25453",
+          "sha256": "f2113a9df2a8fa03f48060d45a44eb3f2d286f238057ad85ad9d7effbcd1e357",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/freebsd/10/harmony-0.1.0+20170622083609.git.37.056dc3f_1.amd64.sh"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.10": {
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "e66fb23d56c3e17a2cbc71e7d61a186be634f333",
+          "sha256": "aea80282f82798ebff1bcd0f0dd00fcdf7340aae9e8e7e14a3f7fdcfa93e3f65",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170618083611.git.37.056dc3f-1.i386.solaris"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "39c213fb1b29400fa8dcaaa078578d34619cac79",
+          "sha256": "402d00a64a44bb5837c9daa019329c0a0a1f0ea2e67a22d3a1c207c64cef30dd",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170619083609.git.37.056dc3f-1.i386.solaris"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "85936454225d512db592fdb19391a94cf24372da",
+          "sha256": "2a68c32719e179b054d5bb00d9a527bd4239c561dfd423a3a71849e325078cf0",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170620083608.git.37.056dc3f-1.i386.solaris"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "bd31f5da8ef3573514d06a8090274641179c5475",
+          "sha256": "a34d2e1bbd7d15d2b47daaaac64df7f8408eddf4913919583fab2e95313305ac",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170621083609.git.37.056dc3f-1.i386.solaris"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "090b546a6976bd752bfe43b84e6da5eb0c51679e",
+          "sha256": "ca97b52e00d4bb428eec52921574d1b009901e3021dd0ae62520b6be008a8c0f",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170622083609.git.37.056dc3f-1.i386.solaris"
+        }
+      },
+      "sparc": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "854d0d55c038433ccbff98a7d378331524e8fa84",
+          "sha256": "069ecc97ebb005d1e9da8b542c2f22075908b4fbe3d92ee984f545bb4c1a3c45",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sparc.solaris"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "18add7dcce5450c82b4a63b8fc1e8c8c3ab9e0e2",
+          "sha256": "31b5cbe695a5d924e8dc6f236b027bc35059bb59664ba0a8e36fa9ffb34d1c06",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sparc.solaris"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "db88e6dcbbab38f4d4b45001637104422fe8eff5",
+          "sha256": "29c9c1a7d9bb2a2a1d27c6e65c896842cf29dae0710d97e766bd7e4dd065923d",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sparc.solaris"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "52cb664acf04633b5a2c2bd2ba6cfe0893a5b11e",
+          "sha256": "2ff23e3377a650c94ba0485c6f627e4901d77ed28c697546ab8f3f2b268d63f6",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sparc.solaris"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c17447e9bb8424f90e1793377b674a8109bacbe1",
+          "sha256": "bfa199b4851eed9fa980011cc14ff80dd8d134ef140b696ff8e9e59cd5c56965",
+          "url": "http://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/solaris2/5.10/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sparc.solaris"
+        }
+      }
+    },
+    "5.11": {
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "4009371b69e6593a2699fd9b00d7ee422284b13d",
+          "sha256": "289a1f6a1c926a0d493fc4bcb1807099a5a1a3ec9ecc6ec79226537431c47186",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170618083611.git.37.056dc3f-1.i386.p5p"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "bd130e4159eb8868ff3e56bd3829e1bcd01ca5e1",
+          "sha256": "0f5f0b5ee8d8663a4d15d0f81eea2443772e9303e7c6481c2a36e2ec4ac60278",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170619083609.git.37.056dc3f-1.i386.p5p"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "eeaa5f38c1a428cdec73e0e299709c7bd8af9f0b",
+          "sha256": "0eccac4e7cec45bf365f8fc8e98f6ccfa4dc9b65d08e5e01bd24757010ab5215",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170620083608.git.37.056dc3f-1.i386.p5p"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "cfd96277451cd882a7ce0414d86dd7d1b25ed17d",
+          "sha256": "b87f08a76fcba5ed49490a28f23d7d643a95e18fdef2cee22b08af154205ed55",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170621083609.git.37.056dc3f-1.i386.p5p"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "8416bb268b292e318a91e40dee461ac82b3676a0",
+          "sha256": "0e12a0a0e92c530d142788e6626ef2d37c0d0bd1025acb05775adbb27da5c312",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170622083609.git.37.056dc3f-1.i386.p5p"
+        }
+      },
+      "sparc": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "e2b633b376a695e76a41df2e7d427e2ab6c6edcc",
+          "sha256": "a0a38cef7827ba208ab838266eeb92e2378f45f585358c7d266c6da8dd2e1cef",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170618083611.git.37.056dc3f-1.sparc.p5p"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "c3d44390ca65edfe4bdc85329f9287bc9174ed14",
+          "sha256": "903f0d84d2bf87443593078efdf273c4d5c15110a806501ead2efc5ab5ec4fae",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170619083609.git.37.056dc3f-1.sparc.p5p"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "cfbdc07cf68b6e182ec8090259d38f3e97375a29",
+          "sha256": "c480ca91c5d57276420a2855706fd967806d6e2bd1d17c5fb1a7d89991f5ae36",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170620083608.git.37.056dc3f-1.sparc.p5p"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "f1303dc1c920a3ed29d1506d2dbf6327fd2b3686",
+          "sha256": "b09c051568c1b74b3d717b8334ba663f839ea84aea37eb3915e68659baeabf08",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170621083609.git.37.056dc3f-1.sparc.p5p"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "318dba865ce35c151bf83e0cf528f388d2d219db",
+          "sha256": "5388d5a0ad7dcb0207baf29c7aea7d8c9c039fc6c41652c46a9a43528e57cae4",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/solaris2/5.11/harmony-0.1.0+20170622083609.git.37.056dc3f-1.sparc.p5p"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "10.10": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "bf8e8e258dfb63764ca68365ac2356369c9b24a6",
+          "sha256": "630018c2d7be736ea918b4b2339f70c2917bb7582af64e8afb1becbd13a8d3af",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/mac_os_x/10.10/harmony-0.1.0+20170618083611.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "a5f9794c06999de5887034f86e67b2e3c92348d5",
+          "sha256": "98c7a3422a99d8d64f60b71389bbd72929c435116c3bb3dbfc4e8aa909e14309",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/mac_os_x/10.10/harmony-0.1.0+20170619083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "8ce1afb8b26203323229870c56756816bf320522",
+          "sha256": "ff20cabc49b9fc9a1145707df1f8e3ae1596c61e4ad946791be9261a3d8b8cf4",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/mac_os_x/10.10/harmony-0.1.0+20170620083608.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "3b0f6c6fd25859377c8311b71b9987db21980dd4",
+          "sha256": "4762b594e77e599a687f1fd4c7618370deccc5279de80701d8d5d4b2495aa153",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/mac_os_x/10.10/harmony-0.1.0+20170621083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c10d4ee3cb7d6c709a8247e809987b0cc0f322eb",
+          "sha256": "e879681fb4606526b1eb2a7ea9b1203f55e70fe568e9c63bcd4de428e5b24f04",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/mac_os_x/10.10/harmony-0.1.0+20170622083609.git.37.056dc3f-1.dmg"
+        }
+      }
+    },
+    "10.11": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "bf8e8e258dfb63764ca68365ac2356369c9b24a6",
+          "sha256": "630018c2d7be736ea918b4b2339f70c2917bb7582af64e8afb1becbd13a8d3af",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/mac_os_x/10.11/harmony-0.1.0+20170618083611.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "a5f9794c06999de5887034f86e67b2e3c92348d5",
+          "sha256": "98c7a3422a99d8d64f60b71389bbd72929c435116c3bb3dbfc4e8aa909e14309",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/mac_os_x/10.11/harmony-0.1.0+20170619083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "8ce1afb8b26203323229870c56756816bf320522",
+          "sha256": "ff20cabc49b9fc9a1145707df1f8e3ae1596c61e4ad946791be9261a3d8b8cf4",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/mac_os_x/10.11/harmony-0.1.0+20170620083608.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "3b0f6c6fd25859377c8311b71b9987db21980dd4",
+          "sha256": "4762b594e77e599a687f1fd4c7618370deccc5279de80701d8d5d4b2495aa153",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/mac_os_x/10.11/harmony-0.1.0+20170621083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c10d4ee3cb7d6c709a8247e809987b0cc0f322eb",
+          "sha256": "e879681fb4606526b1eb2a7ea9b1203f55e70fe568e9c63bcd4de428e5b24f04",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/mac_os_x/10.11/harmony-0.1.0+20170622083609.git.37.056dc3f-1.dmg"
+        }
+      }
+    },
+    "10.12": {
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "bf8e8e258dfb63764ca68365ac2356369c9b24a6",
+          "sha256": "630018c2d7be736ea918b4b2339f70c2917bb7582af64e8afb1becbd13a8d3af",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/mac_os_x/10.12/harmony-0.1.0+20170618083611.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "a5f9794c06999de5887034f86e67b2e3c92348d5",
+          "sha256": "98c7a3422a99d8d64f60b71389bbd72929c435116c3bb3dbfc4e8aa909e14309",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/mac_os_x/10.12/harmony-0.1.0+20170619083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "8ce1afb8b26203323229870c56756816bf320522",
+          "sha256": "ff20cabc49b9fc9a1145707df1f8e3ae1596c61e4ad946791be9261a3d8b8cf4",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/mac_os_x/10.12/harmony-0.1.0+20170620083608.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "3b0f6c6fd25859377c8311b71b9987db21980dd4",
+          "sha256": "4762b594e77e599a687f1fd4c7618370deccc5279de80701d8d5d4b2495aa153",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/mac_os_x/10.12/harmony-0.1.0+20170621083609.git.37.056dc3f-1.dmg"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "c10d4ee3cb7d6c709a8247e809987b0cc0f322eb",
+          "sha256": "e879681fb4606526b1eb2a7ea9b1203f55e70fe568e9c63bcd4de428e5b24f04",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/mac_os_x/10.12/harmony-0.1.0+20170622083609.git.37.056dc3f-1.dmg"
+        }
+      }
+    }
+  },
+  "aix": {
+    "6.1": {
+      "powerpc": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "6a221c299fcbd71efdb45a83c761b9c4a31960f5",
+          "sha256": "92895e2160fd03b83704795b0d1a45d015e42363025f0d5c4bac9d8f44ce1c4a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/aix/6.1/harmony-0.1.0+20170618083611.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "3285203c3f78e2fad1410c45d3c89085d9a6ef17",
+          "sha256": "f92c52b7c92f38b02d192dcafafeb415a3aed3ffe7b802a80caf9ac97af6c4cd",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/aix/6.1/harmony-0.1.0+20170619083609.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "344dde49865c0a8710e5016c0a04ee9fa9fae8ac",
+          "sha256": "de729e2436ca99073620ae76e73c2e09d95506d0c4b09cdb76d5215903db9275",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/aix/6.1/harmony-0.1.0+20170620083608.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "270cc0f105679e8e458caeccb2603ba3582ade3e",
+          "sha256": "d2be86f070fde0a9c2c2491b8813b9969c0cb383141597c599f024f70e719aed",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/aix/6.1/harmony-0.1.0+20170621083609.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "0e58dc1d7954c64513329f6f0177d74b3c49fb7a",
+          "sha256": "316d7c2f2614f8c9b0756ab5e6d399ed97bf872324712f4af9c3e7ee0e7fe699",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/aix/6.1/harmony-0.1.0+20170622083609.git.37.056dc3f-1.powerpc.bff"
+        }
+      }
+    },
+    "7.1": {
+      "powerpc": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "6a221c299fcbd71efdb45a83c761b9c4a31960f5",
+          "sha256": "92895e2160fd03b83704795b0d1a45d015e42363025f0d5c4bac9d8f44ce1c4a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/aix/7.1/harmony-0.1.0+20170618083611.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "3285203c3f78e2fad1410c45d3c89085d9a6ef17",
+          "sha256": "f92c52b7c92f38b02d192dcafafeb415a3aed3ffe7b802a80caf9ac97af6c4cd",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/aix/7.1/harmony-0.1.0+20170619083609.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "344dde49865c0a8710e5016c0a04ee9fa9fae8ac",
+          "sha256": "de729e2436ca99073620ae76e73c2e09d95506d0c4b09cdb76d5215903db9275",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/aix/7.1/harmony-0.1.0+20170620083608.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "270cc0f105679e8e458caeccb2603ba3582ade3e",
+          "sha256": "d2be86f070fde0a9c2c2491b8813b9969c0cb383141597c599f024f70e719aed",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/aix/7.1/harmony-0.1.0+20170621083609.git.37.056dc3f-1.powerpc.bff"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "0e58dc1d7954c64513329f6f0177d74b3c49fb7a",
+          "sha256": "316d7c2f2614f8c9b0756ab5e6d399ed97bf872324712f4af9c3e7ee0e7fe699",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/aix/7.1/harmony-0.1.0+20170622083609.git.37.056dc3f-1.powerpc.bff"
+        }
+      }
+    }
+  },
+  "windows": {
+    "2008r2": {
+      "i386": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "9a8459bcf056ec670322b8c939acc333316eed31",
+          "sha256": "c951cae3c3664702faef2e4448e62cc0e700a8c0922e83f2ee48aa772476aafb",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170618083611.git.37.056dc3f-1-x86.msi"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "2bc202cebed9785ecf045a34c5fe6a93e6805043",
+          "sha256": "a0171f7d32bfd59b141643dc5a32b87118b95af5462ad894984325e112795428",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170619083609.git.37.056dc3f-1-x86.msi"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "461456a669b16262c0c0a67712e67136f5cb4366",
+          "sha256": "15b7301995f6687b23cbcdfaa2086000880d982fd267ee116c6747086df397d8",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170620083608.git.37.056dc3f-1-x86.msi"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "250c58b05dc9162badf1cd552e15a2f9177d7756",
+          "sha256": "396d48fda967020f6d683ea0f9671d12fc57323a143e9997832b9e12cf8499b9",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170621083609.git.37.056dc3f-1-x86.msi"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "1bff34a49d8dd72aaadfc791405b641065f291df",
+          "sha256": "27517daf8766aa1efda192847bbee792cc756b5adfc331ae3045cfcd519b8e93",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170622083609.git.37.056dc3f-1-x86.msi"
+        }
+      },
+      "x86_64": {
+        "0.1.0+20170618083611.git.37.056dc3f": {
+          "sha1": "105e3ed2ac2135e3da1d368edfdae4ebf7d994a0",
+          "sha256": "2803ecb922a63a446250cc11c9553ccbdd249a1600bf9d809bf867106da438a8",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170618083611.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170618083611.git.37.056dc3f-1-x64.msi"
+        },
+        "0.1.0+20170619083609.git.37.056dc3f": {
+          "sha1": "2ec2202f24fc6d054e96e2f2ffe852e555589e53",
+          "sha256": "4d301360bc8df03a126de2689fac0c172c92591e2646b3f92eefe6b12357d0da",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170619083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170619083609.git.37.056dc3f-1-x64.msi"
+        },
+        "0.1.0+20170620083608.git.37.056dc3f": {
+          "sha1": "396874401da914ad0f09695092d718ca362df626",
+          "sha256": "8b77fe8d9df66df8b88d78882c80529e67b701f003ee9865a9a245180cac8b48",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170620083608.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170620083608.git.37.056dc3f-1-x64.msi"
+        },
+        "0.1.0+20170621083609.git.37.056dc3f": {
+          "sha1": "f5e8ff962f51ab81e59fafeed27bf77e9b21f0a9",
+          "sha256": "af080f02c73af2f4247beae7095328f641f8aeffe56877b0689b82cb01018c4c",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170621083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170621083609.git.37.056dc3f-1-x64.msi"
+        },
+        "0.1.0+20170622083609.git.37.056dc3f": {
+          "sha1": "4cab58192bc3b4ef3a3d6b79962cb618d91d8185",
+          "sha256": "ea7ed3a96610e5b536aa95360bb92ff536dc0ca4d36149af8851bac1b608a52a",
+          "url": "https://packages.chef.io/files/unstable/harmony/0.1.0+20170622083609.git.37.056dc3f/windows/2012r2/harmony-0.1.0+20170622083609.git.37.056dc3f-1-x64.msi"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:03:36 -0700"
+  }
+}

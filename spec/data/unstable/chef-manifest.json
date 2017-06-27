@@ -1,0 +1,1896 @@
+{
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "31d4e13f0e0d481484e723dceb7afc4d6b03fef7",
+          "sha256": "434c1c75fbeb180632c9c915e9a622dc939267499868faff560dcead840bd4ca",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/12.04/chef_13.2.7+20170615154552-1_amd64.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6d6725a2631210a3e755dbf28dbc98dcc1e7f2b8",
+          "sha256": "21b32f8c4d8d0ab2baf4c19bddbf6f63141e046a9eb46672fd06e0f63822b9e5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/12.04/chef_13.2.7+20170616135819-1_amd64.deb"
+        },
+        "13.2.14": {
+          "sha1": "004840390d795e6c675aca16ccbffc35473249cc",
+          "sha256": "3d2a26da9f49eaeba00ec2a595e5b543b95eed7a2f4ec73bc3f49455d7386a5f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/12.04/chef_13.2.14-1_amd64.deb"
+        },
+        "13.2.15": {
+          "sha1": "2cdf9d4486385645198e6cba6dfad795af10acd3",
+          "sha256": "586aa6d4f2164d308093d7d55965358fe42f6a041368903c274c97badcf43346",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/12.04/chef_13.2.15-1_amd64.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "511cfe46ad188a234af573fbf4f4e1bb79364b7c",
+          "sha256": "9676f1cb271f1f3b07fe885a5dfab8050cefd253903d8286d2a2084cbc4759cb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/12.04/chef_13.2.15+20170619150027-1_amd64.deb"
+        },
+        "13.2.16": {
+          "sha1": "35885a25bbf574a9660b29bb47fc4d004355f48b",
+          "sha256": "db32ff870e46ea7065394bf23d633c0329f6bb4267a2339849e0c8403fd3ace1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/12.04/chef_13.2.16-1_amd64.deb"
+        },
+        "12.21.0": {
+          "sha1": "fd85f8c0530a39805d9a1b0a1357de84ad5d8a74",
+          "sha256": "aa7ddc4a28db61cc1442a7d33363213dc1d0cedf37b5926177d5f915e0be4ca5",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/12.04/chef_12.21.0-1_amd64.deb"
+        },
+        "12.21.1": {
+          "sha1": "61729dac264e3ae327f6a117ab86bf1aec1b8514",
+          "sha256": "f6c41c0111b71ea4ade350fd9942373f4173cdb572240dc242173cd18c32c283",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/12.04/chef_12.21.1-1_amd64.deb"
+        },
+        "13.2.18": {
+          "sha1": "09dc3ef6cd75f3eba3215ba2b95e21f46717f436",
+          "sha256": "d72e0dc68c853c33cd39965573d827f1cbffe6e2a90ae5de3e6a88c221905c53",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/12.04/chef_13.2.18-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "d0332dc5cd8cb1be2d68b94431c5253b8577ac59",
+          "sha256": "8cd6dd982b5e49d8bd53afba2eb257f495df10b2ee4813ae660e5f7bdd5a828b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/12.04/chef_13.2.7+20170615154552-1_i386.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6fb29495a4eef5721c23e79b585965a6029c3775",
+          "sha256": "d71423985fc43f6e87edd737fadf73e985b6dfa6d699bf3ff4989079fcdad9e0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/12.04/chef_13.2.7+20170616135819-1_i386.deb"
+        },
+        "13.2.14": {
+          "sha1": "7762f14e5a1fc5b3cbda9be69628b6ee119abdd9",
+          "sha256": "ec8f6382f18caad0d346cc5d4a7b8de6ea26d06fd49daa3cf34817d1336d27ed",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/12.04/chef_13.2.14-1_i386.deb"
+        },
+        "13.2.15": {
+          "sha1": "10eb28e43503344c07f68209a847920ad389b816",
+          "sha256": "ed12eaa461f0144dec51d7fb302899088d047e4dfe7fed8dbff6e38b90387de7",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/12.04/chef_13.2.15-1_i386.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "5b35b742819f210b71d7f2fdb3e803a4a2a0fb7c",
+          "sha256": "9ce3d053f029141d946b7f895979fd274da8cfb53a0bab79d21e923d03d4b6f2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/12.04/chef_13.2.15+20170619150027-1_i386.deb"
+        },
+        "13.2.16": {
+          "sha1": "00b8568a346e1bc2c43ef6ad925ef96605291864",
+          "sha256": "766b7a908d85f348650949632288c69aebcf33d957391d017f9a81f96a9f1bb3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/12.04/chef_13.2.16-1_i386.deb"
+        },
+        "12.21.0": {
+          "sha1": "ba370a7df78365cd96f7b18e623983fb10bb8f3a",
+          "sha256": "612a75702067ec7c57c4a3a39e27be13ac6d9cfdbf3ad5dca83c2d75ec57b3fc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/12.04/chef_12.21.0-1_i386.deb"
+        },
+        "12.21.1": {
+          "sha1": "4b4902a878e5d0a341323817df066a4eaa8850d7",
+          "sha256": "b5e20f82fd8fecad31b2ac5ac29e9b9203428cf0f71ecbd60ea4656b616c7e16",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/12.04/chef_12.21.1-1_i386.deb"
+        },
+        "13.2.18": {
+          "sha1": "46b8c3acf9e7c6837704ee255e8b6c5043b62505",
+          "sha256": "c3d0d43c61596e55f8bebd7dad105c96d3d1761dcfcd2260eda9936cc8c90642",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/12.04/chef_13.2.18-1_i386.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "31d4e13f0e0d481484e723dceb7afc4d6b03fef7",
+          "sha256": "434c1c75fbeb180632c9c915e9a622dc939267499868faff560dcead840bd4ca",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/14.04/chef_13.2.7+20170615154552-1_amd64.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6d6725a2631210a3e755dbf28dbc98dcc1e7f2b8",
+          "sha256": "21b32f8c4d8d0ab2baf4c19bddbf6f63141e046a9eb46672fd06e0f63822b9e5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/14.04/chef_13.2.7+20170616135819-1_amd64.deb"
+        },
+        "13.2.14": {
+          "sha1": "004840390d795e6c675aca16ccbffc35473249cc",
+          "sha256": "3d2a26da9f49eaeba00ec2a595e5b543b95eed7a2f4ec73bc3f49455d7386a5f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/14.04/chef_13.2.14-1_amd64.deb"
+        },
+        "13.2.15": {
+          "sha1": "2cdf9d4486385645198e6cba6dfad795af10acd3",
+          "sha256": "586aa6d4f2164d308093d7d55965358fe42f6a041368903c274c97badcf43346",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/14.04/chef_13.2.15-1_amd64.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "511cfe46ad188a234af573fbf4f4e1bb79364b7c",
+          "sha256": "9676f1cb271f1f3b07fe885a5dfab8050cefd253903d8286d2a2084cbc4759cb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/14.04/chef_13.2.15+20170619150027-1_amd64.deb"
+        },
+        "13.2.16": {
+          "sha1": "35885a25bbf574a9660b29bb47fc4d004355f48b",
+          "sha256": "db32ff870e46ea7065394bf23d633c0329f6bb4267a2339849e0c8403fd3ace1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/14.04/chef_13.2.16-1_amd64.deb"
+        },
+        "12.21.0": {
+          "sha1": "fd85f8c0530a39805d9a1b0a1357de84ad5d8a74",
+          "sha256": "aa7ddc4a28db61cc1442a7d33363213dc1d0cedf37b5926177d5f915e0be4ca5",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/14.04/chef_12.21.0-1_amd64.deb"
+        },
+        "12.21.1": {
+          "sha1": "61729dac264e3ae327f6a117ab86bf1aec1b8514",
+          "sha256": "f6c41c0111b71ea4ade350fd9942373f4173cdb572240dc242173cd18c32c283",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/14.04/chef_12.21.1-1_amd64.deb"
+        },
+        "13.2.18": {
+          "sha1": "09dc3ef6cd75f3eba3215ba2b95e21f46717f436",
+          "sha256": "d72e0dc68c853c33cd39965573d827f1cbffe6e2a90ae5de3e6a88c221905c53",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/14.04/chef_13.2.18-1_amd64.deb"
+        }
+      },
+      "ppc64le": {
+        "13.2.7+20170615154552": {
+          "sha1": "906679393c5b7a03e0dd59887995b1669ae432b1",
+          "sha256": "1fbb4c794f0a3d6702df9c74011aac4b3a87a9ef7d32a83bfe6e7a2549057243",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/14.04/chef_13.2.7+20170615154552-1_ppc64el.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "37fd14a921c8867da8d2ee8fbe0f7b7d34cdad63",
+          "sha256": "3c17f43999a152146704ec2b192aa8af5c6cba856cd16ce51fdb4c1ee1cacbba",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/14.04/chef_13.2.7+20170616135819-1_ppc64el.deb"
+        },
+        "13.2.14": {
+          "sha1": "89de697576aa59b9e0ce5e39c38c9e2a3f479424",
+          "sha256": "0d7b14034918ec0092af6a1a9664b5c024fb96c33da429a6145b0f967a1387ba",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/14.04/chef_13.2.14-1_ppc64el.deb"
+        },
+        "13.2.15": {
+          "sha1": "91a6ea1043adaf32b09621f36d32beae5d3aa021",
+          "sha256": "6d6b89114ff98dafdaba47eda308b81bc344701c49c7fb9dd718b31dc7850ab3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/14.04/chef_13.2.15-1_ppc64el.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "c62966540ec1cdf1656835524865491673715fdd",
+          "sha256": "04f4b46afaf3b450d9ae0b97ee4a4c165ea2940985caf532fee8af70c8be1772",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/14.04/chef_13.2.15+20170619150027-1_ppc64el.deb"
+        },
+        "13.2.16": {
+          "sha1": "aadb82246140468f3fdab5b8e73b3cade4b39cd5",
+          "sha256": "2b936a37f8d9a9720ce611bfb342724a18c4cd6fd9de6f03c561b3301999fb99",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/14.04/chef_13.2.16-1_ppc64el.deb"
+        },
+        "12.21.0": {
+          "sha1": "a423472834d348bdc68cc80c4381801b591fbef2",
+          "sha256": "3795e5385b587db00ae8864c7b37b20d79d0138a49bc19391b44d2a96e55a692",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/14.04/chef_12.21.0-1_ppc64el.deb"
+        },
+        "12.21.1": {
+          "sha1": "45fcdea242700bccdd9460a92958ac04541af6ee",
+          "sha256": "54499ee249166649765aa57268f9ddbe01da902d27225bfd2ba006c6bb8f807c",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/14.04/chef_12.21.1-1_ppc64el.deb"
+        },
+        "13.2.18": {
+          "sha1": "10d8874be499160cf5ba48f7191c2d2f2ae58f26",
+          "sha256": "18d2ed13b147cd96a5261d92125fcaa8d559e357d08f50438121039d32585357",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/14.04/chef_13.2.18-1_ppc64el.deb"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "d0332dc5cd8cb1be2d68b94431c5253b8577ac59",
+          "sha256": "8cd6dd982b5e49d8bd53afba2eb257f495df10b2ee4813ae660e5f7bdd5a828b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/14.04/chef_13.2.7+20170615154552-1_i386.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6fb29495a4eef5721c23e79b585965a6029c3775",
+          "sha256": "d71423985fc43f6e87edd737fadf73e985b6dfa6d699bf3ff4989079fcdad9e0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/14.04/chef_13.2.7+20170616135819-1_i386.deb"
+        },
+        "13.2.14": {
+          "sha1": "7762f14e5a1fc5b3cbda9be69628b6ee119abdd9",
+          "sha256": "ec8f6382f18caad0d346cc5d4a7b8de6ea26d06fd49daa3cf34817d1336d27ed",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/14.04/chef_13.2.14-1_i386.deb"
+        },
+        "13.2.15": {
+          "sha1": "10eb28e43503344c07f68209a847920ad389b816",
+          "sha256": "ed12eaa461f0144dec51d7fb302899088d047e4dfe7fed8dbff6e38b90387de7",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/14.04/chef_13.2.15-1_i386.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "5b35b742819f210b71d7f2fdb3e803a4a2a0fb7c",
+          "sha256": "9ce3d053f029141d946b7f895979fd274da8cfb53a0bab79d21e923d03d4b6f2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/14.04/chef_13.2.15+20170619150027-1_i386.deb"
+        },
+        "13.2.16": {
+          "sha1": "00b8568a346e1bc2c43ef6ad925ef96605291864",
+          "sha256": "766b7a908d85f348650949632288c69aebcf33d957391d017f9a81f96a9f1bb3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/14.04/chef_13.2.16-1_i386.deb"
+        },
+        "12.21.0": {
+          "sha1": "ba370a7df78365cd96f7b18e623983fb10bb8f3a",
+          "sha256": "612a75702067ec7c57c4a3a39e27be13ac6d9cfdbf3ad5dca83c2d75ec57b3fc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/14.04/chef_12.21.0-1_i386.deb"
+        },
+        "12.21.1": {
+          "sha1": "4b4902a878e5d0a341323817df066a4eaa8850d7",
+          "sha256": "b5e20f82fd8fecad31b2ac5ac29e9b9203428cf0f71ecbd60ea4656b616c7e16",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/14.04/chef_12.21.1-1_i386.deb"
+        },
+        "13.2.18": {
+          "sha1": "46b8c3acf9e7c6837704ee255e8b6c5043b62505",
+          "sha256": "c3d0d43c61596e55f8bebd7dad105c96d3d1761dcfcd2260eda9936cc8c90642",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/14.04/chef_13.2.18-1_i386.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "31d4e13f0e0d481484e723dceb7afc4d6b03fef7",
+          "sha256": "434c1c75fbeb180632c9c915e9a622dc939267499868faff560dcead840bd4ca",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/16.04/chef_13.2.7+20170615154552-1_amd64.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6d6725a2631210a3e755dbf28dbc98dcc1e7f2b8",
+          "sha256": "21b32f8c4d8d0ab2baf4c19bddbf6f63141e046a9eb46672fd06e0f63822b9e5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/16.04/chef_13.2.7+20170616135819-1_amd64.deb"
+        },
+        "13.2.14": {
+          "sha1": "004840390d795e6c675aca16ccbffc35473249cc",
+          "sha256": "3d2a26da9f49eaeba00ec2a595e5b543b95eed7a2f4ec73bc3f49455d7386a5f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/16.04/chef_13.2.14-1_amd64.deb"
+        },
+        "13.2.15": {
+          "sha1": "2cdf9d4486385645198e6cba6dfad795af10acd3",
+          "sha256": "586aa6d4f2164d308093d7d55965358fe42f6a041368903c274c97badcf43346",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/16.04/chef_13.2.15-1_amd64.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "511cfe46ad188a234af573fbf4f4e1bb79364b7c",
+          "sha256": "9676f1cb271f1f3b07fe885a5dfab8050cefd253903d8286d2a2084cbc4759cb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/16.04/chef_13.2.15+20170619150027-1_amd64.deb"
+        },
+        "13.2.16": {
+          "sha1": "35885a25bbf574a9660b29bb47fc4d004355f48b",
+          "sha256": "db32ff870e46ea7065394bf23d633c0329f6bb4267a2339849e0c8403fd3ace1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/16.04/chef_13.2.16-1_amd64.deb"
+        },
+        "12.21.0": {
+          "sha1": "fd85f8c0530a39805d9a1b0a1357de84ad5d8a74",
+          "sha256": "aa7ddc4a28db61cc1442a7d33363213dc1d0cedf37b5926177d5f915e0be4ca5",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/16.04/chef_12.21.0-1_amd64.deb"
+        },
+        "12.21.1": {
+          "sha1": "61729dac264e3ae327f6a117ab86bf1aec1b8514",
+          "sha256": "f6c41c0111b71ea4ade350fd9942373f4173cdb572240dc242173cd18c32c283",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/16.04/chef_12.21.1-1_amd64.deb"
+        },
+        "13.2.18": {
+          "sha1": "09dc3ef6cd75f3eba3215ba2b95e21f46717f436",
+          "sha256": "d72e0dc68c853c33cd39965573d827f1cbffe6e2a90ae5de3e6a88c221905c53",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/16.04/chef_13.2.18-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "d0332dc5cd8cb1be2d68b94431c5253b8577ac59",
+          "sha256": "8cd6dd982b5e49d8bd53afba2eb257f495df10b2ee4813ae660e5f7bdd5a828b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/ubuntu/16.04/chef_13.2.7+20170615154552-1_i386.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6fb29495a4eef5721c23e79b585965a6029c3775",
+          "sha256": "d71423985fc43f6e87edd737fadf73e985b6dfa6d699bf3ff4989079fcdad9e0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/ubuntu/16.04/chef_13.2.7+20170616135819-1_i386.deb"
+        },
+        "13.2.14": {
+          "sha1": "7762f14e5a1fc5b3cbda9be69628b6ee119abdd9",
+          "sha256": "ec8f6382f18caad0d346cc5d4a7b8de6ea26d06fd49daa3cf34817d1336d27ed",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/ubuntu/16.04/chef_13.2.14-1_i386.deb"
+        },
+        "13.2.15": {
+          "sha1": "10eb28e43503344c07f68209a847920ad389b816",
+          "sha256": "ed12eaa461f0144dec51d7fb302899088d047e4dfe7fed8dbff6e38b90387de7",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/ubuntu/16.04/chef_13.2.15-1_i386.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "5b35b742819f210b71d7f2fdb3e803a4a2a0fb7c",
+          "sha256": "9ce3d053f029141d946b7f895979fd274da8cfb53a0bab79d21e923d03d4b6f2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/ubuntu/16.04/chef_13.2.15+20170619150027-1_i386.deb"
+        },
+        "13.2.16": {
+          "sha1": "00b8568a346e1bc2c43ef6ad925ef96605291864",
+          "sha256": "766b7a908d85f348650949632288c69aebcf33d957391d017f9a81f96a9f1bb3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/ubuntu/16.04/chef_13.2.16-1_i386.deb"
+        },
+        "12.21.0": {
+          "sha1": "ba370a7df78365cd96f7b18e623983fb10bb8f3a",
+          "sha256": "612a75702067ec7c57c4a3a39e27be13ac6d9cfdbf3ad5dca83c2d75ec57b3fc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/ubuntu/16.04/chef_12.21.0-1_i386.deb"
+        },
+        "12.21.1": {
+          "sha1": "4b4902a878e5d0a341323817df066a4eaa8850d7",
+          "sha256": "b5e20f82fd8fecad31b2ac5ac29e9b9203428cf0f71ecbd60ea4656b616c7e16",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/ubuntu/16.04/chef_12.21.1-1_i386.deb"
+        },
+        "13.2.18": {
+          "sha1": "46b8c3acf9e7c6837704ee255e8b6c5043b62505",
+          "sha256": "c3d0d43c61596e55f8bebd7dad105c96d3d1761dcfcd2260eda9936cc8c90642",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/ubuntu/16.04/chef_13.2.18-1_i386.deb"
+        }
+      }
+    }
+  },
+  "debian": {
+    "7": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "cc568bb9189d2b5ba965eb3f7fe96ace4faaca0a",
+          "sha256": "a0910867f9e73da81720aac67a35a19c9dfe1ae6e83751781d1f1be94b330f52",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/debian/7/chef_13.2.7+20170615154552-1_amd64.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "f5fdd7fa7559399ceb302fbd599da0827cad461f",
+          "sha256": "f9aca72a8e3c78a74b6de4e47f66dfac11715d2d45b4f737cca2e2b5f1f42340",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/debian/7/chef_13.2.7+20170616135819-1_amd64.deb"
+        },
+        "13.2.14": {
+          "sha1": "96493cf56a3d062d30b7e18c9bd3954b836265d6",
+          "sha256": "5d2f1eaa6d958e458d7f19cc2419c4150116bc66a85d1228be72a952e1df3139",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/debian/7/chef_13.2.14-1_amd64.deb"
+        },
+        "13.2.15": {
+          "sha1": "913e487f427c087204b130b41edef6f6564c9c7b",
+          "sha256": "b9fa688e233a8946bc3badc3dfcddc3174bc54811526c15f25c3af09247c57fe",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/debian/7/chef_13.2.15-1_amd64.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "14e385ce579081489d8718f1b7592f6a60966487",
+          "sha256": "82f16a6fc89d15f9ef925af1597e4739e59b5f307d9d9ec1b5a1e7f41c5fe65a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/debian/7/chef_13.2.15+20170619150027-1_amd64.deb"
+        },
+        "13.2.16": {
+          "sha1": "bd43dac9f1cede5a053b9891fcf0f52c08b630de",
+          "sha256": "2c0a988f799e7cc325b695a6f2c1a9b81055b80ad49bc80300464b09f7f8b8df",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/debian/7/chef_13.2.16-1_amd64.deb"
+        },
+        "12.21.0": {
+          "sha1": "e6f0897140e2d72b359eacbe725c6a1864f3f474",
+          "sha256": "a750c471e9e2811df9162cfd2e4eb48219336a0066e0a86e777f386679874e31",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/debian/7/chef_12.21.0-1_amd64.deb"
+        },
+        "12.21.1": {
+          "sha1": "9b2c360883da2273a32e53232dab2071c394f604",
+          "sha256": "4d489aaf6352c50231e087d3ba00548fbef24b8ecfd8d094edc04ef0070b17c8",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/debian/7/chef_12.21.1-1_amd64.deb"
+        },
+        "13.2.18": {
+          "sha1": "82d2e15142eced3966fe33d52ad20b49243804e8",
+          "sha256": "2e5747e32b247173cc91aea6000f913ffa6d1c581d56fc282c49c500853d0772",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/debian/7/chef_13.2.18-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "7bf756a57b033ba9f2472b88a17284db1c76db29",
+          "sha256": "27709201eac3c132edb71c0b52f1410c1ba0efac8aa17a592efb738300c01bee",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/debian/7/chef_13.2.7+20170615154552-1_i386.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "154468b126a3bba76cd5410d7bdbdeeddc1c215e",
+          "sha256": "bc7c2c4f7906df2d0455da053362d092c6f3bfd46988ec524d468f22c6951fd1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/debian/7/chef_13.2.7+20170616135819-1_i386.deb"
+        },
+        "13.2.14": {
+          "sha1": "c5916e1527f4e08c10f44c3f100e834d6d78b085",
+          "sha256": "8693db47991deececc0cfb7fcfd9ddc4db140537c576c26fc505732aa4bb31d0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/debian/7/chef_13.2.14-1_i386.deb"
+        },
+        "13.2.15": {
+          "sha1": "2eb29aef104fd4f9f6f51ee99a3c83bed2d33a68",
+          "sha256": "8bbb3ed3fafbf4716509587c7c23dc538b6cdfce5a0ce0c5bfe9533e7197a71a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/debian/7/chef_13.2.15-1_i386.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "a4e081651a5f6d7568997a6e2ae2f4f0515e50f8",
+          "sha256": "a4e7202e635585a8e211c221c8c3a70b6ab93f1b788f9b40ef4ccafb9990b660",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/debian/7/chef_13.2.15+20170619150027-1_i386.deb"
+        },
+        "13.2.16": {
+          "sha1": "7c7d2b4f7cd0dd86fdea7fdcf799a01154482590",
+          "sha256": "c924809443be91bc6a9bf7fd69ad4b31cb6f264e19cbedb106b3cfb647994b47",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/debian/7/chef_13.2.16-1_i386.deb"
+        },
+        "12.21.0": {
+          "sha1": "85592cafc3fb951ca6dc24f06bc0aa724de435ea",
+          "sha256": "c6bd82d3d29ca7340d3b95d8ec1cb5fe610fba9234267b05e174340f384bd3df",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/debian/7/chef_12.21.0-1_i386.deb"
+        },
+        "12.21.1": {
+          "sha1": "2cd12d25ad005a7b4314411fa7f6e06e2b565b3f",
+          "sha256": "26df7612c0fb7012492810d44166965df1e6c6a9cdbac4452e79dbf9b95be3dc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/debian/7/chef_12.21.1-1_i386.deb"
+        },
+        "13.2.18": {
+          "sha1": "15766f3b314904d2d4868459987bccf21b9d6ed0",
+          "sha256": "095e7eedf642e7b4ca71479b206ecc427cdaf7f42ae476ab0ed7a40b92981790",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/debian/7/chef_13.2.18-1_i386.deb"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "cc568bb9189d2b5ba965eb3f7fe96ace4faaca0a",
+          "sha256": "a0910867f9e73da81720aac67a35a19c9dfe1ae6e83751781d1f1be94b330f52",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/debian/8/chef_13.2.7+20170615154552-1_amd64.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "f5fdd7fa7559399ceb302fbd599da0827cad461f",
+          "sha256": "f9aca72a8e3c78a74b6de4e47f66dfac11715d2d45b4f737cca2e2b5f1f42340",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/debian/8/chef_13.2.7+20170616135819-1_amd64.deb"
+        },
+        "13.2.14": {
+          "sha1": "96493cf56a3d062d30b7e18c9bd3954b836265d6",
+          "sha256": "5d2f1eaa6d958e458d7f19cc2419c4150116bc66a85d1228be72a952e1df3139",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/debian/8/chef_13.2.14-1_amd64.deb"
+        },
+        "13.2.15": {
+          "sha1": "913e487f427c087204b130b41edef6f6564c9c7b",
+          "sha256": "b9fa688e233a8946bc3badc3dfcddc3174bc54811526c15f25c3af09247c57fe",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/debian/8/chef_13.2.15-1_amd64.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "14e385ce579081489d8718f1b7592f6a60966487",
+          "sha256": "82f16a6fc89d15f9ef925af1597e4739e59b5f307d9d9ec1b5a1e7f41c5fe65a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/debian/8/chef_13.2.15+20170619150027-1_amd64.deb"
+        },
+        "13.2.16": {
+          "sha1": "bd43dac9f1cede5a053b9891fcf0f52c08b630de",
+          "sha256": "2c0a988f799e7cc325b695a6f2c1a9b81055b80ad49bc80300464b09f7f8b8df",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/debian/8/chef_13.2.16-1_amd64.deb"
+        },
+        "12.21.0": {
+          "sha1": "e6f0897140e2d72b359eacbe725c6a1864f3f474",
+          "sha256": "a750c471e9e2811df9162cfd2e4eb48219336a0066e0a86e777f386679874e31",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/debian/8/chef_12.21.0-1_amd64.deb"
+        },
+        "12.21.1": {
+          "sha1": "9b2c360883da2273a32e53232dab2071c394f604",
+          "sha256": "4d489aaf6352c50231e087d3ba00548fbef24b8ecfd8d094edc04ef0070b17c8",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/debian/8/chef_12.21.1-1_amd64.deb"
+        },
+        "13.2.18": {
+          "sha1": "82d2e15142eced3966fe33d52ad20b49243804e8",
+          "sha256": "2e5747e32b247173cc91aea6000f913ffa6d1c581d56fc282c49c500853d0772",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/debian/8/chef_13.2.18-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "7bf756a57b033ba9f2472b88a17284db1c76db29",
+          "sha256": "27709201eac3c132edb71c0b52f1410c1ba0efac8aa17a592efb738300c01bee",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/debian/8/chef_13.2.7+20170615154552-1_i386.deb"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "154468b126a3bba76cd5410d7bdbdeeddc1c215e",
+          "sha256": "bc7c2c4f7906df2d0455da053362d092c6f3bfd46988ec524d468f22c6951fd1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/debian/8/chef_13.2.7+20170616135819-1_i386.deb"
+        },
+        "13.2.14": {
+          "sha1": "c5916e1527f4e08c10f44c3f100e834d6d78b085",
+          "sha256": "8693db47991deececc0cfb7fcfd9ddc4db140537c576c26fc505732aa4bb31d0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/debian/8/chef_13.2.14-1_i386.deb"
+        },
+        "13.2.15": {
+          "sha1": "2eb29aef104fd4f9f6f51ee99a3c83bed2d33a68",
+          "sha256": "8bbb3ed3fafbf4716509587c7c23dc538b6cdfce5a0ce0c5bfe9533e7197a71a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/debian/8/chef_13.2.15-1_i386.deb"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "a4e081651a5f6d7568997a6e2ae2f4f0515e50f8",
+          "sha256": "a4e7202e635585a8e211c221c8c3a70b6ab93f1b788f9b40ef4ccafb9990b660",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/debian/8/chef_13.2.15+20170619150027-1_i386.deb"
+        },
+        "13.2.16": {
+          "sha1": "7c7d2b4f7cd0dd86fdea7fdcf799a01154482590",
+          "sha256": "c924809443be91bc6a9bf7fd69ad4b31cb6f264e19cbedb106b3cfb647994b47",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/debian/8/chef_13.2.16-1_i386.deb"
+        },
+        "12.21.0": {
+          "sha1": "85592cafc3fb951ca6dc24f06bc0aa724de435ea",
+          "sha256": "c6bd82d3d29ca7340d3b95d8ec1cb5fe610fba9234267b05e174340f384bd3df",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/debian/8/chef_12.21.0-1_i386.deb"
+        },
+        "12.21.1": {
+          "sha1": "2cd12d25ad005a7b4314411fa7f6e06e2b565b3f",
+          "sha256": "26df7612c0fb7012492810d44166965df1e6c6a9cdbac4452e79dbf9b95be3dc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/debian/8/chef_12.21.1-1_i386.deb"
+        },
+        "13.2.18": {
+          "sha1": "15766f3b314904d2d4868459987bccf21b9d6ed0",
+          "sha256": "095e7eedf642e7b4ca71479b206ecc427cdaf7f42ae476ab0ed7a40b92981790",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/debian/8/chef_13.2.18-1_i386.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "7": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "bc8c53baf27260cf6ad73c259a8fe8d5df69812e",
+          "sha256": "83ce2d40e270bc74b174bb4ad5b2e5a19ea74a0de319636a39e859f1f8e7597e",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/7/chef-13.2.7+20170615154552-1.el7.x86_64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "3375ccbb082fca1b37ba9062d60cd09068c3c169",
+          "sha256": "a0e3bf16062aec9f2f96f82a96c8f0b48c5d8f0c0336130f1252c256e27b75b5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/7/chef-13.2.7+20170616135819-1.el7.x86_64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "23a88583a4a24e46ec3e3a97f4fa795750097163",
+          "sha256": "e901334de7e3669f671b904806f50c9880a87c1c3b752a636d5b97ef82dbe4fc",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/7/chef-13.2.14-1.el7.x86_64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "ddf9ec689b9673e9b431a8c940f5a1899b573f8b",
+          "sha256": "7699fe2f6fdb1f2a02153b259f16295c71dbba80670ac2e9cd9fc389c92dcf22",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/7/chef-13.2.15-1.el7.x86_64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "6f54ceda46b0fb3f38372e191c229ad52737b5ee",
+          "sha256": "fb48f892042c42a40697ae815f5c931835a1fe6b65dc4d2e57639851b43ab983",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/7/chef-13.2.15+20170619150027-1.el7.x86_64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "b81dd9df12b09b517abb20a0f8f25f940d1a8b98",
+          "sha256": "67c26054f6394c4b3198a11051efd4b59eb45ff4a698d76ec2f83de58bc1daef",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/7/chef-13.2.16-1.el7.x86_64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "67527bad19ddf02867bfb6b3e27d096e85327da9",
+          "sha256": "c57d28777d6d874eadc22b9b56e39121553b6795e585f6eb4db62764ca99218a",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/7/chef-12.21.0-1.el7.x86_64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "4d4e7cd56d1d6941cbac22715ba95af870fc6df7",
+          "sha256": "70ce68bbd0d30aaa899b8385bf595d5f5a2c86d60cdddb2d3e2f8ac321c9859d",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/7/chef-12.21.1-1.el7.x86_64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "3196c770e5f22dd14ffd24b1495c88881a54972c",
+          "sha256": "dcbf45ca91f43b0ba6222d23eb11cf5e8023a6c7329bc8b4bcfeede9c5c09976",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/7/chef-13.2.18-1.el7.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "13.2.7+20170615154552": {
+          "sha1": "f12c7132cc4d679afe5ee5d6265788070ed9e4e8",
+          "sha256": "0fc5fc3436a1d69f0082ee5b916b5374f04c9b08bd6558a72f1b1f4cd8067f0c",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/7/chef-13.2.7+20170615154552-1.el7.s390x.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "e3c78208d6908ce792a0305b05dec54a5ffb52be",
+          "sha256": "eb8c3326c16b41fbbba7afa32d366e12a36e657cd5462bf9d10713a5ae758192",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/7/chef-13.2.7+20170616135819-1.el7.s390x.rpm"
+        },
+        "13.2.14": {
+          "sha1": "653563c72cd5df56d07ebf3800a20703d0f27be7",
+          "sha256": "65c8e0d73da5879083779fc945fc269bf2ea7889546e78bc50620e92dd390fa1",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/7/chef-13.2.14-1.el7.s390x.rpm"
+        },
+        "13.2.15": {
+          "sha1": "831e4f890037f7bcb3af1c75b8f7b297e7c89f06",
+          "sha256": "ba35b1e7d0f45fc30129b2172a3cddbad3bde526e110dc5cc141a429cea2a77d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/7/chef-13.2.15-1.el7.s390x.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "1af93d4d0408835913d7f9e732f0ea698cf30d1a",
+          "sha256": "cfc62f999b05bbea6a6e25ad6b883891d0dd73d3ac8c843008e2dd6e9d15f936",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/7/chef-13.2.15+20170619150027-1.el7.s390x.rpm"
+        },
+        "13.2.16": {
+          "sha1": "b6e1c1ca33f42165ecd5551b8e666dae88844e3e",
+          "sha256": "3ffac845dffa500527cfcf2b6241291c5e5bf00ea3a5408cca27eadce33ed8a4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/7/chef-13.2.16-1.el7.s390x.rpm"
+        },
+        "12.21.0": {
+          "sha1": "c1d15f0295352fe27c6b40ec9d077950e247d3a9",
+          "sha256": "4aeed73bd39def66e683ba82cc335d09e54aaa832793831481106c2facb896ec",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/7/chef-12.21.0-1.el7.s390x.rpm"
+        },
+        "12.21.1": {
+          "sha1": "de895800524c8d4da6da83e6e436c4c6247f2df8",
+          "sha256": "29232af33ca3d316304f0b5388db539280457c6d479c7d5f8d3f438d07c4b932",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/7/chef-12.21.1-1.el7.s390x.rpm"
+        },
+        "13.2.18": {
+          "sha1": "a3981c8c886bac80cb1542ac9ef308582cee8511",
+          "sha256": "fd8bf9dc2bd4e658283f984cd59d9c7ffea173b8d2bec9e2560c04b26f667aa3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/7/chef-13.2.18-1.el7.s390x.rpm"
+        }
+      },
+      "ppc64": {
+        "13.2.7+20170615154552": {
+          "sha1": "eee2721761ca60133c6310f13f6ffa2f0a3fc47c",
+          "sha256": "255e48a7fb8d44be4e8cfd10b7b32e1cc5256ce0875e7b5044e5a8a28bcfd13c",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/7/chef-13.2.7+20170615154552-1.el7.ppc64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "dc59932ac9c801ea2fad2404d58fc97808212a0f",
+          "sha256": "3bbb6fd4b4acd66a384c446625a4d5be6ebee3e5317061016fc825879e393b9a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/7/chef-13.2.7+20170616135819-1.el7.ppc64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "225154ebb61c6c218abf585ad57989fa4483f324",
+          "sha256": "dc582e0a7c6b5ad4feb6d840780001c51e647d2e59cb598d709ad0efcab1c637",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/7/chef-13.2.14-1.el7.ppc64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "bcb0b15689c213ed5c75ec60a23cf152d3246f12",
+          "sha256": "42c15b99f11e6b04fd6d8c09c53259274ca68705043d494dba24f9a7aaaa7f1c",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/7/chef-13.2.15-1.el7.ppc64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "4099215c1ebcfa81963568d0c60f82a1eed12dcd",
+          "sha256": "e40f2999b7cd16a8b3dab24f6b0863442e69514d644e6eaebb05ce0fd9aa2625",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/7/chef-13.2.15+20170619150027-1.el7.ppc64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "7d009cc5a178a75551e8f87e3c50efe0da6e642e",
+          "sha256": "05c999c589edcfac6166344b8af2ff5a137df25e6d8526a11bd23c25fed0ddb5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/7/chef-13.2.16-1.el7.ppc64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "e5f2bef05815ab997ae5323470d59080fb373ada",
+          "sha256": "7ecf6e982435f4db081bf6393777c46100f3a208c2f6246ae018fed5bbc8238b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/7/chef-12.21.0-1.el7.ppc64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "66fa4720a60aeaba0dc00bd69709b730b56d34b3",
+          "sha256": "83be5c3d493192f4e1738c14dd2509e7b9854bcbe896cd1c2ac241d07add2199",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/7/chef-12.21.1-1.el7.ppc64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "edb85957c2d18c2ad3a0c33a4a3e3a392bca66c7",
+          "sha256": "dc71e1391f4b115c1c57312e9a5a0084977ceeeca903025e186e0ab18e7b5314",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/7/chef-13.2.18-1.el7.ppc64.rpm"
+        }
+      },
+      "ppc64le": {
+        "13.2.7+20170615154552": {
+          "sha1": "b2388ec11fcda9455421d4e2ed6174040183b18a",
+          "sha256": "71a1677e3542228cb21b0a74628230030bb6c83e06aabb3aabbcf10d7f826e05",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/7/chef-13.2.7+20170615154552-1.el7.ppc64le.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6bd22eaf7c0e5dd24a1c23e8a379d84060493b8c",
+          "sha256": "e6645423ef367f29d7201e7d88c6f743211371e290af2ef9145c120f60bb7086",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/7/chef-13.2.7+20170616135819-1.el7.ppc64le.rpm"
+        },
+        "13.2.14": {
+          "sha1": "5d4a5580318531628132d45dc1a9731b463bf5dc",
+          "sha256": "665e93d7fee1d472206ad0bb2a4df0c04fedb1c4ab452960c677c9d1b9b4fdab",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/7/chef-13.2.14-1.el7.ppc64le.rpm"
+        },
+        "13.2.15": {
+          "sha1": "f03063a8a77db2d0a76ea6aff137e8b7b6ae9263",
+          "sha256": "7d65e4754697ffe8b3938868e22c460fade13bffbd73d17e23af7593b23bfd71",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/7/chef-13.2.15-1.el7.ppc64le.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "7eb2a9d0db4886323706dc0009241de45f4e61a5",
+          "sha256": "48c03a053417d87dfc280280a1ba51ae2899aff4595f8b17e3b36463b960946f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/7/chef-13.2.15+20170619150027-1.el7.ppc64le.rpm"
+        },
+        "13.2.16": {
+          "sha1": "5423265d4f79e5d72bb23649f050e1e16a71b697",
+          "sha256": "c289483e87c780d164fde0020639d6ba89890f7f73ff2bd713cfb88501e28b88",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/7/chef-13.2.16-1.el7.ppc64le.rpm"
+        },
+        "12.21.0": {
+          "sha1": "e66042ca1be5ae724b9824ec60efe93020c2612f",
+          "sha256": "73fbade53a3daece78183d8400f124f74e51395f5eef36adbe19b0954c3069c7",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/7/chef-12.21.0-1.el7.ppc64le.rpm"
+        },
+        "12.21.1": {
+          "sha1": "c8cf19bf8501bc3fc9718fe5ef7b20825bcec04e",
+          "sha256": "9085572f51368ac48d0e8b8cce284bb279d3f1ed0cec38ad79916956b390edf1",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/7/chef-12.21.1-1.el7.ppc64le.rpm"
+        },
+        "13.2.18": {
+          "sha1": "1540cfc176f2f0cf5f1c6089737f337251c41ed7",
+          "sha256": "5fd27b73fb2f1502a88ad9e80825efb8c9b3b999e259643db3bcf0dee8601aa4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/7/chef-13.2.18-1.el7.ppc64le.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "f036b18cfd83c4bbe5887dba39ad2181de93a6d5",
+          "sha256": "c9be074acdd4786f9760995d4900aef3b0c253ff8eb3a08035558fbf33d9cabd",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/6/chef-13.2.7+20170615154552-1.el6.x86_64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "77a7d650732ae61a87914074fd958060f2d4ce98",
+          "sha256": "2450e3aa997db1ba08558befdb83957d43e66891297188dbeb4062fb5980d381",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/6/chef-13.2.7+20170616135819-1.el6.x86_64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "eb6c9e1adb8458dd3a3c8452fbd6baca36876c10",
+          "sha256": "61e33c36f75a9976bfc8d211eb055d6f741d027f856586c849b4b34f21e566d4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/6/chef-13.2.14-1.el6.x86_64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "8fe8d1f9ea6c2673868fdc8d01d38574d13a674b",
+          "sha256": "7dbfbfce91cf48a174398ced66d5cb28e327a2b63db6dd3f5a9295729fdfaaf4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/6/chef-13.2.15-1.el6.x86_64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "4a6745037bf924e2c4ce5c7c0c4d447d613d90c4",
+          "sha256": "67c669cf349df4f48d41fa21c9ddcb6a521e6b02197ace21787ce366ee9045d4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/6/chef-13.2.15+20170619150027-1.el6.x86_64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "415b8a3085718067a4658c9b0deb981b35ef0f15",
+          "sha256": "d858f9024cac43d6b0254c245759f1b7e112c11e2668374651a7a11aee77f3a8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/6/chef-13.2.16-1.el6.x86_64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "d8294041238351318435dd1c1762494c6bc1d4b6",
+          "sha256": "ca5e0153dc93aaf2d13d48f4cd74fea219d71eb97f082ad11a5d92f3f953b270",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/6/chef-12.21.0-1.el6.x86_64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "a0b001d128e1527103a9f09a8ce80b8fe227f950",
+          "sha256": "97e389e64f8e4a295ab13c1d1d29c95d1b98b300c4decd22036ce2744aa1bbc8",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/6/chef-12.21.1-1.el6.x86_64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "47f1d558fd539dab1519c449da64f1ccaa9eb67d",
+          "sha256": "11b113028a42619384d97b28c7d06757adcf784f3cf538c4dd593bb5880c824d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/6/chef-13.2.18-1.el6.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "13.2.7+20170615154552": {
+          "sha1": "124a301c6bb29c71827afbf919e63fba3171d819",
+          "sha256": "0464fd2476f38c6fd2d3724b86c7d3eb31d1d1ea1b288b7f4bcd54a2c4728cb0",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/6/chef-13.2.7+20170615154552-1.el6.s390x.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "b490601790ae0c25a16bd18bac2e5299c8468e8c",
+          "sha256": "9d3fd7bd4376ed105167b70e95558fa48597f9980074314c261f02729136bb61",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/6/chef-13.2.7+20170616135819-1.el6.s390x.rpm"
+        },
+        "13.2.14": {
+          "sha1": "2f527bb4c2f3db9e5ecc8d3683aa58c254332a00",
+          "sha256": "2fb30ade6a4dba5de3da29216262c41b855263e0ceae20de8febe8532d87c2ed",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/6/chef-13.2.14-1.el6.s390x.rpm"
+        },
+        "13.2.15": {
+          "sha1": "bfc2c9f32c8959bcab19453206454b4e87ba42bb",
+          "sha256": "34810466e23807525428658ff023e3bc82286856c1330dcc754167c9ef99258b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/6/chef-13.2.15-1.el6.s390x.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "a925d4ffdd764134c43dc4a7d7c0d7e83d811e9e",
+          "sha256": "266de0c4c6fbcda0b648637bf1cc42fc24603ef7a122d3483b31eb5867474821",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/6/chef-13.2.15+20170619150027-1.el6.s390x.rpm"
+        },
+        "13.2.16": {
+          "sha1": "8cfbafc0e5cb72047984e94d96339d54e537b571",
+          "sha256": "8a67c4dc61ddfcaba943a5b8d27568eab064fa8ee0197a38bab71a45d8db3c8d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/6/chef-13.2.16-1.el6.s390x.rpm"
+        },
+        "12.21.0": {
+          "sha1": "fe65944ca7270efeccec831baad19b10de1878df",
+          "sha256": "c55f9a09973131eb4ebb69cc94dd1ab8f0339b5620f4b583f80a4fafcb5a33f4",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/6/chef-12.21.0-1.el6.s390x.rpm"
+        },
+        "12.21.1": {
+          "sha1": "f16bf1ca3fa42856e108026568704abee748934b",
+          "sha256": "89673e2f3d29f3294d54919c4caf27d05c7519a64f5a90c894e960d6342fd5d0",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/6/chef-12.21.1-1.el6.s390x.rpm"
+        },
+        "13.2.18": {
+          "sha1": "470f84da1a433d4e9bd7fbc066882c8121bc5845",
+          "sha256": "9e9093f32bcddb589a833a579662122acf090e5246b73c9b75e20453c3f40767",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/6/chef-13.2.18-1.el6.s390x.rpm"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "dd24cdedde7382c4f9e8dbf839055973f05a36af",
+          "sha256": "89bb0ac8a1a8d8416646d3a2d494c83906b378c3d629045990f9d21bb088e803",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/6/chef-13.2.7+20170615154552-1.el6.i386.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "fec5459e7ffa38742766715f3e6baeda30c028c4",
+          "sha256": "db0e24b87d18c634f0bbb9376f40d0fd3154aaa6b69f6d33bffc3a5663e10f45",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/6/chef-13.2.7+20170616135819-1.el6.i386.rpm"
+        },
+        "13.2.14": {
+          "sha1": "e8d993504914e2b54cd56e61067d11a47b38e2cc",
+          "sha256": "a498b7c6dc0a09f8da9246157085da06f4dc018dbb09bf33b0c690334b1fab17",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/el/6/chef-13.2.14-1.el6.i386.rpm"
+        },
+        "13.2.15": {
+          "sha1": "b07370f2f874677d56e6cd32f4b75d64e4a5dc5b",
+          "sha256": "486cd20e7d4fd332bb2ce693899745351a22a7f2f48c0cd60aabc0d107eaac77",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/el/6/chef-13.2.15-1.el6.i386.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "371a20f609b0d3b21c5bfa3318a7cfef01bb2aee",
+          "sha256": "569879b62498e5902d82a3f6c85a298f79043d8162836da9ccf8d96be4294241",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/6/chef-13.2.15+20170619150027-1.el6.i386.rpm"
+        },
+        "13.2.16": {
+          "sha1": "f0260b84a4ce180bd0b7e641f1d56d7c9f01c425",
+          "sha256": "a777c524a6fa0a514e23947bbebe55feb2e6e60944a4e6206fb85ccc30f9c0f5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/el/6/chef-13.2.16-1.el6.i386.rpm"
+        },
+        "12.21.0": {
+          "sha1": "d3638e7b823cb8fd6a3ebe67cccef0918d148c21",
+          "sha256": "9e30fb24aae37e9374820afd64dee19c82c0bf2bc7259ce43990069e36ce7fbe",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/el/6/chef-12.21.0-1.el6.i386.rpm"
+        },
+        "12.21.1": {
+          "sha1": "0c9b1c2699ef1d1325bb8b3eaf7a28a9b2fbbc7b",
+          "sha256": "6df36fdf1011b63e13a83ed79cd2c7e58a6eafa1f9caa4a07395a32ed535a81b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/el/6/chef-12.21.1-1.el6.i386.rpm"
+        },
+        "13.2.18": {
+          "sha1": "ffee6745904f08aea7a3fd3780bfd274311f3b96",
+          "sha256": "6c479b3161c6e08fa0355ba4f6961d37cd3f81b51bdfd70dd6c645da66247bf6",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/el/6/chef-13.2.18-1.el6.i386.rpm"
+        }
+      }
+    },
+    "5": {
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "da9994b513b063dbfd695eb73b20cb615e3b84e0",
+          "sha256": "4a364eb8fad82e114346420ad1bc709bb9040879b08bd21019b02d30339250e7",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/5/chef-13.2.7+20170615154552-1.el5.i386.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "b52305deb89c91cb1d66ef52579b9e47689b9ffa",
+          "sha256": "c6b6f71e4e40fe4751b412498ded253d9201b5cb0aec13951608b40e95f64709",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/5/chef-13.2.7+20170616135819-1.el5.i386.rpm"
+        },
+        "13.2.14": {
+          "sha1": "0386b5f2088ba7088d0ea75e527ad31541d4dd49",
+          "sha256": "744428661b0708eb7838bfa9d7b87c631885b96b0f1d829ee8aa830067b50986",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/el/5/chef-13.2.14-1.el5.i386.rpm"
+        },
+        "13.2.15": {
+          "sha1": "4d2fac9075be343ef6eeb0522a1df66fc4fe11a6",
+          "sha256": "d770e05cd2dd3ee433c1edd9527f53f06cf24a780d020d9dffb37231a1a1abe0",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/el/5/chef-13.2.15-1.el5.i386.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "7dbb754fd2a536489e441ac83ea7f1653238d768",
+          "sha256": "67ff33d197829a13c5d4aaff0fdcc134d3d5444ed2b035b46910b1308bdbb88f",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/5/chef-13.2.15+20170619150027-1.el5.i386.rpm"
+        },
+        "13.2.16": {
+          "sha1": "795968428ab3408667f04f2e00de379eaf662bc5",
+          "sha256": "dd43d26986054fad96ba09568e4890666f6252e19ce93ccd2ec73155d2f9ef0e",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/el/5/chef-13.2.16-1.el5.i386.rpm"
+        },
+        "12.21.0": {
+          "sha1": "f2c5bfcfbf25c2f02421920a017d5f791b4b461b",
+          "sha256": "c03561ea7d4d1a0ad4440576ed546afa75939ee8cbb341c63a00678df14f2e90",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/el/5/chef-12.21.0-1.el5.i386.rpm"
+        },
+        "12.21.1": {
+          "sha1": "6a4a4f0b45ebcbfe3bfe71274fe79dcaa7d1f438",
+          "sha256": "aad8928eacfc3000365efd777895c0f18a600ccc812e408cd8df9f7594a4922f",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/el/5/chef-12.21.1-1.el5.i386.rpm"
+        },
+        "13.2.18": {
+          "sha1": "25f8a4e22fc181b23bbe2bca00acc243adfeda50",
+          "sha256": "78074b6e099a222891f01ec525568091e9e7029ecbe5bc353ca1da5368d3c9eb",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/el/5/chef-13.2.18-1.el5.i386.rpm"
+        }
+      },
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "fc5ad7b57d4a1099ac05fe09d03e77aac4659275",
+          "sha256": "a4e5ba273293561d4668f6ad6f86d76910a083a9d6f384958bb37a0ce10eba1a",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/el/5/chef-13.2.7+20170615154552-1.el5.x86_64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "bb607603108512bec5c9182c4ed9bf23b01fe677",
+          "sha256": "31fe5234cc0caba93fce42f2d315fc3e848b1362158bf7e294bddd67862a92c5",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/el/5/chef-13.2.7+20170616135819-1.el5.x86_64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "410a87d281aacfdd0c9f3992ae2acefee1f30114",
+          "sha256": "3f53587dc09060a4033587b89adb956d229e84d358f11133945d030b90d66465",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/el/5/chef-13.2.14-1.el5.x86_64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "c219002e69d985752842212b5adbd8ec59b1bcf9",
+          "sha256": "55c35f651e0f2f1a8b1e1e72734e77974c416eec9adbfb8b6daa3aabdf1a133a",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/el/5/chef-13.2.15-1.el5.x86_64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "000095fcce9106b261d485a17e6d9c76859ed167",
+          "sha256": "b5d6706f48fe326961d3f41254854c615d9dfcc45bdee4e0bf1606a363a3e789",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/el/5/chef-13.2.15+20170619150027-1.el5.x86_64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "b9f8ccf67bbea0696e7ad560add41fdbba0723e9",
+          "sha256": "b29141c1bf36240b765af12eb58eeb37c48cf0652f7839b8ab313171cb47e4d5",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/el/5/chef-13.2.16-1.el5.x86_64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "040bce568d73a786735b4342849ab38cf37e3697",
+          "sha256": "ae8aa800ad4fb2785e86638f44a1c214f98829d0db6d9357e77495fd37ce9a3c",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/el/5/chef-12.21.0-1.el5.x86_64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "6a4bace407531b0becac72a6382061454384bd98",
+          "sha256": "1af178df0ac008f60df8a2d7bae0fc5b86125b4b44dafd8bcdb2411ad998388f",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/el/5/chef-12.21.1-1.el5.x86_64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "7b0fe9d545842c921524a6424025830a69a9a123",
+          "sha256": "4f43548531312f5d928594a65811a9caa0d9a913095fcbbbbae791619b91d26b",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/el/5/chef-13.2.18-1.el5.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "sles": {
+    "12": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "5ffb99802e6cc5758cee6d9b0c514ba61612d2c4",
+          "sha256": "f63953608c219d0372e0da3563ed5e1ba998a0e57e524a114107096a19c1202f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/sles/12/chef-13.2.7+20170615154552-1.sles12.x86_64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "666fabbcd59053f44fe996c8a380334cae8e1a7b",
+          "sha256": "02a189e0131efcac359258da679d332aeeacd73b6a2d07270fd8d864f026857d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/sles/12/chef-13.2.7+20170616135819-1.sles12.x86_64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "2b3c7bfcdbc6819b56f7a3e462329f1c978ba490",
+          "sha256": "b9d832fe708f494265f33ab1ea398ba596c050d3eeeef9c33747ca87eedbbe73",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/sles/12/chef-13.2.14-1.sles12.x86_64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "ddd2027d013c185afaf3791d958e9baca4b7f32f",
+          "sha256": "23d68788eda39305b73abca38677c0e89309cc2e450bfd78a8c041aa50969869",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/sles/12/chef-13.2.15-1.sles12.x86_64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "eac02df87c284317f26d3e034708e8b779eb8b69",
+          "sha256": "45800e2a37e66c4a152f120efff2cad2d8e4a25f7d6646cb9858342d5d60f68d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/sles/12/chef-13.2.15+20170619150027-1.sles12.x86_64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "f3d2fc8fe6fd6cda00159a582bd27de2220fb91b",
+          "sha256": "cb1af08247a4b0cdcc19cf06bf824462b64c6053ec8d3df278d6047e53fc9676",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/sles/12/chef-13.2.16-1.sles12.x86_64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "57ea297e0a00264f9ce21833dc0dbb2e1de95ce9",
+          "sha256": "79f6d9740fcf8879f00f72e0ec54eb170c6ab6e0f6cc42fc8a9f3abb1dddc7dd",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/sles/12/chef-12.21.0-1.sles12.x86_64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "3d4c90c9b8a2168ba067b89c8c127b21202d8ed1",
+          "sha256": "e8705a564e6687e492eca401a5af9613012b991fbe6eba58c414eaedf575d232",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/sles/12/chef-12.21.1-1.sles12.x86_64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "1a71cc0b9c35eef828c78845b57ecae702836baa",
+          "sha256": "6059a4f35ec9d5e759dbc3e74eccb61c9983262cbb2d56a4fb44ef82c5377fc8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/sles/12/chef-13.2.18-1.sles12.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "13.2.7+20170615154552": {
+          "sha1": "8f3b4f8e0af73770ac1505b97a2ee272ea80b5b3",
+          "sha256": "7c4186d29931653480046fe081b988b29cdddac05b15abe4f4ca1f103ec6cfb8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/sles/12/chef-13.2.7+20170615154552-1.sles12.s390x.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "acf66d0b3be60332a360f262c18986f6fd3b8b4e",
+          "sha256": "171de6bc31b73dd62a943d52428376d952cb45092f1b99b46a897921b837604a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/sles/12/chef-13.2.7+20170616135819-1.sles12.s390x.rpm"
+        },
+        "13.2.14": {
+          "sha1": "5c76c53cc14cb21fc58a130223342c50c763d69d",
+          "sha256": "e04c8d5c75b2be3fa1366824c1695632798eed91898ef8d0bea119365e22ad5e",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/sles/12/chef-13.2.14-1.sles12.s390x.rpm"
+        },
+        "13.2.15": {
+          "sha1": "1081fb9fe761d7faee41d37843f5c97a39c4ce1d",
+          "sha256": "34df5f8ac85637605f9a1c84e8e6e9d958a93626e0e99b3111d2b329964e7074",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/sles/12/chef-13.2.15-1.sles12.s390x.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "8897daec166195ea6ac29f19ee50445dd489e536",
+          "sha256": "915f5e301f16876965ea8666b208c222bdbd25dca07a1661b885a8bddf3992a5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/sles/12/chef-13.2.15+20170619150027-1.sles12.s390x.rpm"
+        },
+        "13.2.16": {
+          "sha1": "fd6218ba2b688fa0b08685614ea7a54b9e69259a",
+          "sha256": "63630aba0ddb823179430b959ae5c9de53c481359c8f76bcda44fda9c3cc7d12",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/sles/12/chef-13.2.16-1.sles12.s390x.rpm"
+        },
+        "12.21.0": {
+          "sha1": "cb7a3f57f5d885fae21b463f8a2639cbf42fe8c2",
+          "sha256": "282f807af59335f9c5f7e25279481825bcbc808c8d702d41bb3f7194c42451d4",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/sles/12/chef-12.21.0-1.sles12.s390x.rpm"
+        },
+        "12.21.1": {
+          "sha1": "e34a5d899ec3ae0f999a007016053a07f09f709b",
+          "sha256": "7e0690cbba52f0cf8baf3e22053de34a24384c208fd4877899acfc91a6eb8f35",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/sles/12/chef-12.21.1-1.sles12.s390x.rpm"
+        },
+        "13.2.18": {
+          "sha1": "27b8d3670ad5524e5ecb072eb5084c704bc3c9cb",
+          "sha256": "fc907fd9b3de0b9920b9866ef72a54242ae2320cb8bd678721afda53d5c14e6d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/sles/12/chef-13.2.18-1.sles12.s390x.rpm"
+        }
+      }
+    },
+    "11": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "5765fcc47b1ab25861d2fa03c8d8c908e048e42c",
+          "sha256": "4296aa20f867064070a6ba25cb35ffab4f5d55a071d346df7d58753316793071",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/sles/11/chef-13.2.7+20170615154552-1.sles11.x86_64.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "d7878a180e7d2db7832d595641b068681395925a",
+          "sha256": "677b4a83e86a25bce99a06d6f024223dc95bc229e788d8e321d95272479a790c",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/sles/11/chef-13.2.7+20170616135819-1.sles11.x86_64.rpm"
+        },
+        "13.2.14": {
+          "sha1": "aa8fc36870a3c05761f7da5d4aa9b6a9c20a49bd",
+          "sha256": "0ff96f7ccd18297cbf4118701c05c52a5fffaf62d7847b149e610cc13d4d24c5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/sles/11/chef-13.2.14-1.sles11.x86_64.rpm"
+        },
+        "13.2.15": {
+          "sha1": "e48b7287cb6f56b8fed852331dc56d9f3a5cde78",
+          "sha256": "aeeefeb545179bcf4c901af54b155da9d10fcec78e243e1c8f3b965cabc54554",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/sles/11/chef-13.2.15-1.sles11.x86_64.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "f111d40984b904e741417366148be7b7d40c8a1b",
+          "sha256": "58f733c74561e30c16ef7d597efb50a9cf4d7ac635a3641fe44291391380b366",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/sles/11/chef-13.2.15+20170619150027-1.sles11.x86_64.rpm"
+        },
+        "13.2.16": {
+          "sha1": "4291b8eaf70fc63e02c1af0a436fce7298d900a3",
+          "sha256": "22bd41492f37a4f75fd30601ab3123a86b5a0e3163982d4488e762a6cb0f4d46",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/sles/11/chef-13.2.16-1.sles11.x86_64.rpm"
+        },
+        "12.21.0": {
+          "sha1": "8ecc3627bd52096ee6697025440fe24bd06ced5c",
+          "sha256": "9754f0221578183f0b583b2235459e2bb5f11e2bc67d7a8a4e762f7f5816a90a",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/sles/11/chef-12.21.0-1.sles11.x86_64.rpm"
+        },
+        "12.21.1": {
+          "sha1": "da8d8cdd37bbe77700b73d2c81c0b1352582baa3",
+          "sha256": "db1d33e8ee5ecc7018b7d0326a5a86b89dcf7f8f73dd26a502becfd6647845eb",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/sles/11/chef-12.21.1-1.sles11.x86_64.rpm"
+        },
+        "13.2.18": {
+          "sha1": "e8ad904c8d22b0d6b18b81eec3262031d9dc2c9b",
+          "sha256": "e5ba138e75c90a6f43da03a020f7d6e2b3f1b9a3f96f19b3a1a5e0aa3f029f88",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/sles/11/chef-13.2.18-1.sles11.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "13.2.7+20170615154552": {
+          "sha1": "75b61663ada81c1492a69861d7d19f6c449209c4",
+          "sha256": "894235bf8aad733ca284fcb5a1ac6aaf6b815242c2d9e91d5b91b2c5ffa0d471",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/sles/11/chef-13.2.7+20170615154552-1.sles11.s390x.rpm"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "9d930a9d06f22470f73362d1e56fcb8a52c3c6d9",
+          "sha256": "0232cf1c583c49a8ea8310e5379364b8d1c6dfc1fa84f53636671752dfe4d718",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/sles/11/chef-13.2.7+20170616135819-1.sles11.s390x.rpm"
+        },
+        "13.2.14": {
+          "sha1": "4d5c0291427921fea5067858fb33d951413933e9",
+          "sha256": "b4529006a2eb79665f767c5c71ead7bca8f1d2338f33a71d4cad2eb83bcbb724",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/sles/11/chef-13.2.14-1.sles11.s390x.rpm"
+        },
+        "13.2.15": {
+          "sha1": "599c0709181d66d1bbcf62fac0d2cc15612ec4b6",
+          "sha256": "9dd3e05f8c60a30178d65243acf538b28cf6310d9475d0ecbfc28019f4e018ca",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/sles/11/chef-13.2.15-1.sles11.s390x.rpm"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "9479ab23e56873795e8f350ef960715ef77978c5",
+          "sha256": "494831a65a1b1a80631ef4097b4bb4b27dfca47b50ce3175792c699cfc77513e",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/sles/11/chef-13.2.15+20170619150027-1.sles11.s390x.rpm"
+        },
+        "13.2.16": {
+          "sha1": "7bf3ee6b71836b411856ba5d8cd64efee5935a56",
+          "sha256": "605706da5ac47186f99127e3143c080accc7d1808e4a4503dd41f035cec14701",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/sles/11/chef-13.2.16-1.sles11.s390x.rpm"
+        },
+        "12.21.0": {
+          "sha1": "a4362a9c348402f25e4e33431c67aa9b94364fcb",
+          "sha256": "f3b08fb590aa52dd7fb70179d34be18a592ab46d7d30d5edebb8368aded24e61",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/sles/11/chef-12.21.0-1.sles11.s390x.rpm"
+        },
+        "12.21.1": {
+          "sha1": "c8f5bbc444feb3b0d15c8b8ae48c3835c15d3c26",
+          "sha256": "f962d2194bef21cbcad22cabb0df42ad26a8118899e0d557c83c21f45cdf191e",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/sles/11/chef-12.21.1-1.sles11.s390x.rpm"
+        },
+        "13.2.18": {
+          "sha1": "b3b78ddec9ecd4f0ab6aeb387c4cf57eb892562d",
+          "sha256": "aa6f065752647655b7f02fb76cdbb63663965f5a477b9415b7316ee8e047d50b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/sles/11/chef-13.2.18-1.sles11.s390x.rpm"
+        }
+      }
+    }
+  },
+  "freebsd": {
+    "10": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "4f0173c8e99591075ed25befeca1de945a90f22c",
+          "sha256": "dd8f5d7640b03604230ec80b8b54a68add89f95130b45c8fea8f84d39c1e8d2d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/freebsd/10/chef-13.2.7+20170615154552_1.amd64.sh"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "b548f0c120db8183dcef1e949c39d9cacfe9739e",
+          "sha256": "bbb9c425ba58f1bee20e413fccdda8572e9af09ef6a0d089129e7a3525ddebeb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/freebsd/10/chef-13.2.7+20170616135819_1.amd64.sh"
+        },
+        "13.2.14": {
+          "sha1": "e07df2396d14b0c48a771943f9cc8fca97d6a204",
+          "sha256": "31e79cdfa6e56cdb494b852d610b20051f51a88f05ba91b3b95dff5c504862ff",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/freebsd/10/chef-13.2.14_1.amd64.sh"
+        },
+        "13.2.15": {
+          "sha1": "61695c105530cfb3bb89a33a7e39752e109e4ba8",
+          "sha256": "682ff714a010780c3b5bd55b725753edde4f07de0152a86f90ba143a3abf8e18",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/freebsd/10/chef-13.2.15_1.amd64.sh"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "138f3cf5d1a914449890916294be00dcc7932f78",
+          "sha256": "6b984319095b86a1e6fd0d29f91fa9f0dfd24f85fba2d3b5a204812d8c063d2a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/freebsd/10/chef-13.2.15+20170619150027_1.amd64.sh"
+        },
+        "13.2.16": {
+          "sha1": "f546e443d82111084174538b0a116c125641cae3",
+          "sha256": "0cd5562eb494bcecee350834432565a685b9032d0fb4dd8390fb0f0ee69ff896",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/freebsd/10/chef-13.2.16_1.amd64.sh"
+        },
+        "12.21.0": {
+          "sha1": "f745bfb76d01988be0ca1a80f46be73eb5632514",
+          "sha256": "f695e875be2772de67fe39a899bec68fe26415853dd5ec8b4c748ecd3000f3ac",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/freebsd/10/chef-12.21.0_1.amd64.sh"
+        },
+        "12.21.1": {
+          "sha1": "84a0f41c50e70f36301fdc735bfaad778ef70545",
+          "sha256": "88a7965b2d9229d87488002dabc92414f34858837f2737c964ce27c800b7c1cd",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/freebsd/10/chef-12.21.1_1.amd64.sh"
+        },
+        "13.2.18": {
+          "sha1": "0027b158c1d2eb8b477cef927ffd0a009f99e7b9",
+          "sha256": "ddd472967d3b8a1d2b01e198a95096c4bfed4a4c544ed1f5f93e921084f62518",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/freebsd/10/chef-13.2.18_1.amd64.sh"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "e07b7c7f13257df8afa02f0e6908f27fd083c3d9",
+          "sha256": "19d47803444a4114cd4921344f67ee0867795d4525d71f70ed3d55188d6621b9",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/freebsd/10/chef-13.2.7+20170615154552_1.i386.sh"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "10eff589df0a6e125b8e4917d9a55e417ce847dc",
+          "sha256": "4c08e46fd67cb248c989803cba50a78e5ce93a5f3d1abfff163e787e4b9665e9",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/freebsd/10/chef-13.2.7+20170616135819_1.i386.sh"
+        },
+        "13.2.14": {
+          "sha1": "b269805f1202034a1f768b7fa34426012e6f1f0e",
+          "sha256": "f35621addb36b2b5cd6f1bd7d2147135758c48a7c5fd2ca926d873cb03e124a6",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/freebsd/10/chef-13.2.14_1.i386.sh"
+        },
+        "13.2.15": {
+          "sha1": "bc40c30a5867513a6bb7bab759a06422e52ae196",
+          "sha256": "70b9d78743c7d7c2210776f1728834ec6b940bca5dac6d434c8572df5e53863d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/freebsd/10/chef-13.2.15_1.i386.sh"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "b590e0a05fab059751701172341c90aeda4af35d",
+          "sha256": "0d1aefee99393ce35b0bc1be1e2bb9d0f012974af2122ac66da503d3b1981fdf",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/freebsd/10/chef-13.2.15+20170619150027_1.i386.sh"
+        },
+        "13.2.16": {
+          "sha1": "df57deb5162c46b62d22ff1194d75bfa9d535c87",
+          "sha256": "d073957f706cc338c4fb1bf836a41f8c657e7bc3906b014781e7ffb7a0eb3166",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/freebsd/10/chef-13.2.16_1.i386.sh"
+        },
+        "12.21.0": {
+          "sha1": "b9abd3ffe831a106b6220f4c6c57d66422885379",
+          "sha256": "231009682a56faad97e45823cacb6ec13df5e4f17f12678eca3172eddc89be70",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/freebsd/10/chef-12.21.0_1.i386.sh"
+        },
+        "12.21.1": {
+          "sha1": "4f4fd47203ee4f1225096484190971638d608ebf",
+          "sha256": "5613f3dcebbc44524a6175fe4dc666a38225a6ca133dd6c495a35cfce05ef425",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/freebsd/10/chef-12.21.1_1.i386.sh"
+        },
+        "13.2.18": {
+          "sha1": "a21c1594955b9b9b50796a7882cfe8e30806a3bf",
+          "sha256": "9d10da7db7106b73414372bbcb555b8dbaadb5e580f7acfa7d7940039ddb5e37",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/freebsd/10/chef-13.2.18_1.i386.sh"
+        }
+      }
+    },
+    "9": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "f8c8cb78d248a5cb27e4981057aec2c2afb1bd07",
+          "sha256": "6d897505f1896e19e8626c7fec6ce4d2519a0950b05086e6735dae75a06c9661",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/freebsd/9/chef-13.2.7+20170615154552_1.amd64.sh"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "eca97daa3fb08d0bbfd5e04ddcb9f3e7938d529e",
+          "sha256": "07b1cf02b822a1ed037b2fd069a940baa9c4eb0c4afc186521f1956028d3bfac",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/freebsd/9/chef-13.2.7+20170616135819_1.amd64.sh"
+        },
+        "13.2.14": {
+          "sha1": "6df4fc6d7233aff1a92992cf659615c95853e1c7",
+          "sha256": "a7cf8b221eaaede7adabb108db9f7f136f35ea742d1bf12e208f41414cfcdedc",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/freebsd/9/chef-13.2.14_1.amd64.sh"
+        },
+        "13.2.15": {
+          "sha1": "5980d4a42ea13cbad2b9cfc0d1b6cf6eb24b6d78",
+          "sha256": "0929294962a51f9e4c09fe5805e141184cb56f517f0353274afcb68385451efd",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/freebsd/9/chef-13.2.15_1.amd64.sh"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "57a04779246c0974764db14840596d951418d45e",
+          "sha256": "1d76d55a073db33c2e8a1a34c8aac7a831ffcb19146f1440b036bd438f0d07bf",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/freebsd/9/chef-13.2.15+20170619150027_1.amd64.sh"
+        },
+        "13.2.16": {
+          "sha1": "ca8c6d2e6ffb172b40d8910713fe516cc076125c",
+          "sha256": "dc2858bf29766d0e5cd1678fa3205687d8c7cd84bb26055ef5d7b7cac69b2b1c",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/freebsd/9/chef-13.2.16_1.amd64.sh"
+        },
+        "12.21.0": {
+          "sha1": "cf9fdcb4a0ab045c4004fa6620059b279fa6ce39",
+          "sha256": "465cd22129661ee1aec385b8c2be03c94139dbd4ef2968f0b770d96ade369bdb",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/freebsd/9/chef-12.21.0_1.amd64.sh"
+        },
+        "12.21.1": {
+          "sha1": "023d0fac538c914744cb430d79104bed34facf43",
+          "sha256": "2e6d836f2d7315000c409321d9e04d1f8f3a8ce59f172118059c2603b0496278",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/freebsd/9/chef-12.21.1_1.amd64.sh"
+        },
+        "13.2.18": {
+          "sha1": "006382d947c5097ca432c822526496fe6251ea1e",
+          "sha256": "6d4bc2f5455ba38ec99c46fe780da90eae652f19a5d4f057dae291a0c1ecdbe3",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/freebsd/9/chef-13.2.18_1.amd64.sh"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "e279cbbe79155d4f85e4d2c28c75ea03550af9e0",
+          "sha256": "050be1c188a6960514731301370e94b01eb8b5a813b40691a41691a08aafb7b9",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/freebsd/9/chef-13.2.7+20170615154552_1.i386.sh"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "bbbe5f0e8bcba4510de425f30bc1327f240d1df1",
+          "sha256": "c957540e8004c0a790dfde4f5bbdb3d7f1a26ee6b16340e65dfb7e0e334dd9ea",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/freebsd/9/chef-13.2.7+20170616135819_1.i386.sh"
+        },
+        "13.2.14": {
+          "sha1": "2a9003a50819c77e2a86bfb003fb0788966af584",
+          "sha256": "6cb2788297bb43ddab981398a99c5b8509937a316386dfe97abbef2e754ee465",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/freebsd/9/chef-13.2.14_1.i386.sh"
+        },
+        "13.2.15": {
+          "sha1": "76dbb6a8c9cd7484f916188c6f0a4322cc53a071",
+          "sha256": "2f56ab50e58c4ebdb4664d3967db57dacd182dfcca3cc421df699ab3e4881fdb",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/freebsd/9/chef-13.2.15_1.i386.sh"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "0d59b1898425f8b20f320315bdeb7a22a5fa083c",
+          "sha256": "8b093fa547bcc88626f028a2dbe9689a754e3138000044e9310648f32da5fd05",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/freebsd/9/chef-13.2.15+20170619150027_1.i386.sh"
+        },
+        "13.2.16": {
+          "sha1": "cbeb41403e67fe2f68ad9f518bed63703b5e30ad",
+          "sha256": "6296be5a7545b136cbf42043f4ac0cec8062202267edb4cc800807f91e9c6403",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/freebsd/9/chef-13.2.16_1.i386.sh"
+        },
+        "12.21.0": {
+          "sha1": "6e55ccf47aa079547baaefe4a11768c35997a635",
+          "sha256": "7eb2749962b89ae643e41bc9b1ad55287b5c264ca7fb5757dfaefcc0125031a8",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/freebsd/9/chef-12.21.0_1.i386.sh"
+        },
+        "12.21.1": {
+          "sha1": "d1178752d8012b0aa1c80b516d5df400133715de",
+          "sha256": "041ee64d967846a5ceadad954b488bbe2d09a2b4e303472cb6c2c70d5cef6c8a",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/freebsd/9/chef-12.21.1_1.i386.sh"
+        },
+        "13.2.18": {
+          "sha1": "dd7a65996de5abdb931d039bdff3b42e68cb94cc",
+          "sha256": "51d1a64b499024d03edbb53091d920fa99ffc00f58ee65f72f044cde0bbc441a",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/freebsd/9/chef-13.2.18_1.i386.sh"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "10.10": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "8a124c6e20ac7fabbeef8c62145359b9a20d6533",
+          "sha256": "ccc0245e3a0d8c2a081b978badaf730421bad7333398fabb062431df753b7325",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/mac_os_x/10.10/chef-13.2.7+20170615154552-1.dmg"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "8251ad22bcddf9d849a336ac4df06c0e3c8de203",
+          "sha256": "692a9884f432428189fd7907d16f05cdabe52523ca32e2d9fe089aa33ccd0fbd",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/mac_os_x/10.10/chef-13.2.7+20170616135819-1.dmg"
+        },
+        "13.2.14": {
+          "sha1": "2d06037badbc9b72fd6f82b57dc6e007fb1eefe3",
+          "sha256": "71f4c7e3041b59738141e4e5fd37d4d9890506e13eeba994c059d9fceaa38165",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/mac_os_x/10.10/chef-13.2.14-1.dmg"
+        },
+        "13.2.15": {
+          "sha1": "50aa4ca13db2f42a66bb24297996c77be82f1e52",
+          "sha256": "548d8d3ec0682230ab6cee72d3a0d19800343d498cfc7be48dd5948a65f07166",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/mac_os_x/10.10/chef-13.2.15-1.dmg"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "e20efa6b06cc804f22d8d1e190e5d0a8921ea176",
+          "sha256": "276d833dc135eab610b1c18a396984fcc4085426631226c4ce4010594bcff387",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/mac_os_x/10.10/chef-13.2.15+20170619150027-1.dmg"
+        },
+        "13.2.16": {
+          "sha1": "29949d6b3b70255d35f64de38bf37d10925fb37a",
+          "sha256": "c1ce602a74e92388003f854386151faba6402ae1b382d212c4a273ea055538b8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/mac_os_x/10.10/chef-13.2.16-1.dmg"
+        },
+        "12.21.0": {
+          "sha1": "60b0be280b06ed429c0fb88f7819386e363c0b81",
+          "sha256": "fab185fb0b17d79e924055a9fcbef701137ab6a513c8ba3bcd53e47b59150084",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/mac_os_x/10.10/chef-12.21.0-1.dmg"
+        },
+        "12.21.1": {
+          "sha1": "32326d67578e0d60b00e7c70e3c479e4747d9da1",
+          "sha256": "e925bc1f400feed88df560849658ea9f7d71342dd8655505653cde27cf343ddc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/mac_os_x/10.10/chef-12.21.1-1.dmg"
+        },
+        "13.2.18": {
+          "sha1": "9d3308f0ef5aa5477a8e22de52b14f5c9e58d219",
+          "sha256": "94d52764b9e92a0cdb86625484c3e20fc0f0a9a5fcf96aaca5f83e47bc1e3be5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/mac_os_x/10.10/chef-13.2.18-1.dmg"
+        }
+      }
+    },
+    "10.11": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "8a124c6e20ac7fabbeef8c62145359b9a20d6533",
+          "sha256": "ccc0245e3a0d8c2a081b978badaf730421bad7333398fabb062431df753b7325",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/mac_os_x/10.11/chef-13.2.7+20170615154552-1.dmg"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "8251ad22bcddf9d849a336ac4df06c0e3c8de203",
+          "sha256": "692a9884f432428189fd7907d16f05cdabe52523ca32e2d9fe089aa33ccd0fbd",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/mac_os_x/10.11/chef-13.2.7+20170616135819-1.dmg"
+        },
+        "13.2.14": {
+          "sha1": "2d06037badbc9b72fd6f82b57dc6e007fb1eefe3",
+          "sha256": "71f4c7e3041b59738141e4e5fd37d4d9890506e13eeba994c059d9fceaa38165",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/mac_os_x/10.11/chef-13.2.14-1.dmg"
+        },
+        "13.2.15": {
+          "sha1": "50aa4ca13db2f42a66bb24297996c77be82f1e52",
+          "sha256": "548d8d3ec0682230ab6cee72d3a0d19800343d498cfc7be48dd5948a65f07166",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/mac_os_x/10.11/chef-13.2.15-1.dmg"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "e20efa6b06cc804f22d8d1e190e5d0a8921ea176",
+          "sha256": "276d833dc135eab610b1c18a396984fcc4085426631226c4ce4010594bcff387",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/mac_os_x/10.11/chef-13.2.15+20170619150027-1.dmg"
+        },
+        "13.2.16": {
+          "sha1": "29949d6b3b70255d35f64de38bf37d10925fb37a",
+          "sha256": "c1ce602a74e92388003f854386151faba6402ae1b382d212c4a273ea055538b8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/mac_os_x/10.11/chef-13.2.16-1.dmg"
+        },
+        "12.21.0": {
+          "sha1": "60b0be280b06ed429c0fb88f7819386e363c0b81",
+          "sha256": "fab185fb0b17d79e924055a9fcbef701137ab6a513c8ba3bcd53e47b59150084",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/mac_os_x/10.11/chef-12.21.0-1.dmg"
+        },
+        "12.21.1": {
+          "sha1": "32326d67578e0d60b00e7c70e3c479e4747d9da1",
+          "sha256": "e925bc1f400feed88df560849658ea9f7d71342dd8655505653cde27cf343ddc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/mac_os_x/10.11/chef-12.21.1-1.dmg"
+        },
+        "13.2.18": {
+          "sha1": "9d3308f0ef5aa5477a8e22de52b14f5c9e58d219",
+          "sha256": "94d52764b9e92a0cdb86625484c3e20fc0f0a9a5fcf96aaca5f83e47bc1e3be5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/mac_os_x/10.11/chef-13.2.18-1.dmg"
+        }
+      }
+    },
+    "10.12": {
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "8a124c6e20ac7fabbeef8c62145359b9a20d6533",
+          "sha256": "ccc0245e3a0d8c2a081b978badaf730421bad7333398fabb062431df753b7325",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/mac_os_x/10.12/chef-13.2.7+20170615154552-1.dmg"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "8251ad22bcddf9d849a336ac4df06c0e3c8de203",
+          "sha256": "692a9884f432428189fd7907d16f05cdabe52523ca32e2d9fe089aa33ccd0fbd",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/mac_os_x/10.12/chef-13.2.7+20170616135819-1.dmg"
+        },
+        "13.2.14": {
+          "sha1": "2d06037badbc9b72fd6f82b57dc6e007fb1eefe3",
+          "sha256": "71f4c7e3041b59738141e4e5fd37d4d9890506e13eeba994c059d9fceaa38165",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/mac_os_x/10.12/chef-13.2.14-1.dmg"
+        },
+        "13.2.15": {
+          "sha1": "50aa4ca13db2f42a66bb24297996c77be82f1e52",
+          "sha256": "548d8d3ec0682230ab6cee72d3a0d19800343d498cfc7be48dd5948a65f07166",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/mac_os_x/10.12/chef-13.2.15-1.dmg"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "e20efa6b06cc804f22d8d1e190e5d0a8921ea176",
+          "sha256": "276d833dc135eab610b1c18a396984fcc4085426631226c4ce4010594bcff387",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/mac_os_x/10.12/chef-13.2.15+20170619150027-1.dmg"
+        },
+        "13.2.16": {
+          "sha1": "29949d6b3b70255d35f64de38bf37d10925fb37a",
+          "sha256": "c1ce602a74e92388003f854386151faba6402ae1b382d212c4a273ea055538b8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/mac_os_x/10.12/chef-13.2.16-1.dmg"
+        },
+        "12.21.0": {
+          "sha1": "60b0be280b06ed429c0fb88f7819386e363c0b81",
+          "sha256": "fab185fb0b17d79e924055a9fcbef701137ab6a513c8ba3bcd53e47b59150084",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/mac_os_x/10.12/chef-12.21.0-1.dmg"
+        },
+        "12.21.1": {
+          "sha1": "32326d67578e0d60b00e7c70e3c479e4747d9da1",
+          "sha256": "e925bc1f400feed88df560849658ea9f7d71342dd8655505653cde27cf343ddc",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/mac_os_x/10.12/chef-12.21.1-1.dmg"
+        },
+        "13.2.18": {
+          "sha1": "9d3308f0ef5aa5477a8e22de52b14f5c9e58d219",
+          "sha256": "94d52764b9e92a0cdb86625484c3e20fc0f0a9a5fcf96aaca5f83e47bc1e3be5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/mac_os_x/10.12/chef-13.2.18-1.dmg"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.10": {
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "c089d2c37bbd93f21a4f9496d1d8fab318ab2845",
+          "sha256": "23405cb5d6e091187b1133309562ce19886129641283f4ff777ba9b8cb1ddd6f",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/solaris2/5.10/chef-13.2.7+20170615154552-1.i386.solaris"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "f4a8ac35b553fffec270a996fa3c214f5c1f8126",
+          "sha256": "f9c9fd68148de23e986d541eb6e0d6e3f9e400ac3a21eab5dd6c6a098fd85bc0",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/solaris2/5.10/chef-13.2.7+20170616135819-1.i386.solaris"
+        },
+        "13.2.14": {
+          "sha1": "f49d7118c08fffa9340800ac7f4d0a76d5368caa",
+          "sha256": "c090e35d2af303528a389a522904cae0b97aab9c14d51aeb689a765569e4bd58",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/solaris2/5.10/chef-13.2.14-1.i386.solaris"
+        },
+        "13.2.15": {
+          "sha1": "4d1f854f637c4e7f33dbaf838cc68c733209bc66",
+          "sha256": "9652f5be55d9a1ba9a31d821ec45f037414b6e9c4fae4d4768b4d5e28ba6b2d6",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/solaris2/5.10/chef-13.2.15-1.i386.solaris"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "2755af72ddcabf37202c0e44306105b2ad12a377",
+          "sha256": "46633561e890535e3906d76a93a16af0cea4a11a47775f89a7a143ddd30dca1b",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/solaris2/5.10/chef-13.2.15+20170619150027-1.i386.solaris"
+        },
+        "13.2.16": {
+          "sha1": "f32b9dbcebcbe56675cf6425ce52ce53cb457932",
+          "sha256": "45299f8cba9fab05417f1683734a4f29b86a7a761da8f686032d839bb44009bd",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/solaris2/5.10/chef-13.2.16-1.i386.solaris"
+        },
+        "12.21.0": {
+          "sha1": "6226e9b9e703456684f2f2576060b251094e88d2",
+          "sha256": "685a5fd2736b1065050c8a424c3f8263190717dceec2f4f8440863d096e22308",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/solaris2/5.10/chef-12.21.0-1.i386.solaris"
+        },
+        "12.21.1": {
+          "sha1": "258265f4b58cd7420abc07678d0af53223d0806f",
+          "sha256": "a9430928d2ee32f2410a6808a39a39880aa505dec92b4a5161c809f51ac14e6b",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/solaris2/5.10/chef-12.21.1-1.i386.solaris"
+        },
+        "13.2.18": {
+          "sha1": "deb625e97c51161fddd0998bd2e505dd3ef50b52",
+          "sha256": "ad3ed30fae1e6631976e12d9bf8c55c32c9ab9a3d162b00e336ff931126e7cd3",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/solaris2/5.10/chef-13.2.18-1.i386.solaris"
+        }
+      },
+      "sparc": {
+        "13.2.7+20170615154552": {
+          "sha1": "452f5e2fdd1e22c1e466b3f6f04c05354bf2645a",
+          "sha256": "77c2f471355148b3f271be2cdb172b8d777624ea5ff2f8410d075a4ecd20ed6e",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/solaris2/5.10/chef-13.2.7+20170615154552-1.sparc.solaris"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "6da8c575a9d3bd4939fbe2c1fc7ef77552de1421",
+          "sha256": "a2d34ca2cd9d87a9b6677d01fbc3e1f9562f35063ddef738376af8d3aa2eb114",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/solaris2/5.10/chef-13.2.7+20170616135819-1.sparc.solaris"
+        },
+        "13.2.14": {
+          "sha1": "a0a7d85cde80786bbea9eb5cfbee6746c45a07f7",
+          "sha256": "7c389b11dd29c1266f1900f1bcfc6c1c8701bfebb0274162725cb070fec4bbc7",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.14/solaris2/5.10/chef-13.2.14-1.sparc.solaris"
+        },
+        "13.2.15": {
+          "sha1": "83e7fbeada3c680d0fb47dd8ce28bbd5ef21a215",
+          "sha256": "1e192b6b72578227b4cd4e67ac5a478d572649f78955b0dd9ced308695a7e17c",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15/solaris2/5.10/chef-13.2.15-1.sparc.solaris"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "bc168cf78793fd8367ed456049e30ce23396d4fb",
+          "sha256": "1cd924f8cac34139b559585d10ae9f6a3a619e0cae3e94dad35c19df8c9c3bc3",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/solaris2/5.10/chef-13.2.15+20170619150027-1.sparc.solaris"
+        },
+        "13.2.16": {
+          "sha1": "c7586696b446555f7c7f14e4cd9cae9229f13e32",
+          "sha256": "daeb72b2a73fa472e9f8124793ee19b5edb4c1651dc406747d20902270fb729d",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.16/solaris2/5.10/chef-13.2.16-1.sparc.solaris"
+        },
+        "12.21.0": {
+          "sha1": "de671b9f58a091dd9af8c4ce43a63116c077392d",
+          "sha256": "32c36709cdc0750156fb5d5a58450f783af018e8e545f4159601896b679a6e0f",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.0/solaris2/5.10/chef-12.21.0-1.sparc.solaris"
+        },
+        "12.21.1": {
+          "sha1": "14b3b04387ca6a8f987683a0593602e765827a13",
+          "sha256": "72d83b2dd429a5898db156c8fe0f1e86ff30af083f7b0cdcb3e1dd8685e23a54",
+          "url": "http://packages.chef.io/files/unstable/chef/12.21.1/solaris2/5.10/chef-12.21.1-1.sparc.solaris"
+        },
+        "13.2.18": {
+          "sha1": "a575ac250fcad15be8f93a7f9986b42c563cbae2",
+          "sha256": "2bdf231f0066de84248e6b6eab096640d89b3626200e821cc3842c9ef62886b1",
+          "url": "http://packages.chef.io/files/unstable/chef/13.2.18/solaris2/5.10/chef-13.2.18-1.sparc.solaris"
+        }
+      }
+    },
+    "5.11": {
+      "sparc": {
+        "13.2.7+20170615154552": {
+          "sha1": "3263a1d42eba6e23c742fb239e2b4b2434f5f0e5",
+          "sha256": "c82029012979a48d3ccc1d6413ff6ffa28eac446f653831f336accf0288b24bb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/solaris2/5.11/chef-13.2.7+20170615154552-1.sparc.p5p"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "ebaff257980b091eaccadd45cc917603b7af6af5",
+          "sha256": "11f0e7a41310950c5e18687b4402580eab6720c46f0b9c0bd4c8bd140a1222b2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/solaris2/5.11/chef-13.2.7+20170616135819-1.sparc.p5p"
+        },
+        "13.2.14": {
+          "sha1": "d2f676bc9bcfffbd48c9880d12a475b5e22a4b25",
+          "sha256": "7651bfae562ea009aa6214f17f6beca0d4d9ea1ad714f4046566ca6d4e1e2e22",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/solaris2/5.11/chef-13.2.14-1.sparc.p5p"
+        },
+        "13.2.15": {
+          "sha1": "b7ee5c2df6398ae3716a2c0f41cc02398a37f401",
+          "sha256": "7491760eb95744cd3104e329f7902b813c3a931a92a7df888478c166498bb21b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/solaris2/5.11/chef-13.2.15-1.sparc.p5p"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "52a4adf86ca58195894a52452c2c967a171ce5d7",
+          "sha256": "6d38e8d4418d6a31fdd4466e3733a23e293390faaacecb5167b75a9de11e937e",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/solaris2/5.11/chef-13.2.15+20170619150027-1.sparc.p5p"
+        },
+        "13.2.16": {
+          "sha1": "3461592aba4d969a98997a322e4a5ce56f1fa004",
+          "sha256": "bb0bef62fe25cead04cc23ee9c6df88ae234d99e5f71d23920302c2a57dbe2a5",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/solaris2/5.11/chef-13.2.16-1.sparc.p5p"
+        },
+        "12.21.0": {
+          "sha1": "2f6d951d55aca9369c33905f9e3587323255341f",
+          "sha256": "2fcd0e13003da7a16afb8cb37c8eefb8445cd1a7d7b86019400098da49834057",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/solaris2/5.11/chef-12.21.0-1.sparc.p5p"
+        },
+        "12.21.1": {
+          "sha1": "930e399fe51ac24edbee828f2e2ed49e414d4c48",
+          "sha256": "68e15232d641e1cd5edfdfd8da336c958abaa32c5bba1ca4420df9377d7869d8",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/solaris2/5.11/chef-12.21.1-1.sparc.p5p"
+        },
+        "13.2.18": {
+          "sha1": "6311a636afea51fe37dece6bf0a01c522d31dafc",
+          "sha256": "0fa6e9e335ec80004095ba663426fad01b04c345f88467e247afd329b69809b3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/solaris2/5.11/chef-13.2.18-1.sparc.p5p"
+        }
+      },
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "4294b2544e06de36501be98a52dc8f5dd6dae428",
+          "sha256": "7270d36e1ef6b84618a3c9405a63d0628c949efa5c62e0f0a1389ee75177a17e",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/solaris2/5.11/chef-13.2.7+20170615154552-1.i386.p5p"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "5595888036a00f64b86b69834315e4d73651004f",
+          "sha256": "240e137ba5a653fbb509d694f852a72a3a354f41e1ed7e5f5e758fba518ab5ce",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/solaris2/5.11/chef-13.2.7+20170616135819-1.i386.p5p"
+        },
+        "13.2.14": {
+          "sha1": "3d609c103bd535fd6526e9f632bce8df2d71902a",
+          "sha256": "cc6a3ca73a14f63e5b07cec16cf42d04bd972aa0c78cb4dc226d65cb0bceab4d",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/solaris2/5.11/chef-13.2.14-1.i386.p5p"
+        },
+        "13.2.15": {
+          "sha1": "163a0f09a53dc3a5792efe1512c776eae9936838",
+          "sha256": "e35781d205b470e3d7e17d30c40c912c2db3bed8a803efdb52bd2ef45a6162c8",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/solaris2/5.11/chef-13.2.15-1.i386.p5p"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "3bdfd9562dbd459af9ed297e03db2591cd2a8eb4",
+          "sha256": "e4a8c5b103514becf6595d6461d0cd8ed754cbd830fff95802da457162afdb32",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/solaris2/5.11/chef-13.2.15+20170619150027-1.i386.p5p"
+        },
+        "13.2.16": {
+          "sha1": "0b939d1980fadec3a29e47b48a895dc9319c0011",
+          "sha256": "1376e1231933276d753cc7f666a576c2ca10b6a0c22e22d761755a178ed66669",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/solaris2/5.11/chef-13.2.16-1.i386.p5p"
+        },
+        "12.21.0": {
+          "sha1": "a7392b806f49bf21af6f0188900c6ea452e146fe",
+          "sha256": "f444dbf04cac484fab9a4deeb0e0e90fcb0f108880947b2a93ccb60cbc0f9b58",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/solaris2/5.11/chef-12.21.0-1.i386.p5p"
+        },
+        "12.21.1": {
+          "sha1": "4742676f1c3f4f1f363e3555bb17f60ea20af5e2",
+          "sha256": "991fc16f23ebb1b8e113c60aa5b68ac871fcdf0e42c238ec48d9ae5d6852175b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/solaris2/5.11/chef-12.21.1-1.i386.p5p"
+        },
+        "13.2.18": {
+          "sha1": "5d23313d6c1eeda6a8758ecff1f8d78390f4fc8e",
+          "sha256": "5e73b8d2bfafb392f657c30360712d8e71dcc55eb6070eaa84e082c1652fb536",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/solaris2/5.11/chef-13.2.18-1.i386.p5p"
+        }
+      }
+    }
+  },
+  "windows": {
+    "2008r2": {
+      "i386": {
+        "13.2.7+20170615154552": {
+          "sha1": "440bf95a726ec03c8217b6c7820bf9af04494234",
+          "sha256": "a58e83f8e447bf45d52d7f1af12b872fdc7d7c202c3f456f80c6d096e5350d4b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/windows/2012r2/chef-client-13.2.7+20170615154552-1-x86.msi"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "9c786b252d5cfc852a28bcbd7dc9edb6398eadd7",
+          "sha256": "3a0a3ff0d2645791684fc28a2d3a075cb9953789efbf4b66b653ad8defef2492",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/windows/2012r2/chef-client-13.2.7+20170616135819-1-x86.msi"
+        },
+        "13.2.14": {
+          "sha1": "7f385cf9f8bc29553b3446abe27150f1ab403d5b",
+          "sha256": "efc4d2e7ecd3d46fea48344dbf1fad0878016a40b65fc92759b48378a4c7f4d4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/windows/2012r2/chef-client-13.2.14-1-x86.msi"
+        },
+        "13.2.15": {
+          "sha1": "b77260e9e38305cb5bea8337da9475899074bff9",
+          "sha256": "8c7667c8d24c61ce3685873f9ef5bd9b79568fdfe61d8969b74ffc99ba395a72",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/windows/2012r2/chef-client-13.2.15-1-x86.msi"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "5822ca38d87f67c331a1b311fc31069c8e307c15",
+          "sha256": "5e0c13a1126fd2a227078cd1635a97adb5568e1f133405dc916ee37102397592",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/windows/2012r2/chef-client-13.2.15+20170619150027-1-x86.msi"
+        },
+        "13.2.16": {
+          "sha1": "34b4f01ece0663041059fd10ac66132ca373cb9b",
+          "sha256": "b08a083c2d1f1751730d55b3b68d3c8aa48b09a9d2166c659458e26268329de4",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/windows/2012r2/chef-client-13.2.16-1-x86.msi"
+        },
+        "12.21.0": {
+          "sha1": "796b8149acfc9fe12706aed667c912266ee48498",
+          "sha256": "a33bd0daa665e7c93268d0edcb99c4fd05ec5f9a1da04a22dcc65320d82cb1d3",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/windows/2012r2/chef-client-12.21.0-1-x86.msi"
+        },
+        "12.21.1": {
+          "sha1": "678dd6f90322cafe6283cdff5e78ed37959a2701",
+          "sha256": "3a81f36b00ad4bfb3415f26aef72e818b57573e0922e9900e35f10bf1f6aaa14",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/windows/2012r2/chef-client-12.21.1-1-x86.msi"
+        },
+        "13.2.18": {
+          "sha1": "f4404c85faab27f9a7de873963d372f34a0aacc9",
+          "sha256": "6299460db91bf507a12c3997e897b4e891c8276803dcbe440f6731280351b777",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/windows/2012r2/chef-client-13.2.18-1-x86.msi"
+        }
+      },
+      "x86_64": {
+        "13.2.7+20170615154552": {
+          "sha1": "e3cbac2ecb92c3255f0293c813e07367e2d0b4b0",
+          "sha256": "361fe1f201e296a56059d92ff1ed363cd469d36205b2269aaf8c46876a57b30b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/windows/2012r2/chef-client-13.2.7+20170615154552-1-x64.msi"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "609d997a21bdee0c0731c55c1874b108e931bcf0",
+          "sha256": "15680cfee7d634ce18c0bcec52d31fbd6a6a00e199ad103ad01011fd778c71d2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/windows/2012r2/chef-client-13.2.7+20170616135819-1-x64.msi"
+        },
+        "13.2.14": {
+          "sha1": "19dc01b669e5da22cafcdac80f22bceb1ac7cf03",
+          "sha256": "d01c8fe9c0159ab385474f236064e51ec0102cc071e188460489f76b8bab483b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/windows/2012r2/chef-client-13.2.14-1-x64.msi"
+        },
+        "13.2.15": {
+          "sha1": "6f3a9b3f72686618ec43d8c1df3093a3f1b1d946",
+          "sha256": "a804cec6b9f1aebd13622fa44ee3a313193fcd62ff1b674d690d4b65546f8d20",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/windows/2012r2/chef-client-13.2.15-1-x64.msi"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "d551ac846c3e7ffc233a3f03a77ba61ed1229875",
+          "sha256": "c42886649ce63e023ed39076831923631de94722e3de81f52ba53ace4797a294",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/windows/2012r2/chef-client-13.2.15+20170619150027-1-x64.msi"
+        },
+        "13.2.16": {
+          "sha1": "0ca08b259a516dc2d79393142e2b5da2d7a50f97",
+          "sha256": "88fe38c1978e0ad7bfd469fa97baedcc84cdf8a2bbe38382d370184a2520ca4f",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/windows/2012r2/chef-client-13.2.16-1-x64.msi"
+        },
+        "12.21.0": {
+          "sha1": "5ad6bde1796c11907e6404560f08582900ce806d",
+          "sha256": "e47fbc2d339a2bd89af482b2e462ee92cb0190bba207c51cf1a93f7697f4e545",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/windows/2012r2/chef-client-12.21.0-1-x64.msi"
+        },
+        "12.21.1": {
+          "sha1": "60f8030f52f3ceb5d4d4cc63156b1f419fadcd25",
+          "sha256": "46ed24ada86122b411214e632ffc32f5ec3871c5f49808c4418b7d7be1cde56b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/windows/2012r2/chef-client-12.21.1-1-x64.msi"
+        },
+        "13.2.18": {
+          "sha1": "961d9bbff24a0bd468aad6c54af22ca7ff485aad",
+          "sha256": "3065d4933452fb18643155fc304f7777cfd9eddb7996c2ea16362a9fafaa997c",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/windows/2012r2/chef-client-13.2.18-1-x64.msi"
+        }
+      }
+    }
+  },
+  "aix": {
+    "6.1": {
+      "powerpc": {
+        "13.2.7+20170615154552": {
+          "sha1": "32dcc747c91e89aad475798bb5fe05e98eb75993",
+          "sha256": "3add33b63e965664edd1877ecd106903dc205a409d583819aed5e667bfc1c91a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/aix/6.1/chef-13.2.7+20170615154552-1.powerpc.bff"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "e5a79a48f6de9fa0fbd20b4a3e9ec33c9fc48794",
+          "sha256": "aa5a7c06acaa5c16f1da8cb0a313ff99e32036d9b57a538fb87051cf3ff20c7a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/aix/6.1/chef-13.2.7+20170616135819-1.powerpc.bff"
+        },
+        "13.2.14": {
+          "sha1": "26bfc49d0c9497aa7b42e9e08c9327aad80e6043",
+          "sha256": "43a688e6bfe821c9bd7d09b7b1bcaebf3650b348f2b2643dd5fe58d2627869f3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/aix/6.1/chef-13.2.14-1.powerpc.bff"
+        },
+        "13.2.15": {
+          "sha1": "5a4f00b22db7ad34263d5ffc2cfe9c300d2f0451",
+          "sha256": "a10ceaf417a33611fcb6d92d67ac8a4ca720b1727c446e6f3292f39c508559f2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/aix/6.1/chef-13.2.15-1.powerpc.bff"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "4b1b9fcd3104349da8873d6542198b1dffd0d648",
+          "sha256": "e0a1c53639bd67cf93a30b51c0534f0e3bb7c888b592b66595861deee2f8bc1b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/aix/6.1/chef-13.2.15+20170619150027-1.powerpc.bff"
+        },
+        "13.2.16": {
+          "sha1": "fd60653f1075cbaf0181a466c251bdb6e74cf5dc",
+          "sha256": "c66862aca8ef63d6f932adfbbfc93f11993db0959665c10474516faa17c70adb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/aix/6.1/chef-13.2.16-1.powerpc.bff"
+        },
+        "12.21.0": {
+          "sha1": "1347af57c710ef67132a6c0ba737c3a5d1d93bd0",
+          "sha256": "bf8a02d15425b4de52d6d9ae0010fc36ba7847939c38aade59408eff72f39e0b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/aix/6.1/chef-12.21.0-1.powerpc.bff"
+        },
+        "12.21.1": {
+          "sha1": "709f636831106e21d66bdfe9fc48426d1c873260",
+          "sha256": "93c83a31fb8aa7710a5da6ea6133c40ba61dab1981c8ae60fdcb53f24933076d",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/aix/6.1/chef-12.21.1-1.powerpc.bff"
+        },
+        "13.2.18": {
+          "sha1": "6a1615abb95e8ba7cdd20f4fa35bd83cb41d96b3",
+          "sha256": "ef127ec885493d907076dafe982a24913288f77bd166d122d7917cbe61407060",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/aix/6.1/chef-13.2.18-1.powerpc.bff"
+        }
+      }
+    },
+    "7.1": {
+      "powerpc": {
+        "13.2.7+20170615154552": {
+          "sha1": "32dcc747c91e89aad475798bb5fe05e98eb75993",
+          "sha256": "3add33b63e965664edd1877ecd106903dc205a409d583819aed5e667bfc1c91a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170615154552/aix/7.1/chef-13.2.7+20170615154552-1.powerpc.bff"
+        },
+        "13.2.7+20170616135819": {
+          "sha1": "e5a79a48f6de9fa0fbd20b4a3e9ec33c9fc48794",
+          "sha256": "aa5a7c06acaa5c16f1da8cb0a313ff99e32036d9b57a538fb87051cf3ff20c7a",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.7+20170616135819/aix/7.1/chef-13.2.7+20170616135819-1.powerpc.bff"
+        },
+        "13.2.14": {
+          "sha1": "26bfc49d0c9497aa7b42e9e08c9327aad80e6043",
+          "sha256": "43a688e6bfe821c9bd7d09b7b1bcaebf3650b348f2b2643dd5fe58d2627869f3",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.14/aix/7.1/chef-13.2.14-1.powerpc.bff"
+        },
+        "13.2.15": {
+          "sha1": "5a4f00b22db7ad34263d5ffc2cfe9c300d2f0451",
+          "sha256": "a10ceaf417a33611fcb6d92d67ac8a4ca720b1727c446e6f3292f39c508559f2",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15/aix/7.1/chef-13.2.15-1.powerpc.bff"
+        },
+        "13.2.15+20170619150027": {
+          "sha1": "4b1b9fcd3104349da8873d6542198b1dffd0d648",
+          "sha256": "e0a1c53639bd67cf93a30b51c0534f0e3bb7c888b592b66595861deee2f8bc1b",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.15+20170619150027/aix/7.1/chef-13.2.15+20170619150027-1.powerpc.bff"
+        },
+        "13.2.16": {
+          "sha1": "fd60653f1075cbaf0181a466c251bdb6e74cf5dc",
+          "sha256": "c66862aca8ef63d6f932adfbbfc93f11993db0959665c10474516faa17c70adb",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.16/aix/7.1/chef-13.2.16-1.powerpc.bff"
+        },
+        "12.21.0": {
+          "sha1": "1347af57c710ef67132a6c0ba737c3a5d1d93bd0",
+          "sha256": "bf8a02d15425b4de52d6d9ae0010fc36ba7847939c38aade59408eff72f39e0b",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.0/aix/7.1/chef-12.21.0-1.powerpc.bff"
+        },
+        "12.21.1": {
+          "sha1": "709f636831106e21d66bdfe9fc48426d1c873260",
+          "sha256": "93c83a31fb8aa7710a5da6ea6133c40ba61dab1981c8ae60fdcb53f24933076d",
+          "url": "https://packages.chef.io/files/unstable/chef/12.21.1/aix/7.1/chef-12.21.1-1.powerpc.bff"
+        },
+        "13.2.18": {
+          "sha1": "6a1615abb95e8ba7cdd20f4fa35bd83cb41d96b3",
+          "sha256": "ef127ec885493d907076dafe982a24913288f77bd166d122d7917cbe61407060",
+          "url": "https://packages.chef.io/files/unstable/chef/13.2.18/aix/7.1/chef-13.2.18-1.powerpc.bff"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:02:59 -0700"
+  }
+}

@@ -1,0 +1,745 @@
+{
+  "el": {
+    "7": {
+      "x86_64": {
+        "0.2.2+20170516081009": {
+          "sha1": "2dd263d8710d5bd25b375609079122a23e2fd786",
+          "sha256": "7f1a40b279a65f44cf528a1360a6a871541f06d9d184e47f5306ea4099a25ab2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170516081009/el/7/chef-marketplace-0.2.2+20170516081009-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170517081006": {
+          "sha1": "d3b9af39a31a4045462a71e27cf7cf2ad20dcc99",
+          "sha256": "59ad9033407b7c5b08feb65ccf097ef5df13271e8bf6be70d335ecd65d6339b5",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170517081006/el/7/chef-marketplace-0.2.2+20170517081006-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170518081008": {
+          "sha1": "3dfbc70ee434cf490dd429e2fd7738a970711751",
+          "sha256": "f3b71bcd153faab6763254bd100c94f69c81b5cf0df9db975a962fb05c17a119",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170518081008/el/7/chef-marketplace-0.2.2+20170518081008-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170519081010": {
+          "sha1": "1f47470b2e1614693cb0a56dc36dca59b9893332",
+          "sha256": "8d558edb97ba0e1b17b67f094a807083bcc1c50c3c4f1c94152e0fd59b4b2f31",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170519081010/el/7/chef-marketplace-0.2.2+20170519081010-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170520081009.git.2.e5c0e85": {
+          "sha1": "65dd1f935ca4e9daecd59267e625210a948dfd25",
+          "sha256": "db778639ac23a84a019e74937a19ef10727a7febe5db2b150229e86daad21f26",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170520081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170520081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170521081008.git.2.e5c0e85": {
+          "sha1": "1ab9e0c568ebf443dc2979b27160530f42152891",
+          "sha256": "27b95d8206ca9563ad60032a44e8ed34b8c1d3280f1625c366c58fbf8f935fe2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170521081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170521081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170522081008.git.2.e5c0e85": {
+          "sha1": "ff947664add3a66807475a4f63be0616548f2301",
+          "sha256": "e039d6d8143dee9d5852fa5349856f7c4b9235ade4b72294e6b91a318449aa10",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170522081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170522081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170523081006.git.2.e5c0e85": {
+          "sha1": "c123643cf50f8ec8e333ee0561c496599350312d",
+          "sha256": "ddaaa4946f8ed4f864f42213cb9d712bea964d235f50d0670d2b24d9a0889047",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170523081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170523081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170524081009.git.2.e5c0e85": {
+          "sha1": "073db70347d87e89b9c0d6b711446f2d5981e73f",
+          "sha256": "0a9b693174bee0269b96f5a8fcb67bb8b0297a0cd5e03234e53e908cbce82871",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170524081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170524081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170525081008.git.2.e5c0e85": {
+          "sha1": "bc873d0db5294f7e20dc018aa62a4eefc018c89f",
+          "sha256": "0160f6397cc1cf9b60d519eec507472e81e799811b45731dda64bc070b25e258",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170525081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170525081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170526081010.git.2.e5c0e85": {
+          "sha1": "a931166729aad99386b263cf6198cf2bb0d581f4",
+          "sha256": "4b4911f27ba3deee7fe91beefa419cf45005025549d1f1a802ca703fb95a79df",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170526081010.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170526081010.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170527081009.git.2.e5c0e85": {
+          "sha1": "112ac03ae9dd5a20a2a41cd13e0ed8d36c419119",
+          "sha256": "a9a0881185948eed12222ae36e1a1a07a29180cb036b0c8806b6bef329610aee",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170527081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170527081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170528081009.git.2.e5c0e85": {
+          "sha1": "c6b38a0d3004d8858a3cc603a579c2912f9a1c37",
+          "sha256": "8d11de08555031597e3f8376f610bb67b5b741406c3aa3c0a1a999c2ee6e4561",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170528081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170528081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170529081006.git.2.e5c0e85": {
+          "sha1": "0600985b586ce421133d5808bff68706c5459e55",
+          "sha256": "b3e5f68f6958f8d93cff51f4da7001d59c4e5cb37964b3c2360f77e9b69fbc06",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170529081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170529081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170530081009.git.2.e5c0e85": {
+          "sha1": "98b011d4f8241e761eecdadb62c3e4645c4d70f7",
+          "sha256": "36be4c81259eef6e8dea524454bdd7951a7a9d8ed85e229888392ece7883dca9",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170530081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170530081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170531081007.git.2.e5c0e85": {
+          "sha1": "cdae9f85d91125c3c0f3515607aec68c1b124591",
+          "sha256": "72ff43f371f4c7b09d112f3ad85c15c38619d41c92472b3aec7e70bf0bbbf8b7",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170531081007.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170531081007.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170601081006.git.2.e5c0e85": {
+          "sha1": "08605d204374bfeab9797506f7379bc075b9a1e1",
+          "sha256": "fe655a6ac682624c2f7512befeabce9ff84d4a478e58512e971799a43b9729a5",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170601081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170601081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170602081009.git.2.e5c0e85": {
+          "sha1": "2b9768e6b266339090a0c920748124cfff0e7fd6",
+          "sha256": "693e7748fbeaffe1ef21c7972ac736d61deae43917eaf4b80b3b77259e5d70da",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170602081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170602081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170603081010.git.2.e5c0e85": {
+          "sha1": "8af17cdf0f0eb75a864625e8e503dca6b542b952",
+          "sha256": "d9e2bc6ed0f4baafc2ea30d4b77a191dbcdcf24f0d6f8a0cdaab45c75a31efbf",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170603081010.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170603081010.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170604081007.git.2.e5c0e85": {
+          "sha1": "c93f092b53ef8bdc8f2d96c7d7bf553c50b72da2",
+          "sha256": "da79f75cb2d7b63a95a8b45c63ad7984d7f4bb194c4cdc56e01f0b4d158c9b22",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170604081007.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170604081007.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170605081008.git.2.e5c0e85": {
+          "sha1": "b81d328242e017dc79cc392cdadfaa526b52753c",
+          "sha256": "3beaafadd068244e1900f255baeae56f42ec1745947ee7ea8b619faec7a873ee",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170605081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170605081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170606081007.git.2.e5c0e85": {
+          "sha1": "2e19313fb503f81afb462b83c7a8d44376337a5d",
+          "sha256": "f697b89326160c95694f0fbab1e130dd58d9044cbdf9dba3192880dec6f4add2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170606081007.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170606081007.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170608081008.git.2.e5c0e85": {
+          "sha1": "5ff6a82a0899b29fdb2fe60e5c76dbe7f6b8c942",
+          "sha256": "0b01e13e1180250934172286e76483e65b3088ce60d65de18e992f56bf115dc9",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170608081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170608081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170609081008.git.2.e5c0e85": {
+          "sha1": "a8258f3038a4a9a9647f5b5b2812dc66dc6974af",
+          "sha256": "bc586421dfbea4c49580e0f7ef33bd296b24d095c385334b91c75a0855f21588",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170609081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170609081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170610081009.git.2.e5c0e85": {
+          "sha1": "1f325444ebf8e79145f7c95895606c5745dd3615",
+          "sha256": "a7a588175b03426519057215dc4cbfc46870469806b4307d2614c0b94958b46d",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170610081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170610081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170611081008.git.2.e5c0e85": {
+          "sha1": "bcfdd46b93aa6abb42aa071f3fdcdbd8a1d56ea7",
+          "sha256": "0f9feb715b8451893dda00c5df06d3859dc37a03eefbd89e3388b890b84beac4",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170611081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170611081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170612081006.git.2.e5c0e85": {
+          "sha1": "3ef84dd4133f5c35d981b4e3bbc0a49bf6176d29",
+          "sha256": "ed95219a99e604b8e5f501ca706170cc04f7a740089ddc67481fdc282b4e3447",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170612081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170612081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170613081007.git.2.e5c0e85": {
+          "sha1": "849378a88bdcab5e3a6138c96f9fdce994ad545d",
+          "sha256": "9bc63ba5a77e72a9b80c3e7a73920c59c2d04c74e56c75f943393e5470fa8023",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170613081007.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170613081007.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170614081006.git.2.e5c0e85": {
+          "sha1": "373f2e3f5f64e4e53757a93f41748d97901c97ee",
+          "sha256": "d6c8e8795065aa051200002d72d48c783a06be41bb0a6545096010629db4f7ee",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170614081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170614081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170615081007.git.2.e5c0e85": {
+          "sha1": "5b9e5a4707aed45f39f6fdc4b48c776311638481",
+          "sha256": "3c7c9ece4567f976a9122c883b93d4e919754afe118a79f7528b81db35e85c45",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170615081007.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170615081007.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170617081008.git.2.e5c0e85": {
+          "sha1": "00d3144d10631a25ef252e2ac3d9c956049b7300",
+          "sha256": "2b1e2f10f0d43af8db00ab447f8587b0720fd0e1f048450792ef31c0e67732c8",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170617081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170617081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170618081005.git.2.e5c0e85": {
+          "sha1": "33301842f54e8bb4d6ecd6471d701f4d9568fca3",
+          "sha256": "48f9025dd07c4a5aed5171b222f8e5fe905ca1399549d38a8f457abcb5e313e0",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170618081005.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170618081005.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170619081008.git.2.e5c0e85": {
+          "sha1": "02e8c497ac81c055b9d231ea8934948a553780c5",
+          "sha256": "3654c43eced5fa87104407e2fb5dd865e26bea3f2078e5beafd53d6f949538c7",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170619081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170619081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170620081009.git.2.e5c0e85": {
+          "sha1": "95511e11e3543162529f5cc6385216fc0e2f6bf1",
+          "sha256": "bda0933b34700c2d4a044bed7a0c9eb9047ef1bb405a484fd16fc6e7bd35b9b3",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170620081009.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170620081009.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170621081008.git.2.e5c0e85": {
+          "sha1": "b8e4f0390aef307435ad479bfa5de61bf026aa61",
+          "sha256": "43a7b3a0cc9bbb18bd54715f7e8b88d9d0091388447b6d9eaa910f29695dc05d",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170621081008.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170621081008.git.2.e5c0e85-1.el7.x86_64.rpm"
+        },
+        "0.2.2+20170622081006.git.2.e5c0e85": {
+          "sha1": "1231ce530c8f43896cb8a3c91d4fb05fb4e0fb16",
+          "sha256": "fa50b65ba081bfc7b5d8919f0d0210c5db77ae636a8925ad2963019010a812d0",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170622081006.git.2.e5c0e85/el/7/chef-marketplace-0.2.2+20170622081006.git.2.e5c0e85-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "0.2.2+20170516081009": {
+          "sha1": "1202111a6f44bd2761b9550a6510ff6f01669813",
+          "sha256": "237203f42046070575f191c63bb8a921a68140a42149a61a71a12cc813de6ad2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170516081009/el/6/chef-marketplace-0.2.2+20170516081009-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170517081006": {
+          "sha1": "d2d11ae6ac7c277d39ed0ebfa0287675be89f95c",
+          "sha256": "d093196dbba5506f558a50d6ba13cfb9d20ed7e5c6cc9ca513fb4534f84bff4d",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170517081006/el/6/chef-marketplace-0.2.2+20170517081006-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170518081008": {
+          "sha1": "7574a0000e3466dbb2f699f66f7a77fce5b5f7a7",
+          "sha256": "ecc818c073f169889d7ec61638cb1851b63410df4bf06fef165723c53a59504b",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170518081008/el/6/chef-marketplace-0.2.2+20170518081008-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170519081010": {
+          "sha1": "815516adace568d78640d9d9b69f76db8cab6046",
+          "sha256": "9cce1fe13bee1df43364c5d0225e890fa3f205c96fb0a39e6b32db335d59f90b",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170519081010/el/6/chef-marketplace-0.2.2+20170519081010-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170520081009.git.2.e5c0e85": {
+          "sha1": "9cc6ac463c1271a7365e615b9eb21d6fb0caf2e8",
+          "sha256": "27eb18d85916ae551e8145bca1de9d0b93e9af9cb1179caa592d11b007bf93ce",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170520081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170520081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170521081008.git.2.e5c0e85": {
+          "sha1": "a80539e01deaaf284eba4560e8a5734c3ea84711",
+          "sha256": "356c24621f1831d956549019052bb694d1698c6815a4d368b3e84b68f52e601e",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170521081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170521081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170522081008.git.2.e5c0e85": {
+          "sha1": "3cbdc240e2fbf79ddb4053e5de9f81462b25c02f",
+          "sha256": "9f8df12a4834921a974c80e605ede22222985c3f73cf11a26c13e81c6000b3ce",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170522081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170522081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170523081006.git.2.e5c0e85": {
+          "sha1": "95ff4c27b5b6a68bd33f608b08031e4ff4e8cbdd",
+          "sha256": "f5e748da256cd907d49b4138ca88d9101506f456ac379c8909e24065de6761d8",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170523081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170523081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170524081009.git.2.e5c0e85": {
+          "sha1": "8cedc7b2521c197dad1c2ff9d6feb07483b62208",
+          "sha256": "d07561e5806bc583d6868041e40837abc76f037d2560d2537ec50cebfe7e5d7e",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170524081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170524081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170525081008.git.2.e5c0e85": {
+          "sha1": "9c781ecd46420b6310019721e97848ebf13c373a",
+          "sha256": "b7fd0f140ea4011a0aacd3f3fe002f83a746c920348393a757a2296b876024a2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170525081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170525081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170526081010.git.2.e5c0e85": {
+          "sha1": "7bd60e978e4e184bae43e9693d68002929a93051",
+          "sha256": "49dbc66cad1d86d316a154696283bc079a34378f67eb502410bcafd15c213729",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170526081010.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170526081010.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170527081009.git.2.e5c0e85": {
+          "sha1": "e37780931eea241e433708067c89d5b1967d6ba1",
+          "sha256": "0ce11e3a85f5c48beb90e2279f8a48484fe488e87230bf1dcdb641be442d532c",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170527081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170527081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170528081009.git.2.e5c0e85": {
+          "sha1": "3ca3688bd27df8957ff7bf81d9a3b933e2958f11",
+          "sha256": "e35c4c01f1c7e31444f999941ff62dfb4e0a65937a1f7384daeacc97d3c9cd09",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170528081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170528081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170529081006.git.2.e5c0e85": {
+          "sha1": "356df1fd67a654887be6375e2a787e58d1c6c390",
+          "sha256": "34a343860490e3e6d3ded98bca58d0890ea77fc65b392a27c9e1cacba70210c9",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170529081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170529081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170530081009.git.2.e5c0e85": {
+          "sha1": "c18d9aa514b1916324b96c00a3c23dacf6c3d1a6",
+          "sha256": "a8727915f39e7753fdaa1261672d27b582cbbe2cc4a030599e56ede40d165633",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170530081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170530081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170531081007.git.2.e5c0e85": {
+          "sha1": "dfc77a39e02d1342315682477a4ea39188463906",
+          "sha256": "9cff11a083d2698b505d727e0eea44233335f4b7e61c59bfddc0a18fa3394776",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170531081007.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170531081007.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170601081006.git.2.e5c0e85": {
+          "sha1": "666b385b0912a847b592bf942e95e1887074983f",
+          "sha256": "b0ae60dbfb8e0c6a4c205908c390c7ea6c324dca23c325a18f452bb256e0919c",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170601081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170601081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170602081009.git.2.e5c0e85": {
+          "sha1": "63809822312c310226df421515b29fe082c9f3fb",
+          "sha256": "c813d4f939c6d8915d21ccb589512dadfcf3f8e50c5643e53b47e6ad3f0475e5",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170602081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170602081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170603081010.git.2.e5c0e85": {
+          "sha1": "90fca072117ef8f60b5602660afbcb3943371836",
+          "sha256": "acf559d09ca405d6ba8911f57f22670a80fcaccc97854cbc90f424da59561075",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170603081010.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170603081010.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170604081007.git.2.e5c0e85": {
+          "sha1": "24f7a66bdb3b1614f47682ff91002e3e322d0621",
+          "sha256": "f78d6ea64c527f12add9524ac851b4146bc9cfdf0071bea3dd6522a4bcfad60a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170604081007.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170604081007.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170605081008.git.2.e5c0e85": {
+          "sha1": "b4531be92aa88f69bc7c08d41a7bb09b9c0d0640",
+          "sha256": "306f6cb65ad6dcf587223a834c7cc706f2cef004ce28b28d9946e08fcb64af0b",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170605081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170605081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170606081007.git.2.e5c0e85": {
+          "sha1": "796f351e752d76a54d2e77b0dd4c030e5da58ad8",
+          "sha256": "e0ef5cf769ba1ddaa3736f814ed5570c157f68550cb38bd1842ffce92979cc15",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170606081007.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170606081007.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170608081008.git.2.e5c0e85": {
+          "sha1": "5b5f88fa83db7f02b4796980df818d159beebf0c",
+          "sha256": "d29ef3c91ef6803a725a3048c711681612c2aab5d7e0ff1f7bdacf817af41bf3",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170608081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170608081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170609081008.git.2.e5c0e85": {
+          "sha1": "282a9325f2d17f52f994202df8a84b1b37637c78",
+          "sha256": "d526f6dcdf6b4876cd499b8dffeb9c7cdb6363d1ce81c0f783a9c4c804e6d1ff",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170609081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170609081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170610081009.git.2.e5c0e85": {
+          "sha1": "ebc7683c0451f705977615d7b05c217708ea8ddc",
+          "sha256": "31a57267298a9fb6cfecee2bbe74a8d49e814c66e07b2d3dba0267a26187299c",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170610081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170610081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170611081008.git.2.e5c0e85": {
+          "sha1": "c4d0718cbf80d35dc97667171e435afb40a45284",
+          "sha256": "4fc54bbccbef1c28a16415ebaca0ddf952255e8f2b4b4a582f97c5fe428c3fc4",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170611081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170611081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170612081006.git.2.e5c0e85": {
+          "sha1": "d7a83724c899b01a0ffbb190c4a649e716c76563",
+          "sha256": "4662625b4ceedd95ffa83867e180e2984104ccb8668909531582638fc31e0a32",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170612081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170612081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170613081007.git.2.e5c0e85": {
+          "sha1": "a683978491102189c78aef98738f1553c30a8d60",
+          "sha256": "2891c2a8f83ea7e9d9a543e94fd0e105266477750668bbed1afc0d95e7391574",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170613081007.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170613081007.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170614081006.git.2.e5c0e85": {
+          "sha1": "44132690dd595274ba2daa113ca9202c8de8f187",
+          "sha256": "dd3fc7e74c8669f0892c9fdb9515617867f2bd8bc84913111cc9e0286035cab9",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170614081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170614081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170615081007.git.2.e5c0e85": {
+          "sha1": "f5a341b67c47435c719f790405c8819184eb3919",
+          "sha256": "d5cca0c089ab5989432b02190f853673c3b27c2916d1bd8a43be2e4a9e8f9e4a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170615081007.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170615081007.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170617081008.git.2.e5c0e85": {
+          "sha1": "3c549200f3ed1736addec10e6247ab4d2a07247d",
+          "sha256": "7c01b1b7a24f76131475668c3657eebdaba82aff8af38ccb126c8a3823e114a4",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170617081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170617081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170618081005.git.2.e5c0e85": {
+          "sha1": "2727e9b2515d2127a5c1d3d16ccb7649e348943e",
+          "sha256": "1fb3a691d1aca39a4fac8647957372a5141f03316e375d41ecf3d51af0f18169",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170618081005.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170618081005.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170619081008.git.2.e5c0e85": {
+          "sha1": "d3bbc5bd467546be9d810bfb46b4554438978a2f",
+          "sha256": "0782588c40cf3142e34e6af6a6aa5c4727f9428d299272440c6505f97c7695de",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170619081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170619081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170620081009.git.2.e5c0e85": {
+          "sha1": "ba643169d3d429d3bcacea86ebbe2208922ad0cc",
+          "sha256": "a52bb5da937350aab114301200b9bb383857d134082ca7b0c26360d3088005ed",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170620081009.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170620081009.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170621081008.git.2.e5c0e85": {
+          "sha1": "dfdbb596f3d0ab4afb638663f0e52b6c3f477b6c",
+          "sha256": "2a9c153355dbaac5ff8a4494155b96559afa2b1acea82715b154233af768bf78",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170621081008.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170621081008.git.2.e5c0e85-1.el6.x86_64.rpm"
+        },
+        "0.2.2+20170622081006.git.2.e5c0e85": {
+          "sha1": "6f050446950b8543e864a1d8b0d203efef2d96f9",
+          "sha256": "6655a50da0aad101bc2e8f9db90a45c5f6eaf10c3b9699aa9c74b8b377ae40c7",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170622081006.git.2.e5c0e85/el/6/chef-marketplace-0.2.2+20170622081006.git.2.e5c0e85-1.el6.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "14.04": {
+      "x86_64": {
+        "0.2.2+20170516081009": {
+          "sha1": "5da3409f4ed4cb554b851494232888488c04f5c7",
+          "sha256": "ccf339cdde3742e5e625ab0bb64f69c061f672e0643527b222cd49a3c5b7af9a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170516081009/ubuntu/14.04/chef-marketplace_0.2.2+20170516081009-1_amd64.deb"
+        },
+        "0.2.2+20170517081006": {
+          "sha1": "16f29b8eec61cd8c5a71f12fc7446ba6ea94e3f0",
+          "sha256": "e88666bf2e027ee14935feb244eecc3d1eb5d4b2ea6364444f9a13b9f817e578",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170517081006/ubuntu/14.04/chef-marketplace_0.2.2+20170517081006-1_amd64.deb"
+        },
+        "0.2.2+20170518081008": {
+          "sha1": "5db840eb4f39343df4af34636b2fffc06e6c23f9",
+          "sha256": "6f2f4abd9d70e49144daf9b26e34d8fbef803e5091b0fb05e558e4e29aadf086",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170518081008/ubuntu/14.04/chef-marketplace_0.2.2+20170518081008-1_amd64.deb"
+        },
+        "0.2.2+20170519081010": {
+          "sha1": "adce8bfdb028c4d9b7bf14a12aa1c2968677e555",
+          "sha256": "ac0f325df6f7b4e7628d1ae1c5f3ee33c1791353f1174c7d8fd31652c3a65fdc",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170519081010/ubuntu/14.04/chef-marketplace_0.2.2+20170519081010-1_amd64.deb"
+        },
+        "0.2.2+20170520081009.git.2.e5c0e85": {
+          "sha1": "adaf50ddb9801acfa979344a3f44c9f677da829b",
+          "sha256": "042bcf35ec9818d70d6f092c6631593872ef6ac123682223fea37f6d918446e6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170520081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170520081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170521081008.git.2.e5c0e85": {
+          "sha1": "511245dd94601f3062fc2d26bd392d39ecaccdab",
+          "sha256": "ea2d253e734aa35ab8bdb447982ea64f3e84c27626ad69070974da4b91b3ef45",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170521081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170521081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170522081008.git.2.e5c0e85": {
+          "sha1": "a75ee828085884e4e897087035bed8e5b1f89a3e",
+          "sha256": "534c4a8c68204bfd427b37ac70bded037c06efcc6e49a06a55dde32cc7a01285",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170522081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170522081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170523081006.git.2.e5c0e85": {
+          "sha1": "dd95107b0b62e0a162e87142d8b4b0d82f465b7a",
+          "sha256": "b729b0d90e5ac63644d2d1e21d2056d3761db497b50c81731d2cbca40447151a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170523081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170523081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170524081009.git.2.e5c0e85": {
+          "sha1": "111a8d51407d8b4cd17b68481583f19c20de5b99",
+          "sha256": "7bd089faee4222bb41000fff000ea94d8035881823335bae61618f47d135b969",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170524081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170524081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170525081008.git.2.e5c0e85": {
+          "sha1": "78e7ad4bad5b16495d9d48e62cc6d2f3056ad0a2",
+          "sha256": "a0c13053c0e117649fd60e10aadd2a0510760016213616a6f683065d3d39720e",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170525081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170525081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170526081010.git.2.e5c0e85": {
+          "sha1": "22e0d01439ab7ed93dfa360d220c4283194e0e3f",
+          "sha256": "5742236cd2ecfd474601e858afa423c584d75929111b9dc46305ea23c0ce3178",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170526081010.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170526081010.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170527081009.git.2.e5c0e85": {
+          "sha1": "a2372434f5acbd6c0b5cb93ac2346f8509ded317",
+          "sha256": "eaa82072fafa76b3e322f54b606db707b5cef18c8ccc5f06063cfa411b85fb45",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170527081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170527081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170528081009.git.2.e5c0e85": {
+          "sha1": "fbba38eb9db7abec6be0109f2d7c362ba2113e95",
+          "sha256": "2f1b1057a3ccc070cedf137b07540fb111dcdafb42d3015bc646a27622b2d852",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170528081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170528081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170529081006.git.2.e5c0e85": {
+          "sha1": "7294457c24af633b42e4052c08717255bfcd9117",
+          "sha256": "0405fa45098cc0d4ff96d7bf4e23b095431b24e233d2d720b90ddb3b6e8be0fd",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170529081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170529081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170530081009.git.2.e5c0e85": {
+          "sha1": "f307aaa1c20102f08ee734c65f36a64e4c8f4f99",
+          "sha256": "72a52a14d08d0b793070eeec9a59207386010c82fe638e64b66e697977df7de2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170530081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170530081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170531081007.git.2.e5c0e85": {
+          "sha1": "1b3bf19f9f2c8851f4ef27bb14a46ab1c86f55e0",
+          "sha256": "a30d483dd4eb8c1fc3bb6bcdd89e49b5f5f48f40b22e04f94ac2c24340fbc0fa",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170531081007.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170531081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170601081006.git.2.e5c0e85": {
+          "sha1": "6f63d6f1b70827a9c921d7675f59e400fc2ad36d",
+          "sha256": "b5a711a78697328907c46028e7b80680bb7b0251091c2bb5572c8c95dcbb20ea",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170601081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170601081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170602081009.git.2.e5c0e85": {
+          "sha1": "e2142197fa754d5458c090b4364d49cc65ea9880",
+          "sha256": "2c8d062c511aaf30061cc360c19498a2fd2aa101a49f5cbc7e915b86f814731f",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170602081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170602081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170603081010.git.2.e5c0e85": {
+          "sha1": "f32ab6e028c4a07b5725fdaef2275570018b0a45",
+          "sha256": "de94fb0a007f0a9dda1a491c38ff3c62455e7e4c70643caa4a488b4c7582c289",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170603081010.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170603081010.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170604081007.git.2.e5c0e85": {
+          "sha1": "ad60967581791c8dc391c4bc825e4d9594836468",
+          "sha256": "305b81cc4e530e0e59f8cbdc8b0b36434f783e8756ca097d2fa0fa2748e093f6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170604081007.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170604081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170605081008.git.2.e5c0e85": {
+          "sha1": "6cddae915e3c399ecb47de26d667e1362180adb7",
+          "sha256": "67bdba12ee07d5a307b65bca33497a7059fbb5aea698b73acc9411ac6ac9bfad",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170605081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170605081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170606081007.git.2.e5c0e85": {
+          "sha1": "ed15b2dea2c297dd54e9d713b7cf78b48a4945b2",
+          "sha256": "7e131b47e209d4c30cdb3b94a3d2ebf60bb3697b84abcd4abbf71ed4b344c2f3",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170606081007.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170606081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170608081008.git.2.e5c0e85": {
+          "sha1": "4d7fc09d20baa4751bc21decb6a8371342789551",
+          "sha256": "2fa31003aa467e9300c6ca14c08385be0425c881d5e36b37112980374831b077",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170608081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170608081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170609081008.git.2.e5c0e85": {
+          "sha1": "22449b77747f8c3fa29c80f8f000b59f977a75ad",
+          "sha256": "6921918e49f12aabbe4655aaeb342279da513829f1997c88d800da86a7caa715",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170609081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170609081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170610081009.git.2.e5c0e85": {
+          "sha1": "d1c0c1125bbe764c27a51feea57099fbed65d7ee",
+          "sha256": "8da97c20dfdc5536ee79cb50c351672cb591e318ce052af16393cc08c20381d6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170610081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170610081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170611081008.git.2.e5c0e85": {
+          "sha1": "5c76f5f2fa2b218861861dacda9f6d2286b09e95",
+          "sha256": "c97fc39899920d788d1a6757bf95b1d6cc354e8fbde59b75d95c375869d363ed",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170611081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170611081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170612081006.git.2.e5c0e85": {
+          "sha1": "2999ce7b75fc50bfe308d8868bb9fc6fe736b242",
+          "sha256": "57a5bafe63dc90730b44dd0fa1190cc7483ae742b0afc8e092dd078d8438cba4",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170612081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170612081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170613081007.git.2.e5c0e85": {
+          "sha1": "643ffeb7158c05569775b9bab5f081ea6670e751",
+          "sha256": "02f7af2352e29e5bd0ebde058ba64eb2d764a7cc7c75096093e880b282d93348",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170613081007.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170613081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170614081006.git.2.e5c0e85": {
+          "sha1": "07d629192ed775d6d8c26b4dc823931986a0f9ad",
+          "sha256": "e08acf8357ff2265cc5fe6a19968cb67b28abee65290163c34a8941e715228eb",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170614081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170614081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170615081007.git.2.e5c0e85": {
+          "sha1": "0d74e117a70c01a7b19f69c92985dda97dd420dc",
+          "sha256": "54818997b9eb428e0ff483fe8a1a9c53ab816a5986db9827f11cb5cda21d6b05",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170615081007.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170615081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170617081008.git.2.e5c0e85": {
+          "sha1": "a7c48f046f215d61a2963e6563abd4b0a96d0aed",
+          "sha256": "bd4c0424cd96a4a70c195b87cadd2e29c1f8d82e5e17703d442b416e2b470508",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170617081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170617081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170618081005.git.2.e5c0e85": {
+          "sha1": "77ce1f7f1d36d200eb3c513a7764f1a3e7f8379b",
+          "sha256": "1f80e0c32631bf46e35ffb5a531feaf348b64b21c454f750ea80973451f3aa43",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170618081005.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170618081005.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170619081008.git.2.e5c0e85": {
+          "sha1": "9a855bdbbf6a59e5451b11c229a78e5ed4749a09",
+          "sha256": "91d67af0f0b455096dadc6873c2b50249b69845bae3fdaa7755e264149e17082",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170619081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170619081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170620081009.git.2.e5c0e85": {
+          "sha1": "d24c0affa850be5783b20034d3596d1b772ff7e1",
+          "sha256": "9c13fb1409df3687e17342284d760dd45fd5aff0dfcf6864f041309d30372bee",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170620081009.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170620081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170621081008.git.2.e5c0e85": {
+          "sha1": "02778fb39f6715b55b5038569aa4b1838b54fd41",
+          "sha256": "26c8824dcb72cccd0411c89b70607bdce4775d0c7bdb4787e53d003065c5f8ad",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170621081008.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170621081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170622081006.git.2.e5c0e85": {
+          "sha1": "624303895c11b5cce84353d1071a3801e8bf646c",
+          "sha256": "0196fe668038a27a4506dfec38bcaf6e12742219075594b1bc2d843aa8a4f583",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170622081006.git.2.e5c0e85/ubuntu/14.04/chef-marketplace_0.2.2+20170622081006.git.2.e5c0e85-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "0.2.2+20170516081009": {
+          "sha1": "5da3409f4ed4cb554b851494232888488c04f5c7",
+          "sha256": "ccf339cdde3742e5e625ab0bb64f69c061f672e0643527b222cd49a3c5b7af9a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170516081009/ubuntu/16.04/chef-marketplace_0.2.2+20170516081009-1_amd64.deb"
+        },
+        "0.2.2+20170517081006": {
+          "sha1": "16f29b8eec61cd8c5a71f12fc7446ba6ea94e3f0",
+          "sha256": "e88666bf2e027ee14935feb244eecc3d1eb5d4b2ea6364444f9a13b9f817e578",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170517081006/ubuntu/16.04/chef-marketplace_0.2.2+20170517081006-1_amd64.deb"
+        },
+        "0.2.2+20170518081008": {
+          "sha1": "5db840eb4f39343df4af34636b2fffc06e6c23f9",
+          "sha256": "6f2f4abd9d70e49144daf9b26e34d8fbef803e5091b0fb05e558e4e29aadf086",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170518081008/ubuntu/16.04/chef-marketplace_0.2.2+20170518081008-1_amd64.deb"
+        },
+        "0.2.2+20170519081010": {
+          "sha1": "adce8bfdb028c4d9b7bf14a12aa1c2968677e555",
+          "sha256": "ac0f325df6f7b4e7628d1ae1c5f3ee33c1791353f1174c7d8fd31652c3a65fdc",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170519081010/ubuntu/16.04/chef-marketplace_0.2.2+20170519081010-1_amd64.deb"
+        },
+        "0.2.2+20170520081009.git.2.e5c0e85": {
+          "sha1": "adaf50ddb9801acfa979344a3f44c9f677da829b",
+          "sha256": "042bcf35ec9818d70d6f092c6631593872ef6ac123682223fea37f6d918446e6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170520081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170520081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170521081008.git.2.e5c0e85": {
+          "sha1": "511245dd94601f3062fc2d26bd392d39ecaccdab",
+          "sha256": "ea2d253e734aa35ab8bdb447982ea64f3e84c27626ad69070974da4b91b3ef45",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170521081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170521081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170522081008.git.2.e5c0e85": {
+          "sha1": "a75ee828085884e4e897087035bed8e5b1f89a3e",
+          "sha256": "534c4a8c68204bfd427b37ac70bded037c06efcc6e49a06a55dde32cc7a01285",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170522081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170522081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170523081006.git.2.e5c0e85": {
+          "sha1": "dd95107b0b62e0a162e87142d8b4b0d82f465b7a",
+          "sha256": "b729b0d90e5ac63644d2d1e21d2056d3761db497b50c81731d2cbca40447151a",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170523081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170523081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170524081009.git.2.e5c0e85": {
+          "sha1": "111a8d51407d8b4cd17b68481583f19c20de5b99",
+          "sha256": "7bd089faee4222bb41000fff000ea94d8035881823335bae61618f47d135b969",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170524081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170524081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170525081008.git.2.e5c0e85": {
+          "sha1": "78e7ad4bad5b16495d9d48e62cc6d2f3056ad0a2",
+          "sha256": "a0c13053c0e117649fd60e10aadd2a0510760016213616a6f683065d3d39720e",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170525081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170525081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170526081010.git.2.e5c0e85": {
+          "sha1": "22e0d01439ab7ed93dfa360d220c4283194e0e3f",
+          "sha256": "5742236cd2ecfd474601e858afa423c584d75929111b9dc46305ea23c0ce3178",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170526081010.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170526081010.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170527081009.git.2.e5c0e85": {
+          "sha1": "a2372434f5acbd6c0b5cb93ac2346f8509ded317",
+          "sha256": "eaa82072fafa76b3e322f54b606db707b5cef18c8ccc5f06063cfa411b85fb45",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170527081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170527081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170528081009.git.2.e5c0e85": {
+          "sha1": "fbba38eb9db7abec6be0109f2d7c362ba2113e95",
+          "sha256": "2f1b1057a3ccc070cedf137b07540fb111dcdafb42d3015bc646a27622b2d852",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170528081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170528081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170529081006.git.2.e5c0e85": {
+          "sha1": "7294457c24af633b42e4052c08717255bfcd9117",
+          "sha256": "0405fa45098cc0d4ff96d7bf4e23b095431b24e233d2d720b90ddb3b6e8be0fd",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170529081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170529081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170530081009.git.2.e5c0e85": {
+          "sha1": "f307aaa1c20102f08ee734c65f36a64e4c8f4f99",
+          "sha256": "72a52a14d08d0b793070eeec9a59207386010c82fe638e64b66e697977df7de2",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170530081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170530081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170531081007.git.2.e5c0e85": {
+          "sha1": "1b3bf19f9f2c8851f4ef27bb14a46ab1c86f55e0",
+          "sha256": "a30d483dd4eb8c1fc3bb6bcdd89e49b5f5f48f40b22e04f94ac2c24340fbc0fa",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170531081007.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170531081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170601081006.git.2.e5c0e85": {
+          "sha1": "6f63d6f1b70827a9c921d7675f59e400fc2ad36d",
+          "sha256": "b5a711a78697328907c46028e7b80680bb7b0251091c2bb5572c8c95dcbb20ea",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170601081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170601081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170602081009.git.2.e5c0e85": {
+          "sha1": "e2142197fa754d5458c090b4364d49cc65ea9880",
+          "sha256": "2c8d062c511aaf30061cc360c19498a2fd2aa101a49f5cbc7e915b86f814731f",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170602081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170602081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170603081010.git.2.e5c0e85": {
+          "sha1": "f32ab6e028c4a07b5725fdaef2275570018b0a45",
+          "sha256": "de94fb0a007f0a9dda1a491c38ff3c62455e7e4c70643caa4a488b4c7582c289",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170603081010.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170603081010.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170604081007.git.2.e5c0e85": {
+          "sha1": "ad60967581791c8dc391c4bc825e4d9594836468",
+          "sha256": "305b81cc4e530e0e59f8cbdc8b0b36434f783e8756ca097d2fa0fa2748e093f6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170604081007.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170604081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170605081008.git.2.e5c0e85": {
+          "sha1": "6cddae915e3c399ecb47de26d667e1362180adb7",
+          "sha256": "67bdba12ee07d5a307b65bca33497a7059fbb5aea698b73acc9411ac6ac9bfad",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170605081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170605081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170606081007.git.2.e5c0e85": {
+          "sha1": "ed15b2dea2c297dd54e9d713b7cf78b48a4945b2",
+          "sha256": "7e131b47e209d4c30cdb3b94a3d2ebf60bb3697b84abcd4abbf71ed4b344c2f3",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170606081007.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170606081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170608081008.git.2.e5c0e85": {
+          "sha1": "4d7fc09d20baa4751bc21decb6a8371342789551",
+          "sha256": "2fa31003aa467e9300c6ca14c08385be0425c881d5e36b37112980374831b077",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170608081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170608081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170609081008.git.2.e5c0e85": {
+          "sha1": "22449b77747f8c3fa29c80f8f000b59f977a75ad",
+          "sha256": "6921918e49f12aabbe4655aaeb342279da513829f1997c88d800da86a7caa715",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170609081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170609081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170610081009.git.2.e5c0e85": {
+          "sha1": "d1c0c1125bbe764c27a51feea57099fbed65d7ee",
+          "sha256": "8da97c20dfdc5536ee79cb50c351672cb591e318ce052af16393cc08c20381d6",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170610081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170610081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170611081008.git.2.e5c0e85": {
+          "sha1": "5c76f5f2fa2b218861861dacda9f6d2286b09e95",
+          "sha256": "c97fc39899920d788d1a6757bf95b1d6cc354e8fbde59b75d95c375869d363ed",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170611081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170611081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170612081006.git.2.e5c0e85": {
+          "sha1": "2999ce7b75fc50bfe308d8868bb9fc6fe736b242",
+          "sha256": "57a5bafe63dc90730b44dd0fa1190cc7483ae742b0afc8e092dd078d8438cba4",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170612081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170612081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170613081007.git.2.e5c0e85": {
+          "sha1": "643ffeb7158c05569775b9bab5f081ea6670e751",
+          "sha256": "02f7af2352e29e5bd0ebde058ba64eb2d764a7cc7c75096093e880b282d93348",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170613081007.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170613081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170614081006.git.2.e5c0e85": {
+          "sha1": "07d629192ed775d6d8c26b4dc823931986a0f9ad",
+          "sha256": "e08acf8357ff2265cc5fe6a19968cb67b28abee65290163c34a8941e715228eb",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170614081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170614081006.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170615081007.git.2.e5c0e85": {
+          "sha1": "0d74e117a70c01a7b19f69c92985dda97dd420dc",
+          "sha256": "54818997b9eb428e0ff483fe8a1a9c53ab816a5986db9827f11cb5cda21d6b05",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170615081007.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170615081007.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170617081008.git.2.e5c0e85": {
+          "sha1": "a7c48f046f215d61a2963e6563abd4b0a96d0aed",
+          "sha256": "bd4c0424cd96a4a70c195b87cadd2e29c1f8d82e5e17703d442b416e2b470508",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170617081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170617081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170618081005.git.2.e5c0e85": {
+          "sha1": "77ce1f7f1d36d200eb3c513a7764f1a3e7f8379b",
+          "sha256": "1f80e0c32631bf46e35ffb5a531feaf348b64b21c454f750ea80973451f3aa43",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170618081005.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170618081005.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170619081008.git.2.e5c0e85": {
+          "sha1": "9a855bdbbf6a59e5451b11c229a78e5ed4749a09",
+          "sha256": "91d67af0f0b455096dadc6873c2b50249b69845bae3fdaa7755e264149e17082",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170619081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170619081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170620081009.git.2.e5c0e85": {
+          "sha1": "d24c0affa850be5783b20034d3596d1b772ff7e1",
+          "sha256": "9c13fb1409df3687e17342284d760dd45fd5aff0dfcf6864f041309d30372bee",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170620081009.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170620081009.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170621081008.git.2.e5c0e85": {
+          "sha1": "02778fb39f6715b55b5038569aa4b1838b54fd41",
+          "sha256": "26c8824dcb72cccd0411c89b70607bdce4775d0c7bdb4787e53d003065c5f8ad",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170621081008.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170621081008.git.2.e5c0e85-1_amd64.deb"
+        },
+        "0.2.2+20170622081006.git.2.e5c0e85": {
+          "sha1": "624303895c11b5cce84353d1071a3801e8bf646c",
+          "sha256": "0196fe668038a27a4506dfec38bcaf6e12742219075594b1bc2d843aa8a4f583",
+          "url": "https://packages.chef.io/files/current/chef-marketplace/0.2.2+20170622081006.git.2.e5c0e85/ubuntu/16.04/chef-marketplace_0.2.2+20170622081006.git.2.e5c0e85-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:03:57 -0700"
+  }
+}

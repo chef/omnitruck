@@ -1,0 +1,1263 @@
+{
+  "ubuntu": {
+    "14.04": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "699bad537f8f08cf88db4c25e5cb320c00b5df49",
+          "sha256": "5e2d4bf81d4ae0874ee91baf960e38b85757aad6d7109ad89dd3b01841a8306e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/ubuntu/14.04/opscode-reporting_1.7.1+20170516083709-1_amd64.deb"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "3466ada0cd39ac366ca477aa8a31cf6f66e313ab",
+          "sha256": "259a15a6076762cb51a4237e1aeaa96cbb0099b46923bcc5f001950f6b249fcf",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/ubuntu/14.04/opscode-reporting_1.7.1+20170518083709-1_amd64.deb"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "1917ee05765075b50ac7096c8ee6ab01d9b55e87",
+          "sha256": "03f2c5b5e54a06f641d67e275a3875bb01e35af3ec6d1d8c80ca89d777924674",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/ubuntu/14.04/opscode-reporting_1.7.1+20170519083706-1_amd64.deb"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "1d475a37f09420c01b271914555ac422173b2e75",
+          "sha256": "dcd4453bc31dd89f2f0dffa229da87703aafa159effdbe90b9a11eae10eb95f1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/ubuntu/14.04/opscode-reporting_1.7.1+20170520083709-1_amd64.deb"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "e6d94637e718ba1a62a51a8342546bddbae348d4",
+          "sha256": "60e4f6d0c338192212f775a15c58af549bc6c3488466d269b815937f40e72b1e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/ubuntu/14.04/opscode-reporting_1.7.1+20170521083710-1_amd64.deb"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "441e8d55ac19800337b53ad9050039327846d304",
+          "sha256": "97db88656c73d7663be9901c19a5a0527c602ae9e12bf22e4946099195490a70",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/ubuntu/14.04/opscode-reporting_1.7.1+20170522083708-1_amd64.deb"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "d44418d52cbb51b2f062ec2826b31b0dc8bdafcf",
+          "sha256": "ce0de6640e9497ef911eaaae33cedecbdcd8e0fb6a048b9a9496f59152daaf8f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/ubuntu/14.04/opscode-reporting_1.7.1+20170523083711-1_amd64.deb"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "986b41acd316ea82fece5414c07a9263fa267bf3",
+          "sha256": "0512c3229e972368208fbf1bca8db7564af73d3eb768d005fb47859c8d38cd65",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/ubuntu/14.04/opscode-reporting_1.7.1+20170524083709-1_amd64.deb"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "72ba2121d679fc57eb98d9407300bd1c4a3c5328",
+          "sha256": "4a2635855a9215a5eb86298701689886f8126de4df9ea7d5aaba9e2769c69c4f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/ubuntu/14.04/opscode-reporting_1.7.1+20170525083708-1_amd64.deb"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "65dff1c88a586b1d9f7045bfe476fad484a2e6c2",
+          "sha256": "e976372577732c701367e54f2a847eea03af878b4acf54008134adedf91b7361",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/ubuntu/14.04/opscode-reporting_1.7.1+20170526083706-1_amd64.deb"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "5d5951330f0733c11fdb5163786cfd3f9872fdb0",
+          "sha256": "ff48110c42e5d9d50f0ae06af0a03c1e9f71a3ea57e267f35fee06789d985c66",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/ubuntu/14.04/opscode-reporting_1.7.1+20170527083710-1_amd64.deb"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "fd234e88b53937ee5182382b5d78299896a0cfc7",
+          "sha256": "76d7901485d7b3293fac3615abd8a2fd9fc7c09ba3f3969bcd8561b9807505ed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/ubuntu/14.04/opscode-reporting_1.7.1+20170528083710-1_amd64.deb"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "0ae351304e2f49f58c94702113c8753717138459",
+          "sha256": "b95e5d119166c1288c594b5486d6ec1086b77f169658dfdd4aee75544126adc3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/ubuntu/14.04/opscode-reporting_1.7.1+20170529083707-1_amd64.deb"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "9a4abc17fdb4ad161dbdc5e718513a6f66bd5857",
+          "sha256": "b1811e5dff74be3ab95c83735b2f60914242a240318b4c3a692097865eaa842f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/ubuntu/14.04/opscode-reporting_1.7.1+20170530083706-1_amd64.deb"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "cd52dd9f9144cb9663a088bb915295706046fc23",
+          "sha256": "55dffc9999c6271a8438e3ff8f6011db9133f180d5c9145b744e2bc7e7c1a2db",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/ubuntu/14.04/opscode-reporting_1.7.1+20170531083708-1_amd64.deb"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "3093eeac935e3fefe625bb0eae2b6f56a62efc4d",
+          "sha256": "2fbae307c341a55728a0cbaf55c04ecd31fb814df92a57e2610fc8746e6cddc2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/ubuntu/14.04/opscode-reporting_1.7.1+20170601083706-1_amd64.deb"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "f3656a032654ecbfc257d9a42ea786629d4e4cc0",
+          "sha256": "b53b40fc8d631a28e17e884c47f3fdad3acf65b6984743fca10f735f6c25d4e1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/ubuntu/14.04/opscode-reporting_1.7.1+20170602083709-1_amd64.deb"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "36186464c03bc60658f5d60ea5fccfdfc2c4a454",
+          "sha256": "dabb984fcd9d00f3fbec0f945a56e37646183ed6e2883e8617d6022918a1c590",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/ubuntu/14.04/opscode-reporting_1.7.1+20170603083710-1_amd64.deb"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "840426f4036780994b34d64c284b6698c1f45ffc",
+          "sha256": "ba4629d73d03d80d018c97f7928ffb8bb20e3a84823c1381c86b7d9d2591d3c0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/ubuntu/14.04/opscode-reporting_1.7.1+20170604083707-1_amd64.deb"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "5d9343115dc9b0995ba0bd3e987c3bc950eb9254",
+          "sha256": "33ebe5d12b4d5f3916409221c8f41bd900b02ec897eb893e2975fa999dd7798d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/ubuntu/14.04/opscode-reporting_1.7.1+20170605083708-1_amd64.deb"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "a8970e0a35e0ebdb0947b473f24901a0b4704bda",
+          "sha256": "6358bd322a64ba7b5f916b4455cf75a132522d8d17bd95840284dd0a98c934af",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/ubuntu/14.04/opscode-reporting_1.7.1+20170606083707-1_amd64.deb"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "e132c992ae5141f92ec651db69a2efb69aa36c3f",
+          "sha256": "b0df8ff5eeff0c3785576d286b0a7bda322d33e1338f8ccbf96d64a2f834d1d6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/ubuntu/14.04/opscode-reporting_1.7.1+20170608083709-1_amd64.deb"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "e2466f419254793d653eb072edf1c4b5f94c690d",
+          "sha256": "78320a2e3e07ec6c998ca50b0bca4a4802d38dde23c0eed616318b26aef10b3b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/ubuntu/14.04/opscode-reporting_1.7.1+20170609083708-1_amd64.deb"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "cf95010c9578396c8c46f38a8e6c4bd2506d4324",
+          "sha256": "d7f500fa83bb05e9244512016437954582901851c7c3333e764ced9447c74250",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/ubuntu/14.04/opscode-reporting_1.7.1+20170609174217.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "9e61542e39266620602ecb68d99b5f8c57df89c8",
+          "sha256": "0846624a2cc0995672bb874b314c1988cd8ff6b58b40891f79e656f2030f911a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/ubuntu/14.04/opscode-reporting_1.7.1+20170610083709.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "33628916b37aa4603ab9dc7d7d26ae2c89d5f64c",
+          "sha256": "566631a2e377175ac411461fc576af5fe35dc3fef9adca93545c27e35b984dda",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/ubuntu/14.04/opscode-reporting_1.7.1+20170611083711.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "021c3f6bf7cba043fd4a8504240c632a3aee08b0",
+          "sha256": "65886b222668189c34fd6b8955de9fd7120f20d9534d0a698bccb06549d0d477",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/ubuntu/14.04/opscode-reporting_1.7.1+20170613083710.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "f80869093485088b44496e8b7b66b014bf5c3865",
+          "sha256": "1e46331daf51935cf56155f49313c1ad953d4d6187a11bd0061841814f8da38e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/ubuntu/14.04/opscode-reporting_1.7.1+20170614041619.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "7291d5fd837ba410ba431dc9046b4cf354a6e6ef",
+          "sha256": "3cde13c08b6907403dff9026dfb633d2d013ee868a4abf1a298076739ea68bed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/ubuntu/14.04/opscode-reporting_1.7.1+20170614083707.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "beed1e29b29494a2e3aacc6b27571b11f7aba527",
+          "sha256": "7e18b33d235dfb309680c343231337ecaed6f18f0148e12d2de0f46893492c0e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/ubuntu/14.04/opscode-reporting_1.7.2+20170614162815-1_amd64.deb"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "eee848c573525ac7d49caecf4a506471119d7c7a",
+          "sha256": "5e080c931f9abc547ea3eefabb6c7cb2486b4fce7cf0bff2259faf0cde35641b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/ubuntu/14.04/opscode-reporting_1.7.2+20170615083708-1_amd64.deb"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/ubuntu/14.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/14.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/14.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/ubuntu/14.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3/ubuntu/14.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/ubuntu/14.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/ubuntu/14.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "699bad537f8f08cf88db4c25e5cb320c00b5df49",
+          "sha256": "5e2d4bf81d4ae0874ee91baf960e38b85757aad6d7109ad89dd3b01841a8306e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/ubuntu/12.04/opscode-reporting_1.7.1+20170516083709-1_amd64.deb"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "3466ada0cd39ac366ca477aa8a31cf6f66e313ab",
+          "sha256": "259a15a6076762cb51a4237e1aeaa96cbb0099b46923bcc5f001950f6b249fcf",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/ubuntu/12.04/opscode-reporting_1.7.1+20170518083709-1_amd64.deb"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "1917ee05765075b50ac7096c8ee6ab01d9b55e87",
+          "sha256": "03f2c5b5e54a06f641d67e275a3875bb01e35af3ec6d1d8c80ca89d777924674",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/ubuntu/12.04/opscode-reporting_1.7.1+20170519083706-1_amd64.deb"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "1d475a37f09420c01b271914555ac422173b2e75",
+          "sha256": "dcd4453bc31dd89f2f0dffa229da87703aafa159effdbe90b9a11eae10eb95f1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/ubuntu/12.04/opscode-reporting_1.7.1+20170520083709-1_amd64.deb"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "e6d94637e718ba1a62a51a8342546bddbae348d4",
+          "sha256": "60e4f6d0c338192212f775a15c58af549bc6c3488466d269b815937f40e72b1e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/ubuntu/12.04/opscode-reporting_1.7.1+20170521083710-1_amd64.deb"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "441e8d55ac19800337b53ad9050039327846d304",
+          "sha256": "97db88656c73d7663be9901c19a5a0527c602ae9e12bf22e4946099195490a70",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/ubuntu/12.04/opscode-reporting_1.7.1+20170522083708-1_amd64.deb"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "d44418d52cbb51b2f062ec2826b31b0dc8bdafcf",
+          "sha256": "ce0de6640e9497ef911eaaae33cedecbdcd8e0fb6a048b9a9496f59152daaf8f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/ubuntu/12.04/opscode-reporting_1.7.1+20170523083711-1_amd64.deb"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "986b41acd316ea82fece5414c07a9263fa267bf3",
+          "sha256": "0512c3229e972368208fbf1bca8db7564af73d3eb768d005fb47859c8d38cd65",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/ubuntu/12.04/opscode-reporting_1.7.1+20170524083709-1_amd64.deb"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "72ba2121d679fc57eb98d9407300bd1c4a3c5328",
+          "sha256": "4a2635855a9215a5eb86298701689886f8126de4df9ea7d5aaba9e2769c69c4f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/ubuntu/12.04/opscode-reporting_1.7.1+20170525083708-1_amd64.deb"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "65dff1c88a586b1d9f7045bfe476fad484a2e6c2",
+          "sha256": "e976372577732c701367e54f2a847eea03af878b4acf54008134adedf91b7361",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/ubuntu/12.04/opscode-reporting_1.7.1+20170526083706-1_amd64.deb"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "5d5951330f0733c11fdb5163786cfd3f9872fdb0",
+          "sha256": "ff48110c42e5d9d50f0ae06af0a03c1e9f71a3ea57e267f35fee06789d985c66",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/ubuntu/12.04/opscode-reporting_1.7.1+20170527083710-1_amd64.deb"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "fd234e88b53937ee5182382b5d78299896a0cfc7",
+          "sha256": "76d7901485d7b3293fac3615abd8a2fd9fc7c09ba3f3969bcd8561b9807505ed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/ubuntu/12.04/opscode-reporting_1.7.1+20170528083710-1_amd64.deb"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "0ae351304e2f49f58c94702113c8753717138459",
+          "sha256": "b95e5d119166c1288c594b5486d6ec1086b77f169658dfdd4aee75544126adc3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/ubuntu/12.04/opscode-reporting_1.7.1+20170529083707-1_amd64.deb"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "9a4abc17fdb4ad161dbdc5e718513a6f66bd5857",
+          "sha256": "b1811e5dff74be3ab95c83735b2f60914242a240318b4c3a692097865eaa842f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/ubuntu/12.04/opscode-reporting_1.7.1+20170530083706-1_amd64.deb"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "cd52dd9f9144cb9663a088bb915295706046fc23",
+          "sha256": "55dffc9999c6271a8438e3ff8f6011db9133f180d5c9145b744e2bc7e7c1a2db",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/ubuntu/12.04/opscode-reporting_1.7.1+20170531083708-1_amd64.deb"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "3093eeac935e3fefe625bb0eae2b6f56a62efc4d",
+          "sha256": "2fbae307c341a55728a0cbaf55c04ecd31fb814df92a57e2610fc8746e6cddc2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/ubuntu/12.04/opscode-reporting_1.7.1+20170601083706-1_amd64.deb"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "f3656a032654ecbfc257d9a42ea786629d4e4cc0",
+          "sha256": "b53b40fc8d631a28e17e884c47f3fdad3acf65b6984743fca10f735f6c25d4e1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/ubuntu/12.04/opscode-reporting_1.7.1+20170602083709-1_amd64.deb"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "36186464c03bc60658f5d60ea5fccfdfc2c4a454",
+          "sha256": "dabb984fcd9d00f3fbec0f945a56e37646183ed6e2883e8617d6022918a1c590",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/ubuntu/12.04/opscode-reporting_1.7.1+20170603083710-1_amd64.deb"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "840426f4036780994b34d64c284b6698c1f45ffc",
+          "sha256": "ba4629d73d03d80d018c97f7928ffb8bb20e3a84823c1381c86b7d9d2591d3c0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/ubuntu/12.04/opscode-reporting_1.7.1+20170604083707-1_amd64.deb"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "5d9343115dc9b0995ba0bd3e987c3bc950eb9254",
+          "sha256": "33ebe5d12b4d5f3916409221c8f41bd900b02ec897eb893e2975fa999dd7798d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/ubuntu/12.04/opscode-reporting_1.7.1+20170605083708-1_amd64.deb"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "a8970e0a35e0ebdb0947b473f24901a0b4704bda",
+          "sha256": "6358bd322a64ba7b5f916b4455cf75a132522d8d17bd95840284dd0a98c934af",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/ubuntu/12.04/opscode-reporting_1.7.1+20170606083707-1_amd64.deb"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "e132c992ae5141f92ec651db69a2efb69aa36c3f",
+          "sha256": "b0df8ff5eeff0c3785576d286b0a7bda322d33e1338f8ccbf96d64a2f834d1d6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/ubuntu/12.04/opscode-reporting_1.7.1+20170608083709-1_amd64.deb"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "e2466f419254793d653eb072edf1c4b5f94c690d",
+          "sha256": "78320a2e3e07ec6c998ca50b0bca4a4802d38dde23c0eed616318b26aef10b3b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/ubuntu/12.04/opscode-reporting_1.7.1+20170609083708-1_amd64.deb"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "cf95010c9578396c8c46f38a8e6c4bd2506d4324",
+          "sha256": "d7f500fa83bb05e9244512016437954582901851c7c3333e764ced9447c74250",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/ubuntu/12.04/opscode-reporting_1.7.1+20170609174217.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "9e61542e39266620602ecb68d99b5f8c57df89c8",
+          "sha256": "0846624a2cc0995672bb874b314c1988cd8ff6b58b40891f79e656f2030f911a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/ubuntu/12.04/opscode-reporting_1.7.1+20170610083709.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "33628916b37aa4603ab9dc7d7d26ae2c89d5f64c",
+          "sha256": "566631a2e377175ac411461fc576af5fe35dc3fef9adca93545c27e35b984dda",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/ubuntu/12.04/opscode-reporting_1.7.1+20170611083711.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "021c3f6bf7cba043fd4a8504240c632a3aee08b0",
+          "sha256": "65886b222668189c34fd6b8955de9fd7120f20d9534d0a698bccb06549d0d477",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/ubuntu/12.04/opscode-reporting_1.7.1+20170613083710.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "f80869093485088b44496e8b7b66b014bf5c3865",
+          "sha256": "1e46331daf51935cf56155f49313c1ad953d4d6187a11bd0061841814f8da38e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/ubuntu/12.04/opscode-reporting_1.7.1+20170614041619.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "7291d5fd837ba410ba431dc9046b4cf354a6e6ef",
+          "sha256": "3cde13c08b6907403dff9026dfb633d2d013ee868a4abf1a298076739ea68bed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/ubuntu/12.04/opscode-reporting_1.7.1+20170614083707.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "beed1e29b29494a2e3aacc6b27571b11f7aba527",
+          "sha256": "7e18b33d235dfb309680c343231337ecaed6f18f0148e12d2de0f46893492c0e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/ubuntu/12.04/opscode-reporting_1.7.2+20170614162815-1_amd64.deb"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "eee848c573525ac7d49caecf4a506471119d7c7a",
+          "sha256": "5e080c931f9abc547ea3eefabb6c7cb2486b4fce7cf0bff2259faf0cde35641b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/ubuntu/12.04/opscode-reporting_1.7.2+20170615083708-1_amd64.deb"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/ubuntu/12.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/12.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/12.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/ubuntu/12.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3/ubuntu/12.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/ubuntu/12.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/ubuntu/12.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "699bad537f8f08cf88db4c25e5cb320c00b5df49",
+          "sha256": "5e2d4bf81d4ae0874ee91baf960e38b85757aad6d7109ad89dd3b01841a8306e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/ubuntu/16.04/opscode-reporting_1.7.1+20170516083709-1_amd64.deb"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "3466ada0cd39ac366ca477aa8a31cf6f66e313ab",
+          "sha256": "259a15a6076762cb51a4237e1aeaa96cbb0099b46923bcc5f001950f6b249fcf",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/ubuntu/16.04/opscode-reporting_1.7.1+20170518083709-1_amd64.deb"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "1917ee05765075b50ac7096c8ee6ab01d9b55e87",
+          "sha256": "03f2c5b5e54a06f641d67e275a3875bb01e35af3ec6d1d8c80ca89d777924674",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/ubuntu/16.04/opscode-reporting_1.7.1+20170519083706-1_amd64.deb"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "1d475a37f09420c01b271914555ac422173b2e75",
+          "sha256": "dcd4453bc31dd89f2f0dffa229da87703aafa159effdbe90b9a11eae10eb95f1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/ubuntu/16.04/opscode-reporting_1.7.1+20170520083709-1_amd64.deb"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "e6d94637e718ba1a62a51a8342546bddbae348d4",
+          "sha256": "60e4f6d0c338192212f775a15c58af549bc6c3488466d269b815937f40e72b1e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/ubuntu/16.04/opscode-reporting_1.7.1+20170521083710-1_amd64.deb"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "441e8d55ac19800337b53ad9050039327846d304",
+          "sha256": "97db88656c73d7663be9901c19a5a0527c602ae9e12bf22e4946099195490a70",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/ubuntu/16.04/opscode-reporting_1.7.1+20170522083708-1_amd64.deb"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "d44418d52cbb51b2f062ec2826b31b0dc8bdafcf",
+          "sha256": "ce0de6640e9497ef911eaaae33cedecbdcd8e0fb6a048b9a9496f59152daaf8f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/ubuntu/16.04/opscode-reporting_1.7.1+20170523083711-1_amd64.deb"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "986b41acd316ea82fece5414c07a9263fa267bf3",
+          "sha256": "0512c3229e972368208fbf1bca8db7564af73d3eb768d005fb47859c8d38cd65",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/ubuntu/16.04/opscode-reporting_1.7.1+20170524083709-1_amd64.deb"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "72ba2121d679fc57eb98d9407300bd1c4a3c5328",
+          "sha256": "4a2635855a9215a5eb86298701689886f8126de4df9ea7d5aaba9e2769c69c4f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/ubuntu/16.04/opscode-reporting_1.7.1+20170525083708-1_amd64.deb"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "65dff1c88a586b1d9f7045bfe476fad484a2e6c2",
+          "sha256": "e976372577732c701367e54f2a847eea03af878b4acf54008134adedf91b7361",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/ubuntu/16.04/opscode-reporting_1.7.1+20170526083706-1_amd64.deb"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "5d5951330f0733c11fdb5163786cfd3f9872fdb0",
+          "sha256": "ff48110c42e5d9d50f0ae06af0a03c1e9f71a3ea57e267f35fee06789d985c66",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/ubuntu/16.04/opscode-reporting_1.7.1+20170527083710-1_amd64.deb"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "fd234e88b53937ee5182382b5d78299896a0cfc7",
+          "sha256": "76d7901485d7b3293fac3615abd8a2fd9fc7c09ba3f3969bcd8561b9807505ed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/ubuntu/16.04/opscode-reporting_1.7.1+20170528083710-1_amd64.deb"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "0ae351304e2f49f58c94702113c8753717138459",
+          "sha256": "b95e5d119166c1288c594b5486d6ec1086b77f169658dfdd4aee75544126adc3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/ubuntu/16.04/opscode-reporting_1.7.1+20170529083707-1_amd64.deb"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "9a4abc17fdb4ad161dbdc5e718513a6f66bd5857",
+          "sha256": "b1811e5dff74be3ab95c83735b2f60914242a240318b4c3a692097865eaa842f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/ubuntu/16.04/opscode-reporting_1.7.1+20170530083706-1_amd64.deb"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "cd52dd9f9144cb9663a088bb915295706046fc23",
+          "sha256": "55dffc9999c6271a8438e3ff8f6011db9133f180d5c9145b744e2bc7e7c1a2db",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/ubuntu/16.04/opscode-reporting_1.7.1+20170531083708-1_amd64.deb"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "3093eeac935e3fefe625bb0eae2b6f56a62efc4d",
+          "sha256": "2fbae307c341a55728a0cbaf55c04ecd31fb814df92a57e2610fc8746e6cddc2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/ubuntu/16.04/opscode-reporting_1.7.1+20170601083706-1_amd64.deb"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "f3656a032654ecbfc257d9a42ea786629d4e4cc0",
+          "sha256": "b53b40fc8d631a28e17e884c47f3fdad3acf65b6984743fca10f735f6c25d4e1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/ubuntu/16.04/opscode-reporting_1.7.1+20170602083709-1_amd64.deb"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "36186464c03bc60658f5d60ea5fccfdfc2c4a454",
+          "sha256": "dabb984fcd9d00f3fbec0f945a56e37646183ed6e2883e8617d6022918a1c590",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/ubuntu/16.04/opscode-reporting_1.7.1+20170603083710-1_amd64.deb"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "840426f4036780994b34d64c284b6698c1f45ffc",
+          "sha256": "ba4629d73d03d80d018c97f7928ffb8bb20e3a84823c1381c86b7d9d2591d3c0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/ubuntu/16.04/opscode-reporting_1.7.1+20170604083707-1_amd64.deb"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "5d9343115dc9b0995ba0bd3e987c3bc950eb9254",
+          "sha256": "33ebe5d12b4d5f3916409221c8f41bd900b02ec897eb893e2975fa999dd7798d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/ubuntu/16.04/opscode-reporting_1.7.1+20170605083708-1_amd64.deb"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "a8970e0a35e0ebdb0947b473f24901a0b4704bda",
+          "sha256": "6358bd322a64ba7b5f916b4455cf75a132522d8d17bd95840284dd0a98c934af",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/ubuntu/16.04/opscode-reporting_1.7.1+20170606083707-1_amd64.deb"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "e132c992ae5141f92ec651db69a2efb69aa36c3f",
+          "sha256": "b0df8ff5eeff0c3785576d286b0a7bda322d33e1338f8ccbf96d64a2f834d1d6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/ubuntu/16.04/opscode-reporting_1.7.1+20170608083709-1_amd64.deb"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "e2466f419254793d653eb072edf1c4b5f94c690d",
+          "sha256": "78320a2e3e07ec6c998ca50b0bca4a4802d38dde23c0eed616318b26aef10b3b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/ubuntu/16.04/opscode-reporting_1.7.1+20170609083708-1_amd64.deb"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "cf95010c9578396c8c46f38a8e6c4bd2506d4324",
+          "sha256": "d7f500fa83bb05e9244512016437954582901851c7c3333e764ced9447c74250",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/ubuntu/16.04/opscode-reporting_1.7.1+20170609174217.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "9e61542e39266620602ecb68d99b5f8c57df89c8",
+          "sha256": "0846624a2cc0995672bb874b314c1988cd8ff6b58b40891f79e656f2030f911a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/ubuntu/16.04/opscode-reporting_1.7.1+20170610083709.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "33628916b37aa4603ab9dc7d7d26ae2c89d5f64c",
+          "sha256": "566631a2e377175ac411461fc576af5fe35dc3fef9adca93545c27e35b984dda",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/ubuntu/16.04/opscode-reporting_1.7.1+20170611083711.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "021c3f6bf7cba043fd4a8504240c632a3aee08b0",
+          "sha256": "65886b222668189c34fd6b8955de9fd7120f20d9534d0a698bccb06549d0d477",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/ubuntu/16.04/opscode-reporting_1.7.1+20170613083710.git.3.ed53fb5-1_amd64.deb"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "f80869093485088b44496e8b7b66b014bf5c3865",
+          "sha256": "1e46331daf51935cf56155f49313c1ad953d4d6187a11bd0061841814f8da38e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/ubuntu/16.04/opscode-reporting_1.7.1+20170614041619.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "7291d5fd837ba410ba431dc9046b4cf354a6e6ef",
+          "sha256": "3cde13c08b6907403dff9026dfb633d2d013ee868a4abf1a298076739ea68bed",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/ubuntu/16.04/opscode-reporting_1.7.1+20170614083707.git.4.5213bc4-1_amd64.deb"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "beed1e29b29494a2e3aacc6b27571b11f7aba527",
+          "sha256": "7e18b33d235dfb309680c343231337ecaed6f18f0148e12d2de0f46893492c0e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/ubuntu/16.04/opscode-reporting_1.7.2+20170614162815-1_amd64.deb"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "eee848c573525ac7d49caecf4a506471119d7c7a",
+          "sha256": "5e080c931f9abc547ea3eefabb6c7cb2486b4fce7cf0bff2259faf0cde35641b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/ubuntu/16.04/opscode-reporting_1.7.2+20170615083708-1_amd64.deb"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "83d39f0cc416336aef6c9241bf58f4f06c894c73",
+          "sha256": "1e167fbdb9536f541b9b67e725b3b58f1db67315ea02c5285314e9c1743f602f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/ubuntu/16.04/opscode-reporting_1.7.2+20170616083707-1_amd64.deb"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "21eefd6a074b2782cacbfe989ae4d70dc200c949",
+          "sha256": "4f4b3bcb29bfc8bed128536a0da74dba66d69aa7ae57c70c79530e6e937e6782",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170616230618.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "649a350c62c3c1afae87efc65bfde78ccf171abb",
+          "sha256": "c3ecb4b8072a7a3e80108a77ff1f6c152eeea7192950e747706571423d164842",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170617083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "28e1f4c3306ad5ddf3284335e92167a4e68d6994",
+          "sha256": "041708f36134b00d5b539a967366782137d698a310d05ed81b2721dfa567c624",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170618083711.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "57920cdb612fdd1b8203338567a754a5e2ef3494",
+          "sha256": "7cc05012c7cfc5c27a76f03de50ebcd06437ce3c3fceb55d43476d083c99759a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/ubuntu/16.04/opscode-reporting_1.7.2+20170619083709.git.2.2cacf91-1_amd64.deb"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "a07587aacbc766333ccb50224707fd028bcb7a1c",
+          "sha256": "0526e768df22bd97cad36d14d099bf64e02784d883b6e7a7a912d807a50c545d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/ubuntu/16.04/opscode-reporting_1.7.2+20170619200418.git.4.2c5bad0-1_amd64.deb"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "ea8d01bdebd073130c93270d06cdc7f3a91b2550",
+          "sha256": "5d3c33662b32ae329f7d9ee377f33f4a525e6199ac299939d0cc5f4e1524ab88",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/ubuntu/16.04/opscode-reporting_1.7.3+20170619201018-1_amd64.deb"
+        },
+        "1.7.3": {
+          "sha1": "142e09683275fe2bb455a1d4db1376938548fc6c",
+          "sha256": "ec62d51fa2795b7df8a8c540a429ce5b99f8a66265bd67f2f6b68118635ac1d8",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3/ubuntu/16.04/opscode-reporting_1.7.3-1_amd64.deb"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "40da180a46c09298c189b2c39aa6927cafc55664",
+          "sha256": "29eca8af7c4d20460d49087384637ce2c1a0c8f7221f2616862dc429f39e8ff6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/ubuntu/16.04/opscode-reporting_1.7.3+20170620083710-1_amd64.deb"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "ea0babe998504659d4d6c424909259a862685a03",
+          "sha256": "d4454681b7957ef7158a7c55fcf09c0896f5a606097388c5598010710a1957c5",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/ubuntu/16.04/opscode-reporting_1.7.3+20170622083709-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "5": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "d60b7f1c8065303412b6dfb4d54b8d5bfd38c99b",
+          "sha256": "d5101d8610d8badf489570788aa7703f2f01c226b4333b3c642b7b9eb4679fd4",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/el/5/opscode-reporting-1.7.1+20170516083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "7174df8cb51585b7dcb6672c27debcf07ad584d6",
+          "sha256": "6d146b528b9278e976189b3df50b11855ca530a77eec17c59219dce72095929a",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/el/5/opscode-reporting-1.7.1+20170518083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "143ab5e83046a8aa9cb995802b913da14ae1794d",
+          "sha256": "16f036de6efe3a8fbdacebc900c73c6ea0bc6d99b639ddfc3ed7447b02419c6d",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/el/5/opscode-reporting-1.7.1+20170519083706-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "1d99a4e438aee7b730374900352b49eaa9427153",
+          "sha256": "28d0acbc44a733567cada168b1f13d7780a6f5a19a225ea908ac5b35408690fc",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/el/5/opscode-reporting-1.7.1+20170520083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "a0a10872f597a05dc1713d3ce11e5b20cf780caa",
+          "sha256": "2a10cd7d3a9c5e83f5403fc719644a1e6dd68852111a4e823613e925d823e6e3",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/el/5/opscode-reporting-1.7.1+20170521083710-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "409f81e33a2f15b7688f5b9bee30116c3a20d395",
+          "sha256": "e10624ddc498ffecec30fdd42bbc9452196f2229979765bc403255cf5dc0366b",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/el/5/opscode-reporting-1.7.1+20170522083708-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "db2f80d5ffa68623c440a98f1d815ec47445dbf3",
+          "sha256": "025ade3e2cbdcb547f9d0612d4ce71225d5888cb205b98c113f1cef2b4317ce6",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/el/5/opscode-reporting-1.7.1+20170523083711-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "ca5d2a291c46cadd09138830ae7bb2bc6c0e824c",
+          "sha256": "f5bb2dcabe69d73faf80342796a6828aacc061782f79f2036d3cc6ba682e093f",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/el/5/opscode-reporting-1.7.1+20170524083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "933b535d2766a86063b1e64d4a508fc0340c58c4",
+          "sha256": "eabb802b8d1d7ce31e132a9c90cf02c86326a19a7e3bcc2a0d1c85f0f6239e93",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/el/5/opscode-reporting-1.7.1+20170525083708-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "69656cccdc336ae2301a5accf4697d7adb65402f",
+          "sha256": "a54200f919cf636a0cd28595d6c9c133bfe0d42932f3e7bd038f0dcd9270f12b",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/el/5/opscode-reporting-1.7.1+20170526083706-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "3bca2d205d80ca077476b5de8a65076bf8f8c726",
+          "sha256": "e5b868600f5586edb66ea98fb5817ae626d4edb2818e33db411506db527e9343",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/el/5/opscode-reporting-1.7.1+20170527083710-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "b4e6f3d4b1a5ddb5088801eeebbcb86125d24fdc",
+          "sha256": "330cd8a62b2d53ccebc5e6a70f4ca446ee4c8103387a60fd8914c1b7cab12f73",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/el/5/opscode-reporting-1.7.1+20170528083710-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "f18d2fda2fade416f94751d699be5ff7af03bdcc",
+          "sha256": "83ca880466985010fed98d01d13637ec33c86a2d12ba80596c88f255e406ad92",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/el/5/opscode-reporting-1.7.1+20170529083707-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "8af8ae6fefd6f42d9c64ccc8499716d36e3b591f",
+          "sha256": "51442e5f3ac2cc87ae3e5fd6f324eb9bfa862cd191321e92618ffd38d69464af",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/el/5/opscode-reporting-1.7.1+20170530083706-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "6f7cf525b09ef9f12039d6c4139afb3736a24597",
+          "sha256": "2b7a9809320eae65a5d9e9311b5951deae1ada2a677aee856e5827bcc3fbda5b",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/el/5/opscode-reporting-1.7.1+20170531083708-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "6303a614b85aece16e0aaddb98946730e102a944",
+          "sha256": "c7077350f16958364db9acb9fa85c7a3d3df8f1bc5c5ec0f8b65118c9fd886b3",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/el/5/opscode-reporting-1.7.1+20170601083706-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "2abbecb13465c9f5e704cb81a7f5d1b2e5423157",
+          "sha256": "ef80b6e0ab7ef6d53c0d526f8e09a6a5d6250af4ba8de3b5e390a1c549d47eb4",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/el/5/opscode-reporting-1.7.1+20170602083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "27a3c2899c1e55e3290761a37ed67eb2314be247",
+          "sha256": "b9b6c77615e37e054af0da58d20dc6693f44694b05c1ce6e52014ef0fd62b46e",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/el/5/opscode-reporting-1.7.1+20170603083710-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "c5ce910296f83f21740fb7b850f86dacf20b8d95",
+          "sha256": "8fa5c2d78d2d410c4fa5aa8fe7192cff3606be8ad30365e9132d1416b019b711",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/el/5/opscode-reporting-1.7.1+20170604083707-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "123ab5467e340b899f9c6e60ccdac83bd8c4049b",
+          "sha256": "ce12651f17671e5e9f514b11327e4dd8ce7e56f9fb6e442bc6da6faca3ba7220",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/el/5/opscode-reporting-1.7.1+20170605083708-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "15f125e3eb211bd11435533ed1e810f5ed0121db",
+          "sha256": "57bd16cfaffc92228f1f1ac1c81fa6bd13ab019e0c5772dbe674f0206f591a48",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/el/5/opscode-reporting-1.7.1+20170606083707-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "2bbbdb935178842d159fa9920bfe54df72be9882",
+          "sha256": "4b122e026ef9749a01844ea86b5f6b9c460f4d1361ae2fee6154caaf03f20b42",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/el/5/opscode-reporting-1.7.1+20170608083709-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "8cc382812696983a39018d6633f8bed4ed6c4381",
+          "sha256": "2c41b89b9d16e118f87c1d7886970efdd50d2ffd83a9807f3bbe78a01e83120e",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/el/5/opscode-reporting-1.7.1+20170609083708-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "298ea22c4d6afa48899aaed3335200d715b015e4",
+          "sha256": "5c44c5923da04dde49dc1fc3164bc010fcc3d9c61c356e353e392c91031b49c7",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/el/5/opscode-reporting-1.7.1+20170609174217.git.3.ed53fb5-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "b4c9f7853401272c988e5cf5f41a1aa8f8c8efd6",
+          "sha256": "17839c6528943970ef405b23aaf4bdcd673ffc847cde58789f6e1ceea70d649e",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/el/5/opscode-reporting-1.7.1+20170610083709.git.3.ed53fb5-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "8cb0a6d61e85e56983ffd22720ffef396d1e4e79",
+          "sha256": "4853e5e686477daf01dc3db9da5c8aa29806aab21b0ce3e22bd855882af08528",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/el/5/opscode-reporting-1.7.1+20170611083711.git.3.ed53fb5-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "c53a65fdcc4769c3087598adb9e83624d219a39f",
+          "sha256": "beb0febdb55ab4b669ca379bf5b454bef9992c392b225e071e9fe94948fea907",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/el/5/opscode-reporting-1.7.1+20170613083710.git.3.ed53fb5-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "b87b110d320eccea63c15710bbee0214c2558d83",
+          "sha256": "7da5ccbda5b5cfc1326200a386cce3c0ce53f1f15fdbe2739887eacc8e21d986",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/el/5/opscode-reporting-1.7.1+20170614041619.git.4.5213bc4-1.el5.x86_64.rpm"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "091b0bfbfcddda601fb84915bcd8e90acecf2515",
+          "sha256": "823b11479dee7efb5a15bce04c56cbe2f4c8a85fd6487a538426f49b0b8db1a9",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/el/5/opscode-reporting-1.7.1+20170614083707.git.4.5213bc4-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "7037891822194e967332b951a738a8b3df40d6ac",
+          "sha256": "e6f5142f677fa789543e81c3e61ee8abb2df262b63ef5e760718d7ca13f38578",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/el/5/opscode-reporting-1.7.2+20170614162815-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "b1079f5a9a85e0f9717a290a9e71f8f0d246d613",
+          "sha256": "67c4c92bd6bbe8f8c0854ce76949cf8801c78d176406dd2ee47f56a44cf29f8d",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/el/5/opscode-reporting-1.7.2+20170615083708-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "0be4b4dd875031d1678842e70d5d21db35d2f1ef",
+          "sha256": "53d58ad8f5081673e141f8a19098a2a6ae70c46d56ce8917557fa36d28390024",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/el/5/opscode-reporting-1.7.2+20170616083707-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "e28be6f18b88d8f0d600450bd15392a5dc9dc682",
+          "sha256": "c09cb38f0bd881107660ec64cd639db338568d96152a9ddc90ffc0a901d2e67e",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "62e144d53f7a0c1536c231919eecd941b0d544c8",
+          "sha256": "f4524ac60126e17b1c15737639b9b059a893196ed6fcc4052164f4d4beb9ae1b",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "7bc24e3169567264f1297d3cd76a77e5b56b9c1c",
+          "sha256": "dc36e05c7e83407f97dcde08640764bba3429608f5f4fbe2fe553e2ce09085ed",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "781a622abd76dfe38e368554fca4c99b8b738547",
+          "sha256": "4695c0883a263813cece0e01eec3e43d145c3765115880647693c959607daf1e",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/5/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el5.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "88931072c1abd49410e07c5bd6f8072b9b3b0f7c",
+          "sha256": "517dce8c9d1c1559479eaa38275065deda2bf3ef45e4ae5a618959735681f57c",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/5/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "30c7259515bd7b0c185fc380b2f768c20e9d0634",
+          "sha256": "ade5e4ea6e18717280ecad32f128033d909803e2bbcfc6cfde95a6b08f1fb637",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/el/5/opscode-reporting-1.7.3+20170619201018-1.el5.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "0d8fc6936ef06a8566ac61db8c720fcbc7b083e6",
+          "sha256": "1373eee003e7266275799cede60fd54e22cc813c462f3dc4c8ec5b0c28131bff",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.3/el/5/opscode-reporting-1.7.3-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "4e764517b5a81a580b86b3d6cd809917417bdfac",
+          "sha256": "48d0b1b9611f9a554306b230db3557f2acea57a3e48ca446f63618ed290e74a9",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/el/5/opscode-reporting-1.7.3+20170620083710-1.el5.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "3420104a65839b761766c87d15cf7afc53b4b95a",
+          "sha256": "814d6a099db04d52eab01cce2487d39abedf12a4e289d720e1afce82e88b0568",
+          "url": "http://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/el/5/opscode-reporting-1.7.3+20170622083709-1.el5.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "74a6bf4d1ce156ba93befd6b3501b7d394b2d376",
+          "sha256": "c27e7b7131e3f6a103e9df2ceaa3420486dbeed7c94d6ad16eca814d2fcf4473",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/el/7/opscode-reporting-1.7.1+20170516083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "0263e89a734f4dd72ba61e1692c920905a65e9d6",
+          "sha256": "5ddf40c294bce7e5d1fd2d85521578bf0d38b546348a4510f6a2cea911f41fb3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/el/7/opscode-reporting-1.7.1+20170518083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "819e52808bfbcaf672aaefa9aa1fa37243ce5cff",
+          "sha256": "b7d06401a244acfadd2ebdf934a61a818dea3ba09a7334ddd4b58ebf9e43a6d0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/el/7/opscode-reporting-1.7.1+20170519083706-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "e38332c56250da9e3bc14aeee2e3546a15eac9ea",
+          "sha256": "bc5cddecf8a9b129ce7d4b8254c3cc4dd8e7f8de6277595fa907ad88cd323bf8",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/el/7/opscode-reporting-1.7.1+20170520083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "b1ba1e8d7dec808e55341283225fb1ae112639e5",
+          "sha256": "4d64300d9a788a1401484aa72956258d9798c5fc50fadd1261d99e9dcabc0c7a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/el/7/opscode-reporting-1.7.1+20170521083710-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "222407382eecf2bd6e1ce524efafffff3a6b380d",
+          "sha256": "6d4ca34129963f9610c3d5b07b5d9f2852a821ec80f9f47ed723f03ddd1a0a15",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/el/7/opscode-reporting-1.7.1+20170522083708-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "8eeffff9cdb354c4cc202cb4ee2d4cc70ceb7f69",
+          "sha256": "42cccff42263babb7a57cb5779d4b579c76ec0ec2ea35b705ec0874f3b37207e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/el/7/opscode-reporting-1.7.1+20170523083711-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "22a3a2f2401874a5a706e96827e61eebea34dda6",
+          "sha256": "d1eebf9fcc4d9f199854eee750702ecf3931b98de294e60f3fbcdd3678739f33",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/el/7/opscode-reporting-1.7.1+20170524083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "35a8c3b3d142e00dd50bf67c1ab46395ff3ec001",
+          "sha256": "f8ad40ff78221d446b6d42e11aa28458b53d131fa41d455cd3eba5e6c966b77b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/el/7/opscode-reporting-1.7.1+20170525083708-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "bd79e8810e6cecabf0e1c90415c50ae4b769d77a",
+          "sha256": "9fb6eeabe90c06d906a818cf58330aa655112e52004261b47778048d7ba0ded2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/el/7/opscode-reporting-1.7.1+20170526083706-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "489eed9777eef5c65a12bd8c5d7515a397268474",
+          "sha256": "a00cd65f72f90376b0e13878be7570c0c546de30bc16011724592f11ad276f22",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/el/7/opscode-reporting-1.7.1+20170527083710-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "49a167d9f7cac2172aaf5e887075a177e6d936d6",
+          "sha256": "592875290fbd42d8bec1431e1064339a666713339dd275c2f640d80b04bb757e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/el/7/opscode-reporting-1.7.1+20170528083710-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "2c2a140314b34a5c5e83ec6baf992fae572163bf",
+          "sha256": "34d3039a00662081db1fbea467e9e688f3a865b9deda23eb39a3a8deaaee2757",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/el/7/opscode-reporting-1.7.1+20170529083707-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "3e425e49f1e07e3dd55da5b5d9504ff3950bee2e",
+          "sha256": "a363898bcc750b0d142d977aa5d6a3382211792776dada6f9813f623dc030d53",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/el/7/opscode-reporting-1.7.1+20170530083706-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "ba9b0c95aaed5cb4b87eba741f9528a237ffaf3c",
+          "sha256": "a418c85d45701986f92fc1e11c4915cdbae590b2e27088cf87aae49399a6357d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/el/7/opscode-reporting-1.7.1+20170531083708-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "7fe1a456ee1be5b8d49d93b2791bba85badae1c6",
+          "sha256": "f934d947c68b946a73a4b23665028cc5282fe55bc3c0b3e1d58601e78730052d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/el/7/opscode-reporting-1.7.1+20170601083706-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "fd948eca7ff7757225546878011ca5d12c02af02",
+          "sha256": "26620da826594e61e088b263a442ec70035eaae9498c510ccd61c051f0b2d9e1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/el/7/opscode-reporting-1.7.1+20170602083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "109571a1769269eb52f4e580e1863f9ee8cebbae",
+          "sha256": "50bd8d9e0b7ec97bf1330539f6439cfd8d15a3bb7ec69df571b10fadf7ea5334",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/el/7/opscode-reporting-1.7.1+20170603083710-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "4d7fe9ab727245d88eb0d87504275161fa40f072",
+          "sha256": "01c697077cbfb1c565f77fd6f4323b6014e185bb3f94276060a9dc1551b0a348",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/el/7/opscode-reporting-1.7.1+20170604083707-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "c70177cb72c47e56c27ed7d3afc4d0c5fdf2ea76",
+          "sha256": "8d5789cb611359a78933e09bc842441d1c1a5f74cb2eeeca0ab9b3c66cee613f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/el/7/opscode-reporting-1.7.1+20170605083708-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "3dec26aaba4a8fb56c38c4480ce0b98338da0597",
+          "sha256": "248f69a281fa6101d9b7392b901d74e502ac64d5dda691b1bfb6746aa4d3fd22",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/el/7/opscode-reporting-1.7.1+20170606083707-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "af4b218aa920fc29124bc1d9615e0afb16efa1ba",
+          "sha256": "7b8035d6b46ba7f433a9347f429bd80fd914c8193c74eafb9ba837aa4e8e3510",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/el/7/opscode-reporting-1.7.1+20170608083709-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "3619940e6d4347887426e4e573ae50a317ac53ba",
+          "sha256": "fecd2525da3869ce239bc0792b4a845f5c015f73d9a2f45c61a2e3edfdd4941e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/el/7/opscode-reporting-1.7.1+20170609083708-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "14d7710235809212e6d0e2ba62048a68669fb512",
+          "sha256": "7c59344cb6d259694ab5403f20f4cecb883dfe463f9b9127f6cc9b32d2e00603",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/el/7/opscode-reporting-1.7.1+20170609174217.git.3.ed53fb5-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "2b2cdb1960c246eba408c689fea7f71bcda2ff79",
+          "sha256": "5ff5b526b49f79ca6c094b6e6a51678a2bea2360eb8ee426aa5c08aa6e88aa51",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/el/7/opscode-reporting-1.7.1+20170610083709.git.3.ed53fb5-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "da3eb4501d8ed04ac075ba5c693b9784aef6795d",
+          "sha256": "626373acfaa2c135f2c9f1fd1b6673f0e0f683eaedd613d86ec7a4a865d87ef3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/el/7/opscode-reporting-1.7.1+20170611083711.git.3.ed53fb5-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "c65b9800e827195391f260b62dab5d8d0b9ca6e0",
+          "sha256": "a9659b83685691a237d17fb8976eb9859f157e581b9ef48ef64a65f41a6122cd",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/el/7/opscode-reporting-1.7.1+20170613083710.git.3.ed53fb5-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "2f1064b43db29990c5d946ea8483c6f3b568663a",
+          "sha256": "6b41fa90d743af39c3e0395681c0118fd2fba302216a0057922df7f7c5318c5c",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/el/7/opscode-reporting-1.7.1+20170614041619.git.4.5213bc4-1.el7.x86_64.rpm"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "5e0356817629286f6e12bd9b5392a8c12c811cb6",
+          "sha256": "eaa2db8efb7f4f20447b34a7cd05cb42a84719bae694eb55307f8e570971c109",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/el/7/opscode-reporting-1.7.1+20170614083707.git.4.5213bc4-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "98371ead9a594617d459a0f9d4dd47c8bae88e19",
+          "sha256": "af4d3d37bcd7dadcd467ebaafe4888c848416e5fd5fc0604e49cac02bba96211",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/el/7/opscode-reporting-1.7.2+20170614162815-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "7ca95f5a892726cb5755bf6d4bbba70537b7ed76",
+          "sha256": "5f95af203f032904bd87b01f93ee39a9bfce693e7ab9257a33782b2545bf24f4",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/el/7/opscode-reporting-1.7.2+20170615083708-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "44b16e5f2257a1381244e7b0eaa056ca0caf5fc0",
+          "sha256": "d3c533a583ed231864bfea4e48c044f97d6dbe20fa86616e596b302ca35ce058",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/el/7/opscode-reporting-1.7.2+20170616083707-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "605a72df0498bfc3338b8d3bf26eb92b6f8412b0",
+          "sha256": "9cc38320def6348cfc89719ba5e0861e5c293e1bcffd8028eac7afd705decfe2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "6d9ef9fad92de613a85eaf3e84fe25cd8ddf0436",
+          "sha256": "2207b3b6f86d91c22440c5bf3d28cf1036af663882484fd74ce570ff5af2389e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "0b8345fb30569f15bdc02baa39ee2994f03165a9",
+          "sha256": "6d097d555d1ad41620a722c0cece092c154b13f7a5e99c719faa2509761ac380",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "c2e1162f63a29e33bba895860c77075412b5e84a",
+          "sha256": "2d8b3f3d64e8e4047bcf63a55024c405356afd33a3fa0917d1bf940f72f05954",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/7/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el7.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "857efc9d21a09ef92118ed904f3c7cfc2ad69471",
+          "sha256": "5ec5ca4c42c6ad958ea58c3a9ec27afef6f81eb739d1ce536811cae3fe16b789",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/7/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "7581ca51cb4a08e5b448b1e8852fda32cd78ef51",
+          "sha256": "2692f8ebff3753b7630933c02dca258a31dba8953ab7bb4d5aedb32d49c89ac4",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/el/7/opscode-reporting-1.7.3+20170619201018-1.el7.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "1d24b11e1a71f340f9515374ba90cbea28a808c0",
+          "sha256": "35cb88c83c54090e6b851f0632f8b1ebbce41f283f9772168f66be2217f73a0b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3/el/7/opscode-reporting-1.7.3-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "06d42cd5324dda40585ee951154cff9ca4ecdfd3",
+          "sha256": "e41ffdd15d8ef99e1c55d84d72ce3e7baabecd3239332441b7991b2093700cb3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/el/7/opscode-reporting-1.7.3+20170620083710-1.el7.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "706f06cadaab5df74019b1540a1f60d5db18c5b0",
+          "sha256": "3450985339db7ab884f25ff088f1de0475cac909c90c2925d023ad47f2e9e737",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/el/7/opscode-reporting-1.7.3+20170622083709-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "1.7.1+20170516083709": {
+          "sha1": "1d714a146d3c7def80c5b84d144852c32753d400",
+          "sha256": "5d05cdd1155438b8c3b66c6bd3569dc6615c6ee03513610a38a0159ab16ff1a8",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170516083709/el/6/opscode-reporting-1.7.1+20170516083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170518083709": {
+          "sha1": "dbcf0e2a83ab548758540c4bea4eeff2fc0052a7",
+          "sha256": "0afa4ca4bebf50e11f63b48f2d2b33bfa37085c121b3409323e0b115c463ebc5",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170518083709/el/6/opscode-reporting-1.7.1+20170518083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170519083706": {
+          "sha1": "6b2792fa859757fa49daac53022fc4895adab7d7",
+          "sha256": "005c255c05431f5704827ee07327e6f0990f20349a4ea692be7a83863dfc6fe5",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170519083706/el/6/opscode-reporting-1.7.1+20170519083706-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170520083709": {
+          "sha1": "2f5ae833dec2ba26d6aaf85d6e1931acb6a23caa",
+          "sha256": "5540bfddf182546af6ee31422d6821ee1b8639579f239bdfdc91551298f2c247",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170520083709/el/6/opscode-reporting-1.7.1+20170520083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170521083710": {
+          "sha1": "87ce0b9fbcb81f0c252228300e1c7c028465c4c7",
+          "sha256": "07c8091308797fbaa3f2477a68d12ea01c4243bee91b236ace76458ee7a95d5b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170521083710/el/6/opscode-reporting-1.7.1+20170521083710-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170522083708": {
+          "sha1": "b3ed7187dff137422a91d33722ed3e038a92aed8",
+          "sha256": "e2fdd58dd4d3553deba1f3d32e5eab8119a9f785f1b581781ee88b797420c2c0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170522083708/el/6/opscode-reporting-1.7.1+20170522083708-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170523083711": {
+          "sha1": "47555b9a5f6c5c333e745946320bca06c33d6632",
+          "sha256": "25ad091ad1d1647fc2af1dd2cea413fe76e677bf230f5ae7897bad933c40473c",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170523083711/el/6/opscode-reporting-1.7.1+20170523083711-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170524083709": {
+          "sha1": "9ef36f46df520bc2df2670aef60f03f36dabf063",
+          "sha256": "f4547b68d93af6b97d49a85a1a092f6e5bfbf8804beda36f607d44b10c0606b0",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170524083709/el/6/opscode-reporting-1.7.1+20170524083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170525083708": {
+          "sha1": "e952ba9c31151d18e114aa91a6c5c5eaa6fb4597",
+          "sha256": "36a227d43827b66ddd97b897bca2c80b32ab3c5adb59d9a0a5bc5cf8676ecd30",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170525083708/el/6/opscode-reporting-1.7.1+20170525083708-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170526083706": {
+          "sha1": "28b462531836fc9b660169a251fff24214dc2da5",
+          "sha256": "e0c3575dddbaacb979a00c596ae8be912c821555aa379c320af4aa46ba1c0a16",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170526083706/el/6/opscode-reporting-1.7.1+20170526083706-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170527083710": {
+          "sha1": "24597a86650f9763d01f27ff5b11276165fada38",
+          "sha256": "6830730446fc89446fbc9eedd5671f5287d026a0c1304cc288a8be921336235d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170527083710/el/6/opscode-reporting-1.7.1+20170527083710-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170528083710": {
+          "sha1": "48f72ddbbc2cd671b1d6b538c0fae0556f767afb",
+          "sha256": "87cf5646c8b79c8d1f963b4f3e2acb50234281a8d69b838bb173c81e133cb071",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170528083710/el/6/opscode-reporting-1.7.1+20170528083710-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170529083707": {
+          "sha1": "a611341dcdcfc5c54816a48c41bbadd22dc67934",
+          "sha256": "b1ab00e495698af0513bc64fc9b3e797c92bf360ca85cdbb5d4c701dc2aa1e1f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170529083707/el/6/opscode-reporting-1.7.1+20170529083707-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170530083706": {
+          "sha1": "fe5501c8067bc39d7b09e550b9154e67b87ab43b",
+          "sha256": "991f88570d64162121090869bc95bdbc1b2f3c2dfe24c623f743abc50b9c92a2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170530083706/el/6/opscode-reporting-1.7.1+20170530083706-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170531083708": {
+          "sha1": "5555c4afb47fe66b2883b6057c6e609ea29b25cf",
+          "sha256": "ee132af19cb45676a1b1aee460f9903b70309d1a49a0dd0ed65057e6e129b459",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170531083708/el/6/opscode-reporting-1.7.1+20170531083708-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170601083706": {
+          "sha1": "95b31e1171cbdcc6377ee44a8d29e3ebb347b21b",
+          "sha256": "e6600434040e7c191a42303b2f2d038438ba285b49c253f8253a0f2a0b0e3130",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170601083706/el/6/opscode-reporting-1.7.1+20170601083706-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170602083709": {
+          "sha1": "82ee6ab536a14add6a5292388ba145df0a1fe69b",
+          "sha256": "87e0f2b84572a29308d06782a0addbcb397bb22d34f2ea3440ceef38ec5e718a",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170602083709/el/6/opscode-reporting-1.7.1+20170602083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170603083710": {
+          "sha1": "3f858f5fa4aa07aa74418076076541eb02e21835",
+          "sha256": "a58767a34113a16e73add0ad579d2c2bd5f2bffa5254babcfa692508d10307fb",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170603083710/el/6/opscode-reporting-1.7.1+20170603083710-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170604083707": {
+          "sha1": "665b6f5ff3ac97b04d8484d954fe22420abf5535",
+          "sha256": "d23aabcd0143528f1d59615bb3211986fbaf68b229300adb0ea8b47693911929",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170604083707/el/6/opscode-reporting-1.7.1+20170604083707-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170605083708": {
+          "sha1": "ac56cb3388ad3bec2414c36b6d7291883f919f53",
+          "sha256": "0ba73ed82ea792b2764bf42d2c9a6474117444ae6d1c60b7962b892d865daf80",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170605083708/el/6/opscode-reporting-1.7.1+20170605083708-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170606083707": {
+          "sha1": "8f805eab93f6afeb8e3753d7e88999c5b0ce0b5a",
+          "sha256": "6b69e3278567206300e4ee473c76e2d13ea41986d19dde17685d7e136d347bb1",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170606083707/el/6/opscode-reporting-1.7.1+20170606083707-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170608083709": {
+          "sha1": "3dbe9c45cb88e3ed7e4e70e9869b2d94d25e4f08",
+          "sha256": "d766ff198805aa17b7f038dab10a74d28a44ff3d1ef023b15e65f4420e672e70",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170608083709/el/6/opscode-reporting-1.7.1+20170608083709-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170609083708": {
+          "sha1": "5bb030b8b56631d307c835f2c675195cfeaf1060",
+          "sha256": "e48c5b66b3a998db99c8f62dbeb269ad3f3f0db378ac74e243d4cae463a4cbf2",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609083708/el/6/opscode-reporting-1.7.1+20170609083708-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170609174217.git.3.ed53fb5": {
+          "sha1": "add6820719764134c0a365739dddda8cf2e39688",
+          "sha256": "4bbc9afe44293597a98b0952ef6166655c822f4f8388611b9533c014681a2b55",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170609174217.git.3.ed53fb5/el/6/opscode-reporting-1.7.1+20170609174217.git.3.ed53fb5-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170610083709.git.3.ed53fb5": {
+          "sha1": "4257e264dcd1ac122303f45a3d44a632b96b0e43",
+          "sha256": "d9fa636637875d42f6484e56483d81ce54a63d2f2ac641c721b325f911794d91",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170610083709.git.3.ed53fb5/el/6/opscode-reporting-1.7.1+20170610083709.git.3.ed53fb5-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170611083711.git.3.ed53fb5": {
+          "sha1": "b891d706412ffb1292f9921f91f77636268b7ddf",
+          "sha256": "368aaf0a65b0c2a50a00a838317daa2418c393e8edcb0d97a8cf427246dd04b6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170611083711.git.3.ed53fb5/el/6/opscode-reporting-1.7.1+20170611083711.git.3.ed53fb5-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170613083710.git.3.ed53fb5": {
+          "sha1": "fca66728f7191a602618f250c1145adad339a24b",
+          "sha256": "59c265c0900bad68772aa2d7d865f74248f86d4c161f82a5d02014dae1b14f09",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170613083710.git.3.ed53fb5/el/6/opscode-reporting-1.7.1+20170613083710.git.3.ed53fb5-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170614041619.git.4.5213bc4": {
+          "sha1": "0d0d1a951a0eea297ef278db30bd922ee913c189",
+          "sha256": "dd724ce51bfc1702156f6d3cfe8b2dea7f926325eae2a38b34abc0890a841180",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614041619.git.4.5213bc4/el/6/opscode-reporting-1.7.1+20170614041619.git.4.5213bc4-1.el6.x86_64.rpm"
+        },
+        "1.7.1+20170614083707.git.4.5213bc4": {
+          "sha1": "179f36c3d6bed0397e89bd16523c43f2b2a3297c",
+          "sha256": "4172a98cb75582a2185d23e45d45a784d9324d788ecf082d344967dd000f68c6",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.1+20170614083707.git.4.5213bc4/el/6/opscode-reporting-1.7.1+20170614083707.git.4.5213bc4-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170614162815": {
+          "sha1": "4df2618f61acfa387dd5b9311d57e2aafdd4a196",
+          "sha256": "80753536999194e7be61e2382e9adf6698785c977ee99a15ba6b459175e3c0c3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170614162815/el/6/opscode-reporting-1.7.2+20170614162815-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170615083708": {
+          "sha1": "5c0e2f88690e0c2cf6947f6c24585f5fb0096348",
+          "sha256": "03911e3af7ed89fa8251f41bf766869e08b02e8e07707406d692d4781c71dd83",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170615083708/el/6/opscode-reporting-1.7.2+20170615083708-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170616083707": {
+          "sha1": "15fbf157580a692f03eaf68a9f9f8b2184645e67",
+          "sha256": "2d1ad10693a8eb8bde3854d570967a3c73d289a277ce5c090fd9f46bbce86367",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616083707/el/6/opscode-reporting-1.7.2+20170616083707-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170616230618.git.2.2cacf91": {
+          "sha1": "da9d1f6b1bc2407c810fb0a20674d75d69414a3c",
+          "sha256": "2cef6214cbd882d80208e31e3df476fdefd95b433be57625a6319524d2daf58f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170616230618.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170616230618.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170617083709.git.2.2cacf91": {
+          "sha1": "180a771eb1cca129a2522a178b2d747ec1f2dffe",
+          "sha256": "d5b26d0d69fff2bc0ccd44666011b52166de269cfe0eac7690b3b3980aa6560f",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170617083709.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170617083709.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170618083711.git.2.2cacf91": {
+          "sha1": "5e91d23ee75ee9bed668011209976a34ba141f59",
+          "sha256": "a12db0192d50bd8f891588bc306dd143515179c819d53b047de765b4c1cfac7e",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170618083711.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170618083711.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170619083709.git.2.2cacf91": {
+          "sha1": "a0335f745edc9b33c5275937045ac7d3b4ac4788",
+          "sha256": "3db181f73c76950d9827243cc8c8de5d0e968dfccdf18e5d2d21453578180353",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619083709.git.2.2cacf91/el/6/opscode-reporting-1.7.2+20170619083709.git.2.2cacf91-1.el6.x86_64.rpm"
+        },
+        "1.7.2+20170619200418.git.4.2c5bad0": {
+          "sha1": "58a98b69eaaebaa1ae85cea2d654c5bdb71f3b4d",
+          "sha256": "f085971cd9688f2b6bae7613f94fd49abda26072f4f3507225c5d40de8506769",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.2+20170619200418.git.4.2c5bad0/el/6/opscode-reporting-1.7.2+20170619200418.git.4.2c5bad0-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170619201018": {
+          "sha1": "52d13bbf62ea51f52291c1a41fa306997c637241",
+          "sha256": "7557f29ec58727db360e79eecf27e348e5848395828b1c42417dfc566a75bf6d",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170619201018/el/6/opscode-reporting-1.7.3+20170619201018-1.el6.x86_64.rpm"
+        },
+        "1.7.3": {
+          "sha1": "3e4ad887e3b9be9478f75d1bd89bb8089f0cd664",
+          "sha256": "9de5ece640d6c24c10539f66f9f7827268b0ee089fb46ff96c9263fe738b61a3",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3/el/6/opscode-reporting-1.7.3-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170620083710": {
+          "sha1": "4ba116f6a81bd785800f77d33a82a76d2cc404bb",
+          "sha256": "c8184504d3051b9a5e5f423b321c8ca0d464df78f8906cb063f7e0dd3f1789dc",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170620083710/el/6/opscode-reporting-1.7.3+20170620083710-1.el6.x86_64.rpm"
+        },
+        "1.7.3+20170622083709": {
+          "sha1": "1cf9d91842975751b988da9c3154862a0768de1a",
+          "sha256": "3cebb1a513f76604059dc5225e97f12718fc9efbffb31bd598d0f82c9a31c59b",
+          "url": "https://packages.chef.io/files/current/opscode-reporting/1.7.3+20170622083709/el/6/opscode-reporting-1.7.3+20170622083709-1.el6.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:04:13 -0700"
+  }
+}

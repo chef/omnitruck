@@ -2,89 +2,153 @@
   "el": {
     "5": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "7af2e10e318c39f8e4574ec59cb9ee402b37a236",
-          "sha256": "8377efdb563dc86d77968fdb42d9772a8b367f7083a399c8063975cbc1f393e1",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.6-1.x86_64.rpm"
-        },
-        "1.1.5": {
-          "sha1": "923bf198b9e4e8a7b59be8797d2c61112014d71e",
-          "sha256": "4b8d5c825631932bc3432d3dc0a0a07f4d85f0e48af7671ef7d2bd1d37a68069",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.5-1.x86_64.rpm"
-        },
-        "1.1.3": {
-          "sha1": "1b856619a1c34da92bec0e8263211e7b8653d597",
-          "sha256": "994e98e12fdb9ec4bfdd451decdd134891a40778a48cbbc4e8758d32b64b60cf",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.3-1.el5.x86_64.rpm"
-        },
-        "1.1.2": {
-          "sha1": "1645cdd3c7ea78c0a5194f9575fdd81b40b3c07e",
-          "sha256": "b64da914c99cbcf943a58adc856ed25f7590b5ad982df2e723e3daac6c7365e9",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.2-1.el5.x86_64.rpm"
-        },
-        "1.1.1": {
-          "sha1": "060cded9373c1acba801a9fea89c13863bf5d2d9",
-          "sha256": "af617f4ff500da436a266ff9f569791e8aa01781730f43caeecdf0fee0c21d40",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.1-1.el5.x86_64.rpm"
-        },
-        "1.1.0": {
-          "sha1": "8db14f752bdf20cadc4fc633faf03d11e841d6df",
-          "sha256": "df98de2cffc4c9c5decaf5bde3179e61de49a8f0506b722dca5517f6b6c848bc",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.1.0-1.el5.x86_64.rpm"
+        "1.0.0": {
+          "sha1": "ac45b6854b3712ca77f0427325a45cf7e3fea17b",
+          "sha256": "0635607715662fbd62d8cd13eecebd002b6065eebe1d7b751f7b5b9cc003838c",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.0/el/5/opscode-push-jobs-server-1.0.0-1.el5.x86_64.rpm"
         },
         "1.0.1": {
           "sha1": "83385f553efdf807ed85f2ed60a72627b1b3f005",
           "sha256": "f2d9d58e0bcc9989770aa3f5d28ff2d1b3175893e8dafbc8979f4185c821571f",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.0.1-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.1/el/5/opscode-push-jobs-server-1.0.1-1.el5.x86_64.rpm"
         },
-        "1.0.0": {
-          "sha1": "ac45b6854b3712ca77f0427325a45cf7e3fea17b",
-          "sha256": "0635607715662fbd62d8cd13eecebd002b6065eebe1d7b751f7b5b9cc003838c",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-push-jobs-server-1.0.0-1.el5.x86_64.rpm"
+        "1.1.0": {
+          "sha1": "8db14f752bdf20cadc4fc633faf03d11e841d6df",
+          "sha256": "df98de2cffc4c9c5decaf5bde3179e61de49a8f0506b722dca5517f6b6c848bc",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.0/el/5/opscode-push-jobs-server-1.1.0-1.el5.x86_64.rpm"
+        },
+        "1.1.1": {
+          "sha1": "060cded9373c1acba801a9fea89c13863bf5d2d9",
+          "sha256": "af617f4ff500da436a266ff9f569791e8aa01781730f43caeecdf0fee0c21d40",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.1/el/5/opscode-push-jobs-server-1.1.1-1.el5.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "1645cdd3c7ea78c0a5194f9575fdd81b40b3c07e",
+          "sha256": "b64da914c99cbcf943a58adc856ed25f7590b5ad982df2e723e3daac6c7365e9",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.2/el/5/opscode-push-jobs-server-1.1.2-1.el5.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "1b856619a1c34da92bec0e8263211e7b8653d597",
+          "sha256": "994e98e12fdb9ec4bfdd451decdd134891a40778a48cbbc4e8758d32b64b60cf",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.3/el/5/opscode-push-jobs-server-1.1.3-1.el5.x86_64.rpm"
+        },
+        "1.1.5": {
+          "sha1": "923bf198b9e4e8a7b59be8797d2c61112014d71e",
+          "sha256": "4b8d5c825631932bc3432d3dc0a0a07f4d85f0e48af7671ef7d2bd1d37a68069",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/el/5/opscode-push-jobs-server-1.1.5-1.x86_64.rpm"
+        },
+        "1.1.6": {
+          "sha1": "7af2e10e318c39f8e4574ec59cb9ee402b37a236",
+          "sha256": "8377efdb563dc86d77968fdb42d9772a8b367f7083a399c8063975cbc1f393e1",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/el/5/opscode-push-jobs-server-1.1.6-1.x86_64.rpm"
+        },
+        "2.1.0": {
+          "sha1": "41367ff358e931c449c60b2799ccdadefc02ef7e",
+          "sha256": "7a08a2a6c42a1f8b91f39b160b12023a0db6d7952602a9c3da999d9aa780c6b8",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/el/5/opscode-push-jobs-server-2.1.0-1.el5.x86_64.rpm"
+        },
+        "2.1.1": {
+          "sha1": "5d4e3555989e097707ea640398bb818a660b919a",
+          "sha256": "8347bfc087dee55af0c83575d42cda2bf7494bb2c652a24a36211ea387b1cd52",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/el/5/opscode-push-jobs-server-2.1.1-1.el5.x86_64.rpm"
+        },
+        "2.2.0": {
+          "sha1": "20f7e0d92bc6d1406a26cbd8306ccafc88e7e50e",
+          "sha256": "46ff4bab38f8a41bcb036ed447d7cc31b2cfdfda487de6b92661bcd3bea46010",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/el/5/opscode-push-jobs-server-2.2.0-1.el5.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "8dbd73b809285acc126f3a5cee501d94ed14c428",
+          "sha256": "dec024d6d79266d92519d6c176844753405973c892f7e77776fb76e7450c73ae",
+          "url": "http://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/el/5/opscode-push-jobs-server-2.2.1-1.el5.x86_64.rpm"
         }
       }
     },
     "6": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "7af2e10e318c39f8e4574ec59cb9ee402b37a236",
-          "sha256": "8377efdb563dc86d77968fdb42d9772a8b367f7083a399c8063975cbc1f393e1",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.6-1.x86_64.rpm"
-        },
-        "1.1.5": {
-          "sha1": "923bf198b9e4e8a7b59be8797d2c61112014d71e",
-          "sha256": "4b8d5c825631932bc3432d3dc0a0a07f4d85f0e48af7671ef7d2bd1d37a68069",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.5-1.x86_64.rpm"
-        },
-        "1.1.3": {
-          "sha1": "9b8b1ef09ce2427505b59d391e9f2244e97daeb3",
-          "sha256": "8234d84f06437a09890fa7184f16429cb4ff862913e60d434d48a1d865aea70c",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.3-1.el6.x86_64.rpm"
-        },
-        "1.1.2": {
-          "sha1": "9e85691abd335c0190665ea21a51a52499a1eb84",
-          "sha256": "65ceeb1be98d1bd24093564c337a2ac1a48f73925107ab6f802127a845bfeb1c",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.2-1.el6.x86_64.rpm"
-        },
-        "1.1.1": {
-          "sha1": "fb3fdd2fe22b7d0171a5cc1c26428a69d035ab08",
-          "sha256": "3ec7c98d767c2ac23645184fd28267712713d4f6c32a22b53a33148ad15dbf3e",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.1-1.el6.x86_64.rpm"
-        },
-        "1.1.0": {
-          "sha1": "1432b921755e1475002e3c48e73211a21d16407d",
-          "sha256": "6cf400508ec03b9b11d86c09b13c7e486a735bc3c49f3ec2caf33b4e9afd13ad",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.1.0-1.el6.x86_64.rpm"
+        "1.0.0": {
+          "sha1": "b756f775cc4d97fc0e1177a6ac179f051a02a190",
+          "sha256": "196249521823dc6a59aa17d12ef3e1ef6b5549fd75752275bb31162863dc9791",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.0/el/6/opscode-push-jobs-server-1.0.0-1.el6.x86_64.rpm"
         },
         "1.0.1": {
           "sha1": "fd6f3c9627ba52b90481c3ad4928229472f281e4",
           "sha256": "b62a97cb233f64f333f389bcbc0d7c515cbf24555b7c978c904d370ba239f5c9",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.0.1-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.1/el/6/opscode-push-jobs-server-1.0.1-1.el6.x86_64.rpm"
         },
-        "1.0.0": {
-          "sha1": "b756f775cc4d97fc0e1177a6ac179f051a02a190",
-          "sha256": "196249521823dc6a59aa17d12ef3e1ef6b5549fd75752275bb31162863dc9791",
-          "url": "https://packages.chef.io/stable/el/6/opscode-push-jobs-server-1.0.0-1.el6.x86_64.rpm"
+        "1.1.0": {
+          "sha1": "1432b921755e1475002e3c48e73211a21d16407d",
+          "sha256": "6cf400508ec03b9b11d86c09b13c7e486a735bc3c49f3ec2caf33b4e9afd13ad",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.0/el/6/opscode-push-jobs-server-1.1.0-1.el6.x86_64.rpm"
+        },
+        "1.1.1": {
+          "sha1": "fb3fdd2fe22b7d0171a5cc1c26428a69d035ab08",
+          "sha256": "3ec7c98d767c2ac23645184fd28267712713d4f6c32a22b53a33148ad15dbf3e",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.1/el/6/opscode-push-jobs-server-1.1.1-1.el6.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "9e85691abd335c0190665ea21a51a52499a1eb84",
+          "sha256": "65ceeb1be98d1bd24093564c337a2ac1a48f73925107ab6f802127a845bfeb1c",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.2/el/6/opscode-push-jobs-server-1.1.2-1.el6.x86_64.rpm"
+        },
+        "1.1.3": {
+          "sha1": "9b8b1ef09ce2427505b59d391e9f2244e97daeb3",
+          "sha256": "8234d84f06437a09890fa7184f16429cb4ff862913e60d434d48a1d865aea70c",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.3/el/6/opscode-push-jobs-server-1.1.3-1.el6.x86_64.rpm"
+        },
+        "1.1.5": {
+          "sha1": "923bf198b9e4e8a7b59be8797d2c61112014d71e",
+          "sha256": "4b8d5c825631932bc3432d3dc0a0a07f4d85f0e48af7671ef7d2bd1d37a68069",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/el/6/opscode-push-jobs-server-1.1.5-1.x86_64.rpm"
+        },
+        "1.1.6": {
+          "sha1": "7af2e10e318c39f8e4574ec59cb9ee402b37a236",
+          "sha256": "8377efdb563dc86d77968fdb42d9772a8b367f7083a399c8063975cbc1f393e1",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/el/6/opscode-push-jobs-server-1.1.6-1.x86_64.rpm"
+        },
+        "2.1.0": {
+          "sha1": "676a8ad8da0e3a4731e938a1962835092350c76b",
+          "sha256": "121b80488b60cd003445b1fdc7953c88d725945b486ea37122518ed2f6d8635f",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/el/6/opscode-push-jobs-server-2.1.0-1.el6.x86_64.rpm"
+        },
+        "2.1.1": {
+          "sha1": "8371f68b67249e65247449439284f56b200a42c0",
+          "sha256": "83508ae8f2adcb9177fef4849cbbac238162b6bc109e5f514b1aee2e381b47a7",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/el/6/opscode-push-jobs-server-2.1.1-1.el6.x86_64.rpm"
+        },
+        "2.2.0": {
+          "sha1": "1bd5d182ca04b8c012e7b52d70cce888acbb733e",
+          "sha256": "9d2c737ef7b2949588763a47e700820035d5dca0ce92b3e2381f089c85d0756e",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/el/6/opscode-push-jobs-server-2.2.0-1.el6.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "495698c06395b94d65606a02406fddb27723ec75",
+          "sha256": "71d95e127418228fb070d20fcf5b72f683cdeb579ce5610a4b802d6a6c8bb8b2",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/el/6/opscode-push-jobs-server-2.2.1-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "2.1.0": {
+          "sha1": "3b1a411d00cf33d400f3d899beb9795e1bba6d85",
+          "sha256": "a9ee0214afb9daecd1cf957b93f665c79e480a5fbc9f77dffacfc0e04cc9ed9c",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/el/7/opscode-push-jobs-server-2.1.0-1.el7.x86_64.rpm"
+        },
+        "2.1.1": {
+          "sha1": "8c9351995b177a087a0fa4334f9acaee01643d8a",
+          "sha256": "78a71e09d061e033c520bfd2c575b8d20eb9ebebc17b423954d3e5e7261dcf8c",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/el/7/opscode-push-jobs-server-2.1.1-1.el7.x86_64.rpm"
+        },
+        "2.2.0": {
+          "sha1": "996e3090ad91d221ae6c75ee394a52a8575baae1",
+          "sha256": "08477fbfe18cc91bc8060c44b9e0c6c163361db9d43f85237faadf8970e5c428",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/el/7/opscode-push-jobs-server-2.2.0-1.el7.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "7a901346dbf95076249f74564f29f3f4408c8e10",
+          "sha256": "994ee8daee4200a648b742835abf9eb391b9f1f8b5b496a07fab56ec2dec7f5a",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/el/7/opscode-push-jobs-server-2.2.1-1.el7.x86_64.rpm"
         }
       }
     }
@@ -92,152 +156,216 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
-          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
-        },
-        "1.1.5": {
-          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
-          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
-        },
-        "1.1.3": {
-          "sha1": "c8a04450eb305a2989cdcf78dfa358226213e9a2",
-          "sha256": "88c75d285eddb5f53c88b87da56217d2a666f75fecec5f3a350a748d8ffc3c56",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
-        },
-        "1.1.2": {
-          "sha1": "0e90233a60e27a3d29240af66752465fe6d888fd",
-          "sha256": "778ff5b99e7256f9ed17a9716422f6e562f420c7d2d452bb6a0eff00f61fa8c0",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "1094b0bad91360c18d56df52531722c5fcf611b7",
-          "sha256": "82a6611029b2444fa09e1f02345a143383b26995ad6360bc1019fcd9caa6c059",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "67b675819f36a205d503a4787ab91aed66cb6a6b",
-          "sha256": "495a0bd43976c44634d49e409d5e650992c5bec88a5854fb0b98d2682d38ef26",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.1.0-1.ubuntu.10.04_amd64.deb"
+        "1.0.0": {
+          "sha1": "8c954e4a4983fee5e170d0cb3b2044f9d0932c46",
+          "sha256": "ffdf53926fb54da8774d88c1bdace18c9496bcb119e8e80cfcf97b92f113af97",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.0/ubuntu/10.04/opscode-push-jobs-server_1.0.0-1.ubuntu.10.04_amd64.deb"
         },
         "1.0.1": {
           "sha1": "98e31f0c2c187ea6e3664f1d2758076059e527e4",
           "sha256": "2b651b8f6c8be160afdaf8e5bf366c5e9133066496f21a70d0796c2590478bbd",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.0.1-1.ubuntu.10.04_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.1/ubuntu/10.04/opscode-push-jobs-server_1.0.1-1.ubuntu.10.04_amd64.deb"
         },
-        "1.0.0": {
-          "sha1": "8c954e4a4983fee5e170d0cb3b2044f9d0932c46",
-          "sha256": "ffdf53926fb54da8774d88c1bdace18c9496bcb119e8e80cfcf97b92f113af97",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-push-jobs-server_1.0.0-1.ubuntu.10.04_amd64.deb"
+        "1.1.0": {
+          "sha1": "67b675819f36a205d503a4787ab91aed66cb6a6b",
+          "sha256": "495a0bd43976c44634d49e409d5e650992c5bec88a5854fb0b98d2682d38ef26",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.0/ubuntu/10.04/opscode-push-jobs-server_1.1.0-1.ubuntu.10.04_amd64.deb"
+        },
+        "1.1.1": {
+          "sha1": "1094b0bad91360c18d56df52531722c5fcf611b7",
+          "sha256": "82a6611029b2444fa09e1f02345a143383b26995ad6360bc1019fcd9caa6c059",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.1/ubuntu/10.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "0e90233a60e27a3d29240af66752465fe6d888fd",
+          "sha256": "778ff5b99e7256f9ed17a9716422f6e562f420c7d2d452bb6a0eff00f61fa8c0",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.2/ubuntu/10.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "c8a04450eb305a2989cdcf78dfa358226213e9a2",
+          "sha256": "88c75d285eddb5f53c88b87da56217d2a666f75fecec5f3a350a748d8ffc3c56",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.3/ubuntu/10.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
+        },
+        "1.1.5": {
+          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
+          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/ubuntu/10.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
+        },
+        "1.1.6": {
+          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
+          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/ubuntu/10.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
         }
       }
     },
     "11.04": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
-          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
-        },
-        "1.1.5": {
-          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
-          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
-        },
-        "1.1.3": {
-          "sha1": "5ea9d2ac2f77fd2104400b3b4d278c3412742156",
-          "sha256": "b56139ddc1dcd728f1ddfe0bb7f4287cd26e88957e582ff8ff58c51523c419d1",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
-        },
-        "1.1.2": {
-          "sha1": "c00daab9b7585c022a2dcbe214ae417cb4c3ae1e",
-          "sha256": "55aa8fe8cb8c8eb853aceed74061d83aafe5586b95ebd0230d940b2bc5ff13f4",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "31b3fe21a39af6b543cb620d71ba0811df729d6e",
-          "sha256": "5d11a9bc90e1e97b69d9c615346fd7b7c21e2048fc3daaa07e925248f5ec27f4",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "d0a9653271952c642a4c03c42e54516c9ae30f31",
-          "sha256": "831c637edae171b797906ccf9bd2fd48cc44ff6e1152ba20a7618d6e261c4424",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.1.0-1.ubuntu.11.04_amd64.deb"
+        "1.0.0": {
+          "sha1": "cfa542da02198bc5d0844e4fb83023f2ae2e3c68",
+          "sha256": "da7079613b7f27442a234e111539d638177e00ce9f16e5503d0baae07d68a5ab",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.0/ubuntu/11.04/opscode-push-jobs-server_1.0.0-1.ubuntu.11.04_amd64.deb"
         },
         "1.0.1": {
           "sha1": "cd751607fb0527109518ac2275711e1211c6dd48",
           "sha256": "eef70aed710c988f9a032b7d380cd199fc737d3e4c42978de847ed46a26be055",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.0.1-1.ubuntu.11.04_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.1/ubuntu/11.04/opscode-push-jobs-server_1.0.1-1.ubuntu.11.04_amd64.deb"
         },
-        "1.0.0": {
-          "sha1": "cfa542da02198bc5d0844e4fb83023f2ae2e3c68",
-          "sha256": "da7079613b7f27442a234e111539d638177e00ce9f16e5503d0baae07d68a5ab",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-push-jobs-server_1.0.0-1.ubuntu.11.04_amd64.deb"
+        "1.1.0": {
+          "sha1": "d0a9653271952c642a4c03c42e54516c9ae30f31",
+          "sha256": "831c637edae171b797906ccf9bd2fd48cc44ff6e1152ba20a7618d6e261c4424",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.0/ubuntu/11.04/opscode-push-jobs-server_1.1.0-1.ubuntu.11.04_amd64.deb"
+        },
+        "1.1.1": {
+          "sha1": "31b3fe21a39af6b543cb620d71ba0811df729d6e",
+          "sha256": "5d11a9bc90e1e97b69d9c615346fd7b7c21e2048fc3daaa07e925248f5ec27f4",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.1/ubuntu/11.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "c00daab9b7585c022a2dcbe214ae417cb4c3ae1e",
+          "sha256": "55aa8fe8cb8c8eb853aceed74061d83aafe5586b95ebd0230d940b2bc5ff13f4",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.2/ubuntu/11.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "5ea9d2ac2f77fd2104400b3b4d278c3412742156",
+          "sha256": "b56139ddc1dcd728f1ddfe0bb7f4287cd26e88957e582ff8ff58c51523c419d1",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.3/ubuntu/11.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
+        },
+        "1.1.5": {
+          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
+          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/ubuntu/11.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
+        },
+        "1.1.6": {
+          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
+          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/ubuntu/11.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
         }
       }
     },
     "12.04": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
-          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
-        },
-        "1.1.5": {
-          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
-          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
-        },
-        "1.1.3": {
-          "sha1": "b103acba06d89957d13fb747c99822abcee4386b",
-          "sha256": "6435a42b3bbac72ff958a687b333b08ae65a4b3176e22285a8045444467e7075",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
-        },
-        "1.1.2": {
-          "sha1": "90b1b3f79fa866d70efc26732cf7913e6b4577db",
-          "sha256": "43c47edfbce3ef6be4fe275a723c2d9469c0d00b8640b68c47f80d8f7488ec97",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "5028a93f56ad866525915e754664632523c5c65e",
-          "sha256": "20a9cca6d35874e6426c2f97e785b54b3ade8c6e464762c18d6ca14a42f49a63",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "41519881fcccd276bc4b78952a54ee33bd629bd4",
-          "sha256": "4390052432d003d2ed7caf8cc47d7dc5f68d22df8fa85b4ba032ed797e9a614f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.1.0-1.ubuntu.12.04_amd64.deb"
+        "1.0.0": {
+          "sha1": "e1ea06d4d0e504c28016b58d7259f8156c99344e",
+          "sha256": "5c81003cce1384cd618c6aefd68e0bc9139c72dc264f455f6d55029e27385b22",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.0/ubuntu/12.04/opscode-push-jobs-server_1.0.0-1.ubuntu.12.04_amd64.deb"
         },
         "1.0.1": {
           "sha1": "d2dbdcb92da5d9e2047d4f62491eaaa75d2c4466",
           "sha256": "bf9e482ddadfd652c3e69f89bb06dbf47ab53be13444c5e688822dd4933bcfda",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.0.1-1.ubuntu.12.04_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.0.1/ubuntu/12.04/opscode-push-jobs-server_1.0.1-1.ubuntu.12.04_amd64.deb"
         },
-        "1.0.0": {
-          "sha1": "e1ea06d4d0e504c28016b58d7259f8156c99344e",
-          "sha256": "5c81003cce1384cd618c6aefd68e0bc9139c72dc264f455f6d55029e27385b22",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-push-jobs-server_1.0.0-1.ubuntu.12.04_amd64.deb"
+        "1.1.0": {
+          "sha1": "41519881fcccd276bc4b78952a54ee33bd629bd4",
+          "sha256": "4390052432d003d2ed7caf8cc47d7dc5f68d22df8fa85b4ba032ed797e9a614f",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.0/ubuntu/12.04/opscode-push-jobs-server_1.1.0-1.ubuntu.12.04_amd64.deb"
+        },
+        "1.1.1": {
+          "sha1": "5028a93f56ad866525915e754664632523c5c65e",
+          "sha256": "20a9cca6d35874e6426c2f97e785b54b3ade8c6e464762c18d6ca14a42f49a63",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.1/ubuntu/12.04/opscode-push-jobs-server_1.1.1-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "90b1b3f79fa866d70efc26732cf7913e6b4577db",
+          "sha256": "43c47edfbce3ef6be4fe275a723c2d9469c0d00b8640b68c47f80d8f7488ec97",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.2/ubuntu/12.04/opscode-push-jobs-server_1.1.2-1_amd64.deb"
+        },
+        "1.1.3": {
+          "sha1": "b103acba06d89957d13fb747c99822abcee4386b",
+          "sha256": "6435a42b3bbac72ff958a687b333b08ae65a4b3176e22285a8045444467e7075",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.3/ubuntu/12.04/opscode-push-jobs-server_1.1.3-1_amd64.deb"
+        },
+        "1.1.5": {
+          "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
+          "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/ubuntu/12.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
+        },
+        "1.1.6": {
+          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
+          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/ubuntu/12.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
+        },
+        "2.1.0": {
+          "sha1": "71e0c2a01d7c4eecdfea7344247519ad4029b3d2",
+          "sha256": "1f46cf4c4232d1fc20a48588a53b8d03aed0fb4d215556b74e4609e900041a2d",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/ubuntu/12.04/opscode-push-jobs-server_2.1.0-1_amd64.deb"
+        },
+        "2.1.1": {
+          "sha1": "c6bc501c2c57c6a0d872d52d9fdc0d19f24a551d",
+          "sha256": "3c269b2bc957c164a68292baee5da6dd83bac53bd245d5244cb3ed2735bb5b7f",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/ubuntu/12.04/opscode-push-jobs-server_2.1.1-1_amd64.deb"
+        },
+        "2.2.0": {
+          "sha1": "372c7f91d2401a5d6271f3217b1e906b3037de9a",
+          "sha256": "b1cc4a57c7442e138c621a9c07744151d4744babec0f237451fd7c3a8c1748eb",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/ubuntu/12.04/opscode-push-jobs-server_2.2.0-1_amd64.deb"
+        },
+        "2.2.1": {
+          "sha1": "a57943c29fea0d6a0adf7fae701c4de1a2139e0f",
+          "sha256": "f8109e1ff6c2c4e482207e5e4765fb7546d81b0785e5245344577d250573bec7",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/ubuntu/12.04/opscode-push-jobs-server_2.2.1-1_amd64.deb"
         }
       }
     },
     "14.04": {
       "x86_64": {
-        "1.1.6": {
-          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
-          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
-        },
         "1.1.5": {
           "sha1": "326cb75349d7ae682850d12438f6fc6b16e43d87",
           "sha256": "bda0367cfdffb8ef370d8a51e95c98d9429dd5673e73a45aafeea2b511b837e1",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.5/ubuntu/14.04/opscode-push-jobs-server_1.1.5-1_amd64.deb"
+        },
+        "1.1.6": {
+          "sha1": "0f92087febd5638066d5fb3cd3be0ac3cf653cbc",
+          "sha256": "db63d45c32377c605190dec85ce225224b0c190a0f09289b9b24e4ec2c89a293",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/1.1.6/ubuntu/14.04/opscode-push-jobs-server_1.1.6-1_amd64.deb"
+        },
+        "2.1.0": {
+          "sha1": "71e0c2a01d7c4eecdfea7344247519ad4029b3d2",
+          "sha256": "1f46cf4c4232d1fc20a48588a53b8d03aed0fb4d215556b74e4609e900041a2d",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/ubuntu/14.04/opscode-push-jobs-server_2.1.0-1_amd64.deb"
+        },
+        "2.1.1": {
+          "sha1": "c6bc501c2c57c6a0d872d52d9fdc0d19f24a551d",
+          "sha256": "3c269b2bc957c164a68292baee5da6dd83bac53bd245d5244cb3ed2735bb5b7f",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/ubuntu/14.04/opscode-push-jobs-server_2.1.1-1_amd64.deb"
+        },
+        "2.2.0": {
+          "sha1": "372c7f91d2401a5d6271f3217b1e906b3037de9a",
+          "sha256": "b1cc4a57c7442e138c621a9c07744151d4744babec0f237451fd7c3a8c1748eb",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/ubuntu/14.04/opscode-push-jobs-server_2.2.0-1_amd64.deb"
+        },
+        "2.2.1": {
+          "sha1": "a57943c29fea0d6a0adf7fae701c4de1a2139e0f",
+          "sha256": "f8109e1ff6c2c4e482207e5e4765fb7546d81b0785e5245344577d250573bec7",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/ubuntu/14.04/opscode-push-jobs-server_2.2.1-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "2.1.0": {
+          "sha1": "71e0c2a01d7c4eecdfea7344247519ad4029b3d2",
+          "sha256": "1f46cf4c4232d1fc20a48588a53b8d03aed0fb4d215556b74e4609e900041a2d",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.0/ubuntu/16.04/opscode-push-jobs-server_2.1.0-1_amd64.deb"
+        },
+        "2.1.1": {
+          "sha1": "c6bc501c2c57c6a0d872d52d9fdc0d19f24a551d",
+          "sha256": "3c269b2bc957c164a68292baee5da6dd83bac53bd245d5244cb3ed2735bb5b7f",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.1.1/ubuntu/16.04/opscode-push-jobs-server_2.1.1-1_amd64.deb"
+        },
+        "2.2.0": {
+          "sha1": "372c7f91d2401a5d6271f3217b1e906b3037de9a",
+          "sha256": "b1cc4a57c7442e138c621a9c07744151d4744babec0f237451fd7c3a8c1748eb",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.0/ubuntu/16.04/opscode-push-jobs-server_2.2.0-1_amd64.deb"
+        },
+        "2.2.1": {
+          "sha1": "a57943c29fea0d6a0adf7fae701c4de1a2139e0f",
+          "sha256": "f8109e1ff6c2c4e482207e5e4765fb7546d81b0785e5245344577d250573bec7",
+          "url": "https://packages.chef.io/files/stable/opscode-push-jobs-server/2.2.1/ubuntu/16.04/opscode-push-jobs-server_2.2.1-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:48:01 -0700"
+    "timestamp": "2017-06-22 12:04:08 -0700"
   }
 }

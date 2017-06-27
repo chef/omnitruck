@@ -1,5 +1,148 @@
 {
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "1.0.9": {
+          "sha1": "ce731edc69d79eb72e95bcba9c8bf7b91a01a625",
+          "sha256": "abc2f243b66da5b559c792b6e3114b56f44ffd4ca3776d1ce784b1324ce61c6e",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.0.9/ubuntu/12.04/chef-backend_1.0.9-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "5b350ce777c6827e92a4969d74c84d56f8cff423",
+          "sha256": "ea01315d86358cf54fbf0ebb062587c30c42722307cab15549e6eb5415e18ff1",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.1.2/ubuntu/12.04/chef-backend_1.1.2-1_amd64.deb"
+        },
+        "1.2.5": {
+          "sha1": "624f5a464d0c63f69e6def6050b142ebdab4dbc3",
+          "sha256": "3bbef404313852440ee511e6a1711afb69c4a3d48314d6efb35884a400373b5f",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.2.5/ubuntu/12.04/chef-backend_1.2.5-1_amd64.deb"
+        },
+        "1.3.2": {
+          "sha1": "32321e9738011e966d3f086cdd880689d82603d8",
+          "sha256": "23d1c0bb23c8774f6e9a38b85f2fbe7bf69090666a988e298529b9fe67586100",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.3.2/ubuntu/12.04/chef-backend_1.3.2-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.0.9": {
+          "sha1": "ce731edc69d79eb72e95bcba9c8bf7b91a01a625",
+          "sha256": "abc2f243b66da5b559c792b6e3114b56f44ffd4ca3776d1ce784b1324ce61c6e",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.0.9/ubuntu/14.04/chef-backend_1.0.9-1_amd64.deb"
+        },
+        "1.1.2": {
+          "sha1": "5b350ce777c6827e92a4969d74c84d56f8cff423",
+          "sha256": "ea01315d86358cf54fbf0ebb062587c30c42722307cab15549e6eb5415e18ff1",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.1.2/ubuntu/14.04/chef-backend_1.1.2-1_amd64.deb"
+        },
+        "1.2.5": {
+          "sha1": "624f5a464d0c63f69e6def6050b142ebdab4dbc3",
+          "sha256": "3bbef404313852440ee511e6a1711afb69c4a3d48314d6efb35884a400373b5f",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.2.5/ubuntu/14.04/chef-backend_1.2.5-1_amd64.deb"
+        },
+        "1.3.2": {
+          "sha1": "32321e9738011e966d3f086cdd880689d82603d8",
+          "sha256": "23d1c0bb23c8774f6e9a38b85f2fbe7bf69090666a988e298529b9fe67586100",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.3.2/ubuntu/14.04/chef-backend_1.3.2-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "1.1.2": {
+          "sha1": "5b350ce777c6827e92a4969d74c84d56f8cff423",
+          "sha256": "ea01315d86358cf54fbf0ebb062587c30c42722307cab15549e6eb5415e18ff1",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.1.2/ubuntu/16.04/chef-backend_1.1.2-1_amd64.deb"
+        },
+        "1.2.5": {
+          "sha1": "624f5a464d0c63f69e6def6050b142ebdab4dbc3",
+          "sha256": "3bbef404313852440ee511e6a1711afb69c4a3d48314d6efb35884a400373b5f",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.2.5/ubuntu/16.04/chef-backend_1.2.5-1_amd64.deb"
+        },
+        "1.3.2": {
+          "sha1": "32321e9738011e966d3f086cdd880689d82603d8",
+          "sha256": "23d1c0bb23c8774f6e9a38b85f2fbe7bf69090666a988e298529b9fe67586100",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.3.2/ubuntu/16.04/chef-backend_1.3.2-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "5": {
+      "x86_64": {
+        "1.0.9": {
+          "sha1": "61a0e6a77e30ad4f17fdebc8f3c2a1953bf1dfde",
+          "sha256": "b7e8709462087fc387f995d399018a246da8e9c1a2aec5a3e11d21017c499493",
+          "url": "http://packages.chef.io/files/stable/chef-backend/1.0.9/el/5/chef-backend-1.0.9-1.el5.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "2687e79f9639a52bedd52e5f8350388208ff4a6a",
+          "sha256": "2921c98b218eae8cee7d490bcf4d4c521819dac006b96e3a598a1df3d0a8fc0d",
+          "url": "http://packages.chef.io/files/stable/chef-backend/1.1.2/el/5/chef-backend-1.1.2-1.el5.x86_64.rpm"
+        },
+        "1.2.5": {
+          "sha1": "c4a0c277d33e5e14422fb865b2d822711d99cc49",
+          "sha256": "9ee91c8406a1ddf55cdd041127db12af905af4e91034777164aaa360fec543d2",
+          "url": "http://packages.chef.io/files/stable/chef-backend/1.2.5/el/5/chef-backend-1.2.5-1.el5.x86_64.rpm"
+        },
+        "1.3.2": {
+          "sha1": "604e65f30d6c8982f1d554885c6a86d6c0242e12",
+          "sha256": "5b7f7c293a17c56292d2bb1adbbc113eb1d116f118e04c5985db84f8f75ed22d",
+          "url": "http://packages.chef.io/files/stable/chef-backend/1.3.2/el/5/chef-backend-1.3.2-1.el5.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "1.0.9": {
+          "sha1": "b5d4bff691b10402ee1331f7882414c6016fc324",
+          "sha256": "8b85d8a0917916d0d64ed47f85baa0dc84720952feef4352645e9cddc4677553",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.0.9/el/7/chef-backend-1.0.9-1.el7.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "4f7941e532eb0186171d0df4cd6bbded4a629243",
+          "sha256": "1436c201dfc897a7a3cd7d033f6e79469d796815ff6bc31ec375c72b98220d58",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.1.2/el/7/chef-backend-1.1.2-1.el7.x86_64.rpm"
+        },
+        "1.2.5": {
+          "sha1": "fca18f553d45522f9d05cc1c632be76721cb501a",
+          "sha256": "f3b0b4fc5b14237282af2f4e4a95f359f3da5ada2f1463d6f52bb16b08f53456",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.2.5/el/7/chef-backend-1.2.5-1.el7.x86_64.rpm"
+        },
+        "1.3.2": {
+          "sha1": "6f8dc8ecae5a8fffc86814e4ea44eeff6f8ec752",
+          "sha256": "6a34ddf6aa1146b5404c2f2c9b2765c6dc1b2cdcfe20620b6225568c40a429db",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.3.2/el/7/chef-backend-1.3.2-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "1.0.9": {
+          "sha1": "b0ab2a7ac05371707a66620717364b7e17f1d8fb",
+          "sha256": "b4634e34dd42e5c3fb5748c17f45e3d76046606023e713972d826bc86128b378",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.0.9/el/6/chef-backend-1.0.9-1.el6.x86_64.rpm"
+        },
+        "1.1.2": {
+          "sha1": "e284a8d11cf6977ecccbb425a6a8c15ab17a1a8d",
+          "sha256": "04509aa368960b98160de3789d3a37c4f0bac969b5760141bb089203df10baaa",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.1.2/el/6/chef-backend-1.1.2-1.el6.x86_64.rpm"
+        },
+        "1.2.5": {
+          "sha1": "01e2c403330f3ea8c00394dd7f75c2e1f1545e8b",
+          "sha256": "47ff24998a9e3da671d5c0fdddb82df46e34a095992e8dfc37966c743bc6866c",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.2.5/el/6/chef-backend-1.2.5-1.el6.x86_64.rpm"
+        },
+        "1.3.2": {
+          "sha1": "1707cc37b1e91fbd318ab2b0f02d5976f1dc83fa",
+          "sha256": "d81801320d1aa9b9a5e1cc5eab5ecae28ae8ab4df829f7b96ca2a69d9462d37d",
+          "url": "https://packages.chef.io/files/stable/chef-backend/1.3.2/el/6/chef-backend-1.3.2-1.el6.x86_64.rpm"
+        }
+      }
+    }
+  },
   "run_data": {
-    "timestamp": "2016-04-21 11:45:26 -0700"
+    "timestamp": "2017-06-22 12:03:00 -0700"
   }
 }

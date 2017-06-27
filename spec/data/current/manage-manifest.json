@@ -1,0 +1,1383 @@
+{
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "30ab9964ee6473ee9830415c9559f29ecf796761",
+          "sha256": "0c534b28ff7f94d135baec9e6eb32a789e002ea9408947bb896592fc92d0efa5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/ubuntu/12.04/chef-manage_2.5.3+20170516093510-1_amd64.deb"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "4d4fe9baf26100c6002025da66470f0dd0d54131",
+          "sha256": "405efcd01b0d08527a95347defcad24f1cbb823223e68771fbc59de799434e96",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/ubuntu/12.04/chef-manage_2.5.3+20170517093513-1_amd64.deb"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "5b01b229e08e42e2b2f8b952bbd2556864926d26",
+          "sha256": "f63161abd0d71c1b3b95aa5cfde7dc002d2d99388d51704c4034fab6e17f68ec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/ubuntu/12.04/chef-manage_2.5.3+20170518093512-1_amd64.deb"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "2bc9807d2d758cd75237325584e0e93bbcad5552",
+          "sha256": "42d4296b4a2e9f25139c4589029165b05b07115bbadf873d9300cf783596f4d5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/ubuntu/12.04/chef-manage_2.5.3+20170519093512-1_amd64.deb"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "bc6866a64a3381075ed332cc6ac327d9b5e43a5e",
+          "sha256": "64a95c1f1845da6bc22fc5259a80af5a27e80fc48bed10c0f4f8c19a63333941",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/ubuntu/12.04/chef-manage_2.5.3+20170520093510-1_amd64.deb"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "09aa14af184a03fa708324ecb6d44a23d77568a9",
+          "sha256": "3a4d58356a574425c2ee2147dbf19cc9d7009e6e6a4698e0d41afcd52ff13e09",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/ubuntu/12.04/chef-manage_2.5.3+20170521093512-1_amd64.deb"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "da53916454c633f3232f234c3cf7a7bf5a42ba8a",
+          "sha256": "320aec71c07526e757cee3fea8685e3566dac76cbfb678f2734d319c31b76589",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/ubuntu/12.04/chef-manage_2.5.3+20170522093509-1_amd64.deb"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "0ce665af75df65af17430b29b727a7ed0c63b542",
+          "sha256": "9a058875ab4b6ef87666e0f258371e91c157a7574c434947f7e4ad50c8177636",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/ubuntu/12.04/chef-manage_2.5.3+20170523093509-1_amd64.deb"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "3a7cd8861c8d0ff2fe54a8ac75625ba7afcf271b",
+          "sha256": "f844bd288e871c569ebe26caecb09ba24b91c10d0d7c9703214aa112976572e0",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/ubuntu/12.04/chef-manage_2.5.3+20170524093511-1_amd64.deb"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "f8b29a88eaaa85d17241717407e08d53956c2bcb",
+          "sha256": "c1cd7e142d3c822c4a93d69d3e3cc912f35c4eccefa75a225b2faab0726da8a5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/ubuntu/12.04/chef-manage_2.5.3+20170525093509-1_amd64.deb"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "d74f590b541bdf7e7486ffc83966558f87ebc98e",
+          "sha256": "e296f11cb2a1b37addc724212356daa312ef02506f398ec2c2b2677783a24c46",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/ubuntu/12.04/chef-manage_2.5.3+20170526093512-1_amd64.deb"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "4d17b4452d4863089f59609f75163237513987ef",
+          "sha256": "9aee2e15f6652230ff49c245c18da990e3a2057b983afbd61a7a6892a7b43d29",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/ubuntu/12.04/chef-manage_2.5.3+20170527093511-1_amd64.deb"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "bcb2401d2edac29290b190a47d05259c5f3de104",
+          "sha256": "52a039eba0660d6df2aa92b37b8289e44d3ec703ab6ff13af0903abd652163ac",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/ubuntu/12.04/chef-manage_2.5.3+20170528093508-1_amd64.deb"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "813da229b69efb41c61e71422b088ed8ad0ca1b4",
+          "sha256": "051103a3da1c75d074aeea2cc40509f737e29d904f7c998b48d2b121ac9a7204",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/ubuntu/12.04/chef-manage_2.5.3+20170529093509-1_amd64.deb"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "d11f4533cf53bb81c99a23b0b7796d6ac70f15e4",
+          "sha256": "f85b70d35bab768d758335e67ff8e730f36f2e3da81f15a74418971a4642a66e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/ubuntu/12.04/chef-manage_2.5.3+20170530093510-1_amd64.deb"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "7a7ca4b274c904a3f183cc6ea915dccaebe49d04",
+          "sha256": "efae87f118010657170237606e5ff77eb1ab72aff7e51f8f85f339d5117e1c0f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/ubuntu/12.04/chef-manage_2.5.3+20170530203019.git.4.4132f6e-1_amd64.deb"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "67380cc29c406333447a386cae2624dec66e954e",
+          "sha256": "3b9142aa46dc41448e14403dc9ed3d51d5afe253d85f2ab4d0a910fd3ece25f4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170530213219.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "55980c04790fdf6008ffbf1b8cde1bc73a641ba4",
+          "sha256": "0f452ea421e864bc1432ef10a44b49321b9436122fe7c35b24abd418ed24adec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170531093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "a5e6a86fdeadff92df6cb0f02e0a99eafaf3cd47",
+          "sha256": "e14056b5d81e3bf0fd4a62762aaaefbc74e488e509549911d0ee2758cef898d9",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170601093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "1ed3679dc88f64ba9a54cf5baf9fd0ba43b541c0",
+          "sha256": "cb9ca4a21db4b9e7e852fddb7b5ea0788ac76273d5faee5a483a9090fd2ac215",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170602093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "9a1b45583960eb9d5054bdb8427eac906df3bda7",
+          "sha256": "0ae79198a90845253c52d8a33bed45f09d08a3b7f5c20213f03c7b7df8940357",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170603093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "c9b6c0dc04b3e51ea6fcf277dea019460bbfd9e3",
+          "sha256": "d19a35c94358ca2a291a6e6831a9487e45087d0e218d0021f41f110ad639da97",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170604093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "9cbd29f78407f592aef9e21f982dd1654be76116",
+          "sha256": "bcb809a4b01a7f38c66b109b7e4e42c683077286d5a3b92e5a9fa10eeaa5055f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170605093510.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "16510ad64f98aca8d710bcc5637de2abfa36059a",
+          "sha256": "aa769a47f8fd2a377e57f69378e7108a89e952cfb0072dcce5895e165ae97443",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170606093513.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "8432bfa6217342c651cb05731462bea780cc52b5",
+          "sha256": "8583f4506dcb5024c895fe178bb5b2471257cbb46d42da623cd8cfc899223ce2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/ubuntu/12.04/chef-manage_2.5.3+20170607093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "21f69e32fda2a634bf6be5b82420c49972552815",
+          "sha256": "6c9de019cc7c69491162f0180146f406d952f635c8ebef8bbf28ff58468a03a2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170607155618.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "a399381ad07e84f4c88d6fd7b97817be41e8dfcf",
+          "sha256": "e0014aa8302692ba3c2d06a0b006f74eeae4eb7d3fb7442e137d17313a93851d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170608093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "a91fc742b63eb3b7908971a95b83df18bab021e7",
+          "sha256": "29f1f4e0d6cedf455dc86e557e6fd04f62fdb0d7312b3ab3bba8b34957ff8fcf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170609093509.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "9045b312365e3badf83e5844c6652f21ee7e184e",
+          "sha256": "6051b00f539bd9f22c4ecee62d47c05c0308ae5fd9f05749c72cd94ee52291ab",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170610093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "7c0ec266879c312f436856e3d7f15734e4cdc06a",
+          "sha256": "7d901a6ecf4aba045107110a5bfb4d03444d61a8fbe5c2b851023407172a85db",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170611093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "fc4e8f9bbc1574e2d9e60effe23262884cf5092b",
+          "sha256": "38f3955779cbbc1d61be92a2de8601bfbf0902e03fc8f77e636080d1b4071a0d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170612093513.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "aefe976f3a63a0c5f5190372682aaade37e860b8",
+          "sha256": "4956d9ab73739708778099656468ccbbfc8715b6c87f00a29ea03aac5ee0a139",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170613093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "1fe6b3d1d6fe009ac1a3c442400ba7733aceae2b",
+          "sha256": "bfc0c4e6677227b6619a02cfe9cf5b64dbb28aafabd6b78f559b302e4552a142",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/ubuntu/12.04/chef-manage_2.5.3+20170614093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "91b4a9f419298814707f012bb017eef664f6beb8",
+          "sha256": "cba58b3f6474ae63c13c2a16dd24df46a8b1f63342d3ffc6cb96df07c941bd11",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/ubuntu/12.04/chef-manage_2.5.3+20170614163815.git.19.f069d03-1_amd64.deb"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "31b0ca71e8ba1a3657f81d43c1ecccec45a3d1b2",
+          "sha256": "9adb7a14cae9c8a01737332215228ca4b34dfc20c38d516b35a6829673f13d56",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/ubuntu/12.04/chef-manage_2.5.3+20170616170219.git.21.7ae1606-1_amd64.deb"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "7f3c124d8710d7c8595d5eb404887f300c38021d",
+          "sha256": "ed20318e22a63321e976e4baf811b3447008cac5bbe828b47a3d37e2780df1bf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/ubuntu/12.04/chef-manage_2.5.3+20170616214018.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "dddf00a3bffff293f193fc0eeb9f1d33e0f90fd1",
+          "sha256": "d877e5bb060f0401838a7f19cbe42d55a1535d183b11caee5514dae86861e764",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/ubuntu/12.04/chef-manage_2.5.3+20170617093512.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "8229d93c75061a0f7f1c8aabece526c86e348e3a",
+          "sha256": "ff3fae0e03269f2f9939a9201784aff1f4c619f8a886bf9774d9b9ad1bed596b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/ubuntu/12.04/chef-manage_2.5.3+20170618093508.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "fadc5223d9ffa7dd4072309167c951aa496805a3",
+          "sha256": "2cc0b150f8a306214397c81083de4e199cb250fbef8affc2f06b9b604a3cf7e1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/ubuntu/12.04/chef-manage_2.5.3+20170619093510.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "c955ac4f5461ecc0ef53ec3e03cc57f5f1391283",
+          "sha256": "afeed1ace9dfa064c4b2ec50021d1bb8bcffe891fe108210d020a9d15a9f072d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/ubuntu/12.04/chef-manage_2.5.3+20170619135015.git.25.4a41ca7-1_amd64.deb"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "b8985ba69a12bcabe16152bccba28a5c84c6e9ef",
+          "sha256": "f73b79fc85f5744b49e4089ec51bf2282b1be1e6a3bf41afbf0960d7eb243060",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/ubuntu/12.04/chef-manage_2.5.3+20170620061016.git.27.fdd03d1-1_amd64.deb"
+        },
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4/ubuntu/12.04/chef-manage_2.5.4-1_amd64.deb"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "e16d0c967459c3035eb5307db526dd0291bd28e7",
+          "sha256": "ca3bee81ed305f68fb07de701c8e393444fdb91ed7484ae1c93375288d8bb485",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/ubuntu/12.04/chef-manage_2.5.4+20170620093512-1_amd64.deb"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "ad12c6f351758bfb3209e95d568cfee3a9f24846",
+          "sha256": "dbd6440a3da53c7c690ce1c8533b21fdf8ff55e264f0b28de5cfd3deaf9bdde4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/ubuntu/12.04/chef-manage_2.5.4+20170621061417.git.4.20dff48-1_amd64.deb"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "a9cb1d5781f08ddbeb4f22392de5b80ac2e4896e",
+          "sha256": "eae4f5d0f79d717fc91d334428fdf2d7cc5e98fbcf8166c26cc87154022b39d2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/ubuntu/12.04/chef-manage_2.5.4+20170621093511.git.4.20dff48-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "30ab9964ee6473ee9830415c9559f29ecf796761",
+          "sha256": "0c534b28ff7f94d135baec9e6eb32a789e002ea9408947bb896592fc92d0efa5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/ubuntu/16.04/chef-manage_2.5.3+20170516093510-1_amd64.deb"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "4d4fe9baf26100c6002025da66470f0dd0d54131",
+          "sha256": "405efcd01b0d08527a95347defcad24f1cbb823223e68771fbc59de799434e96",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/ubuntu/16.04/chef-manage_2.5.3+20170517093513-1_amd64.deb"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "5b01b229e08e42e2b2f8b952bbd2556864926d26",
+          "sha256": "f63161abd0d71c1b3b95aa5cfde7dc002d2d99388d51704c4034fab6e17f68ec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/ubuntu/16.04/chef-manage_2.5.3+20170518093512-1_amd64.deb"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "2bc9807d2d758cd75237325584e0e93bbcad5552",
+          "sha256": "42d4296b4a2e9f25139c4589029165b05b07115bbadf873d9300cf783596f4d5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/ubuntu/16.04/chef-manage_2.5.3+20170519093512-1_amd64.deb"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "bc6866a64a3381075ed332cc6ac327d9b5e43a5e",
+          "sha256": "64a95c1f1845da6bc22fc5259a80af5a27e80fc48bed10c0f4f8c19a63333941",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/ubuntu/16.04/chef-manage_2.5.3+20170520093510-1_amd64.deb"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "09aa14af184a03fa708324ecb6d44a23d77568a9",
+          "sha256": "3a4d58356a574425c2ee2147dbf19cc9d7009e6e6a4698e0d41afcd52ff13e09",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/ubuntu/16.04/chef-manage_2.5.3+20170521093512-1_amd64.deb"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "da53916454c633f3232f234c3cf7a7bf5a42ba8a",
+          "sha256": "320aec71c07526e757cee3fea8685e3566dac76cbfb678f2734d319c31b76589",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/ubuntu/16.04/chef-manage_2.5.3+20170522093509-1_amd64.deb"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "0ce665af75df65af17430b29b727a7ed0c63b542",
+          "sha256": "9a058875ab4b6ef87666e0f258371e91c157a7574c434947f7e4ad50c8177636",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/ubuntu/16.04/chef-manage_2.5.3+20170523093509-1_amd64.deb"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "3a7cd8861c8d0ff2fe54a8ac75625ba7afcf271b",
+          "sha256": "f844bd288e871c569ebe26caecb09ba24b91c10d0d7c9703214aa112976572e0",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/ubuntu/16.04/chef-manage_2.5.3+20170524093511-1_amd64.deb"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "f8b29a88eaaa85d17241717407e08d53956c2bcb",
+          "sha256": "c1cd7e142d3c822c4a93d69d3e3cc912f35c4eccefa75a225b2faab0726da8a5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/ubuntu/16.04/chef-manage_2.5.3+20170525093509-1_amd64.deb"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "d74f590b541bdf7e7486ffc83966558f87ebc98e",
+          "sha256": "e296f11cb2a1b37addc724212356daa312ef02506f398ec2c2b2677783a24c46",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/ubuntu/16.04/chef-manage_2.5.3+20170526093512-1_amd64.deb"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "4d17b4452d4863089f59609f75163237513987ef",
+          "sha256": "9aee2e15f6652230ff49c245c18da990e3a2057b983afbd61a7a6892a7b43d29",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/ubuntu/16.04/chef-manage_2.5.3+20170527093511-1_amd64.deb"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "bcb2401d2edac29290b190a47d05259c5f3de104",
+          "sha256": "52a039eba0660d6df2aa92b37b8289e44d3ec703ab6ff13af0903abd652163ac",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/ubuntu/16.04/chef-manage_2.5.3+20170528093508-1_amd64.deb"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "813da229b69efb41c61e71422b088ed8ad0ca1b4",
+          "sha256": "051103a3da1c75d074aeea2cc40509f737e29d904f7c998b48d2b121ac9a7204",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/ubuntu/16.04/chef-manage_2.5.3+20170529093509-1_amd64.deb"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "d11f4533cf53bb81c99a23b0b7796d6ac70f15e4",
+          "sha256": "f85b70d35bab768d758335e67ff8e730f36f2e3da81f15a74418971a4642a66e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/ubuntu/16.04/chef-manage_2.5.3+20170530093510-1_amd64.deb"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "7a7ca4b274c904a3f183cc6ea915dccaebe49d04",
+          "sha256": "efae87f118010657170237606e5ff77eb1ab72aff7e51f8f85f339d5117e1c0f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/ubuntu/16.04/chef-manage_2.5.3+20170530203019.git.4.4132f6e-1_amd64.deb"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "67380cc29c406333447a386cae2624dec66e954e",
+          "sha256": "3b9142aa46dc41448e14403dc9ed3d51d5afe253d85f2ab4d0a910fd3ece25f4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170530213219.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "55980c04790fdf6008ffbf1b8cde1bc73a641ba4",
+          "sha256": "0f452ea421e864bc1432ef10a44b49321b9436122fe7c35b24abd418ed24adec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170531093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "a5e6a86fdeadff92df6cb0f02e0a99eafaf3cd47",
+          "sha256": "e14056b5d81e3bf0fd4a62762aaaefbc74e488e509549911d0ee2758cef898d9",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170601093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "1ed3679dc88f64ba9a54cf5baf9fd0ba43b541c0",
+          "sha256": "cb9ca4a21db4b9e7e852fddb7b5ea0788ac76273d5faee5a483a9090fd2ac215",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170602093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "9a1b45583960eb9d5054bdb8427eac906df3bda7",
+          "sha256": "0ae79198a90845253c52d8a33bed45f09d08a3b7f5c20213f03c7b7df8940357",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170603093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "c9b6c0dc04b3e51ea6fcf277dea019460bbfd9e3",
+          "sha256": "d19a35c94358ca2a291a6e6831a9487e45087d0e218d0021f41f110ad639da97",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170604093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "9cbd29f78407f592aef9e21f982dd1654be76116",
+          "sha256": "bcb809a4b01a7f38c66b109b7e4e42c683077286d5a3b92e5a9fa10eeaa5055f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170605093510.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "16510ad64f98aca8d710bcc5637de2abfa36059a",
+          "sha256": "aa769a47f8fd2a377e57f69378e7108a89e952cfb0072dcce5895e165ae97443",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170606093513.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "8432bfa6217342c651cb05731462bea780cc52b5",
+          "sha256": "8583f4506dcb5024c895fe178bb5b2471257cbb46d42da623cd8cfc899223ce2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/ubuntu/16.04/chef-manage_2.5.3+20170607093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "21f69e32fda2a634bf6be5b82420c49972552815",
+          "sha256": "6c9de019cc7c69491162f0180146f406d952f635c8ebef8bbf28ff58468a03a2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170607155618.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "a399381ad07e84f4c88d6fd7b97817be41e8dfcf",
+          "sha256": "e0014aa8302692ba3c2d06a0b006f74eeae4eb7d3fb7442e137d17313a93851d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170608093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "a91fc742b63eb3b7908971a95b83df18bab021e7",
+          "sha256": "29f1f4e0d6cedf455dc86e557e6fd04f62fdb0d7312b3ab3bba8b34957ff8fcf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170609093509.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "9045b312365e3badf83e5844c6652f21ee7e184e",
+          "sha256": "6051b00f539bd9f22c4ecee62d47c05c0308ae5fd9f05749c72cd94ee52291ab",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170610093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "7c0ec266879c312f436856e3d7f15734e4cdc06a",
+          "sha256": "7d901a6ecf4aba045107110a5bfb4d03444d61a8fbe5c2b851023407172a85db",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170611093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "fc4e8f9bbc1574e2d9e60effe23262884cf5092b",
+          "sha256": "38f3955779cbbc1d61be92a2de8601bfbf0902e03fc8f77e636080d1b4071a0d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170612093513.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "aefe976f3a63a0c5f5190372682aaade37e860b8",
+          "sha256": "4956d9ab73739708778099656468ccbbfc8715b6c87f00a29ea03aac5ee0a139",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170613093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "1fe6b3d1d6fe009ac1a3c442400ba7733aceae2b",
+          "sha256": "bfc0c4e6677227b6619a02cfe9cf5b64dbb28aafabd6b78f559b302e4552a142",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/ubuntu/16.04/chef-manage_2.5.3+20170614093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "91b4a9f419298814707f012bb017eef664f6beb8",
+          "sha256": "cba58b3f6474ae63c13c2a16dd24df46a8b1f63342d3ffc6cb96df07c941bd11",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/ubuntu/16.04/chef-manage_2.5.3+20170614163815.git.19.f069d03-1_amd64.deb"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "31b0ca71e8ba1a3657f81d43c1ecccec45a3d1b2",
+          "sha256": "9adb7a14cae9c8a01737332215228ca4b34dfc20c38d516b35a6829673f13d56",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/ubuntu/16.04/chef-manage_2.5.3+20170616170219.git.21.7ae1606-1_amd64.deb"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "7f3c124d8710d7c8595d5eb404887f300c38021d",
+          "sha256": "ed20318e22a63321e976e4baf811b3447008cac5bbe828b47a3d37e2780df1bf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/ubuntu/16.04/chef-manage_2.5.3+20170616214018.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "dddf00a3bffff293f193fc0eeb9f1d33e0f90fd1",
+          "sha256": "d877e5bb060f0401838a7f19cbe42d55a1535d183b11caee5514dae86861e764",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/ubuntu/16.04/chef-manage_2.5.3+20170617093512.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "8229d93c75061a0f7f1c8aabece526c86e348e3a",
+          "sha256": "ff3fae0e03269f2f9939a9201784aff1f4c619f8a886bf9774d9b9ad1bed596b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/ubuntu/16.04/chef-manage_2.5.3+20170618093508.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "fadc5223d9ffa7dd4072309167c951aa496805a3",
+          "sha256": "2cc0b150f8a306214397c81083de4e199cb250fbef8affc2f06b9b604a3cf7e1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/ubuntu/16.04/chef-manage_2.5.3+20170619093510.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "c955ac4f5461ecc0ef53ec3e03cc57f5f1391283",
+          "sha256": "afeed1ace9dfa064c4b2ec50021d1bb8bcffe891fe108210d020a9d15a9f072d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/ubuntu/16.04/chef-manage_2.5.3+20170619135015.git.25.4a41ca7-1_amd64.deb"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "b8985ba69a12bcabe16152bccba28a5c84c6e9ef",
+          "sha256": "f73b79fc85f5744b49e4089ec51bf2282b1be1e6a3bf41afbf0960d7eb243060",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/ubuntu/16.04/chef-manage_2.5.3+20170620061016.git.27.fdd03d1-1_amd64.deb"
+        },
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4/ubuntu/16.04/chef-manage_2.5.4-1_amd64.deb"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "e16d0c967459c3035eb5307db526dd0291bd28e7",
+          "sha256": "ca3bee81ed305f68fb07de701c8e393444fdb91ed7484ae1c93375288d8bb485",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/ubuntu/16.04/chef-manage_2.5.4+20170620093512-1_amd64.deb"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "ad12c6f351758bfb3209e95d568cfee3a9f24846",
+          "sha256": "dbd6440a3da53c7c690ce1c8533b21fdf8ff55e264f0b28de5cfd3deaf9bdde4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/ubuntu/16.04/chef-manage_2.5.4+20170621061417.git.4.20dff48-1_amd64.deb"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "a9cb1d5781f08ddbeb4f22392de5b80ac2e4896e",
+          "sha256": "eae4f5d0f79d717fc91d334428fdf2d7cc5e98fbcf8166c26cc87154022b39d2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/ubuntu/16.04/chef-manage_2.5.4+20170621093511.git.4.20dff48-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "30ab9964ee6473ee9830415c9559f29ecf796761",
+          "sha256": "0c534b28ff7f94d135baec9e6eb32a789e002ea9408947bb896592fc92d0efa5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/ubuntu/14.04/chef-manage_2.5.3+20170516093510-1_amd64.deb"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "4d4fe9baf26100c6002025da66470f0dd0d54131",
+          "sha256": "405efcd01b0d08527a95347defcad24f1cbb823223e68771fbc59de799434e96",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/ubuntu/14.04/chef-manage_2.5.3+20170517093513-1_amd64.deb"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "5b01b229e08e42e2b2f8b952bbd2556864926d26",
+          "sha256": "f63161abd0d71c1b3b95aa5cfde7dc002d2d99388d51704c4034fab6e17f68ec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/ubuntu/14.04/chef-manage_2.5.3+20170518093512-1_amd64.deb"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "2bc9807d2d758cd75237325584e0e93bbcad5552",
+          "sha256": "42d4296b4a2e9f25139c4589029165b05b07115bbadf873d9300cf783596f4d5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/ubuntu/14.04/chef-manage_2.5.3+20170519093512-1_amd64.deb"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "bc6866a64a3381075ed332cc6ac327d9b5e43a5e",
+          "sha256": "64a95c1f1845da6bc22fc5259a80af5a27e80fc48bed10c0f4f8c19a63333941",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/ubuntu/14.04/chef-manage_2.5.3+20170520093510-1_amd64.deb"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "09aa14af184a03fa708324ecb6d44a23d77568a9",
+          "sha256": "3a4d58356a574425c2ee2147dbf19cc9d7009e6e6a4698e0d41afcd52ff13e09",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/ubuntu/14.04/chef-manage_2.5.3+20170521093512-1_amd64.deb"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "da53916454c633f3232f234c3cf7a7bf5a42ba8a",
+          "sha256": "320aec71c07526e757cee3fea8685e3566dac76cbfb678f2734d319c31b76589",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/ubuntu/14.04/chef-manage_2.5.3+20170522093509-1_amd64.deb"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "0ce665af75df65af17430b29b727a7ed0c63b542",
+          "sha256": "9a058875ab4b6ef87666e0f258371e91c157a7574c434947f7e4ad50c8177636",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/ubuntu/14.04/chef-manage_2.5.3+20170523093509-1_amd64.deb"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "3a7cd8861c8d0ff2fe54a8ac75625ba7afcf271b",
+          "sha256": "f844bd288e871c569ebe26caecb09ba24b91c10d0d7c9703214aa112976572e0",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/ubuntu/14.04/chef-manage_2.5.3+20170524093511-1_amd64.deb"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "f8b29a88eaaa85d17241717407e08d53956c2bcb",
+          "sha256": "c1cd7e142d3c822c4a93d69d3e3cc912f35c4eccefa75a225b2faab0726da8a5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/ubuntu/14.04/chef-manage_2.5.3+20170525093509-1_amd64.deb"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "d74f590b541bdf7e7486ffc83966558f87ebc98e",
+          "sha256": "e296f11cb2a1b37addc724212356daa312ef02506f398ec2c2b2677783a24c46",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/ubuntu/14.04/chef-manage_2.5.3+20170526093512-1_amd64.deb"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "4d17b4452d4863089f59609f75163237513987ef",
+          "sha256": "9aee2e15f6652230ff49c245c18da990e3a2057b983afbd61a7a6892a7b43d29",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/ubuntu/14.04/chef-manage_2.5.3+20170527093511-1_amd64.deb"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "bcb2401d2edac29290b190a47d05259c5f3de104",
+          "sha256": "52a039eba0660d6df2aa92b37b8289e44d3ec703ab6ff13af0903abd652163ac",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/ubuntu/14.04/chef-manage_2.5.3+20170528093508-1_amd64.deb"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "813da229b69efb41c61e71422b088ed8ad0ca1b4",
+          "sha256": "051103a3da1c75d074aeea2cc40509f737e29d904f7c998b48d2b121ac9a7204",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/ubuntu/14.04/chef-manage_2.5.3+20170529093509-1_amd64.deb"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "d11f4533cf53bb81c99a23b0b7796d6ac70f15e4",
+          "sha256": "f85b70d35bab768d758335e67ff8e730f36f2e3da81f15a74418971a4642a66e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/ubuntu/14.04/chef-manage_2.5.3+20170530093510-1_amd64.deb"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "7a7ca4b274c904a3f183cc6ea915dccaebe49d04",
+          "sha256": "efae87f118010657170237606e5ff77eb1ab72aff7e51f8f85f339d5117e1c0f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/ubuntu/14.04/chef-manage_2.5.3+20170530203019.git.4.4132f6e-1_amd64.deb"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "67380cc29c406333447a386cae2624dec66e954e",
+          "sha256": "3b9142aa46dc41448e14403dc9ed3d51d5afe253d85f2ab4d0a910fd3ece25f4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170530213219.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "55980c04790fdf6008ffbf1b8cde1bc73a641ba4",
+          "sha256": "0f452ea421e864bc1432ef10a44b49321b9436122fe7c35b24abd418ed24adec",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170531093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "a5e6a86fdeadff92df6cb0f02e0a99eafaf3cd47",
+          "sha256": "e14056b5d81e3bf0fd4a62762aaaefbc74e488e509549911d0ee2758cef898d9",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170601093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "1ed3679dc88f64ba9a54cf5baf9fd0ba43b541c0",
+          "sha256": "cb9ca4a21db4b9e7e852fddb7b5ea0788ac76273d5faee5a483a9090fd2ac215",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170602093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "9a1b45583960eb9d5054bdb8427eac906df3bda7",
+          "sha256": "0ae79198a90845253c52d8a33bed45f09d08a3b7f5c20213f03c7b7df8940357",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170603093512.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "c9b6c0dc04b3e51ea6fcf277dea019460bbfd9e3",
+          "sha256": "d19a35c94358ca2a291a6e6831a9487e45087d0e218d0021f41f110ad639da97",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170604093511.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "9cbd29f78407f592aef9e21f982dd1654be76116",
+          "sha256": "bcb809a4b01a7f38c66b109b7e4e42c683077286d5a3b92e5a9fa10eeaa5055f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170605093510.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "16510ad64f98aca8d710bcc5637de2abfa36059a",
+          "sha256": "aa769a47f8fd2a377e57f69378e7108a89e952cfb0072dcce5895e165ae97443",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170606093513.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "8432bfa6217342c651cb05731462bea780cc52b5",
+          "sha256": "8583f4506dcb5024c895fe178bb5b2471257cbb46d42da623cd8cfc899223ce2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/ubuntu/14.04/chef-manage_2.5.3+20170607093509.git.9.bbff322-1_amd64.deb"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "21f69e32fda2a634bf6be5b82420c49972552815",
+          "sha256": "6c9de019cc7c69491162f0180146f406d952f635c8ebef8bbf28ff58468a03a2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170607155618.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "a399381ad07e84f4c88d6fd7b97817be41e8dfcf",
+          "sha256": "e0014aa8302692ba3c2d06a0b006f74eeae4eb7d3fb7442e137d17313a93851d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170608093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "a91fc742b63eb3b7908971a95b83df18bab021e7",
+          "sha256": "29f1f4e0d6cedf455dc86e557e6fd04f62fdb0d7312b3ab3bba8b34957ff8fcf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170609093509.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "9045b312365e3badf83e5844c6652f21ee7e184e",
+          "sha256": "6051b00f539bd9f22c4ecee62d47c05c0308ae5fd9f05749c72cd94ee52291ab",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170610093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "7c0ec266879c312f436856e3d7f15734e4cdc06a",
+          "sha256": "7d901a6ecf4aba045107110a5bfb4d03444d61a8fbe5c2b851023407172a85db",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170611093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "fc4e8f9bbc1574e2d9e60effe23262884cf5092b",
+          "sha256": "38f3955779cbbc1d61be92a2de8601bfbf0902e03fc8f77e636080d1b4071a0d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170612093513.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "aefe976f3a63a0c5f5190372682aaade37e860b8",
+          "sha256": "4956d9ab73739708778099656468ccbbfc8715b6c87f00a29ea03aac5ee0a139",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170613093511.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "1fe6b3d1d6fe009ac1a3c442400ba7733aceae2b",
+          "sha256": "bfc0c4e6677227b6619a02cfe9cf5b64dbb28aafabd6b78f559b302e4552a142",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/ubuntu/14.04/chef-manage_2.5.3+20170614093510.git.12.702ee1a-1_amd64.deb"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "91b4a9f419298814707f012bb017eef664f6beb8",
+          "sha256": "cba58b3f6474ae63c13c2a16dd24df46a8b1f63342d3ffc6cb96df07c941bd11",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/ubuntu/14.04/chef-manage_2.5.3+20170614163815.git.19.f069d03-1_amd64.deb"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "31b0ca71e8ba1a3657f81d43c1ecccec45a3d1b2",
+          "sha256": "9adb7a14cae9c8a01737332215228ca4b34dfc20c38d516b35a6829673f13d56",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/ubuntu/14.04/chef-manage_2.5.3+20170616170219.git.21.7ae1606-1_amd64.deb"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "7f3c124d8710d7c8595d5eb404887f300c38021d",
+          "sha256": "ed20318e22a63321e976e4baf811b3447008cac5bbe828b47a3d37e2780df1bf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/ubuntu/14.04/chef-manage_2.5.3+20170616214018.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "dddf00a3bffff293f193fc0eeb9f1d33e0f90fd1",
+          "sha256": "d877e5bb060f0401838a7f19cbe42d55a1535d183b11caee5514dae86861e764",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/ubuntu/14.04/chef-manage_2.5.3+20170617093512.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "8229d93c75061a0f7f1c8aabece526c86e348e3a",
+          "sha256": "ff3fae0e03269f2f9939a9201784aff1f4c619f8a886bf9774d9b9ad1bed596b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/ubuntu/14.04/chef-manage_2.5.3+20170618093508.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "fadc5223d9ffa7dd4072309167c951aa496805a3",
+          "sha256": "2cc0b150f8a306214397c81083de4e199cb250fbef8affc2f06b9b604a3cf7e1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/ubuntu/14.04/chef-manage_2.5.3+20170619093510.git.23.c9cc22c-1_amd64.deb"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "c955ac4f5461ecc0ef53ec3e03cc57f5f1391283",
+          "sha256": "afeed1ace9dfa064c4b2ec50021d1bb8bcffe891fe108210d020a9d15a9f072d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/ubuntu/14.04/chef-manage_2.5.3+20170619135015.git.25.4a41ca7-1_amd64.deb"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "b8985ba69a12bcabe16152bccba28a5c84c6e9ef",
+          "sha256": "f73b79fc85f5744b49e4089ec51bf2282b1be1e6a3bf41afbf0960d7eb243060",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/ubuntu/14.04/chef-manage_2.5.3+20170620061016.git.27.fdd03d1-1_amd64.deb"
+        },
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4/ubuntu/14.04/chef-manage_2.5.4-1_amd64.deb"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "e16d0c967459c3035eb5307db526dd0291bd28e7",
+          "sha256": "ca3bee81ed305f68fb07de701c8e393444fdb91ed7484ae1c93375288d8bb485",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/ubuntu/14.04/chef-manage_2.5.4+20170620093512-1_amd64.deb"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "ad12c6f351758bfb3209e95d568cfee3a9f24846",
+          "sha256": "dbd6440a3da53c7c690ce1c8533b21fdf8ff55e264f0b28de5cfd3deaf9bdde4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/ubuntu/14.04/chef-manage_2.5.4+20170621061417.git.4.20dff48-1_amd64.deb"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "a9cb1d5781f08ddbeb4f22392de5b80ac2e4896e",
+          "sha256": "eae4f5d0f79d717fc91d334428fdf2d7cc5e98fbcf8166c26cc87154022b39d2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/ubuntu/14.04/chef-manage_2.5.4+20170621093511.git.4.20dff48-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "5": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "57deea15b80fd4b72c46325fc69ffb1bd8e37208",
+          "sha256": "45d3eef600932eaaf6b095199c27858eb723cb103b26b2e08ee58fe53ec757c7",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/el/5/chef-manage-2.5.3+20170516093510-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "e3701f2c698d43d8c6060dfe2561480c84d44da8",
+          "sha256": "269c23f29ad659f12a0aa9b4327b03852cb923ded46d59f6834358a5a591faff",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/el/5/chef-manage-2.5.3+20170517093513-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "d6e7a037723e6e1d1a7fccf3df2ee3866bee778e",
+          "sha256": "d2106456bfd22f298b5b5b4a9f7bfcb57072dabe6b5571db204a90859501cc38",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/el/5/chef-manage-2.5.3+20170518093512-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "f791fb3291a318fd2a3d0e56bafece1eacd6c1e3",
+          "sha256": "aa14efe37a1ed794b7d7a02fcc540c1f2fe43d66bb6c7ac0910cf7622050c6b5",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/el/5/chef-manage-2.5.3+20170519093512-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "a9a5f2c5b6c7601d5d1fcf6a19c1f13f62e045bc",
+          "sha256": "988abe39f5aa451db4d250adbc3de60e8f250abc9c04b7fe19c56b6550574c86",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/el/5/chef-manage-2.5.3+20170520093510-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "63c44683766f1aed43dafc4ec82e5a01128db187",
+          "sha256": "1c3feaa8bb91e0efb150bc071f336feab34d1494be324dfea5bece1015229259",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/el/5/chef-manage-2.5.3+20170521093512-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "111abd8bbd29fdae6ac556c06681d2b24c72ae5d",
+          "sha256": "ddaf15bc4b8cdbfdd8c6261136fa1038342aa362a4d62a57a3bd9682bb972f65",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/el/5/chef-manage-2.5.3+20170522093509-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "e679c3c9a6b041bbc947dac40374610a3713667e",
+          "sha256": "90f04842dfda0d8d804c5f8a552cf91fd7cf134db60ef4334c02748a98915331",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/el/5/chef-manage-2.5.3+20170523093509-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "50a4d4ce8638eb1e7e7ef41a145c0768f6aa1d31",
+          "sha256": "d477ea6377e8754deb4079084de66344bac35e271c0590034ab08973afb7a70f",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/el/5/chef-manage-2.5.3+20170524093511-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "f09042a5f6f35716bef583dcf39ab11a4374f6e8",
+          "sha256": "52c78526117725223b54d4db92f7b2d60dce773b7b29fd811899cb3f6474f080",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/el/5/chef-manage-2.5.3+20170525093509-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "9f7f9534e62776bf63cbb6a403ab85d27f6945cf",
+          "sha256": "3cbe1c50c5ddefd66df3db47f7e2d5d98befdf4a46c09de413a1ace33ea26233",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/el/5/chef-manage-2.5.3+20170526093512-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "713ae96ecdeaa6ea61bdeb5352613d6e9c4c5123",
+          "sha256": "846dc623d51fed7761074c340d1268d2a5b085a1c21c1791e7d6a6d7eb83594a",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/el/5/chef-manage-2.5.3+20170527093511-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "d1e8a287492a48e84d3cb3d8111a24a8302ecf71",
+          "sha256": "05016c413ddb98d975e3d27632333a76efc433a9202b540662a7864fd09326e1",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/el/5/chef-manage-2.5.3+20170528093508-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "11d2fcaf56a24793dc84e1c7894df38a7351b298",
+          "sha256": "98359a976736bf79cae28d1e33682514916bd70d9ca6d3befa20d2a2cd939138",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/el/5/chef-manage-2.5.3+20170529093509-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "f947c8e99673ba6fbc4c3b43c1c6ebe058efe610",
+          "sha256": "2081beb25c3720f8cf3affd6e37151ef69f3a4f826c3dcf7784ce60a1c6cad77",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/el/5/chef-manage-2.5.3+20170530093510-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "cd6aa882a877d8bcdb6a2585331748deaf500233",
+          "sha256": "9b6c634e782f0a5ea0e44bc0fda987b5b3ddd846bd5c8ef28a2c20c37bafdc21",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/el/5/chef-manage-2.5.3+20170530203019.git.4.4132f6e-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "0bba3be78d555c5ebaf78f77c4f9ac3a93717eb5",
+          "sha256": "c6cd8700dec65676d6fe73f6537b292bfb048de3f5d9ea4963cc8b51b846013b",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/el/5/chef-manage-2.5.3+20170530213219.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "088281e4d984f66a700709297112e6fd7a81ed04",
+          "sha256": "a6fbda7d3ec3d9487037ed1edaafa4893d37aa81a32d2c6c14b5e16a38a4bf42",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/el/5/chef-manage-2.5.3+20170531093509.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "c95aecc25abf436396d67350bd280912b68ea1b3",
+          "sha256": "6779ea7f5829c7d9365ba6a9bf6bffec940f9266e969527e5044596c6419b820",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/el/5/chef-manage-2.5.3+20170601093512.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "636b828e6473d300a73208718b60ef88a3479011",
+          "sha256": "01a505fd5f106cb50fe41c4cb97f6df9613fcf078716befd69bc420b1570841c",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/el/5/chef-manage-2.5.3+20170602093511.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "0fc9c7c3a0ce56f117d5f86783e5251b53b2641c",
+          "sha256": "2cd889adad1c20a7a81b302eb8cf3d3dd8468baf9d5a03b9ca1043b4e891f25e",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/el/5/chef-manage-2.5.3+20170603093512.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "94e1943c0485cd93829008fc1c76c2457c8aff66",
+          "sha256": "86fae13bbb60ba6fd9b09642de56c94c81c703a8187bd0ffdf1eaadaafc3add1",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/el/5/chef-manage-2.5.3+20170604093511.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "3a3a4e1fdff773b1d6dfe0f9a1c000354a6a02a0",
+          "sha256": "7b84cec84ee5ce7c3d667bad2bcbd5450b65a16aa1d361a42dc5b864e4ee8118",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/el/5/chef-manage-2.5.3+20170605093510.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "20b30c7e10071160f67350e2ac2b71f9a48bf448",
+          "sha256": "dc013a78421bc81ec426c37a92140cd35591a852aa7e0086a4934fe64550988d",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/el/5/chef-manage-2.5.3+20170606093513.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "59ae639a7f2df0c0a5ad72ce72939bff02094968",
+          "sha256": "6530698e4af6df3d2e130ef2c21a8f644774c066208f7fffc231cbbc73222c43",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/el/5/chef-manage-2.5.3+20170607093509.git.9.bbff322-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "c9bb494e5bcaacbe84957d95e256842f8b4bc639",
+          "sha256": "32e78ede5ab5633ffd59cc24a89f7f7a3ca9d223394d3ee2522a5477a890f59c",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/el/5/chef-manage-2.5.3+20170607155618.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "73e856d45fe176d22d4207763fee531341479384",
+          "sha256": "d99418c6d5a2fe974028cae4620f6cd569de6422f98cb7e1d593284f842be2d9",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/el/5/chef-manage-2.5.3+20170608093510.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "214f9c014f804a7ae714dfccf5c1405b10520de0",
+          "sha256": "0df7eb568167a9c25c31b41d3eb515de4fe87c28dd28b675e1d34e1cf4d2ff93",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/el/5/chef-manage-2.5.3+20170609093509.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "ffbfae6d6f555fd6bd85cf57c912da72e61d6430",
+          "sha256": "66adda11f24dcfb14424af16c8baf44c3e38ecf0809654dc6f72e8361ed42caf",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/el/5/chef-manage-2.5.3+20170610093510.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "47a56790246bd16ce19ccf12c58524b45d3ae706",
+          "sha256": "49421d69ad3347be382d806028767c42a9297c6e303bfaced65b2f3870ba5f19",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/el/5/chef-manage-2.5.3+20170611093511.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "57ea3426fa0ede0129ee5078d4d9da731a88852b",
+          "sha256": "e4e14abc1597cc4b59958d30eaf66dc8bd9a010f86f78f3cfe6c27b471229dfd",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/el/5/chef-manage-2.5.3+20170612093513.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "8522924c9369c3070b83994e56a6ca1d20969090",
+          "sha256": "7a6d1db2b5967a4354f8fecec36d747e4091692c11b27573520de66132b9b42f",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/el/5/chef-manage-2.5.3+20170613093511.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "5c8722db6fa5c32a859e261262df3ea6e3fbd125",
+          "sha256": "3c86511af325b07b0e2c67b23a9b3e7d0e3871a4184d944a9337f0077c768392",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/el/5/chef-manage-2.5.3+20170614093510.git.12.702ee1a-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "d93e9dd19d18901ec528c5939acb0b1c07002edc",
+          "sha256": "f54480056b7eb762b23776c070907c270572e67f671a1286d1bc4f595a9e4d05",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/el/5/chef-manage-2.5.3+20170614163815.git.19.f069d03-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "fb08f9a3a8aef8a35ba0aebe76ef9192ea6eaa2d",
+          "sha256": "725fb97d84478dd0f9ad2b8fe8801829db08eb42e56a82d012ddffecb3ef9ee6",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/el/5/chef-manage-2.5.3+20170616170219.git.21.7ae1606-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "b9f069a943621cbbee3fac94846e499cdc60a866",
+          "sha256": "6029bb6e8567d805c5f86b895f5d380111af8165f2fe3b0aad01eee3cb52c54f",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/el/5/chef-manage-2.5.3+20170616214018.git.23.c9cc22c-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "682309169d931f131024c71617267fdabe466de3",
+          "sha256": "3a5d6d049ae727227da4bd7e11a1079d73ca6eedc02453a812ce036b7cf94012",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/el/5/chef-manage-2.5.3+20170617093512.git.23.c9cc22c-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "6d91e833be9d7e1b956540c1cf727ab093151f6b",
+          "sha256": "25dea3fc06a249aa237a6958136923a80b2fc30520ec9b25ac884e74468cbb44",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/el/5/chef-manage-2.5.3+20170618093508.git.23.c9cc22c-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "aa7f9a7298d07cf807b68675437fd77398a76b40",
+          "sha256": "20284fef572211405929267c855579a60260ce54476903a5bfcb40eab4b272b3",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/el/5/chef-manage-2.5.3+20170619093510.git.23.c9cc22c-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "c2a94d0f9707c571469c05babedf830677a2b348",
+          "sha256": "173c6d72b050a5a279ccf0c7a4ff685693fda88ccd5421edf28ac7d82414de3a",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/el/5/chef-manage-2.5.3+20170619135015.git.25.4a41ca7-1.el5.x86_64.rpm"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "51532f3dc3dc6450cc28457ffa0c99dfa9f01305",
+          "sha256": "49af7ffd19c0cd34bc1cb505f8c83f5399825590589639268cd249cc2f508237",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/el/5/chef-manage-2.5.3+20170620061016.git.27.fdd03d1-1.el5.x86_64.rpm"
+        },
+        "2.5.4": {
+          "sha1": "0a0e4ec206ec02fe0d23e2759c30e1e0607c1064",
+          "sha256": "c5367f6dbd6b4c08fa11fa589d21b1aacc52e6bd848dc6b1c1cadb7fcd5f59fd",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.4/el/5/chef-manage-2.5.4-1.el5.x86_64.rpm"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "c403b1eb07e3feafbb547b23e232cea277749bdd",
+          "sha256": "d731fdf1e224a1e9c1ef5cf27cb64ad4318bbc902d868cbf7bf3fbb75bc756a8",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/el/5/chef-manage-2.5.4+20170620093512-1.el5.x86_64.rpm"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "330c0c279afcea2eef60760f968fb75231bee972",
+          "sha256": "6268dc5ba6b2b970725782fc902aec9ff3e87c180dcadd3c59783080d26dcc95",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/el/5/chef-manage-2.5.4+20170621061417.git.4.20dff48-1.el5.x86_64.rpm"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "7c15e12cb075b6405e392bb7218e44ed3ff5ad8d",
+          "sha256": "e29077e7c148eb79dc092569227cae6cc8ab1f315be066dbe0b1aa5e1fdf446d",
+          "url": "http://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/el/5/chef-manage-2.5.4+20170621093511.git.4.20dff48-1.el5.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "a22e32a6854183a7d4537f913c9190f920ffd111",
+          "sha256": "bf9357e37b736f09a02b28a94a544d62aaf52d39875de3cd831cbde02f1d561c",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/el/7/chef-manage-2.5.3+20170516093510-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "6622ddce6ab18ba3ffa445297a2290abe57ed493",
+          "sha256": "cdb44cfcfbd7d9a3dda79b913e597083ea3545b8e51649e8475dfea6fea59988",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/el/7/chef-manage-2.5.3+20170517093513-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "85f4d02fceb60b8b6a0fcda2449fb19c55bc256d",
+          "sha256": "9470cbbaf7dbce101888f91c9b7ce6fa6139aabecc1c5031cd53d6f7fbdee1e7",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/el/7/chef-manage-2.5.3+20170518093512-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "a38644044dd0c2bf4c9e3c92162a1ace5920ac06",
+          "sha256": "878ba1ded3025896ee7ccbfb09c4ce66503ec6f7c858faac23e3bcaa114ad841",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/el/7/chef-manage-2.5.3+20170519093512-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "4d07c1850f1e1b47c4078a53fff06f7786764b8f",
+          "sha256": "e9ed152f42e6fd4fbafec7fdc9e16be5b82a3eeceb493ee215af20e6b038cadc",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/el/7/chef-manage-2.5.3+20170520093510-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "924a366b90c1753ad46c8aca893d1f44a0706c35",
+          "sha256": "d37de1a7517453859c384dbc4307c2e379ba55fbcd68d8f0d1c3d09e185a3937",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/el/7/chef-manage-2.5.3+20170521093512-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "f7e79470a20c0ed3156965b05a7d7e6f3f3113b4",
+          "sha256": "15a67d160cf7f3211152e776dc984d0242810f164320cc1cbba0a12e80661311",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/el/7/chef-manage-2.5.3+20170522093509-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "32381c4d8cde3cc778418eab25d4dd459557f384",
+          "sha256": "458fb013004a29af284f3a1c0b54d29f7ef3316f167eb72965eb3099da36549b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/el/7/chef-manage-2.5.3+20170523093509-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "7073d30818d01ab0226d18dabeb5883d679e7d97",
+          "sha256": "0137d09b791dc205269bf57e269a742a06762fa8a57d70d0210728d821176c77",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/el/7/chef-manage-2.5.3+20170524093511-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "14b553e2749153e2595d3f2ef16579abc73c82d7",
+          "sha256": "31a86de9e80b3c46c0a24990c13e84dde84e9e0c9075f6d4ddca833a504e89cc",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/el/7/chef-manage-2.5.3+20170525093509-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "5cea0b36dd036edadc74af9adde9611b95efdfac",
+          "sha256": "8a445c1c48a4fb1cf45c43b3a44040c0b5faa9c9de14be1ee55c7091f2256e78",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/el/7/chef-manage-2.5.3+20170526093512-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "be092cca212f85090292492ec26e12fdc587d5d3",
+          "sha256": "00f4d340aaa7bf7e70a20f0455cfff24df66997c997af309d67f6e5b11cd4e6d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/el/7/chef-manage-2.5.3+20170527093511-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "6cba847ceb7357d81a2b4a261f001d30ad197e7b",
+          "sha256": "afcacab85e1781227b192f3658c9f5e38c94a9dd10e2e38047f39540b1f6bfa6",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/el/7/chef-manage-2.5.3+20170528093508-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "52134aafdd4a93570afd371d23fb056bcf5075f8",
+          "sha256": "e606e91b2f04e42b7deb74cc8ed16b5fa3304509f6d943f35a1af6d61493b6a5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/el/7/chef-manage-2.5.3+20170529093509-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "961d41170eb0f313e1621ba1aa45b24edf4a65ba",
+          "sha256": "9cb2b978460d0288234fb1f4dec18dd32d369f674f046acbb35f2e3a2d963a79",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/el/7/chef-manage-2.5.3+20170530093510-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "9ceca8dcdada8918140b27b9a04e69433dc15434",
+          "sha256": "1929c22b746e508163a1c2a8823bf9e2829c948eeeaba913d2691708dc9e9904",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/el/7/chef-manage-2.5.3+20170530203019.git.4.4132f6e-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "50a728519c88738d8e86208e97ef1f5f4c416b6d",
+          "sha256": "e66f2019a8d5ab9b0afdf54f034e8632c0d458593c667d793529cac26d44e8d1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/el/7/chef-manage-2.5.3+20170530213219.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "28ca9797d6c1fe9793c0fc092abd2d1750505ea1",
+          "sha256": "6eeac1ede4bcd1f1200c7eb00c51329aefc4fa6a9cfd056d6ddcdc38b248c7b7",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/el/7/chef-manage-2.5.3+20170531093509.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "27bba35c34abc91b651b599c9f2fe6d045c88e7c",
+          "sha256": "cb016341fb60c596422542d160798f5d25307d7c887a40274f2dcc8f0c118ba4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/el/7/chef-manage-2.5.3+20170601093512.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "ff481a357ae9d95e07257c167f17f84ae2681e0f",
+          "sha256": "6af04928ddaad8dbe8febfdc1739cf365f5c13d0d52770011a46c32f594e3b0d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/el/7/chef-manage-2.5.3+20170602093511.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "f1d43f80888942eeae05620103405bbbca5745e8",
+          "sha256": "88fab5dc6cd871a43a4caf6e039eb2547e9253763ccefa6e6974146c0304aea7",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/el/7/chef-manage-2.5.3+20170603093512.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "75c4f54ec766da9a91bb9865820468505824cad0",
+          "sha256": "5bdc83339886216ed5f6f222735180c4141b7708725b37dd3c25412d2599a6e1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/el/7/chef-manage-2.5.3+20170604093511.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "f19268d59d206f71149f33a847aff1cead0c65ff",
+          "sha256": "f167e9a740d8be02c029949fe97abe49a65bc01f5bc42011c8997024438d8c88",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/el/7/chef-manage-2.5.3+20170605093510.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "65584e8508e7e3aedbdc707c1fe8b8a8ed6547fa",
+          "sha256": "34ffdd9d148da9602aa4dcce44b725d021bca6a3ddfabf36b68a75aa9931af6b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/el/7/chef-manage-2.5.3+20170606093513.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "6fca1de59af1eab41f12e3dd816f6d40a61f8659",
+          "sha256": "144c04d86b74c38f2022b390b774080164ae66ac5eaf29bb36b17f4e4c79db8a",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/el/7/chef-manage-2.5.3+20170607093509.git.9.bbff322-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "a158ed9ccade153ba6944e3f0ab0564f4f2f7c9b",
+          "sha256": "c4f98377471744796d159aee7650c2244059aa3b96884fc1cbbc8e1dc35c46ab",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/el/7/chef-manage-2.5.3+20170607155618.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "34277da29fe248a55f5cca094a609c92da748ed2",
+          "sha256": "e1151dbf789a3b0d92d981a9caaeb6f1c04d37729c30c07aaba35afec9024f5d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/el/7/chef-manage-2.5.3+20170608093510.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "e4482ac7eeaab2185ffe73940cf2d8bb635e0d7b",
+          "sha256": "2d61a5ecca84d955c11b2be74ad907a82e0c387745761cd8b54394c7a5e87fc7",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/el/7/chef-manage-2.5.3+20170609093509.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "4400bfd3a4ad4a8c3524d92a50928ae3f6c5ae5b",
+          "sha256": "56123d4c8978083c2257e7a1a5c0fc05ea1e6e3ce29df972e859d41ffc2837b5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/el/7/chef-manage-2.5.3+20170610093510.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "e10cdba02ccacf9caa86e24879504ee39d7330dc",
+          "sha256": "e449ca71b9e35e7c4dfa2594ba6cb20cc0a7c11e794ae50207f93a5fd8051ce2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/el/7/chef-manage-2.5.3+20170611093511.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "0a0aebe60afd66342ceec3c0797427360badc7f5",
+          "sha256": "4e020744da4b0b522fd38ef9eb3bd1cd4a655b6f630cd4ab6b4471d600f66546",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/el/7/chef-manage-2.5.3+20170612093513.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "64adddf7859e2df714416390fab2acb4869abef7",
+          "sha256": "1ae6587b93e3907fe2c72fea7300afc6290dbb7b8bfc5141380377341daf3bb6",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/el/7/chef-manage-2.5.3+20170613093511.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "8e065e5e1c63b87af7bc4c2dd40efe79ab449d72",
+          "sha256": "c080507d56c1510a98e2b74e3651cffca86f98ee58f77506ea020006a842a77d",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/el/7/chef-manage-2.5.3+20170614093510.git.12.702ee1a-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "310a15990c0be5d4aa78577b0d24c932faf08230",
+          "sha256": "057cf547088ed2b23a08480b6a455912cf4814735045edcfa8b1e05c2142f3a5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/el/7/chef-manage-2.5.3+20170614163815.git.19.f069d03-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "acde1391efda9dc902a901e3b76c8caf96b98059",
+          "sha256": "45952ab53174c8fc74a56e8134bf4233fdb1ab0c398a187ae3accdfc63b38b22",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/el/7/chef-manage-2.5.3+20170616170219.git.21.7ae1606-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "de2cbf41498bdaf6443feb5a21acf9eba2c0584a",
+          "sha256": "ff471f06bad20c25b0297ae9b3822da467f3afc470a0eca9e93e781dc71723c5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/el/7/chef-manage-2.5.3+20170616214018.git.23.c9cc22c-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "35e4f4bec57dd0bc0c88f40c9d082cfb7d8d4206",
+          "sha256": "b1806b54ee53aca8a839d5da3c9ebf7e330aa3adf5848c9f2c0708cab22b384b",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/el/7/chef-manage-2.5.3+20170617093512.git.23.c9cc22c-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "9ea7622142f4bc349bb01ea765ec26519391eb62",
+          "sha256": "a27f8c876313980fdb9bd42132c6eb26fc590f6dfe4aaac76dba41c547e3e92f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/el/7/chef-manage-2.5.3+20170618093508.git.23.c9cc22c-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "1640795bba60d697e8b9090bae458675800b64e2",
+          "sha256": "2986dcef9ff877752e963f35da49fff89911a2580cfd3d212afb6d4e159e7842",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/el/7/chef-manage-2.5.3+20170619093510.git.23.c9cc22c-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "2a627d9e7d10486b8060b4a195b24f9fccbbcd97",
+          "sha256": "4e8fdda25bc718bf23a4b9489069b4362a9a0d375cf8898516b99b5b88d350a6",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/el/7/chef-manage-2.5.3+20170619135015.git.25.4a41ca7-1.el7.x86_64.rpm"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "7b4793332c64253ff65ecad9e7778c27e97bac87",
+          "sha256": "aef1b0bcaffe97b8e9c8ab00f2ecf13d2973c56bb79efaaf3cfbd08d4ce0ebda",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/el/7/chef-manage-2.5.3+20170620061016.git.27.fdd03d1-1.el7.x86_64.rpm"
+        },
+        "2.5.4": {
+          "sha1": "dcaa545a045ec84df94222c6294fff617fb8664e",
+          "sha256": "d01403cf5c1e5e4284ba9302d1f111733a7fe5bdd5ae9cc8da352f5d0cf9bd82",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4/el/7/chef-manage-2.5.4-1.el7.x86_64.rpm"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "fd51194625e9b279fed8e96a9ebe714e6157f904",
+          "sha256": "5dfe7967094f7228c9b845bbca00c9c8a656df6aecff58e534243db4946e19d4",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/el/7/chef-manage-2.5.4+20170620093512-1.el7.x86_64.rpm"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "6f1ade163bf70a04969c00448254b31078bb63bc",
+          "sha256": "0f40747837dfebdb1ec24f39160171692bd13a8fb89791c7e62ef3952e229571",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/el/7/chef-manage-2.5.4+20170621061417.git.4.20dff48-1.el7.x86_64.rpm"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "8ee5dc183efc9208dd860ea17386b97c94d7b1c2",
+          "sha256": "56de54a42f040c9666ea96f55d02110527856e34c6b7733d6e5db7d0a6542968",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/el/7/chef-manage-2.5.4+20170621093511.git.4.20dff48-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "2.5.3+20170516093510": {
+          "sha1": "ba166bf10bf32985e0b6e73e82e2e57a504d9131",
+          "sha256": "238d939a8bbe9366cf1f384f1f3c16e0196f0257e1b500d7e1c5d77def7bc291",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170516093510/el/6/chef-manage-2.5.3+20170516093510-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170517093513": {
+          "sha1": "94fd4a3299cb82dbca2408478e3cfee73750d048",
+          "sha256": "6e385578b083d87125591133030d1e142e0a8fe73f3f79357d2f86b1971b7277",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170517093513/el/6/chef-manage-2.5.3+20170517093513-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170518093512": {
+          "sha1": "e1aec38fce0b176edfc3f6afba3a3444c2a52186",
+          "sha256": "86632297cdd28fa0045380f6aa305c8b3212bae11ff9239c0a97bb0e654d104e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170518093512/el/6/chef-manage-2.5.3+20170518093512-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170519093512": {
+          "sha1": "42a389d4649bc28aa2190dd38bf3e4b43322c21c",
+          "sha256": "e7627273625124b42716461d1cdd2f4736ce33c45ada1ac190b9de12c4f73240",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170519093512/el/6/chef-manage-2.5.3+20170519093512-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170520093510": {
+          "sha1": "364b64517d0b218fd935e44a043743a3ffd82302",
+          "sha256": "e6974557140ce83f9288d7f03ff46d52ca4d52209da8978f13dd26a790cc7710",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170520093510/el/6/chef-manage-2.5.3+20170520093510-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170521093512": {
+          "sha1": "2a2493db0034006b0999d8698c51d00265b147cc",
+          "sha256": "8f35819fe596727c8e46b03b8c489a078e98b7ea1d100d5e05a9974812405af5",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170521093512/el/6/chef-manage-2.5.3+20170521093512-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170522093509": {
+          "sha1": "4ff72ae61c3ec781647ebfa71ba887572ef620e9",
+          "sha256": "ae0354e5d4f96a4b92bbfd8d74c75ac86f71bf98fd58f1fe6be1123564ff99fc",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170522093509/el/6/chef-manage-2.5.3+20170522093509-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170523093509": {
+          "sha1": "8fe59e5127af60c1c5c496e64b6fb80013ebc83b",
+          "sha256": "288774c657eb63881adaa3b309020ff21ac30c594eaabb061892c53c2886d6fa",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170523093509/el/6/chef-manage-2.5.3+20170523093509-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170524093511": {
+          "sha1": "311d6c102ea8dd72705cf129553aa7a21153f7d9",
+          "sha256": "1f9fe9beb4e2b8da9e2ab200b57b9f4a00afb77a2eeeb70b1448ad174989c94f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170524093511/el/6/chef-manage-2.5.3+20170524093511-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170525093509": {
+          "sha1": "2e02afed89a123dd568d1929542bb60e103d86a4",
+          "sha256": "aef59bf6f677b6116dfa00816a76406deaea049acb2f5acc8deed8576079ab00",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170525093509/el/6/chef-manage-2.5.3+20170525093509-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170526093512": {
+          "sha1": "a876791fc7354ab8df1de0a643471d13d6365ecc",
+          "sha256": "5bc969ef5ecf8be372e14cddc9b04a31c7fe91b32a515f4f1f3c664607e458b2",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170526093512/el/6/chef-manage-2.5.3+20170526093512-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170527093511": {
+          "sha1": "19d6f359fce52deac9fef3dd11689f6f9081f658",
+          "sha256": "226dd4580abfd418ce0dbe0b9827837416c6838fe2a6379c20ce11f9649ed51e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170527093511/el/6/chef-manage-2.5.3+20170527093511-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170528093508": {
+          "sha1": "a04542f11e4e80fc8fbf06ec90923215061cb84b",
+          "sha256": "7de738e56e638ef23bf31ad642ab25dc6612a6dfa39824f29e252635a698e7c7",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170528093508/el/6/chef-manage-2.5.3+20170528093508-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170529093509": {
+          "sha1": "3d5b2925758263a5b7d91bcf38c1919ae2af2ee5",
+          "sha256": "e0395f1e475aab6ba57f57f681ca4f4aa7d95ce2b73c4e88e31736619a6b9074",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170529093509/el/6/chef-manage-2.5.3+20170529093509-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170530093510": {
+          "sha1": "935420adedc89aeadf31ca912bf2ee9564a844e2",
+          "sha256": "757efb3f16cd981bd7f669f2b554a2a9e3769699149bc9313f9cf9263cdb1ea1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530093510/el/6/chef-manage-2.5.3+20170530093510-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170530203019.git.4.4132f6e": {
+          "sha1": "d9b43572e4537876b51c7a6b71ca51eaa20a35c3",
+          "sha256": "5f8d00bd7cee6c8d36e253f9807439c16b1acbb688f166cd7c867bad3cf38580",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530203019.git.4.4132f6e/el/6/chef-manage-2.5.3+20170530203019.git.4.4132f6e-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170530213219.git.9.bbff322": {
+          "sha1": "f33ba65d9134d5de56bc4a40531641b07329cf30",
+          "sha256": "b11e1c81d8e8159b9700b038aa1e0cc33a4e089599680867180f9a702abca91e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170530213219.git.9.bbff322/el/6/chef-manage-2.5.3+20170530213219.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170531093509.git.9.bbff322": {
+          "sha1": "a947e49943d7156d924591d351f31241b5efc77e",
+          "sha256": "2798c8879d3f42a82f4febc1533a6ee79c2b74ddafad9cb07e4a9aa4ee586be9",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170531093509.git.9.bbff322/el/6/chef-manage-2.5.3+20170531093509.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170601093512.git.9.bbff322": {
+          "sha1": "5ec44102e003df407edcf0f7ed22a110e19719fd",
+          "sha256": "35e7d6addccf75268715aea9767c3d10766d084097f8e6b8865ac42f1326dacc",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170601093512.git.9.bbff322/el/6/chef-manage-2.5.3+20170601093512.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170602093511.git.9.bbff322": {
+          "sha1": "3210d00fcb82968106707825e342d6791a8f5a39",
+          "sha256": "e113f0116f81051cf9d23ea266df2361ecdcfcb90f71578371e68e22af8961c3",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170602093511.git.9.bbff322/el/6/chef-manage-2.5.3+20170602093511.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170603093512.git.9.bbff322": {
+          "sha1": "45e36d3a67ebcca6f81cd3b8b0b32dfa663f6c8f",
+          "sha256": "1e6e74c95d7bc219f74c234458898e8d43734cecc2bcf39c46f110056db276de",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170603093512.git.9.bbff322/el/6/chef-manage-2.5.3+20170603093512.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170604093511.git.9.bbff322": {
+          "sha1": "fb1bed4c8fb1b14ef7b8f6c09c3f4809820a518c",
+          "sha256": "318349c0bcc160e746b179b049313312451555e9403051f408eec59895e864d1",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170604093511.git.9.bbff322/el/6/chef-manage-2.5.3+20170604093511.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170605093510.git.9.bbff322": {
+          "sha1": "17f09c4171e3119025a95d27ce0f46d2f3e9e87a",
+          "sha256": "a3260ded0e3c8bf043181765dc9486c477c620bc0ea81bad72f1f3084459408f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170605093510.git.9.bbff322/el/6/chef-manage-2.5.3+20170605093510.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170606093513.git.9.bbff322": {
+          "sha1": "acdeb0cc0b016c5a0c5e4df6a31fd391b2ccfdd9",
+          "sha256": "88a4f6bb92932662fc4d8b550faf517d0b2b505a2fc8e7ee958ab5f513a1ae94",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170606093513.git.9.bbff322/el/6/chef-manage-2.5.3+20170606093513.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170607093509.git.9.bbff322": {
+          "sha1": "1aeecda973f4c7afb57ebdad7bc220416c7f15fc",
+          "sha256": "ba764b0960a4871cc7eb452adcbbe50d1356d847b138f24c6c642fd75532e67f",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607093509.git.9.bbff322/el/6/chef-manage-2.5.3+20170607093509.git.9.bbff322-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170607155618.git.12.702ee1a": {
+          "sha1": "807fd35054b572111f612ec8e07cac2cfebae4c7",
+          "sha256": "83658063f565dd648c5d04b591747582d02af7b65a4faa61449fd6ba4c7c41df",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170607155618.git.12.702ee1a/el/6/chef-manage-2.5.3+20170607155618.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170608093510.git.12.702ee1a": {
+          "sha1": "2c03324f5dc35cbdd9fb7251616a9fff55ff04ad",
+          "sha256": "91f100d9824facb49ee218e02604623087542783b73abeda799a55a93bacbd8e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170608093510.git.12.702ee1a/el/6/chef-manage-2.5.3+20170608093510.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170609093509.git.12.702ee1a": {
+          "sha1": "900d0253e3803daf1e4c28c33aedcfdf1a1bd5c1",
+          "sha256": "2f52002cb175ea22a30f562749966c41a520a9701100c783c6d51188b879ba67",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170609093509.git.12.702ee1a/el/6/chef-manage-2.5.3+20170609093509.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170610093510.git.12.702ee1a": {
+          "sha1": "2964f002abf21b40b33717f5be59a71cec62638f",
+          "sha256": "562464fe2e5330f3f99405af572dbe0599871c1085424bed6819e6badb12db32",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170610093510.git.12.702ee1a/el/6/chef-manage-2.5.3+20170610093510.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170611093511.git.12.702ee1a": {
+          "sha1": "de4578418826ee74fc886f30cdb120646f4aaa6a",
+          "sha256": "1574865e80626ac6b844067637c92090dbaa54e406b42e38c4892477e1d5cd18",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170611093511.git.12.702ee1a/el/6/chef-manage-2.5.3+20170611093511.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170612093513.git.12.702ee1a": {
+          "sha1": "d0f95e49e535b1da334f29c6d8315cb4216dc46f",
+          "sha256": "8d7fadadf0bda545ab39f1360bb7aac12778009a60a26c40c9bebb0089613cdf",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170612093513.git.12.702ee1a/el/6/chef-manage-2.5.3+20170612093513.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170613093511.git.12.702ee1a": {
+          "sha1": "901c7c167ad89af962c7b53ca719c7dd8b5b9ce8",
+          "sha256": "385da77718f327edc6714c3b1ab4a487925b4cf19f03d79975e7eeef49e846a9",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170613093511.git.12.702ee1a/el/6/chef-manage-2.5.3+20170613093511.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170614093510.git.12.702ee1a": {
+          "sha1": "36bcd10c90952554ef501050d7cc1d96ca88b463",
+          "sha256": "9e7be634adfccb8249a4f287449691ed8e8c18326f7d2e0983264e31a5ba4740",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614093510.git.12.702ee1a/el/6/chef-manage-2.5.3+20170614093510.git.12.702ee1a-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170614163815.git.19.f069d03": {
+          "sha1": "98f3d9188fda85f13b6f14aa3ca867bd03860b84",
+          "sha256": "2b628bd549ac58c4b4d3ada0d122bf42a42e07cbc707e4ff255649723a386f09",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170614163815.git.19.f069d03/el/6/chef-manage-2.5.3+20170614163815.git.19.f069d03-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170616170219.git.21.7ae1606": {
+          "sha1": "30e4709b1ca8415fb90410bb4f16435f2934fca2",
+          "sha256": "54894f171f4f34600f4099368cc0aad21b7ff00de7a82af3d9aedb243ccbca94",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616170219.git.21.7ae1606/el/6/chef-manage-2.5.3+20170616170219.git.21.7ae1606-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170616214018.git.23.c9cc22c": {
+          "sha1": "3c67b2554e216ef3774d7a09cf7d23a9561f8a1a",
+          "sha256": "57623731d10a0e23d186fd29908e6f8baef6dd553b6131b841bcbf310da8ec52",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170616214018.git.23.c9cc22c/el/6/chef-manage-2.5.3+20170616214018.git.23.c9cc22c-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170617093512.git.23.c9cc22c": {
+          "sha1": "cf812daace084769403b7623a9d69ee729b04d23",
+          "sha256": "32b186b72d88f269c05925f26abfe5641f162f2e2c120542dd9c41d325e8d510",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170617093512.git.23.c9cc22c/el/6/chef-manage-2.5.3+20170617093512.git.23.c9cc22c-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170618093508.git.23.c9cc22c": {
+          "sha1": "cb1353b0a09ee346c834e9c17764e437268db00d",
+          "sha256": "242d1ced73c96775529ed8a25e71c1b948ec59261827f61a2d8612376fd10359",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170618093508.git.23.c9cc22c/el/6/chef-manage-2.5.3+20170618093508.git.23.c9cc22c-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170619093510.git.23.c9cc22c": {
+          "sha1": "5cd589e5ebff7f2a3062c0b7d4b4eb68740b2766",
+          "sha256": "b07e05258621b2fe1194556e383f5369769058a8b830bf803ac9a3af432ff10e",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619093510.git.23.c9cc22c/el/6/chef-manage-2.5.3+20170619093510.git.23.c9cc22c-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170619135015.git.25.4a41ca7": {
+          "sha1": "996bd4bcfc123f72a0bdd28cffd02622b3720b6a",
+          "sha256": "234a5dd6ae426f4996d0dac99ebb8eeebbac87e99feca4d32d66c0a5f6dc8961",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170619135015.git.25.4a41ca7/el/6/chef-manage-2.5.3+20170619135015.git.25.4a41ca7-1.el6.x86_64.rpm"
+        },
+        "2.5.3+20170620061016.git.27.fdd03d1": {
+          "sha1": "af9f30c843945de354e02f25205dcce61f7fc7bf",
+          "sha256": "57857aca9a71466ca05ab9c9b23c19200006b479e1ae0078f7c9dd4b9c451802",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.3+20170620061016.git.27.fdd03d1/el/6/chef-manage-2.5.3+20170620061016.git.27.fdd03d1-1.el6.x86_64.rpm"
+        },
+        "2.5.4": {
+          "sha1": "389aa6e40980a64b6e9a9a70187fd9712dd9972c",
+          "sha256": "3850ac2989145af4d590340be2271af9c3bc477711c13dd41149c70ad243c8be",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4/el/6/chef-manage-2.5.4-1.el6.x86_64.rpm"
+        },
+        "2.5.4+20170620093512": {
+          "sha1": "8c28cd8dc6a8d42b525b00f89f0e6709fe41306d",
+          "sha256": "e1c8f57757e5b0cf9a7f2e9188103f143fd7ebaec3868c29df7b3d1170f7efab",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170620093512/el/6/chef-manage-2.5.4+20170620093512-1.el6.x86_64.rpm"
+        },
+        "2.5.4+20170621061417.git.4.20dff48": {
+          "sha1": "386d26704ed056e356756a80690b430d1c82620e",
+          "sha256": "9a1e476a9c72f50ae4d243b4fc158bea546887503514d6d5a2e4ede029a1b7ef",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621061417.git.4.20dff48/el/6/chef-manage-2.5.4+20170621061417.git.4.20dff48-1.el6.x86_64.rpm"
+        },
+        "2.5.4+20170621093511.git.4.20dff48": {
+          "sha1": "2260228933ac5c5a495a647a19150b64b8343297",
+          "sha256": "7b8991ddd6e71a3e38c0e768c8e34ec84cf2277d3759dd24ab0d1fda60b87c24",
+          "url": "https://packages.chef.io/files/current/chef-manage/2.5.4+20170621093511.git.4.20dff48/el/6/chef-manage-2.5.4+20170621093511.git.4.20dff48-1.el6.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:03:51 -0700"
+  }
+}
