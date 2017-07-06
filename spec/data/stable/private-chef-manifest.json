@@ -2,99 +2,99 @@
   "el": {
     "5": {
       "x86_64": {
-        "11.3.2": {
-          "sha1": "12ed42613f1285f637fbd7c3c26445964c7ead63",
-          "sha256": "d2afd45e8cbab48186b9bea6ef3d277d917aaa6448160bf681118ce68946e250",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.3.2-1.el5.x86_64.rpm"
-        },
-        "11.3.1": {
-          "sha1": "eb63d54151859e34415737f47715f1547cf19e7f",
-          "sha256": "960089e3896cc10b7b16aaa715e73c1f9a7de967c59491eb06bf0393d76ee8dc",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.3.1-1.el5.x86_64.rpm"
-        },
-        "11.3.0": {
-          "sha1": "d99b7cf1a585d39c407d79b76373da8553f8bee8",
-          "sha256": "094ecc4b505550882a906f104bb0c31c9054d1487c0e7b58699647c27b1155cc",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.3.0-1.el5.x86_64.rpm"
-        },
-        "11.2.6": {
-          "sha1": "6a09054e9981abe0314d057c76086db53c0a435b",
-          "sha256": "aa0cad743564b3ef51ccdb05ce8475f982e1ca2d6049557b552589098336e426",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.2.6-1.el5.x86_64.rpm"
-        },
-        "11.2.5": {
-          "sha1": "5f664f80d3bf4c525c4781531ca1141e7a479aa3",
-          "sha256": "c34807d422ab7322a0cf39b02dc773e0019b48ceb79743e109c59d2c1fc97e54",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.2.5-1.el5.x86_64.rpm"
-        },
-        "11.2.3": {
-          "sha1": "4ba4121fa8455d9a2fc425f5dd12215a17991489",
-          "sha256": "817e753b83eaf2f3621b6b084a0b826b07ef62d4958c4408e35999748169f548",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.2.3-1.el5.x86_64.rpm"
+        "1.4.14": {
+          "sha1": "df43e2b181867a96b3371b6d3ce047a609ad6986",
+          "sha256": "36f992ca61e1bfc97264926964e8af592914938d8c9598109bd082ba318426c1",
+          "url": "http://packages.chef.io/files/stable/private-chef/1.4.14/el/5/private-chef-1.4.14-1.el5.x86_64.rpm"
         },
         "11.2.2": {
           "sha1": "3fcb33bdce5b32255cba8d2b123b3ef49ed15b6d",
           "sha256": "5e547c2da018e01b82a0bbcd6a8a1bffeeee0a205355b975dbf65c9eb409da2b",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-11.2.2-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/private-chef/11.2.2/el/5/private-chef-11.2.2-1.el5.x86_64.rpm"
         },
         "1.4.15": {
           "sha1": "1527c1402b2436e39e4d4a175254661e7bf95ccc",
           "sha256": "c67b92656bcde01687156c3b753b6d42c69b0c2f680bf41d3944a515296f959a",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-1.4.15-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/private-chef/1.4.15/el/5/private-chef-1.4.15-1.el5.x86_64.rpm"
         },
-        "1.4.14": {
-          "sha1": "df43e2b181867a96b3371b6d3ce047a609ad6986",
-          "sha256": "36f992ca61e1bfc97264926964e8af592914938d8c9598109bd082ba318426c1",
-          "url": "http://chef.bintray.com/stable/el/5/private-chef-1.4.14-1.el5.x86_64.rpm"
+        "11.2.3": {
+          "sha1": "4ba4121fa8455d9a2fc425f5dd12215a17991489",
+          "sha256": "817e753b83eaf2f3621b6b084a0b826b07ef62d4958c4408e35999748169f548",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.2.3/el/5/private-chef-11.2.3-1.el5.x86_64.rpm"
+        },
+        "11.2.5": {
+          "sha1": "5f664f80d3bf4c525c4781531ca1141e7a479aa3",
+          "sha256": "c34807d422ab7322a0cf39b02dc773e0019b48ceb79743e109c59d2c1fc97e54",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.2.5/el/5/private-chef-11.2.5-1.el5.x86_64.rpm"
+        },
+        "11.2.6": {
+          "sha1": "6a09054e9981abe0314d057c76086db53c0a435b",
+          "sha256": "aa0cad743564b3ef51ccdb05ce8475f982e1ca2d6049557b552589098336e426",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.2.6/el/5/private-chef-11.2.6-1.el5.x86_64.rpm"
+        },
+        "11.3.0": {
+          "sha1": "d99b7cf1a585d39c407d79b76373da8553f8bee8",
+          "sha256": "094ecc4b505550882a906f104bb0c31c9054d1487c0e7b58699647c27b1155cc",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.3.0/el/5/private-chef-11.3.0-1.el5.x86_64.rpm"
+        },
+        "11.3.1": {
+          "sha1": "eb63d54151859e34415737f47715f1547cf19e7f",
+          "sha256": "960089e3896cc10b7b16aaa715e73c1f9a7de967c59491eb06bf0393d76ee8dc",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.3.1/el/5/private-chef-11.3.1-1.el5.x86_64.rpm"
+        },
+        "11.3.2": {
+          "sha1": "12ed42613f1285f637fbd7c3c26445964c7ead63",
+          "sha256": "d2afd45e8cbab48186b9bea6ef3d277d917aaa6448160bf681118ce68946e250",
+          "url": "http://packages.chef.io/files/stable/private-chef/11.3.2/el/5/private-chef-11.3.2-1.el5.x86_64.rpm"
         }
       }
     },
     "6": {
       "x86_64": {
-        "11.3.2": {
-          "sha1": "3e919d5b8ac2fbf14db10b9df4839f0b58b0d92b",
-          "sha256": "6766b26039ace2c4749b870cb0d7840c1546da0470840f75e41ff587fce6a8de",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.3.2-1.el6.x86_64.rpm"
-        },
-        "11.3.1": {
-          "sha1": "f6ca149f88588d3fc0288b9ef1ff97d035faa5a1",
-          "sha256": "de72abe3705f228409b8dea5cea5f7ddf392b2d272342e29f6e0c2693d44a8ff",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.3.1-1.el6.x86_64.rpm"
-        },
-        "11.3.0": {
-          "sha1": "136ef0c927b44735febb152af206123ff5b23572",
-          "sha256": "2130247b7aa27c4fe92eb82d6bf89e27a7ac638bd1eb3a59899af44e5e602afd",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.3.0-1.el6.x86_64.rpm"
-        },
-        "11.2.6": {
-          "sha1": "4553a1b20269e72cf6799d5feed67528a311f809",
-          "sha256": "d89f9b2deea34ce95d6d82c64a4f8e23c3b0ec24c4daae7eadb0e0ebdaa1cf08",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.2.6-1.el6.x86_64.rpm"
-        },
-        "11.2.5": {
-          "sha1": "d5d8bda7a3c260d42bbc79adb318cc05c794ae55",
-          "sha256": "a6c62f3f743fe3f969afeedeb8dcb07ec39f31142c1a3693b151edae84d74097",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.2.5-1.el6.x86_64.rpm"
-        },
-        "11.2.3": {
-          "sha1": "2d068c98c36c4eb548773efc616fec5c36bd2bdd",
-          "sha256": "17b592a10777726d683d1df686ab12f489efe248489ff04e9058b1821d6bf0c3",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.2.3-1.el6.x86_64.rpm"
+        "1.4.14": {
+          "sha1": "8e4a1adae112bd1ada299763f01d0086e426e018",
+          "sha256": "3a02379730fce7cecba29846b57102513772934b121cc49562763f51d89aeb7d",
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.14/el/6/private-chef-1.4.14-1.el6.x86_64.rpm"
         },
         "11.2.2": {
           "sha1": "8ffc55a8eaaf5ce31d9a37aa257bbf6ffdd0aa34",
           "sha256": "228e4244dc59725f59ac3613864c7493d2aca100b9d03f29c73248537b7e3243",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-11.2.2-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.2/el/6/private-chef-11.2.2-1.el6.x86_64.rpm"
         },
         "1.4.15": {
           "sha1": "2492ca7768d7bd4f5f1f0f9d3d18935947d6c608",
           "sha256": "5229618cedeb413bd61c542c8b797ccebc3341b827774979448f0db8e8bf9a7a",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-1.4.15-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.15/el/6/private-chef-1.4.15-1.el6.x86_64.rpm"
         },
-        "1.4.14": {
-          "sha1": "8e4a1adae112bd1ada299763f01d0086e426e018",
-          "sha256": "3a02379730fce7cecba29846b57102513772934b121cc49562763f51d89aeb7d",
-          "url": "https://packages.chef.io/stable/el/6/private-chef-1.4.14-1.el6.x86_64.rpm"
+        "11.2.3": {
+          "sha1": "2d068c98c36c4eb548773efc616fec5c36bd2bdd",
+          "sha256": "17b592a10777726d683d1df686ab12f489efe248489ff04e9058b1821d6bf0c3",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.3/el/6/private-chef-11.2.3-1.el6.x86_64.rpm"
+        },
+        "11.2.5": {
+          "sha1": "d5d8bda7a3c260d42bbc79adb318cc05c794ae55",
+          "sha256": "a6c62f3f743fe3f969afeedeb8dcb07ec39f31142c1a3693b151edae84d74097",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.5/el/6/private-chef-11.2.5-1.el6.x86_64.rpm"
+        },
+        "11.2.6": {
+          "sha1": "4553a1b20269e72cf6799d5feed67528a311f809",
+          "sha256": "d89f9b2deea34ce95d6d82c64a4f8e23c3b0ec24c4daae7eadb0e0ebdaa1cf08",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.6/el/6/private-chef-11.2.6-1.el6.x86_64.rpm"
+        },
+        "11.3.0": {
+          "sha1": "136ef0c927b44735febb152af206123ff5b23572",
+          "sha256": "2130247b7aa27c4fe92eb82d6bf89e27a7ac638bd1eb3a59899af44e5e602afd",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.0/el/6/private-chef-11.3.0-1.el6.x86_64.rpm"
+        },
+        "11.3.1": {
+          "sha1": "f6ca149f88588d3fc0288b9ef1ff97d035faa5a1",
+          "sha256": "de72abe3705f228409b8dea5cea5f7ddf392b2d272342e29f6e0c2693d44a8ff",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.1/el/6/private-chef-11.3.1-1.el6.x86_64.rpm"
+        },
+        "11.3.2": {
+          "sha1": "3e919d5b8ac2fbf14db10b9df4839f0b58b0d92b",
+          "sha256": "6766b26039ace2c4749b870cb0d7840c1546da0470840f75e41ff587fce6a8de",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.2/el/6/private-chef-11.3.2-1.el6.x86_64.rpm"
         }
       }
     }
@@ -102,128 +102,128 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
-        "11.3.2": {
-          "sha1": "5d8086d1bbb4a7846521ef57ce11949a7231017c",
-          "sha256": "13de9bdbb40cdf4db310819d7df6356690cb406a01951f5368b7e21e8880c473",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.3.2-1_amd64.deb"
-        },
-        "11.3.1": {
-          "sha1": "5dcf64ad841f32b9a553d80ebcfaaca65a57c6ee",
-          "sha256": "fb197a8edcaf5083b409784e68b2b7216d0ea9a651bc216772a6d17b3f619986",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.3.1-1_amd64.deb"
-        },
-        "11.3.0": {
-          "sha1": "ddf995f61ee258c75ab027fd3e0a888a0a3eaeb4",
-          "sha256": "9f38777aa925061eb137076af4bdd41c2cf5281c5402bc7d95887046867ab9d4",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.3.0-1_amd64.deb"
-        },
-        "11.2.6": {
-          "sha1": "e9caf4c25e1229e27db93fbade8c9bd3fc467848",
-          "sha256": "90a34beff127852f6df7af51de6ff1db872826d9b900340d293937b0deee3a20",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.2.6-1_amd64.deb"
-        },
-        "11.2.5": {
-          "sha1": "44ad9c3e342a61de430a853f1a1f1319167b8a5d",
-          "sha256": "eee3328eda6d2a33dfdf76e905623004252ed742197306553ade4059f60b96ea",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.2.5-1_amd64.deb"
-        },
-        "11.2.3": {
-          "sha1": "13dc67ba044b5b56874163d4fe64b9e3522298a7",
-          "sha256": "0b3c12f0c87d5355fbd52176711fc367c2ae50d8ac8fd68fa8d4b1f234e90bf5",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.2.3-1_amd64.deb"
+        "1.4.14": {
+          "sha1": "68985ab6d9772bb533e5ee6313398730878b79fe",
+          "sha256": "c4e934ba637a988a0404c6b8964e141a059fcf7e231a0bc1960e80594e042cc3",
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.14/ubuntu/10.04/private-chef_1.4.14-1_amd64.deb"
         },
         "11.2.2": {
           "sha1": "a90707cbbc2eba790c819ad5b397623a5bf71c76",
           "sha256": "6490b95aa46ca184390b878638496b8b217c39626856f7c2e84d971a7cc7dbdc",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_11.2.2-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.2/ubuntu/10.04/private-chef_11.2.2-1_amd64.deb"
         },
         "1.4.15": {
           "sha1": "d0ffd0b5ad1ba7f573cc0145e5ffc925db078320",
           "sha256": "9cd98c57a506b0c4edc4751ecdf9435fb85d66b3475593e28f2b0ee9250af08e",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_1.4.15-1_amd64.deb"
-        },
-        "1.4.14": {
-          "sha1": "68985ab6d9772bb533e5ee6313398730878b79fe",
-          "sha256": "c4e934ba637a988a0404c6b8964e141a059fcf7e231a0bc1960e80594e042cc3",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/private-chef_1.4.14-1_amd64.deb"
-        }
-      }
-    },
-    "12.04": {
-      "x86_64": {
-        "11.3.2": {
-          "sha1": "f5840826044167f6aec8feac82b0d9021bae8e1d",
-          "sha256": "e68e4e56add1e74e990522bfffb4a16d687940d46513ac0d06902707ad5ec01c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.3.2-1_amd64.deb"
-        },
-        "11.3.1": {
-          "sha1": "5e43409d8ec9b63a1a1da6105c19ffa8b4f4fd6b",
-          "sha256": "bc6b4dbbf33ae42e1ec42db1ed3b171b0a39e9e426e43dc6d60c33af36fff07c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.3.1-1_amd64.deb"
-        },
-        "11.3.0": {
-          "sha1": "0b8eca651f3adbbe023baa53ff187d02ad502f78",
-          "sha256": "66f13739cae6cadb358493124a58393a8cbe746e3df9e89344ff3983f8f266b0",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.3.0-1_amd64.deb"
-        },
-        "11.2.6": {
-          "sha1": "0741c95f94c810b906c6879f7237fe4c6169eab4",
-          "sha256": "9a5a1063c144b3c3e6a6d81db2e951beb3eb123a3785a295e4ee8e87b409b70f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.2.6-1_amd64.deb"
-        },
-        "11.2.5": {
-          "sha1": "2d27f04336ec62c15295bfb31879c9883cea5388",
-          "sha256": "f8e65e72d578b3cf0df0dac4420052761a5cb948b1bbcdd3ceab92882e849102",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.2.5-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.15/ubuntu/10.04/private-chef_1.4.15-1_amd64.deb"
         },
         "11.2.3": {
-          "sha1": "4be5b29dbe42d603e38c009b94f00282fb8e6f39",
-          "sha256": "2f46c4c3d02440764069f01eb39f1a7f01798652a547d55ebbc6486d1c65ebed",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.2.3-1_amd64.deb"
+          "sha1": "13dc67ba044b5b56874163d4fe64b9e3522298a7",
+          "sha256": "0b3c12f0c87d5355fbd52176711fc367c2ae50d8ac8fd68fa8d4b1f234e90bf5",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.3/ubuntu/10.04/private-chef_11.2.3-1_amd64.deb"
         },
-        "11.2.2": {
-          "sha1": "dccfa9d89d44e2cb89aa7e504f59a96711914ec2",
-          "sha256": "c987febcea672156828bfc2b9a73708ff30895dc442ac6150cea32b142d42e3b",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/private-chef_11.2.2-1_amd64.deb"
+        "11.2.5": {
+          "sha1": "44ad9c3e342a61de430a853f1a1f1319167b8a5d",
+          "sha256": "eee3328eda6d2a33dfdf76e905623004252ed742197306553ade4059f60b96ea",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.5/ubuntu/10.04/private-chef_11.2.5-1_amd64.deb"
+        },
+        "11.2.6": {
+          "sha1": "e9caf4c25e1229e27db93fbade8c9bd3fc467848",
+          "sha256": "90a34beff127852f6df7af51de6ff1db872826d9b900340d293937b0deee3a20",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.6/ubuntu/10.04/private-chef_11.2.6-1_amd64.deb"
+        },
+        "11.3.0": {
+          "sha1": "ddf995f61ee258c75ab027fd3e0a888a0a3eaeb4",
+          "sha256": "9f38777aa925061eb137076af4bdd41c2cf5281c5402bc7d95887046867ab9d4",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.0/ubuntu/10.04/private-chef_11.3.0-1_amd64.deb"
+        },
+        "11.3.1": {
+          "sha1": "5dcf64ad841f32b9a553d80ebcfaaca65a57c6ee",
+          "sha256": "fb197a8edcaf5083b409784e68b2b7216d0ea9a651bc216772a6d17b3f619986",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.1/ubuntu/10.04/private-chef_11.3.1-1_amd64.deb"
+        },
+        "11.3.2": {
+          "sha1": "5d8086d1bbb4a7846521ef57ce11949a7231017c",
+          "sha256": "13de9bdbb40cdf4db310819d7df6356690cb406a01951f5368b7e21e8880c473",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.2/ubuntu/10.04/private-chef_11.3.2-1_amd64.deb"
         }
       }
     },
     "11.04": {
       "x86_64": {
-        "11.2.6": {
-          "sha1": "2d866b9126433881054c54b6b4a14c2d07a149bd",
-          "sha256": "44d02bec4e1c6cbf15e0ae3a89786c6fe3fb3c3e10e1e6c74056d92e191163a8",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_11.2.6-1_amd64.deb"
-        },
-        "11.2.5": {
-          "sha1": "20df5b51279ae476c47f0d43db9e638f594e8d8e",
-          "sha256": "982172fe4a980544c052fd8cb30ea76569c4ab17de17d2a9d7d9c0c5bddbea5e",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_11.2.5-1_amd64.deb"
-        },
-        "11.2.3": {
-          "sha1": "f6f6fade09da6ca4a325d2400be8b851f17fdc53",
-          "sha256": "d080edf91c92f8d6f1cb3a41b3c3465601684a366a61fa52e05567ce58874cf0",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_11.2.3-1_amd64.deb"
+        "1.4.14": {
+          "sha1": "a236279217f9f2701f94a3f355e8523e7a647afc",
+          "sha256": "97260080581e3c56591762f7c5cc256036e3c38b41b86a5e6867c79ad383b4cb",
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.14/ubuntu/11.04/private-chef_1.4.14-1_amd64.deb"
         },
         "11.2.2": {
           "sha1": "09e19c80dd30acb71e3a13822e1aea220b94a0ac",
           "sha256": "dec2a8be996654ac6c90b3e051368542557b4675c02fff7836c78f44f6d02208",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_11.2.2-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.2/ubuntu/11.04/private-chef_11.2.2-1_amd64.deb"
         },
         "1.4.15": {
           "sha1": "d4d0d8ba98722d108fda9f8d772c736127fb61b5",
           "sha256": "59ce4224a612a84319c426c918ecd18c682dd61bfb9e95d87ce97a1b0ceb884c",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_1.4.15-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/private-chef/1.4.15/ubuntu/11.04/private-chef_1.4.15-1_amd64.deb"
         },
-        "1.4.14": {
-          "sha1": "a236279217f9f2701f94a3f355e8523e7a647afc",
-          "sha256": "97260080581e3c56591762f7c5cc256036e3c38b41b86a5e6867c79ad383b4cb",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/private-chef_1.4.14-1_amd64.deb"
+        "11.2.3": {
+          "sha1": "f6f6fade09da6ca4a325d2400be8b851f17fdc53",
+          "sha256": "d080edf91c92f8d6f1cb3a41b3c3465601684a366a61fa52e05567ce58874cf0",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.3/ubuntu/11.04/private-chef_11.2.3-1_amd64.deb"
+        },
+        "11.2.5": {
+          "sha1": "20df5b51279ae476c47f0d43db9e638f594e8d8e",
+          "sha256": "982172fe4a980544c052fd8cb30ea76569c4ab17de17d2a9d7d9c0c5bddbea5e",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.5/ubuntu/11.04/private-chef_11.2.5-1_amd64.deb"
+        },
+        "11.2.6": {
+          "sha1": "2d866b9126433881054c54b6b4a14c2d07a149bd",
+          "sha256": "44d02bec4e1c6cbf15e0ae3a89786c6fe3fb3c3e10e1e6c74056d92e191163a8",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.6/ubuntu/11.04/private-chef_11.2.6-1_amd64.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "11.2.2": {
+          "sha1": "dccfa9d89d44e2cb89aa7e504f59a96711914ec2",
+          "sha256": "c987febcea672156828bfc2b9a73708ff30895dc442ac6150cea32b142d42e3b",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.2/ubuntu/12.04/private-chef_11.2.2-1_amd64.deb"
+        },
+        "11.2.3": {
+          "sha1": "4be5b29dbe42d603e38c009b94f00282fb8e6f39",
+          "sha256": "2f46c4c3d02440764069f01eb39f1a7f01798652a547d55ebbc6486d1c65ebed",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.3/ubuntu/12.04/private-chef_11.2.3-1_amd64.deb"
+        },
+        "11.2.5": {
+          "sha1": "2d27f04336ec62c15295bfb31879c9883cea5388",
+          "sha256": "f8e65e72d578b3cf0df0dac4420052761a5cb948b1bbcdd3ceab92882e849102",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.5/ubuntu/12.04/private-chef_11.2.5-1_amd64.deb"
+        },
+        "11.2.6": {
+          "sha1": "0741c95f94c810b906c6879f7237fe4c6169eab4",
+          "sha256": "9a5a1063c144b3c3e6a6d81db2e951beb3eb123a3785a295e4ee8e87b409b70f",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.2.6/ubuntu/12.04/private-chef_11.2.6-1_amd64.deb"
+        },
+        "11.3.0": {
+          "sha1": "0b8eca651f3adbbe023baa53ff187d02ad502f78",
+          "sha256": "66f13739cae6cadb358493124a58393a8cbe746e3df9e89344ff3983f8f266b0",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.0/ubuntu/12.04/private-chef_11.3.0-1_amd64.deb"
+        },
+        "11.3.1": {
+          "sha1": "5e43409d8ec9b63a1a1da6105c19ffa8b4f4fd6b",
+          "sha256": "bc6b4dbbf33ae42e1ec42db1ed3b171b0a39e9e426e43dc6d60c33af36fff07c",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.1/ubuntu/12.04/private-chef_11.3.1-1_amd64.deb"
+        },
+        "11.3.2": {
+          "sha1": "f5840826044167f6aec8feac82b0d9021bae8e1d",
+          "sha256": "e68e4e56add1e74e990522bfffb4a16d687940d46513ac0d06902707ad5ec01c",
+          "url": "https://packages.chef.io/files/stable/private-chef/11.3.2/ubuntu/12.04/private-chef_11.3.2-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:47:48 -0700"
+    "timestamp": "2017-06-22 12:04:03 -0700"
   }
 }

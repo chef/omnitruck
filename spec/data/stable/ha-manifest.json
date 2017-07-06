@@ -5,22 +5,7 @@
         "1.0.0": {
           "sha1": "f6a2ca33229cd3b760a6cc466873de3552d70c3e",
           "sha256": "79966b0995b55726fe705815f64f63886b238ac086dcabcf5dcbc136fb88a917",
-          "url": "http://chef.bintray.com/stable/el/5/chef-ha-1.0.0-1.x86_64.rpm"
-        },
-        "1.0.0-rc.3": {
-          "sha1": "efa8b60043b531d051428777641ac94bd65bd732",
-          "sha256": "8b7cefa7d874a7b4480baf6ead95687af1a31ab68f2c45a691c0df25132d04e9",
-          "url": "http://chef.bintray.com/stable/el/5/chef-ha-1.0.0_rc.3-1.x86_64.rpm"
-        },
-        "1.0.0-rc.2": {
-          "sha1": "47742f8ff0f362bbcb2522c9da80c3ee4c6bee2b",
-          "sha256": "d7395c4d088b3a4ec46d5c36ef0523e4e8ee869ef4b726da5ec524d66ec22374",
-          "url": "http://chef.bintray.com/stable/el/5/chef-ha-1.0.0_rc.2-1.x86_64.rpm"
-        },
-        "1.0.0-rc.1": {
-          "sha1": "54b3b9c7e7f139bbc1b17f92a7d2ef31662f87a9",
-          "sha256": "be670b3f2ffa461f31d6ef9ce88cc6bb29c8476f62c70e84f25447eadf85ecfe",
-          "url": "http://chef.bintray.com/stable/el/5/chef-ha-1.0.0_rc.1-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/chef-ha/1.0.0/el/5/chef-ha-1.0.0-1.x86_64.rpm"
         }
       }
     },
@@ -29,22 +14,7 @@
         "1.0.0": {
           "sha1": "f6a2ca33229cd3b760a6cc466873de3552d70c3e",
           "sha256": "79966b0995b55726fe705815f64f63886b238ac086dcabcf5dcbc136fb88a917",
-          "url": "https://packages.chef.io/stable/el/6/chef-ha-1.0.0-1.x86_64.rpm"
-        },
-        "1.0.0-rc.3": {
-          "sha1": "efa8b60043b531d051428777641ac94bd65bd732",
-          "sha256": "8b7cefa7d874a7b4480baf6ead95687af1a31ab68f2c45a691c0df25132d04e9",
-          "url": "https://packages.chef.io/stable/el/6/chef-ha-1.0.0_rc.3-1.x86_64.rpm"
-        },
-        "1.0.0-rc.2": {
-          "sha1": "47742f8ff0f362bbcb2522c9da80c3ee4c6bee2b",
-          "sha256": "d7395c4d088b3a4ec46d5c36ef0523e4e8ee869ef4b726da5ec524d66ec22374",
-          "url": "https://packages.chef.io/stable/el/6/chef-ha-1.0.0_rc.2-1.x86_64.rpm"
-        },
-        "1.0.0-rc.1": {
-          "sha1": "54b3b9c7e7f139bbc1b17f92a7d2ef31662f87a9",
-          "sha256": "be670b3f2ffa461f31d6ef9ce88cc6bb29c8476f62c70e84f25447eadf85ecfe",
-          "url": "https://packages.chef.io/stable/el/6/chef-ha-1.0.0_rc.1-1.el5.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/chef-ha/1.0.0/el/6/chef-ha-1.0.0-1.x86_64.rpm"
         }
       }
     }
@@ -55,22 +25,7 @@
         "1.0.0": {
           "sha1": "cf4fd6d680b011606a825080a0164628d4c82391",
           "sha256": "c8e104acd45b9cb9312484032e804f9570af87966d8c0a8705125155cd6295a6",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-ha_1.0.0-1_amd64.deb"
-        },
-        "1.0.0-rc.3": {
-          "sha1": "b1efff1fd03ed6c3363ecae3b6a05daa663ba310",
-          "sha256": "3247d12db6f8c0d18cf65d7c39da7eb3b56a16a70d0fc8d5b7b2a1d3ddf381e6",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-ha_1.0.0-rc.3-1_amd64.deb"
-        },
-        "1.0.0-rc.2": {
-          "sha1": "fac197e01eefb1de1604b1aceb6586b2dd6eb211",
-          "sha256": "21bb0b2c142d8a3b31074abb3a44b54899509c87b883d9462e000029d5a807ec",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-ha_1.0.0-rc.2-1_amd64.deb"
-        },
-        "1.0.0-rc.1": {
-          "sha1": "b76b97fb2f34cf863235dbdf2eae9b2004e8f127",
-          "sha256": "04f709faa8d7bb638cae7b3bb66501de56cca209188f618b49f97f84dce2ea24",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-ha_1.0.0-rc.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-ha/1.0.0/ubuntu/10.04/chef-ha_1.0.0-1_amd64.deb"
         }
       }
     },
@@ -79,22 +34,7 @@
         "1.0.0": {
           "sha1": "cf4fd6d680b011606a825080a0164628d4c82391",
           "sha256": "c8e104acd45b9cb9312484032e804f9570af87966d8c0a8705125155cd6295a6",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-ha_1.0.0-1_amd64.deb"
-        },
-        "1.0.0-rc.3": {
-          "sha1": "b1efff1fd03ed6c3363ecae3b6a05daa663ba310",
-          "sha256": "3247d12db6f8c0d18cf65d7c39da7eb3b56a16a70d0fc8d5b7b2a1d3ddf381e6",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-ha_1.0.0-rc.3-1_amd64.deb"
-        },
-        "1.0.0-rc.2": {
-          "sha1": "fac197e01eefb1de1604b1aceb6586b2dd6eb211",
-          "sha256": "21bb0b2c142d8a3b31074abb3a44b54899509c87b883d9462e000029d5a807ec",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-ha_1.0.0-rc.2-1_amd64.deb"
-        },
-        "1.0.0-rc.1": {
-          "sha1": "b76b97fb2f34cf863235dbdf2eae9b2004e8f127",
-          "sha256": "04f709faa8d7bb638cae7b3bb66501de56cca209188f618b49f97f84dce2ea24",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/chef-ha_1.0.0-rc.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-ha/1.0.0/ubuntu/11.04/chef-ha_1.0.0-1_amd64.deb"
         }
       }
     },
@@ -103,22 +43,7 @@
         "1.0.0": {
           "sha1": "cf4fd6d680b011606a825080a0164628d4c82391",
           "sha256": "c8e104acd45b9cb9312484032e804f9570af87966d8c0a8705125155cd6295a6",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-ha_1.0.0-1_amd64.deb"
-        },
-        "1.0.0-rc.3": {
-          "sha1": "b1efff1fd03ed6c3363ecae3b6a05daa663ba310",
-          "sha256": "3247d12db6f8c0d18cf65d7c39da7eb3b56a16a70d0fc8d5b7b2a1d3ddf381e6",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-ha_1.0.0-rc.3-1_amd64.deb"
-        },
-        "1.0.0-rc.2": {
-          "sha1": "fac197e01eefb1de1604b1aceb6586b2dd6eb211",
-          "sha256": "21bb0b2c142d8a3b31074abb3a44b54899509c87b883d9462e000029d5a807ec",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-ha_1.0.0-rc.2-1_amd64.deb"
-        },
-        "1.0.0-rc.1": {
-          "sha1": "b76b97fb2f34cf863235dbdf2eae9b2004e8f127",
-          "sha256": "04f709faa8d7bb638cae7b3bb66501de56cca209188f618b49f97f84dce2ea24",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-ha_1.0.0-rc.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-ha/1.0.0/ubuntu/12.04/chef-ha_1.0.0-1_amd64.deb"
         }
       }
     },
@@ -127,12 +52,12 @@
         "1.0.0": {
           "sha1": "cf4fd6d680b011606a825080a0164628d4c82391",
           "sha256": "c8e104acd45b9cb9312484032e804f9570af87966d8c0a8705125155cd6295a6",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-ha_1.0.0-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-ha/1.0.0/ubuntu/14.04/chef-ha_1.0.0-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:47:04 -0700"
+    "timestamp": "2017-06-22 12:03:31 -0700"
   }
 }

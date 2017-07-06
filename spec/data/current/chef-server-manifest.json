@@ -1,5 +1,1557 @@
 {
+  "sles": {
+    "12": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "feee1f4cc3faf32e942443229181fa3440b1ef0f",
+          "sha256": "6cc8690f53759a9eec5248ab101521caac683cc436b8464f0ae8f7d24d0eff01",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/sles/12/chef-server-core-12.15.6+20170516213017-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "7982f4b49845aabd971ef9ea2fbf7f6bf612e46a",
+          "sha256": "6d84e0479c38cc5aa3d90ee4423df6a604ed571261fe35cf683ae37879cde0f5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/sles/12/chef-server-core-12.15.7+20170517144019-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "72009c0701b1fca4fe0c1baa5c8c4fac6bd829d7",
+          "sha256": "fe0efc78a7fd528d946d6b668c3bae4306b6760cc7f8b07f145e2d633a3abf45",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/sles/12/chef-server-core-12.15.7+20170518085019-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "85849e495688d8e50db98f683679cdac71c2f402",
+          "sha256": "213f1c924c4872db59477d39957cc4e8e42d92b772a63cb7fa3f695c007acd03",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/sles/12/chef-server-core-12.15.7+20170518091015-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "631efbeb1a7b8a73f498d66bd34465958d4ef157",
+          "sha256": "a3139c95e4420419608aa530c3d778d6a80d3326c245194b5272f5dab92caedd",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/sles/12/chef-server-core-12.15.7+20170531194015-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "feb22dcfee8884338cddf68d8150e3a83949d9c9",
+          "sha256": "58e5eeced33c1dcd22210b9bdf4a3a4d80b5724642125e33686928ea2f2f7245",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/sles/12/chef-server-core-12.15.7+20170606124018-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "03366ffc1de8045a4ca4e985e90138a7ca39cd86",
+          "sha256": "19a190da0a2a4cae7c95b818288069bc690098f954443f542e06de39314c0bd9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/sles/12/chef-server-core-12.15.7+20170609173017-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "7f995ab23264d2f03976a9ed275de3030a8196a7",
+          "sha256": "2d0b00e2a039c8f4e73660d62a40ca0d98bace54ad507f299c85b163eacdae0a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/sles/12/chef-server-core-12.15.7+20170611110018-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "591bac4daf448e1b3835c9056c4517869912791e",
+          "sha256": "e4ab5a4bd75464002a55267dbb287f3b371b317bcd24a683911c6fbd3ef6efba",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/sles/12/chef-server-core-12.15.7+20170612070015-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "9460011b3e4b256cf1b2875bb24a72b84c04afa0",
+          "sha256": "659c83e238fd488cc79d2a23f8693e5da9fa6c61bbdb76bed869e7cc76880e01",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/sles/12/chef-server-core-12.15.7+20170612120016-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "368818f90f7ddd157ef5d71c98f2c79f05826123",
+          "sha256": "8a68b38fca6455b51039b4bc06d06c3f09726aa80bf9d61baa5785456909290c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/sles/12/chef-server-core-12.15.7+20170612134019-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "5fb0f38009b0822014a2596273d60cb7e112a0c6",
+          "sha256": "8ed3426acd92f6c9fb1c0f0d169cece4bd97a5f1b37e47b7b86e3a38beeb6f8a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/sles/12/chef-server-core-12.15.7+20170613215017-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "4d5c1ac93b472ef36c9c6563d3c5b48e93a61cee",
+          "sha256": "73096024124f519323358632e6e713191ca3d5d37c103a39db489b4da714ddb0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/sles/12/chef-server-core-12.15.7+20170614061019-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "963fccfa229342c033f865d22aecba88cd5d38fe",
+          "sha256": "4c6402f1145ba3351b8fa2c82ad8b6f96b12e0285cc3bbd7a41e9e056a0952ba",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/sles/12/chef-server-core-12.15.7+20170616150015-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "ead763a3937c2ab65ee5cda67359ddf50ed35fcc",
+          "sha256": "c62d4c261f0205856e705c99acaa203b129fc9ebb33a203ec693ba8ce09142a9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/sles/12/chef-server-core-12.15.7+20170616210017-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "8b3d7cbc31c32176632568758b9c819cecbf97c0",
+          "sha256": "45a3b9334d928fcf3404a2d4bb9e93c461f634616a3ceb1369f894af10168054",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/sles/12/chef-server-core-12.15.7+20170619100016-1.sles12.x86_64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "6d78484caaa264c2202529104e38ae9621f4c793",
+          "sha256": "cb7f59ae0728a10fac6268df03da2d78c88a1697a22d3c5cb00db0fe555c977b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/sles/12/chef-server-core-12.15.7+20170619170017-1.sles12.x86_64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "351ac4284b11e8dfecde30eab7b318f99b386783",
+          "sha256": "a0c14d19805ff61938260ca8449eecf1cf9ee5915fe9231d5acbcf250defc304",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/sles/12/chef-server-core-12.15.8-1.sles12.x86_64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "5fef879c238cff9c304ed565316c80eb5cfdb6de",
+          "sha256": "acbd3ba16aba88fc62d286c1dc57cf0c5f12e3721d5d27ab7bb536d6bdd628a1",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/sles/12/chef-server-core-12.15.8+20170620131016-1.sles12.x86_64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "8eebb9de63fd0a6699c5f8cfb0e4346b50645f98",
+          "sha256": "a7aa10ededfc2ee06f368bec2b1fa7fda8c107a4ee2dc72c1c572d4b6eabcb1f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/sles/12/chef-server-core-12.15.8+20170622165024-1.sles12.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "12.15.6+20170516213017": {
+          "sha1": "999033bd8b8a385c2bedc3cb775ac387accc55d7",
+          "sha256": "d3ae624a3ab7836af8d274222ec2df8b4c45db424a8769a5cb17581fa5aed5b2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/sles/12/chef-server-core-12.15.6+20170516213017-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "645f98d57f2897bcddbb90784117d4e2ff7ba5d2",
+          "sha256": "dd033e0819df4e73640fb022b7cab258f54e9a1b659a4f98dce2cc60dedb876d",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/sles/12/chef-server-core-12.15.7+20170517144019-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "3cb5f3fd691a445b29edc9905660a3ca8e0d3977",
+          "sha256": "d2930fa8d15782d3440df7d263fabe17fab6073e1e2d60ab2aeb8bc8dca12886",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/sles/12/chef-server-core-12.15.7+20170518085019-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "9bcf39e71d7412d0ada3b36aec04ca9590bf9b52",
+          "sha256": "4b2a9b9bce07f488bb238b3b98c058c97c8dbdbe0a477df5765eec1d9e66b8db",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/sles/12/chef-server-core-12.15.7+20170518091015-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "7f6833024a73621cc85311e56e2fe38d2948eb89",
+          "sha256": "26221ab6cbfdcc679209b04d7c1fa1d7f0a533be1f6de253fcc4cd52b82e29fc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/sles/12/chef-server-core-12.15.7+20170531194015-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "9f0211da008609ed1b9e5315a678be65cc8fab5a",
+          "sha256": "129e377b9bceebff293a95435ee772223f77f48ec8a680fbeaa14ac290a2e662",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/sles/12/chef-server-core-12.15.7+20170606124018-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "b203a5c449da94736c6fb91cebf523612227e1a0",
+          "sha256": "5ed9a09a96d97a2c01ecd7ed0b59340ded2eda82b982245c04201e0e9c8d0d43",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/sles/12/chef-server-core-12.15.7+20170609173017-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "c84d851023ba1f2c8d1de6f27062bd424dc6aaa9",
+          "sha256": "4efcb2a84c8840fde2d97bab0a8ac27aca071ec67bed88f2f3f71191a8af26c9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/sles/12/chef-server-core-12.15.7+20170611110018-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "4ea0344e5db5a837a56ad23ab1a266dd8e3f4693",
+          "sha256": "03c2c2ebc19fb029acc7d6075dfaee0e46adf9d1d8dc396b4fb364019e56a0ab",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/sles/12/chef-server-core-12.15.7+20170612070015-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "bc98eee090841f4908d67117a8689620fe47a329",
+          "sha256": "dc98ddf79cd1a9ad3f6a12e0a29a00d23c96a7f2897ffdb98716aa9b302bd108",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/sles/12/chef-server-core-12.15.7+20170612120016-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "7863cc657ad9b99fb5a1da521f529da1c182be98",
+          "sha256": "1d53a907d1554868f6ce4728d3ccd41903af2953a3f801fb6cf98e9e157809c5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/sles/12/chef-server-core-12.15.7+20170612134019-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "e19e9bb35a8fa5175e9cc97d28357ad7b5aed4fd",
+          "sha256": "99e8dfd65f2519b1a4effd4e0de907047b7c39cc8e3b67e8ca3b68f574648527",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/sles/12/chef-server-core-12.15.7+20170613215017-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "5f04201fbd7f9bf1e9cf681469cc2adec1531c81",
+          "sha256": "aea7cc841b56556c2e05b07c1544b0c783ee3ad590a208e64aec8fa02e1cd6c1",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/sles/12/chef-server-core-12.15.7+20170614061019-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "0513727f8937aeb0200b0c4b55fd2ddc4a84063d",
+          "sha256": "f94d92a72ba1424be51288ad43ce21b0b0dbb15ce1504869dbbb31622f423cf4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/sles/12/chef-server-core-12.15.7+20170616150015-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "1d80ef7287e19169555cf39e0c033cb88fca7f4f",
+          "sha256": "fae95fe05859caea454b6758e9f4e3c0723134b6974e00c43750d2949fb78894",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/sles/12/chef-server-core-12.15.7+20170616210017-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "b064479acb42f99b532f7df80c8bdc422ac46df6",
+          "sha256": "b356c1ca5352a51c32df8ca52e77e142341b96a372b1ccad81a533f6fc1054c0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/sles/12/chef-server-core-12.15.7+20170619100016-1.sles12.s390x.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "dd5fad9cf9e30d66e29c70e046bf18fa6b1d8b55",
+          "sha256": "cba649f00d50fbefa004be594bf24ce060510890b9b1514c942903b6b64af71b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/sles/12/chef-server-core-12.15.7+20170619170017-1.sles12.s390x.rpm"
+        },
+        "12.15.8": {
+          "sha1": "b04524fdbb887a447c06d66d2433b168351c2c9b",
+          "sha256": "d2a2fc2f310ad905acb4d052d1951b6ba490572d555424cfd7035df680dd9dea",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/sles/12/chef-server-core-12.15.8-1.sles12.s390x.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "a8a1deb886f4403a350b8ff40b282daa03ff2895",
+          "sha256": "eca5b7a335b0e3a08371396bf4d4169bcb3b40a61434adfe6aa203e821b90dac",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/sles/12/chef-server-core-12.15.8+20170620131016-1.sles12.s390x.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "ea58a8020ced15ab96d8914cd0288a2d6ef01a26",
+          "sha256": "de1ef76e32862f51f3efbe966638fbb2f2281ede62bf70ee92636b129316fc2c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/sles/12/chef-server-core-12.15.8+20170622165024-1.sles12.s390x.rpm"
+        }
+      }
+    },
+    "11": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "cc0cd5ce5bbd9d11f484dab3df40ce214ff1b8ea",
+          "sha256": "49ad3b30abcc3abe5b3317929af149b1f16c80aaa576fd7fb654a2a9ef0ef7f0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/sles/11/chef-server-core-12.15.6+20170516213017-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "16efce37f5e1ead38757660ccbfa8d73ec518007",
+          "sha256": "9def1f1d617a93617f61aeb1306336fc469e18d12931410df526305d5ee9b622",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/sles/11/chef-server-core-12.15.7+20170517144019-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "afeb9aab5acfd0f58395350f60700fb14a11d359",
+          "sha256": "1d06456ac804db48a886488d4470841c866f53602e6ab1c57a512085ef16f2c8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/sles/11/chef-server-core-12.15.7+20170518085019-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "82add4f70ea3c211ac3803a972fd5a61cf991596",
+          "sha256": "3c44f8577c4242445496ac0adad1bff0ad70d9cfdd093e260a55dae571aa9dac",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/sles/11/chef-server-core-12.15.7+20170518091015-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "48d21bf68e7512b625aafbba9a75fd729768812a",
+          "sha256": "6cefc8660a8816ddfab3cd717be3564b554f9d788e96076c934aa4d412e5345c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/sles/11/chef-server-core-12.15.7+20170531194015-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "c761f4ff85506f9f113f9d7dff951895d983561a",
+          "sha256": "5967e5bf8ec91fe79478c698085a8efb99f22c3fa8264211bbe4e2f7b82ac048",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/sles/11/chef-server-core-12.15.7+20170606124018-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "523c52f30a20644ebd1d4328e524aad580f68f92",
+          "sha256": "bd9ea007ef673145abc71421010179343d52f6306e2c0d79addef2b042925110",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/sles/11/chef-server-core-12.15.7+20170609173017-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "025457cb026a5fff94208ddda7fea94198999fff",
+          "sha256": "ec599e08963162c00dec1247ab339fd9b1b8f3468d84b592364fb6dd259aa430",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/sles/11/chef-server-core-12.15.7+20170611110018-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "b12e82833f4cc9a0199fed024a0be95a013b4040",
+          "sha256": "d77aac427c12842dc0f5589e57a0f5ff4805717214a10ab658fc4b1d9400f8ca",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/sles/11/chef-server-core-12.15.7+20170612070015-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "ef8af469232b89171312200adc4049be04bd1506",
+          "sha256": "e28974d27a659479822641310d0175f3d76a3b1ef3b575a77462c50a6c1851b1",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/sles/11/chef-server-core-12.15.7+20170612120016-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "f6b4efe0e8df1322412b4cbd10823941829f1974",
+          "sha256": "303a5482ab1faf41ea814500b1453666486881efe55f7c47d92d2a2eae626ba5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/sles/11/chef-server-core-12.15.7+20170612134019-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "cf31e8a41c2fb4a5e955afcd5e950f45d9fb48bc",
+          "sha256": "882198c50954747ed111cca13d6f50042f9fc42b2b292f687a629533058b6d6b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/sles/11/chef-server-core-12.15.7+20170613215017-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "c6261ff6c265e1f66a01caca1691c371508c77c5",
+          "sha256": "8d96a2e65fe090497dcfb9264cc1cf443b5b99ed92bfab22cbca6d3bc816f0c5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/sles/11/chef-server-core-12.15.7+20170614061019-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "d8de028f9e4712c08b65ee2d063994527b36dc56",
+          "sha256": "7f10a2d12ef7e10f1b74ed3f6b3edbd5ffdc8814cf059e5315fba62b3cd03cea",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/sles/11/chef-server-core-12.15.7+20170616150015-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "53488476d656decfa72f23d01fd184e38246066b",
+          "sha256": "09bb3bc9352c9badebc2d4c2411bd7201ed930144f1b9796573acaf09f188f8d",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/sles/11/chef-server-core-12.15.7+20170616210017-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "cd9b42d1b04700e2f6467244ce9439d7d827d1ed",
+          "sha256": "77877389c66df05c188ad6edb0499cdd7196f697c23682eeda48db04c1cb8b3c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/sles/11/chef-server-core-12.15.7+20170619100016-1.sles11.x86_64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "91046d993673fb4e5bfb83eeb67a92667f4e24b7",
+          "sha256": "8cdf9e2182510e5e34d1d798932e84cb41261d6cc5137552c6e3f1fcb31161fd",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/sles/11/chef-server-core-12.15.7+20170619170017-1.sles11.x86_64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "965e9e06fd6ed93ec9e7cf0501c4d236b38d3dda",
+          "sha256": "f5e2830e96e53ef60060637cb00c65f2838b9594538ebf566ce0cdc80bf70199",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/sles/11/chef-server-core-12.15.8-1.sles11.x86_64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "256bfef1241d0d703c7aabd2adfa48f9374312b7",
+          "sha256": "46de8c808ab55dcbe8af306432b45dff3be9dd4d4bc416328a6d04ded5951823",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/sles/11/chef-server-core-12.15.8+20170620131016-1.sles11.x86_64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "edec6c679ebaeb7adbbdff23ed473d4934370034",
+          "sha256": "3786ba75586851a20bd2cfd784c5c36eb713a266d494ede9ea8dd98d122cd18e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/sles/11/chef-server-core-12.15.8+20170622165024-1.sles11.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "12.15.6+20170516213017": {
+          "sha1": "7ae6369cfc4d02a87ef2ccac168d2317d6a40d8e",
+          "sha256": "cf2d5e07d6f67c2dbaf00ab7ddc805ce2548cd0d805db72c7d0abf4c4400b947",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/sles/11/chef-server-core-12.15.6+20170516213017-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "6dcfa2822cb393add74bb10d41391a026de3e20e",
+          "sha256": "81c3045785f86553be1649239d6452de8af289bfca72faaebeb2a1304729a924",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/sles/11/chef-server-core-12.15.7+20170517144019-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "7967d193381984c9973823739ef44f06964c1cd6",
+          "sha256": "8b5002954226c8115c77e6827480c9de777eb85caca2e98b069c2f502a179135",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/sles/11/chef-server-core-12.15.7+20170518085019-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "ac134ad53aaebdb03b364c319269fb74df4f884b",
+          "sha256": "b9bf131e02381464febe32acb530dd5d1ed52cbb104d42392ef2e23530081e12",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/sles/11/chef-server-core-12.15.7+20170518091015-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "fe6541fb1d6e05c91a4ba7c903f2b990b0133393",
+          "sha256": "82eb50b5b289c0f03ef039464f249741582b8a111a7b9ec32c2111e2cac4c1f7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/sles/11/chef-server-core-12.15.7+20170531194015-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "047e3876b542f9df4bc279a42c3c1dd5e2d597c5",
+          "sha256": "36dd19616ce5a5f0fb99ad58dd4d4f42d6d1b96b0aaf849e7d54c33609698cdb",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/sles/11/chef-server-core-12.15.7+20170606124018-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "ba71af4a2aecfaf42dee98ac2bd07472aba01c52",
+          "sha256": "c36db8ef1113c1cd281a65207085877ceccb98d9a1ae6ffb8ec2d41ffd1d5de5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/sles/11/chef-server-core-12.15.7+20170609173017-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "3dad413cc7a2505c1b45b4bd4bde4c5ca2053e78",
+          "sha256": "60f03683acce3411d92b89b77fcb8b5fe0ec6e6b4d4df7b5e0d0d70facdfbbff",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/sles/11/chef-server-core-12.15.7+20170611110018-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "4faed75a886a2069584dcf659fc019f4cbd552a9",
+          "sha256": "51fefc83f822d94c63d7fc6629880169c171b25f7ab372183890e7daa54c468e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/sles/11/chef-server-core-12.15.7+20170612070015-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "bdb708ad5b1521e08d96f3b81d1388ef26e18695",
+          "sha256": "31cb2603971be39bb88bc1a200c115af2ac27ab5d4d6bbd8ee2bdbe25aaedf2c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/sles/11/chef-server-core-12.15.7+20170612120016-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "c1ccbd2fb5a884d3bc90e49e0bd9ba1ecb24297a",
+          "sha256": "d55daaced75140813f973c4c8b24736f789b519d1a6be16134072c597551be34",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/sles/11/chef-server-core-12.15.7+20170612134019-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "7fd0ee239a8f91a855274cf40cd5ade52f1bc479",
+          "sha256": "1d4993f36b7df8f2453ca97b6ca19b86587e5785006861b3ea4c3612f0066d2b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/sles/11/chef-server-core-12.15.7+20170613215017-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "26aafbe97620e633cc33ff0b0c9f87c3e1bed4f5",
+          "sha256": "1b39f6d293392c509cbb6c4ebc9ebd9756642d6beab133a94aaf648c3b888bc1",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/sles/11/chef-server-core-12.15.7+20170614061019-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "c06be182182780be4132618fbf2ba82a280cb95f",
+          "sha256": "1cb4474c31e43a1a1f836922a0d679480fef539acb345aa34db0d9acc6fc96c3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/sles/11/chef-server-core-12.15.7+20170616150015-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "1d779f71b304ebc2714c14a9f00512d2efa2326d",
+          "sha256": "621ffed39faa72539cca6c01d170e31b12a52e110094c52dc7ed611b31f5333f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/sles/11/chef-server-core-12.15.7+20170616210017-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "ffda9b514ec271f116cb2fd87eaf75083494a542",
+          "sha256": "1390e402dc9c0e0d60c5fb8a7b4b96bbb02796eb6830325815d6f10d4e9325af",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/sles/11/chef-server-core-12.15.7+20170619100016-1.sles11.s390x.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "1437aee9d4a7d9c91d41ec200be106d9e2bd87f0",
+          "sha256": "70dea3832a61d8fe9c79db457007b83f848023dde9a455dfdcac7411d90775ef",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/sles/11/chef-server-core-12.15.7+20170619170017-1.sles11.s390x.rpm"
+        },
+        "12.15.8": {
+          "sha1": "af55101b5a3b772fbf388b047b85cec3001a658f",
+          "sha256": "68e9dffa11694242e101923975b71a5bb69b6c0b536231c2cf5f5fa3581ee42b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/sles/11/chef-server-core-12.15.8-1.sles11.s390x.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "194a5479ee9a6e9fc4b21313878cc2f75da8e72e",
+          "sha256": "e3406e61cf034a56fb9816fa3c1ecd6abacc4d30ff24019483bccf6831fe5472",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/sles/11/chef-server-core-12.15.8+20170620131016-1.sles11.s390x.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "445376bcee8adb9c0d0e4830e54d4f6a01ec0940",
+          "sha256": "6c1d7e520be5c58fc792551a00343d8d9c68a462c8bac2e9f5bed77646cd3cba",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/sles/11/chef-server-core-12.15.8+20170622165024-1.sles11.s390x.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "7a88d38a470cd6098e1f9f413a3600b44b120b58",
+          "sha256": "c59c95ed690910e20cdaf25c5913abe077ba75578b9812ac33274592c17b1bb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/ubuntu/12.04/chef-server-core_12.15.6+20170516213017-1_amd64.deb"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "e636807f075592ca675a5d0b2a96b52edfb97320",
+          "sha256": "e1d17a715dd43cc6065a28efd6fae72a840123b46ec4ca5b20705ab80131e68b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/ubuntu/12.04/chef-server-core_12.15.7+20170517144019-1_amd64.deb"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "1ab64b19d52d8e6df0c00c9b317d858b50cbaac7",
+          "sha256": "f418c1465a6ff18677ac744786fef11646fdcfcdd1b32f90440dbc6d0fd2bd64",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/ubuntu/12.04/chef-server-core_12.15.7+20170518085019-1_amd64.deb"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "4fdaa88e94b8d9f61e63a5cef2aaa54e2602fe34",
+          "sha256": "b27b1dbd1c6b4ec8013bb09956593553bb24ade63da1d627c8664fdf74d09c7e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/ubuntu/12.04/chef-server-core_12.15.7+20170518091015-1_amd64.deb"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "de99de5c690113005b81d7e366ab4822ac87fcd5",
+          "sha256": "2279def2e4bf276b393183d63783c3ef9330aa85b654a6e3bebf87e1bb7be044",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/ubuntu/12.04/chef-server-core_12.15.7+20170531194015-1_amd64.deb"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "abae750e13af260ffff3d43c565e2d7e2f473bbf",
+          "sha256": "f96b9b00e6358bebd78da0ac91881148525d73b778cbba7a722ea2e796cb5e19",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/ubuntu/12.04/chef-server-core_12.15.7+20170606124018-1_amd64.deb"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "e6be30c52294302b1d728913418fafc2dec852f6",
+          "sha256": "5574857c2f6411753703e3403e7ac4c4c8b9bc56e281ae68d3daa07803148c83",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/ubuntu/12.04/chef-server-core_12.15.7+20170609173017-1_amd64.deb"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "41c6d9577080369c3c2ffdd9a5313ebf97b7d3b9",
+          "sha256": "f6c8a15a0551b86f8d5c7a78243baf9cf780b748acb33436a51a2bc52ac5c0cf",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/ubuntu/12.04/chef-server-core_12.15.7+20170611110018-1_amd64.deb"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "c53539e669ad056e42c894794611a885ef8680d3",
+          "sha256": "7076849ba01675be60b838967fb53d21d794f45b3caf1f49d511533eda79b297",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/ubuntu/12.04/chef-server-core_12.15.7+20170612070015-1_amd64.deb"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "6cad811a728ef8f2fb4d71ecfc1792e07ae64542",
+          "sha256": "aa9a4556be95fb587236e7b31d8029e84b96dde474461b8b66d1ca2dbee51da9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/ubuntu/12.04/chef-server-core_12.15.7+20170612120016-1_amd64.deb"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "680d9e9e8d9f4c1b821e1fc0a183e9c70ee475e4",
+          "sha256": "79a5fe413bd45159dd35eb42d3030ee8aa6b4fc7a10e0b0a834648edcce9b492",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/ubuntu/12.04/chef-server-core_12.15.7+20170612134019-1_amd64.deb"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "f19314262e7228ae70819795173bb2a3597f4620",
+          "sha256": "4c223fcf763cf1afabe9b8c59a287684e8c2c8ff7c13dd447ae0b6019c7445d4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/ubuntu/12.04/chef-server-core_12.15.7+20170613215017-1_amd64.deb"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "c99f61bdfdc23ab90a4a54c239034b9d5d4c6106",
+          "sha256": "329ade3ea3a846f0b68f1c4fe1a9710d2c21d5df78593f86ff9c225076ba8f2c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/ubuntu/12.04/chef-server-core_12.15.7+20170614061019-1_amd64.deb"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "565a703435e14f3a40d16b45472c8ad36fd585ff",
+          "sha256": "c823dd22a9e3d45eb82036c7d0b1f6cd5fbfd824734903c26e997be45c3083df",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/ubuntu/12.04/chef-server-core_12.15.7+20170616150015-1_amd64.deb"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "09e855d93b6a8c9c3b7dfa9fdb295b30917bed72",
+          "sha256": "4536fb74d135577a85887de81f67530e01f36b8ce2b1fe7833573c20f9b460fc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/ubuntu/12.04/chef-server-core_12.15.7+20170616210017-1_amd64.deb"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "ea5795abfe167ea629e1baf1c64f8c5a2af6439b",
+          "sha256": "f180eb0e459b66fd61f44deca457b0272f150dc95ae3e9e62f23c099238a3593",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/ubuntu/12.04/chef-server-core_12.15.7+20170619100016-1_amd64.deb"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "ca42fab1a1d03c9977dedfae71c2ce894df7275f",
+          "sha256": "1ddff65a53f6909c962cb60a25586de2836759007aa11aa61af6a256a1474eb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/ubuntu/12.04/chef-server-core_12.15.7+20170619170017-1_amd64.deb"
+        },
+        "12.15.8": {
+          "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
+          "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/ubuntu/12.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "218f8ac88f770cf19705f6781569ee1a0956545e",
+          "sha256": "f6d28987c662ea479136fb78bf2e5b9cc7edba30654993f331d2ebd0b30c11c2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/ubuntu/12.04/chef-server-core_12.15.8+20170620131016-1_amd64.deb"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "dd0faca66c0c39c0245db55dcf44082ac9b00830",
+          "sha256": "7921c493b2e851159fb95c95eca1b35c140b89abb9673573c4717333e23f85b3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/ubuntu/12.04/chef-server-core_12.15.8+20170622165024-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "7a88d38a470cd6098e1f9f413a3600b44b120b58",
+          "sha256": "c59c95ed690910e20cdaf25c5913abe077ba75578b9812ac33274592c17b1bb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/ubuntu/14.04/chef-server-core_12.15.6+20170516213017-1_amd64.deb"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "e636807f075592ca675a5d0b2a96b52edfb97320",
+          "sha256": "e1d17a715dd43cc6065a28efd6fae72a840123b46ec4ca5b20705ab80131e68b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/ubuntu/14.04/chef-server-core_12.15.7+20170517144019-1_amd64.deb"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "1ab64b19d52d8e6df0c00c9b317d858b50cbaac7",
+          "sha256": "f418c1465a6ff18677ac744786fef11646fdcfcdd1b32f90440dbc6d0fd2bd64",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/ubuntu/14.04/chef-server-core_12.15.7+20170518085019-1_amd64.deb"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "4fdaa88e94b8d9f61e63a5cef2aaa54e2602fe34",
+          "sha256": "b27b1dbd1c6b4ec8013bb09956593553bb24ade63da1d627c8664fdf74d09c7e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/ubuntu/14.04/chef-server-core_12.15.7+20170518091015-1_amd64.deb"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "de99de5c690113005b81d7e366ab4822ac87fcd5",
+          "sha256": "2279def2e4bf276b393183d63783c3ef9330aa85b654a6e3bebf87e1bb7be044",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/ubuntu/14.04/chef-server-core_12.15.7+20170531194015-1_amd64.deb"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "abae750e13af260ffff3d43c565e2d7e2f473bbf",
+          "sha256": "f96b9b00e6358bebd78da0ac91881148525d73b778cbba7a722ea2e796cb5e19",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/ubuntu/14.04/chef-server-core_12.15.7+20170606124018-1_amd64.deb"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "e6be30c52294302b1d728913418fafc2dec852f6",
+          "sha256": "5574857c2f6411753703e3403e7ac4c4c8b9bc56e281ae68d3daa07803148c83",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/ubuntu/14.04/chef-server-core_12.15.7+20170609173017-1_amd64.deb"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "41c6d9577080369c3c2ffdd9a5313ebf97b7d3b9",
+          "sha256": "f6c8a15a0551b86f8d5c7a78243baf9cf780b748acb33436a51a2bc52ac5c0cf",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/ubuntu/14.04/chef-server-core_12.15.7+20170611110018-1_amd64.deb"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "c53539e669ad056e42c894794611a885ef8680d3",
+          "sha256": "7076849ba01675be60b838967fb53d21d794f45b3caf1f49d511533eda79b297",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/ubuntu/14.04/chef-server-core_12.15.7+20170612070015-1_amd64.deb"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "6cad811a728ef8f2fb4d71ecfc1792e07ae64542",
+          "sha256": "aa9a4556be95fb587236e7b31d8029e84b96dde474461b8b66d1ca2dbee51da9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/ubuntu/14.04/chef-server-core_12.15.7+20170612120016-1_amd64.deb"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "680d9e9e8d9f4c1b821e1fc0a183e9c70ee475e4",
+          "sha256": "79a5fe413bd45159dd35eb42d3030ee8aa6b4fc7a10e0b0a834648edcce9b492",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/ubuntu/14.04/chef-server-core_12.15.7+20170612134019-1_amd64.deb"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "f19314262e7228ae70819795173bb2a3597f4620",
+          "sha256": "4c223fcf763cf1afabe9b8c59a287684e8c2c8ff7c13dd447ae0b6019c7445d4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/ubuntu/14.04/chef-server-core_12.15.7+20170613215017-1_amd64.deb"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "c99f61bdfdc23ab90a4a54c239034b9d5d4c6106",
+          "sha256": "329ade3ea3a846f0b68f1c4fe1a9710d2c21d5df78593f86ff9c225076ba8f2c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/ubuntu/14.04/chef-server-core_12.15.7+20170614061019-1_amd64.deb"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "565a703435e14f3a40d16b45472c8ad36fd585ff",
+          "sha256": "c823dd22a9e3d45eb82036c7d0b1f6cd5fbfd824734903c26e997be45c3083df",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/ubuntu/14.04/chef-server-core_12.15.7+20170616150015-1_amd64.deb"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "09e855d93b6a8c9c3b7dfa9fdb295b30917bed72",
+          "sha256": "4536fb74d135577a85887de81f67530e01f36b8ce2b1fe7833573c20f9b460fc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/ubuntu/14.04/chef-server-core_12.15.7+20170616210017-1_amd64.deb"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "ea5795abfe167ea629e1baf1c64f8c5a2af6439b",
+          "sha256": "f180eb0e459b66fd61f44deca457b0272f150dc95ae3e9e62f23c099238a3593",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/ubuntu/14.04/chef-server-core_12.15.7+20170619100016-1_amd64.deb"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "ca42fab1a1d03c9977dedfae71c2ce894df7275f",
+          "sha256": "1ddff65a53f6909c962cb60a25586de2836759007aa11aa61af6a256a1474eb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/ubuntu/14.04/chef-server-core_12.15.7+20170619170017-1_amd64.deb"
+        },
+        "12.15.8": {
+          "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
+          "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/ubuntu/14.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "218f8ac88f770cf19705f6781569ee1a0956545e",
+          "sha256": "f6d28987c662ea479136fb78bf2e5b9cc7edba30654993f331d2ebd0b30c11c2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/ubuntu/14.04/chef-server-core_12.15.8+20170620131016-1_amd64.deb"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "dd0faca66c0c39c0245db55dcf44082ac9b00830",
+          "sha256": "7921c493b2e851159fb95c95eca1b35c140b89abb9673573c4717333e23f85b3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/ubuntu/14.04/chef-server-core_12.15.8+20170622165024-1_amd64.deb"
+        }
+      },
+      "ppc64le": {
+        "12.15.6+20170516213017": {
+          "sha1": "c8df989de0df578ceb303e32d2e118be6c6adff0",
+          "sha256": "afaef182829460817b127e4ef4b3a1817f2d46e6d1df95a4e81a834bab637f7d",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/ubuntu/14.04/chef-server-core_12.15.6+20170516213017-1_ppc64el.deb"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "774b47a3f3692b78d632e362a911fb8c30856467",
+          "sha256": "4377035ae0e88534efb0427bb763b99fd6a1215c9952edc2e1742c8d52f18c08",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/ubuntu/14.04/chef-server-core_12.15.7+20170517144019-1_ppc64el.deb"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "24f44a2dedb2858eba69d004f7d734ab34f82c11",
+          "sha256": "8d9ca19f4579fd167a150fc3dceabd26eaf6f62904ec1026c4849e496839f2ed",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/ubuntu/14.04/chef-server-core_12.15.7+20170518085019-1_ppc64el.deb"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "9953b65486826b99d35e657c67b460134ab21afe",
+          "sha256": "0d1a95d6e97a524ac81c459536999f89254f69b83c666535c3b416f8410395f7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/ubuntu/14.04/chef-server-core_12.15.7+20170518091015-1_ppc64el.deb"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "1c09512183fcbe8ad0c3a81457a27b3d02801b8e",
+          "sha256": "d8eb50550ba433448e2724210e86da1b2b5760333c309f77cc0570fce66f71a5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/ubuntu/14.04/chef-server-core_12.15.7+20170531194015-1_ppc64el.deb"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "8c5bb71b89b271c49af778f60f11def0fbfce63b",
+          "sha256": "5ea09cad06f00c99b96d54c5748e3fef800581b050c0d4863b9da7abd47f9b31",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/ubuntu/14.04/chef-server-core_12.15.7+20170606124018-1_ppc64el.deb"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "9ded75f5129efc5197a39881806bd4b6060d9c37",
+          "sha256": "7c92d598de156af5ceb719d65402c22fe33fdc56651ae9f7255a3cabd1b9fac4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/ubuntu/14.04/chef-server-core_12.15.7+20170609173017-1_ppc64el.deb"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "88a98c18a63d5e0a481ed506553d0f2c32837b97",
+          "sha256": "262d909827609cf304919beca5a06bad1400f6b72e5099848efb97702eb3e753",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/ubuntu/14.04/chef-server-core_12.15.7+20170611110018-1_ppc64el.deb"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "83dfa324542684400cf50a336c9ad4f8bf26828c",
+          "sha256": "554b41e44d65e0abc998a81500ddaf10b4ae1bb86822af77a71a8b053e2ada7f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/ubuntu/14.04/chef-server-core_12.15.7+20170612070015-1_ppc64el.deb"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "51d42ffd1b0fe4e9a57bc2ac0531b3dff1cf75c6",
+          "sha256": "e7c7c8a15f9fcbad123f9596b6ae189c45a962662401d249e87803bb22701670",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/ubuntu/14.04/chef-server-core_12.15.7+20170612120016-1_ppc64el.deb"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "7f5b3fa9961f674b3074b3c8571229f753ecf638",
+          "sha256": "9c39f2e274c59f871bfda9584a678669723ca86c2a6c7ef23b8a60ab0c0fdfcc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/ubuntu/14.04/chef-server-core_12.15.7+20170612134019-1_ppc64el.deb"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "eac67217161683f3f0f986200f8dbdb7d614a6f0",
+          "sha256": "818e5b57a210c95615ab01f4e6d37490029bfaeb9dd01f49a1a1bd09eb26a87f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/ubuntu/14.04/chef-server-core_12.15.7+20170613215017-1_ppc64el.deb"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "0a98b5fd9ade234fc5e74ade9df18f006fa97513",
+          "sha256": "0141071513197656cb663fee0475ed8d56c8a4d8984c8233ebf04be4f2a1d44a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/ubuntu/14.04/chef-server-core_12.15.7+20170614061019-1_ppc64el.deb"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "71f2aeb9a762dd2179dd75a450edceedde243c82",
+          "sha256": "b591f0d16536c972a1e018e74424f9bcc1c5bdf8d95f58f2e9b8ebb6dc2c1acc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/ubuntu/14.04/chef-server-core_12.15.7+20170616150015-1_ppc64el.deb"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "1c3644703f8e71445d892b2b48fea27cb3cfb0f3",
+          "sha256": "518ccb5c70ad118dc2cc6bd2fe54c60505dd7d05e9551634c072436e17a774b7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/ubuntu/14.04/chef-server-core_12.15.7+20170616210017-1_ppc64el.deb"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "a8707d79a6fbffd9a276727cfb1c9beb66cca54f",
+          "sha256": "b255b70149e445f5a7e56c673d7b0a16e3b68e6058592e3b6c8e88873838b3eb",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/ubuntu/14.04/chef-server-core_12.15.7+20170619100016-1_ppc64el.deb"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "de49ae0247a0f93e1098c32a198b7220f86080d0",
+          "sha256": "b13b991220c71370a881c1da34c2ec495ed40221377beebc3bf9f0a483c5185f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/ubuntu/14.04/chef-server-core_12.15.7+20170619170017-1_ppc64el.deb"
+        },
+        "12.15.8": {
+          "sha1": "f8d62996cb810926ee391731682bdcebf138be3a",
+          "sha256": "1eeea40b12b9c455c06af52c64af2397913ef7cfdd342c47e9a29f610746e6ab",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/ubuntu/14.04/chef-server-core_12.15.8-1_ppc64el.deb"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "d27c08dffa88d3523e1bbcf806c910a1d6ee45c9",
+          "sha256": "b79272aa5a23d8afa2061cfb3fdf3861b7c6484424e7a62db7bcbbe458668127",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/ubuntu/14.04/chef-server-core_12.15.8+20170620131016-1_ppc64el.deb"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "004074ed0b01df0b4dcabc375c9c88c1585f59a1",
+          "sha256": "ea215a3f23c24c738eae63d7e443507524d35cedee7a444f7d69bc1bd704b2d6",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/ubuntu/14.04/chef-server-core_12.15.8+20170622165024-1_ppc64el.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "7a88d38a470cd6098e1f9f413a3600b44b120b58",
+          "sha256": "c59c95ed690910e20cdaf25c5913abe077ba75578b9812ac33274592c17b1bb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/ubuntu/16.04/chef-server-core_12.15.6+20170516213017-1_amd64.deb"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "e636807f075592ca675a5d0b2a96b52edfb97320",
+          "sha256": "e1d17a715dd43cc6065a28efd6fae72a840123b46ec4ca5b20705ab80131e68b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/ubuntu/16.04/chef-server-core_12.15.7+20170517144019-1_amd64.deb"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "1ab64b19d52d8e6df0c00c9b317d858b50cbaac7",
+          "sha256": "f418c1465a6ff18677ac744786fef11646fdcfcdd1b32f90440dbc6d0fd2bd64",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/ubuntu/16.04/chef-server-core_12.15.7+20170518085019-1_amd64.deb"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "4fdaa88e94b8d9f61e63a5cef2aaa54e2602fe34",
+          "sha256": "b27b1dbd1c6b4ec8013bb09956593553bb24ade63da1d627c8664fdf74d09c7e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/ubuntu/16.04/chef-server-core_12.15.7+20170518091015-1_amd64.deb"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "de99de5c690113005b81d7e366ab4822ac87fcd5",
+          "sha256": "2279def2e4bf276b393183d63783c3ef9330aa85b654a6e3bebf87e1bb7be044",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/ubuntu/16.04/chef-server-core_12.15.7+20170531194015-1_amd64.deb"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "abae750e13af260ffff3d43c565e2d7e2f473bbf",
+          "sha256": "f96b9b00e6358bebd78da0ac91881148525d73b778cbba7a722ea2e796cb5e19",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/ubuntu/16.04/chef-server-core_12.15.7+20170606124018-1_amd64.deb"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "e6be30c52294302b1d728913418fafc2dec852f6",
+          "sha256": "5574857c2f6411753703e3403e7ac4c4c8b9bc56e281ae68d3daa07803148c83",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/ubuntu/16.04/chef-server-core_12.15.7+20170609173017-1_amd64.deb"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "41c6d9577080369c3c2ffdd9a5313ebf97b7d3b9",
+          "sha256": "f6c8a15a0551b86f8d5c7a78243baf9cf780b748acb33436a51a2bc52ac5c0cf",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/ubuntu/16.04/chef-server-core_12.15.7+20170611110018-1_amd64.deb"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "c53539e669ad056e42c894794611a885ef8680d3",
+          "sha256": "7076849ba01675be60b838967fb53d21d794f45b3caf1f49d511533eda79b297",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/ubuntu/16.04/chef-server-core_12.15.7+20170612070015-1_amd64.deb"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "6cad811a728ef8f2fb4d71ecfc1792e07ae64542",
+          "sha256": "aa9a4556be95fb587236e7b31d8029e84b96dde474461b8b66d1ca2dbee51da9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/ubuntu/16.04/chef-server-core_12.15.7+20170612120016-1_amd64.deb"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "680d9e9e8d9f4c1b821e1fc0a183e9c70ee475e4",
+          "sha256": "79a5fe413bd45159dd35eb42d3030ee8aa6b4fc7a10e0b0a834648edcce9b492",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/ubuntu/16.04/chef-server-core_12.15.7+20170612134019-1_amd64.deb"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "f19314262e7228ae70819795173bb2a3597f4620",
+          "sha256": "4c223fcf763cf1afabe9b8c59a287684e8c2c8ff7c13dd447ae0b6019c7445d4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/ubuntu/16.04/chef-server-core_12.15.7+20170613215017-1_amd64.deb"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "c99f61bdfdc23ab90a4a54c239034b9d5d4c6106",
+          "sha256": "329ade3ea3a846f0b68f1c4fe1a9710d2c21d5df78593f86ff9c225076ba8f2c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/ubuntu/16.04/chef-server-core_12.15.7+20170614061019-1_amd64.deb"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "565a703435e14f3a40d16b45472c8ad36fd585ff",
+          "sha256": "c823dd22a9e3d45eb82036c7d0b1f6cd5fbfd824734903c26e997be45c3083df",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/ubuntu/16.04/chef-server-core_12.15.7+20170616150015-1_amd64.deb"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "09e855d93b6a8c9c3b7dfa9fdb295b30917bed72",
+          "sha256": "4536fb74d135577a85887de81f67530e01f36b8ce2b1fe7833573c20f9b460fc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/ubuntu/16.04/chef-server-core_12.15.7+20170616210017-1_amd64.deb"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "ea5795abfe167ea629e1baf1c64f8c5a2af6439b",
+          "sha256": "f180eb0e459b66fd61f44deca457b0272f150dc95ae3e9e62f23c099238a3593",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/ubuntu/16.04/chef-server-core_12.15.7+20170619100016-1_amd64.deb"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "ca42fab1a1d03c9977dedfae71c2ce894df7275f",
+          "sha256": "1ddff65a53f6909c962cb60a25586de2836759007aa11aa61af6a256a1474eb3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/ubuntu/16.04/chef-server-core_12.15.7+20170619170017-1_amd64.deb"
+        },
+        "12.15.8": {
+          "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
+          "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "218f8ac88f770cf19705f6781569ee1a0956545e",
+          "sha256": "f6d28987c662ea479136fb78bf2e5b9cc7edba30654993f331d2ebd0b30c11c2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/ubuntu/16.04/chef-server-core_12.15.8+20170620131016-1_amd64.deb"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "dd0faca66c0c39c0245db55dcf44082ac9b00830",
+          "sha256": "7921c493b2e851159fb95c95eca1b35c140b89abb9673573c4717333e23f85b3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/ubuntu/16.04/chef-server-core_12.15.8+20170622165024-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "7": {
+      "ppc64le": {
+        "12.15.6+20170516213017": {
+          "sha1": "356a71606a4af8028c02830a6c3cbe24584336a8",
+          "sha256": "a159b987da3f53930002cf58556ed9527d59c494afad83327a3eaf03736494b2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/7/chef-server-core-12.15.6+20170516213017-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "853ea2cf3331000433bf6ef07e5aa8a6bfa01ba4",
+          "sha256": "d54becb7399630fe38554d129ef7d379ce58401afc577377b08532e33a5c8332",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/7/chef-server-core-12.15.7+20170517144019-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "333109b33cea2f656a4e0db7c53d7e7dbd227b62",
+          "sha256": "c8b2a683e0a50c639d6b120eb60215646060f2d781c04086e9738fec73a4d513",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/7/chef-server-core-12.15.7+20170518085019-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "993b8aaba83bda214e3121a537bf9001ae535fef",
+          "sha256": "7f835cf15e7488a936fc21eec64452f48ecb10be6dda8f2a127170598f4f6918",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/7/chef-server-core-12.15.7+20170518091015-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "e0354d0d33f500bf09844268d38e8145d7dd348c",
+          "sha256": "f3b91543b63715a9e996241a98452c14e8f1ff33fdb94cf54e8acfe28757714c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/7/chef-server-core-12.15.7+20170531194015-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "69924df1dd997241343b988be9b1b708d6f77b81",
+          "sha256": "2e72732c223c50a273a04aea385b12054d2a447cecc7acddda850198d260030f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/7/chef-server-core-12.15.7+20170606124018-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "8d816e5ec7e8a9690b10b25c01b55acd2fae1e70",
+          "sha256": "6c4980ff7bc832ff8e8e023564a81a80ca2828cb8218ccf11752406e9b99e1f7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/7/chef-server-core-12.15.7+20170609173017-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "f2bb37c5567bf5f2c3d1a223806c75de3de49f0c",
+          "sha256": "eb63dbdc2e2884bba0d53b9799387f0680129b653fdf4beac93d888d7e97ec64",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/7/chef-server-core-12.15.7+20170611110018-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "6f1e611cb363bb9522f8fc78321819af9cc83bd3",
+          "sha256": "7bad964cb4d80d42c73e39899495dbc6e7c7f5e4c2496109797d43b1e6ac5d9a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/7/chef-server-core-12.15.7+20170612070015-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "79025d87e3ba5234bd95847ce9dab818bd8b94af",
+          "sha256": "8cfce4ea210cae7e6b14205c129b3d7cddf1c353055ea028a3104b4571a3c4ed",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/7/chef-server-core-12.15.7+20170612120016-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "5f8fbe1ab9c98ad528edab7092ad159259e6070e",
+          "sha256": "e4a7d878231072a9efac244125632904b74283a42be3675f2053c9dceef4d1fa",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/7/chef-server-core-12.15.7+20170612134019-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "5f770d782d006adba510dc53cfb9e58beffc5f6a",
+          "sha256": "80221f7da0b38f2ac579652300e2c438f9c2a5611f6189c248480bafbf46ff5a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/7/chef-server-core-12.15.7+20170613215017-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "78cf70f85a71e704448e8566722e8afa35c2cb89",
+          "sha256": "a0d7f1650727c3e25689f87476ac7c7a9cd0caf0fc02c3067eef7bd692a277ac",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/7/chef-server-core-12.15.7+20170614061019-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "507c6fc78f15ccc151facd29f0161b08fed33615",
+          "sha256": "d435b6e46de77d2fa78ddb96ecc93b7c9f92fc790ad0663d05372381c965fd83",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/7/chef-server-core-12.15.7+20170616150015-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "adf19d98b220d6b0e277671ae946e6d27ccd851c",
+          "sha256": "dd751eceb9f34e664478526424a0cc17551b5d9de52c88a32a273ec549f49345",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/7/chef-server-core-12.15.7+20170616210017-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "c9f91181e7b10a41bfc0db9beac9e680bef27071",
+          "sha256": "ba5c41c9f3bf8d8d3b134138ff181e4dfbb1e13a5f6041ef64eeab9e9fc7cc71",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/7/chef-server-core-12.15.7+20170619100016-1.el7.ppc64le.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "f684ca921d56f862caf65e6d7f5664382da659c4",
+          "sha256": "e4a5b085a02043866cf1d112260bc8c1f6f99151b36442778d42f10727961bcc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/7/chef-server-core-12.15.7+20170619170017-1.el7.ppc64le.rpm"
+        },
+        "12.15.8": {
+          "sha1": "077388529c160fb5ff744ce59bab69f6c46a3e68",
+          "sha256": "b636cad58fef483399b6ad20c150d8a7e46123ec2ba13e5dde20b2c516e21b75",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.ppc64le.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "1be361dd46dcf9b9d037f3d75da60904dd8dbb1c",
+          "sha256": "4aaf29f3347daccf640b66c11b12e9204db71891961f424f7e2abde5dc7029fa",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/7/chef-server-core-12.15.8+20170620131016-1.el7.ppc64le.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "44f694dfd8319568387d49c458387cc91f8d9773",
+          "sha256": "da635edce584088b355a749eacd4b010ee42c62e91439a8435dc24b81035144a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/7/chef-server-core-12.15.8+20170622165024-1.el7.ppc64le.rpm"
+        }
+      },
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "f78650ef8b63efee325d25c69a2c21225aa83cbf",
+          "sha256": "6d69eac19601245dbd4569a896b20dce51a8eda2187ecec34d0abdd97378f3d5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/7/chef-server-core-12.15.6+20170516213017-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "f65856836a3f1749403e47a872f38345a350725d",
+          "sha256": "dfd23a52bb353f85b0aaf8d698cd974caf8dc504ecd31628163555fa97d75c1b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/7/chef-server-core-12.15.7+20170517144019-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "070b80367bcd2ee9512c8d612071e93643214390",
+          "sha256": "db5bf3ab2ba8a9d952e134cf994195b849c9182f88c1b34a25db0872ba2f5084",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/7/chef-server-core-12.15.7+20170518085019-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "4e7afd68e0a9144f2f0a162a7b4086006867d869",
+          "sha256": "c6305beb06c9dec3c74dd3791b5cda41cc533b9d6e87f985154b2de245217106",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/7/chef-server-core-12.15.7+20170518091015-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "60efb11b844b78a9a42ad5cc1dcd7e36be104bbe",
+          "sha256": "4c6214cda5b85b573f25d18fd85b789411a6c5c01043008a79a009862f38ba4b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/7/chef-server-core-12.15.7+20170531194015-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "71202a6144df531c65d897f99fe07e0dc9979be9",
+          "sha256": "29bb45241aea83bcaaef9d44e86fa7bfa12aa10c28da64137833d35846d8078c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/7/chef-server-core-12.15.7+20170606124018-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "45f8ee1b834d23854ecf6a02a71f1d2a4a85763f",
+          "sha256": "41d6d6a0fd7f778326ba41df45714d6ba4e485ef07d10b271b09759421eef317",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/7/chef-server-core-12.15.7+20170609173017-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "38123bce0a20c2b454d782ed8dfbdfebbe254b4b",
+          "sha256": "08dafb9717a0a0172f49f457b3a730341074f8b628abd6dd449ee48d1181bccb",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/7/chef-server-core-12.15.7+20170611110018-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "e987d139e281aa133dcebd82f14fbe78829d46d6",
+          "sha256": "2cf8325ff87a4235a6e69f2356fed01768bcf5420603141af5f7c4eb964208e2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/7/chef-server-core-12.15.7+20170612070015-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "22334e4cb34bc936d3da71f4dbf53bf5bd901b8f",
+          "sha256": "068fd6345ef196b01cb795c611f1cac5497b3c54196b521fec55958bf86b95d7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/7/chef-server-core-12.15.7+20170612120016-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "f5f01bf08d9033de21e3c89d1dba8f7ba717bc51",
+          "sha256": "a72eb8244f3c9a2c04d5dec6e58e7de644396f0996895751ee53dfa7baeb1b3e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/7/chef-server-core-12.15.7+20170612134019-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "5e60df8f13c3e15b3cbaef65e367606e56eb4e25",
+          "sha256": "b4eed3f41e6e6b43cbdf68cbd704477f96a853926774c94c6327d1a1d60deae0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/7/chef-server-core-12.15.7+20170613215017-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "12b7c44b591a1dc4072e20752ba0f88cc2f407d9",
+          "sha256": "0f1fb2905ab7366204114c49e35f54d9234bb7578c6457db50b6d4705a73fc95",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/7/chef-server-core-12.15.7+20170614061019-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "af0d22815563a1409404e043dabb94d065680e2d",
+          "sha256": "aa284856ed799900219600e433d5f8ff100a308064b03f41274176758a7104f2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/7/chef-server-core-12.15.7+20170616150015-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "d7d8c1ee363f7b347f2b3c877979779dacf1628f",
+          "sha256": "cd9297c0b15f1cafbe7ae340c34c748e6c66ab6da323110e463a659e40a7cec5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/7/chef-server-core-12.15.7+20170616210017-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "b923cc74270f131c7dff0e1b866b37a05f67fdb0",
+          "sha256": "2701d85ba26a1c23ef6ca27c534fd4382c655f7d428164b043ca3d7bc64ad4c8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/7/chef-server-core-12.15.7+20170619100016-1.el7.x86_64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "4e08efb480120d92b3277d45ec26c38503e2b0a8",
+          "sha256": "be3eae1bbe789200cdac6ad509d147c523435c52e7f549e0268182cceba7a56a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/7/chef-server-core-12.15.7+20170619170017-1.el7.x86_64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "97e34ccd34499452b38d232f4cb6cd887e0bf459",
+          "sha256": "a39b70bbbc8ba60d54c827d2a002f7b1d4f48629f8316ae59ae21ab2c73396d8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.x86_64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "9a7edaee919009327356c0551c00f4bb8c613970",
+          "sha256": "b0b6af68a79a668d141c39a954c1ec329fb4db524219a46a766223731733137c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/7/chef-server-core-12.15.8+20170620131016-1.el7.x86_64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "92061462908c3d0e84cd5613fa7ba70147abcb8b",
+          "sha256": "6ff358d2a64eb47bb5fae140d009b2b373dc487cbac978aa469c3d5580c64e4e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/7/chef-server-core-12.15.8+20170622165024-1.el7.x86_64.rpm"
+        }
+      },
+      "ppc64": {
+        "12.15.6+20170516213017": {
+          "sha1": "7ddaf1da96b15e8805e65a3b3b3b3e173677ca06",
+          "sha256": "547407a1aa10d3fa46d291c40a0735c729e7f00017dbc1ceb4698ef0240cf8dc",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/7/chef-server-core-12.15.6+20170516213017-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "14c27d354e9b0156295f4e36960a0791129e7956",
+          "sha256": "9962af427a979d3c97213bcb6704e94fef65d1f65395a675ad0c30664b814b7c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/7/chef-server-core-12.15.7+20170517144019-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "f0105b592a04ce56506a00dbf561e5e0725d495c",
+          "sha256": "2cf2d990ca3795fb6f6408b1e1ec67ed88ffbf0a71e34e396c667a59b9e03d43",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/7/chef-server-core-12.15.7+20170518085019-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "e909b270dd42e7c49bce2e16b135b460f94fd8a1",
+          "sha256": "ddc9f74ffd1a0f5ca078e54ad1e8a02089a449f072a3989266db8461858f97d4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/7/chef-server-core-12.15.7+20170518091015-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "45e5abd7702631b0e83ff804576ac56c2ebb32cf",
+          "sha256": "92dcbc93d6d59f50bbc58a75c8c64d7b9c16bed1579effab87a69c9b6e147b12",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/7/chef-server-core-12.15.7+20170531194015-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "dce715971e9cf303876ea9320f0cc69d87a85913",
+          "sha256": "7e9e4b2465c91d6e2b68863294f3010f5cadbb2099c9306e651d2ccbd5c2e274",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/7/chef-server-core-12.15.7+20170606124018-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "2f89413af7a0cce910697774f33e2a365be22401",
+          "sha256": "05038fb907bfe28684ed5c0160fc9f64fe4467f1272d30f449b9839acf4884bd",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/7/chef-server-core-12.15.7+20170609173017-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "d389aefcd9c8e9e35c1751d0a4fe84a495dd89a5",
+          "sha256": "ed9d47ea30e1aa7da70132d3fbbaaded271cc37820cca32f807b494836453f7a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/7/chef-server-core-12.15.7+20170611110018-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "99493526393de3d6cb7e77c9778d4f509437b5bf",
+          "sha256": "3619513e70828b6d99737a0fab4bed02cbcd15663aa986138aa9aa5b0fe3c6a9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/7/chef-server-core-12.15.7+20170612070015-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "55cdb2273ca9a6e0865defb2bb2bb2c0da06d60c",
+          "sha256": "2ddd12dc15f2b003138b72dca213e868036b2b5f01465e0acde9461f53d02bce",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/7/chef-server-core-12.15.7+20170612120016-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "fb318b69c82a8de22dfda4f38c9d5e627a2a934b",
+          "sha256": "929c2a362ef5a15659d7eb9896c2c20d4155b0963abfe29c54a3ba9d795eb0db",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/7/chef-server-core-12.15.7+20170612134019-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "aa4db15f802561f9f817bf83a7a756b4ec965ffc",
+          "sha256": "8e89889ecaf812cb835f7dff997993feb582964a1a7e09fd4e41bc2d66e5e298",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/7/chef-server-core-12.15.7+20170613215017-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "0849a5fca76d126bda7ff85fc7ef93beeb32aa13",
+          "sha256": "df084e5084d3316137d0ef33b58f0f03951664427234c95d11c88556af2eda68",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/7/chef-server-core-12.15.7+20170614061019-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "04cf25cf156880d4197bff1e84fc03f2a4cb75c5",
+          "sha256": "cc3ed982bafa00676db04c73767c18c93c696db1ea260aa184d9ee08a7971430",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/7/chef-server-core-12.15.7+20170616150015-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "7bd2d93ce85481f2b524709f83b01a8c5ae3a85a",
+          "sha256": "69e60d8d772a6fe557f901880d7dff2f20df317dfa888955bd62cf54840bc31a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/7/chef-server-core-12.15.7+20170616210017-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "0cadbb4af306960b8c24a9c2d459f7e576d83d90",
+          "sha256": "6aa72dead45041732ba85905b4f2dda41864b5e4628f5a2b24d1d49e57ac6c79",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/7/chef-server-core-12.15.7+20170619100016-1.el7.ppc64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "af7e3481409194cb3abd2cd3bb86294f99dfb709",
+          "sha256": "701a4a57524880fdd13533db608e15e432cd138ecb616bdc218e724a2dcbbed8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/7/chef-server-core-12.15.7+20170619170017-1.el7.ppc64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "18ef07a0214372c5b05a75ac8e3c10ba9c6eef0b",
+          "sha256": "de0f6073fa83497e5b6771ec09dc16b4c8695e1bc45c1eb49296c5ea78c7b915",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.ppc64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "ffad129fc8e56ef656cce6a322efd357a6f88a22",
+          "sha256": "96c752c5a3a8eac837bb6f62fa43b1f7d8028218047ce27eb9b428b16d7567ef",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/7/chef-server-core-12.15.8+20170620131016-1.el7.ppc64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "f736a90d361bc774de61ecf0f6f4281f9727a3e0",
+          "sha256": "dab8eed407a7b68a7ad0afecccfd543e15f0817f89bbd308c67a03ea6efa12e7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/7/chef-server-core-12.15.8+20170622165024-1.el7.ppc64.rpm"
+        }
+      },
+      "s390x": {
+        "12.15.6+20170516213017": {
+          "sha1": "d7a87d919cbd58ac61e6e034c67324175c80eac2",
+          "sha256": "1de11e0482c587292a91f5b1dbadd1dbca1aaa6cdd6945201417b7dc7420c5c7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/7/chef-server-core-12.15.6+20170516213017-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "b373df44f1007cac12c862ac3e0a180c12f1fb03",
+          "sha256": "0f6fe6174375591c0a98386a07541f91e11ada1c459e28367f878c4ed1eafdd0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/7/chef-server-core-12.15.7+20170517144019-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "c71dbc2f80e3948ca85ecb4e3d9aadfa7789126e",
+          "sha256": "7e5c0f960673532ce7b6d09d82784ab3613f1c235484b41f53c72d5567948853",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/7/chef-server-core-12.15.7+20170518085019-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "ddd296f81bbce0d0d3431cb942eee29a6815e979",
+          "sha256": "09636c392df4c104eaa16ae2ddc9f14e2140c7e4100b9d8dcd8a4c90213edc04",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/7/chef-server-core-12.15.7+20170518091015-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "6aac0a1f47dc2bcc8d76f1ab777bdc39905d5ca9",
+          "sha256": "888e08dc392ad525fbed2c46d8a45e2c6b1c92a63c36e7c770bf7ae52665e05b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/7/chef-server-core-12.15.7+20170531194015-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "affe8bbdb4d317dea3bf7acc191a80abe172ae5f",
+          "sha256": "cd4a5c160fb1a43c6945cd2bb9d0af683b7be57f18303eddb166ebfb92629828",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/7/chef-server-core-12.15.7+20170606124018-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "3121a1bfcf76e1d336ab0123248e92d03904c6d2",
+          "sha256": "2f9667f3aec57f0f0da0bcedde050bdb6d47404224768a62de5065d8987d2e09",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/7/chef-server-core-12.15.7+20170609173017-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "fc184a21ffc80e4fa465f804fe5917d41a0ad63d",
+          "sha256": "1d4a4c6aa57649df366e7b3d6d01be929a63a2a933f495005d235416019eeace",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/7/chef-server-core-12.15.7+20170611110018-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "d9ae589a5d280593b02406d2c5d7183466285f55",
+          "sha256": "5a6f3971df892bf3d6ff3cebc9bb814191c98d1fbc541f2b6330adb7e581898c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/7/chef-server-core-12.15.7+20170612070015-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "0a8a29d2a8280fc2e633c565960a53d453f332f3",
+          "sha256": "54dcb7c6a1fa0ac08cbef258bee7f451a52c1e106e4e1175d8ecceaa83271da7",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/7/chef-server-core-12.15.7+20170612120016-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "ae48e10239bc28d6c768dc6f74a1bcdf5221b3b4",
+          "sha256": "89af456abc4a3b620d3d35c420fb6c67ea471cd0488fda5ca3f1171020022d9e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/7/chef-server-core-12.15.7+20170612134019-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "9df4e288cd43a335c5b9bca5065addc5afb9ebe4",
+          "sha256": "f9201bded62b43f05c8b55f3f1cd544afa739049fd5a61b5c74c90769030b04a",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/7/chef-server-core-12.15.7+20170613215017-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "c0a42b810cc86bfa508131e42e774a35d65b3d4f",
+          "sha256": "8a2c60caa519e48a9b50b6a75ed3f4f7138131e9fb2e6e1b9396d3229c3e5875",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/7/chef-server-core-12.15.7+20170614061019-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "8cdd8fd554eb0479c8a1feb661a8b512d44e53b8",
+          "sha256": "8c66d305b638ff3727e34cc6e41c31a132d9178f447e91a5277134c970326825",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/7/chef-server-core-12.15.7+20170616150015-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "816a773cff124d8c01d5620c15ed6ff1fb9dab4d",
+          "sha256": "6de9533693b0211abc4e3d844c791bd4eb3359f519d8fba78dd7a15a5162c425",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/7/chef-server-core-12.15.7+20170616210017-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "c4ccf8c58d2b5688a45b3370abd47f5b4fddbb2c",
+          "sha256": "f6708e2917c07c1342d2242b54e0044e359ef9484ea88a8b8c3078ddd33fb7d6",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/7/chef-server-core-12.15.7+20170619100016-1.el7.s390x.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "223e35525107d9ae2401ddd31bed5bb0e617064e",
+          "sha256": "b96af8facf6b253372c509f48b12a18f385bcfe5f852cd6a916552e10a0f9f12",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/7/chef-server-core-12.15.7+20170619170017-1.el7.s390x.rpm"
+        },
+        "12.15.8": {
+          "sha1": "fca1232ec73e8b27cc009d7f076cb4d4ede50b01",
+          "sha256": "9afe63bf234e0dec57f3ef9d0e7b71e4b573de3199d6f7c350a7a6bf94bb816c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.s390x.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "e628606e77d55cb24ce6db6fd4e9642d66d69fae",
+          "sha256": "6c2d805249728c0460c885a6869cfc4bac4c7d2ffa9fd277490d98154fc8201c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/7/chef-server-core-12.15.8+20170620131016-1.el7.s390x.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "246044f0b1cf0bfb9681637d06d88729f7b1a3af",
+          "sha256": "4ea271098c060de6f46040a02d22aaf6085c1b1a235dc1ec0fd9cb77f1faffbf",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/7/chef-server-core-12.15.8+20170622165024-1.el7.s390x.rpm"
+        }
+      }
+    },
+    "6": {
+      "s390x": {
+        "12.15.6+20170516213017": {
+          "sha1": "aff158fde64a4e3fce110474c8f3eb3896223c7a",
+          "sha256": "791822c0cade4e4ebd60845e11e14913f2ba9307792d9fdcfff8b73d83d83d7b",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/6/chef-server-core-12.15.6+20170516213017-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "6aeaf10b53d4ad0dafdacd8d595d5e5d65319860",
+          "sha256": "7f6604c664ad22c56ac20c1219c2566eef3bd17e77311dfbe206e459ef932b69",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/6/chef-server-core-12.15.7+20170517144019-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "4a50fb5aae70d8fc265f37d0ce8cf38631f66f0a",
+          "sha256": "efa9876517734d5e52f8ee10768881b7d3a37e4ec1e3959c9717d39fc24d1dae",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/6/chef-server-core-12.15.7+20170518085019-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "430ee44240d8a96e341e8b30ab17030046e9ae42",
+          "sha256": "e9d4a23c09ab74d8306e4f3281077d12ed53ac5ce6cd74ad02775486d760c4f8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/6/chef-server-core-12.15.7+20170518091015-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "a5a2da32506dcabb17fdc9fae613b48962f3ea5d",
+          "sha256": "4d8efbf37d0d2e610666647188232e1caf2488cea8abdc3db5cbe87f93c958a3",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/6/chef-server-core-12.15.7+20170531194015-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "b258564e61a69eeb501489df9c33fd71d852581e",
+          "sha256": "b74344a562055e03b170e2c95934cdf96dbfd9a3e3a3aa9b77adc9dcbb5ea2e6",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/6/chef-server-core-12.15.7+20170606124018-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "32a2ff87aa8c01d24ddb2d6178a1703af2e8c55d",
+          "sha256": "eb4b8aefd65674a9e2ecaf0746985e1688dfdd53b04c7410e230b71f04b8c6b0",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/6/chef-server-core-12.15.7+20170609173017-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "ce7fe7aa53a4d700ae60bb59145f40e7ceecf4da",
+          "sha256": "6aae27ddfb47c247559985c3429d2b3415ba1aabf0d1505f7af2bfeed7071896",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/6/chef-server-core-12.15.7+20170611110018-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "364033a2769182a456d7b9cea8358da044d1d5f6",
+          "sha256": "1981ef1376ebf848afcd583834e1a5e78792a5f829cab9abfabbd7f0bc931d39",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/6/chef-server-core-12.15.7+20170612070015-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "ae46281dc4530b04f281f14f71b5fd3da2e50b85",
+          "sha256": "0f08113018e4be06c7b20b30de77bb96720f73b38e56194b52703e3696a67d13",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/6/chef-server-core-12.15.7+20170612120016-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "029e562ba5b2c76f1becf4d5bb43830c31dae3f6",
+          "sha256": "e9553576e3c157a5fdf7a0978142a5ef312efc21e7303d1adc866c07474c3a87",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/6/chef-server-core-12.15.7+20170612134019-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "2c74db26dae3e6918d7036a49ea071970da32451",
+          "sha256": "1d0b18511f08085ce147328f7eea5e5de13ae6c47622f870efe0f5281ffa0e18",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/6/chef-server-core-12.15.7+20170613215017-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "e32006ba1e6ab8614f9e1c5c9813265ffb347f93",
+          "sha256": "74c2b6c9646cd5fc494d36ffe397efab1b450c410ff513080ad11b51f75c3b5d",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/6/chef-server-core-12.15.7+20170614061019-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "4d11a2a6d3461d524c0f51f11691199df0f3ba59",
+          "sha256": "ccacce36be181080860541604d68ea33c1df9d816fd29c8d917bc97481418b5e",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/6/chef-server-core-12.15.7+20170616150015-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "ad5b3e4e1b5db7ffc1111567e1f8a7d5716356f4",
+          "sha256": "e2ecd69a94b0e08c84c2c6a5ae67b350350516881b2e093ffd089f318f53af68",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/6/chef-server-core-12.15.7+20170616210017-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "ffbe253f50dcc4663d3cd69583ead13e98cc28a5",
+          "sha256": "6648df4c7ab3bc833209f9eb7b8ea1e4b65afd36ee01aeb5ec52856deb3a2db9",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/6/chef-server-core-12.15.7+20170619100016-1.el6.s390x.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "1ad9c247162cdd06c2093a20855773c65272c53d",
+          "sha256": "9a46c123af63ec0bc67756998890e0d8f63730a05a977932694231dd0cf65c79",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/6/chef-server-core-12.15.7+20170619170017-1.el6.s390x.rpm"
+        },
+        "12.15.8": {
+          "sha1": "b41e9044de598207561a1716dcd0c4d14954622d",
+          "sha256": "45b54b3d726b1c16b91f346047b2880b31175b907fa81cbc7293c290a04e5bab",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/6/chef-server-core-12.15.8-1.el6.s390x.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "badf4fa48a55bbe1f3433a092adbaef9bba1a339",
+          "sha256": "3f032be3f7a43630f2a3585abe6bd1183135d0c4a475b704f712850bd0790c17",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/6/chef-server-core-12.15.8+20170620131016-1.el6.s390x.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "108c2ecde22bd42bc8a4f237c743715ba3f89b79",
+          "sha256": "fe9aa5669ce36e6abc75a1f8708a2af8eee76a18de2ffef8cb38245e73a7896f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/6/chef-server-core-12.15.8+20170622165024-1.el6.s390x.rpm"
+        }
+      },
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "340ed971f29f2f5a3b54294e9cdebb4531d3c8c6",
+          "sha256": "7cee965e9f22ab14938ea380b12dc2ed9f3464ed69c06491432550d7914ba90c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/6/chef-server-core-12.15.6+20170516213017-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "4efb0d0481245c1376655a81433a6c5cfc1b95d4",
+          "sha256": "c3268de80fb5bb06963c9d1bd07d70334d4e41422be6850dcb44c7c7f664031f",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/6/chef-server-core-12.15.7+20170517144019-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "24ccc0ce15f7f6377b9433732da7976bf1ee17f2",
+          "sha256": "89b933def27168577da8623c85fd008d3d80a7f6c55eb95537afdf800ab7abd8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/6/chef-server-core-12.15.7+20170518085019-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "407f6d63f2d5b524dbcf715dd43dfcfb9b61d491",
+          "sha256": "7e10f21461a53c96897d1b3f11bc457899f3db71e0eeba072effdf32e09eceae",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/6/chef-server-core-12.15.7+20170518091015-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "8643e7c3bedcdaece6c85f1b76e00632e0c1ae94",
+          "sha256": "3679db27b0aa6d6a69a1aaa5a80d2dabb83bbc6c4e35840f2c4b8fc1f2e73dd4",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/6/chef-server-core-12.15.7+20170531194015-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "95510adf9e7bd082085f25eb6a2cf62b99651085",
+          "sha256": "ac5ee31c9c2a35d6173b0270f669a93241d4b2bd759a19e0a945e61b72a2cdc6",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/6/chef-server-core-12.15.7+20170606124018-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "ab0f48ab166d93b46eac6b86ebb6311d00d59ad8",
+          "sha256": "96dd50807daa1e9cd1aa5d9445ba01f48e5d9a331489706e1700bf327c9ac5fe",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/6/chef-server-core-12.15.7+20170609173017-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "f77c6caad4ae86af223d694cdf3d96d1c6de594d",
+          "sha256": "267f6bff3edb16d2ba2dc5dfa7d9c3dffdfa41f07dc969978f487d6656e4deeb",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/6/chef-server-core-12.15.7+20170611110018-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "17e0f92c6e1052fb274e58469eb6e50421ed1682",
+          "sha256": "1222e416d35619dfcd33ee7a657d8880deafbb316707efc99161b861f3d9e488",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/6/chef-server-core-12.15.7+20170612070015-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "19aec324c0af892f43a523c0f98c53604aa1cdcb",
+          "sha256": "bc8331e8de02a52929d29728c6c5086a3b293ee3575a76616cdb272d7e2f97d5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/6/chef-server-core-12.15.7+20170612120016-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "f96f26f88b883267aee4445fb90623b44d859475",
+          "sha256": "25f4cb4821c08d7dfe59d5173417f280bc350a25abd434dfa62b7b576c276e6c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/6/chef-server-core-12.15.7+20170612134019-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "a2250b43eb8856b070f0e06ba2f4d0b71f11c5c2",
+          "sha256": "10ddb4931fac65f0b8dbe37266bfb6e439034b0ad3a5fffe37eddc243bd54e73",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/6/chef-server-core-12.15.7+20170613215017-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "caa92b4327f04331291df8695aafbffb398c561c",
+          "sha256": "7f044feab61c0ecd0d18614d0ae0b8617ba250ccb1d4680fb98672d7c5b56935",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/6/chef-server-core-12.15.7+20170614061019-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "5c5e78cbebe5f8a54adaee242ef64bb49882a881",
+          "sha256": "ef0e28d6400bf274012ece8d05d9c95a85ea6db3f700e521f29e90ef072862b6",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/6/chef-server-core-12.15.7+20170616150015-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "afe3c8b36878afcca10c0244e13961eb91f4a1ed",
+          "sha256": "ca0647062e50aede0ec2e9b24ed27e7c77a59bf7c948d47c2dafd29532673801",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/6/chef-server-core-12.15.7+20170616210017-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "1fc34a443dda4d222628a070b8efa7f4d6cb7238",
+          "sha256": "ec8477ec37357ff86d0b7558cd1e137241eb12a17e9aa70f40bd5004b6079ac5",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/6/chef-server-core-12.15.7+20170619100016-1.el6.x86_64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "6f693ded1cfafb886c374d78f4b18a02d9ef32a6",
+          "sha256": "74ee076294678d7fa14c1c7166cf3e5ae0eb20ad981c2d8fac66094a21b6bde8",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/6/chef-server-core-12.15.7+20170619170017-1.el6.x86_64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "0e0d2bd29e3b53ebbb9e12cdd3f40fcd4e027499",
+          "sha256": "cb0e1c7dae13526360d75f35625d8794ce641cc399bc084c0bd6b37a757b19f2",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8/el/6/chef-server-core-12.15.8-1.el6.x86_64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "4a5aa5368f9d01ed6b89ac28de6cdaa081aeefb6",
+          "sha256": "98b885396e959d011de493023e95857784ccdd829aee63faa6dd3aac6cf82ebf",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/6/chef-server-core-12.15.8+20170620131016-1.el6.x86_64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "f7e219b7d8b53da1dcce3551ce3f976be7ee0cfc",
+          "sha256": "35719f2c4fd3ef2b93a2ba817b939a0bd82fedab4e9fa1df1dc6e591ac82b88c",
+          "url": "https://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/6/chef-server-core-12.15.8+20170622165024-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "5": {
+      "x86_64": {
+        "12.15.6+20170516213017": {
+          "sha1": "596f53c2b588a638d87bac1144829c42f6ad9c00",
+          "sha256": "0ab824cb7d11736d36edc419849781d9eab95548b6c32cac25ab161ed9b76741",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.6+20170516213017/el/5/chef-server-core-12.15.6+20170516213017-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170517144019": {
+          "sha1": "fed2ef772b46d63f3286c409b8d589575cb7e22a",
+          "sha256": "e727dd16ccb302ddfdbadb487e53e8401a5dddc287b772e1ba279925f8d8831a",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170517144019/el/5/chef-server-core-12.15.7+20170517144019-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170518085019": {
+          "sha1": "1fb685b86b7bbac9dd6bb9505cd88786692a6c43",
+          "sha256": "3b81ca0d6ae5b8a8a6dc494c3d98bfecf0cc3cded2e62678f66d2e550a8ec67b",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170518085019/el/5/chef-server-core-12.15.7+20170518085019-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170518091015": {
+          "sha1": "7c47f2d304e2f6acb0a462ed8e28fcde9b1102c3",
+          "sha256": "99e4d723b73cd0d3185e367980a52a613c1d16eefaa1c469ec0b3d0350fe5497",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170518091015/el/5/chef-server-core-12.15.7+20170518091015-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170531194015": {
+          "sha1": "365c2da93c00f1a469c20752252854c6670b1888",
+          "sha256": "2bc73fb7288a7434ebe980e2d041d8f0429f93ea5e77e3bbca83df725abc172b",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170531194015/el/5/chef-server-core-12.15.7+20170531194015-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170606124018": {
+          "sha1": "047dd9d55ff53014e301bc7481e164abf845cd91",
+          "sha256": "4f9b8d7642432f1bb6ace2bd181d5c781e19d60e4d9a7aeda377c93509221329",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170606124018/el/5/chef-server-core-12.15.7+20170606124018-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170609173017": {
+          "sha1": "f3c502b428fb541c8c1e82d26e61d045cec34601",
+          "sha256": "f5c1d46eb7c0efd97248fe9558f412f87455053841ae5ced7d68ca98edde67c4",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170609173017/el/5/chef-server-core-12.15.7+20170609173017-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170611110018": {
+          "sha1": "c22cd02928fc7c6fd95e329d66adc8e41988bb98",
+          "sha256": "aea30884c528bbdbecda00e5d6515e000e60d3ec8fff59b65692f2473e91dd1b",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170611110018/el/5/chef-server-core-12.15.7+20170611110018-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170612070015": {
+          "sha1": "d10f5e79c4a8d6687c18f6df998fe108edb17330",
+          "sha256": "c3312911f72df5b3597cb9f748705e24784ccdead15cfede80140ec3c9743af8",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170612070015/el/5/chef-server-core-12.15.7+20170612070015-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170612120016": {
+          "sha1": "271e196d2f9675e43e8a519683f4706c7f26dd7e",
+          "sha256": "e4fe0c5429679098087d67f5f7cfbf99e4f4210c7fa25c90aea271b394db07a2",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170612120016/el/5/chef-server-core-12.15.7+20170612120016-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170612134019": {
+          "sha1": "8da88443ea6f04338cc546f1e134de2e882a057b",
+          "sha256": "c353b6908f7aa90a2799af53c6479824435389c00ea6d172fb07dadac7ce46a1",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170612134019/el/5/chef-server-core-12.15.7+20170612134019-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170613215017": {
+          "sha1": "4a55f606f89641ac4299fc27d7c524a74de66a8d",
+          "sha256": "b52c61f8feab31d31f9740d2c9f2092dbb0861fff311a4b305915e55d5095f5a",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170613215017/el/5/chef-server-core-12.15.7+20170613215017-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170614061019": {
+          "sha1": "b9375f45cfcc286e3918b270ea69dd0d526b055c",
+          "sha256": "6374127dcc85693576be073757de708c83759947ff5b7e5d4692480c45a4b6ff",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170614061019/el/5/chef-server-core-12.15.7+20170614061019-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170616150015": {
+          "sha1": "14ecd2866c69935d895509744ad8d282c8bcb85d",
+          "sha256": "82a4974e4c92ebf5462bdd7838f4f0f8bfd0a7a0654c7c251a91647a72221035",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170616150015/el/5/chef-server-core-12.15.7+20170616150015-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170616210017": {
+          "sha1": "4d3c15bc9aa9bfab1bbb60711887f81a008e46ab",
+          "sha256": "22cbcd911f72107b2aed221b422bb7c7714558eaa2585b2fc768fbd5b526888f",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170616210017/el/5/chef-server-core-12.15.7+20170616210017-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170619100016": {
+          "sha1": "5f050cef4210263deddf26fab41e0a08bede460b",
+          "sha256": "e903caf68bb3cae27fcf211893f28fcc20509ed4d052ab6b8ea002f21f472be8",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170619100016/el/5/chef-server-core-12.15.7+20170619100016-1.el5.x86_64.rpm"
+        },
+        "12.15.7+20170619170017": {
+          "sha1": "9c2727396b3a2f1754b54c878926697e57912762",
+          "sha256": "f8668532f21e6f8a96daddb164ca81e01405908603eb7258da5a3aeb0c26dc08",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.7+20170619170017/el/5/chef-server-core-12.15.7+20170619170017-1.el5.x86_64.rpm"
+        },
+        "12.15.8": {
+          "sha1": "a6b22d2b5776f7616c71de9eaab997e56d534680",
+          "sha256": "7c9241b1262c40774e4101f02f1f133c0ee203aeb8948c8b7dba5c1afea7d3a9",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.8/el/5/chef-server-core-12.15.8-1.el5.x86_64.rpm"
+        },
+        "12.15.8+20170620131016": {
+          "sha1": "7339870b0708df2ed3e66e368fddd7c12c20d42f",
+          "sha256": "4d5d09f9782c57811ecfa4fd385fe9e8e871024a8c494461b742177d136018d0",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.8+20170620131016/el/5/chef-server-core-12.15.8+20170620131016-1.el5.x86_64.rpm"
+        },
+        "12.15.8+20170622165024": {
+          "sha1": "13d6548623a66ef97a4e7c90841cb5840431d162",
+          "sha256": "ec1a215fbfc88e7490c00a26e5d7e7542a2bc7f2a58b8bd894a5d2d46e35d8dd",
+          "url": "http://packages.chef.io/files/current/chef-server/12.15.8+20170622165024/el/5/chef-server-core-12.15.8+20170622165024-1.el5.x86_64.rpm"
+        }
+      }
+    }
+  },
   "run_data": {
-    "timestamp": "2015-10-01 23:36:35 -0700"
+    "timestamp": "2017-06-22 12:03:03 -0700"
   }
 }

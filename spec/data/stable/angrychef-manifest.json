@@ -1,194 +1,526 @@
 {
   "debian": {
-    "6": {
+    "7": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "28d2d4882a56209a5b8ff7a537c8af68",
-          "sha256": "4db147737e858d3ee17db465065f2c8f14ff65773bc33cd5fe282458116c76fd"
+        "12.6.0": {
+          "sha1": "68181e781e76742d6e0c89a6f850135488a783fd",
+          "sha256": "c7f5a7880635e657ea74e9231a0e5d40a57c87b84cb166cd85d82fd8cf4ee458",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/debian/7/angrychef_12.6.0-1_amd64.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "31d6921e156db7ec17b8cf6fae6c998b",
-          "sha256": "dd5db1ea411558f8bf39c6d4c254dd5dd125d1828e31c147cf1d7fbe3e03d3c4"
+        "12.9.38": {
+          "sha1": "d89e2a775b67f58f8edaf096b74f6decf5249c1c",
+          "sha256": "38d601f3fbb3fa45b714728dd7412ac0b8150d219be537eb8437a3db08d42779",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/7/angrychef_12.9.38-1_amd64.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "97fb7a2eb8172f9f9fb5188e5b4eb449",
-          "sha256": "d583eb43ba1f7b3cd440382873c172dbbc6b50478c1eef6913cae15532d3d736"
+        "12.17.44": {
+          "sha1": "23724343fb0f56f662029bcbece95a26e169fb9c",
+          "sha256": "9bd090f63ff832c43be7549530f50ee11bf633534d1fbc68b8133e0e431525f7",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/7/angrychef_12.17.44-1_amd64.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.2.1-1_amd64.deb",
-          "sha1": "1047a611391f8d1f154bd17dc80f05be",
-          "sha256": "da3affb7301c8a7ccb105c15da4229091c8ba8573e124fe07b5044e2869080e4"
+        "12.18.31": {
+          "sha1": "b988409b36fcce650a449b8844a336842e4f3f84",
+          "sha256": "95888d49c14f9171a2fb29ca8224dc75a2be45992ba18f3fcc64c559d0ecfb1e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/7/angrychef_12.18.31-1_amd64.deb"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "52ca3097a7f89ed4e98d85ff1de7be45",
-          "sha256": "685301bc8d32a90ff498ac5997fa48080eb2bda9e35a4ac6e177c0a0c5d97294"
+        "12.6.0": {
+          "sha1": "75b38f2af84792c7464392593a59abc01100341b",
+          "sha256": "e053d2bf7899acfc71dc1049aad5fd3d14e9af4314e8fdb96b2c12a58d913c40",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/debian/7/angrychef_12.6.0-1_i386.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "b5f90e3d1744ebd1055db082ae369f93",
-          "sha256": "6fd9b8a6712321cea2e281749338db15369d4d87ee2ccc29d2d6bd207ff0af7c"
+        "12.9.38": {
+          "sha1": "24c97e4892c57e14e7efdcdce41a36e80ee4888b",
+          "sha256": "1b11372ea8a7df98a8d771a2a8ec0224c67dceaca166427026e133ce0769deeb",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/7/angrychef_12.9.38-1_i386.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.2.1-1_i386.deb",
-          "sha1": "7bd526e5b492356dbe0286160598ef10",
-          "sha256": "bbc65218cf106a55f09422860236227f7ecf9560aee177ae57f2dd3a8e9102b8"
+        "12.17.44": {
+          "sha1": "9698746e863eb9bac317458a2976e1af20d6ff5c",
+          "sha256": "4ff0619f37f3605f57c2d492617dd8c079e25be90abb9e9a973f5b956f4bd3cc",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/7/angrychef_12.17.44-1_i386.deb"
+        },
+        "12.18.31": {
+          "sha1": "aea3ae793d6eb478a5f954738382fbce35dca518",
+          "sha256": "12a371904bcd637b600be857e938b303a16f0d708c05fa8b51a1b56e792153ad",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/7/angrychef_12.18.31-1_i386.deb"
         }
       }
     },
-    "7": {
+    "6": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "28d2d4882a56209a5b8ff7a537c8af68",
-          "sha256": "4db147737e858d3ee17db465065f2c8f14ff65773bc33cd5fe282458116c76fd"
+        "12.6.0": {
+          "sha1": "68181e781e76742d6e0c89a6f850135488a783fd",
+          "sha256": "c7f5a7880635e657ea74e9231a0e5d40a57c87b84cb166cd85d82fd8cf4ee458",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/debian/6/angrychef_12.6.0-1_amd64.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "31d6921e156db7ec17b8cf6fae6c998b",
-          "sha256": "dd5db1ea411558f8bf39c6d4c254dd5dd125d1828e31c147cf1d7fbe3e03d3c4"
+        "12.9.38": {
+          "sha1": "d89e2a775b67f58f8edaf096b74f6decf5249c1c",
+          "sha256": "38d601f3fbb3fa45b714728dd7412ac0b8150d219be537eb8437a3db08d42779",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/6/angrychef_12.9.38-1_amd64.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "97fb7a2eb8172f9f9fb5188e5b4eb449",
-          "sha256": "d583eb43ba1f7b3cd440382873c172dbbc6b50478c1eef6913cae15532d3d736"
+        "12.17.44": {
+          "sha1": "23724343fb0f56f662029bcbece95a26e169fb9c",
+          "sha256": "9bd090f63ff832c43be7549530f50ee11bf633534d1fbc68b8133e0e431525f7",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/6/angrychef_12.17.44-1_amd64.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/debian/6/x86_64/angrychef_12.2.1-1_amd64.deb",
-          "sha1": "1047a611391f8d1f154bd17dc80f05be",
-          "sha256": "da3affb7301c8a7ccb105c15da4229091c8ba8573e124fe07b5044e2869080e4"
+        "12.18.31": {
+          "sha1": "b988409b36fcce650a449b8844a336842e4f3f84",
+          "sha256": "95888d49c14f9171a2fb29ca8224dc75a2be45992ba18f3fcc64c559d0ecfb1e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/6/angrychef_12.18.31-1_amd64.deb"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "52ca3097a7f89ed4e98d85ff1de7be45",
-          "sha256": "685301bc8d32a90ff498ac5997fa48080eb2bda9e35a4ac6e177c0a0c5d97294"
+        "12.6.0": {
+          "sha1": "75b38f2af84792c7464392593a59abc01100341b",
+          "sha256": "e053d2bf7899acfc71dc1049aad5fd3d14e9af4314e8fdb96b2c12a58d913c40",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/debian/6/angrychef_12.6.0-1_i386.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "b5f90e3d1744ebd1055db082ae369f93",
-          "sha256": "6fd9b8a6712321cea2e281749338db15369d4d87ee2ccc29d2d6bd207ff0af7c"
+        "12.9.38": {
+          "sha1": "24c97e4892c57e14e7efdcdce41a36e80ee4888b",
+          "sha256": "1b11372ea8a7df98a8d771a2a8ec0224c67dceaca166427026e133ce0769deeb",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/6/angrychef_12.9.38-1_i386.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/debian/6/i686/angrychef_12.2.1-1_i386.deb",
-          "sha1": "7bd526e5b492356dbe0286160598ef10",
-          "sha256": "bbc65218cf106a55f09422860236227f7ecf9560aee177ae57f2dd3a8e9102b8"
+        "12.17.44": {
+          "sha1": "9698746e863eb9bac317458a2976e1af20d6ff5c",
+          "sha256": "4ff0619f37f3605f57c2d492617dd8c079e25be90abb9e9a973f5b956f4bd3cc",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/6/angrychef_12.17.44-1_i386.deb"
+        },
+        "12.18.31": {
+          "sha1": "aea3ae793d6eb478a5f954738382fbce35dca518",
+          "sha256": "12a371904bcd637b600be857e938b303a16f0d708c05fa8b51a1b56e792153ad",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/6/angrychef_12.18.31-1_i386.deb"
+        }
+      }
+    },
+    "8": {
+      "i386": {
+        "12.9.38": {
+          "sha1": "24c97e4892c57e14e7efdcdce41a36e80ee4888b",
+          "sha256": "1b11372ea8a7df98a8d771a2a8ec0224c67dceaca166427026e133ce0769deeb",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/8/angrychef_12.9.38-1_i386.deb"
+        },
+        "12.17.44": {
+          "sha1": "9698746e863eb9bac317458a2976e1af20d6ff5c",
+          "sha256": "4ff0619f37f3605f57c2d492617dd8c079e25be90abb9e9a973f5b956f4bd3cc",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/8/angrychef_12.17.44-1_i386.deb"
+        },
+        "12.18.31": {
+          "sha1": "aea3ae793d6eb478a5f954738382fbce35dca518",
+          "sha256": "12a371904bcd637b600be857e938b303a16f0d708c05fa8b51a1b56e792153ad",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/8/angrychef_12.18.31-1_i386.deb"
+        }
+      },
+      "x86_64": {
+        "12.9.38": {
+          "sha1": "d89e2a775b67f58f8edaf096b74f6decf5249c1c",
+          "sha256": "38d601f3fbb3fa45b714728dd7412ac0b8150d219be537eb8437a3db08d42779",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/debian/8/angrychef_12.9.38-1_amd64.deb"
+        },
+        "12.17.44": {
+          "sha1": "23724343fb0f56f662029bcbece95a26e169fb9c",
+          "sha256": "9bd090f63ff832c43be7549530f50ee11bf633534d1fbc68b8133e0e431525f7",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/debian/8/angrychef_12.17.44-1_amd64.deb"
+        },
+        "12.18.31": {
+          "sha1": "b988409b36fcce650a449b8844a336842e4f3f84",
+          "sha256": "95888d49c14f9171a2fb29ca8224dc75a2be45992ba18f3fcc64c559d0ecfb1e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/debian/8/angrychef_12.18.31-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "10.10": {
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "08836f476d4ee98405f72f0e172cb5c060cc6055",
+          "sha256": "6e0b082d5218788e392f7aecbb05f21496f7e3dd9252516ae2a53193a6d594e6",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/mac_os_x/10.10/angrychef-12.6.0-1.dmg"
+        },
+        "12.9.38": {
+          "sha1": "19d21c0b3531925c6baa48073b636d384245bcd1",
+          "sha256": "40a435c5f6113f301131ec16e2b11131271eae94124da86a0db09bf1bd51f161",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/mac_os_x/10.10/angrychef-12.9.38-1.dmg"
+        },
+        "12.17.44": {
+          "sha1": "efe299df4e952a65c9bacc68144b1dc251d648d4",
+          "sha256": "df7a6fbc77bb599a23dc4298a63c82dafba126819b13ebc4aa44f5b3f1967e3f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/mac_os_x/10.10/angrychef-12.17.44-1.dmg"
+        },
+        "12.18.31": {
+          "sha1": "04459b2dd7156be9be0c61fd6a929d8f660a4e6c",
+          "sha256": "9cd51fb5e1892b96ee71a26cffcc25912dd34864864710a590068a07c4927185",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/mac_os_x/10.10/angrychef-12.18.31-1.dmg"
+        }
+      }
+    },
+    "10.9": {
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "08836f476d4ee98405f72f0e172cb5c060cc6055",
+          "sha256": "6e0b082d5218788e392f7aecbb05f21496f7e3dd9252516ae2a53193a6d594e6",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/mac_os_x/10.9/angrychef-12.6.0-1.dmg"
+        },
+        "12.9.38": {
+          "sha1": "19d21c0b3531925c6baa48073b636d384245bcd1",
+          "sha256": "40a435c5f6113f301131ec16e2b11131271eae94124da86a0db09bf1bd51f161",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/mac_os_x/10.9/angrychef-12.9.38-1.dmg"
+        },
+        "12.17.44": {
+          "sha1": "efe299df4e952a65c9bacc68144b1dc251d648d4",
+          "sha256": "df7a6fbc77bb599a23dc4298a63c82dafba126819b13ebc4aa44f5b3f1967e3f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/mac_os_x/10.9/angrychef-12.17.44-1.dmg"
+        },
+        "12.18.31": {
+          "sha1": "04459b2dd7156be9be0c61fd6a929d8f660a4e6c",
+          "sha256": "9cd51fb5e1892b96ee71a26cffcc25912dd34864864710a590068a07c4927185",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/mac_os_x/10.9/angrychef-12.18.31-1.dmg"
+        }
+      }
+    },
+    "10.11": {
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "08836f476d4ee98405f72f0e172cb5c060cc6055",
+          "sha256": "6e0b082d5218788e392f7aecbb05f21496f7e3dd9252516ae2a53193a6d594e6",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/mac_os_x/10.11/angrychef-12.6.0-1.dmg"
+        },
+        "12.9.38": {
+          "sha1": "19d21c0b3531925c6baa48073b636d384245bcd1",
+          "sha256": "40a435c5f6113f301131ec16e2b11131271eae94124da86a0db09bf1bd51f161",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/mac_os_x/10.11/angrychef-12.9.38-1.dmg"
+        },
+        "12.17.44": {
+          "sha1": "efe299df4e952a65c9bacc68144b1dc251d648d4",
+          "sha256": "df7a6fbc77bb599a23dc4298a63c82dafba126819b13ebc4aa44f5b3f1967e3f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/mac_os_x/10.11/angrychef-12.17.44-1.dmg"
+        },
+        "12.18.31": {
+          "sha1": "04459b2dd7156be9be0c61fd6a929d8f660a4e6c",
+          "sha256": "9cd51fb5e1892b96ee71a26cffcc25912dd34864864710a590068a07c4927185",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/mac_os_x/10.11/angrychef-12.18.31-1.dmg"
+        }
+      }
+    },
+    "10.12": {
+      "x86_64": {
+        "12.17.44": {
+          "sha1": "efe299df4e952a65c9bacc68144b1dc251d648d4",
+          "sha256": "df7a6fbc77bb599a23dc4298a63c82dafba126819b13ebc4aa44f5b3f1967e3f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/mac_os_x/10.12/angrychef-12.17.44-1.dmg"
+        },
+        "12.18.31": {
+          "sha1": "04459b2dd7156be9be0c61fd6a929d8f660a4e6c",
+          "sha256": "9cd51fb5e1892b96ee71a26cffcc25912dd34864864710a590068a07c4927185",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/mac_os_x/10.12/angrychef-12.18.31-1.dmg"
         }
       }
     }
   },
   "el": {
-    "5": {
+    "6": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-11.14.2-2.el5.x86_64.rpm",
-          "sha1": "f97b0ff412ad99204718d8c448776063",
-          "sha256": "8b5b1c1ec506767bc332ff62087b024e4d47a82c01e0c6083af3180daa4e5fc3"
+        "12.6.0": {
+          "sha1": "c4e8338aa773c830ffe8ae51022ca1bfb190c424",
+          "sha256": "aa519b26fae60a98e5b82a79abf7e8a08d7141acc03544e616066775343cb110",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/el/6/angrychef-12.6.0-1.el6.x86_64.rpm"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.0-1.x86_64.rpm",
-          "sha1": "4430d9c5a50ce9ed310aeff573398a2d",
-          "sha256": "5e74e8072ff4dea8946370f13a075240edbc755c46c132a88894e6956c8b91af"
+        "12.9.38": {
+          "sha1": "530374a61eccf0f42e2072efa4269338d32fac25",
+          "sha256": "c89d41822b1838ca0f2a4449a4f06fc4d3e6ca039f441f6b5438539b9ceab69a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/el/6/angrychef-12.9.38-1.el6.x86_64.rpm"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.3-1.x86_64.rpm",
-          "sha1": "2c8c75ced50cb9a2ecf2bfb1b5ca5fa6",
-          "sha256": "a7c7388f094f348aaedb36cf37fe946e6ea948b11370c63979c6aa8e295c96b2"
+        "12.17.44": {
+          "sha1": "8eed29534fa691259089cda6e29397d87aa8f30d",
+          "sha256": "7c7210ee2d464bb344a5af9e7c2118027ae991b0255c01cbc72a5d492b74d473",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/6/angrychef-12.17.44-1.el6.x86_64.rpm"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.2.1-1.el5.x86_64.rpm",
-          "sha1": "8a9e21e192b125ae3f797daf5c431cfb",
-          "sha256": "5ad35cf42c32eeac1fa7ffd5ad24c58d1106803a379ce5e4579267ba35c4ab03"
+        "12.18.31": {
+          "sha1": "225cdc29096a29ed94219f73d995e4dbf84a7da7",
+          "sha256": "61a7d9f8cec3b2dede32a64041a6815050d1e5cbf5510361f032b1d57e66e061",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/6/angrychef-12.18.31-1.el6.x86_64.rpm"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.0-1.i686.rpm",
-          "sha1": "17aad5fbd5532d44701839c8be79766b",
-          "sha256": "c244e212726d7d97ad2551607d39957b1489eda31e7b3db1a51a375a3f8c7057"
+        "12.6.0": {
+          "sha1": "0327fe179e109b9aed2a29e034933351bc21d562",
+          "sha256": "c6c8b6f4e0c5ec56b9eb3deb760ecf74b83966b9da87d3413533ea018a0f588a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/el/6/angrychef-12.6.0-1.el6.i386.rpm"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.3-1.i686.rpm",
-          "sha1": "464568863fdfa5f9d642b992255d98b1",
-          "sha256": "d4c6ac2a72e95a220879991679dfdaf0ec22e8993fc5d394c494cadf0426af0a"
+        "12.9.38": {
+          "sha1": "095d7b909d6aca6963b0346d246b1397bca2f663",
+          "sha256": "86820b8e1cb4b621d97bb6493cbea10691d27c47305e934d28e0abecf065f0a7",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/el/6/angrychef-12.9.38-1.el6.i386.rpm"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.2.1-1.el5.i686.rpm",
-          "sha1": "91c076478b6bd5b4bee9a2cb82b70a01",
-          "sha256": "1cd5684123d77bf125d75c3e7a12f095fd93c5cbf0346725a98ddd85e40ce467"
+        "12.17.44": {
+          "sha1": "ede88903f6e59b1b56ef03ede933402b4fd2c594",
+          "sha256": "7a4ee7ea33367d48e02ee4c883a1887682b8036400bce9617ddfd00978c6bc1b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/6/angrychef-12.17.44-1.el6.i386.rpm"
+        },
+        "12.18.31": {
+          "sha1": "5ae6797a5fb998d54b7a975f1cf91c87f5d41f57",
+          "sha256": "65c0a8a892f00880d5614992e66d91d90182eefd81a98183057cacaff54204dc",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/6/angrychef-12.18.31-1.el6.i386.rpm"
+        }
+      },
+      "s390x": {
+        "12.18.31": {
+          "sha1": "e1131dde6d21f5e08694ca42c4523535344bc252",
+          "sha256": "d71eca702209aff7d1289914e9050c4a01573d319735f9f486c9ec6437c36216",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/6/angrychef-12.18.31-1.el6.s390x.rpm"
         }
       }
     },
-    "6": {
+    "5": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-11.14.2-2.el5.x86_64.rpm",
-          "sha1": "f97b0ff412ad99204718d8c448776063",
-          "sha256": "8b5b1c1ec506767bc332ff62087b024e4d47a82c01e0c6083af3180daa4e5fc3"
+        "12.6.0": {
+          "sha1": "1aad4efc91c75f89f296cf8a108215a372c318ac",
+          "sha256": "5afd16ac733bd0caa7e0b38fc2280c0681d2e68dfc606c466b7adf50b05f0440",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/el/5/angrychef-12.6.0-1.el5.x86_64.rpm"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.0-1.x86_64.rpm",
-          "sha1": "4430d9c5a50ce9ed310aeff573398a2d",
-          "sha256": "5e74e8072ff4dea8946370f13a075240edbc755c46c132a88894e6956c8b91af"
+        "12.9.38": {
+          "sha1": "c9ce902130d81bd1e775452c6899e9f770618e49",
+          "sha256": "8ed6b90afbfbd082a71c5c5ed13b71887a8b3446263a24f5e558a8986f26254b",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/el/5/angrychef-12.9.38-1.el5.x86_64.rpm"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.3-1.x86_64.rpm",
-          "sha1": "2c8c75ced50cb9a2ecf2bfb1b5ca5fa6",
-          "sha256": "a7c7388f094f348aaedb36cf37fe946e6ea948b11370c63979c6aa8e295c96b2"
+        "12.17.44": {
+          "sha1": "0ea5585461829ef836a5b4d6f0faeaec02d98de0",
+          "sha256": "f8b9fb9725aaf256ee0649d9bd101f1985a60a0021819c067cd7f18b15145026",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/el/5/angrychef-12.17.44-1.el5.x86_64.rpm"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/el/6/x86_64/angrychef-12.2.1-1.el6.x86_64.rpm",
-          "sha1": "1b30d4c01b6494541dd074be11dea88e",
-          "sha256": "37fa65be3f275dbe38e7428f027ad80ce40229ca762a213716327f673882650e"
+        "12.18.31": {
+          "sha1": "1568940bd26cd3bda60bc2e9a5a8ab25c8e645ad",
+          "sha256": "df53d5afdcedf99a300969c5b2a290b37f189f1662d80f8b22ba4e5d41e9c912",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/el/5/angrychef-12.18.31-1.el5.x86_64.rpm"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.0-1.i686.rpm",
-          "sha1": "17aad5fbd5532d44701839c8be79766b",
-          "sha256": "c244e212726d7d97ad2551607d39957b1489eda31e7b3db1a51a375a3f8c7057"
+        "12.6.0": {
+          "sha1": "df2c0afa647b57dbe54dbc5c77011bca61b035f6",
+          "sha256": "1149c3f59b03c884c6ea29a2543f09e621ee12c626d09aa21def9ea5f1bbcd06",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/el/5/angrychef-12.6.0-1.el5.i386.rpm"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.3-1.i686.rpm",
-          "sha1": "464568863fdfa5f9d642b992255d98b1",
-          "sha256": "d4c6ac2a72e95a220879991679dfdaf0ec22e8993fc5d394c494cadf0426af0a"
+        "12.9.38": {
+          "sha1": "ba94c460771f178e587ea3fcf9aad27c80bd08dc",
+          "sha256": "46464220eb8abfea2b9dcc613b45d47567f64d5119bdf3aceaf19384ec75b50e",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/el/5/angrychef-12.9.38-1.el5.i386.rpm"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/el/6/i686/angrychef-12.2.1-1.el6.i686.rpm",
-          "sha1": "d28adfcc88ed417d6fea998016f699d3",
-          "sha256": "cbf4611c0b7d69e9574cf0b017866f10bed84229a32667215836423c1dd55c1a"
+        "12.17.44": {
+          "sha1": "ca6410878ab34aaeef711c03831e530947b4e8e7",
+          "sha256": "b7fd500efa256b24f3c1441973291ccd71c1852b7b795e6ccc30857874809a5b",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/el/5/angrychef-12.17.44-1.el5.i386.rpm"
+        },
+        "12.18.31": {
+          "sha1": "d96c1e91b709a14c29f89c69cf5bceb30a43f72d",
+          "sha256": "4da723a8bf8843c3ee0fcc7a1b63b6cc585fc08aa5b8f70e1007c86e9e172fee",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/el/5/angrychef-12.18.31-1.el5.i386.rpm"
         }
       }
     },
     "7": {
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.0-1.i686.rpm",
-          "sha1": "17aad5fbd5532d44701839c8be79766b",
-          "sha256": "c244e212726d7d97ad2551607d39957b1489eda31e7b3db1a51a375a3f8c7057"
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "109fbceaa0e27f5069efd9f51d98bfc1cdc00d10",
+          "sha256": "c4f1c74140e72cce75d81e95508b34bc3aa5f05ecd31b0d4149a40e1731546c0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/el/7/angrychef-12.6.0-1.el7.x86_64.rpm"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/i686/angrychef-12.0.3-1.i686.rpm",
-          "sha1": "464568863fdfa5f9d642b992255d98b1",
-          "sha256": "d4c6ac2a72e95a220879991679dfdaf0ec22e8993fc5d394c494cadf0426af0a"
+        "12.9.38": {
+          "sha1": "50a2cbabc4886cbfbf917134b45199da837c5051",
+          "sha256": "49eb961ba51ce020d322ece1b2400012f7f7e002f6f3530f288425e5c613ffb8",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/el/7/angrychef-12.9.38-1.el7.x86_64.rpm"
+        },
+        "12.17.44": {
+          "sha1": "bdba45504ea85ad62389faec8a16a86eafeaa291",
+          "sha256": "ec68875e5fc6e824c6b99fb8e6aaadeac8a86f9196ce33a12359f46b67a3570e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/7/angrychef-12.17.44-1.el7.x86_64.rpm"
+        },
+        "12.18.31": {
+          "sha1": "bd4a2ffafc068273496fc0c6f4c0bc2cd6c7c24e",
+          "sha256": "dcfafb722bbbafcc81c3af90dae8196e08f8408ab9675336d7d2432f9d24e167",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/7/angrychef-12.18.31-1.el7.x86_64.rpm"
+        }
+      },
+      "ppc64": {
+        "12.9.38": {
+          "sha1": "d1e955aa08bfc1eaae50ded94cb44850cde4296b",
+          "sha256": "79f9a8212261b0b083562b4a6fde2b128283f6f2a90796bf00220cbf5c66e2ad",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/el/7/angrychef-12.9.38-1.el7.ppc64.rpm"
+        },
+        "12.17.44": {
+          "sha1": "363347435aaf6fdc18ca6503de624b28a3a68079",
+          "sha256": "83a1dd7b599d095a994e43bd8036353aeb5c406861d367f18bc05586b540d9b9",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/7/angrychef-12.17.44-1.el7.ppc64.rpm"
+        },
+        "12.18.31": {
+          "sha1": "57d7c1ba3400441ba4e64e30591ca2e1c0875b1b",
+          "sha256": "f2ef212b56ff687d74209b00e8839c3501980759d8aa20bddbf2b144053487f6",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/7/angrychef-12.18.31-1.el7.ppc64.rpm"
+        }
+      },
+      "ppc64le": {
+        "12.9.38": {
+          "sha1": "71228bedf4a19524026a6343aa92df0a9c95c944",
+          "sha256": "68e7afade293c58ec5aa82a88161600cd7ed819c99af08b844680197a8b4e1b0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/el/7/angrychef-12.9.38-1.el7.ppc64le.rpm"
+        },
+        "12.17.44": {
+          "sha1": "b8d81631d136d118672d688f98c39f028577c0cc",
+          "sha256": "ba2010c88fcdc171d50e26750527092072f923b0e29a6a40ba1730a7097ab1dd",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/7/angrychef-12.17.44-1.el7.ppc64le.rpm"
+        },
+        "12.18.31": {
+          "sha1": "eb92700ea9dc5bc3379687e57102ae49ea1ede30",
+          "sha256": "fc95a27acb2bb9cc62f68f51e1da6893f0a64f6e3c9661a7745356eb26d595ae",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/7/angrychef-12.18.31-1.el7.ppc64le.rpm"
+        }
+      },
+      "s390x": {
+        "12.17.44": {
+          "sha1": "7a55556d30cfc71b0f0de9c0d68e0d7c535c7bf1",
+          "sha256": "b827a0661b1bf15d0e8319a2d3555a50248a70cc0d92077e37622bff5b49ea15",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/el/7/angrychef-12.17.44-1.el7.s390x.rpm"
+        },
+        "12.18.31": {
+          "sha1": "079023c332bb8302fecf089fe3fe0d416b92521e",
+          "sha256": "f95a50ea38cc350b283613a8cf513b9e530ad0b49b2c4c8174a8e4a46f2ce3f2",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/el/7/angrychef-12.18.31-1.el7.s390x.rpm"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.11": {
+      "i386": {
+        "12.6.0": {
+          "sha1": "1b919e6f7391a512ac297c4839c152c43e4374b0",
+          "sha256": "b7a35b1269a5b02ab1e28bb1dc5b52473be80f39336b3deffad8d519f3484725",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/solaris2/5.11/angrychef-12.6.0-1.i386.solaris"
+        },
+        "12.9.38": {
+          "sha1": "fb295a079228d9f9d5efedee95df704f7598affc",
+          "sha256": "50d557fd99c826b8af8082f3861c643d16288346f00ffde8cd31d9ed48c71126",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/solaris2/5.11/angrychef-12.9.38-1.i386.solaris"
+        },
+        "12.17.44": {
+          "sha1": "7a71f83e0b2659bcbf887fe135ae6747237706f7",
+          "sha256": "a1873726a0db4d2a3872b63efe83ffec13b15b1f33cbb61187af2ba4df3e1573",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/solaris2/5.11/angrychef-12.17.44-1.i386.p5p"
+        },
+        "12.18.31": {
+          "sha1": "ddb5367e1194c7dc775a036f4c152195ecce9a10",
+          "sha256": "57e8ae24b9b08c5c7bc4ab41594c973cf6f19dffa0c60b0325d7a664e10ef9b2",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/solaris2/5.11/angrychef-12.18.31-1.i386.p5p"
+        }
+      },
+      "sparc": {
+        "12.6.0": {
+          "sha1": "bba6cb7416532f19fe7a3e7f8643e6a0c47b8937",
+          "sha256": "6ef284d8d31e97c1c579ede0b7a5590266e4457ccff5ecd811ef079082ccf6f0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/solaris2/5.11/angrychef-12.6.0-1.sparc.solaris"
+        },
+        "12.9.38": {
+          "sha1": "7e962a2016cb5890034787787d858b9bacc89981",
+          "sha256": "d0b759d189e88cc7e1a691c062cdcfecd18fb63c6ec855d0534f59fc4c4205b0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/solaris2/5.11/angrychef-12.9.38-1.sparc.solaris"
+        },
+        "12.17.44": {
+          "sha1": "c166cb59f25e22cf182ea4a15c46fc13223e38df",
+          "sha256": "719c01b843e443e196ff1ac8d1372a1952c5063dce50393b8f2ae6ae3a11fce0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/solaris2/5.11/angrychef-12.17.44-1.sparc.p5p"
+        },
+        "12.18.31": {
+          "sha1": "617789d14f80f8637d84d0520c43ff40f0a4151c",
+          "sha256": "afccdbec59aeaaae0de304655a8851287809b3c56f120cd0e02e8ca62de4332a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/solaris2/5.11/angrychef-12.18.31-1.sparc.p5p"
+        }
+      }
+    },
+    "5.10": {
+      "sparc": {
+        "12.6.0": {
+          "sha1": "bba6cb7416532f19fe7a3e7f8643e6a0c47b8937",
+          "sha256": "6ef284d8d31e97c1c579ede0b7a5590266e4457ccff5ecd811ef079082ccf6f0",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/solaris2/5.10/angrychef-12.6.0-1.sparc.solaris"
+        },
+        "12.9.38": {
+          "sha1": "7e962a2016cb5890034787787d858b9bacc89981",
+          "sha256": "d0b759d189e88cc7e1a691c062cdcfecd18fb63c6ec855d0534f59fc4c4205b0",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/solaris2/5.10/angrychef-12.9.38-1.sparc.solaris"
+        },
+        "12.17.44": {
+          "sha1": "2812d001fb731c1bcd45c649edf0f16d4bed16ec",
+          "sha256": "d07add12ce60ff2992674727e7b3807309537602e7a2b13106ac8b2a693356ef",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/solaris2/5.10/angrychef-12.17.44-1.sparc.solaris"
+        },
+        "12.18.31": {
+          "sha1": "e99a88ba1ec2ea0c9e5fdc85a49e4e62948eea18",
+          "sha256": "b529cf1f0c266517d7650fec5f696b03e2f455c712a7d8b32153c6557a376996",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/solaris2/5.10/angrychef-12.18.31-1.sparc.solaris"
+        }
+      },
+      "i386": {
+        "12.6.0": {
+          "sha1": "1b919e6f7391a512ac297c4839c152c43e4374b0",
+          "sha256": "b7a35b1269a5b02ab1e28bb1dc5b52473be80f39336b3deffad8d519f3484725",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/solaris2/5.10/angrychef-12.6.0-1.i386.solaris"
+        },
+        "12.9.38": {
+          "sha1": "fb295a079228d9f9d5efedee95df704f7598affc",
+          "sha256": "50d557fd99c826b8af8082f3861c643d16288346f00ffde8cd31d9ed48c71126",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/solaris2/5.10/angrychef-12.9.38-1.i386.solaris"
+        },
+        "12.17.44": {
+          "sha1": "74b2d5028915284f51563da51d7969a5086bcdc2",
+          "sha256": "13fee5b581ed9d0c6ef7025290079ccd0ea2faf233ceed364a667480343ee2de",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/solaris2/5.10/angrychef-12.17.44-1.i386.solaris"
+        },
+        "12.18.31": {
+          "sha1": "1fdb659ef9aba86b793db6e24584b9419043823f",
+          "sha256": "ede14ce0c0ddfedb94242845cc5de42335aacdf47e77072e31c9a30866c6b1e1",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/solaris2/5.10/angrychef-12.18.31-1.i386.solaris"
+        }
+      }
+    }
+  },
+  "windows": {
+    "2008r2": {
+      "i386": {
+        "12.6.0": {
+          "sha1": "1bce7a7979c67eb5b676c5573b59d2cbfe714f8d",
+          "sha256": "d1d623d513b7826d97dbde22c667b460749a3cf7fb6c2f9a1c8a626711a63bb8",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/windows/2012r2/angrychef-12.6.0-1-x86.msi"
+        },
+        "12.9.38": {
+          "sha1": "fe451e90cf0be80bd8bf584c6b02042e4d95fb95",
+          "sha256": "49c65b8eecd1df0f0f48f540e98d5c184290b69530c1ec32421c46d0d8405987",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/windows/2012r2/angrychef-12.9.38-1-x86.msi"
+        },
+        "12.17.44": {
+          "sha1": "534e5a0135507dadc5cfd757ee83d7bcce50911d",
+          "sha256": "740857e5fae4422c6ba12d4ec62e83937f901c92f008571cd042e76c8a10a85b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/windows/2012r2/angrychef-12.17.44-1-x86.msi"
+        },
+        "12.18.31": {
+          "sha1": "afb7cf8b1d537646dc207fb0acbb50b9a3a176f5",
+          "sha256": "d1d480787bd3584bb519499d4127192e2ab4d6616432a618320bd4f813c3a351",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/windows/2012r2/angrychef-12.18.31-1-x86.msi"
         }
       },
       "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.0-1.x86_64.rpm",
-          "sha1": "4430d9c5a50ce9ed310aeff573398a2d",
-          "sha256": "5e74e8072ff4dea8946370f13a075240edbc755c46c132a88894e6956c8b91af"
+        "12.9.38": {
+          "sha1": "aa83af2ecdb6cbec643c1fda1d69c55834e692c2",
+          "sha256": "841d6bfc20fb89f7eaa61820d0f5d44bc60e0d67631a58e2920440974e7cba2b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/windows/2012r2/angrychef-12.9.38-1-x64.msi"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/el/5/x86_64/angrychef-12.0.3-1.x86_64.rpm",
-          "sha1": "2c8c75ced50cb9a2ecf2bfb1b5ca5fa6",
-          "sha256": "a7c7388f094f348aaedb36cf37fe946e6ea948b11370c63979c6aa8e295c96b2"
+        "12.17.44": {
+          "sha1": "5e6677e43b38082b05282e645b71e42e7fd9606b",
+          "sha256": "f578a5ea5810af077ccf1148784ecaf26c223f54998bc5eabfa942e90877a8fb",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/windows/2012r2/angrychef-12.17.44-1-x64.msi"
+        },
+        "12.18.31": {
+          "sha1": "f41a1f1665d0e03f0daf01b9496bd543b618d473",
+          "sha256": "de44c2880ce559645868c811ce85830a7a3340d11ba273dba19eb37b2465b854",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/windows/2012r2/angrychef-12.18.31-1-x64.msi"
         }
       }
     }
@@ -196,441 +528,388 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
+        "12.6.0": {
+          "sha1": "cdbed35d5815f188a9e48e35f1a0fd23af025be0",
+          "sha256": "35a4e0be3af5bf7a9e45df9f50e9c23eff50eed82c4d3e1d0d7eb5040a7230d9",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/10.04/angrychef_12.6.0-1_amd64.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.2.1-1_amd64.deb",
-          "sha1": "7f3bc39192ac9ef867d4ad992d50169b",
-          "sha256": "6bdf91f8087a94c1e0b1a19ce253ad57931602fdf7476b96e9d1cc1279a1554f"
+        "12.9.38": {
+          "sha1": "e11793dd3778c4f4cc0d6b1c986f3855d756ec4e",
+          "sha256": "3f0ed4fb3542484931807bb53baf2202dc2133161fb02b91c13c445f32aeba27",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/10.04/angrychef_12.9.38-1_amd64.deb"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
+        "12.6.0": {
+          "sha1": "f9acd702fd5e9c2446fd920e529f4df7b2e5663c",
+          "sha256": "833ec24b97f8ec8cb09efa2b0af8271d317056e6c806b1a536cc7956069582af",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/10.04/angrychef_12.6.0-1_i386.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.2.1-1_i386.deb",
-          "sha1": "890b59c8a7a37651ee643f21107f0471",
-          "sha256": "88eedf856c3942ee1c5fa9e17a3623b9be216a05fedd3241aa190908e5f23ef6"
+        "12.9.38": {
+          "sha1": "5b02f3c8cbecd1cce9302ca3eb4676a8b594441d",
+          "sha256": "25beaf402c9096a28a4119f6e225dc88d1389ac72c73077c0843ac3fd2e7c147",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/10.04/angrychef_12.9.38-1_i386.deb"
         }
       }
     },
-    "11.04": {
-      "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
+    "14.04": {
+      "i386": {
+        "12.6.0": {
+          "sha1": "f9acd702fd5e9c2446fd920e529f4df7b2e5663c",
+          "sha256": "833ec24b97f8ec8cb09efa2b0af8271d317056e6c806b1a536cc7956069582af",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/14.04/angrychef_12.6.0-1_i386.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
+        "12.9.38": {
+          "sha1": "5b02f3c8cbecd1cce9302ca3eb4676a8b594441d",
+          "sha256": "25beaf402c9096a28a4119f6e225dc88d1389ac72c73077c0843ac3fd2e7c147",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/14.04/angrychef_12.9.38-1_i386.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
+        "12.17.44": {
+          "sha1": "157e4b7422638bfb6a7c328c6cc96725337be13b",
+          "sha256": "27a19f2d6aaf6249f05f7779c776521c61d140d295cda0ff8211f5540c5e502b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/14.04/angrychef_12.17.44-1_i386.deb"
+        },
+        "12.18.31": {
+          "sha1": "8974f27bf45ae6c20ea1e5e01ff651815c2a6ee4",
+          "sha256": "4612fb0927fad86fd587eb14a86a76f83b0b76dcfbada67cb1090572154a6f07",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/14.04/angrychef_12.18.31-1_i386.deb"
         }
       },
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "cdbed35d5815f188a9e48e35f1a0fd23af025be0",
+          "sha256": "35a4e0be3af5bf7a9e45df9f50e9c23eff50eed82c4d3e1d0d7eb5040a7230d9",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/14.04/angrychef_12.6.0-1_amd64.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
+        "12.9.38": {
+          "sha1": "e11793dd3778c4f4cc0d6b1c986f3855d756ec4e",
+          "sha256": "3f0ed4fb3542484931807bb53baf2202dc2133161fb02b91c13c445f32aeba27",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/14.04/angrychef_12.9.38-1_amd64.deb"
+        },
+        "12.17.44": {
+          "sha1": "8f41d2a85abaf18ae5da311904afedb9e633b7b6",
+          "sha256": "c058b2c5464f6791ccd84ffb279d994cdd0247d10c3e0ffed87494bef909ed8f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/14.04/angrychef_12.17.44-1_amd64.deb"
+        },
+        "12.18.31": {
+          "sha1": "2b3bed89ce6d30c2a03aacbed173adad05f8c320",
+          "sha256": "e854fd9d50f22397d51cc4a9b3a5ee4329b00fc492b22b48bf01f2cfbc802f2b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/14.04/angrychef_12.18.31-1_amd64.deb"
+        }
+      },
+      "ppc64le": {
+        "12.9.38": {
+          "sha1": "0036f68d1fb5bb37ef3e395030519030cf431f40",
+          "sha256": "5ee63e84b4422605aa3a4e0daa01a05108e1be128f98bf12c16a98f2db6fae5b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/14.04/angrychef_12.9.38-1_ppc64el.deb"
+        },
+        "12.17.44": {
+          "sha1": "d1a2bc65cc4119bc991e25e56f8ad290c34a0557",
+          "sha256": "92165c6d59ba2703f699d11ab8eae910d30c2d4786248dfe8495b214a62f174f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/14.04/angrychef_12.17.44-1_ppc64el.deb"
+        },
+        "12.18.31": {
+          "sha1": "ce6715c47c5bc66cb14e1eea9a23adb92769e48e",
+          "sha256": "e1173135fc16f8ce2ffb338859c9147441b0ee2624c4adc73609134a5cb52336",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/14.04/angrychef_12.18.31-1_ppc64el.deb"
         }
       }
     },
     "12.04": {
       "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
+        "12.6.0": {
+          "sha1": "cdbed35d5815f188a9e48e35f1a0fd23af025be0",
+          "sha256": "35a4e0be3af5bf7a9e45df9f50e9c23eff50eed82c4d3e1d0d7eb5040a7230d9",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/12.04/angrychef_12.6.0-1_amd64.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
+        "12.9.38": {
+          "sha1": "e11793dd3778c4f4cc0d6b1c986f3855d756ec4e",
+          "sha256": "3f0ed4fb3542484931807bb53baf2202dc2133161fb02b91c13c445f32aeba27",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/12.04/angrychef_12.9.38-1_amd64.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
+        "12.17.44": {
+          "sha1": "8f41d2a85abaf18ae5da311904afedb9e633b7b6",
+          "sha256": "c058b2c5464f6791ccd84ffb279d994cdd0247d10c3e0ffed87494bef909ed8f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/12.04/angrychef_12.17.44-1_amd64.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.2.1-1_amd64.deb",
-          "sha1": "7f3bc39192ac9ef867d4ad992d50169b",
-          "sha256": "6bdf91f8087a94c1e0b1a19ce253ad57931602fdf7476b96e9d1cc1279a1554f"
+        "12.18.31": {
+          "sha1": "2b3bed89ce6d30c2a03aacbed173adad05f8c320",
+          "sha256": "e854fd9d50f22397d51cc4a9b3a5ee4329b00fc492b22b48bf01f2cfbc802f2b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/12.04/angrychef_12.18.31-1_amd64.deb"
         }
       },
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
+        "12.6.0": {
+          "sha1": "f9acd702fd5e9c2446fd920e529f4df7b2e5663c",
+          "sha256": "833ec24b97f8ec8cb09efa2b0af8271d317056e6c806b1a536cc7956069582af",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/ubuntu/12.04/angrychef_12.6.0-1_i386.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
+        "12.9.38": {
+          "sha1": "5b02f3c8cbecd1cce9302ca3eb4676a8b594441d",
+          "sha256": "25beaf402c9096a28a4119f6e225dc88d1389ac72c73077c0843ac3fd2e7c147",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ubuntu/12.04/angrychef_12.9.38-1_i386.deb"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.2.1-1_i386.deb",
-          "sha1": "890b59c8a7a37651ee643f21107f0471",
-          "sha256": "88eedf856c3942ee1c5fa9e17a3623b9be216a05fedd3241aa190908e5f23ef6"
+        "12.17.44": {
+          "sha1": "157e4b7422638bfb6a7c328c6cc96725337be13b",
+          "sha256": "27a19f2d6aaf6249f05f7779c776521c61d140d295cda0ff8211f5540c5e502b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/12.04/angrychef_12.17.44-1_i386.deb"
+        },
+        "12.18.31": {
+          "sha1": "8974f27bf45ae6c20ea1e5e01ff651815c2a6ee4",
+          "sha256": "4612fb0927fad86fd587eb14a86a76f83b0b76dcfbada67cb1090572154a6f07",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/12.04/angrychef_12.18.31-1_i386.deb"
         }
       }
     },
-    "13.04": {
-      "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
+    "16.04": {
+      "i386": {
+        "12.17.44": {
+          "sha1": "157e4b7422638bfb6a7c328c6cc96725337be13b",
+          "sha256": "27a19f2d6aaf6249f05f7779c776521c61d140d295cda0ff8211f5540c5e502b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/16.04/angrychef_12.17.44-1_i386.deb"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
+        "12.18.31": {
+          "sha1": "8974f27bf45ae6c20ea1e5e01ff651815c2a6ee4",
+          "sha256": "4612fb0927fad86fd587eb14a86a76f83b0b76dcfbada67cb1090572154a6f07",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/16.04/angrychef_12.18.31-1_i386.deb"
         }
       },
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
+      "x86_64": {
+        "12.17.44": {
+          "sha1": "8f41d2a85abaf18ae5da311904afedb9e633b7b6",
+          "sha256": "c058b2c5464f6791ccd84ffb279d994cdd0247d10c3e0ffed87494bef909ed8f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ubuntu/16.04/angrychef_12.17.44-1_amd64.deb"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
+        "12.18.31": {
+          "sha1": "2b3bed89ce6d30c2a03aacbed173adad05f8c320",
+          "sha256": "e854fd9d50f22397d51cc4a9b3a5ee4329b00fc492b22b48bf01f2cfbc802f2b",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ubuntu/16.04/angrychef_12.18.31-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "aix": {
+    "6.1": {
+      "powerpc": {
+        "12.6.0": {
+          "sha1": "5d74efd9270cf20fc47a0dd14f2331e4aae23cbb",
+          "sha256": "8b572694dddb85785f59422f451e6f3ab8b5e76b01213b9d313b0b50463efbd0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/aix/6.1/angrychef-12.6.0-1.powerpc.bff"
+        },
+        "12.9.38": {
+          "sha1": "6400d12ef30bb3102a540f4091ca5abd24e1c53e",
+          "sha256": "6ccd586c9464ebdab7f5a0e1bdac8ec95d2227b37a3130d87cbc028d6d141b4a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/aix/6.1/angrychef-12.9.38-1.powerpc.bff"
+        },
+        "12.17.44": {
+          "sha1": "104195a096a77b2691faa5ac73009de0fb6e995f",
+          "sha256": "740f087ea2e2696111c3e16a868c3a4bf23a1bd1bd28b263e8b5c66cde2beffd",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/aix/6.1/angrychef-12.17.44-1.powerpc.bff"
+        },
+        "12.18.31": {
+          "sha1": "01f60f7f380105a0e4de1b0cbeea42129968a10e",
+          "sha256": "cddba3b8c0ac75e4b43a48656246577983a4d4494e80d6fc5859b597c37d9f11",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/aix/6.1/angrychef-12.18.31-1.powerpc.bff"
         }
       }
     },
-    "13.10": {
-      "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
+    "7.1": {
+      "powerpc": {
+        "12.6.0": {
+          "sha1": "5d74efd9270cf20fc47a0dd14f2331e4aae23cbb",
+          "sha256": "8b572694dddb85785f59422f451e6f3ab8b5e76b01213b9d313b0b50463efbd0",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/aix/7.1/angrychef-12.6.0-1.powerpc.bff"
         },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
+        "12.9.38": {
+          "sha1": "6400d12ef30bb3102a540f4091ca5abd24e1c53e",
+          "sha256": "6ccd586c9464ebdab7f5a0e1bdac8ec95d2227b37a3130d87cbc028d6d141b4a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/aix/7.1/angrychef-12.9.38-1.powerpc.bff"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
-        }
-      },
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
+        "12.17.44": {
+          "sha1": "104195a096a77b2691faa5ac73009de0fb6e995f",
+          "sha256": "740f087ea2e2696111c3e16a868c3a4bf23a1bd1bd28b263e8b5c66cde2beffd",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/aix/7.1/angrychef-12.17.44-1.powerpc.bff"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
-        }
-      }
-    },
-    "14.04": {
-      "x86_64": {
-        "11.14.2-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_11.14.2-2_amd64.deb",
-          "sha1": "d7903e0690e2a8e61b6264b6126a8734",
-          "sha256": "d2267e6aa9a2c30783daf6120dfaf2ed15766659a80edcd02b0c8fcc71961efe"
-        },
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.2.1-1_amd64.deb",
-          "sha1": "7f3bc39192ac9ef867d4ad992d50169b",
-          "sha256": "6bdf91f8087a94c1e0b1a19ce253ad57931602fdf7476b96e9d1cc1279a1554f"
-        }
-      },
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.2.1-1_i386.deb",
-          "sha1": "890b59c8a7a37651ee643f21107f0471",
-          "sha256": "88eedf856c3942ee1c5fa9e17a3623b9be216a05fedd3241aa190908e5f23ef6"
-        }
-      }
-    },
-    "12.10": {
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.0-1_i386.deb",
-          "sha1": "44b4bccae2519b7cf4c7503c130219e2",
-          "sha256": "45bd53e0787d3dd325378609aff815bdb7e21850d6d586d1f13ef3aebdc2a61c"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/i686/angrychef_12.0.3-1_i386.deb",
-          "sha1": "a497f1ed841608bf8d1ac1b1cda9280a",
-          "sha256": "610c646a341e9b7a69e3e951b78e663e7454150ab04f346d4e8b1b2dcff83fce"
-        }
-      },
-      "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.0-1_amd64.deb",
-          "sha1": "3cb9ea0694ceae5e744f4ea67d148f31",
-          "sha256": "4939fcfc0713843cd4c23733a5da37a26542f6562867b7ab8e3287ce29a700d3"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/x86_64/angrychef_12.0.3-1_amd64.deb",
-          "sha1": "b02d109a5a6661c1c5df12b9bbc46d60",
-          "sha256": "9c2d201985a479935592864e739a735292c157311bae25bd0edfdb6f86caf712"
+        "12.18.31": {
+          "sha1": "01f60f7f380105a0e4de1b0cbeea42129968a10e",
+          "sha256": "cddba3b8c0ac75e4b43a48656246577983a4d4494e80d6fc5859b597c37d9f11",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/aix/7.1/angrychef-12.18.31-1.powerpc.bff"
         }
       }
     }
   },
   "freebsd": {
-    "9": {
-      "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/i386/angrychef-12.0.0_1.i386.sh",
-          "sha1": "4dcadf755dddff4b02242eab8ade0ab6",
-          "sha256": "c879f24413c4a299bce7bb3adc1e9bb6fb14560ad5e5f012c906a956b30dd778"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/i386/angrychef-12.0.3_1.i386.sh",
-          "sha1": "dec7f76a4ae7da9a5de6bc1cb1dd86a2",
-          "sha256": "2295d089b854425291b1bf2bd6c71267823fbbbd703bdcd79336dd913368b78f"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/i386/angrychef-12.2.1_1.i386.sh",
-          "sha1": "5595a407c80f09d4344086c21d334a85",
-          "sha256": "16d95d313b7d6e64c9d34b2773975f98f1358ba4ea60fbc0cc89c3a9fc742f94"
-        }
-      },
-      "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/amd64/angrychef-12.0.0_1.amd64.sh",
-          "sha1": "e132996d55081756165df7456940fd54",
-          "sha256": "6bf8ee67cd304b3cf585e973782616b292d987434d683c708917ac2b31721f6f"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/amd64/angrychef-12.0.3_1.amd64.sh",
-          "sha1": "0921df0e596c01b2a77ed6fe6e2738ae",
-          "sha256": "eb9c947d9a7662fbeba9fc5eec3e2fb0f40ffc036ada2524f11bb942a6ca02a5"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/freebsd/9/amd64/angrychef-12.2.1_1.amd64.sh",
-          "sha1": "23306087a190bc37e00a82ed51d0bf91",
-          "sha256": "7a8152e392a169e8e88be678f8375cc9e1ad9ad118a9886b533a920aaf0713ed"
-        }
-      }
-    },
     "10": {
       "i386": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/i386/angrychef-12.0.0_1.i386.sh",
-          "sha1": "8e734d2700120884cc4ab2dabe3c5435",
-          "sha256": "becec52fc52e5e5103a73e5a912b7fed750ed7a74f6df0bf8bde7f864ee75d54"
+        "12.6.0": {
+          "sha1": "50a226135bb24a3ebbf4b256cf6b01fb4a1d8cbe",
+          "sha256": "14005684183e70667cf7da374af7d6368d37fc88a0dc4253f959c34f83299df9",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/freebsd/10/angrychef-12.6.0_1.i386.sh"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/i386/angrychef-12.0.3_1.i386.sh",
-          "sha1": "dd1b35968e71be195f47e28b11dc0899",
-          "sha256": "ccd939538c02c4755b6205d39b71b9731b5d8c51b1f4908121871cc43c6f84f5"
+        "12.9.38": {
+          "sha1": "6bb06da377b5f2d68a537b4fae19e32ce0c53bd7",
+          "sha256": "c308be2ba73e773d893256688b73dfc3e892ea334bc3c6ca19a6fc1ef7d19f52",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/freebsd/10/angrychef-12.9.38_1.i386.sh"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/i386/angrychef-12.2.1_1.i386.sh",
-          "sha1": "b1c03958cc5b6c242b2a5b6a3563fdd1",
-          "sha256": "4282e38834f5e6b2d895d358a4f03f661841e682431fa5edc56c0b3c6d5b8829"
+        "12.17.44": {
+          "sha1": "df15acb0baab6c8dafc3035e343f43185d010452",
+          "sha256": "b01fab61dc88fe5553927351b81700da6317a61d2c5f6934bda69360ec9371a3",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/freebsd/10/angrychef-12.17.44_1.i386.sh"
+        },
+        "12.18.31": {
+          "sha1": "adc6ea547b0cc4a1a3fe776ea06f10c5d62030e0",
+          "sha256": "7fec1bc0a7e6640a52c464024ecfa295e302fe21853d876c2f01a4a841acbc4d",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/freebsd/10/angrychef-12.18.31_1.i386.sh"
         }
       },
       "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/amd64/angrychef-12.0.0_1.amd64.sh",
-          "sha1": "e28c1a50f884361b2f313d5988795024",
-          "sha256": "df1dcf01dc16049078939b64916c45c6739f6dad07adf8608a72df041e562296"
+        "12.6.0": {
+          "sha1": "86a90fdc218ea1c7871b61b87413a1386cdc96d5",
+          "sha256": "bc68e3db45c8a4b82855416037e33ede7b56d1b73102267ea3d2c033bc9e151f",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/freebsd/10/angrychef-12.6.0_1.amd64.sh"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/amd64/angrychef-12.0.3_1.amd64.sh",
-          "sha1": "17682717123450de855818a0f283b9f8",
-          "sha256": "defaa42f64c9253d87ae093dd70c383f2e811b94348c992c6ec194dfdb124752"
+        "12.9.38": {
+          "sha1": "5478aba9a7e56d1dc5eb9c16047cb92b029322d8",
+          "sha256": "c54c4c71e5045c99b2e0fb85f5d4e724ae89642c2956781aeeba312a7dcb8388",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/freebsd/10/angrychef-12.9.38_1.amd64.sh"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/freebsd/10/amd64/angrychef-12.2.1_1.amd64.sh",
-          "sha1": "29caaf8e27e7bc3bcfaa4cba3deb3662",
-          "sha256": "a4148fae2e59ba9007c42d28b7b46d37ac0d669ca85d1f2810d43bee462af2c0"
-        }
-      }
-    }
-  },
-  "mac_os_x": {
-    "10.8": {
-      "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.0-1.dmg",
-          "sha1": "0f41eef2cb9224bc7c7b5708bcb87ead",
-          "sha256": "1381b9dabf84527216877ad680d698b372ba922651f8931077c0133368b15332"
+        "12.17.44": {
+          "sha1": "933a0e4f1d6759210c540d0657796b087939920c",
+          "sha256": "1194d7a8f3a585e9174b30c563717eb29e44dc149167ee437bc9589b4fc0372d",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/freebsd/10/angrychef-12.17.44_1.amd64.sh"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.3-1.dmg",
-          "sha1": "50bf69b034f96dd5f7dec47132951b66",
-          "sha256": "c98aeddfd5081793c18f2f56344a688aaada611cd4027a6837ab3717af073db1"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.2.1-1.dmg",
-          "sha1": "ba9b97ffcd82c1a304c8ebf2e5b70cb9",
-          "sha256": "8f30bb04df87c5c77bc9b4f8ebec99ad1d80b1158cd889dc4efd3297e4c81ff5"
+        "12.18.31": {
+          "sha1": "0abb0020733b6a709637a91abfff1656b6597b7a",
+          "sha256": "78951411d0ca441a5c07f63d6554456e8f192a98e19124d77f0c94feddda4d77",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/freebsd/10/angrychef-12.18.31_1.amd64.sh"
         }
       }
     },
-    "10.9": {
+    "9": {
       "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.0-1.dmg",
-          "sha1": "0f41eef2cb9224bc7c7b5708bcb87ead",
-          "sha256": "1381b9dabf84527216877ad680d698b372ba922651f8931077c0133368b15332"
+        "12.6.0": {
+          "sha1": "36a30ed8d3ba16a480441884fe5aa2c4e7f67122",
+          "sha256": "ac11ae63a4de5b01c30697cd2c7fe3d9d13eca145acbe41453e72729665c129b",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/freebsd/9/angrychef-12.6.0_1.amd64.sh"
         },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.3-1.dmg",
-          "sha1": "50bf69b034f96dd5f7dec47132951b66",
-          "sha256": "c98aeddfd5081793c18f2f56344a688aaada611cd4027a6837ab3717af073db1"
+        "12.9.38": {
+          "sha1": "ca9680e476542cee076bbd0d339a1c2a8c414901",
+          "sha256": "e0cc8c3e746e6ad3a491059bccb66664da30c0383826426b47e18700d16a72b3",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/freebsd/9/angrychef-12.9.38_1.amd64.sh"
         },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.2.1-1.dmg",
-          "sha1": "ba9b97ffcd82c1a304c8ebf2e5b70cb9",
-          "sha256": "8f30bb04df87c5c77bc9b4f8ebec99ad1d80b1158cd889dc4efd3297e4c81ff5"
+        "12.17.44": {
+          "sha1": "ff7f2e35c4114b26e3aab0c8edf92d7029ecbbbb",
+          "sha256": "a35337b0d65661287352033beb25f9a4a88c4e0c5a250d2afb8fdff855612dcd",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/freebsd/9/angrychef-12.17.44_1.amd64.sh"
+        },
+        "12.18.31": {
+          "sha1": "5e6458d4872f09a25889cfcd34b4a3fd4e53354b",
+          "sha256": "0b04927127c47c4771915cd15599fce1e03ac3eeba4a09bb7f7456dd64068548",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/freebsd/9/angrychef-12.18.31_1.amd64.sh"
         }
-      }
-    },
-    "10.10": {
-      "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.0-1.dmg",
-          "sha1": "0f41eef2cb9224bc7c7b5708bcb87ead",
-          "sha256": "1381b9dabf84527216877ad680d698b372ba922651f8931077c0133368b15332"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.0.3-1.dmg",
-          "sha1": "50bf69b034f96dd5f7dec47132951b66",
-          "sha256": "c98aeddfd5081793c18f2f56344a688aaada611cd4027a6837ab3717af073db1"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/mac_os_x/10.8/x86_64/angrychef-12.2.1-1.dmg",
-          "sha1": "ba9b97ffcd82c1a304c8ebf2e5b70cb9",
-          "sha256": "8f30bb04df87c5c77bc9b4f8ebec99ad1d80b1158cd889dc4efd3297e4c81ff5"
-        }
-      }
-    }
-  },
-  "windows": {
-    "2008r2": {
-      "x86_64": {
-        "12.0.0-1": {
-          "url": "https://packages.chef.io/stable/windows/2008r2/x86_64/angrychef-12.0.0-1.msi",
-          "sha1": "e76d26b802e7e71fe903cef864aee26f",
-          "sha256": "8912ece54a6c03d098587ac352fe51de046a9a2daf48283a1fe33c31dbc79996"
-        },
-        "12.0.3-1": {
-          "url": "https://packages.chef.io/stable/windows/2008r2/x86_64/angrychef-12.0.3-1.msi",
-          "sha1": "d7e667ad3875eef11075ff3197083579",
-          "sha256": "abd95c3d55dcf29b667a9d57051b4027cac703a1d9e8a7fc43b4abc74eb40471"
-        },
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/windows/2008r2/x86_64/angrychef-12.2.1-1.msi",
-          "sha1": "0898b52ce5d2865f8c6eaf248c0a2ad5",
-          "sha256": "d455f529ab9b199f99207c7f1233a8d4d9e7b24deb65444805d93077ccebe71b"
-        },
-        "12.9.38-1": {
-          "url": "https://packages.chef.io/stable/windows/2012r2/angrychef-12.9.38-1-x64.msi",
-          "sha1": "aa83af2ecdb6cbec643c1fda1d69c55834e692c2",
-          "sha256": "841d6bfc20fb89f7eaa61820d0f5d44bc60e0d67631a58e2920440974e7cba2b"
-        }
-      }
-    }
-  },
-  "solaris2": {
-    "5.10": {
+      },
       "i386": {
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/solaris2/5.10/i86pc/angrychef-12.2.1-1.i86pc.solaris",
-          "sha1": "b43a71dbf8a025fdee1690d26a4a2f4c",
-          "sha256": "13b2fc42f4b31772d017da4c30bdd35a89db9bb36c4ccf4dd80a2b60826aa1ec"
+        "12.6.0": {
+          "sha1": "0645c9ed7f7c33835eb9d3b03fb4d35cf89f2f2e",
+          "sha256": "20a2d77fa06100a766ac05bc5dbe3ff6fee675ec47c151367c08945a38ece268",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.6.0/freebsd/9/angrychef-12.6.0_1.i386.sh"
+        },
+        "12.9.38": {
+          "sha1": "923b5468ddc0fa400925321e951ddbe678075938",
+          "sha256": "feb2f41b10df8e87b0a51017df19c03bb1f491f47ada5a7694d8ac36ce7f8711",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.9.38/freebsd/9/angrychef-12.9.38_1.i386.sh"
+        },
+        "12.17.44": {
+          "sha1": "151f983791179dd0a963dcbd6ed4c0d17d634e23",
+          "sha256": "0c4c0132222a899f23f1a74082764583c5bad98d02f7436b473de301d33ad2dd",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.17.44/freebsd/9/angrychef-12.17.44_1.i386.sh"
+        },
+        "12.18.31": {
+          "sha1": "80debfe2f8bc8bb686ff24f4ad422de6fa40f263",
+          "sha256": "bcc8813499e894e37c445be3333909b65e7834e78f32e6a9be8e6f152c8e679f",
+          "url": "http://packages.chef.io/files/stable/angrychef/12.18.31/freebsd/9/angrychef-12.18.31_1.i386.sh"
         }
-      },
-      "sparc": {
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/solaris2/5.10/sun4v/angrychef-12.2.1-1.sun4v.solaris",
-          "sha1": "a43cef4070c78c06d3d4583a50e59a25",
-          "sha256": "92dab050b9124b5fb49f75d11cc6a91a6d2adf21c8db69edaafd869fe41fab2d"
+      }
+    }
+  },
+  "nexus": {
+    "7": {
+      "x86_64": {
+        "12.6.0": {
+          "sha1": "b1cca5e3e7e26b7d266f67e97b38b1fa4ff85e63",
+          "sha256": "e16471bc3c2772c9070b767e1c2513cc57eb497cb8d80a8f77f0d0998f4b36e1",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.6.0/nexus/7/angrychef-12.6.0-1.nexus7.x86_64.rpm"
+        },
+        "12.9.38": {
+          "sha1": "f346fbf2246ff25a3742e3129f2f2eddd50f0e71",
+          "sha256": "c13807922f65586f89966a2c63b1e85e859fc71e936f59e30019121b531f374e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/nexus/7/angrychef-12.9.38-1.nexus7.x86_64.rpm"
+        },
+        "12.17.44": {
+          "sha1": "0c4f26ec324abb8e86a12a791b8653033ed64c51",
+          "sha256": "66a8a892ae4fea0ca0df10364c94a46a9bf0dc8cd939319317725ac07f05455a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/nexus/7/angrychef-12.17.44-1.nexus7.x86_64.rpm"
+        },
+        "12.18.31": {
+          "sha1": "e2e4dc62f8dec663ce7c2963c292eb469567326c",
+          "sha256": "87d19863262171e9ace99278dcd99d559cc18825bcaf1b1a1b09877db46fd1d5",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/nexus/7/angrychef-12.18.31-1.nexus7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ios_xr": {
+    "6": {
+      "x86_64": {
+        "12.9.38": {
+          "sha1": "e19fe4cc9de673938e49a0d7dba9373acdeaf0a4",
+          "sha256": "7f15cf5b103e4abf68090b8edfc01943c25ffa77ed9ad797c9f44a330377fb07",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.9.38/ios_xr/6/angrychef-12.9.38-1.ios_xr6.x86_64.rpm"
+        },
+        "12.17.44": {
+          "sha1": "b1c8a2e9e4f7a354d8c26946f170f7bf90a4fd24",
+          "sha256": "170ea351046e26ad03c3875c6026e9fcacdbef0684d7060cb4bd3b673dc4cf85",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/ios_xr/6/angrychef-12.17.44-1.ios_xr6.x86_64.rpm"
+        },
+        "12.18.31": {
+          "sha1": "d069d2ecba760f0d2772c89d180800b422f5863b",
+          "sha256": "ebfe75383b8e4a907586a310c0675fbcaada81e68fd88f6161bd261a71b5bf1a",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/ios_xr/6/angrychef-12.18.31-1.ios_xr6.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "sles": {
+    "12": {
+      "s390x": {
+        "12.17.44": {
+          "sha1": "10188dac58ccdefe4af48a4aeed03e884baf98ba",
+          "sha256": "d5ed561c254b3d5d445b7dbc1cee12582786945366b888b2a1198a6693ca79df",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/sles/12/angrychef-12.17.44-1.sles12.s390x.rpm"
+        },
+        "12.18.31": {
+          "sha1": "f9681941b98b55c13c94295034119955ce94d78c",
+          "sha256": "2c2cdbd1cd0d563c17f6a83475565f5126a45cd967ebbc67bb1956098a690839",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/sles/12/angrychef-12.18.31-1.sles12.s390x.rpm"
         }
       }
     },
-    "5.11": {
-      "i386": {
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/solaris2/5.10/i86pc/angrychef-12.2.1-1.i86pc.solaris",
-          "sha1": "b43a71dbf8a025fdee1690d26a4a2f4c",
-          "sha256": "13b2fc42f4b31772d017da4c30bdd35a89db9bb36c4ccf4dd80a2b60826aa1ec"
-        }
-      },
-      "sparc": {
-        "12.2.1-1": {
-          "url": "https://packages.chef.io/stable/solaris2/5.10/sun4v/angrychef-12.2.1-1.sun4v.solaris",
-          "sha1": "a43cef4070c78c06d3d4583a50e59a25",
-          "sha256": "92dab050b9124b5fb49f75d11cc6a91a6d2adf21c8db69edaafd869fe41fab2d"
+    "11": {
+      "s390x": {
+        "12.17.44": {
+          "sha1": "fa79e414f52d1d77a3479bc008264bf5484bd31b",
+          "sha256": "f65fde5f2495ad3616a8896fccb3cce47c6faf228861dd6bae783f6a07c00f0e",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.17.44/sles/11/angrychef-12.17.44-1.sles11.s390x.rpm"
+        },
+        "12.18.31": {
+          "sha1": "49ae337aefa216bf64481c8a8c61320213cb0407",
+          "sha256": "c1d3e1db8064c37b0dfa9a9f25739fe61f1ea597171b7a3f2c6cd45f4b619386",
+          "url": "https://packages.chef.io/files/stable/angrychef/12.18.31/sles/11/angrychef-12.18.31-1.sles11.s390x.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2015-10-01 23:36:34 -0700"
+    "timestamp": "2017-06-22 12:02:30 -0700"
   }
 }

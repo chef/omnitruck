@@ -2,89 +2,149 @@
   "el": {
     "6": {
       "x86_64": {
-        "0.0.10": {
-          "sha1": "fe4c3476919a903724dcae7ceae80eb6630925b4",
-          "sha256": "1cdf8d8d00a2b1b245885fa0cba9cdd2c44aff6d85c975858c78f4405e8a6cdc",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.10-1.el6.x86_64.rpm"
-        },
-        "0.0.7": {
-          "sha1": "16a6daac35a805bba1a248cd7a32a43187cf64d5",
-          "sha256": "c0c1c80cfa50dfcd2fd9cbb0ae83c630970f4ec118c9c34ff52965c1c337741f",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.7-1.el6.x86_64.rpm"
-        },
-        "0.0.6": {
-          "sha1": "4d9dd443a48917fb64d4f066b24ccbd8edcc3d75",
-          "sha256": "09d468ec57631dcaef0a367d47e431f672c21b015443b7ab6f13a8df5dcbcd4d",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.6-1.el6.x86_64.rpm"
-        },
-        "0.0.5": {
-          "sha1": "08d9ed1e1a54e60eb7a330ef4f35639c129448ae",
-          "sha256": "dba1e65fa2df3bfa1b94e1949519c99a0f7aded729014bdb732a23720983924b",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.5-1.el6.x86_64.rpm"
-        },
-        "0.0.4": {
-          "sha1": "7a36b44eb11313bbe12de2d94364f098080c9a6d",
-          "sha256": "0f1ac3baa9c6557a45d3e9c802b13364d718fa9fc757774b50c907ef496085cc",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.4-1.el6.x86_64.rpm"
-        },
-        "0.0.3": {
-          "sha1": "df9044abb8cad2ac61ca5b085e22029fb9032825",
-          "sha256": "b7d223a2e5a448ae64e79d4e560a988a4fac68dd39e3c72332f9cd938bee2472",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.3-1.el6.x86_64.rpm"
+        "0.0.1": {
+          "sha1": "ea5967780704ba62b4e61dd042af5a87b7895d36",
+          "sha256": "18d9e8678e936b138106d16d3e2c627bf31d6429cea867514563356a8c7e85a3",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.1/el/6/chef-marketplace-0.0.1-1.el6.x86_64.rpm"
         },
         "0.0.2": {
           "sha1": "4078bdd296ab32e9c891790ad1468496efe862bd",
           "sha256": "dd491666c548f215334edc61ba61e6945f66a0e035776f9d7cbe4816aa0d9a25",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.2-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.2/el/6/chef-marketplace-0.0.2-1.el6.x86_64.rpm"
         },
-        "0.0.1": {
-          "sha1": "ea5967780704ba62b4e61dd042af5a87b7895d36",
-          "sha256": "18d9e8678e936b138106d16d3e2c627bf31d6429cea867514563356a8c7e85a3",
-          "url": "https://packages.chef.io/stable/el/6/chef-marketplace-0.0.1-1.el6.x86_64.rpm"
+        "0.0.3": {
+          "sha1": "df9044abb8cad2ac61ca5b085e22029fb9032825",
+          "sha256": "b7d223a2e5a448ae64e79d4e560a988a4fac68dd39e3c72332f9cd938bee2472",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.3/el/6/chef-marketplace-0.0.3-1.el6.x86_64.rpm"
+        },
+        "0.0.4": {
+          "sha1": "7a36b44eb11313bbe12de2d94364f098080c9a6d",
+          "sha256": "0f1ac3baa9c6557a45d3e9c802b13364d718fa9fc757774b50c907ef496085cc",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.4/el/6/chef-marketplace-0.0.4-1.el6.x86_64.rpm"
+        },
+        "0.0.5": {
+          "sha1": "08d9ed1e1a54e60eb7a330ef4f35639c129448ae",
+          "sha256": "dba1e65fa2df3bfa1b94e1949519c99a0f7aded729014bdb732a23720983924b",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.5/el/6/chef-marketplace-0.0.5-1.el6.x86_64.rpm"
+        },
+        "0.0.6": {
+          "sha1": "4d9dd443a48917fb64d4f066b24ccbd8edcc3d75",
+          "sha256": "09d468ec57631dcaef0a367d47e431f672c21b015443b7ab6f13a8df5dcbcd4d",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.6/el/6/chef-marketplace-0.0.6-1.el6.x86_64.rpm"
+        },
+        "0.0.7": {
+          "sha1": "16a6daac35a805bba1a248cd7a32a43187cf64d5",
+          "sha256": "c0c1c80cfa50dfcd2fd9cbb0ae83c630970f4ec118c9c34ff52965c1c337741f",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.7/el/6/chef-marketplace-0.0.7-1.el6.x86_64.rpm"
+        },
+        "0.0.10": {
+          "sha1": "fe4c3476919a903724dcae7ceae80eb6630925b4",
+          "sha256": "1cdf8d8d00a2b1b245885fa0cba9cdd2c44aff6d85c975858c78f4405e8a6cdc",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.10/el/6/chef-marketplace-0.0.10-1.el6.x86_64.rpm"
+        },
+        "0.0.11": {
+          "sha1": "e889bd38a4ccf72864e633456b412fe860d5279d",
+          "sha256": "e4aca5c1992a980451bd35d26c89b8faeec592928fedc9e7b6eac5a80dd4b31e",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.11/el/6/chef-marketplace-0.0.11-1.el6.x86_64.rpm"
+        },
+        "0.0.12": {
+          "sha1": "64d0657678de837c68a220b93a747fa4960cc423",
+          "sha256": "903287717465361c347947c8aea8d28c702953565d5d06b5cfb72cdae882329c",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.12/el/6/chef-marketplace-0.0.12-1.el6.x86_64.rpm"
+        },
+        "0.0.13": {
+          "sha1": "8befe6a2412f1908297ae8664a514d8d615f6b0f",
+          "sha256": "2174a7703297bfd2a74f0f03eec51d58e99d7fd6d4f2bfa62242531677c6ee59",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.13/el/6/chef-marketplace-0.0.13-1.el6.x86_64.rpm"
+        },
+        "0.2.0": {
+          "sha1": "61036584395b312653151471a14a319c6ca47b4d",
+          "sha256": "950d0f2c9ae675fb9bbae5256bfe00d3da128325e28693ea2210c34405a5f302",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.0/el/6/chef-marketplace-0.2.0-1.el6.x86_64.rpm"
+        },
+        "0.2.1": {
+          "sha1": "b0cd944ca63d59c5a70340d0394c3bbc3c2dea95",
+          "sha256": "3f7c01720d30b7a6204ae535e776d356466c0fb70ed17b8323fd4a244f8cba98",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.1/el/6/chef-marketplace-0.2.1-1.el6.x86_64.rpm"
+        },
+        "0.2.2": {
+          "sha1": "9cdf40072013479c998a69a1535eea44cd36a41d",
+          "sha256": "e0491731a7b0018400c6a82bdef40a26b6faefa494bf819f90b3bd941aa1762e",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.2/el/6/chef-marketplace-0.2.2-1.el6.x86_64.rpm"
         }
       }
     },
     "7": {
       "x86_64": {
-        "0.0.10": {
-          "sha1": "dcb90ee63595b731f28bc13d7d3cec345568f607",
-          "sha256": "6e2d82902268203720e979c100e389cdf2534743ce1fe395ac7e203ef2c7f363",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.10-1.el7.x86_64.rpm"
-        },
-        "0.0.7": {
-          "sha1": "30df30cd548972a2cf291b3999d2a9e0cbfe39bf",
-          "sha256": "2814ab58c7a0f506e02b739a1d6c57248734da4f53b92ec63dba8fc55f284c74",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.7-1.el7.x86_64.rpm"
-        },
-        "0.0.6": {
-          "sha1": "d62db86227f1895074ee5e742c34344e10e139a3",
-          "sha256": "a77448a200b3c3d1ff7c0e3dea1514ce7ecfaae5252850f26d9cc0cdd72de590",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.6-1.el7.x86_64.rpm"
-        },
-        "0.0.5": {
-          "sha1": "605304bdf4500d2798e0e5a1439579872d316800",
-          "sha256": "b38a377d64ba905cd20d452670ab63128582fa8101a3e09d70545d1fec8b3dea",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.5-1.el7.x86_64.rpm"
-        },
-        "0.0.4": {
-          "sha1": "ccdf59c1e12f18f99b496108ac54e28a218fa052",
-          "sha256": "95c275481ef2cf307480b25657e47969c92857c41442235c2e58389f1e82a0aa",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.4-1.el7.x86_64.rpm"
-        },
-        "0.0.3": {
-          "sha1": "a24b23de696ea2b6691019e0c8d212ace51ef4f9",
-          "sha256": "1a3888e4236b57be49c48a67168332267f16a31d5210e66f461455bc1654e107",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.3-1.el7.x86_64.rpm"
+        "0.0.1": {
+          "sha1": "b0e014e9f83d21a4526cd2305003796d3fb0c261",
+          "sha256": "cb10ba4c904a8c7f827f6bad056d5337fe60235cb74e31f45dacbc47c4b8c0bf",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.1/el/7/chef-marketplace-0.0.1-1.el7.x86_64.rpm"
         },
         "0.0.2": {
           "sha1": "6a7e69e71637824a31c7a4166b45d5265cbe83ee",
           "sha256": "7297baa19760f51bc64a9d483691712d263715a478fac8b8197acfa3b15ca4dc",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.2-1.el7.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.2/el/7/chef-marketplace-0.0.2-1.el7.x86_64.rpm"
         },
-        "0.0.1": {
-          "sha1": "b0e014e9f83d21a4526cd2305003796d3fb0c261",
-          "sha256": "cb10ba4c904a8c7f827f6bad056d5337fe60235cb74e31f45dacbc47c4b8c0bf",
-          "url": "https://packages.chef.io/stable/el/7/chef-marketplace-0.0.1-1.el7.x86_64.rpm"
+        "0.0.3": {
+          "sha1": "a24b23de696ea2b6691019e0c8d212ace51ef4f9",
+          "sha256": "1a3888e4236b57be49c48a67168332267f16a31d5210e66f461455bc1654e107",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.3/el/7/chef-marketplace-0.0.3-1.el7.x86_64.rpm"
+        },
+        "0.0.4": {
+          "sha1": "ccdf59c1e12f18f99b496108ac54e28a218fa052",
+          "sha256": "95c275481ef2cf307480b25657e47969c92857c41442235c2e58389f1e82a0aa",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.4/el/7/chef-marketplace-0.0.4-1.el7.x86_64.rpm"
+        },
+        "0.0.5": {
+          "sha1": "605304bdf4500d2798e0e5a1439579872d316800",
+          "sha256": "b38a377d64ba905cd20d452670ab63128582fa8101a3e09d70545d1fec8b3dea",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.5/el/7/chef-marketplace-0.0.5-1.el7.x86_64.rpm"
+        },
+        "0.0.6": {
+          "sha1": "d62db86227f1895074ee5e742c34344e10e139a3",
+          "sha256": "a77448a200b3c3d1ff7c0e3dea1514ce7ecfaae5252850f26d9cc0cdd72de590",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.6/el/7/chef-marketplace-0.0.6-1.el7.x86_64.rpm"
+        },
+        "0.0.7": {
+          "sha1": "30df30cd548972a2cf291b3999d2a9e0cbfe39bf",
+          "sha256": "2814ab58c7a0f506e02b739a1d6c57248734da4f53b92ec63dba8fc55f284c74",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.7/el/7/chef-marketplace-0.0.7-1.el7.x86_64.rpm"
+        },
+        "0.0.10": {
+          "sha1": "dcb90ee63595b731f28bc13d7d3cec345568f607",
+          "sha256": "6e2d82902268203720e979c100e389cdf2534743ce1fe395ac7e203ef2c7f363",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.10/el/7/chef-marketplace-0.0.10-1.el7.x86_64.rpm"
+        },
+        "0.0.11": {
+          "sha1": "c9339169095748b01bb48c3edcbd3f8bd98984c8",
+          "sha256": "1a8d098fd360c31178d02cab8265ec547df9ea9d9037a5577b0ff1bda16bef34",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.11/el/7/chef-marketplace-0.0.11-1.el7.x86_64.rpm"
+        },
+        "0.0.12": {
+          "sha1": "7b35d707b2aaaf1ff353dbad8e24eb4f8c260855",
+          "sha256": "79b6eb7251d94873a5e48e2f6bc32a9364744714b66f059f68d2745edf2f50da",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.12/el/7/chef-marketplace-0.0.12-1.el7.x86_64.rpm"
+        },
+        "0.0.13": {
+          "sha1": "3093f0bc63ed2a4c1eb068e98b5e0a0c4ef5a98e",
+          "sha256": "a2756436fb21cd0169fbc566dc52a2e12ad4a4455cf2583349d7ffb14628a581",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.13/el/7/chef-marketplace-0.0.13-1.el7.x86_64.rpm"
+        },
+        "0.2.0": {
+          "sha1": "03a44a47d274311f68976f089733b3b6695d0634",
+          "sha256": "67ff0285399cef03724edcc6c81030ac5d714c170c2f1a601263f7dd3fce17e3",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.0/el/7/chef-marketplace-0.2.0-1.el7.x86_64.rpm"
+        },
+        "0.2.1": {
+          "sha1": "a575812511d1b0d1b07d516004f56bad4f40620b",
+          "sha256": "dd135f10d074a0c5251ee7c5313a06b24b8885af0609221dcf9c6b173206ab6e",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.1/el/7/chef-marketplace-0.2.1-1.el7.x86_64.rpm"
+        },
+        "0.2.2": {
+          "sha1": "67f66e05d4f18322949bfbd8668cc74f56b4bfdf",
+          "sha256": "d6a7a83b8648800adba98b4e5ac5222d6204a1c3c1d449c6df7c9c79650a314e",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.2/el/7/chef-marketplace-0.2.2-1.el7.x86_64.rpm"
         }
       }
     }
@@ -92,30 +152,79 @@
   "ubuntu": {
     "14.04": {
       "x86_64": {
-        "0.0.10": {
-          "sha1": "9386b676b1d1eb8d9d2351ef3589eb159c700733",
-          "sha256": "a287b86ea0d5f271a117e6c69c1701b546c88044c9390fbc3971d8698a1ab2bd",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-marketplace_0.0.10-1_amd64.deb"
-        },
-        "0.0.7": {
-          "sha1": "d65b11bd4d209ee8f24d63ca51657cf5057ea5d5",
-          "sha256": "75646a578d3da88f587438db4603f5467196155acd0d0d8b489f86763ecd9578",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-marketplace_0.0.7-1_amd64.deb"
+        "0.0.5": {
+          "sha1": "e43775c79e54f7fa47ba993793920e6f4d56e73d",
+          "sha256": "416ad1c68d4a0f6d37b4a18f4565640ed3b14f41fa4593f1e8949db71e2ae9f7",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.5/ubuntu/14.04/chef-marketplace_0.0.5-1_amd64.deb"
         },
         "0.0.6": {
           "sha1": "a8f152792cf20e3587208dd06fb91d480f1b1e65",
           "sha256": "ddfe288f4cb76ed0f5d21c767dc5f4d97b9d57e6fbb6f2fb25de074fd2e1e552",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-marketplace_0.0.6-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.6/ubuntu/14.04/chef-marketplace_0.0.6-1_amd64.deb"
         },
-        "0.0.5": {
-          "sha1": "e43775c79e54f7fa47ba993793920e6f4d56e73d",
-          "sha256": "416ad1c68d4a0f6d37b4a18f4565640ed3b14f41fa4593f1e8949db71e2ae9f7",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-marketplace_0.0.5-1_amd64.deb"
+        "0.0.7": {
+          "sha1": "d65b11bd4d209ee8f24d63ca51657cf5057ea5d5",
+          "sha256": "75646a578d3da88f587438db4603f5467196155acd0d0d8b489f86763ecd9578",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.7/ubuntu/14.04/chef-marketplace_0.0.7-1_amd64.deb"
+        },
+        "0.0.10": {
+          "sha1": "9386b676b1d1eb8d9d2351ef3589eb159c700733",
+          "sha256": "a287b86ea0d5f271a117e6c69c1701b546c88044c9390fbc3971d8698a1ab2bd",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.10/ubuntu/14.04/chef-marketplace_0.0.10-1_amd64.deb"
+        },
+        "0.0.11": {
+          "sha1": "5b570899bec6a68b691e2530b56179a9ab3e5c16",
+          "sha256": "4cf7556fa6b81bb22c38b646792f7fc44b0572ded46406b3494b7dc24bf4f597",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.11/ubuntu/14.04/chef-marketplace_0.0.11-1_amd64.deb"
+        },
+        "0.0.12": {
+          "sha1": "97b12a972d5098e2e918c276b5c9a50c9d088222",
+          "sha256": "fb5320557bbee7b05f6c411e01f874267c62a5e57ee8a92ac19f323dfe1cf5db",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.12/ubuntu/14.04/chef-marketplace_0.0.12-1_amd64.deb"
+        },
+        "0.0.13": {
+          "sha1": "a8230d58733b428b8c50f71885fe52aa7cff0da3",
+          "sha256": "2fcfe48ca43410271d3e5a241775c46153c878492617091d2a99d4a63225194a",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.0.13/ubuntu/14.04/chef-marketplace_0.0.13-1_amd64.deb"
+        },
+        "0.2.0": {
+          "sha1": "d9160e1a139af6b9de8c381b38544b55432d5c03",
+          "sha256": "b7a376430a29f39519022b8930e717c314582b55583347fc67d8440898518d24",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.0/ubuntu/14.04/chef-marketplace_0.2.0-1_amd64.deb"
+        },
+        "0.2.1": {
+          "sha1": "c19c114836c1ecedd279cf7e0c97a19d8c6133a4",
+          "sha256": "10df21af4a4abdfa463bfb1acb70e0fc68b876cc315728da449a9345a9b573e8",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.1/ubuntu/14.04/chef-marketplace_0.2.1-1_amd64.deb"
+        },
+        "0.2.2": {
+          "sha1": "43b2c840893634ea8cd7f8392a0774253db9ff68",
+          "sha256": "866a30678c1570f67873612f53656a417f16223cfd4b280366ef9a04620b465d",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.2/ubuntu/14.04/chef-marketplace_0.2.2-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "0.2.0": {
+          "sha1": "d9160e1a139af6b9de8c381b38544b55432d5c03",
+          "sha256": "b7a376430a29f39519022b8930e717c314582b55583347fc67d8440898518d24",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.0/ubuntu/16.04/chef-marketplace_0.2.0-1_amd64.deb"
+        },
+        "0.2.1": {
+          "sha1": "c19c114836c1ecedd279cf7e0c97a19d8c6133a4",
+          "sha256": "10df21af4a4abdfa463bfb1acb70e0fc68b876cc315728da449a9345a9b573e8",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.1/ubuntu/16.04/chef-marketplace_0.2.1-1_amd64.deb"
+        },
+        "0.2.2": {
+          "sha1": "43b2c840893634ea8cd7f8392a0774253db9ff68",
+          "sha256": "866a30678c1570f67873612f53656a417f16223cfd4b280366ef9a04620b465d",
+          "url": "https://packages.chef.io/files/stable/chef-marketplace/0.2.2/ubuntu/16.04/chef-marketplace_0.2.2-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:47:40 -0700"
+    "timestamp": "2017-06-22 12:03:58 -0700"
   }
 }

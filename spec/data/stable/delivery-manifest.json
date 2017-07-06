@@ -2,459 +2,689 @@
   "el": {
     "6": {
       "x86_64": {
-        "0.4.199": {
-          "sha1": "f515826ef21192ca33be39771228e1af1c2e7c10",
-          "sha256": "8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.199-1.el6.x86_64.rpm"
-        },
-        "0.4.132": {
-          "sha1": "90646e2c31b91f68875f4c99f81a93da3edd55d9",
-          "sha256": "208d3970717c442a797589e1efe54d05168f6783e285a0bb2faf4019bdd96e88",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.132-1.el6.x86_64.rpm"
-        },
-        "0.4.113": {
-          "sha1": "fdf916d85cac0a6d4ea9ba42c322dee9b967585d",
-          "sha256": "80ccaa4407d5799085f31cbdc2f4e1ebe4ab408369ecff7a2bf75209754f41a4",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.113-1.el6.x86_64.rpm"
-        },
-        "0.4.75": {
-          "sha1": "4fa16d0d48b94a196dfc07099d434b8c330c112f",
-          "sha256": "5995fcaacd6b501167f4ca5c5b75d22d3e75a3555e451677850da7418fbe37a5",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.75-1.el6.x86_64.rpm"
-        },
-        "0.4.58": {
-          "sha1": "43c1b29cacb854bc190443a3c90c405b3782e853",
-          "sha256": "8f92c543573dae53096c76fca678d5a7b0c41e428fd5376ae7606b9ce94a764c",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.58-1.el6.x86_64.rpm"
-        },
-        "0.4.6": {
-          "sha1": "4c9c364fda6abff1c4c669ec140e4602021063a4",
-          "sha256": "6245c63c517b4310c60e2a67abb42716b2b91ac5d62853f172ce42a26d3d4a56",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.4.6-1.el6.x86_64.rpm"
-        },
-        "0.3.640": {
-          "sha1": "be363a21c77b8ae60d989f6bfa052f1d6b634b16",
-          "sha256": "be461a532741d37aaaca73c8f70527c33dd5b952ab655cfbbe434ffc2710c007",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.640-1.el6.x86_64.rpm"
-        },
-        "0.3.606": {
-          "sha1": "7ad6acf9f9bdfb7f208295e0cf8c99af319ad5b4",
-          "sha256": "4a03a2a235987cb5432b724cb32aac6abe61ecb0c46f1759356522c3b954d231",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.606-1.el6.x86_64.rpm"
-        },
-        "0.3.554": {
-          "sha1": "b6d4ff9f1bb9f60aef0cbb62ec70942f197269f0",
-          "sha256": "ce0c408ccebfc7337ebadd1fead3e6b0a0fa95a4575e349838b54c672c35fda9",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.554-1.el6.x86_64.rpm"
-        },
-        "0.3.522": {
-          "sha1": "bdb4491738bc4bea13e7070b836316b64b9ffcd9",
-          "sha256": "fb91fd416f2005efe9aa595867015ed633df3e2836ef22772f2095ae1f7bf42b",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.522-1.el6.x86_64.rpm"
-        },
-        "0.3.519": {
-          "sha1": "a7d3314351b279ac0d5b08f85a2fd67a6c55e601",
-          "sha256": "e9df7202c306e2ca398b2c6ec4a7bf411e81899e79a0d07cad9b9f68dc898e26",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.519-1.el6.x86_64.rpm"
-        },
-        "0.3.493": {
-          "sha1": "2cca18da4bd8bd3c5c9035ac10a11881c8c578a6",
-          "sha256": "71cbbf403d86bd61196df84cce9ddc36b8e6466c43fb7f892574fcb3b7341a3d",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.493-1.el6.x86_64.rpm"
-        },
-        "0.3.467": {
-          "sha1": "c1327b22adaabc19100751d0d18c3d4901eb33e5",
-          "sha256": "979533a9024c65e0d2c47d57acde631b603f6069fdd72af294782770b4840cd7",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.467-1.el6.x86_64.rpm"
-        },
-        "0.3.450": {
-          "sha1": "a03e739934b282f4dd6b01ba2cec54c2b7137055",
-          "sha256": "e6a84c8f2d0e19ae95f14fb356706392d4dc407b66d2729cf2a1c8ccb358bc46",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.450-1.el6.x86_64.rpm"
-        },
-        "0.3.435": {
-          "sha1": "ec476dfe87dfde9e37cbff26144fa1d78b5a4801",
-          "sha256": "61ef645b329bad434d6fc3cfe1cc0a8a63e7cdece10acf9753eeb839fa77489a",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.435-1.el6.x86_64.rpm"
-        },
-        "0.3.391": {
-          "sha1": "94a43b3dc224cc10638f0e0aed2ea4d79a6f73de",
-          "sha256": "c7868b7ffd70653a3fde4975c1fdbf6b9011a6cc01cab756db651aac9a4828a8",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.391-1.el6.x86_64.rpm"
-        },
-        "0.3.390": {
-          "sha1": "660ec5319b8e650482b334169a6960322d75c7da",
-          "sha256": "a5c2b31d391c9934594109a790a1ac7e841a386845d968ccc51b215fe12bad2c",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.390-1.el6.x86_64.rpm"
-        },
-        "0.3.374": {
-          "sha1": "2a5faef133f703a4a537064f8c6bf7cebb1cab14",
-          "sha256": "a6ac86fe2c7b9678fb1328b355c324ef1ea493ba0453c4f3411fdfcf34b93c90",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.374-1.el6.x86_64.rpm"
-        },
-        "0.3.358": {
-          "sha1": "b6e9df370c247f758d29a6fe6bb06f0937802902",
-          "sha256": "117b6ab9cec76abc95a14bf1b26740a988516f301bde44ec36c77d63a7f4b7d5",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.358-1.el6.x86_64.rpm"
-        },
-        "0.3.369": {
-          "sha1": "85345175ceed63444fa67f72dc4bbd801eaf0a0d",
-          "sha256": "93723c3b878a4ec876e4152a39f6cdad188d2f8f0947b82ffbd445a709a92eeb",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.369-1.el6.x86_64.rpm"
-        },
-        "0.3.341": {
-          "sha1": "5a52b27d4bd11d83773221df7648dd6571d91686",
-          "sha256": "0c92b642790ccd83364551cff46ceb91b981cb15eb171b115975905902b3f523",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.341-1.el6.x86_64.rpm"
-        },
-        "0.3.338": {
-          "sha1": "8245f953c8b11b1917b2d9aa8372c9db6fb5faae",
-          "sha256": "917428d86a0733fd8d993474a54743c89536310c42421c41b227484bc34bfa8b",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.338-1.el6.x86_64.rpm"
-        },
-        "0.3.334": {
-          "sha1": "3171d4e2222c9f2300add2a958246c0ab1924028",
-          "sha256": "d33a546e0469961da23157f7eda837b2c39e9ee4c6b50a0ea2a3239d0de3d713",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.334-1.el6.x86_64.rpm"
-        },
-        "0.3.314": {
-          "sha1": "5914da24763cefbd8ad8cad72d1cd6360ffaca1d",
-          "sha256": "cc06b1f40cd77167947786de275236e2d924ebf95b354bc1ee4a11ad154d6747",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.314-1.el6.x86_64.rpm"
-        },
-        "0.3.304": {
-          "sha1": "cd23f19e8f50b2fdc28082290d05d0b76c3166a2",
-          "sha256": "082a8d1a3c3180722aa34ed7082ee9e407a01042d402d5149c00ea87d685a343",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.304-1.el6.x86_64.rpm"
-        },
-        "0.3.278": {
-          "sha1": "b3a4800206dea5f608bdcde73d413e76abd53440",
-          "sha256": "c3ffc8f0c49c627a743e10b156150b7d2bb7c0de67fdf499166f814e2c1768ce",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.278-1.el6.x86_64.rpm"
-        },
-        "0.3.256": {
-          "sha1": "4e61f35cf0d81636e32beb61155e8f1840066840",
-          "sha256": "0482b7997de6d612883fe25835ad67ad585fb6b8f4b4d3f56c49f00d26a5dac6",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.256-1.el6.x86_64.rpm"
-        },
-        "0.3.251": {
-          "sha1": "7541e9fe947380e759051c4c97c217ad2aecbab4",
-          "sha256": "c20ca0de2126d24aa89f1d6f7bddb70e0c47818d5463a4c9ce1cee63f70ea37f",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.251-1.el6.x86_64.rpm"
-        },
-        "0.3.243": {
-          "sha1": "ea8bce12f1038847f1eea64651eec158800e2408",
-          "sha256": "1f931bfd38c4d9a4beca36c0c305afcb9976fa82de95bb5f8f41b59b734f012a",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.243-1.el6.x86_64.rpm"
-        },
-        "0.3.240": {
-          "sha1": "24934fdcde7f7fa8b2a9f5c9640914014dbff4bf",
-          "sha256": "3a831eb448833bcc555b8e7731cc3d7f1f5d7e9d17668b912db5bc53d720030e",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.240-1.el6.x86_64.rpm"
-        },
-        "0.3.227": {
-          "sha1": "513133742f6f9f7a4dfd3c02523b705455190520",
-          "sha256": "d8724efa7972a0cf853966113855b6f2c56f4124260da7370e0490369fd777b9",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.227-1.el6.x86_64.rpm"
-        },
-        "0.3.224": {
-          "sha1": "157031806bc54a87d065a142b788a34c601fe4d2",
-          "sha256": "5e8493b1a347f3e18f7e9acb77114bbfad15c88993963623c0332eaba0364c6f",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.224-1.el6.x86_64.rpm"
-        },
-        "0.3.210": {
-          "sha1": "e57679d6177a78af26ce4abde6a7dae71f872dec",
-          "sha256": "cd385a5f870be1f9df7e14b7650e82cd80bd839ec34d29df5d7a6f96117367cc",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.210-1.el6.x86_64.rpm"
-        },
-        "0.3.201": {
-          "sha1": "40c1c1cf81c48d0caabea1d2176828a444f736a2",
-          "sha256": "8a45f62f38687ac9428316c492d1f44000550b78338f995b400298682f23d4a3",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.201-1.el6.x86_64.rpm"
-        },
-        "0.3.195": {
-          "sha1": "d87db82003cac7abb7dcea8cf932077ba2a6979f",
-          "sha256": "e0348492bc91b82baff7c6d160f20f8ffd942029e8a709d50702de766f8b4f41",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.195-1.el6.x86_64.rpm"
-        },
-        "0.3.186": {
-          "sha1": "23bda64b8f955c01ff76be96ee25ffe18199dc6b",
-          "sha256": "beb5d3b71a5e2dc3739b20355441b0823cc6ef577c87b16fcda75025bcfe8ce7",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.186-1.el6.x86_64.rpm"
-        },
-        "0.3.163": {
-          "sha1": "9a9dfebd758bb417f27491137dad4ceef3d807a9",
-          "sha256": "bb30d2857db05c741176540a975d39daa5350c302e1d26fc607d7122d96a8eec",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.163-1.el6.x86_64.rpm"
-        },
-        "0.3.146": {
-          "sha1": "64ab627848bf2eca54aa631c952f7f96bf08ff6a",
-          "sha256": "846d3bc468267d281e3ccefddbb6038120118c89683c0eadf9909fe24dca6922",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.146-1.el6.x86_64.rpm"
-        },
-        "0.3.123": {
-          "sha1": "e4f02d6fed7cf6022d08df6592cf4f0b4536a628",
-          "sha256": "bd46b2e7fdc6aa3c59a40efe1935d3c9ef2fa384555eb66d8168fe4b799cb16d",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.123-1.el6.x86_64.rpm"
-        },
-        "0.3.112": {
-          "sha1": "62b8287a85a29e50e7a70e445c3de8a2fbd755cc",
-          "sha256": "1d8906e92f1d93bff680486bb10034d0932eb6855561767df565e45583a92877",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.112-1.el6.x86_64.rpm"
-        },
-        "0.3.109": {
-          "sha1": "bbd4d5aea34d1c899777f1aee2dccd6726937f1f",
-          "sha256": "e13e08e949de48a3e494ea837cc2a6a137edb73ac89bb6a16524c806a5c4fc64",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.109-1.el6.x86_64.rpm"
-        },
-        "0.3.76": {
-          "sha1": "6fbf7dffaf7773406e9c3e2471acf48435e34534",
-          "sha256": "63e98f48d13f4bc52db3af98f799d701595c68bee730403cb61e81a64a50366f",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.76-1.el6.x86_64.rpm"
-        },
-        "0.3.73": {
-          "sha1": "2b65548cb7357e745f4648397664f650ad035f26",
-          "sha256": "c3377ce08e9bb7f84cf86bc0f8b070560e97fda2c26f5b4462f22b36ea337a55",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.73-1.el6.x86_64.rpm"
-        },
-        "0.3.68": {
-          "sha1": "9caccffa4964b3c4c3d93c05e3c04329f9f8f1e6",
-          "sha256": "3c96b8a95ef76572bc3a2b9afa54717e2cc37acb19db141a9a5d360047c2cbe8",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.68-1.el6.x86_64.rpm"
-        },
-        "0.3.67": {
-          "sha1": "39412bf0ff596cbacadc93e4d990171286a4ba55",
-          "sha256": "3561b298f615d9087ca2889dfaefbb6aaed65879e3c3d2f592a83b34ad1ac11d",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.67-1.el6.x86_64.rpm"
+        "0.3.56": {
+          "sha1": "efdea3364dcdfcd9a9e9b98df75b7035ab956783",
+          "sha256": "d30cc06a63fbf3ad2941917be228470cf179cd70cc61827590e70da35b977fdb",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.56/el/6/delivery-0.3.56-1.el6.x86_64.rpm"
         },
         "0.3.63": {
           "sha1": "a964318032eb2e448692ce34ab5cacadc8b89333",
           "sha256": "cba6093b5c23c9b2a6d23f5be687bea47e7cae9a0f5a5b283f1c19f8e2430eec",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.63-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.63/el/6/delivery-0.3.63-1.el6.x86_64.rpm"
         },
-        "0.3.56": {
-          "sha1": "efdea3364dcdfcd9a9e9b98df75b7035ab956783",
-          "sha256": "d30cc06a63fbf3ad2941917be228470cf179cd70cc61827590e70da35b977fdb",
-          "url": "https://packages.chef.io/stable/el/6/delivery-0.3.56-1.el6.x86_64.rpm"
+        "0.3.67": {
+          "sha1": "39412bf0ff596cbacadc93e4d990171286a4ba55",
+          "sha256": "3561b298f615d9087ca2889dfaefbb6aaed65879e3c3d2f592a83b34ad1ac11d",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.67/el/6/delivery-0.3.67-1.el6.x86_64.rpm"
+        },
+        "0.3.68": {
+          "sha1": "9caccffa4964b3c4c3d93c05e3c04329f9f8f1e6",
+          "sha256": "3c96b8a95ef76572bc3a2b9afa54717e2cc37acb19db141a9a5d360047c2cbe8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.68/el/6/delivery-0.3.68-1.el6.x86_64.rpm"
+        },
+        "0.3.73": {
+          "sha1": "2b65548cb7357e745f4648397664f650ad035f26",
+          "sha256": "c3377ce08e9bb7f84cf86bc0f8b070560e97fda2c26f5b4462f22b36ea337a55",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.73/el/6/delivery-0.3.73-1.el6.x86_64.rpm"
+        },
+        "0.3.76": {
+          "sha1": "6fbf7dffaf7773406e9c3e2471acf48435e34534",
+          "sha256": "63e98f48d13f4bc52db3af98f799d701595c68bee730403cb61e81a64a50366f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.76/el/6/delivery-0.3.76-1.el6.x86_64.rpm"
+        },
+        "0.3.109": {
+          "sha1": "bbd4d5aea34d1c899777f1aee2dccd6726937f1f",
+          "sha256": "e13e08e949de48a3e494ea837cc2a6a137edb73ac89bb6a16524c806a5c4fc64",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.109/el/6/delivery-0.3.109-1.el6.x86_64.rpm"
+        },
+        "0.3.112": {
+          "sha1": "62b8287a85a29e50e7a70e445c3de8a2fbd755cc",
+          "sha256": "1d8906e92f1d93bff680486bb10034d0932eb6855561767df565e45583a92877",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.112/el/6/delivery-0.3.112-1.el6.x86_64.rpm"
+        },
+        "0.3.123": {
+          "sha1": "e4f02d6fed7cf6022d08df6592cf4f0b4536a628",
+          "sha256": "bd46b2e7fdc6aa3c59a40efe1935d3c9ef2fa384555eb66d8168fe4b799cb16d",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.123/el/6/delivery-0.3.123-1.el6.x86_64.rpm"
+        },
+        "0.3.146": {
+          "sha1": "64ab627848bf2eca54aa631c952f7f96bf08ff6a",
+          "sha256": "846d3bc468267d281e3ccefddbb6038120118c89683c0eadf9909fe24dca6922",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.146/el/6/delivery-0.3.146-1.el6.x86_64.rpm"
+        },
+        "0.3.163": {
+          "sha1": "9a9dfebd758bb417f27491137dad4ceef3d807a9",
+          "sha256": "bb30d2857db05c741176540a975d39daa5350c302e1d26fc607d7122d96a8eec",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.163/el/6/delivery-0.3.163-1.el6.x86_64.rpm"
+        },
+        "0.3.186": {
+          "sha1": "23bda64b8f955c01ff76be96ee25ffe18199dc6b",
+          "sha256": "beb5d3b71a5e2dc3739b20355441b0823cc6ef577c87b16fcda75025bcfe8ce7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.186/el/6/delivery-0.3.186-1.el6.x86_64.rpm"
+        },
+        "0.3.195": {
+          "sha1": "d87db82003cac7abb7dcea8cf932077ba2a6979f",
+          "sha256": "e0348492bc91b82baff7c6d160f20f8ffd942029e8a709d50702de766f8b4f41",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.195/el/6/delivery-0.3.195-1.el6.x86_64.rpm"
+        },
+        "0.3.201": {
+          "sha1": "40c1c1cf81c48d0caabea1d2176828a444f736a2",
+          "sha256": "8a45f62f38687ac9428316c492d1f44000550b78338f995b400298682f23d4a3",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.201/el/6/delivery-0.3.201-1.el6.x86_64.rpm"
+        },
+        "0.3.210": {
+          "sha1": "e57679d6177a78af26ce4abde6a7dae71f872dec",
+          "sha256": "cd385a5f870be1f9df7e14b7650e82cd80bd839ec34d29df5d7a6f96117367cc",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.210/el/6/delivery-0.3.210-1.el6.x86_64.rpm"
+        },
+        "0.3.224": {
+          "sha1": "157031806bc54a87d065a142b788a34c601fe4d2",
+          "sha256": "5e8493b1a347f3e18f7e9acb77114bbfad15c88993963623c0332eaba0364c6f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.224/el/6/delivery-0.3.224-1.el6.x86_64.rpm"
+        },
+        "0.3.227": {
+          "sha1": "513133742f6f9f7a4dfd3c02523b705455190520",
+          "sha256": "d8724efa7972a0cf853966113855b6f2c56f4124260da7370e0490369fd777b9",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.227/el/6/delivery-0.3.227-1.el6.x86_64.rpm"
+        },
+        "0.3.240": {
+          "sha1": "24934fdcde7f7fa8b2a9f5c9640914014dbff4bf",
+          "sha256": "3a831eb448833bcc555b8e7731cc3d7f1f5d7e9d17668b912db5bc53d720030e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.240/el/6/delivery-0.3.240-1.el6.x86_64.rpm"
+        },
+        "0.3.243": {
+          "sha1": "ea8bce12f1038847f1eea64651eec158800e2408",
+          "sha256": "1f931bfd38c4d9a4beca36c0c305afcb9976fa82de95bb5f8f41b59b734f012a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.243/el/6/delivery-0.3.243-1.el6.x86_64.rpm"
+        },
+        "0.3.251": {
+          "sha1": "7541e9fe947380e759051c4c97c217ad2aecbab4",
+          "sha256": "c20ca0de2126d24aa89f1d6f7bddb70e0c47818d5463a4c9ce1cee63f70ea37f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.251/el/6/delivery-0.3.251-1.el6.x86_64.rpm"
+        },
+        "0.3.256": {
+          "sha1": "4e61f35cf0d81636e32beb61155e8f1840066840",
+          "sha256": "0482b7997de6d612883fe25835ad67ad585fb6b8f4b4d3f56c49f00d26a5dac6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.256/el/6/delivery-0.3.256-1.el6.x86_64.rpm"
+        },
+        "0.3.278": {
+          "sha1": "b3a4800206dea5f608bdcde73d413e76abd53440",
+          "sha256": "c3ffc8f0c49c627a743e10b156150b7d2bb7c0de67fdf499166f814e2c1768ce",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.278/el/6/delivery-0.3.278-1.el6.x86_64.rpm"
+        },
+        "0.3.304": {
+          "sha1": "cd23f19e8f50b2fdc28082290d05d0b76c3166a2",
+          "sha256": "082a8d1a3c3180722aa34ed7082ee9e407a01042d402d5149c00ea87d685a343",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.304/el/6/delivery-0.3.304-1.el6.x86_64.rpm"
+        },
+        "0.3.314": {
+          "sha1": "5914da24763cefbd8ad8cad72d1cd6360ffaca1d",
+          "sha256": "cc06b1f40cd77167947786de275236e2d924ebf95b354bc1ee4a11ad154d6747",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.314/el/6/delivery-0.3.314-1.el6.x86_64.rpm"
+        },
+        "0.3.334": {
+          "sha1": "3171d4e2222c9f2300add2a958246c0ab1924028",
+          "sha256": "d33a546e0469961da23157f7eda837b2c39e9ee4c6b50a0ea2a3239d0de3d713",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.334/el/6/delivery-0.3.334-1.el6.x86_64.rpm"
+        },
+        "0.3.338": {
+          "sha1": "8245f953c8b11b1917b2d9aa8372c9db6fb5faae",
+          "sha256": "917428d86a0733fd8d993474a54743c89536310c42421c41b227484bc34bfa8b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.338/el/6/delivery-0.3.338-1.el6.x86_64.rpm"
+        },
+        "0.3.341": {
+          "sha1": "5a52b27d4bd11d83773221df7648dd6571d91686",
+          "sha256": "0c92b642790ccd83364551cff46ceb91b981cb15eb171b115975905902b3f523",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.341/el/6/delivery-0.3.341-1.el6.x86_64.rpm"
+        },
+        "0.3.358": {
+          "sha1": "b6e9df370c247f758d29a6fe6bb06f0937802902",
+          "sha256": "117b6ab9cec76abc95a14bf1b26740a988516f301bde44ec36c77d63a7f4b7d5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.358/el/6/delivery-0.3.358-1.el6.x86_64.rpm"
+        },
+        "0.3.369": {
+          "sha1": "85345175ceed63444fa67f72dc4bbd801eaf0a0d",
+          "sha256": "93723c3b878a4ec876e4152a39f6cdad188d2f8f0947b82ffbd445a709a92eeb",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.369/el/6/delivery-0.3.369-1.el6.x86_64.rpm"
+        },
+        "0.3.374": {
+          "sha1": "2a5faef133f703a4a537064f8c6bf7cebb1cab14",
+          "sha256": "a6ac86fe2c7b9678fb1328b355c324ef1ea493ba0453c4f3411fdfcf34b93c90",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.374/el/6/delivery-0.3.374-1.el6.x86_64.rpm"
+        },
+        "0.3.390": {
+          "sha1": "660ec5319b8e650482b334169a6960322d75c7da",
+          "sha256": "a5c2b31d391c9934594109a790a1ac7e841a386845d968ccc51b215fe12bad2c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.390/el/6/delivery-0.3.390-1.el6.x86_64.rpm"
+        },
+        "0.3.391": {
+          "sha1": "94a43b3dc224cc10638f0e0aed2ea4d79a6f73de",
+          "sha256": "c7868b7ffd70653a3fde4975c1fdbf6b9011a6cc01cab756db651aac9a4828a8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.391/el/6/delivery-0.3.391-1.el6.x86_64.rpm"
+        },
+        "0.3.435": {
+          "sha1": "ec476dfe87dfde9e37cbff26144fa1d78b5a4801",
+          "sha256": "61ef645b329bad434d6fc3cfe1cc0a8a63e7cdece10acf9753eeb839fa77489a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.435/el/6/delivery-0.3.435-1.el6.x86_64.rpm"
+        },
+        "0.3.450": {
+          "sha1": "a03e739934b282f4dd6b01ba2cec54c2b7137055",
+          "sha256": "e6a84c8f2d0e19ae95f14fb356706392d4dc407b66d2729cf2a1c8ccb358bc46",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.450/el/6/delivery-0.3.450-1.el6.x86_64.rpm"
+        },
+        "0.3.467": {
+          "sha1": "c1327b22adaabc19100751d0d18c3d4901eb33e5",
+          "sha256": "979533a9024c65e0d2c47d57acde631b603f6069fdd72af294782770b4840cd7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.467/el/6/delivery-0.3.467-1.el6.x86_64.rpm"
+        },
+        "0.3.493": {
+          "sha1": "2cca18da4bd8bd3c5c9035ac10a11881c8c578a6",
+          "sha256": "71cbbf403d86bd61196df84cce9ddc36b8e6466c43fb7f892574fcb3b7341a3d",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.493/el/6/delivery-0.3.493-1.el6.x86_64.rpm"
+        },
+        "0.3.519": {
+          "sha1": "a7d3314351b279ac0d5b08f85a2fd67a6c55e601",
+          "sha256": "e9df7202c306e2ca398b2c6ec4a7bf411e81899e79a0d07cad9b9f68dc898e26",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.519/el/6/delivery-0.3.519-1.el6.x86_64.rpm"
+        },
+        "0.3.522": {
+          "sha1": "bdb4491738bc4bea13e7070b836316b64b9ffcd9",
+          "sha256": "fb91fd416f2005efe9aa595867015ed633df3e2836ef22772f2095ae1f7bf42b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.522/el/6/delivery-0.3.522-1.el6.x86_64.rpm"
+        },
+        "0.3.554": {
+          "sha1": "b6d4ff9f1bb9f60aef0cbb62ec70942f197269f0",
+          "sha256": "ce0c408ccebfc7337ebadd1fead3e6b0a0fa95a4575e349838b54c672c35fda9",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.554/el/6/delivery-0.3.554-1.el6.x86_64.rpm"
+        },
+        "0.3.606": {
+          "sha1": "7ad6acf9f9bdfb7f208295e0cf8c99af319ad5b4",
+          "sha256": "4a03a2a235987cb5432b724cb32aac6abe61ecb0c46f1759356522c3b954d231",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.606/el/6/delivery-0.3.606-1.el6.x86_64.rpm"
+        },
+        "0.3.640": {
+          "sha1": "be363a21c77b8ae60d989f6bfa052f1d6b634b16",
+          "sha256": "be461a532741d37aaaca73c8f70527c33dd5b952ab655cfbbe434ffc2710c007",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.640/el/6/delivery-0.3.640-1.el6.x86_64.rpm"
+        },
+        "0.4.6": {
+          "sha1": "4c9c364fda6abff1c4c669ec140e4602021063a4",
+          "sha256": "6245c63c517b4310c60e2a67abb42716b2b91ac5d62853f172ce42a26d3d4a56",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.6/el/6/delivery-0.4.6-1.el6.x86_64.rpm"
+        },
+        "0.4.58": {
+          "sha1": "43c1b29cacb854bc190443a3c90c405b3782e853",
+          "sha256": "8f92c543573dae53096c76fca678d5a7b0c41e428fd5376ae7606b9ce94a764c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.58/el/6/delivery-0.4.58-1.el6.x86_64.rpm"
+        },
+        "0.4.75": {
+          "sha1": "4fa16d0d48b94a196dfc07099d434b8c330c112f",
+          "sha256": "5995fcaacd6b501167f4ca5c5b75d22d3e75a3555e451677850da7418fbe37a5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.75/el/6/delivery-0.4.75-1.el6.x86_64.rpm"
+        },
+        "0.4.113": {
+          "sha1": "fdf916d85cac0a6d4ea9ba42c322dee9b967585d",
+          "sha256": "80ccaa4407d5799085f31cbdc2f4e1ebe4ab408369ecff7a2bf75209754f41a4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.113/el/6/delivery-0.4.113-1.el6.x86_64.rpm"
+        },
+        "0.4.132": {
+          "sha1": "90646e2c31b91f68875f4c99f81a93da3edd55d9",
+          "sha256": "208d3970717c442a797589e1efe54d05168f6783e285a0bb2faf4019bdd96e88",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.132/el/6/delivery-0.4.132-1.el6.x86_64.rpm"
+        },
+        "0.4.199": {
+          "sha1": "f515826ef21192ca33be39771228e1af1c2e7c10",
+          "sha256": "8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.199/el/6/delivery-0.4.199-1.el6.x86_64.rpm"
+        },
+        "0.4.235": {
+          "sha1": "f8725f9095d6c56b36f740858415f561e16788b6",
+          "sha256": "2420d9802d0582df44b3b15a2d7ad15f363bf09fe3353fc647d4aac19ebc2925",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.235/el/6/delivery-0.4.235-1.el6.x86_64.rpm"
+        },
+        "0.4.299": {
+          "sha1": "035d92287fcd28a92a576475705cfdd5e7c96feb",
+          "sha256": "229e61f43e6850ed9de864878c8c8fec3f6be1245051aac1b4693de7139a3b9e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.299/el/6/delivery-0.4.299-1.el6.x86_64.rpm"
+        },
+        "0.4.404": {
+          "sha1": "fdd9ac9ea7ac86cb79595626b14e718796bd10f4",
+          "sha256": "7421a14ac621ed23169a0de6c1ca1771d56addf925e4b8330fabd811af6984ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.404/el/6/delivery-0.4.404-1.el6.x86_64.rpm"
+        },
+        "0.4.437": {
+          "sha1": "4fe7e6c23399a1547903562985e4d46cafaa711b",
+          "sha256": "9f34f0285f45fbd0be8bd9052c417ee50b00c6a6d4c6ac8007c29bcb7dc44fda",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.437/el/6/delivery-0.4.437-1.el6.x86_64.rpm"
+        },
+        "0.4.522": {
+          "sha1": "e3a6c6d15ead2c0e6b67d7d3139cdedec5b50d5e",
+          "sha256": "c4e79d980861c6b08f8f393eeb3ad6037d1050bc2741d5f808a33798b0abce49",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.522/el/6/delivery-0.4.522-1.el6.x86_64.rpm"
+        },
+        "0.4.600": {
+          "sha1": "2122d161837c2585b3dcb35e9805e92435373648",
+          "sha256": "426b61ee9f4fb655d1e4b3554a481fe99c662fa7b2e9bbbd979e8687a92f810c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.600/el/6/delivery-0.4.600-1.el6.x86_64.rpm"
+        },
+        "0.5.1": {
+          "sha1": "5d5316352b5f08b05e52766ab4e7cc64843942c6",
+          "sha256": "c7a4d082c3156df0341eb0cdea05e040e8c210ff660743cf33ba43808ebb6275",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.1/el/6/delivery-0.5.1-1.el6.x86_64.rpm"
+        },
+        "0.5.118": {
+          "sha1": "e24f45deb8f7537566c3860c5bf7c1e2399b707d",
+          "sha256": "91f143d9d0a244f4478a44af69e18f7f498ac95cf28f3ba525683edd8c5e34b7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.118/el/6/delivery-0.5.118-1.el6.x86_64.rpm"
+        },
+        "0.5.125": {
+          "sha1": "cf74463f6e4cbae59293e2e433258cb12ebdf6ba",
+          "sha256": "ba17c2054fcb4d648f69e15f4cca9f8afb60696930088dd933d056b614002eb4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.125/el/6/delivery-0.5.125-1.el6.x86_64.rpm"
+        },
+        "0.5.204": {
+          "sha1": "4eae19d7c871bc161d75a50b4681db552c07da37",
+          "sha256": "3107d3442d4859c6baa6fc35d8187fe5e5c13e3e90b1c050a7c3075a122468b1",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.204/el/6/delivery-0.5.204-1.el6.x86_64.rpm"
+        },
+        "0.5.271": {
+          "sha1": "ebac495baf629ca24a26d405766c9c6e3d076d34",
+          "sha256": "3f2966398ca86d1219e51452f13825d8d89fb893dfd8d407259af49abb3d4cd9",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.271/el/6/delivery-0.5.271-1.el6.x86_64.rpm"
+        },
+        "0.5.346": {
+          "sha1": "03f4654d7f784bb05b468810a232d8f6fe83bbad",
+          "sha256": "5d3bed7d9dd132cca811fadccbb1a07439a8f361cca2d737304d756e1ca3d8e4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.346/el/6/delivery-0.5.346-1.el6.x86_64.rpm"
+        },
+        "0.5.370": {
+          "sha1": "ffa2a6a261597cf4eaafbc63f76220c96abfaf17",
+          "sha256": "444d221df6e2f25409bf68701fce09c3743bbbcd65bfaf297387dba860837923",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.370/el/6/delivery-0.5.370-1.el6.x86_64.rpm"
+        },
+        "0.5.432": {
+          "sha1": "b23e02f330b935147202a560911a62f9a82320e6",
+          "sha256": "c2041e152945d349841e722fc666b1bddff1c749ab1c608cf16bda88c064da31",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.432/el/6/delivery-0.5.432-1.el6.x86_64.rpm"
+        },
+        "0.6.6": {
+          "sha1": "070414837cf76437b51e38816492e9a125d61209",
+          "sha256": "ece6abdcfbca1a4bb7a3f4dfd900508fe383ac7f5b47bdfbea122834f7278f9f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.6/el/6/delivery-0.6.6-1.el6.x86_64.rpm"
+        },
+        "0.6.7": {
+          "sha1": "37f0524621cd90ee086cd74ddffb438225ca1ae4",
+          "sha256": "e33ab7713b0200d25af47fad92927c839049f7c1d51a554fdc8e280baa7da00b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.7/el/6/delivery-0.6.7-1.el6.x86_64.rpm"
+        },
+        "0.6.64": {
+          "sha1": "7a17787ae9ad140f95ff9a261a5e444f6e7746cb",
+          "sha256": "e716a127e8049559900a0ca1a853e5e477fe6fb149f917cc94d0da26d77956dc",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.64/el/6/delivery-0.6.64-1.el6.x86_64.rpm"
+        },
+        "0.6.136": {
+          "sha1": "8a94e6cbb45858fb2976c033cb365f72cd0182f7",
+          "sha256": "8a39d39b9484ba7b27033b34571649b2d3183b3719a5000cc22df29eda6ccdc8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.136/el/6/delivery-0.6.136-1.el6.x86_64.rpm"
+        },
+        "0.7.61": {
+          "sha1": "b2c09fe004dff285c2a522b552938de3bcecf233",
+          "sha256": "3f4e43d46b7e0f0e8e767d90e490ad3a1b851457905d6d0d3b3103d8794f045e",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.61/el/6/automate-0.7.61-1.el6.x86_64.rpm"
+        },
+        "0.7.85": {
+          "sha1": "161997c3be979824196dee073720926d1b9872c9",
+          "sha256": "e4df3a5f339bf244704c28748a876a34b835281b3439d12d062fd2612f19c829",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.85/el/6/automate-0.7.85-1.el6.x86_64.rpm"
+        },
+        "0.7.151": {
+          "sha1": "2f53a2c562bd00478eea09dbf5fdd550673aee25",
+          "sha256": "056cf5c1fd7922ed1c83e232f4e97c6fcf06419eeb7e965c53cd2c222bfa525d",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.151/el/6/automate-0.7.151-1.el6.x86_64.rpm"
+        },
+        "0.7.239": {
+          "sha1": "3be196319fcbd6bb8744892766902e5c86215eb7",
+          "sha256": "3ddd7ca8872f77ad680b39ca949d69272b6d23915e837f37f3a3f841bed3ff82",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.239/el/6/automate-0.7.239-1.el6.x86_64.rpm"
+        },
+        "0.8.5": {
+          "sha1": "e570e12d3c909896a897b664096e1b6020f3b0aa",
+          "sha256": "8819f97aa63f2ae917aab184e3f76db172ffd580175c680bdcab8d98e40e9234",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/el/6/automate-0.8.5-1.el6.x86_64.rpm"
         }
       }
     },
     "7": {
       "x86_64": {
-        "0.4.199": {
-          "sha1": "9a5517588cbe7e37dc8f5617320e9c3ef58ced31",
-          "sha256": "93dfeeceb4921765bf16c80ea80d3cb4d47e9f08e72e6418917990c1a58d19b5",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.199-1.el7.x86_64.rpm"
-        },
-        "0.4.132": {
-          "sha1": "35406b8082585af68caa552f501aeb1097e6b884",
-          "sha256": "0d1bdce7a230f3a472fa9cac44cdb52fb229530d1c4613fcb3b5f7146e5e3211",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.132-1.el7.x86_64.rpm"
-        },
-        "0.4.113": {
-          "sha1": "024c6926850f382e5679c3833f37e1ea9a8f6f83",
-          "sha256": "ff5247ef56ab00dbad88c26adc81342c79f9ade3c6aa324c9a618b49a418c1b8",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.113-1.el7.x86_64.rpm"
-        },
-        "0.4.75": {
-          "sha1": "088d0db835fb06f68707e788e5638b98875056fe",
-          "sha256": "7f3124b057051ab5935195199bc21c222bb25cbe8729451d61259ca712f9ad92",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.75-1.el7.x86_64.rpm"
-        },
-        "0.4.58": {
-          "sha1": "a374ce182f56e729614281f0a175dba19ef70326",
-          "sha256": "bd1288ff6ed7f8e3a1f1df31e34c7b84ef24c4caa2e727f58dc0563ca2be5c21",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.58-1.el7.x86_64.rpm"
-        },
-        "0.4.6": {
-          "sha1": "61ad711c720528a24716b1e0cc07ff8cbd2d46e3",
-          "sha256": "bc03dd4181fcab01f75b32c827002f02f7ba520d93b87f85ec5d23db77420ed2",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.4.6-1.el7.x86_64.rpm"
-        },
-        "0.3.640": {
-          "sha1": "df9caabe172418ad914c9421fe346433a5b588ba",
-          "sha256": "3d47a6f611e8e042fa20e54cdc3373dd0489318613fb31e492961577005d3342",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.640-1.el7.x86_64.rpm"
-        },
-        "0.3.606": {
-          "sha1": "49d3830acc10f5c7aa5c52a0c16c7b75f79fc2cc",
-          "sha256": "f969ebe7772ef8e9ccc7faba12fae225ad46e4ce44ff894c81bf862daa2c0ecd",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.606-1.el7.x86_64.rpm"
-        },
-        "0.3.554": {
-          "sha1": "2e8fbe1fd8338462391a4b86adb5f9616ee68a47",
-          "sha256": "42b1808530cf8cfb1ef7811d250a84eda2cd0d0a7ea00f4cd7f40d7d3e005f92",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.554-1.el7.x86_64.rpm"
-        },
-        "0.3.522": {
-          "sha1": "5657169bbe534306125319f9f2eaded97de8b29d",
-          "sha256": "134ca4522e04f17eb0ef872040f9a1f00d00a402b2a49c441b0022aed3935429",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.522-1.el7.x86_64.rpm"
-        },
-        "0.3.519": {
-          "sha1": "e26a6dd669b1b115e2b5649263d37f99e6f26932",
-          "sha256": "076bc681819ccfa51b2aee301d84a9fd49a7e4932d7293345eed0b6f42278e82",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.519-1.el7.x86_64.rpm"
-        },
-        "0.3.493": {
-          "sha1": "06cd5febc0b69c2f9e097a3e2379854cefb202cf",
-          "sha256": "a1df35268ed033ba6b3d5d7c1f466280dd51efd33d795d2c800bbf825df282f0",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.493-1.el7.x86_64.rpm"
-        },
-        "0.3.467": {
-          "sha1": "81df44c51b18a7efd6bb2495338a0da5441d02a9",
-          "sha256": "e37c582206de313fb4e4cc7e1c4550a119310a9ce53e00984205c252523be51b",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.467-1.el7.x86_64.rpm"
-        },
-        "0.3.450": {
-          "sha1": "b39068d5e375eed74e2b454e7464162d35f6edff",
-          "sha256": "e206ed8b270b09a4444ecfb4d0b6c4833f1ad6daf11e7c88a91cafa3d270934c",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.450-1.el7.x86_64.rpm"
-        },
-        "0.3.435": {
-          "sha1": "8fbd9286e58496a7532ef65cb760ed2765593934",
-          "sha256": "23174e6e03771e963ab70f6c6ce3e88cf00adb2688c9996edb4a23a31b89b55b",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.435-1.el7.x86_64.rpm"
-        },
-        "0.3.391": {
-          "sha1": "d20771a7fd69cf9912c62a325f921e02eb2a82e4",
-          "sha256": "2651b5f3358013612a24d0d15086ce03f0211dd052e746474437d2993eb77bc4",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.391-1.el7.x86_64.rpm"
-        },
-        "0.3.390": {
-          "sha1": "95f6dd46c7fb27aacabac2efa9eed4b109fd2a58",
-          "sha256": "332acbf417467ad7788887c79bef851dc0608ab6282142e2b18afa3bb4ad840e",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.390-1.el7.x86_64.rpm"
-        },
-        "0.3.374": {
-          "sha1": "05acea14c026ecc9df32aad4f4368de44a7a430c",
-          "sha256": "4482575105cb442a7c376c9fbea32280cb70c6ce1e25143c061b57a514f6633e",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.374-1.el7.x86_64.rpm"
-        },
-        "0.3.358": {
-          "sha1": "3a68f5ae5024a861ce9cad494759e2959935b991",
-          "sha256": "20f676b0431cab4d19088ea97fdccbefff6cb4a5dd6c830c1e746e03ec1f0535",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.358-1.el7.x86_64.rpm"
-        },
-        "0.3.369": {
-          "sha1": "b127b875ac7b4d4fe4034090ac0ba1770896a57f",
-          "sha256": "11d92b6456d6a273ce944e6d23b20b80ba6ff8f3f374c75788794d55ad75b0f5",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.369-1.el7.x86_64.rpm"
-        },
-        "0.3.341": {
-          "sha1": "c26650ee813be247dc1b5c88b33d703538a460b1",
-          "sha256": "5d0f920c0219d02d3cdc15d564d52f4505ce8d471c3c239bf041dd63baa9a3f7",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.341-1.el7.x86_64.rpm"
-        },
-        "0.3.338": {
-          "sha1": "9d77caf97bb64aede4be5e23e6f45366605f6bc6",
-          "sha256": "3958e53b1c26528c4542308c2004401e4aefa12c70abe65c4d0a1da280aef3f7",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.338-1.el7.x86_64.rpm"
-        },
-        "0.3.334": {
-          "sha1": "3f0a2b98969ace2be5ad4de0bbaf36d965038ed1",
-          "sha256": "e367e77c0b6be821bafcc9afdeaff00aeed6d4c06247aadba92f06e716cc9db7",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.334-1.el7.x86_64.rpm"
-        },
-        "0.3.314": {
-          "sha1": "db72d01aa90d0f6ebffc08a44eb697ff1f958e17",
-          "sha256": "b6c6ce461ca5c5c9219dd0e153d062ff9be3fa821d7551bc3dedbed10cfeb1d7",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.314-1.el7.x86_64.rpm"
-        },
-        "0.3.304": {
-          "sha1": "a04b91ffb6d4aeb07199f76b3f36dfc1e26ade0e",
-          "sha256": "bb1139807d12fea74c9c98cfb99de8712d1f8b8c1a716cf095a1fe829e2429fe",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.304-1.el7.x86_64.rpm"
-        },
-        "0.3.278": {
-          "sha1": "e068f87fa6d4ce17f3dfc177d1518eff6a23b4bb",
-          "sha256": "568c52c40bcc1e214ffc4b3d23bbd0004698d174c48151230d13d4d0976fddd9",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.278-1.el7.x86_64.rpm"
-        },
-        "0.3.256": {
-          "sha1": "190bc1b790a53526c8573ba115f62b6f43abce30",
-          "sha256": "a4ae394845c381e83bd5d95d16c9965a1473d9c7bdaaa9a1d68459990944ef6e",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.256-1.el7.x86_64.rpm"
-        },
-        "0.3.251": {
-          "sha1": "2ecd5fc2359d3bf80fd22d31064b5c8710e93e25",
-          "sha256": "dc939836109e3eb5d80ba0ec3142af5ed4daa225ac79640f337a9bd934981d25",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.251-1.el7.x86_64.rpm"
-        },
-        "0.3.243": {
-          "sha1": "81b621f01cd95c9a9cd45331668cfa186c239f77",
-          "sha256": "db831ac0a7e3f9c354ca958aede0d83d83fc5a2b38ef8305a9e549bae47c4006",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.243-1.el7.x86_64.rpm"
-        },
-        "0.3.240": {
-          "sha1": "1f2665b8a7e59d5722d3da5c74d2b8c8d731afff",
-          "sha256": "0126f4e988d5a1e2adb40034600491ed6eefee20294891573b74335321946e1b",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.240-1.el7.x86_64.rpm"
-        },
-        "0.3.227": {
-          "sha1": "54b71091c853e260f1ae7f5ee6a3f1fe1ab9bd49",
-          "sha256": "6133514b204c03f5e7abf5e66065c74dc26d25fbeefd6a4806b9c14f2bc770fa",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.227-1.el7.x86_64.rpm"
-        },
-        "0.3.224": {
-          "sha1": "53b91bb9574d3832988a54daa5317c46abcc0b6e",
-          "sha256": "98dde8e1874aa7ebe438919d704e642e30ebf58f91082e92f79eda8565ea4ca0",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.224-1.el7.x86_64.rpm"
-        },
-        "0.3.210": {
-          "sha1": "e1b2c9a34ef0e911f7923b6c8d049c48f38ed97b",
-          "sha256": "17bbb93de632e0c774758c62cdac0f6ddd0d6c3ff92fb7bca46bee91c11a6272",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.210-1.el7.x86_64.rpm"
-        },
-        "0.3.201": {
-          "sha1": "fcb28ea68741957337578b5c6e2f3fd558c73596",
-          "sha256": "751c90396ddc3b87fa86fa0db9fbdb423ede873ecc9b09e93bbd9fe4a4d3d08f",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.201-1.el7.x86_64.rpm"
-        },
-        "0.3.195": {
-          "sha1": "e2aa213e050ddae4c15b4ae4d77242bd242636e2",
-          "sha256": "ab7e93dab35c04df98ad3b7f45cc3592c9a4f37c915dd7033386700afc3f6ec2",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.195-1.el7.x86_64.rpm"
-        },
-        "0.3.186": {
-          "sha1": "e056e2b7f5b02493290a089c82fa21c5e23f6b6d",
-          "sha256": "bc2f9ccccd29d9b9bbdfe33cc7aaf718fb3869dea3d5c343a76f89acde2123ce",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.186-1.el7.x86_64.rpm"
-        },
-        "0.3.163": {
-          "sha1": "a16d8be49c49f769414645271f20783d91d860b6",
-          "sha256": "8a6ec29167170dcf724c76f92e2c284ef34c217f5e27336aeae7941a8bfb8938",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.163-1.el7.x86_64.rpm"
-        },
-        "0.3.146": {
-          "sha1": "7a2d673d53ec6901210fb5647534c25e597c2cea",
-          "sha256": "2b56e1e2178c8d9b1fc80ef7a3e1cf4ca851afae6614096899d3aa6fd4fc6152",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.146-1.el7.x86_64.rpm"
-        },
-        "0.3.123": {
-          "sha1": "b8a20a202ebbba5915a21d029155e23d5e6a17e2",
-          "sha256": "0403ff6588433b21d8363c13c4a59901207f1e28a308e455a7b445bb9c31ef09",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.123-1.el7.x86_64.rpm"
-        },
-        "0.3.112": {
-          "sha1": "bbfd4749deaaa445cd5f669a0b861db746381582",
-          "sha256": "4b4cf0f5e60f40e48c449c0811306aa9d873e69c2d4d123ad3a803ddff7cb6c7",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.112-1.el7.x86_64.rpm"
-        },
-        "0.3.109": {
-          "sha1": "6a895b0b8146be92574493c3325b44d59f9deacf",
-          "sha256": "e7167cd5d543e9e9bb07db943f31dc1dd02ad0c86babc22bba4b09cc7a97655b",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.109-1.el7.x86_64.rpm"
+        "0.3.73": {
+          "sha1": "9842bb1794a04ed7799ee381990730df6ae2a450",
+          "sha256": "42c131d717823afc84956f81bf9879f688f7a1dc1a4450de876eb88dee216265",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.73/el/7/delivery-0.3.73-1.el7.x86_64.rpm"
         },
         "0.3.76": {
           "sha1": "0a268b698b9613c38479655e48edde38efd68555",
           "sha256": "9ac8901237c4f8f946f5df215edee3d97ca647dac11b2688b9f5fbff9e30a9f4",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.76-1.el7.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.76/el/7/delivery-0.3.76-1.el7.x86_64.rpm"
         },
-        "0.3.73": {
-          "sha1": "9842bb1794a04ed7799ee381990730df6ae2a450",
-          "sha256": "42c131d717823afc84956f81bf9879f688f7a1dc1a4450de876eb88dee216265",
-          "url": "https://packages.chef.io/stable/el/7/delivery-0.3.73-1.el7.x86_64.rpm"
+        "0.3.109": {
+          "sha1": "6a895b0b8146be92574493c3325b44d59f9deacf",
+          "sha256": "e7167cd5d543e9e9bb07db943f31dc1dd02ad0c86babc22bba4b09cc7a97655b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.109/el/7/delivery-0.3.109-1.el7.x86_64.rpm"
+        },
+        "0.3.112": {
+          "sha1": "bbfd4749deaaa445cd5f669a0b861db746381582",
+          "sha256": "4b4cf0f5e60f40e48c449c0811306aa9d873e69c2d4d123ad3a803ddff7cb6c7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.112/el/7/delivery-0.3.112-1.el7.x86_64.rpm"
+        },
+        "0.3.123": {
+          "sha1": "b8a20a202ebbba5915a21d029155e23d5e6a17e2",
+          "sha256": "0403ff6588433b21d8363c13c4a59901207f1e28a308e455a7b445bb9c31ef09",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.123/el/7/delivery-0.3.123-1.el7.x86_64.rpm"
+        },
+        "0.3.146": {
+          "sha1": "7a2d673d53ec6901210fb5647534c25e597c2cea",
+          "sha256": "2b56e1e2178c8d9b1fc80ef7a3e1cf4ca851afae6614096899d3aa6fd4fc6152",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.146/el/7/delivery-0.3.146-1.el7.x86_64.rpm"
+        },
+        "0.3.163": {
+          "sha1": "a16d8be49c49f769414645271f20783d91d860b6",
+          "sha256": "8a6ec29167170dcf724c76f92e2c284ef34c217f5e27336aeae7941a8bfb8938",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.163/el/7/delivery-0.3.163-1.el7.x86_64.rpm"
+        },
+        "0.3.186": {
+          "sha1": "e056e2b7f5b02493290a089c82fa21c5e23f6b6d",
+          "sha256": "bc2f9ccccd29d9b9bbdfe33cc7aaf718fb3869dea3d5c343a76f89acde2123ce",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.186/el/7/delivery-0.3.186-1.el7.x86_64.rpm"
+        },
+        "0.3.195": {
+          "sha1": "e2aa213e050ddae4c15b4ae4d77242bd242636e2",
+          "sha256": "ab7e93dab35c04df98ad3b7f45cc3592c9a4f37c915dd7033386700afc3f6ec2",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.195/el/7/delivery-0.3.195-1.el7.x86_64.rpm"
+        },
+        "0.3.201": {
+          "sha1": "fcb28ea68741957337578b5c6e2f3fd558c73596",
+          "sha256": "751c90396ddc3b87fa86fa0db9fbdb423ede873ecc9b09e93bbd9fe4a4d3d08f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.201/el/7/delivery-0.3.201-1.el7.x86_64.rpm"
+        },
+        "0.3.210": {
+          "sha1": "e1b2c9a34ef0e911f7923b6c8d049c48f38ed97b",
+          "sha256": "17bbb93de632e0c774758c62cdac0f6ddd0d6c3ff92fb7bca46bee91c11a6272",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.210/el/7/delivery-0.3.210-1.el7.x86_64.rpm"
+        },
+        "0.3.224": {
+          "sha1": "53b91bb9574d3832988a54daa5317c46abcc0b6e",
+          "sha256": "98dde8e1874aa7ebe438919d704e642e30ebf58f91082e92f79eda8565ea4ca0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.224/el/7/delivery-0.3.224-1.el7.x86_64.rpm"
+        },
+        "0.3.227": {
+          "sha1": "54b71091c853e260f1ae7f5ee6a3f1fe1ab9bd49",
+          "sha256": "6133514b204c03f5e7abf5e66065c74dc26d25fbeefd6a4806b9c14f2bc770fa",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.227/el/7/delivery-0.3.227-1.el7.x86_64.rpm"
+        },
+        "0.3.240": {
+          "sha1": "1f2665b8a7e59d5722d3da5c74d2b8c8d731afff",
+          "sha256": "0126f4e988d5a1e2adb40034600491ed6eefee20294891573b74335321946e1b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.240/el/7/delivery-0.3.240-1.el7.x86_64.rpm"
+        },
+        "0.3.243": {
+          "sha1": "81b621f01cd95c9a9cd45331668cfa186c239f77",
+          "sha256": "db831ac0a7e3f9c354ca958aede0d83d83fc5a2b38ef8305a9e549bae47c4006",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.243/el/7/delivery-0.3.243-1.el7.x86_64.rpm"
+        },
+        "0.3.251": {
+          "sha1": "2ecd5fc2359d3bf80fd22d31064b5c8710e93e25",
+          "sha256": "dc939836109e3eb5d80ba0ec3142af5ed4daa225ac79640f337a9bd934981d25",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.251/el/7/delivery-0.3.251-1.el7.x86_64.rpm"
+        },
+        "0.3.256": {
+          "sha1": "190bc1b790a53526c8573ba115f62b6f43abce30",
+          "sha256": "a4ae394845c381e83bd5d95d16c9965a1473d9c7bdaaa9a1d68459990944ef6e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.256/el/7/delivery-0.3.256-1.el7.x86_64.rpm"
+        },
+        "0.3.278": {
+          "sha1": "e068f87fa6d4ce17f3dfc177d1518eff6a23b4bb",
+          "sha256": "568c52c40bcc1e214ffc4b3d23bbd0004698d174c48151230d13d4d0976fddd9",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.278/el/7/delivery-0.3.278-1.el7.x86_64.rpm"
+        },
+        "0.3.304": {
+          "sha1": "a04b91ffb6d4aeb07199f76b3f36dfc1e26ade0e",
+          "sha256": "bb1139807d12fea74c9c98cfb99de8712d1f8b8c1a716cf095a1fe829e2429fe",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.304/el/7/delivery-0.3.304-1.el7.x86_64.rpm"
+        },
+        "0.3.314": {
+          "sha1": "db72d01aa90d0f6ebffc08a44eb697ff1f958e17",
+          "sha256": "b6c6ce461ca5c5c9219dd0e153d062ff9be3fa821d7551bc3dedbed10cfeb1d7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.314/el/7/delivery-0.3.314-1.el7.x86_64.rpm"
+        },
+        "0.3.334": {
+          "sha1": "3f0a2b98969ace2be5ad4de0bbaf36d965038ed1",
+          "sha256": "e367e77c0b6be821bafcc9afdeaff00aeed6d4c06247aadba92f06e716cc9db7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.334/el/7/delivery-0.3.334-1.el7.x86_64.rpm"
+        },
+        "0.3.338": {
+          "sha1": "9d77caf97bb64aede4be5e23e6f45366605f6bc6",
+          "sha256": "3958e53b1c26528c4542308c2004401e4aefa12c70abe65c4d0a1da280aef3f7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.338/el/7/delivery-0.3.338-1.el7.x86_64.rpm"
+        },
+        "0.3.341": {
+          "sha1": "c26650ee813be247dc1b5c88b33d703538a460b1",
+          "sha256": "5d0f920c0219d02d3cdc15d564d52f4505ce8d471c3c239bf041dd63baa9a3f7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.341/el/7/delivery-0.3.341-1.el7.x86_64.rpm"
+        },
+        "0.3.358": {
+          "sha1": "3a68f5ae5024a861ce9cad494759e2959935b991",
+          "sha256": "20f676b0431cab4d19088ea97fdccbefff6cb4a5dd6c830c1e746e03ec1f0535",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.358/el/7/delivery-0.3.358-1.el7.x86_64.rpm"
+        },
+        "0.3.369": {
+          "sha1": "b127b875ac7b4d4fe4034090ac0ba1770896a57f",
+          "sha256": "11d92b6456d6a273ce944e6d23b20b80ba6ff8f3f374c75788794d55ad75b0f5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.369/el/7/delivery-0.3.369-1.el7.x86_64.rpm"
+        },
+        "0.3.374": {
+          "sha1": "05acea14c026ecc9df32aad4f4368de44a7a430c",
+          "sha256": "4482575105cb442a7c376c9fbea32280cb70c6ce1e25143c061b57a514f6633e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.374/el/7/delivery-0.3.374-1.el7.x86_64.rpm"
+        },
+        "0.3.390": {
+          "sha1": "95f6dd46c7fb27aacabac2efa9eed4b109fd2a58",
+          "sha256": "332acbf417467ad7788887c79bef851dc0608ab6282142e2b18afa3bb4ad840e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.390/el/7/delivery-0.3.390-1.el7.x86_64.rpm"
+        },
+        "0.3.391": {
+          "sha1": "d20771a7fd69cf9912c62a325f921e02eb2a82e4",
+          "sha256": "2651b5f3358013612a24d0d15086ce03f0211dd052e746474437d2993eb77bc4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.391/el/7/delivery-0.3.391-1.el7.x86_64.rpm"
+        },
+        "0.3.435": {
+          "sha1": "8fbd9286e58496a7532ef65cb760ed2765593934",
+          "sha256": "23174e6e03771e963ab70f6c6ce3e88cf00adb2688c9996edb4a23a31b89b55b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.435/el/7/delivery-0.3.435-1.el7.x86_64.rpm"
+        },
+        "0.3.450": {
+          "sha1": "b39068d5e375eed74e2b454e7464162d35f6edff",
+          "sha256": "e206ed8b270b09a4444ecfb4d0b6c4833f1ad6daf11e7c88a91cafa3d270934c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.450/el/7/delivery-0.3.450-1.el7.x86_64.rpm"
+        },
+        "0.3.467": {
+          "sha1": "81df44c51b18a7efd6bb2495338a0da5441d02a9",
+          "sha256": "e37c582206de313fb4e4cc7e1c4550a119310a9ce53e00984205c252523be51b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.467/el/7/delivery-0.3.467-1.el7.x86_64.rpm"
+        },
+        "0.3.493": {
+          "sha1": "06cd5febc0b69c2f9e097a3e2379854cefb202cf",
+          "sha256": "a1df35268ed033ba6b3d5d7c1f466280dd51efd33d795d2c800bbf825df282f0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.493/el/7/delivery-0.3.493-1.el7.x86_64.rpm"
+        },
+        "0.3.519": {
+          "sha1": "e26a6dd669b1b115e2b5649263d37f99e6f26932",
+          "sha256": "076bc681819ccfa51b2aee301d84a9fd49a7e4932d7293345eed0b6f42278e82",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.519/el/7/delivery-0.3.519-1.el7.x86_64.rpm"
+        },
+        "0.3.522": {
+          "sha1": "5657169bbe534306125319f9f2eaded97de8b29d",
+          "sha256": "134ca4522e04f17eb0ef872040f9a1f00d00a402b2a49c441b0022aed3935429",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.522/el/7/delivery-0.3.522-1.el7.x86_64.rpm"
+        },
+        "0.3.554": {
+          "sha1": "2e8fbe1fd8338462391a4b86adb5f9616ee68a47",
+          "sha256": "42b1808530cf8cfb1ef7811d250a84eda2cd0d0a7ea00f4cd7f40d7d3e005f92",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.554/el/7/delivery-0.3.554-1.el7.x86_64.rpm"
+        },
+        "0.3.606": {
+          "sha1": "49d3830acc10f5c7aa5c52a0c16c7b75f79fc2cc",
+          "sha256": "f969ebe7772ef8e9ccc7faba12fae225ad46e4ce44ff894c81bf862daa2c0ecd",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.606/el/7/delivery-0.3.606-1.el7.x86_64.rpm"
+        },
+        "0.3.640": {
+          "sha1": "df9caabe172418ad914c9421fe346433a5b588ba",
+          "sha256": "3d47a6f611e8e042fa20e54cdc3373dd0489318613fb31e492961577005d3342",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.640/el/7/delivery-0.3.640-1.el7.x86_64.rpm"
+        },
+        "0.4.6": {
+          "sha1": "61ad711c720528a24716b1e0cc07ff8cbd2d46e3",
+          "sha256": "bc03dd4181fcab01f75b32c827002f02f7ba520d93b87f85ec5d23db77420ed2",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.6/el/7/delivery-0.4.6-1.el7.x86_64.rpm"
+        },
+        "0.4.58": {
+          "sha1": "a374ce182f56e729614281f0a175dba19ef70326",
+          "sha256": "bd1288ff6ed7f8e3a1f1df31e34c7b84ef24c4caa2e727f58dc0563ca2be5c21",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.58/el/7/delivery-0.4.58-1.el7.x86_64.rpm"
+        },
+        "0.4.75": {
+          "sha1": "088d0db835fb06f68707e788e5638b98875056fe",
+          "sha256": "7f3124b057051ab5935195199bc21c222bb25cbe8729451d61259ca712f9ad92",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.75/el/7/delivery-0.4.75-1.el7.x86_64.rpm"
+        },
+        "0.4.113": {
+          "sha1": "024c6926850f382e5679c3833f37e1ea9a8f6f83",
+          "sha256": "ff5247ef56ab00dbad88c26adc81342c79f9ade3c6aa324c9a618b49a418c1b8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.113/el/7/delivery-0.4.113-1.el7.x86_64.rpm"
+        },
+        "0.4.132": {
+          "sha1": "35406b8082585af68caa552f501aeb1097e6b884",
+          "sha256": "0d1bdce7a230f3a472fa9cac44cdb52fb229530d1c4613fcb3b5f7146e5e3211",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.132/el/7/delivery-0.4.132-1.el7.x86_64.rpm"
+        },
+        "0.4.199": {
+          "sha1": "9a5517588cbe7e37dc8f5617320e9c3ef58ced31",
+          "sha256": "93dfeeceb4921765bf16c80ea80d3cb4d47e9f08e72e6418917990c1a58d19b5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.199/el/7/delivery-0.4.199-1.el7.x86_64.rpm"
+        },
+        "0.4.235": {
+          "sha1": "6dc4419e03aa22295b1bfead0bdf56717ca92772",
+          "sha256": "ada278128ab208fe574e2cc4588f2bc1f67df94c4b54fc3cd1479a78bc31e009",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.235/el/7/delivery-0.4.235-1.el7.x86_64.rpm"
+        },
+        "0.4.299": {
+          "sha1": "28950c3ed480621888adf673432e0cfc367c8c05",
+          "sha256": "5447d2b85bad52d5d5905f39d2817b84e40d5ee7c02b352e16398a49a5aa734a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.299/el/7/delivery-0.4.299-1.el7.x86_64.rpm"
+        },
+        "0.4.404": {
+          "sha1": "781b703a3b4218e134a2191756ce54131e881365",
+          "sha256": "e852f25266a8f23d580cb9949b94328acfe04346dc95d6d30494ec024c04f331",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.404/el/7/delivery-0.4.404-1.el7.x86_64.rpm"
+        },
+        "0.4.437": {
+          "sha1": "8cc5b379a3e7cdd146b64b65bbc853cd604b36b8",
+          "sha256": "44d37d1664ff986bbc9f1969475f2cfbf0723a1cd801ecbe9c48aa73ee9b5662",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.437/el/7/delivery-0.4.437-1.el7.x86_64.rpm"
+        },
+        "0.4.522": {
+          "sha1": "91cef9ce01d9c5c567cd654d33bc872dc7426de4",
+          "sha256": "6e05edda122ace1f16ec49a56f5b5163fa3fbb4873d6837fad0b9ccf3c0bf0a5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.522/el/7/delivery-0.4.522-1.el7.x86_64.rpm"
+        },
+        "0.4.600": {
+          "sha1": "55150924324229587a71bc4e9d2e790f67e77b62",
+          "sha256": "6665ef6af731913e6c16af540b2a3543ef4e601698527ae5c1be6b5143fe32b1",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.600/el/7/delivery-0.4.600-1.el7.x86_64.rpm"
+        },
+        "0.5.1": {
+          "sha1": "f73b2a3afb56c87715a6a0a2e5e6f3bbe7ac090e",
+          "sha256": "9313285adf12c0e18cd70140425791741b0c4df753f1a37452aaee8ffc806469",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.1/el/7/delivery-0.5.1-1.el7.x86_64.rpm"
+        },
+        "0.5.118": {
+          "sha1": "334ddd445f606cbfe20f44adee1ed0fed2047fc2",
+          "sha256": "c13e1d44b83ccd15ab96bff85e7742e387cf36261773281cda0d7ddc4989be78",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.118/el/7/delivery-0.5.118-1.el7.x86_64.rpm"
+        },
+        "0.5.125": {
+          "sha1": "edf5558be440ddd2cb493147697c072f25405795",
+          "sha256": "b128f9ca324e04c595d57267f6ad225acf78af1b70ed86416bb1640a931559e8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.125/el/7/delivery-0.5.125-1.el7.x86_64.rpm"
+        },
+        "0.5.204": {
+          "sha1": "1f135ed824bb9b878a8af2d5e27cf1be63a6a733",
+          "sha256": "e21269a934e8c3ccb700a69cf87f31f503bb5af4d5a3252f85dfc4d0149bae7e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.204/el/7/delivery-0.5.204-1.el7.x86_64.rpm"
+        },
+        "0.5.271": {
+          "sha1": "6264186f6472a7f0c637a79cae3beed1775404e8",
+          "sha256": "71a407fb52808b616e6223c83148d510ed3e9ee5bfcdeca045b462d5a249138e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.271/el/7/delivery-0.5.271-1.el7.x86_64.rpm"
+        },
+        "0.5.346": {
+          "sha1": "1d5d5d498784aec091e5fbff79826e74f9952587",
+          "sha256": "607f91b618465af0918724ba3085e59c005ffc9a1341abc45caa9df8b01092fd",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.346/el/7/delivery-0.5.346-1.el7.x86_64.rpm"
+        },
+        "0.5.370": {
+          "sha1": "b15d204eddfec9db64e874f177268467389605cd",
+          "sha256": "d51fe13849f5dd4d55d6be84ea3b599fdf0db09d3ace4e8c13758ad12bbc3e21",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.370/el/7/delivery-0.5.370-1.el7.x86_64.rpm"
+        },
+        "0.5.432": {
+          "sha1": "962fc3ec04ece4fc049280798402a3855777efe5",
+          "sha256": "e4559526338d4fa8b4cbfaedc64581adebbc2a3050bfdf78e5e2872d72ed2b26",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.432/el/7/delivery-0.5.432-1.el7.x86_64.rpm"
+        },
+        "0.6.6": {
+          "sha1": "f1055546f92ebf79fca90ec48db1a01bd354355d",
+          "sha256": "831f56998c506f8b057ab6093bfccf0df938f33054f00a39064275e4cc725fc4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.6/el/7/delivery-0.6.6-1.el7.x86_64.rpm"
+        },
+        "0.6.7": {
+          "sha1": "01d39202f2d9cc65dd5b00425921459ee46b2e6e",
+          "sha256": "09d644e0d057a225f830e2f3df8677b7e39eedfe21872beb5ec6ce6f9f9ee91a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.7/el/7/delivery-0.6.7-1.el7.x86_64.rpm"
+        },
+        "0.6.64": {
+          "sha1": "ddd355fd5e64a3155d54b20ef4aef5861300ca31",
+          "sha256": "1af791938e4181f6776f7c1e4f7b396b10b922d96859cc2c05fc3cf812fa91f7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.64/el/7/delivery-0.6.64-1.el7.x86_64.rpm"
+        },
+        "0.6.136": {
+          "sha1": "28aa4599a50502dec437516299394924526213c6",
+          "sha256": "00f8852a43cc59fefb7784c710c6585b05ec1faec5e7cbfe252c033229c3938c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.136/el/7/delivery-0.6.136-1.el7.x86_64.rpm"
+        },
+        "0.7.61": {
+          "sha1": "86e25b5b854f293ef5267fda3091378268438843",
+          "sha256": "d70f8e65be39cd5249d05a8cf5f639b9d6e86674c62f1138a629011e085c5362",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.61/el/7/automate-0.7.61-1.el7.x86_64.rpm"
+        },
+        "0.7.85": {
+          "sha1": "e6c7afc3442cb1e4349d0205a8e318ea75d35ef1",
+          "sha256": "ad961e2fcb7bb77dd0482e59bd5fbafa30dde1fb9439363091d426bf19599c00",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.85/el/7/automate-0.7.85-1.el7.x86_64.rpm"
+        },
+        "0.7.151": {
+          "sha1": "952bdd17b3b6c91d3dd080621e984849dd9ea7f8",
+          "sha256": "eae2b33195019d8ebb9d52e250d6d765b11b4aaac699afb1dd46217a100ba313",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.151/el/7/automate-0.7.151-1.el7.x86_64.rpm"
+        },
+        "0.7.239": {
+          "sha1": "189a3c7ab265d85550190158b795a3bd13da1ba2",
+          "sha256": "290046ec1a4da9a0e861953b0ea6885f58070529da139923eb386bfa68b3b3f7",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.239/el/7/automate-0.7.239-1.el7.x86_64.rpm"
+        },
+        "0.8.5": {
+          "sha1": "b4af81c9805ec5e120a348f9d6976f6622c47fb3",
+          "sha256": "a829a835d56fa07e96529631961e38e736bbf6b69d74838bf2c876fdf21694d9",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/el/7/automate-0.8.5-1.el7.x86_64.rpm"
         }
       }
     }
@@ -462,484 +692,818 @@
   "ubuntu": {
     "12.04": {
       "x86_64": {
-        "0.4.199": {
-          "sha1": "f6ba7125ebdd47a020681acdfac92c4023609a27",
-          "sha256": "0e2466ea55d1823bbb917788664c85311134097cd6eee0af4e17e80ef65c7180",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.199-1_amd64.deb"
-        },
-        "0.4.132": {
-          "sha1": "fd2ce4d449f3951b5827f76df14bff730ee2e42f",
-          "sha256": "b3538a129fb3d74338ef44aab0aee9bc3d966f119bbc9135def4440e275804d0",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.132-1_amd64.deb"
-        },
-        "0.4.113": {
-          "sha1": "87537c417043cb2513e3aec991baa76d5943784c",
-          "sha256": "4351cd65df653af833a31fb5a84c9cb5edd5edc8b40432844bd2abd0be6c8048",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.113-1_amd64.deb"
-        },
-        "0.4.75": {
-          "sha1": "9eef8b5c5d480f6c7d9f48ebdefa596fc094f34e",
-          "sha256": "9ca366e3d1dd9102aa6dd27194f0d06f17c5bf5042a56b6b0e38f69a96f84d4e",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.75-1_amd64.deb"
-        },
-        "0.4.58": {
-          "sha1": "bb9cf89f75cdb509b6a9756fe481347916fa79d8",
-          "sha256": "ebe38e9a2bcbb90892c98fc381e9712b81b8d441ae053a5536b94cdc0a7f5ea0",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.58-1_amd64.deb"
-        },
-        "0.4.6": {
-          "sha1": "2fbf60baf03ca8b2dec92f9521041cc05eda1279",
-          "sha256": "479b513913dde1105de9ce1c8aef0e4263ac235d0cf24bfa81db05982acb210c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.4.6-1_amd64.deb"
-        },
-        "0.3.640": {
-          "sha1": "51e3d461477a8e39e14db52ee6c6a4ca7836348a",
-          "sha256": "313555e9285ae1b4adcbb82ccb228ea34e2127f453044faf89f664fe3d0ab965",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.640-1_amd64.deb"
-        },
-        "0.3.606": {
-          "sha1": "b1c092edf9877c1f5bc217d6ec38379a8dd6fe65",
-          "sha256": "76166a13e611e60d50e3a42cd652e8e4fb44ef1e18d4ba0a2f0a839bc01cda64",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.606-1_amd64.deb"
-        },
-        "0.3.554": {
-          "sha1": "f99917f02ba9d5dc392e0b45d4410acaad2cf56b",
-          "sha256": "b9ee57b1a6e7193d295d821573f9a567622e74242faa99f262a3009e866ba393",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.554-1_amd64.deb"
-        },
-        "0.3.522": {
-          "sha1": "f1763fc415a8e18403e85abe1899e2074ab1265a",
-          "sha256": "58979f0a571682381e051824b531a16ccfef510cf1c6dd419fadf02d6a16491e",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.522-1_amd64.deb"
-        },
-        "0.3.519": {
-          "sha1": "ad717b1df44ea6e9e99f1f3175479a49f521fba6",
-          "sha256": "4930a7e67ef5c13ae27adcd25851bbe6d614a1f11fd81655992d331db391932a",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.519-1_amd64.deb"
-        },
-        "0.3.493": {
-          "sha1": "badd6f80fc9d8c1528a98c27236d50cccf91b3c8",
-          "sha256": "a565fabdb9d897571c949257167eb37f3c7470746966ff111d511c142ffc4b0f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.493-1_amd64.deb"
-        },
-        "0.3.467": {
-          "sha1": "9380db0b3c950df9bccb3b0f0535f18c319d47df",
-          "sha256": "3f8de1297a2bc737a4fe0846560be9d664401d165afec787724315c8f2ecdf81",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.467-1_amd64.deb"
-        },
-        "0.3.450": {
-          "sha1": "0174b138364307ad2db735fb6e0d501f4b6e084f",
-          "sha256": "e86710f7fa061cde6c991c9fc1fd8df31b77e104888a1ad9c0e6b561b22dad0b",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.450-1_amd64.deb"
-        },
-        "0.3.435": {
-          "sha1": "1572e629cf0e4a73eee3f790bb0da86be0a94192",
-          "sha256": "8f97260e6c664a43e420e2181b6ec7afbfea72ee66e141b9e2e29d02725f6ac7",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.435-1_amd64.deb"
-        },
-        "0.3.391": {
-          "sha1": "ad7fb7aac643191d0a2b804eb197bb82ef5bef20",
-          "sha256": "141009a83251a47f83056268058f5431afa05150b1d091471f080d24014b587f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.391-1_amd64.deb"
-        },
-        "0.3.390": {
-          "sha1": "d68e24b292b5ce29bb09a92c635d87d2f4faea45",
-          "sha256": "87f6cbb48b0835a24304c5922c0e8151f4afd91c0e947a169898499c0b44ddcc",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.390-1_amd64.deb"
-        },
-        "0.3.374": {
-          "sha1": "0dab1b3182b1fca986bd2791faf2e3f4cf3e158a",
-          "sha256": "3efc55a896667aa94dd968f529103148642e2e0a8bb6cb107f87c11f42f723ec",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.374-1_amd64.deb"
-        },
-        "0.3.358": {
-          "sha1": "5698c8a00611db4ac64522a772883e0178beaf6a",
-          "sha256": "044d1d203895e88e09c35291358347f1ccccacfe96a3328f805db117f4432df6",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.358-1_amd64.deb"
-        },
-        "0.3.369": {
-          "sha1": "d7bcc478fe1eb1283aa0275de7387b1d8a2e7d9d",
-          "sha256": "9457bc31f5e8e6af64d27da57d8b1866ba213c87a4b52b36ae638d092d587f4a",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.369-1_amd64.deb"
-        },
-        "0.3.341": {
-          "sha1": "48d3fafe5911414016275423d74ed874bffe0f02",
-          "sha256": "a24974bbe0e94bacf6619aa5bc92ac6db0414bf0afd93b9c0f1969c807c980d7",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.341-1_amd64.deb"
-        },
-        "0.3.338": {
-          "sha1": "b2469478ab303121f59edcbc46b40b474be59730",
-          "sha256": "4a477b487b7aed0a8dce335f06f31b401115c3248cbf1feeddbfa3021474b55c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.338-1_amd64.deb"
-        },
-        "0.3.334": {
-          "sha1": "b2f5f22ceb699e7503f3a681e8db3a15a6bb6ce6",
-          "sha256": "3bdca726210b470c08a30793f47c76ba5bfd1a221b8f556fd79e9992e9c88f44",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.334-1_amd64.deb"
-        },
-        "0.3.314": {
-          "sha1": "651fb7ac8d125638c2f7c373be1f5e82382e79dd",
-          "sha256": "2f346a1d792d54bbe51b182fef3598738c3f091663d4d1e0459bfb6d4da396a4",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.314-1_amd64.deb"
-        },
-        "0.3.304": {
-          "sha1": "7d81a3ddaccd7c34941f4668fe4ab3d40480270a",
-          "sha256": "5a04ab211f3f88a8234fd0cffd2a453f2bb07c1870452a1a272d03cb9025ac07",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.304-1_amd64.deb"
-        },
-        "0.3.278": {
-          "sha1": "f05dc6f1f80d5d4c99c65af7e4117a768d68d289",
-          "sha256": "76de82b0392e1b40045386bc0bcc25c8acd1b18ec2fcaaeeddbcfb5a8b0defa4",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.278-1_amd64.deb"
-        },
-        "0.3.256": {
-          "sha1": "56bc1d4cd8645e129fdf851f9975f6673c7436da",
-          "sha256": "5e0f2d4daf8060b48b94b607aca262d32b62b971c4a0956f8d0de50d443c1a59",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.256-1_amd64.deb"
-        },
-        "0.3.251": {
-          "sha1": "bf9be2c74a29d2ff07cc0fc1e4d1d549004ed6e8",
-          "sha256": "3e210586c34113ff36bd03ce672d1251d24475b8dc9b0d0ae12c6d6b26742418",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.251-1_amd64.deb"
-        },
-        "0.3.243": {
-          "sha1": "b4bfa31406388b88a20139c634cabbb8d9bf7933",
-          "sha256": "d4cd1baa20dce5326bd9ad8b9c93da854524b80b52e23f361fb0eff5dbf9ce88",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.243-1_amd64.deb"
-        },
-        "0.3.240": {
-          "sha1": "75ecee099e5b43fe95a205e8920fb52369554d70",
-          "sha256": "98886442355eae51812fd1fe0b0b8f94bb0ef234cc68b503356b460b9b70c5b2",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.240-1_amd64.deb"
-        },
-        "0.3.227": {
-          "sha1": "16ed121e5534201582270ba05cfd31b441bad95a",
-          "sha256": "1a646e3f61229f27f56d7c3819be39f731bdd18e1cf5e420d17d7e221363a7a3",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.227-1_amd64.deb"
-        },
-        "0.3.224": {
-          "sha1": "9193d0965543057b1967bf16a9255f909c714f5d",
-          "sha256": "bb999a6dd84b629eaed41774f7f363f9459b5acc49228ed5a053d40979dda8ab",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.224-1_amd64.deb"
-        },
-        "0.3.210": {
-          "sha1": "9859348b5057d3aad37a9fd5d257c7428a1bda85",
-          "sha256": "26678bbbfb8b64cf10894a72e73e49b11497fb8609419cf364dd664c761bb5d4",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.210-1_amd64.deb"
-        },
-        "0.3.201": {
-          "sha1": "03dba413a319bc709a857d52661ebbe3c950edaf",
-          "sha256": "b50f15600e1a37174954fd4d0a5f5331d89885794b3e6bad81e45b4b97566312",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.201-1_amd64.deb"
-        },
-        "0.3.195": {
-          "sha1": "04caefbcd7d0b782a8132c2debc62e5b5b86d0e6",
-          "sha256": "e4aba9f97e3efbe1ba145654f362d545be777678bf05165cde243ac1e8de194c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.195-1_amd64.deb"
-        },
-        "0.3.186": {
-          "sha1": "3237d4e697dd371df2ceb7b9fe9fae9d6d37a0d4",
-          "sha256": "fc1dcabda152ef65540e40e3782005260f0ec5c042d3021520765bc11f9502e5",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.186-1_amd64.deb"
-        },
-        "0.3.163": {
-          "sha1": "31f521ac993b0f8c0d262f072f3a7feef48e5b74",
-          "sha256": "2a78483bbd0371b7691f4e7129c325e84ec1d77fa8300779ac5a58ab8d5e9665",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.163-1_amd64.deb"
-        },
-        "0.3.146": {
-          "sha1": "439f708d7328d59d5023e4b9361a1bb3e2eb6e94",
-          "sha256": "ecd1e6bbc07ae5488536543ba5ab741616697a3755b22b80a3b1353dfeb00d84",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.146-1_amd64.deb"
-        },
-        "0.3.123": {
-          "sha1": "811d3d1ba560ca8d6aefde9be23542239935cf8c",
-          "sha256": "19b605bbab4432be26c008e0dfa0b5d51ac978d2710802a83bf6f9e256276788",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.123-1_amd64.deb"
-        },
-        "0.3.112": {
-          "sha1": "d03c35479f580b136c7a5ff8d2c09f5d18ff8bea",
-          "sha256": "b446da1799f32dd1dd61bfc7d6f0dd4b4514f9548f0b672d9b5782266158ce1a",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.112-1_amd64.deb"
-        },
-        "0.3.109": {
-          "sha1": "977ca2de47fd4a30a96d4c28caff6df9f0131cd7",
-          "sha256": "46f863c5775f859821d5947280150668d45aaf7185e7d762991840035f0ca57d",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.109-1_amd64.deb"
-        },
-        "0.3.76": {
-          "sha1": "c303be781ac80c111fc70844d86d67a6b985bcf1",
-          "sha256": "e1518f559d32e63b536d002e3ed9cb3d194b61a664b6c919e1a9afc861e90e66",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.76-1_amd64.deb"
-        },
-        "0.3.73": {
-          "sha1": "47721162e659ebf406e57b82f52975b7e27f8b46",
-          "sha256": "b6df02959812ed3957133f1e9ed2bdedf2b26ce1a53034c761545a3ca69b762c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.73-1_amd64.deb"
-        },
-        "0.3.68": {
-          "sha1": "36b8d263290e3285b871520accc5f87838c7581d",
-          "sha256": "27cc2d49178fffb870b3adec22651bd741c86144560514bfcdccb1fdb14ed28c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.68-1_amd64.deb"
-        },
-        "0.3.67": {
-          "sha1": "7b5dfe72b5ea81cef45816e280e864fad0b2a180",
-          "sha256": "d6ba07d7f2f2f68ecf035a007b94aa18c33c43f9883d3c25a8849437d9ab8d3e",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.67-1_amd64.deb"
+        "0.3.56": {
+          "sha1": "cb7e2e7098081fed40159dc88c09b13638282a25",
+          "sha256": "51853435e819d4575da86764bb333f71eeac89496751245893635761551acbf5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.56/ubuntu/12.04/delivery_0.3.56-1_amd64.deb"
         },
         "0.3.63": {
           "sha1": "e536f1109f14cc6c56de98f9e92cc72c8a9dc055",
           "sha256": "eec8a8b1b14442f37ccf48b9900e89fee06b7546cddaefc33947636320ffdd85",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.63-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.63/ubuntu/12.04/delivery_0.3.63-1_amd64.deb"
         },
-        "0.3.56": {
-          "sha1": "cb7e2e7098081fed40159dc88c09b13638282a25",
-          "sha256": "51853435e819d4575da86764bb333f71eeac89496751245893635761551acbf5",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/delivery_0.3.56-1_amd64.deb"
+        "0.3.67": {
+          "sha1": "7b5dfe72b5ea81cef45816e280e864fad0b2a180",
+          "sha256": "d6ba07d7f2f2f68ecf035a007b94aa18c33c43f9883d3c25a8849437d9ab8d3e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.67/ubuntu/12.04/delivery_0.3.67-1_amd64.deb"
+        },
+        "0.3.68": {
+          "sha1": "36b8d263290e3285b871520accc5f87838c7581d",
+          "sha256": "27cc2d49178fffb870b3adec22651bd741c86144560514bfcdccb1fdb14ed28c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.68/ubuntu/12.04/delivery_0.3.68-1_amd64.deb"
+        },
+        "0.3.73": {
+          "sha1": "47721162e659ebf406e57b82f52975b7e27f8b46",
+          "sha256": "b6df02959812ed3957133f1e9ed2bdedf2b26ce1a53034c761545a3ca69b762c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.73/ubuntu/12.04/delivery_0.3.73-1_amd64.deb"
+        },
+        "0.3.76": {
+          "sha1": "c303be781ac80c111fc70844d86d67a6b985bcf1",
+          "sha256": "e1518f559d32e63b536d002e3ed9cb3d194b61a664b6c919e1a9afc861e90e66",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.76/ubuntu/12.04/delivery_0.3.76-1_amd64.deb"
+        },
+        "0.3.109": {
+          "sha1": "977ca2de47fd4a30a96d4c28caff6df9f0131cd7",
+          "sha256": "46f863c5775f859821d5947280150668d45aaf7185e7d762991840035f0ca57d",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.109/ubuntu/12.04/delivery_0.3.109-1_amd64.deb"
+        },
+        "0.3.112": {
+          "sha1": "d03c35479f580b136c7a5ff8d2c09f5d18ff8bea",
+          "sha256": "b446da1799f32dd1dd61bfc7d6f0dd4b4514f9548f0b672d9b5782266158ce1a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.112/ubuntu/12.04/delivery_0.3.112-1_amd64.deb"
+        },
+        "0.3.123": {
+          "sha1": "811d3d1ba560ca8d6aefde9be23542239935cf8c",
+          "sha256": "19b605bbab4432be26c008e0dfa0b5d51ac978d2710802a83bf6f9e256276788",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.123/ubuntu/12.04/delivery_0.3.123-1_amd64.deb"
+        },
+        "0.3.146": {
+          "sha1": "439f708d7328d59d5023e4b9361a1bb3e2eb6e94",
+          "sha256": "ecd1e6bbc07ae5488536543ba5ab741616697a3755b22b80a3b1353dfeb00d84",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.146/ubuntu/12.04/delivery_0.3.146-1_amd64.deb"
+        },
+        "0.3.163": {
+          "sha1": "31f521ac993b0f8c0d262f072f3a7feef48e5b74",
+          "sha256": "2a78483bbd0371b7691f4e7129c325e84ec1d77fa8300779ac5a58ab8d5e9665",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.163/ubuntu/12.04/delivery_0.3.163-1_amd64.deb"
+        },
+        "0.3.186": {
+          "sha1": "3237d4e697dd371df2ceb7b9fe9fae9d6d37a0d4",
+          "sha256": "fc1dcabda152ef65540e40e3782005260f0ec5c042d3021520765bc11f9502e5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.186/ubuntu/12.04/delivery_0.3.186-1_amd64.deb"
+        },
+        "0.3.195": {
+          "sha1": "04caefbcd7d0b782a8132c2debc62e5b5b86d0e6",
+          "sha256": "e4aba9f97e3efbe1ba145654f362d545be777678bf05165cde243ac1e8de194c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.195/ubuntu/12.04/delivery_0.3.195-1_amd64.deb"
+        },
+        "0.3.201": {
+          "sha1": "03dba413a319bc709a857d52661ebbe3c950edaf",
+          "sha256": "b50f15600e1a37174954fd4d0a5f5331d89885794b3e6bad81e45b4b97566312",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.201/ubuntu/12.04/delivery_0.3.201-1_amd64.deb"
+        },
+        "0.3.210": {
+          "sha1": "9859348b5057d3aad37a9fd5d257c7428a1bda85",
+          "sha256": "26678bbbfb8b64cf10894a72e73e49b11497fb8609419cf364dd664c761bb5d4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.210/ubuntu/12.04/delivery_0.3.210-1_amd64.deb"
+        },
+        "0.3.224": {
+          "sha1": "9193d0965543057b1967bf16a9255f909c714f5d",
+          "sha256": "bb999a6dd84b629eaed41774f7f363f9459b5acc49228ed5a053d40979dda8ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.224/ubuntu/12.04/delivery_0.3.224-1_amd64.deb"
+        },
+        "0.3.227": {
+          "sha1": "16ed121e5534201582270ba05cfd31b441bad95a",
+          "sha256": "1a646e3f61229f27f56d7c3819be39f731bdd18e1cf5e420d17d7e221363a7a3",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.227/ubuntu/12.04/delivery_0.3.227-1_amd64.deb"
+        },
+        "0.3.240": {
+          "sha1": "75ecee099e5b43fe95a205e8920fb52369554d70",
+          "sha256": "98886442355eae51812fd1fe0b0b8f94bb0ef234cc68b503356b460b9b70c5b2",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.240/ubuntu/12.04/delivery_0.3.240-1_amd64.deb"
+        },
+        "0.3.243": {
+          "sha1": "b4bfa31406388b88a20139c634cabbb8d9bf7933",
+          "sha256": "d4cd1baa20dce5326bd9ad8b9c93da854524b80b52e23f361fb0eff5dbf9ce88",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.243/ubuntu/12.04/delivery_0.3.243-1_amd64.deb"
+        },
+        "0.3.251": {
+          "sha1": "bf9be2c74a29d2ff07cc0fc1e4d1d549004ed6e8",
+          "sha256": "3e210586c34113ff36bd03ce672d1251d24475b8dc9b0d0ae12c6d6b26742418",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.251/ubuntu/12.04/delivery_0.3.251-1_amd64.deb"
+        },
+        "0.3.256": {
+          "sha1": "56bc1d4cd8645e129fdf851f9975f6673c7436da",
+          "sha256": "5e0f2d4daf8060b48b94b607aca262d32b62b971c4a0956f8d0de50d443c1a59",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.256/ubuntu/12.04/delivery_0.3.256-1_amd64.deb"
+        },
+        "0.3.278": {
+          "sha1": "f05dc6f1f80d5d4c99c65af7e4117a768d68d289",
+          "sha256": "76de82b0392e1b40045386bc0bcc25c8acd1b18ec2fcaaeeddbcfb5a8b0defa4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.278/ubuntu/12.04/delivery_0.3.278-1_amd64.deb"
+        },
+        "0.3.304": {
+          "sha1": "7d81a3ddaccd7c34941f4668fe4ab3d40480270a",
+          "sha256": "5a04ab211f3f88a8234fd0cffd2a453f2bb07c1870452a1a272d03cb9025ac07",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.304/ubuntu/12.04/delivery_0.3.304-1_amd64.deb"
+        },
+        "0.3.314": {
+          "sha1": "651fb7ac8d125638c2f7c373be1f5e82382e79dd",
+          "sha256": "2f346a1d792d54bbe51b182fef3598738c3f091663d4d1e0459bfb6d4da396a4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.314/ubuntu/12.04/delivery_0.3.314-1_amd64.deb"
+        },
+        "0.3.334": {
+          "sha1": "b2f5f22ceb699e7503f3a681e8db3a15a6bb6ce6",
+          "sha256": "3bdca726210b470c08a30793f47c76ba5bfd1a221b8f556fd79e9992e9c88f44",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.334/ubuntu/12.04/delivery_0.3.334-1_amd64.deb"
+        },
+        "0.3.338": {
+          "sha1": "b2469478ab303121f59edcbc46b40b474be59730",
+          "sha256": "4a477b487b7aed0a8dce335f06f31b401115c3248cbf1feeddbfa3021474b55c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.338/ubuntu/12.04/delivery_0.3.338-1_amd64.deb"
+        },
+        "0.3.341": {
+          "sha1": "48d3fafe5911414016275423d74ed874bffe0f02",
+          "sha256": "a24974bbe0e94bacf6619aa5bc92ac6db0414bf0afd93b9c0f1969c807c980d7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.341/ubuntu/12.04/delivery_0.3.341-1_amd64.deb"
+        },
+        "0.3.358": {
+          "sha1": "5698c8a00611db4ac64522a772883e0178beaf6a",
+          "sha256": "044d1d203895e88e09c35291358347f1ccccacfe96a3328f805db117f4432df6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.358/ubuntu/12.04/delivery_0.3.358-1_amd64.deb"
+        },
+        "0.3.369": {
+          "sha1": "d7bcc478fe1eb1283aa0275de7387b1d8a2e7d9d",
+          "sha256": "9457bc31f5e8e6af64d27da57d8b1866ba213c87a4b52b36ae638d092d587f4a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.369/ubuntu/12.04/delivery_0.3.369-1_amd64.deb"
+        },
+        "0.3.374": {
+          "sha1": "0dab1b3182b1fca986bd2791faf2e3f4cf3e158a",
+          "sha256": "3efc55a896667aa94dd968f529103148642e2e0a8bb6cb107f87c11f42f723ec",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.374/ubuntu/12.04/delivery_0.3.374-1_amd64.deb"
+        },
+        "0.3.390": {
+          "sha1": "d68e24b292b5ce29bb09a92c635d87d2f4faea45",
+          "sha256": "87f6cbb48b0835a24304c5922c0e8151f4afd91c0e947a169898499c0b44ddcc",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.390/ubuntu/12.04/delivery_0.3.390-1_amd64.deb"
+        },
+        "0.3.391": {
+          "sha1": "ad7fb7aac643191d0a2b804eb197bb82ef5bef20",
+          "sha256": "141009a83251a47f83056268058f5431afa05150b1d091471f080d24014b587f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.391/ubuntu/12.04/delivery_0.3.391-1_amd64.deb"
+        },
+        "0.3.435": {
+          "sha1": "1572e629cf0e4a73eee3f790bb0da86be0a94192",
+          "sha256": "8f97260e6c664a43e420e2181b6ec7afbfea72ee66e141b9e2e29d02725f6ac7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.435/ubuntu/12.04/delivery_0.3.435-1_amd64.deb"
+        },
+        "0.3.450": {
+          "sha1": "0174b138364307ad2db735fb6e0d501f4b6e084f",
+          "sha256": "e86710f7fa061cde6c991c9fc1fd8df31b77e104888a1ad9c0e6b561b22dad0b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.450/ubuntu/12.04/delivery_0.3.450-1_amd64.deb"
+        },
+        "0.3.467": {
+          "sha1": "9380db0b3c950df9bccb3b0f0535f18c319d47df",
+          "sha256": "3f8de1297a2bc737a4fe0846560be9d664401d165afec787724315c8f2ecdf81",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.467/ubuntu/12.04/delivery_0.3.467-1_amd64.deb"
+        },
+        "0.3.493": {
+          "sha1": "badd6f80fc9d8c1528a98c27236d50cccf91b3c8",
+          "sha256": "a565fabdb9d897571c949257167eb37f3c7470746966ff111d511c142ffc4b0f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.493/ubuntu/12.04/delivery_0.3.493-1_amd64.deb"
+        },
+        "0.3.519": {
+          "sha1": "ad717b1df44ea6e9e99f1f3175479a49f521fba6",
+          "sha256": "4930a7e67ef5c13ae27adcd25851bbe6d614a1f11fd81655992d331db391932a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.519/ubuntu/12.04/delivery_0.3.519-1_amd64.deb"
+        },
+        "0.3.522": {
+          "sha1": "f1763fc415a8e18403e85abe1899e2074ab1265a",
+          "sha256": "58979f0a571682381e051824b531a16ccfef510cf1c6dd419fadf02d6a16491e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.522/ubuntu/12.04/delivery_0.3.522-1_amd64.deb"
+        },
+        "0.3.554": {
+          "sha1": "f99917f02ba9d5dc392e0b45d4410acaad2cf56b",
+          "sha256": "b9ee57b1a6e7193d295d821573f9a567622e74242faa99f262a3009e866ba393",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.554/ubuntu/12.04/delivery_0.3.554-1_amd64.deb"
+        },
+        "0.3.606": {
+          "sha1": "b1c092edf9877c1f5bc217d6ec38379a8dd6fe65",
+          "sha256": "76166a13e611e60d50e3a42cd652e8e4fb44ef1e18d4ba0a2f0a839bc01cda64",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.606/ubuntu/12.04/delivery_0.3.606-1_amd64.deb"
+        },
+        "0.3.640": {
+          "sha1": "51e3d461477a8e39e14db52ee6c6a4ca7836348a",
+          "sha256": "313555e9285ae1b4adcbb82ccb228ea34e2127f453044faf89f664fe3d0ab965",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.640/ubuntu/12.04/delivery_0.3.640-1_amd64.deb"
+        },
+        "0.4.6": {
+          "sha1": "2fbf60baf03ca8b2dec92f9521041cc05eda1279",
+          "sha256": "479b513913dde1105de9ce1c8aef0e4263ac235d0cf24bfa81db05982acb210c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.6/ubuntu/12.04/delivery_0.4.6-1_amd64.deb"
+        },
+        "0.4.58": {
+          "sha1": "bb9cf89f75cdb509b6a9756fe481347916fa79d8",
+          "sha256": "ebe38e9a2bcbb90892c98fc381e9712b81b8d441ae053a5536b94cdc0a7f5ea0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.58/ubuntu/12.04/delivery_0.4.58-1_amd64.deb"
+        },
+        "0.4.75": {
+          "sha1": "9eef8b5c5d480f6c7d9f48ebdefa596fc094f34e",
+          "sha256": "9ca366e3d1dd9102aa6dd27194f0d06f17c5bf5042a56b6b0e38f69a96f84d4e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.75/ubuntu/12.04/delivery_0.4.75-1_amd64.deb"
+        },
+        "0.4.113": {
+          "sha1": "87537c417043cb2513e3aec991baa76d5943784c",
+          "sha256": "4351cd65df653af833a31fb5a84c9cb5edd5edc8b40432844bd2abd0be6c8048",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.113/ubuntu/12.04/delivery_0.4.113-1_amd64.deb"
+        },
+        "0.4.132": {
+          "sha1": "fd2ce4d449f3951b5827f76df14bff730ee2e42f",
+          "sha256": "b3538a129fb3d74338ef44aab0aee9bc3d966f119bbc9135def4440e275804d0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.132/ubuntu/12.04/delivery_0.4.132-1_amd64.deb"
+        },
+        "0.4.199": {
+          "sha1": "f6ba7125ebdd47a020681acdfac92c4023609a27",
+          "sha256": "0e2466ea55d1823bbb917788664c85311134097cd6eee0af4e17e80ef65c7180",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.199/ubuntu/12.04/delivery_0.4.199-1_amd64.deb"
+        },
+        "0.4.235": {
+          "sha1": "50d205b336511c358bdfcca80fd4f857cd38ccb2",
+          "sha256": "54a652bba3b34d72bafd8f67d41346c5daed205344b4333563ca7d9e0f33ce82",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.235/ubuntu/12.04/delivery_0.4.235-1_amd64.deb"
+        },
+        "0.4.299": {
+          "sha1": "ec28bfd99fa1e801f9e264ca9930d340776f065b",
+          "sha256": "b1f4f7a3acf1627075b7a4f624e6b4a42ba9513a4e1445cd6828a8905ba8a5d6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.299/ubuntu/12.04/delivery_0.4.299-1_amd64.deb"
+        },
+        "0.4.404": {
+          "sha1": "a88b8256f5e20be1fafad701c6851fcaafeff3f9",
+          "sha256": "44dcceee9821c602916d7ecc5682b8cea3325a7dc93f3670a9584d43ad2f955f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.404/ubuntu/12.04/delivery_0.4.404-1_amd64.deb"
+        },
+        "0.4.437": {
+          "sha1": "7be7fed5b6be3f7a8f4eb03bb5111c141edc5d9f",
+          "sha256": "cd7b00482b7d6be2aa78c3e7ff54dff4021c50a5879642de614f98f0cdc53da8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.437/ubuntu/12.04/delivery_0.4.437-1_amd64.deb"
+        },
+        "0.4.522": {
+          "sha1": "72c5e3b70afa229978c04eb8886e584ad96440a4",
+          "sha256": "2d71bc4fa0682e67f98c838a4616d983da557585660d879a7f50f85141796381",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.522/ubuntu/12.04/delivery_0.4.522-1_amd64.deb"
+        },
+        "0.4.600": {
+          "sha1": "9ccddecfb0f85edf08757207fd25d2f7957de449",
+          "sha256": "09929254d16123f6c2b61683a8da559de3e198d24d3b5d5a6d9379479e3e31ad",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.600/ubuntu/12.04/delivery_0.4.600-1_amd64.deb"
+        },
+        "0.5.1": {
+          "sha1": "fc17b10b932f359cd5a254f952fcc5b2e4a2fa23",
+          "sha256": "dce808ca3e84ef3b7d0493be25cc97f8c96341b182cd641b2d47460afdc93e06",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.1/ubuntu/12.04/delivery_0.5.1-1_amd64.deb"
+        },
+        "0.5.118": {
+          "sha1": "f95160e326cc284cb67c9b4ff2769fa31a1cef16",
+          "sha256": "a694122aaf3134313ee1ca3712a2a59e08190da381b9231d50fcc47cc24883c5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.118/ubuntu/12.04/delivery_0.5.118-1_amd64.deb"
+        },
+        "0.5.125": {
+          "sha1": "639f797bcbfc07b78b45e90f02bf23d0bf19b9a9",
+          "sha256": "112ed288274f9369fa71869dc1df35ba46063caeb6344c9bba2a8662de79072c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.125/ubuntu/12.04/delivery_0.5.125-1_amd64.deb"
+        },
+        "0.5.204": {
+          "sha1": "cbf6cf1fb918a46086a061c6df00bab389b7ac7f",
+          "sha256": "64b2cd4606e9b2200a573d0ae656a2e27e2947274ee77def671b7147c21721ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.204/ubuntu/12.04/delivery_0.5.204-1_amd64.deb"
+        },
+        "0.5.271": {
+          "sha1": "15982a6b682ba36d1dca43c8a49e8d6229125b87",
+          "sha256": "ed724cb9b82b4943014e33ec37684917a959a5c397eabee7ddbfe3d9a2d1d5c6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.271/ubuntu/12.04/delivery_0.5.271-1_amd64.deb"
+        },
+        "0.5.346": {
+          "sha1": "1192f7b9c0af4359bd056bc654ce586bba0b91f1",
+          "sha256": "1eba86fef97e5adbb2e0aef4ef6d4bb2506875f63bca9e55558aca9f1e7cd77f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.346/ubuntu/12.04/delivery_0.5.346-1_amd64.deb"
+        },
+        "0.5.370": {
+          "sha1": "5600590c18beefd5eea5d9003d61d6f8d73e7ac1",
+          "sha256": "0a9a35a25af1dd779870b235f952f6b222b44b729f4f3ca88f9f0285df7e1b33",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.370/ubuntu/12.04/delivery_0.5.370-1_amd64.deb"
+        },
+        "0.5.432": {
+          "sha1": "dcd96f1b175dcf576e6779ccc695e75b88ddeea8",
+          "sha256": "d0348630f33ea51609ec8ec03a99d7a0b7c9afd4f0dec7605a9a92a648f59586",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.432/ubuntu/12.04/delivery_0.5.432-1_amd64.deb"
+        },
+        "0.6.6": {
+          "sha1": "a837181e342986d0695b3495159376df277f1087",
+          "sha256": "5c6e1be1fcdb144f04a121a15177ecfd619f7ee73b82900c6da432c3b6746e43",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.6/ubuntu/12.04/delivery_0.6.6-1_amd64.deb"
+        },
+        "0.6.7": {
+          "sha1": "4d527933e7fe779b2b341e42bd86eac5cf6493a1",
+          "sha256": "0be599ee184e13f3ea82e8177d92876b6c5c8237f448957ad54343ec3d91c362",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.7/ubuntu/12.04/delivery_0.6.7-1_amd64.deb"
+        },
+        "0.6.64": {
+          "sha1": "aecc01db8ae14b3fb8fc819c3783b091ee9d5b23",
+          "sha256": "5f2ca9f242b3a87e073287c78f49dd2fed06243a5660f02d37af06d6b8bd0cf6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.64/ubuntu/12.04/delivery_0.6.64-1_amd64.deb"
+        },
+        "0.6.136": {
+          "sha1": "ae0e157f6bab02dcb5a8f4852c56cb88f301a405",
+          "sha256": "8f9c28a5fcae0214e8528a0464d7633f62340b7bb9c073a68d2a7fe500efc644",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.136/ubuntu/12.04/delivery_0.6.136-1_amd64.deb"
+        },
+        "0.7.61": {
+          "sha1": "cb25d5ef48184318d4e915e7ba7ab6d36968377a",
+          "sha256": "46edf839acf3e0270a32cff15a1c02daac084c3a14a92d3e40407619db8560cd",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.61/ubuntu/12.04/automate_0.7.61-1_amd64.deb"
+        },
+        "0.7.85": {
+          "sha1": "ebc0d6d87e22ad004faaf7c76c6a20e7477932c6",
+          "sha256": "a2f0e1b80376bc33b5a031a89abe7e112995227301c4c72303f66e4ead75bc7c",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.85/ubuntu/12.04/automate_0.7.85-1_amd64.deb"
+        },
+        "0.7.151": {
+          "sha1": "5a391bb55ef8c2194d2ad4b8e33bbc60e3d6864e",
+          "sha256": "ad548a9c950c2ef406b5890ede37b51389681db5eadb7ce1e630dcd17436165b",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.151/ubuntu/12.04/automate_0.7.151-1_amd64.deb"
+        },
+        "0.7.239": {
+          "sha1": "839a13debe858dfa7282db27e542858954fd8680",
+          "sha256": "766d8d84366395e30b5034f6e9a01986b463bbe5afe9254e895b91403b11fbdc",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.239/ubuntu/12.04/automate_0.7.239-1_amd64.deb"
+        },
+        "0.8.5": {
+          "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
+          "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/12.04/automate_0.8.5-1_amd64.deb"
         }
       }
     },
     "14.04": {
       "x86_64": {
-        "0.4.199": {
-          "sha1": "f6ba7125ebdd47a020681acdfac92c4023609a27",
-          "sha256": "0e2466ea55d1823bbb917788664c85311134097cd6eee0af4e17e80ef65c7180",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.199-1_amd64.deb"
-        },
-        "0.4.132": {
-          "sha1": "fd2ce4d449f3951b5827f76df14bff730ee2e42f",
-          "sha256": "b3538a129fb3d74338ef44aab0aee9bc3d966f119bbc9135def4440e275804d0",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.132-1_amd64.deb"
-        },
-        "0.4.113": {
-          "sha1": "87537c417043cb2513e3aec991baa76d5943784c",
-          "sha256": "4351cd65df653af833a31fb5a84c9cb5edd5edc8b40432844bd2abd0be6c8048",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.113-1_amd64.deb"
-        },
-        "0.4.75": {
-          "sha1": "9eef8b5c5d480f6c7d9f48ebdefa596fc094f34e",
-          "sha256": "9ca366e3d1dd9102aa6dd27194f0d06f17c5bf5042a56b6b0e38f69a96f84d4e",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.75-1_amd64.deb"
-        },
-        "0.4.58": {
-          "sha1": "bb9cf89f75cdb509b6a9756fe481347916fa79d8",
-          "sha256": "ebe38e9a2bcbb90892c98fc381e9712b81b8d441ae053a5536b94cdc0a7f5ea0",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.58-1_amd64.deb"
-        },
-        "0.4.6": {
-          "sha1": "2fbf60baf03ca8b2dec92f9521041cc05eda1279",
-          "sha256": "479b513913dde1105de9ce1c8aef0e4263ac235d0cf24bfa81db05982acb210c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.4.6-1_amd64.deb"
-        },
-        "0.3.640": {
-          "sha1": "51e3d461477a8e39e14db52ee6c6a4ca7836348a",
-          "sha256": "313555e9285ae1b4adcbb82ccb228ea34e2127f453044faf89f664fe3d0ab965",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.640-1_amd64.deb"
-        },
-        "0.3.606": {
-          "sha1": "b1c092edf9877c1f5bc217d6ec38379a8dd6fe65",
-          "sha256": "76166a13e611e60d50e3a42cd652e8e4fb44ef1e18d4ba0a2f0a839bc01cda64",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.606-1_amd64.deb"
-        },
-        "0.3.554": {
-          "sha1": "f99917f02ba9d5dc392e0b45d4410acaad2cf56b",
-          "sha256": "b9ee57b1a6e7193d295d821573f9a567622e74242faa99f262a3009e866ba393",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.554-1_amd64.deb"
-        },
-        "0.3.522": {
-          "sha1": "f1763fc415a8e18403e85abe1899e2074ab1265a",
-          "sha256": "58979f0a571682381e051824b531a16ccfef510cf1c6dd419fadf02d6a16491e",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.522-1_amd64.deb"
-        },
-        "0.3.519": {
-          "sha1": "ad717b1df44ea6e9e99f1f3175479a49f521fba6",
-          "sha256": "4930a7e67ef5c13ae27adcd25851bbe6d614a1f11fd81655992d331db391932a",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.519-1_amd64.deb"
-        },
-        "0.3.493": {
-          "sha1": "badd6f80fc9d8c1528a98c27236d50cccf91b3c8",
-          "sha256": "a565fabdb9d897571c949257167eb37f3c7470746966ff111d511c142ffc4b0f",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.493-1_amd64.deb"
-        },
-        "0.3.467": {
-          "sha1": "9380db0b3c950df9bccb3b0f0535f18c319d47df",
-          "sha256": "3f8de1297a2bc737a4fe0846560be9d664401d165afec787724315c8f2ecdf81",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.467-1_amd64.deb"
-        },
-        "0.3.450": {
-          "sha1": "0174b138364307ad2db735fb6e0d501f4b6e084f",
-          "sha256": "e86710f7fa061cde6c991c9fc1fd8df31b77e104888a1ad9c0e6b561b22dad0b",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.450-1_amd64.deb"
-        },
-        "0.3.435": {
-          "sha1": "1572e629cf0e4a73eee3f790bb0da86be0a94192",
-          "sha256": "8f97260e6c664a43e420e2181b6ec7afbfea72ee66e141b9e2e29d02725f6ac7",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.435-1_amd64.deb"
-        },
-        "0.3.391": {
-          "sha1": "ad7fb7aac643191d0a2b804eb197bb82ef5bef20",
-          "sha256": "141009a83251a47f83056268058f5431afa05150b1d091471f080d24014b587f",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.391-1_amd64.deb"
-        },
-        "0.3.390": {
-          "sha1": "d68e24b292b5ce29bb09a92c635d87d2f4faea45",
-          "sha256": "87f6cbb48b0835a24304c5922c0e8151f4afd91c0e947a169898499c0b44ddcc",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.390-1_amd64.deb"
-        },
-        "0.3.374": {
-          "sha1": "0dab1b3182b1fca986bd2791faf2e3f4cf3e158a",
-          "sha256": "3efc55a896667aa94dd968f529103148642e2e0a8bb6cb107f87c11f42f723ec",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.374-1_amd64.deb"
-        },
-        "0.3.358": {
-          "sha1": "5698c8a00611db4ac64522a772883e0178beaf6a",
-          "sha256": "044d1d203895e88e09c35291358347f1ccccacfe96a3328f805db117f4432df6",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.358-1_amd64.deb"
-        },
-        "0.3.369": {
-          "sha1": "d7bcc478fe1eb1283aa0275de7387b1d8a2e7d9d",
-          "sha256": "9457bc31f5e8e6af64d27da57d8b1866ba213c87a4b52b36ae638d092d587f4a",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.369-1_amd64.deb"
-        },
-        "0.3.341": {
-          "sha1": "48d3fafe5911414016275423d74ed874bffe0f02",
-          "sha256": "a24974bbe0e94bacf6619aa5bc92ac6db0414bf0afd93b9c0f1969c807c980d7",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.341-1_amd64.deb"
-        },
-        "0.3.338": {
-          "sha1": "b2469478ab303121f59edcbc46b40b474be59730",
-          "sha256": "4a477b487b7aed0a8dce335f06f31b401115c3248cbf1feeddbfa3021474b55c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.338-1_amd64.deb"
-        },
-        "0.3.334": {
-          "sha1": "b2f5f22ceb699e7503f3a681e8db3a15a6bb6ce6",
-          "sha256": "3bdca726210b470c08a30793f47c76ba5bfd1a221b8f556fd79e9992e9c88f44",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.334-1_amd64.deb"
-        },
-        "0.3.314": {
-          "sha1": "651fb7ac8d125638c2f7c373be1f5e82382e79dd",
-          "sha256": "2f346a1d792d54bbe51b182fef3598738c3f091663d4d1e0459bfb6d4da396a4",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.314-1_amd64.deb"
-        },
-        "0.3.304": {
-          "sha1": "7d81a3ddaccd7c34941f4668fe4ab3d40480270a",
-          "sha256": "5a04ab211f3f88a8234fd0cffd2a453f2bb07c1870452a1a272d03cb9025ac07",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.304-1_amd64.deb"
-        },
-        "0.3.278": {
-          "sha1": "f05dc6f1f80d5d4c99c65af7e4117a768d68d289",
-          "sha256": "76de82b0392e1b40045386bc0bcc25c8acd1b18ec2fcaaeeddbcfb5a8b0defa4",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.278-1_amd64.deb"
-        },
-        "0.3.256": {
-          "sha1": "56bc1d4cd8645e129fdf851f9975f6673c7436da",
-          "sha256": "5e0f2d4daf8060b48b94b607aca262d32b62b971c4a0956f8d0de50d443c1a59",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.256-1_amd64.deb"
-        },
-        "0.3.251": {
-          "sha1": "bf9be2c74a29d2ff07cc0fc1e4d1d549004ed6e8",
-          "sha256": "3e210586c34113ff36bd03ce672d1251d24475b8dc9b0d0ae12c6d6b26742418",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.251-1_amd64.deb"
-        },
-        "0.3.243": {
-          "sha1": "b4bfa31406388b88a20139c634cabbb8d9bf7933",
-          "sha256": "d4cd1baa20dce5326bd9ad8b9c93da854524b80b52e23f361fb0eff5dbf9ce88",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.243-1_amd64.deb"
-        },
-        "0.3.240": {
-          "sha1": "75ecee099e5b43fe95a205e8920fb52369554d70",
-          "sha256": "98886442355eae51812fd1fe0b0b8f94bb0ef234cc68b503356b460b9b70c5b2",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.240-1_amd64.deb"
-        },
-        "0.3.227": {
-          "sha1": "16ed121e5534201582270ba05cfd31b441bad95a",
-          "sha256": "1a646e3f61229f27f56d7c3819be39f731bdd18e1cf5e420d17d7e221363a7a3",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.227-1_amd64.deb"
-        },
-        "0.3.224": {
-          "sha1": "9193d0965543057b1967bf16a9255f909c714f5d",
-          "sha256": "bb999a6dd84b629eaed41774f7f363f9459b5acc49228ed5a053d40979dda8ab",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.224-1_amd64.deb"
-        },
-        "0.3.210": {
-          "sha1": "9859348b5057d3aad37a9fd5d257c7428a1bda85",
-          "sha256": "26678bbbfb8b64cf10894a72e73e49b11497fb8609419cf364dd664c761bb5d4",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.210-1_amd64.deb"
-        },
-        "0.3.201": {
-          "sha1": "03dba413a319bc709a857d52661ebbe3c950edaf",
-          "sha256": "b50f15600e1a37174954fd4d0a5f5331d89885794b3e6bad81e45b4b97566312",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.201-1_amd64.deb"
-        },
-        "0.3.195": {
-          "sha1": "04caefbcd7d0b782a8132c2debc62e5b5b86d0e6",
-          "sha256": "e4aba9f97e3efbe1ba145654f362d545be777678bf05165cde243ac1e8de194c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.195-1_amd64.deb"
-        },
-        "0.3.186": {
-          "sha1": "3237d4e697dd371df2ceb7b9fe9fae9d6d37a0d4",
-          "sha256": "fc1dcabda152ef65540e40e3782005260f0ec5c042d3021520765bc11f9502e5",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.186-1_amd64.deb"
-        },
-        "0.3.163": {
-          "sha1": "31f521ac993b0f8c0d262f072f3a7feef48e5b74",
-          "sha256": "2a78483bbd0371b7691f4e7129c325e84ec1d77fa8300779ac5a58ab8d5e9665",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.163-1_amd64.deb"
-        },
-        "0.3.146": {
-          "sha1": "439f708d7328d59d5023e4b9361a1bb3e2eb6e94",
-          "sha256": "ecd1e6bbc07ae5488536543ba5ab741616697a3755b22b80a3b1353dfeb00d84",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.146-1_amd64.deb"
-        },
-        "0.3.123": {
-          "sha1": "811d3d1ba560ca8d6aefde9be23542239935cf8c",
-          "sha256": "19b605bbab4432be26c008e0dfa0b5d51ac978d2710802a83bf6f9e256276788",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.123-1_amd64.deb"
-        },
-        "0.3.112": {
-          "sha1": "d03c35479f580b136c7a5ff8d2c09f5d18ff8bea",
-          "sha256": "b446da1799f32dd1dd61bfc7d6f0dd4b4514f9548f0b672d9b5782266158ce1a",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.112-1_amd64.deb"
-        },
-        "0.3.109": {
-          "sha1": "977ca2de47fd4a30a96d4c28caff6df9f0131cd7",
-          "sha256": "46f863c5775f859821d5947280150668d45aaf7185e7d762991840035f0ca57d",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.109-1_amd64.deb"
-        },
-        "0.3.76": {
-          "sha1": "c303be781ac80c111fc70844d86d67a6b985bcf1",
-          "sha256": "e1518f559d32e63b536d002e3ed9cb3d194b61a664b6c919e1a9afc861e90e66",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.76-1_amd64.deb"
-        },
-        "0.3.73": {
-          "sha1": "47721162e659ebf406e57b82f52975b7e27f8b46",
-          "sha256": "b6df02959812ed3957133f1e9ed2bdedf2b26ce1a53034c761545a3ca69b762c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.73-1_amd64.deb"
-        },
-        "0.3.68": {
-          "sha1": "36b8d263290e3285b871520accc5f87838c7581d",
-          "sha256": "27cc2d49178fffb870b3adec22651bd741c86144560514bfcdccb1fdb14ed28c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.68-1_amd64.deb"
-        },
-        "0.3.67": {
-          "sha1": "7b5dfe72b5ea81cef45816e280e864fad0b2a180",
-          "sha256": "d6ba07d7f2f2f68ecf035a007b94aa18c33c43f9883d3c25a8849437d9ab8d3e",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.67-1_amd64.deb"
+        "0.3.56": {
+          "sha1": "cb7e2e7098081fed40159dc88c09b13638282a25",
+          "sha256": "51853435e819d4575da86764bb333f71eeac89496751245893635761551acbf5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.56/ubuntu/14.04/delivery_0.3.56-1_amd64.deb"
         },
         "0.3.63": {
           "sha1": "e536f1109f14cc6c56de98f9e92cc72c8a9dc055",
           "sha256": "eec8a8b1b14442f37ccf48b9900e89fee06b7546cddaefc33947636320ffdd85",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.63-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.63/ubuntu/14.04/delivery_0.3.63-1_amd64.deb"
         },
-        "0.3.56": {
-          "sha1": "cb7e2e7098081fed40159dc88c09b13638282a25",
-          "sha256": "51853435e819d4575da86764bb333f71eeac89496751245893635761551acbf5",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/delivery_0.3.56-1_amd64.deb"
+        "0.3.67": {
+          "sha1": "7b5dfe72b5ea81cef45816e280e864fad0b2a180",
+          "sha256": "d6ba07d7f2f2f68ecf035a007b94aa18c33c43f9883d3c25a8849437d9ab8d3e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.67/ubuntu/14.04/delivery_0.3.67-1_amd64.deb"
+        },
+        "0.3.68": {
+          "sha1": "36b8d263290e3285b871520accc5f87838c7581d",
+          "sha256": "27cc2d49178fffb870b3adec22651bd741c86144560514bfcdccb1fdb14ed28c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.68/ubuntu/14.04/delivery_0.3.68-1_amd64.deb"
+        },
+        "0.3.73": {
+          "sha1": "47721162e659ebf406e57b82f52975b7e27f8b46",
+          "sha256": "b6df02959812ed3957133f1e9ed2bdedf2b26ce1a53034c761545a3ca69b762c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.73/ubuntu/14.04/delivery_0.3.73-1_amd64.deb"
+        },
+        "0.3.76": {
+          "sha1": "c303be781ac80c111fc70844d86d67a6b985bcf1",
+          "sha256": "e1518f559d32e63b536d002e3ed9cb3d194b61a664b6c919e1a9afc861e90e66",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.76/ubuntu/14.04/delivery_0.3.76-1_amd64.deb"
+        },
+        "0.3.109": {
+          "sha1": "977ca2de47fd4a30a96d4c28caff6df9f0131cd7",
+          "sha256": "46f863c5775f859821d5947280150668d45aaf7185e7d762991840035f0ca57d",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.109/ubuntu/14.04/delivery_0.3.109-1_amd64.deb"
+        },
+        "0.3.112": {
+          "sha1": "d03c35479f580b136c7a5ff8d2c09f5d18ff8bea",
+          "sha256": "b446da1799f32dd1dd61bfc7d6f0dd4b4514f9548f0b672d9b5782266158ce1a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.112/ubuntu/14.04/delivery_0.3.112-1_amd64.deb"
+        },
+        "0.3.123": {
+          "sha1": "811d3d1ba560ca8d6aefde9be23542239935cf8c",
+          "sha256": "19b605bbab4432be26c008e0dfa0b5d51ac978d2710802a83bf6f9e256276788",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.123/ubuntu/14.04/delivery_0.3.123-1_amd64.deb"
+        },
+        "0.3.146": {
+          "sha1": "439f708d7328d59d5023e4b9361a1bb3e2eb6e94",
+          "sha256": "ecd1e6bbc07ae5488536543ba5ab741616697a3755b22b80a3b1353dfeb00d84",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.146/ubuntu/14.04/delivery_0.3.146-1_amd64.deb"
+        },
+        "0.3.163": {
+          "sha1": "31f521ac993b0f8c0d262f072f3a7feef48e5b74",
+          "sha256": "2a78483bbd0371b7691f4e7129c325e84ec1d77fa8300779ac5a58ab8d5e9665",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.163/ubuntu/14.04/delivery_0.3.163-1_amd64.deb"
+        },
+        "0.3.186": {
+          "sha1": "3237d4e697dd371df2ceb7b9fe9fae9d6d37a0d4",
+          "sha256": "fc1dcabda152ef65540e40e3782005260f0ec5c042d3021520765bc11f9502e5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.186/ubuntu/14.04/delivery_0.3.186-1_amd64.deb"
+        },
+        "0.3.195": {
+          "sha1": "04caefbcd7d0b782a8132c2debc62e5b5b86d0e6",
+          "sha256": "e4aba9f97e3efbe1ba145654f362d545be777678bf05165cde243ac1e8de194c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.195/ubuntu/14.04/delivery_0.3.195-1_amd64.deb"
+        },
+        "0.3.201": {
+          "sha1": "03dba413a319bc709a857d52661ebbe3c950edaf",
+          "sha256": "b50f15600e1a37174954fd4d0a5f5331d89885794b3e6bad81e45b4b97566312",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.201/ubuntu/14.04/delivery_0.3.201-1_amd64.deb"
+        },
+        "0.3.210": {
+          "sha1": "9859348b5057d3aad37a9fd5d257c7428a1bda85",
+          "sha256": "26678bbbfb8b64cf10894a72e73e49b11497fb8609419cf364dd664c761bb5d4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.210/ubuntu/14.04/delivery_0.3.210-1_amd64.deb"
+        },
+        "0.3.224": {
+          "sha1": "9193d0965543057b1967bf16a9255f909c714f5d",
+          "sha256": "bb999a6dd84b629eaed41774f7f363f9459b5acc49228ed5a053d40979dda8ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.224/ubuntu/14.04/delivery_0.3.224-1_amd64.deb"
+        },
+        "0.3.227": {
+          "sha1": "16ed121e5534201582270ba05cfd31b441bad95a",
+          "sha256": "1a646e3f61229f27f56d7c3819be39f731bdd18e1cf5e420d17d7e221363a7a3",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.227/ubuntu/14.04/delivery_0.3.227-1_amd64.deb"
+        },
+        "0.3.240": {
+          "sha1": "75ecee099e5b43fe95a205e8920fb52369554d70",
+          "sha256": "98886442355eae51812fd1fe0b0b8f94bb0ef234cc68b503356b460b9b70c5b2",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.240/ubuntu/14.04/delivery_0.3.240-1_amd64.deb"
+        },
+        "0.3.243": {
+          "sha1": "b4bfa31406388b88a20139c634cabbb8d9bf7933",
+          "sha256": "d4cd1baa20dce5326bd9ad8b9c93da854524b80b52e23f361fb0eff5dbf9ce88",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.243/ubuntu/14.04/delivery_0.3.243-1_amd64.deb"
+        },
+        "0.3.251": {
+          "sha1": "bf9be2c74a29d2ff07cc0fc1e4d1d549004ed6e8",
+          "sha256": "3e210586c34113ff36bd03ce672d1251d24475b8dc9b0d0ae12c6d6b26742418",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.251/ubuntu/14.04/delivery_0.3.251-1_amd64.deb"
+        },
+        "0.3.256": {
+          "sha1": "56bc1d4cd8645e129fdf851f9975f6673c7436da",
+          "sha256": "5e0f2d4daf8060b48b94b607aca262d32b62b971c4a0956f8d0de50d443c1a59",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.256/ubuntu/14.04/delivery_0.3.256-1_amd64.deb"
+        },
+        "0.3.278": {
+          "sha1": "f05dc6f1f80d5d4c99c65af7e4117a768d68d289",
+          "sha256": "76de82b0392e1b40045386bc0bcc25c8acd1b18ec2fcaaeeddbcfb5a8b0defa4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.278/ubuntu/14.04/delivery_0.3.278-1_amd64.deb"
+        },
+        "0.3.304": {
+          "sha1": "7d81a3ddaccd7c34941f4668fe4ab3d40480270a",
+          "sha256": "5a04ab211f3f88a8234fd0cffd2a453f2bb07c1870452a1a272d03cb9025ac07",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.304/ubuntu/14.04/delivery_0.3.304-1_amd64.deb"
+        },
+        "0.3.314": {
+          "sha1": "651fb7ac8d125638c2f7c373be1f5e82382e79dd",
+          "sha256": "2f346a1d792d54bbe51b182fef3598738c3f091663d4d1e0459bfb6d4da396a4",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.314/ubuntu/14.04/delivery_0.3.314-1_amd64.deb"
+        },
+        "0.3.334": {
+          "sha1": "b2f5f22ceb699e7503f3a681e8db3a15a6bb6ce6",
+          "sha256": "3bdca726210b470c08a30793f47c76ba5bfd1a221b8f556fd79e9992e9c88f44",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.334/ubuntu/14.04/delivery_0.3.334-1_amd64.deb"
+        },
+        "0.3.338": {
+          "sha1": "b2469478ab303121f59edcbc46b40b474be59730",
+          "sha256": "4a477b487b7aed0a8dce335f06f31b401115c3248cbf1feeddbfa3021474b55c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.338/ubuntu/14.04/delivery_0.3.338-1_amd64.deb"
+        },
+        "0.3.341": {
+          "sha1": "48d3fafe5911414016275423d74ed874bffe0f02",
+          "sha256": "a24974bbe0e94bacf6619aa5bc92ac6db0414bf0afd93b9c0f1969c807c980d7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.341/ubuntu/14.04/delivery_0.3.341-1_amd64.deb"
+        },
+        "0.3.358": {
+          "sha1": "5698c8a00611db4ac64522a772883e0178beaf6a",
+          "sha256": "044d1d203895e88e09c35291358347f1ccccacfe96a3328f805db117f4432df6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.358/ubuntu/14.04/delivery_0.3.358-1_amd64.deb"
+        },
+        "0.3.369": {
+          "sha1": "d7bcc478fe1eb1283aa0275de7387b1d8a2e7d9d",
+          "sha256": "9457bc31f5e8e6af64d27da57d8b1866ba213c87a4b52b36ae638d092d587f4a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.369/ubuntu/14.04/delivery_0.3.369-1_amd64.deb"
+        },
+        "0.3.374": {
+          "sha1": "0dab1b3182b1fca986bd2791faf2e3f4cf3e158a",
+          "sha256": "3efc55a896667aa94dd968f529103148642e2e0a8bb6cb107f87c11f42f723ec",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.374/ubuntu/14.04/delivery_0.3.374-1_amd64.deb"
+        },
+        "0.3.390": {
+          "sha1": "d68e24b292b5ce29bb09a92c635d87d2f4faea45",
+          "sha256": "87f6cbb48b0835a24304c5922c0e8151f4afd91c0e947a169898499c0b44ddcc",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.390/ubuntu/14.04/delivery_0.3.390-1_amd64.deb"
+        },
+        "0.3.391": {
+          "sha1": "ad7fb7aac643191d0a2b804eb197bb82ef5bef20",
+          "sha256": "141009a83251a47f83056268058f5431afa05150b1d091471f080d24014b587f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.391/ubuntu/14.04/delivery_0.3.391-1_amd64.deb"
+        },
+        "0.3.435": {
+          "sha1": "1572e629cf0e4a73eee3f790bb0da86be0a94192",
+          "sha256": "8f97260e6c664a43e420e2181b6ec7afbfea72ee66e141b9e2e29d02725f6ac7",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.435/ubuntu/14.04/delivery_0.3.435-1_amd64.deb"
+        },
+        "0.3.450": {
+          "sha1": "0174b138364307ad2db735fb6e0d501f4b6e084f",
+          "sha256": "e86710f7fa061cde6c991c9fc1fd8df31b77e104888a1ad9c0e6b561b22dad0b",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.450/ubuntu/14.04/delivery_0.3.450-1_amd64.deb"
+        },
+        "0.3.467": {
+          "sha1": "9380db0b3c950df9bccb3b0f0535f18c319d47df",
+          "sha256": "3f8de1297a2bc737a4fe0846560be9d664401d165afec787724315c8f2ecdf81",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.467/ubuntu/14.04/delivery_0.3.467-1_amd64.deb"
+        },
+        "0.3.493": {
+          "sha1": "badd6f80fc9d8c1528a98c27236d50cccf91b3c8",
+          "sha256": "a565fabdb9d897571c949257167eb37f3c7470746966ff111d511c142ffc4b0f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.493/ubuntu/14.04/delivery_0.3.493-1_amd64.deb"
+        },
+        "0.3.519": {
+          "sha1": "ad717b1df44ea6e9e99f1f3175479a49f521fba6",
+          "sha256": "4930a7e67ef5c13ae27adcd25851bbe6d614a1f11fd81655992d331db391932a",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.519/ubuntu/14.04/delivery_0.3.519-1_amd64.deb"
+        },
+        "0.3.522": {
+          "sha1": "f1763fc415a8e18403e85abe1899e2074ab1265a",
+          "sha256": "58979f0a571682381e051824b531a16ccfef510cf1c6dd419fadf02d6a16491e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.522/ubuntu/14.04/delivery_0.3.522-1_amd64.deb"
+        },
+        "0.3.554": {
+          "sha1": "f99917f02ba9d5dc392e0b45d4410acaad2cf56b",
+          "sha256": "b9ee57b1a6e7193d295d821573f9a567622e74242faa99f262a3009e866ba393",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.554/ubuntu/14.04/delivery_0.3.554-1_amd64.deb"
+        },
+        "0.3.606": {
+          "sha1": "b1c092edf9877c1f5bc217d6ec38379a8dd6fe65",
+          "sha256": "76166a13e611e60d50e3a42cd652e8e4fb44ef1e18d4ba0a2f0a839bc01cda64",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.606/ubuntu/14.04/delivery_0.3.606-1_amd64.deb"
+        },
+        "0.3.640": {
+          "sha1": "51e3d461477a8e39e14db52ee6c6a4ca7836348a",
+          "sha256": "313555e9285ae1b4adcbb82ccb228ea34e2127f453044faf89f664fe3d0ab965",
+          "url": "https://packages.chef.io/files/stable/delivery/0.3.640/ubuntu/14.04/delivery_0.3.640-1_amd64.deb"
+        },
+        "0.4.6": {
+          "sha1": "2fbf60baf03ca8b2dec92f9521041cc05eda1279",
+          "sha256": "479b513913dde1105de9ce1c8aef0e4263ac235d0cf24bfa81db05982acb210c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.6/ubuntu/14.04/delivery_0.4.6-1_amd64.deb"
+        },
+        "0.4.58": {
+          "sha1": "bb9cf89f75cdb509b6a9756fe481347916fa79d8",
+          "sha256": "ebe38e9a2bcbb90892c98fc381e9712b81b8d441ae053a5536b94cdc0a7f5ea0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.58/ubuntu/14.04/delivery_0.4.58-1_amd64.deb"
+        },
+        "0.4.75": {
+          "sha1": "9eef8b5c5d480f6c7d9f48ebdefa596fc094f34e",
+          "sha256": "9ca366e3d1dd9102aa6dd27194f0d06f17c5bf5042a56b6b0e38f69a96f84d4e",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.75/ubuntu/14.04/delivery_0.4.75-1_amd64.deb"
+        },
+        "0.4.113": {
+          "sha1": "87537c417043cb2513e3aec991baa76d5943784c",
+          "sha256": "4351cd65df653af833a31fb5a84c9cb5edd5edc8b40432844bd2abd0be6c8048",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.113/ubuntu/14.04/delivery_0.4.113-1_amd64.deb"
+        },
+        "0.4.132": {
+          "sha1": "fd2ce4d449f3951b5827f76df14bff730ee2e42f",
+          "sha256": "b3538a129fb3d74338ef44aab0aee9bc3d966f119bbc9135def4440e275804d0",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.132/ubuntu/14.04/delivery_0.4.132-1_amd64.deb"
+        },
+        "0.4.199": {
+          "sha1": "f6ba7125ebdd47a020681acdfac92c4023609a27",
+          "sha256": "0e2466ea55d1823bbb917788664c85311134097cd6eee0af4e17e80ef65c7180",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.199/ubuntu/14.04/delivery_0.4.199-1_amd64.deb"
+        },
+        "0.4.235": {
+          "sha1": "50d205b336511c358bdfcca80fd4f857cd38ccb2",
+          "sha256": "54a652bba3b34d72bafd8f67d41346c5daed205344b4333563ca7d9e0f33ce82",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.235/ubuntu/14.04/delivery_0.4.235-1_amd64.deb"
+        },
+        "0.4.299": {
+          "sha1": "ec28bfd99fa1e801f9e264ca9930d340776f065b",
+          "sha256": "b1f4f7a3acf1627075b7a4f624e6b4a42ba9513a4e1445cd6828a8905ba8a5d6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.299/ubuntu/14.04/delivery_0.4.299-1_amd64.deb"
+        },
+        "0.4.404": {
+          "sha1": "a88b8256f5e20be1fafad701c6851fcaafeff3f9",
+          "sha256": "44dcceee9821c602916d7ecc5682b8cea3325a7dc93f3670a9584d43ad2f955f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.404/ubuntu/14.04/delivery_0.4.404-1_amd64.deb"
+        },
+        "0.4.437": {
+          "sha1": "7be7fed5b6be3f7a8f4eb03bb5111c141edc5d9f",
+          "sha256": "cd7b00482b7d6be2aa78c3e7ff54dff4021c50a5879642de614f98f0cdc53da8",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.437/ubuntu/14.04/delivery_0.4.437-1_amd64.deb"
+        },
+        "0.4.522": {
+          "sha1": "72c5e3b70afa229978c04eb8886e584ad96440a4",
+          "sha256": "2d71bc4fa0682e67f98c838a4616d983da557585660d879a7f50f85141796381",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.522/ubuntu/14.04/delivery_0.4.522-1_amd64.deb"
+        },
+        "0.4.600": {
+          "sha1": "9ccddecfb0f85edf08757207fd25d2f7957de449",
+          "sha256": "09929254d16123f6c2b61683a8da559de3e198d24d3b5d5a6d9379479e3e31ad",
+          "url": "https://packages.chef.io/files/stable/delivery/0.4.600/ubuntu/14.04/delivery_0.4.600-1_amd64.deb"
+        },
+        "0.5.1": {
+          "sha1": "fc17b10b932f359cd5a254f952fcc5b2e4a2fa23",
+          "sha256": "dce808ca3e84ef3b7d0493be25cc97f8c96341b182cd641b2d47460afdc93e06",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.1/ubuntu/14.04/delivery_0.5.1-1_amd64.deb"
+        },
+        "0.5.118": {
+          "sha1": "f95160e326cc284cb67c9b4ff2769fa31a1cef16",
+          "sha256": "a694122aaf3134313ee1ca3712a2a59e08190da381b9231d50fcc47cc24883c5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.118/ubuntu/14.04/delivery_0.5.118-1_amd64.deb"
+        },
+        "0.5.125": {
+          "sha1": "639f797bcbfc07b78b45e90f02bf23d0bf19b9a9",
+          "sha256": "112ed288274f9369fa71869dc1df35ba46063caeb6344c9bba2a8662de79072c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.125/ubuntu/14.04/delivery_0.5.125-1_amd64.deb"
+        },
+        "0.5.204": {
+          "sha1": "cbf6cf1fb918a46086a061c6df00bab389b7ac7f",
+          "sha256": "64b2cd4606e9b2200a573d0ae656a2e27e2947274ee77def671b7147c21721ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.204/ubuntu/14.04/delivery_0.5.204-1_amd64.deb"
+        },
+        "0.5.271": {
+          "sha1": "15982a6b682ba36d1dca43c8a49e8d6229125b87",
+          "sha256": "ed724cb9b82b4943014e33ec37684917a959a5c397eabee7ddbfe3d9a2d1d5c6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.271/ubuntu/14.04/delivery_0.5.271-1_amd64.deb"
+        },
+        "0.5.346": {
+          "sha1": "1192f7b9c0af4359bd056bc654ce586bba0b91f1",
+          "sha256": "1eba86fef97e5adbb2e0aef4ef6d4bb2506875f63bca9e55558aca9f1e7cd77f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.346/ubuntu/14.04/delivery_0.5.346-1_amd64.deb"
+        },
+        "0.5.370": {
+          "sha1": "5600590c18beefd5eea5d9003d61d6f8d73e7ac1",
+          "sha256": "0a9a35a25af1dd779870b235f952f6b222b44b729f4f3ca88f9f0285df7e1b33",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.370/ubuntu/14.04/delivery_0.5.370-1_amd64.deb"
+        },
+        "0.5.432": {
+          "sha1": "dcd96f1b175dcf576e6779ccc695e75b88ddeea8",
+          "sha256": "d0348630f33ea51609ec8ec03a99d7a0b7c9afd4f0dec7605a9a92a648f59586",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.432/ubuntu/14.04/delivery_0.5.432-1_amd64.deb"
+        },
+        "0.6.6": {
+          "sha1": "a837181e342986d0695b3495159376df277f1087",
+          "sha256": "5c6e1be1fcdb144f04a121a15177ecfd619f7ee73b82900c6da432c3b6746e43",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.6/ubuntu/14.04/delivery_0.6.6-1_amd64.deb"
+        },
+        "0.6.7": {
+          "sha1": "4d527933e7fe779b2b341e42bd86eac5cf6493a1",
+          "sha256": "0be599ee184e13f3ea82e8177d92876b6c5c8237f448957ad54343ec3d91c362",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.7/ubuntu/14.04/delivery_0.6.7-1_amd64.deb"
+        },
+        "0.6.64": {
+          "sha1": "aecc01db8ae14b3fb8fc819c3783b091ee9d5b23",
+          "sha256": "5f2ca9f242b3a87e073287c78f49dd2fed06243a5660f02d37af06d6b8bd0cf6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.64/ubuntu/14.04/delivery_0.6.64-1_amd64.deb"
+        },
+        "0.6.136": {
+          "sha1": "ae0e157f6bab02dcb5a8f4852c56cb88f301a405",
+          "sha256": "8f9c28a5fcae0214e8528a0464d7633f62340b7bb9c073a68d2a7fe500efc644",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.136/ubuntu/14.04/delivery_0.6.136-1_amd64.deb"
+        },
+        "0.7.61": {
+          "sha1": "cb25d5ef48184318d4e915e7ba7ab6d36968377a",
+          "sha256": "46edf839acf3e0270a32cff15a1c02daac084c3a14a92d3e40407619db8560cd",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.61/ubuntu/14.04/automate_0.7.61-1_amd64.deb"
+        },
+        "0.7.85": {
+          "sha1": "ebc0d6d87e22ad004faaf7c76c6a20e7477932c6",
+          "sha256": "a2f0e1b80376bc33b5a031a89abe7e112995227301c4c72303f66e4ead75bc7c",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.85/ubuntu/14.04/automate_0.7.85-1_amd64.deb"
+        },
+        "0.7.151": {
+          "sha1": "5a391bb55ef8c2194d2ad4b8e33bbc60e3d6864e",
+          "sha256": "ad548a9c950c2ef406b5890ede37b51389681db5eadb7ce1e630dcd17436165b",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.151/ubuntu/14.04/automate_0.7.151-1_amd64.deb"
+        },
+        "0.7.239": {
+          "sha1": "839a13debe858dfa7282db27e542858954fd8680",
+          "sha256": "766d8d84366395e30b5034f6e9a01986b463bbe5afe9254e895b91403b11fbdc",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.239/ubuntu/14.04/automate_0.7.239-1_amd64.deb"
+        },
+        "0.8.5": {
+          "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
+          "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/14.04/automate_0.8.5-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "0.5.118": {
+          "sha1": "f95160e326cc284cb67c9b4ff2769fa31a1cef16",
+          "sha256": "a694122aaf3134313ee1ca3712a2a59e08190da381b9231d50fcc47cc24883c5",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.118/ubuntu/16.04/delivery_0.5.118-1_amd64.deb"
+        },
+        "0.5.125": {
+          "sha1": "639f797bcbfc07b78b45e90f02bf23d0bf19b9a9",
+          "sha256": "112ed288274f9369fa71869dc1df35ba46063caeb6344c9bba2a8662de79072c",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.125/ubuntu/16.04/delivery_0.5.125-1_amd64.deb"
+        },
+        "0.5.204": {
+          "sha1": "cbf6cf1fb918a46086a061c6df00bab389b7ac7f",
+          "sha256": "64b2cd4606e9b2200a573d0ae656a2e27e2947274ee77def671b7147c21721ab",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.204/ubuntu/16.04/delivery_0.5.204-1_amd64.deb"
+        },
+        "0.5.271": {
+          "sha1": "15982a6b682ba36d1dca43c8a49e8d6229125b87",
+          "sha256": "ed724cb9b82b4943014e33ec37684917a959a5c397eabee7ddbfe3d9a2d1d5c6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.271/ubuntu/16.04/delivery_0.5.271-1_amd64.deb"
+        },
+        "0.5.346": {
+          "sha1": "1192f7b9c0af4359bd056bc654ce586bba0b91f1",
+          "sha256": "1eba86fef97e5adbb2e0aef4ef6d4bb2506875f63bca9e55558aca9f1e7cd77f",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.346/ubuntu/16.04/delivery_0.5.346-1_amd64.deb"
+        },
+        "0.5.370": {
+          "sha1": "5600590c18beefd5eea5d9003d61d6f8d73e7ac1",
+          "sha256": "0a9a35a25af1dd779870b235f952f6b222b44b729f4f3ca88f9f0285df7e1b33",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.370/ubuntu/16.04/delivery_0.5.370-1_amd64.deb"
+        },
+        "0.5.432": {
+          "sha1": "dcd96f1b175dcf576e6779ccc695e75b88ddeea8",
+          "sha256": "d0348630f33ea51609ec8ec03a99d7a0b7c9afd4f0dec7605a9a92a648f59586",
+          "url": "https://packages.chef.io/files/stable/delivery/0.5.432/ubuntu/16.04/delivery_0.5.432-1_amd64.deb"
+        },
+        "0.6.6": {
+          "sha1": "a837181e342986d0695b3495159376df277f1087",
+          "sha256": "5c6e1be1fcdb144f04a121a15177ecfd619f7ee73b82900c6da432c3b6746e43",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.6/ubuntu/16.04/delivery_0.6.6-1_amd64.deb"
+        },
+        "0.6.7": {
+          "sha1": "4d527933e7fe779b2b341e42bd86eac5cf6493a1",
+          "sha256": "0be599ee184e13f3ea82e8177d92876b6c5c8237f448957ad54343ec3d91c362",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.7/ubuntu/16.04/delivery_0.6.7-1_amd64.deb"
+        },
+        "0.6.64": {
+          "sha1": "aecc01db8ae14b3fb8fc819c3783b091ee9d5b23",
+          "sha256": "5f2ca9f242b3a87e073287c78f49dd2fed06243a5660f02d37af06d6b8bd0cf6",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.64/ubuntu/16.04/delivery_0.6.64-1_amd64.deb"
+        },
+        "0.6.136": {
+          "sha1": "ae0e157f6bab02dcb5a8f4852c56cb88f301a405",
+          "sha256": "8f9c28a5fcae0214e8528a0464d7633f62340b7bb9c073a68d2a7fe500efc644",
+          "url": "https://packages.chef.io/files/stable/delivery/0.6.136/ubuntu/16.04/delivery_0.6.136-1_amd64.deb"
+        },
+        "0.7.61": {
+          "sha1": "cb25d5ef48184318d4e915e7ba7ab6d36968377a",
+          "sha256": "46edf839acf3e0270a32cff15a1c02daac084c3a14a92d3e40407619db8560cd",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.61/ubuntu/16.04/automate_0.7.61-1_amd64.deb"
+        },
+        "0.7.85": {
+          "sha1": "ebc0d6d87e22ad004faaf7c76c6a20e7477932c6",
+          "sha256": "a2f0e1b80376bc33b5a031a89abe7e112995227301c4c72303f66e4ead75bc7c",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.85/ubuntu/16.04/automate_0.7.85-1_amd64.deb"
+        },
+        "0.7.151": {
+          "sha1": "5a391bb55ef8c2194d2ad4b8e33bbc60e3d6864e",
+          "sha256": "ad548a9c950c2ef406b5890ede37b51389681db5eadb7ce1e630dcd17436165b",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.151/ubuntu/16.04/automate_0.7.151-1_amd64.deb"
+        },
+        "0.7.239": {
+          "sha1": "839a13debe858dfa7282db27e542858954fd8680",
+          "sha256": "766d8d84366395e30b5034f6e9a01986b463bbe5afe9254e895b91403b11fbdc",
+          "url": "https://packages.chef.io/files/stable/automate/0.7.239/ubuntu/16.04/automate_0.7.239-1_amd64.deb"
+        },
+        "0.8.5": {
+          "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
+          "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/16.04/automate_0.8.5-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "sles": {
+    "11": {
+      "x86_64": {
+        "0.8.5": {
+          "sha1": "36b505adab0e482db0471361d608267d05368033",
+          "sha256": "f066bf32d5a699a4cb1457d239d1b4447c8b24bc5145b07d91ba7ae3cd3833fb",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/sles/11/automate-0.8.5-1.sles11.x86_64.rpm"
+        }
+      }
+    },
+    "12": {
+      "x86_64": {
+        "0.8.5": {
+          "sha1": "7a57d9f6f026bffb738502f743b881410aa7aa0c",
+          "sha256": "09dc068ff7e69264967cad547d79b84b687180b10c40e3713a7660106cf04e10",
+          "url": "https://packages.chef.io/files/stable/automate/0.8.5/sles/12/automate-0.8.5-1.sles12.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:46:53 -0700"
+    "timestamp": "2017-06-22 12:03:28 -0700"
   }
 }

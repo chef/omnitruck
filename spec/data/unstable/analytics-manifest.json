@@ -1,0 +1,423 @@
+{
+  "el": {
+    "7": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "d35f68392a44d77a672f933bc406515dfa630568",
+          "sha256": "0284e5a3ac5023d61e6c86251f9099056bcbd3dc466f7929395c57c1e0d71673",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170615090909.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "6712ba60b116d1f7adae131673118173d994b63e",
+          "sha256": "8a22c2f55efba85c40a6aef078e6c38e22ceb3a6fc91648a17a4cef63c3e93c2",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170616090909.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "e36f343d91a2514703df55f3d8041b9d9a67a8fc",
+          "sha256": "5328c983d2d548076232987f1ca8526c3377324b0b64a304526f15f673751be0",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170617090910.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "323e1993ca554c8037321c5c44ec7a9359feb619",
+          "sha256": "39983ff61eae3bc816e169d648866588a224d12e0cd5ffbcbbd584283c3505ea",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170618090912.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "117abd9bbc7c859beddf6353af669caf5e6275a7",
+          "sha256": "115314fdfbf4eeef5738376a4a5bd3d229ef251866aa1ee3f6fd1e59cbc49638",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170619090910.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "5e6533f3ad213e3969dd738b1a514f46bee5a4eb",
+          "sha256": "9f6a5849ccc6119e564e06f41f04f4e5eb7a66bc6bb35e6f606a117a38cb3644",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170619222459.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "68f24de65342ada6b1e3a178b49a8ffcd9a615ba",
+          "sha256": "085b38830b4798d1b166c312b22c7c448c8c3bbc7c55f4b243800bf65db3f570",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/el/7/opscode-analytics-1.6.1+20170620090912.git.10.c0bc92a-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "96ee61bfe73c49fbab2cd4cf90e7308724f59c88",
+          "sha256": "812ace1903a7e8f933ec43794b670df40137e47b482bc4b999c193ae1b9bfeab",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/el/7/opscode-analytics-1.6.1+20170620175521.git.12.2e003c5-1.el7.x86_64.rpm"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "5d17ecd1fba0e1e48c18169ec36bda5a383581db",
+          "sha256": "719d916e656fbd7e07706986541ba9fdfc0032a6bf5d3b209af91a9d85195e5a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/el/7/opscode-analytics-1.6.1+20170620221418.git.14.ae188bd-1.el7.x86_64.rpm"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "0954037da2613a7fe3940a9ca6b29b351bdc380c",
+          "sha256": "8ab68aa1a7cadbb68da42408957fdde862ec67171ababe0f436a1b63e9373b5b",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/el/7/opscode-analytics-1.6.2+20170620221818-1.el7.x86_64.rpm"
+        },
+        "1.6.2": {
+          "sha1": "a9f1bae7681de012e0fc70812a55365888481c4e",
+          "sha256": "2ed26e3b9faf253ad7fd14cdf6d23db6f2b1860b1548255f3d46bd8e18b92e2f",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2/el/7/opscode-analytics-1.6.2-1.el7.x86_64.rpm"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "3ca40c6259a1d29a9059e50fd8e25a7551f96501",
+          "sha256": "e3548c9f7f46dab18ec19fdeb0f83859417b2820cdc027812c9208646d381ac1",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/el/7/opscode-analytics-1.6.2+20170621090910-1.el7.x86_64.rpm"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "0ce7dbec2b2b8a0340c4680bebc5bec5a748d5d0",
+          "sha256": "b9dffdeacbc42b4d1e1c9dd202e8412bd05931f9359fe6fd0e25ad58321836d2",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/el/7/opscode-analytics-1.6.2+20170622090909-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "6": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "ad4816d82b5443f165bea69515e2270e465f246e",
+          "sha256": "70d26ecfe4748065293eb3572272fc470e2dc7805bb24f63889242b2c0159f9f",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170615090909.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "beaa18556421706c518c36b7d0aaccfe223ff3d8",
+          "sha256": "e8480d69c645bd97ad46ba39745314380d6c665722c41b805e940d209d7acf52",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170616090909.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "6fdcd1e485bde6bab9c42016d4e6a01dc2a99f1b",
+          "sha256": "62673af315ec23f0ed56f5f4ebdd278be9a8f34386c7c4ec55efc58c03422ac6",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170617090910.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "8395d2ecf056aee4d8ef5b73b9870d840a1b77c4",
+          "sha256": "3b2476aa6cf5ba4a5fdd40a1303ad9559ca5d73502b437e37acc161523b79856",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170618090912.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "3f301f794efc417e0da7bc7280781ec4d75f49b7",
+          "sha256": "8f70323db4f16cb26c957892a1d764358ec19e36faaa1f6112ccb1e065038265",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170619090910.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "a743f4bdb219623b347fc74b368f9dc6c607f0ab",
+          "sha256": "49d33f3c37b05b5908f1e2d475874ea818d13234b79fb7c520514e0c5966d558",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170619222459.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "5876f827bbb031a26543f5aa5654397aa435f0b9",
+          "sha256": "a41ac33a755185e4003c7db6790ae81a65f38ca3b7728dbf5104ee2896ec2f86",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/el/6/opscode-analytics-1.6.1+20170620090912.git.10.c0bc92a-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "68d11d7ccc0a5281856bd3257badb101aacd6939",
+          "sha256": "e11557ad4c9462ce40dacf78bffbe3931660d1394fde8da33a8b4db87ad1d8ae",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/el/6/opscode-analytics-1.6.1+20170620175521.git.12.2e003c5-1.el6.x86_64.rpm"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "bca9a68105b42bb72b747dabfc079336724f09c7",
+          "sha256": "c204b84f4b5347cbe3c07ef0eae10d6faa4fb1cea70cb3e370ce80ae74e93b5d",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/el/6/opscode-analytics-1.6.1+20170620221418.git.14.ae188bd-1.el6.x86_64.rpm"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "dd3cb1680cddbf3dbb56b00db34b1526f2bcdcc3",
+          "sha256": "d448b4fcb5b4ab952afff7e26f70f6300bdcf681ea7449f14e99e808ff0ddba4",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/el/6/opscode-analytics-1.6.2+20170620221818-1.el6.x86_64.rpm"
+        },
+        "1.6.2": {
+          "sha1": "56fa9a0e3352a94ad221671f9e82ea6e1de2044e",
+          "sha256": "6122461273d8a847ec08b319015b764ca0920efade199e35c14c4623fd833006",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2/el/6/opscode-analytics-1.6.2-1.el6.x86_64.rpm"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "4b179dfdfe77024cf9eb8d88ed55d9d727d2774a",
+          "sha256": "d063f428632c1d41ef1c7161fb94059155670b0585c962b4558afdbecf4d37fe",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/el/6/opscode-analytics-1.6.2+20170621090910-1.el6.x86_64.rpm"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "1e3b5bf86eecfa1b7f2bdebc1d9a582db1aac195",
+          "sha256": "a275438b43ea9d431716e5f9e58db90ec9725e2f1152fd7379f8b6bcbbfd412c",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/el/6/opscode-analytics-1.6.2+20170622090909-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "5": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "dcbb232a5eaaf07dd4110ebb2abb091d8c0df11a",
+          "sha256": "b1df2f2ea3932fe30ec152f8dbe66ee62b41caf5a6bee69cf752141b1cfacc30",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170615090909.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "313a0d4794459385709a3be58a965cdc1b230803",
+          "sha256": "d8d75ba8523753ad1b32f7e43285140bd9f7eb7aabfd5e63b3eb2f5efacf8ced",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170616090909.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "2eba6ada9e181e8e34092f0a3066a27e261404d2",
+          "sha256": "02e8f8d196efb4f9bf401042575d5abaa65e8dee2979319be0769f52009c5cab",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170617090910.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "11bc04b8266b2effb72d8201da564ffa29d8afc5",
+          "sha256": "29dd468a4106177e7f60356c9ef99f8e4f7e5f66c8277d82487ef23b8c729b49",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170618090912.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "8d20e87963c9a42195209bd7abdf9d1392c64cee",
+          "sha256": "0e482a41d6135d093ffc6d7961d802073108b22b5d93ee060487419e640be6d5",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170619090910.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "265ec146d37b0f39c56d5b57abf0ff09165d1755",
+          "sha256": "d69a3dad596553e96e2c9c07e2f48098c32c32c18ede914255dfc4538c83f637",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170619222459.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "1bebe1f4faa456dafd3ab39d19f934a65a8f2c54",
+          "sha256": "45e15c4f1b0e4a79f2e78f592be61f21ca61d05f13196834a2d8f0de833a8837",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/el/5/opscode-analytics-1.6.1+20170620090912.git.10.c0bc92a-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "6471471044d8854920e9dac7e9ac3c04f96199f2",
+          "sha256": "5461912874dafed8ca9d619cbc6c7ed9a0f8c57c364a8694b4f61278fe31c9de",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/el/5/opscode-analytics-1.6.1+20170620175521.git.12.2e003c5-1.el5.x86_64.rpm"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "e77a16c4ddbab9732061e888f84796e8ef687b06",
+          "sha256": "a2469ad3455d36cffd9bbdad3d4dd05232bf0dcd0331076aff41316070f47762",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/el/5/opscode-analytics-1.6.1+20170620221418.git.14.ae188bd-1.el5.x86_64.rpm"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "01a6561278bbd12b91a655f32a344d6528373da0",
+          "sha256": "e393c6b68df095f7d13b3356d62a5a4e50c6a3feb7c2c7b0754e67b868495e1d",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/el/5/opscode-analytics-1.6.2+20170620221818-1.el5.x86_64.rpm"
+        },
+        "1.6.2": {
+          "sha1": "2aafc1fdfb6231cfaa88938d5b53f7c34732f622",
+          "sha256": "4646780ec501cdc8677aef4c00012e061658e94158b798e7ab9a0b58272c269c",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.2/el/5/opscode-analytics-1.6.2-1.el5.x86_64.rpm"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "63c70cc0f433b025d80536b24023e3af517a37bd",
+          "sha256": "789be3d4c87343d65310526a4524102c117890e2b054578202ab7419ac69faee",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/el/5/opscode-analytics-1.6.2+20170621090910-1.el5.x86_64.rpm"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "8fc31a7f4d324753eb298c5078aa168e2a101e30",
+          "sha256": "cf7fc5b5f7d9abe1e5c51556b375b6ab3ea545c847c530ddce19cca12c8801ff",
+          "url": "http://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/el/5/opscode-analytics-1.6.2+20170622090909-1.el5.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "12.04": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "a86a5913ada315a78cf7159570ae4fcbd4c0d3b6",
+          "sha256": "fc3c685ba83563011b088a1e97e359a9d0aaf72f41187f235ab9b1e6a89e7a6a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170615090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "2f5018de5f249b251be1d32b65bf217a1247de6e",
+          "sha256": "27d9d7e6a540eff4761e9607112c881f5e32e8e52ec3f44af4a984a726c011a4",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170616090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "37de809ba88e0cd31085e289ce8277cf2afce21c",
+          "sha256": "1d61fa684e273fec81c23716f01de76ba755cb8f9e865411ba4e7ed784d00d67",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170617090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "0e7aad5c21632e0b8baed96776205c4512046c62",
+          "sha256": "c093deba93e789ad92a9c149eaa0c70ba014aef71c198211ec9be8db7294e342",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170618090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "9c52270de107f367391d0860c16a93bd9ffab434",
+          "sha256": "0f38afa874b1e4efa6eb990800cbbb57299aa06483e712b316388a8ad03946bc",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170619090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "1f4ad1a73a030c3515cdd61f76efa7a6166f9574",
+          "sha256": "8910a3a719b22633b5fc82296e02aaf46602e293dad5d7635685625565183d7a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170619222459.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "e1f5e03ff10ef00328e9e9bd42fca4b534563d64",
+          "sha256": "2913991cc8b056056a9dd5d3791c244e90c3bcb5a2ea429aad1dd8c362af5d0a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/ubuntu/12.04/opscode-analytics_1.6.1+20170620090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "1a256d851d77f320bfd8585d428f2dcc6d89fbda",
+          "sha256": "6dcabb2853903940fb6da5d429c2a776e06d38682352d9f0b761ac6beacaa25a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/ubuntu/12.04/opscode-analytics_1.6.1+20170620175521.git.12.2e003c5-1_amd64.deb"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "51585128292035ef2efeb83e67bc78052f4cc400",
+          "sha256": "b6fd1fd2722af2421148292d6179e4fdfdaba3bed3b6e8d94a0302eb1a2c16b6",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/ubuntu/12.04/opscode-analytics_1.6.1+20170620221418.git.14.ae188bd-1_amd64.deb"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "6c8f9cabc1c9082e0cd3455857fab0b5ff841900",
+          "sha256": "7eca7d443fc03ee9c22c029ac9d9704ca397d63e706a82ec0daf402fb55acd06",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/ubuntu/12.04/opscode-analytics_1.6.2+20170620221818-1_amd64.deb"
+        },
+        "1.6.2": {
+          "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
+          "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2/ubuntu/12.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "93ffcf8a808ec793b48c9941421c6f5b2014cd72",
+          "sha256": "3990490bdb03ad551dfd043b24fbc61f5cdbc8c7d77a43cec257f82cf651436b",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/ubuntu/12.04/opscode-analytics_1.6.2+20170621090910-1_amd64.deb"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "741f03195c8cea80f187baa8f782e5424c8450ba",
+          "sha256": "b68043fdca4870a67d6334f5c7f1023c5b27229ec71167ad223915124248ea65",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/ubuntu/12.04/opscode-analytics_1.6.2+20170622090909-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "a86a5913ada315a78cf7159570ae4fcbd4c0d3b6",
+          "sha256": "fc3c685ba83563011b088a1e97e359a9d0aaf72f41187f235ab9b1e6a89e7a6a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170615090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "2f5018de5f249b251be1d32b65bf217a1247de6e",
+          "sha256": "27d9d7e6a540eff4761e9607112c881f5e32e8e52ec3f44af4a984a726c011a4",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170616090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "37de809ba88e0cd31085e289ce8277cf2afce21c",
+          "sha256": "1d61fa684e273fec81c23716f01de76ba755cb8f9e865411ba4e7ed784d00d67",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170617090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "0e7aad5c21632e0b8baed96776205c4512046c62",
+          "sha256": "c093deba93e789ad92a9c149eaa0c70ba014aef71c198211ec9be8db7294e342",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170618090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "9c52270de107f367391d0860c16a93bd9ffab434",
+          "sha256": "0f38afa874b1e4efa6eb990800cbbb57299aa06483e712b316388a8ad03946bc",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170619090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "1f4ad1a73a030c3515cdd61f76efa7a6166f9574",
+          "sha256": "8910a3a719b22633b5fc82296e02aaf46602e293dad5d7635685625565183d7a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170619222459.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "e1f5e03ff10ef00328e9e9bd42fca4b534563d64",
+          "sha256": "2913991cc8b056056a9dd5d3791c244e90c3bcb5a2ea429aad1dd8c362af5d0a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/ubuntu/14.04/opscode-analytics_1.6.1+20170620090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "1a256d851d77f320bfd8585d428f2dcc6d89fbda",
+          "sha256": "6dcabb2853903940fb6da5d429c2a776e06d38682352d9f0b761ac6beacaa25a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/ubuntu/14.04/opscode-analytics_1.6.1+20170620175521.git.12.2e003c5-1_amd64.deb"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "51585128292035ef2efeb83e67bc78052f4cc400",
+          "sha256": "b6fd1fd2722af2421148292d6179e4fdfdaba3bed3b6e8d94a0302eb1a2c16b6",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/ubuntu/14.04/opscode-analytics_1.6.1+20170620221418.git.14.ae188bd-1_amd64.deb"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "6c8f9cabc1c9082e0cd3455857fab0b5ff841900",
+          "sha256": "7eca7d443fc03ee9c22c029ac9d9704ca397d63e706a82ec0daf402fb55acd06",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/ubuntu/14.04/opscode-analytics_1.6.2+20170620221818-1_amd64.deb"
+        },
+        "1.6.2": {
+          "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
+          "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2/ubuntu/14.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "93ffcf8a808ec793b48c9941421c6f5b2014cd72",
+          "sha256": "3990490bdb03ad551dfd043b24fbc61f5cdbc8c7d77a43cec257f82cf651436b",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/ubuntu/14.04/opscode-analytics_1.6.2+20170621090910-1_amd64.deb"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "741f03195c8cea80f187baa8f782e5424c8450ba",
+          "sha256": "b68043fdca4870a67d6334f5c7f1023c5b27229ec71167ad223915124248ea65",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/ubuntu/14.04/opscode-analytics_1.6.2+20170622090909-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "1.6.1+20170615090909.git.10.c0bc92a": {
+          "sha1": "a86a5913ada315a78cf7159570ae4fcbd4c0d3b6",
+          "sha256": "fc3c685ba83563011b088a1e97e359a9d0aaf72f41187f235ab9b1e6a89e7a6a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170615090909.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170615090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170616090909.git.10.c0bc92a": {
+          "sha1": "2f5018de5f249b251be1d32b65bf217a1247de6e",
+          "sha256": "27d9d7e6a540eff4761e9607112c881f5e32e8e52ec3f44af4a984a726c011a4",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170616090909.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170616090909.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170617090910.git.10.c0bc92a": {
+          "sha1": "37de809ba88e0cd31085e289ce8277cf2afce21c",
+          "sha256": "1d61fa684e273fec81c23716f01de76ba755cb8f9e865411ba4e7ed784d00d67",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170617090910.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170617090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170618090912.git.10.c0bc92a": {
+          "sha1": "0e7aad5c21632e0b8baed96776205c4512046c62",
+          "sha256": "c093deba93e789ad92a9c149eaa0c70ba014aef71c198211ec9be8db7294e342",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170618090912.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170618090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619090910.git.10.c0bc92a": {
+          "sha1": "9c52270de107f367391d0860c16a93bd9ffab434",
+          "sha256": "0f38afa874b1e4efa6eb990800cbbb57299aa06483e712b316388a8ad03946bc",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619090910.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170619090910.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170619222459.git.10.c0bc92a": {
+          "sha1": "1f4ad1a73a030c3515cdd61f76efa7a6166f9574",
+          "sha256": "8910a3a719b22633b5fc82296e02aaf46602e293dad5d7635685625565183d7a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170619222459.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170619222459.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620090912.git.10.c0bc92a": {
+          "sha1": "e1f5e03ff10ef00328e9e9bd42fca4b534563d64",
+          "sha256": "2913991cc8b056056a9dd5d3791c244e90c3bcb5a2ea429aad1dd8c362af5d0a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620090912.git.10.c0bc92a/ubuntu/16.04/opscode-analytics_1.6.1+20170620090912.git.10.c0bc92a-1_amd64.deb"
+        },
+        "1.6.1+20170620175521.git.12.2e003c5": {
+          "sha1": "1a256d851d77f320bfd8585d428f2dcc6d89fbda",
+          "sha256": "6dcabb2853903940fb6da5d429c2a776e06d38682352d9f0b761ac6beacaa25a",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620175521.git.12.2e003c5/ubuntu/16.04/opscode-analytics_1.6.1+20170620175521.git.12.2e003c5-1_amd64.deb"
+        },
+        "1.6.1+20170620221418.git.14.ae188bd": {
+          "sha1": "51585128292035ef2efeb83e67bc78052f4cc400",
+          "sha256": "b6fd1fd2722af2421148292d6179e4fdfdaba3bed3b6e8d94a0302eb1a2c16b6",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.1+20170620221418.git.14.ae188bd/ubuntu/16.04/opscode-analytics_1.6.1+20170620221418.git.14.ae188bd-1_amd64.deb"
+        },
+        "1.6.2+20170620221818": {
+          "sha1": "6c8f9cabc1c9082e0cd3455857fab0b5ff841900",
+          "sha256": "7eca7d443fc03ee9c22c029ac9d9704ca397d63e706a82ec0daf402fb55acd06",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170620221818/ubuntu/16.04/opscode-analytics_1.6.2+20170620221818-1_amd64.deb"
+        },
+        "1.6.2": {
+          "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
+          "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2/ubuntu/16.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.2+20170621090910": {
+          "sha1": "93ffcf8a808ec793b48c9941421c6f5b2014cd72",
+          "sha256": "3990490bdb03ad551dfd043b24fbc61f5cdbc8c7d77a43cec257f82cf651436b",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170621090910/ubuntu/16.04/opscode-analytics_1.6.2+20170621090910-1_amd64.deb"
+        },
+        "1.6.2+20170622090909": {
+          "sha1": "741f03195c8cea80f187baa8f782e5424c8450ba",
+          "sha256": "b68043fdca4870a67d6334f5c7f1023c5b27229ec71167ad223915124248ea65",
+          "url": "https://packages.chef.io/files/unstable/opscode-analytics/1.6.2+20170622090909/ubuntu/16.04/opscode-analytics_1.6.2+20170622090909-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2017-06-22 12:02:25 -0700"
+  }
+}

@@ -86,23 +86,11 @@ end
 
 platform "suse" do
   major_only true
-  remap "el"
-  version_remap do |opts|
-    opts[:version].to_f <= 11 ? "5" : "6"
-  end
+  remap "sles"
 end
 
 platform "sles" do
   major_only true
-  # call the name method on the Platform subclass to get the DSL block's platform name
-  remap { |opts| opts[:architecture] == "s390x" ? name : "el" }
-  version_remap do |opts|
-    if opts[:architecture] == "s390x"
-      opts[:version]
-    else
-      opts[:version].to_f <= 11 ? "5" : "6"
-    end
-  end
 end
 
 platform "amazon" do

@@ -1,822 +1,512 @@
 {
   "el": {
-    "5": {
+    "7": {
       "x86_64": {
-        "2.2.1": {
-          "sha1": "0ec4c467ca18659cd2d9658c8968b5ab792e4f94",
-          "sha256": "d5bcc77f0b2f12c726e9ab9c26fe437884e6d4c9dc40dc50e8752c8e7f6b8c38",
-          "url": "http://chef.bintray.com/stable/el/5/chef-manage-2.2.1-1.el5.x86_64.rpm"
+        "2.1.1": {
+          "sha1": "dc9e74ee4a258a57ec6e184a31a0b85305dffdb8",
+          "sha256": "bb2a720bbf2c803069937454e49c19fc922a45d6ff346e43c55495135da9c46e",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.1/el/7/chef-manage-2.1.1-1.el7.x86_64.rpm"
         },
-        "2.2.0": {
-          "sha1": "740000a08045beffbc034285c9d745d13de10441",
-          "sha256": "f10efc95fb8c3430e3b5e3cecbf3c9bac0619165f0c6d1c301b484c68ae2b5d3",
-          "url": "http://chef.bintray.com/stable/el/5/chef-manage-2.2.0-1.el5.x86_64.rpm"
+        "2.1.0": {
+          "sha1": "9e46aebf53e093514a7180104938f8a7dcc0cf05",
+          "sha256": "2235c09eb421a2fa5296d4b1162c82637b0c7799fa8ed8ad524bedcfe7c6eda8",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.0/el/7/chef-manage-2.1.0-1.el7.x86_64.rpm"
         },
         "2.1.2": {
-          "sha1": "cab73f4ed15650bc7419ad71f9a5f0317ddae7b0",
-          "sha256": "e47b69972ed3e1284fa679527d25f1d5b2b4abfcb6b19138646bcea5fbdec9a1",
-          "url": "http://chef.bintray.com/stable/el/5/chef-manage-2.1.2-1.el5.x86_64.rpm"
+          "sha1": "a44c2dbbc5336594544774cef3b8b6462148f192",
+          "sha256": "c8dad6961d30b4b105ed2fbb0fd56ef5610eac4d9546149d6c511ed378cc29f0",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.2/el/7/chef-manage-2.1.2-1.el7.x86_64.rpm"
         },
+        "2.2.0": {
+          "sha1": "aad1e1ec7fde290ec247e82c80c8b45d26ac519c",
+          "sha256": "a5e9febea629b82a5d0175f11814e3888ddf5cec8b1142fb4d2697806f9aeb32",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.0/el/7/chef-manage-2.2.0-1.el7.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "272bddfd77970e5f5a57a6eed39f23112c5496d0",
+          "sha256": "89dc33f617701b820d18b940ba3e8ab893f5cd4bc8cbb6307dca6cee2c1c24bc",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.1/el/7/chef-manage-2.2.1-1.el7.x86_64.rpm"
+        },
+        "2.3.0": {
+          "sha1": "5c6c921a783d797b67fc2e45cb822eac5ac2a174",
+          "sha256": "098cc48277692d33842f9578937615acefe181df1620c87be8569bda8daefaab",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.3.0/el/7/chef-manage-2.3.0-1.el7.x86_64.rpm"
+        },
+        "2.4.0": {
+          "sha1": "7c817975d954b59692e45f697b1201b9afa80b2a",
+          "sha256": "1b136be0a4cb55977f33d1ce8fbcd5c7c6d17eda3238750c4527b7312de13c50",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.0/el/7/chef-manage-2.4.0-1.el7.x86_64.rpm"
+        },
+        "2.4.1": {
+          "sha1": "a91e03e3782388ca8afb5ea41593561145c63512",
+          "sha256": "bc077774d24bcdcf30e49ef2256ed25c81f44f0c16f810b338ea2726d632fc9d",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.1/el/7/chef-manage-2.4.1-1.el7.x86_64.rpm"
+        },
+        "2.4.2": {
+          "sha1": "dd0dda9f5869f6fc9b248d8a04f8a1fdbbe45384",
+          "sha256": "bbd667eaa9070bdd97246ecd4396de0d77c89e084437d77808c48134b079aab1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.2/el/7/chef-manage-2.4.2-1.el7.x86_64.rpm"
+        },
+        "2.4.3": {
+          "sha1": "727f88ffed2052bc1a1e952fcbc55a111c2332ef",
+          "sha256": "94dab85670e2e40a20b6efc12a9fae30fd2c517331f839bc43307cdd680ad415",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.3/el/7/chef-manage-2.4.3-1.el7.x86_64.rpm"
+        },
+        "2.4.4": {
+          "sha1": "59e092826584639c59fc9abcdcec3f81feacec81",
+          "sha256": "270ccab7ad13e1cb5edb85a6e9d65c4de5b6f642bb3345484cd14064cb6df4cd",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.4/el/7/chef-manage-2.4.4-1.el7.x86_64.rpm"
+        },
+        "2.4.5": {
+          "sha1": "127b3ba00ca385fcd8e0e8601cf15b329bf6ed56",
+          "sha256": "a6639770bb5da28553e18899a47fcae0399cdab03e82d81cc4f8d01cbd7b932f",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.5/el/7/chef-manage-2.4.5-1.el7.x86_64.rpm"
+        },
+        "2.5.0": {
+          "sha1": "998e88332afab65e9f9b815a4c7a7d0e42e5ba93",
+          "sha256": "a29f9fc2a2fd8a8dbc665ce5e66cbe72502ccede09467d21da6fb3fd252ced7b",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.0/el/7/chef-manage-2.5.0-1.el7.x86_64.rpm"
+        },
+        "2.5.1": {
+          "sha1": "449a796ccb1d2cad25bc2d0307660ab6884803b3",
+          "sha256": "9baf2ef45bc652c75033d22d0cfb59abdc7b64c6e6e3af972029b10e5c3d38df",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.1/el/7/chef-manage-2.5.1-1.el7.x86_64.rpm"
+        },
+        "2.5.3": {
+          "sha1": "126b137721208853c075b68a5807768d6c7b0265",
+          "sha256": "ef990a8d76b10a6d2ed837344271111b14cf78da183d600436fc1acb9dd03eba",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.3/el/7/chef-manage-2.5.3-1.el7.x86_64.rpm"
+        },
+        "2.5.4": {
+          "sha1": "dcaa545a045ec84df94222c6294fff617fb8664e",
+          "sha256": "d01403cf5c1e5e4284ba9302d1f111733a7fe5bdd5ae9cc8da352f5d0cf9bd82",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.4/el/7/chef-manage-2.5.4-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "5": {
+      "x86_64": {
         "2.1.1": {
           "sha1": "3cc44697f186a7a8d863e384087cf165418ce6ca",
           "sha256": "159c4a70bbcf450cdd3b14d63c754bf1e961e4fdaf6dc25ac70ea6e6f9d5e35f",
-          "url": "http://chef.bintray.com/stable/el/5/chef-manage-2.1.1-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.1.1/el/5/chef-manage-2.1.1-1.el5.x86_64.rpm"
         },
         "2.1.0": {
           "sha1": "c1686938d50e03fb0afc1eedad013ad30c84957d",
           "sha256": "07fa7539a5826fbc7a6ec960c4e290a6bf4bb20a547a2dc10e6d802ec1408d3b",
-          "url": "http://chef.bintray.com/stable/el/5/chef-manage-2.1.0-1.el5.x86_64.rpm"
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.1.0/el/5/chef-manage-2.1.0-1.el5.x86_64.rpm"
         },
-        "1.21.0": {
-          "sha1": "6b667e40f025a510796421111760dfeb64b6698c",
-          "sha256": "ddbd250e7d10dc1ea97d65295be5a7a1146a83cae15cd76dece0a2a34dfc9915",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.21.0-1.el5.x86_64.rpm"
+        "2.1.2": {
+          "sha1": "cab73f4ed15650bc7419ad71f9a5f0317ddae7b0",
+          "sha256": "e47b69972ed3e1284fa679527d25f1d5b2b4abfcb6b19138646bcea5fbdec9a1",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.1.2/el/5/chef-manage-2.1.2-1.el5.x86_64.rpm"
         },
-        "1.20.1": {
-          "sha1": "fd870fd5bffa0e95a127e8c392c5eb62a922f785",
-          "sha256": "a6e4febd65dc0acc6bd9ebdf7799008ddea62c1dffde23830f1953a5eb593e9d",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.20.1-1.el5.x86_64.rpm"
+        "2.2.0": {
+          "sha1": "740000a08045beffbc034285c9d745d13de10441",
+          "sha256": "f10efc95fb8c3430e3b5e3cecbf3c9bac0619165f0c6d1c301b484c68ae2b5d3",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.2.0/el/5/chef-manage-2.2.0-1.el5.x86_64.rpm"
         },
-        "1.20.0": {
-          "sha1": "b9b32f919954a2e9cdf89939864c5022580268b2",
-          "sha256": "d212105ae967a9342d8658b515e63e8da49dc20ecc8e51486ce17082ef128ed1",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.20.0-1.el5.x86_64.rpm"
+        "2.2.1": {
+          "sha1": "0ec4c467ca18659cd2d9658c8968b5ab792e4f94",
+          "sha256": "d5bcc77f0b2f12c726e9ab9c26fe437884e6d4c9dc40dc50e8752c8e7f6b8c38",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.2.1/el/5/chef-manage-2.2.1-1.el5.x86_64.rpm"
         },
-        "1.19.0": {
-          "sha1": "7dd550f140e927708ac02e493d7b2b1c72586b5b",
-          "sha256": "47505b793bdf8719fd7c6a6b68547c2787e9de4ab92b6eff615d5673d42f06c8",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.19.0-1.el5.x86_64.rpm"
+        "2.3.0": {
+          "sha1": "7f563c9a54d76e362bb164d8abb74a6bdc732d33",
+          "sha256": "d5966c533238573a8a4c53db32f5199844782b53f15ac8804b23505ffbf2405b",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.3.0/el/5/chef-manage-2.3.0-1.el5.x86_64.rpm"
         },
-        "1.18.0": {
-          "sha1": "cd2cd19b58b314bc1dfbb5e235cb423496026531",
-          "sha256": "26f294f787ddfbb4ef75774d9a6dd02888b3f777dfe496e653e11d7b71fe1253",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.18.0-1.el5.x86_64.rpm"
+        "2.4.0": {
+          "sha1": "eb42ade9056f5d94c2aa2a4eb6b95afb9741a994",
+          "sha256": "0e46ffd463fa1bc56cd1d3cc7bd95d6a77d805d88f9d92c8cfa986191c275eb2",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.0/el/5/chef-manage-2.4.0-1.el5.x86_64.rpm"
         },
-        "1.17.0": {
-          "sha1": "7444e7b1198a180731b8773b91acd0449603e232",
-          "sha256": "575fab6098b974d09d0f629ff5919fce12160c6375dcbd264965c8094fa79bad",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.17.0-1.el5.x86_64.rpm"
+        "2.4.1": {
+          "sha1": "b5ec267e4a3359f887feb7f1861b84d30f1c505e",
+          "sha256": "7c7e8c443367159a4d2445696f42bbf9572283777f8e43b17bbd8310dec29893",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.1/el/5/chef-manage-2.4.1-1.el5.x86_64.rpm"
         },
-        "1.13.0": {
-          "sha1": "167eef5ee1ef2de6eb012fea3297a79ebfe84efb",
-          "sha256": "5a5657d92b51d2cb921ba508ff72e9bd67ee4ede476dea36b3ecb61117195345",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.13.0-1.el5.x86_64.rpm"
+        "2.4.2": {
+          "sha1": "e45cd62538fcc0b8e43bc2677b06e3a4c7ce12ba",
+          "sha256": "74c2180c9f55306b4ae72fbbab3c23549acd1a3a72914d6b2e6dd3f2e444849d",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.2/el/5/chef-manage-2.4.2-1.el5.x86_64.rpm"
         },
-        "1.12.0": {
-          "sha1": "f4ac69a5a555426d36f7a42ee84b74e51eeef66c",
-          "sha256": "4c937cb041542b204f805f1b20984be9dca1910307f67c5431b455bf63ddbab3",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.12.0-1.el5.x86_64.rpm"
+        "2.4.3": {
+          "sha1": "0377ed1a828e6443bfe02027f7659e10f40376b4",
+          "sha256": "46cea36ae7954d128e67a81f5da23de943c61c622629ff600942ae9de75849ec",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.3/el/5/chef-manage-2.4.3-1.el5.x86_64.rpm"
         },
-        "1.11.4": {
-          "sha1": "5edc7e62c0d4ca7850dfa8d18b3da6f29f6de509",
-          "sha256": "9404065f68091f084234555fa859d5b982b0f7448fb3e11a8ee5a38811b76aaa",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.11.4-1.el5.x86_64.rpm"
+        "2.4.4": {
+          "sha1": "e09ea997abe88895c06b6c6eb986f762408cffa3",
+          "sha256": "1fb80b75681b32befdfc25d107b38da9550624c49aea18a8e9eefce52a692423",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.4/el/5/chef-manage-2.4.4-1.el5.x86_64.rpm"
         },
-        "1.11.2": {
-          "sha1": "9b3c4fe0d35853961bba6d120dcd9e6576d87b11",
-          "sha256": "cd448b210edeebb3b23020c3af6a8ecc20fe6a1e1be3507aefa1a5cad26c8213",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.11.2-1.el5.x86_64.rpm"
+        "2.4.5": {
+          "sha1": "60036450273abe10624ae51636595a82adb33810",
+          "sha256": "49057c0589267dce6fc48b99d01ec4eace7ec45c1b4d8cd7cb7a746925f1b780",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.4.5/el/5/chef-manage-2.4.5-1.el5.x86_64.rpm"
         },
-        "1.11.1": {
-          "sha1": "eb4fe8b70728bd170008d6361d361b43e940fcef",
-          "sha256": "3c311eb449177ff462d25b42e52f570781fc72f7508481b8befd7bf4d981fab3",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.11.1-1.el5.x86_64.rpm"
+        "2.5.0": {
+          "sha1": "a5d459da1193ff2823a237c621a4d5a4956e3f6a",
+          "sha256": "faf04bbe29aa68e0b450a4e0240e12441cd9cee65da0d98e8d2bf7b19750b0af",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.5.0/el/5/chef-manage-2.5.0-1.el5.x86_64.rpm"
         },
-        "1.11.0": {
-          "sha1": "a4822c6b26633a39fc65a5910f3de368d6b23452",
-          "sha256": "02eb13125c694ce92dda525388059b30108a411f4bfe5720f5e45ba3eaa84096",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.11.0-1.el5.x86_64.rpm"
+        "2.5.1": {
+          "sha1": "878bb667a3e3ab31b7eb4004f179d08357ae2f29",
+          "sha256": "a6431de43ddfb601882fd3ee0d0fd25851a79ec160d712495772a4e1222edb0b",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.5.1/el/5/chef-manage-2.5.1-1.el5.x86_64.rpm"
         },
-        "1.10.0": {
-          "sha1": "f7e2c92e12064aa8ac92f85b97fc4688b6f13823",
-          "sha256": "68ebc5b00388fffacf7a7854f8df8d591f039ea0b48d63b54c51d9e31a37829b",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.10.0-1.el5.x86_64.rpm"
+        "2.5.3": {
+          "sha1": "b3630df3e745315a0e9ee2eb8c226c49656abaaf",
+          "sha256": "611a25b74a654328e280f2910857a759c084d2b4a1892c52b42fc77442416026",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.5.3/el/5/chef-manage-2.5.3-1.el5.x86_64.rpm"
         },
-        "1.9.0": {
-          "sha1": "8c338205e476c818c1658ef475c4c12d5843cc15",
-          "sha256": "397bf260ea95aa1fbb2448b26f35eb48b2643e75dabc0168d99ad98a5a1e59e9",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.9.0-1.x86_64.rpm"
-        },
-        "1.6.2": {
-          "sha1": "33a542ae2178b10e64304b781b0f0f3eaab1aa7e",
-          "sha256": "62bd637a7747f2f52e636ac4c13e56ec861abe8c9ff2a18a31345288a502859d",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.6.2-1.el5.x86_64.rpm"
-        },
-        "1.6.1": {
-          "sha1": "e76aada878eeba7b4b18bff14171d6e407c2cc5e",
-          "sha256": "08559a07f929aa51e490f1025100d9824b5dd01ce226590f3750fd318a21fd5f",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.6.1-1.el5.x86_64.rpm"
-        },
-        "1.5.4": {
-          "sha1": "39805c8f8d03fd70584387e3a0283a33ca343a22",
-          "sha256": "61b6cfc4dc08dbbf0f1149ca88d3eb312c9ab8724c91816816f86f56e65ed054",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.5.4-1.el5.x86_64.rpm"
-        },
-        "1.3.1": {
-          "sha1": "477e521f2af9bc42df640543288e3015814fbc5d",
-          "sha256": "bfd6a93fe75cb665f1ffd64acf3dc1cef4d468cac043f2fa9cbb785bce78a3e0",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.3.1-1.el5.x86_64.rpm"
-        },
-        "1.2.1": {
-          "sha1": "bbf412038a0536fefd32fe177d648c99b2e590dd",
-          "sha256": "3aabaac528c3322a3d2b930db17e5355ab3590961efa6b4f60b76e75c7785694",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.2.1-1.el5.x86_64.rpm"
-        },
-        "1.2.0": {
-          "sha1": "61b0385b5c6128113111acf72cc24a9b1db509e2",
-          "sha256": "5265b7006539aa514011259fd23a9be924bfda932f2ba8e8b58a000942703be4",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.2.0-1.el5.x86_64.rpm"
-        },
-        "1.1.1": {
-          "sha1": "7325ebc703b56c4e1de07e0dae79e621eb50456c",
-          "sha256": "ed5426824f0136ea035aacb9e328028bd1ad451942c70d5947376a1c9d9a3a32",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.1.1-1.el5.x86_64.rpm"
-        },
-        "1.1.0": {
-          "sha1": "051fd1ba2e841101afed2783b30c98401cadb00c",
-          "sha256": "9e78f1480e4e07b90f89d0e0b94622ac9c1c8ccfa0b52530ec29c80d14e63a8d",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.1.0-1.el5.x86_64.rpm"
-        },
-        "1.0.0": {
-          "sha1": "f6c39d7e257af2969dd83fb8f7c60de77bb1e3a3",
-          "sha256": "4f6f700cb55f4d4944bdf59dba30adc7f1be914bc0b6325c721b37142cebf933",
-          "url": "http://chef.bintray.com/stable/el/5/opscode-manage-1.0.0-1.el5.x86_64.rpm"
+        "2.5.4": {
+          "sha1": "0a0e4ec206ec02fe0d23e2759c30e1e0607c1064",
+          "sha256": "c5367f6dbd6b4c08fa11fa589d21b1aacc52e6bd848dc6b1c1cadb7fcd5f59fd",
+          "url": "http://packages.chef.io/files/stable/chef-manage/2.5.4/el/5/chef-manage-2.5.4-1.el5.x86_64.rpm"
         }
       }
     },
     "6": {
       "x86_64": {
-        "2.2.1": {
-          "sha1": "82e6a5e1806cf07207a37852f8de925b7a1a7a49",
-          "sha256": "9f04e74b164dfa8652bd70846e2147bbbe144fef02fa69f4bd703e99a335193d",
-          "url": "https://packages.chef.io/stable/el/6/chef-manage-2.2.1-1.el6.x86_64.rpm"
-        },
-        "2.2.0": {
-          "sha1": "a7de10fd728e7c38e024a6694c450cabc22d089e",
-          "sha256": "e7c938809d76e2220d9f39c07f08d69097be789f0974eb6fda584e3c35e4b7a0",
-          "url": "https://packages.chef.io/stable/el/6/chef-manage-2.2.0-1.el6.x86_64.rpm"
-        },
-        "2.1.2": {
-          "sha1": "b8493b725c6d5f4fbc882cbfa80166bbedf97fdd",
-          "sha256": "8f72475a5e0b4e9be60b44a0ad5befc1aa6cc51368d3c3b63ba5365f15c82eea",
-          "url": "https://packages.chef.io/stable/el/6/chef-manage-2.1.2-1.el6.x86_64.rpm"
-        },
         "2.1.1": {
           "sha1": "355562d9416434ab342e4a17df721d9dbb86f30e",
           "sha256": "f1c2635b43b13412c6eb4a358ac95929d254c7bedcc8ca3bada4b294b41b2dfd",
-          "url": "https://packages.chef.io/stable/el/6/chef-manage-2.1.1-1.el6.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.1/el/6/chef-manage-2.1.1-1.el6.x86_64.rpm"
         },
         "2.1.0": {
           "sha1": "13418a1512774f8cd42827398101eb5d118fcdbc",
           "sha256": "ebba49894cb2e31a5316c509c8241966d141a42e690a490ec9377316dc208c20",
-          "url": "https://packages.chef.io/stable/el/6/chef-manage-2.1.0-1.el6.x86_64.rpm"
-        },
-        "1.21.0": {
-          "sha1": "2820a1d07e77dd7b945bd66d5f91910de10a5fc8",
-          "sha256": "660a805c8633c601740371ddbc12ec4dc0c76f1777400e63ffe42afac25187a0",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.21.0-1.el6.x86_64.rpm"
-        },
-        "1.20.1": {
-          "sha1": "da5005a9cb3b4614301603fda3db05775c70a43d",
-          "sha256": "e17fb1699efe5d8271ed5567b97acb904ac206592b99a05f63b1cfd0f43f53b1",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.20.1-1.el6.x86_64.rpm"
-        },
-        "1.20.0": {
-          "sha1": "2007210a0796a1e2399fafb75d42c3acd50dd865",
-          "sha256": "92fb311fd186522b6d3e6f966f0d863ef0acaa45a529e64da338322ecfcadf21",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.20.0-1.el6.x86_64.rpm"
-        },
-        "1.19.0": {
-          "sha1": "371cbe9363ad8d70e0ef7afe7e3b55f2f1502f26",
-          "sha256": "5b7b0022a42a13df5889927fda6a4833dee51ef1bd7c82efefb8b157e56c54ac",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.19.0-1.el6.x86_64.rpm"
-        },
-        "1.18.0": {
-          "sha1": "f2a5ab689bfe01323c8eed72126ab824eb59f0ac",
-          "sha256": "0d7808d470e345043d1af1b8b5527de56fbd33a12ab83bbb75591e4298fb3194",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.18.0-1.el6.x86_64.rpm"
-        },
-        "1.17.0": {
-          "sha1": "7c3a49f03aaa4c302e8ec773d90c01b824d0866a",
-          "sha256": "4ad4e0964b536976c8b12bbe8e0e280e8816f5b33b1be329258054df0c4a59a9",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.17.0-1.el6.x86_64.rpm"
-        },
-        "1.13.0": {
-          "sha1": "167eef5ee1ef2de6eb012fea3297a79ebfe84efb",
-          "sha256": "5a5657d92b51d2cb921ba508ff72e9bd67ee4ede476dea36b3ecb61117195345",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.13.0-1.el5.x86_64.rpm"
-        },
-        "1.12.0": {
-          "sha1": "f4ac69a5a555426d36f7a42ee84b74e51eeef66c",
-          "sha256": "4c937cb041542b204f805f1b20984be9dca1910307f67c5431b455bf63ddbab3",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.12.0-1.el5.x86_64.rpm"
-        },
-        "1.11.4": {
-          "sha1": "5edc7e62c0d4ca7850dfa8d18b3da6f29f6de509",
-          "sha256": "9404065f68091f084234555fa859d5b982b0f7448fb3e11a8ee5a38811b76aaa",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.11.4-1.el5.x86_64.rpm"
-        },
-        "1.11.2": {
-          "sha1": "9b3c4fe0d35853961bba6d120dcd9e6576d87b11",
-          "sha256": "cd448b210edeebb3b23020c3af6a8ecc20fe6a1e1be3507aefa1a5cad26c8213",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.11.2-1.el5.x86_64.rpm"
-        },
-        "1.11.1": {
-          "sha1": "eb4fe8b70728bd170008d6361d361b43e940fcef",
-          "sha256": "3c311eb449177ff462d25b42e52f570781fc72f7508481b8befd7bf4d981fab3",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.11.1-1.el5.x86_64.rpm"
-        },
-        "1.11.0": {
-          "sha1": "a4822c6b26633a39fc65a5910f3de368d6b23452",
-          "sha256": "02eb13125c694ce92dda525388059b30108a411f4bfe5720f5e45ba3eaa84096",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.11.0-1.el5.x86_64.rpm"
-        },
-        "1.10.0": {
-          "sha1": "f7e2c92e12064aa8ac92f85b97fc4688b6f13823",
-          "sha256": "68ebc5b00388fffacf7a7854f8df8d591f039ea0b48d63b54c51d9e31a37829b",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.10.0-1.el5.x86_64.rpm"
-        },
-        "1.9.0": {
-          "sha1": "8c338205e476c818c1658ef475c4c12d5843cc15",
-          "sha256": "397bf260ea95aa1fbb2448b26f35eb48b2643e75dabc0168d99ad98a5a1e59e9",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.9.0-1.x86_64.rpm"
-        },
-        "1.6.2": {
-          "sha1": "2e5fbbf86921cca655ea96ae0464749a12cd4d7b",
-          "sha256": "59100815a5e86f2a9de6beb03605d1b90e93f5ef0eecf336222f46a7e29f340b",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.6.2-1.el6.x86_64.rpm"
-        },
-        "1.6.1": {
-          "sha1": "c0f49df8b0d12847a37bf73ab8a622937f7fb48b",
-          "sha256": "6e8dab68f7c28587843592f00f7be30921b2d9104177970d3d747abcfad02840",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.6.1-1.el6.x86_64.rpm"
-        },
-        "1.5.4": {
-          "sha1": "217bb6f28abf935f1c1e52882bb02954353c8962",
-          "sha256": "5898f88065b101848cd623bf8f683d5431a75b93a6cd0c74646b6a52f35dd027",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.5.4-1.el6.x86_64.rpm"
-        },
-        "1.3.1": {
-          "sha1": "3debef5daa49b379cd91f9a540982e658892a71f",
-          "sha256": "e869f95f9f8382540cc064a1c5a64d4691e9dd2b0df4a4ebc0a466edb1f74097",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.3.1-1.el6.x86_64.rpm"
-        },
-        "1.3.0": {
-          "sha1": "b330f389a14ab129880ec9c6d13d1776ecb6583e",
-          "sha256": "3c539b7494b8e3eb4921886a8988a0c7530a543f07f6ccdeb0b0576381dc4740",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.3.0-1.el6.x86_64.rpm"
-        },
-        "1.2.1": {
-          "sha1": "bf004344c89bf88c0d36de885521f809f104f6bf",
-          "sha256": "48f06cae49b963e6c46e2656f533da1e9aadf4cdedea16fb338ebe032255499b",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.2.1-1.el6.x86_64.rpm"
-        },
-        "1.2.0": {
-          "sha1": "080d816ddfbdffbf53bcc13a08ccc6309d1708ab",
-          "sha256": "f366e461ee010f0e7a4ee47815e19b81b29c99c2f2098375df44f68a89487b43",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.2.0-1.el6.x86_64.rpm"
-        },
-        "1.1.1": {
-          "sha1": "ff38407e2df481a8b972f75c8a3bcc5c408e888a",
-          "sha256": "a3e83a5f42b1c78b80583d9f3aab389c19b21723e2829f2b4668f65bfe2b701c",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.1.1-1.el6.x86_64.rpm"
-        },
-        "1.1.0": {
-          "sha1": "294b11d5231a078b031f89de8aad8010a252de67",
-          "sha256": "2d78a859c53b16803d375941398aca3a8824eaebc0b00d2848a1a828aeded38a",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.1.0-1.el6.x86_64.rpm"
-        },
-        "1.0.0": {
-          "sha1": "5d2c0171a5940fd8d20ca8e8750e18cc5cf52cf5",
-          "sha256": "fc8f39a8a5cce1565cefcbf2cb117c10e255cffc94bb79e3f272137943c23f72",
-          "url": "https://packages.chef.io/stable/el/6/opscode-manage-1.0.0-1.el6.x86_64.rpm"
-        }
-      }
-    },
-    "7": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "272bddfd77970e5f5a57a6eed39f23112c5496d0",
-          "sha256": "89dc33f617701b820d18b940ba3e8ab893f5cd4bc8cbb6307dca6cee2c1c24bc",
-          "url": "https://packages.chef.io/stable/el/7/chef-manage-2.2.1-1.el7.x86_64.rpm"
-        },
-        "2.2.0": {
-          "sha1": "aad1e1ec7fde290ec247e82c80c8b45d26ac519c",
-          "sha256": "a5e9febea629b82a5d0175f11814e3888ddf5cec8b1142fb4d2697806f9aeb32",
-          "url": "https://packages.chef.io/stable/el/7/chef-manage-2.2.0-1.el7.x86_64.rpm"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.0/el/6/chef-manage-2.1.0-1.el6.x86_64.rpm"
         },
         "2.1.2": {
-          "sha1": "a44c2dbbc5336594544774cef3b8b6462148f192",
-          "sha256": "c8dad6961d30b4b105ed2fbb0fd56ef5610eac4d9546149d6c511ed378cc29f0",
-          "url": "https://packages.chef.io/stable/el/7/chef-manage-2.1.2-1.el7.x86_64.rpm"
+          "sha1": "b8493b725c6d5f4fbc882cbfa80166bbedf97fdd",
+          "sha256": "8f72475a5e0b4e9be60b44a0ad5befc1aa6cc51368d3c3b63ba5365f15c82eea",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.2/el/6/chef-manage-2.1.2-1.el6.x86_64.rpm"
         },
-        "2.1.1": {
-          "sha1": "dc9e74ee4a258a57ec6e184a31a0b85305dffdb8",
-          "sha256": "bb2a720bbf2c803069937454e49c19fc922a45d6ff346e43c55495135da9c46e",
-          "url": "https://packages.chef.io/stable/el/7/chef-manage-2.1.1-1.el7.x86_64.rpm"
+        "2.2.0": {
+          "sha1": "a7de10fd728e7c38e024a6694c450cabc22d089e",
+          "sha256": "e7c938809d76e2220d9f39c07f08d69097be789f0974eb6fda584e3c35e4b7a0",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.0/el/6/chef-manage-2.2.0-1.el6.x86_64.rpm"
         },
-        "2.1.0": {
-          "sha1": "9e46aebf53e093514a7180104938f8a7dcc0cf05",
-          "sha256": "2235c09eb421a2fa5296d4b1162c82637b0c7799fa8ed8ad524bedcfe7c6eda8",
-          "url": "https://packages.chef.io/stable/el/7/chef-manage-2.1.0-1.el7.x86_64.rpm"
+        "2.2.1": {
+          "sha1": "82e6a5e1806cf07207a37852f8de925b7a1a7a49",
+          "sha256": "9f04e74b164dfa8652bd70846e2147bbbe144fef02fa69f4bd703e99a335193d",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.1/el/6/chef-manage-2.2.1-1.el6.x86_64.rpm"
         },
-        "1.21.0": {
-          "sha1": "1b12e6c3d52b5809fa9d1507a4b3f40a26c875dd",
-          "sha256": "98bae9dabb346d8315e8e1d2a14bc44a165b566c7ee42b3c6de60901e097d23a",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.21.0-1.el7.x86_64.rpm"
+        "2.3.0": {
+          "sha1": "eb6311f88a7f29fad4f90b562322ae49dd6a98a3",
+          "sha256": "8647280581032c376339f41811a9c488df654557c377cfc9577a1e35742c4622",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.3.0/el/6/chef-manage-2.3.0-1.el6.x86_64.rpm"
         },
-        "1.20.1": {
-          "sha1": "4a4bc9c23f8b408dc9c43080d50fd198b302cc85",
-          "sha256": "9aa0a7776ac54c7bd8135b4496ea5441db315a42796db9f1778ecf1210f0faf8",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.20.1-1.el7.x86_64.rpm"
+        "2.4.0": {
+          "sha1": "d6b220e496229cfbaeab95f766406bde29887848",
+          "sha256": "32322dc7be6199a1b56e0d9e486d3d45394d6be30c9013ea0fecc45452df5f28",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.0/el/6/chef-manage-2.4.0-1.el6.x86_64.rpm"
         },
-        "1.20.0": {
-          "sha1": "940e92e7e98d9f3754c5de3b49d33e6521410c58",
-          "sha256": "6e07157c7c2bf9f9d14befb5857a63534b346092073af3c2ea24a04508d8934c",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.20.0-1.el7.x86_64.rpm"
+        "2.4.1": {
+          "sha1": "0f3d77b394309f6ec8895b1472c2134f8b06ca8a",
+          "sha256": "41225a88663938b2df32c5daa3edee51ba72da62b98522a5e32443c5505d44de",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.1/el/6/chef-manage-2.4.1-1.el6.x86_64.rpm"
         },
-        "1.19.0": {
-          "sha1": "f678191b8d8d83ec23dd3f8eb92332192def3159",
-          "sha256": "b87799fd9c9f09f6bad387c7b1fe05df85d11d825d88a92a364112ff2966f617",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.19.0-1.el7.x86_64.rpm"
+        "2.4.2": {
+          "sha1": "1991e4fcec0d3c6c1bf480e0a21d5798d31aa854",
+          "sha256": "7352eb9262489c77f72c023737902f2ca7286ab0da0338d0cac9aae7b0c1cf59",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.2/el/6/chef-manage-2.4.2-1.el6.x86_64.rpm"
         },
-        "1.18.0": {
-          "sha1": "e4e39ff742060332228553aaa241cbeee7cffd69",
-          "sha256": "54dab88552c4665d92ef1c9070decde74c823acc6ca74aaf5291cbd0d9a916b5",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.18.0-1.el7.x86_64.rpm"
+        "2.4.3": {
+          "sha1": "0f58439022f8c9c04abd26e7edfa0f2b4bf45df8",
+          "sha256": "2095e2cce34ba1e469357b03f6e7757f17ccadffed28f0e0a447d3bcf2f1c965",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.3/el/6/chef-manage-2.4.3-1.el6.x86_64.rpm"
         },
-        "1.17.0": {
-          "sha1": "3e1b21264cf78d77617e6dc4c10064e83c9eba30",
-          "sha256": "f959ff946b1176cf2b4ad30bba2e123eebb1ec1ea74d3711329d38a6abcafd7c",
-          "url": "https://packages.chef.io/stable/el/7/opscode-manage-1.17.0-1.el7.x86_64.rpm"
+        "2.4.4": {
+          "sha1": "367704b48ce9160c0b1a7c471ff6160b8b2ace49",
+          "sha256": "5a489e919d7b655bfba09807131c500c6e3e661d9583ea19bfefef47ef4d2445",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.4/el/6/chef-manage-2.4.4-1.el6.x86_64.rpm"
+        },
+        "2.4.5": {
+          "sha1": "3828457da02307dd95e9441ff763ba536789117c",
+          "sha256": "68b6e6eddb01136760d7bf4e0139ac45538e64d0c2beddb252ae49b72e2ac6b4",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.5/el/6/chef-manage-2.4.5-1.el6.x86_64.rpm"
+        },
+        "2.5.0": {
+          "sha1": "c34e5a54e3e8e0664272d6a8570b0d3f34627b63",
+          "sha256": "2da500250dbdad6e52e6443e5a81828cfaaa53b6fc6d485b841b14e2a6327df1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.0/el/6/chef-manage-2.5.0-1.el6.x86_64.rpm"
+        },
+        "2.5.1": {
+          "sha1": "0ca683d3ca53f473add93a48d1753f055c9fcfcd",
+          "sha256": "ed2cca4ae0a61dffb4a17d7201c6758860a662f6588eddff4534f4a1550e21c2",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.1/el/6/chef-manage-2.5.1-1.el6.x86_64.rpm"
+        },
+        "2.5.3": {
+          "sha1": "13d9c2cfce515a757a79000514b88e347f8b1d75",
+          "sha256": "d72b1951afee630094cb7bc70db400c5d918c370799d2ef7f482af9d50146207",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.3/el/6/chef-manage-2.5.3-1.el6.x86_64.rpm"
+        },
+        "2.5.4": {
+          "sha1": "389aa6e40980a64b6e9a9a70187fd9712dd9972c",
+          "sha256": "3850ac2989145af4d590340be2271af9c3bc477711c13dd41149c70ad243c8be",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.4/el/6/chef-manage-2.5.4-1.el6.x86_64.rpm"
         }
       }
     }
   },
   "ubuntu": {
-    "10.04": {
+    "14.04": {
       "x86_64": {
-        "2.2.1": {
-          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
-          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-manage_2.2.1-1_amd64.deb"
-        },
-        "2.2.0": {
-          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
-          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-manage_2.2.0-1_amd64.deb"
-        },
-        "2.1.2": {
-          "sha1": "7f5e9de9028713190fb8bb3d46a9dd646c9cab16",
-          "sha256": "24a40c732eccf459f6c5237633a9dcd28cfac004894fa077ec72395f7ca5ea56",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-manage_2.1.2-1_amd64.deb"
-        },
         "2.1.1": {
           "sha1": "b6c87fd29d8af63413eba1b437dcae58712ff661",
           "sha256": "6f342c5759ca8ce28c5fe48a7e4c6244f5a5fcec21c6630b0eccd7c4e5a9d36d",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-manage_2.1.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.1/ubuntu/14.04/chef-manage_2.1.1-1_amd64.deb"
         },
         "2.1.0": {
           "sha1": "cde9372352ad57a720d52c42f2a61660a5b1feb3",
           "sha256": "b5f24bfb9b64f44362649fd7c53a3cd2aaff51ce1928837c94116079331f757c",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/chef-manage_2.1.0-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.0/ubuntu/14.04/chef-manage_2.1.0-1_amd64.deb"
         },
-        "1.21.0": {
-          "sha1": "84582862ce47d5f6db1e1ed89021c4b8efbda847",
-          "sha256": "0e78f58653b70a5f355e8bd0a5a763e52a32ce13d6a7b292b3c53537f7f336c5",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.21.0-1_amd64.deb"
+        "2.1.2": {
+          "sha1": "7f5e9de9028713190fb8bb3d46a9dd646c9cab16",
+          "sha256": "24a40c732eccf459f6c5237633a9dcd28cfac004894fa077ec72395f7ca5ea56",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.2/ubuntu/14.04/chef-manage_2.1.2-1_amd64.deb"
         },
-        "1.20.1": {
-          "sha1": "43c0f7a87b87a69ea321d7c98019f4b764bdaee2",
-          "sha256": "788bf1122d85d7cfaedbd97515daafb5ae58b3af8d2b9b9bfec5e3a41cfbc015",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.20.1-1_amd64.deb"
+        "2.2.0": {
+          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
+          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.0/ubuntu/14.04/chef-manage_2.2.0-1_amd64.deb"
         },
-        "1.20.0": {
-          "sha1": "fe224af718dca101e747980d33bb90f735806dbd",
-          "sha256": "49b369ad1b9d51741abd7d01930c9b29b604405cdfb1e67f4a604015dabcd66e",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.20.0-1_amd64.deb"
+        "2.2.1": {
+          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
+          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.1/ubuntu/14.04/chef-manage_2.2.1-1_amd64.deb"
         },
-        "1.19.0": {
-          "sha1": "ec8056f15c752841c9997cbfe2e4cafedb78e6dd",
-          "sha256": "0246468fd6f6c0c16dab6592723bbd5b939cc11af1dacc40d269ea4166fc1952",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.19.0-1_amd64.deb"
+        "2.3.0": {
+          "sha1": "b9a9965dc89493780fdadbe662c99b6db9f50531",
+          "sha256": "d8fbe396663d628c79ee5f9ae5b1b40d4e86a34e9a43ad9e6f27af3770314da3",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.3.0/ubuntu/14.04/chef-manage_2.3.0-1_amd64.deb"
         },
-        "1.18.0": {
-          "sha1": "d8718b70df9cb33b74d69b0f180f5a80ea081c84",
-          "sha256": "d3cfdf75f9e277ab7eb3bd6469d96f24edfaaf4d7097ad728a74130109dffba6",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.18.0-1_amd64.deb"
+        "2.4.0": {
+          "sha1": "84274cb6d511a40f69fed58241c2b891a2d4bff0",
+          "sha256": "728daffb492bf450b966523bae85647fff0e1c63ff552c75a4e8ad8f79692559",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.0/ubuntu/14.04/chef-manage_2.4.0-1_amd64.deb"
         },
-        "1.17.0": {
-          "sha1": "8e98dadcb98f9936b4c12a9df408b01bd3203597",
-          "sha256": "28646cdbcbcd491a40c3e3b463fc8be4d01db978ca33ab9f181395b62ece7a34",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.17.0-1_amd64.deb"
+        "2.4.1": {
+          "sha1": "9dafc26b5742c2c161b03681b54fb2a303e9c8ea",
+          "sha256": "cec87a9b1e537586de871708b3142070a5067b4fccc8b7a61052a6cc0961dc3c",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.1/ubuntu/14.04/chef-manage_2.4.1-1_amd64.deb"
         },
-        "1.13.0": {
-          "sha1": "98282b13e24269baa68eaec967281b963027e61a",
-          "sha256": "49fc31d7578872e849f98b2bd65829310f31196d30355d8d0aae87d3301e494d",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.13.0-1_amd64.deb"
+        "2.4.2": {
+          "sha1": "05be062f71b9cc0fb1ec8f7061e362a858ecb347",
+          "sha256": "eb170d606e7f95afab1d18350ba18a573d07d7ea7b60a6c11037d8ad40d660bf",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.2/ubuntu/14.04/chef-manage_2.4.2-1_amd64.deb"
         },
-        "1.12.0": {
-          "sha1": "d421e1cf2b0567c69fdb4900b095cc6b4884f11c",
-          "sha256": "ed54afa7cfed03053281f7007dd78c3f468f78a8765da43589465d57ddf1e991",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.12.0-1_amd64.deb"
+        "2.4.3": {
+          "sha1": "35a113952bf8cd3408f3c5b8d7a1034c4039e767",
+          "sha256": "0af176eb721daf021559f7df9e72e99c2f5f55aa39a1b7358a643955fbe91349",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.3/ubuntu/14.04/chef-manage_2.4.3-1_amd64.deb"
         },
-        "1.11.4": {
-          "sha1": "3cd20d5703daabb0604808166e20dc493c681f5f",
-          "sha256": "edd8de156615043155744193e312089b491a37a1dd4173cfa2572113389eb5b3",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.11.4-1_amd64.deb"
+        "2.4.4": {
+          "sha1": "70284cdb8803dad2d84e7f31d404c47fd35bbf76",
+          "sha256": "f8d3b1537f0d3b33bb99220ecb66a6128699f1df135d88154e8f39c5d6ab9727",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.4/ubuntu/14.04/chef-manage_2.4.4-1_amd64.deb"
         },
-        "1.11.2": {
-          "sha1": "af898131ccc176b5b70c9b34b4c542c57a5e9bb1",
-          "sha256": "4bd77b023ec017e6edaa13986c9b5faec4bdae88a6adacd9942d410f07bc5430",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.11.2-1_amd64.deb"
+        "2.4.5": {
+          "sha1": "5ff98fb1ce60c7a3879dcefe9322f19fd8448922",
+          "sha256": "d201a67f205dfe4cda8a91f839835b123761be5ab363ec81577c1862069cbaf1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.5/ubuntu/14.04/chef-manage_2.4.5-1_amd64.deb"
         },
-        "1.11.1": {
-          "sha1": "a9f0b0e03ef0671f1c0ba16b6232db931a59a673",
-          "sha256": "0cab3d8fb91d4835bdc416ef9d4ef45aeb65d38aa6383d6ea34c9d29c02e11ab",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.11.1-1_amd64.deb"
+        "2.5.0": {
+          "sha1": "bb4d17dc8182c157205d91c3a9e77230b0170843",
+          "sha256": "21b2ebb6d5995954778be0b031d6ea5c0f978b2ea450d25b0b6f5fc9f1d431ca",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.0/ubuntu/14.04/chef-manage_2.5.0-1_amd64.deb"
         },
-        "1.11.0": {
-          "sha1": "abc395f0d88ef1cb9d1b5bebb66836384fa736f4",
-          "sha256": "1f5320d41fba392b0660b10ff9fdb2b357a4a83bc2244630d535bcc8f6daa97a",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.11.0-1_amd64.deb"
+        "2.5.1": {
+          "sha1": "e9af501a9a111bf0a0e0521723f8d8ded2c20d19",
+          "sha256": "b1ebdb94c4f9fc7da8bf549012112942061ccaf59097b5a697b008bb5b1a0fea",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.1/ubuntu/14.04/chef-manage_2.5.1-1_amd64.deb"
         },
-        "1.10.0": {
-          "sha1": "2c2e7eb351de7754424b10a14910b858cf8b26f9",
-          "sha256": "6ba86c195ff79be1cd45080652212b9455940e345f33e77b7877586155d21e82",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.10.0-1_amd64.deb"
+        "2.5.3": {
+          "sha1": "86b3f31bf09aa260017d2bab2f1cb9aad14e2ec0",
+          "sha256": "26324b4560508d953f0fe1886bac51f8f4e24f484e7e7c25ad9374e825f46421",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.3/ubuntu/14.04/chef-manage_2.5.3-1_amd64.deb"
         },
-        "1.9.0": {
-          "sha1": "d6429959dc473bb88dd7ea30858fb1f3952db260",
-          "sha256": "7dc6f44e7886f00d65220f3f9cb4dfb490291396349443a1b4904a5e1f1ce50f",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.9.0-1_amd64.deb"
-        },
-        "1.6.2": {
-          "sha1": "fc11927888718451678014118c737c2cbc0028f7",
-          "sha256": "b15a320e628f4cc78ef3074e88c23d933787a42088f51f8a3e1a2b954262b21d",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.6.2-1_amd64.deb"
-        },
-        "1.6.1": {
-          "sha1": "f31c3c857262bdbf92e5454c2c9de39fabdb63ef",
-          "sha256": "4865a258af39ebaa151690197fcfd59387d74566e6ac5e45e81c8e015b9a69ea",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.6.1-1_amd64.deb"
-        },
-        "1.5.4": {
-          "sha1": "4239b50f3729167f2da171d06de11a5b68d10781",
-          "sha256": "02bf9d07daff3b3153426cdc73f212f8dbd53ed169aa5a5206752d4d51c570c2",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.5.4-1_amd64.deb"
-        },
-        "1.3.1": {
-          "sha1": "817652be99eaacb37c5054f053fd9d6ab223e804",
-          "sha256": "65dae5a92d40e9f90a5f775c4737b04a92ed180808dccaf89d05ca242181f5c5",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.3.1-1_amd64.deb"
-        },
-        "1.3.0": {
-          "sha1": "2000f82f81ea4b802728b33729bf0c0bf4c2a84c",
-          "sha256": "d85d4fb8d309535c30c2ee77eb032f1312be778a06f6424f655dc637a94d9af5",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.3.0-1_amd64.deb"
-        },
-        "1.2.1": {
-          "sha1": "a72f093d3b9bd02cac2af17358bd0ed2a0ff3333",
-          "sha256": "1e509ea982a10e026f50f757ea137613bc3ecf00f4d7e1b820f584ddefd7c03d",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.2.1-1.ubuntu.10.04_amd64.deb"
-        },
-        "1.2.0": {
-          "sha1": "5c3a7ec801cc0f8baf38539c2a876e3db1feab3e",
-          "sha256": "c17d6cc9142229cbd1a99d58c3c91648ed95d335ac8ef082f3193d96ca62d56c",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.2.0-1.ubuntu.10.04_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "76beaf984cff6d7fe57abb77e39d4eeee204c8a4",
-          "sha256": "dbfdaba7139e95390210c7c4d2c177fae4caed45c7d2e8a5bd5368137ad2418d",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.1.1-1.ubuntu.10.04_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "b486d3c16ddf2669ecb3e13ebf14a5c799110b3c",
-          "sha256": "bdb19f1e670b7e18297bae687c0b234c205f4c8641cc8c6742df02c109fe0f85",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.1.0-1.ubuntu.10.04_amd64.deb"
-        },
-        "1.0.0": {
-          "sha1": "4f1d877ff56ffe9cccd2ab83861b62e234612358",
-          "sha256": "283f05e8b6c211e1b824823203c1ea205c963331dce65753f9d91e2b7e6e87aa",
-          "url": "https://packages.chef.io/stable/ubuntu/10.04/opscode-manage_1.0.0-1.ubuntu.10.04_amd64.deb"
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.4/ubuntu/14.04/chef-manage_2.5.4-1_amd64.deb"
         }
       }
     },
     "12.04": {
       "x86_64": {
-        "2.2.1": {
-          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
-          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-manage_2.2.1-1_amd64.deb"
-        },
-        "2.2.0": {
-          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
-          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-manage_2.2.0-1_amd64.deb"
-        },
-        "2.1.2": {
-          "sha1": "7f5e9de9028713190fb8bb3d46a9dd646c9cab16",
-          "sha256": "24a40c732eccf459f6c5237633a9dcd28cfac004894fa077ec72395f7ca5ea56",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-manage_2.1.2-1_amd64.deb"
-        },
         "2.1.1": {
           "sha1": "b6c87fd29d8af63413eba1b437dcae58712ff661",
           "sha256": "6f342c5759ca8ce28c5fe48a7e4c6244f5a5fcec21c6630b0eccd7c4e5a9d36d",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-manage_2.1.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.1/ubuntu/12.04/chef-manage_2.1.1-1_amd64.deb"
         },
         "2.1.0": {
           "sha1": "cde9372352ad57a720d52c42f2a61660a5b1feb3",
           "sha256": "b5f24bfb9b64f44362649fd7c53a3cd2aaff51ce1928837c94116079331f757c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/chef-manage_2.1.0-1_amd64.deb"
-        },
-        "1.21.0": {
-          "sha1": "84582862ce47d5f6db1e1ed89021c4b8efbda847",
-          "sha256": "0e78f58653b70a5f355e8bd0a5a763e52a32ce13d6a7b292b3c53537f7f336c5",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.21.0-1_amd64.deb"
-        },
-        "1.20.1": {
-          "sha1": "43c0f7a87b87a69ea321d7c98019f4b764bdaee2",
-          "sha256": "788bf1122d85d7cfaedbd97515daafb5ae58b3af8d2b9b9bfec5e3a41cfbc015",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.20.1-1_amd64.deb"
-        },
-        "1.20.0": {
-          "sha1": "fe224af718dca101e747980d33bb90f735806dbd",
-          "sha256": "49b369ad1b9d51741abd7d01930c9b29b604405cdfb1e67f4a604015dabcd66e",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.20.0-1_amd64.deb"
-        },
-        "1.19.0": {
-          "sha1": "ec8056f15c752841c9997cbfe2e4cafedb78e6dd",
-          "sha256": "0246468fd6f6c0c16dab6592723bbd5b939cc11af1dacc40d269ea4166fc1952",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.19.0-1_amd64.deb"
-        },
-        "1.18.0": {
-          "sha1": "d8718b70df9cb33b74d69b0f180f5a80ea081c84",
-          "sha256": "d3cfdf75f9e277ab7eb3bd6469d96f24edfaaf4d7097ad728a74130109dffba6",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.18.0-1_amd64.deb"
-        },
-        "1.17.0": {
-          "sha1": "8e98dadcb98f9936b4c12a9df408b01bd3203597",
-          "sha256": "28646cdbcbcd491a40c3e3b463fc8be4d01db978ca33ab9f181395b62ece7a34",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.17.0-1_amd64.deb"
-        },
-        "1.13.0": {
-          "sha1": "98282b13e24269baa68eaec967281b963027e61a",
-          "sha256": "49fc31d7578872e849f98b2bd65829310f31196d30355d8d0aae87d3301e494d",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.13.0-1_amd64.deb"
-        },
-        "1.12.0": {
-          "sha1": "d421e1cf2b0567c69fdb4900b095cc6b4884f11c",
-          "sha256": "ed54afa7cfed03053281f7007dd78c3f468f78a8765da43589465d57ddf1e991",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.12.0-1_amd64.deb"
-        },
-        "1.11.4": {
-          "sha1": "3cd20d5703daabb0604808166e20dc493c681f5f",
-          "sha256": "edd8de156615043155744193e312089b491a37a1dd4173cfa2572113389eb5b3",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.11.4-1_amd64.deb"
-        },
-        "1.11.2": {
-          "sha1": "af898131ccc176b5b70c9b34b4c542c57a5e9bb1",
-          "sha256": "4bd77b023ec017e6edaa13986c9b5faec4bdae88a6adacd9942d410f07bc5430",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.11.2-1_amd64.deb"
-        },
-        "1.11.1": {
-          "sha1": "a9f0b0e03ef0671f1c0ba16b6232db931a59a673",
-          "sha256": "0cab3d8fb91d4835bdc416ef9d4ef45aeb65d38aa6383d6ea34c9d29c02e11ab",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.11.1-1_amd64.deb"
-        },
-        "1.11.0": {
-          "sha1": "abc395f0d88ef1cb9d1b5bebb66836384fa736f4",
-          "sha256": "1f5320d41fba392b0660b10ff9fdb2b357a4a83bc2244630d535bcc8f6daa97a",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.11.0-1_amd64.deb"
-        },
-        "1.10.0": {
-          "sha1": "2c2e7eb351de7754424b10a14910b858cf8b26f9",
-          "sha256": "6ba86c195ff79be1cd45080652212b9455940e345f33e77b7877586155d21e82",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.10.0-1_amd64.deb"
-        },
-        "1.9.0": {
-          "sha1": "d6429959dc473bb88dd7ea30858fb1f3952db260",
-          "sha256": "7dc6f44e7886f00d65220f3f9cb4dfb490291396349443a1b4904a5e1f1ce50f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.9.0-1_amd64.deb"
-        },
-        "1.6.2": {
-          "sha1": "bf1569b0ccd1b43332a25e05a3b08605f4a32f91",
-          "sha256": "69f15c8de056124974eacc11752d0ba3f3265b99bf01885ab1701b44c96623b5",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.6.2-1_amd64.deb"
-        },
-        "1.6.1": {
-          "sha1": "ac065b0993bdd55e1e9e20aa2194d897363a6db9",
-          "sha256": "6a3954abb8fa38971a916614444203b3709c6672431ec17b4b0fea922e8d2cfb",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.6.1-1_amd64.deb"
-        },
-        "1.5.4": {
-          "sha1": "d3c3d84269eead5c5bb2e0ef01ae71280754f121",
-          "sha256": "815510875866378b294a452200512c0bd6bb354a2e2d371b2e954b88aafefb28",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.5.4-1_amd64.deb"
-        },
-        "1.3.1": {
-          "sha1": "37fd1b19b3b73a63ddb4e254067c4c8b4a626571",
-          "sha256": "8989046b83c3e222b50d9e92b1250697957ad3afddf9f3cd5db4051dd23152bc",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.3.1-1_amd64.deb"
-        },
-        "1.3.0": {
-          "sha1": "6903b0f134bd8a6ce00c1a4c3cbea4839749a92d",
-          "sha256": "bc8d52fac77e9250102a627a404a939af1cb9c17e3c45610da20d381f924acd5",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.3.0-1_amd64.deb"
-        },
-        "1.2.1": {
-          "sha1": "6f43b4259537158348ab73b0411f9b4e05069b6a",
-          "sha256": "e34d52f6d843d83f7cc58db769ead44bab653f6541ff8494ff872a2292c1b35f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.2.1-1.ubuntu.12.04_amd64.deb"
-        },
-        "1.2.0": {
-          "sha1": "ce03ef0b8565655a996ee648d36ddb65913a3bb3",
-          "sha256": "16dfae20501cb28576caeaa4809ad6ebca10d994b3cc74117dbd2412f3c54319",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.2.0-1.ubuntu.12.04_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "7c2ee82f0ae03c5f90301a30e8f5de7798a8d497",
-          "sha256": "d19743dc9bb6597f8ac37be7cebcdb68e4af2e673254a153024eefdbf0e7a02f",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.1.1-1.ubuntu.12.04_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "5fdcb300fc673da88b3b4d08012a87a1a6a257cc",
-          "sha256": "8ff9d63f805d1e2378a295e851404ff27353d6b324f6df457345a7f4bf63c71c",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.1.0-1.ubuntu.12.04_amd64.deb"
-        },
-        "1.0.0": {
-          "sha1": "65aa681eab20a56757a9ed32bd50cabfc033ff47",
-          "sha256": "0a7678f46385897ef4390af72cf64c0900a6af5ca307590d1549d8e0095a2850",
-          "url": "https://packages.chef.io/stable/ubuntu/12.04/opscode-manage_1.0.0-1.ubuntu.12.04_amd64.deb"
-        }
-      }
-    },
-    "14.04": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
-          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-manage_2.2.1-1_amd64.deb"
-        },
-        "2.2.0": {
-          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
-          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-manage_2.2.0-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.0/ubuntu/12.04/chef-manage_2.1.0-1_amd64.deb"
         },
         "2.1.2": {
           "sha1": "7f5e9de9028713190fb8bb3d46a9dd646c9cab16",
           "sha256": "24a40c732eccf459f6c5237633a9dcd28cfac004894fa077ec72395f7ca5ea56",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-manage_2.1.2-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.2/ubuntu/12.04/chef-manage_2.1.2-1_amd64.deb"
         },
+        "2.2.0": {
+          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
+          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.0/ubuntu/12.04/chef-manage_2.2.0-1_amd64.deb"
+        },
+        "2.2.1": {
+          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
+          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.1/ubuntu/12.04/chef-manage_2.2.1-1_amd64.deb"
+        },
+        "2.3.0": {
+          "sha1": "b9a9965dc89493780fdadbe662c99b6db9f50531",
+          "sha256": "d8fbe396663d628c79ee5f9ae5b1b40d4e86a34e9a43ad9e6f27af3770314da3",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.3.0/ubuntu/12.04/chef-manage_2.3.0-1_amd64.deb"
+        },
+        "2.4.0": {
+          "sha1": "84274cb6d511a40f69fed58241c2b891a2d4bff0",
+          "sha256": "728daffb492bf450b966523bae85647fff0e1c63ff552c75a4e8ad8f79692559",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.0/ubuntu/12.04/chef-manage_2.4.0-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "9dafc26b5742c2c161b03681b54fb2a303e9c8ea",
+          "sha256": "cec87a9b1e537586de871708b3142070a5067b4fccc8b7a61052a6cc0961dc3c",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.1/ubuntu/12.04/chef-manage_2.4.1-1_amd64.deb"
+        },
+        "2.4.2": {
+          "sha1": "05be062f71b9cc0fb1ec8f7061e362a858ecb347",
+          "sha256": "eb170d606e7f95afab1d18350ba18a573d07d7ea7b60a6c11037d8ad40d660bf",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.2/ubuntu/12.04/chef-manage_2.4.2-1_amd64.deb"
+        },
+        "2.4.3": {
+          "sha1": "35a113952bf8cd3408f3c5b8d7a1034c4039e767",
+          "sha256": "0af176eb721daf021559f7df9e72e99c2f5f55aa39a1b7358a643955fbe91349",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.3/ubuntu/12.04/chef-manage_2.4.3-1_amd64.deb"
+        },
+        "2.4.4": {
+          "sha1": "70284cdb8803dad2d84e7f31d404c47fd35bbf76",
+          "sha256": "f8d3b1537f0d3b33bb99220ecb66a6128699f1df135d88154e8f39c5d6ab9727",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.4/ubuntu/12.04/chef-manage_2.4.4-1_amd64.deb"
+        },
+        "2.4.5": {
+          "sha1": "5ff98fb1ce60c7a3879dcefe9322f19fd8448922",
+          "sha256": "d201a67f205dfe4cda8a91f839835b123761be5ab363ec81577c1862069cbaf1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.5/ubuntu/12.04/chef-manage_2.4.5-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "bb4d17dc8182c157205d91c3a9e77230b0170843",
+          "sha256": "21b2ebb6d5995954778be0b031d6ea5c0f978b2ea450d25b0b6f5fc9f1d431ca",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.0/ubuntu/12.04/chef-manage_2.5.0-1_amd64.deb"
+        },
+        "2.5.1": {
+          "sha1": "e9af501a9a111bf0a0e0521723f8d8ded2c20d19",
+          "sha256": "b1ebdb94c4f9fc7da8bf549012112942061ccaf59097b5a697b008bb5b1a0fea",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.1/ubuntu/12.04/chef-manage_2.5.1-1_amd64.deb"
+        },
+        "2.5.3": {
+          "sha1": "86b3f31bf09aa260017d2bab2f1cb9aad14e2ec0",
+          "sha256": "26324b4560508d953f0fe1886bac51f8f4e24f484e7e7c25ad9374e825f46421",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.3/ubuntu/12.04/chef-manage_2.5.3-1_amd64.deb"
+        },
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.4/ubuntu/12.04/chef-manage_2.5.4-1_amd64.deb"
+        }
+      }
+    },
+    "10.04": {
+      "x86_64": {
         "2.1.1": {
           "sha1": "b6c87fd29d8af63413eba1b437dcae58712ff661",
           "sha256": "6f342c5759ca8ce28c5fe48a7e4c6244f5a5fcec21c6630b0eccd7c4e5a9d36d",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-manage_2.1.1-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.1/ubuntu/10.04/chef-manage_2.1.1-1_amd64.deb"
         },
         "2.1.0": {
           "sha1": "cde9372352ad57a720d52c42f2a61660a5b1feb3",
           "sha256": "b5f24bfb9b64f44362649fd7c53a3cd2aaff51ce1928837c94116079331f757c",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/chef-manage_2.1.0-1_amd64.deb"
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.0/ubuntu/10.04/chef-manage_2.1.0-1_amd64.deb"
         },
-        "1.21.0": {
-          "sha1": "84582862ce47d5f6db1e1ed89021c4b8efbda847",
-          "sha256": "0e78f58653b70a5f355e8bd0a5a763e52a32ce13d6a7b292b3c53537f7f336c5",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.21.0-1_amd64.deb"
+        "2.1.2": {
+          "sha1": "7f5e9de9028713190fb8bb3d46a9dd646c9cab16",
+          "sha256": "24a40c732eccf459f6c5237633a9dcd28cfac004894fa077ec72395f7ca5ea56",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.1.2/ubuntu/10.04/chef-manage_2.1.2-1_amd64.deb"
         },
-        "1.20.1": {
-          "sha1": "43c0f7a87b87a69ea321d7c98019f4b764bdaee2",
-          "sha256": "788bf1122d85d7cfaedbd97515daafb5ae58b3af8d2b9b9bfec5e3a41cfbc015",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.20.1-1_amd64.deb"
+        "2.2.0": {
+          "sha1": "7803e2696e317ce8f4cd9c3fcafd980141f61e00",
+          "sha256": "f87796d6bc26838abcf48403382c6f24bee8562147fa00b82fe56f4ee8c2b1c1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.0/ubuntu/10.04/chef-manage_2.2.0-1_amd64.deb"
         },
-        "1.20.0": {
-          "sha1": "fe224af718dca101e747980d33bb90f735806dbd",
-          "sha256": "49b369ad1b9d51741abd7d01930c9b29b604405cdfb1e67f4a604015dabcd66e",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.20.0-1_amd64.deb"
+        "2.2.1": {
+          "sha1": "4437a228f2943fd7548b6b5f5f923ca377fc0a7e",
+          "sha256": "8362282ac578f342eb008912e8ea0b4ea117507975be9910eff0a20ef4e3aea6",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.2.1/ubuntu/10.04/chef-manage_2.2.1-1_amd64.deb"
         },
-        "1.19.0": {
-          "sha1": "ec8056f15c752841c9997cbfe2e4cafedb78e6dd",
-          "sha256": "0246468fd6f6c0c16dab6592723bbd5b939cc11af1dacc40d269ea4166fc1952",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.19.0-1_amd64.deb"
-        },
-        "1.18.0": {
-          "sha1": "d8718b70df9cb33b74d69b0f180f5a80ea081c84",
-          "sha256": "d3cfdf75f9e277ab7eb3bd6469d96f24edfaaf4d7097ad728a74130109dffba6",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.18.0-1_amd64.deb"
-        },
-        "1.17.0": {
-          "sha1": "8e98dadcb98f9936b4c12a9df408b01bd3203597",
-          "sha256": "28646cdbcbcd491a40c3e3b463fc8be4d01db978ca33ab9f181395b62ece7a34",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.17.0-1_amd64.deb"
-        },
-        "1.13.0": {
-          "sha1": "98282b13e24269baa68eaec967281b963027e61a",
-          "sha256": "49fc31d7578872e849f98b2bd65829310f31196d30355d8d0aae87d3301e494d",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.13.0-1_amd64.deb"
-        },
-        "1.12.0": {
-          "sha1": "d421e1cf2b0567c69fdb4900b095cc6b4884f11c",
-          "sha256": "ed54afa7cfed03053281f7007dd78c3f468f78a8765da43589465d57ddf1e991",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.12.0-1_amd64.deb"
-        },
-        "1.11.4": {
-          "sha1": "3cd20d5703daabb0604808166e20dc493c681f5f",
-          "sha256": "edd8de156615043155744193e312089b491a37a1dd4173cfa2572113389eb5b3",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.11.4-1_amd64.deb"
-        },
-        "1.11.2": {
-          "sha1": "af898131ccc176b5b70c9b34b4c542c57a5e9bb1",
-          "sha256": "4bd77b023ec017e6edaa13986c9b5faec4bdae88a6adacd9942d410f07bc5430",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.11.2-1_amd64.deb"
-        },
-        "1.11.1": {
-          "sha1": "a9f0b0e03ef0671f1c0ba16b6232db931a59a673",
-          "sha256": "0cab3d8fb91d4835bdc416ef9d4ef45aeb65d38aa6383d6ea34c9d29c02e11ab",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.11.1-1_amd64.deb"
-        },
-        "1.11.0": {
-          "sha1": "abc395f0d88ef1cb9d1b5bebb66836384fa736f4",
-          "sha256": "1f5320d41fba392b0660b10ff9fdb2b357a4a83bc2244630d535bcc8f6daa97a",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.11.0-1_amd64.deb"
-        },
-        "1.10.0": {
-          "sha1": "2c2e7eb351de7754424b10a14910b858cf8b26f9",
-          "sha256": "6ba86c195ff79be1cd45080652212b9455940e345f33e77b7877586155d21e82",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.10.0-1_amd64.deb"
-        },
-        "1.9.0": {
-          "sha1": "d6429959dc473bb88dd7ea30858fb1f3952db260",
-          "sha256": "7dc6f44e7886f00d65220f3f9cb4dfb490291396349443a1b4904a5e1f1ce50f",
-          "url": "https://packages.chef.io/stable/ubuntu/14.04/opscode-manage_1.9.0-1_amd64.deb"
+        "2.3.0": {
+          "sha1": "b9a9965dc89493780fdadbe662c99b6db9f50531",
+          "sha256": "d8fbe396663d628c79ee5f9ae5b1b40d4e86a34e9a43ad9e6f27af3770314da3",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.3.0/ubuntu/10.04/chef-manage_2.3.0-1_amd64.deb"
         }
       }
     },
-    "11.04": {
+    "16.04": {
       "x86_64": {
-        "1.10.0": {
-          "sha1": "2c2e7eb351de7754424b10a14910b858cf8b26f9",
-          "sha256": "6ba86c195ff79be1cd45080652212b9455940e345f33e77b7877586155d21e82",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.10.0-1_amd64.deb"
+        "2.4.1": {
+          "sha1": "9dafc26b5742c2c161b03681b54fb2a303e9c8ea",
+          "sha256": "cec87a9b1e537586de871708b3142070a5067b4fccc8b7a61052a6cc0961dc3c",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.1/ubuntu/16.04/chef-manage_2.4.1-1_amd64.deb"
         },
-        "1.9.0": {
-          "sha1": "d6429959dc473bb88dd7ea30858fb1f3952db260",
-          "sha256": "7dc6f44e7886f00d65220f3f9cb4dfb490291396349443a1b4904a5e1f1ce50f",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.9.0-1_amd64.deb"
+        "2.4.2": {
+          "sha1": "05be062f71b9cc0fb1ec8f7061e362a858ecb347",
+          "sha256": "eb170d606e7f95afab1d18350ba18a573d07d7ea7b60a6c11037d8ad40d660bf",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.2/ubuntu/16.04/chef-manage_2.4.2-1_amd64.deb"
         },
-        "1.6.2": {
-          "sha1": "e6f6bb0de3caa504d25c4405ea2595bb4a3c2600",
-          "sha256": "dcf5b5fb8cde60b4b625f75b4d6f90d021f464e42b67c9de23715c9e533d18e5",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.6.2-1_amd64.deb"
+        "2.4.3": {
+          "sha1": "35a113952bf8cd3408f3c5b8d7a1034c4039e767",
+          "sha256": "0af176eb721daf021559f7df9e72e99c2f5f55aa39a1b7358a643955fbe91349",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.3/ubuntu/16.04/chef-manage_2.4.3-1_amd64.deb"
         },
-        "1.6.1": {
-          "sha1": "a4d936ccbbc86c2dcc68e459383fddbfe597ad22",
-          "sha256": "fc8f16e052007c36b46dbfdd11b970e5c681ddd0bbb74159b8e62745888e2459",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.6.1-1_amd64.deb"
+        "2.4.4": {
+          "sha1": "70284cdb8803dad2d84e7f31d404c47fd35bbf76",
+          "sha256": "f8d3b1537f0d3b33bb99220ecb66a6128699f1df135d88154e8f39c5d6ab9727",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.4/ubuntu/16.04/chef-manage_2.4.4-1_amd64.deb"
         },
-        "1.5.4": {
-          "sha1": "841c3e2d330fe214e58a7a6b02f64e812e49b6e6",
-          "sha256": "eadcd9e1beb84906cb40b636d649c6dc9e38032fb1b0e54ad2efd9e1282a3e6a",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.5.4-1_amd64.deb"
+        "2.4.5": {
+          "sha1": "5ff98fb1ce60c7a3879dcefe9322f19fd8448922",
+          "sha256": "d201a67f205dfe4cda8a91f839835b123761be5ab363ec81577c1862069cbaf1",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.4.5/ubuntu/16.04/chef-manage_2.4.5-1_amd64.deb"
         },
-        "1.3.1": {
-          "sha1": "4659bc89439a6b8643de805556948b4d2e1a5b3d",
-          "sha256": "24339ca49096d369a3cc9f80d8bcfdd02b64207e6b8f67d019770578301434c6",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.3.1-1_amd64.deb"
+        "2.5.0": {
+          "sha1": "bb4d17dc8182c157205d91c3a9e77230b0170843",
+          "sha256": "21b2ebb6d5995954778be0b031d6ea5c0f978b2ea450d25b0b6f5fc9f1d431ca",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.0/ubuntu/16.04/chef-manage_2.5.0-1_amd64.deb"
         },
-        "1.3.0": {
-          "sha1": "5dd8edd652fa767e485f399781ffdb5729777828",
-          "sha256": "d5bdba2961f91a33697814f70e5ca1bec1fdd7f2deaab669a8f4d66930062e64",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.3.0-1_amd64.deb"
+        "2.5.1": {
+          "sha1": "e9af501a9a111bf0a0e0521723f8d8ded2c20d19",
+          "sha256": "b1ebdb94c4f9fc7da8bf549012112942061ccaf59097b5a697b008bb5b1a0fea",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.1/ubuntu/16.04/chef-manage_2.5.1-1_amd64.deb"
         },
-        "1.2.1": {
-          "sha1": "194dfbaf7eea9bff752e3181a5f8ce7d45e770e5",
-          "sha256": "11ae7088f29009beed697e2b3aab64e1ae53b76ded03befaa6138f24ef80bd99",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.2.1-1.ubuntu.11.04_amd64.deb"
+        "2.5.3": {
+          "sha1": "86b3f31bf09aa260017d2bab2f1cb9aad14e2ec0",
+          "sha256": "26324b4560508d953f0fe1886bac51f8f4e24f484e7e7c25ad9374e825f46421",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.3/ubuntu/16.04/chef-manage_2.5.3-1_amd64.deb"
         },
-        "1.2.0": {
-          "sha1": "ff56e26274cd2c52e1f271468ded7939875ca103",
-          "sha256": "66ebc9110efcc9dbbe041bcc4ab2c797c5c72343258bac5431ad72f8718a762d",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.2.0-1.ubuntu.11.04_amd64.deb"
-        },
-        "1.1.1": {
-          "sha1": "14f3e8226295308d290d8f4231ee86a089c73ce4",
-          "sha256": "f15f308601b082bbc26e86b59b05755cd6328b49c9fb276245cea818d627abd5",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.1.1-1.ubuntu.11.04_amd64.deb"
-        },
-        "1.1.0": {
-          "sha1": "6d2852fd535607efa09d53afd3e1eefdd66cbb23",
-          "sha256": "6720f2ccde243e9a1433f5d3c71b96f2961b876a6f30635d0d4e631bcb877238",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.1.0-1.ubuntu.11.04_amd64.deb"
-        },
-        "1.0.0": {
-          "sha1": "302b1bb9c578e01f878006ba3e9d579af557f319",
-          "sha256": "3ee9f2fc7cc5cb3470da85fec735e140553d4f2609f99192d9445d7c65cc4ad3",
-          "url": "https://packages.chef.io/stable/ubuntu/11.04/opscode-manage_1.0.0-1.ubuntu.11.04_amd64.deb"
+        "2.5.4": {
+          "sha1": "64471611b0c63af8c212e9b767d1246aada74886",
+          "sha256": "6141a1a099c35ba224cefea7a4bd35ec07af21a3aefdcd96b307e70de652abde",
+          "url": "https://packages.chef.io/files/stable/chef-manage/2.5.4/ubuntu/16.04/chef-manage_2.5.4-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2016-04-21 11:47:28 -0700"
+    "timestamp": "2017-06-22 12:03:52 -0700"
   }
 }
