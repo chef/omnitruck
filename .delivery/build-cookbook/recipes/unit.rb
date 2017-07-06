@@ -4,6 +4,8 @@
 # This phase is run as the delivery user
 ################################################################################
 
+secrets = get_project_secrets
+
 # This resource queries the Github API to determine "completeness" based on
 # the Github Status API. It _is_ possible that if you push too many patchsets
 # too quickly, you _could_ end up with a queue backup. However, since all
