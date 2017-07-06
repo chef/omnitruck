@@ -17,5 +17,6 @@ depends 'cia_infra'
 depends 'fastly'
 depends 'fancy_execute'
 depends 'habitat-build'
+depends 'expeditor'
 
 gem 'aws-sdk', '~> 2'
