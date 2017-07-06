@@ -4,16 +4,15 @@
 # This phase is run as the delivery user
 ################################################################################
 
-# Run unit tests on the cookbooks that are in cookbooks/
-include_recipe 'delivery-truck::unit'
+secrets = get_project_secrets
 
-include_recipe 'cia_infra::bundler_install_deps'
-
-execute 'run rspec' do
-  command "bundle exec rake spec"
-  cwd node['delivery_builder']['repo']
-  environment({
-    "PATH" => '/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games'
-  })
-  user node['delivery_builder']['build_user']
+# This resource queries the Github API to determine "completeness" based on
+# the Github Status API. It _is_ possible that if you push too many patchsets
+# too quickly, you _could_ end up with a queue backup. However, since all
+# patchsets are querying the same endpoint, they will eventually clean themselves
+# out. You won't have to wait for each patchset to timeout.
+github_pull_request_status "chef/#{workflow_change_project}" do
+  api_token secrets['github']['chef-delivery']
+  git_ref workflow_stage == 'verify' ? workflow_change_github_branch : workflow_change_merge_sha
+  action :wait_for_success_or_failure
 end

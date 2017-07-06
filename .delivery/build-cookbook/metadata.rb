@@ -6,6 +6,8 @@ description      'Installs/Configures build-cookbook'
 long_description 'Installs/Configures build-cookbook'
 version          '0.1.0'
 
+chef_version '>= 12.19'
+
 depends 'delivery-sugar'
 depends 'delivery-truck'
 depends 'chef_handler'
@@ -17,5 +19,6 @@ depends 'cia_infra'
 depends 'fastly'
 depends 'fancy_execute'
 depends 'habitat-build'
+depends 'expeditor'
 
 gem 'aws-sdk', '~> 2'
