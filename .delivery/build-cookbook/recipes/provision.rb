@@ -59,7 +59,7 @@ instances = []
     attribute 'delivery_org', node['delivery']['change']['organization']
     attribute 'project', node['delivery']['change']['project']
     tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-    machine_options machine_options(node, 'us-west-2', i)
+    machine_options machine_opts(i)
     files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
     converge false
     action :setup

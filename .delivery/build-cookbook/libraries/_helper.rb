@@ -89,9 +89,9 @@ def sns_topic
   end
 end
 
-def machine_options(node, aws_region, instance_num)
+def machine_opts(instance_num)
   deep_merge(
-    CIAInfra.machine_options(node, aws_region, instance_num),
+    CIAInfra.machine_options(node, 'us-west-2', instance_num),
     convergence_options: {
       chef_server: chef_server_details
     }
