@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license          'all_rights'
 description      'Installs/Configures build-cookbook'
 long_description 'Installs/Configures build-cookbook'
-version          '0.1.0'
+version          '0.1.1'
 
 chef_version '>= 12.19'
 
@@ -20,5 +20,3 @@ depends 'fastly'
 depends 'fancy_execute'
 depends 'habitat-build'
 depends 'expeditor'
-
-gem 'aws-sdk', '~> 2'
