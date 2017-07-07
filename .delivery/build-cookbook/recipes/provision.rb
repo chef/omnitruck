@@ -6,7 +6,7 @@ fastly_creds = with_server_config { encrypted_data_bag_item_for_environment('cia
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
 
-ssh = encrypted_data_bag_item_for_environment('cia-creds', 'aws-ssh')
+ssh = with_server_config { encrypted_data_bag_item_for_environment('cia-creds', 'aws-ssh') }
 ssh_private_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', node['delivery']['change']['project'])
 ssh_public_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', "#{node['delivery']['change']['project']}.pub")
 
