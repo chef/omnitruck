@@ -29,15 +29,13 @@ pkg_build_deps=(
   core/make
   core/git
 )
-pkg_deps=(
 
+pkg_deps=(
+  core/ruby/$(cat $PLAN_CONTEXT/../../.ruby-version)
+  core/bundler
   core/cacerts
   core/glibc
   core/coreutils
-  # omnitruck needs a particular version of bundler and ruby, there
-  # are issues with json in ruby 2.4 that we need to resolve first.
-  core/bundler/1.13.7/20170104000124
-  core/ruby/2.3.1/20161214031900
 )
 
 pkg_svc_user="hab"
