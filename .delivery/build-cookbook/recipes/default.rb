@@ -26,10 +26,8 @@ include_recipe 'habitat-build::default'
 
 include_recipe 'fastly::default'
 
-load_delivery_chef_config
-
 # We need aws creds so we get them here.
-aws_creds = encrypted_data_bag_item_for_environment('cia-creds', 'chef-cia')
+aws_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds', 'chef-cia') }
 
 template File.join(node['delivery']['workspace']['root'], 'aws_config') do
   source 'aws_config.erb'

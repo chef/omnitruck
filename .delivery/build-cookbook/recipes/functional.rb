@@ -1,7 +1,5 @@
 include_recipe 'chef-sugar::default'
 
-load_delivery_chef_config
-
 site_name = 'omnitruck'
 domain_name = 'chef.io'
 

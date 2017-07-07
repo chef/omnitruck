@@ -1,8 +1,8 @@
 include_recipe 'chef-sugar::default'
 
+fastly_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','fastly') }
+
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
-load_delivery_chef_config
-fastly_creds = encrypted_data_bag_item_for_environment('cia-creds','fastly')
 
 ssh = encrypted_data_bag_item_for_environment('cia-creds', 'aws-ssh')
 ssh_private_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', node['delivery']['change']['project'])
@@ -12,12 +12,8 @@ require 'chef/provisioning/aws_driver'
 require 'pp'
 with_driver 'aws::us-west-2'
 
-with_chef_server Chef::Config[:chef_server_url],
-  client_name: Chef::Config[:node_name],
-  signing_key_filename: Chef::Config[:client_key],
-  trusted_certs_dir: '/var/opt/delivery/workspace/etc/trusted_certs',
-  ssl_verify_mode: :verify_none,
-  verify_api_cert: false
+with_chef_server chef_server_details[:chef_server_url],
+                 chef_server_details[:options]
 
 if node['delivery']['change']['stage'] == 'delivered'
   instance_name = node['delivery']['change']['project'].gsub(/_/, '-')
@@ -48,15 +44,16 @@ fqdn = "#{instance_name}.#{domain_name}"
 machine_batch do
   1.upto(instance_quantity) do |i|
     machine "#{instance_name}-#{i}" do
-      action :converge
+      chef_server chef_server_details
       chef_environment delivery_environment
       attribute 'delivery_org', node['delivery']['change']['organization']
       attribute 'project', node['delivery']['change']['project']
       tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-      machine_options CIAInfra.machine_options(node, 'us-west-2')
+      machine_options machine_options(node, 'us-west-2', i)
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
       run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
       converge true
+      action :converge
     end
   end
 end

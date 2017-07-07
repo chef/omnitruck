@@ -1,10 +1,8 @@
 include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::provision'
 
-load_delivery_chef_config
-
-aws_creds = encrypted_data_bag_item_for_environment('cia-creds','chef-secure')
-fastly_creds = encrypted_data_bag_item_for_environment('cia-creds','fastly')
+aws_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','chef-secure') }
+fastly_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','fastly') }
 
 ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
 
@@ -13,16 +11,10 @@ ssh_private_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh'
 ssh_public_key_path =  File.join(node['delivery']['workspace']['cache'], '.ssh', "#{node['delivery']['change']['project']}.pub")
 
 require 'chef/provisioning/aws_driver'
-require 'pp'
 with_driver 'aws::us-west-2'
 
-with_chef_server Chef::Config[:chef_server_url],
-  client_name: Chef::Config[:node_name],
-  signing_key_filename: Chef::Config[:client_key],
-  trusted_certs_dir: '/var/opt/delivery/workspace/etc/trusted_certs',
-  ssl_verify_mode: :verify_none,
-  verify_api_cert: false
-
+with_chef_server chef_server_details[:chef_server_url],
+                 chef_server_details[:options]
 
 if node['delivery']['change']['stage'] == 'delivered'
   instance_name = node['delivery']['change']['project'].gsub(/_/, '-')
@@ -62,14 +54,15 @@ instances = []
 
 1.upto(instance_quantity) do |i|
   machine "#{instance_name}-#{i}" do
-    action :setup
+    chef_server chef_server_details
     chef_environment delivery_environment
     attribute 'delivery_org', node['delivery']['change']['organization']
     attribute 'project', node['delivery']['change']['project']
     tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-    machine_options CIAInfra.machine_options(node, 'us-west-2', i)
+    machine_options machine_options(node, 'us-west-2', i)
     files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
     converge false
+    action :setup
   end
 
   subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
@@ -78,6 +71,7 @@ end
 
 #load_balancer "#{instance_name}-elb" do
 #  load_balancer_options \
+#    chef_server chef_server_details
 #    listeners: [{
 #      port: 80,
 #      protocol: :http,

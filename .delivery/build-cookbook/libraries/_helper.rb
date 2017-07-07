@@ -4,6 +4,7 @@
 #
 # Copyright (C) Chef Software, Inc. 2015
 #
+include Chef::Mixin::DeepMerge
 
 Chef::Resource.send(:include, Chef::Mixin::ShellOut)
 
@@ -86,4 +87,13 @@ def sns_topic
   else
     'arn:aws:sns:us-west-2:109983887395:cia-notify'
   end
+end
+
+def machine_options(node, aws_region, instance_num)
+  deep_merge(
+    CIAInfra.machine_options(node, aws_region, instance_num),
+    convergence_options: {
+      chef_server: chef_server_details
+    }
+  )
 end
