@@ -32,6 +32,8 @@ cookbook_file '/usr/local/bin/poller-cron.sh' do
   mode '0755'
 end
 
-cookbook_file '/etc/cron.d/poller-cron' do
-  mode '0755'
+cron 'run_poller_cron_sh' do
+  minute '*/5'
+  user 'hab'
+  command '/usr/local/bin/poller-cron.sh'
 end
