@@ -25,8 +25,13 @@ end
 
 hab_sup 'default'
 
-hab_service 'chef-es/omnitruck'
-hab_service 'chef-es/omnitruck-unicorn-proxy'
+hab_service 'chef-es/omnitruck' do
+  subscribes :restart, 'hab_package[chef-es/omnitruck]'
+end
+
+hab_service 'chef-es/omnitruck-unicorn-proxy' do
+  subscribes :restart, 'hab_package[chef-es/omnitruck-unicorn-proxy]'
+end
 
 cookbook_file '/usr/local/bin/poller-cron.sh' do
   mode '0755'
