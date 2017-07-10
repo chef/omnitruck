@@ -14,8 +14,8 @@ cp -v {{pkg.svc_config_path}}/poller_config.yml {{pkg.svc_static_path}}/config/c
 echo "Copying unicorn.rb"
 cp -v {{pkg.svc_config_path}}/unicorn.rb {{pkg.svc_static_path}}/config/unicorn.rb
 
-export GEM_HOME="{{pkg.svc_static_path}}/vendor/bundle/ruby/2.3.0"
-export GEM_PATH="$(hab pkg path core/ruby)/lib/ruby/gems/2.3.0:$(hab pkg path core/bundler):$GEM_HOME"
+export GEM_HOME="{{pkg.svc_static_path}}/vendor/bundle/ruby/2.4.0"
+export GEM_PATH="$(hab pkg path core/ruby)/lib/ruby/gems/2.4.0:$(hab pkg path core/bundler):$GEM_HOME"
 export LD_LIBRARY_PATH="$(hab pkg path core/gcc-libs)/lib"
 export SSL_CERT_FILE="$(hab pkg path core/cacerts)/ssl/cert.pem"
 
