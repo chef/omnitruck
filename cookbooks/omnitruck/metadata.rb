@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache2'
 description 'Installs/Configures omnitruck'
 long_description 'Installs/Configures omnitruck'
-version '0.4.4'
+version '0.4.5'
 
 depends 'delivery-sugar'
 depends 'cia_infra'
