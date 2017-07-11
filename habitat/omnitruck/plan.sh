@@ -22,20 +22,12 @@ pkg_upstream_url="https://github.com/chef/omnitruck"
 pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"
 pkg_description="API to query available versions of Omnibus artifacts"
 pkg_license=('Apache-2.0')
+pkg_scaffolding=core/scaffolding-ruby
+
+scaffolding_ruby_pkg=core/ruby/$(cat $PLAN_CONTEXT/../../.ruby-version)
 
 pkg_build_deps=(
-  core/coreutils
-  core/gcc
-  core/make
   core/git
-)
-
-pkg_deps=(
-  core/ruby/$(cat $PLAN_CONTEXT/../../.ruby-version)
-  core/bundler
-  core/cacerts
-  core/glibc
-  core/coreutils
 )
 
 pkg_svc_user="hab"
@@ -65,16 +57,6 @@ do_prepare() {
 do_build() {
   pushd "$HAB_CACHE_SRC_PATH/${pkg_name}-${pkg_version}" > /dev/null
 
-  # shellcheck disable=SC2153
-  export CPPFLAGS="${CPPFLAGS} ${CFLAGS}"
-
-  # shellcheck disable=SC2155
-  local _bundler_dir=$(pkg_path_for bundler)
-
-  # shellcheck disable=SC2154
-  export GEM_HOME=${pkg_prefix}/vendor/bundle
-  export GEM_PATH=${_bundler_dir}:${GEM_HOME}
-
   bundle install --jobs 2 --retry 5 --deployment --binstubs
 
   popd > /dev/null
@@ -87,12 +69,6 @@ do_install() {
   # sometimes gem authors commit and release files that aren't "other" readable.
   find ${pkg_prefix}/static -not -perm -o+r -exec chmod o+r {} \;
 
-  for binstub in ${pkg_prefix}/static/bin/*; do
-    build_line "Setting shebang for ${binstub} to 'ruby'"
-    [[ -f $binstub ]] && sed -e "s#/usr/bin/env ruby#$(pkg_path_for ruby)/bin/ruby#" -i "$binstub"
-  done
-
-  fix_interpreter ${pkg_prefix}/static/poller core/coreutils bin/env
   popd > /dev/null
 }
 
