@@ -1,7 +1,6 @@
 #!/bin/bash
 
-PATH=$(hab pkg path core/bundler)/bin:$(hab pkg path core/ruby)/bin:$(hab pkg path
-core/coreutils)/bin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/usr/sbin/:/bin:/sbin
+PATH=$(hab pkg path core/bundler)/bin:$(hab pkg path core/ruby)/bin:$(hab pkg path core/coreutils)/bin:/usr/local/bin:/usr/local/sbin/:/usr/bin:/usr/sbin/:/bin:/sbin
 RUBY_VERSION="$(hab pkg path core/ruby | rev | cut -d '/' -f 2 | rev | cut -d '.' -f 1-2).0"
 GEM_HOME="$(hab pkg path chef-es/omnitruck)/static/vendor/bundle/ruby/$RUBY_VERSION"
 GEM_PATH="$(hab pkg path core/ruby)/lib/ruby/gems/$RUBY_VERSION:$(hab pkg path core/bundler):$GEM_HOME"
