@@ -30,6 +30,10 @@ pkg_build_deps=(
   core/git
 )
 
+pkg_deps=(
+  core/coreutils
+)
+
 pkg_svc_user="hab"
 pkg_svc_group=$pkg_svc_user
 
@@ -68,6 +72,13 @@ do_install() {
   cp -R . "${pkg_prefix}/static"
   # sometimes gem authors commit and release files that aren't "other" readable.
   find ${pkg_prefix}/static -not -perm -o+r -exec chmod o+r {} \;
+
+  for binstub in ${pkg_prefix}/static/bin/*; do
+    build_line "Setting shebang for ${binstub} to 'ruby'"
+    [[ -f $binstub ]] && sed -e "s#/usr/bin/env ruby#$(pkg_path_for ruby)/bin/ruby#" -i "$binstub"
+  done
+
+  fix_interpreter ${pkg_prefix}/static/poller core/coreutils bin/env
 
   popd > /dev/null
 }
