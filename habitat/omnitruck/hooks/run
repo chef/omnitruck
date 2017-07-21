@@ -1,8 +1,0 @@
-#!/bin/bash
-
-export HOME="/hab"
-
-cd {{pkg.svc_static_path}}
-
-exec 2>&1
-exec bin/unicorn -E {{cfg.app_environment}} -c {{pkg.svc_static_path}}/config/unicorn.rb {{pkg.svc_static_path}}/config.ru

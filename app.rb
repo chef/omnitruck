@@ -40,7 +40,7 @@ require 'chef/version_resolver'
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
 
-  config_file './config/config.yml'
+  config_file ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
   class InvalidChannelName < StandardError; end
 
