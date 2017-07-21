@@ -1,0 +1,3 @@
+production:
+  virtual_path: '{{cfg.omnitruck.virtual_path}}'
+  metadata_dir: '{{cfg.omnitruck.metadata_dir}}'

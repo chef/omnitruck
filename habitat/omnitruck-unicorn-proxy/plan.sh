@@ -16,10 +16,7 @@
 #
 pkg_name=omnitruck-unicorn-proxy
 pkg_origin=chef-es
-pkg_version=1.0.0
-pkg_shasum=undefined
-pkg_source=nosuchfile.tar.xz
-pkg_upstream_url="http://nginx.org/"
+pkg_version=0.1.0
 pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"
 pkg_description="Nginx HTTP Proxy for Omnitruck"
 pkg_license=('Apache-2.0')
@@ -32,32 +29,13 @@ pkg_svc_group=$pkg_svc_user
 pkg_exports=(
   [port]=server.listen
 )
+
 pkg_exposes=(port)
-
-do_verify() {
-  return 0
-}
-
-do_begin() {
-  return 0
-}
 
 do_build() {
   return 0
 }
 
-do_download() {
-  return 0
-}
-
 do_install() {
-  return 0
-}
-
-do_prepare() {
-  return 0
-}
-
-do_unpack() {
   return 0
 }

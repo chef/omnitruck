@@ -29,7 +29,7 @@ class Poller
     end
     optparse.parse!
 
-    @options[:config] = "./config/config.yml"
+    @options[:config] = ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
     required = [:environment, :config]
     missing = required.select { |opt| @options[opt].nil? }

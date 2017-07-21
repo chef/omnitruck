@@ -9,6 +9,6 @@ worker_processes = 8
 backlog = 1024
 tcp_nodelay = true
 
-[poller]
+[omnitruck]
 virtual_path = ""
 metadata_dir = "/hab/svc/omnitruck/var/poller_data"
