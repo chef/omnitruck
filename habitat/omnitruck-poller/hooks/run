@@ -2,10 +2,9 @@
 #
 exec 2>&1
 
-export OMNITRUCK_YAML="/hab/svc/omnitruck/config/config.yml"
-export SSL_CERT_FILE="$(hab pkg path core/cacerts)/ssl/cert.pem"
+. /hab/svc/omnitruck/config/dotenv
 
-cd $"$(hab pkg path {{pkg.origin}}/omnitruck)"/app
+cd $OMNITRUCK_HOME
 
 exec bundle exec ./poller -e production
 

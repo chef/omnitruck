@@ -9,13 +9,3 @@ pkg_license=('Apache-2.0')
 
 pkg_scaffolding=core/scaffolding-ruby
 scaffolding_ruby_pkg=core/ruby/$(cat "$PLAN_CONTEXT/../.ruby-version")
-
-pkg_deps=(
-  core/coreutils
-)
-
-do_install() {
-  do_default_install
-
-  fix_interpreter ${pkg_prefix}/app/poller core/coreutils bin/env
-}
