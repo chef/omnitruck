@@ -1,9 +1,0 @@
-#!/bin/sh
-#
-exec 2>&1
-
-export OMNITRUCK_YAML={{pkg.svc_config_path}}/config.yml
-
-cd {{pkg.path}}/app
-
-exec bundle exec unicorn -E production -c {{pkg.svc_config_path}}/unicorn.rb config.ru

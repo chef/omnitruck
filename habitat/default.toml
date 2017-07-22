@@ -1,14 +1,6 @@
 port = 80
 app_environment = "production"
 
-[unicorn]
-listen = "/hab/svc/omnitruck/var/unicorn.sock.0"
-timeout = 60
-preload_app = false
-worker_processes = 8
-backlog = 1024
-tcp_nodelay = true
-
 [omnitruck]
 virtual_path = ""
 metadata_dir = "/hab/svc/omnitruck/var/poller_data"
