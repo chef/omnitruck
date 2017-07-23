@@ -6,7 +6,4 @@ exec 2>&1
 
 cd $OMNITRUCK_HOME
 
-exec bundle exec ./poller -e production
-
-# TODO: Figure out why sleep ends script
-exec sleep 5m
+exec bundle exec ./poller -e production -s 300
