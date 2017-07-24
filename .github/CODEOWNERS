@@ -1,0 +1,5 @@
+# Order is important. The last matching pattern has the most precedence.
+
+*             @chef/omnitruck-maintainers
+.delivery/**  @chef/engineering-services
+.expeditor/** @chef/engineering-services
