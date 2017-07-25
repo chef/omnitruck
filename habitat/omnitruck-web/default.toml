@@ -1,7 +1,10 @@
 [unicorn]
-listen = "/hab/svc/omnitruck/var/unicorn.sock.0"
+# pkg_exports may break if cfg.unicorn.listen is set to a unix socket rather
+# than a TCP socket. While unix sockets are faster, they prohibit us from using
+# docker containers since unix sockets are scoped to each container.
+listen = "127.0.0.1"
+listen_port = 8080
+listen_opts = ":tcp_nopush => true"
 timeout = 60
 preload_app = false
 worker_processes = 8
-backlog = 1024
-tcp_nodelay = true

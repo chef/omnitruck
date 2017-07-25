@@ -1,0 +1,7 @@
+#!{{pkgPathFor "core/coreutils"}}/bin/env ruby
+
+require 'net/http'
+
+uri = URI.parse('http://127.0.0.1:{{cfg.app.port}}/_status')
+result = Net::HTTP.get_response(uri)
+raise result.code_type if result.is_a?(Net::HTTPError)

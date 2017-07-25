@@ -1,4 +1,4 @@
 #!/bin/sh
 #
-mkdir -p {{pkg.svc_path}}/nginx
-chown hab:hab {{pkg.svc_path}}/nginx
+mkdir -p {{pkg.svc_path}}/{{cfg.proxy_cache.path}}
+chown hab:hab {{pkg.svc_path}}/{{cfg.proxy_cache.path}}

@@ -1,6 +1,6 @@
 worker_rlimit_nofile = 8192
 worker_processes = "auto"
-upstream_server = "unix:/hab/svc/omnitruck/var/unicorn.sock.0"
+upstream_server = "localhost:8080"
 
 [http]
 sendfile = "on"
@@ -11,8 +11,8 @@ keepalive_timeout = "20s"
 [events]
 worker_connections = 1024
 
-[proxy_cache_path]
-path = "/hab/svc/omnitruck-unicorn-proxy/nginx/proxy"
+[proxy_cache]
+path = "nginx/proxy"
 levels = "1:2"
 keys_zone = "omnitruck-cache:50m"
 max_size = "1000m"
