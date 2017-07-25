@@ -19,21 +19,21 @@ hab_package 'chef-es/omnitruck' do
   version node['applications']['omnitruck']
 end
 
-hab_package 'chef-es/omnitruck-unicorn-proxy' do
-  version node['applications']['omnitruck-unicorn-proxy']
+hab_package 'chef-es/omnitruck-poller' do
+  version node['applications']['omnitruck-poller']
+end
+
+hab_package 'chef-es/omnitruck-web' do
+  version node['applications']['omnitruck-web']
+end
+
+hab_package 'chef-es/omnitruck-web-proxy' do
+  version node['applications']['omnitruck-web-proxy']
 end
 
 hab_sup 'default'
 
 hab_service 'chef-es/omnitruck'
-hab_service 'chef-es/omnitruck-unicorn-proxy'
-
-cookbook_file '/usr/local/bin/poller-cron.sh' do
-  mode '0755'
-end
-
-cron 'run_poller_cron_sh' do
-  minute '*/5'
-  user 'hab'
-  command '/usr/local/bin/poller-cron.sh'
-end
+hab_service 'chef-es/omnitruck-poller'
+hab_service 'chef-es/omnitruck-web'
+hab_service 'chef-es/omnitruck-web-proxy'

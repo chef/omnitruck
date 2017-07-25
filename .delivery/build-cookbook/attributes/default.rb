@@ -5,5 +5,7 @@ default['ciainfra']['security_groups'] = ['sg-9d9223f9']
 
 default['delivery']['project_apps'] = %w(
   omnitruck
-  omnitruck-unicorn-proxy
+  omnitruck-poller
+  omnitruck-web
+  omnitruck-web-proxy
 )
