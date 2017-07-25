@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-pkg_name=omnitruck-unicorn-proxy
+pkg_name=omnitruck-web-proxy
 pkg_origin=chef-es
 pkg_version=0.1.0
 pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"

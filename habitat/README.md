@@ -11,9 +11,9 @@ omnitruck-web
 - depends on omnitruck
 - runs unicorn service
 
-omnitruck-unicorn-proxy
+omnitruck-web-proxy
 - unicorn nginx config
-- used by omnitruck-web unicorn service
+- used by omnitruck-web service
 
 build 'em all; start 'em all
 
