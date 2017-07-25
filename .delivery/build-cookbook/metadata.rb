@@ -8,8 +8,6 @@ version          '0.1.3'
 
 chef_version '>= 12.19'
 
-gem 'json', '< 2.0'
-
 depends 'delivery-sugar'
 depends 'delivery-truck'
 depends 'chef_handler'
