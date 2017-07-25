@@ -2,8 +2,9 @@ require 'yajl'
 require "mixlib/install"
 require "mixlib/install/options"
 require "mixlib/install/backend/package_router"
-
+require 'chef/version'
 require "benchmark"
+
 class Chef
   class ProjectManifest
     attr_reader :project_name

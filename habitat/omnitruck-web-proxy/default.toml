@@ -12,7 +12,7 @@ keepalive_timeout = "20s"
 worker_connections = 1024
 
 [proxy_cache_path]
-path = "/hab/svc/omnitruck-unicorn-proxy/nginx/proxy"
+path = "/hab/svc/omnitruck-web-proxy/nginx/proxy"
 levels = "1:2"
 keys_zone = "omnitruck-cache:50m"
 max_size = "1000m"

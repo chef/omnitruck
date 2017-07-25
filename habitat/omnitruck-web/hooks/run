@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+exec 2>&1
+
+. /hab/svc/omnitruck/config/dotenv
+
+cd $OMNITRUCK_HOME
+
+exec bundle exec unicorn -E production -c /hab/svc/omnitruck/config/unicorn.rb config.ru

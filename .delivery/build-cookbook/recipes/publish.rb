@@ -21,10 +21,17 @@ if habitat_origin_key?
   _origin = keyname.split('-')[0...-1].join('-')
 end
 
-%w{omnitruck omnitruck-unicorn-proxy}.each do |pkg|
+packages = {
+  "omnitruck" => "#{habitat_plan_dir}",
+  "omnitruck-poller" => "#{habitat_plan_dir}/omnitruck-poller",
+  "omnitruck-web" => "#{habitat_plan_dir}/omnitruck-web",
+  "omnitruck-web-proxy" => "#{habitat_plan_dir}/omnitruck-web-proxy",
+}
+
+packages.each do |pkg, path|
   hab_build pkg do
     origin _origin
-    plan_dir ::File.join(habitat_plan_dir, pkg)
+    plan_dir path
     home_dir delivery_workspace
     cwd node['delivery']['workspace']['repo']
     auth_token project_secrets['habitat']['depot_token']
@@ -33,3 +40,4 @@ end
     action [:build, :publish, :save_application_release]
   end
 end
+

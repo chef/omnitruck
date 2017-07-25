@@ -11,6 +11,7 @@ require 'chef/version'
 
 class Poller
   attr_reader :config
+  attr_reader :options
 
   def initialize
     @options = {}
@@ -26,10 +27,14 @@ class Poller
               "Specify this application's environment - REQUIRED") do |e|
         @options[:environment] = e
       end
+      opts.on('-s SLEEP',
+              "Specify a sleep interval that will infinitely loop execution") do |s|
+        @options[:sleep] = s
+      end
     end
     optparse.parse!
 
-    @options[:config] = "./config/config.yml"
+    @options[:config] = ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
     required = [:environment, :config]
     missing = required.select { |opt| @options[opt].nil? }
@@ -54,7 +59,15 @@ class Poller
 end
 
 if $0 == __FILE__
-  Poller.new.run
-end
+  poller = Poller.new
 
-exit
+  # This could be trapped and looped, but the poller will be deprecated next gen
+  # This will suffice
+  poller.run
+
+  while poller.options[:sleep]
+    puts "Sleep time set to #{poller.options[:sleep]}"
+    sleep poller.options[:sleep].to_i
+    poller.run
+  end
+end
