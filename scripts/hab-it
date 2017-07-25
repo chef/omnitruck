@@ -1,6 +1,6 @@
 #!/bin/sh
 
-build && \
+build habitat && \
 build habitat/omnitruck-poller && \
 build habitat/omnitruck-web && \
 build habitat/omnitruck-web-proxy && \
