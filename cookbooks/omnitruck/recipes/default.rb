@@ -3,9 +3,6 @@
 # Recipe:: default
 #
 
-# Need to run `make` to install json gem
-include_recipe 'build-essential'
-
 group 'hab'
 
 user 'hab' do
