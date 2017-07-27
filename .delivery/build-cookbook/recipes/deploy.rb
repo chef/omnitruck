@@ -41,6 +41,29 @@ end
 domain_name = 'chef.io'
 fqdn = "#{instance_name}.#{domain_name}"
 
+# Instances using latest omnitruck habitat packages
+# Prepended instance number with a "0" to force creation of new instances
+machine_batch do
+  1.upto(instance_quantity) do |i|
+    machine "#{instance_name}-0#{i}" do
+      chef_server chef_server_details
+      chef_environment delivery_environment
+      attribute 'delivery_org', node['delivery']['change']['organization']
+      attribute 'project', node['delivery']['change']['project']
+      tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+      machine_options machine_opts(i)
+      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+      run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
+      converge true
+      action :converge
+    end
+  end
+end
+
+# Resources for managing old instances
+# These will eventually be destroyed
+# Keeping them to prevent downtime
+# action has been changed to :nothing
 machine_batch do
   1.upto(instance_quantity) do |i|
     machine "#{instance_name}-#{i}" do
@@ -53,7 +76,7 @@ machine_batch do
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
       run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
       converge true
-      action :converge
+      action :nothing
     end
   end
 end
