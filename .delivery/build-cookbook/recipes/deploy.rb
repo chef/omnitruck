@@ -53,7 +53,7 @@ machine_batch do
       tags node['delivery']['change']['organization'], node['delivery']['change']['project']
       machine_options machine_opts(i)
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-      run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
+      run_list ['recipe[build-essential]', 'recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
       converge true
       action :converge
     end
@@ -74,7 +74,7 @@ machine_batch do
       tags node['delivery']['change']['organization'], node['delivery']['change']['project']
       machine_options machine_opts(i)
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-      run_list ['recipe[build-essential]', 'recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
+      run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
       converge true
       action :nothing
     end
