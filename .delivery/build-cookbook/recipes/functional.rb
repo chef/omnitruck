@@ -31,3 +31,38 @@ ruby_block 'check some things we broke' do
     end
   end
 end
+
+# Teardown Acceptance, Union, and Reheasal Omnitruck instances.
+if node['delivery']['change']['stage'] == 'delivered'
+  %w(acceptance union rehearsal).each do |env|
+    machine_batch do
+      # Nodes with name scheme: "omnitruck-env-1"
+      1.upto(instance_quantity) do |i|
+        machine "#{instance_name}-#{i}" do
+          chef_server chef_server_details
+          chef_environment env
+          attribute 'delivery_org', node['delivery']['change']['organization']
+          attribute 'project', node['delivery']['change']['project']
+          tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+          machine_options machine_opts(i)
+          converge false
+          action :destroy
+        end
+      end
+
+      # Nodes with name scheme: "omnitruck-env-01"
+      1.upto(instance_quantity) do |i|
+        machine "#{instance_name}-0#{i}" do
+          chef_server chef_server_details
+          chef_environment env
+          attribute 'delivery_org', node['delivery']['change']['organization']
+          attribute 'project', node['delivery']['change']['project']
+          tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+          machine_options machine_opts(i)
+          converge false
+          action :destroy
+        end
+      end
+    end
+  end
+end
