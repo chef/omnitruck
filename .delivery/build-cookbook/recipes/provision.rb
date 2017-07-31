@@ -71,26 +71,6 @@ instances = []
   instances << "#{instance_name}-#{i}"
 end
 
-# Resources for managing old instances
-# These will eventually be destroyed
-# Keeping them to prevent downtime
-1.upto(instance_quantity) do |i|
-  machine "#{instance_name}-#{i}" do
-    chef_server chef_server_details
-    chef_environment delivery_environment
-    attribute 'delivery_org', workflow_change_organization
-    attribute 'project', workflow_change_project
-    tags "#{workflow_change_organization}", "#{workflow_change_project}"
-    machine_options machine_opts(i)
-    files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-    converge false
-    action :setup
-  end
-
-  subnets << CIAInfra.subnet_id(node, CIAInfra.availability_zone('us-west-2', i))
-  instances << "#{instance_name}-#{i}"
-end
-
 #load_balancer "#{instance_name}-elb" do
 #  load_balancer_options \
 #    chef_server chef_server_details

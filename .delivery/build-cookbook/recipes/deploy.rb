@@ -75,27 +75,6 @@ run_lists.each do |r_list|
   end
 end
 
-# Resources for managing old instances
-# These will eventually be destroyed
-# Keeping them to prevent downtime
-# action has been changed to :nothing
-machine_batch do
-  1.upto(instance_quantity) do |i|
-    machine "#{instance_name}-#{i}" do
-      chef_server chef_server_details
-      chef_environment delivery_environment
-      attribute 'delivery_org', workflow_change_organization
-      attribute 'project', workflow_change_project
-      tags "#{workflow_change_organization}", "#{workflow_change_project}"
-      machine_options machine_opts(i)
-      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-      run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
-      converge true
-      action :nothing
-    end
-  end
-end
-
 fastly_service fqdn do
   action :purge_all
   api_key fastly_creds['api_key']
