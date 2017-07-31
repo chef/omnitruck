@@ -3,7 +3,7 @@ include_recipe 'chef-sugar::default'
 site_name = 'omnitruck'
 domain_name = 'chef.io'
 
-if node['delivery']['change']['stage'] == 'delivered'
+if workflow_stage?('delivered')
   bucket_name = node['delivery']['change']['project'].gsub(/_/, '-')
   fqdn = "#{site_name}.#{domain_name}"
 else
@@ -33,7 +33,7 @@ ruby_block 'check some things we broke' do
 end
 
 # Teardown Acceptance, Union, and Reheasal Omnitruck instances.
-if node['delivery']['change']['stage'] == 'delivered'
+if workflow_stage?('delivered')
   %w(acceptance union rehearsal).each do |env|
     machine_batch do
       # Nodes with name scheme: "omnitruck-env-1"
@@ -41,9 +41,9 @@ if node['delivery']['change']['stage'] == 'delivered'
         machine "#{instance_name}-#{i}" do
           chef_server chef_server_details
           chef_environment env
-          attribute 'delivery_org', node['delivery']['change']['organization']
-          attribute 'project', node['delivery']['change']['project']
-          tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+          attribute 'delivery_org', workflow_change_organization
+          attribute 'project', workflow_change_project
+          tags "#{workflow_change_organization}", "#{workflow_change_project}"
           machine_options machine_opts(i)
           converge false
           action :destroy
@@ -55,9 +55,9 @@ if node['delivery']['change']['stage'] == 'delivered'
         machine "#{instance_name}-0#{i}" do
           chef_server chef_server_details
           chef_environment env
-          attribute 'delivery_org', node['delivery']['change']['organization']
-          attribute 'project', node['delivery']['change']['project']
-          tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+          attribute 'delivery_org', workflow_change_organization
+          attribute 'project', workflow_change_project
+          tags "#{workflow_change_organization}", "#{workflow_change_project}"
           machine_options machine_opts(i)
           converge false
           action :destroy

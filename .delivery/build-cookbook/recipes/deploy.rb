@@ -62,9 +62,9 @@ run_lists.each do |r_list|
       machine "#{instance_name}-0#{i}" do
         chef_server chef_server_details
         chef_environment delivery_environment
-        attribute 'delivery_org', node['delivery']['change']['organization']
-        attribute 'project', node['delivery']['change']['project']
-        tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+        attribute 'delivery_org', workflow_change_organization
+        attribute 'project', workflow_change_project
+        tags "#{workflow_change_organization}", "#{workflow_change_project}"
         machine_options machine_opts(i)
         files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
         run_list r_list
@@ -84,9 +84,9 @@ machine_batch do
     machine "#{instance_name}-#{i}" do
       chef_server chef_server_details
       chef_environment delivery_environment
-      attribute 'delivery_org', node['delivery']['change']['organization']
-      attribute 'project', node['delivery']['change']['project']
-      tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+      attribute 'delivery_org', workflow_change_organization
+      attribute 'project', workflow_change_project
+      tags "#{workflow_change_organization}", "#{workflow_change_project}"
       machine_options machine_opts(i)
       files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
       run_list ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
