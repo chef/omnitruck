@@ -15,10 +15,7 @@ hab_install 'habitat' do
   action :upgrade
 end
 
-hab_package 'chef-es/omnitruck' do
-  version '0.1.0'
-end
-
+hab_package 'chef-es/omnitruck'
 hab_package 'chef-es/omnitruck-poller'
 hab_package 'chef-es/omnitruck-web'
 hab_package 'chef-es/omnitruck-web-proxy'
