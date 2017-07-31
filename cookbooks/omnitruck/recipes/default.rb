@@ -16,20 +16,12 @@ hab_install 'habitat' do
 end
 
 hab_package 'chef-es/omnitruck' do
-  version node['applications']['omnitruck']
+  version '0.1.0'
 end
 
-hab_package 'chef-es/omnitruck-poller' do
-  version node['applications']['omnitruck-poller']
-end
-
-hab_package 'chef-es/omnitruck-web' do
-  version node['applications']['omnitruck-web']
-end
-
-hab_package 'chef-es/omnitruck-web-proxy' do
-  version node['applications']['omnitruck-web-proxy']
-end
+hab_package 'chef-es/omnitruck-poller'
+hab_package 'chef-es/omnitruck-web'
+hab_package 'chef-es/omnitruck-web-proxy'
 
 hab_sup 'default'
 

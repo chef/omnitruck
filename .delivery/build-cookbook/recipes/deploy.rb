@@ -41,21 +41,36 @@ end
 domain_name = 'chef.io'
 fqdn = "#{instance_name}.#{domain_name}"
 
+# For new instances we need to install build-essential in a separate run_list.
+# * cia_infra cookbook installs chef-provisioning-aws gem
+# -> chef-provisioning-aws gem constrains json to 1.8.6
+# -> CCRs on omnitruck instances try to install all gems before executing run list
+# -> build-essential tools must be installed on instances to make/install json 1.8.6 natively
+# -> build-essential tools can't be installed as part of same CCR because of ^^^^
+# In short, this gets around the issue where build-essential was installed
+# manually on omnitruck instances for all environments.
+run_lists = [
+  ['recipe[build-essential::default]'],
+  ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]'],
+]
+
 # Instances using latest omnitruck habitat packages
-# Prepended instance number with a "0" to force creation of new instances
-machine_batch do
-  1.upto(instance_quantity) do |i|
-    machine "#{instance_name}-0#{i}" do
-      chef_server chef_server_details
-      chef_environment delivery_environment
-      attribute 'delivery_org', node['delivery']['change']['organization']
-      attribute 'project', node['delivery']['change']['project']
-      tags node['delivery']['change']['organization'], node['delivery']['change']['project']
-      machine_options machine_opts(i)
-      files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
-      run_list ['recipe[build-essential]', 'recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]']
-      converge true
-      action :converge
+# Prepend instance number with a "0" to force creation of new instances
+run_lists.each do |r_list|
+  machine_batch do
+    1.upto(instance_quantity) do |i|
+      machine "#{instance_name}-0#{i}" do
+        chef_server chef_server_details
+        chef_environment delivery_environment
+        attribute 'delivery_org', node['delivery']['change']['organization']
+        attribute 'project', node['delivery']['change']['project']
+        tags node['delivery']['change']['organization'], node['delivery']['change']['project']
+        machine_options machine_opts(i)
+        files '/etc/chef/encrypted_data_bag_secret' => '/etc/chef/encrypted_data_bag_secret'
+        run_list r_list
+        converge true
+        action :converge
+      end
     end
   end
 end
