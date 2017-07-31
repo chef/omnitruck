@@ -5,7 +5,7 @@ pkg_maintainer="Chef Engineering Services <eng-services@chef.io>"
 pkg_license=('Apache-2.0')
 
 pkg_deps=(
-  $HAB_ORIGIN/omnitruck
+  $HAB_ORIGIN/omnitruck-app
 )
 
 do_build() {

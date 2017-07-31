@@ -1,4 +1,4 @@
 export HOME="{{pkg.svc_data_path}}"
 export OMNITRUCK_HOME="{{pkg.path}}/app"
 export OMNITRUCK_YAML="{{pkg.svc_config_path}}/config.yml"
-export SSL_CERT_FILE="$(hab pkg path core/cacerts)/ssl/cert.pem"
+export SSL_CERT_FILE="{{pkgPathFor "core/cacerts"}}/ssl/cert.pem"
