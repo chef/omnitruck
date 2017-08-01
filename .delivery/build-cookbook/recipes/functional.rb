@@ -60,7 +60,8 @@ if workflow_stage?('delivered')
           tags "#{workflow_change_organization}", "#{workflow_change_project}"
           machine_options machine_opts(i)
           converge false
-          action :destroy
+          run_list ['recipe[omnitruck::stop_services]']
+          action :converge
         end
       end
     end
