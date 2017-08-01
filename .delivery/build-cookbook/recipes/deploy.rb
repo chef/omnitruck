@@ -50,8 +50,8 @@ fqdn = "#{instance_name}.#{domain_name}"
 # In short, this gets around the issue where build-essential was installed
 # manually on omnitruck instances for all environments.
 run_lists = [
-  ['recipe[build-essential::default]'],
-  ['recipe[apt::default]', 'recipe[cia_infra::base]', 'recipe[omnitruck::default]'],
+  ['recipe[apt::default]', 'recipe[build-essential::default]'],
+  ['recipe[cia_infra::base]', 'recipe[omnitruck::default]'],
 ]
 
 # Instances using latest omnitruck habitat packages
