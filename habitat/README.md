@@ -1,25 +1,34 @@
-omnitruck
+# omnitruck-app
 - ruby scaffolding
 - shared config
 - shared env vars
 
-omnitruck-poller
-- depends on omnitruck
+Install core Omnitruck Sinatra application and shared files
+
+# omnitruck-poller
+- depends on omnitruck-app for shared code and configuration
 - runs poller service
 
-omnitruck-web
-- depends on omnitruck
+Polls packages.chef.io periodically to scrape package properties to generate
+package metadata json files used to respond to queries.
+
+# omnitruck-web
+- depends on omnitruck-app
 - runs unicorn service
 
-omnitruck-web-proxy
+Provides Unicorn HTTP server and exposes a Unix and TCP socket.
+
+# omnitruck-web-proxy
+- depends on omnitruck-web
 - unicorn nginx config
-- used by omnitruck-web service
 
-build 'em all; start 'em all
+Provides Nginx proxy for connection routing and caching, and connects to the
+omntruck-web unix socket.
 
-They'll work it out
+## Testing
 
 Local testing:
 - enter studio
-- run `/habitat/go.sh`
-- `hab pkg exec core/curl curl 0.0.0.0:80/stable/automate/versions` (and the like)
+- Execute `scripts/hab-it`
+- `hab pkg exec core/curl curl "http://0.0.0.0/stable/automate/versions"`
+- `hab pkg exec core/curl curl "http://0.0.0.0/_status"`

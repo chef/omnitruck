@@ -15,14 +15,14 @@ hab_install 'habitat' do
   action :upgrade
 end
 
-hab_package 'chef-es/omnitruck'
+hab_package 'chef-es/omnitruck-app'
 hab_package 'chef-es/omnitruck-poller'
 hab_package 'chef-es/omnitruck-web'
 hab_package 'chef-es/omnitruck-web-proxy'
 
 hab_sup 'default'
 
-hab_service 'chef-es/omnitruck'
+hab_service 'chef-es/omnitruck-app'
 hab_service 'chef-es/omnitruck-poller'
 hab_service 'chef-es/omnitruck-web'
 hab_service 'chef-es/omnitruck-web-proxy'

@@ -1,5 +1,5 @@
 [unicorn]
-listen = "/hab/svc/omnitruck/var/unicorn.sock.0"
+listen = "/hab/svc/omnitruck-app/var/unicorn.sock.0"
 timeout = 60
 preload_app = false
 worker_processes = 8

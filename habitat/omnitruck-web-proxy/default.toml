@@ -1,6 +1,6 @@
 worker_rlimit_nofile = 8192
 worker_processes = "auto"
-upstream_server = "unix:/hab/svc/omnitruck/var/unicorn.sock.0"
+upstream_server = "unix:/hab/svc/omnitruck-app/var/unicorn.sock.0"
 
 [http]
 sendfile = "on"

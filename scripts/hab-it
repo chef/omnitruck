@@ -4,7 +4,7 @@ build habitat && \
 build habitat/omnitruck-poller && \
 build habitat/omnitruck-web && \
 build habitat/omnitruck-web-proxy && \
-hab start $HAB_ORIGIN/omnitruck && \
+hab start $HAB_ORIGIN/omnitruck-app && \
 hab start $HAB_ORIGIN/omnitruck-poller && \
 hab start $HAB_ORIGIN/omnitruck-web && \
 hab start $HAB_ORIGIN/omnitruck-web-proxy
