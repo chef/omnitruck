@@ -81,6 +81,10 @@ def delivered_stage?
   end
 end
 
+def union_or_rehearsal?
+  (workflow_stage?('union') || workflow_stage?('rehearsal'))
+end
+
 def sns_topic
   if delivered_stage?
     'arn:aws:sns:us-west-2:109983887395:cia-alert'
