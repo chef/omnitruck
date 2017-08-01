@@ -1,3 +1,5 @@
+return if union_or_rehearsal?
+
 include_recipe 'chef-sugar::default'
 
 site_name = 'omnitruck'
@@ -60,7 +62,8 @@ if workflow_stage?('delivered')
           tags "#{workflow_change_organization}", "#{workflow_change_project}"
           machine_options machine_opts(i)
           converge false
-          action :destroy
+          run_list ['recipe[omnitruck::stop_services]']
+          action :converge
         end
       end
     end

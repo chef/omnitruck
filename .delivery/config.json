@@ -5,7 +5,8 @@
       "path": ".delivery/build-cookbook"
   },
   "skip_phases": [
-    "quality"
+    "quality",
+    "security"
   ],
   "job_dispatch": {
     "version": "v2",

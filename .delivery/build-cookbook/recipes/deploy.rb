@@ -1,3 +1,5 @@
+return if union_or_rehearsal?
+
 include_recipe 'chef-sugar::default'
 
 fastly_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','fastly') }

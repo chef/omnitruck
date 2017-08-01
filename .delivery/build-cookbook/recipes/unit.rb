@@ -4,6 +4,8 @@
 # This phase is run as the delivery user
 ################################################################################
 
+return if union_or_rehearsal?
+
 secrets = get_project_secrets
 
 # This resource queries the Github API to determine "completeness" based on
