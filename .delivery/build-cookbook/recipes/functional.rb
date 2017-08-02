@@ -33,6 +33,14 @@ ruby_block 'check some things we broke' do
 end
 
 # Teardown Acceptance, Union, and Reheasal Omnitruck instances.
+require 'chef/provisioning/aws_driver'
+ENV['AWS_CONFIG_FILE'] = File.join(node['delivery']['workspace']['root'], 'aws_config')
+
+with_driver 'aws::us-west-2'
+
+with_chef_server chef_server_details[:chef_server_url],
+                 chef_server_details[:options]
+
 if workflow_stage?('delivered')
   %w(acceptance union rehearsal).each do |env|
     instance_name = "omnitruck-#{env}"
