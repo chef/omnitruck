@@ -37,6 +37,7 @@ end
 # Teardown Acceptance, Union, and Reheasal Omnitruck instances.
 if workflow_stage?('delivered')
   %w(acceptance union rehearsal).each do |env|
+    instance_name = "omnitruck-#{env}"
     machine_batch do
       # Nodes with name scheme: "omnitruck-env-1"
       1.upto(instance_quantity) do |i|
