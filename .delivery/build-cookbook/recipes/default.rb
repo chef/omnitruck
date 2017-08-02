@@ -7,8 +7,6 @@
 # root.
 #
 ################################################################################
-return if union_or_rehearsal?
-
 # We include chef-sugar because it gives us easy ways to interact with encrypted
 # data bags. It may go away in the future.
 include_recipe 'chef-sugar::default'

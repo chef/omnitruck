@@ -1,5 +1,3 @@
-return if union_or_rehearsal?
-
 include_recipe 'chef-sugar::default'
 
 site_name = 'omnitruck'
