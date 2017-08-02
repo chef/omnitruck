@@ -4,8 +4,6 @@
 # This recipe is executed as the delivery user
 ################################################################################
 
-return if union_or_rehearsal?
-
 # Check the syntax on the cookbooks in cookbooks/
 include_recipe 'delivery-truck::syntax'
 
