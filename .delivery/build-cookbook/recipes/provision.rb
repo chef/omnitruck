@@ -1,6 +1,9 @@
 include_recipe 'chef-sugar::default'
 include_recipe 'delivery-truck::provision'
 
+# Return after 'delivery-truck::provision' recipe converges
+return if (workflow_stage?('union') || workflow_stage?('rehearsal'))
+
 aws_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','chef-secure') }
 fastly_creds = with_server_config { encrypted_data_bag_item_for_environment('cia-creds','fastly') }
 
