@@ -20,6 +20,7 @@ packages = %w(omnitruck-app omnitruck-poller omnitruck-web omnitruck-web-proxy)
 packages.each do |pkg|
   hab_package "chef-es/#{pkg}" do
     version node['applications'][pkg]
+    notifies :unload, "hab_service[chef-es/#{pkg}]", :immediately
   end
 end
 
