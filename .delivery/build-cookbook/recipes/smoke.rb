@@ -1,3 +1,5 @@
+return if (workflow_stage?('union') || workflow_stage?('rehearsal'))
+
 include_recipe 'chef-sugar::default'
 
 site_name = 'omnitruck'
