@@ -15,14 +15,16 @@ hab_install 'habitat' do
   action :upgrade
 end
 
-hab_package 'chef-es/omnitruck-app'
-hab_package 'chef-es/omnitruck-poller'
-hab_package 'chef-es/omnitruck-web'
-hab_package 'chef-es/omnitruck-web-proxy'
+packages = %w(omnitruck-app omnitruck-poller omnitruck-web omnitruck-web-proxy)
+
+packages.each do |pkg|
+  hab_package "chef-es/#{pkg}" do
+    version node['applications'][pkg]
+  end
+end
 
 hab_sup 'default'
 
-hab_service 'chef-es/omnitruck-app'
-hab_service 'chef-es/omnitruck-poller'
-hab_service 'chef-es/omnitruck-web'
-hab_service 'chef-es/omnitruck-web-proxy'
+packages.each do |pkg|
+  hab_service "chef-es/#{pkg}"
+end
