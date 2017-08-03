@@ -46,6 +46,7 @@ module Opscode
         @major, @minor = match[1..2]
         @major = @major.to_i
         @minor = @minor.to_i unless @minor.nil?
+        @patch = @patch.to_i unless @patch.nil?
 
         @prerelease = nil
         @build = nil

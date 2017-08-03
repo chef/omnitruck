@@ -427,6 +427,90 @@ context 'Omnitruck' do
                   it_behaves_like 'a correct package info'
                 end
 
+                context 'with partial 12 project_version' do
+                  let(:project_version) { '12' }
+                  let(:expected_info) do
+                    {
+                      url: 'https://packages.chef.io/files/stable/chef/12.21.1/sles/12/chef-12.21.1-1.sles12.x86_64.rpm',
+                      sha256: 'e8705a564e6687e492eca401a5af9613012b991fbe6eba58c414eaedf575d232',
+                      sha1: '3d4c90c9b8a2168ba067b89c8c127b21202d8ed1',
+                      version: '12.21.1'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
+                context 'with partial 12.21 project_version' do
+                  let(:project_version) { '12.21' }
+                  let(:expected_info) do
+                    {
+                      url: 'https://packages.chef.io/files/stable/chef/12.21.1/sles/12/chef-12.21.1-1.sles12.x86_64.rpm',
+                      sha256: 'e8705a564e6687e492eca401a5af9613012b991fbe6eba58c414eaedf575d232',
+                      sha1: '3d4c90c9b8a2168ba067b89c8c127b21202d8ed1',
+                      version: '12.21.1'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
+                context 'with non-native sles build version partial version 12.20' do
+                  let(:project_version) { '12.20' }
+                  let(:expected_info) do
+                    {
+                      url: 'https://packages.chef.io/files/stable/chef/12.20.3/el/6/chef-12.20.3-1.el6.x86_64.rpm',
+                      sha256: '1a0a1e830f95e21bad222b1984cd32e2e76cd856aaf194be27be4b0ad607d1c1',
+                      sha1: '06fb16af659a456bab75f1a79733ca7bbd29edf3',
+                      version: '12.20.3'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
+                context 'with partial 13 project_version' do
+                  let(:project_version) { '13' }
+                  let(:expected_info) do
+                    {
+                      url: 'https://packages.chef.io/files/stable/chef/13.1.31/sles/12/chef-13.1.31-1.sles12.x86_64.rpm',
+                      sha256: '9f7989cc1207b599dcb13c17bec5bc95073b6c58d76606b4583bda353577ec72',
+                      sha1: 'e2625726ae2a8ce6db8b0ffe84091b428185458c',
+                      version: '13.1.31'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
+                context 'with partial 13.1 project_version' do
+                  let(:project_version) { '13.1' }
+                  let(:expected_info) do
+                     {
+                      url: 'https://packages.chef.io/files/stable/chef/13.1.31/sles/12/chef-13.1.31-1.sles12.x86_64.rpm',
+                      sha256: '9f7989cc1207b599dcb13c17bec5bc95073b6c58d76606b4583bda353577ec72',
+                      sha1: 'e2625726ae2a8ce6db8b0ffe84091b428185458c',
+                      version: '13.1.31'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
+                context 'with 13.1.31 project_version' do
+                  let(:project_version) { '13.1.31' }
+                  let(:expected_info) do
+                    {
+                      url: 'https://packages.chef.io/files/stable/chef/13.1.31/sles/12/chef-13.1.31-1.sles12.x86_64.rpm',
+                      sha256: '9f7989cc1207b599dcb13c17bec5bc95073b6c58d76606b4583bda353577ec72',
+                      sha1: 'e2625726ae2a8ce6db8b0ffe84091b428185458c',
+                      version: '13.1.31'
+                    }
+                  end
+
+                  it_behaves_like 'a correct package info'
+                end
+
                 context 'with non-native sles build version' do
                   let(:project_version) { '12.20.3' }
                   let(:expected_info) do

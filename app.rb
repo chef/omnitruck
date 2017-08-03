@@ -361,16 +361,39 @@ class Omnitruck < Sinatra::Base
         "inspec" => "1.20.0",
       }
 
+      # Locate native sles version for project if it exists
       sles_project_version = native_sles_project_version[current_project]
 
-      # Remap to EL if a native SLES project is not found or
-      # if the native SLES project version is less than the pinned version.
-      if sles_project_version.nil? ||
-           (opscode_version < Opscode::Version.parse(sles_project_version))
-        current_platform = "el"
-        # SLES platform versions map to different EL versions
-        current_platform_version = current_platform_version.to_f <= 11 ? "5" : "6"
+      remap_to_el = false
+
+      # If sles_project_version is nil (no projects listed with a native SLES version)
+      # then always remap to EL
+      if sles_project_version.nil?
+        remap_to_el = true
+      # If requested project version is a partial version then we parse new versions
+      # using high version limits to simulate latest version for given values
+      elsif opscode_version.mixlib_version.is_a?(Opscode::Version::Incomplete)
+        opscode_version = if opscode_version.minor.nil?
+                            # Parse with high minor and patch versions
+                            Opscode::Version.parse("#{opscode_version.major}.9999.9999")
+                          else
+                            # Parse with high patch version
+                            Opscode::Version.parse("#{opscode_version.major}.#{opscode_version.minor}.9999")
+                          end
+        # If the new parsed version is less than the native sles version then remap
+        remap_to_el = true if opscode_version < Opscode::Version.parse(sles_project_version)
+      # If requested version is a SemVer do a simple compare
+      elsif opscode_version < Opscode::Version.parse(sles_project_version)
+        remap_to_el = true
+      else
+        remap_to_el = false
       end
+    end
+
+    # Remap to el if triggered
+    if remap_to_el
+      current_platform = "el"
+      current_platform_version = current_platform_version.to_f <= 11 ? "5" : "6"
     end
 
     # We need to manage automate/delivery this in this method, not #project.
