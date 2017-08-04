@@ -46,6 +46,8 @@ with_chef_server chef_server_details[:chef_server_url],
 # Once delivered to production we stop acceptance instances
 if workflow_stage?('delivered')
   machine_batch do
+    action :stop
+
     1.upto(instance_quantity) do |i|
       machine "omnitruck-acceptance-0#{i}" do
         chef_server chef_server_details
