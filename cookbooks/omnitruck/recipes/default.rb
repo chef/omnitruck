@@ -29,5 +29,7 @@ packages.each do |pkg|
 end
 
 packages.each do |pkg|
-  hab_service "chef-es/#{pkg}"
+  hab_service "chef-es/#{pkg}" do
+    notifies :restart, "service[hab-sup-default]", :delayed
+  end
 end
