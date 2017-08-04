@@ -43,37 +43,18 @@ with_driver 'aws::us-west-2'
 with_chef_server chef_server_details[:chef_server_url],
                  chef_server_details[:options]
 
+# Once delivered to production we stop acceptance instances
 if workflow_stage?('delivered')
-  %w(acceptance union rehearsal).each do |env|
-    instance_name = "omnitruck-#{env}"
-    machine_batch do
-      # Nodes with name scheme: "omnitruck-env-1"
-      1.upto(instance_quantity) do |i|
-        machine "#{instance_name}-#{i}" do
-          chef_server chef_server_details
-          chef_environment env
-          attribute 'delivery_org', workflow_change_organization
-          attribute 'project', workflow_change_project
-          tags "#{workflow_change_organization}", "#{workflow_change_project}"
-          machine_options machine_opts(i)
-          converge false
-          action :destroy
-        end
-      end
-
-      # Nodes with name scheme: "omnitruck-env-01"
-      1.upto(instance_quantity) do |i|
-        machine "#{instance_name}-0#{i}" do
-          chef_server chef_server_details
-          chef_environment env
-          attribute 'delivery_org', workflow_change_organization
-          attribute 'project', workflow_change_project
-          tags "#{workflow_change_organization}", "#{workflow_change_project}"
-          machine_options machine_opts(i)
-          converge false
-          run_list ['recipe[omnitruck::stop_services]']
-          action :converge
-        end
+  machine_batch do
+    1.upto(instance_quantity) do |i|
+      machine "omnitruck-acceptance-0#{i}" do
+        chef_server chef_server_details
+        chef_environment 'acceptance'
+        attribute 'delivery_org', workflow_change_organization
+        attribute 'project', workflow_change_project
+        tags "#{workflow_change_organization}", "#{workflow_change_project}"
+        machine_options machine_opts(i)
+        action :stop
       end
     end
   end
