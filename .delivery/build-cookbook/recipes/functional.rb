@@ -43,8 +43,7 @@ with_driver 'aws::us-west-2'
 with_chef_server chef_server_details[:chef_server_url],
                  chef_server_details[:options]
 
-# Once delivered to production we stop all hab services on the acceptance instances
-# Specifically, we want to stop the pollers
+# Once delivered to production we stop acceptance instances
 if workflow_stage?('delivered')
   machine_batch do
     1.upto(instance_quantity) do |i|
@@ -55,8 +54,7 @@ if workflow_stage?('delivered')
         attribute 'project', workflow_change_project
         tags "#{workflow_change_organization}", "#{workflow_change_project}"
         machine_options machine_opts(i)
-        run_list ['recipe[omnitruck::stop_services]']
-        action :converge
+        action :stop
       end
     end
   end
