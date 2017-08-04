@@ -19,6 +19,8 @@ group :test do
   gem 'rspec-its'
   gem 'rack-test'
   gem 'rspec_junit_formatter'
+  gem 'pry-byebug'
+  gem 'rb-readline'
 end
 
 group :security do

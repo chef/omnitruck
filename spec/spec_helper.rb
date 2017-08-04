@@ -41,4 +41,8 @@ RSpec.configure do |conf|
   conf.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  # Uncomment to write failed specs to file.
+  # Run failed tests using --only-failures flag
+  # conf.example_status_persistence_file_path = "examples.txt"
 end
