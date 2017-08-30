@@ -137,7 +137,8 @@ class Chef
     def available_versions
       Mixlib::Install.new(
         product_name: project_name,
-        channel: channel_name.to_sym
+        channel: channel_name.to_sym,
+        user_agent_headers: ['omnitruck']
       ).available_versions
     rescue Mixlib::Install::Backend::ArtifactsNotFound
       # Return an empty array if no artifacts are found
@@ -155,7 +156,8 @@ class Chef
       artifacts = Mixlib::Install.new(
         product_name: project_name,
         channel: channel_name.to_sym,
-        product_version: version
+        product_version: version,
+        user_agent_headers: ['omnitruck']
       ).artifact_info
 
       Array(artifacts)
