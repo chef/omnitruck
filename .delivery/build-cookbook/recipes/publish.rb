@@ -22,7 +22,7 @@ if habitat_origin_key?
 end
 
 packages = {
-  "omnitruck-app" => "#{habitat_plan_dir}",
+  "omnitruck-app" => "#{habitat_plan_dir}/../",
   "omnitruck-poller" => "#{habitat_plan_dir}/omnitruck-poller",
   "omnitruck-web" => "#{habitat_plan_dir}/omnitruck-web",
   "omnitruck-web-proxy" => "#{habitat_plan_dir}/omnitruck-web-proxy",
