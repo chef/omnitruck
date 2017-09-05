@@ -9,13 +9,9 @@ pkg_license=('Apache-2.0')
 pkg_deps=(
   core/coreutils
 )
-# This is set to force the source path to the root level during automate builds
-# You must build plan from the root dir with command `build habitat`
-# Recommended to execute `scripts/hab-it`
-SRC_PATH="../"
 
 pkg_scaffolding=core/scaffolding-ruby
-scaffolding_ruby_pkg=core/ruby/$(cat "$PLAN_CONTEXT/../.ruby-version")
+scaffolding_ruby_pkg=core/ruby/$(cat "$SRC_PATH/.ruby-version")
 
 do_install() {
   do_default_install
