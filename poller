@@ -58,7 +58,7 @@ class Poller
   end
 end
 
-if $0 == __FILE__
+if File.absolute_path($0) == File.absolute_path(__FILE__)
   poller = Poller.new
 
   # This could be trapped and looped, but the poller will be deprecated next gen
