@@ -239,7 +239,7 @@ end
 
 route53_record fqdn do
   name "#{fqdn}."
-  value 'g.global-ssl.fastly.net'
+  value 'f4.shared.global.fastly.net'
   aws_access_key_id aws_creds['access_key_id']
   aws_secret_access_key aws_creds['secret_access_key']
   type 'CNAME'
