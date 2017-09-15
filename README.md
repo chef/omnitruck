@@ -48,7 +48,7 @@ The values that `p`, `pv` & `m` can take include but are not limited to:
 
 `pv` => `MAJOR.MINOR` version of the platform. E.g. "6.1", "7.1" for "aix", "6", "7", "8" for debian. For windows "2008r2"
 
-`m` => "x86_64", "i386", "powerpc", "sparc", "ppc64le", "ppc64"
+`m` => "x86_64", "i386", "powerpc", "sparc", "ppc64le", "ppc64", "s390x"
 
 ### `/$channel/$project/download`
 
