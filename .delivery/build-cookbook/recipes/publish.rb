@@ -28,20 +28,17 @@ packages = {
   "omnitruck-web-proxy" => "#{habitat_plan_dir}/omnitruck-web-proxy",
 }
 
-actions = [:build, :publish, :save_application_release]
-
-# Perform actions in sequence for each package before performing the next action.
-actions.each do |actn|
-  packages.each do |pkg, path|
-    hab_build pkg do
-      origin _origin
-      plan_dir path
-      home_dir delivery_workspace
-      cwd node['delivery']['workspace']['repo']
-      auth_token project_secrets['habitat']['depot_token']
-      depot_url node['habitat-build']['depot-url']
-      only_if { habitat_depot_token? }
-      action actn
-    end
+packages.each do |pkg, path|
+  hab_build pkg do
+    channel 'unstable'
+    origin _origin
+    plan_dir path
+    home_dir delivery_workspace
+    cwd node['delivery']['workspace']['repo']
+    auth_token project_secrets['habitat']['depot_token']
+    depot_url node['habitat-build']['depot-url']
+    only_if { habitat_depot_token? }
+    action [:build, :publish, :save_application_release]
   end
 end
+
