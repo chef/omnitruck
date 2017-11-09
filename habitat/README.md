@@ -1,25 +1,25 @@
 # omnitruck-app
-- ruby scaffolding
 - shared config
 - shared env vars
 
 Install core Omnitruck Sinatra application and shared files
 
 # omnitruck-poller
-- depends on omnitruck-app for shared code and configuration
+- ruby scaffolding
 - runs poller service
+- Gemfile and Gemfile.lock are hard linked to omnitruck's root level Bundler files
 
 Polls packages.chef.io periodically to scrape package properties to generate
 package metadata json files used to respond to queries.
 
 # omnitruck-web
-- depends on omnitruck-app
+- ruby scaffolding
 - runs unicorn service
+- Gemfile and Gemfile.lock are hard linked to omnitruck's root level Bundler files
 
 Provides Unicorn HTTP server and exposes a Unix and TCP socket.
 
 # omnitruck-web-proxy
-- depends on omnitruck-web
 - unicorn nginx config
 
 Provides Nginx proxy for connection routing and caching, and connects to the

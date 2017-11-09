@@ -24,8 +24,8 @@ pkg_license=('Apache-2.0')
 pkg_deps=(
   core/nginx
   core/curl
-  $HAB_ORIGIN/omnitruck-web
 )
+
 pkg_svc_run="nginx -c ${pkg_svc_config_path}/nginx.conf"
 pkg_svc_user="root"
 pkg_svc_group=$pkg_svc_user

@@ -30,7 +30,6 @@ packages = {
 
 packages.each do |pkg, path|
   hab_build pkg do
-    channel 'unstable'
     origin _origin
     plan_dir path
     home_dir delivery_workspace
