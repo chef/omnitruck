@@ -95,8 +95,9 @@ end
 
 platform "amazon" do
   remap "el"
-  # FIXME: with some old enough version we should return 5
-  version_remap 6
+  version_remap do |opts|
+    (opts[:version].split('.')[0].to_i >= 2) ? "7" : "6"
+  end
 end
 
 # Unsupported Variants
