@@ -1,6 +1,8 @@
 # Slack channel in Chef Software slack to send notifications about build failures, etc
 slack:
-  notify_channel: eng-services-notify
+  notify_channel:
+    - jex-notify
+    - omnitruck
 
 github:
   enforce_workflow: true
