@@ -101,7 +101,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
-  mixlib-install (~> 3.1)
+  mixlib-install (~> 3.9)
   mixlib-versioning (~> 1.1.0)
   pry-byebug
   rack-test
