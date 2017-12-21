@@ -1,3 +1,5 @@
+## Packages
+
 # omnitruck-app
 - shared config
 - shared env vars
@@ -20,6 +22,14 @@ Provides Unicorn HTTP server and exposes a Unix and TCP socket.
 
 Provides Nginx proxy for connection routing and caching, and connects to the
 omntruck-web unix socket.
+
+## Scaffolding (Gemfile and Gemfile.lock)
+
+`omnitruck-app`,  `omnitruck-web`, `omnitruck-poller` setup `scaffolding-ruby`.
+This is so each package can find `bundler` in the `run` hooks. Since `scaffolding-ruby`
+search for Gemfile and Gemfile.lock files in specific locations the initial approach
+is to simply copy the project Gemfile and Gemfile.lock files to the `omnitruck-web`
+and `omnitruck-poller` package directories.
 
 ## Testing
 

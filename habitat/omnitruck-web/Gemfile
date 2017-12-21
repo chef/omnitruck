@@ -9,7 +9,7 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', '~> 3.1'
+gem 'mixlib-install', '~> 3.9'
 gem 'trashed'
 
 group :test do
