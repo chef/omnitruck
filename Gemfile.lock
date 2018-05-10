@@ -18,7 +18,7 @@ GEM
     kgio (2.10.0)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mixlib-install (3.9.0)
+    mixlib-install (3.10.0)
       mixlib-shellout
       mixlib-versioning
       thor
@@ -102,7 +102,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
-  mixlib-install (~> 3.9)
+  mixlib-install (~> 3.10)
   mixlib-versioning (~> 1.1.0)
   pry-byebug
   rack-test

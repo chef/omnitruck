@@ -1249,7 +1249,9 @@ context 'Omnitruck' do
   end
 
   context '/<CHANNEL>/<PROJECT>/versions endpoint' do
-    Chef::Cache::KNOWN_PROJECTS.each do |project|
+    # TODO: change this back once Chef Workstation hits stable!
+    # Chef::Cache::KNOWN_PROJECTS.each do |project|
+    (Chef::Cache::KNOWN_PROJECTS - ['chef-workstation']).each do |project|
       context "for #{project}" do
         let(:endpoint){ "/stable/#{project}/versions" }
 
