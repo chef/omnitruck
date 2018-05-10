@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.4', '< 2'
 gem 'sinatra-contrib'
+gem 'sinatra-cross_origin'
 gem 'unicorn'
 gem 'json'
 gem 'colorize'
