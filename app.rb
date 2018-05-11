@@ -21,6 +21,7 @@
 
 require 'sinatra'
 require 'sinatra/config_file'
+require 'sinatra/cross_origin'
 require 'json'
 require 'pp'
 
@@ -39,14 +40,17 @@ require 'chef/version_resolver'
 
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
+  register Sinatra::CrossOrigin
 
   config_file ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
   class InvalidChannelName < StandardError; end
 
   configure do
+    set :allow_origin, :any
     set :raise_errors, false
     set :show_exceptions, false
+    enable :cross_origin
     enable :logging
 
     set :logging, nil
