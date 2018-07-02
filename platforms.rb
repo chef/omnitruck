@@ -114,8 +114,11 @@ end
 
 platform "fedora" do
   remap "el"
-  # FIXME: with some old enough version we should return 5
-  version_remap 6
+  version_remap do |opts|
+    # A combo of Fedora 19/20 was used to create RHEL 7 so when we're on Fedora 20 use the RHEL 7 packages
+    # https://docs.fedoraproject.org/quick-docs/en-US/fedora-and-red-hat-enterprise-linux.html
+    (opts[:version].to_i >= 20) ? "7" : "6"
+  end
 end
 
 platform "linuxmint" do
