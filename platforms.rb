@@ -45,11 +45,6 @@ platform "redhat" do
   remap "el"
 end
 
-platform "centos" do
-  major_only true
-  remap "el"
-end
-
 platform "aix"
 
 platform "nexus" do
@@ -60,13 +55,28 @@ platform "ios_xr" do
   major_only true
 end
 
-# Supported Variants
+platform "darwin" do
+  remap "mac_os_x"
+end
+
+platform "suse" do
+  major_only true
+  remap "sles"
+end
+
+platform "sles" do
+  major_only true
+end
+
+
+# Supported RHEL Variants
 #
 # These are RHEL clones that we know will work + SuSE that we test on
 #
 
-platform "darwin" do
-  remap "mac_os_x"
+platform "centos" do
+  major_only true
+  remap "el"
 end
 
 platform "enterpriseenterprise" do  # alias for "oracle"
@@ -82,15 +92,6 @@ end
 platform "scientific" do
   major_only true
   remap "el"
-end
-
-platform "suse" do
-  major_only true
-  remap "sles"
-end
-
-platform "sles" do
-  major_only true
 end
 
 platform "amazon" do
