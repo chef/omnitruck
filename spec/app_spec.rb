@@ -221,6 +221,54 @@ context 'Omnitruck' do
       context 'for stable' do
         let(:channel) { 'stable' }
 
+        context 'for amazon linux' do
+          let(:platform) { 'amazon' }
+
+          context 'for 2018.03' do
+            let(:platform_version) { '2018.03' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'https://packages.chef.io/files/stable/chef/13.1.31/el/6/chef-13.1.31-1.el6.x86_64.rpm',
+                    sha256: '31d3c8d09a884a10f93d58c9ead636cfb19b12c9ea6c8de1bb661918347c164d',
+                    sha1: 'a165cae5ea416a32afc5646c5e0a9ac775bc7df4',
+                    version: '13.1.31'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+
+          context 'for 2' do
+            let(:platform_version) { '2' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'https://packages.chef.io/files/stable/chef/13.1.31/el/7/chef-13.1.31-1.el7.x86_64.rpm',
+                    sha256: 'b8397ea2a33a3f4c860daac1cb0714a11d8dad5287b0eb7054e8432d484f9f2c',
+                    sha1: '65c046c91a7186a28af9642e3cffcd72296cf602',
+                    version: '13.1.31'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
         context 'for mac_os_x' do
           let(:platform) { 'mac_os_x' }
 
