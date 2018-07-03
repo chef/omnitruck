@@ -98,7 +98,7 @@ platform "amazon" do
   version_remap do |opts|
     # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
     # map everything else (Amazon Linux 2) to RHEL 7
-    /201\d.\d/.match?(opts[:version]) ? "6" : "7"
+    /201\d\.\d/.match?(opts[:version]) ? "6" : "7"
   end
 end
 
