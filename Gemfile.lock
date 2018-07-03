@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/chef/mixlib-install.git
+  revision: b8858effc5f7e90320ff1d23ba4211440051db8c
+  tag: v3.11.0
+  specs:
+    mixlib-install (3.11.0)
+      mixlib-shellout
+      mixlib-versioning
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,10 +28,6 @@ GEM
     kgio (2.10.0)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mixlib-install (3.10.0)
-      mixlib-shellout
-      mixlib-versioning
-      thor
     mixlib-shellout (2.3.2)
     mixlib-versioning (1.1.0)
     multi_json (1.11.2)
@@ -45,28 +51,27 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rspec (3.4.0)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.1)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
+      rspec-support (~> 3.7.0)
     rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
     rspec-legacy_formatters (1.0.1)
       rspec (~> 3.0)
-    rspec-mocks (3.4.0)
+    rspec-mocks (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
+      rspec-support (~> 3.7.0)
     rspec-rerun (0.3.1)
       rspec
-    rspec-support (3.4.1)
-    rspec_junit_formatter (0.2.3)
-      builder (< 4)
+    rspec-support (3.7.1)
+    rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
     sinatra (1.4.8)
       rack (~> 1.5)
@@ -102,7 +107,7 @@ DEPENDENCIES
   bundler-audit
   colorize
   json
-  mixlib-install (~> 3.10)
+  mixlib-install!
   mixlib-versioning (~> 1.1.0)
   pry-byebug
   rack-test
@@ -122,4 +127,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
