@@ -15,6 +15,12 @@ hab_install 'habitat' do
   action :upgrade
 end
 
+hab_package 'hab-sup' do
+  # needs to match `habitat` cookbook version locked in metadata.rb
+  version '0.38.0'
+  action :upgrade
+end
+
 packages = %w(omnitruck-app omnitruck-poller omnitruck-web omnitruck-web-proxy)
 
 # The supervisor must be running before we can send an unload since the
