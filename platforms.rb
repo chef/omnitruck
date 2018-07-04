@@ -45,11 +45,6 @@ platform "redhat" do
   remap "el"
 end
 
-platform "centos" do
-  major_only true
-  remap "el"
-end
-
 platform "aix"
 
 platform "nexus" do
@@ -60,13 +55,28 @@ platform "ios_xr" do
   major_only true
 end
 
-# Supported Variants
+platform "darwin" do
+  remap "mac_os_x"
+end
+
+platform "suse" do
+  major_only true
+  remap "sles"
+end
+
+platform "sles" do
+  major_only true
+end
+
+
+# Supported RHEL Variants
 #
 # These are RHEL clones that we know will work + SuSE that we test on
 #
 
-platform "darwin" do
-  remap "mac_os_x"
+platform "centos" do
+  major_only true
+  remap "el"
 end
 
 platform "enterpriseenterprise" do  # alias for "oracle"
@@ -84,19 +94,12 @@ platform "scientific" do
   remap "el"
 end
 
-platform "suse" do
-  major_only true
-  remap "sles"
-end
-
-platform "sles" do
-  major_only true
-end
-
 platform "amazon" do
   remap "el"
   version_remap do |opts|
-    (opts[:version].split('.')[0].to_i >= 2) ? "7" : "6"
+    # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
+    # map everything else (Amazon Linux 2) to RHEL 7
+    /201\d\.\d/.match?(opts[:version]) ? "6" : "7"
   end
 end
 
@@ -114,8 +117,11 @@ end
 
 platform "fedora" do
   remap "el"
-  # FIXME: with some old enough version we should return 5
-  version_remap 6
+  version_remap do |opts|
+    # A combo of Fedora 19/20 was used to create RHEL 7 so when we're on Fedora 20 use the RHEL 7 packages
+    # https://docs.fedoraproject.org/quick-docs/en-US/fedora-and-red-hat-enterprise-linux.html
+    (opts[:version].to_i >= 20) ? "7" : "6"
+  end
 end
 
 platform "linuxmint" do
