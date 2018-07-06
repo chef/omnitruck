@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: b8858effc5f7e90320ff1d23ba4211440051db8c
-  tag: v3.11.0
+  revision: 89b4837c2bab5b20605d5b04b3dba3d27dab2627
+  tag: v3.11.1
   specs:
-    mixlib-install (3.11.0)
+    mixlib-install (3.11.1)
       mixlib-shellout
       mixlib-versioning
       thor
@@ -12,7 +12,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.7)
-    builder (3.2.2)
     bundler-audit (0.4.0)
       bundler (~> 1.2)
       thor (~> 0.18)
