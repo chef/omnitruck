@@ -107,7 +107,7 @@ end
 #
 platform "xenserver" do
   remap "el"
-  version_remap 5
+  major_only true
 end
 
 platform "coreos" do
