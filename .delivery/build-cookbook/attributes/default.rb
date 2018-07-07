@@ -2,6 +2,7 @@
 # systemd for habitat's services.
 default['ciainfra']['image_id'] = 'ami-7ac6491a'
 default['ciainfra']['security_groups'] = ['sg-9d9223f9']
+default['ciainfra']['instance_type'] = 't2.medium'
 
 default['delivery']['project_apps'] = %w(
   omnitruck-app
