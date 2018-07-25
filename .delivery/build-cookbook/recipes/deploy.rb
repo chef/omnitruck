@@ -133,7 +133,7 @@ ruby_block 'Add ELB Monitoring' do
       period: 60,
       unit: "Seconds",
       evaluation_periods: 2,
-      threshold: 0.5,
+      threshold: 1.0,
       comparison_operator: "GreaterThanOrEqualToThreshold",
     })
   end
