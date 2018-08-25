@@ -59,11 +59,18 @@ platform "darwin" do
   remap "mac_os_x"
 end
 
+# Suse Linux Enterprise Desktop is effectively SLES with a GUI
 platform "sled" do
   major_only true
   remap "sles"
 end
 
+platform "opensuseleap" do
+  major_only true
+  remap "sles"
+end
+
+# this is the legacy name install.sh passed. opensuseleap is the current name
 platform "suse" do
   major_only true
   remap "sles"
