@@ -364,6 +364,7 @@ class Omnitruck < Sinatra::Base
       native_sles_project_version = {
         "automate" => "0.8.5",
         "chef" => "12.21.1",
+        "angrychef" => "12.21.1",
         "chef-server" => "12.14.0",
         "chefdk" => "1.3.43",
         "inspec" => "1.20.0",
