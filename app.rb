@@ -249,7 +249,7 @@ class Omnitruck < Sinatra::Base
   # Returns the instance of Chef::Cache that app is using
   #
   def cache
-    @cache ||= Chef::Cache.new(metadata_dir)
+    @cache ||= Chef::Cache.new()
   end
 
   #
