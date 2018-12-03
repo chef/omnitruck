@@ -266,20 +266,6 @@ class Omnitruck < Sinatra::Base
   end
 
   #
-  # Returns the metadata directory being used.
-  #
-  # @return [String]
-  #   File path to the metadata directory.
-  #
-  def metadata_dir
-    if settings.respond_to?(:metadata_dir)
-      settings.metadata_dir
-    else
-      './'
-    end
-  end
-
-  #
   # Returns the name of the channel current request is pointing to.
   #
   # @return [String]

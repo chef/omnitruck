@@ -31,7 +31,6 @@ SPEC_DATA = File.expand_path(File.join(File.dirname(__FILE__), "data"))
 # values from config/config.yml and make you a sad.
 
 Omnitruck.set :virtual_path, ''
-Omnitruck.set :metadata_dir, SPEC_DATA
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
@@ -46,3 +45,17 @@ RSpec.configure do |conf|
   # Run failed tests using --only-failures flag
   # conf.example_status_persistence_file_path = "examples.txt"
 end
+
+class MockRedis
+  # This fakes our use of redis by loading the data from predefined test
+  # fixtures in the data/ directory
+  def get(key)
+    File.read(File.join(SPEC_DATA, "#{key}-manifest.json"))
+  end
+
+  def set(key, value)
+    raise NotImplementedError
+  end
+end
+
+Redis = MockRedis
