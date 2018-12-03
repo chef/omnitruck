@@ -1,9 +1,0 @@
-#!/bin/sh
-#
-exec 2>&1
-
-. /hab/svc/omnitruck-app/config/dotenv
-
-cd $OMNITRUCK_HOME
-
-exec bundle exec ./poller -e production -s 300
