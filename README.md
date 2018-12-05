@@ -136,12 +136,27 @@ Packages which have been yolo-promoted have "yolo: true" in their JSON output fr
 
 There are two parts to running omnitruck.
 
-First, you need to populate its cache. In production this is handled by a cron job. For development, you need to do this manually:
+First, you need to populate its cache. Redis is used for the cache, and you will want to have a redis server running beforehand:
+
+```bash
+# Choose the following to install redis based on your OS
+brew install redis
+apt-get install redis
+# Then just start it manually
+redis-server
+```
+
+In production the cache populating is handled by a cron job. For development, you need to do this manually:
 
 ```bash
 bundle install
 bundle exec ./poller -e development
 ```
+
+Omnitruck and the poller default to localhost when it looks for a redis
+server, so you don't need to do anything special to get it to use the server
+you started earlier.  If you have redis running elsewhere, then you will want
+to set the `REDIS_URL` environment variable to point it at the correct server.
 
 Second part is to run omnitruck web server. In production it runs in unicorn. For development, you have two options:
 
