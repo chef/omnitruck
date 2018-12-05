@@ -10,22 +10,17 @@ require 'chef/cache'
 require 'chef/version'
 
 class Poller
-  attr_reader :config
   attr_reader :options
 
   def initialize
     @options = {}
 
     optparse = OptionParser.new do |opts|
-      opts.banner = "Usage: #{$0} -e <environment>"
+      opts.banner = "Usage: #{$0}"
 
       opts.on_tail('-h', '--help', 'Print this help message') do
         puts opts
         exit
-      end
-      opts.on('-e ENVIRONMENT',
-              "Specify this application's environment - REQUIRED") do |e|
-        @options[:environment] = e
       end
       opts.on('-s SLEEP',
               "Specify a sleep interval that will infinitely loop execution") do |s|
@@ -33,36 +28,19 @@ class Poller
       end
     end
     optparse.parse!
+  end
 
-    @options[:config] = ENV['OMNITRUCK_YAML'] || './config/config.yml'
-
-    required = [:environment, :config]
-    missing = required.select { |opt| @options[opt].nil? }
-    unless missing.empty?
-      puts "[ERROR] Missing required options: #{missing.join(', ')}"
-      puts optparse
-      exit 1
-    end
-
-    unless File.exists?(@options[:config])
-      puts "[ERROR] Config file could not be found at #{@options[:config]}"
-      puts optparse
-      exit 1
-    end
-
-    @config = YAML.load_file(@options[:config])[@options[:environment]]
+  def cache
+    @cache ||= Chef::Cache.new()
   end
 
   def run
-    Chef::Cache.new(config['metadata_dir']).update
+    cache.update
   end
 end
 
 if File.absolute_path($0) == File.absolute_path(__FILE__)
   poller = Poller.new
-
-  # This could be trapped and looped, but the poller will be deprecated next gen
-  # This will suffice
   poller.run
 
   while poller.options[:sleep]

@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "fileutils"
+require "redis"
 require "chef/project_manifest"
 require "mixlib/install/product"
 
@@ -30,7 +30,7 @@ class Chef
       unstable
     )
 
-    attr_reader :metadata_dir
+    attr_reader :redis
 
     #
     # Initializer for the cache.
@@ -38,12 +38,9 @@ class Chef
     # @param [String] metadata_dir
     #   the directory which will be used to create files in & read files from.
     #
-    def initialize(metadata_dir = "./metadata_dir")
-      @metadata_dir = metadata_dir
-
-      KNOWN_CHANNELS.each do |channel|
-        FileUtils.mkdir_p(File.join(metadata_dir, channel))
-      end
+    def initialize()
+      # Use REDIS_URL environment variable to configure where redis is
+      @redis = Redis.new
     end
 
     #
@@ -56,26 +53,9 @@ class Chef
         KNOWN_CHANNELS.each do |channel|
           manifest = ProjectManifest.new(project, channel)
           manifest.generate
-
-          File.open(project_manifest_path(project, channel), "w") do |f|
-            f.puts manifest.serialize
-          end
+          @redis.set("#{channel}/#{project}", manifest.serialize)
         end
       end
-    end
-
-    #
-    # Returns the file path for the manifest file that belongs to the given
-    # project & channel.
-    #
-    # @parameter [String] project
-    # @parameter [String] channel
-    #
-    # @return [String]
-    #   File path of the manifest file.
-    #
-    def project_manifest_path(project, channel)
-      File.join(metadata_dir, channel, "#{project}-manifest.json")
     end
 
     #
@@ -88,12 +68,11 @@ class Chef
     #   [Hash] contents of the manifest file
     #
     def manifest_for(project, channel)
-      manifest_path = project_manifest_path(project, channel)
-
-      if File.exist?(manifest_path)
-        JSON.parse(File.read(manifest_path))
+      content = @redis.get("#{channel}/#{project}")
+      unless content.nil?
+        JSON.parse(content)
       else
-        raise MissingManifestFile, "Can not find the manifest file for '#{project}' - '#{channel}'"
+        raise MissingManifestFile, "Can not find the manifest for '#{project}' - '#{channel}'"
       end
     end
 
@@ -107,15 +86,13 @@ class Chef
     #   [String] timestamp for the last modified time.
     #
     def last_modified_for(project, channel)
-      manifest_path = project_manifest_path(project, channel)
-
-      if File.exist?(manifest_path)
-        manifest = JSON.parse(File.read(manifest_path))
+      content = @redis.get("#{channel}/#{project}")
+      unless content.nil?
+        manifest = JSON.parse(content)
         manifest["run_data"]["timestamp"]
       else
-        raise MissingManifestFile, "Can not find the manifest file for '#{project}' - '#{channel}'"
+        raise MissingManifestFile, "Can not find the manifest for '#{project}' - '#{channel}'"
       end
     end
-
   end
 end

@@ -1,3 +1,0 @@
-#!/bin/sh
-#
-cp {{pkg.svc_config_path}}/unicorn.rb /hab/svc/omnitruck-app/config/

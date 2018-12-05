@@ -249,7 +249,7 @@ class Omnitruck < Sinatra::Base
   # Returns the instance of Chef::Cache that app is using
   #
   def cache
-    @cache ||= Chef::Cache.new(metadata_dir)
+    @cache ||= Chef::Cache.new()
   end
 
   #
@@ -263,20 +263,6 @@ class Omnitruck < Sinatra::Base
   #
   def project_allowed(project)
     Chef::Cache::KNOWN_PROJECTS.include? project
-  end
-
-  #
-  # Returns the metadata directory being used.
-  #
-  # @return [String]
-  #   File path to the metadata directory.
-  #
-  def metadata_dir
-    if settings.respond_to?(:metadata_dir)
-      settings.metadata_dir
-    else
-      './'
-    end
   end
 
   #

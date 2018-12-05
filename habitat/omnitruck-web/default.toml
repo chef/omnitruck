@@ -1,7 +1,0 @@
-[unicorn]
-listen = "/hab/svc/omnitruck-app/var/unicorn.sock.0"
-timeout = 60
-preload_app = false
-worker_processes = 8
-backlog = 1024
-tcp_nodelay = true

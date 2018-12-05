@@ -46,6 +46,7 @@ GEM
     raindrops (0.15.0)
     rake (10.5.0)
     rb-readline (0.5.4)
+    redis (4.0.3)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
@@ -112,6 +113,7 @@ DEPENDENCIES
   rack-test
   rake
   rb-readline
+  redis
   rest-client
   rspec
   rspec-its
