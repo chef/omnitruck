@@ -59,6 +59,11 @@ platform "darwin" do
   remap "mac_os_x"
 end
 
+platform "sled" do
+  major_only true
+  remap "sles"
+end
+
 platform "suse" do
   major_only true
   remap "sles"
