@@ -59,6 +59,11 @@ platform "darwin" do
   remap "mac_os_x"
 end
 
+# SLES and variants
+#
+# SLES packages work on opensuse and Linux Enterprise Desktop
+#
+
 # Suse Linux Enterprise Desktop is effectively SLES with a GUI
 platform "sled" do
   major_only true
@@ -88,7 +93,7 @@ end
 
 # Supported RHEL Variants
 #
-# These are RHEL clones that we know will work + SuSE that we test on
+# These are RHEL clones that we know will work
 #
 
 platform "centos" do
@@ -162,6 +167,7 @@ platform "raspbian" do
   remap "debian"
 end
 
+# arista is based on an older Fedora release which best maps to EL 6
 platform "arista_eos" do
   major_only true
   remap "el"
