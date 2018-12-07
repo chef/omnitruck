@@ -717,6 +717,18 @@ context 'Omnitruck' do
 
             it_behaves_like 'sles artifacts'
           end
+
+          context 'when opensuseleap' do
+            let(:platform) { 'opensuseleap' }
+
+            it_behaves_like 'sles artifacts'
+          end
+
+          context 'when sled' do
+            let(:platform) { 'sled' }
+
+            it_behaves_like 'sles artifacts'
+          end
         end
 
         context 'for ubuntu' do
