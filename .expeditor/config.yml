@@ -1,8 +1,56 @@
-# Slack channel in Chef Software slack to send notifications about build failures, etc
 slack:
-  notify_channel:
-    - releng-notify
-    - omnitruck
+  notify_channel: ops-notify
 
 github:
-  enforce_workflow: true
+  delete_branch_on_merge: true
+
+# These are our Buildkite pipelines where deploys take place
+pipelines:
+  - verify:
+      description: Pull Request validation tests
+  - deploy/acceptance:
+      description: Deploy changes to kubernetes.chef.co pods
+      definition: .expeditor/deploy.pipeline.yml
+      env:
+        - ENVIRONMENT: acceptance
+        - APP: omnitruck
+  - deploy/production:
+      description: Deploy changes to kubernetes.chef.co pods
+      definition: .expeditor/deploy.pipeline.yml
+      env:
+        - ENVIRONMENT: production
+        - APP: omnitruck
+
+# These actions are taken when `/expeditor promote` is run from Slack
+promote:
+  action:
+    - bash:.expeditor/promote.sh
+    - trigger_pipeline:deploy/production:
+        only_if_conditions:
+          - value_one: "{{target_channel}}"
+            operator: equals
+            value_two: stable
+    # TODO - we don't purge the CDN yet
+    #- bash:.expeditor/purge-cdn.sh:
+    #    post_commit: true
+  channels:
+    - acceptance
+    - stable
+
+merge_actions:
+  - built_in:trigger_habitat_package_build:
+      post_commit: true
+      ignore_labels:
+        - "Habitat: Skip Build"
+        - "Expeditor: Skip All"
+
+habitat_packages:
+  - omnitruck:
+      origin: chefops
+      export:
+        - docker
+
+subscriptions:
+  - workload: docker_image_published:chefops/omnitruck:acceptance
+    actions:
+      - trigger_pipeline:deploy/acceptance
