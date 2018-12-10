@@ -35,7 +35,7 @@ of the redis instance:
 
 ```
 kubectl -n omnitruck create secret generic omnitruck-ENV
-  --from-literal=redis_url=redis://:AUTHTOKEN@redis.example.com:6379
+  --from-literal=redis_url=rediss://:AUTHTOKEN@redis.example.com:6379
 ```
 
 Once the redis cluster and secret are created, omnitruck should be able to be
