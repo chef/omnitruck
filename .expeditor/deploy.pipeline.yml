@@ -11,7 +11,7 @@ steps:
           - CHEF_CD_AWS_ACCESS_KEY_ID
           - CHEF_CD_AWS_SECRET_ACCESS_KEY
           - DOCKER_CONFIG_JSON_CHEFOPS
-          - AWS_SSL_ARN
+          - AWS_SSL_INTERNAL_ARN
           - ENVIRONMENT
           - CI
           - APP

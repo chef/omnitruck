@@ -91,8 +91,8 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-access-log-s3-bucket-name: "chef-utility-kubernetes-elb-access-logs"
     service.beta.kubernetes.io/aws-load-balancer-access-log-s3-bucket-prefix: "<%= ENV['APP'] %>-<%= ENV['ENVIRONMENT'] %>"
     <%- end -%>
-    <%- if ENV.has_key?('AWS_SSL_ARN') -%>
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: <%= ENV['AWS_SSL_ARN'] %>
+    <%- if ENV.has_key?('AWS_SSL_INTERNAL_ARN') -%>
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: <%= ENV['AWS_SSL_INTERNAL_ARN'] %>
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
     <%- end -%>
     dns.alpha.kubernetes.io/external: "<%= ENV['APP'] %>-<%= ENV['ENVIRONMENT'] %>.kubernetes.chef.co"
@@ -103,7 +103,7 @@ metadata:
   namespace: <%= ENV['APP'] %>
 spec:
   ports:
-  <%- if ENV.has_key?('AWS_SSL_ARN') -%>
+  <%- if ENV.has_key?('AWS_SSL_INTERNAL_ARN') -%>
   - name: https
     port: 443
   <%- else -%>
