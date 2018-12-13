@@ -1,3 +1,2 @@
-{{cfg.omnitruck.rack_env}}:
+{{cfg.rack_env}}:
   virtual_path: '{{cfg.omnitruck.virtual_path}}'
-  metadata_dir: '{{pkg.svc_var_path}}{{cfg.omnitruck.metadata_dir}}'
