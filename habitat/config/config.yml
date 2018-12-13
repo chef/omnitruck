@@ -1,2 +1,2 @@
-{{cfg.omnitruck.rack_env}}:
+{{cfg.rack_env}}:
   virtual_path: '{{cfg.omnitruck.virtual_path}}'
