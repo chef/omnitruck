@@ -1,6 +1,5 @@
 # omnitruck plan is located in /habitat root because of ruby scaffolding.
 # Scaffolding looks for a relative Gemfile
-#
 pkg_name=omnitruck
 pkg_origin=chefops
 pkg_version=0.1.0
