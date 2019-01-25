@@ -51,6 +51,6 @@ habitat_packages:
         - docker
 
 subscriptions:
-  - workload: docker_image_published:chefops/omnitruck:acceptance
+  - workload: docker_image_published:chefops/omnitruck:acceptance:*
     actions:
       - trigger_pipeline:deploy/acceptance
