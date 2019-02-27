@@ -30,9 +30,8 @@ promote:
           - value_one: "{{target_channel}}"
             operator: equals
             value_two: stable
-    # TODO - we don't purge the CDN yet
-    #- bash:.expeditor/purge-cdn.sh:
-    #    post_commit: true
+    - bash:.expeditor/purge-cdn.sh:
+        post_commit: true
   channels:
     - acceptance
     - stable
