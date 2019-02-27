@@ -3,13 +3,12 @@ steps:
     label: ":kubernetes:"
     concurrency: 1
     concurrency_group: chef-omnitruck-master/deploy/$ENVIRONMENT
-    plugins:
-      docker#v1.1.1:
-        always-pull: true
-        image: "chefes/buildkite"
-        environment:
-          - CHEF_CD_AWS_ACCESS_KEY_ID
-          - CHEF_CD_AWS_SECRET_ACCESS_KEY
+    expeditor:
+      accounts:
+        - aws/chef-cd
+      executor:
+        docker:
+          environment:
           - DOCKER_CONFIG_JSON_CHEFOPS
           - AWS_SSL_INTERNAL_ARN
           - ENVIRONMENT

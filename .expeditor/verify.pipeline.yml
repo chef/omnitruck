@@ -4,15 +4,14 @@ steps:
       bundle install --binstubs --path=.vendor
       bundle exec rspec
       erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
-    plugins:
-      docker#v1.1.1:
-        image: "chefes/buildkite"
+    expeditor:
+      executor:
+        docker:
 
   - label: audit
     command: |
       bundle install --binstubs --path=.vendor
       bundle exec bundle-audit
-    plugins:
-      docker#v1.1.1:
-        always-pull: true
-        image: "chefes/buildkite"
+    expeditor:
+      executor:
+        docker:

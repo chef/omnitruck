@@ -23,8 +23,8 @@ pipelines:
 
 # These actions are taken when `/expeditor promote` is run from Slack
 promote:
-  action:
-    - bash:.expeditor/promote.sh
+  actions:
+    - built_in:promote_habitat_packages
     - trigger_pipeline:deploy/production:
         only_if_conditions:
           - value_one: "{{target_channel}}"

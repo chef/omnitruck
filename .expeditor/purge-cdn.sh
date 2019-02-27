@@ -2,7 +2,7 @@
 
 set -eou pipefail
 
-TARGET_CHANNEL="${TARGET_CHANNEL:-acceptance}"
+TARGET_CHANNEL="${EXPEDITOR_TARGET_CHANNEL:-acceptance}"
 
 # Get the Fastly service identifiers from the dashboard and paste them here.
 if [ "$TARGET_CHANNEL" == "acceptance" ]; then
