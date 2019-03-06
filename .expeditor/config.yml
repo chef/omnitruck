@@ -23,16 +23,15 @@ pipelines:
 
 # These actions are taken when `/expeditor promote` is run from Slack
 promote:
-  action:
-    - bash:.expeditor/promote.sh
+  actions:
+    - built_in:promote_habitat_packages
     - trigger_pipeline:deploy/production:
         only_if_conditions:
           - value_one: "{{target_channel}}"
             operator: equals
             value_two: stable
-    # TODO - we don't purge the CDN yet
-    #- bash:.expeditor/purge-cdn.sh:
-    #    post_commit: true
+    - bash:.expeditor/purge-cdn.sh:
+        post_commit: true
   channels:
     - acceptance
     - stable

@@ -8,9 +8,14 @@ pkg_license=('Apache-2.0')
 pkg_deps=(
   core/coreutils
 )
+pkg_build_deps=(
+  core/make
+  core/gcc
+  core/tar
+)
 
 pkg_scaffolding=core/scaffolding-ruby
-scaffolding_ruby_pkg=core/ruby/$(cat "$SRC_PATH/.ruby-version")
+scaffolding_ruby_pkg=core/ruby24/$(cat "$SRC_PATH/.ruby-version")
 
 declare -A scaffolding_env
 scaffolding_env[OMNITRUCK_YAML]="/hab/svc/$pkg_name/config/config.yml"
