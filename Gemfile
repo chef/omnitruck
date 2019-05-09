@@ -10,8 +10,8 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'redis'
-gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :tag => 'v3.11.5'
+gem 'mixlib-versioning', '~> 1.2.0'
+gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :tag => 'v3.11.18'
 gem 'trashed'
 
 group :test do

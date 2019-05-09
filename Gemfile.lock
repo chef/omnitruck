@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install.git
-  revision: 4e7efc6f763d058df1732767b5a838df1a73977f
-  tag: v3.11.5
+  revision: 4ee38fd070dcf9478313a17203ff30badbb90326
+  tag: v3.11.18
   specs:
-    mixlib-install (3.11.5)
+    mixlib-install (3.11.18)
       mixlib-shellout
       mixlib-versioning
       thor
@@ -27,8 +27,8 @@ GEM
     kgio (2.10.0)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mixlib-shellout (2.4.0)
-    mixlib-versioning (1.1.0)
+    mixlib-shellout (2.4.4)
+    mixlib-versioning (1.2.7)
     multi_json (1.11.2)
     netrc (0.11.0)
     pry (0.10.4)
@@ -87,7 +87,7 @@ GEM
     sinatra-cors (1.1.0)
     slop (3.6.0)
     statsd-ruby (1.2.1)
-    thor (0.20.0)
+    thor (0.20.3)
     tilt (2.0.8)
     trashed (3.2.5)
       statsd-ruby (~> 1.1)
@@ -108,7 +108,7 @@ DEPENDENCIES
   colorize
   json
   mixlib-install!
-  mixlib-versioning (~> 1.1.0)
+  mixlib-versioning (~> 1.2.0)
   pry-byebug
   rack-test
   rake
@@ -128,4 +128,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
