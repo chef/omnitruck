@@ -2,8 +2,6 @@
 set -euo pipefail
 
 if [[ ! -z ${CI+x} ]]; then
-  aws-configure chef-cd
-
   mkdir -p ~/.kube
   aws --profile chef-cd s3 cp s3://chef-cd-citadel/kubernetes.chef.co.config ~/.kube/config
 else
