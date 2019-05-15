@@ -8,10 +8,13 @@ steps:
         - aws/chef-cd
       executor:
         docker:
-          environment:
-          - DOCKER_CONFIG_JSON_CHEFOPS
-          - AWS_SSL_INTERNAL_ARN
-          - ENVIRONMENT
-          - CI
-          - APP
-          - HAB_AUTH_TOKEN
+      secrets:
+        AWS_SSL_INTERNAL_ARN:
+          path: secret/chefops/aws
+          field: ssl_internal_arn
+        DOCKER_CONFIG_JSON_CHEFOPS:
+          path: secret/chefops/kubernetes
+          field: docker_json_config
+        HAB_AUTH_TOKEN:
+          path: secret/habitat/chef-ci
+          field: token
