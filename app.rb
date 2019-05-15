@@ -354,6 +354,8 @@ class Omnitruck < Sinatra::Base
         "chef-server" => "12.14.0",
         "chefdk" => "1.3.43",
         "inspec" => "1.20.0",
+        "angry-omnibus-toolchain" => "1.1.66",
+        "omnibus-toolchain" => "1.1.66",
       }
 
       # Locate native sles version for project if it exists
