@@ -45,6 +45,8 @@ spec:
     image: chefops/<%= ENV['APP'] %>:<%= ENV['IMAGE_TAG'] %>
     count: <%= ENV['ENVIRONMENT'] == 'production' ? '3' : '2' %>
     env:
+      - name: HAB_LICENSE
+        value: accept-no-persist
       - name: REDIS_URL
         valueFrom:
           secretKeyRef:
@@ -73,6 +75,8 @@ spec:
             command: ['/bin/sh']
             args: ['-c', 'cd $(hab pkg path chefops/<%= ENV['APP'] %>)/app; bundle exec $(hab pkg path core/ruby)/bin/ruby ./poller 2>&1']
             env:
+              - name: HAB_LICENSE
+                value: accept-no-persist
               - name: REDIS_URL
                 valueFrom:
                   secretKeyRef:

@@ -18,3 +18,17 @@ steps:
         HAB_AUTH_TOKEN:
           path: secret/habitat/chef-ci
           field: token
+
+  - wait
+
+  - command: .expeditor/buildkite/purge-cdn.sh
+    label: ":expeditor:"
+    concurrency: 1
+    concurrency_group: chef-omnitruck-master/deploy/$ENVIRONMENT
+    expeditor:
+      executor:
+        docker:
+      secrets:
+        FASTLY_API_TOKEN:
+          path: account/static/fastly/eng-services-ops
+          field: token
