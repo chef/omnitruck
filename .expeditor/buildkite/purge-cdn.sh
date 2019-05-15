@@ -14,10 +14,5 @@ else
   exit 1
 fi
 
-if [[ ${FASTLY_SERVICE+x} != "x" ]]; then
-  echo "Purging Fastly Service $FASTLY_SERVICE"
-  curl -X POST -H "Fastly-Key: $FASTLY_API_TOKEN" "https://api.fastly.com/service/$FASTLY_SERVICE/purge_all"
-else
-  echo "WARN: Fastly Service not set in $0!"
-  exit 1
-fi
+echo "Purging Fastly Service $FASTLY_SERVICE"
+curl -X POST -H "Fastly-Key: $FASTLY_API_TOKEN" "https://api.fastly.com/service/$FASTLY_SERVICE/purge_all"
