@@ -7,7 +7,7 @@ TARGET_ENVIRONMENT="${ENVIRONMENT:-acceptance}"
 # Get the Fastly service identifiers from the dashboard and paste them here.
 if [ "$TARGET_ENVIRONMENT" == "acceptance" ]; then
   FASTLY_SERVICE="3yB7EKyX9OJbc53RVk3tZ8"
-elif [ "$TARGET_ENVIRONMENT" == "stable" ]; then
+elif [ "$TARGET_ENVIRONMENT" == "production" ]; then
   FASTLY_SERVICE="27pKDzl9ahMdwMsYKFaGE"
 else
   echo "We do not currently support purging CDN for $TARGET_ENVIRONMENT"
