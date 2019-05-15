@@ -28,6 +28,8 @@ steps:
     expeditor:
       executor:
         docker:
+          environment:
+            - ENVIRONMENT
       secrets:
         FASTLY_API_TOKEN:
           path: account/static/fastly/eng-services-ops
