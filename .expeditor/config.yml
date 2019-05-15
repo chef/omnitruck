@@ -1,5 +1,7 @@
 slack:
-  notify_channel: ops-notify
+  notify_channel:
+    - ops-notify
+    - omnitruck
 
 github:
   delete_branch_on_merge: true
