@@ -2,15 +2,15 @@
 
 set -eou pipefail
 
-TARGET_CHANNEL="${EXPEDITOR_TARGET_CHANNEL:-acceptance}"
+TARGET_ENVIRONMENT="${ENVIRONMENT:-acceptance}"
 
 # Get the Fastly service identifiers from the dashboard and paste them here.
-if [ "$TARGET_CHANNEL" == "acceptance" ]; then
+if [ "$TARGET_ENVIRONMENT" == "acceptance" ]; then
   FASTLY_SERVICE="3yB7EKyX9OJbc53RVk3tZ8"
-elif [ "$TARGET_CHANNEL" == "stable" ]; then
+elif [ "$TARGET_ENVIRONMENT" == "stable" ]; then
   FASTLY_SERVICE="27pKDzl9ahMdwMsYKFaGE"
 else
-  echo "We do not currently support purging CDN for $TARGET_CHANNEL"
+  echo "We do not currently support purging CDN for $TARGET_ENVIRONMENT"
   exit 1
 fi
 
