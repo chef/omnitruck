@@ -73,7 +73,7 @@ spec:
           - image: chefops/<%= ENV['APP'] %>:<%= ENV['IMAGE_TAG'] %>
             name: <%= ENV['APP'] %>-poller
             command: ['/bin/sh']
-            args: ['-c', 'cd $(hab pkg path chefops/<%= ENV['APP'] %>)/app; bundle exec $(hab pkg path core/ruby)/bin/ruby ./poller 2>&1']
+            args: ['-c', 'cd $(hab pkg path chefops/<%= ENV['APP'] %>)/app; bundle exec $(hab pkg path core/ruby24)/bin/ruby ./poller 2>&1']
             env:
               - name: HAB_LICENSE
                 value: accept-no-persist
