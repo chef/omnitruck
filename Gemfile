@@ -11,7 +11,7 @@ gem "rest-client"
 gem 'rake'
 gem 'redis'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', :git => 'https://github.com/chef/mixlib-install.git', :tag => 'v3.11.5'
+gem 'mixlib-install'
 gem 'trashed'
 
 group :test do
