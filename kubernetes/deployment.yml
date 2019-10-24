@@ -82,7 +82,7 @@ spec:
                   secretKeyRef:
                     name: <%= ENV['APP'] %>-<%= ENV['ENVIRONMENT'] %>
                     key: redis_url
-          restartPolicy: Never
+          restartPolicy: OnFailure
 ---
 apiVersion: v1
 kind: Service
