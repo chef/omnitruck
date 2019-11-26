@@ -69,6 +69,11 @@ platform "suse" do
   remap "sles"
 end
 
+platform "opensuse-leap" do
+  major_only true
+  remap "sles"
+end
+
 platform "sles" do
   major_only true
 end
