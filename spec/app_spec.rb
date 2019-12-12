@@ -711,6 +711,12 @@ context 'Omnitruck' do
 
             it_behaves_like 'sles artifacts'
           end
+
+          context 'when opensuse-leap' do
+            let(:platform) { 'opensuse-leap' }
+
+            it_behaves_like 'sles artifacts'
+          end
         end
 
         context 'for ubuntu' do
