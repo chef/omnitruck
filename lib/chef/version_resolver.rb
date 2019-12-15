@@ -1,5 +1,6 @@
 require 'chef/version'
 require 'platform_dsl'
+require 'dist'
 
 class Chef
   class VersionResolver
@@ -40,7 +41,7 @@ class Chef
       version = find_target_version_in(version_metadata)
 
       if version.nil?
-        raise InvalidDownloadPath, "Cannot find a valid chef version that matches version constraints: #{friendly_error_msg}"
+        raise InvalidDownloadPath, "Cannot find a valid #{OmnitruckDist::CLIENT_NAME} version that matches version constraints: #{friendly_error_msg}"
       end
 
       version
@@ -107,7 +108,7 @@ class Chef
 
       # first make sure we have some builds available for the given platform
       if !build_map[core_platform]
-        raise InvalidDownloadPath, "Cannot find any chef versions for core platform #{core_platform}: #{friendly_error_msg}"
+        raise InvalidDownloadPath, "Cannot find any #{OmnitruckDist::CLIENT_NAME} versions for core platform #{core_platform}: #{friendly_error_msg}"
       end
 
       # get all the available distro versions
@@ -118,13 +119,13 @@ class Chef
       distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v, target_architecture) <= target_platform }
 
       if distro_versions_available.length == 0
-        raise InvalidDownloadPath, "Cannot find any available chef versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
+        raise InvalidDownloadPath, "Cannot find any available #{OmnitruckDist::CLIENT_NAME} versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
       end
 
       # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
       distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1, target_architecture) <=> dsl.new_platform_version(core_platform, v2, target_architecture) }
 
-      if project == "chef"
+      if project == OmnitruckDist::CLIENT_NAME
         # Windows has the requirement that we not return x86_64 packages from the
         # stable channel until Chef 12.9+.  See the description in project_cache.rb
         # for more detail.

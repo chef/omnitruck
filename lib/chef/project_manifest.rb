@@ -1,5 +1,6 @@
 require 'yajl'
 require "mixlib/install"
+require "mixlib/install/dist"
 require "mixlib/install/options"
 require "mixlib/install/backend/package_router"
 require 'chef/version'

@@ -32,6 +32,7 @@ require 'trashed/reporter'
 
 require 'chef/version'
 require 'platform_dsl'
+require 'dist'
 require 'mixlib/versioning'
 require 'mixlib/install'
 
@@ -114,14 +115,16 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get '/chef/install.msi' do
+  client = OmnitruckDist::CLIENT_NAME
+
+  get "/#{client}/install.msi" do
     # default to 32-bit architecture for now
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
+    redirect to("/stable/#{client}/download?p=windows&pv=2008r2&m=i386")
   end
 
   get '/install.msi' do
     # default to 32-bit architecture for now
-    redirect to('/stable/chef/download?p=windows&pv=2008r2&m=i386')
+    redirect to("/stable/#{client}/download?p=windows&pv=2008r2&m=i386")
   end
 
   get "/full_:project\\_list" do
@@ -258,7 +261,7 @@ class Omnitruck < Sinatra::Base
     content_type :json
 
     JSON.pretty_generate({
-      :timestamp => cache.last_modified_for('chef', 'stable')
+      :timestamp => cache.last_modified_for(client, 'stable')
     })
   end
 
@@ -385,16 +388,7 @@ class Omnitruck < Sinatra::Base
       # Here we map specific project versions that started building
       # native SLES packages. This is used to determine which projects
       # need to be remapped to EL before a certain version.
-      native_sles_project_version = {
-        "automate" => "0.8.5",
-        "chef" => "12.21.1",
-        "angrychef" => "12.21.1",
-        "chef-server" => "12.14.0",
-        "chefdk" => "1.3.43",
-        "inspec" => "1.20.0",
-        "angry-omnibus-toolchain" => "1.1.66",
-        "omnibus-toolchain" => "1.1.66",
-      }
+      native_sles_project_version = OmnitruckDist::SLES_PROJECT_VERSIONS
 
       # Locate native sles version for project if it exists
       sles_project_version = native_sles_project_version[current_project]

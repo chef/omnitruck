@@ -16,7 +16,9 @@
 
 require "redis"
 require "chef/project_manifest"
+require "mixlib/install/dist"
 require "mixlib/install/product"
+require "mixlib/install/product_matrix"
 
 class Chef
   class Cache
