@@ -7,11 +7,3 @@ steps:
     expeditor:
       executor:
         docker:
-
-  - label: audit
-    command: |
-      bundle install --binstubs --path=.vendor
-      bundle exec bundle-audit
-    expeditor:
-      executor:
-        docker:
