@@ -1,9 +1,8 @@
 name 'omnitruck'
 maintainer 'Chef Software'
 maintainer_email 'cookbooks@chef.io'
-license 'Apache2'
+license 'Apache-2.0'
 description 'Installs/Configures omnitruck'
-long_description 'Installs/Configures omnitruck'
 version '0.4.25'
 
 depends 'delivery-sugar'
