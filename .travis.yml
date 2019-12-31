@@ -1,9 +1,0 @@
-sudo: false
-
-language: ruby
-
-script: bundle exec rake spec
-
-branches:
-  only:
-    - master
