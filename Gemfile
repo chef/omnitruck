@@ -10,7 +10,7 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'redis'
-gem 'mixlib-versioning', '~> 1.1.0'
+gem 'mixlib-versioning', '~> 1.2.0'
 gem 'mixlib-install'
 gem 'trashed'
 
@@ -23,8 +23,4 @@ group :test do
   gem 'rspec_junit_formatter'
   gem 'pry-byebug'
   gem 'rb-readline'
-end
-
-group :security do
-  gem 'bundler-audit'
 end
