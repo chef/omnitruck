@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: omnitruck
+# Cookbook:: omnitruck
 # Recipe:: default
 #
 

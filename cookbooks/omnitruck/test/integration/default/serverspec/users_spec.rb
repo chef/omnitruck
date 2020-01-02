@@ -9,9 +9,9 @@ describe 'omnitruck instance users' do
   end
 
   [
-    '/srv/omnitruck', 
-    '/srv/omnitruck/shared', 
-    '/srv/omnitruck/shared/pids'
+    '/srv/omnitruck',
+    '/srv/omnitruck/shared',
+    '/srv/omnitruck/shared/pids',
   ].each do |f|
     describe file(f) do
       it { should be_owned_by 'omnitruck' }
