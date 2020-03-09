@@ -333,6 +333,7 @@ class Omnitruck < Sinatra::Base
                    else
                      # Map `uname -m` returned architectures into our internal representations
                      case current_arch
+                     when *%w{ arm64 aarch64 }       then 'aarch64'
                      when *%w{ x86_64 amd64 x64 }    then 'x86_64'
                      when *%w{ i386 x86 i86pc i686 } then 'i386'
                      when *%w{ sparc sun4u sun4v }   then 'sparc'
