@@ -17,7 +17,7 @@ gem 'trashed'
 group :test do
   gem 'rspec'
   gem 'rspec-legacy_formatters'
-  gem 'rspec-rerun', '~> 0.3.0'
+  gem 'rspec-rerun', '~> 1.1.0'
   gem 'rspec-its'
   gem 'rack-test'
   gem 'rspec_junit_formatter'
