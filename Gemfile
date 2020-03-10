@@ -24,7 +24,3 @@ group :test do
   gem 'pry-byebug'
   gem 'rb-readline'
 end
-
-group :security do
-  gem 'bundler-audit'
-end
