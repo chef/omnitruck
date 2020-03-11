@@ -32,3 +32,13 @@ steps:
         FASTLY_API_TOKEN:
           path: account/static/fastly/eng-services-ops
           field: token
+
+  - wait
+
+  - command: .expeditor/buildkite/URL-verification.sh
+    label: ":expeditor:"
+    concurrency: 1
+    concurrency_group: chef-omnitruck-master/deploy/$ENVIRONMENT
+    expeditor:
+      executor:
+        docker:

@@ -7,3 +7,10 @@ steps:
     expeditor:
       executor:
         docker:
+
+  - label: WebServer Tests
+    command: |
+      .expeditor/buildkite/webserver-tests.sh
+    expeditor:
+      executor:
+        docker:
