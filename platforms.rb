@@ -129,8 +129,15 @@ platform "fedora" do
   remap "el"
   version_remap do |opts|
     # A combo of Fedora 19/20 was used to create RHEL 7 so when we're on Fedora 20 use the RHEL 7 packages
-    # https://docs.fedoraproject.org/quick-docs/en-US/fedora-and-red-hat-enterprise-linux.html
-    (opts[:version].to_i >= 20) ? "7" : "6"
+    # Fedora 28 was used to build RHEL 8 so when on Fedora 28+ use the RHEL 8 packages
+    # https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/index.html
+    if opts[:version].to_i >= 28
+      "8"
+    elsif opts[:version].to_i >= 20
+      "7"
+    else
+      "6"
+    end
   end
 end
 
