@@ -5,6 +5,7 @@ rspec.failures
 # Bundler-related ignores
 bin/*
 .bundle
+vendor/
 
 # app-specific ignores:
 /build*list.json
@@ -35,3 +36,6 @@ results/
 .kitchen
 
 .delivery/cli.toml
+
+# Redis
+*.rdb

@@ -199,6 +199,20 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(package_list_info)
   end
 
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/all\/?$/ do
+    pass unless project_allowed(project)
+    content_type :json
+
+    JSON.pretty_generate(available_versions)
+  end
+
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/latest\/?$/ do
+    pass unless project_allowed(project)
+    content_type :json
+
+    JSON.pretty_generate(available_versions.last)
+  end
+
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms\/?$/ do
     pass unless project_allowed(project)
 
@@ -291,6 +305,16 @@ class Omnitruck < Sinatra::Base
   #
   def project
     params['project'].gsub('_', '-')
+  end
+
+  #
+  # Returns the available versions for a project and channel
+  #
+  # @return [Array]
+  #   List of available version strings
+  #
+  def available_versions
+    Mixlib::Install.available_versions(project, channel)
   end
 
   #

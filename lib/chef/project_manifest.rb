@@ -102,7 +102,7 @@ class Chef
     end
 
     #
-    # This method generates a project manifest using info from Bintray.
+    # This method generates a project manifest using info from packages.chef.io
     #
     # @return [ProjectManifest]
     #

@@ -13,9 +13,15 @@ elif [ "$TARGET_ENVIRONMENT" == "production" ]; then
   TARGET_DOMAIN="https://omnitruck.chef.io"
 fi
 
+# Core Omnitruck endpoints
 curl --fail -I "$TARGET_DOMAIN/_status"
 curl --fail -I "$TARGET_DOMAIN/install.sh"
 curl --fail -I "$TARGET_DOMAIN/install.ps1"
-curl --fail -I "$TARGET_DOMAIN/stable/chef/versions"
 curl --fail -I "$TARGET_DOMAIN/stable/chef/metadata?p=ubuntu&pv=18.04&m=x86_64"
 curl --fail -I "$TARGET_DOMAIN/stable/chef/download?p=ubuntu&pv=18.04&m=x86_64"
+
+# Download Site endpoints
+curl --fail -I "$TARGET_DOMAIN/stable/chef/versions"
+curl --fail -I "$TARGET_DOMAIN/stable/chef/packages"
+curl --fail -I "$TARGET_DOMAIN/stable/chef/versions/all"
+curl --fail -I "$TARGET_DOMAIN/stable/chef/versions/latest"
