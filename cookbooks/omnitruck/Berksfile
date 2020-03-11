@@ -1,6 +1,0 @@
-source 'https://supermarket.chef.io'
-
-metadata
-
-cookbook 'oc-users', git: 'git@github.com:opscode-cookbooks/oc-users.git'
-cookbook 'cia_infra', git: 'git@github.com:chef-cookbooks/cia_infra.git'
