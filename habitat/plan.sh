@@ -15,7 +15,6 @@ pkg_build_deps=(
 )
 
 pkg_scaffolding=core/scaffolding-ruby
-scaffolding_ruby_pkg=core/ruby24/$(cat "$SRC_PATH/.ruby-version")
 
 declare -A scaffolding_env
 scaffolding_env[OMNITRUCK_YAML]="/hab/svc/$pkg_name/config/config.yml"
