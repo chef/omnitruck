@@ -15,6 +15,9 @@ fi
 
 # Core Omnitruck endpoints
 curl --fail -I "$TARGET_DOMAIN/_status"
+curl --fail -I "$TARGET_DOMAIN/products"
+curl --fail -I "$TARGET_DOMAIN/platforms"
+curl --fail -I "$TARGET_DOMAIN/architectures"
 curl --fail -I "$TARGET_DOMAIN/install.sh"
 curl --fail -I "$TARGET_DOMAIN/install.ps1"
 curl --fail -I "$TARGET_DOMAIN/stable/chef/metadata?p=ubuntu&pv=18.04&m=x86_64"
