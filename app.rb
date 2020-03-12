@@ -87,12 +87,12 @@ class Omnitruck < Sinatra::Base
     '/metadata' => '/chef/metadata',
     '/download-server' => '/chef-server/download',
     '/metadata-server' => '/chef-server/metadata',
-    '/full_client_list' => '/chef/versions',
-    '/full_list' => '/chef/versions',
-    '/full_server_list' => '/chef-server/versions',
-    '/chef/full_client_list' => '/chef/versions',
-    '/chef/full_list' => '/chef/versions',
-    '/chef/full_server_list' => '/chef-server/versions',
+    '/full_client_list' => '/chef/packages',
+    '/full_list' => '/chef/packages',
+    '/full_server_list' => '/chef-server/packages',
+    '/chef/full_client_list' => '/chef/packages',
+    '/chef/full_list' => '/chef/packages',
+    '/chef/full_server_list' => '/chef-server/packages',
     '/metadata-chefdk' => '/chefdk/metadata',
     '/download-chefdk' => '/chefdk/download',
     '/chef_platform_names' => '/chef/platforms',
@@ -125,7 +125,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get "/full_:project\\_list" do
-    status, headers, body = call env.merge("PATH_INFO" => "/#{project}/versions")
+    status, headers, body = call env.merge("PATH_INFO" => "/#{project}/packages")
     [status, headers, body]
   end
 
@@ -193,20 +193,27 @@ class Omnitruck < Sinatra::Base
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
     pass unless project_allowed(project)
+    redirect_url = "/#{channel}/#{project}/packages"
+    redirect_url += "?v=#{params['v']}" unless params['v'].nil?
+    redirect redirect_url, 302
+  end
+
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
+    pass unless project_allowed(project)
     content_type :json
 
     package_list_info = get_package_list
     JSON.pretty_generate(package_list_info)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/all\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/all/ do
     pass unless project_allowed(project)
     content_type :json
 
     JSON.pretty_generate(available_versions)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/latest\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/latest/ do
     pass unless project_allowed(project)
     content_type :json
 

@@ -56,7 +56,7 @@ The values that `p`, `pv` & `m` can take include but are not limited to:
 
 Supports the same options with the `/$channel/$project/metadata` endpoint and instead of returning package information, it returns a redirect to the `"url"` set in the package information.
 
-### `/$channel/$project/versions`
+### `/$channel/$project/packages`
 
 This api is similar to `/$channel/$project/metadata` but instead of returning information about a single package, it returns information about all packages that have the same version number.
 
@@ -107,6 +107,7 @@ Historically omnitruck supported different naming conventions in its endpoints. 
 * /full_$project_list
 * /$project_platform_names
 * /$channel/$project/platforms
+* /$channel/$project/versions
 
 ## Poller
 
