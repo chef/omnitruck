@@ -1,9 +1,16 @@
 steps:
-  - label: static
-    command: |
-      bundle install --binstubs --path=.vendor
-      bundle exec rspec
-      erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
+  - label: ":ruby: unit"
+    command:
+      - bundle install --binstubs --path=.vendor
+      - bundle exec rspec
+    expeditor:
+      executor:
+        docker:
+
+  - label: ":kubernetes: static"
+    command:
+      - bundle install --binstubs --path=.vendor
+      - erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
     expeditor:
       executor:
         docker:
