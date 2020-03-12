@@ -39,6 +39,9 @@ steps:
     label: ":expeditor:"
     concurrency: 1
     concurrency_group: chef-omnitruck-master/deploy/$ENVIRONMENT
+    retry:
+      automatic:
+        limit: 1
     expeditor:
       executor:
         docker:
