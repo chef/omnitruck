@@ -41,6 +41,18 @@ RSpec.configure do |conf|
     c.syntax = :expect
   end
 
+  def real_projects
+    @real_projects ||= (
+      Chef::Cache::KNOWN_PROJECTS - [
+        'chef-server-ha-provisioning',
+        'ha',
+        'harmony',
+        'mac-bootstrapper',
+        'omnibus-gcc',
+        'sync',
+      ])
+  end
+
   # Uncomment to write failed specs to file.
   # Run failed tests using --only-failures flag
   # conf.example_status_persistence_file_path = "examples.txt"

@@ -1350,12 +1350,10 @@ context 'Omnitruck' do
 
   end
 
-  context '/<CHANNEL>/<PROJECT>/versions endpoint' do
-    # TODO: change this back once Chef Workstation hits stable!
-    # Chef::Cache::KNOWN_PROJECTS.each do |project|
-    (Chef::Cache::KNOWN_PROJECTS - ['chef-workstation']).each do |project|
+  context '/<CHANNEL>/<PROJECT>/packages endpoint' do
+    real_projects.each do |project|
       context "for #{project}" do
-        let(:endpoint){ "/stable/#{project}/versions" }
+        let(:endpoint){ "/stable/#{project}/packages" }
 
         it "exists" do
           get(endpoint)
@@ -1376,7 +1374,7 @@ context 'Omnitruck' do
     # Let's test with chefdk because chef manifest have a 12.6.1 entry in it which
     # limits the information we are getting out of this endpoint.
     context "for stable chefdk" do
-      let(:endpoint) { '/stable/chefdk/versions' }
+      let(:endpoint) { '/stable/chefdk/packages' }
       let(:params) { { v: version } }
       let(:versions_output) {
         get(endpoint, params)
@@ -1447,13 +1445,54 @@ context 'Omnitruck' do
     end
 
     context "for current chefdk" do
-      let(:endpoint) { '/current/chefdk/versions' }
+      let(:endpoint) { '/current/chefdk/packages' }
       let(:params) { { v: version } }
       let(:versions_output) {
         get(endpoint, params)
         metadata_json = last_response.body
         JSON.parse(metadata_json)
       }
+    end
+  end
+
+  context '/<CHANNEL>/<PROJECT>/versions/all endpoint' do
+    real_projects.each do |project|
+      context "for #{project}" do
+        let(:endpoint){ "/stable/#{project}/versions/all" }
+
+        it "exists" do
+          get(endpoint)
+          expect(last_response).to be_ok
+        end
+
+        it "returns the correct JSON data" do
+          get(endpoint)
+          expect(last_response.header['Content-Type']).to include 'application/json'
+          response = JSON.parse(last_response.body)
+          expect(response).to be_an_instance_of(Array)
+          expect(response.length).to be > 1
+        end
+      end
+    end
+  end
+
+  context '/<CHANNEL>/<PROJECT>/versions/latest endpoint' do
+    real_projects.each do |project|
+      context "for #{project}" do
+        let(:endpoint){ "/stable/#{project}/versions/latest" }
+
+        it "exists" do
+          get(endpoint)
+          expect(last_response).to be_ok
+        end
+
+        it "returns the correct JSON data" do
+          get(endpoint)
+          expect(last_response.header['Content-Type']).to include 'application/json'
+          response = JSON.parse(last_response.body)
+          expect(response).to be_an_instance_of(String)
+        end
+      end
     end
   end
 

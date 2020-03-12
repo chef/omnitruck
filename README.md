@@ -56,11 +56,19 @@ The values that `p`, `pv` & `m` can take include but are not limited to:
 
 Supports the same options with the `/$channel/$project/metadata` endpoint and instead of returning package information, it returns a redirect to the `"url"` set in the package information.
 
-### `/$channel/$project/versions`
+### `/$channel/$project/packages`
 
 This api is similar to `/$channel/$project/metadata` but instead of returning information about a single package, it returns information about all packages that have the same version number.
 
 Response is an array of objects returned by `/$channel/$project/metadata` endpoint. Supports `v` but does not support `p`, `pv` or `m`.
+
+### `/$channel/$project/versions/all`
+
+Returns a list of available version numbers for a particular channel and project combination
+
+### `/$channel/$project/versions/latest`
+
+Returns the latest version number for a particular channel and project combination
 
 ### `/_status`
 
@@ -99,12 +107,11 @@ Historically omnitruck supported different naming conventions in its endpoints. 
 * /full_$project_list
 * /$project_platform_names
 * /$channel/$project/platforms
+* /$channel/$project/versions
 
 ## Poller
 
-`./poller` is a tool that populates a cache with information about the available versions of Chef packages. In production is runs every 5 minutes with a cron job.
-
-It polls <https://bintray.com/chef> and creates files named `$channel\$project-manifest.json` under the configured metadata directory.
+`./poller` is a tool that populates a Redis cache with information about the available versions of Chef Software, Inc. packages. In production is runs every 5 minutes with a cron job.
 
 ## Version Resolution
 
