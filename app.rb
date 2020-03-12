@@ -95,10 +95,10 @@ class Omnitruck < Sinatra::Base
     '/chef/full_server_list' => '/chef-server/packages',
     '/metadata-chefdk' => '/chefdk/metadata',
     '/download-chefdk' => '/chefdk/download',
-    '/chef_platform_names' => '/chef/platforms',
-    '/chef_server_platform_names' => '/chef-server/platforms',
-    '/chef/chef_platform_names' => '/chef/platforms',
-    '/chef/chef_server_platform_names' => '/chef-server/platforms',
+    '/chef_platform_names' => '/platforms',
+    '/chef_server_platform_names' => '/platforms',
+    '/chef/chef_platform_names' => '/platforms',
+    '/chef/chef_server_platform_names' => '/platforms',
     '/chef/metadata-chefdk' => '/chefdk/metadata',
     '/chef/download-chefdk' => '/chefdk/download',
     '/chef/metadata-container' => '/container/metadata',
@@ -220,26 +220,23 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(available_versions.last)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
     pass unless project_allowed(project)
+    redirect '/platforms', 302
+  end
 
-    # Historically this endpoint was being used by chef-web-downloads to
-    # extend the platform keys with a human friendly versions.
-    # Now that this functionality is not needed anymore we can deprecate this
-    # endpoint. However in order not to break others who might be calling into
-    # this we return our full set of platform key to user friendly platform
-    # name mappings.
+  get /platforms/ do
     JSON.pretty_generate({
       "aix"       => "AIX",
-      "el"        => "Enterprise Linux",
-      "debian"    => "Debian",
+      "el"        => "Red Hat Enterprise Linux/CentOS",
+      "debian"    => "Debian GNU/Linux",
       "freebsd"   => "FreeBSD",
       "ios_xr"    => "Cisco IOS-XR",
-      "mac_os_x"  => "OS X",
+      "mac_os_x"  => "macOS",
       "nexus"     => "Cisco NX-OS",
-      "ubuntu"    => "Ubuntu",
+      "ubuntu"    => "Ubuntu Linux",
       "solaris2"  => "Solaris",
-      "sles"      => "SUSE Enterprise",
+      "sles"      => "SUSE Linux Enterprise Server",
       "suse"      => "openSUSE",
       "windows"   => "Windows"
     })
