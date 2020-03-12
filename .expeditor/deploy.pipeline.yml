@@ -35,7 +35,7 @@ steps:
 
   - wait
 
-  - command: .expeditor/buildkite/URL-verification.sh
+  - command: .expeditor/buildkite/smoke.sh
     label: ":expeditor:"
     concurrency: 1
     concurrency_group: chef-omnitruck-master/deploy/$ENVIRONMENT

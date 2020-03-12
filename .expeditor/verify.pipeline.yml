@@ -1,16 +1,33 @@
 steps:
-  - label: static
-    command: |
-      bundle install --binstubs --path=.vendor
-      bundle exec rspec
-      erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
+  - label: ":ruby: unit"
+    command:
+      - bundle install --binstubs --path=.vendor
+      - bundle exec rspec
     expeditor:
       executor:
         docker:
 
-  - label: WebServer Tests
-    command: |
-      .expeditor/buildkite/webserver-tests.sh
+  - label: ":kubernetes: static"
+    command:
+      - erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
     expeditor:
       executor:
         docker:
+
+  - label: ":ruby: functional"
+    command:
+      - cp config/config.yml.example config/config.yml
+      - sudo apt-get update
+      - sudo apt-get install -y redis
+      - redis-server &
+      - bundle install --path vendor/bundle
+      - bundle exec ./poller
+      - bundle exec unicorn -E development &
+      - sleep 10
+      - ps -ef |grep unicorn
+      - .expeditor/buildkite/smoke.sh
+    expeditor:
+      executor:
+        docker:
+          environment:
+              - ENVIRONMENT=verify
