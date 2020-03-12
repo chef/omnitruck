@@ -1,0 +1,108 @@
+{
+    "ubuntu": {
+      "16.04": {
+        "x86_64": {
+          "sha1": "5d89b5c2b2c86980b18e6114066802d554188683",
+          "sha256": "c447bdc246312dd8883cd61894da60c28405efb2904240eca4a3fd9c4122fb3a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/ubuntu/16.04/chef-workstation_0.16.33-1_amd64.deb",
+          "version": "0.16.33"
+        }
+      },
+      "18.04": {
+        "x86_64": {
+          "sha1": "5d89b5c2b2c86980b18e6114066802d554188683",
+          "sha256": "c447bdc246312dd8883cd61894da60c28405efb2904240eca4a3fd9c4122fb3a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/ubuntu/18.04/chef-workstation_0.16.33-1_amd64.deb",
+          "version": "0.16.33"
+        }
+      }
+    },
+    "el": {
+      "6": {
+        "x86_64": {
+          "sha1": "36dc2460427bd4856e3a3a247747ebe25d8f545f",
+          "sha256": "60377244bf500e5324a2c80ef3dc4a5e82fcae12d20626fdf22324b9e14ddecd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/el/6/chef-workstation-0.16.33-1.el6.x86_64.rpm",
+          "version": "0.16.33"
+        }
+      },
+      "7": {
+        "x86_64": {
+          "sha1": "f6ac8f616624b41b9328149ab6a9fdd31a1466e5",
+          "sha256": "a5e816c712fa90ac044c048d892f147274fafa5a6db070200a4945f6dc1e12b2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/el/7/chef-workstation-0.16.33-1.el7.x86_64.rpm",
+          "version": "0.16.33"
+        }
+      },
+      "8": {
+        "x86_64": {
+          "sha1": "f6ac8f616624b41b9328149ab6a9fdd31a1466e5",
+          "sha256": "a5e816c712fa90ac044c048d892f147274fafa5a6db070200a4945f6dc1e12b2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/el/8/chef-workstation-0.16.33-1.el7.x86_64.rpm",
+          "version": "0.16.33"
+        }
+      }
+    },
+    "mac_os_x": {
+      "10.13": {
+        "x86_64": {
+          "sha1": "d87acebcf448cbbfbc20ce0863e963c93735627a",
+          "sha256": "73ae4f3a6a22431d7d51f0a633121d1a2de65b4af9d3034ac7585cb9331711db",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/mac_os_x/10.13/chef-workstation-0.16.33-1.dmg",
+          "version": "0.16.33"
+        }
+      },
+      "10.14": {
+        "x86_64": {
+          "sha1": "d87acebcf448cbbfbc20ce0863e963c93735627a",
+          "sha256": "73ae4f3a6a22431d7d51f0a633121d1a2de65b4af9d3034ac7585cb9331711db",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/mac_os_x/10.14/chef-workstation-0.16.33-1.dmg",
+          "version": "0.16.33"
+        }
+      },
+      "10.15": {
+        "x86_64": {
+          "sha1": "d87acebcf448cbbfbc20ce0863e963c93735627a",
+          "sha256": "73ae4f3a6a22431d7d51f0a633121d1a2de65b4af9d3034ac7585cb9331711db",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/mac_os_x/10.15/chef-workstation-0.16.33-1.dmg",
+          "version": "0.16.33"
+        }
+      }
+    },
+    "windows": {
+      "2008r2": {
+        "x86_64": {
+          "sha1": "80ef10011ca6d170fe874612c9f3d64291824ad8",
+          "sha256": "8556fab7e35cc14f67bc78867722b165adfd1403bdba7314cc894509c77afebd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/windows/2019/chef-workstation-0.16.33-1-x64.msi",
+          "version": "0.16.33"
+        }
+      }
+    },
+    "debian": {
+      "9": {
+        "x86_64": {
+          "sha1": "29a13385be79d7ed6e3af1fae7417b3ce60e6a9f",
+          "sha256": "3db05ca26e0b64b5c5a1c198d40036b297729e56b2f60e22243a06ab7699dfc0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/debian/9/chef-workstation_0.16.33-1_amd64.deb",
+          "version": "0.16.33"
+        }
+      },
+      "8": {
+        "x86_64": {
+          "sha1": "29a13385be79d7ed6e3af1fae7417b3ce60e6a9f",
+          "sha256": "3db05ca26e0b64b5c5a1c198d40036b297729e56b2f60e22243a06ab7699dfc0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/debian/8/chef-workstation_0.16.33-1_amd64.deb",
+          "version": "0.16.33"
+        }
+      },
+      "10": {
+        "x86_64": {
+          "sha1": "29a13385be79d7ed6e3af1fae7417b3ce60e6a9f",
+          "sha256": "3db05ca26e0b64b5c5a1c198d40036b297729e56b2f60e22243a06ab7699dfc0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/0.16.33/debian/10/chef-workstation_0.16.33-1_amd64.deb",
+          "version": "0.16.33"
+        }
+      }
+    }
+  }
