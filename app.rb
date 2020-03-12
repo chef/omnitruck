@@ -134,6 +134,17 @@ class Omnitruck < Sinatra::Base
     [status, headers, body]
   end
 
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
+    pass unless project_allowed(project)
+    redirect_url = "/#{channel}/#{project}/packages"
+    redirect_url += "?v=#{params['v']}" unless params['v'].nil?
+    redirect redirect_url, 302
+  end
+
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
+    pass unless project_allowed(project)
+    redirect '/platforms', 302
+  end
   #########################################################################
   # END LEGACY REDIRECTS
   #########################################################################
@@ -191,13 +202,6 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
-    pass unless project_allowed(project)
-    redirect_url = "/#{channel}/#{project}/packages"
-    redirect_url += "?v=#{params['v']}" unless params['v'].nil?
-    redirect redirect_url, 302
-  end
-
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
     pass unless project_allowed(project)
     content_type :json
@@ -220,12 +224,17 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(available_versions.last)
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/platforms/ do
-    pass unless project_allowed(project)
-    redirect '/platforms', 302
+  get /architectures/ do
+    content_type :json
+
+    JSON.pretty_generate(
+      Mixlib::Install::Options::SUPPORTED_ARCHITECTURES
+    )
   end
 
   get /platforms/ do
+    content_type :json
+
     JSON.pretty_generate({
       "aix"       => "AIX",
       "el"        => "Red Hat Enterprise Linux/CentOS",

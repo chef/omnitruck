@@ -27,13 +27,31 @@ context 'Omnitruck' do
     Omnitruck
   end
 
-  context "products endpoint" do
+  context "/products endpoint" do
     it "returns all the products" do
       get("/products")
 
       response = JSON.parse(last_response.body)
       Chef::Cache::KNOWN_PROJECTS.each do |project|
         response.include?(project)
+      end
+    end
+  end
+
+  context "/platforms endpoint" do
+    it "returns JSON data" do
+      get("/platforms")
+      expect(last_response.header['Content-Type']).to include 'application/json'
+    end
+  end
+
+  context "/architectures endpoint" do
+    it "returns all the architectures" do
+      get("/architectures")
+
+      response = JSON.parse(last_response.body)
+      Mixlib::Install::Options::SUPPORTED_ARCHITECTURES.each do |arch|
+        response.include?(arch)
       end
     end
   end
