@@ -144,10 +144,21 @@ platform "linuxmint" do
 end
 
 # Univention Corporate Server is predominantly used in German
-# FIXME: version_remapping to correct debian version ideally needed
 platform "univention" do
   remap "debian"
-  version_remap 6
+  version_remap do |opts|
+    major_minor = opts[:version].to_f
+    if major_minor >= 4.3 # https://docs.software-univention.de/release-notes-4.3-0-en.html
+      version_remap 9
+    elsif major_minor >= 4.2 # https://docs.software-univention.de/release-notes-4.2-0-en.html
+      version_remap 8
+    elsif major_minor >= 4.0 # https://docs.software-univention.de/release-notes-4.0-0-en.html
+      version_remap 7
+    else
+      version_remap 6
+    end
+  end
+
 end
 
 # this'll magically work if we ever publish ARM debian builds
