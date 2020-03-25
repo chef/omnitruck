@@ -98,7 +98,7 @@ PLATFORMS
 DEPENDENCIES
   colorize
   json
-  mixlib-install
+  mixlib-install (>= 3.11.23)
   mixlib-versioning (~> 1.1.0)
   pry-byebug
   rack-test
