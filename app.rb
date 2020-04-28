@@ -240,6 +240,7 @@ class Omnitruck < Sinatra::Base
 
     JSON.pretty_generate({
       "aix"       => "AIX",
+      "amazon"    => "Amazon Linux",
       "el"        => "Red Hat Enterprise Linux/CentOS",
       "debian"    => "Debian GNU/Linux",
       "freebsd"   => "FreeBSD",
