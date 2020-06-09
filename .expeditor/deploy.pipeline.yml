@@ -9,7 +9,7 @@ steps:
       executor:
         docker:
       secrets:
-        AWS_SSL_INTERNAL_ARN:
+        AWS_SSL_ARN:
           path: secret/chefops/aws
           field: ssl_internal_arn
         DOCKER_CONFIG_JSON_CHEFOPS:
