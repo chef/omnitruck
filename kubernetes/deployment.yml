@@ -94,6 +94,12 @@ spec:
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+        livenessProbe:
+          httpGet:
+            path: /_status
+            port: 8000
+          initialDelaySeconds: 3
+          periodSeconds: 3
         <%- unless ENV['ENVIRONMENT'] == 'production' -%>
         imagePullPolicy: Always
         <%- end -%>
