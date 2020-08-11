@@ -233,10 +233,12 @@ class Omnitruck < Sinatra::Base
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
     param :channel, String, default: 'stable'
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :flatten, Boolean
 
     content_type :json
 
-    package_list_info = get_package_list
+    package_list_info = params['flatten'] ? get_flattened_package_list : get_package_list
+
     JSON.pretty_generate(package_list_info)
   end
 
@@ -334,8 +336,8 @@ class Omnitruck < Sinatra::Base
   #   Name of the channel.
   #
   def channel
-      params['channel'].gsub('/','')
-      end
+    params['channel'].gsub('/','')
+  end
 
   #
   # Returns the name of the project current request is pointing to.
@@ -495,6 +497,45 @@ class Omnitruck < Sinatra::Base
   #
   def get_package_list
     Chef::VersionResolver.new(params['v'], cache.manifest_for(project, channel), channel, project).package_list
+  end
+
+  #
+  # Returns information about all available packages for a version in
+  # a flattened form.
+  #
+  # @example
+  # {
+  #   "ubuntu": [
+  #     {"platform_version": "12.04",
+  #      "architecture": "i686",
+  #      "url": "...",
+  #        ...
+  #     },
+  #     {"platform_version": "12.04",
+  #      "architecture": "x86_64",
+  #      "url": "...",
+  #        ...
+  #     },
+  #     ...
+  #   ],
+  #   "windows": [
+  #     ...
+  #   ]
+  #   ...
+  # }
+  #
+  # @return [Hash]
+  #
+  def get_flattened_package_list
+    get_package_list.transform_values do |v|
+      v.each_with_object([]) do |(platform_version, architecture_hash), package_array|
+          package_array << architecture_hash.map do |achitecture, package|
+              package['achitecture'] = achitecture
+              package['platform_version'] = platform_version
+              package
+          end
+      end.flatten
+    end
   end
 
   #
