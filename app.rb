@@ -159,6 +159,8 @@ class Omnitruck < Sinatra::Base
   # Serve up the installer script
   #
   get /install\.(?<extension>[\w]+)/ do
+    param :extension, String, required: true
+
     case params['extension']
     when 'sh'
       content_type :sh
@@ -191,14 +193,34 @@ class Omnitruck < Sinatra::Base
   #########################################################################
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :p,       String, required: true
+    param :pv,      String, required: true
+    param :m,       String, required: true
 
     package_info = get_package_info
     redirect package_info["url"]
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
-    pass unless project_allowed(project)
+    # Legacy params which affect the default channel
+    param :prerelease, Boolean
+    param :nightlies,  Boolean
+
+    param :channel, String, default: lambda {
+      if params['prerelease'] || params['nightlies']
+        'current'
+      else
+        'stable'
+      end
+    }
+
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :p,       String, required: true
+    param :pv,      String, required: true
+    param :m,       String, required: true
+
 
     package_info = get_package_info
     if request.accept? 'text/plain'
@@ -209,7 +231,9 @@ class Omnitruck < Sinatra::Base
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+
     content_type :json
 
     package_list_info = get_package_list
@@ -217,14 +241,18 @@ class Omnitruck < Sinatra::Base
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/all/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+
     content_type :json
 
     JSON.pretty_generate(available_versions)
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/latest/ do
-    pass unless project_allowed(project)
+    param :channel, String, required: true
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+
     content_type :json
 
     JSON.pretty_generate(available_versions.last)
@@ -306,16 +334,8 @@ class Omnitruck < Sinatra::Base
   #   Name of the channel.
   #
   def channel
-    if params['channel']
       params['channel'].gsub('/','')
-    else
-      if params['prerelease'] == 'true' || params['nightlies'] == 'true'
-        'current'
-      else
-        'stable'
       end
-    end
-  end
 
   #
   # Returns the name of the project current request is pointing to.
