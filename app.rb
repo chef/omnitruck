@@ -21,7 +21,8 @@
 
 require 'sinatra'
 require 'sinatra/config_file'
-require "sinatra/cors"
+require 'sinatra/cors'
+require 'sinatra/param'
 require 'json'
 require 'pp'
 
@@ -42,6 +43,8 @@ require 'chef/version_resolver'
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
   register Sinatra::Cors
+
+  helpers Sinatra::Param
 
   config_file ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
