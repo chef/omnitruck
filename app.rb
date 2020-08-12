@@ -21,7 +21,8 @@
 
 require 'sinatra'
 require 'sinatra/config_file'
-require "sinatra/cors"
+require 'sinatra/cors'
+require 'sinatra/param'
 require 'json'
 require 'pp'
 
@@ -42,6 +43,8 @@ require 'chef/version_resolver'
 class Omnitruck < Sinatra::Base
   register Sinatra::ConfigFile
   register Sinatra::Cors
+
+  helpers Sinatra::Param
 
   config_file ENV['OMNITRUCK_YAML'] || './config/config.yml'
 
@@ -156,6 +159,8 @@ class Omnitruck < Sinatra::Base
   # Serve up the installer script
   #
   get /install\.(?<extension>[\w]+)/ do
+    param :extension, String, required: true
+
     case params['extension']
     when 'sh'
       content_type :sh
@@ -188,14 +193,34 @@ class Omnitruck < Sinatra::Base
   #########################################################################
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :p,       String, required: true
+    param :pv,      String, required: true
+    param :m,       String, required: true
 
     package_info = get_package_info
     redirect package_info["url"]
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
-    pass unless project_allowed(project)
+    # Legacy params which affect the default channel
+    param :prerelease, Boolean
+    param :nightlies,  Boolean
+
+    param :channel, String, default: lambda {
+      if params['prerelease'] || params['nightlies']
+        'current'
+      else
+        'stable'
+      end
+    }
+
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :p,       String, required: true
+    param :pv,      String, required: true
+    param :m,       String, required: true
+
 
     package_info = get_package_info
     if request.accept? 'text/plain'
@@ -206,22 +231,30 @@ class Omnitruck < Sinatra::Base
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+    param :flatten, Boolean
+
     content_type :json
 
-    package_list_info = get_package_list
+    package_list_info = params['flatten'] ? get_flattened_package_list : get_package_list
+
     JSON.pretty_generate(package_list_info)
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/all/ do
-    pass unless project_allowed(project)
+    param :channel, String, default: 'stable'
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+
     content_type :json
 
     JSON.pretty_generate(available_versions)
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/latest/ do
-    pass unless project_allowed(project)
+    param :channel, String, required: true
+    param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
+
     content_type :json
 
     JSON.pretty_generate(available_versions.last)
@@ -303,15 +336,7 @@ class Omnitruck < Sinatra::Base
   #   Name of the channel.
   #
   def channel
-    if params['channel']
-      params['channel'].gsub('/','')
-    else
-      if params['prerelease'] == 'true' || params['nightlies'] == 'true'
-        'current'
-      else
-        'stable'
-      end
-    end
+    params['channel'].gsub('/','')
   end
 
   #
@@ -472,6 +497,45 @@ class Omnitruck < Sinatra::Base
   #
   def get_package_list
     Chef::VersionResolver.new(params['v'], cache.manifest_for(project, channel), channel, project).package_list
+  end
+
+  #
+  # Returns information about all available packages for a version in
+  # a flattened form.
+  #
+  # @example
+  # {
+  #   "ubuntu": [
+  #     {"platform_version": "12.04",
+  #      "architecture": "i686",
+  #      "url": "...",
+  #        ...
+  #     },
+  #     {"platform_version": "12.04",
+  #      "architecture": "x86_64",
+  #      "url": "...",
+  #        ...
+  #     },
+  #     ...
+  #   ],
+  #   "windows": [
+  #     ...
+  #   ]
+  #   ...
+  # }
+  #
+  # @return [Hash]
+  #
+  def get_flattened_package_list
+    get_package_list.transform_values do |v|
+      v.each_with_object([]) do |(platform_version, architecture_hash), package_array|
+          package_array << architecture_hash.map do |achitecture, package|
+              package['achitecture'] = achitecture
+              package['platform_version'] = platform_version
+              package
+          end
+      end.flatten
+    end
   end
 
   #
