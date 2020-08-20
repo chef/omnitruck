@@ -529,8 +529,8 @@ class Omnitruck < Sinatra::Base
   def get_flattened_package_list
     get_package_list.transform_values do |v|
       v.each_with_object([]) do |(platform_version, architecture_hash), package_array|
-          package_array << architecture_hash.map do |achitecture, package|
-              package['achitecture'] = achitecture
+          package_array << architecture_hash.map do |architecture, package|
+              package['architecture'] = architecture
               package['platform_version'] = platform_version
               package
           end
