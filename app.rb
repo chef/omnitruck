@@ -451,6 +451,12 @@ class Omnitruck < Sinatra::Base
       current_platform_version = current_platform_version.to_f <= 11 ? "5" : "6"
     end
 
+    # Remap macOS Apple Silicon to x86_64...we'll rework this logic once
+    # we have some official Apple Silicon packages.
+    if current_platform == "mac_os_x" && current_arch == "aarch64"
+      current_arch = "x86_64"
+    end
+
     # We need to manage automate/delivery this in this method, not #project.
     # If we try to handle this in #project we have to make an assumption to
     # always return automate results when the VERSIONS api is called for delivery.

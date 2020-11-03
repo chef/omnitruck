@@ -334,6 +334,46 @@ context 'Omnitruck' do
               end
             end
           end
+
+          context 'for 11.0' do
+            let(:platform_version) { '11.0' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/mac_os_x/10.15/chef-16.2.73-1.dmg',
+                    sha256: '5d2af41204017d907e956d8202269ef5f404b4796a971f3e4f849a8afe7adf70',
+                    sha1: '3ef8f3747931328bc5a16841889e6db27348d8f5',
+                    version: '16.2.73'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+
+            context 'for arm64' do
+              let(:architecture) { 'arm64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_info) do
+                  {
+                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/mac_os_x/10.15/chef-16.2.73-1.dmg',
+                    sha256: '5d2af41204017d907e956d8202269ef5f404b4796a971f3e4f849a8afe7adf70',
+                    sha1: '3ef8f3747931328bc5a16841889e6db27348d8f5',
+                    version: '16.2.73'
+                  }
+                end
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
         end
 
         # SLES 11 covers use cases in their entirety.
