@@ -80,7 +80,7 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
-    sinatra-cors (1.1.0)
+    sinatra-cors (1.2.0)
     sinatra-param (1.6.0)
       sinatra (>= 1.3)
     statsd-ruby (1.4.0)
