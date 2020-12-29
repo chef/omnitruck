@@ -226,6 +226,7 @@ class Omnitruck < Sinatra::Base
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
     else
+      content_type :json
       JSON.pretty_generate(package_info)
     end
   end
