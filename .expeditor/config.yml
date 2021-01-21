@@ -13,10 +13,12 @@ github:
 
 
 # These are our Buildkite pipelines where deploys take place
-pipelines: docker/build
+pipelines: 
+  - verify
+  - docker/build
 
 subscriptions:
-  - workload: pull_request_merged:{{agent_id}}:*
+  - workload: pull_request_merged:{{github_repo}}:{{release_branch}}:*
     actions:
       - built_in:bump_version:
           ignore_labels:
@@ -33,6 +35,6 @@ subscriptions:
           ignore_labels:
             - "Expeditor: Skip All"
             - "Expeditor: Skip Docker"
-  - workload: project_promoted:{{agent_id}}:*
+  - workload: project_promoted:{{github_repo}}:{{release_branch}}:*
     actions:
       - built_in:promote_docker_images
