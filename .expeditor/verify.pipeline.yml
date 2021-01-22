@@ -7,14 +7,7 @@ steps:
       executor:
         docker:
 
-  - label: ":kubernetes: static"
-    command:
-      - erb -T- ./kubernetes/deployment.yaml| ruby -ryaml -e "YAML.parse(STDIN.read)"
-    expeditor:
-      executor:
-        docker:
-
-  - label: ":ruby: functional"
+ - label: ":ruby: functional"
     command:
       - cp config/config.yml.example config/config.yml
       - sudo apt-get update
