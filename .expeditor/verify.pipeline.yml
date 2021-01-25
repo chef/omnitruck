@@ -7,7 +7,7 @@ steps:
       executor:
         docker:
 
- - label: ":ruby: functional"
+  - label: ":ruby: functional"
     command:
       - cp config/config.yml.example config/config.yml
       - sudo apt-get update
