@@ -1,0 +1,10 @@
+image=omnitruck:
+  image: '{env.IMAGE_REGISTRY}/omnitruck'
+  context: .
+  tags:
+    - '{env.VERSION}'
+
+alias=publish-omnitruck:
+  tasks:
+    - omnitruck:build
+    - omnitruck:tag 

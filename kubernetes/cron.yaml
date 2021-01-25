@@ -1,0 +1,18 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: omnitruck
+  namespace: omnitruck
+spec:
+  schedule: "*/10 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - image: "localhost:5000/omnitruck:local"
+              name: omnitruck-poller
+              imagePullPolicy: IfNotPresent
+              command: ['/bin/sh']
+              args: ['-c', 'cd /usr/app; bundle exec ./poller 2>&1']
+          restartPolicy: OnFailure

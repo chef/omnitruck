@@ -1,10 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.17.0)
-    byebug (11.1.1)
-    chef-utils (16.6.14)
-    coderay (1.1.2)
+    backports (3.19.0)
+    byebug (11.0.1)
+    coderay (1.1.3)
     colorize (0.8.1)
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
@@ -12,27 +11,26 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    json (2.4.1)
+    json (2.5.1)
     kgio (2.11.3)
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.1009)
+    mime-types-data (3.2020.1104)
     mixlib-install (3.12.5)
       mixlib-shellout
       mixlib-versioning
       thor
-    mixlib-shellout (3.1.7)
-      chef-utils
+    mixlib-shellout (3.0.9)
     mixlib-versioning (1.1.0)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     netrc (0.11.0)
-    pry (0.13.0)
+    pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.9.0)
+    pry-byebug (3.7.0)
       byebug (~> 11.0)
-      pry (~> 0.13.0)
+      pry (~> 0.10)
     rack (1.6.13)
     rack-protection (1.5.5)
       rack
@@ -41,7 +39,7 @@ GEM
     raindrops (0.19.1)
     rake (13.0.3)
     rb-readline (0.5.5)
-    redis (4.1.3)
+    redis (4.2.5)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -51,9 +49,9 @@ GEM
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
       rspec-mocks (~> 3.10.0)
-    rspec-core (3.10.0)
+    rspec-core (3.10.1)
       rspec-support (~> 3.10.0)
-    rspec-expectations (3.10.0)
+    rspec-expectations (3.10.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-its (1.3.0)
@@ -66,7 +64,7 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-rerun (1.1.0)
       rspec (~> 3.0)
-    rspec-support (3.10.0)
+    rspec-support (3.10.1)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
     sinatra (1.4.8)
@@ -90,8 +88,8 @@ GEM
       statsd-ruby (~> 1.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.6)
-    unicorn (5.7.0)
+    unf_ext (0.0.7.7)
+    unicorn (5.8.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     yajl-ruby (1.4.1)
@@ -124,4 +122,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   2.1.4
+   2.2.3
