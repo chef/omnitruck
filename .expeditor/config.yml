@@ -31,7 +31,7 @@ subscriptions:
             - "Expeditor: Skip Changelog"
             - "Expeditor: Skip All"
       - trigger_pipeline:docker/build:
-          only_if_modified: Dockerfile
+          post_commit: true
           ignore_labels:
             - "Expeditor: Skip All"
             - "Expeditor: Skip Docker"
