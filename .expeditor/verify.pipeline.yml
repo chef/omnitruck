@@ -18,6 +18,7 @@ steps:
       - bundle exec unicorn -E development &
       - sleep 10
       - ps -ef |grep unicorn
+      - chmod 755 .expeditor/buildkite/smoke.sh
       - .expeditor/buildkite/smoke.sh
     expeditor:
       executor:
