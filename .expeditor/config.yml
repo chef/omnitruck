@@ -7,9 +7,13 @@ slack:
     - releng-notify
     - omnitruck
 
+release_branches:
+  - master
+  - kubernetes-migration
+
 github:
   delete_branch_on_merge: true
-
+  
 # These are our Buildkite pipelines where deploys take place
 pipelines:
   - verify:
