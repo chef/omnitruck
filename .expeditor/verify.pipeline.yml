@@ -1,3 +1,7 @@
+expeditor:
+  defaults:
+    buildkite:
+      timeout_in_minutes: 20
 steps:
   - label: ":ruby: unit"
     command:
@@ -24,4 +28,3 @@ steps:
         docker:
           environment:
               - ENVIRONMENT=verify
-              

@@ -3,6 +3,9 @@ image=omnitruck:
   context: .
   tags:
     - '{env.VERSION}'
+  annotations:
+    tags:
+      - expeditor:final-channel-tags={{major}}.{{minor}}-{{git_sha}}
 
 alias=publish-omnitruck:
   tasks:
