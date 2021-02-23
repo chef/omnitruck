@@ -1,4 +1,4 @@
-config/config.yml
+#config/config.yml
 config/s3cfg
 rspec.failures
 
@@ -39,3 +39,6 @@ results/
 
 # Redis
 *.rdb
+
+# Docker
+.dobi

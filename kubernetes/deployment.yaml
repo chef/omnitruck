@@ -1,0 +1,65 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: omnitruck
+  labels:
+    app.kubernetes.io/name: omnitruck
+spec:
+  minReadySeconds: 5
+  progressDeadlineSeconds: 60
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: omnitruck
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        linkerd.io/inject: enabled
+      labels:
+        app.kubernetes.io/name: omnitruck
+    spec:
+      serviceAccountName: omnitruck
+      terminationGracePeriodSeconds: 60
+      securityContext:
+        fsGroup: 22430
+      containers:
+        - name: omnitruck
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - sleep
+                  - "10"
+          securityContext:
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: false
+            runAsNonRoot: true
+            runAsUser: 22430
+          image: "localhost:5000/omnitruck:local"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /_status
+              port: 8080
+            initialDelaySeconds: 3
+            timeoutSeconds: 3
+            periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /_status
+              port: 8080
+            initialDelaySeconds: 3
+            timeoutSeconds: 3
+            periodSeconds: 3
+          imagePullPolicy: IfNotPresent
+          

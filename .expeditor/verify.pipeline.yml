@@ -1,15 +1,12 @@
+expeditor:
+  defaults:
+    buildkite:
+      timeout_in_minutes: 20
 steps:
   - label: ":ruby: unit"
     command:
       - bundle install --binstubs --path=.vendor
       - bundle exec rspec
-    expeditor:
-      executor:
-        docker:
-
-  - label: ":kubernetes: static"
-    command:
-      - erb -T- ./kubernetes/deployment.yml| ruby -ryaml -e "YAML.parse(STDIN.read)"
     expeditor:
       executor:
         docker:

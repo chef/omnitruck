@@ -1,0 +1,13 @@
+image=omnitruck:
+  image: '{env.IMAGE_REGISTRY}/omnitruck'
+  context: .
+  tags:
+    - '{env.VERSION}'
+  annotations:
+    tags:
+      - expeditor:final-channel-tags={{major}}.{{minor}}-{{git_sha}}
+
+alias=publish-omnitruck:
+  tasks:
+    - omnitruck:build
+    - omnitruck:tag 
