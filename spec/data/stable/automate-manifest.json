@@ -351,6 +351,76 @@
           "sha1": "e570e12d3c909896a897b664096e1b6020f3b0aa",
           "sha256": "8819f97aa63f2ae917aab184e3f76db172ffd580175c680bdcab8d98e40e9234",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/el/6/automate-0.8.5-1.el6.x86_64.rpm"
+        },
+        "1.5.46": {
+          "sha1": "8919a0f7220426623c531537dfcea6c6482cdfb9",
+          "sha256": "3792bd9b85061eee2b6c5387a0c3cf2adedbb9a0bc0da519a01476c087334fdc",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/el/6/automate-1.5.46-1.el6.x86_64.rpm"
+        },
+        "1.6.87": {
+          "sha1": "45de270dd9ca08d5b033d0b0840de8d82e557f09",
+          "sha256": "119e315015d30901eb279d7f609b6a213eb70a398f1d6124c4a431d79d6053df",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/el/6/automate-1.6.87-1.el6.x86_64.rpm"
+        },
+        "1.6.95": {
+          "sha1": "3f95f4c8b99ea7d0ed43b5874e56a561a9e94a23",
+          "sha256": "25b694f3e9301de5370816d85c1f66477d3c37a9f6af8ab55a381502dc463db8",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/el/6/automate-1.6.95-1.el6.x86_64.rpm"
+        },
+        "1.6.99": {
+          "sha1": "d13619f78d1b43bb2ca52e4f4a6c98449f6321ea",
+          "sha256": "208f531e5c02504d9a2bdceae2b0bd20a0c7376cd65292df5d136433f3c7d47c",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/el/6/automate-1.6.99-1.el6.x86_64.rpm"
+        },
+        "1.6.179": {
+          "sha1": "97f3728dafb2c750a33eb4d26de6444ce5d7ff23",
+          "sha256": "036edca80fc6d28f869b8884abfbb23bf4164f0538355df96225839cce6a260b",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/el/6/automate-1.6.179-1.el6.x86_64.rpm"
+        },
+        "1.7.10": {
+          "sha1": "111ee81d6ca20f2eebb7fdebfc3afff0b4db68cb",
+          "sha256": "0651785207c13582d3cd5f58a15a1b0083c45426342b35bde60b8e6f138c2729",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/el/6/automate-1.7.10-1.el6.x86_64.rpm"
+        },
+        "1.7.27": {
+          "sha1": "ce22c114dec555709b28cb03669cb85be44e139a",
+          "sha256": "3bb9b2274ede6cf4646d0a89ab02e5740e51e345bcfd6179cb0e48453609e472",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/el/6/automate-1.7.27-1.el6.x86_64.rpm"
+        },
+        "1.7.39": {
+          "sha1": "76c375e13046208753c912fc111096316691f75d",
+          "sha256": "767e9792715dd92dda63431350a0ca93712fe514f6b12dd9a01d2f671bd6f0f7",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/el/6/automate-1.7.39-1.el6.x86_64.rpm"
+        },
+        "1.7.114": {
+          "sha1": "230026e88e8cb4e6e82f9d0baf3165313c6f05ed",
+          "sha256": "f0fd5e1f4299075a67fb7151f50fbb6316f6e1baeb874796247030d99ef79651",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/el/6/automate-1.7.114-1.el6.x86_64.rpm"
+        },
+        "1.8.3": {
+          "sha1": "8eaca2ab7e312d24ff0f6a2efbcfefd1eb4556d0",
+          "sha256": "739ac28d29137ea9b4fd77cd7c3fce6f389e09734b32141d6b5c99097aff67b0",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/el/6/automate-1.8.3-1.el6.x86_64.rpm"
+        },
+        "1.8.38": {
+          "sha1": "0b7ba5136cbaece7f1723c339e238b2b8d8d96bc",
+          "sha256": "dbe050459855a50a2df08efa5dca34daa463ab77b7d1d17f105e302f70981518",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/el/6/automate-1.8.38-1.el6.x86_64.rpm"
+        },
+        "1.8.68": {
+          "sha1": "20632c73b5d5545830a6b01a572e442a82b7d3ed",
+          "sha256": "dce8ffbe03674ecbeba4e1885f8747bfdf381837998dca03322b67991ff0fcdc",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/el/6/automate-1.8.68-1.el6.x86_64.rpm"
+        },
+        "1.8.85": {
+          "sha1": "72b431543b5f815ae95a9d22883db9992b558aa5",
+          "sha256": "4292d6fc5fb2ceef42002800c89a95a92480bf3caa8441198a6bfe0a48b088b7",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/el/6/automate-1.8.85-1.el6.x86_64.rpm"
+        },
+        "1.8.96": {
+          "sha1": "a6a710f5d976fffdc4aa954227d8060fbf3823de",
+          "sha256": "50b36e1162d6ce7871088472afe561e60413a1cedb852e9422be4ae1a14e552d",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/el/6/automate-1.8.96-1.el6.x86_64.rpm"
         }
       }
     },
@@ -685,6 +755,76 @@
           "sha1": "b4af81c9805ec5e120a348f9d6976f6622c47fb3",
           "sha256": "a829a835d56fa07e96529631961e38e736bbf6b69d74838bf2c876fdf21694d9",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/el/7/automate-0.8.5-1.el7.x86_64.rpm"
+        },
+        "1.5.46": {
+          "sha1": "817e9372434068e26aa1abdbc75379cff9f074dd",
+          "sha256": "af30d6b4e0be70a4694fead5428e9c091b7097c10b33b9da46cc71548b3b6a0f",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/el/7/automate-1.5.46-1.el7.x86_64.rpm"
+        },
+        "1.6.87": {
+          "sha1": "f79a36c161b750f9232b38f77c9bad15271d6b73",
+          "sha256": "4cd4c9248c92f2e6b4cf2ca433acdefa9a555679348352f59ef71fdff91ff43e",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/el/7/automate-1.6.87-1.el7.x86_64.rpm"
+        },
+        "1.6.95": {
+          "sha1": "60b8de9eabf2dd83c7e55314f66b8b5c9d6588f7",
+          "sha256": "148eedc579e247f09770c4233247ee45ea58a579ee6968dcc61b92fea956f43c",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/el/7/automate-1.6.95-1.el7.x86_64.rpm"
+        },
+        "1.6.99": {
+          "sha1": "b75ad894197644811293a276f37a0d7c680ee538",
+          "sha256": "7dfee97a74c5e6a10f2878203cd5e370ba8dcbb507ea9c31a791ee082bdd94d6",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/el/7/automate-1.6.99-1.el7.x86_64.rpm"
+        },
+        "1.6.179": {
+          "sha1": "cae238a5cf4099be76ed1cfb696a3c3ad7ca9a9a",
+          "sha256": "0c97c8dba68f34f83e4ae96d71fedadc9e4773a90bf2bc1ca7401c16cfe5f849",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/el/7/automate-1.6.179-1.el7.x86_64.rpm"
+        },
+        "1.7.10": {
+          "sha1": "8d327e97ebdce4f7d1f1f4fe226dbdd7830472c5",
+          "sha256": "adcace321f4b9643eda63ebcd093f6101b4d417ed1d3ef039fc02ee438d86349",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/el/7/automate-1.7.10-1.el7.x86_64.rpm"
+        },
+        "1.7.27": {
+          "sha1": "c478c8544c97bbd5c2cb9013c0582e8b94440356",
+          "sha256": "08c06ba93f24aa1f4ec36d209e77c96d09d17bbbff37e8ea1d0c9c418a2b58c7",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/el/7/automate-1.7.27-1.el7.x86_64.rpm"
+        },
+        "1.7.39": {
+          "sha1": "4d0086c4fccb9a7a1871d4b668f666ace75bfcd3",
+          "sha256": "7ea27af3fe29cc13668b5ee8bf4e28208aba08c0590d89a936bdcdfe60d202ab",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/el/7/automate-1.7.39-1.el7.x86_64.rpm"
+        },
+        "1.7.114": {
+          "sha1": "f2d7fa6ce980710b38ae981adbf2ffa902a5126a",
+          "sha256": "66d38e4370811465b8d4dd130a69c8b44e72a36ab50cf5292bb23921e73ccd15",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/el/7/automate-1.7.114-1.el7.x86_64.rpm"
+        },
+        "1.8.3": {
+          "sha1": "0a539017bcf0e94042734e8454c7c003612d2465",
+          "sha256": "09598ab4d09256f3e1b040e281a438b2a9db426230d808728a536375905be104",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/el/7/automate-1.8.3-1.el7.x86_64.rpm"
+        },
+        "1.8.38": {
+          "sha1": "95ca7459dd354202e0c4ddce78e11218506d98b9",
+          "sha256": "6da656b62b8d3404893fe940c71590c1a33a9f9c1c984b969ba60374ab5e60ac",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/el/7/automate-1.8.38-1.el7.x86_64.rpm"
+        },
+        "1.8.68": {
+          "sha1": "5f87f41d08d96f0e5c76ef7620c84168577f0284",
+          "sha256": "5f0f7d81e7108b6ea25cffd7e9254934a3c6beea194fb4724ce04b7c8f59a569",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/el/7/automate-1.8.68-1.el7.x86_64.rpm"
+        },
+        "1.8.85": {
+          "sha1": "6fac3401a1daeec09fdbfa9987b67909af4f85d9",
+          "sha256": "ec857688fc71114726cc323af43b48c8889e428f3bace22911d2f4939f9f4594",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/el/7/automate-1.8.85-1.el7.x86_64.rpm"
+        },
+        "1.8.96": {
+          "sha1": "6f2cf145e31fb4d643db112509b5b5d53eb0decf",
+          "sha256": "3433c85c36272c5f141ce00929f0c4df2d10ab10ed9a0103a8c6c7895bb49e6a",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/el/7/automate-1.8.96-1.el7.x86_64.rpm"
         }
       }
     }
@@ -1041,6 +1181,31 @@
           "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
           "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/12.04/automate_0.8.5-1_amd64.deb"
+        },
+        "1.5.46": {
+          "sha1": "7b2f7b4514e63771ce986d25de8c50e921761119",
+          "sha256": "b96f77fb5c2060bdd9c112361ca475ec4dc65b2ed8643155d2b6e3599c716c5d",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/ubuntu/12.04/automate_1.5.46-1_amd64.deb"
+        },
+        "1.6.87": {
+          "sha1": "6fe8b58b64de8ad2544abf6cfe34538dba72f353",
+          "sha256": "53895700a77e7ba317c7c43891d8509fdbe625ceb88eaf77dbf98f06c6c0d57b",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/ubuntu/12.04/automate_1.6.87-1_amd64.deb"
+        },
+        "1.6.95": {
+          "sha1": "6c936b4e79d1199bb429f4040f22aa43c9a890d6",
+          "sha256": "ad754ecc90795d2c4d13c13881d7fdc2d64b50f9665331262a2d8017f93faa5f",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/ubuntu/12.04/automate_1.6.95-1_amd64.deb"
+        },
+        "1.6.99": {
+          "sha1": "2b43b5471878fba397d04a8956175b1ae6e5272c",
+          "sha256": "044b08585548ab47e5ba30ec31b41281eb8a44d2d201619e26f032eb45d2853a",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/ubuntu/12.04/automate_1.6.99-1_amd64.deb"
+        },
+        "1.6.179": {
+          "sha1": "ea91af19b5c5b679e30a7cb79e08ace09041a027",
+          "sha256": "754cf42b5376dd80a6a5363aba838cc94b1b3585b34eb6b6a5fd0b7b77c496a0",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/ubuntu/12.04/automate_1.6.179-1_amd64.deb"
         }
       }
     },
@@ -1395,6 +1560,76 @@
           "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
           "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/14.04/automate_0.8.5-1_amd64.deb"
+        },
+        "1.5.46": {
+          "sha1": "7b2f7b4514e63771ce986d25de8c50e921761119",
+          "sha256": "b96f77fb5c2060bdd9c112361ca475ec4dc65b2ed8643155d2b6e3599c716c5d",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/ubuntu/14.04/automate_1.5.46-1_amd64.deb"
+        },
+        "1.6.87": {
+          "sha1": "6fe8b58b64de8ad2544abf6cfe34538dba72f353",
+          "sha256": "53895700a77e7ba317c7c43891d8509fdbe625ceb88eaf77dbf98f06c6c0d57b",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/ubuntu/14.04/automate_1.6.87-1_amd64.deb"
+        },
+        "1.6.95": {
+          "sha1": "6c936b4e79d1199bb429f4040f22aa43c9a890d6",
+          "sha256": "ad754ecc90795d2c4d13c13881d7fdc2d64b50f9665331262a2d8017f93faa5f",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/ubuntu/14.04/automate_1.6.95-1_amd64.deb"
+        },
+        "1.6.99": {
+          "sha1": "2b43b5471878fba397d04a8956175b1ae6e5272c",
+          "sha256": "044b08585548ab47e5ba30ec31b41281eb8a44d2d201619e26f032eb45d2853a",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/ubuntu/14.04/automate_1.6.99-1_amd64.deb"
+        },
+        "1.6.179": {
+          "sha1": "ea91af19b5c5b679e30a7cb79e08ace09041a027",
+          "sha256": "754cf42b5376dd80a6a5363aba838cc94b1b3585b34eb6b6a5fd0b7b77c496a0",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/ubuntu/14.04/automate_1.6.179-1_amd64.deb"
+        },
+        "1.7.10": {
+          "sha1": "ceb89092f1747129beb736115651db0f26301826",
+          "sha256": "654800d0195688ed0930a4cb3a49996c1f5ba39d1206a4071484bbe990fe0def",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/ubuntu/14.04/automate_1.7.10-1_amd64.deb"
+        },
+        "1.7.27": {
+          "sha1": "d2c6023764655c01cba59e93056638bb918c9afa",
+          "sha256": "88dae2a0e2cef42ec931ebcac531a9b05710ff2e456b48ed36740f160b90cdb4",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/ubuntu/14.04/automate_1.7.27-1_amd64.deb"
+        },
+        "1.7.39": {
+          "sha1": "b19e2f10ce600c20f4f8b285e36c4bc10aee4874",
+          "sha256": "f1490e59447ddd0d7265ce18e66263582368dc7e8454373e2bb981c11eb9aa26",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/ubuntu/14.04/automate_1.7.39-1_amd64.deb"
+        },
+        "1.7.114": {
+          "sha1": "302b28ea305b4335e4d9cee9d3d7ae7a088ee2fd",
+          "sha256": "316cb8644de64d4f3f60588e7ba1e44032e28844b25274e014e405e4e1edd999",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/ubuntu/14.04/automate_1.7.114-1_amd64.deb"
+        },
+        "1.8.3": {
+          "sha1": "d9f46486009be67e37779f9e33837b966487fb10",
+          "sha256": "275e524a04ee86ff7aa21bac5c6a1e81e02cc620c2385ddeb5a2f85b8543b9a3",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/ubuntu/14.04/automate_1.8.3-1_amd64.deb"
+        },
+        "1.8.38": {
+          "sha1": "248fae6b93ecb1fe094c28ac9f569df4554ee670",
+          "sha256": "e1d318364580ef0906b6f12b1eedbd9b0a55cfef4a81b6f91f62550d76f92bd6",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/ubuntu/14.04/automate_1.8.38-1_amd64.deb"
+        },
+        "1.8.68": {
+          "sha1": "a47a70ec1252723055cb912198cc8b2e79b28fc2",
+          "sha256": "f04d7a49da869ed12f0b903edef21f671a37a5f25f137efa80ac382adbe70d42",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/ubuntu/14.04/automate_1.8.68-1_amd64.deb"
+        },
+        "1.8.85": {
+          "sha1": "85a65f00da601a8f1063a3bb140457657aea48be",
+          "sha256": "fd0011378ad1fea330d260f01809312b9b3040eea3ed60fd1b443e53cbe2db35",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/ubuntu/14.04/automate_1.8.85-1_amd64.deb"
+        },
+        "1.8.96": {
+          "sha1": "e1ccd84ae8347d76b74f4f2feb1bd406bf3b332f",
+          "sha256": "213708882026bd87fe9db5f9b4a859fb519200c13e8d5d6f7f50e6702ba6ff2a",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/ubuntu/14.04/automate_1.8.96-1_amd64.deb"
         }
       }
     },
@@ -1479,6 +1714,95 @@
           "sha1": "79cce4189fbe049fa1ec217db06913437380a20c",
           "sha256": "fb6fd87fe98e0582d224d60b5e426738e2cf1a6da51406d1066a8a6a41ac2dc6",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/ubuntu/16.04/automate_0.8.5-1_amd64.deb"
+        },
+        "1.5.46": {
+          "sha1": "7b2f7b4514e63771ce986d25de8c50e921761119",
+          "sha256": "b96f77fb5c2060bdd9c112361ca475ec4dc65b2ed8643155d2b6e3599c716c5d",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/ubuntu/16.04/automate_1.5.46-1_amd64.deb"
+        },
+        "1.6.87": {
+          "sha1": "6fe8b58b64de8ad2544abf6cfe34538dba72f353",
+          "sha256": "53895700a77e7ba317c7c43891d8509fdbe625ceb88eaf77dbf98f06c6c0d57b",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/ubuntu/16.04/automate_1.6.87-1_amd64.deb"
+        },
+        "1.6.95": {
+          "sha1": "6c936b4e79d1199bb429f4040f22aa43c9a890d6",
+          "sha256": "ad754ecc90795d2c4d13c13881d7fdc2d64b50f9665331262a2d8017f93faa5f",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/ubuntu/16.04/automate_1.6.95-1_amd64.deb"
+        },
+        "1.6.99": {
+          "sha1": "2b43b5471878fba397d04a8956175b1ae6e5272c",
+          "sha256": "044b08585548ab47e5ba30ec31b41281eb8a44d2d201619e26f032eb45d2853a",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/ubuntu/16.04/automate_1.6.99-1_amd64.deb"
+        },
+        "1.6.179": {
+          "sha1": "ea91af19b5c5b679e30a7cb79e08ace09041a027",
+          "sha256": "754cf42b5376dd80a6a5363aba838cc94b1b3585b34eb6b6a5fd0b7b77c496a0",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/ubuntu/16.04/automate_1.6.179-1_amd64.deb"
+        },
+        "1.7.10": {
+          "sha1": "ceb89092f1747129beb736115651db0f26301826",
+          "sha256": "654800d0195688ed0930a4cb3a49996c1f5ba39d1206a4071484bbe990fe0def",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/ubuntu/16.04/automate_1.7.10-1_amd64.deb"
+        },
+        "1.7.27": {
+          "sha1": "d2c6023764655c01cba59e93056638bb918c9afa",
+          "sha256": "88dae2a0e2cef42ec931ebcac531a9b05710ff2e456b48ed36740f160b90cdb4",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/ubuntu/16.04/automate_1.7.27-1_amd64.deb"
+        },
+        "1.7.39": {
+          "sha1": "b19e2f10ce600c20f4f8b285e36c4bc10aee4874",
+          "sha256": "f1490e59447ddd0d7265ce18e66263582368dc7e8454373e2bb981c11eb9aa26",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/ubuntu/16.04/automate_1.7.39-1_amd64.deb"
+        },
+        "1.7.114": {
+          "sha1": "302b28ea305b4335e4d9cee9d3d7ae7a088ee2fd",
+          "sha256": "316cb8644de64d4f3f60588e7ba1e44032e28844b25274e014e405e4e1edd999",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/ubuntu/16.04/automate_1.7.114-1_amd64.deb"
+        },
+        "1.8.3": {
+          "sha1": "d9f46486009be67e37779f9e33837b966487fb10",
+          "sha256": "275e524a04ee86ff7aa21bac5c6a1e81e02cc620c2385ddeb5a2f85b8543b9a3",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/ubuntu/16.04/automate_1.8.3-1_amd64.deb"
+        },
+        "1.8.38": {
+          "sha1": "248fae6b93ecb1fe094c28ac9f569df4554ee670",
+          "sha256": "e1d318364580ef0906b6f12b1eedbd9b0a55cfef4a81b6f91f62550d76f92bd6",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/ubuntu/16.04/automate_1.8.38-1_amd64.deb"
+        },
+        "1.8.68": {
+          "sha1": "a47a70ec1252723055cb912198cc8b2e79b28fc2",
+          "sha256": "f04d7a49da869ed12f0b903edef21f671a37a5f25f137efa80ac382adbe70d42",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/ubuntu/16.04/automate_1.8.68-1_amd64.deb"
+        },
+        "1.8.85": {
+          "sha1": "85a65f00da601a8f1063a3bb140457657aea48be",
+          "sha256": "fd0011378ad1fea330d260f01809312b9b3040eea3ed60fd1b443e53cbe2db35",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/ubuntu/16.04/automate_1.8.85-1_amd64.deb"
+        },
+        "1.8.96": {
+          "sha1": "e1ccd84ae8347d76b74f4f2feb1bd406bf3b332f",
+          "sha256": "213708882026bd87fe9db5f9b4a859fb519200c13e8d5d6f7f50e6702ba6ff2a",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/ubuntu/16.04/automate_1.8.96-1_amd64.deb"
+        }
+      }
+    },
+    "18.04": {
+      "x86_64": {
+        "1.8.68": {
+          "sha1": "a47a70ec1252723055cb912198cc8b2e79b28fc2",
+          "sha256": "f04d7a49da869ed12f0b903edef21f671a37a5f25f137efa80ac382adbe70d42",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/ubuntu/18.04/automate_1.8.68-1_amd64.deb"
+        },
+        "1.8.85": {
+          "sha1": "85a65f00da601a8f1063a3bb140457657aea48be",
+          "sha256": "fd0011378ad1fea330d260f01809312b9b3040eea3ed60fd1b443e53cbe2db35",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/ubuntu/18.04/automate_1.8.85-1_amd64.deb"
+        },
+        "1.8.96": {
+          "sha1": "e1ccd84ae8347d76b74f4f2feb1bd406bf3b332f",
+          "sha256": "213708882026bd87fe9db5f9b4a859fb519200c13e8d5d6f7f50e6702ba6ff2a",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/ubuntu/18.04/automate_1.8.96-1_amd64.deb"
         }
       }
     }
@@ -1490,6 +1814,76 @@
           "sha1": "36b505adab0e482db0471361d608267d05368033",
           "sha256": "f066bf32d5a699a4cb1457d239d1b4447c8b24bc5145b07d91ba7ae3cd3833fb",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/sles/11/automate-0.8.5-1.sles11.x86_64.rpm"
+        },
+        "1.5.46": {
+          "sha1": "5aeb8a00efd5688d38a4af3ae57718dc6846a899",
+          "sha256": "8ba755c6effd71bcf4eacfb1025af5629827a4ffe9f636aa832f6435c835f000",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/sles/11/automate-1.5.46-1.sles11.x86_64.rpm"
+        },
+        "1.6.87": {
+          "sha1": "a9eb561a025e6a794b619c92b0d2fd86bdf0571a",
+          "sha256": "a5aab47b06adfe7e4e2b85a1acfa216711da2568223cb65602fac89b569b384e",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/sles/11/automate-1.6.87-1.sles11.x86_64.rpm"
+        },
+        "1.6.95": {
+          "sha1": "f87e8329a3c1bac8e625efd80874f9b73c2b4b6b",
+          "sha256": "504ba981cebe794ecbb0451f894d134b22af81e029761a2d3554d02250af3e80",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/sles/11/automate-1.6.95-1.sles11.x86_64.rpm"
+        },
+        "1.6.99": {
+          "sha1": "5acbb321961c1995a62164196fb88363f6bfd079",
+          "sha256": "2f715130fe1bcd87394b8583d7d9c301d5bd10934b72d52dc3fc7348f849e578",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/sles/11/automate-1.6.99-1.sles11.x86_64.rpm"
+        },
+        "1.6.179": {
+          "sha1": "499554b0c2589528978f74ed3e4dd1c4987f7fef",
+          "sha256": "1399b3717a274924b4d9cd8ac0703757cc84509a1e3134a5139f239db6337074",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/sles/11/automate-1.6.179-1.sles11.x86_64.rpm"
+        },
+        "1.7.10": {
+          "sha1": "ba917a07dc04738c7659200c2893ecfe8b98bdaa",
+          "sha256": "af2aef3ce7f392d62091731748099042bad2cadc85c2c62865463ac9280db145",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/sles/11/automate-1.7.10-1.sles11.x86_64.rpm"
+        },
+        "1.7.27": {
+          "sha1": "ccccc81cbedaf08c1dd878edd233f1629ca7faff",
+          "sha256": "b7a750b9e41ec469bb5c30749b4b61a58c466a688623240997bae7639107f6e7",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/sles/11/automate-1.7.27-1.sles11.x86_64.rpm"
+        },
+        "1.7.39": {
+          "sha1": "f973afb7b66a92ada030ed65cd1c1f861e94d3c4",
+          "sha256": "04474ebbce719b7d6e1c8710fc3f39d230daf263d0e8594e5925cdfdb4390547",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/sles/11/automate-1.7.39-1.sles11.x86_64.rpm"
+        },
+        "1.7.114": {
+          "sha1": "55f0a2b4dba3fde2a70bf62e095124245f34dbdc",
+          "sha256": "8aa18db9255b8d9772475397b60aca7cf5a87ba17ba89bdb8271a656c4c2ce48",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/sles/11/automate-1.7.114-1.sles11.x86_64.rpm"
+        },
+        "1.8.3": {
+          "sha1": "523a76b8624f921908e51d42bff058a0b6500001",
+          "sha256": "d51b43285c8c47c5f0d95abf091eaff65a74b1016cea906632e12302ecbba035",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/sles/11/automate-1.8.3-1.sles11.x86_64.rpm"
+        },
+        "1.8.38": {
+          "sha1": "54e588c32c217193df9e0ee73e5c11a80b0d7809",
+          "sha256": "23ba96c438af1d1bf45efe70cb191f73836959916930b98991f159375491d49b",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/sles/11/automate-1.8.38-1.sles11.x86_64.rpm"
+        },
+        "1.8.68": {
+          "sha1": "deb80a3a9d5fba44d4d50f3c4ecb33cc82066ac7",
+          "sha256": "8b15249e7e835dadd879c11f6ab2de0d62a414cbb301fe3e25fdf2641dcda4e7",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/sles/11/automate-1.8.68-1.sles11.x86_64.rpm"
+        },
+        "1.8.85": {
+          "sha1": "637c18101505f48d7e108bd60e46efab84624f8b",
+          "sha256": "7f4003b9cfbf0048f67cb9ba22549d44be450622489f2818e908d0db77606ac8",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/sles/11/automate-1.8.85-1.sles11.x86_64.rpm"
+        },
+        "1.8.96": {
+          "sha1": "b2d660acca36f5839a44260c81e2989f7a8fa56b",
+          "sha256": "dfecbb0d79bcb504ab72d18ae92e57c573899b7c18c8469df6d3ba2f39e55763",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/sles/11/automate-1.8.96-1.sles11.x86_64.rpm"
         }
       }
     },
@@ -1499,11 +1893,81 @@
           "sha1": "7a57d9f6f026bffb738502f743b881410aa7aa0c",
           "sha256": "09dc068ff7e69264967cad547d79b84b687180b10c40e3713a7660106cf04e10",
           "url": "https://packages.chef.io/files/stable/automate/0.8.5/sles/12/automate-0.8.5-1.sles12.x86_64.rpm"
+        },
+        "1.5.46": {
+          "sha1": "9d150d0f30e03833bbb4c2861f81873e24d58138",
+          "sha256": "d462bad12dd21df5834509066be21138652edfcf822557d4aba8c67b306cd3b5",
+          "url": "https://packages.chef.io/files/stable/automate/1.5.46/sles/12/automate-1.5.46-1.sles12.x86_64.rpm"
+        },
+        "1.6.87": {
+          "sha1": "10dbca69361d06ab3627fa78914f2438f65c466d",
+          "sha256": "db7560fcde7a541911ce500db1c0924fc1c67e095c17bdd41292b0c665e8b575",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.87/sles/12/automate-1.6.87-1.sles12.x86_64.rpm"
+        },
+        "1.6.95": {
+          "sha1": "abe0c7004b72202b48b89f7c6e27ad9df3d5047e",
+          "sha256": "e5ccb755df1f026bf53fcb7b9217180935d80ed5c5e600f7f6cd1c51190dc7ef",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.95/sles/12/automate-1.6.95-1.sles12.x86_64.rpm"
+        },
+        "1.6.99": {
+          "sha1": "92e6eb74fbc65d662cf827a7b6d459f8ab63e5f7",
+          "sha256": "fe4b89e0762af2c5ec2b0cc22afa5ad1d266ff74d18992c0954f3c88201b66ff",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.99/sles/12/automate-1.6.99-1.sles12.x86_64.rpm"
+        },
+        "1.6.179": {
+          "sha1": "f450858789e93bcb72c88e83b750610fafc43ef7",
+          "sha256": "f0734c67c0a5c4d4980938a321e76c3808d8e66f34f89c071f63436ba11acd5d",
+          "url": "https://packages.chef.io/files/stable/automate/1.6.179/sles/12/automate-1.6.179-1.sles12.x86_64.rpm"
+        },
+        "1.7.10": {
+          "sha1": "a45ce464cdc5b5928878d5776b20ffa527686ec0",
+          "sha256": "ef9a321f0e1b82e8d40426ff2cd43b5a81a691fae6b75ec8356bdcf27aee9777",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.10/sles/12/automate-1.7.10-1.sles12.x86_64.rpm"
+        },
+        "1.7.27": {
+          "sha1": "107436334e9a8d4c79dcc2cf3dd089db0c13431a",
+          "sha256": "9bcc8f453e8faeab9b9304b4c7499a41925b860ac44c7408dc7c0aae0b0dfced",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.27/sles/12/automate-1.7.27-1.sles12.x86_64.rpm"
+        },
+        "1.7.39": {
+          "sha1": "40fcc8af0292d8b97ce50195a2207dafd1965295",
+          "sha256": "e64986e34216051fd31d4c81c55e358d260c91188ec7ac433555fb9df5331cff",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.39/sles/12/automate-1.7.39-1.sles12.x86_64.rpm"
+        },
+        "1.7.114": {
+          "sha1": "70e331ae12d7eec6dfca4c6c4d3e47edbed7f6d7",
+          "sha256": "41824f12231c660c873817e307c4bf11bf9405f86045f2ee482951724674c4dd",
+          "url": "https://packages.chef.io/files/stable/automate/1.7.114/sles/12/automate-1.7.114-1.sles12.x86_64.rpm"
+        },
+        "1.8.3": {
+          "sha1": "47e82611105906ebdb5415df7a6be8e3bfe9ebdc",
+          "sha256": "36f98da7e06897fdd22d97804616747be4df61ef9a0bdc0b3157222d09100c3e",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.3/sles/12/automate-1.8.3-1.sles12.x86_64.rpm"
+        },
+        "1.8.38": {
+          "sha1": "f36a56796e79cd30912903f230a9b8331cf82e5f",
+          "sha256": "13bff063678f73e63c49e03c31acb44a797a4b8d82291a4f90c350aa0e59dfbc",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.38/sles/12/automate-1.8.38-1.sles12.x86_64.rpm"
+        },
+        "1.8.68": {
+          "sha1": "2c7a95649505607e1d495e199c13fb84a7abaadf",
+          "sha256": "b16775bc749654d777545586dc0b79c38a6780aa7438b79923716c532573f5b7",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.68/sles/12/automate-1.8.68-1.sles12.x86_64.rpm"
+        },
+        "1.8.85": {
+          "sha1": "d4caefb7abca1f54f1ddc264d000919f3465d31f",
+          "sha256": "f162b7caf4f6df94e0211b498d1df5e6fa42ae5e16f95c12c6a94ba89d577c6b",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.85/sles/12/automate-1.8.85-1.sles12.x86_64.rpm"
+        },
+        "1.8.96": {
+          "sha1": "cfe46795791d222dd5527bf972eecd8022201205",
+          "sha256": "2c330f695aeadc116947e00bc37c5930e6d702a50a5c41a5996dba41640461bc",
+          "url": "https://packages.chef.io/files/stable/automate/1.8.96/sles/12/automate-1.8.96-1.sles12.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2017-06-22 12:02:40 -0700"
+    "timestamp": "2021-02-23 15:01:55 -0600"
   }
 }

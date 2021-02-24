@@ -1,5 +1,35 @@
 {
+  "mac_os_x": {
+    "10.12": {
+      "x86_64": {
+        "1.0.8": {
+          "sha1": "a1f9cd5d46844e0dc7a9d87877396b71f84e384b",
+          "sha256": "44172c2d45350bd8885b734dd4aedac8cc9bfe8c7b265f5aa234a92c5ac7ce38",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.0.8/mac_os_x/10.12/mac-bootstrapper-1.0.8-1.dmg"
+        }
+      }
+    },
+    "10.13": {
+      "x86_64": {
+        "1.0.12": {
+          "sha1": "3a853b2e57ef3f349ac22ec5b83b42a90a6ba582",
+          "sha256": "b39e6f82709fedf438f048a0a5fc68134649f6743d9bda8a37984357882f5cc2",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.0.12/mac_os_x/10.13/mac-bootstrapper-1.0.12-1.dmg"
+        },
+        "1.0.13": {
+          "sha1": "e4cfe95a8b41eb38a6626308debb873530d3efa2",
+          "sha256": "160be1e95a907bc75423f36dea2d582a9003c47f3bb533d084d0904b8aa0a76c",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.0.13/mac_os_x/10.13/mac-bootstrapper-1.0.13-1.dmg"
+        },
+        "1.1.0": {
+          "sha1": "eb7d302bad3c70e470841b69f1979eea1deaacbb",
+          "sha256": "fd3b6b69ac23af24f17b4128e1206b61f25063b7eb098e8f7746e7f648deefa7",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.1.0/mac_os_x/10.13/mac-bootstrapper-1.1.0-1.dmg"
+        }
+      }
+    }
+  },
   "run_data": {
-    "timestamp": "2017-06-22 12:04:23 -0700"
+    "timestamp": "2021-02-23 15:13:46 -0600"
   }
 }

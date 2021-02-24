@@ -2,61 +2,6 @@
   "el": {
     "5": {
       "x86_64": {
-        "11.1.5": {
-          "sha1": "e6718c18c1d7285c6c0feb90b5622fef526fb748",
-          "sha256": "5187b0e0eca8443c69e428a0dcbfec36567e471b299da2ba5d56417d7423f610",
-          "url": "http://packages.chef.io/files/stable/chef-server/11.1.5/el/5/chef-server-11.1.5-1.el5.x86_64.rpm"
-        },
-        "11.1.6": {
-          "sha1": "1ef9d563beeb1012db66a52bbeaa2ea19433e184",
-          "sha256": "bf9d0a742a767f550d5af82396d9d2acde3955ee99121208a3b595ddd5287aae",
-          "url": "http://packages.chef.io/files/stable/chef-server/11.1.6/el/5/chef-server-11.1.6-1.el5.x86_64.rpm"
-        },
-        "12.0.0": {
-          "sha1": "b0eac70789a06ccca996821ea289ba91293ffc05",
-          "sha256": "e17e892ebbc61681ddd257ea546fd9b5d07365c5dda96b284de8c64524c88be4",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.0/el/5/chef-server-core-12.0.0-1.el5.x86_64.rpm"
-        },
-        "12.0.1": {
-          "sha1": "3bf4f418cbad0330de088bd492c683bae822abaa",
-          "sha256": "626aeed6cf666a378eb047d9712d19d3103bb83bf3626451dacfc837b80556ea",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.1/el/5/chef-server-core-12.0.1-1.x86_64.rpm"
-        },
-        "12.0.2": {
-          "sha1": "86e3079f663a8beb333b47f91a408041aa08d4e5",
-          "sha256": "f18f66a1a654eaf12feb026fff06706721994066bc51807b842209fc9ec59f8e",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.2/el/5/chef-server-core-12.0.2-1.x86_64.rpm"
-        },
-        "12.0.3": {
-          "sha1": "ba09b2a6a40edcb6ee6aecb3f4887d0622e66da6",
-          "sha256": "724a98d74d4854f8a8a3d161c961ea3ab3474614d58b8450c5f8ea272b7d9be6",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.3/el/5/chef-server-core-12.0.3-1.x86_64.rpm"
-        },
-        "12.0.4": {
-          "sha1": "69787636abb7eeb1aa2db363266ad483c53be5d6",
-          "sha256": "4c7026c1d05bdd9f3d7fccfb0b9870fba8f06d809776ae59abcd8367493312c0",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.4/el/5/chef-server-core-12.0.4-1.el5.x86_64.rpm"
-        },
-        "12.0.5": {
-          "sha1": "8a356ce6d1e117b5bcc599bca6c83c60a0e5449b",
-          "sha256": "0fb9309fe7d30b849419f00aedcff6c25f00c81f9ce901e2a330423161f617e0",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.5/el/5/chef-server-core-12.0.5-1.el5.x86_64.rpm"
-        },
-        "12.0.6": {
-          "sha1": "21165bfd999b2482cb2633cd093954d4bef870fd",
-          "sha256": "87dc620205ab724ef787920504e57fd401d163803c4a6456f63ec534c52aa5c7",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.6/el/5/chef-server-core-12.0.6-1.el5.x86_64.rpm"
-        },
-        "12.0.7": {
-          "sha1": "ade3be07fb34ec45c2747e2ad7d6d7667e411407",
-          "sha256": "2b76e95780e10b4b6e636c6d3f078c7097ebf0a84186b72d86011f69056beaf9",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.7/el/5/chef-server-core-12.0.7-1.el5.x86_64.rpm"
-        },
-        "12.0.8": {
-          "sha1": "eca25a9bc6cb43943187735b762ada13c2fd1a0e",
-          "sha256": "fef825d1c9ef85308b3c266997779614085c36a701aafe150e771ee1cdfbf36a",
-          "url": "http://packages.chef.io/files/stable/chef-server/12.0.8/el/5/chef-server-core-12.0.8-1.el5.x86_64.rpm"
-        },
         "11.0.4": {
           "sha1": "1359d0bf411dd453006d0739107a94adb2b51a09",
           "sha256": "03f0bf20179329caac77cdaf1224956cf7772cb2ae13ca9db225efe2628bf086",
@@ -107,10 +52,65 @@
           "sha256": "a15cd3ebe807b7a403e268bd49f3b92313918749bc9c28910b5180079557969f",
           "url": "http://packages.chef.io/files/stable/chef-server/11.1.4/el/5/chef-server-11.1.4-1.el5.x86_64.rpm"
         },
+        "11.1.5": {
+          "sha1": "e6718c18c1d7285c6c0feb90b5622fef526fb748",
+          "sha256": "5187b0e0eca8443c69e428a0dcbfec36567e471b299da2ba5d56417d7423f610",
+          "url": "http://packages.chef.io/files/stable/chef-server/11.1.5/el/5/chef-server-11.1.5-1.el5.x86_64.rpm"
+        },
+        "11.1.6": {
+          "sha1": "1ef9d563beeb1012db66a52bbeaa2ea19433e184",
+          "sha256": "bf9d0a742a767f550d5af82396d9d2acde3955ee99121208a3b595ddd5287aae",
+          "url": "http://packages.chef.io/files/stable/chef-server/11.1.6/el/5/chef-server-11.1.6-1.el5.x86_64.rpm"
+        },
         "11.1.7": {
           "sha1": "1e37cb063877b63d8e7bebfc2881a7d5e390a11e",
           "sha256": "4b8758a38b8180236746645e5bb8e0a66be240e6bb8f103dea42043514332bd0",
           "url": "http://packages.chef.io/files/stable/chef-server/11.1.7/el/5/chef-server-11.1.7-1.el5.x86_64.rpm"
+        },
+        "12.0.0": {
+          "sha1": "b0eac70789a06ccca996821ea289ba91293ffc05",
+          "sha256": "e17e892ebbc61681ddd257ea546fd9b5d07365c5dda96b284de8c64524c88be4",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.0/el/5/chef-server-core-12.0.0-1.el5.x86_64.rpm"
+        },
+        "12.0.1": {
+          "sha1": "3bf4f418cbad0330de088bd492c683bae822abaa",
+          "sha256": "626aeed6cf666a378eb047d9712d19d3103bb83bf3626451dacfc837b80556ea",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.1/el/5/chef-server-core-12.0.1-1.x86_64.rpm"
+        },
+        "12.0.2": {
+          "sha1": "86e3079f663a8beb333b47f91a408041aa08d4e5",
+          "sha256": "f18f66a1a654eaf12feb026fff06706721994066bc51807b842209fc9ec59f8e",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.2/el/5/chef-server-core-12.0.2-1.x86_64.rpm"
+        },
+        "12.0.3": {
+          "sha1": "ba09b2a6a40edcb6ee6aecb3f4887d0622e66da6",
+          "sha256": "724a98d74d4854f8a8a3d161c961ea3ab3474614d58b8450c5f8ea272b7d9be6",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.3/el/5/chef-server-core-12.0.3-1.x86_64.rpm"
+        },
+        "12.0.4": {
+          "sha1": "69787636abb7eeb1aa2db363266ad483c53be5d6",
+          "sha256": "4c7026c1d05bdd9f3d7fccfb0b9870fba8f06d809776ae59abcd8367493312c0",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.4/el/5/chef-server-core-12.0.4-1.el5.x86_64.rpm"
+        },
+        "12.0.5": {
+          "sha1": "8a356ce6d1e117b5bcc599bca6c83c60a0e5449b",
+          "sha256": "0fb9309fe7d30b849419f00aedcff6c25f00c81f9ce901e2a330423161f617e0",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.5/el/5/chef-server-core-12.0.5-1.el5.x86_64.rpm"
+        },
+        "12.0.6": {
+          "sha1": "21165bfd999b2482cb2633cd093954d4bef870fd",
+          "sha256": "87dc620205ab724ef787920504e57fd401d163803c4a6456f63ec534c52aa5c7",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.6/el/5/chef-server-core-12.0.6-1.el5.x86_64.rpm"
+        },
+        "12.0.7": {
+          "sha1": "ade3be07fb34ec45c2747e2ad7d6d7667e411407",
+          "sha256": "2b76e95780e10b4b6e636c6d3f078c7097ebf0a84186b72d86011f69056beaf9",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.7/el/5/chef-server-core-12.0.7-1.el5.x86_64.rpm"
+        },
+        "12.0.8": {
+          "sha1": "eca25a9bc6cb43943187735b762ada13c2fd1a0e",
+          "sha256": "fef825d1c9ef85308b3c266997779614085c36a701aafe150e771ee1cdfbf36a",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.0.8/el/5/chef-server-core-12.0.8-1.el5.x86_64.rpm"
         },
         "12.1.0": {
           "sha1": "c7e54f94e5a20b84a23ba182b0d18d2fdd917b04",
@@ -241,66 +241,41 @@
           "sha1": "a6b22d2b5776f7616c71de9eaab997e56d534680",
           "sha256": "7c9241b1262c40774e4101f02f1f133c0ee203aeb8948c8b7dba5c1afea7d3a9",
           "url": "http://packages.chef.io/files/stable/chef-server/12.15.8/el/5/chef-server-core-12.15.8-1.el5.x86_64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "ff6aae6e76ad09f93cee24e66d8ea7e4e5512da5",
+          "sha256": "306698dbf0ad312a9e1f560b52f5c282a23f5bfa927d52ca8cfe85e90ca4134f",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.16.2/el/5/chef-server-core-12.16.2-1.el5.x86_64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "3dd3b92f9df1295101edffc41163db0e202cd5b0",
+          "sha256": "46a12bbf6f5ee186722cd8c9255a7c403847bbdca432b82979012025ad50205e",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.16.9/el/5/chef-server-core-12.16.9-1.el5.x86_64.rpm"
+        },
+        "12.16.14": {
+          "sha1": "a1dca96227e95e656221b3c0b9c0bba94e84db62",
+          "sha256": "8187148e5ae6540c86f442c8e90db32398ab993423b0c89e9e6b7f0ebe76fff2",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.16.14/el/5/chef-server-core-12.16.14-1.el5.x86_64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "9effe227eacb5c18cf17702a5ce903b1bb580faa",
+          "sha256": "8df0741010139938903cb063e3d8340359a65e0edca6cdcd2f8f0a35a1c7df93",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.17.3/el/5/chef-server-core-12.17.3-1.el5.x86_64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "7eee45027967fa2c31eb20cb36a18b971f8bb897",
+          "sha256": "e18e1ccc87a68102ec792b4e79154d7a89328c18f6c0520f76ecac02e5303d70",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.17.5/el/5/chef-server-core-12.17.5-1.el5.x86_64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "4c6fc3f6b6592234f383afee8a1bf2b5bc3ba580",
+          "sha256": "eb4f7f1183ce5c0035fcb20c396fe25b695add8666fd8df6eb4dd1911d1e35bf",
+          "url": "http://packages.chef.io/files/stable/chef-server/12.17.15/el/5/chef-server-core-12.17.15-1.el5.x86_64.rpm"
         }
       }
     },
     "6": {
       "x86_64": {
-        "11.1.5": {
-          "sha1": "03b1c01e50811bf92ee3f41f18fe97853757e5c5",
-          "sha256": "6890c8574749bb19fecd913f85c30abbff62ae291ebf0807175e3b6cceef0a10",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/el/6/chef-server-11.1.5-1.el6.x86_64.rpm"
-        },
-        "11.1.6": {
-          "sha1": "f270ddb3b2efd6a52c61431d3faea5c769df6632",
-          "sha256": "d4f9c9515dd8035acd4b38098fd2f243f26fb925ae15e47817f93d73cf9a850c",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/el/6/chef-server-11.1.6-1.el6.x86_64.rpm"
-        },
-        "12.0.0": {
-          "sha1": "3a9b766beda2de37b9bf1a488c3220aecaf7936e",
-          "sha256": "89e212e7ed46b30c69a4dbfe568d9bfc299f8a6293f69e4d776f40c2d96aebeb",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/el/6/chef-server-core-12.0.0-1.el6.x86_64.rpm"
-        },
-        "12.0.1": {
-          "sha1": "b3b68e6b6ecdcdab275e2f7b5080d70302faabae",
-          "sha256": "fc339d6b314906b4e1909f86d4eeaef8b51d71f219c5652ad7c61c5d5063c00f",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/el/6/chef-server-core-12.0.1-1.x86_64.rpm"
-        },
-        "12.0.2": {
-          "sha1": "89225071c7248c4031ad760d61cc12928c27529f",
-          "sha256": "ac6a8c45087cb28caf392c0dfdf93c40a763da585d8dd93473a87a36eca6f0aa",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/el/6/chef-server-core-12.0.2-1.x86_64.rpm"
-        },
-        "12.0.3": {
-          "sha1": "596640467589f741c662a37899b5330e789ac3e6",
-          "sha256": "cb726462fc991fe2ee044b3f58bad24de3e5d210a1705985e85e9a591d68c6f6",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/el/6/chef-server-core-12.0.3-1.x86_64.rpm"
-        },
-        "12.0.4": {
-          "sha1": "6209573163acc72e9959e16eefcb5885fadb003a",
-          "sha256": "d8d1a0b7b808b29c936ec566e8eef54521ec54bab30110f2f567eaade3bd2ed7",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/el/6/chef-server-core-12.0.4-1.el6.x86_64.rpm"
-        },
-        "12.0.5": {
-          "sha1": "19a896cc3282088899a85787151e64e72527d6b1",
-          "sha256": "ccdd4a9bf0a5eebec0f3e46785d3b86113debb44dbb3ab94677be49ba4798e26",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/el/6/chef-server-core-12.0.5-1.el6.x86_64.rpm"
-        },
-        "12.0.6": {
-          "sha1": "4df1234aefd8070c6b2ae3818684c86c2f3eb387",
-          "sha256": "a7b9faa17a5cdecde04546b4eb7a6448f74083936b2e200e90fb4e3918103c86",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/el/6/chef-server-core-12.0.6-1.el6.x86_64.rpm"
-        },
-        "12.0.7": {
-          "sha1": "d89eb37a9aaac5ef1b7163306f51ee4077e64a04",
-          "sha256": "f7a21b392f410d7485dff4b5a06ee2da92807a4875b51568f4a960a1aa6a0f83",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/el/6/chef-server-core-12.0.7-1.el6.x86_64.rpm"
-        },
-        "12.0.8": {
-          "sha1": "828b4f87763b93063028c41f88c72d20f22bb2c1",
-          "sha256": "ba08e71609c5e794b21e9ebdd9c28c281f1b7ea72af5244c38ef8da76386adc8",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/el/6/chef-server-core-12.0.8-1.el6.x86_64.rpm"
-        },
         "11.0.4": {
           "sha1": "8294139ec6a3373fa59da9ba037fb56e281844ef",
           "sha256": "eb085aa0980cdc710cd6de53f480bfb8a0d27d16556fd505a1de2d6b46a62050",
@@ -351,10 +326,65 @@
           "sha256": "26c7c7d41951d39a07197415f5a093c8d374b32089646c3f5eb189b8455a90c2",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.4/el/6/chef-server-11.1.4-1.el6.x86_64.rpm"
         },
+        "11.1.5": {
+          "sha1": "03b1c01e50811bf92ee3f41f18fe97853757e5c5",
+          "sha256": "6890c8574749bb19fecd913f85c30abbff62ae291ebf0807175e3b6cceef0a10",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/el/6/chef-server-11.1.5-1.el6.x86_64.rpm"
+        },
+        "11.1.6": {
+          "sha1": "f270ddb3b2efd6a52c61431d3faea5c769df6632",
+          "sha256": "d4f9c9515dd8035acd4b38098fd2f243f26fb925ae15e47817f93d73cf9a850c",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/el/6/chef-server-11.1.6-1.el6.x86_64.rpm"
+        },
         "11.1.7": {
           "sha1": "824d27dbfa8c1f53a49646754bf967128345dad1",
           "sha256": "b10951d316e7a298ea6382b5345eff91d29f71e6038e1b838f351a30f3539854",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.7/el/6/chef-server-11.1.7-1.el6.x86_64.rpm"
+        },
+        "12.0.0": {
+          "sha1": "3a9b766beda2de37b9bf1a488c3220aecaf7936e",
+          "sha256": "89e212e7ed46b30c69a4dbfe568d9bfc299f8a6293f69e4d776f40c2d96aebeb",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/el/6/chef-server-core-12.0.0-1.el6.x86_64.rpm"
+        },
+        "12.0.1": {
+          "sha1": "b3b68e6b6ecdcdab275e2f7b5080d70302faabae",
+          "sha256": "fc339d6b314906b4e1909f86d4eeaef8b51d71f219c5652ad7c61c5d5063c00f",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/el/6/chef-server-core-12.0.1-1.x86_64.rpm"
+        },
+        "12.0.2": {
+          "sha1": "89225071c7248c4031ad760d61cc12928c27529f",
+          "sha256": "ac6a8c45087cb28caf392c0dfdf93c40a763da585d8dd93473a87a36eca6f0aa",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/el/6/chef-server-core-12.0.2-1.x86_64.rpm"
+        },
+        "12.0.3": {
+          "sha1": "596640467589f741c662a37899b5330e789ac3e6",
+          "sha256": "cb726462fc991fe2ee044b3f58bad24de3e5d210a1705985e85e9a591d68c6f6",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/el/6/chef-server-core-12.0.3-1.x86_64.rpm"
+        },
+        "12.0.4": {
+          "sha1": "6209573163acc72e9959e16eefcb5885fadb003a",
+          "sha256": "d8d1a0b7b808b29c936ec566e8eef54521ec54bab30110f2f567eaade3bd2ed7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/el/6/chef-server-core-12.0.4-1.el6.x86_64.rpm"
+        },
+        "12.0.5": {
+          "sha1": "19a896cc3282088899a85787151e64e72527d6b1",
+          "sha256": "ccdd4a9bf0a5eebec0f3e46785d3b86113debb44dbb3ab94677be49ba4798e26",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/el/6/chef-server-core-12.0.5-1.el6.x86_64.rpm"
+        },
+        "12.0.6": {
+          "sha1": "4df1234aefd8070c6b2ae3818684c86c2f3eb387",
+          "sha256": "a7b9faa17a5cdecde04546b4eb7a6448f74083936b2e200e90fb4e3918103c86",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/el/6/chef-server-core-12.0.6-1.el6.x86_64.rpm"
+        },
+        "12.0.7": {
+          "sha1": "d89eb37a9aaac5ef1b7163306f51ee4077e64a04",
+          "sha256": "f7a21b392f410d7485dff4b5a06ee2da92807a4875b51568f4a960a1aa6a0f83",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/el/6/chef-server-core-12.0.7-1.el6.x86_64.rpm"
+        },
+        "12.0.8": {
+          "sha1": "828b4f87763b93063028c41f88c72d20f22bb2c1",
+          "sha256": "ba08e71609c5e794b21e9ebdd9c28c281f1b7ea72af5244c38ef8da76386adc8",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/el/6/chef-server-core-12.0.8-1.el6.x86_64.rpm"
         },
         "12.1.0": {
           "sha1": "628e5de840dd051c0551288667f3bc318f917460",
@@ -485,6 +515,86 @@
           "sha1": "0e0d2bd29e3b53ebbb9e12cdd3f40fcd4e027499",
           "sha256": "cb0e1c7dae13526360d75f35625d8794ce641cc399bc084c0bd6b37a757b19f2",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/6/chef-server-core-12.15.8-1.el6.x86_64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "21c96ee4709926fcb6f3103438221b898818caaf",
+          "sha256": "994484d0e93be97a5373db81e403467000edc33e52444aba5d132b9f0f49a2d6",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/el/6/chef-server-core-12.16.2-1.el6.x86_64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "addc7bfc7834b469e07cb04f2e7020610defb40d",
+          "sha256": "aab275fb8f14f2087e7d14df99d00919a6a549d4e12aeeb512d0a8a1c14fd1c8",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/el/6/chef-server-core-12.16.9-1.el6.x86_64.rpm"
+        },
+        "12.16.14": {
+          "sha1": "3ce4b3a3166b71cf9a7a7bdeb79c9fd09071aa96",
+          "sha256": "d51b29e92000300dabde08a1810734936abb745de637ac3cc14760b388aaa1b8",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/el/6/chef-server-core-12.16.14-1.el6.x86_64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "deb60ec84540ba8b3b226ff7d220ebd9b550a031",
+          "sha256": "91f0880e0764130fa8fc80a148aeeb402435156be06aa8eac7d88cbebf213141",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/el/6/chef-server-core-12.17.3-1.el6.x86_64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "9640928138487e7bf1926e0e7128c628200e1e87",
+          "sha256": "4184defb7bf2daf3b63f9596cde21ea1bcc570f2cabf280023c8b11dc5145f17",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/el/6/chef-server-core-12.17.5-1.el6.x86_64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "d0af06df5532ad0b8aff9459425b3f795679eba2",
+          "sha256": "006ea8f33978ecfa6f55ac7441ebb7398b14f984ec0d1bdc40839345d1734103",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/el/6/chef-server-core-12.17.15-1.el6.x86_64.rpm"
+        },
+        "12.17.33": {
+          "sha1": "621914539fb8e43ec08be19ccf4f9573e38e04b8",
+          "sha256": "54a80caf40ba7121e335b9d502168b4351977ba742245642a210af1c4e3187f9",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/el/6/chef-server-core-12.17.33-1.el6.x86_64.rpm"
+        },
+        "12.18.14": {
+          "sha1": "c3890873f117f637aaba34d32ff8d5b906449fd2",
+          "sha256": "76519ad1f0730a46825a62277ad780400f6a6569683c3f60ad995f56f8bf0a4a",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/6/chef-server-core-12.18.14-1.el6.x86_64.rpm"
+        },
+        "12.19.26": {
+          "sha1": "489d74d6747d51e4fe4467e92d2b3ad7413c3ba6",
+          "sha256": "b0b8fd31fe4d40b92c9e205e1117742dcb084ac3919c419871108d84afe2f139",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/el/6/chef-server-core-12.19.26-1.el6.x86_64.rpm"
+        },
+        "12.19.31": {
+          "sha1": "686371095a0fb2f9f07c88747dab7ebbde716d02",
+          "sha256": "79658635b31076ac52c7b2e2c25cf2b29a30fac6b8fde706ef44be7719a37c95",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/el/6/chef-server-core-12.19.31-1.el6.x86_64.rpm"
+        },
+        "13.0.16": {
+          "sha1": "214636dde11da8b72cd32d122447bab4465c5704",
+          "sha256": "10cb27cb00d4df90ec46afa27e19eed5f7a0a7349260d10460252ede363b1d88",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/el/6/chef-server-core-13.0.16-1.el6.x86_64.rpm"
+        },
+        "13.0.17": {
+          "sha1": "aec7f6eb90091963d0e982c0432a7b12de70b2e1",
+          "sha256": "6c963f523e0cdb7899d3fac8bca950c15c72af0b6a4c6a863403d180cc9d2771",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/el/6/chef-server-core-13.0.17-1.el6.x86_64.rpm"
+        },
+        "13.1.13": {
+          "sha1": "b7557d5f1320a1525c3782392ee84f66d43b0aa5",
+          "sha256": "04810558e5d71fd62e4ea700b66199e5bd4572b0844ebc8c8e9a194de06a9137",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/el/6/chef-server-core-13.1.13-1.el6.x86_64.rpm"
+        },
+        "13.2.0": {
+          "sha1": "f7737d4eb07cf05bb8ce9cbfae7daeba56cdf1bf",
+          "sha256": "21f60f863e883c51aa1436270dfb39d17f39c8e0de9a0036b93077938087dd59",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/el/6/chef-server-core-13.2.0-1.el6.x86_64.rpm"
+        },
+        "14.0.58": {
+          "sha1": "fa94701deda49437b074f69a865d51ba5f40547f",
+          "sha256": "c4c4f5442dc66bc7fedefcdd3095670388e90a41f87b54cd10086daa408d0c0a",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/el/6/chef-server-core-14.0.58-1.el6.x86_64.rpm"
+        },
+        "14.0.65": {
+          "sha1": "3d912f1a8c51598dd3979c3f900e5ade0cd3bd78",
+          "sha256": "f9807e54c8cd638bd7d95d9917c523019d210611917a36693704b3544b0d17d4",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/el/6/chef-server-core-14.0.65-1.el6.x86_64.rpm"
         }
       },
       "s390x": {
@@ -527,6 +637,11 @@
           "sha1": "b41e9044de598207561a1716dcd0c4d14954622d",
           "sha256": "45b54b3d726b1c16b91f346047b2880b31175b907fa81cbc7293c290a04e5bab",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/6/chef-server-core-12.15.8-1.el6.s390x.rpm"
+        },
+        "12.18.14": {
+          "sha1": "4fed49f9cd2da5279b7c7dd1f5bf40810a27bf92",
+          "sha256": "c24f48906392946979142c608756b30a334ef280fb4519abfb95a7b0bd5701e8",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/6/chef-server-core-12.18.14-1.el6.s390x.rpm"
         }
       }
     },
@@ -661,6 +776,86 @@
           "sha1": "97e34ccd34499452b38d232f4cb6cd887e0bf459",
           "sha256": "a39b70bbbc8ba60d54c827d2a002f7b1d4f48629f8316ae59ae21ab2c73396d8",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.x86_64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "1402dcc0b67c14575d107924ba1ddbdd54be6af0",
+          "sha256": "78a1f9df96ad676814676e40f8c4c9ea82999f29f5edcb16ae6fec62fc6cc041",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/el/7/chef-server-core-12.16.2-1.el7.x86_64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "cfd6d781fdd611609ccf24aff14d5a4768d4a44e",
+          "sha256": "3b9edc6d2651713b753d9af3f89df421d9390cf26cc5013330bf1306c2666a12",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/el/7/chef-server-core-12.16.9-1.el7.x86_64.rpm"
+        },
+        "12.16.14": {
+          "sha1": "53ad17abd6ec070a3ef5c0b6d1dd67d1ace0dd60",
+          "sha256": "da71242e93b278acdd2763a4d1e58169bde83f21d71b7efc2561ab1b65cb65d4",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/el/7/chef-server-core-12.16.14-1.el7.x86_64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "4d675f1d525f7a254de77fb17bd5987667b3f9bf",
+          "sha256": "86492da2cf194a5c6fd89ce8f9bfdab013110bb117fae1ee752e0f0c702a7b71",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/el/7/chef-server-core-12.17.3-1.el7.x86_64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "ee24bdf0a62ed4fa74180461ef37437b8945a2c0",
+          "sha256": "e6566a993b8bf2e58606ac5853d9e80edd7d457d4192705ea9fbe479eaf51291",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/el/7/chef-server-core-12.17.5-1.el7.x86_64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "70785cafce28a95a2a6b81aa90d477f6bd3ce003",
+          "sha256": "3a669c950953164b2a0f27b69672dff778bd0310fe89e1fde657661910833fba",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/el/7/chef-server-core-12.17.15-1.el7.x86_64.rpm"
+        },
+        "12.17.33": {
+          "sha1": "e22c0ec7bd5434d6ad8144ccf80f1dc6ea325ca0",
+          "sha256": "952b0ee7d2a61d20a4d0485e3395f039b6359fd423c7f6a741f86ba9c28bb4cb",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/el/7/chef-server-core-12.17.33-1.el7.x86_64.rpm"
+        },
+        "12.18.14": {
+          "sha1": "cf948fd5292012fe68789587b07db24ffdb3c7a0",
+          "sha256": "917bd7b66727d7f5ccb2b69c55436654514fea7657b687eff6bcdb577eec5238",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/7/chef-server-core-12.18.14-1.el7.x86_64.rpm"
+        },
+        "12.19.26": {
+          "sha1": "a573e78f1e1f6892fa25c76319c91d2ef8ccc944",
+          "sha256": "b9edeaac58dc87ed07c30faa35a75d449a36fbed53ceadb510ccdadb998a8b2a",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/el/7/chef-server-core-12.19.26-1.el7.x86_64.rpm"
+        },
+        "12.19.31": {
+          "sha1": "cf67931bb162307791623fab74b707dfe32b0ae7",
+          "sha256": "5a49f4e6b62463d1051808795c3ef63f34118286e869a4ef0296fdcddda72868",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/el/7/chef-server-core-12.19.31-1.el7.x86_64.rpm"
+        },
+        "13.0.16": {
+          "sha1": "4620d4649b6420d1e29ea63274dc50735a92c064",
+          "sha256": "ab250ba99a48b71d5d1443e70cab544f1edc82433bd5f237c9db3bed81d4437c",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/el/7/chef-server-core-13.0.16-1.el7.x86_64.rpm"
+        },
+        "13.0.17": {
+          "sha1": "deadb73c77c2cf8e1c18c3d84716b154dca1377a",
+          "sha256": "f60c0367536721af1a02a538244c8bf9a8ddf40920f32bd20d239c47760584ca",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/el/7/chef-server-core-13.0.17-1.el7.x86_64.rpm"
+        },
+        "13.1.13": {
+          "sha1": "6955ef25cb0a48e714fd99782edc79b7d09b9259",
+          "sha256": "eeeb2bf8b6c193c8c332ac754e80db30dd7e9e5db4b65fcbc6636eb6b77bfe6f",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/el/7/chef-server-core-13.1.13-1.el7.x86_64.rpm"
+        },
+        "13.2.0": {
+          "sha1": "7a9815833196794725b8036a5582fae3d0c4ef61",
+          "sha256": "23bee018817345988c97ff35569482e88ce82db835ed5a908cceb21d56a3b6c3",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/el/7/chef-server-core-13.2.0-1.el7.x86_64.rpm"
+        },
+        "14.0.58": {
+          "sha1": "14c15f36641e3962897be7b3e6446bc44f338630",
+          "sha256": "77fd4346003f3f81d04a9bff68144bd7172d921cd474b9769329450ae9cf4f18",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/el/7/chef-server-core-14.0.58-1.el7.x86_64.rpm"
+        },
+        "14.0.65": {
+          "sha1": "c33a291fa87842d2d7e41073c0c194ccc88fcb6d",
+          "sha256": "e3551d72aec81a0a4ee4cd09141b945e8ee3bdf75eb553a9b6aa5f570fa7eb3a",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/el/7/chef-server-core-14.0.65-1.el7.x86_64.rpm"
         }
       },
       "ppc64": {
@@ -743,6 +938,41 @@
           "sha1": "18ef07a0214372c5b05a75ac8e3c10ba9c6eef0b",
           "sha256": "de0f6073fa83497e5b6771ec09dc16b4c8695e1bc45c1eb49296c5ea78c7b915",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.ppc64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "eb9465ed0542ad6b2d26fd1d5c3a3c1505054c63",
+          "sha256": "e84a5fb11226ff4801af91a081d0c13d5ea0b9578d89b268a1ee20cc3892e649",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/el/7/chef-server-core-12.16.2-1.el7.ppc64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "e29ee70dc77aa5f004efe151bf1047e0e48254fb",
+          "sha256": "049616f8ad0daea68516e03d3135e87401b9dc0f5d2d34a14f31796823219bd7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/el/7/chef-server-core-12.16.9-1.el7.ppc64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "0d2d7115f2fe3e1406c8fa6102c1ceca695e24a5",
+          "sha256": "8c69d8614d4d193b233ab4fcbdfb84af4c5420a97b9b58c2355272acb28aed99",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/el/7/chef-server-core-12.17.3-1.el7.ppc64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "c613c9c1e5dd893825ed6670b87b6b5ec9722d67",
+          "sha256": "77f8c7827b892f7699b038a0485fd0ee09c2fa146c5cd6ea0efa61572d08d1ab",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/el/7/chef-server-core-12.17.5-1.el7.ppc64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "90d09ddb82cdda875ef72875b67ef54b61775c16",
+          "sha256": "effa04495dc6306de9d5f0980493b85cabb5e9103c541aca6bdc321361ba7fd5",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/el/7/chef-server-core-12.17.15-1.el7.ppc64.rpm"
+        },
+        "12.17.33": {
+          "sha1": "506dc24993318d5e5cda2426ae1d30670518a48c",
+          "sha256": "8e9a9bd7beca9cc5144bb4a8ee3bc1740be712acb25ee7b61ee295218293463b",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/el/7/chef-server-core-12.17.33-1.el7.ppc64.rpm"
+        },
+        "12.18.14": {
+          "sha1": "f57b0de330080ce4104361d87031900821addbb0",
+          "sha256": "5585ad471373da7725db773491a371048f32b789c79e3bc313e65b3fb62d77d7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/7/chef-server-core-12.18.14-1.el7.ppc64.rpm"
         }
       },
       "ppc64le": {
@@ -825,6 +1055,41 @@
           "sha1": "077388529c160fb5ff744ce59bab69f6c46a3e68",
           "sha256": "b636cad58fef483399b6ad20c150d8a7e46123ec2ba13e5dde20b2c516e21b75",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.ppc64le.rpm"
+        },
+        "12.16.2": {
+          "sha1": "5d24cb1d83e54ee4ef5c987309cc3b31da95ebd8",
+          "sha256": "5730de49d76b8337c11cc79a11c6986946195c7796fb527f50c2e3d130d8fc3b",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/el/7/chef-server-core-12.16.2-1.el7.ppc64le.rpm"
+        },
+        "12.16.9": {
+          "sha1": "a23fff85d0c182d0e9a2cb405ad171435f4853b1",
+          "sha256": "e8797dc0be62850e1ed602340c05ddcf1c2b8aec806380273ed66485d536d199",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/el/7/chef-server-core-12.16.9-1.el7.ppc64le.rpm"
+        },
+        "12.17.3": {
+          "sha1": "278f21a26bd1bd4a6bfd7d3331a812b7c0d8c2a9",
+          "sha256": "ff470d6cede09bb3ad5adda231a7c2d9c02e18803ace635b5d417f01263e6e82",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/el/7/chef-server-core-12.17.3-1.el7.ppc64le.rpm"
+        },
+        "12.17.5": {
+          "sha1": "32ce677a25a4e45adfc434e0a382978b2af62467",
+          "sha256": "b6ae6cb19203e269eede6b55b11072101962187c2bc91a15cd0cf9122c70688e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/el/7/chef-server-core-12.17.5-1.el7.ppc64le.rpm"
+        },
+        "12.17.15": {
+          "sha1": "7d8defaee4ac3324ece7d7b98b46f422d78124b2",
+          "sha256": "003da3717ecd51254adcebe0cfbd39730dd0f1cfbdcf43f9fe22a398c4607fa4",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/el/7/chef-server-core-12.17.15-1.el7.ppc64le.rpm"
+        },
+        "12.17.33": {
+          "sha1": "36e05a95f3e2fc71b87fa11da3e66caadbb71e2e",
+          "sha256": "b8cba9031c5cf5dad0a1ecbb3d9a210a1051647fa89b2522a5e1012b14ea8f39",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/el/7/chef-server-core-12.17.33-1.el7.ppc64le.rpm"
+        },
+        "12.18.14": {
+          "sha1": "3c56add8cf8937707b7bc7fa5040e620367cf0f5",
+          "sha256": "1493df954b97dc73a6b50617da8dc04786279c1c0af926ddb63d33ac7f349eed",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/7/chef-server-core-12.18.14-1.el7.ppc64le.rpm"
         }
       },
       "s390x": {
@@ -877,6 +1142,50 @@
           "sha1": "fca1232ec73e8b27cc009d7f076cb4d4ede50b01",
           "sha256": "9afe63bf234e0dec57f3ef9d0e7b71e4b573de3199d6f7c350a7a6bf94bb816c",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/el/7/chef-server-core-12.15.8-1.el7.s390x.rpm"
+        },
+        "12.17.3": {
+          "sha1": "67334c45cc1e605210a5cc93473b419713352737",
+          "sha256": "5e8b02bc17dc4a0158324573cac220835a6a0bb4952335d6b6df4a852124d16e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/el/7/chef-server-core-12.17.3-1.el7.s390x.rpm"
+        },
+        "12.17.5": {
+          "sha1": "22f3344e1a1c08748c5b24c72f2b5a5b53c327cf",
+          "sha256": "65485298b3e1b81718f7e970a783197eb83cdee3b4f45619e8ca0efee68fd205",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/el/7/chef-server-core-12.17.5-1.el7.s390x.rpm"
+        },
+        "12.17.15": {
+          "sha1": "a9a5d1aba5f73823acff8093bc7dca615e12dc40",
+          "sha256": "e650bf525c18293325f3de9bfc44b965bd2eb27c901c684abdbeddcd01d52d53",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/el/7/chef-server-core-12.17.15-1.el7.s390x.rpm"
+        },
+        "12.18.14": {
+          "sha1": "766af3bf181cbac6c28d7243b38c76d56f135eb0",
+          "sha256": "843d62e8f348f9898bb83d03cbbb7001d4ab0a53cbd30d717c3788f3bbdae13f",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/el/7/chef-server-core-12.18.14-1.el7.s390x.rpm"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "13.1.13": {
+          "sha1": "6955ef25cb0a48e714fd99782edc79b7d09b9259",
+          "sha256": "eeeb2bf8b6c193c8c332ac754e80db30dd7e9e5db4b65fcbc6636eb6b77bfe6f",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/el/8/chef-server-core-13.1.13-1.el7.x86_64.rpm"
+        },
+        "13.2.0": {
+          "sha1": "7a9815833196794725b8036a5582fae3d0c4ef61",
+          "sha256": "23bee018817345988c97ff35569482e88ce82db835ed5a908cceb21d56a3b6c3",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/el/8/chef-server-core-13.2.0-1.el7.x86_64.rpm"
+        },
+        "14.0.58": {
+          "sha1": "14c15f36641e3962897be7b3e6446bc44f338630",
+          "sha256": "77fd4346003f3f81d04a9bff68144bd7172d921cd474b9769329450ae9cf4f18",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/el/8/chef-server-core-14.0.58-1.el7.x86_64.rpm"
+        },
+        "14.0.65": {
+          "sha1": "c33a291fa87842d2d7e41073c0c194ccc88fcb6d",
+          "sha256": "e3551d72aec81a0a4ee4cd09141b945e8ee3bdf75eb553a9b6aa5f570fa7eb3a",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/el/8/chef-server-core-14.0.65-1.el7.x86_64.rpm"
         }
       }
     }
@@ -884,61 +1193,6 @@
   "ubuntu": {
     "10.04": {
       "x86_64": {
-        "11.1.5": {
-          "sha1": "d43872d78416bc69a33840ea43a537eaa75c25d9",
-          "sha256": "179721cf422ad64d63d09a7283de1731bbe316285ff86912ad1bcf9cdc1297e3",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/10.04/chef-server_11.1.5-1_amd64.deb"
-        },
-        "11.1.6": {
-          "sha1": "db8aa9afd818d97531e9b6a128fc84d51172b062",
-          "sha256": "ae2b6d893241de8eeb05aee8f00b947034f88097d9b61e5ea2ad511352a58b3f",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/10.04/chef-server_11.1.6-1_amd64.deb"
-        },
-        "12.0.0": {
-          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
-          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/10.04/chef-server-core_12.0.0-1_amd64.deb"
-        },
-        "12.0.1": {
-          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
-          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/10.04/chef-server-core_12.0.1-1_amd64.deb"
-        },
-        "12.0.2": {
-          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
-          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/10.04/chef-server-core_12.0.2-1_amd64.deb"
-        },
-        "12.0.3": {
-          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
-          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/10.04/chef-server-core_12.0.3-1_amd64.deb"
-        },
-        "12.0.4": {
-          "sha1": "4839aeda596efc1fcdc98f6ee17532443f6feead",
-          "sha256": "726cf00cbd6387f1761222d93d284192a0003787e354181029dab43822893735",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/ubuntu/10.04/chef-server-core_12.0.4-1_amd64.deb"
-        },
-        "12.0.5": {
-          "sha1": "3947f8712ac67fa9e7a2c432ce48df3799340870",
-          "sha256": "4cd7e18349136711245f02b8d777115150a55185d4d9acfa08fdcfe0147a9972",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/ubuntu/10.04/chef-server-core_12.0.5-1_amd64.deb"
-        },
-        "12.0.6": {
-          "sha1": "213701b5a727d7598def27c16a9cc65935af78a9",
-          "sha256": "13f6e661ec9f0fbfb6165da709d245e2ed80963fe3c912dd482aa108bc1853c7",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/ubuntu/10.04/chef-server-core_12.0.6-1_amd64.deb"
-        },
-        "12.0.7": {
-          "sha1": "7504131e732e1daed65470967d5a411fbff7a0e0",
-          "sha256": "2c54e43d27278fbe8b9da62a58f3261a35096bfae8c64001f1117bdbe5432c51",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/ubuntu/10.04/chef-server-core_12.0.7-1_amd64.deb"
-        },
-        "12.0.8": {
-          "sha1": "284d4c91e54df8392a4cb54f9be510bfc801efac",
-          "sha256": "83dee4fb272ddfce8f35957576182ba0650b32816882ab93f181e0102a1fd6c3",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/ubuntu/10.04/chef-server-core_12.0.8-1_amd64.deb"
-        },
         "11.0.4": {
           "sha1": "4c0dae2154a047b03d982f387df946ece501fd29",
           "sha256": "92be4aa9ea9de836aa9832b0fd571c77becfe319c960cac6366b7c90004f7c8f",
@@ -989,10 +1243,65 @@
           "sha256": "779b0bce4b52ca15215dcc701f2182a09c0c51d654c9930e1fb43f6c4e20fc3b",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.4/ubuntu/10.04/chef-server_11.1.4-1_amd64.deb"
         },
+        "11.1.5": {
+          "sha1": "d43872d78416bc69a33840ea43a537eaa75c25d9",
+          "sha256": "179721cf422ad64d63d09a7283de1731bbe316285ff86912ad1bcf9cdc1297e3",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/10.04/chef-server_11.1.5-1_amd64.deb"
+        },
+        "11.1.6": {
+          "sha1": "db8aa9afd818d97531e9b6a128fc84d51172b062",
+          "sha256": "ae2b6d893241de8eeb05aee8f00b947034f88097d9b61e5ea2ad511352a58b3f",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/10.04/chef-server_11.1.6-1_amd64.deb"
+        },
         "11.1.7": {
           "sha1": "92adf6402b4e14df4a95fc4260ffa6c6d86c9e9e",
           "sha256": "16e459374d495acdcdd4d7f3fcee782a455e9fb9653f2b71c175b2a515c8685c",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.7/ubuntu/10.04/chef-server_11.1.7-1_amd64.deb"
+        },
+        "12.0.0": {
+          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
+          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/10.04/chef-server-core_12.0.0-1_amd64.deb"
+        },
+        "12.0.1": {
+          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
+          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/10.04/chef-server-core_12.0.1-1_amd64.deb"
+        },
+        "12.0.2": {
+          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
+          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/10.04/chef-server-core_12.0.2-1_amd64.deb"
+        },
+        "12.0.3": {
+          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
+          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/10.04/chef-server-core_12.0.3-1_amd64.deb"
+        },
+        "12.0.4": {
+          "sha1": "4839aeda596efc1fcdc98f6ee17532443f6feead",
+          "sha256": "726cf00cbd6387f1761222d93d284192a0003787e354181029dab43822893735",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/ubuntu/10.04/chef-server-core_12.0.4-1_amd64.deb"
+        },
+        "12.0.5": {
+          "sha1": "3947f8712ac67fa9e7a2c432ce48df3799340870",
+          "sha256": "4cd7e18349136711245f02b8d777115150a55185d4d9acfa08fdcfe0147a9972",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/ubuntu/10.04/chef-server-core_12.0.5-1_amd64.deb"
+        },
+        "12.0.6": {
+          "sha1": "213701b5a727d7598def27c16a9cc65935af78a9",
+          "sha256": "13f6e661ec9f0fbfb6165da709d245e2ed80963fe3c912dd482aa108bc1853c7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/ubuntu/10.04/chef-server-core_12.0.6-1_amd64.deb"
+        },
+        "12.0.7": {
+          "sha1": "7504131e732e1daed65470967d5a411fbff7a0e0",
+          "sha256": "2c54e43d27278fbe8b9da62a58f3261a35096bfae8c64001f1117bdbe5432c51",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/ubuntu/10.04/chef-server-core_12.0.7-1_amd64.deb"
+        },
+        "12.0.8": {
+          "sha1": "284d4c91e54df8392a4cb54f9be510bfc801efac",
+          "sha256": "83dee4fb272ddfce8f35957576182ba0650b32816882ab93f181e0102a1fd6c3",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/ubuntu/10.04/chef-server-core_12.0.8-1_amd64.deb"
         },
         "12.1.0": {
           "sha1": "4c9be984de4c87fb8e499eb643076c6715101cd8",
@@ -1046,38 +1355,57 @@
         }
       }
     },
+    "10.10": {
+      "x86_64": {
+        "11.0.4": {
+          "sha1": "4c0dae2154a047b03d982f387df946ece501fd29",
+          "sha256": "92be4aa9ea9de836aa9832b0fd571c77becfe319c960cac6366b7c90004f7c8f",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/10.10/chef-server_11.0.4-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.0.6": {
+          "sha1": "eae5dea70cf1cabb8e94d8dc12500d2f282cda0e",
+          "sha256": "aea0f3e44a298e8e0f3b92dd18232b01a6d58ef7c8431bf6c7f15778dffaf3b6",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/10.10/chef-server_11.0.6-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.0.8": {
+          "sha1": "0778ffd09663115fa1a7aa6a2437026f3442faf9",
+          "sha256": "e12667892352f828ce4aa0de1d17a851762aa85a37db595a34ed8868b4a4bdd7",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/10.10/chef-server_11.0.8-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.0.10": {
+          "sha1": "4b54433c0a407f5d6295bc59de772d24063b2dfc",
+          "sha256": "acb5e10f3c5b749a987071efea208abda74811e12b64aa6db49dff81b4b1992c",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/10.10/chef-server_11.0.10-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.0.11": {
+          "sha1": "b4311b2b1ee84d6ced18f0e67eb2b9bc07ef4673",
+          "sha256": "891a637190f6adaf97d2dbe5126a9dfdd841636927fef18bd3646fd16a369f34",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/10.10/chef-server_11.0.11-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.0.12": {
+          "sha1": "913f3a478b4d40e925a7901a33dc0e0d2693056c",
+          "sha256": "8d89ad8882ac981838215c310fcbee75417b198e22ff966d8246c54b589fecdc",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/10.10/chef-server_11.0.12-1.ubuntu.10.04_amd64.deb"
+        },
+        "11.1.0": {
+          "sha1": "e25e11be3c72068a1f9dc5b970a882df36a2a258",
+          "sha256": "9a65b6c5b8c7de79408e661b66acbe4c2c4b828f99a7e04611c15ad4b649c857",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/10.10/chef-server_11.1.0-1_amd64.deb"
+        },
+        "11.1.1": {
+          "sha1": "7630e0def8aa464779e047ac339b13fd17ddd9a1",
+          "sha256": "e47e62a556b30a5e3db6bf00018904e1c0bf80bc0184b62ecbab8f56f042e13c",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/10.10/chef-server_11.1.1-1_amd64.deb"
+        },
+        "11.1.3": {
+          "sha1": "258f8a9e032aef087f6180ab9d03a983fa517ab8",
+          "sha256": "fd4377e5696b4990a82f01067d884359f1ba077bc5609eb32ac603b23830315f",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/10.10/chef-server_11.1.3-1_amd64.deb"
+        }
+      }
+    },
     "11.04": {
       "x86_64": {
-        "11.1.5": {
-          "sha1": "84c4af94aec4be80713733ffb4dee1d567749a29",
-          "sha256": "63b427964243623e78982e5088f266c2d2116cbf145359275b281cd195785726",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/11.04/chef-server_11.1.5-1_amd64.deb"
-        },
-        "11.1.6": {
-          "sha1": "b8018d660102a3840ea88e82cceef16a249e55b1",
-          "sha256": "ac33f6e6b352b6798507b1cde47466fe10d1094d9c5e814c5a14f943f4da23ff",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/11.04/chef-server_11.1.6-1_amd64.deb"
-        },
-        "12.0.0": {
-          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
-          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/11.04/chef-server-core_12.0.0-1_amd64.deb"
-        },
-        "12.0.1": {
-          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
-          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/11.04/chef-server-core_12.0.1-1_amd64.deb"
-        },
-        "12.0.2": {
-          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
-          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/11.04/chef-server-core_12.0.2-1_amd64.deb"
-        },
-        "12.0.3": {
-          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
-          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/11.04/chef-server-core_12.0.3-1_amd64.deb"
-        },
         "11.0.4": {
           "sha1": "1c080afd9d54f7f3feac76b95167158efc27b887",
           "sha256": "9562409ee8aa2c9b6ce6541034585a5840139dccbdeefcb1902d003515fc75d7",
@@ -1127,66 +1455,90 @@
           "sha1": "36401d55bcca3c0e5cb18d30fe3c6ee9fcb29df2",
           "sha256": "467a01c189ea35c8a9df3efa2fabfe04297c98fee3fce3453cee60b5b297576e",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.4/ubuntu/11.04/chef-server_11.1.4-1_amd64.deb"
+        },
+        "11.1.5": {
+          "sha1": "84c4af94aec4be80713733ffb4dee1d567749a29",
+          "sha256": "63b427964243623e78982e5088f266c2d2116cbf145359275b281cd195785726",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/11.04/chef-server_11.1.5-1_amd64.deb"
+        },
+        "11.1.6": {
+          "sha1": "b8018d660102a3840ea88e82cceef16a249e55b1",
+          "sha256": "ac33f6e6b352b6798507b1cde47466fe10d1094d9c5e814c5a14f943f4da23ff",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/11.04/chef-server_11.1.6-1_amd64.deb"
+        },
+        "12.0.0": {
+          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
+          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/11.04/chef-server-core_12.0.0-1_amd64.deb"
+        },
+        "12.0.1": {
+          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
+          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/11.04/chef-server-core_12.0.1-1_amd64.deb"
+        },
+        "12.0.2": {
+          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
+          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/11.04/chef-server-core_12.0.2-1_amd64.deb"
+        },
+        "12.0.3": {
+          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
+          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/11.04/chef-server-core_12.0.3-1_amd64.deb"
+        }
+      }
+    },
+    "11.10": {
+      "x86_64": {
+        "11.0.4": {
+          "sha1": "1c080afd9d54f7f3feac76b95167158efc27b887",
+          "sha256": "9562409ee8aa2c9b6ce6541034585a5840139dccbdeefcb1902d003515fc75d7",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/11.10/chef-server_11.0.4-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.0.6": {
+          "sha1": "c02a04f00e9b5453be9eea79370e8dec3421c7f1",
+          "sha256": "613857b0f9194a6561fd73e8c12d7254d48017e19fb5fbf82713caf2081a3198",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/11.10/chef-server_11.0.6-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.0.8": {
+          "sha1": "41f1828f0654d3785dcbd1b164f054bc34480d68",
+          "sha256": "9ad4aed7ab26b2ed884706798f3225905b7a83b1c075a9fcc8cd5764e6450f05",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/11.10/chef-server_11.0.8-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.0.10": {
+          "sha1": "944c88f25d2efcaa33d3676731c5b6ff6c27a5d9",
+          "sha256": "62b5f9fe2247f3258511a83846235aaf72a2d03166a5845d11146a2783189f2e",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/11.10/chef-server_11.0.10-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.0.11": {
+          "sha1": "bb05d37ae00cf0711015047e1ca6671db1fc08e7",
+          "sha256": "89d22acbc47977ad70b740be0141b339e127883466ccd21719eaead9c104a6e6",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/11.10/chef-server_11.0.11-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.0.12": {
+          "sha1": "bc5cd0cf8c4d432b0a2baabcd125e9a77c7da38e",
+          "sha256": "25c4ef7cda53e2652b31167a217897ba9f9b7bb6c00e596bf05e3ead493cb477",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/11.10/chef-server_11.0.12-1.ubuntu.11.04_amd64.deb"
+        },
+        "11.1.0": {
+          "sha1": "1168268808b0a53dbbbfc238bfc58afe99a6e8f1",
+          "sha256": "b5f9141d04890276d6c46f569493eecc2cb9c36be2b605cff8e7451d41a3e6d1",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/11.10/chef-server_11.1.0-1_amd64.deb"
+        },
+        "11.1.1": {
+          "sha1": "d71f24591496b4cbbc615405ad94f108b81430fc",
+          "sha256": "fcb9d13fbc0b4385ee65f69dcc8f3651cdc42bfb419a4b555113f5dc2796acbc",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/11.10/chef-server_11.1.1-1_amd64.deb"
+        },
+        "11.1.3": {
+          "sha1": "37c1915895c93e25e699fe64015de7599a75f3d0",
+          "sha256": "d763fd15d04faa6f84941d11680638e33d00ad63cf10093dacbe98ab27a99a07",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/11.10/chef-server_11.1.3-1_amd64.deb"
         }
       }
     },
     "12.04": {
       "x86_64": {
-        "11.1.5": {
-          "sha1": "d93696324b5d36211e8309d1066495e3f29036fa",
-          "sha256": "1445924a70d3a288b3c79ea37a6bd83a3c1ca77b4c6090627ca2df60ce21fc2e",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/12.04/chef-server_11.1.5-1_amd64.deb"
-        },
-        "11.1.6": {
-          "sha1": "e192317e265c89a96c4b44f48c4b582c5ab49485",
-          "sha256": "b0a27a0b04c30c102d65fa7e2f2f40f64e9cdde7ff07a453a91e1113b52929d8",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/12.04/chef-server_11.1.6-1_amd64.deb"
-        },
-        "12.0.0": {
-          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
-          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/12.04/chef-server-core_12.0.0-1_amd64.deb"
-        },
-        "12.0.1": {
-          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
-          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/12.04/chef-server-core_12.0.1-1_amd64.deb"
-        },
-        "12.0.2": {
-          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
-          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/12.04/chef-server-core_12.0.2-1_amd64.deb"
-        },
-        "12.0.3": {
-          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
-          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/12.04/chef-server-core_12.0.3-1_amd64.deb"
-        },
-        "12.0.4": {
-          "sha1": "4839aeda596efc1fcdc98f6ee17532443f6feead",
-          "sha256": "726cf00cbd6387f1761222d93d284192a0003787e354181029dab43822893735",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/ubuntu/12.04/chef-server-core_12.0.4-1_amd64.deb"
-        },
-        "12.0.5": {
-          "sha1": "3947f8712ac67fa9e7a2c432ce48df3799340870",
-          "sha256": "4cd7e18349136711245f02b8d777115150a55185d4d9acfa08fdcfe0147a9972",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/ubuntu/12.04/chef-server-core_12.0.5-1_amd64.deb"
-        },
-        "12.0.6": {
-          "sha1": "213701b5a727d7598def27c16a9cc65935af78a9",
-          "sha256": "13f6e661ec9f0fbfb6165da709d245e2ed80963fe3c912dd482aa108bc1853c7",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/ubuntu/12.04/chef-server-core_12.0.6-1_amd64.deb"
-        },
-        "12.0.7": {
-          "sha1": "7504131e732e1daed65470967d5a411fbff7a0e0",
-          "sha256": "2c54e43d27278fbe8b9da62a58f3261a35096bfae8c64001f1117bdbe5432c51",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/ubuntu/12.04/chef-server-core_12.0.7-1_amd64.deb"
-        },
-        "12.0.8": {
-          "sha1": "284d4c91e54df8392a4cb54f9be510bfc801efac",
-          "sha256": "83dee4fb272ddfce8f35957576182ba0650b32816882ab93f181e0102a1fd6c3",
-          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/ubuntu/12.04/chef-server-core_12.0.8-1_amd64.deb"
-        },
         "11.0.4": {
           "sha1": "17b36cbc25f9af0d34b2a7d85a07cace68a1f37f",
           "sha256": "f3564ce57e36633c0d92017e6b17ea218c83e954ebfdcdb487eccb0b4c2e4932",
@@ -1237,10 +1589,65 @@
           "sha256": "b9502817666aa30374292b953c62e6ac6f56bdda02c142a023dc58998a7291b2",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.4/ubuntu/12.04/chef-server_11.1.4-1_amd64.deb"
         },
+        "11.1.5": {
+          "sha1": "d93696324b5d36211e8309d1066495e3f29036fa",
+          "sha256": "1445924a70d3a288b3c79ea37a6bd83a3c1ca77b4c6090627ca2df60ce21fc2e",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.5/ubuntu/12.04/chef-server_11.1.5-1_amd64.deb"
+        },
+        "11.1.6": {
+          "sha1": "e192317e265c89a96c4b44f48c4b582c5ab49485",
+          "sha256": "b0a27a0b04c30c102d65fa7e2f2f40f64e9cdde7ff07a453a91e1113b52929d8",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.6/ubuntu/12.04/chef-server_11.1.6-1_amd64.deb"
+        },
         "11.1.7": {
           "sha1": "7a2fa3303e64739043064980e08e0439ef8200b1",
           "sha256": "48bf749982bf71c28de2fa32041aa9287f9aeb9f93187b0e43c3125c17d833d0",
           "url": "https://packages.chef.io/files/stable/chef-server/11.1.7/ubuntu/12.04/chef-server_11.1.7-1_amd64.deb"
+        },
+        "12.0.0": {
+          "sha1": "563d20f4b33c34874f98f8761ff41567ab52fe0a",
+          "sha256": "f15512c9adef810d2c9008782dd879b3ac3c348e3429f1d50d56ddf241d31675",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.0/ubuntu/12.04/chef-server-core_12.0.0-1_amd64.deb"
+        },
+        "12.0.1": {
+          "sha1": "7f4e0fefcd1b4b51cfc8678f424a681774f465fb",
+          "sha256": "c7ee8ccc8affd62e498c52dfcdd46b6ae28cfb61e15844a0ba9d09164a4f7c6e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.1/ubuntu/12.04/chef-server-core_12.0.1-1_amd64.deb"
+        },
+        "12.0.2": {
+          "sha1": "b3e8e30bd1bd9da57682229e3a1c6c2851647957",
+          "sha256": "355eb58d2f690a72fb8f5fb45e90b4094e72c6069ebf59712433b396b80dae50",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.2/ubuntu/12.04/chef-server-core_12.0.2-1_amd64.deb"
+        },
+        "12.0.3": {
+          "sha1": "3cc206f8c16e524780bc0ad97f762887213e5752",
+          "sha256": "2d0139111a41c2463fe339565b3c85ddb0961fbeffd3a4279275ccc037e16556",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.3/ubuntu/12.04/chef-server-core_12.0.3-1_amd64.deb"
+        },
+        "12.0.4": {
+          "sha1": "4839aeda596efc1fcdc98f6ee17532443f6feead",
+          "sha256": "726cf00cbd6387f1761222d93d284192a0003787e354181029dab43822893735",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.4/ubuntu/12.04/chef-server-core_12.0.4-1_amd64.deb"
+        },
+        "12.0.5": {
+          "sha1": "3947f8712ac67fa9e7a2c432ce48df3799340870",
+          "sha256": "4cd7e18349136711245f02b8d777115150a55185d4d9acfa08fdcfe0147a9972",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.5/ubuntu/12.04/chef-server-core_12.0.5-1_amd64.deb"
+        },
+        "12.0.6": {
+          "sha1": "213701b5a727d7598def27c16a9cc65935af78a9",
+          "sha256": "13f6e661ec9f0fbfb6165da709d245e2ed80963fe3c912dd482aa108bc1853c7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.6/ubuntu/12.04/chef-server-core_12.0.6-1_amd64.deb"
+        },
+        "12.0.7": {
+          "sha1": "7504131e732e1daed65470967d5a411fbff7a0e0",
+          "sha256": "2c54e43d27278fbe8b9da62a58f3261a35096bfae8c64001f1117bdbe5432c51",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.7/ubuntu/12.04/chef-server-core_12.0.7-1_amd64.deb"
+        },
+        "12.0.8": {
+          "sha1": "284d4c91e54df8392a4cb54f9be510bfc801efac",
+          "sha256": "83dee4fb272ddfce8f35957576182ba0650b32816882ab93f181e0102a1fd6c3",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.0.8/ubuntu/12.04/chef-server-core_12.0.8-1_amd64.deb"
         },
         "12.1.0": {
           "sha1": "4c9be984de4c87fb8e499eb643076c6715101cd8",
@@ -1371,6 +1778,70 @@
           "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
           "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/12.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.16.2": {
+          "sha1": "01068bc958d9b652a2039a340d56a6a82667ba0d",
+          "sha256": "6746e08ab5b4d1ad73261252db23da23343f5f62ed4ccc3b9cf43e2a43db6f8d",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/ubuntu/12.04/chef-server-core_12.16.2-1_amd64.deb"
+        },
+        "12.16.9": {
+          "sha1": "a94da09850474d7bf3c0aa91a52ed2be4b71968a",
+          "sha256": "0ddd27c3a970613aec807ffe70938c966007acbe5b1680b601c43e09ca4adf5e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/ubuntu/12.04/chef-server-core_12.16.9-1_amd64.deb"
+        },
+        "12.16.14": {
+          "sha1": "8e388d37a6ae3a40fb1e8b1572db6a9171516df6",
+          "sha256": "4ab1655336588e0b7b67bc779bff648273d53fddb393831fcdc7d359339460af",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/ubuntu/12.04/chef-server-core_12.16.14-1_amd64.deb"
+        }
+      }
+    },
+    "12.10": {
+      "x86_64": {
+        "11.0.4": {
+          "sha1": "17b36cbc25f9af0d34b2a7d85a07cace68a1f37f",
+          "sha256": "f3564ce57e36633c0d92017e6b17ea218c83e954ebfdcdb487eccb0b4c2e4932",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/12.10/chef-server_11.0.4-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.0.6": {
+          "sha1": "886c3827a23a67856a157f381e81e81f3b9276ec",
+          "sha256": "0d96b95b0d88c202764620bc88ca41f9cb721dddccd91584780ba13f4b1d8b65",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/12.10/chef-server_11.0.6-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.0.8": {
+          "sha1": "4b0b41098f2103aa14b51170ac166cc14de21b7c",
+          "sha256": "29fa28a18d48bcc8d8e557d4c2dd94386abb6b20cfc341fff62444401d76351c",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/12.10/chef-server_11.0.8-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.0.10": {
+          "sha1": "c970575e2f8c09d83d6a53f9e656687652e4aa3c",
+          "sha256": "7c4b2407d44bbd0e39f7ecdc5eee8106919dee8bdad64b38f1da4b759cf3d67f",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/12.10/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.0.11": {
+          "sha1": "a6bdde2720cd281e9f4e66fa702cf12f3eebba02",
+          "sha256": "864e447580552a91b3de8be6c24efde2c5a6328a2b4dca8d5afa4347cb4b4868",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/12.10/chef-server_11.0.11-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.0.12": {
+          "sha1": "f3a244574294e72472d01cd4e525bd5e2437064c",
+          "sha256": "71e19ee5dce778cb384dd5cd1d275f10c8e4ac26960b463738847fc0fbaba863",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/12.10/chef-server_11.0.12-1.ubuntu.12.04_amd64.deb"
+        },
+        "11.1.0": {
+          "sha1": "eb7a7d7172561ad88dd5949e0acd10ad0c180940",
+          "sha256": "e50497ca3bf310d6f5b519019f0544440f46bbf719712913f43df5ac73737252",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/12.10/chef-server_11.1.0-1_amd64.deb"
+        },
+        "11.1.1": {
+          "sha1": "90678f54915cee796ae2914a0f0599b1681a6065",
+          "sha256": "b6c354178cc83ec94bea40a018cef697704415575c7797c4abdf47ab996eb258",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/12.10/chef-server_11.1.1-1_amd64.deb"
+        },
+        "11.1.3": {
+          "sha1": "9971a11c2b98eadfc02be2de1d452dacb206add6",
+          "sha256": "9a84d4b69f802ccb6e41a91952b54ea2541fcb718d6af3cc4613c765ca05f360",
+          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/12.10/chef-server_11.1.3-1_amd64.deb"
         }
       }
     },
@@ -1550,6 +2021,56 @@
           "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
           "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/14.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.16.2": {
+          "sha1": "01068bc958d9b652a2039a340d56a6a82667ba0d",
+          "sha256": "6746e08ab5b4d1ad73261252db23da23343f5f62ed4ccc3b9cf43e2a43db6f8d",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/ubuntu/14.04/chef-server-core_12.16.2-1_amd64.deb"
+        },
+        "12.16.9": {
+          "sha1": "a94da09850474d7bf3c0aa91a52ed2be4b71968a",
+          "sha256": "0ddd27c3a970613aec807ffe70938c966007acbe5b1680b601c43e09ca4adf5e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/ubuntu/14.04/chef-server-core_12.16.9-1_amd64.deb"
+        },
+        "12.16.14": {
+          "sha1": "8e388d37a6ae3a40fb1e8b1572db6a9171516df6",
+          "sha256": "4ab1655336588e0b7b67bc779bff648273d53fddb393831fcdc7d359339460af",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/ubuntu/14.04/chef-server-core_12.16.14-1_amd64.deb"
+        },
+        "12.17.3": {
+          "sha1": "9eb9baee64e87b8a577954d0412612ca0b60a773",
+          "sha256": "2406bd2a37b7cc98022a1065f06a02b08e166522a1247b2419bccbfb52f8bd2a",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/ubuntu/14.04/chef-server-core_12.17.3-1_amd64.deb"
+        },
+        "12.17.5": {
+          "sha1": "60c9b8b8c9c77a8e1078d2a61693bf593064e9f5",
+          "sha256": "a82ecaf04add5a08735909f61ada16088731f0cae5599e46558a75dc5c8239eb",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/ubuntu/14.04/chef-server-core_12.17.5-1_amd64.deb"
+        },
+        "12.17.15": {
+          "sha1": "2e99893a950f096250bbcd5d7d9af5391e856c5b",
+          "sha256": "573c855ef7e8aed9feaebedf6a58c024730f835db5559ffef16f58b7141faed2",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/14.04/chef-server-core_12.17.15-1_amd64.deb"
+        },
+        "12.17.33": {
+          "sha1": "3666048051d069ac3750bb8cdcdb377e4ac71940",
+          "sha256": "2800962092ead67747ed2cd2087b0e254eb5e1a1b169cdc162c384598e4caed5",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/ubuntu/14.04/chef-server-core_12.17.33-1_amd64.deb"
+        },
+        "12.18.14": {
+          "sha1": "e07d2091806d9d07ec2c23bdd7607e865db390c2",
+          "sha256": "1c26340d3701a725bdd0dde7d1b539f28bae7043d06daaf56564e776ae6d1acd",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/ubuntu/14.04/chef-server-core_12.18.14-1_amd64.deb"
+        },
+        "12.19.26": {
+          "sha1": "c11d11c57964ab722b49c3908fb8bfe279cbc2f9",
+          "sha256": "65b5bb6bff0f85041ffe153f4ad964b837ffa6278667fd47d2e655b1a18a49cc",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/ubuntu/14.04/chef-server-core_12.19.26-1_amd64.deb"
+        },
+        "12.19.31": {
+          "sha1": "8856bc5d7d5df56db6334144f2b0be454e8c9ee4",
+          "sha256": "fdf02e0ddcb0d4675871c52357e368aaeb6ea0be3565675eeb00691928ccd84d",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/ubuntu/14.04/chef-server-core_12.19.31-1_amd64.deb"
         }
       },
       "ppc64le": {
@@ -1632,153 +2153,41 @@
           "sha1": "f8d62996cb810926ee391731682bdcebf138be3a",
           "sha256": "1eeea40b12b9c455c06af52c64af2397913ef7cfdd342c47e9a29f610746e6ab",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/14.04/chef-server-core_12.15.8-1_ppc64el.deb"
-        }
-      }
-    },
-    "10.10": {
-      "x86_64": {
-        "11.0.4": {
-          "sha1": "4c0dae2154a047b03d982f387df946ece501fd29",
-          "sha256": "92be4aa9ea9de836aa9832b0fd571c77becfe319c960cac6366b7c90004f7c8f",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/10.10/chef-server_11.0.4-1.ubuntu.10.04_amd64.deb"
         },
-        "11.0.6": {
-          "sha1": "eae5dea70cf1cabb8e94d8dc12500d2f282cda0e",
-          "sha256": "aea0f3e44a298e8e0f3b92dd18232b01a6d58ef7c8431bf6c7f15778dffaf3b6",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/10.10/chef-server_11.0.6-1.ubuntu.10.04_amd64.deb"
+        "12.16.2": {
+          "sha1": "8bd294d113a28b7dc76899b9e289ca2df52d81b8",
+          "sha256": "c94c7048853a2dd57417ca6c63f10b6335865013a8d4afe7e0c9decdca4cbcdd",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/ubuntu/14.04/chef-server-core_12.16.2-1_ppc64el.deb"
         },
-        "11.0.8": {
-          "sha1": "0778ffd09663115fa1a7aa6a2437026f3442faf9",
-          "sha256": "e12667892352f828ce4aa0de1d17a851762aa85a37db595a34ed8868b4a4bdd7",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/10.10/chef-server_11.0.8-1.ubuntu.10.04_amd64.deb"
+        "12.16.9": {
+          "sha1": "d5a7897a9b52f4f26fbd98fed6e47152fdf28e99",
+          "sha256": "4cc87d6b9de4a89d3ee44bc9a35e8aa55265d6931ef153384185e72341137031",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/ubuntu/14.04/chef-server-core_12.16.9-1_ppc64el.deb"
         },
-        "11.0.10": {
-          "sha1": "4b54433c0a407f5d6295bc59de772d24063b2dfc",
-          "sha256": "acb5e10f3c5b749a987071efea208abda74811e12b64aa6db49dff81b4b1992c",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/10.10/chef-server_11.0.10-1.ubuntu.10.04_amd64.deb"
+        "12.17.3": {
+          "sha1": "c0ba6456af2a1c521e94a76de3f5aaf0a3f7df90",
+          "sha256": "1ae68ab3da5aa52d04d32addebdfa7da1eb9249db3ab85f2096d8e1224a812f7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/ubuntu/14.04/chef-server-core_12.17.3-1_ppc64el.deb"
         },
-        "11.0.11": {
-          "sha1": "b4311b2b1ee84d6ced18f0e67eb2b9bc07ef4673",
-          "sha256": "891a637190f6adaf97d2dbe5126a9dfdd841636927fef18bd3646fd16a369f34",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/10.10/chef-server_11.0.11-1.ubuntu.10.04_amd64.deb"
+        "12.17.5": {
+          "sha1": "1b02272d1bcbc37506c5f35dc77e70cf80a12e47",
+          "sha256": "f6534107994d7398868f448d84a10295c2b73204871b1b5432341a8385dd0598",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/ubuntu/14.04/chef-server-core_12.17.5-1_ppc64el.deb"
         },
-        "11.0.12": {
-          "sha1": "913f3a478b4d40e925a7901a33dc0e0d2693056c",
-          "sha256": "8d89ad8882ac981838215c310fcbee75417b198e22ff966d8246c54b589fecdc",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/10.10/chef-server_11.0.12-1.ubuntu.10.04_amd64.deb"
+        "12.17.15": {
+          "sha1": "a73095b9668ab80333ecf3976f630cd1e3fb45ba",
+          "sha256": "80d1912edf1fffae0c1ce0886a9b8e4665f6948b697364972954077f1e98b1b5",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/14.04/chef-server-core_12.17.15-1_ppc64el.deb"
         },
-        "11.1.0": {
-          "sha1": "e25e11be3c72068a1f9dc5b970a882df36a2a258",
-          "sha256": "9a65b6c5b8c7de79408e661b66acbe4c2c4b828f99a7e04611c15ad4b649c857",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/10.10/chef-server_11.1.0-1_amd64.deb"
+        "12.17.33": {
+          "sha1": "21ba10c40d68d4b99b6c734dd1d37c0a0a1a3ea1",
+          "sha256": "55d835d283435d401f0a3c83d70d9c445aaf4aa731c03c3d86d5c42ce7c58574",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/ubuntu/14.04/chef-server-core_12.17.33-1_ppc64el.deb"
         },
-        "11.1.1": {
-          "sha1": "7630e0def8aa464779e047ac339b13fd17ddd9a1",
-          "sha256": "e47e62a556b30a5e3db6bf00018904e1c0bf80bc0184b62ecbab8f56f042e13c",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/10.10/chef-server_11.1.1-1_amd64.deb"
-        },
-        "11.1.3": {
-          "sha1": "258f8a9e032aef087f6180ab9d03a983fa517ab8",
-          "sha256": "fd4377e5696b4990a82f01067d884359f1ba077bc5609eb32ac603b23830315f",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/10.10/chef-server_11.1.3-1_amd64.deb"
-        }
-      }
-    },
-    "11.10": {
-      "x86_64": {
-        "11.0.4": {
-          "sha1": "1c080afd9d54f7f3feac76b95167158efc27b887",
-          "sha256": "9562409ee8aa2c9b6ce6541034585a5840139dccbdeefcb1902d003515fc75d7",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/11.10/chef-server_11.0.4-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.0.6": {
-          "sha1": "c02a04f00e9b5453be9eea79370e8dec3421c7f1",
-          "sha256": "613857b0f9194a6561fd73e8c12d7254d48017e19fb5fbf82713caf2081a3198",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/11.10/chef-server_11.0.6-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.0.8": {
-          "sha1": "41f1828f0654d3785dcbd1b164f054bc34480d68",
-          "sha256": "9ad4aed7ab26b2ed884706798f3225905b7a83b1c075a9fcc8cd5764e6450f05",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/11.10/chef-server_11.0.8-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.0.10": {
-          "sha1": "944c88f25d2efcaa33d3676731c5b6ff6c27a5d9",
-          "sha256": "62b5f9fe2247f3258511a83846235aaf72a2d03166a5845d11146a2783189f2e",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/11.10/chef-server_11.0.10-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.0.11": {
-          "sha1": "bb05d37ae00cf0711015047e1ca6671db1fc08e7",
-          "sha256": "89d22acbc47977ad70b740be0141b339e127883466ccd21719eaead9c104a6e6",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/11.10/chef-server_11.0.11-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.0.12": {
-          "sha1": "bc5cd0cf8c4d432b0a2baabcd125e9a77c7da38e",
-          "sha256": "25c4ef7cda53e2652b31167a217897ba9f9b7bb6c00e596bf05e3ead493cb477",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/11.10/chef-server_11.0.12-1.ubuntu.11.04_amd64.deb"
-        },
-        "11.1.0": {
-          "sha1": "1168268808b0a53dbbbfc238bfc58afe99a6e8f1",
-          "sha256": "b5f9141d04890276d6c46f569493eecc2cb9c36be2b605cff8e7451d41a3e6d1",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/11.10/chef-server_11.1.0-1_amd64.deb"
-        },
-        "11.1.1": {
-          "sha1": "d71f24591496b4cbbc615405ad94f108b81430fc",
-          "sha256": "fcb9d13fbc0b4385ee65f69dcc8f3651cdc42bfb419a4b555113f5dc2796acbc",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/11.10/chef-server_11.1.1-1_amd64.deb"
-        },
-        "11.1.3": {
-          "sha1": "37c1915895c93e25e699fe64015de7599a75f3d0",
-          "sha256": "d763fd15d04faa6f84941d11680638e33d00ad63cf10093dacbe98ab27a99a07",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/11.10/chef-server_11.1.3-1_amd64.deb"
-        }
-      }
-    },
-    "12.10": {
-      "x86_64": {
-        "11.0.4": {
-          "sha1": "17b36cbc25f9af0d34b2a7d85a07cace68a1f37f",
-          "sha256": "f3564ce57e36633c0d92017e6b17ea218c83e954ebfdcdb487eccb0b4c2e4932",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.4/ubuntu/12.10/chef-server_11.0.4-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.0.6": {
-          "sha1": "886c3827a23a67856a157f381e81e81f3b9276ec",
-          "sha256": "0d96b95b0d88c202764620bc88ca41f9cb721dddccd91584780ba13f4b1d8b65",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.6/ubuntu/12.10/chef-server_11.0.6-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.0.8": {
-          "sha1": "4b0b41098f2103aa14b51170ac166cc14de21b7c",
-          "sha256": "29fa28a18d48bcc8d8e557d4c2dd94386abb6b20cfc341fff62444401d76351c",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.8/ubuntu/12.10/chef-server_11.0.8-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.0.10": {
-          "sha1": "c970575e2f8c09d83d6a53f9e656687652e4aa3c",
-          "sha256": "7c4b2407d44bbd0e39f7ecdc5eee8106919dee8bdad64b38f1da4b759cf3d67f",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.10/ubuntu/12.10/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.0.11": {
-          "sha1": "a6bdde2720cd281e9f4e66fa702cf12f3eebba02",
-          "sha256": "864e447580552a91b3de8be6c24efde2c5a6328a2b4dca8d5afa4347cb4b4868",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.11/ubuntu/12.10/chef-server_11.0.11-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.0.12": {
-          "sha1": "f3a244574294e72472d01cd4e525bd5e2437064c",
-          "sha256": "71e19ee5dce778cb384dd5cd1d275f10c8e4ac26960b463738847fc0fbaba863",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.0.12/ubuntu/12.10/chef-server_11.0.12-1.ubuntu.12.04_amd64.deb"
-        },
-        "11.1.0": {
-          "sha1": "eb7a7d7172561ad88dd5949e0acd10ad0c180940",
-          "sha256": "e50497ca3bf310d6f5b519019f0544440f46bbf719712913f43df5ac73737252",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.0/ubuntu/12.10/chef-server_11.1.0-1_amd64.deb"
-        },
-        "11.1.1": {
-          "sha1": "90678f54915cee796ae2914a0f0599b1681a6065",
-          "sha256": "b6c354178cc83ec94bea40a018cef697704415575c7797c4abdf47ab996eb258",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.1/ubuntu/12.10/chef-server_11.1.1-1_amd64.deb"
-        },
-        "11.1.3": {
-          "sha1": "9971a11c2b98eadfc02be2de1d452dacb206add6",
-          "sha256": "9a84d4b69f802ccb6e41a91952b54ea2541fcb718d6af3cc4613c765ca05f360",
-          "url": "https://packages.chef.io/files/stable/chef-server/11.1.3/ubuntu/12.10/chef-server_11.1.3-1_amd64.deb"
+        "12.18.14": {
+          "sha1": "0b8b66379b4909a2e8e0b1a6248838c2196745d3",
+          "sha256": "172a9d89f14ed4c375bac4d475d6880c3d67c135225737ecfa17b4ee7e0a24ad",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/ubuntu/14.04/chef-server-core_12.18.14-1_ppc64el.deb"
         }
       }
     },
@@ -1853,6 +2262,171 @@
           "sha1": "23afe6f682697caa616dc810558a717962fc57b6",
           "sha256": "4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb"
+        },
+        "12.16.2": {
+          "sha1": "01068bc958d9b652a2039a340d56a6a82667ba0d",
+          "sha256": "6746e08ab5b4d1ad73261252db23da23343f5f62ed4ccc3b9cf43e2a43db6f8d",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/ubuntu/16.04/chef-server-core_12.16.2-1_amd64.deb"
+        },
+        "12.16.9": {
+          "sha1": "a94da09850474d7bf3c0aa91a52ed2be4b71968a",
+          "sha256": "0ddd27c3a970613aec807ffe70938c966007acbe5b1680b601c43e09ca4adf5e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/ubuntu/16.04/chef-server-core_12.16.9-1_amd64.deb"
+        },
+        "12.16.14": {
+          "sha1": "8e388d37a6ae3a40fb1e8b1572db6a9171516df6",
+          "sha256": "4ab1655336588e0b7b67bc779bff648273d53fddb393831fcdc7d359339460af",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/ubuntu/16.04/chef-server-core_12.16.14-1_amd64.deb"
+        },
+        "12.17.3": {
+          "sha1": "9eb9baee64e87b8a577954d0412612ca0b60a773",
+          "sha256": "2406bd2a37b7cc98022a1065f06a02b08e166522a1247b2419bccbfb52f8bd2a",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/ubuntu/16.04/chef-server-core_12.17.3-1_amd64.deb"
+        },
+        "12.17.5": {
+          "sha1": "60c9b8b8c9c77a8e1078d2a61693bf593064e9f5",
+          "sha256": "a82ecaf04add5a08735909f61ada16088731f0cae5599e46558a75dc5c8239eb",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/ubuntu/16.04/chef-server-core_12.17.5-1_amd64.deb"
+        },
+        "12.17.15": {
+          "sha1": "2e99893a950f096250bbcd5d7d9af5391e856c5b",
+          "sha256": "573c855ef7e8aed9feaebedf6a58c024730f835db5559ffef16f58b7141faed2",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/16.04/chef-server-core_12.17.15-1_amd64.deb"
+        },
+        "12.17.33": {
+          "sha1": "3666048051d069ac3750bb8cdcdb377e4ac71940",
+          "sha256": "2800962092ead67747ed2cd2087b0e254eb5e1a1b169cdc162c384598e4caed5",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/ubuntu/16.04/chef-server-core_12.17.33-1_amd64.deb"
+        },
+        "12.18.14": {
+          "sha1": "5e472e2a64c0f381f6d07a21d035c4536200fdb5",
+          "sha256": "2be59db9ac71c5595ffd605e96de81fc3ef36aa4756fa73b2be9a53edbfce809",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/ubuntu/16.04/chef-server-core_12.18.14-1_amd64.deb"
+        },
+        "12.19.26": {
+          "sha1": "43e0304b908dd29ec1893cd4bce73334aed7b4e3",
+          "sha256": "a95d248052c456fc5320eefbfe501c7e1282c029569fad5967f10f400e5a86d9",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/ubuntu/16.04/chef-server-core_12.19.26-1_amd64.deb"
+        },
+        "12.19.31": {
+          "sha1": "bb45e0fe0686df3693e1e565b76d5effbe078d9c",
+          "sha256": "bbf6127e03d10154e28b1270869731b38bd5a0981c9f9cb96f973c290d14c4df",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/ubuntu/16.04/chef-server-core_12.19.31-1_amd64.deb"
+        },
+        "13.0.16": {
+          "sha1": "4dfc5e2b323b86266b7c6cfecf36c742415890fd",
+          "sha256": "1f53fc46d0bc864ea50faf64b731bd853ee2018205433fe51da37404686c9bcb",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/ubuntu/16.04/chef-server-core_13.0.16-1_amd64.deb"
+        },
+        "13.0.17": {
+          "sha1": "60d824bcb80310f1e0f139707fe5084b2c332a75",
+          "sha256": "1984d918f0092db68410b53bb59d19d246a5804c8896c11966b563aeae78c95e",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/ubuntu/16.04/chef-server-core_13.0.17-1_amd64.deb"
+        },
+        "13.1.13": {
+          "sha1": "2cfc0c48c1a9d60953e973f850a175fa8110e1ec",
+          "sha256": "6eee5a06ba3d605b08810ab4d696efba06654730f218c5c317d4a02d94ef9437",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/ubuntu/16.04/chef-server-core_13.1.13-1_amd64.deb"
+        },
+        "13.2.0": {
+          "sha1": "8f076e8038e5e4945d15a9d38d5c66dd2e0e7062",
+          "sha256": "c80d63471e173188f656ff36e74afbbc97524f764f3a41cdcc51bd4fedc659a8",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/ubuntu/16.04/chef-server-core_13.2.0-1_amd64.deb"
+        },
+        "14.0.58": {
+          "sha1": "2ccf47c43e95039b95104d7db51cff15d96d1c55",
+          "sha256": "769ad22ec9e58461d112b3a73f0e6c9ba13397e148a475bc8ffc5210bef1f523",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/ubuntu/16.04/chef-server-core_14.0.58-1_amd64.deb"
+        },
+        "14.0.65": {
+          "sha1": "10c2994c0f05360e52198786310b145a06a6b4f2",
+          "sha256": "3c7e18f34e9979138cba3335001b71a4ca3298dc9f45ed5ccc5a443b5f582bb8",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/ubuntu/16.04/chef-server-core_14.0.65-1_amd64.deb"
+        }
+      },
+      "ppc64le": {
+        "12.17.3": {
+          "sha1": "c0ba6456af2a1c521e94a76de3f5aaf0a3f7df90",
+          "sha256": "1ae68ab3da5aa52d04d32addebdfa7da1eb9249db3ab85f2096d8e1224a812f7",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/ubuntu/16.04/chef-server-core_12.17.3-1_ppc64el.deb"
+        },
+        "12.17.5": {
+          "sha1": "1b02272d1bcbc37506c5f35dc77e70cf80a12e47",
+          "sha256": "f6534107994d7398868f448d84a10295c2b73204871b1b5432341a8385dd0598",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/ubuntu/16.04/chef-server-core_12.17.5-1_ppc64el.deb"
+        },
+        "12.17.15": {
+          "sha1": "a73095b9668ab80333ecf3976f630cd1e3fb45ba",
+          "sha256": "80d1912edf1fffae0c1ce0886a9b8e4665f6948b697364972954077f1e98b1b5",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/16.04/chef-server-core_12.17.15-1_ppc64el.deb"
+        },
+        "12.17.33": {
+          "sha1": "21ba10c40d68d4b99b6c734dd1d37c0a0a1a3ea1",
+          "sha256": "55d835d283435d401f0a3c83d70d9c445aaf4aa731c03c3d86d5c42ce7c58574",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/ubuntu/16.04/chef-server-core_12.17.33-1_ppc64el.deb"
+        }
+      }
+    },
+    "18.04": {
+      "x86_64": {
+        "12.18.14": {
+          "sha1": "5e472e2a64c0f381f6d07a21d035c4536200fdb5",
+          "sha256": "2be59db9ac71c5595ffd605e96de81fc3ef36aa4756fa73b2be9a53edbfce809",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/ubuntu/18.04/chef-server-core_12.18.14-1_amd64.deb"
+        },
+        "12.19.26": {
+          "sha1": "43e0304b908dd29ec1893cd4bce73334aed7b4e3",
+          "sha256": "a95d248052c456fc5320eefbfe501c7e1282c029569fad5967f10f400e5a86d9",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/ubuntu/18.04/chef-server-core_12.19.26-1_amd64.deb"
+        },
+        "12.19.31": {
+          "sha1": "bb45e0fe0686df3693e1e565b76d5effbe078d9c",
+          "sha256": "bbf6127e03d10154e28b1270869731b38bd5a0981c9f9cb96f973c290d14c4df",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/ubuntu/18.04/chef-server-core_12.19.31-1_amd64.deb"
+        },
+        "13.0.16": {
+          "sha1": "4dfc5e2b323b86266b7c6cfecf36c742415890fd",
+          "sha256": "1f53fc46d0bc864ea50faf64b731bd853ee2018205433fe51da37404686c9bcb",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/ubuntu/18.04/chef-server-core_13.0.16-1_amd64.deb"
+        },
+        "13.0.17": {
+          "sha1": "60d824bcb80310f1e0f139707fe5084b2c332a75",
+          "sha256": "1984d918f0092db68410b53bb59d19d246a5804c8896c11966b563aeae78c95e",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/ubuntu/18.04/chef-server-core_13.0.17-1_amd64.deb"
+        },
+        "13.1.13": {
+          "sha1": "2cfc0c48c1a9d60953e973f850a175fa8110e1ec",
+          "sha256": "6eee5a06ba3d605b08810ab4d696efba06654730f218c5c317d4a02d94ef9437",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/ubuntu/18.04/chef-server-core_13.1.13-1_amd64.deb"
+        },
+        "13.2.0": {
+          "sha1": "8f076e8038e5e4945d15a9d38d5c66dd2e0e7062",
+          "sha256": "c80d63471e173188f656ff36e74afbbc97524f764f3a41cdcc51bd4fedc659a8",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/ubuntu/18.04/chef-server-core_13.2.0-1_amd64.deb"
+        },
+        "14.0.58": {
+          "sha1": "2ccf47c43e95039b95104d7db51cff15d96d1c55",
+          "sha256": "769ad22ec9e58461d112b3a73f0e6c9ba13397e148a475bc8ffc5210bef1f523",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/ubuntu/18.04/chef-server-core_14.0.58-1_amd64.deb"
+        },
+        "14.0.65": {
+          "sha1": "10c2994c0f05360e52198786310b145a06a6b4f2",
+          "sha256": "3c7e18f34e9979138cba3335001b71a4ca3298dc9f45ed5ccc5a443b5f582bb8",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/ubuntu/18.04/chef-server-core_14.0.65-1_amd64.deb"
+        }
+      }
+    },
+    "20.04": {
+      "x86_64": {
+        "14.0.58": {
+          "sha1": "2ccf47c43e95039b95104d7db51cff15d96d1c55",
+          "sha256": "769ad22ec9e58461d112b3a73f0e6c9ba13397e148a475bc8ffc5210bef1f523",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/ubuntu/20.04/chef-server-core_14.0.58-1_amd64.deb"
+        },
+        "14.0.65": {
+          "sha1": "10c2994c0f05360e52198786310b145a06a6b4f2",
+          "sha256": "3c7e18f34e9979138cba3335001b71a4ca3298dc9f45ed5ccc5a443b5f582bb8",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/ubuntu/20.04/chef-server-core_14.0.65-1_amd64.deb"
         }
       }
     }
@@ -1909,6 +2483,11 @@
           "sha1": "af55101b5a3b772fbf388b047b85cec3001a658f",
           "sha256": "68e9dffa11694242e101923975b71a5bb69b6c0b536231c2cf5f5fa3581ee42b",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/sles/11/chef-server-core-12.15.8-1.sles11.s390x.rpm"
+        },
+        "12.18.14": {
+          "sha1": "c42b402b4ff6e134b60505709fca8361bf4d92cb",
+          "sha256": "c56f7fb0270c2c658e92626bd0ea5e0e54de08d817874f303f3926b517ee27e4",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/sles/11/chef-server-core-12.18.14-1.sles11.s390x.rpm"
         }
       },
       "x86_64": {
@@ -1936,6 +2515,66 @@
           "sha1": "965e9e06fd6ed93ec9e7cf0501c4d236b38d3dda",
           "sha256": "f5e2830e96e53ef60060637cb00c65f2838b9594538ebf566ce0cdc80bf70199",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/sles/11/chef-server-core-12.15.8-1.sles11.x86_64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "d9672637acbdc0c0125fe65f6760e128fb544e10",
+          "sha256": "0894e231d9f6cbae1c9a2f204f02c727df72d035b593a03ead169300381c91bd",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/sles/11/chef-server-core-12.16.2-1.sles11.x86_64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "0b583b0138398ceab414cb875837b4c6300c44ae",
+          "sha256": "f6f5cd160c31fb356146a1b1faedb81034d66ebcddd7fa318a31d6c72acbf8c6",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/sles/11/chef-server-core-12.16.9-1.sles11.x86_64.rpm"
+        },
+        "12.16.14": {
+          "sha1": "a2f3096bff798225519596df9b20d292a04790f1",
+          "sha256": "09b0e7ff0ae36b32c6598a41abbc51db7484c8cc3a1d056178cd34c53127c05e",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/sles/11/chef-server-core-12.16.14-1.sles11.x86_64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "c8e3a4cabeaaaf6d46563306ffacec9f400d3224",
+          "sha256": "16192a07c1952129150f6f7a4cdf032b67ed1f72b37b22ccd21801fd1ac61499",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/sles/11/chef-server-core-12.17.3-1.sles11.x86_64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "59b58524e51c59107e16c27d6dcd5028a3624e71",
+          "sha256": "5f0f3c5be8139b5d85de511037ff7f97212ba41f0311c9c29e26c4b5bf01721a",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/sles/11/chef-server-core-12.17.5-1.sles11.x86_64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "4388e9e8aeff74c2e879cab4de56406c508342dc",
+          "sha256": "35d70f0dbf8b57606ce615dc4dcb58368e8d807d6e7d7c7065f7f4145902abbb",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/sles/11/chef-server-core-12.17.15-1.sles11.x86_64.rpm"
+        },
+        "12.17.33": {
+          "sha1": "61082c1715b99c84be343514134663bfefaae892",
+          "sha256": "4e06b73ae13b4869826fa97b3ccebddb1d4625c7a55bbfcaac34f5c2bc1ad5fd",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/sles/11/chef-server-core-12.17.33-1.sles11.x86_64.rpm"
+        },
+        "12.18.14": {
+          "sha1": "3e038da919e510a6f42aec78135db6f10b60ac1e",
+          "sha256": "0558f45abd6d03bb42e330d2e8f1b4d8274bc02abf272e2e153e7104c5d140ed",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/sles/11/chef-server-core-12.18.14-1.sles11.x86_64.rpm"
+        },
+        "12.19.26": {
+          "sha1": "ede9154b2bd29a44a6a39f2bb09863dd7dca30a9",
+          "sha256": "a2296636d61fbc419857079beae40f9b78048e20c2088aa0be77fda422d07034",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/sles/11/chef-server-core-12.19.26-1.sles11.x86_64.rpm"
+        },
+        "12.19.31": {
+          "sha1": "d34c170db3db385f03f0c700ed958ee344b29d09",
+          "sha256": "887e1877bc6d03bbdb5d0908e9fbec6671ede3f7bbe14860788d1cbeaa262c32",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/sles/11/chef-server-core-12.19.31-1.sles11.x86_64.rpm"
+        },
+        "13.0.16": {
+          "sha1": "df3f96f7e8b606a1ee91e63a62a2ad56689845b9",
+          "sha256": "d535872086a7fcb41d446145b6d0422174db37b259936e1232fdc571994cb50e",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/sles/11/chef-server-core-13.0.16-1.sles11.x86_64.rpm"
+        },
+        "13.0.17": {
+          "sha1": "c7cac0ff11da2ff52ccfb62e0fc4cb6b07bc6977",
+          "sha256": "25f35e05921ef1b49639c6ac3a3d8f62aaca8afc07301fba1eb6af1abc846bb0",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/sles/11/chef-server-core-13.0.17-1.sles11.x86_64.rpm"
         }
       }
     },
@@ -1990,6 +2629,11 @@
           "sha1": "b04524fdbb887a447c06d66d2433b168351c2c9b",
           "sha256": "d2a2fc2f310ad905acb4d052d1951b6ba490572d555424cfd7035df680dd9dea",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/sles/12/chef-server-core-12.15.8-1.sles12.s390x.rpm"
+        },
+        "12.18.14": {
+          "sha1": "9f86e658957e275ccb49534c46c7e51b0aa43bb0",
+          "sha256": "1246091840efa162e997c979eebff62891e500bde5b29b71b9a199d0aaa65070",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/sles/12/chef-server-core-12.18.14-1.sles12.s390x.rpm"
         }
       },
       "x86_64": {
@@ -2017,11 +2661,105 @@
           "sha1": "351ac4284b11e8dfecde30eab7b318f99b386783",
           "sha256": "a0c14d19805ff61938260ca8449eecf1cf9ee5915fe9231d5acbcf250defc304",
           "url": "https://packages.chef.io/files/stable/chef-server/12.15.8/sles/12/chef-server-core-12.15.8-1.sles12.x86_64.rpm"
+        },
+        "12.16.2": {
+          "sha1": "5f9fe01874d08190dc73f5007b383d2c24c57774",
+          "sha256": "06b6caa36de2fd9143bfcd4a455c1a9e76ffe1f032eda6858a8e0d3c6e4bf04d",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.2/sles/12/chef-server-core-12.16.2-1.sles12.x86_64.rpm"
+        },
+        "12.16.9": {
+          "sha1": "bf0b0ea91b88ecb46db96df1f5722f07a0067d66",
+          "sha256": "134ff36487566bbf14c5dd8b0f7ba8934b7e5eca7de139d325f7291ad08775d2",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.9/sles/12/chef-server-core-12.16.9-1.sles12.x86_64.rpm"
+        },
+        "12.16.14": {
+          "sha1": "28c23495dd5b0d315579e3b31d0ee7b482a63eda",
+          "sha256": "9a1aa817e0f34b7cf23d3bce2bb705c95a93e25f7020bee0444124ad1aa4bddf",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.16.14/sles/12/chef-server-core-12.16.14-1.sles12.x86_64.rpm"
+        },
+        "12.17.3": {
+          "sha1": "7a593caa5cf3c57e117c1b1868fbbe3a9713c8af",
+          "sha256": "279e558f1d731a6b274a4cdd97f0e89c2e293dd3078bed8b39ecc17d3a3f5816",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.3/sles/12/chef-server-core-12.17.3-1.sles12.x86_64.rpm"
+        },
+        "12.17.5": {
+          "sha1": "d8ec26173afc2fac211c0b0408287f57cb6a171d",
+          "sha256": "6b7c0fd1c804fa9c8727ddc7adfae419557476f5cbff96b056c853a2bb239246",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.5/sles/12/chef-server-core-12.17.5-1.sles12.x86_64.rpm"
+        },
+        "12.17.15": {
+          "sha1": "2191a340326b50fda0c26afb57dfeb3dc19849d0",
+          "sha256": "e75d3c7bb374c7349d4578d6de389d6be68dd7a383ffd232b034b428d6760c46",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.15/sles/12/chef-server-core-12.17.15-1.sles12.x86_64.rpm"
+        },
+        "12.17.33": {
+          "sha1": "d442e5442d4489f4f908c0e0de860e6b720b8d96",
+          "sha256": "27ce17542714f014c14a7befba628529e96618bd17d9e31e4ed5f69e4c32ba53",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.17.33/sles/12/chef-server-core-12.17.33-1.sles12.x86_64.rpm"
+        },
+        "12.18.14": {
+          "sha1": "45ba3c7c0f2e49271375a4deaef4e9604b425e30",
+          "sha256": "89c23b0447cd3fb57302ae7e2470b0425591cf3920a5c0f4f6281f3ad90f4cf9",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.18.14/sles/12/chef-server-core-12.18.14-1.sles12.x86_64.rpm"
+        },
+        "12.19.26": {
+          "sha1": "5e6b2beff28b85fb994f199b0e8c71d2af82a2f3",
+          "sha256": "6106cb0f29ead1af0e49460a5cfcba096f18965fc320142cf4023379770085b6",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.26/sles/12/chef-server-core-12.19.26-1.sles12.x86_64.rpm"
+        },
+        "12.19.31": {
+          "sha1": "a82e906fd49bf21b88a2498feaf2491aff607db3",
+          "sha256": "be5f15cdbf2dcf50adf93f1ea33c0fd10ab8d433c0abd1a3602d5e585fc53fa0",
+          "url": "https://packages.chef.io/files/stable/chef-server/12.19.31/sles/12/chef-server-core-12.19.31-1.sles12.x86_64.rpm"
+        },
+        "13.0.16": {
+          "sha1": "5cf2e559652cc1dd692fd5fbf6eec26aeb1c1479",
+          "sha256": "166d1e78e0063a3e206df479ef77a2592eab3625def8f3a028a88cc1b8e106a9",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.16/sles/12/chef-server-core-13.0.16-1.sles12.x86_64.rpm"
+        },
+        "13.0.17": {
+          "sha1": "c3bc52437a311ce0b5e7706d543a38b10bfb4446",
+          "sha256": "a5fab86e2a8fa693c7be4a31345215e125768d389b2f4385ca6c8193c8d877fc",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.0.17/sles/12/chef-server-core-13.0.17-1.sles12.x86_64.rpm"
+        },
+        "13.1.13": {
+          "sha1": "5082b9518c514904e70147ba3ba06015aaa86264",
+          "sha256": "7ac8a36e0f1910ca7cee6210486eb96492b755db2a8a2cd179708cb9844f96ad",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.1.13/sles/12/chef-server-core-13.1.13-1.sles12.x86_64.rpm"
+        },
+        "13.2.0": {
+          "sha1": "f4f996d04294139a948640553c9ff581802bde15",
+          "sha256": "cc13aa3b032c6c97f88bfe07ced1659df5dc7e3ddbd5a36f588e9f9111f94d73",
+          "url": "https://packages.chef.io/files/stable/chef-server/13.2.0/sles/12/chef-server-core-13.2.0-1.sles12.x86_64.rpm"
+        },
+        "14.0.58": {
+          "sha1": "540bde98ea497983c4d07dc5637efe01c525f27f",
+          "sha256": "616c445bd021cbaa0fbf8e37b13f42c6d8a680677c3c1663157544f7f1ce4fb3",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/sles/12/chef-server-core-14.0.58-1.sles12.x86_64.rpm"
+        },
+        "14.0.65": {
+          "sha1": "52534c576fa211dbcbba166fd2a1d2e9daab7208",
+          "sha256": "f7b9f83c6cd18c4c9e7ec51870075b511b1de6257febf8ab74a81a40c98a3ac8",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/sles/12/chef-server-core-14.0.65-1.sles12.x86_64.rpm"
+        }
+      }
+    },
+    "15": {
+      "x86_64": {
+        "14.0.58": {
+          "sha1": "540bde98ea497983c4d07dc5637efe01c525f27f",
+          "sha256": "616c445bd021cbaa0fbf8e37b13f42c6d8a680677c3c1663157544f7f1ce4fb3",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.58/sles/15/chef-server-core-14.0.58-1.sles12.x86_64.rpm"
+        },
+        "14.0.65": {
+          "sha1": "52534c576fa211dbcbba166fd2a1d2e9daab7208",
+          "sha256": "f7b9f83c6cd18c4c9e7ec51870075b511b1de6257febf8ab74a81a40c98a3ac8",
+          "url": "https://packages.chef.io/files/stable/chef-server/14.0.65/sles/15/chef-server-core-14.0.65-1.sles12.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2017-06-22 12:03:08 -0700"
+    "timestamp": "2021-02-23 15:08:03 -0600"
   }
 }

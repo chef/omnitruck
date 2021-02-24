@@ -67,38 +67,6 @@
       }
     },
     "7": {
-      "i386": {
-        "1.3.3": {
-          "sha1": "0135d39841bb187aa41492a63f3c867e69af54dd",
-          "sha256": "9089a26f4aef0f663643a40abcb9e45b9ebbfb6ee865d902596c5b0267d09b2b",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/debian/7/push-jobs-client_1.3.3-1_i386.deb"
-        },
-        "1.3.4": {
-          "sha1": "97c54712d4c76c8d951d7f7cb49542a01da6f9fd",
-          "sha256": "4ac63cd4b56da9a36b3848a7a5dfdc001c1bc45b49cfe631157b9169c7bc7388",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/debian/7/push-jobs-client_1.3.4-1_i386.deb"
-        },
-        "2.1.0": {
-          "sha1": "f61067ba5ac78bf2e8c002782767c42fb4fde317",
-          "sha256": "dd1e338eb4ba9a4b84cb04e2b01c34f797bbc8eef88d9cd1c9bbe80dff501ba9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/debian/7/push-jobs-client_2.1.0-1_i386.deb"
-        },
-        "2.1.1": {
-          "sha1": "43910f937792eb8c6d4333e08296d909d82e05f6",
-          "sha256": "993725739de3105f976a760fc09179530a69964d5677f06baa83359e72c4cc51",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/debian/7/push-jobs-client_2.1.1-1_i386.deb"
-        },
-        "2.1.3": {
-          "sha1": "b23678fb49d2b5a773e93170035ff82746bd3e86",
-          "sha256": "ab81897ff466df7e37dc6fd1ecf9e1723d04ab8b61d244fe981d5212d1af216c",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/debian/7/push-jobs-client_2.1.3-1_i386.deb"
-        },
-        "2.1.4": {
-          "sha1": "be6cccca150cbaf52c206619aba86b4cddbde4ee",
-          "sha256": "d354d0b2ec1abdc2c15a8ce82efa1bfe60b36afe5aa26c9702e853f6c40ef017",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/7/push-jobs-client_2.1.4-1_i386.deb"
-        }
-      },
       "x86_64": {
         "1.3.3": {
           "sha1": "48fc8ae14cc1d559915c4e64d54439eb32acb30c",
@@ -129,32 +97,102 @@
           "sha1": "13f9dead5fb7f5ec3c11215763041cb14e591876",
           "sha256": "51b54452f7073ccad437ead99a99243b921dbe26310aa6e23e7e189f12ef0b24",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/7/push-jobs-client_2.1.4-1_amd64.deb"
+        },
+        "2.3.5": {
+          "sha1": "be05f9d2f2719712b1335600aa748566d8e86fd0",
+          "sha256": "8810288f35e92b88edab945fe1fdad1e8765883ab4d8e2b4712c4dcbf4c042b6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/debian/7/push-jobs-client_2.3.5-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "cb9915b33835fd07377eebeee0ce484523f5d65e",
+          "sha256": "4b5353b92bac9907eee9fcd13bca8a54cf21c96889a95c2d59ef515d052ce4bc",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/debian/7/push-jobs-client_2.4.1-1_amd64.deb"
+        },
+        "2.4.4": {
+          "sha1": "f4f597fb99be0b25372051e03df33faee72e4fc6",
+          "sha256": "6567cf1cf37a07ab8c2519e6a58732559ddd8591baa98f17f640ba46c3382e8d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/debian/7/push-jobs-client_2.4.4-1_amd64.deb"
+        },
+        "2.4.5": {
+          "sha1": "2177a3c16fadcb33bc8cd1d60444237c04e460ae",
+          "sha256": "cdec66e1dbfff933bc97c3c3c613831d4a44d771ca66b2a21a8bd59696abdc7f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/debian/7/push-jobs-client_2.4.5-1_amd64.deb"
+        },
+        "2.4.8": {
+          "sha1": "3e8898cc5e63ca6e1ff4c3017d4c9fa6a566756a",
+          "sha256": "86829b76946c4b7a16e67402037d05caa914ab10f5c370da76ed48b3e1f38af1",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/debian/7/push-jobs-client_2.4.8-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "16d3739bbb1c4e7a6a33b7aadbb3d9470d50afcc",
+          "sha256": "e688473158df59e4e63d7c5541fd047a91bd000fee92f02fbbc8ffc835f0d90a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/debian/7/push-jobs-client_2.5.0-1_amd64.deb"
         }
-      }
-    },
-    "8": {
+      },
       "i386": {
+        "1.3.3": {
+          "sha1": "0135d39841bb187aa41492a63f3c867e69af54dd",
+          "sha256": "9089a26f4aef0f663643a40abcb9e45b9ebbfb6ee865d902596c5b0267d09b2b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/debian/7/push-jobs-client_1.3.3-1_i386.deb"
+        },
+        "1.3.4": {
+          "sha1": "97c54712d4c76c8d951d7f7cb49542a01da6f9fd",
+          "sha256": "4ac63cd4b56da9a36b3848a7a5dfdc001c1bc45b49cfe631157b9169c7bc7388",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/debian/7/push-jobs-client_1.3.4-1_i386.deb"
+        },
         "2.1.0": {
           "sha1": "f61067ba5ac78bf2e8c002782767c42fb4fde317",
           "sha256": "dd1e338eb4ba9a4b84cb04e2b01c34f797bbc8eef88d9cd1c9bbe80dff501ba9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/debian/8/push-jobs-client_2.1.0-1_i386.deb"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/debian/7/push-jobs-client_2.1.0-1_i386.deb"
         },
         "2.1.1": {
           "sha1": "43910f937792eb8c6d4333e08296d909d82e05f6",
           "sha256": "993725739de3105f976a760fc09179530a69964d5677f06baa83359e72c4cc51",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/debian/8/push-jobs-client_2.1.1-1_i386.deb"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/debian/7/push-jobs-client_2.1.1-1_i386.deb"
         },
         "2.1.3": {
           "sha1": "b23678fb49d2b5a773e93170035ff82746bd3e86",
           "sha256": "ab81897ff466df7e37dc6fd1ecf9e1723d04ab8b61d244fe981d5212d1af216c",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/debian/8/push-jobs-client_2.1.3-1_i386.deb"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/debian/7/push-jobs-client_2.1.3-1_i386.deb"
         },
         "2.1.4": {
           "sha1": "be6cccca150cbaf52c206619aba86b4cddbde4ee",
           "sha256": "d354d0b2ec1abdc2c15a8ce82efa1bfe60b36afe5aa26c9702e853f6c40ef017",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/8/push-jobs-client_2.1.4-1_i386.deb"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/7/push-jobs-client_2.1.4-1_i386.deb"
+        },
+        "2.3.5": {
+          "sha1": "d273f0fd24d559a2d5267686c36faae4db8d8092",
+          "sha256": "61d25eaac41b636a037fd026d2ca6ca9a3a537117a4e8b260e45b0ad4b81c8af",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/debian/7/push-jobs-client_2.3.5-1_i386.deb"
+        },
+        "2.4.1": {
+          "sha1": "2eeea9d17a66d90df732db42500730ebb988438f",
+          "sha256": "88493f7077686e2830810fa9572de43e65a0bee479b8614ab700ec621333b738",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/debian/7/push-jobs-client_2.4.1-1_i386.deb"
+        },
+        "2.4.4": {
+          "sha1": "5b38281b0a803e5a5db00ba4098c2276fabeba13",
+          "sha256": "5784e90f02b64b4bd602e6d669db1a9b645c5455fbb6480f3efccfcbf25a3c0f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/debian/7/push-jobs-client_2.4.4-1_i386.deb"
+        },
+        "2.4.5": {
+          "sha1": "6c17677e5a8dd3f09a6bc9344339aa4773649542",
+          "sha256": "595628fdf06b0bad3a2f7cc7f6904d273f6da6e8eb8f4b815d6bbf560b734075",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/debian/7/push-jobs-client_2.4.5-1_i386.deb"
+        },
+        "2.4.8": {
+          "sha1": "85ec0fd36d4c2983a1701eb29ad8e3977fba5a16",
+          "sha256": "163a679ad1274ed81c608125d3783f8e697b7da140eb0e9627aa88b9de5e4932",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/debian/7/push-jobs-client_2.4.8-1_i386.deb"
+        },
+        "2.5.0": {
+          "sha1": "6b998f2dc7d2aa27865e23f53eb438d7ad4bedfe",
+          "sha256": "2b050cc563141ce9b5f9ba4c28a9c05db62f4e2a042ba0c68f4ad6538bb9a148",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/debian/7/push-jobs-client_2.5.0-1_i386.deb"
         }
-      },
+      }
+    },
+    "8": {
       "x86_64": {
         "2.1.0": {
           "sha1": "d5affb4c8276fb435e901646dce62f40cc2c6efb",
@@ -175,44 +213,108 @@
           "sha1": "13f9dead5fb7f5ec3c11215763041cb14e591876",
           "sha256": "51b54452f7073ccad437ead99a99243b921dbe26310aa6e23e7e189f12ef0b24",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/8/push-jobs-client_2.1.4-1_amd64.deb"
+        },
+        "2.3.5": {
+          "sha1": "be05f9d2f2719712b1335600aa748566d8e86fd0",
+          "sha256": "8810288f35e92b88edab945fe1fdad1e8765883ab4d8e2b4712c4dcbf4c042b6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/debian/8/push-jobs-client_2.3.5-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "cb9915b33835fd07377eebeee0ce484523f5d65e",
+          "sha256": "4b5353b92bac9907eee9fcd13bca8a54cf21c96889a95c2d59ef515d052ce4bc",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/debian/8/push-jobs-client_2.4.1-1_amd64.deb"
+        },
+        "2.4.4": {
+          "sha1": "f4f597fb99be0b25372051e03df33faee72e4fc6",
+          "sha256": "6567cf1cf37a07ab8c2519e6a58732559ddd8591baa98f17f640ba46c3382e8d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/debian/8/push-jobs-client_2.4.4-1_amd64.deb"
+        },
+        "2.4.5": {
+          "sha1": "2177a3c16fadcb33bc8cd1d60444237c04e460ae",
+          "sha256": "cdec66e1dbfff933bc97c3c3c613831d4a44d771ca66b2a21a8bd59696abdc7f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/debian/8/push-jobs-client_2.4.5-1_amd64.deb"
+        },
+        "2.4.8": {
+          "sha1": "3e8898cc5e63ca6e1ff4c3017d4c9fa6a566756a",
+          "sha256": "86829b76946c4b7a16e67402037d05caa914ab10f5c370da76ed48b3e1f38af1",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/debian/8/push-jobs-client_2.4.8-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "16d3739bbb1c4e7a6a33b7aadbb3d9470d50afcc",
+          "sha256": "e688473158df59e4e63d7c5541fd047a91bd000fee92f02fbbc8ffc835f0d90a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/debian/8/push-jobs-client_2.5.0-1_amd64.deb"
+        },
+        "2.5.6": {
+          "sha1": "d6e75676b2f823ad582fb677e860288d790652ac",
+          "sha256": "77c59963c0c95aa939a812b3e383f495d353ecb4085af15d3c456f445291d350",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/debian/8/push-jobs-client_2.5.6-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "2.1.0": {
+          "sha1": "f61067ba5ac78bf2e8c002782767c42fb4fde317",
+          "sha256": "dd1e338eb4ba9a4b84cb04e2b01c34f797bbc8eef88d9cd1c9bbe80dff501ba9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/debian/8/push-jobs-client_2.1.0-1_i386.deb"
+        },
+        "2.1.1": {
+          "sha1": "43910f937792eb8c6d4333e08296d909d82e05f6",
+          "sha256": "993725739de3105f976a760fc09179530a69964d5677f06baa83359e72c4cc51",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/debian/8/push-jobs-client_2.1.1-1_i386.deb"
+        },
+        "2.1.3": {
+          "sha1": "b23678fb49d2b5a773e93170035ff82746bd3e86",
+          "sha256": "ab81897ff466df7e37dc6fd1ecf9e1723d04ab8b61d244fe981d5212d1af216c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/debian/8/push-jobs-client_2.1.3-1_i386.deb"
+        },
+        "2.1.4": {
+          "sha1": "be6cccca150cbaf52c206619aba86b4cddbde4ee",
+          "sha256": "d354d0b2ec1abdc2c15a8ce82efa1bfe60b36afe5aa26c9702e853f6c40ef017",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/debian/8/push-jobs-client_2.1.4-1_i386.deb"
+        },
+        "2.3.5": {
+          "sha1": "d273f0fd24d559a2d5267686c36faae4db8d8092",
+          "sha256": "61d25eaac41b636a037fd026d2ca6ca9a3a537117a4e8b260e45b0ad4b81c8af",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/debian/8/push-jobs-client_2.3.5-1_i386.deb"
+        },
+        "2.4.1": {
+          "sha1": "2eeea9d17a66d90df732db42500730ebb988438f",
+          "sha256": "88493f7077686e2830810fa9572de43e65a0bee479b8614ab700ec621333b738",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/debian/8/push-jobs-client_2.4.1-1_i386.deb"
+        },
+        "2.4.4": {
+          "sha1": "5b38281b0a803e5a5db00ba4098c2276fabeba13",
+          "sha256": "5784e90f02b64b4bd602e6d669db1a9b645c5455fbb6480f3efccfcbf25a3c0f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/debian/8/push-jobs-client_2.4.4-1_i386.deb"
+        },
+        "2.4.5": {
+          "sha1": "6c17677e5a8dd3f09a6bc9344339aa4773649542",
+          "sha256": "595628fdf06b0bad3a2f7cc7f6904d273f6da6e8eb8f4b815d6bbf560b734075",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/debian/8/push-jobs-client_2.4.5-1_i386.deb"
+        },
+        "2.4.8": {
+          "sha1": "85ec0fd36d4c2983a1701eb29ad8e3977fba5a16",
+          "sha256": "163a679ad1274ed81c608125d3783f8e697b7da140eb0e9627aa88b9de5e4932",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/debian/8/push-jobs-client_2.4.8-1_i386.deb"
+        },
+        "2.5.0": {
+          "sha1": "6b998f2dc7d2aa27865e23f53eb438d7ad4bedfe",
+          "sha256": "2b050cc563141ce9b5f9ba4c28a9c05db62f4e2a042ba0c68f4ad6538bb9a148",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/debian/8/push-jobs-client_2.5.0-1_i386.deb"
+        }
+      }
+    },
+    "9": {
+      "x86_64": {
+        "2.5.6": {
+          "sha1": "d6e75676b2f823ad582fb677e860288d790652ac",
+          "sha256": "77c59963c0c95aa939a812b3e383f495d353ecb4085af15d3c456f445291d350",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/debian/9/push-jobs-client_2.5.6-1_amd64.deb"
         }
       }
     }
   },
   "el": {
     "5": {
-      "x86_64": {
-        "1.3.3": {
-          "sha1": "a1cbc42d4019ddef988099de8e44fa8c6d9ebaa6",
-          "sha256": "3918465fe4013539d69f19b92e8d2997375443a624dc7b24090bcb40aaec4c43",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/1.3.3/el/5/push-jobs-client-1.3.3-1.el5.x86_64.rpm"
-        },
-        "1.3.4": {
-          "sha1": "7ac86c1d2c2ce6384c446cf38c611631821dfe6d",
-          "sha256": "bcbb7dba8ab728c258c538b07ab3e69a3673fd00176219652e48570a3eae7cc7",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/1.3.4/el/5/push-jobs-client-1.3.4-1.el5.x86_64.rpm"
-        },
-        "2.1.0": {
-          "sha1": "f327b52b2430dadd0fb1a07fefdadfb52316c890",
-          "sha256": "e1b1d4125e67b7149e1458ff68af492975107779696b89d2f0462b5c9d88ff11",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.0/el/5/push-jobs-client-2.1.0-1.el5.x86_64.rpm"
-        },
-        "2.1.1": {
-          "sha1": "846233f3ce5ca549ae3293b1b879c939f969b58e",
-          "sha256": "4a5622e8a5ecf0914f524c38fa1f8e5d781f22138f7221b38f1224ff7e5ca558",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.1/el/5/push-jobs-client-2.1.1-1.el5.x86_64.rpm"
-        },
-        "2.1.3": {
-          "sha1": "4bea58416656ef13da0d350988128c6790cb1e94",
-          "sha256": "7030e72d08f6cd329e26bfcc7cc4af7180bbfd87710fdea3cfef4e98605d3e11",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.3/el/5/push-jobs-client-2.1.3-1.el5.x86_64.rpm"
-        },
-        "2.1.4": {
-          "sha1": "f9363e1fffeb57c8086e1ee72319fd07ed152921",
-          "sha256": "c4fc7bf44dcffdc82ed72dd8d01a7b3db6f681827cd77a94c23ae9139e0df72a",
-          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/5/push-jobs-client-2.1.4-1.el5.x86_64.rpm"
-        }
-      },
       "i386": {
         "1.3.3": {
           "sha1": "aebc7e21c32e43043ab5fb4f5700cbadc611ca60",
@@ -243,6 +345,78 @@
           "sha1": "82ab85295382ef064f1b9f25831a318c417f4c10",
           "sha256": "bf104df06b0e0a312e13d1fb3c2eabcf236316c2766818993a847ba52742b651",
           "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/5/push-jobs-client-2.1.4-1.el5.i386.rpm"
+        },
+        "2.3.5": {
+          "sha1": "e2986514a9bfd0a8fb758491d2e9325057b74952",
+          "sha256": "4d536e0627dc6dca073f5d2732bb2ed25298cc3313f00005d2cc20b7c0f40142",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.3.5/el/5/push-jobs-client-2.3.5-1.el5.i386.rpm"
+        },
+        "2.4.1": {
+          "sha1": "c05acbf35ca78de72c3666b96821098df35500f4",
+          "sha256": "6a3ff6d6d36dcd19e88148c286968d36a308199a5545ae59c14f5bd131f506b4",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.1/el/5/push-jobs-client-2.4.1-1.el5.i386.rpm"
+        },
+        "2.4.4": {
+          "sha1": "8326bcb1cde110967ba8ff85a61ad6152655b102",
+          "sha256": "ec1cc4ce8227145fe3cd3742ab88fb6c9b1ce6f9e4b6c34a4ea1a6c2c935b39d",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.4/el/5/push-jobs-client-2.4.4-1.el5.i386.rpm"
+        },
+        "2.4.5": {
+          "sha1": "cc0084b72dc1d49ee1388670cd8dce33d588a1c0",
+          "sha256": "aa1c12d32b1f9ef51167da840742647e60893a6e7947c718ea4f970af9542e6f",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.5/el/5/push-jobs-client-2.4.5-1.el5.i386.rpm"
+        }
+      },
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "a1cbc42d4019ddef988099de8e44fa8c6d9ebaa6",
+          "sha256": "3918465fe4013539d69f19b92e8d2997375443a624dc7b24090bcb40aaec4c43",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/1.3.3/el/5/push-jobs-client-1.3.3-1.el5.x86_64.rpm"
+        },
+        "1.3.4": {
+          "sha1": "7ac86c1d2c2ce6384c446cf38c611631821dfe6d",
+          "sha256": "bcbb7dba8ab728c258c538b07ab3e69a3673fd00176219652e48570a3eae7cc7",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/1.3.4/el/5/push-jobs-client-1.3.4-1.el5.x86_64.rpm"
+        },
+        "2.1.0": {
+          "sha1": "f327b52b2430dadd0fb1a07fefdadfb52316c890",
+          "sha256": "e1b1d4125e67b7149e1458ff68af492975107779696b89d2f0462b5c9d88ff11",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.0/el/5/push-jobs-client-2.1.0-1.el5.x86_64.rpm"
+        },
+        "2.1.1": {
+          "sha1": "846233f3ce5ca549ae3293b1b879c939f969b58e",
+          "sha256": "4a5622e8a5ecf0914f524c38fa1f8e5d781f22138f7221b38f1224ff7e5ca558",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.1/el/5/push-jobs-client-2.1.1-1.el5.x86_64.rpm"
+        },
+        "2.1.3": {
+          "sha1": "4bea58416656ef13da0d350988128c6790cb1e94",
+          "sha256": "7030e72d08f6cd329e26bfcc7cc4af7180bbfd87710fdea3cfef4e98605d3e11",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.3/el/5/push-jobs-client-2.1.3-1.el5.x86_64.rpm"
+        },
+        "2.1.4": {
+          "sha1": "f9363e1fffeb57c8086e1ee72319fd07ed152921",
+          "sha256": "c4fc7bf44dcffdc82ed72dd8d01a7b3db6f681827cd77a94c23ae9139e0df72a",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/5/push-jobs-client-2.1.4-1.el5.x86_64.rpm"
+        },
+        "2.3.5": {
+          "sha1": "cf1a74d541e2f5e89229c52d0a35a3801e3228d4",
+          "sha256": "6af55e5a27ca86ade19a268303a4c3955fe322e80ed5e0df2b4a9724e68f0563",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.3.5/el/5/push-jobs-client-2.3.5-1.el5.x86_64.rpm"
+        },
+        "2.4.1": {
+          "sha1": "67fbfe1c20a8862cf64cb40b2c2463f3cbccf635",
+          "sha256": "d723e47e7bb87204ee6f5ffdac9ad38255b8a61a8b2680ac1f140c662fe8e684",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.1/el/5/push-jobs-client-2.4.1-1.el5.x86_64.rpm"
+        },
+        "2.4.4": {
+          "sha1": "4c6fca1510a5c477f98678f6d11361c752478a40",
+          "sha256": "a8351cf453a03c8630a1f5ad48049947f26be81436f8778b2ac7c670860f8b39",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.4/el/5/push-jobs-client-2.4.4-1.el5.x86_64.rpm"
+        },
+        "2.4.5": {
+          "sha1": "49e88ebc93704961682f545298f18f13ec6f5e5c",
+          "sha256": "4e0ae65fbabf5ad87f44507dc8b1a0241bf69a8c82eaca3ddeac889e46908fc8",
+          "url": "http://packages.chef.io/files/stable/push-jobs-client/2.4.5/el/5/push-jobs-client-2.4.5-1.el5.x86_64.rpm"
         }
       }
     },
@@ -277,6 +451,41 @@
           "sha1": "8cb340770c5f824143d0292da3569c2c9768dd54",
           "sha256": "14024eff8949eff332952e85d10bcb69374ba8bc55414bb53bbcc7455fbe01a3",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/6/push-jobs-client-2.1.4-1.el6.i386.rpm"
+        },
+        "2.3.5": {
+          "sha1": "33226407d57e9693d015efb3a1cc47367c3dc382",
+          "sha256": "87cf29a2faeb50d5efa0a0dc096b2c44fd91635d280bc26c494daced55ff7efb",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/el/6/push-jobs-client-2.3.5-1.el6.i386.rpm"
+        },
+        "2.4.1": {
+          "sha1": "1b8affc7594ae8a9a0e66bb8c3c4610d28dd9a9d",
+          "sha256": "8929b3ae4a8eafa429dff5779e15c17d479e52c6d96b0da3108928211d42075d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/el/6/push-jobs-client-2.4.1-1.el6.i386.rpm"
+        },
+        "2.4.4": {
+          "sha1": "b2d0524f2c49d387b8ea5ea1911a8605c145c9e2",
+          "sha256": "714a11f78973a9cee305728ed59963cdc1cd766cec9a2768d367ec09ba0fba06",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/el/6/push-jobs-client-2.4.4-1.el6.i386.rpm"
+        },
+        "2.4.5": {
+          "sha1": "10e0a15f3764d36213975c0b4f13b0a42ba42d7b",
+          "sha256": "1021d61971fd9d783ad7bd0dbb6fe8c68edb6aefc54206d82bbf95bf68e361d2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/el/6/push-jobs-client-2.4.5-1.el6.i386.rpm"
+        },
+        "2.4.8": {
+          "sha1": "dabfed0dd2bf617528997f4a615844d8697efa16",
+          "sha256": "e43652df103c3e7dd6a2864bcd73e6d16b61db401396e76c2f765af129c18f12",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/el/6/push-jobs-client-2.4.8-1.el6.i386.rpm"
+        },
+        "2.5.0": {
+          "sha1": "0db2d2de5c090afdd3aec0358bfe291b0595b1c4",
+          "sha256": "6c0d4f61e7299ebe8d43783a6b790fddf085e29f495b19d2529d535786025c8c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/el/6/push-jobs-client-2.5.0-1.el6.i386.rpm"
+        },
+        "2.5.6": {
+          "sha1": "41282dde38234f6e707e6b209b4dc071196742d9",
+          "sha256": "bc70b6d42d00d893dcf66db31229c84910d59b881d0293235eda7e66b5d88fc5",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/el/6/push-jobs-client-2.5.6-1.el6.i386.rpm"
         }
       },
       "x86_64": {
@@ -309,6 +518,41 @@
           "sha1": "593407cd298a597d9fd2ef76c4ecd17ca9a4f778",
           "sha256": "e74fddb332e2aa8db0658a6e5ca3b412fcd28bf84de3c3a4d6e9832e89c59b6f",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/6/push-jobs-client-2.1.4-1.el6.x86_64.rpm"
+        },
+        "2.3.5": {
+          "sha1": "1e5f05ee9b89ce7d401c8a59bf05af8b6075a9fd",
+          "sha256": "8042da6e123578c748fa2a5573b3a2ebe63aa218f9967a22c100703563df477a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/el/6/push-jobs-client-2.3.5-1.el6.x86_64.rpm"
+        },
+        "2.4.1": {
+          "sha1": "a9f4212553fa05506ac0e4adac07735b703aa866",
+          "sha256": "0458bccba0bed6bacdd088b1e03a3f927adc073570a9e661f8a9da26c6caa972",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/el/6/push-jobs-client-2.4.1-1.el6.x86_64.rpm"
+        },
+        "2.4.4": {
+          "sha1": "9c5890a206510ca85d4f92444f188272e936dfff",
+          "sha256": "5b4ab5686119f900875ebe0fe554f84d8f900365b884379ab5394569fa3d076a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/el/6/push-jobs-client-2.4.4-1.el6.x86_64.rpm"
+        },
+        "2.4.5": {
+          "sha1": "d52703e7b7c749ef911bbfc1e2b8dd8673728cd7",
+          "sha256": "8d55620bcf703201b38bef9993bafe304202d567471165c36ee659b13aa1658c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/el/6/push-jobs-client-2.4.5-1.el6.x86_64.rpm"
+        },
+        "2.4.8": {
+          "sha1": "59eae8c5e8ea4279e0be67ee15b8ad61b3c8a1c2",
+          "sha256": "956cc1ecaab3950242ae5343ca066a50c6fdf4520bbc74b7d266038c50adfc3f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/el/6/push-jobs-client-2.4.8-1.el6.x86_64.rpm"
+        },
+        "2.5.0": {
+          "sha1": "67c711b73faac389f3ac72700260ef0501732a87",
+          "sha256": "9238e4c12721a66ec7d51103d45e3f6245d5ddf5d070dc99f8c1e40b99ff7e36",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/el/6/push-jobs-client-2.5.0-1.el6.x86_64.rpm"
+        },
+        "2.5.6": {
+          "sha1": "10bbd27424473615c75e4e285e804bf0e7aa1279",
+          "sha256": "5632bbd29df5983945ff379b52736f17ede2e0019b46fda38df765a77dd3eb27",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/el/6/push-jobs-client-2.5.6-1.el6.x86_64.rpm"
         }
       }
     },
@@ -343,11 +587,168 @@
           "sha1": "666bd0d1b5a2c859c1f81342ce1bb21425ba0de1",
           "sha256": "09a4cdf1ec01536e6ecc3bedb018f9677889171ff8853106e4ff47374e6ce951",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/el/7/push-jobs-client-2.1.4-1.el7.x86_64.rpm"
+        },
+        "2.3.5": {
+          "sha1": "cf1703756e015b4a93cba177b9ca11082965a2a4",
+          "sha256": "232facd05d8d9e4c8cf07452bdfa734a1fc2bdf00d166eefd6856d2c8f2ab9c0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/el/7/push-jobs-client-2.3.5-1.el7.x86_64.rpm"
+        },
+        "2.4.1": {
+          "sha1": "2a54cb35d4a6785e04b75249abf348c133381e46",
+          "sha256": "612d0482e347aa74c41aff3224e4a35dedf4dda21ff9cb8fe46c6393bce26be0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/el/7/push-jobs-client-2.4.1-1.el7.x86_64.rpm"
+        },
+        "2.4.4": {
+          "sha1": "3db1fab98ca91fcf7c39c1bccfb68ecda28ef707",
+          "sha256": "3a1f5285089f88e143c457fcaeb8c78b27ddafa1fae81d2e4acc538cc4070e25",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/el/7/push-jobs-client-2.4.4-1.el7.x86_64.rpm"
+        },
+        "2.4.5": {
+          "sha1": "484f4b7eef8c1fa826ff2b7ce3b2bc8b7f159c8b",
+          "sha256": "1721365de4cfa38bd1ca7744d5354b69ca6978eeaf80e6b09fc3bf375e1d5f83",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/el/7/push-jobs-client-2.4.5-1.el7.x86_64.rpm"
+        },
+        "2.4.8": {
+          "sha1": "6c31ecb76d953bc98a7046b7e5dd681888ec267d",
+          "sha256": "681907fc4dc43211d15053cd6ae80213427ebec07acf21699995f8435867305a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/el/7/push-jobs-client-2.4.8-1.el7.x86_64.rpm"
+        },
+        "2.5.0": {
+          "sha1": "9939738deb4c7a29f5073fbb1b062f7748ee10f6",
+          "sha256": "b42a85f1e8d2108509d44920365a24d386757cc93e30068b203f92f302401a49",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/el/7/push-jobs-client-2.5.0-1.el7.x86_64.rpm"
+        },
+        "2.5.6": {
+          "sha1": "eb43fbfc159ee3a7cb5c4916ba5948f6f992d802",
+          "sha256": "72f38f3e370532224c25f39cebe9c787bea89508673caef10dc7dc6c2769b795",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/el/7/push-jobs-client-2.5.6-1.el7.x86_64.rpm"
         }
       }
     }
   },
   "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "4782c101cff5d01fff9030d5a19a3926f658504a",
+          "sha256": "920d205d1d3f432b47eb6b70d8f3e73d734f6ed626622942d574d2de573f030f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/10.04/push-jobs-client_1.3.3-1_amd64.deb"
+        },
+        "1.3.4": {
+          "sha1": "8f9d280a0d555f5970953b095bb4ecef846efd60",
+          "sha256": "ad2f057b67511ca8866adf136e8c3984a814710a7bfc7d1a67f000912c58d938",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/10.04/push-jobs-client_1.3.4-1_amd64.deb"
+        },
+        "2.1.0": {
+          "sha1": "36b294b739cbc9f55387dd322281c41096ce9a72",
+          "sha256": "385cbee101c04c612532d4cafea2e8c08b8ae98183e31080407077840f134fd6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/10.04/push-jobs-client_2.1.0-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.3.3": {
+          "sha1": "56d265aba09d4c4186501499f8a2c5efaffc0e13",
+          "sha256": "3b8a207c8c5f6d0b3b28ecfe8001e9c6ae92064fa8ffbe63b76c9475f3fe85c9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/10.04/push-jobs-client_1.3.3-1_i386.deb"
+        },
+        "1.3.4": {
+          "sha1": "2eca1ac994ffe2355b439e2cc3c4aaf7101404c0",
+          "sha256": "0a45ab096fca5bfe498069c3dcb0e665d1ed34287bcf836bb1a83e2bfccb5f8f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/10.04/push-jobs-client_1.3.4-1_i386.deb"
+        },
+        "2.1.0": {
+          "sha1": "eb6ddc33a20fe01a38f7f4003941866debb48e2e",
+          "sha256": "47db96d66ed98be7db6fb97edd3552b4c436e01c27c34eaf26a8b87eaf548074",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/10.04/push-jobs-client_2.1.0-1_i386.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "4782c101cff5d01fff9030d5a19a3926f658504a",
+          "sha256": "920d205d1d3f432b47eb6b70d8f3e73d734f6ed626622942d574d2de573f030f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/12.04/push-jobs-client_1.3.3-1_amd64.deb"
+        },
+        "1.3.4": {
+          "sha1": "8f9d280a0d555f5970953b095bb4ecef846efd60",
+          "sha256": "ad2f057b67511ca8866adf136e8c3984a814710a7bfc7d1a67f000912c58d938",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/12.04/push-jobs-client_1.3.4-1_amd64.deb"
+        },
+        "2.1.0": {
+          "sha1": "36b294b739cbc9f55387dd322281c41096ce9a72",
+          "sha256": "385cbee101c04c612532d4cafea2e8c08b8ae98183e31080407077840f134fd6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/12.04/push-jobs-client_2.1.0-1_amd64.deb"
+        },
+        "2.1.1": {
+          "sha1": "ed47eb75a041c59afbcab3c575e630f4682f3ccb",
+          "sha256": "3c7e54dba282703c3c95acd608d7337cabc26140f64c3e3f133c3474836a48e9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/ubuntu/12.04/push-jobs-client_2.1.1-1_amd64.deb"
+        },
+        "2.1.3": {
+          "sha1": "bc8339379aeaf8094570ee27fc54babd49dc2975",
+          "sha256": "1eec0c2bb501a936bcd183e155f229ab585ecfb363389312a4a664e4b1bf0269",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/ubuntu/12.04/push-jobs-client_2.1.3-1_amd64.deb"
+        },
+        "2.1.4": {
+          "sha1": "1c220a0e6b5f3c4abaa5ab09570215fce4be8984",
+          "sha256": "ea8e967a723bf051d0856d7097edb714e15c4f4f6889e32ab86aec5f7b94fd1d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/12.04/push-jobs-client_2.1.4-1_amd64.deb"
+        },
+        "2.3.5": {
+          "sha1": "5a225bb9fb01c1aaa8802cca9567a56627878f14",
+          "sha256": "8da265d580cfbb94449da05407b0ea1cb53a016a0c9fbe81b78bf8ccba66152b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/12.04/push-jobs-client_2.3.5-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "ef317f4e2bcc12873c7e61cc54e33a3799ee6660",
+          "sha256": "1536a90749a8c4d9bbfd3ca151befa2a36a9e7c6b3d5a3dbddf31c52b20563fc",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/12.04/push-jobs-client_2.4.1-1_amd64.deb"
+        }
+      },
+      "i386": {
+        "1.3.3": {
+          "sha1": "56d265aba09d4c4186501499f8a2c5efaffc0e13",
+          "sha256": "3b8a207c8c5f6d0b3b28ecfe8001e9c6ae92064fa8ffbe63b76c9475f3fe85c9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/12.04/push-jobs-client_1.3.3-1_i386.deb"
+        },
+        "1.3.4": {
+          "sha1": "2eca1ac994ffe2355b439e2cc3c4aaf7101404c0",
+          "sha256": "0a45ab096fca5bfe498069c3dcb0e665d1ed34287bcf836bb1a83e2bfccb5f8f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/12.04/push-jobs-client_1.3.4-1_i386.deb"
+        },
+        "2.1.0": {
+          "sha1": "eb6ddc33a20fe01a38f7f4003941866debb48e2e",
+          "sha256": "47db96d66ed98be7db6fb97edd3552b4c436e01c27c34eaf26a8b87eaf548074",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/12.04/push-jobs-client_2.1.0-1_i386.deb"
+        },
+        "2.1.1": {
+          "sha1": "be954d347da59f7bfe4444892f5fa95459ad3043",
+          "sha256": "0f191d8d712aa75efcc5b4e1589150f05e8bb402628015553d152793ceed53ad",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/ubuntu/12.04/push-jobs-client_2.1.1-1_i386.deb"
+        },
+        "2.1.3": {
+          "sha1": "f3d5f032da9e862521046c59d0916f6666ca40ba",
+          "sha256": "29fd1a5d7460ee7c16b0936e6fbc47798b0d62e317a2b3f89118bd607cbefff5",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/ubuntu/12.04/push-jobs-client_2.1.3-1_i386.deb"
+        },
+        "2.1.4": {
+          "sha1": "5ef5ba1240c38b6d659496a386e1362184ceb843",
+          "sha256": "0dda8ddd5ca34a55be4520cf270745fc1069f0b5d334dc6f4a9a751fde6746e9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/12.04/push-jobs-client_2.1.4-1_i386.deb"
+        },
+        "2.3.5": {
+          "sha1": "dc047f6f23b3cedae4b63ec47bcc622a0fbc8341",
+          "sha256": "225537e8a9e351ec404bcc73357fde4a0f5a40c3f6986439acf73874dc362e3c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/12.04/push-jobs-client_2.3.5-1_i386.deb"
+        },
+        "2.4.1": {
+          "sha1": "f4f93cbaa4ea7bb9a7b2deaf1a1606bb5f242b94",
+          "sha256": "ead2979a6b8735be6f45457568792ec74f3d7352d42659a2f011834709a97ee6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/12.04/push-jobs-client_2.4.1-1_i386.deb"
+        }
+      }
+    },
     "14.04": {
       "x86_64": {
         "1.3.3": {
@@ -379,6 +780,41 @@
           "sha1": "1c220a0e6b5f3c4abaa5ab09570215fce4be8984",
           "sha256": "ea8e967a723bf051d0856d7097edb714e15c4f4f6889e32ab86aec5f7b94fd1d",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/14.04/push-jobs-client_2.1.4-1_amd64.deb"
+        },
+        "2.3.5": {
+          "sha1": "5a225bb9fb01c1aaa8802cca9567a56627878f14",
+          "sha256": "8da265d580cfbb94449da05407b0ea1cb53a016a0c9fbe81b78bf8ccba66152b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/14.04/push-jobs-client_2.3.5-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "ef317f4e2bcc12873c7e61cc54e33a3799ee6660",
+          "sha256": "1536a90749a8c4d9bbfd3ca151befa2a36a9e7c6b3d5a3dbddf31c52b20563fc",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/14.04/push-jobs-client_2.4.1-1_amd64.deb"
+        },
+        "2.4.4": {
+          "sha1": "e231fb0049cccb490ebfac74a49eabee285cbfc9",
+          "sha256": "a07876c7865979855c3540117dde4d107bae5caa7aeca5d0b2a038ef51d516f8",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/ubuntu/14.04/push-jobs-client_2.4.4-1_amd64.deb"
+        },
+        "2.4.5": {
+          "sha1": "78ad12df7802ac26641868ec0106f4aa853ef31a",
+          "sha256": "7fd34af01792b55e5c80094945cee1cae9baeccd38bda2c8933a5607576b1711",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/ubuntu/14.04/push-jobs-client_2.4.5-1_amd64.deb"
+        },
+        "2.4.8": {
+          "sha1": "456d87ae5e1204b4c97857095af232198fe849f4",
+          "sha256": "fadec562defbeeeae2cee0ce7462932b7f960c214f89f045aa6d0e67f5798c08",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/ubuntu/14.04/push-jobs-client_2.4.8-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "ab87b613a34b6d9fef2ba0533e672b98fa58c96b",
+          "sha256": "8b2ed3bb34e339009414b8784803693192acef41288aae31492f85a47694d498",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/ubuntu/14.04/push-jobs-client_2.5.0-1_amd64.deb"
+        },
+        "2.5.6": {
+          "sha1": "7536f0fd31aad0a32d240501fcf4dcf698d0f036",
+          "sha256": "8e341bd920532e073df121a8ffd4833e3da4b49997ad5f05deb80c1365b98622",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/ubuntu/14.04/push-jobs-client_2.5.6-1_amd64.deb"
         }
       },
       "i386": {
@@ -411,108 +847,41 @@
           "sha1": "5ef5ba1240c38b6d659496a386e1362184ceb843",
           "sha256": "0dda8ddd5ca34a55be4520cf270745fc1069f0b5d334dc6f4a9a751fde6746e9",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/14.04/push-jobs-client_2.1.4-1_i386.deb"
-        }
-      }
-    },
-    "10.04": {
-      "i386": {
-        "1.3.3": {
-          "sha1": "56d265aba09d4c4186501499f8a2c5efaffc0e13",
-          "sha256": "3b8a207c8c5f6d0b3b28ecfe8001e9c6ae92064fa8ffbe63b76c9475f3fe85c9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/10.04/push-jobs-client_1.3.3-1_i386.deb"
         },
-        "1.3.4": {
-          "sha1": "2eca1ac994ffe2355b439e2cc3c4aaf7101404c0",
-          "sha256": "0a45ab096fca5bfe498069c3dcb0e665d1ed34287bcf836bb1a83e2bfccb5f8f",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/10.04/push-jobs-client_1.3.4-1_i386.deb"
+        "2.3.5": {
+          "sha1": "dc047f6f23b3cedae4b63ec47bcc622a0fbc8341",
+          "sha256": "225537e8a9e351ec404bcc73357fde4a0f5a40c3f6986439acf73874dc362e3c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/14.04/push-jobs-client_2.3.5-1_i386.deb"
         },
-        "2.1.0": {
-          "sha1": "eb6ddc33a20fe01a38f7f4003941866debb48e2e",
-          "sha256": "47db96d66ed98be7db6fb97edd3552b4c436e01c27c34eaf26a8b87eaf548074",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/10.04/push-jobs-client_2.1.0-1_i386.deb"
-        }
-      },
-      "x86_64": {
-        "1.3.3": {
-          "sha1": "4782c101cff5d01fff9030d5a19a3926f658504a",
-          "sha256": "920d205d1d3f432b47eb6b70d8f3e73d734f6ed626622942d574d2de573f030f",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/10.04/push-jobs-client_1.3.3-1_amd64.deb"
+        "2.4.1": {
+          "sha1": "f4f93cbaa4ea7bb9a7b2deaf1a1606bb5f242b94",
+          "sha256": "ead2979a6b8735be6f45457568792ec74f3d7352d42659a2f011834709a97ee6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/14.04/push-jobs-client_2.4.1-1_i386.deb"
         },
-        "1.3.4": {
-          "sha1": "8f9d280a0d555f5970953b095bb4ecef846efd60",
-          "sha256": "ad2f057b67511ca8866adf136e8c3984a814710a7bfc7d1a67f000912c58d938",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/10.04/push-jobs-client_1.3.4-1_amd64.deb"
+        "2.4.4": {
+          "sha1": "de06922c16567d7f3a8275bfa1090fedec5bb89a",
+          "sha256": "bcd7f22d4327954d96e3ddfef08db5c3d846d90734e3fbb1864ec3a3a139321b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/ubuntu/14.04/push-jobs-client_2.4.4-1_i386.deb"
         },
-        "2.1.0": {
-          "sha1": "36b294b739cbc9f55387dd322281c41096ce9a72",
-          "sha256": "385cbee101c04c612532d4cafea2e8c08b8ae98183e31080407077840f134fd6",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/10.04/push-jobs-client_2.1.0-1_amd64.deb"
-        }
-      }
-    },
-    "12.04": {
-      "i386": {
-        "1.3.3": {
-          "sha1": "56d265aba09d4c4186501499f8a2c5efaffc0e13",
-          "sha256": "3b8a207c8c5f6d0b3b28ecfe8001e9c6ae92064fa8ffbe63b76c9475f3fe85c9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/12.04/push-jobs-client_1.3.3-1_i386.deb"
+        "2.4.5": {
+          "sha1": "83ba1050cbe6230f0387635e8897e324ea984f25",
+          "sha256": "cdaa44b2bb370e1a2466efc62b0372ed8a8f18e9c29cd3444fba9f857fc76558",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/ubuntu/14.04/push-jobs-client_2.4.5-1_i386.deb"
         },
-        "1.3.4": {
-          "sha1": "2eca1ac994ffe2355b439e2cc3c4aaf7101404c0",
-          "sha256": "0a45ab096fca5bfe498069c3dcb0e665d1ed34287bcf836bb1a83e2bfccb5f8f",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/12.04/push-jobs-client_1.3.4-1_i386.deb"
+        "2.4.8": {
+          "sha1": "df6dd6d038d12ac2588925eac104d1c637d4d208",
+          "sha256": "4ccde07c42b40f19156d820aa7b210b6826bb1ff6c2c547a0d1d6a44ff15b1fb",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/ubuntu/14.04/push-jobs-client_2.4.8-1_i386.deb"
         },
-        "2.1.0": {
-          "sha1": "eb6ddc33a20fe01a38f7f4003941866debb48e2e",
-          "sha256": "47db96d66ed98be7db6fb97edd3552b4c436e01c27c34eaf26a8b87eaf548074",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/12.04/push-jobs-client_2.1.0-1_i386.deb"
+        "2.5.0": {
+          "sha1": "3697985775d7d65605bc9fb289e0f101be1356b6",
+          "sha256": "b837b8097a319b5d4bdf238ae1e52bfe59d6e6eaca76fb1362c4210fadeb8f8a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/ubuntu/14.04/push-jobs-client_2.5.0-1_i386.deb"
         },
-        "2.1.1": {
-          "sha1": "be954d347da59f7bfe4444892f5fa95459ad3043",
-          "sha256": "0f191d8d712aa75efcc5b4e1589150f05e8bb402628015553d152793ceed53ad",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/ubuntu/12.04/push-jobs-client_2.1.1-1_i386.deb"
-        },
-        "2.1.3": {
-          "sha1": "f3d5f032da9e862521046c59d0916f6666ca40ba",
-          "sha256": "29fd1a5d7460ee7c16b0936e6fbc47798b0d62e317a2b3f89118bd607cbefff5",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/ubuntu/12.04/push-jobs-client_2.1.3-1_i386.deb"
-        },
-        "2.1.4": {
-          "sha1": "5ef5ba1240c38b6d659496a386e1362184ceb843",
-          "sha256": "0dda8ddd5ca34a55be4520cf270745fc1069f0b5d334dc6f4a9a751fde6746e9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/12.04/push-jobs-client_2.1.4-1_i386.deb"
-        }
-      },
-      "x86_64": {
-        "1.3.3": {
-          "sha1": "4782c101cff5d01fff9030d5a19a3926f658504a",
-          "sha256": "920d205d1d3f432b47eb6b70d8f3e73d734f6ed626622942d574d2de573f030f",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/ubuntu/12.04/push-jobs-client_1.3.3-1_amd64.deb"
-        },
-        "1.3.4": {
-          "sha1": "8f9d280a0d555f5970953b095bb4ecef846efd60",
-          "sha256": "ad2f057b67511ca8866adf136e8c3984a814710a7bfc7d1a67f000912c58d938",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/ubuntu/12.04/push-jobs-client_1.3.4-1_amd64.deb"
-        },
-        "2.1.0": {
-          "sha1": "36b294b739cbc9f55387dd322281c41096ce9a72",
-          "sha256": "385cbee101c04c612532d4cafea2e8c08b8ae98183e31080407077840f134fd6",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/ubuntu/12.04/push-jobs-client_2.1.0-1_amd64.deb"
-        },
-        "2.1.1": {
-          "sha1": "ed47eb75a041c59afbcab3c575e630f4682f3ccb",
-          "sha256": "3c7e54dba282703c3c95acd608d7337cabc26140f64c3e3f133c3474836a48e9",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/ubuntu/12.04/push-jobs-client_2.1.1-1_amd64.deb"
-        },
-        "2.1.3": {
-          "sha1": "bc8339379aeaf8094570ee27fc54babd49dc2975",
-          "sha256": "1eec0c2bb501a936bcd183e155f229ab585ecfb363389312a4a664e4b1bf0269",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/ubuntu/12.04/push-jobs-client_2.1.3-1_amd64.deb"
-        },
-        "2.1.4": {
-          "sha1": "1c220a0e6b5f3c4abaa5ab09570215fce4be8984",
-          "sha256": "ea8e967a723bf051d0856d7097edb714e15c4f4f6889e32ab86aec5f7b94fd1d",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/12.04/push-jobs-client_2.1.4-1_amd64.deb"
+        "2.5.6": {
+          "sha1": "7ff528a047731d9e4fe161791718503b0ecd3750",
+          "sha256": "ccfaa7d72253ade72c1eaec4c346b2cce16160d7ebda9b1de2c13a871251bbfa",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/ubuntu/14.04/push-jobs-client_2.5.6-1_i386.deb"
         }
       }
     },
@@ -532,6 +901,41 @@
           "sha1": "1c220a0e6b5f3c4abaa5ab09570215fce4be8984",
           "sha256": "ea8e967a723bf051d0856d7097edb714e15c4f4f6889e32ab86aec5f7b94fd1d",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/16.04/push-jobs-client_2.1.4-1_amd64.deb"
+        },
+        "2.3.5": {
+          "sha1": "5a225bb9fb01c1aaa8802cca9567a56627878f14",
+          "sha256": "8da265d580cfbb94449da05407b0ea1cb53a016a0c9fbe81b78bf8ccba66152b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/16.04/push-jobs-client_2.3.5-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "ef317f4e2bcc12873c7e61cc54e33a3799ee6660",
+          "sha256": "1536a90749a8c4d9bbfd3ca151befa2a36a9e7c6b3d5a3dbddf31c52b20563fc",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/16.04/push-jobs-client_2.4.1-1_amd64.deb"
+        },
+        "2.4.4": {
+          "sha1": "e231fb0049cccb490ebfac74a49eabee285cbfc9",
+          "sha256": "a07876c7865979855c3540117dde4d107bae5caa7aeca5d0b2a038ef51d516f8",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/ubuntu/16.04/push-jobs-client_2.4.4-1_amd64.deb"
+        },
+        "2.4.5": {
+          "sha1": "78ad12df7802ac26641868ec0106f4aa853ef31a",
+          "sha256": "7fd34af01792b55e5c80094945cee1cae9baeccd38bda2c8933a5607576b1711",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/ubuntu/16.04/push-jobs-client_2.4.5-1_amd64.deb"
+        },
+        "2.4.8": {
+          "sha1": "456d87ae5e1204b4c97857095af232198fe849f4",
+          "sha256": "fadec562defbeeeae2cee0ce7462932b7f960c214f89f045aa6d0e67f5798c08",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/ubuntu/16.04/push-jobs-client_2.4.8-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "ab87b613a34b6d9fef2ba0533e672b98fa58c96b",
+          "sha256": "8b2ed3bb34e339009414b8784803693192acef41288aae31492f85a47694d498",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/ubuntu/16.04/push-jobs-client_2.5.0-1_amd64.deb"
+        },
+        "2.5.6": {
+          "sha1": "934bb057aeb71628d7a18fedea1422850d59e25b",
+          "sha256": "d0cb7a3910b07b51dbb311657a09d513e0f89a3a6fb062844e72bec839abda32",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/ubuntu/16.04/push-jobs-client_2.5.6-1_amd64.deb"
         }
       },
       "i386": {
@@ -549,34 +953,273 @@
           "sha1": "5ef5ba1240c38b6d659496a386e1362184ceb843",
           "sha256": "0dda8ddd5ca34a55be4520cf270745fc1069f0b5d334dc6f4a9a751fde6746e9",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/ubuntu/16.04/push-jobs-client_2.1.4-1_i386.deb"
+        },
+        "2.3.5": {
+          "sha1": "dc047f6f23b3cedae4b63ec47bcc622a0fbc8341",
+          "sha256": "225537e8a9e351ec404bcc73357fde4a0f5a40c3f6986439acf73874dc362e3c",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/ubuntu/16.04/push-jobs-client_2.3.5-1_i386.deb"
+        },
+        "2.4.1": {
+          "sha1": "f4f93cbaa4ea7bb9a7b2deaf1a1606bb5f242b94",
+          "sha256": "ead2979a6b8735be6f45457568792ec74f3d7352d42659a2f011834709a97ee6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/ubuntu/16.04/push-jobs-client_2.4.1-1_i386.deb"
+        },
+        "2.4.4": {
+          "sha1": "de06922c16567d7f3a8275bfa1090fedec5bb89a",
+          "sha256": "bcd7f22d4327954d96e3ddfef08db5c3d846d90734e3fbb1864ec3a3a139321b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/ubuntu/16.04/push-jobs-client_2.4.4-1_i386.deb"
+        },
+        "2.4.5": {
+          "sha1": "83ba1050cbe6230f0387635e8897e324ea984f25",
+          "sha256": "cdaa44b2bb370e1a2466efc62b0372ed8a8f18e9c29cd3444fba9f857fc76558",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/ubuntu/16.04/push-jobs-client_2.4.5-1_i386.deb"
+        },
+        "2.4.8": {
+          "sha1": "df6dd6d038d12ac2588925eac104d1c637d4d208",
+          "sha256": "4ccde07c42b40f19156d820aa7b210b6826bb1ff6c2c547a0d1d6a44ff15b1fb",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/ubuntu/16.04/push-jobs-client_2.4.8-1_i386.deb"
+        },
+        "2.5.0": {
+          "sha1": "3697985775d7d65605bc9fb289e0f101be1356b6",
+          "sha256": "b837b8097a319b5d4bdf238ae1e52bfe59d6e6eaca76fb1362c4210fadeb8f8a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/ubuntu/16.04/push-jobs-client_2.5.0-1_i386.deb"
+        }
+      }
+    },
+    "18.04": {
+      "x86_64": {
+        "2.5.6": {
+          "sha1": "934bb057aeb71628d7a18fedea1422850d59e25b",
+          "sha256": "d0cb7a3910b07b51dbb311657a09d513e0f89a3a6fb062844e72bec839abda32",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/ubuntu/18.04/push-jobs-client_2.5.6-1_amd64.deb"
         }
       }
     }
   },
   "windows": {
     "2008r2": {
-      "i386": {
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "1a7429b44beb964e5a9684c363aa63c4579370ff",
+          "sha256": "ab59ca63186aada10e3d13886a3981d2576f8316361a65d484e7d9010e8e803a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/windows/2008r2/push-jobs-client-1.3.3-1.msi"
+        },
+        "1.3.4": {
+          "sha1": "a2de8f991a363e96771ff8472a4fa044a2c78728",
+          "sha256": "622f6fa1f1f9828ada9c3f44b82f4abb90522050d961d373d19990db4e6a124a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/windows/2008r2/push-jobs-client-1.3.4-1.msi"
+        },
         "2.1.0": {
           "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
           "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012r2/push-jobs-client-2.1.0-1-x86.msi"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2008r2/push-jobs-client-2.1.0-1-x86.msi"
         },
         "2.1.1": {
           "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
           "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012r2/push-jobs-client-2.1.1-1-x86.msi"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2008r2/push-jobs-client-2.1.1-1-x86.msi"
         },
         "2.1.3": {
           "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
           "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012r2/push-jobs-client-2.1.3-1-x86.msi"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2008r2/push-jobs-client-2.1.3-1-x86.msi"
         },
         "2.1.4": {
           "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
           "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012r2/push-jobs-client-2.1.4-1-x86.msi"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2008r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "38f1500e2c454a2ab288b7226a75957351d282ce",
+          "sha256": "fe95f3784c2fac2c7731b5268ce8de9a3cffb21e91d290faeae81d5ae4ab1625",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2008r2/push-jobs-client-2.3.5-1-x64.msi"
+        },
+        "2.4.1": {
+          "sha1": "704264bfc1e09efc2edda594d5213886151120c6",
+          "sha256": "0091257323ea564b10e1a7a3e5180a5d875d6c9a1dcdda97064b25901bf8e3c2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2008r2/push-jobs-client-2.4.1-1-x64.msi"
+        },
+        "2.4.4": {
+          "sha1": "ac843eb1178bbcc4415749e33e6f0e10ae046164",
+          "sha256": "120bd09d15835aa51ae98f37fe5606beec219f2b9aefc58b0fb1fdf852dffb80",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2008r2/push-jobs-client-2.4.4-1-x64.msi"
+        },
+        "2.4.5": {
+          "sha1": "9b403bf36d4df7790cc6f2649462710de24f3c9a",
+          "sha256": "b586ac7ed6a421cf0a81b2ac8e900441c6836b69f1b6ccee87aa40fb24486b19",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2008r2/push-jobs-client-2.4.5-1-x64.msi"
         }
       },
+      "i386": {
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2008r2/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2008r2/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2008r2/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2008r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "1f962cd58bbf3420ac3d3dcb0f734e7cde4f8246",
+          "sha256": "5c0d64be09743a0a28d40d4bbbd15e7f3dc7a347aed9d01b385a5b14fa0d174f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2008r2/push-jobs-client-2.3.5-1-x86.msi"
+        },
+        "2.4.1": {
+          "sha1": "b65e71c19438e68ed4cea0c244e5beb0ce48a7ee",
+          "sha256": "7a052321f32f5999fa48e938b44766ce1bf3a98497857b6f1d4b3a979159721e",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2008r2/push-jobs-client-2.4.1-1-x86.msi"
+        },
+        "2.4.4": {
+          "sha1": "6b2398b5173223b5658995f78bacd4143b67c5ca",
+          "sha256": "478a6cc38ade3c512e6d2e547e11c9cac738d5166a03e795fc924e9b56e0c21b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2008r2/push-jobs-client-2.4.4-1-x86.msi"
+        },
+        "2.4.5": {
+          "sha1": "f9eea48ad8bfdefb727cff3c886b4b9e606e48f3",
+          "sha256": "69a80079658b7511a0624dd0f5bdc43f75133f272384363a64891a0616e6e936",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2008r2/push-jobs-client-2.4.5-1-x86.msi"
+        }
+      }
+    },
+    "2012": {
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "1a7429b44beb964e5a9684c363aa63c4579370ff",
+          "sha256": "ab59ca63186aada10e3d13886a3981d2576f8316361a65d484e7d9010e8e803a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/windows/2012/push-jobs-client-1.3.3-1.msi"
+        },
+        "1.3.4": {
+          "sha1": "a2de8f991a363e96771ff8472a4fa044a2c78728",
+          "sha256": "622f6fa1f1f9828ada9c3f44b82f4abb90522050d961d373d19990db4e6a124a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/windows/2012/push-jobs-client-1.3.4-1.msi"
+        },
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "38f1500e2c454a2ab288b7226a75957351d282ce",
+          "sha256": "fe95f3784c2fac2c7731b5268ce8de9a3cffb21e91d290faeae81d5ae4ab1625",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012/push-jobs-client-2.3.5-1-x64.msi"
+        },
+        "2.4.1": {
+          "sha1": "704264bfc1e09efc2edda594d5213886151120c6",
+          "sha256": "0091257323ea564b10e1a7a3e5180a5d875d6c9a1dcdda97064b25901bf8e3c2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012/push-jobs-client-2.4.1-1-x64.msi"
+        },
+        "2.4.4": {
+          "sha1": "ac843eb1178bbcc4415749e33e6f0e10ae046164",
+          "sha256": "120bd09d15835aa51ae98f37fe5606beec219f2b9aefc58b0fb1fdf852dffb80",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012/push-jobs-client-2.4.4-1-x64.msi"
+        },
+        "2.4.5": {
+          "sha1": "9b403bf36d4df7790cc6f2649462710de24f3c9a",
+          "sha256": "b586ac7ed6a421cf0a81b2ac8e900441c6836b69f1b6ccee87aa40fb24486b19",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012/push-jobs-client-2.4.5-1-x64.msi"
+        },
+        "2.4.8": {
+          "sha1": "d8e27c24bf79dc031bfbd09f949eeaa3721ad962",
+          "sha256": "feff66401660d9e7be80b27d8665741661025459233c524dffd9ae8973a9c331",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012/push-jobs-client-2.4.8-1-x64.msi"
+        },
+        "2.5.0": {
+          "sha1": "69f8bcc83bd5a7011134a975074ef214c579e63e",
+          "sha256": "e250442f42696223ca04aa10dc364491adbe1676a70b8e485c6b82ce0ba0d0c8",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012/push-jobs-client-2.5.0-1-x64.msi"
+        },
+        "2.5.6": {
+          "sha1": "62fa2616f36867b6841ccf6c062adfc8ac908811",
+          "sha256": "6f4de28ee016b72a3ecfb8faf21d5031162afe5281fc7a9f736314f3e0279fe2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012/push-jobs-client-2.5.6-1-x64.msi"
+        }
+      },
+      "i386": {
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "1f962cd58bbf3420ac3d3dcb0f734e7cde4f8246",
+          "sha256": "5c0d64be09743a0a28d40d4bbbd15e7f3dc7a347aed9d01b385a5b14fa0d174f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012/push-jobs-client-2.3.5-1-x86.msi"
+        },
+        "2.4.1": {
+          "sha1": "b65e71c19438e68ed4cea0c244e5beb0ce48a7ee",
+          "sha256": "7a052321f32f5999fa48e938b44766ce1bf3a98497857b6f1d4b3a979159721e",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012/push-jobs-client-2.4.1-1-x86.msi"
+        },
+        "2.4.4": {
+          "sha1": "6b2398b5173223b5658995f78bacd4143b67c5ca",
+          "sha256": "478a6cc38ade3c512e6d2e547e11c9cac738d5166a03e795fc924e9b56e0c21b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012/push-jobs-client-2.4.4-1-x86.msi"
+        },
+        "2.4.5": {
+          "sha1": "f9eea48ad8bfdefb727cff3c886b4b9e606e48f3",
+          "sha256": "69a80079658b7511a0624dd0f5bdc43f75133f272384363a64891a0616e6e936",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012/push-jobs-client-2.4.5-1-x86.msi"
+        },
+        "2.4.8": {
+          "sha1": "7c82f7c778d9569b989f5fc781839cfdb41c00d2",
+          "sha256": "d7aa33c6c3578925f43cdc43ad09fd9cd0ac48e875ef843738374e711022b854",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012/push-jobs-client-2.4.8-1-x86.msi"
+        },
+        "2.5.0": {
+          "sha1": "764cfea3f279e9d75fecfe7c18a6b1c186a315ec",
+          "sha256": "d56911d754699e6c236cdac5c3f93da6e58141dbe0449302e59cd183259a1a4d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012/push-jobs-client-2.5.0-1-x86.msi"
+        },
+        "2.5.6": {
+          "sha1": "15f0c9d077fee8ba3c20cf865af1b38d63f0e747",
+          "sha256": "fecbb447dc89548e3a55b388d29362a4721a0c05a447ca0c902b1bd3bb2787a7",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012/push-jobs-client-2.5.6-1-x86.msi"
+        }
+      }
+    },
+    "2012r2": {
       "x86_64": {
         "1.3.3": {
           "sha1": "1a7429b44beb964e5a9684c363aa63c4579370ff",
@@ -607,32 +1250,270 @@
           "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
           "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "38f1500e2c454a2ab288b7226a75957351d282ce",
+          "sha256": "fe95f3784c2fac2c7731b5268ce8de9a3cffb21e91d290faeae81d5ae4ab1625",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012r2/push-jobs-client-2.3.5-1-x64.msi"
+        },
+        "2.4.1": {
+          "sha1": "704264bfc1e09efc2edda594d5213886151120c6",
+          "sha256": "0091257323ea564b10e1a7a3e5180a5d875d6c9a1dcdda97064b25901bf8e3c2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012r2/push-jobs-client-2.4.1-1-x64.msi"
+        },
+        "2.4.4": {
+          "sha1": "ac843eb1178bbcc4415749e33e6f0e10ae046164",
+          "sha256": "120bd09d15835aa51ae98f37fe5606beec219f2b9aefc58b0fb1fdf852dffb80",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012r2/push-jobs-client-2.4.4-1-x64.msi"
+        },
+        "2.4.5": {
+          "sha1": "9b403bf36d4df7790cc6f2649462710de24f3c9a",
+          "sha256": "b586ac7ed6a421cf0a81b2ac8e900441c6836b69f1b6ccee87aa40fb24486b19",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012r2/push-jobs-client-2.4.5-1-x64.msi"
+        },
+        "2.4.8": {
+          "sha1": "d8e27c24bf79dc031bfbd09f949eeaa3721ad962",
+          "sha256": "feff66401660d9e7be80b27d8665741661025459233c524dffd9ae8973a9c331",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012r2/push-jobs-client-2.4.8-1-x64.msi"
+        },
+        "2.5.0": {
+          "sha1": "69f8bcc83bd5a7011134a975074ef214c579e63e",
+          "sha256": "e250442f42696223ca04aa10dc364491adbe1676a70b8e485c6b82ce0ba0d0c8",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012r2/push-jobs-client-2.5.0-1-x64.msi"
+        },
+        "2.5.6": {
+          "sha1": "62fa2616f36867b6841ccf6c062adfc8ac908811",
+          "sha256": "6f4de28ee016b72a3ecfb8faf21d5031162afe5281fc7a9f736314f3e0279fe2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012r2/push-jobs-client-2.5.6-1-x64.msi"
+        }
+      },
+      "i386": {
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012r2/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012r2/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012r2/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "1f962cd58bbf3420ac3d3dcb0f734e7cde4f8246",
+          "sha256": "5c0d64be09743a0a28d40d4bbbd15e7f3dc7a347aed9d01b385a5b14fa0d174f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012r2/push-jobs-client-2.3.5-1-x86.msi"
+        },
+        "2.4.1": {
+          "sha1": "b65e71c19438e68ed4cea0c244e5beb0ce48a7ee",
+          "sha256": "7a052321f32f5999fa48e938b44766ce1bf3a98497857b6f1d4b3a979159721e",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012r2/push-jobs-client-2.4.1-1-x86.msi"
+        },
+        "2.4.4": {
+          "sha1": "6b2398b5173223b5658995f78bacd4143b67c5ca",
+          "sha256": "478a6cc38ade3c512e6d2e547e11c9cac738d5166a03e795fc924e9b56e0c21b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012r2/push-jobs-client-2.4.4-1-x86.msi"
+        },
+        "2.4.5": {
+          "sha1": "f9eea48ad8bfdefb727cff3c886b4b9e606e48f3",
+          "sha256": "69a80079658b7511a0624dd0f5bdc43f75133f272384363a64891a0616e6e936",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012r2/push-jobs-client-2.4.5-1-x86.msi"
+        },
+        "2.4.8": {
+          "sha1": "7c82f7c778d9569b989f5fc781839cfdb41c00d2",
+          "sha256": "d7aa33c6c3578925f43cdc43ad09fd9cd0ac48e875ef843738374e711022b854",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012r2/push-jobs-client-2.4.8-1-x86.msi"
+        },
+        "2.5.0": {
+          "sha1": "764cfea3f279e9d75fecfe7c18a6b1c186a315ec",
+          "sha256": "d56911d754699e6c236cdac5c3f93da6e58141dbe0449302e59cd183259a1a4d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012r2/push-jobs-client-2.5.0-1-x86.msi"
+        },
+        "2.5.6": {
+          "sha1": "15f0c9d077fee8ba3c20cf865af1b38d63f0e747",
+          "sha256": "fecbb447dc89548e3a55b388d29362a4721a0c05a447ca0c902b1bd3bb2787a7",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012r2/push-jobs-client-2.5.6-1-x86.msi"
+        }
+      }
+    },
+    "10": {
+      "x86_64": {
+        "1.3.3": {
+          "sha1": "1a7429b44beb964e5a9684c363aa63c4579370ff",
+          "sha256": "ab59ca63186aada10e3d13886a3981d2576f8316361a65d484e7d9010e8e803a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.3/windows/2012r2/push-jobs-client-1.3.3-1.msi"
+        },
+        "1.3.4": {
+          "sha1": "a2de8f991a363e96771ff8472a4fa044a2c78728",
+          "sha256": "622f6fa1f1f9828ada9c3f44b82f4abb90522050d961d373d19990db4e6a124a",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/1.3.4/windows/2012r2/push-jobs-client-1.3.4-1.msi"
+        },
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012r2/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012r2/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012r2/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "38f1500e2c454a2ab288b7226a75957351d282ce",
+          "sha256": "fe95f3784c2fac2c7731b5268ce8de9a3cffb21e91d290faeae81d5ae4ab1625",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012r2/push-jobs-client-2.3.5-1-x64.msi"
+        },
+        "2.4.1": {
+          "sha1": "704264bfc1e09efc2edda594d5213886151120c6",
+          "sha256": "0091257323ea564b10e1a7a3e5180a5d875d6c9a1dcdda97064b25901bf8e3c2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012r2/push-jobs-client-2.4.1-1-x64.msi"
+        },
+        "2.4.4": {
+          "sha1": "ac843eb1178bbcc4415749e33e6f0e10ae046164",
+          "sha256": "120bd09d15835aa51ae98f37fe5606beec219f2b9aefc58b0fb1fdf852dffb80",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012r2/push-jobs-client-2.4.4-1-x64.msi"
+        },
+        "2.4.5": {
+          "sha1": "9b403bf36d4df7790cc6f2649462710de24f3c9a",
+          "sha256": "b586ac7ed6a421cf0a81b2ac8e900441c6836b69f1b6ccee87aa40fb24486b19",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012r2/push-jobs-client-2.4.5-1-x64.msi"
+        },
+        "2.4.8": {
+          "sha1": "d8e27c24bf79dc031bfbd09f949eeaa3721ad962",
+          "sha256": "feff66401660d9e7be80b27d8665741661025459233c524dffd9ae8973a9c331",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012r2/push-jobs-client-2.4.8-1-x64.msi"
+        },
+        "2.5.0": {
+          "sha1": "69f8bcc83bd5a7011134a975074ef214c579e63e",
+          "sha256": "e250442f42696223ca04aa10dc364491adbe1676a70b8e485c6b82ce0ba0d0c8",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012r2/push-jobs-client-2.5.0-1-x64.msi"
+        },
+        "2.5.6": {
+          "sha1": "62fa2616f36867b6841ccf6c062adfc8ac908811",
+          "sha256": "6f4de28ee016b72a3ecfb8faf21d5031162afe5281fc7a9f736314f3e0279fe2",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012r2/push-jobs-client-2.5.6-1-x64.msi"
+        }
+      },
+      "i386": {
+        "2.1.0": {
+          "sha1": "a14a29b001c1e6d21c8d15192071f4854ce4184b",
+          "sha256": "d86b37a67a12b0b91a1c25d4cdc0667721d80b74f5cd1891ff97597129b76b59",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/windows/2012r2/push-jobs-client-2.1.0-1-x86.msi"
+        },
+        "2.1.1": {
+          "sha1": "922a9ad60728d38efbf68545156d9d0bc053a007",
+          "sha256": "b8e76d54bb931949bcc94a6c764ccebda0e6957820b0c3fe62c96e6c3a184d9f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/windows/2012r2/push-jobs-client-2.1.1-1-x86.msi"
+        },
+        "2.1.3": {
+          "sha1": "4ccb0b29a9c7c70ec7346bdadb9eb8a2fb342436",
+          "sha256": "68f3c656ae8d4c8e36c5556069176753c7d143b4d410efc9deccbebc8a494976",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/windows/2012r2/push-jobs-client-2.1.3-1-x86.msi"
+        },
+        "2.1.4": {
+          "sha1": "5d94d17c873ffa0b6c613b125b0433c6ab8ab8e9",
+          "sha256": "3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012r2/push-jobs-client-2.1.4-1-x86.msi"
+        },
+        "2.3.5": {
+          "sha1": "1f962cd58bbf3420ac3d3dcb0f734e7cde4f8246",
+          "sha256": "5c0d64be09743a0a28d40d4bbbd15e7f3dc7a347aed9d01b385a5b14fa0d174f",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/windows/2012r2/push-jobs-client-2.3.5-1-x86.msi"
+        },
+        "2.4.1": {
+          "sha1": "b65e71c19438e68ed4cea0c244e5beb0ce48a7ee",
+          "sha256": "7a052321f32f5999fa48e938b44766ce1bf3a98497857b6f1d4b3a979159721e",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/windows/2012r2/push-jobs-client-2.4.1-1-x86.msi"
+        },
+        "2.4.4": {
+          "sha1": "6b2398b5173223b5658995f78bacd4143b67c5ca",
+          "sha256": "478a6cc38ade3c512e6d2e547e11c9cac738d5166a03e795fc924e9b56e0c21b",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.4/windows/2012r2/push-jobs-client-2.4.4-1-x86.msi"
+        },
+        "2.4.5": {
+          "sha1": "f9eea48ad8bfdefb727cff3c886b4b9e606e48f3",
+          "sha256": "69a80079658b7511a0624dd0f5bdc43f75133f272384363a64891a0616e6e936",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/windows/2012r2/push-jobs-client-2.4.5-1-x86.msi"
+        },
+        "2.4.8": {
+          "sha1": "7c82f7c778d9569b989f5fc781839cfdb41c00d2",
+          "sha256": "d7aa33c6c3578925f43cdc43ad09fd9cd0ac48e875ef843738374e711022b854",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/windows/2012r2/push-jobs-client-2.4.8-1-x86.msi"
+        },
+        "2.5.0": {
+          "sha1": "764cfea3f279e9d75fecfe7c18a6b1c186a315ec",
+          "sha256": "d56911d754699e6c236cdac5c3f93da6e58141dbe0449302e59cd183259a1a4d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/windows/2012r2/push-jobs-client-2.5.0-1-x86.msi"
+        },
+        "2.5.6": {
+          "sha1": "15f0c9d077fee8ba3c20cf865af1b38d63f0e747",
+          "sha256": "fecbb447dc89548e3a55b388d29362a4721a0c05a447ca0c902b1bd3bb2787a7",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/windows/2012r2/push-jobs-client-2.5.6-1-x86.msi"
         }
       }
     }
   },
   "mac_os_x": {
-    "10.9": {
+    "10.10": {
       "x86_64": {
         "2.1.0": {
           "sha1": "b3cf4f5d4626f879cd59b8c4a3a017ce017b07fc",
           "sha256": "77fd61f945ce59aa869955a134fd80ddd7754cc1d5d9a15fc43ec15d163bf07d",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/mac_os_x/10.9/push-jobs-client-2.1.0-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/mac_os_x/10.10/push-jobs-client-2.1.0-1.dmg"
         },
         "2.1.1": {
           "sha1": "59b91be573cbf27111a6a84bd8a37fb196bfe6a4",
           "sha256": "99b50fe1d8ef1dd3fad94175f0226c7dc8cb599075b02cf04523361a7300dadc",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/mac_os_x/10.9/push-jobs-client-2.1.1-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/mac_os_x/10.10/push-jobs-client-2.1.1-1.dmg"
         },
         "2.1.3": {
           "sha1": "883d1a5e5477e2c9b6cdab83bd30a0f53aa622a0",
           "sha256": "fc78526f26e8bf838fcc26a981d29afedc010413a087757ada636296d1b3a4fe",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/mac_os_x/10.9/push-jobs-client-2.1.3-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/mac_os_x/10.10/push-jobs-client-2.1.3-1.dmg"
         },
         "2.1.4": {
           "sha1": "83b7c2f343e20ecbb2d45d78f971832b980a1aeb",
           "sha256": "25bf4f6ebd323e88aec805194e33c7a8dc2652df843bfb284c6b4f9f79589e30",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.9/push-jobs-client-2.1.4-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.10/push-jobs-client-2.1.4-1.dmg"
+        },
+        "2.3.5": {
+          "sha1": "dd026af051336e1b3a54ab93497a617edb916e69",
+          "sha256": "d06218ff05fba301d41b6151563139b490575df3f7f3fea6c96c1fadc843aaf0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/mac_os_x/10.10/push-jobs-client-2.3.5-1.dmg"
+        },
+        "2.4.1": {
+          "sha1": "2dfc436913a075573ab1d3a81d7d0a1a0ccfa4e7",
+          "sha256": "b8963461d4ee6b4a7cf7ed0037556bba0929f42da8e54b96071baa925d31bbf1",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/mac_os_x/10.10/push-jobs-client-2.4.1-1.dmg"
+        },
+        "2.4.5": {
+          "sha1": "51cd9241238472af62b53a67fe4bceefd0ad5cc6",
+          "sha256": "360c01eafaa944ef9a82d58b95c1e62a5c55f72af8be68181ce8231bff04bf5d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/mac_os_x/10.10/push-jobs-client-2.4.5-1.dmg"
+        },
+        "2.4.8": {
+          "sha1": "58851b800cdbba155e9e6bf96c4ce6e350659026",
+          "sha256": "e2e492283c8c247f76a40d361753d5b175245fd5b30d635e0c5d0ed9ef7f40b3",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/mac_os_x/10.10/push-jobs-client-2.4.8-1.dmg"
         }
       }
     },
@@ -657,30 +1538,60 @@
           "sha1": "83b7c2f343e20ecbb2d45d78f971832b980a1aeb",
           "sha256": "25bf4f6ebd323e88aec805194e33c7a8dc2652df843bfb284c6b4f9f79589e30",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.11/push-jobs-client-2.1.4-1.dmg"
+        },
+        "2.3.5": {
+          "sha1": "dd026af051336e1b3a54ab93497a617edb916e69",
+          "sha256": "d06218ff05fba301d41b6151563139b490575df3f7f3fea6c96c1fadc843aaf0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/mac_os_x/10.11/push-jobs-client-2.3.5-1.dmg"
+        },
+        "2.4.1": {
+          "sha1": "2dfc436913a075573ab1d3a81d7d0a1a0ccfa4e7",
+          "sha256": "b8963461d4ee6b4a7cf7ed0037556bba0929f42da8e54b96071baa925d31bbf1",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/mac_os_x/10.11/push-jobs-client-2.4.1-1.dmg"
+        },
+        "2.4.5": {
+          "sha1": "51cd9241238472af62b53a67fe4bceefd0ad5cc6",
+          "sha256": "360c01eafaa944ef9a82d58b95c1e62a5c55f72af8be68181ce8231bff04bf5d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/mac_os_x/10.11/push-jobs-client-2.4.5-1.dmg"
+        },
+        "2.4.8": {
+          "sha1": "58851b800cdbba155e9e6bf96c4ce6e350659026",
+          "sha256": "e2e492283c8c247f76a40d361753d5b175245fd5b30d635e0c5d0ed9ef7f40b3",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/mac_os_x/10.11/push-jobs-client-2.4.8-1.dmg"
+        },
+        "2.5.0": {
+          "sha1": "11378e7808432dae7af8a7e66ce80d3a44df43be",
+          "sha256": "d5d8035573ea9ce8267e34cf015e4b12d8dd37fccd3e34bec0fcd7416e7fa1c0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/mac_os_x/10.11/push-jobs-client-2.5.0-1.dmg"
+        },
+        "2.5.6": {
+          "sha1": "5f786062601223b3c349d6b663757d88440300e2",
+          "sha256": "9dcf7a557ae8c27cdd892b732e7c2236bd7a19abffd9c558b41ac34d536cf9bf",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/mac_os_x/10.11/push-jobs-client-2.5.6-1.dmg"
         }
       }
     },
-    "10.10": {
+    "10.9": {
       "x86_64": {
         "2.1.0": {
           "sha1": "b3cf4f5d4626f879cd59b8c4a3a017ce017b07fc",
           "sha256": "77fd61f945ce59aa869955a134fd80ddd7754cc1d5d9a15fc43ec15d163bf07d",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/mac_os_x/10.10/push-jobs-client-2.1.0-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.0/mac_os_x/10.9/push-jobs-client-2.1.0-1.dmg"
         },
         "2.1.1": {
           "sha1": "59b91be573cbf27111a6a84bd8a37fb196bfe6a4",
           "sha256": "99b50fe1d8ef1dd3fad94175f0226c7dc8cb599075b02cf04523361a7300dadc",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/mac_os_x/10.10/push-jobs-client-2.1.1-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.1/mac_os_x/10.9/push-jobs-client-2.1.1-1.dmg"
         },
         "2.1.3": {
           "sha1": "883d1a5e5477e2c9b6cdab83bd30a0f53aa622a0",
           "sha256": "fc78526f26e8bf838fcc26a981d29afedc010413a087757ada636296d1b3a4fe",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/mac_os_x/10.10/push-jobs-client-2.1.3-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.3/mac_os_x/10.9/push-jobs-client-2.1.3-1.dmg"
         },
         "2.1.4": {
           "sha1": "83b7c2f343e20ecbb2d45d78f971832b980a1aeb",
           "sha256": "25bf4f6ebd323e88aec805194e33c7a8dc2652df843bfb284c6b4f9f79589e30",
-          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.10/push-jobs-client-2.1.4-1.dmg"
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.9/push-jobs-client-2.1.4-1.dmg"
         }
       }
     },
@@ -695,11 +1606,90 @@
           "sha1": "83b7c2f343e20ecbb2d45d78f971832b980a1aeb",
           "sha256": "25bf4f6ebd323e88aec805194e33c7a8dc2652df843bfb284c6b4f9f79589e30",
           "url": "https://packages.chef.io/files/stable/push-jobs-client/2.1.4/mac_os_x/10.12/push-jobs-client-2.1.4-1.dmg"
+        },
+        "2.3.5": {
+          "sha1": "dd026af051336e1b3a54ab93497a617edb916e69",
+          "sha256": "d06218ff05fba301d41b6151563139b490575df3f7f3fea6c96c1fadc843aaf0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.3.5/mac_os_x/10.12/push-jobs-client-2.3.5-1.dmg"
+        },
+        "2.4.1": {
+          "sha1": "2dfc436913a075573ab1d3a81d7d0a1a0ccfa4e7",
+          "sha256": "b8963461d4ee6b4a7cf7ed0037556bba0929f42da8e54b96071baa925d31bbf1",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.1/mac_os_x/10.12/push-jobs-client-2.4.1-1.dmg"
+        },
+        "2.4.5": {
+          "sha1": "51cd9241238472af62b53a67fe4bceefd0ad5cc6",
+          "sha256": "360c01eafaa944ef9a82d58b95c1e62a5c55f72af8be68181ce8231bff04bf5d",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.5/mac_os_x/10.12/push-jobs-client-2.4.5-1.dmg"
+        },
+        "2.4.8": {
+          "sha1": "58851b800cdbba155e9e6bf96c4ce6e350659026",
+          "sha256": "e2e492283c8c247f76a40d361753d5b175245fd5b30d635e0c5d0ed9ef7f40b3",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/mac_os_x/10.12/push-jobs-client-2.4.8-1.dmg"
+        },
+        "2.5.0": {
+          "sha1": "11378e7808432dae7af8a7e66ce80d3a44df43be",
+          "sha256": "d5d8035573ea9ce8267e34cf015e4b12d8dd37fccd3e34bec0fcd7416e7fa1c0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/mac_os_x/10.12/push-jobs-client-2.5.0-1.dmg"
+        },
+        "2.5.6": {
+          "sha1": "5f786062601223b3c349d6b663757d88440300e2",
+          "sha256": "9dcf7a557ae8c27cdd892b732e7c2236bd7a19abffd9c558b41ac34d536cf9bf",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/mac_os_x/10.12/push-jobs-client-2.5.6-1.dmg"
+        }
+      }
+    },
+    "10.13": {
+      "x86_64": {
+        "2.4.8": {
+          "sha1": "58851b800cdbba155e9e6bf96c4ce6e350659026",
+          "sha256": "e2e492283c8c247f76a40d361753d5b175245fd5b30d635e0c5d0ed9ef7f40b3",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/mac_os_x/10.13/push-jobs-client-2.4.8-1.dmg"
+        },
+        "2.5.0": {
+          "sha1": "11378e7808432dae7af8a7e66ce80d3a44df43be",
+          "sha256": "d5d8035573ea9ce8267e34cf015e4b12d8dd37fccd3e34bec0fcd7416e7fa1c0",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/mac_os_x/10.13/push-jobs-client-2.5.0-1.dmg"
+        },
+        "2.5.6": {
+          "sha1": "5f786062601223b3c349d6b663757d88440300e2",
+          "sha256": "9dcf7a557ae8c27cdd892b732e7c2236bd7a19abffd9c558b41ac34d536cf9bf",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/mac_os_x/10.13/push-jobs-client-2.5.6-1.dmg"
+        }
+      }
+    },
+    "10.14": {
+      "x86_64": {
+        "2.5.6": {
+          "sha1": "5f786062601223b3c349d6b663757d88440300e2",
+          "sha256": "9dcf7a557ae8c27cdd892b732e7c2236bd7a19abffd9c558b41ac34d536cf9bf",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/mac_os_x/10.14/push-jobs-client-2.5.6-1.dmg"
+        }
+      }
+    }
+  },
+  "aix": {
+    "7.1": {
+      "powerpc": {
+        "2.4.8": {
+          "sha1": "d45996da08135e54c23064e83ddede3e30b1ca40",
+          "sha256": "2bf52db5ddb21fcd95acf2e47ee106176f8a045bae9804803ef9db03843fb3e9",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.4.8/aix/7.1/push-jobs-client-2.4.8-1.powerpc.bff"
+        },
+        "2.5.0": {
+          "sha1": "aa994e872dad88a8e1446e2e61c47fb4eb946f15",
+          "sha256": "81a69754d75ea2c9f37481144c301fb1d033f6f68b278c9ad907a0a6fcb2efb6",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.0/aix/7.1/push-jobs-client-2.5.0-1.powerpc.bff"
+        },
+        "2.5.6": {
+          "sha1": "70c58c2df1f78e27ae76b14f6fab472e2b04d428",
+          "sha256": "aa0a5aa541e28b580e5a30bc302955ffc9939795fe8478abc9cabce88fed7125",
+          "url": "https://packages.chef.io/files/stable/push-jobs-client/2.5.6/aix/7.1/push-jobs-client-2.5.6-1.powerpc.bff"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2017-06-22 12:04:04 -0700"
+    "timestamp": "2021-02-23 15:14:27 -0600"
   }
 }

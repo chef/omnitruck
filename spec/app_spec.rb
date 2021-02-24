@@ -72,6 +72,23 @@ context 'Omnitruck' do
       params
     end
 
+    let(:expected_project) { project }
+    let(:expected_channel) { channel }
+    let(:expected_platform) { platform }
+    let(:expected_platform_version) { platform_version }
+    let(:expected_architecture) { architecture }
+    let(:expected_version) { project_version }
+    let(:expected_info) do
+      record = spec_data_record(expected_channel, expected_project, expected_platform, expected_platform_version, expected_architecture, expected_version)
+
+      {
+        url: record['url'],
+        sha256: record['sha256'],
+        sha1: record['sha1'],
+        version: expected_version,
+      }
+    end
+
     let(:endpoint) { nil }
 
     shared_examples_for 'a correct package info' do
@@ -95,10 +112,10 @@ context 'Omnitruck' do
           metadata_json = last_response.body
           parsed_json = JSON.parse(metadata_json)
 
+          expect(parsed_json['version']).to eq(expected_info[:version])
           expect(parsed_json['url']).to eq(expected_info[:url])
           expect(parsed_json['sha256']).to eq(expected_info[:sha256])
           expect(parsed_json['sha1']).to eq(expected_info[:sha1])
-          expect(parsed_json['version']).to eq(expected_info[:version])
         end
 
         it "should serve plain text metadata for package" do
@@ -110,10 +127,10 @@ context 'Omnitruck' do
             metadata
           end
 
+          expect(parsed_metadata['version']).to eq(expected_info[:version])
           expect(parsed_metadata['url']).to eq(expected_info[:url])
           expect(parsed_metadata['sha256']).to eq(expected_info[:sha256])
           expect(parsed_metadata['sha1']).to eq(expected_info[:sha1])
-          expect(parsed_metadata['version']).to eq(expected_info[:version])
         end
       end
 
@@ -167,58 +184,31 @@ context 'Omnitruck' do
       let(:architecture) { 'x86_64' }
 
       shared_examples_for 'automate and delivery compatibility' do
+        let(:expected_project) { 'automate' }
+
         context 'without a version' do
           let(:project_version) { nil }
-          let(:expected_info) do
-            {
-              url: 'https://packages.chef.io/files/stable/automate/0.8.5/el/6/automate-0.8.5-1.el6.x86_64.rpm',
-              sha256: '8819f97aa63f2ae917aab184e3f76db172ffd580175c680bdcab8d98e40e9234',
-              sha1: 'e570e12d3c909896a897b664096e1b6020f3b0aa',
-              version: '0.8.5'
-            }
-          end
+          let(:expected_version) { '1.8.96' }
 
           it_behaves_like 'a correct package info'
         end
 
         context 'latest version' do
           let(:project_version) { 'latest' }
-          let(:expected_info) do
-            {
-              url: 'https://packages.chef.io/files/stable/automate/0.8.5/el/6/automate-0.8.5-1.el6.x86_64.rpm',
-              sha256: '8819f97aa63f2ae917aab184e3f76db172ffd580175c680bdcab8d98e40e9234',
-              sha1: 'e570e12d3c909896a897b664096e1b6020f3b0aa',
-              version: '0.8.5'
-            }
-          end
+          let(:expected_version) { '1.8.96' }
 
           it_behaves_like 'a correct package info'
         end
 
         context 'automate version' do
           let(:project_version) { '0.7.61' }
-          let(:expected_info) do
-            {
-              url: 'https://packages.chef.io/files/stable/automate/0.7.61/el/6/automate-0.7.61-1.el6.x86_64.rpm',
-              sha256: '3f4e43d46b7e0f0e8e767d90e490ad3a1b851457905d6d0d3b3103d8794f045e',
-              sha1: 'b2c09fe004dff285c2a522b552938de3bcecf233',
-              version: '0.7.61'
-            }
-          end
 
           it_behaves_like 'a correct package info'
         end
 
         context 'delivery version' do
           let(:project_version) { '0.4.199' }
-          let(:expected_info) do
-            {
-              url: 'https://packages.chef.io/files/stable/delivery/0.4.199/el/6/delivery-0.4.199-1.el6.x86_64.rpm',
-              sha256: '8d2b908352459033748e6fb9e82e4554f35097a30ad81769d0eba2be3b3c5391',
-              sha1: 'f515826ef21192ca33be39771228e1af1c2e7c10',
-              version: '0.4.199'
-            }
-          end
+          let(:expected_project) { 'delivery' }
 
           it_behaves_like 'a correct package info'
         end
@@ -241,23 +231,18 @@ context 'Omnitruck' do
 
         context 'for amazon linux' do
           let(:platform) { 'amazon' }
+          let(:expected_platform) { 'el' }
 
           context 'for 2018.03' do
             let(:platform_version) { '2018.03' }
+            let(:expected_platform_version) { '6' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/el/6/chef-16.2.73-1.el6.x86_64.rpm',
-                    sha256: 'ba6461cd3425ff021c69567456504b5a483d5983c7ce091296065e76de4a6a70',
-                    sha1: '6f08d2e8f9119c9567b33e40540e2b628a0eb1bd',
-                    version: '16.2.73'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef }
 
                 it_behaves_like 'a correct package info'
               end
@@ -266,20 +251,14 @@ context 'Omnitruck' do
 
           context 'for 2' do
             let(:platform_version) { '2' }
+            let(:expected_platform_version) { '7' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/el/7/chef-16.2.73-1.el7.x86_64.rpm',
-                    sha256: 'f303db725483ee049f5227f963250d4f78ec2ab53ab4bfd70fedbb2c8d500a88',
-                    sha1: 'f8760715679d82608f1e4db7708d1a1464b3f929',
-                    version: '16.2.73'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef }
 
                 it_behaves_like 'a correct package info'
               end
@@ -298,14 +277,7 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/12.2.1/mac_os_x/10.7/chef-12.2.1-1.dmg',
-                    sha256: '53034d6e1eea0028666caee43b99f43d2ca9dd24b260bc53ae5fad1075e83923',
-                    sha1: '57e1b5ef88d0faced5fa68f548d9d827297793d0',
-                    version: '12.2.1'
-                  }
-                end
+                let(:expected_version) { '12.2.1' }
 
                 it_behaves_like 'a correct package info'
               end
@@ -321,14 +293,7 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/15.2.20/mac_os_x/10.12/chef-15.2.20-1.dmg',
-                    sha256: '88a35411f5068d93fec00762ad96579d70a40347aea3067a79050a15503ab298',
-                    sha1: '7b70cdde3fe046510d2ef6f2763b7f833de42144',
-                    version: '15.2.20'
-                  }
-                end
+                let(:expected_version) { '15.2.20' }
 
                 it_behaves_like 'a correct package info'
               end
@@ -343,14 +308,7 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/mac_os_x/10.15/chef-16.2.73-1.dmg',
-                    sha256: '5d2af41204017d907e956d8202269ef5f404b4796a971f3e4f849a8afe7adf70',
-                    sha1: '3ef8f3747931328bc5a16841889e6db27348d8f5',
-                    version: '16.2.73'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef }
 
                 it_behaves_like 'a correct package info'
               end
@@ -358,17 +316,11 @@ context 'Omnitruck' do
 
             context 'for arm64' do
               let(:architecture) { 'arm64' }
+              let(:expected_architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/mac_os_x/10.15/chef-16.2.73-1.dmg',
-                    sha256: '5d2af41204017d907e956d8202269ef5f404b4796a971f3e4f849a8afe7adf70',
-                    sha1: '3ef8f3747931328bc5a16841889e6db27348d8f5',
-                    version: '16.2.73'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef }
 
                 it_behaves_like 'a correct package info'
               end
@@ -383,23 +335,19 @@ context 'Omnitruck' do
           let(:platform) { 'sles' }
 
           shared_examples_for 'sles artifacts' do
+            let(:expected_platform) { 'sles' }
 
             context 'for 11' do
               let(:platform_version) { '11' }
 
               context 'for i686' do
                 let(:architecture) { 'i686' }
+                let(:expected_platform) { 'el' }
+                let(:expected_platform_version) { '5' }
+                let(:expected_architecture) { 'i386' }
 
                 context 'with a version' do
                   let(:project_version) { '12.0.3' }
-                  let(:expected_info) do
-                    {
-                      url: 'http://packages.chef.io/files/stable/chef/12.0.3/el/5/chef-12.0.3-1.i686.rpm',
-                      sha256: '3fb6a9c26af0cc684aa82245b142d6b30ccc5573e9e9cd2dffec0d4e1f671648',
-                      sha1: '724ac9fa973e2d34ff02e54111de96dfa73e86c6',
-                      version: '12.0.3'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
@@ -410,28 +358,13 @@ context 'Omnitruck' do
 
                 context 'without a version' do
                   let(:project_version) { nil }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/15.1.36/sles/11/chef-15.1.36-1.sles11.s390x.rpm',
-                      sha256: 'cefb72e90eaed321f011d7ee21082bd723d7366b1852485ce209585489b82d05',
-                      sha1: '77d8b475ea45ce668f69a9f1272cab0a3415cddc',
-                      version: '15.1.36'
-                    }
-                  end
+                  let(:expected_version) { '15.1.36' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with pre-native sles build version (no remapping)' do
                   let(:project_version) { '12.20.3' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.20.3/sles/11/chef-12.20.3-1.sles11.s390x.rpm',
-                      sha256: '220f0ba4c364d8da16fef6299e08026b76befc786bb4bd9c489cec4d32bcf2e1',
-                      sha1: '1922315d51bbeb23b96bde1dc8926b89b6e1668f',
-                      version: '12.20.3'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
@@ -442,56 +375,28 @@ context 'Omnitruck' do
 
                 context 'without a version' do
                   let(:project_version) { nil }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/15.1.36/sles/11/chef-15.1.36-1.sles11.x86_64.rpm',
-                      sha256: 'a8b0247bbcb5d3e9f29ebdd1730abaff25b9f26b8be4660415b6d10e946746b9',
-                      sha1: 'b94bb58edff0915609003f3e57538062e43c45ec',
-                      version: '15.1.36'
-                    }
-                  end
+                  let(:expected_version) { '15.1.36' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with latest version' do
                   let(:project_version) { 'latest' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/15.1.36/sles/11/chef-15.1.36-1.sles11.x86_64.rpm',
-                      sha256: 'a8b0247bbcb5d3e9f29ebdd1730abaff25b9f26b8be4660415b6d10e946746b9',
-                      sha1: 'b94bb58edff0915609003f3e57538062e43c45ec',
-                      version: '15.1.36'
-                    }
-                  end
+                  let(:expected_version) { '15.1.36' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with first native sles build version' do
                   let(:project_version) { '12.21.1' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.21.1/sles/11/chef-12.21.1-1.sles11.x86_64.rpm',
-                      sha256: 'db1d33e8ee5ecc7018b7d0326a5a86b89dcf7f8f73dd26a502becfd6647845eb',
-                      sha1: 'da8d8cdd37bbe77700b73d2c81c0b1352582baa3',
-                      version: '12.21.1'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with non-native sles build version' do
                   let(:project_version) { '12.20.3' }
-                  let(:expected_info) do
-                    {
-                      url: 'http://packages.chef.io/files/stable/chef/12.20.3/el/5/chef-12.20.3-1.el5.x86_64.rpm',
-                      sha256: '1da12ea03604dae3c2ffe77e7c5bf65ed4fccb5d04b3d46423cf6b448208ba65',
-                      sha1: '0cf57a2971829e5183baf9426ecf5a33bb2327d5',
-                      version: '12.20.3'
-                    }
-                  end
+                  let(:expected_platform) { 'el' }
+                  let(:expected_platform_version) { '5' }
 
                   it_behaves_like 'a correct package info'
                 end
@@ -499,14 +404,9 @@ context 'Omnitruck' do
                 context 'for a latest non-native sles project (manage)' do
                   let(:project) { 'manage' }
                   let(:project_version) { nil }
-                  let(:expected_info) do
-                    {
-                      url: 'http://packages.chef.io/files/stable/chef-manage/2.5.4/el/5/chef-manage-2.5.4-1.el5.x86_64.rpm',
-                      sha256: 'c5367f6dbd6b4c08fa11fa589d21b1aacc52e6bd848dc6b1c1cadb7fcd5f59fd',
-                      sha1: '0a0e4ec206ec02fe0d23e2759c30e1e0607c1064',
-                      version: '2.5.4'
-                    }
-                  end
+                  let(:expected_platform) { 'el' }
+                  let(:expected_platform_version) { '5' }
+                  let(:expected_version) { '2.5.8' }
 
                   it_behaves_like 'a correct package info'
                 end
@@ -521,112 +421,58 @@ context 'Omnitruck' do
 
                 context 'with first native sles build version' do
                   let(:project_version) { '12.21.1' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.21.1/sles/12/chef-12.21.1-1.sles12.x86_64.rpm',
-                      sha256: 'e8705a564e6687e492eca401a5af9613012b991fbe6eba58c414eaedf575d232',
-                      sha1: '3d4c90c9b8a2168ba067b89c8c127b21202d8ed1',
-                      version: '12.21.1'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with partial 12 project_version' do
                   let(:project_version) { '12' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.22.5/sles/12/chef-12.22.5-1.sles12.x86_64.rpm',
-                      sha256: '8c2b7ac235a0e7c23e9ee0c54a8b97813f2e0d85d292faa7374dab4442c22ae7',
-                      sha1: '13d7860e94481b2cafd1dd2f9dac240fb2c6e8f3',
-                      version: '12.22.5'
-                    }
-                  end
+                  let(:expected_version) { '12.22.5' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with partial 12.21 project_version' do
                   let(:project_version) { '12.21' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.21.31/sles/12/chef-12.21.31-1.sles12.x86_64.rpm',
-                      sha256: 'd05dc98cdd7dc207dd8800772e59355f87f243d72d871818e8a4579deb31e6a0',
-                      sha1: '11b49222841df86e03acb0810ea10bcd332c14d3',
-                      version: '12.21.31'
-                    }
-                  end
+                  let(:expected_version) { '12.21.31' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with non-native sles build version partial version 12.20' do
                   let(:project_version) { '12.20' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.20.3/el/6/chef-12.20.3-1.el6.x86_64.rpm',
-                      sha256: '1a0a1e830f95e21bad222b1984cd32e2e76cd856aaf194be27be4b0ad607d1c1',
-                      sha1: '06fb16af659a456bab75f1a79733ca7bbd29edf3',
-                      version: '12.20.3'
-                    }
-                  end
+                  let(:expected_version) { '12.20.3' }
+                  let(:expected_platform) { 'el' }
+                  let(:expected_platform_version) { '6' }
+                  let(:expected_architecture) { 'x86_64' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with partial 13 project_version' do
                   let(:project_version) { '13' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/13.12.14/sles/12/chef-13.12.14-1.sles12.x86_64.rpm',
-                      sha256: '8c25d294ac6d58d235f72f29b91a7caae8b83ee73bbe22e227069b5c9aa84312',
-                      sha1: '844ebccdf1c4aa578cae591f35ea4f88ffcd7664',
-                      version: '13.12.14'
-                    }
-                  end
+                  let(:expected_version) { '13.12.14' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with partial 13.1 project_version' do
                   let(:project_version) { '13.1' }
-                  let(:expected_info) do
-                     {
-                      url: 'https://packages.chef.io/files/stable/chef/13.1.31/sles/12/chef-13.1.31-1.sles12.x86_64.rpm',
-                      sha256: '9f7989cc1207b599dcb13c17bec5bc95073b6c58d76606b4583bda353577ec72',
-                      sha1: 'e2625726ae2a8ce6db8b0ffe84091b428185458c',
-                      version: '13.1.31'
-                    }
-                  end
+                  let(:expected_version) { '13.1.31' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with 13.1.31 project_version' do
                   let(:project_version) { '13.1.31' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/13.1.31/sles/12/chef-13.1.31-1.sles12.x86_64.rpm',
-                      sha256: '9f7989cc1207b599dcb13c17bec5bc95073b6c58d76606b4583bda353577ec72',
-                      sha1: 'e2625726ae2a8ce6db8b0ffe84091b428185458c',
-                      version: '13.1.31'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with non-native sles build version' do
                   let(:project_version) { '12.20.3' }
-                  let(:expected_info) do
-                    {
-                      url: 'https://packages.chef.io/files/stable/chef/12.20.3/el/6/chef-12.20.3-1.el6.x86_64.rpm',
-                      sha256: '1a0a1e830f95e21bad222b1984cd32e2e76cd856aaf194be27be4b0ad607d1c1',
-                      sha1: '06fb16af659a456bab75f1a79733ca7bbd29edf3',
-                      version: '12.20.3'
-                    }
-                  end
+                  let(:expected_platform) { 'el' }
+                  let(:expected_platform_version) { '6' }
 
                   it_behaves_like 'a correct package info'
                 end
@@ -636,28 +482,14 @@ context 'Omnitruck' do
 
                   context 'with first native sles build version' do
                     let(:project_version) { '0.8.5' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/automate/0.8.5/sles/12/automate-0.8.5-1.sles12.x86_64.rpm',
-                        sha256: '09dc068ff7e69264967cad547d79b84b687180b10c40e3713a7660106cf04e10',
-                        sha1: '7a57d9f6f026bffb738502f743b881410aa7aa0c',
-                        version: '0.8.5'
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with non-native sles build version' do
                     let(:project_version) { '0.7.61' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/automate/0.7.61/el/6/automate-0.7.61-1.el6.x86_64.rpm',
-                        sha256: '3f4e43d46b7e0f0e8e767d90e490ad3a1b851457905d6d0d3b3103d8794f045e',
-                        sha1: 'b2c09fe004dff285c2a522b552938de3bcecf233',
-                        version: '0.7.61'
-                      }
-                    end
+                    let(:expected_platform) { 'el' }
+                    let(:expected_platform_version) { '6' }
 
                     it_behaves_like 'a correct package info'
                   end
@@ -668,28 +500,14 @@ context 'Omnitruck' do
 
                   context 'with first native sles build version' do
                     let(:project_version) { '12.15.0' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/chef-server/12.15.0/sles/12/chef-server-core-12.15.0-1.sles12.x86_64.rpm',
-                        sha256: '7b21f21b47edb47ef2edac8700229dabd2511cbed3a80c18d19a11a9728c8dda',
-                        sha1: 'fd9943cefe4d414080afe3c4080d8fd80ddb35f7',
-                        version: '12.15.0'
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with non-native sles build version' do
                     let(:project_version) { '12.13.0' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/chef-server/12.13.0/el/6/chef-server-core-12.13.0-1.el6.x86_64.rpm',
-                        sha256: '6e1d0359d5d5db237e5567a74e80e7b8ae63e3d9a59df4f4d1542b348c0281e7',
-                        sha1: '66dd986d430684aafe20799491886bb41d8317b0',
-                        version: '12.13.0'
-                      }
-                    end
+                    let(:expected_platform) { 'el' }
+                    let(:expected_platform_version) { '6' }
 
                     it_behaves_like 'a correct package info'
                   end
@@ -700,28 +518,14 @@ context 'Omnitruck' do
 
                   context 'with first native sles build version' do
                     let(:project_version) { '1.3.43' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/chefdk/1.3.43/sles/12/chefdk-1.3.43-1.sles12.x86_64.rpm',
-                        sha256: 'acd50605ce1b691879aaa3077314810444f3142bede7434bb6f9ffa13db8ef13',
-                        sha1: '351cbc0384eec6199d1a6771f79fc36520b249e6',
-                        version: project_version
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with non-native sles build version' do
                     let(:project_version) { '1.3.40' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/chefdk/1.3.40/el/6/chefdk-1.3.40-1.el6.x86_64.rpm',
-                        sha256: '6d5d3d74f2aa9c0c55bd8ff74b156a2e68406de8c34f99a6dbd25773bd9856e3',
-                        sha1: '81d1c69051b5fa1eddebbaa4d089db4f77510e66',
-                        version: project_version
-                      }
-                    end
+                    let(:expected_platform) { 'el' }
+                    let(:expected_platform_version) { '6' }
 
                     it_behaves_like 'a correct package info'
                   end
@@ -732,28 +536,14 @@ context 'Omnitruck' do
 
                   context 'with first native sles build version' do
                     let(:project_version) { '1.20.0' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/inspec/1.20.0/sles/12/inspec-1.20.0-1.sles12.x86_64.rpm',
-                        sha256: '44a7440375f3a75a2a4733a26b5e391807ed654144bdcaff42f5369a2e80c78f',
-                        sha1: '2ac8e14ccbd1741294d624d24f9b2ca93d5e21cc',
-                        version: project_version
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with non-native sles build version' do
                     let(:project_version) { '1.19.2' }
-                    let(:expected_info) do
-                      {
-                        url: 'https://packages.chef.io/files/stable/inspec/1.19.2/el/6/inspec-1.19.2-1.el6.x86_64.rpm',
-                        sha256: '98e90b546a03742c3d706877862f54eee6f2df3f8fa0f504cfc4a809ecc269f0',
-                        sha1: '931fa98d83f218a51b389c08bf48b2c2cf485799',
-                        version: project_version
-                      }
-                    end
+                    let(:expected_platform) { 'el' }
+                    let(:expected_platform_version) { '6' }
 
                     it_behaves_like 'a correct package info'
                   end
@@ -788,56 +578,27 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/13.4.24/ubuntu/12.04/chef_13.4.24-1_amd64.deb',
-                    sha256: 'df7201e5fb5113b8f68caa0cf4172dd7004282e947b449e0eeb094ea6e630227',
-                    sha1: '3eef728d8a096b6fce191216b51ba5fe4b064ea8',
-                    version: '13.4.24'
-                  }
-                end
+                let(:expected_version) { '13.4.24' }
 
                 it_behaves_like 'a correct package info'
               end
 
               context 'with "latest"' do
                 let(:project_version) { 'latest' }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/13.4.24/ubuntu/12.04/chef_13.4.24-1_amd64.deb',
-                    sha256: 'df7201e5fb5113b8f68caa0cf4172dd7004282e947b449e0eeb094ea6e630227',
-                    sha1: '3eef728d8a096b6fce191216b51ba5fe4b064ea8',
-                    version: '13.4.24'
-                  }
-                end
+                let(:expected_version) { '13.4.24' }
 
                 it_behaves_like 'a correct package info'
               end
 
               context 'with partial version' do
                 let(:project_version) { '12.1' }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/12.1.2/ubuntu/12.04/chef_12.1.2-1_amd64.deb',
-                    sha256: '4a92cdd99d337ac51529ca7fa402e2470e1a4e99a63d4260c81f275e047f4fb4',
-                    sha1: 'a20197a38ca24497f99b4975bb9443434e8a43ac',
-                    version: '12.1.2'
-                  }
-                end
+                let(:expected_version) { '12.1.2' }
 
                 it_behaves_like 'a correct package info'
               end
 
               context 'with full version' do
                 let(:project_version) { '10.24.0' }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/10.24.0/ubuntu/12.04/chef_10.24.0-1.ubuntu.11.04_amd64.deb',
-                    sha256: '4afb1aae6409a33b511d932ce670d1e1c7c8c69daf36647606d65e6f6ef36313',
-                    sha1: 'db28cf433afb5f3f1393513d8c66ba780ecb4e7e',
-                    version: '10.24.0'
-                  }
-                end
 
                 it_behaves_like 'a correct package info'
               end
@@ -855,14 +616,7 @@ context 'Omnitruck' do
 
               context 'with "latest"' do
                 let(:project_version) { 'latest' }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/15.1.36/ubuntu/14.04/chef_15.1.36-1_amd64.deb',
-                    sha256: '71d303ff3ea6e56c070e595fd5b84ea5904abfe14af884bd9c73ebfa49f72452',
-                    sha1: 'bdf95b94236788173bc27b0888a5b5cd35517796',
-                    version: '15.1.36'
-                  }
-                end
+                let(:expected_version) { '15.1.36' }
 
                 it_behaves_like 'a correct package info'
               end
@@ -876,20 +630,14 @@ context 'Omnitruck' do
           #   Integer (Right): 10 < 12 < 101
           context 'for extreme yolo version 101.04' do
             let(:platform_version) { '101.04' }
+            let(:expected_platform_version) { '20.04' }
 
             context 'for i686' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/ubuntu/20.04/chef_16.2.73-1_amd64.deb',
-                    sha256: '91c68c4f80cbabb18201b821fe8f06b05cd7865e93f7b2f8e30114eda20df1e2',
-                    sha1: 'a783a55e51d370a603d014c2ca4ed9c8f6be3915',
-                    version: '16.2.73'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef }
 
                 it_behaves_like 'a correct package info'
               end
@@ -899,8 +647,8 @@ context 'Omnitruck' do
 
         context 'for windows' do
           let(:platform) { 'windows' }
+          let(:x86_64_only) { %w{ 8 } }
 
-          # %w{2008r2 2012 2012r2 8 7 2003r2 2012r2}.each do |windows_platform_version|
           %w{
             2019
             2016
@@ -920,46 +668,24 @@ context 'Omnitruck' do
 
                 context "for #{architecture}" do
                   let(:architecture) { architecture }
-                  let(:i386_platform_name) { (windows_platform_version == '2012') ? '2012' : '2012r2' }
+                  let(:expected_architecture) { 'i386' }
+                  let(:expected_platform_version) { (windows_platform_version == '2012') ? '2012' : '2012r2' }
 
                   context 'with specific version' do
                     let(:project_version) { '12.6.0' }
-                    let(:expected_info) do
-                      {
-                        url: "https://packages.chef.io/files/stable/chef/12.6.0/windows/#{i386_platform_name}/chef-client-12.6.0-1-x86.msi",
-                        sha256: '6027cd360f43a2cde90e978ac9891459e8b3b33e4df34cb1a5b78a6c8427c03b',
-                        sha1: '2e03235be21742bb6ee64d3d1692b75edbd60aad',
-                        version: '12.6.0'
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with only a partial version specification' do
                     let(:project_version) { '12.9' }
-                    let(:expected_info) do
-                      {
-                        url: "https://packages.chef.io/files/stable/chef/12.9.41/windows/#{i386_platform_name}/chef-client-12.9.41-1-x86.msi",
-                        sha256: '89616d496bfc1802f12b37bfd50d813e1aa815fc5c3013b86b2fab5d11dc3abf',
-                        sha1: '188df77eeb8ba406215103153c9d113189b30713',
-                        version: '12.9.41'
-                      }
-                    end
+                    let(:expected_version) { '12.9.41' }
 
                     it_behaves_like 'a correct package info'
                   end
 
                   context 'with specific version that has an x86_64 package' do
                     let(:project_version) { '12.7.2' }
-                    let(:expected_info) do
-                      {
-                        url: "https://packages.chef.io/files/stable/chef/12.7.2/windows/#{i386_platform_name}/chef-client-12.7.2-1-x86.msi",
-                        sha256: 'a430ebbc42c3a49f4ef8715bfc8422620f42eb380a5cd136fe91a5ac5353e8ef',
-                        sha1: '8e67a72fa96186f7ef190908a2b238a4c5960033',
-                        version: '12.7.2'
-                      }
-                    end
 
                     it_behaves_like 'a correct package info'
                   end
@@ -967,208 +693,44 @@ context 'Omnitruck' do
               end
 
               context "for x86_64" do
-
                 let(:architecture) { "x86_64" }
+                let(:exepcted_platform_version) { windows_platform_version }
 
                 context 'without a version' do
                   let(:project_version) { nil }
-                  let(:expected_info) do
-                    {
-                      url: "https://packages.chef.io/files/stable/chef/16.2.73/windows/#{windows_platform_version}/chef-client-16.2.73-1-x64.msi",
-                      sha256: '41bd5bea7df943fba4279a647160248c478cd9abf62096d972129d7631bbe2bf',
-                      sha1: '1a5b41aecbaa0d1e050104241c2377ead9993e7d',
-                      version: '16.2.73'
-                    }
-                  end
+                  let(:expected_version) { latest_stable_chef }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with specific version that has an x86_64 package' do
                   let(:project_version) { '15.12.22' }
-                  let(:expected_info) do
-                    {
-                      url: "https://packages.chef.io/files/stable/chef/15.12.22/windows/#{windows_platform_version}/chef-client-15.12.22-1-x64.msi",
-                      sha256: '52ca99f5e3028b6621797b33b893ab916ef3bd6f4bd30c9ef3c7943b6d23e517',
-                      sha1: '6b3edf6416598110e32de49c14ab3fbc87269b07',
-                      version: '15.12.22'
-                    }
-                  end
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with a version only specifying major' do
                   let(:project_version) { "15" }
-                  let(:expected_info) do
-                    {
-                      url: "https://packages.chef.io/files/stable/chef/15.12.22/windows/#{windows_platform_version}/chef-client-15.12.22-1-x64.msi",
-                      sha256: '52ca99f5e3028b6621797b33b893ab916ef3bd6f4bd30c9ef3c7943b6d23e517',
-                      sha1: '6b3edf6416598110e32de49c14ab3fbc87269b07',
-                      version: '15.12.22'
-                    }
-                  end
+                  let(:expected_version) { '15.15.1' }
 
                   it_behaves_like 'a correct package info'
                 end
 
                 context 'with a version only specifing major and minor' do
                   let(:project_version) { "15.12" }
-                  let(:expected_info) do
-                    {
-                      url: "https://packages.chef.io/files/stable/chef/15.12.22/windows/#{windows_platform_version}/chef-client-15.12.22-1-x64.msi",
-                      sha256: '52ca99f5e3028b6621797b33b893ab916ef3bd6f4bd30c9ef3c7943b6d23e517',
-                      sha1: '6b3edf6416598110e32de49c14ab3fbc87269b07',
-                      version: '15.12.22'
-                    }
-                  end
+                  let(:expected_version) { '15.12.22' }
 
                   it_behaves_like 'a correct package info'
                 end
               end
-
-            end
-          end
-        end
-
-        context 'for nexus' do
-          let(:platform) { 'nexus' }
-
-          context 'for 7.0(3)I2(2)' do
-            let(:platform_version) { '7.0(3)I2(2)' }
-
-            context 'for x86_64' do
-              let(:architecture) { 'x86_64' }
-
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/12.19.33/nexus/7/chef-12.19.33-1.nexus7.x86_64.rpm',
-                    sha256: '46abe5cafba112f18b69f13f69ae4c1e85d5d1b789617d7272aca1e02d6c07eb',
-                    sha1: '728a8154c3b6b5610760fd65dd0e22513e7e1f22',
-                    version: '12.19.33'
-                  }
-                end
-
-                it_behaves_like 'a correct package info'
-              end
-            end
-          end
-        end
-
-        context 'for fedora' do
-          let(:platform) { 'fedora' }
-
-          context 'for 14 (Arista!)' do
-            let(:platform_version) { '14' }
-
-            context 'for x86_64' do
-              let(:architecture) { 'x86_64' }
-
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/el/6/chef-16.2.73-1.el6.x86_64.rpm',
-                    sha256: 'ba6461cd3425ff021c69567456504b5a483d5983c7ce091296065e76de4a6a70',
-                    sha1: '6f08d2e8f9119c9567b33e40540e2b628a0eb1bd',
-                    version: '16.2.73'
-                  }
-                end
-
-                it_behaves_like 'a correct package info'
-              end
             end
           end
 
-          context 'for 28' do
-            let(:platform_version) { '28' }
-
-            context 'for x86_64' do
-              let(:architecture) { 'x86_64' }
-
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/16.2.73/el/7/chef-16.2.73-1.el7.x86_64.rpm',
-                    sha256: 'f303db725483ee049f5227f963250d4f78ec2ab53ab4bfd70fedbb2c8d500a88',
-                    sha1: 'f8760715679d82608f1e4db7708d1a1464b3f929',
-                    version: '16.2.73'
-                  }
-                end
-
-                it_behaves_like 'a correct package info'
-              end
-            end
-          end
-        end
-
-        context 'for ios_xr' do
-          let(:platform) { 'ios_xr' }
-
-          context 'for 6.0.0.14I' do
-            let(:platform_version) { '6.0.0.14I' }
-
-            context 'for x86_64' do
-              let(:architecture) { 'x86_64' }
-
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef/12.19.33/ios_xr/6/chef-12.19.33-1.ios_xr6.x86_64.rpm',
-                    sha256: '924e93d8131abe1b2ca98639fc029122334b11fbfbca869e47001957d880bd7c',
-                    sha1: 'ea51646c2e7de5d188084683e9ef6b9444a55099',
-                    version: '12.19.33'
-                  }
-                end
-
-                it_behaves_like 'a correct package info'
-              end
-            end
-          end
-        end
-      end
-
-      context 'for current' do
-        let(:channel) { 'current' }
-
-        context 'for solaris2' do
-          let(:platform) { 'solaris2' }
-
-          context 'for 5.11' do
-            let(:platform_version) { '5.11' }
-
-            context 'for sun4v' do
-              let(:architecture) { 'sun4v' }
-
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/current/chef/16.0.101/solaris2/5.11/chef-16.0.101-1.sparc.p5p',
-                    sha256: '5d63d81ca6fbe9e300696216fe94e5c6ff5e6208ae4cd22cbdaf1b3ca6c1085f',
-                    sha1: 'a13210afb03ddc5caa31ba1a836f65d1270b56b6',
-                    version: '16.0.101'
-                  }
-                end
-
-                it_behaves_like 'a correct package info'
-              end
-            end
-          end
-        end
-
-        context 'for windows' do
-          let(:platform) { 'windows' }
-
-          [nil, "11", "12.6", "12.9.3"].each do |v|
+          [nil, "12", "13.10", "15.0.300"].each do |v|
             context "for version #{v}" do
-              let(:platform_version) { v }
+              let(:project_version) { v }
 
-              context 'current channel with 32 and 64 bit artifacts' do
+              context 'with 32 and 64 bit artifacts' do
                 let(:platform_version) { "2008r2" }
                 let(:endpoint) { "/#{channel}/#{project}/metadata" }
 
@@ -1205,6 +767,107 @@ context 'Omnitruck' do
             end
           end
         end
+
+        context 'for nexus' do
+          let(:platform) { 'nexus' }
+
+          context 'for 7.0(3)I2(2)' do
+            let(:platform_version) { '7.0(3)I2(2)' }
+            let(:expected_platform_version) { '7' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { '12.19.33' }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
+        context 'for fedora' do
+          let(:platform) { 'fedora' }
+          let(:expected_platform) { 'el' }
+
+          context 'for 14 (Arista!)' do
+            let(:platform_version) { '14' }
+            let(:expected_platform_version) { '6' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { latest_stable_chef }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+
+          context 'for 28' do
+            let(:platform_version) { '28' }
+            let(:expected_platform_version) { '7' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { latest_stable_chef }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+
+        context 'for ios_xr' do
+          let(:platform) { 'ios_xr' }
+
+          context 'for 6.0.0.14I' do
+            let(:platform_version) { '6.0.0.14I' }
+            let(:expected_platform_version) { '6' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { '12.19.33' }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
+      end
+
+      context 'for current' do
+        let(:channel) { 'current' }
+
+        context 'for solaris2' do
+          let(:platform) { 'solaris2' }
+
+          context 'for 5.11' do
+            let(:platform_version) { '5.11' }
+
+            context 'for sun4v' do
+              let(:architecture) { 'sun4v' }
+              let(:expected_architecture) { 'sparc' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { latest_current_chef }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+        end
       end
     end
 
@@ -1219,20 +882,14 @@ context 'Omnitruck' do
 
           context 'for 2008r2' do
             let(:platform_version) { '2008r2' }
+            let(:expected_platform_version) { '10' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chefdk/1.5.0/windows/2016/chefdk-1.5.0-1-x86.msi',
-                    sha256: '7734cfee178edce3c91e310a4d24fdffe77e9c7a78d919084fb2c762739d1c6f',
-                    sha1: 'a65e661239754c3234c0f103f5e3511cce793745',
-                    version: '1.5.0'
-                  }
-                end
+                let(:expected_version) { latest_stable_chefdk }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1247,22 +904,15 @@ context 'Omnitruck' do
         context 'for mac_os_x' do
           let(:platform) { 'mac_os_x' }
 
-          context 'for 10.10' do
-            let(:platform_version) { '10.10' }
+          context 'for 10.13' do
+            let(:platform_version) { '10.13' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/current/chefdk/2.0.12/mac_os_x/10.10/chefdk-2.0.12-1.dmg',
-                    sha256: '026bd22e0e3e66f01dffdec1d5f2ecf6b9f57741aa4a9cbfe55fabc1d5a57b76',
-                    sha1: '4de71158120fcff730ff0bec0260ee870be1a1c7',
-                    version: '2.0.12'
-                  }
-                end
+                let(:expected_version) { latest_current_chefdk }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1289,14 +939,7 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/chef-server/12.15.8/el/6/chef-server-core-12.15.8-1.el6.x86_64.rpm',
-                    sha256: 'cb0e1c7dae13526360d75f35625d8794ce641cc399bc084c0bd6b37a757b19f2',
-                    sha1: '0e0d2bd29e3b53ebbb9e12cdd3f40fcd4e027499',
-                    version: '12.15.8'
-                  }
-                end
+                let(:expected_version) { latest_stable_chef_server }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1323,14 +966,7 @@ context 'Omnitruck' do
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/angrychef/12.18.31/debian/6/angrychef_12.18.31-1_amd64.deb',
-                    sha256: '95888d49c14f9171a2fb29ca8224dc75a2be45992ba18f3fcc64c559d0ecfb1e',
-                    sha1: 'b988409b36fcce650a449b8844a336842e4f3f84',
-                    version: '12.18.31'
-                  }
-                end
+                let(:expected_version) { '12.18.31' }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1350,17 +986,11 @@ context 'Omnitruck' do
 
             context 'for amd64' do
               let(:architecture) { 'amd64' }
+              let(:expected_architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_info) do
-                  {
-                    url: 'https://packages.chef.io/files/stable/angrychef/12.18.31/freebsd/10/angrychef-12.18.31_1.amd64.sh',
-                    sha256: '78951411d0ca441a5c07f63d6554456e8f192a98e19124d77f0c94feddda4d77',
-                    sha1: '0abb0020733b6a709637a91abfff1656b6597b7a',
-                    version: '12.18.31'
-                  }
-                end
+                let(:expected_version) { '15.0.293' }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1379,14 +1009,6 @@ context 'Omnitruck' do
       let(:platform_version) { '2008r2' }
       let(:architecture) { 'x86_64' }
       let(:project_version) { '12.9.38' }
-      let(:expected_info) do
-        {
-          url: 'https://packages.chef.io/files/stable/angrychef/12.9.38/windows/2012r2/angrychef-12.9.38-1-x64.msi',
-          sha256: '841d6bfc20fb89f7eaa61820d0f5d44bc60e0d67631a58e2920440974e7cba2b',
-          sha1: 'aa83af2ecdb6cbec643c1fda1d69c55834e692c2',
-          version: '12.9.38'
-        }
-      end
 
       it_behaves_like 'a correct package info'
     end
@@ -1438,7 +1060,7 @@ context 'Omnitruck' do
                   expect(metadata['sha1']).to match /^[0-9a-f]{40}$/
                   expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
                   expect(metadata['url']).to match 'http'
-                  expect(metadata['version']).to eq('1.5.0')
+                  expect(metadata['version']).to eq(latest_stable_chefdk)
                 end
               end
             end
@@ -1563,6 +1185,9 @@ context 'Omnitruck' do
 
   context "/_status" do
     let(:endpoint){"/_status"}
+    let(:expected_timestamp) do
+      JSON.parse(File.read(File.join(SPEC_DATA, "stable/chef-manifest.json")))["run_data"]["timestamp"]
+    end
 
     it "exists" do
       get endpoint
@@ -1576,7 +1201,7 @@ context 'Omnitruck' do
 
     it "returns the timestamp of the last poller run" do
       get endpoint
-      expect(JSON.parse(last_response.body)["timestamp"]).to eq("2020-07-07 17:24:24 -0400")
+      expect(JSON.parse(last_response.body)["timestamp"]).to eq(expected_timestamp)
     end
   end
 
@@ -1612,27 +1237,12 @@ context 'Omnitruck' do
     end
 
     {
-      '/download' => 'https://packages.chef.io/files/stable/chef/16.2.73/ubuntu/16.04/chef_16.2.73-1_amd64.deb',
-      '/download-server' => 'https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb',
-      '/chef/download-server' => 'https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb',
-      '/metadata' => {
-        url: 'https://packages.chef.io/files/stable/chef/16.2.73/ubuntu/16.04/chef_16.2.73-1_amd64.deb',
-        sha256: '91c68c4f80cbabb18201b821fe8f06b05cd7865e93f7b2f8e30114eda20df1e2',
-        sha1: 'a783a55e51d370a603d014c2ca4ed9c8f6be3915',
-        version: '16.2.73'
-      },
-      '/metadata-server' => {
-        url: 'https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb',
-        sha256: '4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae',
-        sha1: '23afe6f682697caa616dc810558a717962fc57b6',
-        version: '12.15.8'
-      },
-      '/chef/metadata-server' => {
-        url: 'https://packages.chef.io/files/stable/chef-server/12.15.8/ubuntu/16.04/chef-server-core_12.15.8-1_amd64.deb',
-        sha256: '4351cc42f344292bb89b8d252b66364e79d0eb271967ef9f5debcbf3a5a6faae',
-        sha1: '23afe6f682697caa616dc810558a717962fc57b6',
-        version: '12.15.8'
-      },
+      '/download' => spec_data_record('stable', 'chef', 'ubuntu', '16.04', 'x86_64', latest_stable_chef)['url'],
+      '/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server)['url'],
+      '/chef/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server)['url'],
+      '/metadata' => spec_data_record('stable', 'chef', 'ubuntu', '16.04', 'x86_64', latest_stable_chef).merge({ 'version' => latest_stable_chef }),
+      '/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
+      '/chef/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
       '/chef/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
       '/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
       '/full_client_list' => nil,
@@ -1665,10 +1275,10 @@ context 'Omnitruck' do
               metadata
             end
 
-            expect(parsed_metadata['url']).to eq(response_match_data[:url])
-            expect(parsed_metadata['sha256']).to eq(response_match_data[:sha256])
-            expect(parsed_metadata['sha1']).to eq(response_match_data[:sha1])
-            expect(parsed_metadata['version']).to eq(response_match_data[:version])
+            expect(parsed_metadata['version']).to eq(response_match_data['version'])
+            expect(parsed_metadata['url']).to eq(response_match_data['url'])
+            expect(parsed_metadata['sha256']).to eq(response_match_data['sha256'])
+            expect(parsed_metadata['sha1']).to eq(response_match_data['sha1'])
           elsif legacy_endpoint =~ /platform_names/
             # we check that response is valid JSON.
             expect{JSON.parse(last_response.body)}.not_to raise_error
