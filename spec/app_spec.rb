@@ -326,6 +326,31 @@ context 'Omnitruck' do
               end
             end
           end
+
+          # We're using the current channel because that currently has the sample data
+          context 'with mix of 11.0 and 11' do
+            let(:channel) { 'current' }
+            let(:project_version) { nil }
+            let(:architecture) { 'x86_64' }
+
+            context 'with 10.x' do
+              let(:platform_version) { '10.15' }
+
+              it_behaves_like 'a correct package info'
+            end
+
+            context 'with 11.x' do
+              let(:platform_version) { '11.0' }
+
+              it_behaves_like 'a correct package info'
+            end
+
+            context 'with 11' do
+              let(:platform_version) { '11' }
+
+              it_behaves_like 'a correct package info'
+            end
+          end
         end
 
         # SLES 11 covers use cases in their entirety.
