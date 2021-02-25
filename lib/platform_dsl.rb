@@ -102,20 +102,20 @@ class PlatformDSL
     # doing with regards to their versioning change).
     def <=>(otherVer)
       raise "comparison between incompatible platform versions:\n#{self}#{otherVer}" if self.mapped_name != otherVer.mapped_name
-      if (major_only)
-        favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
-      else
-        ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
-        if ret == 0 && self.mapped_minor
-          return ret if otherVer.mapped_minor.nil?
-          ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor)
-        end
-        if ret == 0 && self.mapped_patch
-          return ret if otherVer.mapped_patch.nil?
-          ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch)
-        end
-        ret
+      ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
+      return ret if major_only
+
+      if ret == 0 && self.mapped_minor
+        return ret if otherVer.mapped_minor.nil?
+        ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor)
       end
+
+      if ret == 0 && self.mapped_patch
+        return ret if otherVer.mapped_patch.nil?
+        ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch)
+      end
+
+      ret
     end
 
     def inspect
