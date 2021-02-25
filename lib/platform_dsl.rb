@@ -95,14 +95,25 @@ class PlatformDSL
 
     # platform versions may match when the strings do not match, sort order may not be what
     # you expect if you're trying to compare minor versions of EL/SuSE/etc...
+    #
+    # if a platform changes versioning scheme (e.g. macOS 10.X to macOS 11), ignore the missing
+    # version when comparing. this handles the situation where omnibus builds may be tagged with
+    # 11.0 or 11 depending on when they were built (before we fully understood what Apple was
+    # doing with regards to their versioning change).
     def <=>(otherVer)
       raise "comparison between incompatible platform versions:\n#{self}#{otherVer}" if self.mapped_name != otherVer.mapped_name
       if (major_only)
         favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
       else
         ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
-        ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor) if ret == 0 && self.mapped_minor
-        ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch) if ret == 0 && self.mapped_patch
+        if ret == 0 && self.mapped_minor
+          return ret if otherVer.mapped_minor.nil?
+          ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor)
+        end
+        if ret == 0 && self.mapped_patch
+          return ret if otherVer.mapped_patch.nil?
+          ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch)
+        end
         ret
       end
     end

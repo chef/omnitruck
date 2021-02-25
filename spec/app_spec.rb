@@ -330,8 +330,9 @@ context 'Omnitruck' do
           # We're using the current channel because that currently has the sample data
           context 'with mix of 11.0 and 11' do
             let(:channel) { 'current' }
-            let(:project_version) { nil }
             let(:architecture) { 'x86_64' }
+            let(:project_version) { nil }
+            let(:expected_version) { latest_current_chef }
 
             context 'with 10.x' do
               let(:platform_version) { '10.15' }
@@ -341,6 +342,7 @@ context 'Omnitruck' do
 
             context 'with 11.x' do
               let(:platform_version) { '11.0' }
+              let(:expected_platform_version) { '11' }
 
               it_behaves_like 'a correct package info'
             end
