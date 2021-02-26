@@ -137,7 +137,19 @@ We only test certain artifacts running on certain distros and do not have comple
 
 This will also let users deploy old versions of Chef on new distros where we never tested those old versions on that distro.  The previous distro version will get promoted by yolo.
 
-Packages which have been yolo-promoted have "yolo: true" in their JSON output from the metadata endpoint.  The install.sh script prints a banner warning if it encounters a yolo mode package.  It is up to the end user as to if they're willing to accept the risk of installing yolo-promoted packages (generally desktops and testing infrastruture is fine, but production infastructure use is discouraged).
+Packages which have been yolo-promoted have "yolo: true" in their JSON output from the metadata endpoint.  The install.sh script prints a banner warning if it encounters a yolo mode package.  It is up to the end user as to if they're willing to accept the risk of installing yolo-promoted packages (generally desktops and testing infrastructure is fine, but production infrastructure use is discouraged).
+
+### Version Fallback Comparison
+
+The shift in `mac_os_x` from a MAJOR.MINOR versioning scheme (e.g., macOS 10.15) to a MAJOR-only versioning scheme (e.g., macOS 11) necessitated a modification in our version sorting logic. This is due to [omnibus-related behavior](https://github.com/chef/omnibus/pull/1002) that would identify, upload, and tag macOS 11 builds using MAJOR.MINOR versions (e.g., 11.0, 11.1, 11.2, etc) when the relevant platform version was only the MAJOR version (e.g., 11).
+
+To handle environments that have a mix of equivalent MAJOR.MINOR and MAJOR builds in their artifact stores, we now compare versions using only shared version elements. This ensures that versions are sorted correctly, while still respecting Yolo mode behavior.
+
+Example Comparison | Fallback Comparison | Result
+--- | ---
+`"11" <=> "11.0"` | `"11" <=> "11"` | Equivalent
+`"11.2" <=> "11"` | `"11" <=> "11"` | Equivalent
+`"10.15" <=> "11"` | `"10" <=> "11"` | Less Than
 
 ## Development
 

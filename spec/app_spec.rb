@@ -328,7 +328,7 @@ context 'Omnitruck' do
           end
 
           # We're using the current channel because that currently has the sample data
-          context 'with mix of 11.0 and 11' do
+          context 'with mix of 11.x and 11' do
             let(:channel) { 'current' }
             let(:architecture) { 'x86_64' }
             let(:project_version) { nil }
@@ -340,8 +340,17 @@ context 'Omnitruck' do
               it_behaves_like 'a correct package info'
             end
 
-            context 'with 11.x' do
+            # version fallback comparison
+            context 'with 11.0' do
               let(:platform_version) { '11.0' }
+              let(:expected_platform_version) { '11' }
+
+              it_behaves_like 'a correct package info'
+            end
+
+            # version fallback comparison / yolo mode
+            context 'with 11.10' do
+              let(:platform_version) { '11.10' }
               let(:expected_platform_version) { '11' }
 
               it_behaves_like 'a correct package info'
