@@ -11,7 +11,7 @@ gem 'yajl-ruby'
 gem "rest-client"
 gem 'rake'
 gem 'redis'
-gem 'mixlib-versioning', '~> 1.1.0'
+gem 'mixlib-versioning', '~> 1.2.12'
 gem 'mixlib-install', '>= 3.11.23'
 gem 'trashed'
 
