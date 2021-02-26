@@ -101,6 +101,11 @@
           "sha1": "2aafc1fdfb6231cfaa88938d5b53f7c34732f622",
           "sha256": "4646780ec501cdc8677aef4c00012e061658e94158b798e7ab9a0b58272c269c",
           "url": "http://packages.chef.io/files/stable/opscode-analytics/1.6.2/el/5/opscode-analytics-1.6.2-1.el5.x86_64.rpm"
+        },
+        "1.6.6": {
+          "sha1": "c8ef7820057119afac52dc2be66e6753cf7e0bca",
+          "sha256": "26cf075d8b5ac40b4f36a015dc9c1adf1fca31346096d6bb8810f718d9651227",
+          "url": "http://packages.chef.io/files/stable/opscode-analytics/1.6.6/el/5/opscode-analytics-1.6.6-1.el5.x86_64.rpm"
         }
       }
     },
@@ -205,6 +210,11 @@
           "sha1": "56fa9a0e3352a94ad221671f9e82ea6e1de2044e",
           "sha256": "6122461273d8a847ec08b319015b764ca0920efade199e35c14c4623fd833006",
           "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.2/el/6/opscode-analytics-1.6.2-1.el6.x86_64.rpm"
+        },
+        "1.6.6": {
+          "sha1": "01df881b4f490ccf121a64ba6bd09d60b0b2d147",
+          "sha256": "57dc40bcd0b84ce06b15a5456356f6f4775e9e96aeb0afc2feaaa7051ae5d013",
+          "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.6/el/6/opscode-analytics-1.6.6-1.el6.x86_64.rpm"
         }
       }
     },
@@ -264,6 +274,11 @@
           "sha1": "a9f1bae7681de012e0fc70812a55365888481c4e",
           "sha256": "2ed26e3b9faf253ad7fd14cdf6d23db6f2b1860b1548255f3d46bd8e18b92e2f",
           "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.2/el/7/opscode-analytics-1.6.2-1.el7.x86_64.rpm"
+        },
+        "1.6.6": {
+          "sha1": "d4aa0223758ea081ccf76ac2229f8c7e0f40716b",
+          "sha256": "cde15f37d1b43af1b0576a447884f45527fe2da48babcf549fcf7104ffdf5e73",
+          "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.6/el/7/opscode-analytics-1.6.6-1.el7.x86_64.rpm"
         }
       }
     }
@@ -498,6 +513,11 @@
           "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
           "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
           "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.2/ubuntu/12.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.6": {
+          "sha1": "16c2dfb114d5bd5af56de1874bd01d64a5760a8c",
+          "sha256": "55f623974754514b01e9d1d00e6ee218dd66cae3064d799b904fc53569c85032",
+          "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.6/ubuntu/12.04/opscode-analytics_1.6.6-1_amd64.deb"
         }
       }
     },
@@ -577,6 +597,11 @@
           "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
           "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
           "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.2/ubuntu/14.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.6": {
+          "sha1": "16c2dfb114d5bd5af56de1874bd01d64a5760a8c",
+          "sha256": "55f623974754514b01e9d1d00e6ee218dd66cae3064d799b904fc53569c85032",
+          "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.6/ubuntu/14.04/opscode-analytics_1.6.6-1_amd64.deb"
         }
       }
     },
@@ -591,11 +616,16 @@
           "sha1": "e8aa566b2b3c2ba9a4d45f41fa18f296296c84d3",
           "sha256": "716b48f58599dbe65f44a9b1357be3b30961368b5001de3ebd15d4e2dc4a5e20",
           "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.2/ubuntu/16.04/opscode-analytics_1.6.2-1_amd64.deb"
+        },
+        "1.6.6": {
+          "sha1": "16c2dfb114d5bd5af56de1874bd01d64a5760a8c",
+          "sha256": "55f623974754514b01e9d1d00e6ee218dd66cae3064d799b904fc53569c85032",
+          "url": "https://packages.chef.io/files/stable/opscode-analytics/1.6.6/ubuntu/16.04/opscode-analytics_1.6.6-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2017-06-22 12:02:24 -0700"
+    "timestamp": "2021-02-23 15:01:15 -0600"
   }
 }

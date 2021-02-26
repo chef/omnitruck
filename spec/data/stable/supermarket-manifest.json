@@ -1,802 +1,5 @@
 {
-  "ubuntu": {
-    "10.04": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
-          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/10.04/supermarket_2.2.1-1_amd64.deb"
-        },
-        "2.2.2": {
-          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
-          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/10.04/supermarket_2.2.2-1_amd64.deb"
-        },
-        "2.3.0": {
-          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
-          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/10.04/supermarket_2.3.0-1_amd64.deb"
-        },
-        "2.3.2": {
-          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
-          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/10.04/supermarket_2.3.2-1_amd64.deb"
-        },
-        "2.3.3": {
-          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
-          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/10.04/supermarket_2.3.3-1_amd64.deb"
-        },
-        "2.4.0": {
-          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
-          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/10.04/supermarket_2.4.0-1_amd64.deb"
-        },
-        "2.4.1": {
-          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
-          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/10.04/supermarket_2.4.1-1_amd64.deb"
-        },
-        "2.4.2": {
-          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
-          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/10.04/supermarket_2.4.2-1_amd64.deb"
-        },
-        "2.5.0": {
-          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
-          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/10.04/supermarket_2.5.0-1_amd64.deb"
-        },
-        "2.5.2": {
-          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
-          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/10.04/supermarket_2.5.2-1_amd64.deb"
-        },
-        "2.6.0": {
-          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
-          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/10.04/supermarket_2.6.0-1_amd64.deb"
-        }
-      }
-    },
-    "14.04": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
-          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/14.04/supermarket_2.2.1-1_amd64.deb"
-        },
-        "2.2.2": {
-          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
-          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/14.04/supermarket_2.2.2-1_amd64.deb"
-        },
-        "2.3.0": {
-          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
-          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/14.04/supermarket_2.3.0-1_amd64.deb"
-        },
-        "2.3.2": {
-          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
-          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/14.04/supermarket_2.3.2-1_amd64.deb"
-        },
-        "2.3.3": {
-          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
-          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/14.04/supermarket_2.3.3-1_amd64.deb"
-        },
-        "2.4.0": {
-          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
-          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/14.04/supermarket_2.4.0-1_amd64.deb"
-        },
-        "2.4.1": {
-          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
-          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/14.04/supermarket_2.4.1-1_amd64.deb"
-        },
-        "2.4.2": {
-          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
-          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/14.04/supermarket_2.4.2-1_amd64.deb"
-        },
-        "2.5.0": {
-          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
-          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/14.04/supermarket_2.5.0-1_amd64.deb"
-        },
-        "2.5.2": {
-          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
-          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/14.04/supermarket_2.5.2-1_amd64.deb"
-        },
-        "2.6.0": {
-          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
-          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/14.04/supermarket_2.6.0-1_amd64.deb"
-        },
-        "2.6.1": {
-          "sha1": "0fb6f29b540b69d00baa4bdbf5f63b464033b210",
-          "sha256": "db1b123e7e1c8cf592aadfc924b3bd08a3139c2292512423fecc376c325e2478",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/ubuntu/14.04/supermarket_2.6.1-1_amd64.deb"
-        },
-        "2.7.2": {
-          "sha1": "31a4c7e6edd82b5086033d1a5e64948dbf50ea83",
-          "sha256": "34b4a1ba47a1880223bc0d7ee6ccdd1c42c87095f20811481d671279e71f0e20",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/ubuntu/14.04/supermarket_2.7.2-1_amd64.deb"
-        },
-        "2.7.3": {
-          "sha1": "0e747ce36460adac925ed197561fcd55ccf1c9de",
-          "sha256": "41ee23ce7121b7e0d14fcf56fdf496f2478865455016017563d59b025a6887e5",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/ubuntu/14.04/supermarket_2.7.3-1_amd64.deb"
-        },
-        "2.7.4": {
-          "sha1": "5f1ab406f0bfecb2ee4f4e9e646c0e988acf4a3b",
-          "sha256": "ae7ce8e76d5e22b0ce04d76de322d863895716fd3119eef7acda40f7ebac5dcd",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/ubuntu/14.04/supermarket_2.7.4-1_amd64.deb"
-        },
-        "2.8.0": {
-          "sha1": "e942b6b5a6ce7e445e99e9a5724392fff74d917e",
-          "sha256": "4ea28a9cfe4a550633584472056bcb583d185c51e70ea48d93a1287930006c2a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/ubuntu/14.04/supermarket_2.8.0-1_amd64.deb"
-        },
-        "2.8.1": {
-          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
-          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/14.04/supermarket_2.8.1-1_amd64.deb"
-        },
-        "2.8.2": {
-          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
-          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/14.04/supermarket_2.8.2-1_amd64.deb"
-        },
-        "2.8.3": {
-          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
-          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/14.04/supermarket_2.8.3-1_amd64.deb"
-        },
-        "2.8.15": {
-          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
-          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/14.04/supermarket_2.8.15-1_amd64.deb"
-        },
-        "2.8.25": {
-          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
-          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/14.04/supermarket_2.8.25-1_amd64.deb"
-        },
-        "2.8.27": {
-          "sha1": "471c8309df97424d9d517b981b653be14d516442",
-          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/14.04/supermarket_2.8.27-1_amd64.deb"
-        },
-        "2.8.30": {
-          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
-          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/14.04/supermarket_2.8.30-1_amd64.deb"
-        },
-        "2.8.34": {
-          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
-          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/14.04/supermarket_2.8.34-1_amd64.deb"
-        },
-        "2.8.43": {
-          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
-          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/14.04/supermarket_2.8.43-1_amd64.deb"
-        },
-        "2.8.61": {
-          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
-          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/14.04/supermarket_2.8.61-1_amd64.deb"
-        },
-        "2.9.3": {
-          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
-          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/14.04/supermarket_2.9.3-1_amd64.deb"
-        },
-        "2.9.7": {
-          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
-          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/14.04/supermarket_2.9.7-1_amd64.deb"
-        },
-        "2.9.15": {
-          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
-          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/14.04/supermarket_2.9.15-1_amd64.deb"
-        },
-        "2.9.21": {
-          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
-          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/14.04/supermarket_2.9.21-1_amd64.deb"
-        },
-        "2.9.29": {
-          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
-          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/14.04/supermarket_2.9.29-1_amd64.deb"
-        },
-        "2.9.30": {
-          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
-          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/14.04/supermarket_2.9.30-1_amd64.deb"
-        },
-        "3.0.0": {
-          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
-          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/14.04/supermarket_3.0.0-1_amd64.deb"
-        },
-        "3.0.2": {
-          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
-          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/14.04/supermarket_3.0.2-1_amd64.deb"
-        },
-        "3.1.0": {
-          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
-          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/14.04/supermarket_3.1.0-1_amd64.deb"
-        },
-        "3.1.1": {
-          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
-          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/14.04/supermarket_3.1.1-1_amd64.deb"
-        },
-        "3.1.4": {
-          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
-          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/14.04/supermarket_3.1.4-1_amd64.deb"
-        },
-        "3.1.6": {
-          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
-          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/14.04/supermarket_3.1.6-1_amd64.deb"
-        },
-        "3.1.10": {
-          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
-          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/14.04/supermarket_3.1.10-1_amd64.deb"
-        },
-        "3.1.14": {
-          "sha1": "591291df12d858a2176a17ab756686c21abac907",
-          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/14.04/supermarket_3.1.14-1_amd64.deb"
-        }
-      }
-    },
-    "12.04": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
-          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/12.04/supermarket_2.2.1-1_amd64.deb"
-        },
-        "2.2.2": {
-          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
-          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/12.04/supermarket_2.2.2-1_amd64.deb"
-        },
-        "2.3.0": {
-          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
-          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/12.04/supermarket_2.3.0-1_amd64.deb"
-        },
-        "2.3.2": {
-          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
-          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/12.04/supermarket_2.3.2-1_amd64.deb"
-        },
-        "2.3.3": {
-          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
-          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/12.04/supermarket_2.3.3-1_amd64.deb"
-        },
-        "2.4.0": {
-          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
-          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/12.04/supermarket_2.4.0-1_amd64.deb"
-        },
-        "2.4.1": {
-          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
-          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/12.04/supermarket_2.4.1-1_amd64.deb"
-        },
-        "2.4.2": {
-          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
-          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/12.04/supermarket_2.4.2-1_amd64.deb"
-        },
-        "2.5.0": {
-          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
-          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/12.04/supermarket_2.5.0-1_amd64.deb"
-        },
-        "2.5.2": {
-          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
-          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/12.04/supermarket_2.5.2-1_amd64.deb"
-        },
-        "2.6.0": {
-          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
-          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/12.04/supermarket_2.6.0-1_amd64.deb"
-        },
-        "2.6.1": {
-          "sha1": "0fb6f29b540b69d00baa4bdbf5f63b464033b210",
-          "sha256": "db1b123e7e1c8cf592aadfc924b3bd08a3139c2292512423fecc376c325e2478",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/ubuntu/12.04/supermarket_2.6.1-1_amd64.deb"
-        },
-        "2.7.2": {
-          "sha1": "31a4c7e6edd82b5086033d1a5e64948dbf50ea83",
-          "sha256": "34b4a1ba47a1880223bc0d7ee6ccdd1c42c87095f20811481d671279e71f0e20",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/ubuntu/12.04/supermarket_2.7.2-1_amd64.deb"
-        },
-        "2.7.3": {
-          "sha1": "0e747ce36460adac925ed197561fcd55ccf1c9de",
-          "sha256": "41ee23ce7121b7e0d14fcf56fdf496f2478865455016017563d59b025a6887e5",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/ubuntu/12.04/supermarket_2.7.3-1_amd64.deb"
-        },
-        "2.7.4": {
-          "sha1": "5f1ab406f0bfecb2ee4f4e9e646c0e988acf4a3b",
-          "sha256": "ae7ce8e76d5e22b0ce04d76de322d863895716fd3119eef7acda40f7ebac5dcd",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/ubuntu/12.04/supermarket_2.7.4-1_amd64.deb"
-        },
-        "2.8.0": {
-          "sha1": "e942b6b5a6ce7e445e99e9a5724392fff74d917e",
-          "sha256": "4ea28a9cfe4a550633584472056bcb583d185c51e70ea48d93a1287930006c2a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/ubuntu/12.04/supermarket_2.8.0-1_amd64.deb"
-        },
-        "2.8.1": {
-          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
-          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/12.04/supermarket_2.8.1-1_amd64.deb"
-        },
-        "2.8.2": {
-          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
-          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/12.04/supermarket_2.8.2-1_amd64.deb"
-        },
-        "2.8.3": {
-          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
-          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/12.04/supermarket_2.8.3-1_amd64.deb"
-        },
-        "2.8.15": {
-          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
-          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/12.04/supermarket_2.8.15-1_amd64.deb"
-        },
-        "2.8.25": {
-          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
-          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/12.04/supermarket_2.8.25-1_amd64.deb"
-        },
-        "2.8.27": {
-          "sha1": "471c8309df97424d9d517b981b653be14d516442",
-          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/12.04/supermarket_2.8.27-1_amd64.deb"
-        },
-        "2.8.30": {
-          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
-          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/12.04/supermarket_2.8.30-1_amd64.deb"
-        },
-        "2.8.34": {
-          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
-          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/12.04/supermarket_2.8.34-1_amd64.deb"
-        },
-        "2.8.43": {
-          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
-          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/12.04/supermarket_2.8.43-1_amd64.deb"
-        },
-        "2.8.61": {
-          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
-          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/12.04/supermarket_2.8.61-1_amd64.deb"
-        },
-        "2.9.3": {
-          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
-          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/12.04/supermarket_2.9.3-1_amd64.deb"
-        },
-        "2.9.7": {
-          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
-          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/12.04/supermarket_2.9.7-1_amd64.deb"
-        },
-        "2.9.15": {
-          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
-          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/12.04/supermarket_2.9.15-1_amd64.deb"
-        },
-        "2.9.21": {
-          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
-          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/12.04/supermarket_2.9.21-1_amd64.deb"
-        },
-        "2.9.29": {
-          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
-          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/12.04/supermarket_2.9.29-1_amd64.deb"
-        },
-        "2.9.30": {
-          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
-          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/12.04/supermarket_2.9.30-1_amd64.deb"
-        },
-        "3.0.0": {
-          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
-          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/12.04/supermarket_3.0.0-1_amd64.deb"
-        },
-        "3.0.2": {
-          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
-          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/12.04/supermarket_3.0.2-1_amd64.deb"
-        },
-        "3.1.0": {
-          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
-          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/12.04/supermarket_3.1.0-1_amd64.deb"
-        },
-        "3.1.1": {
-          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
-          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/12.04/supermarket_3.1.1-1_amd64.deb"
-        },
-        "3.1.4": {
-          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
-          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/12.04/supermarket_3.1.4-1_amd64.deb"
-        },
-        "3.1.6": {
-          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
-          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/12.04/supermarket_3.1.6-1_amd64.deb"
-        },
-        "3.1.10": {
-          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
-          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/12.04/supermarket_3.1.10-1_amd64.deb"
-        },
-        "3.1.14": {
-          "sha1": "591291df12d858a2176a17ab756686c21abac907",
-          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/12.04/supermarket_3.1.14-1_amd64.deb"
-        }
-      }
-    },
-    "16.04": {
-      "x86_64": {
-        "2.8.1": {
-          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
-          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/16.04/supermarket_2.8.1-1_amd64.deb"
-        },
-        "2.8.2": {
-          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
-          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/16.04/supermarket_2.8.2-1_amd64.deb"
-        },
-        "2.8.3": {
-          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
-          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/16.04/supermarket_2.8.3-1_amd64.deb"
-        },
-        "2.8.15": {
-          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
-          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/16.04/supermarket_2.8.15-1_amd64.deb"
-        },
-        "2.8.25": {
-          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
-          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/16.04/supermarket_2.8.25-1_amd64.deb"
-        },
-        "2.8.27": {
-          "sha1": "471c8309df97424d9d517b981b653be14d516442",
-          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/16.04/supermarket_2.8.27-1_amd64.deb"
-        },
-        "2.8.30": {
-          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
-          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/16.04/supermarket_2.8.30-1_amd64.deb"
-        },
-        "2.8.34": {
-          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
-          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/16.04/supermarket_2.8.34-1_amd64.deb"
-        },
-        "2.8.43": {
-          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
-          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/16.04/supermarket_2.8.43-1_amd64.deb"
-        },
-        "2.8.61": {
-          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
-          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/16.04/supermarket_2.8.61-1_amd64.deb"
-        },
-        "2.9.3": {
-          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
-          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/16.04/supermarket_2.9.3-1_amd64.deb"
-        },
-        "2.9.7": {
-          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
-          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/16.04/supermarket_2.9.7-1_amd64.deb"
-        },
-        "2.9.15": {
-          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
-          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/16.04/supermarket_2.9.15-1_amd64.deb"
-        },
-        "2.9.21": {
-          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
-          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/16.04/supermarket_2.9.21-1_amd64.deb"
-        },
-        "2.9.29": {
-          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
-          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/16.04/supermarket_2.9.29-1_amd64.deb"
-        },
-        "2.9.30": {
-          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
-          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/16.04/supermarket_2.9.30-1_amd64.deb"
-        },
-        "3.0.0": {
-          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
-          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/16.04/supermarket_3.0.0-1_amd64.deb"
-        },
-        "3.0.2": {
-          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
-          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/16.04/supermarket_3.0.2-1_amd64.deb"
-        },
-        "3.1.0": {
-          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
-          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/16.04/supermarket_3.1.0-1_amd64.deb"
-        },
-        "3.1.1": {
-          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
-          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/16.04/supermarket_3.1.1-1_amd64.deb"
-        },
-        "3.1.4": {
-          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
-          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/16.04/supermarket_3.1.4-1_amd64.deb"
-        },
-        "3.1.6": {
-          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
-          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/16.04/supermarket_3.1.6-1_amd64.deb"
-        },
-        "3.1.10": {
-          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
-          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/16.04/supermarket_3.1.10-1_amd64.deb"
-        },
-        "3.1.14": {
-          "sha1": "591291df12d858a2176a17ab756686c21abac907",
-          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/16.04/supermarket_3.1.14-1_amd64.deb"
-        }
-      }
-    }
-  },
   "el": {
-    "7": {
-      "x86_64": {
-        "2.2.1": {
-          "sha1": "8fadca61b27efcb447276df974064052aed760be",
-          "sha256": "3bf121deeca789e12512363c82dc5b1b6fd953f521ff906fd92de2193eee36f3",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/el/7/supermarket-2.2.1-1.el7.x86_64.rpm"
-        },
-        "2.2.2": {
-          "sha1": "48030af983aae7dfb5036d7912c36766a99d6bec",
-          "sha256": "ea33477231f1348d61e357110beb8e5762b953342b36b1ed9b34114c51e0579d",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/el/7/supermarket-2.2.2-1.el7.x86_64.rpm"
-        },
-        "2.3.0": {
-          "sha1": "c2c143185f3ec00f2712f6981f05065d2ec9e322",
-          "sha256": "be89a374b494caf8653ac1cb9fb568f62e06e17cc72eec82b0f100c40071072c",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/el/7/supermarket-2.3.0-1.el7.x86_64.rpm"
-        },
-        "2.3.2": {
-          "sha1": "0845ea6918b792b023788af0732f95d4bfa3a2a6",
-          "sha256": "6223c174c2690dd92d4361c1af2eeedeb537d94d203c5aca941c84e739a83918",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/el/7/supermarket-2.3.2-1.el7.x86_64.rpm"
-        },
-        "2.3.3": {
-          "sha1": "66cacd4d8ec1a979904caa63c59cf47c27a20475",
-          "sha256": "2c9a8ce6eb0e0fdbe1c09ee6dda7e8f8cbde0af3734894fcfccd25e66a3233fc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/el/7/supermarket-2.3.3-1.el7.x86_64.rpm"
-        },
-        "2.4.0": {
-          "sha1": "6ea83e8b5b39de425361e54000c6596ceabf37b7",
-          "sha256": "2ab1cd49db8f58d2f3c5a87c1789e89be23fdc9e28010d1c562932c866787be0",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/el/7/supermarket-2.4.0-1.el7.x86_64.rpm"
-        },
-        "2.4.1": {
-          "sha1": "8b75deaa7b3db718904680adb374d9f21570ed58",
-          "sha256": "9ace92d99a7613386e1bbdf0215a1d67ce95e28c7658ea05c3cd7b1eac714a37",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/el/7/supermarket-2.4.1-1.el7.x86_64.rpm"
-        },
-        "2.4.2": {
-          "sha1": "f71f314c362bd3b61c56da061a009cf62626d5c5",
-          "sha256": "fe614de913c404b31f50f6e5e7311f4d7114c0f077d69d3b130b77e161953648",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/el/7/supermarket-2.4.2-1.el7.x86_64.rpm"
-        },
-        "2.5.0": {
-          "sha1": "1f177d9c6aa3e52ecfeb5656cb88779638c3f534",
-          "sha256": "0807743a9e915754efc38b5ee19e9aa0cc53f4f1c9201565b22e9efe78ba4297",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/el/7/supermarket-2.5.0-1.el7.x86_64.rpm"
-        },
-        "2.5.2": {
-          "sha1": "9e8c5a3ca1a2a51c605770abccafcb86c567f906",
-          "sha256": "c6abef85d8673037b6b5f19f56b49090d2ccbcb740b2115af87b69779eeca2fc",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/el/7/supermarket-2.5.2-1.el7.x86_64.rpm"
-        },
-        "2.6.0": {
-          "sha1": "b7bddaca8e1160a9db4c6e16a43fdb497704b954",
-          "sha256": "08660f1aa2c002fcd436605f276334bcbd1bf3a74047e8d3cfcecb7c7ae571d0",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/el/7/supermarket-2.6.0-1.el7.x86_64.rpm"
-        },
-        "2.6.1": {
-          "sha1": "6970ae58c063934d85eaa73737a1b1f56eb1f85d",
-          "sha256": "bb3c5d50063e2ee5aa758940448ecaa88a9d92a0726b26331f2507b614dd2a46",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/el/7/supermarket-2.6.1-1.el7.x86_64.rpm"
-        },
-        "2.7.2": {
-          "sha1": "186a159106878ea045bc26c44453d82c87f0376b",
-          "sha256": "ebdddb2b379ba6676bb6e596066a71328a3fc5b6aea69f2613d805fb56062e39",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/el/7/supermarket-2.7.2-1.el7.x86_64.rpm"
-        },
-        "2.7.3": {
-          "sha1": "4de247c7e7a83629fb2274a3bbe9cb2bf97b3426",
-          "sha256": "8ef14fc8ba069fc09695c80d4c67982087b96f2f99202294378dbaca38420d5d",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/el/7/supermarket-2.7.3-1.el7.x86_64.rpm"
-        },
-        "2.7.4": {
-          "sha1": "633f93a40e70c8dce78facc9cbd1a27cfb19eb33",
-          "sha256": "201086e759b91de305d841d4f6800d597f97723ac8c2f69d320189d0c5677bb1",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/el/7/supermarket-2.7.4-1.el7.x86_64.rpm"
-        },
-        "2.8.0": {
-          "sha1": "1f0a0697269dce155ef43d57317271ec7c9cfc53",
-          "sha256": "76b8ac803a40a3f5f098ff82e755d72b4187512dc55ee0af10e84b6b63dd7f7a",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/el/7/supermarket-2.8.0-1.el7.x86_64.rpm"
-        },
-        "2.8.1": {
-          "sha1": "07e7d78801bb83d1e9d13ad15a11e8bc04512db5",
-          "sha256": "120bf62b17dba925c53ebe45d9f933d83089b02acb0693691a5fda7d7f3d1e87",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/el/7/supermarket-2.8.1-1.el7.x86_64.rpm"
-        },
-        "2.8.2": {
-          "sha1": "147d8c8b2d2416889a53c7ea24138cbeb639d73c",
-          "sha256": "cc7bfbfcdd29232e429d7a5fec86103b339863ad774a810ec6a39d2ae8e61076",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/el/7/supermarket-2.8.2-1.el7.x86_64.rpm"
-        },
-        "2.8.3": {
-          "sha1": "fb35a4203612954d7af8e6ea6a86eba1251bead5",
-          "sha256": "b59c3b1688c617055a221393d3f794df1b1996a87ddbaade9b866b75a9a37a1d",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/el/7/supermarket-2.8.3-1.el7.x86_64.rpm"
-        },
-        "2.8.15": {
-          "sha1": "559e004e37a628a1d51dacce5908a3acc2ef880c",
-          "sha256": "d29073839e70b2b1655c8983285a088b567828a8069728ef6c20540b607c55c2",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/el/7/supermarket-2.8.15-1.el7.x86_64.rpm"
-        },
-        "2.8.25": {
-          "sha1": "5d5131633463a4cb45b5c01b5cef8d66dc903c9b",
-          "sha256": "7e25d76d66f73d75f958b1870977be113f63d61335841983c1cfd2b71e4bfb79",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/el/7/supermarket-2.8.25-1.el7.x86_64.rpm"
-        },
-        "2.8.27": {
-          "sha1": "3b3e28d1f94bf9372a8fce890c5a5a50a2311228",
-          "sha256": "e97fed8c9f543a8fc8fc6541b5c289772b38ff007988aa7d95c2269715585759",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/el/7/supermarket-2.8.27-1.el7.x86_64.rpm"
-        },
-        "2.8.30": {
-          "sha1": "d07c7850265fd356091d6e1cb20ec8b051fb6826",
-          "sha256": "9093a5532164e80d980502e00818069ad14d228440ef68ae45f77e334f82ffe3",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/el/7/supermarket-2.8.30-1.el7.x86_64.rpm"
-        },
-        "2.8.34": {
-          "sha1": "7b302d4ed934f6f74c7d8fff48b4ca2b27c67d77",
-          "sha256": "00ec7934217a1dd5fcbb510a0018e6b100c7e07630e9864b2a3beda6fae155f0",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/el/7/supermarket-2.8.34-1.el7.x86_64.rpm"
-        },
-        "2.8.43": {
-          "sha1": "a64c6c91e5b74f3fa572518b1329156474545322",
-          "sha256": "88b85b2d987a230f4084322471e4130c328dac278cb1088dbce8cf6de0d010b0",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/el/7/supermarket-2.8.43-1.el7.x86_64.rpm"
-        },
-        "2.8.61": {
-          "sha1": "ec784fc0b8de7fb165b1c4d807d4980add5839bc",
-          "sha256": "cc0c25d1c95224ac364a32be468b4da952b3e88ba930912f0975d1597ab29b7e",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/el/7/supermarket-2.8.61-1.el7.x86_64.rpm"
-        },
-        "2.9.3": {
-          "sha1": "6bb5ebdc275f35ba739a227bc3a14ce6debce940",
-          "sha256": "e36d66f134dbddb0ccb7c5a076ceeea819e1036a53a0700e2e066c16e484d6ed",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/el/7/supermarket-2.9.3-1.el7.x86_64.rpm"
-        },
-        "2.9.7": {
-          "sha1": "e1355b759d6ae5341b9af8a9dfa7180a184d379d",
-          "sha256": "c81280c80dfc546bf424d0777e8f1ad67db013a2b4d56c709789751cbe0c2919",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/el/7/supermarket-2.9.7-1.el7.x86_64.rpm"
-        },
-        "2.9.15": {
-          "sha1": "4035ec44bfda8e446040ed38c9d24b14fb874a17",
-          "sha256": "b485e958dbebc6bb768905ade28b2ab033845d5f84e63fc3e38374ae4140115d",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/el/7/supermarket-2.9.15-1.el7.x86_64.rpm"
-        },
-        "2.9.21": {
-          "sha1": "6f5c2b8c92bd30616488f891af280f94edbc0380",
-          "sha256": "f7576d1a0ab15fb85e2e4d207c5dbc6e5c7ac86a12df3485f743fbde71d494c7",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/el/7/supermarket-2.9.21-1.el7.x86_64.rpm"
-        },
-        "2.9.29": {
-          "sha1": "15ccd3f00438f5c06ffd888a36a9ea5d86a39dbf",
-          "sha256": "59044444433d6eb9268a047173ea7960249b50a38d72cecbe49e2f63714d63fe",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/el/7/supermarket-2.9.29-1.el7.x86_64.rpm"
-        },
-        "2.9.30": {
-          "sha1": "c30c1695fa4a3621a487e4be87831113cd4c6526",
-          "sha256": "e9510ceacee41c9d1e32fd00b6584885aec24c77f47449655f6691692cc179c1",
-          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/el/7/supermarket-2.9.30-1.el7.x86_64.rpm"
-        },
-        "3.0.0": {
-          "sha1": "8021ac3170d3cbcccea36deb6a809540f8cbde12",
-          "sha256": "4a281c7863eaa8feb33595cac318f567b58682186f7aa9b061f0d1052ba10ef9",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/el/7/supermarket-3.0.0-1.el7.x86_64.rpm"
-        },
-        "3.0.2": {
-          "sha1": "9668a28ca9ad8ef0478fac4f997fa92510355bf8",
-          "sha256": "244bb706320b04e17f4b3894333598e541cab67f72c87b3508d1e8b08f323a70",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/el/7/supermarket-3.0.2-1.el7.x86_64.rpm"
-        },
-        "3.1.0": {
-          "sha1": "17983a3643354e071c04c38aa1712b0ff368b5da",
-          "sha256": "128a264a0e87d7cc2238b913b4f78e3011befe9c299500ff65a3706df12368ee",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/el/7/supermarket-3.1.0-1.el7.x86_64.rpm"
-        },
-        "3.1.1": {
-          "sha1": "9764a4f14643cb86936b02080d99050e6276ee54",
-          "sha256": "b108a7a59272a0fe1013357aabc44be16aa3e980097b01799d90b1d454b76ea5",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/el/7/supermarket-3.1.1-1.el7.x86_64.rpm"
-        },
-        "3.1.4": {
-          "sha1": "2f31ae6c144016891d4964c1c082b832db81d41d",
-          "sha256": "9c5d7c3081a260eca649a5074ea8ee052a41c4d24020269c40a70977cbf86762",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/el/7/supermarket-3.1.4-1.el7.x86_64.rpm"
-        },
-        "3.1.6": {
-          "sha1": "e812f01a387030613b2a6c60be3c6ca453f73184",
-          "sha256": "a5426936922d9ff81760dd1511adc1047edc6905a88a771986a4b22cfacbc1b1",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/el/7/supermarket-3.1.6-1.el7.x86_64.rpm"
-        },
-        "3.1.10": {
-          "sha1": "a942c2d4909123f6969550aee6daaff12a2098a3",
-          "sha256": "e25207bb595fc1a163b4cf2f7942bb11cbd2501982d974a2b5a8671903fe1001",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/el/7/supermarket-3.1.10-1.el7.x86_64.rpm"
-        },
-        "3.1.14": {
-          "sha1": "ba70379366588d4bf57b23c4e631db4ca0e4024a",
-          "sha256": "a3be747628e4e27985d7736cb6219c492ff132eda7188cb297b459345708e1aa",
-          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/el/7/supermarket-3.1.14-1.el7.x86_64.rpm"
-        }
-      }
-    },
     "5": {
       "x86_64": {
         "2.2.1": {
@@ -998,6 +201,66 @@
           "sha1": "6bca8f727bedbe893f0d5257a50a2f6fbc1e11b3",
           "sha256": "1355e17658687d1fae14e80f671efdf92aae2adc3ffe79f4fb6ae81c6a6617a7",
           "url": "http://packages.chef.io/files/stable/supermarket/3.1.14/el/5/supermarket-3.1.14-1.el5.x86_64.rpm"
+        },
+        "3.1.22": {
+          "sha1": "41138319d004caf27d5e50add390bd4a80016cbc",
+          "sha256": "45d0e602a5f94355763f2c465c065db3a4a2ee03108252479cb6b965999c6766",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.22/el/5/supermarket-3.1.22-1.el5.x86_64.rpm"
+        },
+        "3.1.23": {
+          "sha1": "d54288da979bb494465d40c85ba6003d8b67efe1",
+          "sha256": "02940b39b2475873b00ed30657d1681638e7ae09a2e11a39a567f1c97954c993",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.23/el/5/supermarket-3.1.23-1.el5.x86_64.rpm"
+        },
+        "3.1.25": {
+          "sha1": "ce98d56111dcae6c7aa5fa598f6ad2ec704ab987",
+          "sha256": "9c0740a85adf4845f6abe721f1cb36c51c394aa548b3eef69d6909d38af47909",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.25/el/5/supermarket-3.1.25-1.el5.x86_64.rpm"
+        },
+        "3.1.28": {
+          "sha1": "e87348f3dbaa4b4563b1abcd3a29772c59dbb02d",
+          "sha256": "6c6149edc37960c04c6ff1b9bd85f008cdb1226a63e0b2239bf1acca744298a8",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.28/el/5/supermarket-3.1.28-1.el5.x86_64.rpm"
+        },
+        "3.1.29": {
+          "sha1": "551a04cb95ed8f5a4654c446a3a8741a270f5859",
+          "sha256": "3ca77f89b68e17a09fd636416d845f83d4c9938372501b782713bfaadf84cc44",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.29/el/5/supermarket-3.1.29-1.el5.x86_64.rpm"
+        },
+        "3.1.31": {
+          "sha1": "9534282eb6b9b1d4c769ebb201880133e0f04c14",
+          "sha256": "d946b4f302c7d0f1c91b91fac14ec487529b0f4222b5649469c656380d768549",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.31/el/5/supermarket-3.1.31-1.el5.x86_64.rpm"
+        },
+        "3.1.34": {
+          "sha1": "e72e1a4d99139299b40264310413e1f96b863a08",
+          "sha256": "c8160d17d683a664cc4f1de256f59e79a2a1114b2bd2093590e2ae6a3b80768f",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.34/el/5/supermarket-3.1.34-1.el5.x86_64.rpm"
+        },
+        "3.1.41": {
+          "sha1": "0b714c0d1e2428650e264388af165e7ddf61c726",
+          "sha256": "97f7bebd1ea073b5e8eb2571ec368571acb1b4a18c9af5e523c1fec1f3687bc9",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.41/el/5/supermarket-3.1.41-1.el5.x86_64.rpm"
+        },
+        "3.1.42": {
+          "sha1": "e640f67e341cdc1d0b087458c0df8e6fec6784ed",
+          "sha256": "d300def208b4b5e8f699fba996c086ec3029edb72ff5d53f23818d820be2aa42",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.42/el/5/supermarket-3.1.42-1.el5.x86_64.rpm"
+        },
+        "3.1.47": {
+          "sha1": "1c06a17b4f4aed88e95b580dd45af7e4ae233ad3",
+          "sha256": "4c86e26aec8ab05038db9fda59ad762917fcf0e279ca4e5792d12ce4381335c8",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.47/el/5/supermarket-3.1.47-1.el5.x86_64.rpm"
+        },
+        "3.1.50": {
+          "sha1": "0d0cfe78b413676c96fcf6af996e0ad247ef5a46",
+          "sha256": "de3784954529d253fc77535e74166e4aaacb4f3cc0412f17904f3915cfd6e47d",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.50/el/5/supermarket-3.1.50-1.el5.x86_64.rpm"
+        },
+        "3.1.51": {
+          "sha1": "fd5a00821a39473463839975106961827d9bdf79",
+          "sha256": "75e41d7553b614543b11822e34695b145d66e5e975f9f522581f84b3537fb721",
+          "url": "http://packages.chef.io/files/stable/supermarket/3.1.51/el/5/supermarket-3.1.51-1.el5.x86_64.rpm"
         }
       }
     },
@@ -1202,11 +465,1571 @@
           "sha1": "c734d165df315e84065dc28175baf14ea8b49062",
           "sha256": "ac4912a759f20a47dcb502f026fdf180f35fadc06b8ff6bb3768d4f4956e222e",
           "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/el/6/supermarket-3.1.14-1.el6.x86_64.rpm"
+        },
+        "3.1.22": {
+          "sha1": "b23fbb7cb59880c951bb39f64cefac93a5f6ca42",
+          "sha256": "3241e0ac406456b2e4a3e9124aaf38efb7320d4128326ff7922e6ec886b180f6",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.22/el/6/supermarket-3.1.22-1.el6.x86_64.rpm"
+        },
+        "3.1.23": {
+          "sha1": "92989e36a71b6e82833454e68dea0d2393abe9ee",
+          "sha256": "b2825305366a61f5f8dc07fea676150030d4a575d8b9c8b30ddf88fa5ec0d7b5",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.23/el/6/supermarket-3.1.23-1.el6.x86_64.rpm"
+        },
+        "3.1.25": {
+          "sha1": "6f9713208e58f2569f3b077d4656eb35477479b6",
+          "sha256": "5cdb53e526359f9e97a1c7d3b4a40d1bfc010d6baeca4a222e6b161b2af95688",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.25/el/6/supermarket-3.1.25-1.el6.x86_64.rpm"
+        },
+        "3.1.28": {
+          "sha1": "462510d53e7e9229da9c088c2258381ccfdf82e1",
+          "sha256": "7a5449372907f69208a325d0d3cdd4a6cc62f534e7785a3de84c4993bdefd558",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.28/el/6/supermarket-3.1.28-1.el6.x86_64.rpm"
+        },
+        "3.1.29": {
+          "sha1": "033ad5401c99a07bc955d4021ef1b1d7697d165b",
+          "sha256": "e34a20fd6b5a99a4acc72b45d201fde86f561a7dd9ad9e854bf02e8de36c093c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.29/el/6/supermarket-3.1.29-1.el6.x86_64.rpm"
+        },
+        "3.1.31": {
+          "sha1": "74757b08f04b237fb15b827394fc7334f3b50c56",
+          "sha256": "8a4e72f74fffefdf1b9388089020f7e42fe052f1bb02b2e1b9f060e2809f1815",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.31/el/6/supermarket-3.1.31-1.el6.x86_64.rpm"
+        },
+        "3.1.34": {
+          "sha1": "617c0ea9b32a8478064367563b3e35e86fa8414b",
+          "sha256": "be0198d38010c9ec35c7da0e7b2d73a7120b1945e23a6dad63cf22bb1bd67b9c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.34/el/6/supermarket-3.1.34-1.el6.x86_64.rpm"
+        },
+        "3.1.41": {
+          "sha1": "117b978154d9c3225250a5d626fecfd9405f095b",
+          "sha256": "afa1484156c5379d12f85dd53e7979281b87e59411fa57c215ac065a3ec1200f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.41/el/6/supermarket-3.1.41-1.el6.x86_64.rpm"
+        },
+        "3.1.42": {
+          "sha1": "faba7acae68816020c908bf0612a3f0fe24652af",
+          "sha256": "a4a5382490fd0ccb02f059532ff12ca67fe7cbd81f29a563a50bfafab9c0d388",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.42/el/6/supermarket-3.1.42-1.el6.x86_64.rpm"
+        },
+        "3.1.47": {
+          "sha1": "544af03c7175bc8625e24bd78f670a278aea46fd",
+          "sha256": "7d8c396645137c000e652cc32cf86a236279ddf56b19554c31b5e5ca7615f00d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.47/el/6/supermarket-3.1.47-1.el6.x86_64.rpm"
+        },
+        "3.1.50": {
+          "sha1": "cabd0ad86efe1feb507ed211a7028ae123f483a1",
+          "sha256": "92f996bc8f639b011f34dc9676de12b01b1cc0e0681b595c7af02ab4e70d1638",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.50/el/6/supermarket-3.1.50-1.el6.x86_64.rpm"
+        },
+        "3.1.51": {
+          "sha1": "4530ae4a442aed8ba943222ae3ee9525825280b0",
+          "sha256": "ea0b2889b67022a41f5312e1a02aaba405b175c498196eb1ad1d96bc8e88c93d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.51/el/6/supermarket-3.1.51-1.el6.x86_64.rpm"
+        },
+        "3.1.56": {
+          "sha1": "cfa9f49de08a0d4f3c01991dec620ae52c0318ee",
+          "sha256": "9064014dc3d559550e4a69e62287290e7784abc78c5c309218773fe0ed8d4d44",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.56/el/6/supermarket-3.1.56-1.el6.x86_64.rpm"
+        },
+        "3.1.61": {
+          "sha1": "c13a4171a88e6f1a167d9dd9d54d29120bd04628",
+          "sha256": "487adbefee377ac773bbb3c9d578cad4a2f65e6257e3be1a694faa68967d1ee2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.61/el/6/supermarket-3.1.61-1.el6.x86_64.rpm"
+        },
+        "3.1.62": {
+          "sha1": "554f3944633c023d80ca444de90c1b83c31e3363",
+          "sha256": "e3c79a0f73959a43275006a8057b3df8b6a3cf479557dfc59d00a38e14ba93a3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.62/el/6/supermarket-3.1.62-1.el6.x86_64.rpm"
+        },
+        "3.1.63": {
+          "sha1": "b20107bf5f67b41885a813630d72a7f17e1ce2c5",
+          "sha256": "28adb4cd1140a74512e3004a5c97d779ee6af4a8366abac95836309857f0a74a",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.63/el/6/supermarket-3.1.63-1.el6.x86_64.rpm"
+        },
+        "3.1.68": {
+          "sha1": "6250f37b9f4ae74cf8e1007da9c1606931c3ff67",
+          "sha256": "3da8c2766b7a433f342228a56cbb4edfd858d80c80a175b6e7f40a7baf9f13cf",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.68/el/6/supermarket-3.1.68-1.el6.x86_64.rpm"
+        },
+        "3.1.70": {
+          "sha1": "cfe49efc257bc951016255022bea21cbbc114d5c",
+          "sha256": "0bfbc20cd90efd919244679441899697e82846fd853f876a3e4b01f97ee0ef40",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.70/el/6/supermarket-3.1.70-1.el6.x86_64.rpm"
+        },
+        "3.1.72": {
+          "sha1": "6b052747f42c53a6f0abf51c76bde1f26ea425d7",
+          "sha256": "27b016b70ca7b15f029ab0eced67d1af0e880f3b8731907d9fdbc9aead884130",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.72/el/6/supermarket-3.1.72-1.el6.x86_64.rpm"
+        },
+        "3.1.81": {
+          "sha1": "17ede8273f4ddb44a01669b1afaaeaf4739093c7",
+          "sha256": "e01e8121c4279195f7277f9ed888689d1139945c4af127828e82308e1bd15834",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.81/el/6/supermarket-3.1.81-1.el6.x86_64.rpm"
+        },
+        "3.1.91": {
+          "sha1": "3a150789811c1ebba7aefc2eb6252de1f3caffaa",
+          "sha256": "563613c9bcb7c79c6b18b39abf949bb90ab7b0b1bc12992d6ecd389ec1945431",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.91/el/6/supermarket-3.1.91-1.el6.x86_64.rpm"
+        },
+        "3.1.96": {
+          "sha1": "435d91699756a28dbf4a8d5144d9aaa43045abe5",
+          "sha256": "25cecdf5743bc6f880afaf285694a6106c7322c62d25ad0a887484181cdd8b8e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.96/el/6/supermarket-3.1.96-1.el6.x86_64.rpm"
+        },
+        "3.2.0": {
+          "sha1": "457d4d9912aae2e2dd15ce191b634d731120d33a",
+          "sha256": "c5d8443af9a0f5ed86d22721da6c1e5ff23f997e7d8f62a1f6ed0de58f0e7876",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.0/el/6/supermarket-3.2.0-1.el6.x86_64.rpm"
+        },
+        "3.2.2": {
+          "sha1": "05b6d7c822cd2b53a23da89c2b4ade176d16f424",
+          "sha256": "3b3cd005433682b13987278dd3a57551608e6e87c57d2dad37ff0b3c4fb77da1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.2/el/6/supermarket-3.2.2-1.el6.x86_64.rpm"
+        },
+        "3.3.1": {
+          "sha1": "d8d3c7afff01dde3b60b6e6787151a627ca6bca5",
+          "sha256": "93e3add6a6e2591b254bd4797324732ef27499ea3d3419ff536fd1e1da5a6a3b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.1/el/6/supermarket-3.3.1-1.el6.x86_64.rpm"
+        },
+        "3.3.3": {
+          "sha1": "f545311c123502cf653449c871aa4eb7e94134cd",
+          "sha256": "b04eb6a664a8169200ccaefcf32628f2b93ac815ddf8e5c120ede3a161438ad7",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.3/el/6/supermarket-3.3.3-1.el6.x86_64.rpm"
+        },
+        "3.3.7": {
+          "sha1": "c9d56fbf0f70f9b79429d1b57c71e374953fc5bb",
+          "sha256": "2fc5bfe4c8de60f49f4b2004b19effb97ad1888cec6ed8f95e1b016eff981187",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.7/el/6/supermarket-3.3.7-1.el6.x86_64.rpm"
+        },
+        "3.3.20": {
+          "sha1": "fa83eaa09f70e3f9d76812b872a0a823eeec6fa7",
+          "sha256": "393a48ebf009e463a2ce4e702ab74989afd1c95764ab6c4d2523a7d3bcf40c8c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.20/el/6/supermarket-3.3.20-1.el6.x86_64.rpm"
+        },
+        "3.3.26": {
+          "sha1": "97a42c5c15b119737a952fff79be312bef6edabc",
+          "sha256": "3cd2a61dec7e1f36eb674b5376c7ae1be529efc799817b31dcabc3918fe8ce43",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/el/6/supermarket-3.3.26-1.el6.x86_64.rpm"
+        },
+        "3.3.35": {
+          "sha1": "dcf5be150f14acc6a79cf63ee5123ed913006662",
+          "sha256": "69549734aad0a5ce19d5709a02414928a2e5362f4cff5df547d7aef0eea7393a",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/el/6/supermarket-3.3.35-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "2.2.1": {
+          "sha1": "8fadca61b27efcb447276df974064052aed760be",
+          "sha256": "3bf121deeca789e12512363c82dc5b1b6fd953f521ff906fd92de2193eee36f3",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/el/7/supermarket-2.2.1-1.el7.x86_64.rpm"
+        },
+        "2.2.2": {
+          "sha1": "48030af983aae7dfb5036d7912c36766a99d6bec",
+          "sha256": "ea33477231f1348d61e357110beb8e5762b953342b36b1ed9b34114c51e0579d",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/el/7/supermarket-2.2.2-1.el7.x86_64.rpm"
+        },
+        "2.3.0": {
+          "sha1": "c2c143185f3ec00f2712f6981f05065d2ec9e322",
+          "sha256": "be89a374b494caf8653ac1cb9fb568f62e06e17cc72eec82b0f100c40071072c",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/el/7/supermarket-2.3.0-1.el7.x86_64.rpm"
+        },
+        "2.3.2": {
+          "sha1": "0845ea6918b792b023788af0732f95d4bfa3a2a6",
+          "sha256": "6223c174c2690dd92d4361c1af2eeedeb537d94d203c5aca941c84e739a83918",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/el/7/supermarket-2.3.2-1.el7.x86_64.rpm"
+        },
+        "2.3.3": {
+          "sha1": "66cacd4d8ec1a979904caa63c59cf47c27a20475",
+          "sha256": "2c9a8ce6eb0e0fdbe1c09ee6dda7e8f8cbde0af3734894fcfccd25e66a3233fc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/el/7/supermarket-2.3.3-1.el7.x86_64.rpm"
+        },
+        "2.4.0": {
+          "sha1": "6ea83e8b5b39de425361e54000c6596ceabf37b7",
+          "sha256": "2ab1cd49db8f58d2f3c5a87c1789e89be23fdc9e28010d1c562932c866787be0",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/el/7/supermarket-2.4.0-1.el7.x86_64.rpm"
+        },
+        "2.4.1": {
+          "sha1": "8b75deaa7b3db718904680adb374d9f21570ed58",
+          "sha256": "9ace92d99a7613386e1bbdf0215a1d67ce95e28c7658ea05c3cd7b1eac714a37",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/el/7/supermarket-2.4.1-1.el7.x86_64.rpm"
+        },
+        "2.4.2": {
+          "sha1": "f71f314c362bd3b61c56da061a009cf62626d5c5",
+          "sha256": "fe614de913c404b31f50f6e5e7311f4d7114c0f077d69d3b130b77e161953648",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/el/7/supermarket-2.4.2-1.el7.x86_64.rpm"
+        },
+        "2.5.0": {
+          "sha1": "1f177d9c6aa3e52ecfeb5656cb88779638c3f534",
+          "sha256": "0807743a9e915754efc38b5ee19e9aa0cc53f4f1c9201565b22e9efe78ba4297",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/el/7/supermarket-2.5.0-1.el7.x86_64.rpm"
+        },
+        "2.5.2": {
+          "sha1": "9e8c5a3ca1a2a51c605770abccafcb86c567f906",
+          "sha256": "c6abef85d8673037b6b5f19f56b49090d2ccbcb740b2115af87b69779eeca2fc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/el/7/supermarket-2.5.2-1.el7.x86_64.rpm"
+        },
+        "2.6.0": {
+          "sha1": "b7bddaca8e1160a9db4c6e16a43fdb497704b954",
+          "sha256": "08660f1aa2c002fcd436605f276334bcbd1bf3a74047e8d3cfcecb7c7ae571d0",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/el/7/supermarket-2.6.0-1.el7.x86_64.rpm"
+        },
+        "2.6.1": {
+          "sha1": "6970ae58c063934d85eaa73737a1b1f56eb1f85d",
+          "sha256": "bb3c5d50063e2ee5aa758940448ecaa88a9d92a0726b26331f2507b614dd2a46",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/el/7/supermarket-2.6.1-1.el7.x86_64.rpm"
+        },
+        "2.7.2": {
+          "sha1": "186a159106878ea045bc26c44453d82c87f0376b",
+          "sha256": "ebdddb2b379ba6676bb6e596066a71328a3fc5b6aea69f2613d805fb56062e39",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/el/7/supermarket-2.7.2-1.el7.x86_64.rpm"
+        },
+        "2.7.3": {
+          "sha1": "4de247c7e7a83629fb2274a3bbe9cb2bf97b3426",
+          "sha256": "8ef14fc8ba069fc09695c80d4c67982087b96f2f99202294378dbaca38420d5d",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/el/7/supermarket-2.7.3-1.el7.x86_64.rpm"
+        },
+        "2.7.4": {
+          "sha1": "633f93a40e70c8dce78facc9cbd1a27cfb19eb33",
+          "sha256": "201086e759b91de305d841d4f6800d597f97723ac8c2f69d320189d0c5677bb1",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/el/7/supermarket-2.7.4-1.el7.x86_64.rpm"
+        },
+        "2.8.0": {
+          "sha1": "1f0a0697269dce155ef43d57317271ec7c9cfc53",
+          "sha256": "76b8ac803a40a3f5f098ff82e755d72b4187512dc55ee0af10e84b6b63dd7f7a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/el/7/supermarket-2.8.0-1.el7.x86_64.rpm"
+        },
+        "2.8.1": {
+          "sha1": "07e7d78801bb83d1e9d13ad15a11e8bc04512db5",
+          "sha256": "120bf62b17dba925c53ebe45d9f933d83089b02acb0693691a5fda7d7f3d1e87",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/el/7/supermarket-2.8.1-1.el7.x86_64.rpm"
+        },
+        "2.8.2": {
+          "sha1": "147d8c8b2d2416889a53c7ea24138cbeb639d73c",
+          "sha256": "cc7bfbfcdd29232e429d7a5fec86103b339863ad774a810ec6a39d2ae8e61076",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/el/7/supermarket-2.8.2-1.el7.x86_64.rpm"
+        },
+        "2.8.3": {
+          "sha1": "fb35a4203612954d7af8e6ea6a86eba1251bead5",
+          "sha256": "b59c3b1688c617055a221393d3f794df1b1996a87ddbaade9b866b75a9a37a1d",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/el/7/supermarket-2.8.3-1.el7.x86_64.rpm"
+        },
+        "2.8.15": {
+          "sha1": "559e004e37a628a1d51dacce5908a3acc2ef880c",
+          "sha256": "d29073839e70b2b1655c8983285a088b567828a8069728ef6c20540b607c55c2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/el/7/supermarket-2.8.15-1.el7.x86_64.rpm"
+        },
+        "2.8.25": {
+          "sha1": "5d5131633463a4cb45b5c01b5cef8d66dc903c9b",
+          "sha256": "7e25d76d66f73d75f958b1870977be113f63d61335841983c1cfd2b71e4bfb79",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/el/7/supermarket-2.8.25-1.el7.x86_64.rpm"
+        },
+        "2.8.27": {
+          "sha1": "3b3e28d1f94bf9372a8fce890c5a5a50a2311228",
+          "sha256": "e97fed8c9f543a8fc8fc6541b5c289772b38ff007988aa7d95c2269715585759",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/el/7/supermarket-2.8.27-1.el7.x86_64.rpm"
+        },
+        "2.8.30": {
+          "sha1": "d07c7850265fd356091d6e1cb20ec8b051fb6826",
+          "sha256": "9093a5532164e80d980502e00818069ad14d228440ef68ae45f77e334f82ffe3",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/el/7/supermarket-2.8.30-1.el7.x86_64.rpm"
+        },
+        "2.8.34": {
+          "sha1": "7b302d4ed934f6f74c7d8fff48b4ca2b27c67d77",
+          "sha256": "00ec7934217a1dd5fcbb510a0018e6b100c7e07630e9864b2a3beda6fae155f0",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/el/7/supermarket-2.8.34-1.el7.x86_64.rpm"
+        },
+        "2.8.43": {
+          "sha1": "a64c6c91e5b74f3fa572518b1329156474545322",
+          "sha256": "88b85b2d987a230f4084322471e4130c328dac278cb1088dbce8cf6de0d010b0",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/el/7/supermarket-2.8.43-1.el7.x86_64.rpm"
+        },
+        "2.8.61": {
+          "sha1": "ec784fc0b8de7fb165b1c4d807d4980add5839bc",
+          "sha256": "cc0c25d1c95224ac364a32be468b4da952b3e88ba930912f0975d1597ab29b7e",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/el/7/supermarket-2.8.61-1.el7.x86_64.rpm"
+        },
+        "2.9.3": {
+          "sha1": "6bb5ebdc275f35ba739a227bc3a14ce6debce940",
+          "sha256": "e36d66f134dbddb0ccb7c5a076ceeea819e1036a53a0700e2e066c16e484d6ed",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/el/7/supermarket-2.9.3-1.el7.x86_64.rpm"
+        },
+        "2.9.7": {
+          "sha1": "e1355b759d6ae5341b9af8a9dfa7180a184d379d",
+          "sha256": "c81280c80dfc546bf424d0777e8f1ad67db013a2b4d56c709789751cbe0c2919",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/el/7/supermarket-2.9.7-1.el7.x86_64.rpm"
+        },
+        "2.9.15": {
+          "sha1": "4035ec44bfda8e446040ed38c9d24b14fb874a17",
+          "sha256": "b485e958dbebc6bb768905ade28b2ab033845d5f84e63fc3e38374ae4140115d",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/el/7/supermarket-2.9.15-1.el7.x86_64.rpm"
+        },
+        "2.9.21": {
+          "sha1": "6f5c2b8c92bd30616488f891af280f94edbc0380",
+          "sha256": "f7576d1a0ab15fb85e2e4d207c5dbc6e5c7ac86a12df3485f743fbde71d494c7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/el/7/supermarket-2.9.21-1.el7.x86_64.rpm"
+        },
+        "2.9.29": {
+          "sha1": "15ccd3f00438f5c06ffd888a36a9ea5d86a39dbf",
+          "sha256": "59044444433d6eb9268a047173ea7960249b50a38d72cecbe49e2f63714d63fe",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/el/7/supermarket-2.9.29-1.el7.x86_64.rpm"
+        },
+        "2.9.30": {
+          "sha1": "c30c1695fa4a3621a487e4be87831113cd4c6526",
+          "sha256": "e9510ceacee41c9d1e32fd00b6584885aec24c77f47449655f6691692cc179c1",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/el/7/supermarket-2.9.30-1.el7.x86_64.rpm"
+        },
+        "3.0.0": {
+          "sha1": "8021ac3170d3cbcccea36deb6a809540f8cbde12",
+          "sha256": "4a281c7863eaa8feb33595cac318f567b58682186f7aa9b061f0d1052ba10ef9",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/el/7/supermarket-3.0.0-1.el7.x86_64.rpm"
+        },
+        "3.0.2": {
+          "sha1": "9668a28ca9ad8ef0478fac4f997fa92510355bf8",
+          "sha256": "244bb706320b04e17f4b3894333598e541cab67f72c87b3508d1e8b08f323a70",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/el/7/supermarket-3.0.2-1.el7.x86_64.rpm"
+        },
+        "3.1.0": {
+          "sha1": "17983a3643354e071c04c38aa1712b0ff368b5da",
+          "sha256": "128a264a0e87d7cc2238b913b4f78e3011befe9c299500ff65a3706df12368ee",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/el/7/supermarket-3.1.0-1.el7.x86_64.rpm"
+        },
+        "3.1.1": {
+          "sha1": "9764a4f14643cb86936b02080d99050e6276ee54",
+          "sha256": "b108a7a59272a0fe1013357aabc44be16aa3e980097b01799d90b1d454b76ea5",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/el/7/supermarket-3.1.1-1.el7.x86_64.rpm"
+        },
+        "3.1.4": {
+          "sha1": "2f31ae6c144016891d4964c1c082b832db81d41d",
+          "sha256": "9c5d7c3081a260eca649a5074ea8ee052a41c4d24020269c40a70977cbf86762",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/el/7/supermarket-3.1.4-1.el7.x86_64.rpm"
+        },
+        "3.1.6": {
+          "sha1": "e812f01a387030613b2a6c60be3c6ca453f73184",
+          "sha256": "a5426936922d9ff81760dd1511adc1047edc6905a88a771986a4b22cfacbc1b1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/el/7/supermarket-3.1.6-1.el7.x86_64.rpm"
+        },
+        "3.1.10": {
+          "sha1": "a942c2d4909123f6969550aee6daaff12a2098a3",
+          "sha256": "e25207bb595fc1a163b4cf2f7942bb11cbd2501982d974a2b5a8671903fe1001",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/el/7/supermarket-3.1.10-1.el7.x86_64.rpm"
+        },
+        "3.1.14": {
+          "sha1": "ba70379366588d4bf57b23c4e631db4ca0e4024a",
+          "sha256": "a3be747628e4e27985d7736cb6219c492ff132eda7188cb297b459345708e1aa",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/el/7/supermarket-3.1.14-1.el7.x86_64.rpm"
+        },
+        "3.1.22": {
+          "sha1": "2301ab910b3c96bd86af44e9d0e8eb4ab7af9253",
+          "sha256": "40accb1c44de7cc6d6982cd557c1c4fcceed85a200740eebcf3fa44be36a789b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.22/el/7/supermarket-3.1.22-1.el7.x86_64.rpm"
+        },
+        "3.1.23": {
+          "sha1": "24add28909945d85d2bd6caed777a23499e0d019",
+          "sha256": "08ef159d7542d60509dc4e9e6af738d34db31f1ed1d3cd2717d8fd0111b9fa51",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.23/el/7/supermarket-3.1.23-1.el7.x86_64.rpm"
+        },
+        "3.1.25": {
+          "sha1": "0693f5b7a2eacb78f28aa46ebe39878b3ccfcad7",
+          "sha256": "23a94d91161c56104f6f5588dc2fc1ad49c23ac9e7a99413cb8da78dd2bc08f6",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.25/el/7/supermarket-3.1.25-1.el7.x86_64.rpm"
+        },
+        "3.1.28": {
+          "sha1": "ae045bb3ed1835cae42f32e64a65bed2be16a989",
+          "sha256": "174023ba138de0b3079c0a2d16a5de288d5479b7131c582b9843729fae530575",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.28/el/7/supermarket-3.1.28-1.el7.x86_64.rpm"
+        },
+        "3.1.29": {
+          "sha1": "6c58ab01b0c42c5cbadeab8901198cd805588969",
+          "sha256": "aac0e5424b3ce9f533a034624f16520bf3f05007591015d5eaf974315957464b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.29/el/7/supermarket-3.1.29-1.el7.x86_64.rpm"
+        },
+        "3.1.31": {
+          "sha1": "872ec9807a542311f3e9069ca48b29b7201b6fc8",
+          "sha256": "f6f0b616f3def40765e428b839cb16422a79cc55169e862999acdf0db889a75b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.31/el/7/supermarket-3.1.31-1.el7.x86_64.rpm"
+        },
+        "3.1.34": {
+          "sha1": "5edd09d09ae63ef9806dda9476759198f96ac355",
+          "sha256": "6d6eacb1561f52819238e55a2611e820e439d2ac7025e78dc7ecbabd1c446071",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.34/el/7/supermarket-3.1.34-1.el7.x86_64.rpm"
+        },
+        "3.1.41": {
+          "sha1": "84316da18260a403e9d0291d59ec03fc3bbeecbe",
+          "sha256": "61afe88bb515ef8189377aa147141e90b6762c8461564cf6eeeed475acf91334",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.41/el/7/supermarket-3.1.41-1.el7.x86_64.rpm"
+        },
+        "3.1.42": {
+          "sha1": "c1abee132162db2abb2a07df156a91230280e10a",
+          "sha256": "db8a210708fc51517e36ecf3a777f7fc646c091d9adfea9ad44ade43eda279e8",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.42/el/7/supermarket-3.1.42-1.el7.x86_64.rpm"
+        },
+        "3.1.47": {
+          "sha1": "f2751b5c2aa4317538630647f0e55dada7d88385",
+          "sha256": "e46bfe19014a793d10e945aa5245f9e98acf396536053293c5180c86df5d9c0d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.47/el/7/supermarket-3.1.47-1.el7.x86_64.rpm"
+        },
+        "3.1.50": {
+          "sha1": "f3d26a3a78a104b86053fec69cb0b53271c63236",
+          "sha256": "ddd3488330f3e04f653fb02a257701fed491431386eabdad5919ada85ee7719f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.50/el/7/supermarket-3.1.50-1.el7.x86_64.rpm"
+        },
+        "3.1.51": {
+          "sha1": "e5c5cc8e6041c73ffdae542d65f67c70aa9e9f4e",
+          "sha256": "97858ad5e1951044bfeebc9d5181d655f1476ab684d947604ce5454b62d1a8c7",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.51/el/7/supermarket-3.1.51-1.el7.x86_64.rpm"
+        },
+        "3.1.56": {
+          "sha1": "ecd14ac724853b53e197a08390b61285280468a1",
+          "sha256": "e84aa9a767f8c8adeed2ffaf676493bee7274b87ad0f3d59c07fa560e9a09f69",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.56/el/7/supermarket-3.1.56-1.el7.x86_64.rpm"
+        },
+        "3.1.61": {
+          "sha1": "180621a24f78a911e896bec31b3bc40d9402c486",
+          "sha256": "358c38ee836098d9c74043cb350b9f8b1007934e52c0e26019256d5153cc05d6",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.61/el/7/supermarket-3.1.61-1.el7.x86_64.rpm"
+        },
+        "3.1.62": {
+          "sha1": "99d4b9afd3e3fd990b2ca5e06dad1c089185e797",
+          "sha256": "535070bac7d2df579f173061e5662b3ea1bc588897800867554eeeb257d8984b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.62/el/7/supermarket-3.1.62-1.el7.x86_64.rpm"
+        },
+        "3.1.63": {
+          "sha1": "3c0c5a029eaebfebb968303e351e910a9d50b105",
+          "sha256": "7a8f7cf912413cd4da4e5962523f814bbf582139ef296ef803714d4de23ebe6e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.63/el/7/supermarket-3.1.63-1.el7.x86_64.rpm"
+        },
+        "3.1.68": {
+          "sha1": "1e289cfa5105e6ab5fa0bccd5033c90bd56cbfb5",
+          "sha256": "a625cd3580743f2dc888caf550f67c37483bd65d975e0c80671b0977c1b50554",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.68/el/7/supermarket-3.1.68-1.el7.x86_64.rpm"
+        },
+        "3.1.70": {
+          "sha1": "4d290f5dec132f950264231a0c9a10bfe750bf15",
+          "sha256": "d07c3ec4ffdb582cdefa7d4ea86158200b3a09739f200dd197c7e61ed963a5f8",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.70/el/7/supermarket-3.1.70-1.el7.x86_64.rpm"
+        },
+        "3.1.72": {
+          "sha1": "a64491e430d11068532ca6a5decbd78e5baf6e90",
+          "sha256": "f68a29cf03e54dc776961c13b78b2519549265770db3cc16f60cf1bc3f698a2f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.72/el/7/supermarket-3.1.72-1.el7.x86_64.rpm"
+        },
+        "3.1.81": {
+          "sha1": "dd8678cca7ed9d46a4554e97ecabc975f4c06f6b",
+          "sha256": "e6cdab323f6ca6e9a1088ef50b9c980ec37d31ffce6fe0249612c49fafe87e2e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.81/el/7/supermarket-3.1.81-1.el7.x86_64.rpm"
+        },
+        "3.1.91": {
+          "sha1": "3095e0e484653c4c6fb07b0c91896bd2da5ad428",
+          "sha256": "89321be90278aa68fc0e86bb48d7c7bebf46e28ce205302d5cb5fb0aa081a9c1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.91/el/7/supermarket-3.1.91-1.el7.x86_64.rpm"
+        },
+        "3.1.96": {
+          "sha1": "44cf42f51ddc5f5dfb9540d9546f630867d5d38f",
+          "sha256": "f9527a94b099ca1c86b910c46159bfea08b9eb8040ed8d91d8d7663de04d409e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.96/el/7/supermarket-3.1.96-1.el7.x86_64.rpm"
+        },
+        "3.2.0": {
+          "sha1": "53d8b641d4d5976185dde2e5eed783972af38321",
+          "sha256": "49236848564c083a2f8d5cdfe6653832a2b9e764d550cfaea74e834b3535a0c4",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.0/el/7/supermarket-3.2.0-1.el7.x86_64.rpm"
+        },
+        "3.2.2": {
+          "sha1": "4b42d2d404eef2a83df3b65b8534c28710ad3234",
+          "sha256": "2fd339a2cbfe49354febd69c987d9de61a6e901f798967ebeb1aadf608dbf8ea",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.2/el/7/supermarket-3.2.2-1.el7.x86_64.rpm"
+        },
+        "3.3.1": {
+          "sha1": "63980689bb66b5c8d593e0763d86aab4eb3d0500",
+          "sha256": "8391fbe5458d478d7f92e6efe74e4142911c4ffc905e09e3f0cf11b0c981bf86",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.1/el/7/supermarket-3.3.1-1.el7.x86_64.rpm"
+        },
+        "3.3.3": {
+          "sha1": "a6ad78a67afa896f16f8a4484c51e9e6a24f3236",
+          "sha256": "a8f4beb876114d250a930093efcfd1543f71c63e96406c94618d9c665626bd53",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.3/el/7/supermarket-3.3.3-1.el7.x86_64.rpm"
+        },
+        "3.3.7": {
+          "sha1": "758e3a6f142ece6f4d27b4b0b03fef1dc7cc887e",
+          "sha256": "d55429ec2ac75052ff7db0ef22c4b6d5fc7d5f8a7b6a8620f5d3e0c7e6a5bdf1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.7/el/7/supermarket-3.3.7-1.el7.x86_64.rpm"
+        },
+        "3.3.20": {
+          "sha1": "af93e39a82533544793e6b971262b44eb096fcb5",
+          "sha256": "e709b974f6293ead68c7f35cf0a5094474bb4fe7d6bbeab63b06ea8aa88c377f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.20/el/7/supermarket-3.3.20-1.el7.x86_64.rpm"
+        },
+        "3.3.26": {
+          "sha1": "220955daff59348de61e696ed3ea12f6f0902b99",
+          "sha256": "27be01b5379672186bfab397c9bb761724ca8dc2ba605c39e740c41be2ae60a3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/el/7/supermarket-3.3.26-1.el7.x86_64.rpm"
+        },
+        "3.3.35": {
+          "sha1": "5a53a007f68c9eee2a3d65c43d685b10e42f2535",
+          "sha256": "c8411edd8a1bd2c533e2fb89e390f6afdb6f9980b6b48a48e7860ada5bbd2582",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/el/7/supermarket-3.3.35-1.el7.x86_64.rpm"
+        },
+        "3.4.1": {
+          "sha1": "5fb55c4e296029ffc56ee30aba6500736e770cc8",
+          "sha256": "34a6a6b7c2a0fd772b1f7dcc0449968360b8fae29168681e5cddaebb59201c7f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/el/7/supermarket-3.4.1-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "3.3.7": {
+          "sha1": "758e3a6f142ece6f4d27b4b0b03fef1dc7cc887e",
+          "sha256": "d55429ec2ac75052ff7db0ef22c4b6d5fc7d5f8a7b6a8620f5d3e0c7e6a5bdf1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.7/el/8/supermarket-3.3.7-1.el7.x86_64.rpm"
+        },
+        "3.3.20": {
+          "sha1": "af93e39a82533544793e6b971262b44eb096fcb5",
+          "sha256": "e709b974f6293ead68c7f35cf0a5094474bb4fe7d6bbeab63b06ea8aa88c377f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.20/el/8/supermarket-3.3.20-1.el7.x86_64.rpm"
+        },
+        "3.3.26": {
+          "sha1": "220955daff59348de61e696ed3ea12f6f0902b99",
+          "sha256": "27be01b5379672186bfab397c9bb761724ca8dc2ba605c39e740c41be2ae60a3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/el/8/supermarket-3.3.26-1.el7.x86_64.rpm"
+        },
+        "3.3.35": {
+          "sha1": "5a53a007f68c9eee2a3d65c43d685b10e42f2535",
+          "sha256": "c8411edd8a1bd2c533e2fb89e390f6afdb6f9980b6b48a48e7860ada5bbd2582",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/el/8/supermarket-3.3.35-1.el7.x86_64.rpm"
+        },
+        "3.4.1": {
+          "sha1": "5fb55c4e296029ffc56ee30aba6500736e770cc8",
+          "sha256": "34a6a6b7c2a0fd772b1f7dcc0449968360b8fae29168681e5cddaebb59201c7f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/el/8/supermarket-3.4.1-1.el7.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "10.04": {
+      "x86_64": {
+        "2.2.1": {
+          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
+          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/10.04/supermarket_2.2.1-1_amd64.deb"
+        },
+        "2.2.2": {
+          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
+          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/10.04/supermarket_2.2.2-1_amd64.deb"
+        },
+        "2.3.0": {
+          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
+          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/10.04/supermarket_2.3.0-1_amd64.deb"
+        },
+        "2.3.2": {
+          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
+          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/10.04/supermarket_2.3.2-1_amd64.deb"
+        },
+        "2.3.3": {
+          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
+          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/10.04/supermarket_2.3.3-1_amd64.deb"
+        },
+        "2.4.0": {
+          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
+          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/10.04/supermarket_2.4.0-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
+          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/10.04/supermarket_2.4.1-1_amd64.deb"
+        },
+        "2.4.2": {
+          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
+          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/10.04/supermarket_2.4.2-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
+          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/10.04/supermarket_2.5.0-1_amd64.deb"
+        },
+        "2.5.2": {
+          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
+          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/10.04/supermarket_2.5.2-1_amd64.deb"
+        },
+        "2.6.0": {
+          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
+          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/10.04/supermarket_2.6.0-1_amd64.deb"
+        }
+      }
+    },
+    "12.04": {
+      "x86_64": {
+        "2.2.1": {
+          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
+          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/12.04/supermarket_2.2.1-1_amd64.deb"
+        },
+        "2.2.2": {
+          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
+          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/12.04/supermarket_2.2.2-1_amd64.deb"
+        },
+        "2.3.0": {
+          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
+          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/12.04/supermarket_2.3.0-1_amd64.deb"
+        },
+        "2.3.2": {
+          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
+          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/12.04/supermarket_2.3.2-1_amd64.deb"
+        },
+        "2.3.3": {
+          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
+          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/12.04/supermarket_2.3.3-1_amd64.deb"
+        },
+        "2.4.0": {
+          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
+          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/12.04/supermarket_2.4.0-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
+          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/12.04/supermarket_2.4.1-1_amd64.deb"
+        },
+        "2.4.2": {
+          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
+          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/12.04/supermarket_2.4.2-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
+          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/12.04/supermarket_2.5.0-1_amd64.deb"
+        },
+        "2.5.2": {
+          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
+          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/12.04/supermarket_2.5.2-1_amd64.deb"
+        },
+        "2.6.0": {
+          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
+          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/12.04/supermarket_2.6.0-1_amd64.deb"
+        },
+        "2.6.1": {
+          "sha1": "0fb6f29b540b69d00baa4bdbf5f63b464033b210",
+          "sha256": "db1b123e7e1c8cf592aadfc924b3bd08a3139c2292512423fecc376c325e2478",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/ubuntu/12.04/supermarket_2.6.1-1_amd64.deb"
+        },
+        "2.7.2": {
+          "sha1": "31a4c7e6edd82b5086033d1a5e64948dbf50ea83",
+          "sha256": "34b4a1ba47a1880223bc0d7ee6ccdd1c42c87095f20811481d671279e71f0e20",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/ubuntu/12.04/supermarket_2.7.2-1_amd64.deb"
+        },
+        "2.7.3": {
+          "sha1": "0e747ce36460adac925ed197561fcd55ccf1c9de",
+          "sha256": "41ee23ce7121b7e0d14fcf56fdf496f2478865455016017563d59b025a6887e5",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/ubuntu/12.04/supermarket_2.7.3-1_amd64.deb"
+        },
+        "2.7.4": {
+          "sha1": "5f1ab406f0bfecb2ee4f4e9e646c0e988acf4a3b",
+          "sha256": "ae7ce8e76d5e22b0ce04d76de322d863895716fd3119eef7acda40f7ebac5dcd",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/ubuntu/12.04/supermarket_2.7.4-1_amd64.deb"
+        },
+        "2.8.0": {
+          "sha1": "e942b6b5a6ce7e445e99e9a5724392fff74d917e",
+          "sha256": "4ea28a9cfe4a550633584472056bcb583d185c51e70ea48d93a1287930006c2a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/ubuntu/12.04/supermarket_2.8.0-1_amd64.deb"
+        },
+        "2.8.1": {
+          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
+          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/12.04/supermarket_2.8.1-1_amd64.deb"
+        },
+        "2.8.2": {
+          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
+          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/12.04/supermarket_2.8.2-1_amd64.deb"
+        },
+        "2.8.3": {
+          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
+          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/12.04/supermarket_2.8.3-1_amd64.deb"
+        },
+        "2.8.15": {
+          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
+          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/12.04/supermarket_2.8.15-1_amd64.deb"
+        },
+        "2.8.25": {
+          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
+          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/12.04/supermarket_2.8.25-1_amd64.deb"
+        },
+        "2.8.27": {
+          "sha1": "471c8309df97424d9d517b981b653be14d516442",
+          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/12.04/supermarket_2.8.27-1_amd64.deb"
+        },
+        "2.8.30": {
+          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
+          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/12.04/supermarket_2.8.30-1_amd64.deb"
+        },
+        "2.8.34": {
+          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
+          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/12.04/supermarket_2.8.34-1_amd64.deb"
+        },
+        "2.8.43": {
+          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
+          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/12.04/supermarket_2.8.43-1_amd64.deb"
+        },
+        "2.8.61": {
+          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
+          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/12.04/supermarket_2.8.61-1_amd64.deb"
+        },
+        "2.9.3": {
+          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
+          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/12.04/supermarket_2.9.3-1_amd64.deb"
+        },
+        "2.9.7": {
+          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
+          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/12.04/supermarket_2.9.7-1_amd64.deb"
+        },
+        "2.9.15": {
+          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
+          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/12.04/supermarket_2.9.15-1_amd64.deb"
+        },
+        "2.9.21": {
+          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
+          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/12.04/supermarket_2.9.21-1_amd64.deb"
+        },
+        "2.9.29": {
+          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
+          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/12.04/supermarket_2.9.29-1_amd64.deb"
+        },
+        "2.9.30": {
+          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
+          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/12.04/supermarket_2.9.30-1_amd64.deb"
+        },
+        "3.0.0": {
+          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
+          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/12.04/supermarket_3.0.0-1_amd64.deb"
+        },
+        "3.0.2": {
+          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
+          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/12.04/supermarket_3.0.2-1_amd64.deb"
+        },
+        "3.1.0": {
+          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
+          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/12.04/supermarket_3.1.0-1_amd64.deb"
+        },
+        "3.1.1": {
+          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
+          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/12.04/supermarket_3.1.1-1_amd64.deb"
+        },
+        "3.1.4": {
+          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
+          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/12.04/supermarket_3.1.4-1_amd64.deb"
+        },
+        "3.1.6": {
+          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
+          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/12.04/supermarket_3.1.6-1_amd64.deb"
+        },
+        "3.1.10": {
+          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
+          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/12.04/supermarket_3.1.10-1_amd64.deb"
+        },
+        "3.1.14": {
+          "sha1": "591291df12d858a2176a17ab756686c21abac907",
+          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/12.04/supermarket_3.1.14-1_amd64.deb"
+        },
+        "3.1.22": {
+          "sha1": "2e2df3ac5c2e667e905012b51c0f906f093eca0a",
+          "sha256": "2d44adb9b52eed57dceccb852a228af35004ca63752a9ff3a961cb3282949153",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.22/ubuntu/12.04/supermarket_3.1.22-1_amd64.deb"
+        },
+        "3.1.23": {
+          "sha1": "da6c7cf56734c1e1d0e48d27265e587137cdfe23",
+          "sha256": "fb1223498a59b852efab198657b5edd1a27e33b0834ae77dee96fb6065edd103",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.23/ubuntu/12.04/supermarket_3.1.23-1_amd64.deb"
+        },
+        "3.1.25": {
+          "sha1": "31f8144344c5410b513a0471725e7487f3cd7a42",
+          "sha256": "53061f7ab598d646de234bee2daa3a451823d468f466f87c7ca4a9addc47f20e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.25/ubuntu/12.04/supermarket_3.1.25-1_amd64.deb"
+        },
+        "3.1.28": {
+          "sha1": "132c4efa5e63e09d7d7f2fd6665802465c03f85e",
+          "sha256": "69454eedaafa61dad1e75a07a5083686f73e96196af259ec6395a4f31671d080",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.28/ubuntu/12.04/supermarket_3.1.28-1_amd64.deb"
+        },
+        "3.1.29": {
+          "sha1": "119ca00c89ad4086d611e866a6e08ed7fe1a2a01",
+          "sha256": "7872719cccf829fde72042acb5189d5f4a348bccbb7319a852724b216d62e75d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.29/ubuntu/12.04/supermarket_3.1.29-1_amd64.deb"
+        },
+        "3.1.31": {
+          "sha1": "9746e460e31374310213256b9cd549887e3bd4a4",
+          "sha256": "094432ddf7904f3344997b9ab4070098865c86bcefa38a32e603109c3e28137d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.31/ubuntu/12.04/supermarket_3.1.31-1_amd64.deb"
+        }
+      }
+    },
+    "14.04": {
+      "x86_64": {
+        "2.2.1": {
+          "sha1": "d0c0dee244f9be0327577a3d8d653f8bfbf84add",
+          "sha256": "77f5e8dd24ef925aee267d55f9b12aeb9aeebf48c974008e7c89039370383037",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.1/ubuntu/14.04/supermarket_2.2.1-1_amd64.deb"
+        },
+        "2.2.2": {
+          "sha1": "6c5ae075f73b9618c01dca9eb4788dc9c8b2e810",
+          "sha256": "0dbb5c0cbdfe04a6deb6ee5d8407cef8a79c92bd1c887d93e7251f28c143706a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.2.2/ubuntu/14.04/supermarket_2.2.2-1_amd64.deb"
+        },
+        "2.3.0": {
+          "sha1": "92cf81c034e99d3d2b1ed310e82064b36e215d49",
+          "sha256": "60f729d84a760e761f1a942dfe3df1c191f7066f384f808ff9a79491e284df9c",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.0/ubuntu/14.04/supermarket_2.3.0-1_amd64.deb"
+        },
+        "2.3.2": {
+          "sha1": "957baff13dd36f8f0d847a3267c11726aaef842f",
+          "sha256": "e96a3b8df5eb1de1c5d48d9eb6ef83160985ca09f084a602dc67dddbab149404",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.2/ubuntu/14.04/supermarket_2.3.2-1_amd64.deb"
+        },
+        "2.3.3": {
+          "sha1": "7d97ad82bf02b97ec5330868dcd1ac73ec082a54",
+          "sha256": "b852c13c69393d2cf38169ecb08ad817e8d95617fb765e528399b76dc5266038",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.3.3/ubuntu/14.04/supermarket_2.3.3-1_amd64.deb"
+        },
+        "2.4.0": {
+          "sha1": "c41cc4e26cafbf6ac62477f10301fc725f5766e8",
+          "sha256": "69b62772256cd72b855028390fc3eca2a2390e996e20c8f3f538e8a44b30895f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.0/ubuntu/14.04/supermarket_2.4.0-1_amd64.deb"
+        },
+        "2.4.1": {
+          "sha1": "2691c01dece821c646b816b6a756caaea5c65f39",
+          "sha256": "3b59bda8445bfc8d4cb130fbec51baaf010c5cab62414f3d4b4117c7652a80a2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.1/ubuntu/14.04/supermarket_2.4.1-1_amd64.deb"
+        },
+        "2.4.2": {
+          "sha1": "18b9a00ebf5def5c891cfc6356747539b57df3e4",
+          "sha256": "0f97177fb5010aa0450ea2de39a1ac38e5b1e473aca9f7c83028df064d7ca044",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.4.2/ubuntu/14.04/supermarket_2.4.2-1_amd64.deb"
+        },
+        "2.5.0": {
+          "sha1": "196434a5051731cc01345e5daeae61df9b5ba4cc",
+          "sha256": "d6554bb6e375528979a919193fdb4be18f16814cf654cf586845ec0989ef061b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.0/ubuntu/14.04/supermarket_2.5.0-1_amd64.deb"
+        },
+        "2.5.2": {
+          "sha1": "dfd5ac147e17db42092bba0fc134b29da63df222",
+          "sha256": "45631cd555c8eacf9eac0970ddd1508c5e762f77bbd49248fdfbc9e16c309d5b",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.5.2/ubuntu/14.04/supermarket_2.5.2-1_amd64.deb"
+        },
+        "2.6.0": {
+          "sha1": "3782bbde26389316c0964ca467eb077f1a0c3383",
+          "sha256": "25b6dc6d2a916b8e3712702bebbab25bdafe684b422f9152d7db94d21444d32f",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.0/ubuntu/14.04/supermarket_2.6.0-1_amd64.deb"
+        },
+        "2.6.1": {
+          "sha1": "0fb6f29b540b69d00baa4bdbf5f63b464033b210",
+          "sha256": "db1b123e7e1c8cf592aadfc924b3bd08a3139c2292512423fecc376c325e2478",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.6.1/ubuntu/14.04/supermarket_2.6.1-1_amd64.deb"
+        },
+        "2.7.2": {
+          "sha1": "31a4c7e6edd82b5086033d1a5e64948dbf50ea83",
+          "sha256": "34b4a1ba47a1880223bc0d7ee6ccdd1c42c87095f20811481d671279e71f0e20",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.2/ubuntu/14.04/supermarket_2.7.2-1_amd64.deb"
+        },
+        "2.7.3": {
+          "sha1": "0e747ce36460adac925ed197561fcd55ccf1c9de",
+          "sha256": "41ee23ce7121b7e0d14fcf56fdf496f2478865455016017563d59b025a6887e5",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.3/ubuntu/14.04/supermarket_2.7.3-1_amd64.deb"
+        },
+        "2.7.4": {
+          "sha1": "5f1ab406f0bfecb2ee4f4e9e646c0e988acf4a3b",
+          "sha256": "ae7ce8e76d5e22b0ce04d76de322d863895716fd3119eef7acda40f7ebac5dcd",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.7.4/ubuntu/14.04/supermarket_2.7.4-1_amd64.deb"
+        },
+        "2.8.0": {
+          "sha1": "e942b6b5a6ce7e445e99e9a5724392fff74d917e",
+          "sha256": "4ea28a9cfe4a550633584472056bcb583d185c51e70ea48d93a1287930006c2a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.0/ubuntu/14.04/supermarket_2.8.0-1_amd64.deb"
+        },
+        "2.8.1": {
+          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
+          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/14.04/supermarket_2.8.1-1_amd64.deb"
+        },
+        "2.8.2": {
+          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
+          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/14.04/supermarket_2.8.2-1_amd64.deb"
+        },
+        "2.8.3": {
+          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
+          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/14.04/supermarket_2.8.3-1_amd64.deb"
+        },
+        "2.8.15": {
+          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
+          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/14.04/supermarket_2.8.15-1_amd64.deb"
+        },
+        "2.8.25": {
+          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
+          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/14.04/supermarket_2.8.25-1_amd64.deb"
+        },
+        "2.8.27": {
+          "sha1": "471c8309df97424d9d517b981b653be14d516442",
+          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/14.04/supermarket_2.8.27-1_amd64.deb"
+        },
+        "2.8.30": {
+          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
+          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/14.04/supermarket_2.8.30-1_amd64.deb"
+        },
+        "2.8.34": {
+          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
+          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/14.04/supermarket_2.8.34-1_amd64.deb"
+        },
+        "2.8.43": {
+          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
+          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/14.04/supermarket_2.8.43-1_amd64.deb"
+        },
+        "2.8.61": {
+          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
+          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/14.04/supermarket_2.8.61-1_amd64.deb"
+        },
+        "2.9.3": {
+          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
+          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/14.04/supermarket_2.9.3-1_amd64.deb"
+        },
+        "2.9.7": {
+          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
+          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/14.04/supermarket_2.9.7-1_amd64.deb"
+        },
+        "2.9.15": {
+          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
+          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/14.04/supermarket_2.9.15-1_amd64.deb"
+        },
+        "2.9.21": {
+          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
+          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/14.04/supermarket_2.9.21-1_amd64.deb"
+        },
+        "2.9.29": {
+          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
+          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/14.04/supermarket_2.9.29-1_amd64.deb"
+        },
+        "2.9.30": {
+          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
+          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/14.04/supermarket_2.9.30-1_amd64.deb"
+        },
+        "3.0.0": {
+          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
+          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/14.04/supermarket_3.0.0-1_amd64.deb"
+        },
+        "3.0.2": {
+          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
+          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/14.04/supermarket_3.0.2-1_amd64.deb"
+        },
+        "3.1.0": {
+          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
+          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/14.04/supermarket_3.1.0-1_amd64.deb"
+        },
+        "3.1.1": {
+          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
+          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/14.04/supermarket_3.1.1-1_amd64.deb"
+        },
+        "3.1.4": {
+          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
+          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/14.04/supermarket_3.1.4-1_amd64.deb"
+        },
+        "3.1.6": {
+          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
+          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/14.04/supermarket_3.1.6-1_amd64.deb"
+        },
+        "3.1.10": {
+          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
+          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/14.04/supermarket_3.1.10-1_amd64.deb"
+        },
+        "3.1.14": {
+          "sha1": "591291df12d858a2176a17ab756686c21abac907",
+          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/14.04/supermarket_3.1.14-1_amd64.deb"
+        },
+        "3.1.22": {
+          "sha1": "2e2df3ac5c2e667e905012b51c0f906f093eca0a",
+          "sha256": "2d44adb9b52eed57dceccb852a228af35004ca63752a9ff3a961cb3282949153",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.22/ubuntu/14.04/supermarket_3.1.22-1_amd64.deb"
+        },
+        "3.1.23": {
+          "sha1": "da6c7cf56734c1e1d0e48d27265e587137cdfe23",
+          "sha256": "fb1223498a59b852efab198657b5edd1a27e33b0834ae77dee96fb6065edd103",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.23/ubuntu/14.04/supermarket_3.1.23-1_amd64.deb"
+        },
+        "3.1.25": {
+          "sha1": "31f8144344c5410b513a0471725e7487f3cd7a42",
+          "sha256": "53061f7ab598d646de234bee2daa3a451823d468f466f87c7ca4a9addc47f20e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.25/ubuntu/14.04/supermarket_3.1.25-1_amd64.deb"
+        },
+        "3.1.28": {
+          "sha1": "132c4efa5e63e09d7d7f2fd6665802465c03f85e",
+          "sha256": "69454eedaafa61dad1e75a07a5083686f73e96196af259ec6395a4f31671d080",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.28/ubuntu/14.04/supermarket_3.1.28-1_amd64.deb"
+        },
+        "3.1.29": {
+          "sha1": "119ca00c89ad4086d611e866a6e08ed7fe1a2a01",
+          "sha256": "7872719cccf829fde72042acb5189d5f4a348bccbb7319a852724b216d62e75d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.29/ubuntu/14.04/supermarket_3.1.29-1_amd64.deb"
+        },
+        "3.1.31": {
+          "sha1": "9746e460e31374310213256b9cd549887e3bd4a4",
+          "sha256": "094432ddf7904f3344997b9ab4070098865c86bcefa38a32e603109c3e28137d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.31/ubuntu/14.04/supermarket_3.1.31-1_amd64.deb"
+        },
+        "3.1.34": {
+          "sha1": "7c472e90e080f197f0eba6c5352516857af4e216",
+          "sha256": "c1f66111f15c45011a9b815dcf12879edd03529a995913f82f6fde9080276bd5",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.34/ubuntu/14.04/supermarket_3.1.34-1_amd64.deb"
+        },
+        "3.1.41": {
+          "sha1": "19948fefd9d535f5766182f08b4aa2b086db6c3c",
+          "sha256": "76e99801acca5f5d133e3bd9349d2b42e18fcf1a1c5634f1e8087bacb737b6f2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.41/ubuntu/14.04/supermarket_3.1.41-1_amd64.deb"
+        },
+        "3.1.42": {
+          "sha1": "a71fa2914b9901e69a93d9f8c7d66f2ac4bc4718",
+          "sha256": "95de44a1e4a3bfbe50ba13b66fb88b7060e4d2da5a8aa9b3261a693e3d85d99e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.42/ubuntu/14.04/supermarket_3.1.42-1_amd64.deb"
+        },
+        "3.1.47": {
+          "sha1": "03fb023f955417d91525aefefd692d7db65b22be",
+          "sha256": "a096b9e72cfc644876f730009e2fef7d9e2059a2d150dadde66fc4cc943885e1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.47/ubuntu/14.04/supermarket_3.1.47-1_amd64.deb"
+        },
+        "3.1.50": {
+          "sha1": "187609c94a2648f3b301d6a10c40505d74cd0535",
+          "sha256": "e8166ab4aa3ab9265e9ffe0e77ab1c995573c6d258ec0c82010131189341eeec",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.50/ubuntu/14.04/supermarket_3.1.50-1_amd64.deb"
+        },
+        "3.1.51": {
+          "sha1": "435aeb6f98f55c2d4d847be412d22785bc41c7ed",
+          "sha256": "385a5595649c0f8253138a9eff577dc3b9f7077138b6dba1978511dc8a443811",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.51/ubuntu/14.04/supermarket_3.1.51-1_amd64.deb"
+        },
+        "3.1.56": {
+          "sha1": "abca90764b51db30b124c6f04945a9572818f446",
+          "sha256": "b31f59ef219016c358d735451f774be24b249b3464618c1b077a4aa795707b0b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.56/ubuntu/14.04/supermarket_3.1.56-1_amd64.deb"
+        },
+        "3.1.61": {
+          "sha1": "017a7a443f136166b23b0a3ef2ccaf14170f4597",
+          "sha256": "97a9837cb62be2a8ecf87f36ee7bc8f46ae650c7432ca4f3a17d39c6a6db0c6e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.61/ubuntu/14.04/supermarket_3.1.61-1_amd64.deb"
+        },
+        "3.1.62": {
+          "sha1": "020e21c041282692df8a6567b3c3592cae9a1fee",
+          "sha256": "09391875a8ef587613e03c291f52ab937385ecbca7e2d8697ced271774fef981",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.62/ubuntu/14.04/supermarket_3.1.62-1_amd64.deb"
+        },
+        "3.1.63": {
+          "sha1": "fff1bfb49cfd046057d247f59e57cb5dc5bfc793",
+          "sha256": "8ad65c2fd0a2cd06406a2ab0c2d432c3fb60323297412d71d7b74a5b145e02ae",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.63/ubuntu/14.04/supermarket_3.1.63-1_amd64.deb"
+        },
+        "3.1.68": {
+          "sha1": "337a8cc6527757b1c90a22230d77c539777ca674",
+          "sha256": "0ab5ae6774a97b9fa7ccbb4c4500cf620c30238402e126ee496b9ecc04d6867c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.68/ubuntu/14.04/supermarket_3.1.68-1_amd64.deb"
+        },
+        "3.1.70": {
+          "sha1": "f5806ad9d1898e260712da9c387f8640b9eb1d2b",
+          "sha256": "b448e316dcc5a4c22230532d705ccceb859df87f9bc940a1a80b1cc80171cb70",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.70/ubuntu/14.04/supermarket_3.1.70-1_amd64.deb"
+        },
+        "3.1.72": {
+          "sha1": "4812c4793c8d4704cb0838c3fea338117c5ec9d1",
+          "sha256": "2b3ff239d42eea4b089ee4fa99ab4c82940cb371c2089c7ffabb7aebdd9f90e3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.72/ubuntu/14.04/supermarket_3.1.72-1_amd64.deb"
+        },
+        "3.1.81": {
+          "sha1": "734e653bc41ec412b8d8c511896057641586cfeb",
+          "sha256": "ac819347e0d9999d466dc81ed356af3f81c61869fa8d537b47c01572f243f584",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.81/ubuntu/14.04/supermarket_3.1.81-1_amd64.deb"
+        },
+        "3.1.91": {
+          "sha1": "f666135034dc36bf2e6097e0f160fdeebe6846c7",
+          "sha256": "52983a573ca8d7d2da4e6f9f194624f524a3031a589672c550ca72ec9f957eac",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.91/ubuntu/14.04/supermarket_3.1.91-1_amd64.deb"
+        },
+        "3.1.96": {
+          "sha1": "b7039cbff99ea26531054e5d11270a3c4ed345e4",
+          "sha256": "3510048e3165665319f5e67849a4f9f776fb355e0d33520fd75ed4c6d385ef28",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.96/ubuntu/14.04/supermarket_3.1.96-1_amd64.deb"
+        },
+        "3.2.0": {
+          "sha1": "8c3846f530b7e897e76367c5a27e8c5d435da15e",
+          "sha256": "68ab0c2439bf0a7c4e245105c9c8c18c17e752dea069e4279c7057660c966dc2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.0/ubuntu/14.04/supermarket_3.2.0-1_amd64.deb"
+        },
+        "3.2.2": {
+          "sha1": "22e0ede77258185d36d8c6d9479b280adc827d3d",
+          "sha256": "508e1f09168b8bab397fb7ec631c1097228cea21ee47eb1dfac801adaa23be6f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.2/ubuntu/14.04/supermarket_3.2.2-1_amd64.deb"
+        },
+        "3.3.1": {
+          "sha1": "f0d5b5f75565531891d90d84638ca0a05bb6431d",
+          "sha256": "91fff1c8a3fe617d389609f30bdc311b8f9d9eaa1ab8f28da65cc85f4e126c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.1/ubuntu/14.04/supermarket_3.3.1-1_amd64.deb"
+        },
+        "3.3.3": {
+          "sha1": "9933097e34b9415ef3ba0a50ac369d886fa25d2a",
+          "sha256": "64a58a16597cb6fb47b6f824f863bf1451bfd361c2de3c225d74bf46ca6ff334",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.3/ubuntu/14.04/supermarket_3.3.3-1_amd64.deb"
+        }
+      }
+    },
+    "16.04": {
+      "x86_64": {
+        "2.8.1": {
+          "sha1": "f9a5dfb5d953f2afa15de7ee1fbfafecef761c2d",
+          "sha256": "4eed5bff145c6dedebef86d8f8dcd6ad65b3da56c760ce8db2b036928dc041e7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.1/ubuntu/16.04/supermarket_2.8.1-1_amd64.deb"
+        },
+        "2.8.2": {
+          "sha1": "b6e5c3943208cc349d27c94ade91dcc199a08bc8",
+          "sha256": "8557d04118f2beb90702e09458d93a9ab6bba52074cb71332f509e0fd47d72c1",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.2/ubuntu/16.04/supermarket_2.8.2-1_amd64.deb"
+        },
+        "2.8.3": {
+          "sha1": "053840dc7b1750effda0247a7a3d1e8d1c17a0e2",
+          "sha256": "2d3c5ad8ce89fa1d2cf15d9ad003751a5bf82fb7689b13b2c8d0e5a9362b98db",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.3/ubuntu/16.04/supermarket_2.8.3-1_amd64.deb"
+        },
+        "2.8.15": {
+          "sha1": "db39cd2ec6e6fc0099b9e8465f43544dc61a693a",
+          "sha256": "df0e0c207101de0e8716ce9d8bcc9435c55c81e9e00c2c8dabd2b6231f588ca7",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.15/ubuntu/16.04/supermarket_2.8.15-1_amd64.deb"
+        },
+        "2.8.25": {
+          "sha1": "d93dece9d6bf608ebc2d8553248c9c99df9b78f9",
+          "sha256": "0e988e637af90b3343398b57b00c2d7845f5b440a2b86ad36a64b27055d5e722",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.25/ubuntu/16.04/supermarket_2.8.25-1_amd64.deb"
+        },
+        "2.8.27": {
+          "sha1": "471c8309df97424d9d517b981b653be14d516442",
+          "sha256": "9d4372f546dd21fe727861bc737b27b659e4a0a5b0cc653b5b857b82a73b2fdc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.27/ubuntu/16.04/supermarket_2.8.27-1_amd64.deb"
+        },
+        "2.8.30": {
+          "sha1": "8b223d00d1bf7a185ae3619c384aa904c73ae241",
+          "sha256": "6d66c3a70d671e48abd9445d391174d6992090c7d7f8571218e6b57ff1bbafcc",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.30/ubuntu/16.04/supermarket_2.8.30-1_amd64.deb"
+        },
+        "2.8.34": {
+          "sha1": "4f63c67d96cfe6d5b4802e1a3d9c1ce3e32b2747",
+          "sha256": "83016141b4b6ceda9e4c7c42e892de3d4d46ce4e7e3e442a782935b9b4082f4e",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.34/ubuntu/16.04/supermarket_2.8.34-1_amd64.deb"
+        },
+        "2.8.43": {
+          "sha1": "6a95dc8e99592f0e98533f587a911dabaf1570be",
+          "sha256": "c21d5c4327de78784966ab283afc40da6984ed434eabd6f21c6b8a3b0eea377a",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.43/ubuntu/16.04/supermarket_2.8.43-1_amd64.deb"
+        },
+        "2.8.61": {
+          "sha1": "3c0173bce4c9d03f022eee305d60099eb18ec37d",
+          "sha256": "de956f3458f1cdd30ac78253be194d8304b043ac556a732b0016a4884cc4a210",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.8.61/ubuntu/16.04/supermarket_2.8.61-1_amd64.deb"
+        },
+        "2.9.3": {
+          "sha1": "e09ae44da18bcb6204c1edb73af6a00b34fcdcc3",
+          "sha256": "ea3f045d9977f0a3e4471904136e31efc40d7748895d0b67f70adfcd43561c33",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.3/ubuntu/16.04/supermarket_2.9.3-1_amd64.deb"
+        },
+        "2.9.7": {
+          "sha1": "eea0842a19494870e6bacf6f002e54beb3a685ee",
+          "sha256": "de5240969ed9e57d6773c0e8daa0e4b47d28788194943f138983f1b4588f7c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.7/ubuntu/16.04/supermarket_2.9.7-1_amd64.deb"
+        },
+        "2.9.15": {
+          "sha1": "cbe0c7df8eea827ba8eda8e077f9860c15aade47",
+          "sha256": "1ecac89b76c1ccdac6fe00cb4ddfaea02fc9cc66046d73d287484e1848dfba00",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.15/ubuntu/16.04/supermarket_2.9.15-1_amd64.deb"
+        },
+        "2.9.21": {
+          "sha1": "6e075c742c252178c94efbf1d6c402da66667eb8",
+          "sha256": "bc82fa4bd720a680a1a3ea9b94a9f7ff9f464fef7652404125660553258d49ac",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.21/ubuntu/16.04/supermarket_2.9.21-1_amd64.deb"
+        },
+        "2.9.29": {
+          "sha1": "09a09ef11539e725ebb19675e4e8a0815b4a18e4",
+          "sha256": "a4ae6d2343bde00e8f828c0c7f7ebf7fd7cf4ecbb5cb2a516f98a50c5d1422d2",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.29/ubuntu/16.04/supermarket_2.9.29-1_amd64.deb"
+        },
+        "2.9.30": {
+          "sha1": "cf798016616e84af66ce33af6b5e0eff03787e31",
+          "sha256": "4e15b6a3e34e2e1d49ef94e6177dec016cc71163ec12d839766c7abe64974669",
+          "url": "https://packages.chef.io/files/stable/supermarket/2.9.30/ubuntu/16.04/supermarket_2.9.30-1_amd64.deb"
+        },
+        "3.0.0": {
+          "sha1": "94365c876f394126bd0ee539127baffde8c202d3",
+          "sha256": "b125c3d500a45ad17e4b27b60fe7ea4106fb36dde90d546d124d09e2ba3d7157",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.0/ubuntu/16.04/supermarket_3.0.0-1_amd64.deb"
+        },
+        "3.0.2": {
+          "sha1": "0fccc8e46d1a9bf6c4ad392e2348223552c6145b",
+          "sha256": "071737a590cbafdfb0c6fe03f80a17c19fbca3917c8e0e3aa7231eda2185095d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.0.2/ubuntu/16.04/supermarket_3.0.2-1_amd64.deb"
+        },
+        "3.1.0": {
+          "sha1": "55c1bc497f071a1d7e58062da277129caa7ea655",
+          "sha256": "da0ed6ffb43974cf4714f8930bbaa293d11d094c4987e08c3c24d12261f6417c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.0/ubuntu/16.04/supermarket_3.1.0-1_amd64.deb"
+        },
+        "3.1.1": {
+          "sha1": "83c149150d7b3452bd32a15e3bfe742da78b86c9",
+          "sha256": "527608edb1f491c3396cc72669af4de603c8267862454c8758db2f28a33ec3be",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.1/ubuntu/16.04/supermarket_3.1.1-1_amd64.deb"
+        },
+        "3.1.4": {
+          "sha1": "0f264caf3091fb9aa2c537438b1e871050b29aa3",
+          "sha256": "0301de4b89b153bf16656cb901f92b43a973fed74a9f9b2dd754dddca7b6aa77",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.4/ubuntu/16.04/supermarket_3.1.4-1_amd64.deb"
+        },
+        "3.1.6": {
+          "sha1": "1a7cae9f0e332672be934aacc57bbf8cb89f881f",
+          "sha256": "fbfa9f46529b93077d96ba2c3fae3bb79146cfd3bbe5b6fc307487202c7e0f84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.6/ubuntu/16.04/supermarket_3.1.6-1_amd64.deb"
+        },
+        "3.1.10": {
+          "sha1": "fcb60673e6e874d6cabbcf348bb17578d146076b",
+          "sha256": "bebc67d260b38f431ef6b51d6e5c6d074cc4339036a8314b3711c3b32e5f492d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.10/ubuntu/16.04/supermarket_3.1.10-1_amd64.deb"
+        },
+        "3.1.14": {
+          "sha1": "591291df12d858a2176a17ab756686c21abac907",
+          "sha256": "cd09332ec115aba2e7ebd08ff4fea0a90357d2d1e58e435eb2a4013712778467",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.14/ubuntu/16.04/supermarket_3.1.14-1_amd64.deb"
+        },
+        "3.1.22": {
+          "sha1": "2e2df3ac5c2e667e905012b51c0f906f093eca0a",
+          "sha256": "2d44adb9b52eed57dceccb852a228af35004ca63752a9ff3a961cb3282949153",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.22/ubuntu/16.04/supermarket_3.1.22-1_amd64.deb"
+        },
+        "3.1.23": {
+          "sha1": "da6c7cf56734c1e1d0e48d27265e587137cdfe23",
+          "sha256": "fb1223498a59b852efab198657b5edd1a27e33b0834ae77dee96fb6065edd103",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.23/ubuntu/16.04/supermarket_3.1.23-1_amd64.deb"
+        },
+        "3.1.25": {
+          "sha1": "31f8144344c5410b513a0471725e7487f3cd7a42",
+          "sha256": "53061f7ab598d646de234bee2daa3a451823d468f466f87c7ca4a9addc47f20e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.25/ubuntu/16.04/supermarket_3.1.25-1_amd64.deb"
+        },
+        "3.1.28": {
+          "sha1": "132c4efa5e63e09d7d7f2fd6665802465c03f85e",
+          "sha256": "69454eedaafa61dad1e75a07a5083686f73e96196af259ec6395a4f31671d080",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.28/ubuntu/16.04/supermarket_3.1.28-1_amd64.deb"
+        },
+        "3.1.29": {
+          "sha1": "119ca00c89ad4086d611e866a6e08ed7fe1a2a01",
+          "sha256": "7872719cccf829fde72042acb5189d5f4a348bccbb7319a852724b216d62e75d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.29/ubuntu/16.04/supermarket_3.1.29-1_amd64.deb"
+        },
+        "3.1.31": {
+          "sha1": "9746e460e31374310213256b9cd549887e3bd4a4",
+          "sha256": "094432ddf7904f3344997b9ab4070098865c86bcefa38a32e603109c3e28137d",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.31/ubuntu/16.04/supermarket_3.1.31-1_amd64.deb"
+        },
+        "3.1.34": {
+          "sha1": "7c472e90e080f197f0eba6c5352516857af4e216",
+          "sha256": "c1f66111f15c45011a9b815dcf12879edd03529a995913f82f6fde9080276bd5",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.34/ubuntu/16.04/supermarket_3.1.34-1_amd64.deb"
+        },
+        "3.1.41": {
+          "sha1": "19948fefd9d535f5766182f08b4aa2b086db6c3c",
+          "sha256": "76e99801acca5f5d133e3bd9349d2b42e18fcf1a1c5634f1e8087bacb737b6f2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.41/ubuntu/16.04/supermarket_3.1.41-1_amd64.deb"
+        },
+        "3.1.42": {
+          "sha1": "a71fa2914b9901e69a93d9f8c7d66f2ac4bc4718",
+          "sha256": "95de44a1e4a3bfbe50ba13b66fb88b7060e4d2da5a8aa9b3261a693e3d85d99e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.42/ubuntu/16.04/supermarket_3.1.42-1_amd64.deb"
+        },
+        "3.1.47": {
+          "sha1": "03fb023f955417d91525aefefd692d7db65b22be",
+          "sha256": "a096b9e72cfc644876f730009e2fef7d9e2059a2d150dadde66fc4cc943885e1",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.47/ubuntu/16.04/supermarket_3.1.47-1_amd64.deb"
+        },
+        "3.1.50": {
+          "sha1": "187609c94a2648f3b301d6a10c40505d74cd0535",
+          "sha256": "e8166ab4aa3ab9265e9ffe0e77ab1c995573c6d258ec0c82010131189341eeec",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.50/ubuntu/16.04/supermarket_3.1.50-1_amd64.deb"
+        },
+        "3.1.51": {
+          "sha1": "435aeb6f98f55c2d4d847be412d22785bc41c7ed",
+          "sha256": "385a5595649c0f8253138a9eff577dc3b9f7077138b6dba1978511dc8a443811",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.51/ubuntu/16.04/supermarket_3.1.51-1_amd64.deb"
+        },
+        "3.1.56": {
+          "sha1": "abca90764b51db30b124c6f04945a9572818f446",
+          "sha256": "b31f59ef219016c358d735451f774be24b249b3464618c1b077a4aa795707b0b",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.56/ubuntu/16.04/supermarket_3.1.56-1_amd64.deb"
+        },
+        "3.1.61": {
+          "sha1": "017a7a443f136166b23b0a3ef2ccaf14170f4597",
+          "sha256": "97a9837cb62be2a8ecf87f36ee7bc8f46ae650c7432ca4f3a17d39c6a6db0c6e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.61/ubuntu/16.04/supermarket_3.1.61-1_amd64.deb"
+        },
+        "3.1.62": {
+          "sha1": "020e21c041282692df8a6567b3c3592cae9a1fee",
+          "sha256": "09391875a8ef587613e03c291f52ab937385ecbca7e2d8697ced271774fef981",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.62/ubuntu/16.04/supermarket_3.1.62-1_amd64.deb"
+        },
+        "3.1.63": {
+          "sha1": "fff1bfb49cfd046057d247f59e57cb5dc5bfc793",
+          "sha256": "8ad65c2fd0a2cd06406a2ab0c2d432c3fb60323297412d71d7b74a5b145e02ae",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.63/ubuntu/16.04/supermarket_3.1.63-1_amd64.deb"
+        },
+        "3.1.68": {
+          "sha1": "337a8cc6527757b1c90a22230d77c539777ca674",
+          "sha256": "0ab5ae6774a97b9fa7ccbb4c4500cf620c30238402e126ee496b9ecc04d6867c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.68/ubuntu/16.04/supermarket_3.1.68-1_amd64.deb"
+        },
+        "3.1.70": {
+          "sha1": "f5806ad9d1898e260712da9c387f8640b9eb1d2b",
+          "sha256": "b448e316dcc5a4c22230532d705ccceb859df87f9bc940a1a80b1cc80171cb70",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.70/ubuntu/16.04/supermarket_3.1.70-1_amd64.deb"
+        },
+        "3.1.72": {
+          "sha1": "4812c4793c8d4704cb0838c3fea338117c5ec9d1",
+          "sha256": "2b3ff239d42eea4b089ee4fa99ab4c82940cb371c2089c7ffabb7aebdd9f90e3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.72/ubuntu/16.04/supermarket_3.1.72-1_amd64.deb"
+        },
+        "3.1.81": {
+          "sha1": "734e653bc41ec412b8d8c511896057641586cfeb",
+          "sha256": "ac819347e0d9999d466dc81ed356af3f81c61869fa8d537b47c01572f243f584",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.81/ubuntu/16.04/supermarket_3.1.81-1_amd64.deb"
+        },
+        "3.1.91": {
+          "sha1": "f666135034dc36bf2e6097e0f160fdeebe6846c7",
+          "sha256": "52983a573ca8d7d2da4e6f9f194624f524a3031a589672c550ca72ec9f957eac",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.91/ubuntu/16.04/supermarket_3.1.91-1_amd64.deb"
+        },
+        "3.1.96": {
+          "sha1": "b7039cbff99ea26531054e5d11270a3c4ed345e4",
+          "sha256": "3510048e3165665319f5e67849a4f9f776fb355e0d33520fd75ed4c6d385ef28",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.96/ubuntu/16.04/supermarket_3.1.96-1_amd64.deb"
+        },
+        "3.2.0": {
+          "sha1": "8c3846f530b7e897e76367c5a27e8c5d435da15e",
+          "sha256": "68ab0c2439bf0a7c4e245105c9c8c18c17e752dea069e4279c7057660c966dc2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.0/ubuntu/16.04/supermarket_3.2.0-1_amd64.deb"
+        },
+        "3.2.2": {
+          "sha1": "22e0ede77258185d36d8c6d9479b280adc827d3d",
+          "sha256": "508e1f09168b8bab397fb7ec631c1097228cea21ee47eb1dfac801adaa23be6f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.2/ubuntu/16.04/supermarket_3.2.2-1_amd64.deb"
+        },
+        "3.3.1": {
+          "sha1": "f0d5b5f75565531891d90d84638ca0a05bb6431d",
+          "sha256": "91fff1c8a3fe617d389609f30bdc311b8f9d9eaa1ab8f28da65cc85f4e126c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.1/ubuntu/16.04/supermarket_3.3.1-1_amd64.deb"
+        },
+        "3.3.3": {
+          "sha1": "9933097e34b9415ef3ba0a50ac369d886fa25d2a",
+          "sha256": "64a58a16597cb6fb47b6f824f863bf1451bfd361c2de3c225d74bf46ca6ff334",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.3/ubuntu/16.04/supermarket_3.3.3-1_amd64.deb"
+        },
+        "3.3.7": {
+          "sha1": "70f7fe8e162c1ff8d3e0361181b060ed1ac4362e",
+          "sha256": "35aa03e02ba7eae00c2289ce96e3e910844c5ddb05086c694e71c4b9102f106f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.7/ubuntu/16.04/supermarket_3.3.7-1_amd64.deb"
+        },
+        "3.3.20": {
+          "sha1": "2744e8174970517787f15b775f04600de5bb0d85",
+          "sha256": "fd36bdbe76542e28ea199ce397da0225372c8d79a588b585f1ab667c675294cc",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.20/ubuntu/16.04/supermarket_3.3.20-1_amd64.deb"
+        },
+        "3.3.26": {
+          "sha1": "404395fcc82f4be701994a90a45bea458212fabf",
+          "sha256": "69295cf40073b67a61cc9442b58475c0af69691e70c6986c284633c28cc7bd84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/ubuntu/16.04/supermarket_3.3.26-1_amd64.deb"
+        },
+        "3.3.35": {
+          "sha1": "a32893ac97d04e2c1377eb7e8a39018a3c1387e3",
+          "sha256": "a96e45495b242708204b6f30bbfcbfb7d8c2984875dfc9dc701519b02b846372",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/ubuntu/16.04/supermarket_3.3.35-1_amd64.deb"
+        },
+        "3.4.1": {
+          "sha1": "267ca5b88393b7cc4cfe211a2d393cb63973c213",
+          "sha256": "336db07831046288b2e92e93800b69c3c20a75f96327d4afb6f38977377e694e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/ubuntu/16.04/supermarket_3.4.1-1_amd64.deb"
+        }
+      }
+    },
+    "18.04": {
+      "x86_64": {
+        "3.1.68": {
+          "sha1": "337a8cc6527757b1c90a22230d77c539777ca674",
+          "sha256": "0ab5ae6774a97b9fa7ccbb4c4500cf620c30238402e126ee496b9ecc04d6867c",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.68/ubuntu/18.04/supermarket_3.1.68-1_amd64.deb"
+        },
+        "3.1.70": {
+          "sha1": "f5806ad9d1898e260712da9c387f8640b9eb1d2b",
+          "sha256": "b448e316dcc5a4c22230532d705ccceb859df87f9bc940a1a80b1cc80171cb70",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.70/ubuntu/18.04/supermarket_3.1.70-1_amd64.deb"
+        },
+        "3.1.72": {
+          "sha1": "4812c4793c8d4704cb0838c3fea338117c5ec9d1",
+          "sha256": "2b3ff239d42eea4b089ee4fa99ab4c82940cb371c2089c7ffabb7aebdd9f90e3",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.72/ubuntu/18.04/supermarket_3.1.72-1_amd64.deb"
+        },
+        "3.1.81": {
+          "sha1": "734e653bc41ec412b8d8c511896057641586cfeb",
+          "sha256": "ac819347e0d9999d466dc81ed356af3f81c61869fa8d537b47c01572f243f584",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.81/ubuntu/18.04/supermarket_3.1.81-1_amd64.deb"
+        },
+        "3.1.91": {
+          "sha1": "f666135034dc36bf2e6097e0f160fdeebe6846c7",
+          "sha256": "52983a573ca8d7d2da4e6f9f194624f524a3031a589672c550ca72ec9f957eac",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.91/ubuntu/18.04/supermarket_3.1.91-1_amd64.deb"
+        },
+        "3.1.96": {
+          "sha1": "b7039cbff99ea26531054e5d11270a3c4ed345e4",
+          "sha256": "3510048e3165665319f5e67849a4f9f776fb355e0d33520fd75ed4c6d385ef28",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.1.96/ubuntu/18.04/supermarket_3.1.96-1_amd64.deb"
+        },
+        "3.2.0": {
+          "sha1": "8c3846f530b7e897e76367c5a27e8c5d435da15e",
+          "sha256": "68ab0c2439bf0a7c4e245105c9c8c18c17e752dea069e4279c7057660c966dc2",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.0/ubuntu/18.04/supermarket_3.2.0-1_amd64.deb"
+        },
+        "3.2.2": {
+          "sha1": "22e0ede77258185d36d8c6d9479b280adc827d3d",
+          "sha256": "508e1f09168b8bab397fb7ec631c1097228cea21ee47eb1dfac801adaa23be6f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.2.2/ubuntu/18.04/supermarket_3.2.2-1_amd64.deb"
+        },
+        "3.3.1": {
+          "sha1": "f0d5b5f75565531891d90d84638ca0a05bb6431d",
+          "sha256": "91fff1c8a3fe617d389609f30bdc311b8f9d9eaa1ab8f28da65cc85f4e126c34",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.1/ubuntu/18.04/supermarket_3.3.1-1_amd64.deb"
+        },
+        "3.3.3": {
+          "sha1": "9933097e34b9415ef3ba0a50ac369d886fa25d2a",
+          "sha256": "64a58a16597cb6fb47b6f824f863bf1451bfd361c2de3c225d74bf46ca6ff334",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.3/ubuntu/18.04/supermarket_3.3.3-1_amd64.deb"
+        },
+        "3.3.7": {
+          "sha1": "70f7fe8e162c1ff8d3e0361181b060ed1ac4362e",
+          "sha256": "35aa03e02ba7eae00c2289ce96e3e910844c5ddb05086c694e71c4b9102f106f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.7/ubuntu/18.04/supermarket_3.3.7-1_amd64.deb"
+        },
+        "3.3.20": {
+          "sha1": "2744e8174970517787f15b775f04600de5bb0d85",
+          "sha256": "fd36bdbe76542e28ea199ce397da0225372c8d79a588b585f1ab667c675294cc",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.20/ubuntu/18.04/supermarket_3.3.20-1_amd64.deb"
+        },
+        "3.3.26": {
+          "sha1": "404395fcc82f4be701994a90a45bea458212fabf",
+          "sha256": "69295cf40073b67a61cc9442b58475c0af69691e70c6986c284633c28cc7bd84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/ubuntu/18.04/supermarket_3.3.26-1_amd64.deb"
+        },
+        "3.3.35": {
+          "sha1": "a32893ac97d04e2c1377eb7e8a39018a3c1387e3",
+          "sha256": "a96e45495b242708204b6f30bbfcbfb7d8c2984875dfc9dc701519b02b846372",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/ubuntu/18.04/supermarket_3.3.35-1_amd64.deb"
+        },
+        "3.4.1": {
+          "sha1": "267ca5b88393b7cc4cfe211a2d393cb63973c213",
+          "sha256": "336db07831046288b2e92e93800b69c3c20a75f96327d4afb6f38977377e694e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/ubuntu/18.04/supermarket_3.4.1-1_amd64.deb"
+        }
+      }
+    },
+    "20.04": {
+      "x86_64": {
+        "3.3.26": {
+          "sha1": "404395fcc82f4be701994a90a45bea458212fabf",
+          "sha256": "69295cf40073b67a61cc9442b58475c0af69691e70c6986c284633c28cc7bd84",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.26/ubuntu/20.04/supermarket_3.3.26-1_amd64.deb"
+        },
+        "3.3.35": {
+          "sha1": "a32893ac97d04e2c1377eb7e8a39018a3c1387e3",
+          "sha256": "a96e45495b242708204b6f30bbfcbfb7d8c2984875dfc9dc701519b02b846372",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/ubuntu/20.04/supermarket_3.3.35-1_amd64.deb"
+        },
+        "3.4.1": {
+          "sha1": "267ca5b88393b7cc4cfe211a2d393cb63973c213",
+          "sha256": "336db07831046288b2e92e93800b69c3c20a75f96327d4afb6f38977377e694e",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/ubuntu/20.04/supermarket_3.4.1-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "amazon": {
+    "2": {
+      "x86_64": {
+        "3.3.35": {
+          "sha1": "5a53a007f68c9eee2a3d65c43d685b10e42f2535",
+          "sha256": "c8411edd8a1bd2c533e2fb89e390f6afdb6f9980b6b48a48e7860ada5bbd2582",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.3.35/amazon/2/supermarket-3.3.35-1.el7.x86_64.rpm"
+        },
+        "3.4.1": {
+          "sha1": "5fb55c4e296029ffc56ee30aba6500736e770cc8",
+          "sha256": "34a6a6b7c2a0fd772b1f7dcc0449968360b8fae29168681e5cddaebb59201c7f",
+          "url": "https://packages.chef.io/files/stable/supermarket/3.4.1/amazon/2/supermarket-3.4.1-1.el7.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2017-06-22 12:04:22 -0700"
+    "timestamp": "2021-02-23 15:15:06 -0600"
   }
 }

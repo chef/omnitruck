@@ -53,6 +53,36 @@ RSpec.configure do |conf|
       ])
   end
 
+  def spec_data_record(c, project, p, pv, m, v)
+    JSON.parse(File.read(File.join(SPEC_DATA, c, "#{project}-manifest.json")))[p][pv][m][v]
+  rescue NoMethodError
+    raise "Could not find spec data record for #{c}/#{project}/#{p}/#{pv}/#{m}/#{v}"
+  end
+
+  #
+  # make sure to update these versions when you regenerate the spec data
+  #
+
+  def latest_stable_chef
+    '16.10.17'
+  end
+
+  def latest_stable_chefdk
+    '4.13.3'
+  end
+
+  def latest_stable_chef_server
+    '14.0.65'
+  end
+
+  def latest_current_chef
+    '17.0.114'
+  end
+
+  def latest_current_chefdk
+    '4.13.3'
+  end
+
   # Uncomment to write failed specs to file.
   # Run failed tests using --only-failures flag
   # conf.example_status_persistence_file_path = "examples.txt"

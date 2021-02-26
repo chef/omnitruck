@@ -95,16 +95,29 @@ class PlatformDSL
 
     # platform versions may match when the strings do not match, sort order may not be what
     # you expect if you're trying to compare minor versions of EL/SuSE/etc...
+    #
+    # Version Fallback: If a platform changes versioning scheme (e.g. from MAJOR.MINOR to
+    # MAJOR a la macOS), we want to be able to accurately compare "old" MAJOR.MINOR versions
+    # against "new" MAJOR-only versions for the "same" platform version (e.g. macOS 11.x and 11).
+    #
+    # To handle this, we explicitly recognize a nil mapped value and fallback to the last valid
+    # comparison between the two versions.
     def <=>(otherVer)
       raise "comparison between incompatible platform versions:\n#{self}#{otherVer}" if self.mapped_name != otherVer.mapped_name
-      if (major_only)
-        favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
-      else
-        ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
-        ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor) if ret == 0 && self.mapped_minor
-        ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch) if ret == 0 && self.mapped_patch
-        ret
+      ret = favor_integer_sorting(self.mapped_major, otherVer.mapped_major)
+      return ret if major_only
+
+      if ret == 0 && self.mapped_minor
+        return ret if otherVer.mapped_minor.nil?
+        ret = favor_integer_sorting(self.mapped_minor, otherVer.mapped_minor)
       end
+
+      if ret == 0 && self.mapped_patch
+        return ret if otherVer.mapped_patch.nil?
+        ret = favor_integer_sorting(self.mapped_patch, otherVer.mapped_patch)
+      end
+
+      ret
     end
 
     def inspect

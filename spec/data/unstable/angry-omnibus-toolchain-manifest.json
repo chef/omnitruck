@@ -1,5 +1,16 @@
 {
+  "mac_os_x": {
+    "10.13": {
+      "x86_64": {
+        "2.0.5": {
+          "sha1": "b6e3e9348cc43ffed8fa6c10985c4e3db9d1f679",
+          "sha256": "31c829de9061efadede5baf0287bb0c7e27ab6be137288394b7bf4dbf5f6eef1",
+          "url": "https://packages.chef.io/files/unstable/angry-omnibus-toolchain/2.0.5/mac_os_x/10.13/angry-omnibus-toolchain-2.0.5-1.dmg"
+        }
+      }
+    }
+  },
   "run_data": {
-    "timestamp": "2017-06-22 12:02:29 -0700"
+    "timestamp": "2021-02-23 15:01:28 -0600"
   }
 }
