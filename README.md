@@ -186,6 +186,16 @@ bundle install
 bundle exec unicorn
 ```
 
+### Updating Mock Data
+
+1. Execute a special implementation of the poller
+    ```
+    bundle install
+    bundle exec rake refresh_data
+    ```
+2. Update the latest version methods in `spec/spec_helper.rb`
+3. Update any tests that may no longer be accurate. This is especially true for tests that expect a specific package or package version to exist in the current channel. Artifacts in the current channel expire after a certain time, so tests may become invalid.
+
 ## License
 
 - Copyright:: Copyright (c) 2010-2019 Chef Software, Inc.
