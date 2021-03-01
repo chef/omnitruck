@@ -1,11 +1,13 @@
 expeditor:
+  cached_folders:
+    - vendor
   defaults:
     buildkite:
       timeout_in_minutes: 20
 steps:
   - label: ":ruby: unit"
     command:
-      - bundle install --binstubs --path=.vendor
+      - bundle install --binstubs --path=vendor/bundle
       - bundle exec rspec
     expeditor:
       executor:
