@@ -10,7 +10,18 @@
       }
     }
   },
+  "solaris2": {
+    "5.11": {
+      "i386": {
+        "2.0.8+20210301095700": {
+          "sha1": "e3004ae23e70a4a0701d85b537fb220ade13666b",
+          "sha256": "62246c90e7f8ee43b3819ef345ed49cb1d514887b61bcdd29ecd555bdb7d5a65",
+          "url": "https://packages.chef.io/files/unstable/angry-omnibus-toolchain/2.0.8+20210301095700/solaris2/5.11/angry-omnibus-toolchain-2.0.8+20210301095700-1.i386.p5p"
+        }
+      }
+    }
+  },
   "run_data": {
-    "timestamp": "2021-02-23 15:01:28 -0600"
+    "timestamp": "2021-03-12 08:02:55 -0600"
   }
 }

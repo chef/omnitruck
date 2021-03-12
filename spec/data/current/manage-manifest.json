@@ -55,6 +55,11 @@
           "sha1": "d85f450dd351cdc99533d1c34e43aecbc0bcbce6",
           "sha256": "68162194101dbabcac7c74a540e20bd486c1c7830fbb8978d05e5abeb31f1d22",
           "url": "https://packages.chef.io/files/current/chef-manage/3.0.17/el/7/chef-manage-3.0.17-1.el7.x86_64.rpm"
+        },
+        "3.0.19": {
+          "sha1": "d8f374699002dbfba7862d24feec7821037b3973",
+          "sha256": "d2c712dc76f5546033afb7d5fa66d50dc816b139e996135663c14de4f844b603",
+          "url": "https://packages.chef.io/files/current/chef-manage/3.0.19/el/7/chef-manage-3.0.19-1.el7.x86_64.rpm"
         }
       }
     },
@@ -84,6 +89,11 @@
           "sha1": "d85f450dd351cdc99533d1c34e43aecbc0bcbce6",
           "sha256": "68162194101dbabcac7c74a540e20bd486c1c7830fbb8978d05e5abeb31f1d22",
           "url": "https://packages.chef.io/files/current/chef-manage/3.0.17/el/8/chef-manage-3.0.17-1.el7.x86_64.rpm"
+        },
+        "3.0.19": {
+          "sha1": "d8f374699002dbfba7862d24feec7821037b3973",
+          "sha256": "d2c712dc76f5546033afb7d5fa66d50dc816b139e996135663c14de4f844b603",
+          "url": "https://packages.chef.io/files/current/chef-manage/3.0.19/el/8/chef-manage-3.0.19-1.el7.x86_64.rpm"
         }
       }
     }
@@ -115,6 +125,11 @@
           "sha1": "7d7cff76129ba6226119cbdd2f3ccd8cf86d7d97",
           "sha256": "6711ccdc108782faebcaf0f38551efa9aab631ba6cb0194f5a44c6ba0378bdfa",
           "url": "https://packages.chef.io/files/current/chef-manage/3.0.17/ubuntu/16.04/chef-manage_3.0.17-1_amd64.deb"
+        },
+        "3.0.19": {
+          "sha1": "a8a549c3426f079e78f599b2f577406edd688d16",
+          "sha256": "f849885cee50fc607eaf64471314058a5f987b0ef4e9fc0d9eb3b140fcdfbf82",
+          "url": "https://packages.chef.io/files/current/chef-manage/3.0.19/ubuntu/16.04/chef-manage_3.0.19-1_amd64.deb"
         }
       }
     },
@@ -144,6 +159,11 @@
           "sha1": "7d7cff76129ba6226119cbdd2f3ccd8cf86d7d97",
           "sha256": "6711ccdc108782faebcaf0f38551efa9aab631ba6cb0194f5a44c6ba0378bdfa",
           "url": "https://packages.chef.io/files/current/chef-manage/3.0.17/ubuntu/18.04/chef-manage_3.0.17-1_amd64.deb"
+        },
+        "3.0.19": {
+          "sha1": "a8a549c3426f079e78f599b2f577406edd688d16",
+          "sha256": "f849885cee50fc607eaf64471314058a5f987b0ef4e9fc0d9eb3b140fcdfbf82",
+          "url": "https://packages.chef.io/files/current/chef-manage/3.0.19/ubuntu/18.04/chef-manage_3.0.19-1_amd64.deb"
         }
       }
     },
@@ -163,11 +183,16 @@
           "sha1": "7d7cff76129ba6226119cbdd2f3ccd8cf86d7d97",
           "sha256": "6711ccdc108782faebcaf0f38551efa9aab631ba6cb0194f5a44c6ba0378bdfa",
           "url": "https://packages.chef.io/files/current/chef-manage/3.0.17/ubuntu/20.04/chef-manage_3.0.17-1_amd64.deb"
+        },
+        "3.0.19": {
+          "sha1": "a8a549c3426f079e78f599b2f577406edd688d16",
+          "sha256": "f849885cee50fc607eaf64471314058a5f987b0ef4e9fc0d9eb3b140fcdfbf82",
+          "url": "https://packages.chef.io/files/current/chef-manage/3.0.19/ubuntu/20.04/chef-manage_3.0.19-1_amd64.deb"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2021-02-23 15:13:49 -0600"
+    "timestamp": "2021-03-12 08:11:38 -0600"
   }
 }
