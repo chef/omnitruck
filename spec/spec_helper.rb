@@ -72,11 +72,11 @@ RSpec.configure do |conf|
   end
 
   def latest_stable_chef_server
-    '14.0.65'
+    '14.1.0'
   end
 
   def latest_current_chef
-    '17.0.114'
+    '17.0.148'
   end
 
   def latest_current_chefdk

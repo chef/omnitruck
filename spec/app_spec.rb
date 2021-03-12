@@ -331,8 +331,7 @@ context 'Omnitruck' do
           context 'with mix of 11.x and 11' do
             let(:channel) { 'current' }
             let(:architecture) { 'x86_64' }
-            let(:project_version) { nil }
-            let(:expected_version) { latest_current_chef }
+            let(:project_version) { "17.0.114" }
 
             context 'with 10.x' do
               let(:platform_version) { '10.15' }
@@ -967,8 +966,8 @@ context 'Omnitruck' do
         context 'for el' do
           let(:platform) { 'el' }
 
-          context 'for 6' do
-            let(:platform_version) { '6' }
+          context 'for 7' do
+            let(:platform_version) { '7' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
