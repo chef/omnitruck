@@ -77,6 +77,9 @@ class PlatformDSL
     def version_remap
       raise NotImplementedError, "must be implemented by subclass"
     end
+    def fallback_arch
+      raise NotImplementedError, "must be implemented by subclass"
+    end
 
     def self.is_integer?(val)
       !!(val =~ /^[-+]?[0-9]+$/)
@@ -126,7 +129,8 @@ class PlatformDSL
       "mapped name:    #{mapped_name}\n" +
       "mapped version: #{mapped_version}\n" +
       "major_only:     #{major_only}\n" +
-      "architecture:   #{opts[:architecture]}\n"
+      "architecture:   #{opts[:architecture]}\n" +
+      "fallback_arch:  #{fallback_arch}\n"
     end
   end
 
@@ -150,6 +154,7 @@ class PlatformDSL
       @major_only = false
       @remap = nil
       @version_remap = nil
+      @fallback_arch = nil
     end
 
     def name(opt = nil)
@@ -191,6 +196,14 @@ class PlatformDSL
       end
       @version_remap
     end
+
+    def fallback_arch(opt = nil)
+      unless opt.nil?
+        raise "fallback_arch must be a string" unless opt.instance_of?(String)
+        @fallback_arch = opt
+      end
+      @fallback_arch
+    end
   end
 
   def initialize
@@ -203,12 +216,14 @@ class PlatformDSL
     major_only = platform_spec.major_only
     remap = platform_spec.remap
     version_remap = platform_spec.version_remap
+    fallback_arch = platform_spec.fallback_arch
     klass.class_eval do
       define_singleton_method :name do name end
       define_method :name do name end
       define_method :major_only do major_only end
       define_method :remap do remap end
       define_method :version_remap do version_remap end
+      define_method :fallback_arch do fallback_arch end
     end
     add_platform_version(klass)
   end

@@ -316,13 +316,30 @@ context 'Omnitruck' do
 
             context 'for arm64' do
               let(:architecture) { 'arm64' }
-              let(:expected_architecture) { 'x86_64' }
 
-              context 'without a version' do
-                let(:project_version) { nil }
-                let(:expected_version) { latest_stable_chef }
+              # Temporary test(s) to handle our split world where we may not have a native build
+              context 'without native build' do
+                let(:expected_architecture) { 'x86_64' }
 
-                it_behaves_like 'a correct package info'
+                context 'with a version' do
+                  let(:project_version) { nil }
+                  let(:expected_version) { latest_stable_chef }
+
+                  it_behaves_like 'a correct package info'
+                end
+              end
+
+              # Even though this block is for stable, the only place we have an arm64 build is current
+              context 'with native build' do
+                let(:expected_platform_version) { '11' }
+                let(:expected_architecture) { 'aarch64' }
+                let(:channel) { 'current' }
+
+                context 'with a version' do
+                  let(:project_version) { '17.0.148' }
+
+                  it_behaves_like 'a correct package info'
+                end
               end
             end
           end

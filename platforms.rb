@@ -22,7 +22,10 @@ end
 platform "ubuntu"
 
 # NB: this platform name is deprecated, convert to using "darwin" like ohai
-platform "mac_os_x"
+# If we don't have an arm64 build yet, fall back to x86_64
+platform "mac_os_x" do
+  fallback_arch "x86_64"
+end
 
 platform "solaris2"
 

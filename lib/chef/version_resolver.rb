@@ -128,13 +128,20 @@ class Chef
       # Now filter out the metadata based on architecture
       raw_metadata = { }
       distro_versions_available.each do |version|
-        next if build_map[core_platform][version][target_architecture].nil?
+        l_target_arch = target_architecture
+
+        if build_map[core_platform][version][target_architecture].nil?
+          next if target_platform.fallback_arch.nil?
+          next if build_map[core_platform][version][target_platform.fallback_arch].nil?
+
+          l_target_arch = target_platform.fallback_arch
+        end
 
         # Note that we do not want to make a deep merge here. We want the
         # information coming from the build_map override the ones that are
         # already in raw_metadata because we have sorted
         # distro_versions_available and the later ones will be the correct ones.
-        raw_metadata.merge!(build_map[core_platform][version][target_architecture])
+        raw_metadata.merge!(build_map[core_platform][version][l_target_arch])
       end
 
       raw_metadata
