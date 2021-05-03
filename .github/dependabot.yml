@@ -1,0 +1,31 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mixlib-versioning
+    versions:
+    - 1.2.12
+  - dependency-name: sinatra
+    versions:
+    - 2.1.0
+  - dependency-name: sinatra-contrib
+    versions:
+    - 2.1.0
+  - dependency-name: mixlib-install
+    versions:
+    - 3.12.7
+  - dependency-name: unicorn
+    versions:
+    - 5.8.0
+  - dependency-name: json
+    versions:
+    - 2.5.1
+  - dependency-name: redis
+    versions:
+    - 4.2.5
