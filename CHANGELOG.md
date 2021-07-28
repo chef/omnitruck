@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.6 -->
-## [0.1.6](https://github.com/chef/omnitruck/tree/0.1.6) (2021-03-18)
+<!-- latest_release 0.1.7 -->
+## [0.1.7](https://github.com/chef/omnitruck/tree/0.1.7) (2021-07-28)
 
 #### Merged Pull Requests
-- Bump mixlib-install from 3.12.7 to 3.12.11 [#506](https://github.com/chef/omnitruck/pull/506) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Bump redis from 4.2.5 to 4.4.0 [#516](https://github.com/chef/omnitruck/pull/516) ([dependabot[bot]](https://github.com/dependabot[bot]))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Bump redis from 4.2.5 to 4.4.0 [#516](https://github.com/chef/omnitruck/pull/516) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.7 -->
 - Bump mixlib-install from 3.12.7 to 3.12.11 [#506](https://github.com/chef/omnitruck/pull/506) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.1.6 -->
 - Bump unicorn from 5.8.0 to 6.0.0 [#505](https://github.com/chef/omnitruck/pull/505) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.1.5 -->
 - Add fallback_arch setting [#504](https://github.com/chef/omnitruck/pull/504) ([tduffield](https://github.com/tduffield)) <!-- 0.1.4 -->
