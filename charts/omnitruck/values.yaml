@@ -20,6 +20,8 @@ serviceAccount:
 
 service:
   # service.type defines the type of service being deployed
-  type: ClusterIP
+  type: "ClusterIP"
   # service.port defines where the service will accessible
   port:
+  # service.protocol defines the IP protocol for the port
+  protocol: 
