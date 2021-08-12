@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "omnitruck.fullname" . }}
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ default "8080" .Values.service.port | int }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "omnitruck.selectorLabels" . | nindent 4 }}

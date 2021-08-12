@@ -1,0 +1,64 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "omnitruck.fullname" . }}
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+spec:
+  minReadySeconds: 5
+  progressDeadlineSeconds: 60
+  selector:
+    matchLabels:
+      {{- include "omnitruck.selectorLabels" . | nindent 6 }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        {{- include "omnitruck.selectorLabels" . | nindent 8 }}
+    spec:
+      serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
+      terminationGracePeriodSeconds: 60
+      securityContext:
+        fsGroup: 22430
+      {{ if .Values.image -}}
+      containers:
+        - name: {{ include "omnitruck.fullname" . }}
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - sleep
+                  - "10"
+          securityContext:
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: false
+            runAsNonRoot: true
+            runAsUser: 22430
+          image: "{{ .Values.image.repository }}:{{ default .Chart.Version .Values.image.tag }}"
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /_status
+              port: 8080
+            initialDelaySeconds: 3
+            timeoutSeconds: 3
+            periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /_status
+              port: 8080
+            initialDelaySeconds: 3
+            timeoutSeconds: 3
+            periodSeconds: 3
+          imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+      {{- end -}}

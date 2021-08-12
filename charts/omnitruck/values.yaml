@@ -1,0 +1,25 @@
+# Default values for omnitruck.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+appName: "omnitruck"
+
+image:
+  # image.pullPolicy is what kubernetes uses if it does not find the image locally
+  pullPolicy: 
+  # image.repository points to the image we want to deploy to the pod
+  repository: "chefes/omnitruck"
+  # image.tag is the image variant we want to use
+  tag: 
+
+serviceAccount:
+  # serviceAccount.create specifies whether a ServiceAccount should be created
+  create: true
+  # serviceAccount.name is the service account omnitruck will use
+  name:
+
+service:
+  # service.type defines the type of service being deployed
+  type: ClusterIP
+  # service.port defines where the service will accessible
+  port:
