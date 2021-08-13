@@ -11,11 +11,6 @@ spec:
   selector:
     matchLabels:
       {{- include "omnitruck.selectorLabels" . | nindent 6 }}
-  strategy:
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
-    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -23,42 +18,27 @@ spec:
     spec:
       serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
       terminationGracePeriodSeconds: 60
-      securityContext:
-        fsGroup: 22430
       {{ if .Values.image -}}
       containers:
         - name: {{ include "omnitruck.fullname" . }}
-          lifecycle:
-            preStop:
-              exec:
-                command:
-                  - sleep
-                  - "10"
-          securityContext:
-            capabilities:
-              drop:
-                - ALL
-            readOnlyRootFilesystem: false
-            runAsNonRoot: true
-            runAsUser: 22430
           image: "{{ .Values.image.repository }}:{{ default .Chart.Version .Values.image.tag }}"
+          imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+          env:
+            {{- include "omnitruck.containerEnvironmentVariables" . | nindent 12 }}
           ports:
             - name: http
               containerPort: 8080
               protocol: TCP
+          {{ if .Values.image.securityContext -}}
+          securityContext:
+            {{- toYaml .Values.image.securityContext | nindent 12 }}
+          {{ end -}}
+          {{ if .Values.image.livenessProbe -}}
           livenessProbe:
-            httpGet:
-              path: /_status
-              port: 8080
-            initialDelaySeconds: 3
-            timeoutSeconds: 3
-            periodSeconds: 3
+            {{- toYaml .Values.image.livenessProbe | nindent 12 }}
+          {{ end -}}
+          {{ if .Values.image.readinessProbe -}}
           readinessProbe:
-            httpGet:
-              path: /_status
-              port: 8080
-            initialDelaySeconds: 3
-            timeoutSeconds: 3
-            periodSeconds: 3
-          imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+            {{- toYaml .Values.image.readinessProbe | nindent 12 }}
+          {{ end -}}
       {{- end -}}

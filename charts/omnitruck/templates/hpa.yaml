@@ -1,0 +1,23 @@
+---
+{{- if .Values.autoscaling -}}
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: {{ include "omnitruck.fullname" . }}
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+spec:
+  {{ if .Values.autoscaling.minReplicas -}}
+  minReplicas: {{ .Values.autoscaling.minReplicas | int }}
+  {{- end -}}
+  maxReplicas: {{ .Values.autoscaling.maxReplicas | int }}
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: {{ include "omnitruck.fullname" . }}
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: {{ default "80" .Values.autoscaling.targetCPUUtilization | int }}
+{{- end -}}

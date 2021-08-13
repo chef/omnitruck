@@ -42,3 +42,9 @@ results/
 
 # Docker
 .dobi
+
+# Helm
+charts/omnitruck/charts
+charts/omnitruck/tmpcharts
+charts/omnitruck/Chart.lock
+charts/omnitruck/Chart.yaml.bak

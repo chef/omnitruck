@@ -1,0 +1,23 @@
+{{- if .Values.image -}}
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ include "omnitruck.fullname" . }}
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+spec:
+  schedule: "*/10 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - image: "{{ .Values.image.repository }}:{{ default .Chart.Version .Values.image.tag }}"
+              name: {{ include "omnitruck.fullname" . }}-poller
+              imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+              command: ['/bin/sh']
+              args: ['-c', 'cd /usr/app; bundle exec ./poller 2>&1']
+              env:
+                {{- include "omnitruck.containerEnvironmentVariables" . | nindent 16 }}
+          restartPolicy: {{ default "OnFailure" .Values.image.restartPolicy }}
+{{- end -}}

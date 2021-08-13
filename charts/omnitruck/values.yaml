@@ -2,15 +2,47 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-appName: "omnitruck"
+# fullnameOverride represents the name of the application which will also be applied to your resources
+fullnameOverride: "omnitruck"
 
 image:
   # image.pullPolicy is what kubernetes uses if it does not find the image locally
   pullPolicy: 
+  # image.restartPolicy describes in what circumstances the pod will restart
+  restartPolicy:
   # image.repository points to the image we want to deploy to the pod
   repository: "chefes/omnitruck"
   # image.tag is the image variant we want to use
-  tag: 
+  tag:
+  # image.securityContext describes the security context for the specific image
+  securityContext:
+    # capabilities:
+    #   drop:
+    #     - ALL
+    # readOnlyRootFilesystem: false
+    # runAsNonRoot: true
+    # runAsUser: 22430
+  # image.readinessProbe defines how often Kubernetes will probe the endpoint to check if pod is still running
+  readinessProbe:
+    httpGet:
+      path: /_status
+      port: 8080
+    initialDelaySeconds: 3
+    timeoutSeconds: 3
+    periodSeconds: 60
+  # image.livenessProbe defines how often Kubernetes will probe the endpoint to check if pod is still running
+  livenessProbe:
+    httpGet:
+      path: /_status
+      port: 8080
+    initialDelaySeconds: 3
+    timeoutSeconds: 3
+    periodSeconds: 60
+
+redis:
+  architecture: standalone
+  auth:
+    enabled: false
 
 serviceAccount:
   # serviceAccount.create specifies whether a ServiceAccount should be created
@@ -25,3 +57,14 @@ service:
   port:
   # service.protocol defines the IP protocol for the port
   protocol: 
+
+autoscaling:
+  # autoscaling.minReplicas describes the min number of nodes that will be deployed
+  minReplicas: 
+  # autoscaling.maxReplicas describes the max number of nodes that the app will scale to
+  maxReplicas: 4
+  # autoscaling.targetCPUUtilization decribes the target as a percentage that each node can reach before scaling
+  targetCPUUtilization:
+
+# ingressClassName desribes the name of the ingress class cluster resource
+ingressClassName:
