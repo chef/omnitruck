@@ -13,7 +13,7 @@ image:
   # image.repository points to the image we want to deploy to the pod
   repository: "chefes/omnitruck"
   # image.tag is the image variant we want to use
-  tag:
+  tag: 
   # image.securityContext describes the security context for the specific image
   securityContext:
     # capabilities:
@@ -27,22 +27,13 @@ image:
     httpGet:
       path: /_status
       port: 8080
-    initialDelaySeconds: 3
-    timeoutSeconds: 3
     periodSeconds: 60
   # image.livenessProbe defines how often Kubernetes will probe the endpoint to check if pod is still running
   livenessProbe:
     httpGet:
-      path: /_status
+      path: /_healthz
       port: 8080
-    initialDelaySeconds: 3
-    timeoutSeconds: 3
     periodSeconds: 60
-
-redis:
-  architecture: standalone
-  auth:
-    enabled: false
 
 serviceAccount:
   # serviceAccount.create specifies whether a ServiceAccount should be created
@@ -66,5 +57,15 @@ autoscaling:
   # autoscaling.targetCPUUtilization decribes the target as a percentage that each node can reach before scaling
   targetCPUUtilization:
 
-# ingressClassName desribes the name of the ingress class cluster resource
-ingressClassName:
+ingress:
+  # ingress.create specifies whether an ingress should be created
+  enable: false
+  # ingress.className desribes the name of the ingress class cluster resource
+  className: 
+
+redis:
+  # redis.enabled will setup redis as the default data store
+  enabled: true
+  # architecture: standalone
+  # auth:
+  #   enabled: false

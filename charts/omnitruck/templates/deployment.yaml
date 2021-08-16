@@ -6,8 +6,6 @@ metadata:
   labels:
     {{- include "omnitruck.commonLabels" . | nindent 4 }}
 spec:
-  minReadySeconds: 5
-  progressDeadlineSeconds: 60
   selector:
     matchLabels:
       {{- include "omnitruck.selectorLabels" . | nindent 6 }}
@@ -17,7 +15,6 @@ spec:
         {{- include "omnitruck.selectorLabels" . | nindent 8 }}
     spec:
       serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
-      terminationGracePeriodSeconds: 60
       {{ if .Values.image -}}
       containers:
         - name: {{ include "omnitruck.fullname" . }}

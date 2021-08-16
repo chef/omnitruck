@@ -300,6 +300,11 @@ class Omnitruck < Sinatra::Base
     })
   end
 
+  get '/_healthz' do
+    # used for liveness probe - so need to return anything
+    halt 204
+  end
+
   get '/products' do
     content_type :json
 

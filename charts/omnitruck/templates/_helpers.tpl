@@ -46,7 +46,6 @@ Create the name of the service account to use
 {{- include $template (dict "Chart" (dict "Name" (last $subchart)) "Values" $values "Release" $dot.Release "Capabilities" $dot.Capabilities) }}
 {{- end }}
 
-
 {{/*
 Omnitruck container environment variables
 */}}
