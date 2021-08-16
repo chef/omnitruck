@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "omnitruck.fullname" . }}
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "omnitruck.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "omnitruck.selectorLabels" . | nindent 8 }}
+    spec:
+      serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
+      {{ if .Values.image -}}
+      containers:
+        - name: {{ include "omnitruck.fullname" . }}
+          image: "{{ .Values.image.repository }}:{{ default .Chart.Version .Values.image.tag }}"
+          imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
+          env:
+            {{- include "omnitruck.containerEnvironmentVariables" . | nindent 12 }}
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          {{ if .Values.image.securityContext -}}
+          securityContext:
+            {{- toYaml .Values.image.securityContext | nindent 12 }}
+          {{ end -}}
+          {{ if .Values.image.livenessProbe -}}
+          livenessProbe:
+            {{- toYaml .Values.image.livenessProbe | nindent 12 }}
+          {{ end -}}
+          {{ if .Values.image.readinessProbe -}}
+          readinessProbe:
+            {{- toYaml .Values.image.readinessProbe | nindent 12 }}
+          {{ end -}}
+      {{- end -}}

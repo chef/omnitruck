@@ -8,5 +8,5 @@ resources:
   - kubernetes/hpa.yaml
   - kubernetes/cron.yaml
   - kubernetes/namespace.yaml
-  - kubernetes/rbac.yaml
+  - kubernetes/serviceaccount.yaml
   - kubernetes/service.yaml 

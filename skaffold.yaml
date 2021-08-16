@@ -1,0 +1,26 @@
+---
+apiVersion: skaffold/v2beta19
+kind: Config
+metadata:
+  name: omnitruck
+build:
+  local: {}
+  artifacts:
+  - image: localhost:5000/omnitruck
+    context: .
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  helm:
+    releases:
+      - name: omnitruck
+        chartPath: charts/omnitruck
+        namespace: omnitruck-dev
+        createNamespace: true
+        artifactOverrides:
+          image: localhost:5000/omnitruck
+        valuesFiles:
+          - "charts/omnitruck/values.yaml"
+          - "values.yaml"
+        imageStrategy:
+          helm: {}
