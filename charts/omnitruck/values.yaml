@@ -63,6 +63,9 @@ ingress:
   # ingress.className desribes the name of the ingress class cluster resource
   className: 
 
+#cronSchedule defines how fast we should run the poller
+cronSchedule: 
+
 redis:
   # redis.enabled will setup redis as the default data store
   enabled: true

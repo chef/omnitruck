@@ -6,7 +6,7 @@ metadata:
   labels:
     {{- include "omnitruck.commonLabels" . | nindent 4 }}
 spec:
-  schedule: "*/10 * * * *"
+  schedule: {{ default "*/10 * * * *" .Values.cronSchedule | quote }}
   jobTemplate:
     spec:
       template:
