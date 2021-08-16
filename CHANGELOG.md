@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.7 -->
-## [0.1.7](https://github.com/chef/omnitruck/tree/0.1.7) (2021-07-28)
+<!-- latest_release 0.1.8 -->
+## [0.1.8](https://github.com/chef/omnitruck/tree/0.1.8) (2021-08-16)
 
 #### Merged Pull Requests
-- Bump redis from 4.2.5 to 4.4.0 [#516](https://github.com/chef/omnitruck/pull/516) ([dependabot[bot]](https://github.com/dependabot[bot]))
+- add initial helm infra  [#517](https://github.com/chef/omnitruck/pull/517) ([nkierpiec](https://github.com/nkierpiec))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- add initial helm infra  [#517](https://github.com/chef/omnitruck/pull/517) ([nkierpiec](https://github.com/nkierpiec)) <!-- 0.1.8 -->
 - Bump redis from 4.2.5 to 4.4.0 [#516](https://github.com/chef/omnitruck/pull/516) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.7 -->
 - Bump mixlib-install from 3.12.7 to 3.12.11 [#506](https://github.com/chef/omnitruck/pull/506) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.1.6 -->
 - Bump unicorn from 5.8.0 to 6.0.0 [#505](https://github.com/chef/omnitruck/pull/505) ([dependabot-preview[bot]](https://github.com/dependabot-preview[bot])) <!-- 0.1.5 -->
