@@ -155,6 +155,31 @@ Example Comparison | Fallback Comparison | Result
 
 ### Running the app
 
+Prereqs:
+* [AWS CLI](https://aws.amazon.com/cli/)
+* [direnv](https://direnv.net/docs/installation.html)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop)
+* [Dobi](https://github.com/dnephin/dobi#install)
+* [Lens](https://k8slens.dev)
+* [okta_aws](https://github.com/chef/okta_aws)
+* [Skaffold](https://skaffold.dev)
+* [Helm](https://helm.sh/docs/intro/install/)
+* Ruby
+
+You can run the app using Kubernetes and Skaffold for local kubernetes cluster management within Docker Desktop.
+
+1. Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop) installed, and have [enabled Kubernetes in settings](https://thenewstack.io/how-to-install-docker-desktop-with-kubernetes-on-macos/).
+1. We recommend installing and using [Lens](https://k8slens.dev). This is a local Kubernetes dashboard that can assist in exploring the Kubernetes cluster. This is especially useful if you're just getting started.
+1. Make sure you look out for directions to run `direnv allow` (or `direnv reload`) in your terminal. You'll need to run these commands if the `.envrc` file is ever modified.
+
+### Deploying into Kubernetes
+
+If this is the first deploy, be patient as the cron job needs to run to get redis populated with data before the api can be polled.
+
+1. In a terminal window, run `make dev.skaffold`.
+
+### Additional ways to run Omnitruck
+
 There are two parts to running omnitruck.
 
 First, you need to populate its cache. Redis is used for the cache, and you will want to have a redis server running beforehand:

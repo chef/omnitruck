@@ -140,7 +140,7 @@ class Omnitruck < Sinatra::Base
     [status, headers, body]
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?/ do
     pass unless project_allowed(project)
     redirect_url = "/#{channel}/#{project}/packages"
     redirect_url += "?v=#{params['v']}" unless params['v'].nil?
@@ -192,7 +192,7 @@ class Omnitruck < Sinatra::Base
   # Endpoints
   #########################################################################
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?/ do
     param :channel, String, default: 'stable'
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
     param :p,       String, required: true
@@ -203,7 +203,7 @@ class Omnitruck < Sinatra::Base
     redirect package_info["url"]
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?/ do
     # Legacy params which affect the default channel
     param :prerelease, Boolean
     param :nightlies,  Boolean
@@ -231,7 +231,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?/ do
     param :channel, String, default: 'stable'
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
     param :flatten, Boolean
