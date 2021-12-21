@@ -34,14 +34,6 @@ image:
       path: /_healthz
       port: 8080
     periodSeconds: 60
-  
-  # defines a lifecycle for the container
-  lifecycle:
-  #  preStop:
-  #    exec:
-  #      command:
-  #        - sleep
-  #        - "10"
 
 serviceAccount:
   # serviceAccount.create specifies whether a ServiceAccount should be created
@@ -59,31 +51,11 @@ service:
 
 autoscaling:
   # autoscaling.minReplicas describes the min number of nodes that will be deployed
-  minReplicas: 1
+  minReplicas: 
   # autoscaling.maxReplicas describes the max number of nodes that the app will scale to
   maxReplicas: 4
   # autoscaling.targetCPUUtilization decribes the target as a percentage that each node can reach before scaling
   targetCPUUtilization:
-
-# describes the resources needed by the container
-resources:
-#  requests:
-#    cpu: 250m
-#    memory: 256Mi
-#  limits:
-#    cpu: 2000m
-#    memory: 6Gi
-
-affinity:
-#  podAntiAffinity:
-#    requiredDuringSchedulingIgnoredDuringExecution:
-#      - labelSelector:
-#          matchExpressions:
-#            - key: "app.kubernetes.io/name"
-#              operator: In
-#              values:
-#                - omnitruck-primary
-#        topologyKey: "kubernetes.io/hostname"
 
 ingress:
   # ingress.create specifies whether an ingress should be created

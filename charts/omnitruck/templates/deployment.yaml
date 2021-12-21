@@ -14,18 +14,10 @@ spec:
       labels:
         {{- include "omnitruck.selectorLabels" . | nindent 8 }}
     spec:
-      {{ if .Values.affinity -}}
-      affinity:
-        {{- toYaml .Values.affinity | nindent 8 }}
-      {{ end -}}
       serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
       {{ if .Values.image -}}
       containers:
         - name: {{ include "omnitruck.fullname" . }}
-          {{ if .Values.image.lifecycle -}}
-          lifecycle:
-            {{- toYaml .Values.image.lifecycle | nindent 12 }}
-          {{ end -}}
           image: "{{ .Values.image.repository }}:{{ default .Chart.Version .Values.image.tag }}"
           imagePullPolicy: {{ default "IfNotPresent" .Values.image.pullPolicy }}
           env:
@@ -37,10 +29,6 @@ spec:
           {{ if .Values.image.securityContext -}}
           securityContext:
             {{- toYaml .Values.image.securityContext | nindent 12 }}
-          {{ end -}}
-          {{ if .Values.resources -}}
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
           {{ end -}}
           {{ if .Values.image.livenessProbe -}}
           livenessProbe:
