@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.9 -->
-## [0.1.9](https://github.com/chef/omnitruck/tree/0.1.9) (2021-08-24)
+<!-- latest_release 0.1.10 -->
+## [0.1.10](https://github.com/chef/omnitruck/tree/0.1.10) (2021-12-21)
 
 #### Merged Pull Requests
-- add to update version for Helm chart version value [#520](https://github.com/chef/omnitruck/pull/520) ([nkierpiec](https://github.com/nkierpiec))
+- Add in publish helm chart [#528](https://github.com/chef/omnitruck/pull/528) ([mimaslanka](https://github.com/mimaslanka))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Add in publish helm chart [#528](https://github.com/chef/omnitruck/pull/528) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.10 -->
 - add to update version for Helm chart version value [#520](https://github.com/chef/omnitruck/pull/520) ([nkierpiec](https://github.com/nkierpiec)) <!-- 0.1.9 -->
 - add initial helm infra  [#517](https://github.com/chef/omnitruck/pull/517) ([nkierpiec](https://github.com/nkierpiec)) <!-- 0.1.8 -->
 - Bump redis from 4.2.5 to 4.4.0 [#516](https://github.com/chef/omnitruck/pull/516) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.7 -->
