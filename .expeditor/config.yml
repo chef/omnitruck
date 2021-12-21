@@ -11,6 +11,8 @@ github:
   minor_bump_labels:
     - "Expeditor: Bump Version Minor"
 
+helm_charts:
+  - charts/omnitruck
 
 # These are our Buildkite pipelines where deploys take place
 pipelines: 
@@ -26,6 +28,15 @@ subscriptions:
             - "Expeditor: Skip All"
       - bash:.expeditor/update_version.sh:
           only_if: built_in:bump_version
+      - built_in:publish_helm_charts:
+          only_if: bash:.expeditor/update_version.sh
+          only_if_modified:
+            - charts/*
+            - Dockerfile
+            - lib/*
+            - app.rb
+            - platforms.rb
+            - poller
       - built_in:update_changelog:
           ignore_labels:
             - "Expeditor: Skip Changelog"
