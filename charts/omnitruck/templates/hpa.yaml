@@ -7,9 +7,9 @@ metadata:
   labels:
     {{- include "omnitruck.commonLabels" . | nindent 4 }}
 spec:
-  {{ if .Values.autoscaling.minReplicas -}}
+  {{ if .Values.autoscaling.minReplicas }}
   minReplicas: {{ .Values.autoscaling.minReplicas | int }}
-  {{- end -}}
+  {{- end }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas | int }}
   scaleTargetRef:
     apiVersion: apps/v1
