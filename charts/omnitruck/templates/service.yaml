@@ -10,7 +10,7 @@ spec:
   type: {{ default "ClusterIP" .Values.service.type }}
   ports:
     - port: {{ default "8080" .Values.service.port | int }}
-      targetPort: http
+      targetPort: 8080
       protocol: {{ default "TCP" .Values.service.protocol }}
       name: http
   selector:
