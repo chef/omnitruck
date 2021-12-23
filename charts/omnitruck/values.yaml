@@ -16,16 +16,16 @@ image:
   tag: 
   # image.securityContext describes the security context for the specific image
   securityContext:
-    # capabilities:
-    #   drop:
-    #     - ALL
-    # readOnlyRootFilesystem: false
-    # runAsNonRoot: true
-    # runAsUser: 22430
+    capabilities:
+      drop:
+        - ALL
+    readOnlyRootFilesystem: false
+    runAsNonRoot: true
+    runAsUser: 22430
   # image.readinessProbe defines how often Kubernetes will probe the endpoint to check if pod is still running
   readinessProbe:
     httpGet:
-      path: /_status
+      path: /_healthz
       port: 8080
     periodSeconds: 3
     initialDelaySeconds: 3
@@ -33,7 +33,7 @@ image:
   # image.livenessProbe defines how often Kubernetes will probe the endpoint to check if pod is still running
   livenessProbe:
     httpGet:
-      path: /_status
+      path: /_healthz
       port: 8080
     periodSeconds: 3
     initialDelaySeconds: 3
@@ -46,6 +46,9 @@ image:
   #      command:
   #        - sleep
   #        - "10"
+
+podSecurityContext:
+   fsGroup: 22430
 
 serviceAccount:
   # serviceAccount.create specifies whether a ServiceAccount should be created
@@ -92,6 +95,9 @@ affinity:
 ingress:
   # ingress.create specifies whether an ingress should be created
   enable: false
+  annotations: {}
+    #kubernetes.io/ingress.class: nginx
+    #kubernetes.io/tls-acme: "true"
   # ingress.className desribes the name of the ingress class cluster resource
   className:
   hosts: 
