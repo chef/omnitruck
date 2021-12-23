@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.14 -->
-## [0.1.14](https://github.com/chef/omnitruck/tree/0.1.14) (2021-12-23)
+<!-- latest_release 0.1.15 -->
+## [0.1.15](https://github.com/chef/omnitruck/tree/0.1.15) (2021-12-23)
 
 #### Merged Pull Requests
-- Fix service for helm [#533](https://github.com/chef/omnitruck/pull/533) ([mimaslanka](https://github.com/mimaslanka))
+- Fix various issues with the helm [#534](https://github.com/chef/omnitruck/pull/534) ([mimaslanka](https://github.com/mimaslanka))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Fix various issues with the helm [#534](https://github.com/chef/omnitruck/pull/534) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.15 -->
 - Fix service for helm [#533](https://github.com/chef/omnitruck/pull/533) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.14 -->
 - Fix ingress templates [#532](https://github.com/chef/omnitruck/pull/532) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.13 -->
 - Remove - from if clause [#531](https://github.com/chef/omnitruck/pull/531) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.12 -->
