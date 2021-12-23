@@ -15,7 +15,7 @@ deploy:
     releases:
       - name: omnitruck
         chartPath: charts/omnitruck
-        namespace: omnitruck-dev
+        namespace: omnitruck
         createNamespace: true
         artifactOverrides:
           image: localhost:5000/omnitruck

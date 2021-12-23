@@ -19,6 +19,8 @@ spec:
         {{- toYaml .Values.affinity | nindent 8 }}
       {{ end -}}
       serviceAccountName: {{ include "omnitruck.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       {{ if .Values.image -}}
       containers:
         - name: {{ include "omnitruck.fullname" . }}
