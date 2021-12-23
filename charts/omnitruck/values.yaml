@@ -89,7 +89,9 @@ ingress:
   # ingress.create specifies whether an ingress should be created
   enable: false
   # ingress.className desribes the name of the ingress class cluster resource
-  className: 
+  className:
+  hosts: 
+    - omnitruck.local 
 
 #cronSchedule defines how fast we should run the poller
 cronSchedule: 
