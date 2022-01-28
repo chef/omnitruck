@@ -1,4 +1,3 @@
-
 image=omnitruck:
   image: '{env.IMAGE_REGISTRY}/omnitruck'
   context: .
