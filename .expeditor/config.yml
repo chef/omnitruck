@@ -37,6 +37,7 @@ subscriptions:
             - app.rb
             - platforms.rb
             - poller
+            - dobi.yaml
       - built_in:update_changelog:
           ignore_labels:
             - "Expeditor: Skip Changelog"
