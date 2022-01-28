@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.19 -->
-## [0.1.19](https://github.com/chef/omnitruck/tree/0.1.19) (2022-01-19)
+<!-- latest_release 0.1.20 -->
+## [0.1.20](https://github.com/chef/omnitruck/tree/0.1.20) (2022-01-28)
 
 #### Merged Pull Requests
-- Bump json from 2.5.1 to 2.6.1 [#527](https://github.com/chef/omnitruck/pull/527) ([dependabot[bot]](https://github.com/dependabot[bot]))
+- add backtick [#542](https://github.com/chef/omnitruck/pull/542) ([mimaslanka](https://github.com/mimaslanka))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- add backtick [#542](https://github.com/chef/omnitruck/pull/542) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.20 -->
 - Bump json from 2.5.1 to 2.6.1 [#527](https://github.com/chef/omnitruck/pull/527) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.19 -->
 - Bump rspec_junit_formatter from 0.4.1 to 0.5.1 [#538](https://github.com/chef/omnitruck/pull/538) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.18 -->
 - Bump rake from 13.0.3 to 13.0.6 [#515](https://github.com/chef/omnitruck/pull/515) ([dependabot[bot]](https://github.com/dependabot[bot])) <!-- 0.1.17 -->

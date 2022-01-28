@@ -306,7 +306,7 @@ class Omnitruck < Sinatra::Base
   end
 
   get '/_version' do
-    JSON.pretty_generate(:version => "0.1.16")
+    JSON.pretty_generate(:version => "0.1.20")
   end
 
   get '/products' do
