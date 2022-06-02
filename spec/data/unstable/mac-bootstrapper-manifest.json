@@ -1,41 +1,5 @@
 {
-  "mac_os_x": {
-    "10.13": {
-      "x86_64": {
-        "1.0.15": {
-          "sha1": "30d114f5a6a7a7e51fa05ca0a080080e67b0496a",
-          "sha256": "27e78cfc80a6af82ba2dfa2b45d105305d4624bd6ed68b29e9ab416b6cf806e3",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.0.15/mac_os_x/10.13/mac-bootstrapper-1.0.15-1.dmg"
-        },
-        "1.0.17": {
-          "sha1": "b30e39fc2889321732f6ef8c38ff0199098e428d",
-          "sha256": "51d1c2eee14dc0a8e3d6a09413376075ea32bff4e4428ad93c39216d0edbd3fe",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.0.17/mac_os_x/10.13/mac-bootstrapper-1.0.17-1.dmg"
-        },
-        "1.1.0": {
-          "sha1": "eb7d302bad3c70e470841b69f1979eea1deaacbb",
-          "sha256": "fd3b6b69ac23af24f17b4128e1206b61f25063b7eb098e8f7746e7f648deefa7",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.1.0/mac_os_x/10.13/mac-bootstrapper-1.1.0-1.dmg"
-        },
-        "1.1.0+20201218201936": {
-          "sha1": "ade7ada4272ce854c37494124ba336e1c57f7778",
-          "sha256": "058c1505ce18f83c79011681e53d322a6f3899d81fbe50a5e6a4200c9a51d8fc",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.1.0+20201218201936/mac_os_x/10.13/mac-bootstrapper-1.1.0+20201218201936-1.dmg"
-        },
-        "1.1.1": {
-          "sha1": "f606bcdc292004193df15193d4c8fbab0bfba920",
-          "sha256": "6558c7c123da0e105b62633df8ed3117f800fdb363e5d3193f7d7c21b80caf0e",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.1.1/mac_os_x/10.13/mac-bootstrapper-1.1.1-1.dmg"
-        },
-        "1.1.2": {
-          "sha1": "2f3b1a294fabec9432bfa6ee6e0c17459f954a64",
-          "sha256": "0e55974439894d4b21854814813850fc96f88cb5a2d0af1e7e9cfb3e7b8cc5be",
-          "url": "https://packages.chef.io/files/unstable/mac-bootstrapper/1.1.2/mac_os_x/10.13/mac-bootstrapper-1.1.2-1.dmg"
-        }
-      }
-    }
-  },
   "run_data": {
-    "timestamp": "2021-03-12 08:11:37 -0600"
+    "timestamp": "2022-06-03 00:13:27 +0000"
   }
 }

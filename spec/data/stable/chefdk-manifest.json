@@ -936,837 +936,13 @@
       }
     }
   },
-  "el": {
-    "6": {
-      "x86_64": {
-        "0.2.2": {
-          "sha1": "bb812dee5e642bb2c8668d18585468b1ce9f65f8",
-          "sha256": "2bc4c5c6f82ee7abed385d837e526fd40777ddc47ad939e4f3ecea625b43a245",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/el/6/chefdk-0.2.2-1.x86_64.rpm"
-        },
-        "0.3.0": {
-          "sha1": "344b4edecbd11da1a8ed50e11494de7d1448874c",
-          "sha256": "99b53c708afc7fb5b7c01ec86a550bcbfe1a7c8176fc45723c0b92335b43ee3a",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.0/el/6/chefdk-0.3.0-1.x86_64.rpm"
-        },
-        "0.3.1": {
-          "sha1": "0b15de637e9a0d3aa6775b488b08e76c57fa3e75",
-          "sha256": "1d208b02ad2a8646bcb652532fae20c9b53bd2c50a90f296e7632ae7c28e64e3",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.1/el/6/chefdk-0.3.1-1.x86_64.rpm"
-        },
-        "0.3.2": {
-          "sha1": "8cf7dbdad762730fbf6f07a862117f1d5a21b7c7",
-          "sha256": "a5ca33d258e2c58550b224caf91b1c17c7451323ce85a20c7259f59324024104",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.2/el/6/chefdk-0.3.2-1.x86_64.rpm"
-        },
-        "0.3.4": {
-          "sha1": "c94c3c5dfefaffc0a1f2b8baadd2357122d253fd",
-          "sha256": "35a6f39f2103eac49c18c1a0d56e4231d1bf8fe8c9191065621b1bf2bfe825ae",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.4/el/6/chefdk-0.3.4-1.x86_64.rpm"
-        },
-        "0.3.5": {
-          "sha1": "0c80a7446167238a6c1b2e4363d9e66d27dfe88b",
-          "sha256": "e34e28a3def5983a60f0f8f4bd50a50b3f9f8c7e7e52ffeefe138c245cf0d716",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.5/el/6/chefdk-0.3.5-1.x86_64.rpm"
-        },
-        "0.3.6": {
-          "sha1": "74d0c386a230cfa05b9ff8855cb470e44be94889",
-          "sha256": "c19918cee8a56c608c48ae434a014105e7daec074ee447095d1286a436f66cb0",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.6/el/6/chefdk-0.3.6-1.x86_64.rpm"
-        },
-        "0.4.0": {
-          "sha1": "1c21b043e1b5692811da254fac5c3ea065d1554a",
-          "sha256": "00ec1b762f81fc0ef82d8ae01907f23bb49453b5c036a04db0ed8b223303587e",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/el/6/chefdk-0.4.0-1.x86_64.rpm"
-        },
-        "0.5.0": {
-          "sha1": "fd88b7de840eeb24dab186b9dc1f828d3b5b1358",
-          "sha256": "a2c00ee9ae2ce4a3010074445b2a6a86e679d8ba9778a74629ae1f20387e0dbf",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/el/6/chefdk-0.5.0-1.el6.x86_64.rpm"
-        },
-        "0.5.1": {
-          "sha1": "c6af1e36f16674bb16e382601a8e058338da64a3",
-          "sha256": "7f109ac8dcfa7cba0bd270a82b2424c358643b8c04d3b9c4fcb27b2ebcc41bed",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.5.1/el/6/chefdk-0.5.1-1.el6.x86_64.rpm"
-        },
-        "0.6.0": {
-          "sha1": "c69000e9d97472b192a88979ff4e6418a2b6a6ba",
-          "sha256": "8cb2a89d3ac76dc78383abddbd892a95617bf66afb28bb28d0fef96a85096a1c",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.6.0/el/6/chefdk-0.6.0-1.el6.x86_64.rpm"
-        },
-        "0.6.2": {
-          "sha1": "eeee4ff28d187134bdf2da5ef00f49a2d2f2f37b",
-          "sha256": "414f59719dc0ac2ba8eccaf080e5425806ab2f68a5afc3718d552239fc1ae891",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.6.2/el/6/chefdk-0.6.2-1.el6.x86_64.rpm"
-        },
-        "0.7.0": {
-          "sha1": "1842f847bf0fa87d54126189962e779e1886d831",
-          "sha256": "e37a5ff699babc9a45eeb15a0e0d85d6798103dca27825007a18da342fed1943",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.7.0/el/6/chefdk-0.7.0-1.el6.x86_64.rpm"
-        },
-        "0.8.0": {
-          "sha1": "f8e48ff23eb3011ff7276d9353439fa4b91a0073",
-          "sha256": "554b087a78e66bab17703ffef1d688dd86eeb7b5ea00b65dc2ca07f9f0ab0077",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.8.0/el/6/chefdk-0.8.0-1.el6.x86_64.rpm"
-        },
-        "0.8.1": {
-          "sha1": "e755597b2e1140dfc366cac86e050038671a3dd6",
-          "sha256": "ca8e4830420501cc38cb3d36e3baebd141316e4cc7756e67d5cc42e90c596b6f",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.8.1/el/6/chefdk-0.8.1-1.el6.x86_64.rpm"
-        },
-        "0.9.0": {
-          "sha1": "7f33decac69b85c036b63e3bafa1b83baf82add6",
-          "sha256": "59a1cfd8454766fc6f7c5fea1d6143d5fcc675f7123e18470609abc83eb33221",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.9.0/el/6/chefdk-0.9.0-1.el6.x86_64.rpm"
-        },
-        "0.10.0": {
-          "sha1": "3fa17ec673eac48aa367e5b28aeeef4f3edf899a",
-          "sha256": "846f8a176bcd223f2c484682fee360a5c92067410144f996fc745e9beb46bc45",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.10.0/el/6/chefdk-0.10.0-1.el6.x86_64.rpm"
-        },
-        "0.11.0": {
-          "sha1": "9ac7dfa4112495ccbff9554945317ab2e61e2df9",
-          "sha256": "aab7b655ac9bbf9bb1f62672dd494c8eb6f959f470cc7117c00b6491decc2986",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.11.0/el/6/chefdk-0.11.0-1.el6.x86_64.rpm"
-        },
-        "0.11.2": {
-          "sha1": "ed2831813d201358cace51bae3ef969bf5e37e68",
-          "sha256": "1d2d2a603e6c197356989304689a5deef81dc629ea6dbe7c4f0cdf8f4e8c6cd6",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.11.2/el/6/chefdk-0.11.2-1.el6.x86_64.rpm"
-        },
-        "0.12.0": {
-          "sha1": "619dfe23e23b0af622052827f564a59beded7973",
-          "sha256": "66c8b0e53c8512df62d7ef7f1dcd93fddd9ec23853d2ee22ce63f7173c12a7c3",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.12.0/el/6/chefdk-0.12.0-1.el6.x86_64.rpm"
-        },
-        "0.13.21": {
-          "sha1": "2d3d10333c42d092aac83407126b88cd3a526be4",
-          "sha256": "9e732c73bd28ae56b35c6760914c9fb54f257698191c39fa64e36d851e836cb3",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.13.21/el/6/chefdk-0.13.21-1.el6.x86_64.rpm"
-        },
-        "0.14.25": {
-          "sha1": "e1955b13c4d0f5148e49551598d4052ada2be3b0",
-          "sha256": "5151cfd5f5fe45f8037094ede9e211c11e73b38c4727c04742d0f59cf5db391e",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.14.25/el/6/chefdk-0.14.25-1.el6.x86_64.rpm"
-        },
-        "0.15.15": {
-          "sha1": "a4b34d717a766fe6b7631e8633b92175b586f42e",
-          "sha256": "445f6a29e8df7f03208a132232c076f456fa935aebaee8e25f9ec1b76028e2b0",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.15.15/el/6/chefdk-0.15.15-1.el6.x86_64.rpm"
-        },
-        "0.15.16": {
-          "sha1": "09f83b5b1f373a9d9138affb23c888cfecf58937",
-          "sha256": "93ae899cbdb73257dd6bda3b817e2667259e366b04ded8da84c5d116e1cd3ae5",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.15.16/el/6/chefdk-0.15.16-1.el6.x86_64.rpm"
-        },
-        "0.16.28": {
-          "sha1": "f027b517670765a19833e2fa6b0956ac2533ee23",
-          "sha256": "84d478336c915addab8e7484fa4b4090d72d9183944f2a3d6afd754cf0534a08",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.16.28/el/6/chefdk-0.16.28-1.el6.x86_64.rpm"
-        },
-        "0.17.17": {
-          "sha1": "655403f5eba45560e34cd90003d615dda240f87b",
-          "sha256": "34a0c39ffce753b0277d2b32961d23b4c322b322b21a0ac66f71ba66bd5d3c16",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.17.17/el/6/chefdk-0.17.17-1.el6.x86_64.rpm"
-        },
-        "0.18.26": {
-          "sha1": "07c4851ce26bedb0268c3d20cd9c1bb54cc0bea0",
-          "sha256": "b552c27c26850e6cb369f07b10229708fbc4923c4450516dd3c895324cb12f92",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.18.26/el/6/chefdk-0.18.26-1.el6.x86_64.rpm"
-        },
-        "0.18.30": {
-          "sha1": "d2c1aca5b96af5744954ddea3f5d3eed76d1bcdf",
-          "sha256": "81e314eaf4604d75268c48f044118cde4a86b7f6d1b9f709d3cd0c407dafdecb",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.18.30/el/6/chefdk-0.18.30-1.el6.x86_64.rpm"
-        },
-        "0.19.6": {
-          "sha1": "9b25abd60f51167e5f1c6528785d59b003e53b00",
-          "sha256": "7fdc5a6fbda29b5abeb600dd93e3feebbf7162f47cd036b3e775e24aa780dd1b",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.19.6/el/6/chefdk-0.19.6-1.el6.x86_64.rpm"
-        },
-        "1.0.3": {
-          "sha1": "a6c7a4adcd3dff347bdb541df5e98d6ecc790afc",
-          "sha256": "cc815e2ff718773b506ac5a9e8f1c1e9dca0ffa73f7d600bf337d39b558c6a79",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.0.3/el/6/chefdk-1.0.3-1.el6.x86_64.rpm"
-        },
-        "1.1.16": {
-          "sha1": "79ad8afd67db43db027b361f84a0a9ece63dd395",
-          "sha256": "61b1e6d9c75136ac0d3b1d9e6ac76aae84e81327694b8730b108c934e5918eb5",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.1.16/el/6/chefdk-1.1.16-1.el6.x86_64.rpm"
-        },
-        "1.2.20": {
-          "sha1": "54b7b8d7693766dced30d1de599f25fba4de3ca0",
-          "sha256": "f1fad177f26186a2990edb433fdc67e77e7a0a7b51d95c70fa092d5fc3c3f9f8",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.2.20/el/6/chefdk-1.2.20-1.el6.x86_64.rpm"
-        },
-        "1.2.22": {
-          "sha1": "22b4c08dcaad9955e9ca73b73e8e997ec4f7355b",
-          "sha256": "9134c601cf079202bc4708eb1a04f49a672591cdeaf15acb1cbf762fa342add2",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.2.22/el/6/chefdk-1.2.22-1.el6.x86_64.rpm"
-        },
-        "1.3.40": {
-          "sha1": "81d1c69051b5fa1eddebbaa4d089db4f77510e66",
-          "sha256": "6d5d3d74f2aa9c0c55bd8ff74b156a2e68406de8c34f99a6dbd25773bd9856e3",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.3.40/el/6/chefdk-1.3.40-1.el6.x86_64.rpm"
-        },
-        "1.3.43": {
-          "sha1": "1656bfd0a28fdf953160451f662bd63f5b84721b",
-          "sha256": "54ee022216266665309cf3e2302a9eaebdcef111f3267a19f1c248f8a9a71415",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.3.43/el/6/chefdk-1.3.43-1.el6.x86_64.rpm"
-        },
-        "1.4.3": {
-          "sha1": "716e95251ca28f3f1ca509fdb85c32940d58f00c",
-          "sha256": "9ca091cc0f0eba019c5c95ab69ee1aa23ffba7f081be4c534fe528f61c835235",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.4.3/el/6/chefdk-1.4.3-1.el6.x86_64.rpm"
-        },
-        "1.5.0": {
-          "sha1": "3e1d391191224df5558098ac9e6356dcf2ee0093",
-          "sha256": "ef54976f3b249a9184acf1c6c223495cbf851f35da415254fa0469eeeba5e10f",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.5.0/el/6/chefdk-1.5.0-1.el6.x86_64.rpm"
-        },
-        "1.6.1": {
-          "sha1": "e55cca822972a03778ea2c18e625ee42b19ad3e4",
-          "sha256": "12c196d1d3533c7ac94c989921b090dc6837bb876276967a6e73e086ed235fd2",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.6.1/el/6/chefdk-1.6.1-1.el6.x86_64.rpm"
-        },
-        "1.6.11": {
-          "sha1": "29167d102599c52ed3adf7aea95ff4eacdc18ade",
-          "sha256": "0eec4b0ade8497796d925dd20a0863268d6eddbf3239229b4d27772b99bd8886",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.6.11/el/6/chefdk-1.6.11-1.el6.x86_64.rpm"
-        },
-        "2.0.26": {
-          "sha1": "c4c41db1b7b1199a161ff2b16416be6a5b8f3ec4",
-          "sha256": "ea48d0c2f96e1d55d013d19e5f7577c97f661be4dcea0aeaf2d0ce1864abfe7c",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.0.26/el/6/chefdk-2.0.26-1.el6.x86_64.rpm"
-        },
-        "2.0.28": {
-          "sha1": "7597d71b7360a27c9081a31c975ac690efd1ce83",
-          "sha256": "7253e8bfa70b1b1e78cb560f0e649044f565d471ad943edd29116401b961e207",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.0.28/el/6/chefdk-2.0.28-1.el6.x86_64.rpm"
-        },
-        "2.1.11": {
-          "sha1": "0059c0ea9096520f3644e50b3d88af54e94e0f6e",
-          "sha256": "52d193a2bb7acc2caab3a5c0257096b6744e33afee100f44ae1265f48684479d",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.1.11/el/6/chefdk-2.1.11-1.el6.x86_64.rpm"
-        },
-        "2.2.1": {
-          "sha1": "bf8d6472cf68454618789883b0a0a6950ba6e70f",
-          "sha256": "6cc6b7ccd470c248e31b3eed49584dc09aea91246f8bee1a7b31141596294cc3",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.2.1/el/6/chefdk-2.2.1-1.el6.x86_64.rpm"
-        },
-        "2.3.1": {
-          "sha1": "78991a76c4e64b5376e7286fdc81257be7b4775d",
-          "sha256": "17f3c09df76bb4fe340d43e4f7e888511b0aaba42261613139a9c2eb9f962a28",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.1/el/6/chefdk-2.3.1-1.el6.x86_64.rpm"
-        },
-        "2.3.3": {
-          "sha1": "2a8e7fa20fbb690afe280515630c7f726423f13e",
-          "sha256": "b184c786178a1b021bdde7df3e3c30166157ce50743a40db1305f22493da84bb",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.3/el/6/chefdk-2.3.3-1.el6.x86_64.rpm"
-        },
-        "2.3.4": {
-          "sha1": "d7b9cd061d89965d5a31f43512edfc5c6f5ca2b8",
-          "sha256": "56b160e8a45b776c06d1eb9f06b79b6000623e4d4b9d08100f9fecf9c0ff4a87",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.4/el/6/chefdk-2.3.4-1.el6.x86_64.rpm"
-        },
-        "2.4.17": {
-          "sha1": "90014f4fb4c21f3081c9aa366ff777d8ce04159c",
-          "sha256": "bebbe6d1c8805108e08c4fa1999230c5b517d41725913e1c3a4289dcfd00bfaa",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.4.17/el/6/chefdk-2.4.17-1.el6.x86_64.rpm"
-        },
-        "2.5.3": {
-          "sha1": "0fc5d896c881df5f9a117fdb8a566cfffbd174f6",
-          "sha256": "79a9e4fc30e0d1b018ae8b1be4a1a77d7a4ab5ea8ff9b94cf451b8c4c9522821",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.5.3/el/6/chefdk-2.5.3-1.el6.x86_64.rpm"
-        },
-        "2.5.13": {
-          "sha1": "bec99abf63167e93dd375e4f0b06ca09de018f5c",
-          "sha256": "d738904ec77ae61b0d805f75500451d418fb899e84b907a0d8e9709b11ba4bbd",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.5.13/el/6/chefdk-2.5.13-1.el6.x86_64.rpm"
-        },
-        "2.6.1": {
-          "sha1": "c226d96f7f3274fb6841e812f90bad46011b1edf",
-          "sha256": "1677c26dcdd49bd40ab1e8d8985013667c77080ef576ab3bfa88554ec0f65eaa",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.6.1/el/6/chefdk-2.6.1-1.el6.x86_64.rpm"
-        },
-        "2.6.2": {
-          "sha1": "183a894209621f3bd8548cf4bdb6ecdad1ab3ca7",
-          "sha256": "de65093a9eb01b16d98d03fb0eebe6f8f3c6754e2c781cdd9ddb1e8e69687dae",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.6.2/el/6/chefdk-2.6.2-1.el6.x86_64.rpm"
-        },
-        "3.0.36": {
-          "sha1": "56e6660e3d021a2c611a47f0766c7df95c116ccc",
-          "sha256": "68d54df968871f8351e33c277c105bbf634e5f6556e0610cad5a2cb7d22da1e3",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.0.36/el/6/chefdk-3.0.36-1.el6.x86_64.rpm"
-        },
-        "3.1.0": {
-          "sha1": "af5398aec3793dc3d07b5e6841bf4c8163ad6c0b",
-          "sha256": "1ae17357d26d60d18de92bbb5118d4eb87663eec263aea22b41b4e3ed0d674db",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.1.0/el/6/chefdk-3.1.0-1.el6.x86_64.rpm"
-        },
-        "3.2.30": {
-          "sha1": "ce45fed309e8215d70f11a474bacbf7d943e4c23",
-          "sha256": "7e8193107dc013e591d316b663166130107b56ba17cec3adbb7e432791bdd50f",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.2.30/el/6/chefdk-3.2.30-1.el6.x86_64.rpm"
-        },
-        "3.3.23": {
-          "sha1": "e0abcd88345666f86a41178e2aca29e67b85e25a",
-          "sha256": "4b824fa704dfa36e13e98e7028ffae467f0ecdc4e0c0e6f10265576cac397658",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.3.23/el/6/chefdk-3.3.23-1.el6.x86_64.rpm"
-        },
-        "3.4.38": {
-          "sha1": "31d03d55f9ded0f9e261f0d051c5eb96fd128023",
-          "sha256": "1a52f938617a2acffbea9cb30c2c751e635a7a92aaf75f98bd7fae5b46275763",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.4.38/el/6/chefdk-3.4.38-1.el6.x86_64.rpm"
-        },
-        "3.5.13": {
-          "sha1": "1659c751c7bad5657732d39bc2df8a1b6485c370",
-          "sha256": "7172d4cbaced5d34094955140f2cfb8fa79716da4cec1d6c34a7c9ef2bf414fd",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.5.13/el/6/chefdk-3.5.13-1.el6.x86_64.rpm"
-        },
-        "3.6.57": {
-          "sha1": "90aec1a76726c42d25bdd268825934550c1ede5f",
-          "sha256": "c56b386aced51fa0e43142ea570e6baf657327d0838a59a74f5600ea451bc248",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.6.57/el/6/chefdk-3.6.57-1.el6.x86_64.rpm"
-        },
-        "3.7.23": {
-          "sha1": "5d17c37ad467eea98ca759aeb73aa790d8245251",
-          "sha256": "9ccd2d2566826862c9c034e0ab20390c194d1d0bf313cd705a01fe779fb95a40",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.7.23/el/6/chefdk-3.7.23-1.el6.x86_64.rpm"
-        },
-        "3.8.14": {
-          "sha1": "d7281e6488f0892920d2f047df6d30bb4df6a0dd",
-          "sha256": "5591616008a4a2e16619a014146edff9f33a79ea23a437730c86aa5cdcfa5c3f",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.8.14/el/6/chefdk-3.8.14-1.el6.x86_64.rpm"
-        },
-        "3.9.0": {
-          "sha1": "5ad9aaf6abe4a63010c79a1d99161fbd2124ce54",
-          "sha256": "9c52155333fb1b8230cbe9f144f384b7cef3f71649f544a7a053bf2cb3d53370",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.9.0/el/6/chefdk-3.9.0-1.el6.x86_64.rpm"
-        },
-        "3.10.1": {
-          "sha1": "b97c46c70577e89a94217fea382acfce9a55710e",
-          "sha256": "669cb414046bb17738bd137b0b6470fd07c123495445059183ed9608fb384471",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.10.1/el/6/chefdk-3.10.1-1.el6.x86_64.rpm"
-        },
-        "3.11.3": {
-          "sha1": "b036f86b0a0d902a7a3601d0ada22a3635594bcc",
-          "sha256": "637949489448b5b53bded0eb33ed3505f04e3078ea26782550b60c7082e232e0",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.11.3/el/6/chefdk-3.11.3-1.el6.x86_64.rpm"
-        },
-        "3.12.0": {
-          "sha1": "656373ac5c74bab54184492d99084b3614a57e35",
-          "sha256": "165124e571c03862d5203711067a4d7fb72aad9a5a073e08e447b7ff4e887f79",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/6/chefdk-3.12.0-1.el6.x86_64.rpm"
-        },
-        "3.12.10": {
-          "sha1": "896f86cc43578b47cc48cb41ce9b4f5b31810118",
-          "sha256": "c7d7223f8fa515b632fb9e941294e83be84e9ab8529c6ca731f35f65fbcd64fc",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/6/chefdk-3.12.10-1.el6.x86_64.rpm"
-        },
-        "3.13.1": {
-          "sha1": "ab9a149d1525a20f5c5497aaa936c270fa5a088c",
-          "sha256": "ba9c16b3b96a15ac1b47aa16ca624730111105faa8fe486bd39f40fcad3afb3c",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/6/chefdk-3.13.1-1.el6.x86_64.rpm"
-        },
-        "4.0.60": {
-          "sha1": "6c8862641ed340da33c1a8f3d8d915b47a4bf131",
-          "sha256": "e6c3ec2f14d01f83cb264eb1bdd2e04c0b0c94bbe652c884161ecaa738438780",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.0.60/el/6/chefdk-4.0.60-1.el6.x86_64.rpm"
-        },
-        "4.1.7": {
-          "sha1": "7a475152b2ecbb14aca908dcb815d4174f024ee0",
-          "sha256": "c228d680a5fa11aa74cf6c680554e2dc6d543302abbe3adb709bde0e4452c234",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.1.7/el/6/chefdk-4.1.7-1.el6.x86_64.rpm"
-        },
-        "4.2.0": {
-          "sha1": "eb4f8ac8b843bb7958243a4aaa9c7475f043f7e1",
-          "sha256": "228920fa4ada8e740e1630433a1e59170a564c9e7a38a1971273e44527e0c5cc",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.2.0/el/6/chefdk-4.2.0-1.el6.x86_64.rpm"
-        },
-        "4.3.13": {
-          "sha1": "81789e6937af5bf79d1278145fc09000068b6fc1",
-          "sha256": "1a68d0c668ccb16429f1fa2aa1c08c9df1227d65e069539a9725100a5d5c15a5",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/6/chefdk-4.3.13-1.el6.x86_64.rpm"
-        },
-        "4.4.27": {
-          "sha1": "e44df3f8e94eaa208bcd72d76909d50adfa662c2",
-          "sha256": "5ecb979b6fa81c0286fa02b812f27ce0585c5cdd070ae42a229d8b6c3d15958f",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/6/chefdk-4.4.27-1.el6.x86_64.rpm"
-        },
-        "4.5.0": {
-          "sha1": "009fd47b89acd70894270bc313aba8e36890f06e",
-          "sha256": "b7746c1a75d4b299c8449aaa4069c037372b6aa4f8ed27fc33176bd6c9e06fbf",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/6/chefdk-4.5.0-1.el6.x86_64.rpm"
-        },
-        "4.6.35": {
-          "sha1": "bde47006c42a3542190f77dfa457486a476eae73",
-          "sha256": "46a274af443f5a781136befe867fe2e6ac322937a8971d793af292fc75f58082",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/6/chefdk-4.6.35-1.el6.x86_64.rpm"
-        },
-        "4.7.73": {
-          "sha1": "401317f1a3244329df5a6eb3d9212ff9ff7f66df",
-          "sha256": "98e142271b100af25cb19299efdc95ed0cbbd12b65b52e41d89a374b66419dcf",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/6/chefdk-4.7.73-1.el6.x86_64.rpm"
-        },
-        "4.8.23": {
-          "sha1": "c1fdf0ea4a0dab12e016795313dd50038be16083",
-          "sha256": "766412a11ee084069d3ececf399e7046cf8c491f32480aceabe8e0e0b19addb9",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/6/chefdk-4.8.23-1.el6.x86_64.rpm"
-        },
-        "4.9.7": {
-          "sha1": "4fa3845803eb913a52fceba03ff84bd4b16d691e",
-          "sha256": "7a5d51c6112905248fc2f5b9dd2f102f9d1fdf0a4054622268771f498585db49",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/6/chefdk-4.9.7-1.el6.x86_64.rpm"
-        },
-        "4.10.0": {
-          "sha1": "ea7ed7a5231666850fde3cecca58158ea9b284b6",
-          "sha256": "5307d0da73df71312900d5b8d85bb8e7bf3e9357973aa341f4f3ef9297be3e9f",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/6/chefdk-4.10.0-1.el6.x86_64.rpm"
-        },
-        "4.11.0": {
-          "sha1": "1244a41b9b9e419b936d354a7f04a2299ffe25b7",
-          "sha256": "15bc22cea2e39071ffe7e929074be919381b25f27eb06da93632bea8cafb7623",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/6/chefdk-4.11.0-1.el6.x86_64.rpm"
-        },
-        "4.12.0": {
-          "sha1": "858f21239ac52c175af37130d5e1782ab9d2ad5d",
-          "sha256": "31b110547c4819810a0caefeff9cdb2fe2a003873a4ad5a897f5378c69de2fdf",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/6/chefdk-4.12.0-1.el6.x86_64.rpm"
-        }
-      }
-    },
-    "7": {
-      "x86_64": {
-        "0.6.2": {
-          "sha1": "1f181ec766c9c5e22cb581fb576f2ccd1ab2b927",
-          "sha256": "5842d9e7f253984806c331ff9b802ae3780af51f2dba42fc8aca1bfbfdb9cedd",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.6.2/el/7/chefdk-0.6.2-1.el7.x86_64.rpm"
-        },
-        "0.7.0": {
-          "sha1": "05c5b4a36dcf17f8aa9e5fe0a00a07c2427b6282",
-          "sha256": "25fc5c738ddca41e86cfd4ee111257f2e86f47bd726991432c89384d451d6e5c",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.7.0/el/7/chefdk-0.7.0-1.el7.x86_64.rpm"
-        },
-        "0.8.0": {
-          "sha1": "66018fb7cd31ee3ed0fed480e2a187afa9ff595d",
-          "sha256": "df44da90902bd304d9c61cd3e907b0cb694b26b2c750a8e190aeb0a4fcb4c22e",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.8.0/el/7/chefdk-0.8.0-1.el7.x86_64.rpm"
-        },
-        "0.8.1": {
-          "sha1": "5d0cd3e53afd4ccd0058ec466d28970d3d77ad50",
-          "sha256": "02b5fca8203f0aa7b1513c7a9a77492418253f7381dd8d3c080a17bdaa63f40c",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.8.1/el/7/chefdk-0.8.1-1.el7.x86_64.rpm"
-        },
-        "0.9.0": {
-          "sha1": "b4796e5eb8c38f4924e76dec0e59b73573ba8439",
-          "sha256": "8df4ad12298d1d525d0defaee366f6d4fef56ad68f1e3a6daa7df91f680acb78",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.9.0/el/7/chefdk-0.9.0-1.el7.x86_64.rpm"
-        },
-        "0.10.0": {
-          "sha1": "742254979a1f0f8f8621c09eb3589060e81c7516",
-          "sha256": "4a7ec3453ebeb314aee016dd1db3e1bdfa1bb0cab966cf7216bb61e3bed3d6f6",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.10.0/el/7/chefdk-0.10.0-1.el7.x86_64.rpm"
-        },
-        "0.11.0": {
-          "sha1": "8e795629cb34262387e693f2902f34613f936546",
-          "sha256": "9e94cee602662f89df5b05b2faf22c81eface191dd1ff4a9440fb5ef14533c39",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.11.0/el/7/chefdk-0.11.0-1.el7.x86_64.rpm"
-        },
-        "0.11.2": {
-          "sha1": "8012eb59342c467a9bfd79b8014c6c71a4a76701",
-          "sha256": "185a94f293d9c2421bdccb4df51c4adcd1b0def876a8be3642115a4e6d202089",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.11.2/el/7/chefdk-0.11.2-1.el7.x86_64.rpm"
-        },
-        "0.12.0": {
-          "sha1": "8692e7e29f051298c413578bc3b1121d59e60979",
-          "sha256": "4a2a41f0b676fcbf1b778d37f491b0a74606b9dc6869deb05fff157473fa5a4a",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.12.0/el/7/chefdk-0.12.0-1.el7.x86_64.rpm"
-        },
-        "0.13.21": {
-          "sha1": "949a28d7c36765ccfdac7acba0f9e623f7c5766c",
-          "sha256": "9728edffd39f56ba469d6a5e22de7242ff57a811c60d31f22716231fee3db0dc",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.13.21/el/7/chefdk-0.13.21-1.el7.x86_64.rpm"
-        },
-        "0.14.25": {
-          "sha1": "c662b63c4842cafd9ce832bf80deff3c212490fa",
-          "sha256": "879656c7736ef2a061937c1f45c623e99fd57aaa2f6d802e9799d333d7e5342f",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.14.25/el/7/chefdk-0.14.25-1.el7.x86_64.rpm"
-        },
-        "0.15.15": {
-          "sha1": "88833869160efcbdf60e17ca89187b295b37ae87",
-          "sha256": "4ec6ad89063c14c730955decaa1d33fd8b720eeec8055496e1645aa4cf9a1c8f",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.15.15/el/7/chefdk-0.15.15-1.el7.x86_64.rpm"
-        },
-        "0.15.16": {
-          "sha1": "c27d697941cd0b1eadfee26803e18d050dcde7e4",
-          "sha256": "c94718d25fc64ec098cf2a89d81da03112a14530594ab3e81b0c7fbd7ef2f149",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.15.16/el/7/chefdk-0.15.16-1.el7.x86_64.rpm"
-        },
-        "0.16.28": {
-          "sha1": "c56382743e76ec3e66455131c64e11578c53f4c4",
-          "sha256": "f445ab53ad7cd458f72b278f257016f1e0f201b89ff2a71d1cff2e6981912bf3",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.16.28/el/7/chefdk-0.16.28-1.el7.x86_64.rpm"
-        },
-        "0.17.17": {
-          "sha1": "d427fadb9f8f4b96d1b3919b1e8ca49d4ff30f1e",
-          "sha256": "6f2ae15e1e9ebbd9dfc29e3a6a8f1289e0519ed4911a149558351e96330d32dc",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.17.17/el/7/chefdk-0.17.17-1.el7.x86_64.rpm"
-        },
-        "0.18.26": {
-          "sha1": "d5846ef344178099ea12516bad6fde73c9f52974",
-          "sha256": "aa96a31f656897294ba630ee5a7f91c4c313467477a92d5ba04f0288c80c57ca",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.18.26/el/7/chefdk-0.18.26-1.el7.x86_64.rpm"
-        },
-        "0.18.30": {
-          "sha1": "943f7bc504d12357d09a3fe2dbd155ad3a8c3c7e",
-          "sha256": "7b8ee86bece65285da6505a0ef31280a75b6e538d11db1ccd9dbaeca23c3973c",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.18.30/el/7/chefdk-0.18.30-1.el7.x86_64.rpm"
-        },
-        "0.19.6": {
-          "sha1": "08a84daddcc80d26b7a402d19914285ad023cce6",
-          "sha256": "2e818acc71160c256eff0983c9dd24db4b6cddd8692b9702c1e5c328d7057b4c",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.19.6/el/7/chefdk-0.19.6-1.el7.x86_64.rpm"
-        },
-        "1.0.3": {
-          "sha1": "bb64d175868d1861b0e98be1ce74c0e550dc7148",
-          "sha256": "dd288b375a44078bed04cce744b5f7e2b50c8292be595db4d496a97ae51b6565",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.0.3/el/7/chefdk-1.0.3-1.el7.x86_64.rpm"
-        },
-        "1.1.16": {
-          "sha1": "8625562e4940b935f107be4e34a7b3747bcc75f9",
-          "sha256": "b6bfbb4bd0614f6bf85bdc62bf0c470e49cba68bbd3715fc59a1af83795dbdb9",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.1.16/el/7/chefdk-1.1.16-1.el7.x86_64.rpm"
-        },
-        "1.2.20": {
-          "sha1": "00f1235833d36b247f2561890544eaf95c68fab3",
-          "sha256": "8c351f3a423322488b2265edad58116966854188b2a18e6275694b2528461032",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.2.20/el/7/chefdk-1.2.20-1.el7.x86_64.rpm"
-        },
-        "1.2.22": {
-          "sha1": "73b867ce14ff24fd565eeffdbc130908bb5c4878",
-          "sha256": "a85a4560b32e29bf4083f8fce01eaceac5ef84f5a9a16c1609738e112e9bafe2",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.2.22/el/7/chefdk-1.2.22-1.el7.x86_64.rpm"
-        },
-        "1.3.40": {
-          "sha1": "6156d6667a21034bac3b905d9998633ebeac9d0f",
-          "sha256": "d8948ff414ac4aa23cbce407745df64ebd28548238b2022778d9d9860be73053",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.3.40/el/7/chefdk-1.3.40-1.el7.x86_64.rpm"
-        },
-        "1.3.43": {
-          "sha1": "73250f9feac052e65620ac42ef7d338d2e4298ee",
-          "sha256": "7b34dd5e9af1d954f59737376fdeba3eb147918b28b7f3b86f126d08d74361ef",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.3.43/el/7/chefdk-1.3.43-1.el7.x86_64.rpm"
-        },
-        "1.4.3": {
-          "sha1": "e8d415958c37f0ff65ced4ffd9873e7766bb1de8",
-          "sha256": "bb70be05a6a99071d26ec288d338459fe71fdd6ab0e4cbb661ae66dfb6c82fc5",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.4.3/el/7/chefdk-1.4.3-1.el7.x86_64.rpm"
-        },
-        "1.5.0": {
-          "sha1": "ed66e4fa7a96fb01a442a1bb221ff68865047b6a",
-          "sha256": "7483b610f3b75144849ec391deac7d90e2b233f2d69e122cfa02c4d86ba8fd80",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.5.0/el/7/chefdk-1.5.0-1.el7.x86_64.rpm"
-        },
-        "1.6.1": {
-          "sha1": "bb97ebe9c582c63221abd672df26bd1e3d981047",
-          "sha256": "fd90356fc2e7c0ae958959fd8ccae43c75cb4168d2e48fbca97e3f1542701e42",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.6.1/el/7/chefdk-1.6.1-1.el7.x86_64.rpm"
-        },
-        "1.6.11": {
-          "sha1": "feff9bf27ab5b0ca2797c515d288f2f6b208b48f",
-          "sha256": "c0d39f892def72a7e2c57c50f81f9de12711f013ac2cae47ce05626f941103dd",
-          "url": "https://packages.chef.io/files/stable/chefdk/1.6.11/el/7/chefdk-1.6.11-1.el7.x86_64.rpm"
-        },
-        "2.0.26": {
-          "sha1": "6257818710d315ccf32050475e73defa7a3345f1",
-          "sha256": "89116da26e27fa78337706e8ee0a530b8d7450132ebf33fe0995a78a691d8a66",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.0.26/el/7/chefdk-2.0.26-1.el7.x86_64.rpm"
-        },
-        "2.0.28": {
-          "sha1": "93fd4aa22850165db06b1daae59b92f781484725",
-          "sha256": "8667528e1f4ca65d43e48782bda1650a4a54d672b86a7926e149f4b54a644a6b",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.0.28/el/7/chefdk-2.0.28-1.el7.x86_64.rpm"
-        },
-        "2.1.11": {
-          "sha1": "4c5a93c30b97def7f98ffde07949901a664a749d",
-          "sha256": "3de0093467e38089b0a2c9edfa624fcbc17942bd2366add06c44e8bbc442942c",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.1.11/el/7/chefdk-2.1.11-1.el7.x86_64.rpm"
-        },
-        "2.2.1": {
-          "sha1": "42cc7461512629c26c91f54d4d8d9f8eb89b39d1",
-          "sha256": "a13a558f4484300dc1fad70124675a56a95591ce50a89bcd368dbe6a0bcd87fb",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.2.1/el/7/chefdk-2.2.1-1.el7.x86_64.rpm"
-        },
-        "2.3.1": {
-          "sha1": "880d1bf1aeb42a2d4f42d45e2c2b8f925d4af681",
-          "sha256": "2dea7d25a019e1764533649aba0c39e2014837dc5240ce35a9a7350d91fd2425",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.1/el/7/chefdk-2.3.1-1.el7.x86_64.rpm"
-        },
-        "2.3.3": {
-          "sha1": "e2f37ce75af94634ab7f81b6fe805403c22158af",
-          "sha256": "9d514c42c4c56ccefa2a38f7c5f70c8344a92ba9eccf2124adf8c4c928691b5b",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.3/el/7/chefdk-2.3.3-1.el7.x86_64.rpm"
-        },
-        "2.3.4": {
-          "sha1": "454b13d60f72de3097acb7665327882d0db5eb57",
-          "sha256": "f7cceebb486b0e150e1d5fb1e298045520733ab83cec41f30d1c22427da5cfa7",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.3.4/el/7/chefdk-2.3.4-1.el7.x86_64.rpm"
-        },
-        "2.4.17": {
-          "sha1": "c07f1dea5e91c8544537327ccbfab76f69cda594",
-          "sha256": "ab2d62b1eeb5248949f044f4c4bf489babe652fc649dc93cc2dac30607eb207e",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.4.17/el/7/chefdk-2.4.17-1.el7.x86_64.rpm"
-        },
-        "2.5.3": {
-          "sha1": "7d3e9ba637554913111bac9d70d669f40385cedd",
-          "sha256": "f5c31ecc0e9fd1972e00e15156d43f26af5f287cb5ef5a3ced6353587a23c4b8",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.5.3/el/7/chefdk-2.5.3-1.el7.x86_64.rpm"
-        },
-        "2.5.13": {
-          "sha1": "3779e76b03644f54d3b55483d47583f7108b25fc",
-          "sha256": "f173ae48f46bdc307f5198129df0aace90c211fc22bc3ca39d15a6495cb8712f",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.5.13/el/7/chefdk-2.5.13-1.el7.x86_64.rpm"
-        },
-        "2.6.1": {
-          "sha1": "e1e9c0e295a1e8aa39eaf3ea010edafa181c7de2",
-          "sha256": "eaec38fc750ee57b9ca50f39ad3b5c3362c6117b42b9cc3bab739fdb6c510a2c",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.6.1/el/7/chefdk-2.6.1-1.el7.x86_64.rpm"
-        },
-        "2.6.2": {
-          "sha1": "fb2d3e26f71649522d1301c15e673bc25eaa121c",
-          "sha256": "9199d23c2d81848c47d95722fee2da84483022a057b2154962a5f51cde6b3bf1",
-          "url": "https://packages.chef.io/files/stable/chefdk/2.6.2/el/7/chefdk-2.6.2-1.el7.x86_64.rpm"
-        },
-        "3.0.36": {
-          "sha1": "8e648ac3d72f99c0ceca9f263f9c863a4ea770bc",
-          "sha256": "405e2047ad0e7ee134de448a42ba85768316ad8b1b65333f795618cfd1dba018",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.0.36/el/7/chefdk-3.0.36-1.el7.x86_64.rpm"
-        },
-        "3.1.0": {
-          "sha1": "5e53cda8ab0f846d127eec1aa0bc252dec368a00",
-          "sha256": "3d96c2d9dd733602a055f8ca99789ed4857b02440037c69c954e4964d68f9a82",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.1.0/el/7/chefdk-3.1.0-1.el7.x86_64.rpm"
-        },
-        "3.2.30": {
-          "sha1": "2d4fdf67824eb100034061a0db5a75f025087ba0",
-          "sha256": "fce34e69b776dfca455143aa8ce67720e896e7f75af33df03768b9707838e303",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.2.30/el/7/chefdk-3.2.30-1.el7.x86_64.rpm"
-        },
-        "3.3.23": {
-          "sha1": "9d53e2a7b5596ee8dfd3c7bbade561f3888d2fa6",
-          "sha256": "1b8a2846c8cbf46cd876ce241d61a5a8f8b00c921c513fe7ba72102a27108619",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.3.23/el/7/chefdk-3.3.23-1.el7.x86_64.rpm"
-        },
-        "3.4.38": {
-          "sha1": "0acb89cd7c9ca5f7e59d7ceb31d6a90266e711d0",
-          "sha256": "ff5e3f71516cd4883476aa49e4b725b932930bdfbb80079445a5cbfc53a8fee4",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.4.38/el/7/chefdk-3.4.38-1.el7.x86_64.rpm"
-        },
-        "3.5.13": {
-          "sha1": "5af9a5da575d222bab1751fa93c50d410c706558",
-          "sha256": "31088c0f5dc72d9f7304cb25888fd78f5382bbc4a6bf29b1fb339783a902b252",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.5.13/el/7/chefdk-3.5.13-1.el7.x86_64.rpm"
-        },
-        "3.6.57": {
-          "sha1": "5cc203820320ea885fce7d000f429c785de00fdf",
-          "sha256": "44a073923c1607c4a7fbd31f6838c26edf3f1831117d79c4bffdd15263da5cf5",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.6.57/el/7/chefdk-3.6.57-1.el7.x86_64.rpm"
-        },
-        "3.7.23": {
-          "sha1": "becfb132eb1187062d0454db86c72077c23f2f29",
-          "sha256": "6597f4bd7b2f59f3c2f56cb8ddbf8c2a47011256a98c5628c83ff5790e21a215",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.7.23/el/7/chefdk-3.7.23-1.el7.x86_64.rpm"
-        },
-        "3.8.14": {
-          "sha1": "b970a24e06006b83422d96077a6b58cc18f41fbf",
-          "sha256": "2d172ec64e9363bcd9ee734957659851ba7e6ba5281f00f96f1cb702dc03371c",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.8.14/el/7/chefdk-3.8.14-1.el7.x86_64.rpm"
-        },
-        "3.9.0": {
-          "sha1": "78f4793fd63f04ee05bfb5277ad0b9b8ae951c11",
-          "sha256": "8e39544c9f34dd5d634f71fc77275647a14e1a6263c4df26c61282e533d37841",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.9.0/el/7/chefdk-3.9.0-1.el7.x86_64.rpm"
-        },
-        "3.10.1": {
-          "sha1": "c48d0e067656241c26960ba0bb9eef471a68302b",
-          "sha256": "54c78c375b704b8287bb740fb9ad3d06721c5a9dc4f05de06630df844a1adc97",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.10.1/el/7/chefdk-3.10.1-1.el7.x86_64.rpm"
-        },
-        "3.11.3": {
-          "sha1": "5e937dd3f9eac962736fbb184a9f63485f2dfc8b",
-          "sha256": "0aa5e385a71b983ee9c616bae6f066476745558f6d41b07903295dd7ddd4542d",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.11.3/el/7/chefdk-3.11.3-1.el7.x86_64.rpm"
-        },
-        "3.12.0": {
-          "sha1": "2654df50e97ed62add94829b79e393fe7a32b9c7",
-          "sha256": "aeeca17d7da14d0020c7dbd51a6f8910fa7f2da5fc3375b0e4a5d801d858acfa",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/7/chefdk-3.12.0-1.el7.x86_64.rpm"
-        },
-        "3.12.10": {
-          "sha1": "d6955cae0491feab9dce2a76be1c0ebbd96829df",
-          "sha256": "d98be95f11ea15c723279f801e54082eca6cf092759c492ef11b215d0cc44d36",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/7/chefdk-3.12.10-1.el7.x86_64.rpm"
-        },
-        "3.13.1": {
-          "sha1": "4318131f4d144e06f10e986bac0acfc294289ea9",
-          "sha256": "c8953c16ea8ed524cd3fd8aa48da5ccbce7e1379170733f1844c484dea030696",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/7/chefdk-3.13.1-1.el7.x86_64.rpm"
-        },
-        "4.0.60": {
-          "sha1": "235a5a459e3de1d342024027a5d227037059b234",
-          "sha256": "3b6f2242f6136b30fa2c3a62cb8d9b533d32c9af8a351419b6505927428d4ca8",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.0.60/el/7/chefdk-4.0.60-1.el7.x86_64.rpm"
-        },
-        "4.1.7": {
-          "sha1": "cfab5f0851392244ad7d1a6c14c45b2c3e808a4c",
-          "sha256": "327c3d81a41eee1479e3f0ccf7f9c6bd0f0cc1e3e1f9efcf05cf30af88d0ac63",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.1.7/el/7/chefdk-4.1.7-1.el7.x86_64.rpm"
-        },
-        "4.2.0": {
-          "sha1": "eeadca2dffe76a62c5df03d336f8e646509f1ecf",
-          "sha256": "37d1dad206f79d432f064947793948ccbc55259cc852b059a28d68b38cdcf869",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.2.0/el/7/chefdk-4.2.0-1.el7.x86_64.rpm"
-        },
-        "4.3.13": {
-          "sha1": "2fef3575d0dde8efc82f4b6b97f0cf59d958e9df",
-          "sha256": "e68b1fc2a613eef7792b99eed4f4d213c1c0603d09b023a696dad59c259a6747",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/7/chefdk-4.3.13-1.el7.x86_64.rpm"
-        },
-        "4.4.27": {
-          "sha1": "f071c1ffcf151a33f3ecbc7bb744a7fc68b5f434",
-          "sha256": "142bf048b56c2001ea5e748bbe4440fe020781875f31a23a4e3c934c69905a4b",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/7/chefdk-4.4.27-1.el7.x86_64.rpm"
-        },
-        "4.5.0": {
-          "sha1": "9c20f4fe24f567801f7e4b4face768f6619b3c88",
-          "sha256": "21aea090ca864f5d860e6c85d699d3acc4bb2c4c007baf0c37b939685b764979",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/7/chefdk-4.5.0-1.el7.x86_64.rpm"
-        },
-        "4.6.35": {
-          "sha1": "a066007875f832e0da89efc55aa5a3c09300211a",
-          "sha256": "26e8aaea3f79707b4c23484bb77c32a5ed49cbbfcbabad6eef5fab801a3220af",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/7/chefdk-4.6.35-1.el7.x86_64.rpm"
-        },
-        "4.7.73": {
-          "sha1": "66c2f00e41b58cca904f2cb60c086aa8f997a4ec",
-          "sha256": "e4d557bfd6423cf31804219231cf48fc7e78527a12b9e1e43b5e3380e58dc8ce",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/7/chefdk-4.7.73-1.el7.x86_64.rpm"
-        },
-        "4.8.23": {
-          "sha1": "a51b8b9fd844c2881b477ee9d65af94f98647de8",
-          "sha256": "9a163528ae1986fb2e472e16d7e981cc5a984d8b1865d2bba2f3faf0c31ac78a",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/7/chefdk-4.8.23-1.el7.x86_64.rpm"
-        },
-        "4.9.7": {
-          "sha1": "53f94279220e04c1bcac627a554f1ced3c657ff4",
-          "sha256": "507aca6aba77bae1449ccf5047de8e703e3894b732dd454a5c28e62da6189b02",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/7/chefdk-4.9.7-1.el7.x86_64.rpm"
-        },
-        "4.10.0": {
-          "sha1": "61b78953c0656278ca9b4865e2e7e9770bcb0808",
-          "sha256": "5d88606819fa545ea91079559681aae029fc2de5b4ad4de1fee4dfe3c23a827a",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/7/chefdk-4.10.0-1.el7.x86_64.rpm"
-        },
-        "4.11.0": {
-          "sha1": "8910f121844a2d847c33c56653ae69d9345e4591",
-          "sha256": "a59d845778566f9c1629df22a2da52b381531c52b743d44c255f5a295c0b035f",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/7/chefdk-4.11.0-1.el7.x86_64.rpm"
-        },
-        "4.12.0": {
-          "sha1": "e608a7ca2886ed3f79d45787107a411c71405c59",
-          "sha256": "cb05fddb5a765f279b960a569c9ed89983821f3f61a2c1f0b1e33e86bc5822dd",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/7/chefdk-4.12.0-1.el7.x86_64.rpm"
-        },
-        "4.13.3": {
-          "sha1": "7be4db3113f8afde8d09c780f647a6122318c15e",
-          "sha256": "502fe82db4e51ed3ce718c9b069c567843ebe400985423af0a3a8c59de444e50",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.13.3/el/7/chefdk-4.13.3-1.el7.x86_64.rpm"
-        }
-      }
-    },
-    "8": {
-      "x86_64": {
-        "3.12.0": {
-          "sha1": "2654df50e97ed62add94829b79e393fe7a32b9c7",
-          "sha256": "aeeca17d7da14d0020c7dbd51a6f8910fa7f2da5fc3375b0e4a5d801d858acfa",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/8/chefdk-3.12.0-1.el7.x86_64.rpm"
-        },
-        "3.12.10": {
-          "sha1": "d6955cae0491feab9dce2a76be1c0ebbd96829df",
-          "sha256": "d98be95f11ea15c723279f801e54082eca6cf092759c492ef11b215d0cc44d36",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/8/chefdk-3.12.10-1.el7.x86_64.rpm"
-        },
-        "3.13.1": {
-          "sha1": "4318131f4d144e06f10e986bac0acfc294289ea9",
-          "sha256": "c8953c16ea8ed524cd3fd8aa48da5ccbce7e1379170733f1844c484dea030696",
-          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/8/chefdk-3.13.1-1.el7.x86_64.rpm"
-        },
-        "4.3.13": {
-          "sha1": "2fef3575d0dde8efc82f4b6b97f0cf59d958e9df",
-          "sha256": "e68b1fc2a613eef7792b99eed4f4d213c1c0603d09b023a696dad59c259a6747",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/8/chefdk-4.3.13-1.el7.x86_64.rpm"
-        },
-        "4.4.27": {
-          "sha1": "f071c1ffcf151a33f3ecbc7bb744a7fc68b5f434",
-          "sha256": "142bf048b56c2001ea5e748bbe4440fe020781875f31a23a4e3c934c69905a4b",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/8/chefdk-4.4.27-1.el7.x86_64.rpm"
-        },
-        "4.5.0": {
-          "sha1": "9c20f4fe24f567801f7e4b4face768f6619b3c88",
-          "sha256": "21aea090ca864f5d860e6c85d699d3acc4bb2c4c007baf0c37b939685b764979",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/8/chefdk-4.5.0-1.el7.x86_64.rpm"
-        },
-        "4.6.35": {
-          "sha1": "a066007875f832e0da89efc55aa5a3c09300211a",
-          "sha256": "26e8aaea3f79707b4c23484bb77c32a5ed49cbbfcbabad6eef5fab801a3220af",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/8/chefdk-4.6.35-1.el7.x86_64.rpm"
-        },
-        "4.7.73": {
-          "sha1": "66c2f00e41b58cca904f2cb60c086aa8f997a4ec",
-          "sha256": "e4d557bfd6423cf31804219231cf48fc7e78527a12b9e1e43b5e3380e58dc8ce",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/8/chefdk-4.7.73-1.el7.x86_64.rpm"
-        },
-        "4.8.23": {
-          "sha1": "a51b8b9fd844c2881b477ee9d65af94f98647de8",
-          "sha256": "9a163528ae1986fb2e472e16d7e981cc5a984d8b1865d2bba2f3faf0c31ac78a",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/8/chefdk-4.8.23-1.el7.x86_64.rpm"
-        },
-        "4.9.7": {
-          "sha1": "53f94279220e04c1bcac627a554f1ced3c657ff4",
-          "sha256": "507aca6aba77bae1449ccf5047de8e703e3894b732dd454a5c28e62da6189b02",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/8/chefdk-4.9.7-1.el7.x86_64.rpm"
-        },
-        "4.10.0": {
-          "sha1": "61b78953c0656278ca9b4865e2e7e9770bcb0808",
-          "sha256": "5d88606819fa545ea91079559681aae029fc2de5b4ad4de1fee4dfe3c23a827a",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/8/chefdk-4.10.0-1.el7.x86_64.rpm"
-        },
-        "4.11.0": {
-          "sha1": "8910f121844a2d847c33c56653ae69d9345e4591",
-          "sha256": "a59d845778566f9c1629df22a2da52b381531c52b743d44c255f5a295c0b035f",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/8/chefdk-4.11.0-1.el7.x86_64.rpm"
-        },
-        "4.12.0": {
-          "sha1": "e608a7ca2886ed3f79d45787107a411c71405c59",
-          "sha256": "cb05fddb5a765f279b960a569c9ed89983821f3f61a2c1f0b1e33e86bc5822dd",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/8/chefdk-4.12.0-1.el7.x86_64.rpm"
-        },
-        "4.13.3": {
-          "sha1": "7be4db3113f8afde8d09c780f647a6122318c15e",
-          "sha256": "502fe82db4e51ed3ce718c9b069c567843ebe400985423af0a3a8c59de444e50",
-          "url": "https://packages.chef.io/files/stable/chefdk/4.13.3/el/8/chefdk-4.13.3-1.el7.x86_64.rpm"
-        }
-      }
-    }
-  },
   "mac_os_x": {
     "10.8": {
       "x86_64": {
         "0.2.2": {
-          "sha1": "ddf07876daf13a43c88ea0db19c2e1ec7498b408",
-          "sha256": "d88e0d6a1b9175ae429342078d04a5ccacea7d1bf58e8b016ea2786f93137992",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/mac_os_x/10.8/chefdk-0.2.2-1.pkg"
+          "sha1": "21a1c43ec558ce9c92d58bf5ba125c14403328f0",
+          "sha256": "4922390a2dc08c26947fe8ed94a3a1777bd820e0e409e4072b2fb1315f4425d5",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/mac_os_x/10.8/chefdk-0.2.2-1.dmg"
         },
         "0.3.0": {
           "sha1": "6ea7c9f73cd60b42cde3c5228960a493a296e810",
@@ -1799,9 +975,9 @@
           "url": "https://packages.chef.io/files/stable/chefdk/0.3.6/mac_os_x/10.8/chefdk-0.3.6-1.pkg"
         },
         "0.4.0": {
-          "sha1": "ac96c89c9347320b284db3b7c3cd3ea7548460a5",
-          "sha256": "be41ff18f7c6ad9778aa923796cc179517e6a26f7e0f1054b619529a9adb5617",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/mac_os_x/10.8/chefdk-0.4.0-1.pkg"
+          "sha1": "1fa4e6a4b762b29f38d8f0e0676bfd92d2df014f",
+          "sha256": "01b89caff1fb29b4a949666a5016e2455f449fbb7d1027320578b1e043a63e9a",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/mac_os_x/10.8/chefdk-0.4.0-1.dmg"
         },
         "0.5.0": {
           "sha1": "dbdf35f235a35e2b35ad7687db63539580e5274c",
@@ -1863,9 +1039,9 @@
     "10.9": {
       "x86_64": {
         "0.2.2": {
-          "sha1": "ddf07876daf13a43c88ea0db19c2e1ec7498b408",
-          "sha256": "d88e0d6a1b9175ae429342078d04a5ccacea7d1bf58e8b016ea2786f93137992",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/mac_os_x/10.9/chefdk-0.2.2-1.pkg"
+          "sha1": "21a1c43ec558ce9c92d58bf5ba125c14403328f0",
+          "sha256": "4922390a2dc08c26947fe8ed94a3a1777bd820e0e409e4072b2fb1315f4425d5",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/mac_os_x/10.9/chefdk-0.2.2-1.dmg"
         },
         "0.3.0": {
           "sha1": "6ea7c9f73cd60b42cde3c5228960a493a296e810",
@@ -1898,14 +1074,14 @@
           "url": "https://packages.chef.io/files/stable/chefdk/0.3.6/mac_os_x/10.9/chefdk-0.3.6-1.pkg"
         },
         "0.4.0": {
-          "sha1": "ac96c89c9347320b284db3b7c3cd3ea7548460a5",
-          "sha256": "be41ff18f7c6ad9778aa923796cc179517e6a26f7e0f1054b619529a9adb5617",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/mac_os_x/10.9/chefdk-0.4.0-1.pkg"
+          "sha1": "1fa4e6a4b762b29f38d8f0e0676bfd92d2df014f",
+          "sha256": "01b89caff1fb29b4a949666a5016e2455f449fbb7d1027320578b1e043a63e9a",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/mac_os_x/10.9/chefdk-0.4.0-1.dmg"
         },
         "0.5.0": {
-          "sha1": "dbdf35f235a35e2b35ad7687db63539580e5274c",
-          "sha256": "e37b0a58d8bc176b57d46c3e3bd18698fe5646b6bcd29b8e88f6a2285dfe8714",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/mac_os_x/10.9/chefdk-0.5.0-1.pkg"
+          "sha1": "ce74a2d44a1264179b1d33d3c9462d4ef14e4014",
+          "sha256": "3225a292f754946890fa4fe5d118c1f8ef572f2531d240dd6f0a3122d57c692c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/mac_os_x/10.9/chefdk-0.5.0-1.dmg"
         },
         "0.5.1": {
           "sha1": "9b1619982646ddc7dbd45d6fd095c8486b7348d8",
@@ -1913,9 +1089,9 @@
           "url": "https://packages.chef.io/files/stable/chefdk/0.5.1/mac_os_x/10.9/chefdk-0.5.1-1.pkg"
         },
         "0.6.0": {
-          "sha1": "bc9663eb4c5b29ef8484992c7b4ceb8adf6da88a",
-          "sha256": "237ed891f2440547b2bdd65c93ff5e28d119230ce16aa409e4dd0e3dad63ffea",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.6.0/mac_os_x/10.9/chefdk-0.6.0-1.pkg"
+          "sha1": "e61fc69a60b6e76bd69db9b044d3b9ab3f24e00c",
+          "sha256": "53a8d532160eee2af4904ccf9bad901de0aa4f7e88d28908f41c10e78260b4db",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.6.0/mac_os_x/10.9/chefdk-0.6.0-1.dmg"
         },
         "0.6.2": {
           "sha1": "84e2f8e0f35e5753c1dcda7c21aab8eb7ea6fec2",
@@ -2032,9 +1208,9 @@
           "url": "https://packages.chef.io/files/stable/chefdk/0.3.4/mac_os_x/10.10/chefdk-0.3.4-1.pkg"
         },
         "0.3.5": {
-          "sha1": "2cd0142e3af6d4e48be1d42c29181d4ae0e4123a",
-          "sha256": "5414e9247e64fe932a134ac16ad99e45a76262615ffb2b402ce30972716969a5",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.3.5/mac_os_x/10.10/chefdk-0.3.5-1.pkg"
+          "sha1": "fb6b0b8eb7ff951d8c1e179b73c3a05ba48b842d",
+          "sha256": "43994187542a86b7865840ae71ac702c9f473e893b44f6552d5040a4c0202ad1",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.5/mac_os_x/10.10/chefdk-0.3.5-1.dmg"
         },
         "0.3.6": {
           "sha1": "a7b7b6dbb49b6326bb8bb26f70e56d8e368292de",
@@ -2047,9 +1223,9 @@
           "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/mac_os_x/10.10/chefdk-0.4.0-1.pkg"
         },
         "0.5.0": {
-          "sha1": "dbdf35f235a35e2b35ad7687db63539580e5274c",
-          "sha256": "e37b0a58d8bc176b57d46c3e3bd18698fe5646b6bcd29b8e88f6a2285dfe8714",
-          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/mac_os_x/10.10/chefdk-0.5.0-1.pkg"
+          "sha1": "ce74a2d44a1264179b1d33d3c9462d4ef14e4014",
+          "sha256": "3225a292f754946890fa4fe5d118c1f8ef572f2531d240dd6f0a3122d57c692c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/mac_os_x/10.10/chefdk-0.5.0-1.dmg"
         },
         "0.5.1": {
           "sha1": "9b1619982646ddc7dbd45d6fd095c8486b7348d8",
@@ -4080,6 +3256,830 @@
           "sha1": "3828df11cb069f0449914c36a9435a8bdb2375c5",
           "sha256": "db01f69a828876fb2f2b0b37305227bd8f99196a160410d02f8a22624b23f508",
           "url": "https://packages.chef.io/files/stable/chefdk/4.13.3/ubuntu/20.04/chefdk_4.13.3-1_amd64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "6": {
+      "x86_64": {
+        "0.2.2": {
+          "sha1": "bb812dee5e642bb2c8668d18585468b1ce9f65f8",
+          "sha256": "2bc4c5c6f82ee7abed385d837e526fd40777ddc47ad939e4f3ecea625b43a245",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.2.2/el/6/chefdk-0.2.2-1.x86_64.rpm"
+        },
+        "0.3.0": {
+          "sha1": "344b4edecbd11da1a8ed50e11494de7d1448874c",
+          "sha256": "99b53c708afc7fb5b7c01ec86a550bcbfe1a7c8176fc45723c0b92335b43ee3a",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.0/el/6/chefdk-0.3.0-1.x86_64.rpm"
+        },
+        "0.3.1": {
+          "sha1": "0b15de637e9a0d3aa6775b488b08e76c57fa3e75",
+          "sha256": "1d208b02ad2a8646bcb652532fae20c9b53bd2c50a90f296e7632ae7c28e64e3",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.1/el/6/chefdk-0.3.1-1.x86_64.rpm"
+        },
+        "0.3.2": {
+          "sha1": "8cf7dbdad762730fbf6f07a862117f1d5a21b7c7",
+          "sha256": "a5ca33d258e2c58550b224caf91b1c17c7451323ce85a20c7259f59324024104",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.2/el/6/chefdk-0.3.2-1.x86_64.rpm"
+        },
+        "0.3.4": {
+          "sha1": "c94c3c5dfefaffc0a1f2b8baadd2357122d253fd",
+          "sha256": "35a6f39f2103eac49c18c1a0d56e4231d1bf8fe8c9191065621b1bf2bfe825ae",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.4/el/6/chefdk-0.3.4-1.x86_64.rpm"
+        },
+        "0.3.5": {
+          "sha1": "0c80a7446167238a6c1b2e4363d9e66d27dfe88b",
+          "sha256": "e34e28a3def5983a60f0f8f4bd50a50b3f9f8c7e7e52ffeefe138c245cf0d716",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.5/el/6/chefdk-0.3.5-1.x86_64.rpm"
+        },
+        "0.3.6": {
+          "sha1": "74d0c386a230cfa05b9ff8855cb470e44be94889",
+          "sha256": "c19918cee8a56c608c48ae434a014105e7daec074ee447095d1286a436f66cb0",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.3.6/el/6/chefdk-0.3.6-1.x86_64.rpm"
+        },
+        "0.4.0": {
+          "sha1": "1c21b043e1b5692811da254fac5c3ea065d1554a",
+          "sha256": "00ec1b762f81fc0ef82d8ae01907f23bb49453b5c036a04db0ed8b223303587e",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.4.0/el/6/chefdk-0.4.0-1.x86_64.rpm"
+        },
+        "0.5.0": {
+          "sha1": "fd88b7de840eeb24dab186b9dc1f828d3b5b1358",
+          "sha256": "a2c00ee9ae2ce4a3010074445b2a6a86e679d8ba9778a74629ae1f20387e0dbf",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.5.0/el/6/chefdk-0.5.0-1.el6.x86_64.rpm"
+        },
+        "0.5.1": {
+          "sha1": "c6af1e36f16674bb16e382601a8e058338da64a3",
+          "sha256": "7f109ac8dcfa7cba0bd270a82b2424c358643b8c04d3b9c4fcb27b2ebcc41bed",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.5.1/el/6/chefdk-0.5.1-1.el6.x86_64.rpm"
+        },
+        "0.6.0": {
+          "sha1": "c69000e9d97472b192a88979ff4e6418a2b6a6ba",
+          "sha256": "8cb2a89d3ac76dc78383abddbd892a95617bf66afb28bb28d0fef96a85096a1c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.6.0/el/6/chefdk-0.6.0-1.el6.x86_64.rpm"
+        },
+        "0.6.2": {
+          "sha1": "eeee4ff28d187134bdf2da5ef00f49a2d2f2f37b",
+          "sha256": "414f59719dc0ac2ba8eccaf080e5425806ab2f68a5afc3718d552239fc1ae891",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.6.2/el/6/chefdk-0.6.2-1.el6.x86_64.rpm"
+        },
+        "0.7.0": {
+          "sha1": "1842f847bf0fa87d54126189962e779e1886d831",
+          "sha256": "e37a5ff699babc9a45eeb15a0e0d85d6798103dca27825007a18da342fed1943",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.7.0/el/6/chefdk-0.7.0-1.el6.x86_64.rpm"
+        },
+        "0.8.0": {
+          "sha1": "f8e48ff23eb3011ff7276d9353439fa4b91a0073",
+          "sha256": "554b087a78e66bab17703ffef1d688dd86eeb7b5ea00b65dc2ca07f9f0ab0077",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.8.0/el/6/chefdk-0.8.0-1.el6.x86_64.rpm"
+        },
+        "0.8.1": {
+          "sha1": "e755597b2e1140dfc366cac86e050038671a3dd6",
+          "sha256": "ca8e4830420501cc38cb3d36e3baebd141316e4cc7756e67d5cc42e90c596b6f",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.8.1/el/6/chefdk-0.8.1-1.el6.x86_64.rpm"
+        },
+        "0.9.0": {
+          "sha1": "7f33decac69b85c036b63e3bafa1b83baf82add6",
+          "sha256": "59a1cfd8454766fc6f7c5fea1d6143d5fcc675f7123e18470609abc83eb33221",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.9.0/el/6/chefdk-0.9.0-1.el6.x86_64.rpm"
+        },
+        "0.10.0": {
+          "sha1": "3fa17ec673eac48aa367e5b28aeeef4f3edf899a",
+          "sha256": "846f8a176bcd223f2c484682fee360a5c92067410144f996fc745e9beb46bc45",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.10.0/el/6/chefdk-0.10.0-1.el6.x86_64.rpm"
+        },
+        "0.11.0": {
+          "sha1": "9ac7dfa4112495ccbff9554945317ab2e61e2df9",
+          "sha256": "aab7b655ac9bbf9bb1f62672dd494c8eb6f959f470cc7117c00b6491decc2986",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.11.0/el/6/chefdk-0.11.0-1.el6.x86_64.rpm"
+        },
+        "0.11.2": {
+          "sha1": "ed2831813d201358cace51bae3ef969bf5e37e68",
+          "sha256": "1d2d2a603e6c197356989304689a5deef81dc629ea6dbe7c4f0cdf8f4e8c6cd6",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.11.2/el/6/chefdk-0.11.2-1.el6.x86_64.rpm"
+        },
+        "0.12.0": {
+          "sha1": "619dfe23e23b0af622052827f564a59beded7973",
+          "sha256": "66c8b0e53c8512df62d7ef7f1dcd93fddd9ec23853d2ee22ce63f7173c12a7c3",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.12.0/el/6/chefdk-0.12.0-1.el6.x86_64.rpm"
+        },
+        "0.13.21": {
+          "sha1": "2d3d10333c42d092aac83407126b88cd3a526be4",
+          "sha256": "9e732c73bd28ae56b35c6760914c9fb54f257698191c39fa64e36d851e836cb3",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.13.21/el/6/chefdk-0.13.21-1.el6.x86_64.rpm"
+        },
+        "0.14.25": {
+          "sha1": "e1955b13c4d0f5148e49551598d4052ada2be3b0",
+          "sha256": "5151cfd5f5fe45f8037094ede9e211c11e73b38c4727c04742d0f59cf5db391e",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.14.25/el/6/chefdk-0.14.25-1.el6.x86_64.rpm"
+        },
+        "0.15.15": {
+          "sha1": "a4b34d717a766fe6b7631e8633b92175b586f42e",
+          "sha256": "445f6a29e8df7f03208a132232c076f456fa935aebaee8e25f9ec1b76028e2b0",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.15.15/el/6/chefdk-0.15.15-1.el6.x86_64.rpm"
+        },
+        "0.15.16": {
+          "sha1": "09f83b5b1f373a9d9138affb23c888cfecf58937",
+          "sha256": "93ae899cbdb73257dd6bda3b817e2667259e366b04ded8da84c5d116e1cd3ae5",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.15.16/el/6/chefdk-0.15.16-1.el6.x86_64.rpm"
+        },
+        "0.16.28": {
+          "sha1": "f027b517670765a19833e2fa6b0956ac2533ee23",
+          "sha256": "84d478336c915addab8e7484fa4b4090d72d9183944f2a3d6afd754cf0534a08",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.16.28/el/6/chefdk-0.16.28-1.el6.x86_64.rpm"
+        },
+        "0.17.17": {
+          "sha1": "655403f5eba45560e34cd90003d615dda240f87b",
+          "sha256": "34a0c39ffce753b0277d2b32961d23b4c322b322b21a0ac66f71ba66bd5d3c16",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.17.17/el/6/chefdk-0.17.17-1.el6.x86_64.rpm"
+        },
+        "0.18.26": {
+          "sha1": "07c4851ce26bedb0268c3d20cd9c1bb54cc0bea0",
+          "sha256": "b552c27c26850e6cb369f07b10229708fbc4923c4450516dd3c895324cb12f92",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.18.26/el/6/chefdk-0.18.26-1.el6.x86_64.rpm"
+        },
+        "0.18.30": {
+          "sha1": "d2c1aca5b96af5744954ddea3f5d3eed76d1bcdf",
+          "sha256": "81e314eaf4604d75268c48f044118cde4a86b7f6d1b9f709d3cd0c407dafdecb",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.18.30/el/6/chefdk-0.18.30-1.el6.x86_64.rpm"
+        },
+        "0.19.6": {
+          "sha1": "9b25abd60f51167e5f1c6528785d59b003e53b00",
+          "sha256": "7fdc5a6fbda29b5abeb600dd93e3feebbf7162f47cd036b3e775e24aa780dd1b",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.19.6/el/6/chefdk-0.19.6-1.el6.x86_64.rpm"
+        },
+        "1.0.3": {
+          "sha1": "a6c7a4adcd3dff347bdb541df5e98d6ecc790afc",
+          "sha256": "cc815e2ff718773b506ac5a9e8f1c1e9dca0ffa73f7d600bf337d39b558c6a79",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.0.3/el/6/chefdk-1.0.3-1.el6.x86_64.rpm"
+        },
+        "1.1.16": {
+          "sha1": "79ad8afd67db43db027b361f84a0a9ece63dd395",
+          "sha256": "61b1e6d9c75136ac0d3b1d9e6ac76aae84e81327694b8730b108c934e5918eb5",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.1.16/el/6/chefdk-1.1.16-1.el6.x86_64.rpm"
+        },
+        "1.2.20": {
+          "sha1": "54b7b8d7693766dced30d1de599f25fba4de3ca0",
+          "sha256": "f1fad177f26186a2990edb433fdc67e77e7a0a7b51d95c70fa092d5fc3c3f9f8",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.2.20/el/6/chefdk-1.2.20-1.el6.x86_64.rpm"
+        },
+        "1.2.22": {
+          "sha1": "22b4c08dcaad9955e9ca73b73e8e997ec4f7355b",
+          "sha256": "9134c601cf079202bc4708eb1a04f49a672591cdeaf15acb1cbf762fa342add2",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.2.22/el/6/chefdk-1.2.22-1.el6.x86_64.rpm"
+        },
+        "1.3.40": {
+          "sha1": "81d1c69051b5fa1eddebbaa4d089db4f77510e66",
+          "sha256": "6d5d3d74f2aa9c0c55bd8ff74b156a2e68406de8c34f99a6dbd25773bd9856e3",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.3.40/el/6/chefdk-1.3.40-1.el6.x86_64.rpm"
+        },
+        "1.3.43": {
+          "sha1": "1656bfd0a28fdf953160451f662bd63f5b84721b",
+          "sha256": "54ee022216266665309cf3e2302a9eaebdcef111f3267a19f1c248f8a9a71415",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.3.43/el/6/chefdk-1.3.43-1.el6.x86_64.rpm"
+        },
+        "1.4.3": {
+          "sha1": "716e95251ca28f3f1ca509fdb85c32940d58f00c",
+          "sha256": "9ca091cc0f0eba019c5c95ab69ee1aa23ffba7f081be4c534fe528f61c835235",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.4.3/el/6/chefdk-1.4.3-1.el6.x86_64.rpm"
+        },
+        "1.5.0": {
+          "sha1": "3e1d391191224df5558098ac9e6356dcf2ee0093",
+          "sha256": "ef54976f3b249a9184acf1c6c223495cbf851f35da415254fa0469eeeba5e10f",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.5.0/el/6/chefdk-1.5.0-1.el6.x86_64.rpm"
+        },
+        "1.6.1": {
+          "sha1": "e55cca822972a03778ea2c18e625ee42b19ad3e4",
+          "sha256": "12c196d1d3533c7ac94c989921b090dc6837bb876276967a6e73e086ed235fd2",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.6.1/el/6/chefdk-1.6.1-1.el6.x86_64.rpm"
+        },
+        "1.6.11": {
+          "sha1": "29167d102599c52ed3adf7aea95ff4eacdc18ade",
+          "sha256": "0eec4b0ade8497796d925dd20a0863268d6eddbf3239229b4d27772b99bd8886",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.6.11/el/6/chefdk-1.6.11-1.el6.x86_64.rpm"
+        },
+        "2.0.26": {
+          "sha1": "c4c41db1b7b1199a161ff2b16416be6a5b8f3ec4",
+          "sha256": "ea48d0c2f96e1d55d013d19e5f7577c97f661be4dcea0aeaf2d0ce1864abfe7c",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.0.26/el/6/chefdk-2.0.26-1.el6.x86_64.rpm"
+        },
+        "2.0.28": {
+          "sha1": "7597d71b7360a27c9081a31c975ac690efd1ce83",
+          "sha256": "7253e8bfa70b1b1e78cb560f0e649044f565d471ad943edd29116401b961e207",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.0.28/el/6/chefdk-2.0.28-1.el6.x86_64.rpm"
+        },
+        "2.1.11": {
+          "sha1": "0059c0ea9096520f3644e50b3d88af54e94e0f6e",
+          "sha256": "52d193a2bb7acc2caab3a5c0257096b6744e33afee100f44ae1265f48684479d",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.1.11/el/6/chefdk-2.1.11-1.el6.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "bf8d6472cf68454618789883b0a0a6950ba6e70f",
+          "sha256": "6cc6b7ccd470c248e31b3eed49584dc09aea91246f8bee1a7b31141596294cc3",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.2.1/el/6/chefdk-2.2.1-1.el6.x86_64.rpm"
+        },
+        "2.3.1": {
+          "sha1": "78991a76c4e64b5376e7286fdc81257be7b4775d",
+          "sha256": "17f3c09df76bb4fe340d43e4f7e888511b0aaba42261613139a9c2eb9f962a28",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.1/el/6/chefdk-2.3.1-1.el6.x86_64.rpm"
+        },
+        "2.3.3": {
+          "sha1": "2a8e7fa20fbb690afe280515630c7f726423f13e",
+          "sha256": "b184c786178a1b021bdde7df3e3c30166157ce50743a40db1305f22493da84bb",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.3/el/6/chefdk-2.3.3-1.el6.x86_64.rpm"
+        },
+        "2.3.4": {
+          "sha1": "d7b9cd061d89965d5a31f43512edfc5c6f5ca2b8",
+          "sha256": "56b160e8a45b776c06d1eb9f06b79b6000623e4d4b9d08100f9fecf9c0ff4a87",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.4/el/6/chefdk-2.3.4-1.el6.x86_64.rpm"
+        },
+        "2.4.17": {
+          "sha1": "90014f4fb4c21f3081c9aa366ff777d8ce04159c",
+          "sha256": "bebbe6d1c8805108e08c4fa1999230c5b517d41725913e1c3a4289dcfd00bfaa",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.4.17/el/6/chefdk-2.4.17-1.el6.x86_64.rpm"
+        },
+        "2.5.3": {
+          "sha1": "0fc5d896c881df5f9a117fdb8a566cfffbd174f6",
+          "sha256": "79a9e4fc30e0d1b018ae8b1be4a1a77d7a4ab5ea8ff9b94cf451b8c4c9522821",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.5.3/el/6/chefdk-2.5.3-1.el6.x86_64.rpm"
+        },
+        "2.5.13": {
+          "sha1": "bec99abf63167e93dd375e4f0b06ca09de018f5c",
+          "sha256": "d738904ec77ae61b0d805f75500451d418fb899e84b907a0d8e9709b11ba4bbd",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.5.13/el/6/chefdk-2.5.13-1.el6.x86_64.rpm"
+        },
+        "2.6.1": {
+          "sha1": "c226d96f7f3274fb6841e812f90bad46011b1edf",
+          "sha256": "1677c26dcdd49bd40ab1e8d8985013667c77080ef576ab3bfa88554ec0f65eaa",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.6.1/el/6/chefdk-2.6.1-1.el6.x86_64.rpm"
+        },
+        "2.6.2": {
+          "sha1": "183a894209621f3bd8548cf4bdb6ecdad1ab3ca7",
+          "sha256": "de65093a9eb01b16d98d03fb0eebe6f8f3c6754e2c781cdd9ddb1e8e69687dae",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.6.2/el/6/chefdk-2.6.2-1.el6.x86_64.rpm"
+        },
+        "3.0.36": {
+          "sha1": "56e6660e3d021a2c611a47f0766c7df95c116ccc",
+          "sha256": "68d54df968871f8351e33c277c105bbf634e5f6556e0610cad5a2cb7d22da1e3",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.0.36/el/6/chefdk-3.0.36-1.el6.x86_64.rpm"
+        },
+        "3.1.0": {
+          "sha1": "af5398aec3793dc3d07b5e6841bf4c8163ad6c0b",
+          "sha256": "1ae17357d26d60d18de92bbb5118d4eb87663eec263aea22b41b4e3ed0d674db",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.1.0/el/6/chefdk-3.1.0-1.el6.x86_64.rpm"
+        },
+        "3.2.30": {
+          "sha1": "ce45fed309e8215d70f11a474bacbf7d943e4c23",
+          "sha256": "7e8193107dc013e591d316b663166130107b56ba17cec3adbb7e432791bdd50f",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.2.30/el/6/chefdk-3.2.30-1.el6.x86_64.rpm"
+        },
+        "3.3.23": {
+          "sha1": "e0abcd88345666f86a41178e2aca29e67b85e25a",
+          "sha256": "4b824fa704dfa36e13e98e7028ffae467f0ecdc4e0c0e6f10265576cac397658",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.3.23/el/6/chefdk-3.3.23-1.el6.x86_64.rpm"
+        },
+        "3.4.38": {
+          "sha1": "31d03d55f9ded0f9e261f0d051c5eb96fd128023",
+          "sha256": "1a52f938617a2acffbea9cb30c2c751e635a7a92aaf75f98bd7fae5b46275763",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.4.38/el/6/chefdk-3.4.38-1.el6.x86_64.rpm"
+        },
+        "3.5.13": {
+          "sha1": "1659c751c7bad5657732d39bc2df8a1b6485c370",
+          "sha256": "7172d4cbaced5d34094955140f2cfb8fa79716da4cec1d6c34a7c9ef2bf414fd",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.5.13/el/6/chefdk-3.5.13-1.el6.x86_64.rpm"
+        },
+        "3.6.57": {
+          "sha1": "90aec1a76726c42d25bdd268825934550c1ede5f",
+          "sha256": "c56b386aced51fa0e43142ea570e6baf657327d0838a59a74f5600ea451bc248",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.6.57/el/6/chefdk-3.6.57-1.el6.x86_64.rpm"
+        },
+        "3.7.23": {
+          "sha1": "5d17c37ad467eea98ca759aeb73aa790d8245251",
+          "sha256": "9ccd2d2566826862c9c034e0ab20390c194d1d0bf313cd705a01fe779fb95a40",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.7.23/el/6/chefdk-3.7.23-1.el6.x86_64.rpm"
+        },
+        "3.8.14": {
+          "sha1": "d7281e6488f0892920d2f047df6d30bb4df6a0dd",
+          "sha256": "5591616008a4a2e16619a014146edff9f33a79ea23a437730c86aa5cdcfa5c3f",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.8.14/el/6/chefdk-3.8.14-1.el6.x86_64.rpm"
+        },
+        "3.9.0": {
+          "sha1": "5ad9aaf6abe4a63010c79a1d99161fbd2124ce54",
+          "sha256": "9c52155333fb1b8230cbe9f144f384b7cef3f71649f544a7a053bf2cb3d53370",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.9.0/el/6/chefdk-3.9.0-1.el6.x86_64.rpm"
+        },
+        "3.10.1": {
+          "sha1": "b97c46c70577e89a94217fea382acfce9a55710e",
+          "sha256": "669cb414046bb17738bd137b0b6470fd07c123495445059183ed9608fb384471",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.10.1/el/6/chefdk-3.10.1-1.el6.x86_64.rpm"
+        },
+        "3.11.3": {
+          "sha1": "b036f86b0a0d902a7a3601d0ada22a3635594bcc",
+          "sha256": "637949489448b5b53bded0eb33ed3505f04e3078ea26782550b60c7082e232e0",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.11.3/el/6/chefdk-3.11.3-1.el6.x86_64.rpm"
+        },
+        "3.12.0": {
+          "sha1": "656373ac5c74bab54184492d99084b3614a57e35",
+          "sha256": "165124e571c03862d5203711067a4d7fb72aad9a5a073e08e447b7ff4e887f79",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/6/chefdk-3.12.0-1.el6.x86_64.rpm"
+        },
+        "3.12.10": {
+          "sha1": "896f86cc43578b47cc48cb41ce9b4f5b31810118",
+          "sha256": "c7d7223f8fa515b632fb9e941294e83be84e9ab8529c6ca731f35f65fbcd64fc",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/6/chefdk-3.12.10-1.el6.x86_64.rpm"
+        },
+        "3.13.1": {
+          "sha1": "ab9a149d1525a20f5c5497aaa936c270fa5a088c",
+          "sha256": "ba9c16b3b96a15ac1b47aa16ca624730111105faa8fe486bd39f40fcad3afb3c",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/6/chefdk-3.13.1-1.el6.x86_64.rpm"
+        },
+        "4.0.60": {
+          "sha1": "6c8862641ed340da33c1a8f3d8d915b47a4bf131",
+          "sha256": "e6c3ec2f14d01f83cb264eb1bdd2e04c0b0c94bbe652c884161ecaa738438780",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.0.60/el/6/chefdk-4.0.60-1.el6.x86_64.rpm"
+        },
+        "4.1.7": {
+          "sha1": "7a475152b2ecbb14aca908dcb815d4174f024ee0",
+          "sha256": "c228d680a5fa11aa74cf6c680554e2dc6d543302abbe3adb709bde0e4452c234",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.1.7/el/6/chefdk-4.1.7-1.el6.x86_64.rpm"
+        },
+        "4.2.0": {
+          "sha1": "eb4f8ac8b843bb7958243a4aaa9c7475f043f7e1",
+          "sha256": "228920fa4ada8e740e1630433a1e59170a564c9e7a38a1971273e44527e0c5cc",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.2.0/el/6/chefdk-4.2.0-1.el6.x86_64.rpm"
+        },
+        "4.3.13": {
+          "sha1": "81789e6937af5bf79d1278145fc09000068b6fc1",
+          "sha256": "1a68d0c668ccb16429f1fa2aa1c08c9df1227d65e069539a9725100a5d5c15a5",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/6/chefdk-4.3.13-1.el6.x86_64.rpm"
+        },
+        "4.4.27": {
+          "sha1": "e44df3f8e94eaa208bcd72d76909d50adfa662c2",
+          "sha256": "5ecb979b6fa81c0286fa02b812f27ce0585c5cdd070ae42a229d8b6c3d15958f",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/6/chefdk-4.4.27-1.el6.x86_64.rpm"
+        },
+        "4.5.0": {
+          "sha1": "009fd47b89acd70894270bc313aba8e36890f06e",
+          "sha256": "b7746c1a75d4b299c8449aaa4069c037372b6aa4f8ed27fc33176bd6c9e06fbf",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/6/chefdk-4.5.0-1.el6.x86_64.rpm"
+        },
+        "4.6.35": {
+          "sha1": "bde47006c42a3542190f77dfa457486a476eae73",
+          "sha256": "46a274af443f5a781136befe867fe2e6ac322937a8971d793af292fc75f58082",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/6/chefdk-4.6.35-1.el6.x86_64.rpm"
+        },
+        "4.7.73": {
+          "sha1": "401317f1a3244329df5a6eb3d9212ff9ff7f66df",
+          "sha256": "98e142271b100af25cb19299efdc95ed0cbbd12b65b52e41d89a374b66419dcf",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/6/chefdk-4.7.73-1.el6.x86_64.rpm"
+        },
+        "4.8.23": {
+          "sha1": "c1fdf0ea4a0dab12e016795313dd50038be16083",
+          "sha256": "766412a11ee084069d3ececf399e7046cf8c491f32480aceabe8e0e0b19addb9",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/6/chefdk-4.8.23-1.el6.x86_64.rpm"
+        },
+        "4.9.7": {
+          "sha1": "4fa3845803eb913a52fceba03ff84bd4b16d691e",
+          "sha256": "7a5d51c6112905248fc2f5b9dd2f102f9d1fdf0a4054622268771f498585db49",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/6/chefdk-4.9.7-1.el6.x86_64.rpm"
+        },
+        "4.10.0": {
+          "sha1": "ea7ed7a5231666850fde3cecca58158ea9b284b6",
+          "sha256": "5307d0da73df71312900d5b8d85bb8e7bf3e9357973aa341f4f3ef9297be3e9f",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/6/chefdk-4.10.0-1.el6.x86_64.rpm"
+        },
+        "4.11.0": {
+          "sha1": "1244a41b9b9e419b936d354a7f04a2299ffe25b7",
+          "sha256": "15bc22cea2e39071ffe7e929074be919381b25f27eb06da93632bea8cafb7623",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/6/chefdk-4.11.0-1.el6.x86_64.rpm"
+        },
+        "4.12.0": {
+          "sha1": "858f21239ac52c175af37130d5e1782ab9d2ad5d",
+          "sha256": "31b110547c4819810a0caefeff9cdb2fe2a003873a4ad5a897f5378c69de2fdf",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/6/chefdk-4.12.0-1.el6.x86_64.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "0.6.2": {
+          "sha1": "1f181ec766c9c5e22cb581fb576f2ccd1ab2b927",
+          "sha256": "5842d9e7f253984806c331ff9b802ae3780af51f2dba42fc8aca1bfbfdb9cedd",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.6.2/el/7/chefdk-0.6.2-1.el7.x86_64.rpm"
+        },
+        "0.7.0": {
+          "sha1": "05c5b4a36dcf17f8aa9e5fe0a00a07c2427b6282",
+          "sha256": "25fc5c738ddca41e86cfd4ee111257f2e86f47bd726991432c89384d451d6e5c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.7.0/el/7/chefdk-0.7.0-1.el7.x86_64.rpm"
+        },
+        "0.8.0": {
+          "sha1": "66018fb7cd31ee3ed0fed480e2a187afa9ff595d",
+          "sha256": "df44da90902bd304d9c61cd3e907b0cb694b26b2c750a8e190aeb0a4fcb4c22e",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.8.0/el/7/chefdk-0.8.0-1.el7.x86_64.rpm"
+        },
+        "0.8.1": {
+          "sha1": "5d0cd3e53afd4ccd0058ec466d28970d3d77ad50",
+          "sha256": "02b5fca8203f0aa7b1513c7a9a77492418253f7381dd8d3c080a17bdaa63f40c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.8.1/el/7/chefdk-0.8.1-1.el7.x86_64.rpm"
+        },
+        "0.9.0": {
+          "sha1": "b4796e5eb8c38f4924e76dec0e59b73573ba8439",
+          "sha256": "8df4ad12298d1d525d0defaee366f6d4fef56ad68f1e3a6daa7df91f680acb78",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.9.0/el/7/chefdk-0.9.0-1.el7.x86_64.rpm"
+        },
+        "0.10.0": {
+          "sha1": "742254979a1f0f8f8621c09eb3589060e81c7516",
+          "sha256": "4a7ec3453ebeb314aee016dd1db3e1bdfa1bb0cab966cf7216bb61e3bed3d6f6",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.10.0/el/7/chefdk-0.10.0-1.el7.x86_64.rpm"
+        },
+        "0.11.0": {
+          "sha1": "8e795629cb34262387e693f2902f34613f936546",
+          "sha256": "9e94cee602662f89df5b05b2faf22c81eface191dd1ff4a9440fb5ef14533c39",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.11.0/el/7/chefdk-0.11.0-1.el7.x86_64.rpm"
+        },
+        "0.11.2": {
+          "sha1": "8012eb59342c467a9bfd79b8014c6c71a4a76701",
+          "sha256": "185a94f293d9c2421bdccb4df51c4adcd1b0def876a8be3642115a4e6d202089",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.11.2/el/7/chefdk-0.11.2-1.el7.x86_64.rpm"
+        },
+        "0.12.0": {
+          "sha1": "8692e7e29f051298c413578bc3b1121d59e60979",
+          "sha256": "4a2a41f0b676fcbf1b778d37f491b0a74606b9dc6869deb05fff157473fa5a4a",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.12.0/el/7/chefdk-0.12.0-1.el7.x86_64.rpm"
+        },
+        "0.13.21": {
+          "sha1": "949a28d7c36765ccfdac7acba0f9e623f7c5766c",
+          "sha256": "9728edffd39f56ba469d6a5e22de7242ff57a811c60d31f22716231fee3db0dc",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.13.21/el/7/chefdk-0.13.21-1.el7.x86_64.rpm"
+        },
+        "0.14.25": {
+          "sha1": "c662b63c4842cafd9ce832bf80deff3c212490fa",
+          "sha256": "879656c7736ef2a061937c1f45c623e99fd57aaa2f6d802e9799d333d7e5342f",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.14.25/el/7/chefdk-0.14.25-1.el7.x86_64.rpm"
+        },
+        "0.15.15": {
+          "sha1": "88833869160efcbdf60e17ca89187b295b37ae87",
+          "sha256": "4ec6ad89063c14c730955decaa1d33fd8b720eeec8055496e1645aa4cf9a1c8f",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.15.15/el/7/chefdk-0.15.15-1.el7.x86_64.rpm"
+        },
+        "0.15.16": {
+          "sha1": "c27d697941cd0b1eadfee26803e18d050dcde7e4",
+          "sha256": "c94718d25fc64ec098cf2a89d81da03112a14530594ab3e81b0c7fbd7ef2f149",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.15.16/el/7/chefdk-0.15.16-1.el7.x86_64.rpm"
+        },
+        "0.16.28": {
+          "sha1": "c56382743e76ec3e66455131c64e11578c53f4c4",
+          "sha256": "f445ab53ad7cd458f72b278f257016f1e0f201b89ff2a71d1cff2e6981912bf3",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.16.28/el/7/chefdk-0.16.28-1.el7.x86_64.rpm"
+        },
+        "0.17.17": {
+          "sha1": "d427fadb9f8f4b96d1b3919b1e8ca49d4ff30f1e",
+          "sha256": "6f2ae15e1e9ebbd9dfc29e3a6a8f1289e0519ed4911a149558351e96330d32dc",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.17.17/el/7/chefdk-0.17.17-1.el7.x86_64.rpm"
+        },
+        "0.18.26": {
+          "sha1": "d5846ef344178099ea12516bad6fde73c9f52974",
+          "sha256": "aa96a31f656897294ba630ee5a7f91c4c313467477a92d5ba04f0288c80c57ca",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.18.26/el/7/chefdk-0.18.26-1.el7.x86_64.rpm"
+        },
+        "0.18.30": {
+          "sha1": "943f7bc504d12357d09a3fe2dbd155ad3a8c3c7e",
+          "sha256": "7b8ee86bece65285da6505a0ef31280a75b6e538d11db1ccd9dbaeca23c3973c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.18.30/el/7/chefdk-0.18.30-1.el7.x86_64.rpm"
+        },
+        "0.19.6": {
+          "sha1": "08a84daddcc80d26b7a402d19914285ad023cce6",
+          "sha256": "2e818acc71160c256eff0983c9dd24db4b6cddd8692b9702c1e5c328d7057b4c",
+          "url": "https://packages.chef.io/files/stable/chefdk/0.19.6/el/7/chefdk-0.19.6-1.el7.x86_64.rpm"
+        },
+        "1.0.3": {
+          "sha1": "bb64d175868d1861b0e98be1ce74c0e550dc7148",
+          "sha256": "dd288b375a44078bed04cce744b5f7e2b50c8292be595db4d496a97ae51b6565",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.0.3/el/7/chefdk-1.0.3-1.el7.x86_64.rpm"
+        },
+        "1.1.16": {
+          "sha1": "8625562e4940b935f107be4e34a7b3747bcc75f9",
+          "sha256": "b6bfbb4bd0614f6bf85bdc62bf0c470e49cba68bbd3715fc59a1af83795dbdb9",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.1.16/el/7/chefdk-1.1.16-1.el7.x86_64.rpm"
+        },
+        "1.2.20": {
+          "sha1": "00f1235833d36b247f2561890544eaf95c68fab3",
+          "sha256": "8c351f3a423322488b2265edad58116966854188b2a18e6275694b2528461032",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.2.20/el/7/chefdk-1.2.20-1.el7.x86_64.rpm"
+        },
+        "1.2.22": {
+          "sha1": "73b867ce14ff24fd565eeffdbc130908bb5c4878",
+          "sha256": "a85a4560b32e29bf4083f8fce01eaceac5ef84f5a9a16c1609738e112e9bafe2",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.2.22/el/7/chefdk-1.2.22-1.el7.x86_64.rpm"
+        },
+        "1.3.40": {
+          "sha1": "6156d6667a21034bac3b905d9998633ebeac9d0f",
+          "sha256": "d8948ff414ac4aa23cbce407745df64ebd28548238b2022778d9d9860be73053",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.3.40/el/7/chefdk-1.3.40-1.el7.x86_64.rpm"
+        },
+        "1.3.43": {
+          "sha1": "73250f9feac052e65620ac42ef7d338d2e4298ee",
+          "sha256": "7b34dd5e9af1d954f59737376fdeba3eb147918b28b7f3b86f126d08d74361ef",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.3.43/el/7/chefdk-1.3.43-1.el7.x86_64.rpm"
+        },
+        "1.4.3": {
+          "sha1": "e8d415958c37f0ff65ced4ffd9873e7766bb1de8",
+          "sha256": "bb70be05a6a99071d26ec288d338459fe71fdd6ab0e4cbb661ae66dfb6c82fc5",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.4.3/el/7/chefdk-1.4.3-1.el7.x86_64.rpm"
+        },
+        "1.5.0": {
+          "sha1": "ed66e4fa7a96fb01a442a1bb221ff68865047b6a",
+          "sha256": "7483b610f3b75144849ec391deac7d90e2b233f2d69e122cfa02c4d86ba8fd80",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.5.0/el/7/chefdk-1.5.0-1.el7.x86_64.rpm"
+        },
+        "1.6.1": {
+          "sha1": "bb97ebe9c582c63221abd672df26bd1e3d981047",
+          "sha256": "fd90356fc2e7c0ae958959fd8ccae43c75cb4168d2e48fbca97e3f1542701e42",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.6.1/el/7/chefdk-1.6.1-1.el7.x86_64.rpm"
+        },
+        "1.6.11": {
+          "sha1": "feff9bf27ab5b0ca2797c515d288f2f6b208b48f",
+          "sha256": "c0d39f892def72a7e2c57c50f81f9de12711f013ac2cae47ce05626f941103dd",
+          "url": "https://packages.chef.io/files/stable/chefdk/1.6.11/el/7/chefdk-1.6.11-1.el7.x86_64.rpm"
+        },
+        "2.0.26": {
+          "sha1": "6257818710d315ccf32050475e73defa7a3345f1",
+          "sha256": "89116da26e27fa78337706e8ee0a530b8d7450132ebf33fe0995a78a691d8a66",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.0.26/el/7/chefdk-2.0.26-1.el7.x86_64.rpm"
+        },
+        "2.0.28": {
+          "sha1": "93fd4aa22850165db06b1daae59b92f781484725",
+          "sha256": "8667528e1f4ca65d43e48782bda1650a4a54d672b86a7926e149f4b54a644a6b",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.0.28/el/7/chefdk-2.0.28-1.el7.x86_64.rpm"
+        },
+        "2.1.11": {
+          "sha1": "4c5a93c30b97def7f98ffde07949901a664a749d",
+          "sha256": "3de0093467e38089b0a2c9edfa624fcbc17942bd2366add06c44e8bbc442942c",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.1.11/el/7/chefdk-2.1.11-1.el7.x86_64.rpm"
+        },
+        "2.2.1": {
+          "sha1": "42cc7461512629c26c91f54d4d8d9f8eb89b39d1",
+          "sha256": "a13a558f4484300dc1fad70124675a56a95591ce50a89bcd368dbe6a0bcd87fb",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.2.1/el/7/chefdk-2.2.1-1.el7.x86_64.rpm"
+        },
+        "2.3.1": {
+          "sha1": "880d1bf1aeb42a2d4f42d45e2c2b8f925d4af681",
+          "sha256": "2dea7d25a019e1764533649aba0c39e2014837dc5240ce35a9a7350d91fd2425",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.1/el/7/chefdk-2.3.1-1.el7.x86_64.rpm"
+        },
+        "2.3.3": {
+          "sha1": "e2f37ce75af94634ab7f81b6fe805403c22158af",
+          "sha256": "9d514c42c4c56ccefa2a38f7c5f70c8344a92ba9eccf2124adf8c4c928691b5b",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.3/el/7/chefdk-2.3.3-1.el7.x86_64.rpm"
+        },
+        "2.3.4": {
+          "sha1": "454b13d60f72de3097acb7665327882d0db5eb57",
+          "sha256": "f7cceebb486b0e150e1d5fb1e298045520733ab83cec41f30d1c22427da5cfa7",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.3.4/el/7/chefdk-2.3.4-1.el7.x86_64.rpm"
+        },
+        "2.4.17": {
+          "sha1": "c07f1dea5e91c8544537327ccbfab76f69cda594",
+          "sha256": "ab2d62b1eeb5248949f044f4c4bf489babe652fc649dc93cc2dac30607eb207e",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.4.17/el/7/chefdk-2.4.17-1.el7.x86_64.rpm"
+        },
+        "2.5.3": {
+          "sha1": "7d3e9ba637554913111bac9d70d669f40385cedd",
+          "sha256": "f5c31ecc0e9fd1972e00e15156d43f26af5f287cb5ef5a3ced6353587a23c4b8",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.5.3/el/7/chefdk-2.5.3-1.el7.x86_64.rpm"
+        },
+        "2.5.13": {
+          "sha1": "3779e76b03644f54d3b55483d47583f7108b25fc",
+          "sha256": "f173ae48f46bdc307f5198129df0aace90c211fc22bc3ca39d15a6495cb8712f",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.5.13/el/7/chefdk-2.5.13-1.el7.x86_64.rpm"
+        },
+        "2.6.1": {
+          "sha1": "e1e9c0e295a1e8aa39eaf3ea010edafa181c7de2",
+          "sha256": "eaec38fc750ee57b9ca50f39ad3b5c3362c6117b42b9cc3bab739fdb6c510a2c",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.6.1/el/7/chefdk-2.6.1-1.el7.x86_64.rpm"
+        },
+        "2.6.2": {
+          "sha1": "fb2d3e26f71649522d1301c15e673bc25eaa121c",
+          "sha256": "9199d23c2d81848c47d95722fee2da84483022a057b2154962a5f51cde6b3bf1",
+          "url": "https://packages.chef.io/files/stable/chefdk/2.6.2/el/7/chefdk-2.6.2-1.el7.x86_64.rpm"
+        },
+        "3.0.36": {
+          "sha1": "8e648ac3d72f99c0ceca9f263f9c863a4ea770bc",
+          "sha256": "405e2047ad0e7ee134de448a42ba85768316ad8b1b65333f795618cfd1dba018",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.0.36/el/7/chefdk-3.0.36-1.el7.x86_64.rpm"
+        },
+        "3.1.0": {
+          "sha1": "5e53cda8ab0f846d127eec1aa0bc252dec368a00",
+          "sha256": "3d96c2d9dd733602a055f8ca99789ed4857b02440037c69c954e4964d68f9a82",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.1.0/el/7/chefdk-3.1.0-1.el7.x86_64.rpm"
+        },
+        "3.2.30": {
+          "sha1": "2d4fdf67824eb100034061a0db5a75f025087ba0",
+          "sha256": "fce34e69b776dfca455143aa8ce67720e896e7f75af33df03768b9707838e303",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.2.30/el/7/chefdk-3.2.30-1.el7.x86_64.rpm"
+        },
+        "3.3.23": {
+          "sha1": "9d53e2a7b5596ee8dfd3c7bbade561f3888d2fa6",
+          "sha256": "1b8a2846c8cbf46cd876ce241d61a5a8f8b00c921c513fe7ba72102a27108619",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.3.23/el/7/chefdk-3.3.23-1.el7.x86_64.rpm"
+        },
+        "3.4.38": {
+          "sha1": "0acb89cd7c9ca5f7e59d7ceb31d6a90266e711d0",
+          "sha256": "ff5e3f71516cd4883476aa49e4b725b932930bdfbb80079445a5cbfc53a8fee4",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.4.38/el/7/chefdk-3.4.38-1.el7.x86_64.rpm"
+        },
+        "3.5.13": {
+          "sha1": "5af9a5da575d222bab1751fa93c50d410c706558",
+          "sha256": "31088c0f5dc72d9f7304cb25888fd78f5382bbc4a6bf29b1fb339783a902b252",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.5.13/el/7/chefdk-3.5.13-1.el7.x86_64.rpm"
+        },
+        "3.6.57": {
+          "sha1": "5cc203820320ea885fce7d000f429c785de00fdf",
+          "sha256": "44a073923c1607c4a7fbd31f6838c26edf3f1831117d79c4bffdd15263da5cf5",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.6.57/el/7/chefdk-3.6.57-1.el7.x86_64.rpm"
+        },
+        "3.7.23": {
+          "sha1": "becfb132eb1187062d0454db86c72077c23f2f29",
+          "sha256": "6597f4bd7b2f59f3c2f56cb8ddbf8c2a47011256a98c5628c83ff5790e21a215",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.7.23/el/7/chefdk-3.7.23-1.el7.x86_64.rpm"
+        },
+        "3.8.14": {
+          "sha1": "b970a24e06006b83422d96077a6b58cc18f41fbf",
+          "sha256": "2d172ec64e9363bcd9ee734957659851ba7e6ba5281f00f96f1cb702dc03371c",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.8.14/el/7/chefdk-3.8.14-1.el7.x86_64.rpm"
+        },
+        "3.9.0": {
+          "sha1": "78f4793fd63f04ee05bfb5277ad0b9b8ae951c11",
+          "sha256": "8e39544c9f34dd5d634f71fc77275647a14e1a6263c4df26c61282e533d37841",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.9.0/el/7/chefdk-3.9.0-1.el7.x86_64.rpm"
+        },
+        "3.10.1": {
+          "sha1": "c48d0e067656241c26960ba0bb9eef471a68302b",
+          "sha256": "54c78c375b704b8287bb740fb9ad3d06721c5a9dc4f05de06630df844a1adc97",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.10.1/el/7/chefdk-3.10.1-1.el7.x86_64.rpm"
+        },
+        "3.11.3": {
+          "sha1": "5e937dd3f9eac962736fbb184a9f63485f2dfc8b",
+          "sha256": "0aa5e385a71b983ee9c616bae6f066476745558f6d41b07903295dd7ddd4542d",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.11.3/el/7/chefdk-3.11.3-1.el7.x86_64.rpm"
+        },
+        "3.12.0": {
+          "sha1": "2654df50e97ed62add94829b79e393fe7a32b9c7",
+          "sha256": "aeeca17d7da14d0020c7dbd51a6f8910fa7f2da5fc3375b0e4a5d801d858acfa",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/7/chefdk-3.12.0-1.el7.x86_64.rpm"
+        },
+        "3.12.10": {
+          "sha1": "d6955cae0491feab9dce2a76be1c0ebbd96829df",
+          "sha256": "d98be95f11ea15c723279f801e54082eca6cf092759c492ef11b215d0cc44d36",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/7/chefdk-3.12.10-1.el7.x86_64.rpm"
+        },
+        "3.13.1": {
+          "sha1": "4318131f4d144e06f10e986bac0acfc294289ea9",
+          "sha256": "c8953c16ea8ed524cd3fd8aa48da5ccbce7e1379170733f1844c484dea030696",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/7/chefdk-3.13.1-1.el7.x86_64.rpm"
+        },
+        "4.0.60": {
+          "sha1": "235a5a459e3de1d342024027a5d227037059b234",
+          "sha256": "3b6f2242f6136b30fa2c3a62cb8d9b533d32c9af8a351419b6505927428d4ca8",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.0.60/el/7/chefdk-4.0.60-1.el7.x86_64.rpm"
+        },
+        "4.1.7": {
+          "sha1": "cfab5f0851392244ad7d1a6c14c45b2c3e808a4c",
+          "sha256": "327c3d81a41eee1479e3f0ccf7f9c6bd0f0cc1e3e1f9efcf05cf30af88d0ac63",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.1.7/el/7/chefdk-4.1.7-1.el7.x86_64.rpm"
+        },
+        "4.2.0": {
+          "sha1": "eeadca2dffe76a62c5df03d336f8e646509f1ecf",
+          "sha256": "37d1dad206f79d432f064947793948ccbc55259cc852b059a28d68b38cdcf869",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.2.0/el/7/chefdk-4.2.0-1.el7.x86_64.rpm"
+        },
+        "4.3.13": {
+          "sha1": "2fef3575d0dde8efc82f4b6b97f0cf59d958e9df",
+          "sha256": "e68b1fc2a613eef7792b99eed4f4d213c1c0603d09b023a696dad59c259a6747",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/7/chefdk-4.3.13-1.el7.x86_64.rpm"
+        },
+        "4.4.27": {
+          "sha1": "f071c1ffcf151a33f3ecbc7bb744a7fc68b5f434",
+          "sha256": "142bf048b56c2001ea5e748bbe4440fe020781875f31a23a4e3c934c69905a4b",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/7/chefdk-4.4.27-1.el7.x86_64.rpm"
+        },
+        "4.5.0": {
+          "sha1": "9c20f4fe24f567801f7e4b4face768f6619b3c88",
+          "sha256": "21aea090ca864f5d860e6c85d699d3acc4bb2c4c007baf0c37b939685b764979",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/7/chefdk-4.5.0-1.el7.x86_64.rpm"
+        },
+        "4.6.35": {
+          "sha1": "a066007875f832e0da89efc55aa5a3c09300211a",
+          "sha256": "26e8aaea3f79707b4c23484bb77c32a5ed49cbbfcbabad6eef5fab801a3220af",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/7/chefdk-4.6.35-1.el7.x86_64.rpm"
+        },
+        "4.7.73": {
+          "sha1": "66c2f00e41b58cca904f2cb60c086aa8f997a4ec",
+          "sha256": "e4d557bfd6423cf31804219231cf48fc7e78527a12b9e1e43b5e3380e58dc8ce",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/7/chefdk-4.7.73-1.el7.x86_64.rpm"
+        },
+        "4.8.23": {
+          "sha1": "a51b8b9fd844c2881b477ee9d65af94f98647de8",
+          "sha256": "9a163528ae1986fb2e472e16d7e981cc5a984d8b1865d2bba2f3faf0c31ac78a",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/7/chefdk-4.8.23-1.el7.x86_64.rpm"
+        },
+        "4.9.7": {
+          "sha1": "53f94279220e04c1bcac627a554f1ced3c657ff4",
+          "sha256": "507aca6aba77bae1449ccf5047de8e703e3894b732dd454a5c28e62da6189b02",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/7/chefdk-4.9.7-1.el7.x86_64.rpm"
+        },
+        "4.10.0": {
+          "sha1": "61b78953c0656278ca9b4865e2e7e9770bcb0808",
+          "sha256": "5d88606819fa545ea91079559681aae029fc2de5b4ad4de1fee4dfe3c23a827a",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/7/chefdk-4.10.0-1.el7.x86_64.rpm"
+        },
+        "4.11.0": {
+          "sha1": "8910f121844a2d847c33c56653ae69d9345e4591",
+          "sha256": "a59d845778566f9c1629df22a2da52b381531c52b743d44c255f5a295c0b035f",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/7/chefdk-4.11.0-1.el7.x86_64.rpm"
+        },
+        "4.12.0": {
+          "sha1": "e608a7ca2886ed3f79d45787107a411c71405c59",
+          "sha256": "cb05fddb5a765f279b960a569c9ed89983821f3f61a2c1f0b1e33e86bc5822dd",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/7/chefdk-4.12.0-1.el7.x86_64.rpm"
+        },
+        "4.13.3": {
+          "sha1": "7be4db3113f8afde8d09c780f647a6122318c15e",
+          "sha256": "502fe82db4e51ed3ce718c9b069c567843ebe400985423af0a3a8c59de444e50",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.13.3/el/7/chefdk-4.13.3-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "8": {
+      "x86_64": {
+        "3.12.0": {
+          "sha1": "2654df50e97ed62add94829b79e393fe7a32b9c7",
+          "sha256": "aeeca17d7da14d0020c7dbd51a6f8910fa7f2da5fc3375b0e4a5d801d858acfa",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.0/el/8/chefdk-3.12.0-1.el7.x86_64.rpm"
+        },
+        "3.12.10": {
+          "sha1": "d6955cae0491feab9dce2a76be1c0ebbd96829df",
+          "sha256": "d98be95f11ea15c723279f801e54082eca6cf092759c492ef11b215d0cc44d36",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.12.10/el/8/chefdk-3.12.10-1.el7.x86_64.rpm"
+        },
+        "3.13.1": {
+          "sha1": "4318131f4d144e06f10e986bac0acfc294289ea9",
+          "sha256": "c8953c16ea8ed524cd3fd8aa48da5ccbce7e1379170733f1844c484dea030696",
+          "url": "https://packages.chef.io/files/stable/chefdk/3.13.1/el/8/chefdk-3.13.1-1.el7.x86_64.rpm"
+        },
+        "4.3.13": {
+          "sha1": "2fef3575d0dde8efc82f4b6b97f0cf59d958e9df",
+          "sha256": "e68b1fc2a613eef7792b99eed4f4d213c1c0603d09b023a696dad59c259a6747",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.3.13/el/8/chefdk-4.3.13-1.el7.x86_64.rpm"
+        },
+        "4.4.27": {
+          "sha1": "f071c1ffcf151a33f3ecbc7bb744a7fc68b5f434",
+          "sha256": "142bf048b56c2001ea5e748bbe4440fe020781875f31a23a4e3c934c69905a4b",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.4.27/el/8/chefdk-4.4.27-1.el7.x86_64.rpm"
+        },
+        "4.5.0": {
+          "sha1": "9c20f4fe24f567801f7e4b4face768f6619b3c88",
+          "sha256": "21aea090ca864f5d860e6c85d699d3acc4bb2c4c007baf0c37b939685b764979",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.5.0/el/8/chefdk-4.5.0-1.el7.x86_64.rpm"
+        },
+        "4.6.35": {
+          "sha1": "a066007875f832e0da89efc55aa5a3c09300211a",
+          "sha256": "26e8aaea3f79707b4c23484bb77c32a5ed49cbbfcbabad6eef5fab801a3220af",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.6.35/el/8/chefdk-4.6.35-1.el7.x86_64.rpm"
+        },
+        "4.7.73": {
+          "sha1": "66c2f00e41b58cca904f2cb60c086aa8f997a4ec",
+          "sha256": "e4d557bfd6423cf31804219231cf48fc7e78527a12b9e1e43b5e3380e58dc8ce",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.7.73/el/8/chefdk-4.7.73-1.el7.x86_64.rpm"
+        },
+        "4.8.23": {
+          "sha1": "a51b8b9fd844c2881b477ee9d65af94f98647de8",
+          "sha256": "9a163528ae1986fb2e472e16d7e981cc5a984d8b1865d2bba2f3faf0c31ac78a",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.8.23/el/8/chefdk-4.8.23-1.el7.x86_64.rpm"
+        },
+        "4.9.7": {
+          "sha1": "53f94279220e04c1bcac627a554f1ced3c657ff4",
+          "sha256": "507aca6aba77bae1449ccf5047de8e703e3894b732dd454a5c28e62da6189b02",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.9.7/el/8/chefdk-4.9.7-1.el7.x86_64.rpm"
+        },
+        "4.10.0": {
+          "sha1": "61b78953c0656278ca9b4865e2e7e9770bcb0808",
+          "sha256": "5d88606819fa545ea91079559681aae029fc2de5b4ad4de1fee4dfe3c23a827a",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.10.0/el/8/chefdk-4.10.0-1.el7.x86_64.rpm"
+        },
+        "4.11.0": {
+          "sha1": "8910f121844a2d847c33c56653ae69d9345e4591",
+          "sha256": "a59d845778566f9c1629df22a2da52b381531c52b743d44c255f5a295c0b035f",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.11.0/el/8/chefdk-4.11.0-1.el7.x86_64.rpm"
+        },
+        "4.12.0": {
+          "sha1": "e608a7ca2886ed3f79d45787107a411c71405c59",
+          "sha256": "cb05fddb5a765f279b960a569c9ed89983821f3f61a2c1f0b1e33e86bc5822dd",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.12.0/el/8/chefdk-4.12.0-1.el7.x86_64.rpm"
+        },
+        "4.13.3": {
+          "sha1": "7be4db3113f8afde8d09c780f647a6122318c15e",
+          "sha256": "502fe82db4e51ed3ce718c9b069c567843ebe400985423af0a3a8c59de444e50",
+          "url": "https://packages.chef.io/files/stable/chefdk/4.13.3/el/8/chefdk-4.13.3-1.el7.x86_64.rpm"
         }
       }
     }
@@ -7725,6 +7725,6 @@
     }
   },
   "run_data": {
-    "timestamp": "2021-03-12 08:10:03 -0600"
+    "timestamp": "2022-06-03 00:12:17 +0000"
   }
 }
