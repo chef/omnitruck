@@ -106,11 +106,25 @@ platform "scientific" do
 end
 
 platform "amazon" do
-  remap "el"
+  remap do |opts|
+    # map "version 1" amazon linux and amazon linux 2 to RHEL
+    if /201\d\.\d/.match?(opts[:version]) || opts[:version] == "2"
+      "el"
+    else
+      "amazon"
+    end
+  end
+
   version_remap do |opts|
-    # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
-    # map everything else (Amazon Linux 2) to RHEL 7
-    /201\d\.\d/.match?(opts[:version]) ? "6" : "7"
+    if /201\d\.\d/.match?(opts[:version])
+      # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
+      "6"
+    elsif opts[:version] == "2"
+      # map Amazon Linux 2 to RHEL 7
+      "7"
+    else
+      opts[:version]
+    end
   end
 end
 

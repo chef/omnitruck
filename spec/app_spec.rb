@@ -231,9 +231,9 @@ context 'Omnitruck' do
 
         context 'for amazon linux' do
           let(:platform) { 'amazon' }
-          let(:expected_platform) { 'el' }
 
           context 'for 2018.03' do
+            let(:expected_platform) { 'el' }
             let(:platform_version) { '2018.03' }
             let(:expected_platform_version) { '6' }
 
@@ -250,6 +250,7 @@ context 'Omnitruck' do
           end
 
           context 'for 2' do
+            let(:expected_platform) { 'el' }
             let(:platform_version) { '2' }
             let(:expected_platform_version) { '7' }
 
@@ -259,6 +260,23 @@ context 'Omnitruck' do
               context 'without a version' do
                 let(:project_version) { nil }
                 let(:expected_version) { latest_stable_chef }
+
+                it_behaves_like 'a correct package info'
+              end
+            end
+          end
+
+          context 'for 2022' do
+            # Even though this block is for stable, the only place we have an amazon linux 2022 build is current
+            let(:channel) { 'current' }
+            let(:platform_version) { '2022' }
+
+            context 'for x86_64' do
+              let(:architecture) { 'x86_64' }
+
+              context 'without a version' do
+                let(:project_version) { nil }
+                let(:expected_version) { latest_current_chef }
 
                 it_behaves_like 'a correct package info'
               end
