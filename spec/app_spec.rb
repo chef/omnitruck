@@ -300,8 +300,8 @@ context 'Omnitruck' do
             end
           end
 
-          context 'for 11.0' do
-            let(:platform_version) { '11.0' }
+          context 'for 11' do
+            let(:platform_version) { '11' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
@@ -322,21 +322,19 @@ context 'Omnitruck' do
                 let(:expected_architecture) { 'x86_64' }
 
                 context 'with a version' do
-                  let(:project_version) { nil }
-                  let(:expected_version) { latest_stable_chef }
+                  let(:project_version) { "15.17.4" }
+                  let(:expected_platform_version) { '10.15' }
 
                   it_behaves_like 'a correct package info'
                 end
               end
 
-              # Even though this block is for stable, the only place we have an arm64 build is current
               context 'with native build' do
                 let(:expected_platform_version) { '11' }
                 let(:expected_architecture) { 'aarch64' }
-                let(:channel) { 'current' }
 
                 context 'with a version' do
-                  let(:project_version) { '17.0.148' }
+                  let(:project_version) { '17.10.3' }
 
                   it_behaves_like 'a correct package info'
                 end
@@ -344,11 +342,9 @@ context 'Omnitruck' do
             end
           end
 
-          # We're using the current channel because that currently has the sample data
           context 'with mix of 11.x and 11' do
-            let(:channel) { 'current' }
             let(:architecture) { 'x86_64' }
-            let(:project_version) { "17.0.114" }
+            let(:project_version) { "17.8.25" }
 
             context 'with 10.x' do
               let(:platform_version) { '10.15' }
@@ -763,7 +759,7 @@ context 'Omnitruck' do
 
                 context 'with a version only specifying major' do
                   let(:project_version) { "15" }
-                  let(:expected_version) { '15.15.1' }
+                  let(:expected_version) { '15.17.4' }
 
                   it_behaves_like 'a correct package info'
                 end
@@ -923,8 +919,8 @@ context 'Omnitruck' do
       end
     end
 
-    context 'for chefdk' do
-      let(:project) { "chefdk" }
+    context 'for chef-workstation' do
+      let(:project) { "chef-workstation" }
 
       context 'for stable' do
         let(:channel) { 'stable' }
@@ -934,14 +930,14 @@ context 'Omnitruck' do
 
           context 'for 2008r2' do
             let(:platform_version) { '2008r2' }
-            let(:expected_platform_version) { '10' }
+            let(:expected_platform_version) { '11' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_version) { latest_stable_chefdk }
+                let(:expected_version) { latest_stable_chef_workstation }
 
                 it_behaves_like 'a correct package info'
               end
@@ -956,15 +952,15 @@ context 'Omnitruck' do
         context 'for mac_os_x' do
           let(:platform) { 'mac_os_x' }
 
-          context 'for 10.13' do
-            let(:platform_version) { '10.13' }
+          context 'for 12' do
+            let(:platform_version) { '12' }
 
             context 'for x86_64' do
               let(:architecture) { 'x86_64' }
 
               context 'without a version' do
                 let(:project_version) { nil }
-                let(:expected_version) { latest_current_chefdk }
+                let(:expected_version) { latest_current_chef_workstation }
 
                 it_behaves_like 'a correct package info'
               end
@@ -1088,8 +1084,6 @@ context 'Omnitruck' do
       end
     end
 
-    # Let's test with chefdk because chef manifest have a 12.6.1 entry in it which
-    # limits the information we are getting out of this endpoint.
     context "for stable chefdk" do
       let(:endpoint) { '/stable/chefdk/packages' }
       let(:params) { { v: version } }
@@ -1161,8 +1155,8 @@ context 'Omnitruck' do
       end
     end
 
-    context "for current chefdk" do
-      let(:endpoint) { '/current/chefdk/packages' }
+    context "for current chef-workstation" do
+      let(:endpoint) { '/current/chef-workstation/packages' }
       let(:params) { { v: version } }
       let(:versions_output) {
         get(endpoint, params)
