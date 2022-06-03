@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.22 -->
-## [0.1.22](https://github.com/chef/omnitruck/tree/0.1.22) (2022-01-28)
+<!-- latest_release 0.1.23 -->
+## [0.1.23](https://github.com/chef/omnitruck/tree/0.1.23) (2022-06-03)
 
 #### Merged Pull Requests
-- Add dobi to helm publish [#544](https://github.com/chef/omnitruck/pull/544) ([mimaslanka](https://github.com/mimaslanka))
+- Add support for Amazon Linux 2022 [#555](https://github.com/chef/omnitruck/pull/555) ([jeremiahsnapp](https://github.com/jeremiahsnapp))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Add support for Amazon Linux 2022 [#555](https://github.com/chef/omnitruck/pull/555) ([jeremiahsnapp](https://github.com/jeremiahsnapp)) <!-- 0.1.23 -->
 - Add dobi to helm publish [#544](https://github.com/chef/omnitruck/pull/544) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.22 -->
 - Dummy change [#543](https://github.com/chef/omnitruck/pull/543) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.21 -->
 - add backtick [#542](https://github.com/chef/omnitruck/pull/542) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.20 -->
