@@ -27,9 +27,23 @@
           "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.1.0/mac_os_x/10.13/mac-bootstrapper-1.1.0-1.dmg"
         }
       }
+    },
+    "10.15": {
+      "x86_64": {
+        "1.1.4": {
+          "sha1": "46a81a6c55b61ad4950ba8789a1ed5b67969675c",
+          "sha256": "5c8c754670e27960a77be9111b139c6861aa4fa321ec0f439a6842fd9360108f",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.1.4/mac_os_x/10.15/mac-bootstrapper-1.1.4-1.x86_64.dmg"
+        },
+        "1.1.6": {
+          "sha1": "9a3718c9a18800fac1732bdfa9677f90bdcaafa0",
+          "sha256": "1c7c6750fbfd9c140a6c8693dd16daa2cca368f35d809aefce4634b2838a3512",
+          "url": "https://packages.chef.io/files/stable/mac-bootstrapper/1.1.6/mac_os_x/10.15/mac-bootstrapper-1.1.6-1.x86_64.dmg"
+        }
+      }
     }
   },
   "run_data": {
-    "timestamp": "2021-03-12 08:11:36 -0600"
+    "timestamp": "2022-06-03 00:13:27 +0000"
   }
 }

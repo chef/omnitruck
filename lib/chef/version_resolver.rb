@@ -114,6 +114,10 @@ class Chef
       # get all the available distro versions
       distro_versions_available = build_map[core_platform].keys
 
+      # if core_platform is amazon then remove versions less than 2022 because they are remapped to RHEL versions
+      # and should not be eligible for consideration
+      distro_versions_available.delete_if{ |v| v.to_i < 2022 } if core_platform == "amazon"
+
       # select only the packages from the distro versions that are <= the version we are looking for
       # we do not want to select el7 packages for el6 platform
       distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v, target_architecture) <= target_platform }
