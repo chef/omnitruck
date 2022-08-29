@@ -1,5 +1,3 @@
 # Order is important. The last matching pattern has the most precedence.
 
-*             @chef/omnitruck-maintainers
-.delivery/**  @chef/jex-team
-.expeditor/** @chef/jex-team
+*             @chef/infra-packages @chef/chef-foundation-reviewers
