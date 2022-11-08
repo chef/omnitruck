@@ -3,7 +3,7 @@ project:
 
 slack:
   notify_channel: releng-notify
-  
+
 github:
   delete_branch_on_merge: true
   major_bump_labels:
@@ -15,7 +15,7 @@ helm_charts:
   - charts/omnitruck
 
 # These are our Buildkite pipelines where deploys take place
-pipelines: 
+pipelines:
   - verify
   - docker/build
 
@@ -38,6 +38,8 @@ subscriptions:
             - platforms.rb
             - poller
             - dobi.yaml
+            - Gemfile
+            - Gemfile.lock
       - built_in:update_changelog:
           ignore_labels:
             - "Expeditor: Skip Changelog"
