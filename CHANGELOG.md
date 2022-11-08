@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.25 -->
-## [0.1.25](https://github.com/chef/omnitruck/tree/0.1.25) (2022-08-29)
+<!-- latest_release 0.1.26 -->
+## [0.1.26](https://github.com/chef/omnitruck/tree/0.1.26) (2022-11-08)
 
 #### Merged Pull Requests
-- update codeowners to include omnibus &amp; foundations team [#566](https://github.com/chef/omnitruck/pull/566) ([vkarve-chef](https://github.com/vkarve-chef))
+- Update expeditor config to build chart when gemfile is touched [#578](https://github.com/chef/omnitruck/pull/578) ([mimaslanka](https://github.com/mimaslanka))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Update expeditor config to build chart when gemfile is touched [#578](https://github.com/chef/omnitruck/pull/578) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.26 -->
 - update codeowners to include omnibus &amp; foundations team [#566](https://github.com/chef/omnitruck/pull/566) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.25 -->
 - Update redis to 16.10.1 [#556](https://github.com/chef/omnitruck/pull/556) ([jeremiahsnapp](https://github.com/jeremiahsnapp)) <!-- 0.1.24 -->
 - Add support for Amazon Linux 2022 [#555](https://github.com/chef/omnitruck/pull/555) ([jeremiahsnapp](https://github.com/jeremiahsnapp)) <!-- 0.1.23 -->
