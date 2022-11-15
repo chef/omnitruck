@@ -44,7 +44,9 @@ RSpec.configure do |conf|
   def real_projects
     @real_projects ||= (
       Chef::Cache::KNOWN_PROJECTS - [
+        'chef-foundation', #TODO - remove once live
         'chef-server-ha-provisioning',
+        'chef-universal', #TODO - remove once live
         'ha',
         'harmony',
         'mac-bootstrapper',
