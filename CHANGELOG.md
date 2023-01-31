@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.27 -->
-## [0.1.27](https://github.com/chef/omnitruck/tree/0.1.27) (2022-11-15)
+<!-- latest_release 0.1.28 -->
+## [0.1.28](https://github.com/chef/omnitruck/tree/0.1.28) (2023-01-31)
 
 #### Merged Pull Requests
-- Update mixlib-install that includes new product name [#577](https://github.com/chef/omnitruck/pull/577) ([vkarve-chef](https://github.com/vkarve-chef))
+- Update mixlib-install to recognize universal architecture [#588](https://github.com/chef/omnitruck/pull/588) ([vkarve-chef](https://github.com/vkarve-chef))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Update mixlib-install to recognize universal architecture [#588](https://github.com/chef/omnitruck/pull/588) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.28 -->
 - Update mixlib-install that includes new product name [#577](https://github.com/chef/omnitruck/pull/577) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.27 -->
 - Update expeditor config to build chart when gemfile is touched [#578](https://github.com/chef/omnitruck/pull/578) ([mimaslanka](https://github.com/mimaslanka)) <!-- 0.1.26 -->
 - update codeowners to include omnibus &amp; foundations team [#566](https://github.com/chef/omnitruck/pull/566) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.25 -->
