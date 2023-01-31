@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.4', '< 2'
+gem 'sinatra', '~> 3.0'
 gem 'sinatra-contrib'
 gem 'sinatra-cors'
 gem 'sinatra-param'
