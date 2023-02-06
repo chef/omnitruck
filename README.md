@@ -1,4 +1,4 @@
-# Omnitruck
+# Omnitruck 
 
 Omnitruck makes it easy to download and install omnibus artifacts. It provides an API to query the available versions of artifacts, get detailed information about the available versions and download them.
 
