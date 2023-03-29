@@ -8,6 +8,7 @@ module OmnitruckDist
   SLES_PROJECT_VERSIONS = {
     "automate" => "0.8.5",
     "chef" => "12.21.1",
+    "chef-foundation" => "0.0.0",
     "angrychef" => "12.21.1",
     "chef-server" => "12.14.0",
     "chefdk" => "1.3.43",
