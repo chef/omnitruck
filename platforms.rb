@@ -85,6 +85,8 @@ end
 # These are RHEL clones that we know will work + SuSE that we test on
 #
 
+platform "rocky"
+
 platform "centos" do
   major_only true
   remap "el"
