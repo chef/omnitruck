@@ -282,6 +282,7 @@ class Omnitruck < Sinatra::Base
       "mac_os_x"  => "macOS",
       "nexus"     => "Cisco NX-OS",
       "ubuntu"    => "Ubuntu Linux",
+      "rocky"     => "Rocky Linux",
       "solaris2"  => "Solaris",
       "sles"      => "SUSE Linux Enterprise Server",
       "suse"      => "openSUSE",
