@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.30 -->
-## [0.1.30](https://github.com/chef/omnitruck/tree/0.1.30) (2023-03-29)
+<!-- latest_release 0.1.31 -->
+## [0.1.31](https://github.com/chef/omnitruck/tree/0.1.31) (2023-05-25)
 
 #### Merged Pull Requests
-- chef-foundation tuned for SLES [#593](https://github.com/chef/omnitruck/pull/593) ([vkarve-chef](https://github.com/vkarve-chef))
+- CHEF-911 Add Rocky Linux [#594](https://github.com/chef/omnitruck/pull/594) ([poorndm](https://github.com/poorndm))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- CHEF-911 Add Rocky Linux [#594](https://github.com/chef/omnitruck/pull/594) ([poorndm](https://github.com/poorndm)) <!-- 0.1.31 -->
 - chef-foundation tuned for SLES [#593](https://github.com/chef/omnitruck/pull/593) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.30 -->
 - adding change to this repo as the prior one has been removed from the… [#589](https://github.com/chef/omnitruck/pull/589) ([sean-simmons-progress](https://github.com/sean-simmons-progress)) <!-- 0.1.29 -->
 - Update mixlib-install to recognize universal architecture [#588](https://github.com/chef/omnitruck/pull/588) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.28 -->
