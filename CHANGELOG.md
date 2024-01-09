@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.32 -->
-## [0.1.32](https://github.com/chef/omnitruck/tree/0.1.32) (2023-10-17)
+<!-- latest_release 0.1.33 -->
+## [0.1.33](https://github.com/chef/omnitruck/tree/0.1.33) (2024-01-09)
 
 #### Merged Pull Requests
-- Update mixlib-install ver  to pick rocky platform detection changes [#598](https://github.com/chef/omnitruck/pull/598) ([poorndm](https://github.com/poorndm))
+- Update mixlib-install ver - amazon-2023 [#606](https://github.com/chef/omnitruck/pull/606) ([poorndm](https://github.com/poorndm))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Update mixlib-install ver - amazon-2023 [#606](https://github.com/chef/omnitruck/pull/606) ([poorndm](https://github.com/poorndm)) <!-- 0.1.33 -->
 - Update mixlib-install ver  to pick rocky platform detection changes [#598](https://github.com/chef/omnitruck/pull/598) ([poorndm](https://github.com/poorndm)) <!-- 0.1.32 -->
 - CHEF-911 Add Rocky Linux [#594](https://github.com/chef/omnitruck/pull/594) ([poorndm](https://github.com/poorndm)) <!-- 0.1.31 -->
 - chef-foundation tuned for SLES [#593](https://github.com/chef/omnitruck/pull/593) ([vkarve-chef](https://github.com/vkarve-chef)) <!-- 0.1.30 -->
