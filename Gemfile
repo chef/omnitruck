@@ -12,7 +12,7 @@ gem "rest-client"
 gem 'rake'
 gem 'redis'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem 'mixlib-install', '>= 3.11.23'
+gem "mixlib-install", git: "https://github.com/chef/mixlib-install", branch: "CHEF-9160-update-mixlib-to-support-amazon-2023/muthuja"
 gem 'trashed'
 
 group :test do
