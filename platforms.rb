@@ -110,7 +110,7 @@ end
 
 platform "amazon" do
    # map "version 2" amazon linux and amazon linux 2 to amazon
-    if prodcut == "chef-server" && version >= "15.10.12"
+    if product == "chef-server" && version >= "15.10.12"
       major_only true
     else
     remap do |opts|
