@@ -388,6 +388,7 @@ class Omnitruck < Sinatra::Base
     current_platform = params['p']
     current_platform_version = params['pv']
     current_arch = params['m']
+    current_project_version = params['v']
 
     # Create VersionResolver here to take advantage of #parse_version_string
     # method which is called in the constructor. This will return nil or an Opscode::Version instance
