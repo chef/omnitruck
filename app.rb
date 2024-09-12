@@ -419,11 +419,16 @@ class Omnitruck < Sinatra::Base
                      end
                    end
     
-    if current_project == "chef-server" && current_version >= "15.10.12" && current_platform == "amazon" && current_platform_version == "2"
-      remap_to_el = false
+    # puts '*******'
+    # puts params['v'].class
+
+
+    if !current_version.nil?
+      if %{amazon}.include?(current_platform) && current_platform_version == "2" && current_version.match?("15.10.12")
+        remap_to_el = false
+      end
     end
-    
-    puts get_package_info
+
     # SLES/SUSE requests may need to be modified before returning metadata.
     # If s390x architecture is requested we never modify the metadata.
     if %{sles suse opensuse-leap}.include?(current_platform) && current_arch != "s390x"

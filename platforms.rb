@@ -107,34 +107,29 @@ platform "scientific" do
   remap "el"
 end
 
-
 platform "amazon" do
-   # map "version 2" amazon linux and amazon linux 2 to amazon
-    if product == "chef-server" && version >= "15.10.12"
-      major_only true
+  remap do |opts|
+    # map "version 1" amazon linux and amazon linux 2 to RHEL
+    if /201\d\.\d/.match?(opts[:version]) || opts[:version] == "2"
+      "el"
     else
-    remap do |opts|
-      # map "version 1" amazon linux and amazon linux 2 to RHEL
-      if /201\d\.\d/.match?(opts[:version]) || opts[:version] == "2"
-        "el"
-      else
-        "amazon"
-      end
+      "amazon"
     end
+  end
 
-    version_remap do |opts|
-      if /201\d\.\d/.match?(opts[:version])
-        # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
-        "6"
-      elsif opts[:version] == "2"
-        # map Amazon Linux 2 to RHEL 7
-        "7"
-      else
-        opts[:version]
-      end
+  version_remap do |opts|
+    if /201\d\.\d/.match?(opts[:version])
+      # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
+      "6"
+    elsif opts[:version] == "2"
+      # map Amazon Linux 2 to RHEL 7
+      "7"
+    else
+      opts[:version]
     end
   end
 end
+
 # Unsupported Variants
 #
 platform "xenserver" do
