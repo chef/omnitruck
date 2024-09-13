@@ -388,7 +388,6 @@ class Omnitruck < Sinatra::Base
     current_platform = params['p']
     current_platform_version = params['pv']
     current_arch = params['m']
-    current_version = params['v']
 
     # Create VersionResolver here to take advantage of #parse_version_string
     # method which is called in the constructor. This will return nil or an Opscode::Version instance
@@ -418,16 +417,6 @@ class Omnitruck < Sinatra::Base
                      else current_arch
                      end
                    end
-    
-    # puts '*******'
-    # puts params['v'].class
-
-
-    if !current_version.nil?
-      if %{amazon}.include?(current_platform) && current_platform_version == "2" && current_version.match?("15.10.12")
-        remap_to_el = false
-      end
-    end
 
     # SLES/SUSE requests may need to be modified before returning metadata.
     # If s390x architecture is requested we never modify the metadata.

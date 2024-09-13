@@ -122,6 +122,9 @@ class Chef
       # we do not want to select el7 packages for el6 platform
       distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v, target_architecture) <= target_platform }
 
+      # Add debug output
+      puts "Platform: #{core_platform}, Available Versions: #{distro_versions_available.inspect}"
+
       if distro_versions_available.length == 0
         raise InvalidDownloadPath, "Cannot find any available #{OmnitruckDist::CLIENT_NAME} versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
       end
