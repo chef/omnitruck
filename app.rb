@@ -424,7 +424,7 @@ class Omnitruck < Sinatra::Base
 
 
     if !current_version.nil?
-      if %{amazon}.include?(current_platform) && current_platform_version == "2" && current_version.match?("15.10.12")
+      if %{amazon}.include?(current_platform) && current_platform_version == "2" && current_project == "chef-server" && current_version.match?("15.10.12")
         remap_to_el = false
       end
     end
