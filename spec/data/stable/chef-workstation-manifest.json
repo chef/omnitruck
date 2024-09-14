@@ -1057,6 +1057,56 @@
           "sha1": "0f215d10f24da3c14ff691cf55b3b158fe642554",
           "sha256": "7beea777781f4bb26e414c2a1b7e9a0c0b04537bbbfa783c87abd485e6f60837",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/mac_os_x/10.15/chef-workstation-22.5.923-1.x86_64.dmg"
+        },
+        "22.6.973": {
+          "sha1": "c05fd4a6e58fb6274218585cae43e9fc1807f920",
+          "sha256": "ee255856f8a8422e59f8397ae0ad07122822ac39c583f5e1eeee1f075a38a916",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/mac_os_x/10.15/chef-workstation-22.6.973-1.x86_64.dmg"
+        },
+        "22.7.1006": {
+          "sha1": "e9990adb21e66f3e70b8e5090c80dcd188954c9a",
+          "sha256": "6706e3c22248b1a0727f382e26c115d808457f04677f97a09432bfd77d2e5d92",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/mac_os_x/10.15/chef-workstation-22.7.1006-1.x86_64.dmg"
+        },
+        "22.10.1013": {
+          "sha1": "889984a0b7059a0ae530fdfbac0532784c25971f",
+          "sha256": "639593ad86dc5f83eae955b1ac658aa20020f5a8565bde47df4ea60ba548d5bd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/mac_os_x/10.15/chef-workstation-22.10.1013-1.x86_64.dmg"
+        },
+        "22.12.1024": {
+          "sha1": "eb74b02dc5ce2eb9c47a7666a59f683184f71e30",
+          "sha256": "30800ba3971f056211f3bbca3864eaceb6bdd1a5adc4331eadf0d6c4ecc32cc2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/10.15/chef-workstation-22.12.1024-1.x86_64.dmg"
+        },
+        "23.2.1028": {
+          "sha1": "f501c58a9f1edadb2184751ebe08dfbb4673e859",
+          "sha256": "5853e671b308e51127bd383a3523d9a522965dc5fb1942b9e7bffe7077f9adf0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/mac_os_x/10.15/chef-workstation-23.2.1028-1.x86_64.dmg"
+        },
+        "23.3.1030": {
+          "sha1": "28364d4784faa9c578d3d7bc9c8af10eab86f4b3",
+          "sha256": "3ae94de385dfe859446668bd42e17d8938c5d38989f112257938e6621a9fef8d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/mac_os_x/10.15/chef-workstation-23.3.1030-1.x86_64.dmg"
+        },
+        "23.4.1032": {
+          "sha1": "691313bc67d7083bafdee48461b8c1ad37222526",
+          "sha256": "3ca4629a53e7eb45e5e6038eb0cce4ecd9f141580b766f6c5151bdd3c361123e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/mac_os_x/10.15/chef-workstation-23.4.1032-1.x86_64.dmg"
+        },
+        "23.5.1039": {
+          "sha1": "722fd95d9cda64c89d64dac97b0b1910c0574dd0",
+          "sha256": "cae722fbc663c1b27a01b8d19f6a2e825a728f5887126855e6795dc3fb8a5e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/mac_os_x/10.15/chef-workstation-23.5.1039-1.x86_64.dmg"
+        },
+        "23.5.1040": {
+          "sha1": "9f1a2fef7da3a5e135392f8c7d169cd0300c6e69",
+          "sha256": "7317ee7f505aa22e3ef0896ae3e52af7dd337d31a0927456fa5605024ba81ea4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/mac_os_x/10.15/chef-workstation-23.5.1040-1.x86_64.dmg"
+        },
+        "23.7.1042": {
+          "sha1": "5d479b856b0c0abb18fc4d20419b2734a63e6f1a",
+          "sha256": "ab27e3aebc8e56fb16919e294628993769d0203b07964cc2c0c99724575260ee",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/mac_os_x/10.15/chef-workstation-23.7.1042-1.x86_64.dmg"
         }
       }
     },
@@ -1235,6 +1285,81 @@
           "sha1": "0f215d10f24da3c14ff691cf55b3b158fe642554",
           "sha256": "7beea777781f4bb26e414c2a1b7e9a0c0b04537bbbfa783c87abd485e6f60837",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/mac_os_x/11/chef-workstation-22.5.923-1.x86_64.dmg"
+        },
+        "22.6.973": {
+          "sha1": "c05fd4a6e58fb6274218585cae43e9fc1807f920",
+          "sha256": "ee255856f8a8422e59f8397ae0ad07122822ac39c583f5e1eeee1f075a38a916",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/mac_os_x/11/chef-workstation-22.6.973-1.x86_64.dmg"
+        },
+        "22.7.1006": {
+          "sha1": "e9990adb21e66f3e70b8e5090c80dcd188954c9a",
+          "sha256": "6706e3c22248b1a0727f382e26c115d808457f04677f97a09432bfd77d2e5d92",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/mac_os_x/11/chef-workstation-22.7.1006-1.x86_64.dmg"
+        },
+        "22.10.1013": {
+          "sha1": "889984a0b7059a0ae530fdfbac0532784c25971f",
+          "sha256": "639593ad86dc5f83eae955b1ac658aa20020f5a8565bde47df4ea60ba548d5bd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/mac_os_x/11/chef-workstation-22.10.1013-1.x86_64.dmg"
+        },
+        "22.12.1024": {
+          "sha1": "eb74b02dc5ce2eb9c47a7666a59f683184f71e30",
+          "sha256": "30800ba3971f056211f3bbca3864eaceb6bdd1a5adc4331eadf0d6c4ecc32cc2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/11/chef-workstation-22.12.1024-1.x86_64.dmg"
+        },
+        "23.2.1028": {
+          "sha1": "f501c58a9f1edadb2184751ebe08dfbb4673e859",
+          "sha256": "5853e671b308e51127bd383a3523d9a522965dc5fb1942b9e7bffe7077f9adf0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/mac_os_x/11/chef-workstation-23.2.1028-1.x86_64.dmg"
+        },
+        "23.3.1030": {
+          "sha1": "28364d4784faa9c578d3d7bc9c8af10eab86f4b3",
+          "sha256": "3ae94de385dfe859446668bd42e17d8938c5d38989f112257938e6621a9fef8d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/mac_os_x/11/chef-workstation-23.3.1030-1.x86_64.dmg"
+        },
+        "23.4.1032": {
+          "sha1": "691313bc67d7083bafdee48461b8c1ad37222526",
+          "sha256": "3ca4629a53e7eb45e5e6038eb0cce4ecd9f141580b766f6c5151bdd3c361123e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/mac_os_x/11/chef-workstation-23.4.1032-1.x86_64.dmg"
+        },
+        "23.5.1039": {
+          "sha1": "722fd95d9cda64c89d64dac97b0b1910c0574dd0",
+          "sha256": "cae722fbc663c1b27a01b8d19f6a2e825a728f5887126855e6795dc3fb8a5e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/mac_os_x/11/chef-workstation-23.5.1039-1.x86_64.dmg"
+        },
+        "23.5.1040": {
+          "sha1": "9f1a2fef7da3a5e135392f8c7d169cd0300c6e69",
+          "sha256": "7317ee7f505aa22e3ef0896ae3e52af7dd337d31a0927456fa5605024ba81ea4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/mac_os_x/11/chef-workstation-23.5.1040-1.x86_64.dmg"
+        },
+        "23.7.1042": {
+          "sha1": "5d479b856b0c0abb18fc4d20419b2734a63e6f1a",
+          "sha256": "ab27e3aebc8e56fb16919e294628993769d0203b07964cc2c0c99724575260ee",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/mac_os_x/11/chef-workstation-23.7.1042-1.x86_64.dmg"
+        },
+        "23.12.1055": {
+          "sha1": "5f4e90837124e40ce85f7bd67c5407d54a5decb8",
+          "sha256": "cc09b1b1f7fbc25b28176e19839191ed031d23466c9c5155c96de9d5d9ed003c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/mac_os_x/11/chef-workstation-23.12.1055-1.x86_64.dmg"
+        },
+        "24.2.1058": {
+          "sha1": "0d14bf9a4d580fba24f419126224e619e8d0329c",
+          "sha256": "2d8471c0ac3a4063a4508029237f640ff3df81043adc289b3a706789ef3672ad",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/mac_os_x/11/chef-workstation-24.2.1058-1.x86_64.dmg"
+        },
+        "24.4.1064": {
+          "sha1": "e6bf7c6aa34ff73daea55f16e59390a2a27f8065",
+          "sha256": "00d6e08c039f74303759cdea7f95a4f9b2748319cafa38929eff142a3739f67b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/mac_os_x/11/chef-workstation-24.4.1064-1.x86_64.dmg"
+        },
+        "24.6.1066": {
+          "sha1": "448c9fc57a71fadfe8f789287b15ca7fb6d8377f",
+          "sha256": "6f9922c33f70c3aef038f1bbdd950235726bf38f103b5f31f615d9af45d949db",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/mac_os_x/11/chef-workstation-24.6.1066-1.x86_64.dmg"
+        },
+        "24.8.1068": {
+          "sha1": "6f4f6dd356eb358919b0e8197f489b57f2215b93",
+          "sha256": "cda0de891a11c6a502a142172c386e06a1461d7312fa7a57b4169e107db9e37c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/mac_os_x/11/chef-workstation-24.8.1068-1.x86_64.dmg"
         }
       },
       "aarch64": {
@@ -1262,6 +1387,81 @@
           "sha1": "b75eec6480d1125bfdc0acd28c7623f6c03283d4",
           "sha256": "738a6654f6655c03f5d7ca072dd5bcde3046c186719a52128505f5fd7add35c2",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/mac_os_x/11/chef-workstation-22.5.923-1.arm64.dmg"
+        },
+        "22.6.973": {
+          "sha1": "d4b5e23cd15613b2f474d37fdecf90c068e3049f",
+          "sha256": "328512e5a146d5ee8f4e12c034c16f353a29c2768889b32126741d3a36049b97",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/mac_os_x/11/chef-workstation-22.6.973-1.arm64.dmg"
+        },
+        "22.7.1006": {
+          "sha1": "c11338eaf8d947a06c3191cd54659d9478f1a914",
+          "sha256": "f01815513f0e820dc036cabf1bef04b4beca37b1869b3a3e8b206942b6d0469d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/mac_os_x/11/chef-workstation-22.7.1006-1.arm64.dmg"
+        },
+        "22.10.1013": {
+          "sha1": "f01ccd62af3c59fa5ad29af6b28e803c433d15df",
+          "sha256": "73448e48114993ae96fb3bbc2dde140b832f82ea48e4530845c38acaccfe719b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/mac_os_x/11/chef-workstation-22.10.1013-1.arm64.dmg"
+        },
+        "22.12.1024": {
+          "sha1": "4de040b087b109106f855f90e582f11090a457c4",
+          "sha256": "57785b204ed5d6089a05de175a87643824eec4fba80fdb88425fd0471e51a987",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/11/chef-workstation-22.12.1024-1.arm64.dmg"
+        },
+        "23.2.1028": {
+          "sha1": "7bf80597a4634f8b9969b6f4ef938238a57a6363",
+          "sha256": "07ce65d16bb51e3b8afa3064dbbf5a6e6fb96a9372532d973f0539c7d370beea",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/mac_os_x/11/chef-workstation-23.2.1028-1.arm64.dmg"
+        },
+        "23.3.1030": {
+          "sha1": "abe55c403f270385196400967728540a8fc72470",
+          "sha256": "b5b83d11263361acb4168bc9f7389a757d2308d1e514cd8197538c8ed09e639d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/mac_os_x/11/chef-workstation-23.3.1030-1.arm64.dmg"
+        },
+        "23.4.1032": {
+          "sha1": "e4819135834e1a34b8f457ed2e2c40eead743f1e",
+          "sha256": "d6991c2f7d134d38894071a233a271b32746f61a56ec770f4391b30638c243df",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/mac_os_x/11/chef-workstation-23.4.1032-1.arm64.dmg"
+        },
+        "23.5.1039": {
+          "sha1": "f9294c8504643528931afc24493a366d0dd3acf1",
+          "sha256": "bcc8b16a23e6ad8bab0ce67b298ef59fde1295f6a69d84631207cdfce0f15caf",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/mac_os_x/11/chef-workstation-23.5.1039-1.arm64.dmg"
+        },
+        "23.5.1040": {
+          "sha1": "5919e78cb77746a822a7970d51d7c8df1c76955d",
+          "sha256": "6cf1e5bfa649574d781e2eaddd2d7d5875b2052f2836a6f02eb4ef1c41499d36",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/mac_os_x/11/chef-workstation-23.5.1040-1.arm64.dmg"
+        },
+        "23.7.1042": {
+          "sha1": "172039de364bae6f18b497086f8f4f6122108571",
+          "sha256": "267fced9714b8342895ce003bbec0122e158cb91d62a5910fc33fdc02d4e651a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/mac_os_x/11/chef-workstation-23.7.1042-1.arm64.dmg"
+        },
+        "23.12.1055": {
+          "sha1": "044d416b6c7301ccd8fecfc8a5fd1ed2180955c3",
+          "sha256": "9f785db7db24a115e8c0e6fa0dc847438aa60ee794565823099bd0c130bbddf0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/mac_os_x/11/chef-workstation-23.12.1055-1.arm64.dmg"
+        },
+        "24.2.1058": {
+          "sha1": "60a1c62070007b7383faea8e9a73a3ff5034266b",
+          "sha256": "7a30b8c5b140e3ce9812988504a455e0317b1415fcec09d0735970fc17c8423d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/mac_os_x/11/chef-workstation-24.2.1058-1.arm64.dmg"
+        },
+        "24.4.1064": {
+          "sha1": "cd5cf8d7acf9a282eac2c6ed94da8013b81821e3",
+          "sha256": "53539cd05fd56432a1fc2413991b0d8642790b7c6ef8f560b1a84eb6bec6a136",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/mac_os_x/11/chef-workstation-24.4.1064-1.arm64.dmg"
+        },
+        "24.6.1066": {
+          "sha1": "c828128da2f44890fab49d86ec57417edb69b637",
+          "sha256": "bb63f4ba1f147dcf51cfbd4a6189f5f2a5c183e6d8823d050bf814a15e039893",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/mac_os_x/11/chef-workstation-24.6.1066-1.arm64.dmg"
+        },
+        "24.8.1068": {
+          "sha1": "7eaf1342f7396f24e2fb523cae91dd668ee7eb67",
+          "sha256": "636c1a320df9ea2dd30ce1c73552d8922d1ed5b5bd3976dce4429233f7da630a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/mac_os_x/11/chef-workstation-24.8.1068-1.arm64.dmg"
         }
       }
     },
@@ -1311,6 +1511,81 @@
           "sha1": "0f215d10f24da3c14ff691cf55b3b158fe642554",
           "sha256": "7beea777781f4bb26e414c2a1b7e9a0c0b04537bbbfa783c87abd485e6f60837",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/mac_os_x/12/chef-workstation-22.5.923-1.x86_64.dmg"
+        },
+        "22.6.973": {
+          "sha1": "c05fd4a6e58fb6274218585cae43e9fc1807f920",
+          "sha256": "ee255856f8a8422e59f8397ae0ad07122822ac39c583f5e1eeee1f075a38a916",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/mac_os_x/12/chef-workstation-22.6.973-1.x86_64.dmg"
+        },
+        "22.7.1006": {
+          "sha1": "e9990adb21e66f3e70b8e5090c80dcd188954c9a",
+          "sha256": "6706e3c22248b1a0727f382e26c115d808457f04677f97a09432bfd77d2e5d92",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/mac_os_x/12/chef-workstation-22.7.1006-1.x86_64.dmg"
+        },
+        "22.10.1013": {
+          "sha1": "889984a0b7059a0ae530fdfbac0532784c25971f",
+          "sha256": "639593ad86dc5f83eae955b1ac658aa20020f5a8565bde47df4ea60ba548d5bd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/mac_os_x/12/chef-workstation-22.10.1013-1.x86_64.dmg"
+        },
+        "22.12.1024": {
+          "sha1": "eb74b02dc5ce2eb9c47a7666a59f683184f71e30",
+          "sha256": "30800ba3971f056211f3bbca3864eaceb6bdd1a5adc4331eadf0d6c4ecc32cc2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/12/chef-workstation-22.12.1024-1.x86_64.dmg"
+        },
+        "23.2.1028": {
+          "sha1": "f501c58a9f1edadb2184751ebe08dfbb4673e859",
+          "sha256": "5853e671b308e51127bd383a3523d9a522965dc5fb1942b9e7bffe7077f9adf0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/mac_os_x/12/chef-workstation-23.2.1028-1.x86_64.dmg"
+        },
+        "23.3.1030": {
+          "sha1": "28364d4784faa9c578d3d7bc9c8af10eab86f4b3",
+          "sha256": "3ae94de385dfe859446668bd42e17d8938c5d38989f112257938e6621a9fef8d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/mac_os_x/12/chef-workstation-23.3.1030-1.x86_64.dmg"
+        },
+        "23.4.1032": {
+          "sha1": "691313bc67d7083bafdee48461b8c1ad37222526",
+          "sha256": "3ca4629a53e7eb45e5e6038eb0cce4ecd9f141580b766f6c5151bdd3c361123e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/mac_os_x/12/chef-workstation-23.4.1032-1.x86_64.dmg"
+        },
+        "23.5.1039": {
+          "sha1": "722fd95d9cda64c89d64dac97b0b1910c0574dd0",
+          "sha256": "cae722fbc663c1b27a01b8d19f6a2e825a728f5887126855e6795dc3fb8a5e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/mac_os_x/12/chef-workstation-23.5.1039-1.x86_64.dmg"
+        },
+        "23.5.1040": {
+          "sha1": "9f1a2fef7da3a5e135392f8c7d169cd0300c6e69",
+          "sha256": "7317ee7f505aa22e3ef0896ae3e52af7dd337d31a0927456fa5605024ba81ea4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/mac_os_x/12/chef-workstation-23.5.1040-1.x86_64.dmg"
+        },
+        "23.7.1042": {
+          "sha1": "5d479b856b0c0abb18fc4d20419b2734a63e6f1a",
+          "sha256": "ab27e3aebc8e56fb16919e294628993769d0203b07964cc2c0c99724575260ee",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/mac_os_x/12/chef-workstation-23.7.1042-1.x86_64.dmg"
+        },
+        "23.12.1055": {
+          "sha1": "5f4e90837124e40ce85f7bd67c5407d54a5decb8",
+          "sha256": "cc09b1b1f7fbc25b28176e19839191ed031d23466c9c5155c96de9d5d9ed003c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/mac_os_x/12/chef-workstation-23.12.1055-1.x86_64.dmg"
+        },
+        "24.2.1058": {
+          "sha1": "0d14bf9a4d580fba24f419126224e619e8d0329c",
+          "sha256": "2d8471c0ac3a4063a4508029237f640ff3df81043adc289b3a706789ef3672ad",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/mac_os_x/12/chef-workstation-24.2.1058-1.x86_64.dmg"
+        },
+        "24.4.1064": {
+          "sha1": "e6bf7c6aa34ff73daea55f16e59390a2a27f8065",
+          "sha256": "00d6e08c039f74303759cdea7f95a4f9b2748319cafa38929eff142a3739f67b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/mac_os_x/12/chef-workstation-24.4.1064-1.x86_64.dmg"
+        },
+        "24.6.1066": {
+          "sha1": "448c9fc57a71fadfe8f789287b15ca7fb6d8377f",
+          "sha256": "6f9922c33f70c3aef038f1bbdd950235726bf38f103b5f31f615d9af45d949db",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/mac_os_x/12/chef-workstation-24.6.1066-1.x86_64.dmg"
+        },
+        "24.8.1068": {
+          "sha1": "6f4f6dd356eb358919b0e8197f489b57f2215b93",
+          "sha256": "cda0de891a11c6a502a142172c386e06a1461d7312fa7a57b4169e107db9e37c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/mac_os_x/12/chef-workstation-24.8.1068-1.x86_64.dmg"
         }
       },
       "aarch64": {
@@ -1338,6 +1613,81 @@
           "sha1": "b75eec6480d1125bfdc0acd28c7623f6c03283d4",
           "sha256": "738a6654f6655c03f5d7ca072dd5bcde3046c186719a52128505f5fd7add35c2",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/mac_os_x/12/chef-workstation-22.5.923-1.arm64.dmg"
+        },
+        "22.6.973": {
+          "sha1": "d4b5e23cd15613b2f474d37fdecf90c068e3049f",
+          "sha256": "328512e5a146d5ee8f4e12c034c16f353a29c2768889b32126741d3a36049b97",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/mac_os_x/12/chef-workstation-22.6.973-1.arm64.dmg"
+        },
+        "22.7.1006": {
+          "sha1": "c11338eaf8d947a06c3191cd54659d9478f1a914",
+          "sha256": "f01815513f0e820dc036cabf1bef04b4beca37b1869b3a3e8b206942b6d0469d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/mac_os_x/12/chef-workstation-22.7.1006-1.arm64.dmg"
+        },
+        "22.10.1013": {
+          "sha1": "f01ccd62af3c59fa5ad29af6b28e803c433d15df",
+          "sha256": "73448e48114993ae96fb3bbc2dde140b832f82ea48e4530845c38acaccfe719b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/mac_os_x/12/chef-workstation-22.10.1013-1.arm64.dmg"
+        },
+        "22.12.1024": {
+          "sha1": "4de040b087b109106f855f90e582f11090a457c4",
+          "sha256": "57785b204ed5d6089a05de175a87643824eec4fba80fdb88425fd0471e51a987",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/12/chef-workstation-22.12.1024-1.arm64.dmg"
+        },
+        "23.2.1028": {
+          "sha1": "7bf80597a4634f8b9969b6f4ef938238a57a6363",
+          "sha256": "07ce65d16bb51e3b8afa3064dbbf5a6e6fb96a9372532d973f0539c7d370beea",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/mac_os_x/12/chef-workstation-23.2.1028-1.arm64.dmg"
+        },
+        "23.3.1030": {
+          "sha1": "abe55c403f270385196400967728540a8fc72470",
+          "sha256": "b5b83d11263361acb4168bc9f7389a757d2308d1e514cd8197538c8ed09e639d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/mac_os_x/12/chef-workstation-23.3.1030-1.arm64.dmg"
+        },
+        "23.4.1032": {
+          "sha1": "e4819135834e1a34b8f457ed2e2c40eead743f1e",
+          "sha256": "d6991c2f7d134d38894071a233a271b32746f61a56ec770f4391b30638c243df",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/mac_os_x/12/chef-workstation-23.4.1032-1.arm64.dmg"
+        },
+        "23.5.1039": {
+          "sha1": "f9294c8504643528931afc24493a366d0dd3acf1",
+          "sha256": "bcc8b16a23e6ad8bab0ce67b298ef59fde1295f6a69d84631207cdfce0f15caf",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/mac_os_x/12/chef-workstation-23.5.1039-1.arm64.dmg"
+        },
+        "23.5.1040": {
+          "sha1": "5919e78cb77746a822a7970d51d7c8df1c76955d",
+          "sha256": "6cf1e5bfa649574d781e2eaddd2d7d5875b2052f2836a6f02eb4ef1c41499d36",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/mac_os_x/12/chef-workstation-23.5.1040-1.arm64.dmg"
+        },
+        "23.7.1042": {
+          "sha1": "172039de364bae6f18b497086f8f4f6122108571",
+          "sha256": "267fced9714b8342895ce003bbec0122e158cb91d62a5910fc33fdc02d4e651a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/mac_os_x/12/chef-workstation-23.7.1042-1.arm64.dmg"
+        },
+        "23.12.1055": {
+          "sha1": "044d416b6c7301ccd8fecfc8a5fd1ed2180955c3",
+          "sha256": "9f785db7db24a115e8c0e6fa0dc847438aa60ee794565823099bd0c130bbddf0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/mac_os_x/12/chef-workstation-23.12.1055-1.arm64.dmg"
+        },
+        "24.2.1058": {
+          "sha1": "60a1c62070007b7383faea8e9a73a3ff5034266b",
+          "sha256": "7a30b8c5b140e3ce9812988504a455e0317b1415fcec09d0735970fc17c8423d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/mac_os_x/12/chef-workstation-24.2.1058-1.arm64.dmg"
+        },
+        "24.4.1064": {
+          "sha1": "cd5cf8d7acf9a282eac2c6ed94da8013b81821e3",
+          "sha256": "53539cd05fd56432a1fc2413991b0d8642790b7c6ef8f560b1a84eb6bec6a136",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/mac_os_x/12/chef-workstation-24.4.1064-1.arm64.dmg"
+        },
+        "24.6.1066": {
+          "sha1": "c828128da2f44890fab49d86ec57417edb69b637",
+          "sha256": "bb63f4ba1f147dcf51cfbd4a6189f5f2a5c183e6d8823d050bf814a15e039893",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/mac_os_x/12/chef-workstation-24.6.1066-1.arm64.dmg"
+        },
+        "24.8.1068": {
+          "sha1": "7eaf1342f7396f24e2fb523cae91dd668ee7eb67",
+          "sha256": "636c1a320df9ea2dd30ce1c73552d8922d1ed5b5bd3976dce4429233f7da630a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/mac_os_x/12/chef-workstation-24.8.1068-1.arm64.dmg"
         }
       }
     }
@@ -1808,6 +2158,21 @@
           "sha1": "b8c582336804d5986f0f6d3dddeb9bf300d2d2bd",
           "sha256": "b9d73fa16a3f4008e2f4cd2a4d96d482bc8f0fea77c06a3754382e0d940b8d0c",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/ubuntu/16.04/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "0f6c4807ea3e6430de32d34d3c30a903d54155cf",
+          "sha256": "6a3a92fb6e171e71ea215376df2bac82c9a4e9eb0fabe7f9a5e460b21efdd1e8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/ubuntu/16.04/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "b961759d469fefe25d3af853814f27979f545886",
+          "sha256": "b83e29feb0855c051b5bcfc38167e40c8fb3c6f0a83ed82c8f58a55c082a3349",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/ubuntu/16.04/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "6e0283a13fb27b5ede623476831282fdd83acdb4",
+          "sha256": "b07dad6e2323e673b6e8ab8894307b9e313cf7f34016a75d4f62434e6128f7d8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/ubuntu/16.04/chef-workstation_22.10.1013-1_amd64.deb"
         }
       }
     },
@@ -2207,6 +2572,81 @@
           "sha1": "b8c582336804d5986f0f6d3dddeb9bf300d2d2bd",
           "sha256": "b9d73fa16a3f4008e2f4cd2a4d96d482bc8f0fea77c06a3754382e0d940b8d0c",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/ubuntu/18.04/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "0f6c4807ea3e6430de32d34d3c30a903d54155cf",
+          "sha256": "6a3a92fb6e171e71ea215376df2bac82c9a4e9eb0fabe7f9a5e460b21efdd1e8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/ubuntu/18.04/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "b961759d469fefe25d3af853814f27979f545886",
+          "sha256": "b83e29feb0855c051b5bcfc38167e40c8fb3c6f0a83ed82c8f58a55c082a3349",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/ubuntu/18.04/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "6e0283a13fb27b5ede623476831282fdd83acdb4",
+          "sha256": "b07dad6e2323e673b6e8ab8894307b9e313cf7f34016a75d4f62434e6128f7d8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/ubuntu/18.04/chef-workstation_22.10.1013-1_amd64.deb"
+        },
+        "22.12.1024": {
+          "sha1": "b1c371adf82b8f38d6b62c4e970b792463c50e68",
+          "sha256": "32da8ad807d7022cb514d303f39a2d723c73a5786cf387d3903508ce9a625eff",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/ubuntu/18.04/chef-workstation_22.12.1024-1_amd64.deb"
+        },
+        "23.2.1028": {
+          "sha1": "cec59c599a996d69b01e1359082c853ee560de10",
+          "sha256": "f33ada0e0d81fed691b9e6fdab84288b6d3eaccedc39c59ce2a3deb69a2a2f3f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/ubuntu/18.04/chef-workstation_23.2.1028-1_amd64.deb"
+        },
+        "23.3.1030": {
+          "sha1": "168cec09c4f3f29b418bf45e0022ea2e3b09e69a",
+          "sha256": "1939b43cf15daca560d82c3814ad724a5f189b7ba2cce3de9d338b71e99b652b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/ubuntu/18.04/chef-workstation_23.3.1030-1_amd64.deb"
+        },
+        "23.4.1032": {
+          "sha1": "0f503818b5c245c5a64321f184a32c31a1c11674",
+          "sha256": "bb8bab3402bf1ae52921b9216c5b5d74180053f51f63be8b6700601c3f52c1b0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/ubuntu/18.04/chef-workstation_23.4.1032-1_amd64.deb"
+        },
+        "23.5.1039": {
+          "sha1": "d74b2bdfeeecd741b958ce996818c673e2dba00c",
+          "sha256": "98358f091bde681b30a12a8e3c270a99198fd1a6e0f154d50905593f3b88769a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/ubuntu/18.04/chef-workstation_23.5.1039-1_amd64.deb"
+        },
+        "23.5.1040": {
+          "sha1": "5a88fdcd6eea56127e9e0433ddf02831e0f6e9e0",
+          "sha256": "6db13292c3367a9e3d91c6a42cebd09a80b03de10dfce6b64bbbf334e9427277",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/ubuntu/18.04/chef-workstation_23.5.1040-1_amd64.deb"
+        },
+        "23.7.1042": {
+          "sha1": "c88628de776ea2653c3a30e464cf9527c4a0213d",
+          "sha256": "5d5a8643d1d8a34649bd83ed8205bc179fb614c0c8a071debddf4104eb98a588",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/ubuntu/18.04/chef-workstation_23.7.1042-1_amd64.deb"
+        },
+        "23.12.1055": {
+          "sha1": "f5375ec22f4829ff03d9259fe7185f91ffc598e2",
+          "sha256": "383b269ef486018b9d36849ba6267054085c296a097adf1bd00bd7446dee7452",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/ubuntu/18.04/chef-workstation_23.12.1055-1_amd64.deb"
+        },
+        "24.2.1058": {
+          "sha1": "71265efa5a4a8bfb3dc9561502d2a6bdc656a44e",
+          "sha256": "578d64a0a02495d748799ccc2bc3881870a22fa2cc1dece18b10291553a8371a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/ubuntu/18.04/chef-workstation_24.2.1058-1_amd64.deb"
+        },
+        "24.4.1064": {
+          "sha1": "cb8d7c15d1c82cbfa6c749a945e1d915aa051379",
+          "sha256": "db3f7b03b789dbc120ee7a1023e928f44f4489b686f618210b18c08d8805b11a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/ubuntu/18.04/chef-workstation_24.4.1064-1_amd64.deb"
+        },
+        "24.6.1066": {
+          "sha1": "373fa33612a06c17c487f3f56e73a78e65d8df80",
+          "sha256": "81d1ec330dccc2ddf09beb927498d17cecadff73792666f33cca25dc991ecdf1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/ubuntu/18.04/chef-workstation_24.6.1066-1_amd64.deb"
+        },
+        "24.8.1068": {
+          "sha1": "f48980964b3b7897c18a539351ace196d258cc60",
+          "sha256": "e6354faa352c120216efb554abdc086e475da6584e8e3f3e7152bd6343763786",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/ubuntu/18.04/chef-workstation_24.8.1068-1_amd64.deb"
         }
       }
     },
@@ -2411,6 +2851,145 @@
           "sha1": "b8c582336804d5986f0f6d3dddeb9bf300d2d2bd",
           "sha256": "b9d73fa16a3f4008e2f4cd2a4d96d482bc8f0fea77c06a3754382e0d940b8d0c",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/ubuntu/20.04/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "0f6c4807ea3e6430de32d34d3c30a903d54155cf",
+          "sha256": "6a3a92fb6e171e71ea215376df2bac82c9a4e9eb0fabe7f9a5e460b21efdd1e8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/ubuntu/20.04/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "b961759d469fefe25d3af853814f27979f545886",
+          "sha256": "b83e29feb0855c051b5bcfc38167e40c8fb3c6f0a83ed82c8f58a55c082a3349",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/ubuntu/20.04/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "6e0283a13fb27b5ede623476831282fdd83acdb4",
+          "sha256": "b07dad6e2323e673b6e8ab8894307b9e313cf7f34016a75d4f62434e6128f7d8",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/ubuntu/20.04/chef-workstation_22.10.1013-1_amd64.deb"
+        },
+        "22.12.1024": {
+          "sha1": "b1c371adf82b8f38d6b62c4e970b792463c50e68",
+          "sha256": "32da8ad807d7022cb514d303f39a2d723c73a5786cf387d3903508ce9a625eff",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/ubuntu/20.04/chef-workstation_22.12.1024-1_amd64.deb"
+        },
+        "23.2.1028": {
+          "sha1": "cec59c599a996d69b01e1359082c853ee560de10",
+          "sha256": "f33ada0e0d81fed691b9e6fdab84288b6d3eaccedc39c59ce2a3deb69a2a2f3f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/ubuntu/20.04/chef-workstation_23.2.1028-1_amd64.deb"
+        },
+        "23.3.1030": {
+          "sha1": "168cec09c4f3f29b418bf45e0022ea2e3b09e69a",
+          "sha256": "1939b43cf15daca560d82c3814ad724a5f189b7ba2cce3de9d338b71e99b652b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/ubuntu/20.04/chef-workstation_23.3.1030-1_amd64.deb"
+        },
+        "23.4.1032": {
+          "sha1": "0f503818b5c245c5a64321f184a32c31a1c11674",
+          "sha256": "bb8bab3402bf1ae52921b9216c5b5d74180053f51f63be8b6700601c3f52c1b0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/ubuntu/20.04/chef-workstation_23.4.1032-1_amd64.deb"
+        },
+        "23.5.1039": {
+          "sha1": "d74b2bdfeeecd741b958ce996818c673e2dba00c",
+          "sha256": "98358f091bde681b30a12a8e3c270a99198fd1a6e0f154d50905593f3b88769a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/ubuntu/20.04/chef-workstation_23.5.1039-1_amd64.deb"
+        },
+        "23.5.1040": {
+          "sha1": "5a88fdcd6eea56127e9e0433ddf02831e0f6e9e0",
+          "sha256": "6db13292c3367a9e3d91c6a42cebd09a80b03de10dfce6b64bbbf334e9427277",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/ubuntu/20.04/chef-workstation_23.5.1040-1_amd64.deb"
+        },
+        "23.7.1042": {
+          "sha1": "c88628de776ea2653c3a30e464cf9527c4a0213d",
+          "sha256": "5d5a8643d1d8a34649bd83ed8205bc179fb614c0c8a071debddf4104eb98a588",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/ubuntu/20.04/chef-workstation_23.7.1042-1_amd64.deb"
+        },
+        "23.12.1055": {
+          "sha1": "f5375ec22f4829ff03d9259fe7185f91ffc598e2",
+          "sha256": "383b269ef486018b9d36849ba6267054085c296a097adf1bd00bd7446dee7452",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/ubuntu/20.04/chef-workstation_23.12.1055-1_amd64.deb"
+        },
+        "24.2.1058": {
+          "sha1": "71265efa5a4a8bfb3dc9561502d2a6bdc656a44e",
+          "sha256": "578d64a0a02495d748799ccc2bc3881870a22fa2cc1dece18b10291553a8371a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/ubuntu/20.04/chef-workstation_24.2.1058-1_amd64.deb"
+        },
+        "24.4.1064": {
+          "sha1": "cb8d7c15d1c82cbfa6c749a945e1d915aa051379",
+          "sha256": "db3f7b03b789dbc120ee7a1023e928f44f4489b686f618210b18c08d8805b11a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/ubuntu/20.04/chef-workstation_24.4.1064-1_amd64.deb"
+        },
+        "24.6.1066": {
+          "sha1": "373fa33612a06c17c487f3f56e73a78e65d8df80",
+          "sha256": "81d1ec330dccc2ddf09beb927498d17cecadff73792666f33cca25dc991ecdf1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/ubuntu/20.04/chef-workstation_24.6.1066-1_amd64.deb"
+        },
+        "24.8.1068": {
+          "sha1": "f48980964b3b7897c18a539351ace196d258cc60",
+          "sha256": "e6354faa352c120216efb554abdc086e475da6584e8e3f3e7152bd6343763786",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/ubuntu/20.04/chef-workstation_24.8.1068-1_amd64.deb"
+        }
+      }
+    },
+    "22.04": {
+      "x86_64": {
+        "22.12.1024": {
+          "sha1": "b1c371adf82b8f38d6b62c4e970b792463c50e68",
+          "sha256": "32da8ad807d7022cb514d303f39a2d723c73a5786cf387d3903508ce9a625eff",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/ubuntu/22.04/chef-workstation_22.12.1024-1_amd64.deb"
+        },
+        "23.2.1028": {
+          "sha1": "cec59c599a996d69b01e1359082c853ee560de10",
+          "sha256": "f33ada0e0d81fed691b9e6fdab84288b6d3eaccedc39c59ce2a3deb69a2a2f3f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/ubuntu/22.04/chef-workstation_23.2.1028-1_amd64.deb"
+        },
+        "23.3.1030": {
+          "sha1": "168cec09c4f3f29b418bf45e0022ea2e3b09e69a",
+          "sha256": "1939b43cf15daca560d82c3814ad724a5f189b7ba2cce3de9d338b71e99b652b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/ubuntu/22.04/chef-workstation_23.3.1030-1_amd64.deb"
+        },
+        "23.4.1032": {
+          "sha1": "0f503818b5c245c5a64321f184a32c31a1c11674",
+          "sha256": "bb8bab3402bf1ae52921b9216c5b5d74180053f51f63be8b6700601c3f52c1b0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/ubuntu/22.04/chef-workstation_23.4.1032-1_amd64.deb"
+        },
+        "23.5.1039": {
+          "sha1": "d74b2bdfeeecd741b958ce996818c673e2dba00c",
+          "sha256": "98358f091bde681b30a12a8e3c270a99198fd1a6e0f154d50905593f3b88769a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/ubuntu/22.04/chef-workstation_23.5.1039-1_amd64.deb"
+        },
+        "23.5.1040": {
+          "sha1": "5a88fdcd6eea56127e9e0433ddf02831e0f6e9e0",
+          "sha256": "6db13292c3367a9e3d91c6a42cebd09a80b03de10dfce6b64bbbf334e9427277",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/ubuntu/22.04/chef-workstation_23.5.1040-1_amd64.deb"
+        },
+        "23.7.1042": {
+          "sha1": "c88628de776ea2653c3a30e464cf9527c4a0213d",
+          "sha256": "5d5a8643d1d8a34649bd83ed8205bc179fb614c0c8a071debddf4104eb98a588",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/ubuntu/22.04/chef-workstation_23.7.1042-1_amd64.deb"
+        },
+        "23.12.1055": {
+          "sha1": "f5375ec22f4829ff03d9259fe7185f91ffc598e2",
+          "sha256": "383b269ef486018b9d36849ba6267054085c296a097adf1bd00bd7446dee7452",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/ubuntu/22.04/chef-workstation_23.12.1055-1_amd64.deb"
+        },
+        "24.2.1058": {
+          "sha1": "71265efa5a4a8bfb3dc9561502d2a6bdc656a44e",
+          "sha256": "578d64a0a02495d748799ccc2bc3881870a22fa2cc1dece18b10291553a8371a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/ubuntu/22.04/chef-workstation_24.2.1058-1_amd64.deb"
+        },
+        "24.4.1064": {
+          "sha1": "cb8d7c15d1c82cbfa6c749a945e1d915aa051379",
+          "sha256": "db3f7b03b789dbc120ee7a1023e928f44f4489b686f618210b18c08d8805b11a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/ubuntu/22.04/chef-workstation_24.4.1064-1_amd64.deb"
+        },
+        "24.6.1066": {
+          "sha1": "373fa33612a06c17c487f3f56e73a78e65d8df80",
+          "sha256": "81d1ec330dccc2ddf09beb927498d17cecadff73792666f33cca25dc991ecdf1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/ubuntu/22.04/chef-workstation_24.6.1066-1_amd64.deb"
+        },
+        "24.8.1068": {
+          "sha1": "f48980964b3b7897c18a539351ace196d258cc60",
+          "sha256": "e6354faa352c120216efb554abdc086e475da6584e8e3f3e7152bd6343763786",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/ubuntu/22.04/chef-workstation_24.8.1068-1_amd64.deb"
         }
       }
     }
@@ -2812,6 +3391,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/2012/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/2012/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/2012/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/2012/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/2012/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/2012/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/2012/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/2012/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/2012/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/2012/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/2012/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/2012/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/2012/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/2012/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/2012/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/2012/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -3211,6 +3865,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/2016/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/2016/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/2016/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/2016/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/2016/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/2016/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/2016/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/2016/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/2016/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/2016/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/2016/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/2016/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/2016/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/2016/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/2016/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/2016/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -3610,6 +4339,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/2012r2/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/2012r2/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/2012r2/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/2012r2/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/2012r2/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/2012r2/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/2012r2/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/2012r2/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/2012r2/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/2012r2/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/2012r2/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/2012r2/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/2012r2/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/2012r2/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/2012r2/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/2012r2/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -4009,6 +4813,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/10/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/10/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/10/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/10/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/10/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/10/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/10/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/10/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/10/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/10/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/10/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/10/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/10/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/10/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/10/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/10/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -4278,6 +5157,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/2019/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/2019/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/2019/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/2019/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/2019/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/2019/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/2019/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/2019/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/2019/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/2019/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/2019/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/2019/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/2019/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/2019/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/2019/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/2019/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -4472,6 +5426,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/8/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/8/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/8/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/8/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/8/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/8/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/8/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/8/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/8/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/8/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/8/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/8/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/8/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/8/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/8/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/8/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -4521,6 +5550,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/11/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/11/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/11/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/11/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/11/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/11/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/11/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/11/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/11/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/11/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/11/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/11/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/11/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/11/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/11/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/11/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     },
@@ -4570,6 +5674,81 @@
           "sha1": "1d85f7e2129f269986c0f179be8485cdc2dba71a",
           "sha256": "7c1165dabdecb03dd45bd0c87ce80d4fb1badc0f54ea1c2b1aca8b4a7cca1843",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/windows/2022/chef-workstation-22.5.923-1-x64.msi"
+        },
+        "22.6.973": {
+          "sha1": "c8db06ee165711b5ada6fa70e01eb67a97af29b2",
+          "sha256": "30a2b949dd3a982d7574ae67b238ff197d0dccce760da457be26667ea2181674",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/windows/2022/chef-workstation-22.6.973-1-x64.msi"
+        },
+        "22.7.1006": {
+          "sha1": "90108f498b04dad00b3771fc6774b0a9fe4dfe88",
+          "sha256": "42d732554eb6158bd5531504e915a72343a2ee62de730cd591daabc680cbee08",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/windows/2022/chef-workstation-22.7.1006-1-x64.msi"
+        },
+        "22.10.1013": {
+          "sha1": "767f2a5e4b89f4e2cf6e95e60b346ff7e6fb2c45",
+          "sha256": "48049a9141ea0e0871abe279d1b2b87341232891463ee8022490a4fc15f5a1fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/windows/2022/chef-workstation-22.10.1013-1-x64.msi"
+        },
+        "22.12.1024": {
+          "sha1": "239ecbf10fdf2c25f838886749d93a85a35831d8",
+          "sha256": "354ac2415e0a346565c9effeaa7a02d7848943c2e9325ee5c4517eabdf460e60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/windows/2022/chef-workstation-22.12.1024-1-x64.msi"
+        },
+        "23.2.1028": {
+          "sha1": "a6e918743eb92171969f26a2b96caac08234fffe",
+          "sha256": "a33cca03b962680aec1919b39011bf7601a5b5ae68a3c32aeeea80106b6aae1b",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/windows/2022/chef-workstation-23.2.1028-1-x64.msi"
+        },
+        "23.3.1030": {
+          "sha1": "58270212b354e016f7e7cfc20e27f959176096fc",
+          "sha256": "606cb95729c616cecc8f351e06f0f0c8716658d9e485a2a04569bb926bad8525",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/windows/2022/chef-workstation-23.3.1030-1-x64.msi"
+        },
+        "23.4.1032": {
+          "sha1": "c775afdd1ba322c36d7e47b57925f561bae650a2",
+          "sha256": "ed529beb4b797d738bd4a027188bfbc469e4e8d4173d32898b3ddfd2c58f852f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/windows/2022/chef-workstation-23.4.1032-1-x64.msi"
+        },
+        "23.5.1039": {
+          "sha1": "28a50bf275cc5bc228539444f228b2dd6dd83707",
+          "sha256": "814fee45ff07946e1788dc42180e9ed463a1d77d59f506b2b137eccf87b2fb98",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/windows/2022/chef-workstation-23.5.1039-1-x64.msi"
+        },
+        "23.5.1040": {
+          "sha1": "eb8420fa393ede1aaff77544522bfd014a5cd5f4",
+          "sha256": "10165429533e8e1e65f7e2052e5c01237e0fcf99015acf4aff179c69daf3fbf2",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/windows/2022/chef-workstation-23.5.1040-1-x64.msi"
+        },
+        "23.7.1042": {
+          "sha1": "68b3f655c2c085093dabd620a75f86a0725c8763",
+          "sha256": "cd4e5fb1aa6badd3545898728a59141181412854eb8f5c6da9bec0e0860712fb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/windows/2022/chef-workstation-23.7.1042-1-x64.msi"
+        },
+        "23.12.1055": {
+          "sha1": "3690cd3c6d9a04713c8611d60f01e945b792eb6e",
+          "sha256": "71e42c1a766330940a61e72ff8e0f2b6e7b6fbbb65d19eb782236a89b115830a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/windows/2022/chef-workstation-23.12.1055-1-x64.msi"
+        },
+        "24.2.1058": {
+          "sha1": "1f353579c7bab3e67c7c4575e8ba106efac6d475",
+          "sha256": "38e4d1366eb8f0716e703f4ca8973c7669a3534c7655b5fc0b696926cde3e253",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/windows/2022/chef-workstation-24.2.1058-1-x64.msi"
+        },
+        "24.4.1064": {
+          "sha1": "4fd80614532e432cea5ddbab05fb6f6e55240d8e",
+          "sha256": "57a5ee11a98cf682f0da67af1ceece3f9eec648849f4ec7d55267dcf86a030cd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/windows/2022/chef-workstation-24.4.1064-1-x64.msi"
+        },
+        "24.6.1066": {
+          "sha1": "40fd276a6736286cef31de8c109bade082809f52",
+          "sha256": "7ca1a59d72ce0260e5b02259691ab526c74e8c802bcc9d94965031b54733e62e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/windows/2022/chef-workstation-24.6.1066-1-x64.msi"
+        },
+        "24.8.1068": {
+          "sha1": "3f3b5e111c644e599330c0c4a42e8735d49b9776",
+          "sha256": "807c3aea7606a605c714e6d3a215baf02d5ea8fe74b18ca165e1ba306010a9d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/windows/2022/chef-workstation-24.8.1068-1-x64.msi"
         }
       }
     }
@@ -5220,6 +6399,81 @@
           "sha1": "f325ecc96c11c7097b0a4fedd7e2c2b6d403cf4d",
           "sha256": "6ccf837091e9a929436460b9b80e251fa2b74944201e8adf469cc80152d915a6",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/el/7/chef-workstation-22.5.923-1.el7.x86_64.rpm"
+        },
+        "22.6.973": {
+          "sha1": "e92b3e6579a5a978b07ec21cd5f84b1a7ba9e8dc",
+          "sha256": "9ad82661935489f9777334a3f14829dc76204cfb022702432f5c4e3a4b964e19",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/el/7/chef-workstation-22.6.973-1.el7.x86_64.rpm"
+        },
+        "22.7.1006": {
+          "sha1": "dd165cea30bb01646fb49668de479d18f0197f69",
+          "sha256": "9740d5c1224164ffee73b0eb7a7833ef7d8a5ef95a060c221a4c0fcdd1306c51",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/el/7/chef-workstation-22.7.1006-1.el7.x86_64.rpm"
+        },
+        "22.10.1013": {
+          "sha1": "fcd926ec514c6e6ae7e953b4401d3d8afd2c5726",
+          "sha256": "61f65fcd9b3a7076a836da4c54072bdfe4fb4812a7bd11acdf821b1140988222",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/el/7/chef-workstation-22.10.1013-1.el7.x86_64.rpm"
+        },
+        "22.12.1024": {
+          "sha1": "40bc4b28691794aaa6ca398cb7a64fe26f319297",
+          "sha256": "d99a501565e775bf24718ab02b5ca556c6afc464fbf0c7b387f0c820cc81a4ca",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/el/7/chef-workstation-22.12.1024-1.el7.x86_64.rpm"
+        },
+        "23.2.1028": {
+          "sha1": "86e038805e221a8d9a1b74bd589b013a50306a3e",
+          "sha256": "f14d9c41e1dfe311959c17cc7fe19bb0c49719ce5c58600f034893e78b9a1a6a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/el/7/chef-workstation-23.2.1028-1.el7.x86_64.rpm"
+        },
+        "23.3.1030": {
+          "sha1": "7012b7a509748348489047a1ee0469ff1b0988b2",
+          "sha256": "5764aba6ca4607b6fb5200d823c70b723f63d56ccc2524832082cc92459916bd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/el/7/chef-workstation-23.3.1030-1.el7.x86_64.rpm"
+        },
+        "23.4.1032": {
+          "sha1": "0363ca100b35589d1f755030a29a592a2841c944",
+          "sha256": "288084d9c2ae9a62cc4d49fb3c758ad5968f21779c7249c6f7eeb94173c9e3ea",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/el/7/chef-workstation-23.4.1032-1.el7.x86_64.rpm"
+        },
+        "23.5.1039": {
+          "sha1": "6aa77a9f7e0f2205fc571481b9bb5a3a0b14c19d",
+          "sha256": "73d66c4f75aee20eff01252d638904c68afdd4838473231adbd6db3bddcfa98d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/el/7/chef-workstation-23.5.1039-1.el7.x86_64.rpm"
+        },
+        "23.5.1040": {
+          "sha1": "ae7caf2a74c6bbe5411551c1a7e157891448344d",
+          "sha256": "9ea0ad4f9981f765d87365325bb22b4cd66948959558f8fbd395b5f4a7034947",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/el/7/chef-workstation-23.5.1040-1.el7.x86_64.rpm"
+        },
+        "23.7.1042": {
+          "sha1": "2ea568eafce01af8e514826d4a8b12cb3affe0c4",
+          "sha256": "719a787ba7a6a03396187df1325d4a49ecf1653875cf579f85b4a2e0dda2ad60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/el/7/chef-workstation-23.7.1042-1.el7.x86_64.rpm"
+        },
+        "23.12.1055": {
+          "sha1": "023db832f055705ac1712edb33821791c1c27758",
+          "sha256": "f5349e554f42b4901e856e12f1393188e4c32942615597ff0919a49b26027d4c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/el/7/chef-workstation-23.12.1055-1.el7.x86_64.rpm"
+        },
+        "24.2.1058": {
+          "sha1": "ddd316772228283bcde36e41d6e6668566bc3d2c",
+          "sha256": "2345e7282127be7de7193e1b351083206f7d6563df3797ab1ae50170c6da3df7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/el/7/chef-workstation-24.2.1058-1.el7.x86_64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "a2c3063a87c5922709a17cb7fbd26802bfe3762c",
+          "sha256": "a915f40d73903a383dd9ed5af31dc635df88b4c7c05a998534d03402a433f2b5",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/el/7/chef-workstation-24.4.1064-1.el7.x86_64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "2c118636d30df1d742f7de22475cc15d09e440f9",
+          "sha256": "96c01938ffe2aa116d2acf7aa9aec0c8007cf43248ddacac3e0616973902da5e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/el/7/chef-workstation-24.6.1066-1.el7.x86_64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "5dbb57fb63fffce113c4047f7c51131800f3a71b",
+          "sha256": "7006f5f145a0d5f43a40902f9bb5edca4e1315efadd30791970457142b60deda",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/el/7/chef-workstation-24.8.1068-1.el7.x86_64.rpm"
         }
       }
     },
@@ -5499,6 +6753,125 @@
           "sha1": "93df1b92708e0efdc1620e41a8a5519179c8572d",
           "sha256": "840df633336d131f14eb8fcd7e5c354d8dd87ac39a2bd27bc34f62fe4e8adf9b",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/el/8/chef-workstation-22.5.923-1.el8.x86_64.rpm"
+        },
+        "22.6.973": {
+          "sha1": "9806da96bc7611ad321a3a45f5da1f4cb5c75b11",
+          "sha256": "d3e9392bf833c3b0cb64190a5191af743b6aabc5c8ee690ac6396a6c3a3554e1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/el/8/chef-workstation-22.6.973-1.el8.x86_64.rpm"
+        },
+        "22.7.1006": {
+          "sha1": "690217cda338515653c4164afc2ed4a8b9d57641",
+          "sha256": "69ae159d4358025b17a1f4e8ceda952e0c5b404e40815216b406bf7bad168601",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/el/8/chef-workstation-22.7.1006-1.el8.x86_64.rpm"
+        },
+        "22.10.1013": {
+          "sha1": "7d9b012060f26313ca69b885240cbbc0edd4687a",
+          "sha256": "0bdeef684001295c6680df4eb53585ef66afb7daa91361b9402ab695794059c0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/el/8/chef-workstation-22.10.1013-1.el8.x86_64.rpm"
+        },
+        "22.12.1024": {
+          "sha1": "f7aa742b82931d7cd35715601c3eff2c697704ac",
+          "sha256": "c44bc7555af1276856af874a370b1568afcc38d1572e19bd8d1c0e00a0faa7e0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/el/8/chef-workstation-22.12.1024-1.el8.x86_64.rpm"
+        },
+        "23.2.1028": {
+          "sha1": "c243316dd24fcdb05e789f026c5971a2fc8d8ebd",
+          "sha256": "86d6f02bb391de9a98f1a9bc3b6b53e73b362bd1d57a0acbe1a147fd17cd2e1f",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/el/8/chef-workstation-23.2.1028-1.el8.x86_64.rpm"
+        },
+        "23.3.1030": {
+          "sha1": "72e23abb5847a8dadf538ad37a699004f8bebbd1",
+          "sha256": "e4dead96a0d835d769d13d61b7aaa6959e6c441481e52a3c0793926606b6b371",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/el/8/chef-workstation-23.3.1030-1.el8.x86_64.rpm"
+        },
+        "23.4.1032": {
+          "sha1": "e60e5a2536e0411e2391539e9d28798155a4c610",
+          "sha256": "50a14c6a45f47ad259c35cfe054432d7f47136ad48557a8cfd476425920a8775",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/el/8/chef-workstation-23.4.1032-1.el8.x86_64.rpm"
+        },
+        "23.5.1039": {
+          "sha1": "e71d50478ba171df2994780704d627586b85fddf",
+          "sha256": "7bff535b2e0441ee9fba6d7d35a4509f01b264cf30a3264c72263917209eb99e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/el/8/chef-workstation-23.5.1039-1.el8.x86_64.rpm"
+        },
+        "23.5.1040": {
+          "sha1": "e8c9ba3174123fbed65f54446f8596c0f8e51d47",
+          "sha256": "1f3f413f79ec8d76c7b095ae6b8095482b4ceaca42e4758b9e5fb9f5ea7b898c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/el/8/chef-workstation-23.5.1040-1.el8.x86_64.rpm"
+        },
+        "23.7.1042": {
+          "sha1": "9e608d326d2ed1d2633c5cdd8025928f1fcf4aa1",
+          "sha256": "f8be4001452e49a61db23c592088ddbf817281ee811f3a1d2842e36dc09bb076",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/el/8/chef-workstation-23.7.1042-1.el8.x86_64.rpm"
+        },
+        "23.12.1055": {
+          "sha1": "e4019e49a4c5ff3fccd1627d655bbbc90b0ec4dd",
+          "sha256": "1b30cbf601175494b1b4445ba969fd94cb4734fbfa9ace4d835caa7177d05518",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/el/8/chef-workstation-23.12.1055-1.el8.x86_64.rpm"
+        },
+        "24.2.1058": {
+          "sha1": "27263a0b1b8c9df9acc1e5935448358b39e2799e",
+          "sha256": "a42cd54d946c4db2028f7596dbcbf8db23a3986939b6c544a5616b8b678c4580",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/el/8/chef-workstation-24.2.1058-1.el8.x86_64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "1f83e6a05ddf7197f15c10697073a527c1df6ea8",
+          "sha256": "c54077b609db12aea923ae011ecee2ba0118dbeb3664d3992a3d1e8089f3f5fd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/el/8/chef-workstation-24.4.1064-1.el8.x86_64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "d9fc0223c20171ae4d089bd38450f4fc582de743",
+          "sha256": "38df224906e72f3688b9fc65c17cd4e8a2502c821c1583755632cc59ce4174c9",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/el/8/chef-workstation-24.6.1066-1.el8.x86_64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "baa4e975808c9053ae36d2d3c6847ece97b492d4",
+          "sha256": "7abb157dacd4f5ac5e79a01314e6f493bdaf611e0f13af79d78c078f0da601e4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/el/8/chef-workstation-24.8.1068-1.el8.x86_64.rpm"
+        }
+      }
+    },
+    "9": {
+      "x86_64": {
+        "23.5.1039": {
+          "sha1": "b1872546c919d3fbe817d0188568087eda62e183",
+          "sha256": "416ba5fdbb29af8bf079ab65604891715271ba0a7d47c3d5452b72cb68814456",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/el/9/chef-workstation-23.5.1039-1.el9.x86_64.rpm"
+        },
+        "23.5.1040": {
+          "sha1": "f645aba15b928c1db59e8c20a7d0ab1c6b67d5e8",
+          "sha256": "0f5c807a58c37c1dadb3014f0b0aa231a5c7639dd0f6857567eed71dec41d4d1",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/el/9/chef-workstation-23.5.1040-1.el9.x86_64.rpm"
+        },
+        "23.7.1042": {
+          "sha1": "67e568d86265f09db9e2046b94b2c8db408f97f9",
+          "sha256": "02f14ddd99d55bdc99d8bf07e2d2e94890ecaeb563fb1ca8fd99195741c5143d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/el/9/chef-workstation-23.7.1042-1.el9.x86_64.rpm"
+        },
+        "23.12.1055": {
+          "sha1": "f99342eaea08ddb913e6559685d9ff9a8c2d3e05",
+          "sha256": "2b1b28b958c408856434d7878865be1126b3f1ab8e59187dfc27fcd2339da7a3",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/el/9/chef-workstation-23.12.1055-1.el9.x86_64.rpm"
+        },
+        "24.2.1058": {
+          "sha1": "1ef5b2efec04ea7cc9e233ddc4dfe87e8d7cd285",
+          "sha256": "b76fb8b2ce44cbb0004a3d9a9cdd812c201ed19edb3f690b3bd97d89ef062543",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/el/9/chef-workstation-24.2.1058-1.el9.x86_64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "eaa6dd81a5c998ff1962ab46865af5d3cbb42755",
+          "sha256": "d223f15ddc61bab082b65ac5c17f489d5e1115c32332009df714a14c53fd9ebc",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/el/9/chef-workstation-24.4.1064-1.el9.x86_64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "2446bef66302d04ec23407fdc1c337f4e5ecfc01",
+          "sha256": "bb44c42045497497e8ea89b4e13cadafa986a1531b45451b4f92c30a60b9f870",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/el/9/chef-workstation-24.6.1066-1.el9.x86_64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "0954a174841f9281b9a83d4ca20ec9d6ddf3866a",
+          "sha256": "69015a848e91938c4473da6a9c4e8a159e2477904f3859d71a4d941665fdb24e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/el/9/chef-workstation-24.8.1068-1.el9.x86_64.rpm"
         }
       }
     }
@@ -5779,6 +7152,26 @@
           "sha1": "a49380754575eb14d027ed2a08a9729c3df31daf",
           "sha256": "405c58a9438c295968c5dde1828482db1f053cb7ee4b560b12ef38abbf809352",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/debian/9/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "a1ddf95863505d775eed362c6b7dc53653c39836",
+          "sha256": "6539aad0a2d694e09383d32f8cfd2458a95fc2c2d48466245dddaaa54608fbf7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/debian/9/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "fc69b89e16bc00c5fb5039d554dc5d6c4c7f333e",
+          "sha256": "ae59bfc28dd9a8e2bd5e5f795879be998749000a516ba55292f8f06a390a5ba4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/debian/9/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "52977fdb9eeb18cfbe5909a5e23a1f05676ef91b",
+          "sha256": "487a98f9841be9b45a478fbf5dbdf7c9a82d998450474ed2ddd6ee3f443e41c7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/debian/9/chef-workstation_22.10.1013-1_amd64.deb"
+        },
+        "22.12.1024": {
+          "sha1": "50480039fce37fc8fd93283c8e146ae5b83c07d0",
+          "sha256": "d43a445c4ff89af41ceca9e344d2036455ac715a5639783ce170257932af26f0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/debian/9/chef-workstation_22.12.1024-1_amd64.deb"
         }
       }
     },
@@ -6003,6 +7396,81 @@
           "sha1": "a49380754575eb14d027ed2a08a9729c3df31daf",
           "sha256": "405c58a9438c295968c5dde1828482db1f053cb7ee4b560b12ef38abbf809352",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/debian/10/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "a1ddf95863505d775eed362c6b7dc53653c39836",
+          "sha256": "6539aad0a2d694e09383d32f8cfd2458a95fc2c2d48466245dddaaa54608fbf7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/debian/10/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "fc69b89e16bc00c5fb5039d554dc5d6c4c7f333e",
+          "sha256": "ae59bfc28dd9a8e2bd5e5f795879be998749000a516ba55292f8f06a390a5ba4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/debian/10/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "52977fdb9eeb18cfbe5909a5e23a1f05676ef91b",
+          "sha256": "487a98f9841be9b45a478fbf5dbdf7c9a82d998450474ed2ddd6ee3f443e41c7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/debian/10/chef-workstation_22.10.1013-1_amd64.deb"
+        },
+        "22.12.1024": {
+          "sha1": "50480039fce37fc8fd93283c8e146ae5b83c07d0",
+          "sha256": "d43a445c4ff89af41ceca9e344d2036455ac715a5639783ce170257932af26f0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/debian/10/chef-workstation_22.12.1024-1_amd64.deb"
+        },
+        "23.2.1028": {
+          "sha1": "6433f26dd13d2f386a618d7d72889f3d1c68e6b9",
+          "sha256": "16bff20acf1e21ba04e6fa3dbf50582449887cfbccb1ad71ab0b7b6dc8d9b125",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/debian/10/chef-workstation_23.2.1028-1_amd64.deb"
+        },
+        "23.3.1030": {
+          "sha1": "b5966bd54d458c2516b8b8255e43f2e50878dd7e",
+          "sha256": "b8a86aac7a9950f0c3a49952190190df530d3db8fcf988539f93666322a489dd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/debian/10/chef-workstation_23.3.1030-1_amd64.deb"
+        },
+        "23.4.1032": {
+          "sha1": "7cdc51c725ffaef58b8dc67e26e6ee48d0ce5bc3",
+          "sha256": "fad39369ee600f629809a734b41fa96f7de45e7358cfc695b6b935263a00ab78",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/debian/10/chef-workstation_23.4.1032-1_amd64.deb"
+        },
+        "23.5.1039": {
+          "sha1": "eaaba17b8abffa6009c7958c336d108fbe956892",
+          "sha256": "c5467f0a612d7817c7f15cefb555a0979394135d8b55e48a37475c3bbefeadf5",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/debian/10/chef-workstation_23.5.1039-1_amd64.deb"
+        },
+        "23.5.1040": {
+          "sha1": "3b1e16a08cc5304ae740e5ff3ab2dc5e398132d8",
+          "sha256": "fbace5a45c3bf857b72791a893b9dd3ddd80507165aeb80219329e6523e74305",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/debian/10/chef-workstation_23.5.1040-1_amd64.deb"
+        },
+        "23.7.1042": {
+          "sha1": "184c8bbc90471e861ffff44771569ee98db3e391",
+          "sha256": "47c58dbea90dfed744a6e584ee3f4be7fea688b2e129626c2362496457899d18",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/debian/10/chef-workstation_23.7.1042-1_amd64.deb"
+        },
+        "23.12.1055": {
+          "sha1": "95e65006ddee5e39d95aa113b2dd3761419669a9",
+          "sha256": "1ae38a56d2a8b05859a57743f58d52141fc6a7ac586e900f9b5793eb22420b38",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/debian/10/chef-workstation_23.12.1055-1_amd64.deb"
+        },
+        "24.2.1058": {
+          "sha1": "74ce0a9c6b02e787d9a72d2167454a93dc74dc0b",
+          "sha256": "6173cde27a2100d11d31b31b2756b512d4e826a1ccdfdc425e48308a98cdeeec",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/debian/10/chef-workstation_24.2.1058-1_amd64.deb"
+        },
+        "24.4.1064": {
+          "sha1": "7901fb1a137dd2a1a1f9dd98567715fe3027446e",
+          "sha256": "40111b6c8aa0bf7f43d537a275cdca69f9034a6403b0d0f7e2579182a94231eb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/debian/10/chef-workstation_24.4.1064-1_amd64.deb"
+        },
+        "24.6.1066": {
+          "sha1": "08d7982205e44196a5a0f2e6bb1167b48c2b2abf",
+          "sha256": "b0078cc5137649c2b1ac5e9d155ae793c4be5c9be65f133f47e59ee27e357a6c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/debian/10/chef-workstation_24.6.1066-1_amd64.deb"
+        },
+        "24.8.1068": {
+          "sha1": "cbf59d0a6050565505e9f1c3950d95e3ec5954cc",
+          "sha256": "b5f09d224fa512b636c1f59e17606a41db36f7eaaebef60b53e73643e889f94d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/debian/10/chef-workstation_24.8.1068-1_amd64.deb"
         }
       }
     },
@@ -6052,6 +7520,81 @@
           "sha1": "a49380754575eb14d027ed2a08a9729c3df31daf",
           "sha256": "405c58a9438c295968c5dde1828482db1f053cb7ee4b560b12ef38abbf809352",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/debian/11/chef-workstation_22.5.923-1_amd64.deb"
+        },
+        "22.6.973": {
+          "sha1": "a1ddf95863505d775eed362c6b7dc53653c39836",
+          "sha256": "6539aad0a2d694e09383d32f8cfd2458a95fc2c2d48466245dddaaa54608fbf7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/debian/11/chef-workstation_22.6.973-1_amd64.deb"
+        },
+        "22.7.1006": {
+          "sha1": "fc69b89e16bc00c5fb5039d554dc5d6c4c7f333e",
+          "sha256": "ae59bfc28dd9a8e2bd5e5f795879be998749000a516ba55292f8f06a390a5ba4",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/debian/11/chef-workstation_22.7.1006-1_amd64.deb"
+        },
+        "22.10.1013": {
+          "sha1": "52977fdb9eeb18cfbe5909a5e23a1f05676ef91b",
+          "sha256": "487a98f9841be9b45a478fbf5dbdf7c9a82d998450474ed2ddd6ee3f443e41c7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/debian/11/chef-workstation_22.10.1013-1_amd64.deb"
+        },
+        "22.12.1024": {
+          "sha1": "50480039fce37fc8fd93283c8e146ae5b83c07d0",
+          "sha256": "d43a445c4ff89af41ceca9e344d2036455ac715a5639783ce170257932af26f0",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/debian/11/chef-workstation_22.12.1024-1_amd64.deb"
+        },
+        "23.2.1028": {
+          "sha1": "6433f26dd13d2f386a618d7d72889f3d1c68e6b9",
+          "sha256": "16bff20acf1e21ba04e6fa3dbf50582449887cfbccb1ad71ab0b7b6dc8d9b125",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/debian/11/chef-workstation_23.2.1028-1_amd64.deb"
+        },
+        "23.3.1030": {
+          "sha1": "b5966bd54d458c2516b8b8255e43f2e50878dd7e",
+          "sha256": "b8a86aac7a9950f0c3a49952190190df530d3db8fcf988539f93666322a489dd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/debian/11/chef-workstation_23.3.1030-1_amd64.deb"
+        },
+        "23.4.1032": {
+          "sha1": "7cdc51c725ffaef58b8dc67e26e6ee48d0ce5bc3",
+          "sha256": "fad39369ee600f629809a734b41fa96f7de45e7358cfc695b6b935263a00ab78",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/debian/11/chef-workstation_23.4.1032-1_amd64.deb"
+        },
+        "23.5.1039": {
+          "sha1": "eaaba17b8abffa6009c7958c336d108fbe956892",
+          "sha256": "c5467f0a612d7817c7f15cefb555a0979394135d8b55e48a37475c3bbefeadf5",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/debian/11/chef-workstation_23.5.1039-1_amd64.deb"
+        },
+        "23.5.1040": {
+          "sha1": "3b1e16a08cc5304ae740e5ff3ab2dc5e398132d8",
+          "sha256": "fbace5a45c3bf857b72791a893b9dd3ddd80507165aeb80219329e6523e74305",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/debian/11/chef-workstation_23.5.1040-1_amd64.deb"
+        },
+        "23.7.1042": {
+          "sha1": "184c8bbc90471e861ffff44771569ee98db3e391",
+          "sha256": "47c58dbea90dfed744a6e584ee3f4be7fea688b2e129626c2362496457899d18",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/debian/11/chef-workstation_23.7.1042-1_amd64.deb"
+        },
+        "23.12.1055": {
+          "sha1": "95e65006ddee5e39d95aa113b2dd3761419669a9",
+          "sha256": "1ae38a56d2a8b05859a57743f58d52141fc6a7ac586e900f9b5793eb22420b38",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/debian/11/chef-workstation_23.12.1055-1_amd64.deb"
+        },
+        "24.2.1058": {
+          "sha1": "74ce0a9c6b02e787d9a72d2167454a93dc74dc0b",
+          "sha256": "6173cde27a2100d11d31b31b2756b512d4e826a1ccdfdc425e48308a98cdeeec",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/debian/11/chef-workstation_24.2.1058-1_amd64.deb"
+        },
+        "24.4.1064": {
+          "sha1": "7901fb1a137dd2a1a1f9dd98567715fe3027446e",
+          "sha256": "40111b6c8aa0bf7f43d537a275cdca69f9034a6403b0d0f7e2579182a94231eb",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/debian/11/chef-workstation_24.4.1064-1_amd64.deb"
+        },
+        "24.6.1066": {
+          "sha1": "08d7982205e44196a5a0f2e6bb1167b48c2b2abf",
+          "sha256": "b0078cc5137649c2b1ac5e9d155ae793c4be5c9be65f133f47e59ee27e357a6c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/debian/11/chef-workstation_24.6.1066-1_amd64.deb"
+        },
+        "24.8.1068": {
+          "sha1": "cbf59d0a6050565505e9f1c3950d95e3ec5954cc",
+          "sha256": "b5f09d224fa512b636c1f59e17606a41db36f7eaaebef60b53e73643e889f94d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/debian/11/chef-workstation_24.8.1068-1_amd64.deb"
         }
       }
     }
@@ -6183,11 +7726,132 @@
           "sha1": "f325ecc96c11c7097b0a4fedd7e2c2b6d403cf4d",
           "sha256": "6ccf837091e9a929436460b9b80e251fa2b74944201e8adf469cc80152d915a6",
           "url": "https://packages.chef.io/files/stable/chef-workstation/22.5.923/amazon/2/chef-workstation-22.5.923-1.el7.x86_64.rpm"
+        },
+        "22.6.973": {
+          "sha1": "e92b3e6579a5a978b07ec21cd5f84b1a7ba9e8dc",
+          "sha256": "9ad82661935489f9777334a3f14829dc76204cfb022702432f5c4e3a4b964e19",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.6.973/amazon/2/chef-workstation-22.6.973-1.el7.x86_64.rpm"
+        },
+        "22.7.1006": {
+          "sha1": "dd165cea30bb01646fb49668de479d18f0197f69",
+          "sha256": "9740d5c1224164ffee73b0eb7a7833ef7d8a5ef95a060c221a4c0fcdd1306c51",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.7.1006/amazon/2/chef-workstation-22.7.1006-1.el7.x86_64.rpm"
+        },
+        "22.10.1013": {
+          "sha1": "fcd926ec514c6e6ae7e953b4401d3d8afd2c5726",
+          "sha256": "61f65fcd9b3a7076a836da4c54072bdfe4fb4812a7bd11acdf821b1140988222",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.10.1013/amazon/2/chef-workstation-22.10.1013-1.el7.x86_64.rpm"
+        },
+        "22.12.1024": {
+          "sha1": "40bc4b28691794aaa6ca398cb7a64fe26f319297",
+          "sha256": "d99a501565e775bf24718ab02b5ca556c6afc464fbf0c7b387f0c820cc81a4ca",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/amazon/2/chef-workstation-22.12.1024-1.el7.x86_64.rpm"
+        },
+        "23.2.1028": {
+          "sha1": "86e038805e221a8d9a1b74bd589b013a50306a3e",
+          "sha256": "f14d9c41e1dfe311959c17cc7fe19bb0c49719ce5c58600f034893e78b9a1a6a",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.2.1028/amazon/2/chef-workstation-23.2.1028-1.el7.x86_64.rpm"
+        },
+        "23.3.1030": {
+          "sha1": "7012b7a509748348489047a1ee0469ff1b0988b2",
+          "sha256": "5764aba6ca4607b6fb5200d823c70b723f63d56ccc2524832082cc92459916bd",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.3.1030/amazon/2/chef-workstation-23.3.1030-1.el7.x86_64.rpm"
+        },
+        "23.4.1032": {
+          "sha1": "0363ca100b35589d1f755030a29a592a2841c944",
+          "sha256": "288084d9c2ae9a62cc4d49fb3c758ad5968f21779c7249c6f7eeb94173c9e3ea",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.4.1032/amazon/2/chef-workstation-23.4.1032-1.el7.x86_64.rpm"
+        },
+        "23.5.1039": {
+          "sha1": "6aa77a9f7e0f2205fc571481b9bb5a3a0b14c19d",
+          "sha256": "73d66c4f75aee20eff01252d638904c68afdd4838473231adbd6db3bddcfa98d",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1039/amazon/2/chef-workstation-23.5.1039-1.el7.x86_64.rpm"
+        },
+        "23.5.1040": {
+          "sha1": "ae7caf2a74c6bbe5411551c1a7e157891448344d",
+          "sha256": "9ea0ad4f9981f765d87365325bb22b4cd66948959558f8fbd395b5f4a7034947",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.5.1040/amazon/2/chef-workstation-23.5.1040-1.el7.x86_64.rpm"
+        },
+        "23.7.1042": {
+          "sha1": "2ea568eafce01af8e514826d4a8b12cb3affe0c4",
+          "sha256": "719a787ba7a6a03396187df1325d4a49ecf1653875cf579f85b4a2e0dda2ad60",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.7.1042/amazon/2/chef-workstation-23.7.1042-1.el7.x86_64.rpm"
+        },
+        "23.12.1055": {
+          "sha1": "023db832f055705ac1712edb33821791c1c27758",
+          "sha256": "f5349e554f42b4901e856e12f1393188e4c32942615597ff0919a49b26027d4c",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/23.12.1055/amazon/2/chef-workstation-23.12.1055-1.el7.x86_64.rpm"
+        },
+        "24.2.1058": {
+          "sha1": "ddd316772228283bcde36e41d6e6668566bc3d2c",
+          "sha256": "2345e7282127be7de7193e1b351083206f7d6563df3797ab1ae50170c6da3df7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/amazon/2/chef-workstation-24.2.1058-1.el7.x86_64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "a2c3063a87c5922709a17cb7fbd26802bfe3762c",
+          "sha256": "a915f40d73903a383dd9ed5af31dc635df88b4c7c05a998534d03402a433f2b5",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/amazon/2/chef-workstation-24.4.1064-1.el7.x86_64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "2c118636d30df1d742f7de22475cc15d09e440f9",
+          "sha256": "96c01938ffe2aa116d2acf7aa9aec0c8007cf43248ddacac3e0616973902da5e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/amazon/2/chef-workstation-24.6.1066-1.el7.x86_64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "5dbb57fb63fffce113c4047f7c51131800f3a71b",
+          "sha256": "7006f5f145a0d5f43a40902f9bb5edca4e1315efadd30791970457142b60deda",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/amazon/2/chef-workstation-24.8.1068-1.el7.x86_64.rpm"
+        }
+      }
+    },
+    "2023": {
+      "aarch64": {
+        "24.2.1058": {
+          "sha1": "5d363e2d06b9a361a7edc7f79684704132f53303",
+          "sha256": "5f477d5814102f822a0ba45bf773636f0e5f2071aa7c2e13e7f8fe8dc9b6ec95",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/amazon/2023/chef-workstation-24.2.1058-1.amazon2023.aarch64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "b3a67e29b2e7a69b96042f78151f00fce52dd1c9",
+          "sha256": "9265c20e052647218c6fe630e3a6981643eb65eff4c3e0449b967c5d67da3bb7",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/amazon/2023/chef-workstation-24.4.1064-1.amazon2023.aarch64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "006af35344859f321bbde45193fe96f95bf444cf",
+          "sha256": "4bc4851d81f0b671c5dde64115e88c7c6e46ab9672f17faabab1db046bc95e89",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/amazon/2023/chef-workstation-24.6.1066-1.amazon2023.aarch64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "c845f04a0a82903f6747601924a49845cfa52ada",
+          "sha256": "c021b06f5b04489a52414cf5abe2cc45c8f7df9db60a2312d09401659b6160aa",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/amazon/2023/chef-workstation-24.8.1068-1.amazon2023.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "24.2.1058": {
+          "sha1": "ae7a9fcad1e3834ec7c9ea5b29148fa69b030db4",
+          "sha256": "4ddba8095c18e5b596fc0b58f007b23c9809fb0ec07570d8b088ddd51844440e",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.2.1058/amazon/2023/chef-workstation-24.2.1058-1.amazon2023.x86_64.rpm"
+        },
+        "24.4.1064": {
+          "sha1": "e80e5e02293c31e381e2f7cae8e0f633233a5043",
+          "sha256": "0db195fac62034145f0dddc928df6fb342c204b023c0607e8738a04a3adf5bab",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.4.1064/amazon/2023/chef-workstation-24.4.1064-1.amazon2023.x86_64.rpm"
+        },
+        "24.6.1066": {
+          "sha1": "1aacc45efb91b3b929edf75ce0f4d466fd4e6b44",
+          "sha256": "db5e145a39979215781062f62c1fe04f5147a249369cc9af336b9fabc624ea39",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.6.1066/amazon/2023/chef-workstation-24.6.1066-1.amazon2023.x86_64.rpm"
+        },
+        "24.8.1068": {
+          "sha1": "da43d9086e965ab30870ee9996ef9d93c8bc4882",
+          "sha256": "bf6038d88cabff9a63d23d5a48650a0e4a1995b0612d986ef7d007d13a227513",
+          "url": "https://packages.chef.io/files/stable/chef-workstation/24.8.1068/amazon/2023/chef-workstation-24.8.1068-1.amazon2023.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2022-06-03 00:12:02 +0000"
+    "timestamp": "2024-09-14 08:06:10 -0400"
   }
 }

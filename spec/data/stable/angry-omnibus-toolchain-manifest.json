@@ -231,6 +231,21 @@
           "sha1": "552a7b39d0c1f18ba1e10b2e21ef885657ea42a6",
           "sha256": "19492e7cbbb6308b08a039984277ac6f20bd7664f7677081c34a17458bc1a57d",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/6/angry-omnibus-toolchain-3.0.0-1.el6.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "c14567cf01b1cfaad73ce1244f6171de75f8e49f",
+          "sha256": "22e7b1596a7c3deb3004e726c9f9bede111095e06a317c52510917751a5d5aeb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/6/angry-omnibus-toolchain-3.0.16-1.el6.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "30776572df99b8557e1a20d8fbc27bdc1d052bfe",
+          "sha256": "c4c88857ce7225ded415322604d049b35b57277314ba019558ec7a0b00771879",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/6/angry-omnibus-toolchain-3.0.27-1.el6.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "d8646e3eb2cb3b42aa38362529fcb5fb606ae3f1",
+          "sha256": "121dc41573b9fb703888086980c932c2083de7cb6fd6a3877e52e1831cb5ef8f",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/6/angry-omnibus-toolchain-3.0.28-1.el6.x86_64.rpm"
         }
       },
       "i386": {
@@ -1045,6 +1060,26 @@
           "sha1": "42a2f44e18bf6da00868212b19eb57c6aa0599d3",
           "sha256": "75a45f4619e21e5b5015fd3c4d07fda659cb4a0fcf411101bade8dba5f2c8e17",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/7/angry-omnibus-toolchain-3.0.0-1.el7.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "ed8660c9cf68ca52ccebdd1f39ddabe1a5b18ca6",
+          "sha256": "e9647c6df5f80b362a14471512646f2c729b5b78b073abc3a81282b5783f779e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/7/angry-omnibus-toolchain-3.0.16-1.el7.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "8b6b350f8d3c510e81782fd1f341f8c24378fb07",
+          "sha256": "8f5c3b37a344b2ca06c177a53e3568c9f6ed33470f645dbdca1d4ee484233e64",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/7/angry-omnibus-toolchain-3.0.27-1.el7.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "fc3be5f329ddfad8ab353128ab8ac538e25e6e14",
+          "sha256": "7521a25e70f16ac0eabca556940cc4b52c6c0e566a0f62d10a5bc44fd26c2da1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/7/angry-omnibus-toolchain-3.0.28-1.el7.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "3a8da55ae2d721cfa903159c0bc825da0e6a33f4",
+          "sha256": "58b7fadced3c2b90d79f53e59fa0ee3db87817a90404b353bdfbee07f9f99e8d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/7/angry-omnibus-toolchain-3.0.31-1.el7.x86_64.rpm"
         }
       },
       "ppc64": {
@@ -1262,6 +1297,26 @@
           "sha1": "72e636c5baeab3b6ad8a8422e2cdb1557aece1f3",
           "sha256": "fa536c3991b46a84a5f2d46e0460dab8d88eb81c8bc90da10772a71ee4ac404a",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/7/angry-omnibus-toolchain-3.0.0-1.el7.ppc64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "5b59a2d9efacdf9dff3d45d5fd6df1889836e43f",
+          "sha256": "1db7a225da078faede6dc066eba204f8dd264ec4c97b705ac0a97da8f9a7c74c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/7/angry-omnibus-toolchain-3.0.16-1.el7.ppc64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "d901df43c3e884b17323fc8b8c2667fbb1ca2d8d",
+          "sha256": "92f5da4deb996e1d51e628f01e19f1e159cc132a8337b097dea6648a78ebc98d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/7/angry-omnibus-toolchain-3.0.27-1.el7.ppc64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "e975bb0e3465768fecc9f43e6c1c0a373f09b2b1",
+          "sha256": "135bbfd06a7432f92ea89a1d7fd773945200a5857871db732e978f0ba70db9a9",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/7/angry-omnibus-toolchain-3.0.28-1.el7.ppc64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "fe62c62f698e8bb9b42c4183e6add6baf83e2c25",
+          "sha256": "9175b6e0a004e8f683e66f3dc5e959a4e977b8d5aa5fc56543052bc1b7aabfc6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/7/angry-omnibus-toolchain-3.0.31-1.el7.ppc64.rpm"
         }
       },
       "ppc64le": {
@@ -1479,6 +1534,26 @@
           "sha1": "58d3fd64303d61dfb4204464a09abb36bc5e5a76",
           "sha256": "47104a626ce4ba575dec7a4f7a41cd9f1d61b2c97aade99b1c077e689e34c668",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/7/angry-omnibus-toolchain-3.0.0-1.el7.ppc64le.rpm"
+        },
+        "3.0.16": {
+          "sha1": "4cf14e2a2b7fb46322d7b1e1c09aae9ee6c9efdf",
+          "sha256": "b4c593dd829539f206c7d5fe9b3a584fe2cf0ee1ca35ff48b0e4515bdc2cbd1e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/7/angry-omnibus-toolchain-3.0.16-1.el7.ppc64le.rpm"
+        },
+        "3.0.27": {
+          "sha1": "49464d6ff14161e680e2f72a28db5363503ba5a7",
+          "sha256": "81b42ecb4fd5bba02e8eef3ace17beafad32551bff2ce0d15cfedc61221d0dda",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/7/angry-omnibus-toolchain-3.0.27-1.el7.ppc64le.rpm"
+        },
+        "3.0.28": {
+          "sha1": "cd704305a34b07e97a750e13ae61b2ecc879d9ec",
+          "sha256": "d7236704b8f22f42adaee090618c0a34afbeb3d8528d3fd3530d119f588fcbc0",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/7/angry-omnibus-toolchain-3.0.28-1.el7.ppc64le.rpm"
+        },
+        "3.0.31": {
+          "sha1": "c5c6248201aa41b351556c0dd375ebdeeba55c4a",
+          "sha256": "298a0a6d89068daa4da65f26a4bdf5e6f4626a6f698f27f8b0dcb4c0fa69cf99",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/7/angry-omnibus-toolchain-3.0.31-1.el7.ppc64le.rpm"
         }
       },
       "s390x": {
@@ -1661,6 +1736,26 @@
           "sha1": "46f52d473728bdcea75d30d9d621e66fe858bd56",
           "sha256": "57cc61fd4edf777b0bacd30ea996c856efb5cee6179cf0888f2926ec048f3968",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/7/angry-omnibus-toolchain-3.0.0-1.el7.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "c3d35498f0fce4f3d58b48c91d7255ed7040d15d",
+          "sha256": "bd37145eda5685ef1330b97887a5daea73d5b83dd6303dd5e43469668ed8af1c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/7/angry-omnibus-toolchain-3.0.16-1.el7.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "42c0dafce01ccbf5f7b44f0b1d71d21409eec382",
+          "sha256": "c390ef94384e4ff0f8fa20846d194828408b36c348cbdfeb72bce593a0c242eb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/7/angry-omnibus-toolchain-3.0.27-1.el7.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "7434deb22a8f3abfbe35594df6fbf88218b327fc",
+          "sha256": "76a5862898b38b1bf2d7d4e99e5c34ce5aafce882ea62b1f3561b86c17f2c22f",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/7/angry-omnibus-toolchain-3.0.28-1.el7.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "088ff9760283de871f5a5cea5b5d13c74b5e54f1",
+          "sha256": "33293a5aa2d5d4147b3f19f40a49e9b06cd1cc805e7cd75b5e7ce4c0cef254e1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/7/angry-omnibus-toolchain-3.0.31-1.el7.s390x.rpm"
         }
       },
       "aarch64": {
@@ -1793,6 +1888,26 @@
           "sha1": "fdbcbe1ee9ffacf18c821a29fc7ffab40873120f",
           "sha256": "15d30756435ee4a47927faa55fe4ff4bb618bbc71148e583bf436ca3a15ea6e6",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/7/angry-omnibus-toolchain-3.0.0-1.el7.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "9f82555297bcbdc1cc92d58a3348b6895893e344",
+          "sha256": "b760901bace619b4a541c8659c0e8f2d0b7b88026bd76907d6c178f146586f81",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/7/angry-omnibus-toolchain-3.0.16-1.el7.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "ab04d22b7b347acdef45bb88f6304d90bff30574",
+          "sha256": "991d40ed0f4c2643ade4b98d4186f5ac04788d1487b745de623623693a7d5f31",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/7/angry-omnibus-toolchain-3.0.27-1.el7.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "8e363cbadf932313d32b0f5c805db13bbbfe4568",
+          "sha256": "58d1faa8c8fcdcef6c742a620d2a46c988e05c8142230c2ef058828132c7f2d1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/7/angry-omnibus-toolchain-3.0.28-1.el7.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "196f6bc8f39b53dc665d61b60a70470c54ecea41",
+          "sha256": "dcadd4a9225de8c003ca48f38638d048c112fa5e2608e152aecf4080976569eb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/7/angry-omnibus-toolchain-3.0.31-1.el7.aarch64.rpm"
         }
       }
     },
@@ -1847,6 +1962,26 @@
           "sha1": "e7ea873d8630521d37e3d92139c3215815647135",
           "sha256": "3364b3173072d5dcce908dc8c850636c9947d2a68d963394cdd25b7bd093168e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/8/angry-omnibus-toolchain-3.0.0-1.el8.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "a3e3a7b687dc897000f7dfe221c9f69a3de6f75d",
+          "sha256": "8703ce831b988ea18007050f63d941455fd2b5fe15d577f1de4cf262db0fa2c8",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/8/angry-omnibus-toolchain-3.0.16-1.el8.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "535880b8dac0be96e2c91f7a4c34a34a4d42c9cc",
+          "sha256": "38a6c4b7fd4afab138abc903348dcc730118f61dbd777f6a7dc6decd0b0e3abe",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/8/angry-omnibus-toolchain-3.0.27-1.el8.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "b433e88f47c48fb69d5dd1a6780ae4cf90d0ac39",
+          "sha256": "4c02db2ca9bebfd7ac7f72912c611ecb5bf8e82c679ee1c5bd27c7317f1272ad",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/8/angry-omnibus-toolchain-3.0.28-1.el8.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "92effe7023192e27b28a23dee0c6ac140ec7c958",
+          "sha256": "5ee4cb0f971ef7485d4acbc2a4a95a3ec58f4ed8e7afa47e7966b442ff8c30cc",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/8/angry-omnibus-toolchain-3.0.31-1.el8.x86_64.rpm"
         }
       },
       "aarch64": {
@@ -1889,6 +2024,26 @@
           "sha1": "37949faa3b325fd817e94a976ef140559aeb6b23",
           "sha256": "4aa64c97d5d4fe078ec6abd10f134ca4387262b22e5be95ba2e7b47d1231625e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/8/angry-omnibus-toolchain-3.0.0-1.el8.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "d5092750432c76366bb36130e1eb58a77654a886",
+          "sha256": "11ca6a2ed951eb3079b65ba3b10153804b0221a85b04ccdc12151833fd2a97eb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/8/angry-omnibus-toolchain-3.0.16-1.el8.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "fca4996a4cc7356a6c4023ecf9a0c232ee73254e",
+          "sha256": "a4cf3c0d73efb044786f9da4cb8ca29fe9523a550d41f9358fea5af5284e3a17",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/8/angry-omnibus-toolchain-3.0.27-1.el8.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "cc3d99595cb2267a0a1825a66fffa0afc86c53d8",
+          "sha256": "ae7337d630dd1fb2fdd22853276cb6071781af22394290447e307f5063190fdb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/8/angry-omnibus-toolchain-3.0.28-1.el8.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "ae641499513f18c04d904b4889488f0cf21caffd",
+          "sha256": "c28f67dc91e556adec472cef0e3d348942c7ffe57e560eaba962d686d00aeec6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/8/angry-omnibus-toolchain-3.0.31-1.el8.aarch64.rpm"
         }
       },
       "s390x": {
@@ -1911,6 +2066,26 @@
           "sha1": "46f52d473728bdcea75d30d9d621e66fe858bd56",
           "sha256": "57cc61fd4edf777b0bacd30ea996c856efb5cee6179cf0888f2926ec048f3968",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/8/angry-omnibus-toolchain-3.0.0-1.el7.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "c3d35498f0fce4f3d58b48c91d7255ed7040d15d",
+          "sha256": "bd37145eda5685ef1330b97887a5daea73d5b83dd6303dd5e43469668ed8af1c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/8/angry-omnibus-toolchain-3.0.16-1.el7.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "42c0dafce01ccbf5f7b44f0b1d71d21409eec382",
+          "sha256": "c390ef94384e4ff0f8fa20846d194828408b36c348cbdfeb72bce593a0c242eb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/8/angry-omnibus-toolchain-3.0.27-1.el7.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "7434deb22a8f3abfbe35594df6fbf88218b327fc",
+          "sha256": "76a5862898b38b1bf2d7d4e99e5c34ce5aafce882ea62b1f3561b86c17f2c22f",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/8/angry-omnibus-toolchain-3.0.28-1.el7.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "088ff9760283de871f5a5cea5b5d13c74b5e54f1",
+          "sha256": "33293a5aa2d5d4147b3f19f40a49e9b06cd1cc805e7cd75b5e7ce4c0cef254e1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/8/angry-omnibus-toolchain-3.0.31-1.el7.s390x.rpm"
         }
       }
     },
@@ -1920,6 +2095,26 @@
           "sha1": "ff2c5bad8b0391cf5c2a1a1926bf22a45f719d4f",
           "sha256": "029d55f81fb2cf0f0c91791759cab40817a2f0fb8efee1eced4c2c7b85f22869",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/9/angry-omnibus-toolchain-3.0.0-1.el9.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "60026d17c88fb3bdd11b1b30c757ea780f89dcf4",
+          "sha256": "33c21536e075004f2c58b9baebeb689fda443d4382cac735ad37a9559933d222",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/9/angry-omnibus-toolchain-3.0.16-1.el9.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "258438bda50d6d7e0fe9087ced7b4f8bc3c9a720",
+          "sha256": "6e38c5cfd7c011d605e22f2fccbc3211325ade8ff8a05431b775864bcde0bcbd",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/9/angry-omnibus-toolchain-3.0.27-1.el9.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "86e7e7962983dd868437b005e8b2b5a9613053f2",
+          "sha256": "235262b1c76324f5dbf7a5162903e0a82349e01cb10fb39eb86e9b6e60109060",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/9/angry-omnibus-toolchain-3.0.28-1.el9.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "d7e45fa2f909a42b969f732ad3011057cea8983e",
+          "sha256": "4b2f3eaeea2a38595316139d64511317b1d1a0ace2d021e009b49b4fac8c9b29",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/9/angry-omnibus-toolchain-3.0.31-1.el9.aarch64.rpm"
         }
       },
       "x86_64": {
@@ -1927,6 +2122,26 @@
           "sha1": "530ba0df72a8338053d34f4bfdbf082ed942dd15",
           "sha256": "70fe60c862d2f0d5d69905b591c5878ae94782b335570f0e6b96a8537773c6fd",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/el/9/angry-omnibus-toolchain-3.0.0-1.el9.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "a87ea283fb822ca85fd85263024ae7ee82f558be",
+          "sha256": "1305b3d7b77a1027008ccd12de45c77cc780ec84d428753ae3a0fbc723f8258e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/el/9/angry-omnibus-toolchain-3.0.16-1.el9.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "3fa65a25561cf5ffaf84c641e072fea506cfe6a4",
+          "sha256": "fd642f98e7acd2ba62da09f9bfd41c18389e2a3903415649855795c31d9c5ad1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/el/9/angry-omnibus-toolchain-3.0.27-1.el9.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "8204322ac2968cedf3d434224f5c312d6fd75e29",
+          "sha256": "f1996125fe4fbdb7e237936b794a88f01175f5151b765e08457e88e9c6f4b20b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/el/9/angry-omnibus-toolchain-3.0.28-1.el9.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "6581ef7ec656cf812747b8e5e8a1dd0034f94fa0",
+          "sha256": "484f3714f506bb1826baa3900d63cb00c5db31bbf34c5a5480b36c19bcacc7d3",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/el/9/angry-omnibus-toolchain-3.0.31-1.el9.x86_64.rpm"
         }
       }
     }
@@ -2282,6 +2497,26 @@
           "sha1": "a5f7bff8cf449ab088d2088d489cef4feddd3572",
           "sha256": "4f110948b99cf3c777b6b97acc5b95a3b3245f70ef2a049fe90d741a0752740f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/aix/7.1/angry-omnibus-toolchain-3.0.0-1.powerpc.bff"
+        },
+        "3.0.16": {
+          "sha1": "491ec24e6dced6c5e74826af2954ea059516c208",
+          "sha256": "4c030e0f6a79a68f3c1825db75fc14d83267bd6fabeaceeed092ad631eff1650",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/aix/7.1/angry-omnibus-toolchain-3.0.16-1.powerpc.bff"
+        },
+        "3.0.27": {
+          "sha1": "c60bea0add1211ddba5fe9813bd9b2254357add4",
+          "sha256": "5b901fba00b00765f3bab430c4c57fcd28bd570175be9a191867abc3351e701d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/aix/7.1/angry-omnibus-toolchain-3.0.27-1.powerpc.bff"
+        },
+        "3.0.28": {
+          "sha1": "b14b54a62adc742a92709b3f279180d6af814235",
+          "sha256": "ed70aa864b1c55915d8db15a4f4313ebebae2e6d58ce0d77ddbd69222c47e075",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/aix/7.1/angry-omnibus-toolchain-3.0.28-1.powerpc.bff"
+        },
+        "3.0.31": {
+          "sha1": "036b050fc094967311db84f65f4ae14fe677c3d5",
+          "sha256": "d7da514fa0b4a162a617e0da65bac35a1a045b10f92455d506368001302c4455",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/aix/7.1/angry-omnibus-toolchain-3.0.31-1.powerpc.bff"
         }
       }
     },
@@ -2336,6 +2571,26 @@
           "sha1": "a5f7bff8cf449ab088d2088d489cef4feddd3572",
           "sha256": "4f110948b99cf3c777b6b97acc5b95a3b3245f70ef2a049fe90d741a0752740f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/aix/7.2/angry-omnibus-toolchain-3.0.0-1.powerpc.bff"
+        },
+        "3.0.16": {
+          "sha1": "491ec24e6dced6c5e74826af2954ea059516c208",
+          "sha256": "4c030e0f6a79a68f3c1825db75fc14d83267bd6fabeaceeed092ad631eff1650",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/aix/7.2/angry-omnibus-toolchain-3.0.16-1.powerpc.bff"
+        },
+        "3.0.27": {
+          "sha1": "c60bea0add1211ddba5fe9813bd9b2254357add4",
+          "sha256": "5b901fba00b00765f3bab430c4c57fcd28bd570175be9a191867abc3351e701d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/aix/7.2/angry-omnibus-toolchain-3.0.27-1.powerpc.bff"
+        },
+        "3.0.28": {
+          "sha1": "b14b54a62adc742a92709b3f279180d6af814235",
+          "sha256": "ed70aa864b1c55915d8db15a4f4313ebebae2e6d58ce0d77ddbd69222c47e075",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/aix/7.2/angry-omnibus-toolchain-3.0.28-1.powerpc.bff"
+        },
+        "3.0.31": {
+          "sha1": "036b050fc094967311db84f65f4ae14fe677c3d5",
+          "sha256": "d7da514fa0b4a162a617e0da65bac35a1a045b10f92455d506368001302c4455",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/aix/7.2/angry-omnibus-toolchain-3.0.31-1.powerpc.bff"
         }
       }
     }
@@ -3190,6 +3445,26 @@
           "sha1": "b8fe40d745dfad2f48ce036dcb635bfdeda76630",
           "sha256": "977ad94f1a53c68cbacfa7dd594c61143478d518178577719391d412abdf0001",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/debian/9/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "997f71bb76add065c1b06fc03fd03a64a4871071",
+          "sha256": "5f8aeaed223df2066d599526c1647bbfa43a1d7238a09cf6985908bdb027f980",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/debian/9/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "7b794f846a29b6c9d9ba0b08d418246772f31e00",
+          "sha256": "297a7130ead8be18332dcaeb9ed430b18348d4cd177837597027a7100d15ef3a",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/debian/9/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "32aceebcc551d8218b7d66925d36d11dd7649046",
+          "sha256": "f95d4aa8297465571ab4fde534dd9240f3f7fa3a88ad860ad162933ac11796df",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/debian/9/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "132202ffa120f485e74956cad41b45eb57a8b019",
+          "sha256": "5ee17de2ffdeb655ee999d54cffcc4c3fb5a26dfaf209f755b34daaa2e1aaa5d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/debian/9/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       }
     },
@@ -3244,6 +3519,26 @@
           "sha1": "b8fe40d745dfad2f48ce036dcb635bfdeda76630",
           "sha256": "977ad94f1a53c68cbacfa7dd594c61143478d518178577719391d412abdf0001",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/debian/10/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "997f71bb76add065c1b06fc03fd03a64a4871071",
+          "sha256": "5f8aeaed223df2066d599526c1647bbfa43a1d7238a09cf6985908bdb027f980",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/debian/10/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "7b794f846a29b6c9d9ba0b08d418246772f31e00",
+          "sha256": "297a7130ead8be18332dcaeb9ed430b18348d4cd177837597027a7100d15ef3a",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/debian/10/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "32aceebcc551d8218b7d66925d36d11dd7649046",
+          "sha256": "f95d4aa8297465571ab4fde534dd9240f3f7fa3a88ad860ad162933ac11796df",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/debian/10/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "132202ffa120f485e74956cad41b45eb57a8b019",
+          "sha256": "5ee17de2ffdeb655ee999d54cffcc4c3fb5a26dfaf209f755b34daaa2e1aaa5d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/debian/10/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -3271,6 +3566,26 @@
           "sha1": "6f3cd3476751fb83da2789eb6190fe676b301b35",
           "sha256": "f7fab930a78cce81730e865600ed9a17081420875fa95cf8b8d1cf6c43f987d5",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/debian/10/angry-omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "7ab606b0cbd254cf71d640ec1958890b27d4ab06",
+          "sha256": "ec7c0d52f8da37675468dc7c411a2270931bf1d1727568012fb6950fa513d84a",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/debian/10/angry-omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "765da3a5e3c4ca2304292d270a309fbf11516c47",
+          "sha256": "427a11332c9739776f087b4d1b43be1a7b42979332bd14f96146c4997546333d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/debian/10/angry-omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "8d713324df93e4ddabe4cd0337dc20ee17d47e9e",
+          "sha256": "f3a353607674c8ce5b2f63b8ed7ede6fcf04fe2490a7046beb7d6602ff5ba5b5",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/debian/10/angry-omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "82fa280927ef6a94e607e67693a0b71c57bfc7bd",
+          "sha256": "c7fa275f47038318d9dc36dc7faccbc9139595f9fbd4d91bdbb53a90d3aedda6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/debian/10/angry-omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -3280,6 +3595,26 @@
           "sha1": "b8fe40d745dfad2f48ce036dcb635bfdeda76630",
           "sha256": "977ad94f1a53c68cbacfa7dd594c61143478d518178577719391d412abdf0001",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/debian/11/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "997f71bb76add065c1b06fc03fd03a64a4871071",
+          "sha256": "5f8aeaed223df2066d599526c1647bbfa43a1d7238a09cf6985908bdb027f980",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/debian/11/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "7b794f846a29b6c9d9ba0b08d418246772f31e00",
+          "sha256": "297a7130ead8be18332dcaeb9ed430b18348d4cd177837597027a7100d15ef3a",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/debian/11/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "32aceebcc551d8218b7d66925d36d11dd7649046",
+          "sha256": "f95d4aa8297465571ab4fde534dd9240f3f7fa3a88ad860ad162933ac11796df",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/debian/11/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "132202ffa120f485e74956cad41b45eb57a8b019",
+          "sha256": "5ee17de2ffdeb655ee999d54cffcc4c3fb5a26dfaf209f755b34daaa2e1aaa5d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/debian/11/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -3287,6 +3622,26 @@
           "sha1": "6f3cd3476751fb83da2789eb6190fe676b301b35",
           "sha256": "f7fab930a78cce81730e865600ed9a17081420875fa95cf8b8d1cf6c43f987d5",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/debian/11/angry-omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "7ab606b0cbd254cf71d640ec1958890b27d4ab06",
+          "sha256": "ec7c0d52f8da37675468dc7c411a2270931bf1d1727568012fb6950fa513d84a",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/debian/11/angry-omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "765da3a5e3c4ca2304292d270a309fbf11516c47",
+          "sha256": "427a11332c9739776f087b4d1b43be1a7b42979332bd14f96146c4997546333d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/debian/11/angry-omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "8d713324df93e4ddabe4cd0337dc20ee17d47e9e",
+          "sha256": "f3a353607674c8ce5b2f63b8ed7ede6fcf04fe2490a7046beb7d6602ff5ba5b5",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/debian/11/angry-omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "82fa280927ef6a94e607e67693a0b71c57bfc7bd",
+          "sha256": "c7fa275f47038318d9dc36dc7faccbc9139595f9fbd4d91bdbb53a90d3aedda6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/debian/11/angry-omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     }
@@ -3966,6 +4321,21 @@
           "sha1": "ac996fe4f6aa3bb2ef96f54ba7f0733d622c5a91",
           "sha256": "a2a59f821a1585033b600cc6cc41d19bc5258bc95eb07f4f54aef7645a2c4710",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/freebsd/12/angry-omnibus-toolchain-3.0.0_1.amd64.sh"
+        },
+        "3.0.16": {
+          "sha1": "342b0b307ee0d9c0548aab156f59844f52e7550f",
+          "sha256": "7d0424baf5d85f279e784aea7251de725260e47dfc1fe1197eef6bc95baf7088",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/freebsd/12/angry-omnibus-toolchain-3.0.16_1.amd64.sh"
+        },
+        "3.0.27": {
+          "sha1": "c56600e292b9744146fef47d4d0581a6b1d22254",
+          "sha256": "9e50a1848a9008a3ec21c6ecf76d69ba393bfa85abda13587dabfb30e7dbd05e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/freebsd/12/angry-omnibus-toolchain-3.0.27_1.amd64.sh"
+        },
+        "3.0.28": {
+          "sha1": "661e7c5610d746a3a443ae39601d7d0199cc1014",
+          "sha256": "32099bda0bc53450271de5234a4375627b0332ece8d9068e59ba91bab0f4b8f4",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/freebsd/12/angry-omnibus-toolchain-3.0.28_1.amd64.sh"
         }
       }
     },
@@ -3985,6 +4355,26 @@
           "sha1": "ac996fe4f6aa3bb2ef96f54ba7f0733d622c5a91",
           "sha256": "a2a59f821a1585033b600cc6cc41d19bc5258bc95eb07f4f54aef7645a2c4710",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/freebsd/13/angry-omnibus-toolchain-3.0.0_1.amd64.sh"
+        },
+        "3.0.16": {
+          "sha1": "342b0b307ee0d9c0548aab156f59844f52e7550f",
+          "sha256": "7d0424baf5d85f279e784aea7251de725260e47dfc1fe1197eef6bc95baf7088",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/freebsd/13/angry-omnibus-toolchain-3.0.16_1.amd64.sh"
+        },
+        "3.0.27": {
+          "sha1": "c56600e292b9744146fef47d4d0581a6b1d22254",
+          "sha256": "9e50a1848a9008a3ec21c6ecf76d69ba393bfa85abda13587dabfb30e7dbd05e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/freebsd/13/angry-omnibus-toolchain-3.0.27_1.amd64.sh"
+        },
+        "3.0.28": {
+          "sha1": "661e7c5610d746a3a443ae39601d7d0199cc1014",
+          "sha256": "32099bda0bc53450271de5234a4375627b0332ece8d9068e59ba91bab0f4b8f4",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/freebsd/13/angry-omnibus-toolchain-3.0.28_1.amd64.sh"
+        },
+        "3.0.31": {
+          "sha1": "48c350b17cc43b7467ad96199043b9360dee4597",
+          "sha256": "207ad8d7ce5af36bba5347dc0a6995e90a0ace3373082a788a8c091878f71e6d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/freebsd/13/angry-omnibus-toolchain-3.0.31_1.amd64.sh"
         }
       }
     }
@@ -4221,6 +4611,26 @@
           "sha1": "f29d2d5b4d1004983920fc8dbb35df82069782b3",
           "sha256": "83cf56a3f57269bea4ad387c4ba9c8ada7aa1c25dc5fbb5e72ea590047086338",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/solaris2/5.11/angry-omnibus-toolchain-3.0.0-1.i386.p5p"
+        },
+        "3.0.16": {
+          "sha1": "db8d85423682cdbc87c5612059a7c6b57ae01371",
+          "sha256": "57a1a682de0c89afec68a25260eabff980a626b2819f6cf7fee1d07e7e3f41a8",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/solaris2/5.11/angry-omnibus-toolchain-3.0.16-1.i386.p5p"
+        },
+        "3.0.27": {
+          "sha1": "b813686fc5a296aa256850338b1998b87409c5a7",
+          "sha256": "8ce9efc5cdaf0481645e823d8a889632a46305cbdff7e9927ba09518b1a2eed4",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/solaris2/5.11/angry-omnibus-toolchain-3.0.27-1.i386.p5p"
+        },
+        "3.0.28": {
+          "sha1": "5d01c9abe9e21c4cd2cf6630eb406cde19204bed",
+          "sha256": "b45c0e0f645c731862f5b905609cf828e8ec4f1fcdf879d73db1889c388878b6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/solaris2/5.11/angry-omnibus-toolchain-3.0.28-1.i386.p5p"
+        },
+        "3.0.31": {
+          "sha1": "5b27a6450fd27fdf116ef9132600e5c9c2882442",
+          "sha256": "8114818da8714d904283f19815e5904548814bb46f1e30e7e9f5d65efe0b4c81",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/solaris2/5.11/angry-omnibus-toolchain-3.0.31-1.i386.p5p"
         }
       },
       "sparc": {
@@ -4453,6 +4863,26 @@
           "sha1": "49ff418dc200802e700c95dac54de7f730a5d4f5",
           "sha256": "6dfdcd7b8ec6fe53719697cd5ab1456e045f42d7174d4217a9579bd192285636",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/solaris2/5.11/angry-omnibus-toolchain-3.0.0-1.sparc.p5p"
+        },
+        "3.0.16": {
+          "sha1": "d148ca963efed3ad57b7d8dfddf7b7673afd3dc5",
+          "sha256": "bef4e1984a88bb7b936c899301e945b241be069479e01f8e1bfd306c70516a4e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/solaris2/5.11/angry-omnibus-toolchain-3.0.16-1.sparc.p5p"
+        },
+        "3.0.27": {
+          "sha1": "4caf89577b1e1062c51490befc24846f7dc186a3",
+          "sha256": "1ac1dfcc7302a65747753250f03dae24e1a4f9831a72fe74606b1419f8d75713",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/solaris2/5.11/angry-omnibus-toolchain-3.0.27-1.sparc.p5p"
+        },
+        "3.0.28": {
+          "sha1": "cd6ac2f819403682d878c43f0fc917738292d30e",
+          "sha256": "f63ad7c3a3a749ac2c1a1672ecf206c9c86ba48fc209cbf6843e497c3dd9b03b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/solaris2/5.11/angry-omnibus-toolchain-3.0.28-1.sparc.p5p"
+        },
+        "3.0.31": {
+          "sha1": "921c1d556c8aa68c8f0b660def6e3e494539d537",
+          "sha256": "3566e06f4c8d2532f23c5df0d33a73d6c8dded7aaf84e01c36fc960ddf7140d5",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/solaris2/5.11/angry-omnibus-toolchain-3.0.31-1.sparc.p5p"
         }
       }
     },
@@ -5762,6 +6192,26 @@
           "sha1": "526922d07697274b1f06537f03ee030f24676388",
           "sha256": "b8c79855e21a4ae0eee34d756409b864f79cf884c202715a91203776b8571f8f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/16.04/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "4ea05b53f536ef3a615c425e1abbceea64050962",
+          "sha256": "3a6b4dd352eeb40ad25df5b388d807c6a87fad0101e5409eae4841cb59f30458",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/16.04/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "4e3f41d2ddcf2741af54ea55244fe87c15c4b530",
+          "sha256": "c2d97d9cc42dce20ec73cda26812cbf024542113fc9455067a20d05f30f01566",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/16.04/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ad0427632e5ae4aa963751ee65763aeca83f8bf8",
+          "sha256": "ae9ded04ce02bec1ff0140604b23982d64bb269a8c1c59477329541515275dcf",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/16.04/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d89a4926a73a17432a5fad54f81cf5474c6369ca",
+          "sha256": "ab5d09387d70b258b15dcfe9be3af60bb90c2fa58faf9d21a8d124a7313a419e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/16.04/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "ppc64le": {
@@ -5898,6 +6348,26 @@
           "sha1": "526922d07697274b1f06537f03ee030f24676388",
           "sha256": "b8c79855e21a4ae0eee34d756409b864f79cf884c202715a91203776b8571f8f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/18.04/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "4ea05b53f536ef3a615c425e1abbceea64050962",
+          "sha256": "3a6b4dd352eeb40ad25df5b388d807c6a87fad0101e5409eae4841cb59f30458",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/18.04/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "4e3f41d2ddcf2741af54ea55244fe87c15c4b530",
+          "sha256": "c2d97d9cc42dce20ec73cda26812cbf024542113fc9455067a20d05f30f01566",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/18.04/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ad0427632e5ae4aa963751ee65763aeca83f8bf8",
+          "sha256": "ae9ded04ce02bec1ff0140604b23982d64bb269a8c1c59477329541515275dcf",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/18.04/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d89a4926a73a17432a5fad54f81cf5474c6369ca",
+          "sha256": "ab5d09387d70b258b15dcfe9be3af60bb90c2fa58faf9d21a8d124a7313a419e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/18.04/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -5940,6 +6410,26 @@
           "sha1": "5ae95723fcad12bb4d07e89747f93a5fb88ab460",
           "sha256": "f6e6c393e7cb77cb4b4c385c303ca7a85a876b5335f473e8c0f57806b2bd13e6",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/18.04/angry-omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "0dd9e6bb5b8fc40963fd56eeaef194204eec5edc",
+          "sha256": "9a9e2c286ae3d66b47e5ad2dd7ac0e6c690c21add704debb00c4823c36c2ed64",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/18.04/angry-omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "dacca14c7ee503e5619daf703849c8e15d857dee",
+          "sha256": "530c5df0ff1f7f27375150a21edc1d1b9bdc6eb4ec6b485e6d1014532c26f557",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/18.04/angry-omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "5b4367acbeb7967049883fe0e065e82c4fe0d2b7",
+          "sha256": "c8121acf475f71df80568c836cbcfa4c3950bfd55fa266e433d6aef7d7b5bf8c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/18.04/angry-omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "b1a0aadc2ca7e863441d643db3c272ca7884a9a5",
+          "sha256": "132cd7cb948a863257470dc6076f22c5fbabb3ea05720e9f75794f7a61d8239c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/18.04/angry-omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -5984,6 +6474,26 @@
           "sha1": "526922d07697274b1f06537f03ee030f24676388",
           "sha256": "b8c79855e21a4ae0eee34d756409b864f79cf884c202715a91203776b8571f8f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/20.04/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "4ea05b53f536ef3a615c425e1abbceea64050962",
+          "sha256": "3a6b4dd352eeb40ad25df5b388d807c6a87fad0101e5409eae4841cb59f30458",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/20.04/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "4e3f41d2ddcf2741af54ea55244fe87c15c4b530",
+          "sha256": "c2d97d9cc42dce20ec73cda26812cbf024542113fc9455067a20d05f30f01566",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/20.04/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ad0427632e5ae4aa963751ee65763aeca83f8bf8",
+          "sha256": "ae9ded04ce02bec1ff0140604b23982d64bb269a8c1c59477329541515275dcf",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/20.04/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d89a4926a73a17432a5fad54f81cf5474c6369ca",
+          "sha256": "ab5d09387d70b258b15dcfe9be3af60bb90c2fa58faf9d21a8d124a7313a419e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/20.04/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -6021,6 +6531,26 @@
           "sha1": "5ae95723fcad12bb4d07e89747f93a5fb88ab460",
           "sha256": "f6e6c393e7cb77cb4b4c385c303ca7a85a876b5335f473e8c0f57806b2bd13e6",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/20.04/angry-omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "0dd9e6bb5b8fc40963fd56eeaef194204eec5edc",
+          "sha256": "9a9e2c286ae3d66b47e5ad2dd7ac0e6c690c21add704debb00c4823c36c2ed64",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/20.04/angry-omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "dacca14c7ee503e5619daf703849c8e15d857dee",
+          "sha256": "530c5df0ff1f7f27375150a21edc1d1b9bdc6eb4ec6b485e6d1014532c26f557",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/20.04/angry-omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "5b4367acbeb7967049883fe0e065e82c4fe0d2b7",
+          "sha256": "c8121acf475f71df80568c836cbcfa4c3950bfd55fa266e433d6aef7d7b5bf8c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/20.04/angry-omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "b1a0aadc2ca7e863441d643db3c272ca7884a9a5",
+          "sha256": "132cd7cb948a863257470dc6076f22c5fbabb3ea05720e9f75794f7a61d8239c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/20.04/angry-omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -6030,6 +6560,26 @@
           "sha1": "526922d07697274b1f06537f03ee030f24676388",
           "sha256": "b8c79855e21a4ae0eee34d756409b864f79cf884c202715a91203776b8571f8f",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/22.04/angry-omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "4ea05b53f536ef3a615c425e1abbceea64050962",
+          "sha256": "3a6b4dd352eeb40ad25df5b388d807c6a87fad0101e5409eae4841cb59f30458",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/22.04/angry-omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "4e3f41d2ddcf2741af54ea55244fe87c15c4b530",
+          "sha256": "c2d97d9cc42dce20ec73cda26812cbf024542113fc9455067a20d05f30f01566",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/22.04/angry-omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ad0427632e5ae4aa963751ee65763aeca83f8bf8",
+          "sha256": "ae9ded04ce02bec1ff0140604b23982d64bb269a8c1c59477329541515275dcf",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/22.04/angry-omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d89a4926a73a17432a5fad54f81cf5474c6369ca",
+          "sha256": "ab5d09387d70b258b15dcfe9be3af60bb90c2fa58faf9d21a8d124a7313a419e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/22.04/angry-omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -6037,6 +6587,26 @@
           "sha1": "5ae95723fcad12bb4d07e89747f93a5fb88ab460",
           "sha256": "f6e6c393e7cb77cb4b4c385c303ca7a85a876b5335f473e8c0f57806b2bd13e6",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/ubuntu/22.04/angry-omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "0dd9e6bb5b8fc40963fd56eeaef194204eec5edc",
+          "sha256": "9a9e2c286ae3d66b47e5ad2dd7ac0e6c690c21add704debb00c4823c36c2ed64",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/ubuntu/22.04/angry-omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "dacca14c7ee503e5619daf703849c8e15d857dee",
+          "sha256": "530c5df0ff1f7f27375150a21edc1d1b9bdc6eb4ec6b485e6d1014532c26f557",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/ubuntu/22.04/angry-omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "5b4367acbeb7967049883fe0e065e82c4fe0d2b7",
+          "sha256": "c8121acf475f71df80568c836cbcfa4c3950bfd55fa266e433d6aef7d7b5bf8c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/ubuntu/22.04/angry-omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "b1a0aadc2ca7e863441d643db3c272ca7884a9a5",
+          "sha256": "132cd7cb948a863257470dc6076f22c5fbabb3ea05720e9f75794f7a61d8239c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/ubuntu/22.04/angry-omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     }
@@ -6832,6 +7402,21 @@
           "sha1": "ec74f1e6df9c38ca4a633017505a831e9d3661ba",
           "sha256": "3660b54d17bfa7427a9a97ab23b8608d477adf85c132bfe5093885cb74b3b115",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/mac_os_x/10.15/angry-omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "24bdd2cc085b1edacc3bb2c7964b9aff5acfa79c",
+          "sha256": "2cdfabc40f2abd7811e12b04240745c8836c2973cf7066811d86c01368d911ac",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/mac_os_x/10.15/angry-omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "8b191b578f9b03e6dfbe13304071f0dcf6f2bb14",
+          "sha256": "92a9af33c1ead7ebb09e46020af4043ee3df0d3a40a3fde5c65980e789df3074",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/mac_os_x/10.15/angry-omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "89bbbd52cc5d8cad83ee75060224dc943707507c",
+          "sha256": "521526ae6cec6abfd9ff47d16250620e34d3ec3bb70409fe29fbcad36b28ee53",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/mac_os_x/10.15/angry-omnibus-toolchain-3.0.28-1.x86_64.dmg"
         }
       }
     },
@@ -6856,6 +7441,26 @@
           "sha1": "1e362ef806ba7d270c1b270e2a3320db03631f9b",
           "sha256": "9c5a12a7ccdf78512e013d2233fcbc0f122b1e823ed20b6a252b8b50aeb7dd0b",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/mac_os_x/11/angry-omnibus-toolchain-3.0.0-1.arm64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "d483c8841587c22f45584ee8fc92eb0acf4c6bc2",
+          "sha256": "2f6c62a7935b57ce17fcbd3fe5a8f79fde72c2855063d5bb470af9b1fc4680b7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/mac_os_x/11/angry-omnibus-toolchain-3.0.16-1.arm64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "4ecc95840c80fff33efc1e747c057eae97648e13",
+          "sha256": "b6c3be0bf999042c42276b0b645e4ddca772a4f44eabe758be24c17e968321a7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/mac_os_x/11/angry-omnibus-toolchain-3.0.27-1.arm64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "06b176adfa516930e8c821301622d2f8ed85abb0",
+          "sha256": "f3d51c4ceade6f7e7a07f16af43dcc566daf0a55eefcdabbeb3010fb5183a2e7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/mac_os_x/11/angry-omnibus-toolchain-3.0.28-1.arm64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "1a32dd530d7d1d1564ae7410589ea07db685ae42",
+          "sha256": "b13bad1e24230f3c754aceacf65b49e6026472659c800acd6c759f22f9eb6306",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/mac_os_x/11/angry-omnibus-toolchain-3.0.31-1.arm64.dmg"
         }
       },
       "x86_64": {
@@ -6878,6 +7483,26 @@
           "sha1": "ec74f1e6df9c38ca4a633017505a831e9d3661ba",
           "sha256": "3660b54d17bfa7427a9a97ab23b8608d477adf85c132bfe5093885cb74b3b115",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/mac_os_x/11/angry-omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "24bdd2cc085b1edacc3bb2c7964b9aff5acfa79c",
+          "sha256": "2cdfabc40f2abd7811e12b04240745c8836c2973cf7066811d86c01368d911ac",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/mac_os_x/11/angry-omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "8b191b578f9b03e6dfbe13304071f0dcf6f2bb14",
+          "sha256": "92a9af33c1ead7ebb09e46020af4043ee3df0d3a40a3fde5c65980e789df3074",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/mac_os_x/11/angry-omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "89bbbd52cc5d8cad83ee75060224dc943707507c",
+          "sha256": "521526ae6cec6abfd9ff47d16250620e34d3ec3bb70409fe29fbcad36b28ee53",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/mac_os_x/11/angry-omnibus-toolchain-3.0.28-1.x86_64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "f0a8bd7d4571a98570b5a4f5c8dd16e6566e12a0",
+          "sha256": "a9c928e551e384d5a8d52e2eb0675b2238a984cd1e8179d2d943ff0802c25580",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/mac_os_x/11/angry-omnibus-toolchain-3.0.31-1.x86_64.dmg"
         }
       }
     },
@@ -6892,6 +7517,26 @@
           "sha1": "1e362ef806ba7d270c1b270e2a3320db03631f9b",
           "sha256": "9c5a12a7ccdf78512e013d2233fcbc0f122b1e823ed20b6a252b8b50aeb7dd0b",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/mac_os_x/12/angry-omnibus-toolchain-3.0.0-1.arm64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "d483c8841587c22f45584ee8fc92eb0acf4c6bc2",
+          "sha256": "2f6c62a7935b57ce17fcbd3fe5a8f79fde72c2855063d5bb470af9b1fc4680b7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/mac_os_x/12/angry-omnibus-toolchain-3.0.16-1.arm64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "4ecc95840c80fff33efc1e747c057eae97648e13",
+          "sha256": "b6c3be0bf999042c42276b0b645e4ddca772a4f44eabe758be24c17e968321a7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/mac_os_x/12/angry-omnibus-toolchain-3.0.27-1.arm64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "06b176adfa516930e8c821301622d2f8ed85abb0",
+          "sha256": "f3d51c4ceade6f7e7a07f16af43dcc566daf0a55eefcdabbeb3010fb5183a2e7",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/mac_os_x/12/angry-omnibus-toolchain-3.0.28-1.arm64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "1a32dd530d7d1d1564ae7410589ea07db685ae42",
+          "sha256": "b13bad1e24230f3c754aceacf65b49e6026472659c800acd6c759f22f9eb6306",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/mac_os_x/12/angry-omnibus-toolchain-3.0.31-1.arm64.dmg"
         }
       },
       "x86_64": {
@@ -6904,6 +7549,26 @@
           "sha1": "ec74f1e6df9c38ca4a633017505a831e9d3661ba",
           "sha256": "3660b54d17bfa7427a9a97ab23b8608d477adf85c132bfe5093885cb74b3b115",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/mac_os_x/12/angry-omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "24bdd2cc085b1edacc3bb2c7964b9aff5acfa79c",
+          "sha256": "2cdfabc40f2abd7811e12b04240745c8836c2973cf7066811d86c01368d911ac",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/mac_os_x/12/angry-omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "8b191b578f9b03e6dfbe13304071f0dcf6f2bb14",
+          "sha256": "92a9af33c1ead7ebb09e46020af4043ee3df0d3a40a3fde5c65980e789df3074",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/mac_os_x/12/angry-omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "89bbbd52cc5d8cad83ee75060224dc943707507c",
+          "sha256": "521526ae6cec6abfd9ff47d16250620e34d3ec3bb70409fe29fbcad36b28ee53",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/mac_os_x/12/angry-omnibus-toolchain-3.0.28-1.x86_64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "f0a8bd7d4571a98570b5a4f5c8dd16e6566e12a0",
+          "sha256": "a9c928e551e384d5a8d52e2eb0675b2238a984cd1e8179d2d943ff0802c25580",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/mac_os_x/12/angry-omnibus-toolchain-3.0.31-1.x86_64.dmg"
         }
       }
     }
@@ -7397,6 +8062,31 @@
           "sha1": "c8cf225a45b7f5f9fc3f8a728d340e87db0c06a2",
           "sha256": "f9f5be50655054b1b359d1859ddcf65bc684a8b62b7e085a3f9fe6da1d210b42",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/sles/12/angry-omnibus-toolchain-3.0.0-1.sles12.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "a11bad4c99e5ceb95cc4f14353694196dc8ec32a",
+          "sha256": "c2884068c279b99afe37089e843cd3101b066aaca80d0dcd7f651e5917a6ff47",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/sles/12/angry-omnibus-toolchain-3.0.16-1.sles12.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "8fa1b451ebaa08dcd8ffaaf9db5eba43a6257699",
+          "sha256": "93c86fd1e6a7cc203860c91944dd5672feb98aedfc6accfcc7c3fa56d21ac6d9",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/sles/12/angry-omnibus-toolchain-3.0.27-1.sles12.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "a8fcbfc068d9961f872ba0537466d3a11084eaa3",
+          "sha256": "ff20a0f0f7c18f782e93663cb85f1dd3d862b25c2537dacf93bfe87538f9ead9",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/sles/12/angry-omnibus-toolchain-3.0.28-1.sles12.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "101cb58edbbf8cc8425f57094da831625f9fec87",
+          "sha256": "c96e1692c1bad394049afb24dd8e14fe65a6dc82cb7504bcc37dab92ea3e5d5b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.29/sles/12/angry-omnibus-toolchain-3.0.29-1.sles12.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "c338eb56135c83f07d6dafbb600c3b92b935c929",
+          "sha256": "362d72effb5f2be9446aff02e0616b634b144e354b7a9a49b640c5e4262b1890",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/sles/12/angry-omnibus-toolchain-3.0.31-1.sles12.s390x.rpm"
         }
       },
       "x86_64": {
@@ -7549,6 +8239,26 @@
           "sha1": "bcf176fe9177e4568066cbc350666b697a6623af",
           "sha256": "5988bd4e74fe8466d587598cb1c37e76d5b562ba044e3b86c723d9b4710193cd",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/sles/12/angry-omnibus-toolchain-3.0.0-1.sles12.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "00acfc13e29244ed6b7db497fd79c714cd889bc0",
+          "sha256": "2de6d739b266ae4683f065af13b217143db0d3920442d755e53faa099f2e3761",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/sles/12/angry-omnibus-toolchain-3.0.16-1.sles12.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "0d34397309312df235533528e49158830c8b8951",
+          "sha256": "07c0e130be4819dff81bdababd0bfae25eefef9be8221291f411d4a1639a82c2",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/sles/12/angry-omnibus-toolchain-3.0.27-1.sles12.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "15c576a84e4c3ba2c6e84b8d507d48565c17adb0",
+          "sha256": "d5c4d4ec42f95a2cd8974cbfafd97afaf26211cf0d38f12e256cfbff495072de",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/sles/12/angry-omnibus-toolchain-3.0.28-1.sles12.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "75db27b1ea99ea846a8941436df44a4b996c5f7d",
+          "sha256": "8dc4a362673b2cc11fd8986b9e6a49dc253f79cc2c1712b4f4f1ad7929e51a24",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/sles/12/angry-omnibus-toolchain-3.0.31-1.sles12.x86_64.rpm"
         }
       }
     },
@@ -7623,6 +8333,31 @@
           "sha1": "c8cf225a45b7f5f9fc3f8a728d340e87db0c06a2",
           "sha256": "f9f5be50655054b1b359d1859ddcf65bc684a8b62b7e085a3f9fe6da1d210b42",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/sles/15/angry-omnibus-toolchain-3.0.0-1.sles12.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "a11bad4c99e5ceb95cc4f14353694196dc8ec32a",
+          "sha256": "c2884068c279b99afe37089e843cd3101b066aaca80d0dcd7f651e5917a6ff47",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/sles/15/angry-omnibus-toolchain-3.0.16-1.sles12.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "8fa1b451ebaa08dcd8ffaaf9db5eba43a6257699",
+          "sha256": "93c86fd1e6a7cc203860c91944dd5672feb98aedfc6accfcc7c3fa56d21ac6d9",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/sles/15/angry-omnibus-toolchain-3.0.27-1.sles12.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "a8fcbfc068d9961f872ba0537466d3a11084eaa3",
+          "sha256": "ff20a0f0f7c18f782e93663cb85f1dd3d862b25c2537dacf93bfe87538f9ead9",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/sles/15/angry-omnibus-toolchain-3.0.28-1.sles12.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "101cb58edbbf8cc8425f57094da831625f9fec87",
+          "sha256": "c96e1692c1bad394049afb24dd8e14fe65a6dc82cb7504bcc37dab92ea3e5d5b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.29/sles/15/angry-omnibus-toolchain-3.0.29-1.sles12.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "c338eb56135c83f07d6dafbb600c3b92b935c929",
+          "sha256": "362d72effb5f2be9446aff02e0616b634b144e354b7a9a49b640c5e4262b1890",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/sles/15/angry-omnibus-toolchain-3.0.31-1.sles12.s390x.rpm"
         }
       },
       "x86_64": {
@@ -7725,6 +8460,26 @@
           "sha1": "bcf176fe9177e4568066cbc350666b697a6623af",
           "sha256": "5988bd4e74fe8466d587598cb1c37e76d5b562ba044e3b86c723d9b4710193cd",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/sles/15/angry-omnibus-toolchain-3.0.0-1.sles12.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "00acfc13e29244ed6b7db497fd79c714cd889bc0",
+          "sha256": "2de6d739b266ae4683f065af13b217143db0d3920442d755e53faa099f2e3761",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/sles/15/angry-omnibus-toolchain-3.0.16-1.sles12.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "0d34397309312df235533528e49158830c8b8951",
+          "sha256": "07c0e130be4819dff81bdababd0bfae25eefef9be8221291f411d4a1639a82c2",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/sles/15/angry-omnibus-toolchain-3.0.27-1.sles12.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "15c576a84e4c3ba2c6e84b8d507d48565c17adb0",
+          "sha256": "d5c4d4ec42f95a2cd8974cbfafd97afaf26211cf0d38f12e256cfbff495072de",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/sles/15/angry-omnibus-toolchain-3.0.28-1.sles12.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "75db27b1ea99ea846a8941436df44a4b996c5f7d",
+          "sha256": "8dc4a362673b2cc11fd8986b9e6a49dc253f79cc2c1712b4f4f1ad7929e51a24",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/sles/15/angry-omnibus-toolchain-3.0.31-1.sles12.x86_64.rpm"
         }
       },
       "aarch64": {
@@ -7762,6 +8517,26 @@
           "sha1": "4b9fafad26dc300c001b6013952dad0384814c41",
           "sha256": "d8bef365e20c10ef7a95ce9549069535642c8f2f35fa1ac3da1206b7162063f9",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/sles/15/angry-omnibus-toolchain-3.0.0-1.sles15.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "f0883d843a5f873d71bb37e58d2ff020ad9c206b",
+          "sha256": "ab6dece39bc9cb4866318891c2e37711e52ceeffbd779f4dfd26001139b14fca",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/sles/15/angry-omnibus-toolchain-3.0.16-1.sles15.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "422c5aa3253bc6559e9bcbf72bbf6a34ed3f8693",
+          "sha256": "a5f2d0d686c807ea1e75f2ae89b508bcc17a4de09118119e81d4878ca9821fcd",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/sles/15/angry-omnibus-toolchain-3.0.27-1.sles15.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "92e1aaa9cb904acc81d8ae58f57275f305af006c",
+          "sha256": "67c9fb48c45ed2ce343c138c3f1e17556da7de5d7e0c6020a73466edb91b96c0",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/sles/15/angry-omnibus-toolchain-3.0.28-1.sles15.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "96e63421d30bd537913d0a6e0eb039f2316c133f",
+          "sha256": "c06eae860b82bcc9b2ab0347b374ff35c2e3e02765bb25908d8b4b0c7de68a3d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/sles/15/angry-omnibus-toolchain-3.0.31-1.sles15.aarch64.rpm"
         }
       }
     }
@@ -8164,6 +8939,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/2012/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/2012/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/2012/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/2012/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/2012/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -8450,6 +9245,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/2012r2/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/2012r2/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/2012r2/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/2012r2/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/2012r2/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -8781,6 +9596,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/10/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/10/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/10/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/10/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/10/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -9057,6 +9892,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/2016/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/2016/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/2016/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/2016/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/2016/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -9208,6 +10063,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/2019/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/2019/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/2019/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/2019/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/2019/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -9222,6 +10097,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/11/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/11/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/11/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/11/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/11/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -9236,6 +10131,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/2022/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/2022/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/2022/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/2022/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/2022/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -9250,6 +10165,26 @@
           "sha1": "d396e7dc799bf3b6eca33f18a2c3b2d00ec69f41",
           "sha256": "37929dd609e1e2abf05ac838a273c6e2583f7ac5b960c4d37df0c789c6d32e2e",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/windows/8/angry-omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "16692373875a6944bade0ee9f02187b96071af5b",
+          "sha256": "db91fa9f30dcc6e3fd701db45e2d38cb3896d8d06acfe0777a5393ebad23254c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/windows/8/angry-omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "6b1f96a36ba2c85aeda24e08c07449333a148e41",
+          "sha256": "59eeae350b6ae234016280805227466a6118a5081fef9572a99efd9c6e2fbdb6",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/windows/8/angry-omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "94c243aaee76bc7d8c4e245126c3c855f7ef980d",
+          "sha256": "e3f9f719cfbc38ddad69cfdb52055c03fc8defb8479e8dd52dcc944356f787fb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/windows/8/angry-omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "8ab9745cca1f70852c0e139b6c76378c4caaa441",
+          "sha256": "c8d27ad348575b79efbd7e1c0747e8d99e78f947ede16234ca2721a885c57402",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/windows/8/angry-omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     }
@@ -9266,6 +10201,26 @@
           "sha1": "42a2f44e18bf6da00868212b19eb57c6aa0599d3",
           "sha256": "75a45f4619e21e5b5015fd3c4d07fda659cb4a0fcf411101bade8dba5f2c8e17",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/amazon/2/angry-omnibus-toolchain-3.0.0-1.el7.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "ed8660c9cf68ca52ccebdd1f39ddabe1a5b18ca6",
+          "sha256": "e9647c6df5f80b362a14471512646f2c729b5b78b073abc3a81282b5783f779e",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/amazon/2/angry-omnibus-toolchain-3.0.16-1.el7.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "8b6b350f8d3c510e81782fd1f341f8c24378fb07",
+          "sha256": "8f5c3b37a344b2ca06c177a53e3568c9f6ed33470f645dbdca1d4ee484233e64",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/amazon/2/angry-omnibus-toolchain-3.0.27-1.el7.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "fc3be5f329ddfad8ab353128ab8ac538e25e6e14",
+          "sha256": "7521a25e70f16ac0eabca556940cc4b52c6c0e566a0f62d10a5bc44fd26c2da1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2/angry-omnibus-toolchain-3.0.28-1.el7.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "3a8da55ae2d721cfa903159c0bc825da0e6a33f4",
+          "sha256": "58b7fadced3c2b90d79f53e59fa0ee3db87817a90404b353bdfbee07f9f99e8d",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2/angry-omnibus-toolchain-3.0.31-1.el7.x86_64.rpm"
         }
       },
       "aarch64": {
@@ -9278,6 +10233,26 @@
           "sha1": "fdbcbe1ee9ffacf18c821a29fc7ffab40873120f",
           "sha256": "15d30756435ee4a47927faa55fe4ff4bb618bbc71148e583bf436ca3a15ea6e6",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/amazon/2/angry-omnibus-toolchain-3.0.0-1.el7.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "9f82555297bcbdc1cc92d58a3348b6895893e344",
+          "sha256": "b760901bace619b4a541c8659c0e8f2d0b7b88026bd76907d6c178f146586f81",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/amazon/2/angry-omnibus-toolchain-3.0.16-1.el7.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "ab04d22b7b347acdef45bb88f6304d90bff30574",
+          "sha256": "991d40ed0f4c2643ade4b98d4186f5ac04788d1487b745de623623693a7d5f31",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/amazon/2/angry-omnibus-toolchain-3.0.27-1.el7.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "8e363cbadf932313d32b0f5c805db13bbbfe4568",
+          "sha256": "58d1faa8c8fcdcef6c742a620d2a46c988e05c8142230c2ef058828132c7f2d1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2/angry-omnibus-toolchain-3.0.28-1.el7.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "196f6bc8f39b53dc665d61b60a70470c54ecea41",
+          "sha256": "dcadd4a9225de8c003ca48f38638d048c112fa5e2608e152aecf4080976569eb",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2/angry-omnibus-toolchain-3.0.31-1.el7.aarch64.rpm"
         }
       }
     },
@@ -9287,6 +10262,26 @@
           "sha1": "bbc572ee5853123069ba5c79938efc9fdf7bc527",
           "sha256": "05ac305faed986fd0dc7797020f08b3c57d13b9d7b2121ec9d7306e6021d0af3",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/amazon/2022/angry-omnibus-toolchain-3.0.0-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "0482ccab95b9a6778c537fb6f353e3e2be3e0f27",
+          "sha256": "93ab0cbf15c2bf39ffbdabf91937b803c6b8b13035dec8fec2f9b421baf8d7b2",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/amazon/2022/angry-omnibus-toolchain-3.0.16-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "9ec62a392ba8dc3330ffa73010fc4357b1ff9338",
+          "sha256": "0b2b7cce4e11fe6b28f769f90a6a066a20a5cee893507db0922703952c0add66",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/amazon/2022/angry-omnibus-toolchain-3.0.27-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "f89cbf76d1c4551c79c1325326bf6c993e085b7c",
+          "sha256": "d6a081aa3d1471e35a846e25c46e36b8e34bda5eb6332485def2fcd21bf5a049",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2022/angry-omnibus-toolchain-3.0.28-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "7dc9a79aac459b216b8de57513457cf47e970add",
+          "sha256": "20451bf5090cba9eeca43033bd0f42b12954e81d6805bb6e172a8448bb90339b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2022/angry-omnibus-toolchain-3.0.31-1.amazon2022.aarch64.rpm"
         }
       },
       "x86_64": {
@@ -9294,11 +10289,131 @@
           "sha1": "f8283ff98b61984320ef3c73776d7c0d6651ef44",
           "sha256": "424615c6edbe28c3bbec0613771997d80529215014b3d1aa994646a8b25bae18",
           "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.0/amazon/2022/angry-omnibus-toolchain-3.0.0-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "e304e3334cfe882e968500db79fb086f079e05ce",
+          "sha256": "763bb3e9d2360aa550ca6baeb3c5588402545d4fb45ecae35cfa391a121f5812",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.16/amazon/2022/angry-omnibus-toolchain-3.0.16-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "c1c74651dac7212b5882ef397343e4950ae9e174",
+          "sha256": "a3ad1f9a3396d8cd66e73493ec650a5d58e98be935899165bffe586c706b4e90",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/amazon/2022/angry-omnibus-toolchain-3.0.27-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "16b30a736f3142f0c287aa745325f388a39f0ff1",
+          "sha256": "c8787bdb5de6b3967d9d9b6a2cc59a60c264c1d401fccf1edce6ea1f3fd55559",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2022/angry-omnibus-toolchain-3.0.28-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "a6933f8bb9edebdc7d320cd957d3d8501440460d",
+          "sha256": "d348f5d1fe72d5304a422f79b1b8e7cfd3711d93007129593b710d641b80fb82",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2022/angry-omnibus-toolchain-3.0.31-1.amazon2022.x86_64.rpm"
+        }
+      }
+    },
+    "2023": {
+      "aarch64": {
+        "3.0.28": {
+          "sha1": "1c6e84b9d5023d9181c4cd911065e1b09c857ea3",
+          "sha256": "2250b73ca3935cfb162cd80e51ecc5b8dc0fd9d0b275f1f516e031568ff89b8f",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2023/angry-omnibus-toolchain-3.0.28-1.amazon2023.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "9f171e0d3aa258e494df0425f205bd82ee377f49",
+          "sha256": "9487be9c8b0e6ea7d6f20441b61fad56cc7bf6110e1a9364ab009e120a5bd9fe",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2023/angry-omnibus-toolchain-3.0.31-1.amazon2023.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.0.28": {
+          "sha1": "203cb7cf2527af091fe8720af5524b2f1f3f67cc",
+          "sha256": "3f41f1987a76393820c45a9fbcc01ffb0cc56a309fb4181e9ce03fe7ab27717c",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/amazon/2023/angry-omnibus-toolchain-3.0.28-1.amazon2023.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "ed12ed402ba83259ebced563797856ba79595f6e",
+          "sha256": "22124dc926347fb89bcec708518c6ed1e7842406b5f8c1dbff3acdc8d2fa6c33",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/amazon/2023/angry-omnibus-toolchain-3.0.31-1.amazon2023.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "rocky": {
+    "8": {
+      "aarch64": {
+        "3.0.27": {
+          "sha1": "e17fd2bc7c328609f2e1dbe409606eef0cc99850",
+          "sha256": "91941b5634bee2b8392e0a595bfc5f7350f41ae203551f6f56c642dab233bd2b",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/rocky/8/angry-omnibus-toolchain-3.0.27-1.rocky8.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "2356b155c65446d264df3a076814b6833a5a97f6",
+          "sha256": "509bd9af3ba018190a9f6e7aede1ac91d3f94c6de67c71d98165db9be689d946",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/rocky/8/angry-omnibus-toolchain-3.0.28-1.rocky8.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "ee1a38133eacba64037488750be2f4ef8b7c9315",
+          "sha256": "2e7a399e504c918431c0487de0b2dc1f3ec5120c4205f8b9ad9f5f000477a525",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/rocky/8/angry-omnibus-toolchain-3.0.31-1.rocky8.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.0.27": {
+          "sha1": "99cff710827766e189e1023bb5e2ec7299b5c415",
+          "sha256": "ffe5bf77ce6e5d073a0a5a57c5bbffa6904bcf28cdadb518ff835dd9ccf87350",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/rocky/8/angry-omnibus-toolchain-3.0.27-1.rocky8.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "920a77ee0b8d6e4db46370d517be6718a5b8d978",
+          "sha256": "4d2654845a248fac5f77a0a35ef0f8c6401f1d3c437b420229b7fb070b93f4ea",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/rocky/8/angry-omnibus-toolchain-3.0.28-1.rocky8.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "63532192f63b6870c4ff35e447ab1186deda7b44",
+          "sha256": "ca79689dfbfc005c011a664c230511105e292e4ca6be75cf39edaf89610b44e5",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/rocky/8/angry-omnibus-toolchain-3.0.31-1.rocky8.x86_64.rpm"
+        }
+      }
+    },
+    "9": {
+      "aarch64": {
+        "3.0.27": {
+          "sha1": "ff432d1a17193524d0efe769f41d5cc0c26aaa60",
+          "sha256": "e4ebbfe0ef919e786281720fcc4b72e979fb495a89fce6465097dcaac415b2fe",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/rocky/9/angry-omnibus-toolchain-3.0.27-1.rocky9.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "3169f39000fac97667e89a48479e3fceed78ac18",
+          "sha256": "bfc9e040fe4c07699a8ab2faa0db2b0c4f2be46ecbe6c2c98c67a329bc4a9dd0",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/rocky/9/angry-omnibus-toolchain-3.0.28-1.rocky9.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "56f4ff74e86d92e878c0f83d9d2c40dbacfb64cf",
+          "sha256": "64998e0c7e96890bac0b9bad070f76a65e2551d095aac775578a0a8bf99356e1",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/rocky/9/angry-omnibus-toolchain-3.0.31-1.rocky9.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.0.27": {
+          "sha1": "3093c832d706171433437d4a07621d852330330c",
+          "sha256": "8e389d912fbd79364696d54a636fe96dc395891f8a49941cdf67d5083bfd5d44",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.27/rocky/9/angry-omnibus-toolchain-3.0.27-1.rocky9.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "f36196ab2a997d0933663efc340959073bd27c70",
+          "sha256": "016873b875b6a6cdea3edfd71cd78299c290dc957f4125c87da657c53276ac97",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.28/rocky/9/angry-omnibus-toolchain-3.0.28-1.rocky9.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "683d96aa982bfc8600e72df492a1f96d72acd6fc",
+          "sha256": "b4c2734702b6fbfce86742016ed901e938c3585c1c5cce6d62209cc9418de045",
+          "url": "https://packages.chef.io/files/stable/angry-omnibus-toolchain/3.0.31/rocky/9/angry-omnibus-toolchain-3.0.31-1.rocky9.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2022-06-03 00:09:03 +0000"
+    "timestamp": "2024-09-14 08:04:34 -0400"
   }
 }
