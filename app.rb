@@ -71,8 +71,35 @@ class Omnitruck < Sinatra::Base
     reporter.logger = logger
     reporter.statsd = Statsd.new('localhost', 8125)
     use Trashed::Rack, reporter
-  end
 
+    # Initialize Redis connection
+    @redis = Redis.new 
+
+    # Load data into Redis from files
+    load_data_into_redis
+
+  end
+  
+  def load_data_into_redis
+    Dir.glob('spec/data/*') do |file|
+      next unless File.file?(file)
+
+      begin
+        data = JSON.parse(File.read(file))  # JSON format
+
+        # Store each key-value pair in Redis
+        data.each do |key, value|
+          @redis.set(key, value)
+        end
+
+        puts "Loaded data from #{file} into Redis."
+      rescue JSON::ParserError => e
+        puts "Failed to parse #{file}: #{e.message}"
+      rescue => e
+        puts "Error loading data from #{file}: #{e.message}"
+      end
+    end
+  end
   configure :development, :test do
     set :raise_errors, true  # needed to get accurate backtraces out of rspec
   end
@@ -198,8 +225,9 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-
+    param :v,       String
     package_info = get_package_info
+
     redirect package_info["url"]
   end
 
@@ -220,7 +248,7 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-
+    param :v,       String
 
     package_info = get_package_info
     if request.accept? 'text/plain'
@@ -388,6 +416,15 @@ class Omnitruck < Sinatra::Base
     current_platform = params['p']
     current_platform_version = params['pv']
     current_arch = params['m']
+    current_version = params['v']
+    # Print the values to the console
+  puts "*****************"
+  puts "Current Project: #{current_project}"
+  puts "Current Platform: #{current_platform}"
+  puts "Current Platform Version: #{current_platform_version}"
+  puts "Current Architecture: #{current_arch}"
+  puts "Current Version: #{current_version}"
+  puts "*****************"
 
     # Create VersionResolver here to take advantage of #parse_version_string
     # method which is called in the constructor. This will return nil or an Opscode::Version instance
@@ -400,6 +437,15 @@ class Omnitruck < Sinatra::Base
 
     # Set ceiling version if nil in place of latest version. This makes comparisons easier.
     opscode_version = Opscode::Version.parse('999.999.999') if opscode_version.nil?
+
+    # Check for chef-server product and version
+  if current_project == 'chef-server' && opscode_version >= Opscode::Version.parse('15.10.12') && current_platform == 'amazon' && current_platform_version == '2'
+    # Logic to return the Amazon RPM package
+    return Chef::VersionResolver.new(params['v'], cache.manifest_for(current_project, channel), channel, current_project).package_info('amazon', current_platform_version, current_arch)
+  elsif current_project == 'chef-server' && opscode_version <= Opscode::Version.parse('15.10.12')
+    # Logic to continue picking the EL-7 artifacts
+    return Chef::VersionResolver.new(params['v'], cache.manifest_for(current_project, channel), channel, current_project).package_info('el', '7', current_arch)
+  end
 
     # Windows artifacts require special handling
     # 1) If no architecture is provided we default to i386
