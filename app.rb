@@ -198,8 +198,9 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-
+    param :v,       String
     package_info = get_package_info
+
     redirect package_info["url"]
   end
 
@@ -220,7 +221,7 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-
+    param :v,       String
 
     package_info = get_package_info
     if request.accept? 'text/plain'
