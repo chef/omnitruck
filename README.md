@@ -159,6 +159,15 @@ There are two parts to running omnitruck.
 
 First, you need to populate its cache. Redis is used for the cache, and you will want to have a redis server running beforehand:
 
+## Docker file
+```docker
+docker pull redis:7.4.0-alpine3.20
+
+then to run it:
+docker run --cpus 4 --memory 8g -it --privileged -p LOCAL_IP:6379:6379 IMAGE_NAME_OR_HASH
+ex: docker run --cpus 4 --memory 8g -it --privileged -p 172.20.0.178:6379:6379 --volume $(pwd):/home 7de0dedd123b8cb2b105ace4e8d00b8bba5ad7be39617dfa229acff315fe4fbf
+```
+
 ```bash
 # Choose the following to install redis based on your OS
 brew install redis
@@ -166,6 +175,8 @@ apt-get install redis
 # Then just start it manually
 redis-server
 ```
+
+Then follow directions in [Updating Mock Data](https://github.com/chef/omnitruck?tab=readme-ov-file#updating-mock-data)
 
 In production the cache populating is handled by a cron job. For development, you need to do this manually:
 
@@ -207,6 +218,8 @@ bundle exec unicorn
     ```
 2. Update the latest version methods in `spec/spec_helper.rb`
 3. Update any tests that may no longer be accurate. This is especially true for tests that expect a specific package or package version to exist in the current channel. Artifacts in the current channel expire after a certain time, so tests may become invalid.
+4. once all the data in the spec/data folder is downloaded (fyi this takes A LONG time if the file is out of date)
+5. load the real data into your local running redis server by dropping to root and running `ruby redisManual.rb`
 
 ## License
 
