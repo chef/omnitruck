@@ -71,8 +71,35 @@ class Omnitruck < Sinatra::Base
     reporter.logger = logger
     reporter.statsd = Statsd.new('localhost', 8125)
     use Trashed::Rack, reporter
-  end
 
+    # Initialize Redis connection
+    @redis = Redis.new 
+
+    # Load data into Redis from files
+    load_data_into_redis
+
+  end
+  
+  def load_data_into_redis
+    Dir.glob('spec/data/*') do |file|
+      next unless File.file?(file)
+
+      begin
+        data = JSON.parse(File.read(file))  # JSON format
+
+        # Store each key-value pair in Redis
+        data.each do |key, value|
+          @redis.set(key, value)
+        end
+
+        puts "Loaded data from #{file} into Redis."
+      rescue JSON::ParserError => e
+        puts "Failed to parse #{file}: #{e.message}"
+      rescue => e
+        puts "Error loading data from #{file}: #{e.message}"
+      end
+    end
+  end
   configure :development, :test do
     set :raise_errors, true  # needed to get accurate backtraces out of rspec
   end
