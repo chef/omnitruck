@@ -66,7 +66,7 @@ RSpec.configure do |conf|
   #
 
   def latest_stable_chef
-    '17.10.3'
+    '18.5.0'
   end
 
   def latest_stable_chefdk
@@ -74,19 +74,19 @@ RSpec.configure do |conf|
   end
 
   def latest_stable_chef_server
-    '14.15.10'
+    '15.10.12'
   end
 
   def latest_stable_chef_workstation
-    '22.5.923'
+    '24.8.1068'
   end
 
   def latest_current_chef
-    '18.0.92'
+    '18.5.1'
   end
 
   def latest_current_chef_workstation
-    '22.6.967'
+    '24.8.1068'
   end
 
   # Uncomment to write failed specs to file.
