@@ -1276,7 +1276,7 @@ context 'Omnitruck' do
     let(:params) do
       params = {}
       params[:p] = 'ubuntu'
-      params[:pv] = '16.04'
+      params[:pv] = '18.04'
       params[:m] = 'x86_64'
       params[:prerelease] = prerelease unless prerelease.nil? # could be false, explicitly
       params[:nightlies] = nightlies unless nightlies.nil?    # could be false, explicitly
@@ -1301,12 +1301,12 @@ context 'Omnitruck' do
     end
 
     {
-      '/download' => spec_data_record('stable', 'chef', 'ubuntu', '16.04', 'x86_64', latest_stable_chef)['url'],
-      '/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server)['url'],
-      '/chef/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server)['url'],
-      '/metadata' => spec_data_record('stable', 'chef', 'ubuntu', '16.04', 'x86_64', latest_stable_chef).merge({ 'version' => latest_stable_chef }),
-      '/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
-      '/chef/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '16.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
+      '/download' => spec_data_record('stable', 'chef', 'ubuntu', '18.04', 'x86_64', latest_stable_chef)['url'],
+      '/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server)['url'],
+      '/chef/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server)['url'],
+      '/metadata' => spec_data_record('stable', 'chef', 'ubuntu', '18.04', 'x86_64', latest_stable_chef).merge({ 'version' => latest_stable_chef }),
+      '/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
+      '/chef/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
       '/chef/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
       '/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
       '/full_client_list' => nil,
