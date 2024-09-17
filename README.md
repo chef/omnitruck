@@ -219,7 +219,8 @@ bundle exec unicorn
 2. Update the latest version methods in `spec/spec_helper.rb`
 3. Update any tests that may no longer be accurate. This is especially true for tests that expect a specific package or package version to exist in the current channel. Artifacts in the current channel expire after a certain time, so tests may become invalid.
 4. once all the data in the spec/data folder is downloaded (fyi this takes A LONG time if the file is out of date)
-5. load the real data into your local running redis server by dropping to root and running `ruby redisManual.rb`
+5. load the data into your local running redis server by dropping to root and running `ruby redisManual.rb`
+   1. this is still a WIP, the format that the file is in now does load the data into the format that is expected.
 
 ## License
 
