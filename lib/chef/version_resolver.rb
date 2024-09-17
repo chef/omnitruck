@@ -145,8 +145,8 @@ class Chef
         # Merge metadata
         raw_metadata.merge!(build_map[core_platform][version][l_target_arch])
       end
-      # Debug information
-      puts "Debug Info - Raw Metadata: #{raw_metadata.inspect}"
+      # Uncomment this line to see the raw metadata as it gets executed. Useful for when you want to see the maped versions in json format.
+      # puts "Debug Info - Raw Metadata: #{raw_metadata.inspect}"
       raw_metadata
     end
 
