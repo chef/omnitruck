@@ -56,9 +56,44 @@ RSpec.configure do |conf|
   end
 
   def spec_data_record(c, project, p, pv, m, v)
-    JSON.parse(File.read(File.join(SPEC_DATA, c, "#{project}-manifest.json")))[p][pv][m][v]
-  rescue NoMethodError
-    raise "Could not find spec data record for #{c}/#{project}/#{p}/#{pv}/#{m}/#{v}"
+    # Debugging inputs to the method
+    puts "spec_data_record inputs:"
+    puts "Channel: #{c}, Project: #{project}, Platform: #{p}, Platform Version: #{pv}, Architecture: #{m}, Version: #{v}"
+  
+    # Try to load the JSON file and print the keys to check if the file and structure are correct
+    file_path = File.join(SPEC_DATA, c, "#{project}-manifest.json")
+    puts "Loading file: #{file_path}"
+    
+    begin
+      data = JSON.parse(File.read(file_path))
+      puts "File loaded successfully. Data structure keys: #{data.keys}"
+  
+      # Print the available platform versions and architectures
+      if data[p]
+        puts "Available platform versions for #{p}: #{data[p].keys}"
+        if data[p][pv]
+          puts "Available architectures for platform version #{pv}: #{data[p][pv].keys}"
+        else
+          puts "Platform version #{pv} not found for platform #{p}."
+        end
+      else
+        puts "Platform #{p} not found in the manifest."
+      end
+  
+      # Attempt to retrieve the specific record
+      result = data[p][pv][m][v]
+      puts "Record found: #{result}"
+      return result
+  
+    rescue NoMethodError
+      # Print error details if something goes wrong
+      puts "Error: Could not find spec data record for #{c}/#{project}/#{p}/#{pv}/#{m}/#{v}"
+      raise "Could not find spec data record for #{c}/#{project}/#{p}/#{pv}/#{m}/#{v}"
+    rescue JSON::ParserError => e
+      # Handle JSON parsing errors with additional information
+      puts "Error parsing JSON file: #{e.message}"
+      raise "Error parsing JSON file at #{file_path}"
+    end
   end
 
   #

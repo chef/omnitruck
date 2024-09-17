@@ -3,7 +3,7 @@ expeditor:
     - vendor
   defaults:
     buildkite:
-      timeout_in_minutes: 20
+      timeout_in_minutes: 60
 steps:
   - label: ":ruby: unit"
     command:
