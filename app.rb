@@ -255,7 +255,7 @@ class Omnitruck < Sinatra::Base
       # Update the package_info with the rewritten URL
       package_info["url"] = rewritten_url
       # Debug output of the rewritten URL
-      # puts "Debug Info - Rewritten Metadata URL: #{rewritten_url}"
+      puts "Debug Info - Rewritten Metadata URL: #{rewritten_url}"
     end
     # Respond with the updated package stuff
     if request.accept? 'text/plain'
