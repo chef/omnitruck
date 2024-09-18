@@ -230,7 +230,6 @@ class Omnitruck < Sinatra::Base
     # Legacy params which affect the default channel
     param :prerelease, Boolean
     param :nightlies,  Boolean
-  
     param :channel, String, default: lambda {
       if params['prerelease'] || params['nightlies']
         'current'
@@ -238,18 +237,14 @@ class Omnitruck < Sinatra::Base
         'stable'
       end
     }
-  
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-  
     # Get package information
     package_info = get_package_info
-  
     # Original URL from package info
     original_url = package_info["url"]
-  
     # Check if the URL needs to be rewritten for Amazon Linux 2
     if original_url.include?("/amazon/2023/") && params[:pv] == "2"
       # Rewrite the URL for Amazon Linux 2
@@ -257,14 +252,11 @@ class Omnitruck < Sinatra::Base
                        .gsub(/\/amazon\/2023\//, "/amazon/2/")
                        .gsub(/-amazon2023/, "-amazon2")
                        .gsub(/.amazon2023/, ".amazon2")
-  
       # Update the package_info with the rewritten URL
       package_info["url"] = rewritten_url
-  
       # Debug output of the rewritten URL
       # puts "Debug Info - Rewritten Metadata URL: #{rewritten_url}"
     end
-  
     # Respond with the updated package stuff
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
