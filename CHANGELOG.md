@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.34 -->
-## [0.1.34](https://github.com/chef/omnitruck/tree/0.1.34) (2024-02-19)
+<!-- latest_release 0.1.35 -->
+## [0.1.35](https://github.com/chef/omnitruck/tree/0.1.35) (2024-09-18)
 
 #### Merged Pull Requests
-- promote amazon-1 changes [#607](https://github.com/chef/omnitruck/pull/607) ([muthuja](https://github.com/muthuja))
+- Sean simmons progress/chef 15585 omnitruck amazon2 fix [#612](https://github.com/chef/omnitruck/pull/612) ([sean-simmons-progress](https://github.com/sean-simmons-progress))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Sean simmons progress/chef 15585 omnitruck amazon2 fix [#612](https://github.com/chef/omnitruck/pull/612) ([sean-simmons-progress](https://github.com/sean-simmons-progress)) <!-- 0.1.35 -->
 - promote amazon-1 changes [#607](https://github.com/chef/omnitruck/pull/607) ([muthuja](https://github.com/muthuja)) <!-- 0.1.34 -->
 - Update mixlib-install ver - amazon-2023 [#606](https://github.com/chef/omnitruck/pull/606) ([poorndm](https://github.com/poorndm)) <!-- 0.1.33 -->
 - Update mixlib-install ver  to pick rocky platform detection changes [#598](https://github.com/chef/omnitruck/pull/598) ([poorndm](https://github.com/poorndm)) <!-- 0.1.32 -->
