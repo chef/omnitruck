@@ -101,53 +101,52 @@ class Chef
     # Finds the raw metadata info for the given platform, platform_version
     # and machine_architecture
     def find_raw_metadata_for(target_platform, target_architecture)
-      # omnitruck has some core platforms like ubuntu, windows, ...
-      # and some secondary platforms that map onto core platforms like linuxmint, scientific
-      # mapped_name will return the original name if it is not mapped
       core_platform = target_platform.mapped_name
-
-      # first make sure we have some builds available for the given platform
-      if !build_map[core_platform]
-        raise InvalidDownloadPath, "Cannot find any #{OmnitruckDist::CLIENT_NAME} versions for core platform #{core_platform}: #{friendly_error_msg}"
+      # Debug information
+      puts "Debug Info - Core Platform: #{core_platform}"
+      # puts "Debug Info - Build Map: #{build_map.inspect}"
+      # Check for the existence of builds
+      unless build_map[core_platform]
+        raise InvalidDownloadPath, "Cannot find any versions for core platform #{core_platform}: #{friendly_error_msg}"
       end
-
-      # get all the available distro versions
+      # Collect available distro versions
       distro_versions_available = build_map[core_platform].keys
-
-      # if core_platform is amazon then remove versions less than 2022 because they are remapped to RHEL versions
-      # and should not be eligible for consideration
-      distro_versions_available.delete_if{ |v| v.to_i < 2022 } if core_platform == "amazon"
-
-      # select only the packages from the distro versions that are <= the version we are looking for
-      # we do not want to select el7 packages for el6 platform
-      distro_versions_available.select! {|v| dsl.new_platform_version(core_platform, v, target_architecture) <= target_platform }
-
-      if distro_versions_available.length == 0
-        raise InvalidDownloadPath, "Cannot find any available #{OmnitruckDist::CLIENT_NAME} versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
+      # Remove versions that are less than 2022 if the platform is amazon
+      distro_versions_available.delete_if { |v| v.to_i < 2022 } if core_platform == "amazon"
+      # Debug information
+      # puts "Debug Info - Available Distro Versions: #{distro_versions_available.inspect}"
+      # Ensure valid version mapping
+      filtered_versions = distro_versions_available.select do |v|
+        if core_platform == "amazon"
+          # Include Amazon Linux 2 explicitly
+          v == "2" || v == "2023"
+        else
+          # Map and filter other versions
+          mapped_version = dsl.new_platform_version(core_platform, v, target_architecture)
+          mapped_version <= target_platform
+        end
       end
-
-      # sort the available distro versions from earlier to later: 10.04 then 10.10 etc.
-      distro_versions_available.sort! {|v1,v2| dsl.new_platform_version(core_platform, v1, target_architecture) <=> dsl.new_platform_version(core_platform, v2, target_architecture) }
-
-      # Now filter out the metadata based on architecture
-      raw_metadata = { }
-      distro_versions_available.each do |version|
+      # Debug information
+      puts "Debug Info - Filtered Distro Versions: #{filtered_versions.inspect}"
+      if filtered_versions.empty?
+        raise InvalidDownloadPath, "Cannot find any available versions for this platform version #{target_platform.mapped_name} #{target_platform.mapped_version}: #{friendly_error_msg}"
+      end
+      raw_metadata = {}
+      filtered_versions.each do |version|
         l_target_arch = target_architecture
-
+        # Debug information
+        puts "Debug Info - Processing Version: #{version}"
+        # puts "Debug Info - Available Metadata: #{build_map[core_platform][version].inspect}"
         if build_map[core_platform][version][target_architecture].nil?
           next if target_platform.fallback_arch.nil?
           next if build_map[core_platform][version][target_platform.fallback_arch].nil?
-
           l_target_arch = target_platform.fallback_arch
         end
-
-        # Note that we do not want to make a deep merge here. We want the
-        # information coming from the build_map override the ones that are
-        # already in raw_metadata because we have sorted
-        # distro_versions_available and the later ones will be the correct ones.
+        # Merge metadata
         raw_metadata.merge!(build_map[core_platform][version][l_target_arch])
       end
-
+      # Uncomment this line to see the raw metadata as it gets executed. Useful for when you want to see the maped versions in json format.
+      # puts "Debug Info - Raw Metadata: #{raw_metadata.inspect}"
       raw_metadata
     end
 

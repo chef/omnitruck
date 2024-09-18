@@ -1,0 +1,442 @@
+{
+  "sles": {
+    "12": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "34a2b54ad471141d9c7f27c2d91d96f765ee3929",
+          "sha256": "a9bbb071eecbe9b5dc008db4bec926260a8d0bccd3b1db1b4e4360972613db02",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/sles/12/chef-foundation-3.2.9-1.sles12.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "3.2.9": {
+          "sha1": "1880a4eb2cf9b91b75cfb2dfed39dd0155a6a38c",
+          "sha256": "746ceda0f228d57981539066aca824d7f4133b254f323906bd4fb66a243a7249",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/sles/12/chef-foundation-3.2.9-1.sles12.s390x.rpm"
+        }
+      }
+    },
+    "15": {
+      "s390x": {
+        "3.2.9": {
+          "sha1": "1880a4eb2cf9b91b75cfb2dfed39dd0155a6a38c",
+          "sha256": "746ceda0f228d57981539066aca824d7f4133b254f323906bd4fb66a243a7249",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/sles/15/chef-foundation-3.2.9-1.sles12.s390x.rpm"
+        }
+      },
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "34a2b54ad471141d9c7f27c2d91d96f765ee3929",
+          "sha256": "a9bbb071eecbe9b5dc008db4bec926260a8d0bccd3b1db1b4e4360972613db02",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/sles/15/chef-foundation-3.2.9-1.sles12.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "c670d06b678e7c0d74b1f87b8896006456f3cd2c",
+          "sha256": "38bf3daa0bb065c15d4ccd21a6c12228385ea4635b6671bd6289bc98af2db745",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/sles/15/chef-foundation-3.2.9-1.sles15.aarch64.rpm"
+        }
+      }
+    }
+  },
+  "debian": {
+    "9": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "28ff2ef4ebb4ceba4d5788d0d97260868ede9008",
+          "sha256": "6df2ce339e0cd3517d31459fcbce0c4d8fa22812740d6580aa034d8ee19180fc",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/debian/9/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      }
+    },
+    "10": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "28ff2ef4ebb4ceba4d5788d0d97260868ede9008",
+          "sha256": "6df2ce339e0cd3517d31459fcbce0c4d8fa22812740d6580aa034d8ee19180fc",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/debian/10/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "bf1b3f0699565cdeb03445f08b9d9d485732693d",
+          "sha256": "f3384aa4696e8c8aa42821aebc1e08a3c8f62de65df693ea665d3fd7ee9455d0",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/debian/10/chef-foundation_3.2.9-1_arm64.deb"
+        }
+      }
+    },
+    "11": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "28ff2ef4ebb4ceba4d5788d0d97260868ede9008",
+          "sha256": "6df2ce339e0cd3517d31459fcbce0c4d8fa22812740d6580aa034d8ee19180fc",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/debian/11/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "bf1b3f0699565cdeb03445f08b9d9d485732693d",
+          "sha256": "f3384aa4696e8c8aa42821aebc1e08a3c8f62de65df693ea665d3fd7ee9455d0",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/debian/11/chef-foundation_3.2.9-1_arm64.deb"
+        }
+      }
+    }
+  },
+  "amazon": {
+    "2023": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "6bc54805466c5eec07e35c65d35703d7323eab71",
+          "sha256": "ddb75f1a9f11cc19786e7da0cd9a4e99f317af30c07d7c6c4ba113ac5e83ea9f",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/amazon/2023/chef-foundation-3.2.9-1.amazon2023.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "4b6189962a7a99bdd6b6e41b6aeb145e39a6ab7d",
+          "sha256": "6f43ddb337d9f4dc39d5fabd5d641f5b6c468e24854735fa55fded8f64621ee0",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/amazon/2023/chef-foundation-3.2.9-1.amazon2023.aarch64.rpm"
+        }
+      }
+    },
+    "2": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "a98274015866fa7b0904bdffb4081ef68f1fce96",
+          "sha256": "351856411758efd778b4a9aeb2e39f61cc525e68e921a49213a34cbac897ee45",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/amazon/2/chef-foundation-3.2.9-1.el7.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "45044fd49035ae69be071d363273f27b0d046fc1",
+          "sha256": "437d34d98adf081c84056798fd093f4a524d9d7fbc60a41c7bf326a54a783217",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/amazon/2/chef-foundation-3.2.9-1.el7.aarch64.rpm"
+        }
+      }
+    }
+  },
+  "ubuntu": {
+    "16.04": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "f1847a599caeab01eedbb0cbcaa1b3400cefc752",
+          "sha256": "cc0afdfda7b1682710c9b8a84a9a34b6a480aaa0fad9ea36e6c164bb88f1680e",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/16.04/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      }
+    },
+    "18.04": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "f1847a599caeab01eedbb0cbcaa1b3400cefc752",
+          "sha256": "cc0afdfda7b1682710c9b8a84a9a34b6a480aaa0fad9ea36e6c164bb88f1680e",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/18.04/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "addf5bd189576b9e9695d3db9d88b954668230c5",
+          "sha256": "5c929e35cc11ca424e0a98296b4786bfc866b72f7dd88ab51a33d5f86e73d1ec",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/18.04/chef-foundation_3.2.9-1_arm64.deb"
+        }
+      }
+    },
+    "20.04": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "f1847a599caeab01eedbb0cbcaa1b3400cefc752",
+          "sha256": "cc0afdfda7b1682710c9b8a84a9a34b6a480aaa0fad9ea36e6c164bb88f1680e",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/20.04/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "addf5bd189576b9e9695d3db9d88b954668230c5",
+          "sha256": "5c929e35cc11ca424e0a98296b4786bfc866b72f7dd88ab51a33d5f86e73d1ec",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/20.04/chef-foundation_3.2.9-1_arm64.deb"
+        }
+      }
+    },
+    "22.04": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "f1847a599caeab01eedbb0cbcaa1b3400cefc752",
+          "sha256": "cc0afdfda7b1682710c9b8a84a9a34b6a480aaa0fad9ea36e6c164bb88f1680e",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/22.04/chef-foundation_3.2.9-1_amd64.deb"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "addf5bd189576b9e9695d3db9d88b954668230c5",
+          "sha256": "5c929e35cc11ca424e0a98296b4786bfc866b72f7dd88ab51a33d5f86e73d1ec",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/ubuntu/22.04/chef-foundation_3.2.9-1_arm64.deb"
+        }
+      }
+    }
+  },
+  "el": {
+    "8": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "df4451ae41cbdab92201f5a2e2cb69f2a7325b02",
+          "sha256": "7e727395fc98010a4956347cff602de64fc281136c1df51a106b87fc031c9710",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/8/chef-foundation-3.2.9-1.el8.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "d171bbc1568c2f11d8bc8c660f85761669609ee0",
+          "sha256": "32f0fddfdaa4ad106387ba1aaf1ab1e6c390b9dd30f52db5eda0e57a82c961d3",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/8/chef-foundation-3.2.9-1.el8.aarch64.rpm"
+        }
+      },
+      "s390x": {
+        "3.2.9": {
+          "sha1": "5f0876ad7d097eec41d3711e7d53da18df735ff8",
+          "sha256": "f08ab8cf4932cb3c412a2373148c4b1b2c4a4215958588c9da6b8c5bc5ee1ec9",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/8/chef-foundation-3.2.9-1.el7.s390x.rpm"
+        }
+      }
+    },
+    "7": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "a98274015866fa7b0904bdffb4081ef68f1fce96",
+          "sha256": "351856411758efd778b4a9aeb2e39f61cc525e68e921a49213a34cbac897ee45",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/7/chef-foundation-3.2.9-1.el7.x86_64.rpm"
+        }
+      },
+      "s390x": {
+        "3.2.9": {
+          "sha1": "5f0876ad7d097eec41d3711e7d53da18df735ff8",
+          "sha256": "f08ab8cf4932cb3c412a2373148c4b1b2c4a4215958588c9da6b8c5bc5ee1ec9",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/7/chef-foundation-3.2.9-1.el7.s390x.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "45044fd49035ae69be071d363273f27b0d046fc1",
+          "sha256": "437d34d98adf081c84056798fd093f4a524d9d7fbc60a41c7bf326a54a783217",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/7/chef-foundation-3.2.9-1.el7.aarch64.rpm"
+        }
+      },
+      "ppc64le": {
+        "3.2.9": {
+          "sha1": "9a71d29ed60645e5f35e593a5e1910758e2f5db7",
+          "sha256": "ae89e0c4ae3f2bdf67721997f6430f9b746d3e730287efea1ab9ea93b8342991",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/7/chef-foundation-3.2.9-1.el7.ppc64le.rpm"
+        }
+      },
+      "ppc64": {
+        "3.2.9": {
+          "sha1": "fc6b1de0e03d1b2c1a9e76c92747595491a86bf3",
+          "sha256": "de3b3fe32ace3327f77ab471668226a39da462c65b1ff01ed67cee78174adc6a",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/7/chef-foundation-3.2.9-1.el7.ppc64.rpm"
+        }
+      }
+    },
+    "9": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "fa8de4b04d542cf272089603eb2bd21757ffe251",
+          "sha256": "4cf363a55af66ae981e520fc57dc1e2b28c1300875d50e1c1c038401f5989259",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/9/chef-foundation-3.2.9-1.el9.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "268f0c06c05b1562b481ba920f2f99e99514a77f",
+          "sha256": "2d52e16abb1b84e349e4cde815e014e1f75122126713fa3b9fc0472b8775be94",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/el/9/chef-foundation-3.2.9-1.el9.aarch64.rpm"
+        }
+      }
+    }
+  },
+  "rocky": {
+    "8": {
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "ab8391d5ec8aa5b60162f363d058a18205545d11",
+          "sha256": "2488396b1a2c2435659ffbcf1d68f5da140e435ab1fd55b6d081288d9911afd6",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/rocky/8/chef-foundation-3.2.9-1.rocky8.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d88f2686a4fda66311cd7e6407a0530efe60b67d",
+          "sha256": "d64df38e8aa78b0310bf2f39596579e1aedcd989c742f3f91c15bde136e6d31a",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/rocky/8/chef-foundation-3.2.9-1.rocky8.x86_64.rpm"
+        }
+      }
+    },
+    "9": {
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "9bd0a6c2e1abb404b2b66154b3c81a7b19529a97",
+          "sha256": "8dfee9b6ed8a9c2a22fd85fad5a17366d6d5a50c1d0690b4400791333d22d5ad",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/rocky/9/chef-foundation-3.2.9-1.rocky9.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "9b0f51caa45c5c9a42832769f50f94a079c5f273",
+          "sha256": "6f6ea4fd4240d822bb10cb85a804a1207cd980b3a9ce2cb7f9df0862f1b1cafd",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/rocky/9/chef-foundation-3.2.9-1.rocky9.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "freebsd": {
+    "13": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "1b35f5d2761cda907a77b00bf43537b5b2964e90",
+          "sha256": "f4d97ffeb3cb9c8bbc07fde438b16e845ae8a83c4ef6fd6d838dfc0cb0ddaec3",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/freebsd/13/chef-foundation-3.2.9_1.amd64.sh"
+        }
+      }
+    }
+  },
+  "solaris2": {
+    "5.11": {
+      "i386": {
+        "3.2.9": {
+          "sha1": "4e4d591bfba02442c086c688d5aeb11c68f3b937",
+          "sha256": "731120b088e7736b3b031b01fe176a0585a7b095f8b37bb5c320ce5d7d362fe4",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/solaris2/5.11/chef-foundation-3.2.9-1.i386.p5p"
+        }
+      },
+      "sparc": {
+        "3.2.9": {
+          "sha1": "74c904af02955ab6bf5b27690afbf188452b8dd0",
+          "sha256": "68de93dc04e94b9145f74cd3b01c01fa3112c4611fdb7b9cc27be98ee9b8aa93",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/solaris2/5.11/chef-foundation-3.2.9-1.sparc.p5p"
+        }
+      }
+    }
+  },
+  "mac_os_x": {
+    "11": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "26a676cb8af08b3804fac259cd63e65d8c6766c7",
+          "sha256": "e34e479c476865bffad579e840a018a8f3d4c1d5650c6807843c121cb6fe1b13",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/mac_os_x/11/chef-foundation-3.2.9-1.x86_64.dmg"
+        }
+      },
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "9f877a01bff5390080e73a191aeb8738a9c166f7",
+          "sha256": "aefa4e0a4501654d30a7854abcf3f5fb5327b2fe988a2b8ef1059236019e9b51",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/mac_os_x/11/chef-foundation-3.2.9-1.arm64.dmg"
+        }
+      }
+    },
+    "12": {
+      "aarch64": {
+        "3.2.9": {
+          "sha1": "9f877a01bff5390080e73a191aeb8738a9c166f7",
+          "sha256": "aefa4e0a4501654d30a7854abcf3f5fb5327b2fe988a2b8ef1059236019e9b51",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/mac_os_x/12/chef-foundation-3.2.9-1.arm64.dmg"
+        }
+      },
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "26a676cb8af08b3804fac259cd63e65d8c6766c7",
+          "sha256": "e34e479c476865bffad579e840a018a8f3d4c1d5650c6807843c121cb6fe1b13",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/mac_os_x/12/chef-foundation-3.2.9-1.x86_64.dmg"
+        }
+      }
+    }
+  },
+  "windows": {
+    "2016": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/2016/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    },
+    "2022": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/2022/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    },
+    "2012": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/2012/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    },
+    "2012r2": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/2012r2/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    },
+    "11": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/11/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    },
+    "10": {
+      "x86_64": {
+        "3.2.9": {
+          "sha1": "d2807bcbfdf29dc0daea9c8889bb930ca913c976",
+          "sha256": "0a82fec30ff8ca487ebdac4b438955d7680d3a0feb97443801c0412b1b44f21d",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/windows/2012r2/chef-foundation-3.2.9-1-x64.msi"
+        }
+      }
+    }
+  },
+  "aix": {
+    "7.2": {
+      "powerpc": {
+        "3.2.9": {
+          "sha1": "d6574bc7a3f6cf8909352e2ea0d440f8adb5e7bd",
+          "sha256": "851bbcbe374f7d1a322469d03ced0f644426ec2e2466a1c3e221f861070e7135",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/aix/7.2/chef-foundation-3.2.9-1.powerpc.bff"
+        }
+      }
+    },
+    "7.3": {
+      "powerpc": {
+        "3.2.9": {
+          "sha1": "d6574bc7a3f6cf8909352e2ea0d440f8adb5e7bd",
+          "sha256": "851bbcbe374f7d1a322469d03ced0f644426ec2e2466a1c3e221f861070e7135",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/aix/7.3/chef-foundation-3.2.9-1.powerpc.bff"
+        }
+      }
+    },
+    "7.1": {
+      "powerpc": {
+        "3.2.9": {
+          "sha1": "d6574bc7a3f6cf8909352e2ea0d440f8adb5e7bd",
+          "sha256": "851bbcbe374f7d1a322469d03ced0f644426ec2e2466a1c3e221f861070e7135",
+          "url": "https://packages.chef.io/files/unstable/chef-foundation/3.2.9/aix/7.1/chef-foundation-3.2.9-1.powerpc.bff"
+        }
+      }
+    }
+  },
+  "run_data": {
+    "timestamp": "2024-09-14 08:04:59 -0400"
+  }
+}

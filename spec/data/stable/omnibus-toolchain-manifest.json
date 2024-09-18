@@ -390,6 +390,36 @@
           "sha1": "710a99dbd3bf61eb4baa7419ed55dfbf194e04fc",
           "sha256": "c96643da7fa689770cd35f12cf162955bda823920374e47b4a1214e007a542a1",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/aix/7.1/omnibus-toolchain-3.0.0-1.powerpc.bff"
+        },
+        "3.0.16": {
+          "sha1": "d117364bb77d57a20aec60d40fe62871546be597",
+          "sha256": "cc363c041e19d31bee5ebd3532fd10f4bcc05abec26160142dbee1328a4538ea",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/aix/7.1/omnibus-toolchain-3.0.16-1.powerpc.bff"
+        },
+        "3.0.17": {
+          "sha1": "e514bd9635a580d94b3eb0fdcbbc000d049569a2",
+          "sha256": "0354d8ed4f7d0c42244b653fc5faa033d9a8cb131d558194c1297d76e1e9d03a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/aix/7.1/omnibus-toolchain-3.0.17-1.powerpc.bff"
+        },
+        "3.0.27": {
+          "sha1": "4135331420e072ef785b153a614e12952bfb5cdd",
+          "sha256": "1091a398aa77bcba65e522668eb6bf6f1eb56c96d73e686ed895989842dff167",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/aix/7.1/omnibus-toolchain-3.0.27-1.powerpc.bff"
+        },
+        "3.0.28": {
+          "sha1": "f2413b55800cdd33e0bd82b4da4580a9bd2aaf5a",
+          "sha256": "fec9c5c3c732aaef8252230f5279852971b9fe99028eb7bffccae05a9f60e155",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/aix/7.1/omnibus-toolchain-3.0.28-1.powerpc.bff"
+        },
+        "3.0.29": {
+          "sha1": "674b30f59ad8b95ae244a887b11ac8a7ba2f41e9",
+          "sha256": "fb8d178d9b9938dfe66badd108c90314e34aac0e8a9ff9772c12844ca1e3258c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/aix/7.1/omnibus-toolchain-3.0.29-1.powerpc.bff"
+        },
+        "3.0.31": {
+          "sha1": "c6ce6c3374520e92e697c66b2886fa80ecd394a5",
+          "sha256": "5a85a7d8465f0090b823df212be55126c09890f55569f6538a72698e238aac6a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/aix/7.1/omnibus-toolchain-3.0.31-1.powerpc.bff"
         }
       }
     },
@@ -449,6 +479,36 @@
           "sha1": "710a99dbd3bf61eb4baa7419ed55dfbf194e04fc",
           "sha256": "c96643da7fa689770cd35f12cf162955bda823920374e47b4a1214e007a542a1",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/aix/7.2/omnibus-toolchain-3.0.0-1.powerpc.bff"
+        },
+        "3.0.16": {
+          "sha1": "d117364bb77d57a20aec60d40fe62871546be597",
+          "sha256": "cc363c041e19d31bee5ebd3532fd10f4bcc05abec26160142dbee1328a4538ea",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/aix/7.2/omnibus-toolchain-3.0.16-1.powerpc.bff"
+        },
+        "3.0.17": {
+          "sha1": "e514bd9635a580d94b3eb0fdcbbc000d049569a2",
+          "sha256": "0354d8ed4f7d0c42244b653fc5faa033d9a8cb131d558194c1297d76e1e9d03a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/aix/7.2/omnibus-toolchain-3.0.17-1.powerpc.bff"
+        },
+        "3.0.27": {
+          "sha1": "4135331420e072ef785b153a614e12952bfb5cdd",
+          "sha256": "1091a398aa77bcba65e522668eb6bf6f1eb56c96d73e686ed895989842dff167",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/aix/7.2/omnibus-toolchain-3.0.27-1.powerpc.bff"
+        },
+        "3.0.28": {
+          "sha1": "f2413b55800cdd33e0bd82b4da4580a9bd2aaf5a",
+          "sha256": "fec9c5c3c732aaef8252230f5279852971b9fe99028eb7bffccae05a9f60e155",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/aix/7.2/omnibus-toolchain-3.0.28-1.powerpc.bff"
+        },
+        "3.0.29": {
+          "sha1": "674b30f59ad8b95ae244a887b11ac8a7ba2f41e9",
+          "sha256": "fb8d178d9b9938dfe66badd108c90314e34aac0e8a9ff9772c12844ca1e3258c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/aix/7.2/omnibus-toolchain-3.0.29-1.powerpc.bff"
+        },
+        "3.0.31": {
+          "sha1": "c6ce6c3374520e92e697c66b2886fa80ecd394a5",
+          "sha256": "5a85a7d8465f0090b823df212be55126c09890f55569f6538a72698e238aac6a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/aix/7.2/omnibus-toolchain-3.0.31-1.powerpc.bff"
         }
       }
     }
@@ -1433,6 +1493,36 @@
           "sha1": "3100275a502f863607157fca96d864b6342fb276",
           "sha256": "4cfa59f5d29293a862bdca19ef80f50099f6e59b242719dd20e0bdf651ceb116",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/debian/9/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "2b88bc6c6e172f2a8f0daa0ec9f08b2e3628e40f",
+          "sha256": "66f309cbae069d0fd8c0397b07ac69c793ff5534d272b14ef4a5a60ad759648a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/debian/9/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "8a0f10158e3c073b2d4ed19fb0b4136cd5eada2a",
+          "sha256": "a8f84f115ca5394abad2a44e6ef0fa6f02d7ff2d29b01eaa5feb64cc800d3cfd",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/debian/9/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "09813a584355b4954946ee3c10abd588a3e8a38c",
+          "sha256": "ec3825987cff07fb63da7893fd1428982028f3f05ea23a2c4dc1e680e94d0b37",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/debian/9/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cbe83668febdb668daf6c588f592b0b53ad9017c",
+          "sha256": "29ae827b35460fe639fa9969b4a5ff88fa06d02389d3f65d35f3a35de912f27f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/debian/9/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "9790c3fbdd77bfac434c2f954d6e76fcc3229eab",
+          "sha256": "05c40bd8404d0a4eb8970a1ab0aec2a0ef4bc83b34280ce0a1a8ddde0ad2b484",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/debian/9/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "8c9cafe129d8c9ed279fc92874f2a1737bdab771",
+          "sha256": "8b70cf6ca507671ee8b0b7bd69c3c573e86bf1a8062cff28792772ed3783aa6f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/debian/9/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       }
     },
@@ -1492,6 +1582,36 @@
           "sha1": "3100275a502f863607157fca96d864b6342fb276",
           "sha256": "4cfa59f5d29293a862bdca19ef80f50099f6e59b242719dd20e0bdf651ceb116",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/debian/10/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "2b88bc6c6e172f2a8f0daa0ec9f08b2e3628e40f",
+          "sha256": "66f309cbae069d0fd8c0397b07ac69c793ff5534d272b14ef4a5a60ad759648a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/debian/10/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "8a0f10158e3c073b2d4ed19fb0b4136cd5eada2a",
+          "sha256": "a8f84f115ca5394abad2a44e6ef0fa6f02d7ff2d29b01eaa5feb64cc800d3cfd",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/debian/10/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "09813a584355b4954946ee3c10abd588a3e8a38c",
+          "sha256": "ec3825987cff07fb63da7893fd1428982028f3f05ea23a2c4dc1e680e94d0b37",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/debian/10/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cbe83668febdb668daf6c588f592b0b53ad9017c",
+          "sha256": "29ae827b35460fe639fa9969b4a5ff88fa06d02389d3f65d35f3a35de912f27f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/debian/10/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "9790c3fbdd77bfac434c2f954d6e76fcc3229eab",
+          "sha256": "05c40bd8404d0a4eb8970a1ab0aec2a0ef4bc83b34280ce0a1a8ddde0ad2b484",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/debian/10/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "8c9cafe129d8c9ed279fc92874f2a1737bdab771",
+          "sha256": "8b70cf6ca507671ee8b0b7bd69c3c573e86bf1a8062cff28792772ed3783aa6f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/debian/10/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -1524,6 +1644,36 @@
           "sha1": "0faaeac6ed4d0894e5074cb7c6fc1d3280612e19",
           "sha256": "8521b0db100c142389462ddf155f7eb08864303d5ad1acf07b4817fa3c894159",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/debian/10/omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "e2aa044210458cffac3493fe524b6d0a0d9bc487",
+          "sha256": "faed0c5c72272a2c5d165c63de93a2b2584c6cd9545888e37aee2b65c1dd98fa",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/debian/10/omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.17": {
+          "sha1": "b8f2eb0fcb03d45bd230d36de5e7fd12db6388b6",
+          "sha256": "f6cad3f7c5c2b920819a40d7eb16b433292e312b0b411ce2da17b62cabb8eb3d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/debian/10/omnibus-toolchain_3.0.17-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "5f186844eb9a5f4c087fcdcc00255a64b3dda9b3",
+          "sha256": "037ea0316b9d853ced58ba2c00aac210abd7b4fadc6b92c270144cba938b3bb0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/debian/10/omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "a54ac2e00fcf2718259fb2110f4683c405ea7068",
+          "sha256": "cd2ec31d611827592b829a01db3b13517c95f00290d04fe0872bf275abfba5fc",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/debian/10/omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.29": {
+          "sha1": "2c20073d34b5b285ddc0d5907e3c5c554b68cb1f",
+          "sha256": "bf356bb88514b3dcc8ae916eb8dcaf6e3286d8be70a1a2b6652b20f09ea4519a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/debian/10/omnibus-toolchain_3.0.29-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d1dccb0b87a4addb092be372619047e1196b87de",
+          "sha256": "022c32f17acb03fd2381879703cd40f3e0b965c0c00efe571485a14f9d0bb388",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/debian/10/omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -1533,6 +1683,36 @@
           "sha1": "3100275a502f863607157fca96d864b6342fb276",
           "sha256": "4cfa59f5d29293a862bdca19ef80f50099f6e59b242719dd20e0bdf651ceb116",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/debian/11/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "2b88bc6c6e172f2a8f0daa0ec9f08b2e3628e40f",
+          "sha256": "66f309cbae069d0fd8c0397b07ac69c793ff5534d272b14ef4a5a60ad759648a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/debian/11/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "8a0f10158e3c073b2d4ed19fb0b4136cd5eada2a",
+          "sha256": "a8f84f115ca5394abad2a44e6ef0fa6f02d7ff2d29b01eaa5feb64cc800d3cfd",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/debian/11/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "09813a584355b4954946ee3c10abd588a3e8a38c",
+          "sha256": "ec3825987cff07fb63da7893fd1428982028f3f05ea23a2c4dc1e680e94d0b37",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/debian/11/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cbe83668febdb668daf6c588f592b0b53ad9017c",
+          "sha256": "29ae827b35460fe639fa9969b4a5ff88fa06d02389d3f65d35f3a35de912f27f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/debian/11/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "9790c3fbdd77bfac434c2f954d6e76fcc3229eab",
+          "sha256": "05c40bd8404d0a4eb8970a1ab0aec2a0ef4bc83b34280ce0a1a8ddde0ad2b484",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/debian/11/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "8c9cafe129d8c9ed279fc92874f2a1737bdab771",
+          "sha256": "8b70cf6ca507671ee8b0b7bd69c3c573e86bf1a8062cff28792772ed3783aa6f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/debian/11/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -1540,6 +1720,36 @@
           "sha1": "0faaeac6ed4d0894e5074cb7c6fc1d3280612e19",
           "sha256": "8521b0db100c142389462ddf155f7eb08864303d5ad1acf07b4817fa3c894159",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/debian/11/omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "e2aa044210458cffac3493fe524b6d0a0d9bc487",
+          "sha256": "faed0c5c72272a2c5d165c63de93a2b2584c6cd9545888e37aee2b65c1dd98fa",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/debian/11/omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.17": {
+          "sha1": "b8f2eb0fcb03d45bd230d36de5e7fd12db6388b6",
+          "sha256": "f6cad3f7c5c2b920819a40d7eb16b433292e312b0b411ce2da17b62cabb8eb3d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/debian/11/omnibus-toolchain_3.0.17-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "5f186844eb9a5f4c087fcdcc00255a64b3dda9b3",
+          "sha256": "037ea0316b9d853ced58ba2c00aac210abd7b4fadc6b92c270144cba938b3bb0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/debian/11/omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "a54ac2e00fcf2718259fb2110f4683c405ea7068",
+          "sha256": "cd2ec31d611827592b829a01db3b13517c95f00290d04fe0872bf275abfba5fc",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/debian/11/omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.29": {
+          "sha1": "2c20073d34b5b285ddc0d5907e3c5c554b68cb1f",
+          "sha256": "bf356bb88514b3dcc8ae916eb8dcaf6e3286d8be70a1a2b6652b20f09ea4519a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/debian/11/omnibus-toolchain_3.0.29-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "d1dccb0b87a4addb092be372619047e1196b87de",
+          "sha256": "022c32f17acb03fd2381879703cd40f3e0b965c0c00efe571485a14f9d0bb388",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/debian/11/omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     }
@@ -2314,6 +2524,26 @@
           "sha1": "d2e8a415e37a2dad1b43a25218008c4b047a902f",
           "sha256": "db01110957ff8943f270eb98877953511b1869663cfa5e1bdb8e9fe219edbc8c",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/freebsd/12/omnibus-toolchain-3.0.0_1.amd64.sh"
+        },
+        "3.0.16": {
+          "sha1": "ca6f6f3fcb2144a01523b752fd4807c20b93bbff",
+          "sha256": "80e38adc8018fe32384605a101e906237e48556811909406303114c241cbc1c3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/freebsd/12/omnibus-toolchain-3.0.16_1.amd64.sh"
+        },
+        "3.0.17": {
+          "sha1": "b79cb18583ae4773118210e72d10a78589c366a8",
+          "sha256": "de7ab0fe1e433e6b064edd61fdcc85fb91c6fda4b874e7c93b4a1c1f579b0b5c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/freebsd/12/omnibus-toolchain-3.0.17_1.amd64.sh"
+        },
+        "3.0.27": {
+          "sha1": "7cdb5ed7d33f9a56a391f1cc7659434b19067b79",
+          "sha256": "4bfd744c7f81a56a209e15366301f1dcee9b0821e04e562f5bd6f405e478f88c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/freebsd/12/omnibus-toolchain-3.0.27_1.amd64.sh"
+        },
+        "3.0.28": {
+          "sha1": "2791668243efe168cc5f52fcb968120557ff14ae",
+          "sha256": "25ba47d1b84a2792e0dff332d98cbd0b82a3c4e074d593f42d2fa9547a53e080",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/freebsd/12/omnibus-toolchain-3.0.28_1.amd64.sh"
         }
       }
     },
@@ -2333,6 +2563,36 @@
           "sha1": "d2e8a415e37a2dad1b43a25218008c4b047a902f",
           "sha256": "db01110957ff8943f270eb98877953511b1869663cfa5e1bdb8e9fe219edbc8c",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/freebsd/13/omnibus-toolchain-3.0.0_1.amd64.sh"
+        },
+        "3.0.16": {
+          "sha1": "ca6f6f3fcb2144a01523b752fd4807c20b93bbff",
+          "sha256": "80e38adc8018fe32384605a101e906237e48556811909406303114c241cbc1c3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/freebsd/13/omnibus-toolchain-3.0.16_1.amd64.sh"
+        },
+        "3.0.17": {
+          "sha1": "b79cb18583ae4773118210e72d10a78589c366a8",
+          "sha256": "de7ab0fe1e433e6b064edd61fdcc85fb91c6fda4b874e7c93b4a1c1f579b0b5c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/freebsd/13/omnibus-toolchain-3.0.17_1.amd64.sh"
+        },
+        "3.0.27": {
+          "sha1": "7cdb5ed7d33f9a56a391f1cc7659434b19067b79",
+          "sha256": "4bfd744c7f81a56a209e15366301f1dcee9b0821e04e562f5bd6f405e478f88c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/freebsd/13/omnibus-toolchain-3.0.27_1.amd64.sh"
+        },
+        "3.0.28": {
+          "sha1": "2791668243efe168cc5f52fcb968120557ff14ae",
+          "sha256": "25ba47d1b84a2792e0dff332d98cbd0b82a3c4e074d593f42d2fa9547a53e080",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/freebsd/13/omnibus-toolchain-3.0.28_1.amd64.sh"
+        },
+        "3.0.29": {
+          "sha1": "81a978598fdb57569a31cb875f9f2a0bb52a5188",
+          "sha256": "5d11eee358d9c8fb16a9c4b93097de063f50d88450c90bfade91d2c510f01422",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/freebsd/13/omnibus-toolchain-3.0.29_1.amd64.sh"
+        },
+        "3.0.31": {
+          "sha1": "7d1563a133b0bd9f512bc3f49b065709b6e21c1d",
+          "sha256": "434230d03f23709c7156a2521d00b3691a03180525e867755a686ca27cc4426c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/freebsd/13/omnibus-toolchain-3.0.31_1.amd64.sh"
         }
       }
     }
@@ -2594,6 +2854,36 @@
           "sha1": "692465fc50114ac2a093fd1e42f69e982302a7af",
           "sha256": "b888cacc95ea3b1141ca3c0056d75a71aa0d739c0262088f83559534e5c6037f",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/solaris2/5.11/omnibus-toolchain-3.0.0-1.sparc.p5p"
+        },
+        "3.0.16": {
+          "sha1": "cd9c74e17e9a43bfd17dfd43b5ce8d7ee355f9b5",
+          "sha256": "05c33585c805584360c90935a3800a47927cbfdec9239beafe37205d62671224",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/solaris2/5.11/omnibus-toolchain-3.0.16-1.sparc.p5p"
+        },
+        "3.0.17": {
+          "sha1": "60b59c82cf2244cd647309e30e2c3ed8fc376c5e",
+          "sha256": "b5e284454cc77ce75d1bd3d1a6f2277e26724bdd086a3bc081db24b089ccbcef",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/solaris2/5.11/omnibus-toolchain-3.0.17-1.sparc.p5p"
+        },
+        "3.0.27": {
+          "sha1": "0622d4cd953eafd5e03219ec8692751b2f29e4ad",
+          "sha256": "a7215fb1fba4e1bfc0932503ae22c95ce6e72075c1447e791fa7948447dd3583",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/solaris2/5.11/omnibus-toolchain-3.0.27-1.sparc.p5p"
+        },
+        "3.0.28": {
+          "sha1": "2849287a0e5ebef1a4a2caf0f50acf76c6f89761",
+          "sha256": "882af8f2fb1eda1dc8c561ad08cc02397df1fce24c89b157bb46f415ea2f3d2b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/solaris2/5.11/omnibus-toolchain-3.0.28-1.sparc.p5p"
+        },
+        "3.0.29": {
+          "sha1": "e1678a9df737de0566cb5c394ed3a1e15f492897",
+          "sha256": "e4a9aeccb8fb6fb1999cf7fcb1144035bf418948485fd200967b3cde99496098",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/solaris2/5.11/omnibus-toolchain-3.0.29-1.sparc.p5p"
+        },
+        "3.0.31": {
+          "sha1": "27a4ca4fbb77d29520557e9d901a5e096ee26290",
+          "sha256": "68516ed1b17407ee7b5f3c1676e2276bcfd9262585ae02f85ab229339e132d9a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/solaris2/5.11/omnibus-toolchain-3.0.31-1.sparc.p5p"
         }
       },
       "i386": {
@@ -2851,6 +3141,36 @@
           "sha1": "23c14b032331079c1b72735dceb50279c5dca4ac",
           "sha256": "4a4d5da2ae92feb15fec76fe0d1a82ad3286c5f182ed74f9052b080f5b06643b",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/solaris2/5.11/omnibus-toolchain-3.0.0-1.i386.p5p"
+        },
+        "3.0.16": {
+          "sha1": "52b257475f871a55c4fe3e8504dc44569306a085",
+          "sha256": "c8a23e69d353557f749d32e16e968bab20e6893be208a2f06a99413604f3603c",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/solaris2/5.11/omnibus-toolchain-3.0.16-1.i386.p5p"
+        },
+        "3.0.17": {
+          "sha1": "930f7429caa5281a5c1490d619e0733aad46cea7",
+          "sha256": "ec3db296b26550c5f60c384c1ae7d36c9d886b0c2d223e84cd58fdb008e25f78",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/solaris2/5.11/omnibus-toolchain-3.0.17-1.i386.p5p"
+        },
+        "3.0.27": {
+          "sha1": "7a143eecfa27574d90d09da772a62ee427d29bb1",
+          "sha256": "979f7d9800400c59d207dcad891fd3965af0e2f86b54eb42dfd8c8b6d95d3551",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/solaris2/5.11/omnibus-toolchain-3.0.27-1.i386.p5p"
+        },
+        "3.0.28": {
+          "sha1": "0cd7c13d720ec143c71e0481aa92f55269987c7e",
+          "sha256": "10169732113f9ca3f341f84f7a3a36098b679a307242087ffad7f500b9643319",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/solaris2/5.11/omnibus-toolchain-3.0.28-1.i386.p5p"
+        },
+        "3.0.29": {
+          "sha1": "f298c00b03a36bf27a70f13c9e866fb8a3d21e53",
+          "sha256": "0ba22d54910fbb403acd82c50f4f41b8f755f16aa668aff794c250921bc64f21",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/solaris2/5.11/omnibus-toolchain-3.0.29-1.i386.p5p"
+        },
+        "3.0.31": {
+          "sha1": "b252466831f9ca81e46ef84956acbd2fe8631c21",
+          "sha256": "3216dc96c8a3576484bf55640bc1ecf48e30256b55ba51f5ab0fe1d0d69cd561",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/solaris2/5.11/omnibus-toolchain-3.0.31-1.i386.p5p"
         }
       }
     },
@@ -4238,6 +4558,36 @@
           "sha1": "d253e3ffda49d20d2378c331a4d20e766b16f01c",
           "sha256": "d85f9ba59f85c2149387c118bfeb35b4dd99a5ef4b45195b6b79d926e17a006d",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/16.04/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "c8d6c577c56262d661c7fa844e9fbfd0e457425a",
+          "sha256": "8c877d83e2aa125668846bcfc212c5fb21cab54caa045acccc764718202ff335",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/16.04/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "014145ac23829b97cde3f442b7097dd22dce6332",
+          "sha256": "117b97cb79a9a83badbdb0c6f9067a992eabe27708583871c4de06911c91f670",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/16.04/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "134b79ecbb123c5f62ea9bff9e1141818da5b0df",
+          "sha256": "8ae24b4ad4e9f09884eab382a276fdb76c45a70f0a5c74dbab02106c71ee37b8",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/16.04/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ea8187a5a28c9cb096bebbeb080a42684b870383",
+          "sha256": "3eeaf51cef75b7f3fae9fb53f859c5a3708cd091dcfde71a075fa8c3de691b3e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/16.04/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "04173b86970771b95e4c811ac3f388770332c513",
+          "sha256": "df27f9d95cf20f89e420f87b04c80a545a3c8a62ebdef23137d6d4ada14c9eaf",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/16.04/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "020aa414a029634a8267b19ebcea35d68ebd9c01",
+          "sha256": "6f97c243389c386086e62530884da4cff19ba2503b3f24402aad89ad9e83ebf3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/16.04/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "i386": {
@@ -4491,6 +4841,36 @@
           "sha1": "d253e3ffda49d20d2378c331a4d20e766b16f01c",
           "sha256": "d85f9ba59f85c2149387c118bfeb35b4dd99a5ef4b45195b6b79d926e17a006d",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/18.04/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "c8d6c577c56262d661c7fa844e9fbfd0e457425a",
+          "sha256": "8c877d83e2aa125668846bcfc212c5fb21cab54caa045acccc764718202ff335",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/18.04/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "014145ac23829b97cde3f442b7097dd22dce6332",
+          "sha256": "117b97cb79a9a83badbdb0c6f9067a992eabe27708583871c4de06911c91f670",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/18.04/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "134b79ecbb123c5f62ea9bff9e1141818da5b0df",
+          "sha256": "8ae24b4ad4e9f09884eab382a276fdb76c45a70f0a5c74dbab02106c71ee37b8",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/18.04/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ea8187a5a28c9cb096bebbeb080a42684b870383",
+          "sha256": "3eeaf51cef75b7f3fae9fb53f859c5a3708cd091dcfde71a075fa8c3de691b3e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/18.04/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "04173b86970771b95e4c811ac3f388770332c513",
+          "sha256": "df27f9d95cf20f89e420f87b04c80a545a3c8a62ebdef23137d6d4ada14c9eaf",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/18.04/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "020aa414a029634a8267b19ebcea35d68ebd9c01",
+          "sha256": "6f97c243389c386086e62530884da4cff19ba2503b3f24402aad89ad9e83ebf3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/18.04/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -4543,6 +4923,36 @@
           "sha1": "d8ca0cc86bacbb201349dbebd6caf65ca8201e9e",
           "sha256": "9e881462f39f86c8ba920c9a07e412be42b2623cb8fde6cb0cd69d4ce59900d9",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/18.04/omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "02ea787f88120cba4212f51792588c78f479e454",
+          "sha256": "9b0ddff2da64d0c0bb75fc69f0e4374410b0d369169e6fb6ca5c893d54b9795d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/18.04/omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.17": {
+          "sha1": "dad0d56ecd323da94a77b7a3eb1c448ec33ab222",
+          "sha256": "5134c72109f2021aead100783800cdb9022a69392ee88eebc48db1429f6bf6a9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/18.04/omnibus-toolchain_3.0.17-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "63b9a2b3c45c5e6c7617df416a19c46c27f941c3",
+          "sha256": "59988ae5460a8cb212bc4e8b42906c178d18d2da7421e86b2cf35eead7e43971",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/18.04/omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cec42dacb30556ea5529754809d053c826db10b9",
+          "sha256": "4a208547044374a31b90eb4a5d2b93d4c8f28cfb986d630167adaedc990179f0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/18.04/omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.29": {
+          "sha1": "0b20f212ddbbee22d567a145494dab56c20cac9b",
+          "sha256": "1393f169f90ea115a758d36064a2e24d7ee1882b546aad83c6b8876889312ff4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/18.04/omnibus-toolchain_3.0.29-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "a6c09e66162ece48b799c81b5136a92a023a2a33",
+          "sha256": "1204ba7d25cdb405fb63bc490298dfcfd102db326ccbf20b894549c374898be1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/18.04/omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -4592,6 +5002,36 @@
           "sha1": "d253e3ffda49d20d2378c331a4d20e766b16f01c",
           "sha256": "d85f9ba59f85c2149387c118bfeb35b4dd99a5ef4b45195b6b79d926e17a006d",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/20.04/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "c8d6c577c56262d661c7fa844e9fbfd0e457425a",
+          "sha256": "8c877d83e2aa125668846bcfc212c5fb21cab54caa045acccc764718202ff335",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/20.04/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "014145ac23829b97cde3f442b7097dd22dce6332",
+          "sha256": "117b97cb79a9a83badbdb0c6f9067a992eabe27708583871c4de06911c91f670",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/20.04/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "134b79ecbb123c5f62ea9bff9e1141818da5b0df",
+          "sha256": "8ae24b4ad4e9f09884eab382a276fdb76c45a70f0a5c74dbab02106c71ee37b8",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/20.04/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ea8187a5a28c9cb096bebbeb080a42684b870383",
+          "sha256": "3eeaf51cef75b7f3fae9fb53f859c5a3708cd091dcfde71a075fa8c3de691b3e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/20.04/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "04173b86970771b95e4c811ac3f388770332c513",
+          "sha256": "df27f9d95cf20f89e420f87b04c80a545a3c8a62ebdef23137d6d4ada14c9eaf",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/20.04/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "020aa414a029634a8267b19ebcea35d68ebd9c01",
+          "sha256": "6f97c243389c386086e62530884da4cff19ba2503b3f24402aad89ad9e83ebf3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/20.04/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -4634,6 +5074,36 @@
           "sha1": "d8ca0cc86bacbb201349dbebd6caf65ca8201e9e",
           "sha256": "9e881462f39f86c8ba920c9a07e412be42b2623cb8fde6cb0cd69d4ce59900d9",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/20.04/omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "02ea787f88120cba4212f51792588c78f479e454",
+          "sha256": "9b0ddff2da64d0c0bb75fc69f0e4374410b0d369169e6fb6ca5c893d54b9795d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/20.04/omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.17": {
+          "sha1": "dad0d56ecd323da94a77b7a3eb1c448ec33ab222",
+          "sha256": "5134c72109f2021aead100783800cdb9022a69392ee88eebc48db1429f6bf6a9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/20.04/omnibus-toolchain_3.0.17-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "63b9a2b3c45c5e6c7617df416a19c46c27f941c3",
+          "sha256": "59988ae5460a8cb212bc4e8b42906c178d18d2da7421e86b2cf35eead7e43971",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/20.04/omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cec42dacb30556ea5529754809d053c826db10b9",
+          "sha256": "4a208547044374a31b90eb4a5d2b93d4c8f28cfb986d630167adaedc990179f0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/20.04/omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.29": {
+          "sha1": "0b20f212ddbbee22d567a145494dab56c20cac9b",
+          "sha256": "1393f169f90ea115a758d36064a2e24d7ee1882b546aad83c6b8876889312ff4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/20.04/omnibus-toolchain_3.0.29-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "a6c09e66162ece48b799c81b5136a92a023a2a33",
+          "sha256": "1204ba7d25cdb405fb63bc490298dfcfd102db326ccbf20b894549c374898be1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/20.04/omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     },
@@ -4643,6 +5113,36 @@
           "sha1": "d253e3ffda49d20d2378c331a4d20e766b16f01c",
           "sha256": "d85f9ba59f85c2149387c118bfeb35b4dd99a5ef4b45195b6b79d926e17a006d",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/22.04/omnibus-toolchain_3.0.0-1_amd64.deb"
+        },
+        "3.0.16": {
+          "sha1": "c8d6c577c56262d661c7fa844e9fbfd0e457425a",
+          "sha256": "8c877d83e2aa125668846bcfc212c5fb21cab54caa045acccc764718202ff335",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/22.04/omnibus-toolchain_3.0.16-1_amd64.deb"
+        },
+        "3.0.17": {
+          "sha1": "014145ac23829b97cde3f442b7097dd22dce6332",
+          "sha256": "117b97cb79a9a83badbdb0c6f9067a992eabe27708583871c4de06911c91f670",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/22.04/omnibus-toolchain_3.0.17-1_amd64.deb"
+        },
+        "3.0.27": {
+          "sha1": "134b79ecbb123c5f62ea9bff9e1141818da5b0df",
+          "sha256": "8ae24b4ad4e9f09884eab382a276fdb76c45a70f0a5c74dbab02106c71ee37b8",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/22.04/omnibus-toolchain_3.0.27-1_amd64.deb"
+        },
+        "3.0.28": {
+          "sha1": "ea8187a5a28c9cb096bebbeb080a42684b870383",
+          "sha256": "3eeaf51cef75b7f3fae9fb53f859c5a3708cd091dcfde71a075fa8c3de691b3e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/22.04/omnibus-toolchain_3.0.28-1_amd64.deb"
+        },
+        "3.0.29": {
+          "sha1": "04173b86970771b95e4c811ac3f388770332c513",
+          "sha256": "df27f9d95cf20f89e420f87b04c80a545a3c8a62ebdef23137d6d4ada14c9eaf",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/22.04/omnibus-toolchain_3.0.29-1_amd64.deb"
+        },
+        "3.0.31": {
+          "sha1": "020aa414a029634a8267b19ebcea35d68ebd9c01",
+          "sha256": "6f97c243389c386086e62530884da4cff19ba2503b3f24402aad89ad9e83ebf3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/22.04/omnibus-toolchain_3.0.31-1_amd64.deb"
         }
       },
       "aarch64": {
@@ -4650,6 +5150,36 @@
           "sha1": "d8ca0cc86bacbb201349dbebd6caf65ca8201e9e",
           "sha256": "9e881462f39f86c8ba920c9a07e412be42b2623cb8fde6cb0cd69d4ce59900d9",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/ubuntu/22.04/omnibus-toolchain_3.0.0-1_arm64.deb"
+        },
+        "3.0.16": {
+          "sha1": "02ea787f88120cba4212f51792588c78f479e454",
+          "sha256": "9b0ddff2da64d0c0bb75fc69f0e4374410b0d369169e6fb6ca5c893d54b9795d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/ubuntu/22.04/omnibus-toolchain_3.0.16-1_arm64.deb"
+        },
+        "3.0.17": {
+          "sha1": "dad0d56ecd323da94a77b7a3eb1c448ec33ab222",
+          "sha256": "5134c72109f2021aead100783800cdb9022a69392ee88eebc48db1429f6bf6a9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/ubuntu/22.04/omnibus-toolchain_3.0.17-1_arm64.deb"
+        },
+        "3.0.27": {
+          "sha1": "63b9a2b3c45c5e6c7617df416a19c46c27f941c3",
+          "sha256": "59988ae5460a8cb212bc4e8b42906c178d18d2da7421e86b2cf35eead7e43971",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/ubuntu/22.04/omnibus-toolchain_3.0.27-1_arm64.deb"
+        },
+        "3.0.28": {
+          "sha1": "cec42dacb30556ea5529754809d053c826db10b9",
+          "sha256": "4a208547044374a31b90eb4a5d2b93d4c8f28cfb986d630167adaedc990179f0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/ubuntu/22.04/omnibus-toolchain_3.0.28-1_arm64.deb"
+        },
+        "3.0.29": {
+          "sha1": "0b20f212ddbbee22d567a145494dab56c20cac9b",
+          "sha256": "1393f169f90ea115a758d36064a2e24d7ee1882b546aad83c6b8876889312ff4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/ubuntu/22.04/omnibus-toolchain_3.0.29-1_arm64.deb"
+        },
+        "3.0.31": {
+          "sha1": "a6c09e66162ece48b799c81b5136a92a023a2a33",
+          "sha256": "1204ba7d25cdb405fb63bc490298dfcfd102db326ccbf20b894549c374898be1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/ubuntu/22.04/omnibus-toolchain_3.0.31-1_arm64.deb"
         }
       }
     }
@@ -5454,6 +5984,31 @@
           "sha1": "8a49ddd44961f029ca4744051110758d9df72400",
           "sha256": "f9204dff339ced528cd86edb71d465981bf2abefce69cd24573edf3838acba91",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/6/omnibus-toolchain-3.0.0-1.el6.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "b3412e995929f46d16a1cf8146d70e5ea4bc327c",
+          "sha256": "45f8aafe434656c8838dd65f375546dad3ac9c54b1e0dcfb1080ecfa246b68cc",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/6/omnibus-toolchain-3.0.16-1.el6.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "ae758db0ff0edb22e89d2c56f321c48ee82f1584",
+          "sha256": "c9bed822a3464a890d3eaae615c458b65e6b27904f63f0cd256787e11317e11d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/6/omnibus-toolchain-3.0.17-1.el6.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "888628d6332dccdc97b38f5918ca3fc4dd389317",
+          "sha256": "2cf5b1b389353efffc44e0524f45accd966dc434ff2c5b6f41537fefd8502909",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/6/omnibus-toolchain-3.0.27-1.el6.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "7b197d2af9b9d4f6e41e31188ae6a9293499dbab",
+          "sha256": "fb73a63628fbbff0cdd30b04e44e5706ec6c4f349830a8350a2885b80f268915",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/6/omnibus-toolchain-3.0.28-1.el6.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "307fc1b3e26f42d0fe25b54fc2793ddcea5bb48c",
+          "sha256": "8b7f71803fbc2ea32882a9338878629bd1e8297c28321742b55a5091ea3c1d83",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/6/omnibus-toolchain-3.0.29-1.el6.x86_64.rpm"
         }
       },
       "s390x": {
@@ -5850,6 +6405,36 @@
           "sha1": "622e6cc8a2d7046b9b7e62f5e0ab22ec2a49f52d",
           "sha256": "9f9401712e6eb4109733c8877939a939c250b5e16af00c2de298bf616981cf20",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/7/omnibus-toolchain-3.0.0-1.el7.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "fed0db0c6199871345a0a874cf581293d93a75c5",
+          "sha256": "87a227dbe6d046c4b18e3f11239ca86327615e5088376db451545e17916d5af6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/7/omnibus-toolchain-3.0.16-1.el7.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "b5c97f5314cf503ce14b7f29623c5bb6b58d7999",
+          "sha256": "c7cb1330dcdb755ce15bbd9620e5588113345d0ce1c6281206a154fac9ee6aa1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/7/omnibus-toolchain-3.0.17-1.el7.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "0d1aea46e4885e0388269ece9b2eb86fb221a873",
+          "sha256": "6c702a21cae1c866c1ebeae89107480ed3235d876cc38ea09f77982ec19ef345",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/7/omnibus-toolchain-3.0.27-1.el7.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "e4b7b835b47579cd652bf2a3b1b4ca18f258c7ee",
+          "sha256": "133aa814b972c566b26420cd14616b735e38e45718c4e7efe7ca32aa37f44077",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/7/omnibus-toolchain-3.0.28-1.el7.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "e475cf0b129cfb12bfd80a33456f167b295740d4",
+          "sha256": "5e27f968e41c342a66c4935dfa4333d06b4ca3a085b16fe5151b5cab3c326d35",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/7/omnibus-toolchain-3.0.29-1.el7.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "839d4d859c71cda7cd2d18ed8a6349487f6ae413",
+          "sha256": "0a669f90e411a6d837aed200e8e6bbcc833cd6444a4a4258aef8cc9f7aeb401b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/7/omnibus-toolchain-3.0.31-1.el7.x86_64.rpm"
         }
       },
       "ppc64": {
@@ -6087,6 +6672,36 @@
           "sha1": "e8521f436a5b7b1beb13d6df1d29a1a2d5bf845d",
           "sha256": "21a38c0b4cf1ccebc01b23f52bfd5608eed1bc1b514aa99a01d502b67f9b0791",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/7/omnibus-toolchain-3.0.0-1.el7.ppc64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "ca3776800c056006d57cb06d720784610829544b",
+          "sha256": "92955b9bace1ffe77729ddf0268aa2746dc7bfd0f59d44dcdc84aeb014533649",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/7/omnibus-toolchain-3.0.16-1.el7.ppc64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "b4936b9e2f7d8a639f7b57ea516a5a44935b3079",
+          "sha256": "0e3eea7a7256c3d734502dd36226fdf015f6039586de718c7fde940c8f3e02ef",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/7/omnibus-toolchain-3.0.17-1.el7.ppc64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "df95489003fc3568800f3149670ca73fa85047ae",
+          "sha256": "dbd885a98ce5a0bfbe927e294add8d54155deabb32c7da864b1ca78052a307d1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/7/omnibus-toolchain-3.0.27-1.el7.ppc64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "0cfeb42bf44c0e62cb45c73ccd16bff8c8adbce7",
+          "sha256": "6418ca39845ea8ff405137d330c7b54b706488941553ea860ad20a76cdf4b0c3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/7/omnibus-toolchain-3.0.28-1.el7.ppc64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "6daf2b85d0f2dab5e106d2b3c3d75758a88a2473",
+          "sha256": "f451319396e85f2f5c1a161aefb2db4830079d9c0d8ff0084b97d03ddeb78122",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/7/omnibus-toolchain-3.0.29-1.el7.ppc64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "425c5510e6f90c38f788daf40fb75b9286719f70",
+          "sha256": "e6bad3c8ab09f062a8ab4ac196ee41eddb65b169cacb0b2660e9bb882f7e17de",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/7/omnibus-toolchain-3.0.31-1.el7.ppc64.rpm"
         }
       },
       "ppc64le": {
@@ -6324,6 +6939,36 @@
           "sha1": "3cfe417b87cd144790826882f7af2f1359c0b998",
           "sha256": "e8e24e18cd533adebe1ce4e349e20e0bb242934ccfffa1c26f5612acba48ac1b",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/7/omnibus-toolchain-3.0.0-1.el7.ppc64le.rpm"
+        },
+        "3.0.16": {
+          "sha1": "290813f2c325e3b6776c00ab3fb55857427a70a2",
+          "sha256": "9accc9752d65246bdff036b0095ac7946d294965e86217fb6a655098ca48c0c0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/7/omnibus-toolchain-3.0.16-1.el7.ppc64le.rpm"
+        },
+        "3.0.17": {
+          "sha1": "ceee36ea6e5a31454e1c41714cffa261d1e5d311",
+          "sha256": "15f95a137094bd05ff971ef0eb7b22109d24c8a9cd0620bfac5986ef64076e08",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/7/omnibus-toolchain-3.0.17-1.el7.ppc64le.rpm"
+        },
+        "3.0.27": {
+          "sha1": "361c429e0dfd62a3b3270f6244d5a6657030dd49",
+          "sha256": "e1b0a95e52671035176202430c6d8d126253ef04ef8a71600c56023521cd6f22",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/7/omnibus-toolchain-3.0.27-1.el7.ppc64le.rpm"
+        },
+        "3.0.28": {
+          "sha1": "9446db4173179b8dc99bb8ac77cb41860e74537d",
+          "sha256": "59ad57cd5b2cf333e331aab961a9bb80969eb3dd568105db6d9f154151397ef4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/7/omnibus-toolchain-3.0.28-1.el7.ppc64le.rpm"
+        },
+        "3.0.29": {
+          "sha1": "681bd0f49a60e09a0357106ed6ca187ae1815d95",
+          "sha256": "a5f33dea1e7f80c28a151bad6874564d53e278df57bbf5de2114cc902f159a63",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/7/omnibus-toolchain-3.0.29-1.el7.ppc64le.rpm"
+        },
+        "3.0.31": {
+          "sha1": "8cd5c109038268c6317a956524a09f033d2de44c",
+          "sha256": "144c242cd72711cc3a7af1c24386d98e5432b50c1723a8111ee34152a49ca28e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/7/omnibus-toolchain-3.0.31-1.el7.ppc64le.rpm"
         }
       },
       "s390x": {
@@ -6526,6 +7171,36 @@
           "sha1": "0bb79b6dea444c34e25aae4845913838a0d4acfd",
           "sha256": "43ae24690634b472fd971c46e7c1dde2fe46db28e488eebbce9c77b896345248",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/7/omnibus-toolchain-3.0.0-1.el7.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "23802016ef1aebfa279fa6b64c3391556795665c",
+          "sha256": "925f059b48baca24a85495348f5330f4e73fcd3286b74e3642fa02c0d98c441d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/7/omnibus-toolchain-3.0.16-1.el7.s390x.rpm"
+        },
+        "3.0.17": {
+          "sha1": "67a630b79238054ddbcdd52e7fc850b3755ad60e",
+          "sha256": "a562584c05e27bcd3a02fe0cf417d6d8565b78a64a90f80ca45074da711f30c0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/7/omnibus-toolchain-3.0.17-1.el7.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "38c998ed23d8feb828d9497ec56baef1619f04ad",
+          "sha256": "4cf73b9d540c73828f96f0f1580389bc73578463ba4453827993dd29b4c38c9f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/7/omnibus-toolchain-3.0.27-1.el7.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "b267e5cb9725f10056bbb075723fe53fef686939",
+          "sha256": "3b2367a1d6c76dfcdff92164153a93680dcde4b36a57d5ff5eb7e6358975ae20",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/7/omnibus-toolchain-3.0.28-1.el7.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "289f3c86d55614e36be1aa3139807f769f34af1f",
+          "sha256": "eb9ff26a16ec9ce32c5841b4f17f2c629196fa181768b44374f3904125cd1d8b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/7/omnibus-toolchain-3.0.29-1.el7.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "cb4ae27394baf6fc6d7f21b6ed152c9c69a74701",
+          "sha256": "ac89dfae3594b6de14016be1bee31b92a53026e310119ab9fb0b9613f619840d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/7/omnibus-toolchain-3.0.31-1.el7.s390x.rpm"
         }
       },
       "aarch64": {
@@ -6668,6 +7343,36 @@
           "sha1": "2ca1434c0d293da9ec5209e8b2ef8cecd4242ddb",
           "sha256": "c68aa731d97ffb738884d9794e2debd01622e0adaabccfc271a1608141474d29",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/7/omnibus-toolchain-3.0.0-1.el7.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "2c910bb4a73aca318f5f2114eb6f46d60313d288",
+          "sha256": "dbab83b9dbc73d22e79feb235a1f2ef000a041fb9381ceae00ee04d23633301f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/7/omnibus-toolchain-3.0.16-1.el7.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "dd2ea338e88e9adfadab0b413f4ae158a6c161e6",
+          "sha256": "d33e0c6d62e031b2602e53691fbf2dea1410d94e3a91efaacb09514ff32eb12f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/7/omnibus-toolchain-3.0.17-1.el7.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "00872abaf11b03e4b2f363124ae5970ef60f8bbf",
+          "sha256": "6bc8878ced34ffd32909fef34c9d946b2ec4940adf33896915cee1c586fa2d84",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/7/omnibus-toolchain-3.0.27-1.el7.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "f74a86b1f57ddcec9ca855adc7639ec775393d0e",
+          "sha256": "c06eb7640307d7cdd170b875f84dfb3143e11839a1bd5856759605cdff5e8186",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/7/omnibus-toolchain-3.0.28-1.el7.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "67c856ccea86ba7c32562f36c07b126ee7a8766d",
+          "sha256": "ea70e6fdc1a35705c61661a058562f58ec943b2f9713912ae9fec72bf4fa76c5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/7/omnibus-toolchain-3.0.29-1.el7.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "46e06023417323d41f9db2e2e8dbe267cdf3630a",
+          "sha256": "c7cba942ceab01f62ba1c51bf37a4747a3ce3ee307e87b48918511c3a993d525",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/7/omnibus-toolchain-3.0.31-1.el7.aarch64.rpm"
         }
       }
     },
@@ -6727,6 +7432,36 @@
           "sha1": "f742b26d0f0a739218740e5a98a59b4129c5c9c1",
           "sha256": "ff6b816b7c1fffc5c8e438c768ebf03fd632f0d67a479e6c6c2a7ee06576265a",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/8/omnibus-toolchain-3.0.0-1.el8.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "fdb6d6eaddc960ba7ec30fb74b78c5162b15a03a",
+          "sha256": "87be3cde551ed8fd9b7f0b3b7c9fddb76cf9a7ede4ed8e4dc364d6cd9eb7470e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/8/omnibus-toolchain-3.0.16-1.el8.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "116629132fe8615097f640350e4cbaee862a59bc",
+          "sha256": "7be6f7de1827c80c26912aa6ca1c2d957f5a18b6fe6d7f45b63699f67ccf9feb",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/8/omnibus-toolchain-3.0.17-1.el8.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "39213fe6ba388bd4936c19d19abbfeebba9017b3",
+          "sha256": "110ee1433c80cbf98d99e53f5c4eae27781d5c47aeb54b47efef1261a434a711",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/8/omnibus-toolchain-3.0.27-1.el8.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "61b6ad4dd407d6c444c4e0ba2a89c6f30291d845",
+          "sha256": "746e7f7e19bcde6fbd0572d279e73e11a149a8a6180991ae33f127d875a085c4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/8/omnibus-toolchain-3.0.28-1.el8.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "ae0e908db9c43d2d44e296060c1420a82a5dcf43",
+          "sha256": "6018b62da91ad3843b9c922605da3e44002ea48a055244891565afe1bdfc4a4a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/8/omnibus-toolchain-3.0.29-1.el8.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "11060ebd39e1133d544473cc7f85664c6c7b3235",
+          "sha256": "b7f9bea25f4db0522fdc09b1d63b355a60931107cbaa4b7a2b8b89fc323f11e1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/8/omnibus-toolchain-3.0.31-1.el8.x86_64.rpm"
         }
       },
       "aarch64": {
@@ -6774,6 +7509,36 @@
           "sha1": "d7f6d5a4c1f88bdd881e42c3f039780be5b3526e",
           "sha256": "c3f7c1f4cc9ed9b268a9476cbb50048e9f94b37e1232e2618ac17b5d4e176efb",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/8/omnibus-toolchain-3.0.0-1.el8.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "d879161c058ebc9209ad78bd9cddb4c5fc9889ef",
+          "sha256": "30e17cd39d69bd7b91dad2ce0f9b1d5526018e759f8dacd3cb6c5e3b39498a79",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/8/omnibus-toolchain-3.0.16-1.el8.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "2650e2e9f025a6298db50b129865181c97c37804",
+          "sha256": "b065669d184da88bafcc61bc9b21f56eb8914144adfde13c49f307245054a044",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/8/omnibus-toolchain-3.0.17-1.el8.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "24036583377ae869191b695afc2740e0c4c48050",
+          "sha256": "5eb1046ea81923a8e28c31e4242ec07c6eeab1822d93fbe1468957d5cf6ebbcd",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/8/omnibus-toolchain-3.0.27-1.el8.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "f1b2324fabe0c1a6df571e096250642a5672173d",
+          "sha256": "95dca9aa6fb32eb84e59134972b494bc2baac30912a48d4750a9ef483d91f9ef",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/8/omnibus-toolchain-3.0.28-1.el8.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "41ff15811bb1e9dc5461d24e9f13e110be26a5eb",
+          "sha256": "e8fd989d5d405e5837148bd68d5f903eadef575aa77cfda81c136a712bad51d5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/8/omnibus-toolchain-3.0.29-1.el8.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "8f80d49e0bf8c60d2ed658cdd651ae4e916b432b",
+          "sha256": "85c69cab081e04ffb6f1cbfcf07eda9d953076c9f42396f14563147f867520f9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/8/omnibus-toolchain-3.0.31-1.el8.aarch64.rpm"
         }
       },
       "s390x": {
@@ -6801,6 +7566,36 @@
           "sha1": "0bb79b6dea444c34e25aae4845913838a0d4acfd",
           "sha256": "43ae24690634b472fd971c46e7c1dde2fe46db28e488eebbce9c77b896345248",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/8/omnibus-toolchain-3.0.0-1.el7.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "23802016ef1aebfa279fa6b64c3391556795665c",
+          "sha256": "925f059b48baca24a85495348f5330f4e73fcd3286b74e3642fa02c0d98c441d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/8/omnibus-toolchain-3.0.16-1.el7.s390x.rpm"
+        },
+        "3.0.17": {
+          "sha1": "67a630b79238054ddbcdd52e7fc850b3755ad60e",
+          "sha256": "a562584c05e27bcd3a02fe0cf417d6d8565b78a64a90f80ca45074da711f30c0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/8/omnibus-toolchain-3.0.17-1.el7.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "38c998ed23d8feb828d9497ec56baef1619f04ad",
+          "sha256": "4cf73b9d540c73828f96f0f1580389bc73578463ba4453827993dd29b4c38c9f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/8/omnibus-toolchain-3.0.27-1.el7.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "b267e5cb9725f10056bbb075723fe53fef686939",
+          "sha256": "3b2367a1d6c76dfcdff92164153a93680dcde4b36a57d5ff5eb7e6358975ae20",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/8/omnibus-toolchain-3.0.28-1.el7.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "289f3c86d55614e36be1aa3139807f769f34af1f",
+          "sha256": "eb9ff26a16ec9ce32c5841b4f17f2c629196fa181768b44374f3904125cd1d8b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/8/omnibus-toolchain-3.0.29-1.el7.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "cb4ae27394baf6fc6d7f21b6ed152c9c69a74701",
+          "sha256": "ac89dfae3594b6de14016be1bee31b92a53026e310119ab9fb0b9613f619840d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/8/omnibus-toolchain-3.0.31-1.el7.s390x.rpm"
         }
       }
     },
@@ -6810,6 +7605,36 @@
           "sha1": "33e9348d9b76e011b654f68ef4191766ac59c944",
           "sha256": "5e43552554ca3913cae5cc25f10b873bd16395495e0c185df662399ce41c337f",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/9/omnibus-toolchain-3.0.0-1.el9.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "bdd9934251f885ce7c0880750faa0b94602345f7",
+          "sha256": "ac1f7bfb719934daa8e07d0c1cfd7b28d30c44d72a93738252f2d076441e9d72",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/9/omnibus-toolchain-3.0.16-1.el9.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "903421a1e13194837d556ffd9b82ac2df442f6bb",
+          "sha256": "0f1eab5ca0805afdab2e65f3745f0dda3ad1b9dead4de86f52774b004cf0a35f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/9/omnibus-toolchain-3.0.17-1.el9.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "02938d068f31e8243de0832bc62372d91de0567d",
+          "sha256": "99a805a469de7f4acf7187668ef44925940b089d13d5f66d0d505d91b2233268",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/9/omnibus-toolchain-3.0.27-1.el9.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "b80170294ce8866b283649c369789067a0e6aa40",
+          "sha256": "de3e74218f1d7f329e7c0715523de04065d7ee2c2cc74b00f1df05a319e6e901",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/9/omnibus-toolchain-3.0.28-1.el9.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "48fdcb3c7e67064858c6937415455e07bcd8ce2b",
+          "sha256": "039bbd2a3d9716c82d52cbb97b8205338f08cb56983233674f2eb4bedb8d33a4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/9/omnibus-toolchain-3.0.29-1.el9.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "cb30b66d12d553bf912e343c4d3f2a7777c89fbe",
+          "sha256": "2c6f776abfe10c9d0bb17544f843b8dc57133b7678d46fd72a8037cacd15e4a5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/9/omnibus-toolchain-3.0.31-1.el9.aarch64.rpm"
         }
       },
       "x86_64": {
@@ -6817,6 +7642,36 @@
           "sha1": "165bfc012f3e03c85101b8952dce8380f9355e4d",
           "sha256": "d99d50cea2c960fcae1338ce4047d3de25378fbf77ed250bd9d9209585eefd91",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/el/9/omnibus-toolchain-3.0.0-1.el9.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "8a3451c91c70bb7d2a1e53c9fbaeb6dad3b50837",
+          "sha256": "50c1c433a310fe06ab3a26b4bd346c5d3073272c50019befd8f5cc515b9c743f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/el/9/omnibus-toolchain-3.0.16-1.el9.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "f31910d77d967b61922a12ad1bd61d45cbc42497",
+          "sha256": "c565b7809b4be9ebb403161dc8d6e907a3e60a572faa8b6940fd5a8fcb517e01",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/el/9/omnibus-toolchain-3.0.17-1.el9.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "f787558b365f878da12ac9bbb9c6166abe16e5f7",
+          "sha256": "c1cd7df116a43b98737bae73ffa180d15bf42d53a90b227b041e43890055a8b0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/el/9/omnibus-toolchain-3.0.27-1.el9.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "c610c78945657f77955e98ef6079e7f4e9e21bfe",
+          "sha256": "ef6474cccba4b70b9defa73981959bb69d677ed1194705e319873e991270e688",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/el/9/omnibus-toolchain-3.0.28-1.el9.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "e9e278bc6acb2f362dd454ed0f3f9bf36c01dc83",
+          "sha256": "6230e42c16197c2dc6382fd7a2468e893b79fef0bf4b5c85a082133cbebe67f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/el/9/omnibus-toolchain-3.0.29-1.el9.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "dd618efd36766e4cbb64eaf30b1e5b750523752a",
+          "sha256": "560a93a82f04a4f0f04398cf17ba390e8a72030c184e968dbac98d0c0a2cd4cc",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/el/9/omnibus-toolchain-3.0.31-1.el9.x86_64.rpm"
         }
       }
     }
@@ -7778,6 +8633,26 @@
           "sha1": "5888fde79169652c22a18a9155cf23a39847334f",
           "sha256": "85c0967e5fad076bc638276192b345da452e1ebade6dc22279d108baacb5142f",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/mac_os_x/10.15/omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "d70a81247ed60edd3e5fcb65311cb1f04943906f",
+          "sha256": "f092f1ccf3edcf444728a5281f8c3cd255fbfc5d650030cee931f52927b15b06",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/mac_os_x/10.15/omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.17": {
+          "sha1": "97706120a194834f63ede9cd956a86c8e7f9a16f",
+          "sha256": "b7f9e2471449e2264f21f103ba9ab11257f0546dea68224bd6665e0e25ac68b6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/mac_os_x/10.15/omnibus-toolchain-3.0.17-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "13c22ed3dcd1a5dfc03c7ed6e8b69f5254143789",
+          "sha256": "fb2306b8718f39bcab0b1a40c3e14064da33784c87319779b0a86095e2f8417b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/mac_os_x/10.15/omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "557154d4b03327bd847dce6aa2c9e372a68e5fcc",
+          "sha256": "d8c1fb4d5eac4191febdad18a418da1ae7410ae8142366ebe11b6a6db80ba5e0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/mac_os_x/10.15/omnibus-toolchain-3.0.28-1.x86_64.dmg"
         }
       }
     },
@@ -7811,6 +8686,36 @@
           "sha1": "0c00f6e1ff45a8c704bb69ddcad0bafe4b71e8dd",
           "sha256": "ca833e11e1d8f018f90b46634d375d99a565861387d90f2cbd349b5264913f3c",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/mac_os_x/11/omnibus-toolchain-3.0.0-1.arm64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "c8624f5c99b9a8096cc42d499e8b224c5ecbf686",
+          "sha256": "e60dbc5e58d5745a15037445b36d86b67959659b8f9270a9ceac6dab61d8fd7f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/mac_os_x/11/omnibus-toolchain-3.0.16-1.arm64.dmg"
+        },
+        "3.0.17": {
+          "sha1": "81a82b68e4e9117a8f1bf85f03b20d2a8a47e10c",
+          "sha256": "c57d7d0f8dd52294ff7256b11daefc6dc171403eb9d80228d8f351b62b726f38",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/mac_os_x/11/omnibus-toolchain-3.0.17-1.arm64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "d40db2d8d1df4922ffec0492370b73de92927df7",
+          "sha256": "691dabc39787d75386aedf99abbcd5cf0d6a1dedf2b9748675cde250ffbded23",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/mac_os_x/11/omnibus-toolchain-3.0.27-1.arm64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "33e7e773bc1fb0283473c7e551e56aefa09d6176",
+          "sha256": "81b3391be9da8b5cd7574f3a77c88af808dd17a706ba4100300818a350e9342d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/mac_os_x/11/omnibus-toolchain-3.0.28-1.arm64.dmg"
+        },
+        "3.0.29": {
+          "sha1": "3d4b41912f25a579fa722bf5def76d3a1d66e306",
+          "sha256": "ba11cc07590c4a49a2e2e9fbc6506f4925c103efb8123abfcacba176685df301",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/mac_os_x/11/omnibus-toolchain-3.0.29-1.arm64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "50339243cd06d85108c18b54f40807ff2b804556",
+          "sha256": "919892e93f9a862ee4e4c78f339621713f0b466bfaba00f54dfa7793e6db8d25",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/mac_os_x/11/omnibus-toolchain-3.0.31-1.arm64.dmg"
         }
       },
       "x86_64": {
@@ -7833,6 +8738,36 @@
           "sha1": "5888fde79169652c22a18a9155cf23a39847334f",
           "sha256": "85c0967e5fad076bc638276192b345da452e1ebade6dc22279d108baacb5142f",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/mac_os_x/11/omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "d70a81247ed60edd3e5fcb65311cb1f04943906f",
+          "sha256": "f092f1ccf3edcf444728a5281f8c3cd255fbfc5d650030cee931f52927b15b06",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/mac_os_x/11/omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.17": {
+          "sha1": "97706120a194834f63ede9cd956a86c8e7f9a16f",
+          "sha256": "b7f9e2471449e2264f21f103ba9ab11257f0546dea68224bd6665e0e25ac68b6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/mac_os_x/11/omnibus-toolchain-3.0.17-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "13c22ed3dcd1a5dfc03c7ed6e8b69f5254143789",
+          "sha256": "fb2306b8718f39bcab0b1a40c3e14064da33784c87319779b0a86095e2f8417b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/mac_os_x/11/omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "557154d4b03327bd847dce6aa2c9e372a68e5fcc",
+          "sha256": "d8c1fb4d5eac4191febdad18a418da1ae7410ae8142366ebe11b6a6db80ba5e0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/mac_os_x/11/omnibus-toolchain-3.0.28-1.x86_64.dmg"
+        },
+        "3.0.29": {
+          "sha1": "150afd08f51441b53f96113f029677bd38fed8da",
+          "sha256": "db5d24291d2b90d4201a2ae7466eaecd6da022e57c373481657e5800aa838fa4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/mac_os_x/11/omnibus-toolchain-3.0.29-1.x86_64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "d39abe39b9eee77ff0148a8b550d74671e028645",
+          "sha256": "3c443d1648db5b779ada2936423b9fb506c9aece91cadd22b82f806c219ca4ee",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/mac_os_x/11/omnibus-toolchain-3.0.31-1.x86_64.dmg"
         }
       }
     },
@@ -7847,6 +8782,36 @@
           "sha1": "5888fde79169652c22a18a9155cf23a39847334f",
           "sha256": "85c0967e5fad076bc638276192b345da452e1ebade6dc22279d108baacb5142f",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/mac_os_x/12/omnibus-toolchain-3.0.0-1.x86_64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "d70a81247ed60edd3e5fcb65311cb1f04943906f",
+          "sha256": "f092f1ccf3edcf444728a5281f8c3cd255fbfc5d650030cee931f52927b15b06",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/mac_os_x/12/omnibus-toolchain-3.0.16-1.x86_64.dmg"
+        },
+        "3.0.17": {
+          "sha1": "97706120a194834f63ede9cd956a86c8e7f9a16f",
+          "sha256": "b7f9e2471449e2264f21f103ba9ab11257f0546dea68224bd6665e0e25ac68b6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/mac_os_x/12/omnibus-toolchain-3.0.17-1.x86_64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "13c22ed3dcd1a5dfc03c7ed6e8b69f5254143789",
+          "sha256": "fb2306b8718f39bcab0b1a40c3e14064da33784c87319779b0a86095e2f8417b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/mac_os_x/12/omnibus-toolchain-3.0.27-1.x86_64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "557154d4b03327bd847dce6aa2c9e372a68e5fcc",
+          "sha256": "d8c1fb4d5eac4191febdad18a418da1ae7410ae8142366ebe11b6a6db80ba5e0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/mac_os_x/12/omnibus-toolchain-3.0.28-1.x86_64.dmg"
+        },
+        "3.0.29": {
+          "sha1": "150afd08f51441b53f96113f029677bd38fed8da",
+          "sha256": "db5d24291d2b90d4201a2ae7466eaecd6da022e57c373481657e5800aa838fa4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/mac_os_x/12/omnibus-toolchain-3.0.29-1.x86_64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "d39abe39b9eee77ff0148a8b550d74671e028645",
+          "sha256": "3c443d1648db5b779ada2936423b9fb506c9aece91cadd22b82f806c219ca4ee",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/mac_os_x/12/omnibus-toolchain-3.0.31-1.x86_64.dmg"
         }
       },
       "aarch64": {
@@ -7859,6 +8824,36 @@
           "sha1": "0c00f6e1ff45a8c704bb69ddcad0bafe4b71e8dd",
           "sha256": "ca833e11e1d8f018f90b46634d375d99a565861387d90f2cbd349b5264913f3c",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/mac_os_x/12/omnibus-toolchain-3.0.0-1.arm64.dmg"
+        },
+        "3.0.16": {
+          "sha1": "c8624f5c99b9a8096cc42d499e8b224c5ecbf686",
+          "sha256": "e60dbc5e58d5745a15037445b36d86b67959659b8f9270a9ceac6dab61d8fd7f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/mac_os_x/12/omnibus-toolchain-3.0.16-1.arm64.dmg"
+        },
+        "3.0.17": {
+          "sha1": "81a82b68e4e9117a8f1bf85f03b20d2a8a47e10c",
+          "sha256": "c57d7d0f8dd52294ff7256b11daefc6dc171403eb9d80228d8f351b62b726f38",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/mac_os_x/12/omnibus-toolchain-3.0.17-1.arm64.dmg"
+        },
+        "3.0.27": {
+          "sha1": "d40db2d8d1df4922ffec0492370b73de92927df7",
+          "sha256": "691dabc39787d75386aedf99abbcd5cf0d6a1dedf2b9748675cde250ffbded23",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/mac_os_x/12/omnibus-toolchain-3.0.27-1.arm64.dmg"
+        },
+        "3.0.28": {
+          "sha1": "33e7e773bc1fb0283473c7e551e56aefa09d6176",
+          "sha256": "81b3391be9da8b5cd7574f3a77c88af808dd17a706ba4100300818a350e9342d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/mac_os_x/12/omnibus-toolchain-3.0.28-1.arm64.dmg"
+        },
+        "3.0.29": {
+          "sha1": "3d4b41912f25a579fa722bf5def76d3a1d66e306",
+          "sha256": "ba11cc07590c4a49a2e2e9fbc6506f4925c103efb8123abfcacba176685df301",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/mac_os_x/12/omnibus-toolchain-3.0.29-1.arm64.dmg"
+        },
+        "3.0.31": {
+          "sha1": "50339243cd06d85108c18b54f40807ff2b804556",
+          "sha256": "919892e93f9a862ee4e4c78f339621713f0b466bfaba00f54dfa7793e6db8d25",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/mac_os_x/12/omnibus-toolchain-3.0.31-1.arm64.dmg"
         }
       }
     }
@@ -8326,6 +9321,36 @@
           "sha1": "184a67b5c88215384ba4f486fd88b6897b9f6f68",
           "sha256": "f0229d3e6e3c6273b95e333612b1650a5ca517b8a68e65cc241dc5f95932a376",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/sles/12/omnibus-toolchain-3.0.0-1.sles12.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "81cbad467a4c2e2ac0401a3611973a7735e0df3f",
+          "sha256": "80cf2959ecb318a9ad8f9ab57f6e81492dba269d6d4cb625d4ab817becd71ea3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/sles/12/omnibus-toolchain-3.0.16-1.sles12.s390x.rpm"
+        },
+        "3.0.17": {
+          "sha1": "b1c2db52c0d40ba414a16927ddeac13bc86f16b2",
+          "sha256": "c09538389cfe439e20027e0cd994db612a3f3b58c15a7d5d269853354c9a4293",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/sles/12/omnibus-toolchain-3.0.17-1.sles12.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "fbcbd933679f0f137aa4ce47e34547762d158bc9",
+          "sha256": "4ab8040acd5cd64b58f2c39ec58d79f7a2fb2c91d38e918c4a8a861ba39ab515",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/sles/12/omnibus-toolchain-3.0.27-1.sles12.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "db23afb1da7c382c7c61e39ceaad4be114ad5826",
+          "sha256": "da6c67943581edd3dd51916557aa84407847469e05db56c7651232d5aa8d0417",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/sles/12/omnibus-toolchain-3.0.28-1.sles12.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "3ff113d1c55d709902f3cc656808044f6f99b085",
+          "sha256": "23237568626f92e939296af991b4e799f12ae28439ca319f51f86cc60244ab16",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/sles/12/omnibus-toolchain-3.0.29-1.sles12.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "a601ae04c5bbf977701e346634a8c4f47d95678b",
+          "sha256": "18c21a3bbbe9f56c82ab2eb7b8d52a05e753fe1229f58e5a3eb5f370542a169e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/sles/12/omnibus-toolchain-3.0.31-1.sles12.s390x.rpm"
         }
       },
       "x86_64": {
@@ -8493,6 +9518,36 @@
           "sha1": "fda42ca8523f46f1a0ead438e737b12247d8f3c1",
           "sha256": "9cfc69a3b96b01975284ac88965218bec9b99a6ba361f7df48e4bd3fdf63d1a4",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/sles/12/omnibus-toolchain-3.0.0-1.sles12.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "ca7bea336ba5908d6e78ee0fe712ad2540802932",
+          "sha256": "b0ecc0eaa7720f6d38fc72096f13bbd7503c9c21115e390d378c28cb28a73ab3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/sles/12/omnibus-toolchain-3.0.16-1.sles12.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "865e97307e4475278877548cc030d9c00355b90a",
+          "sha256": "18cbb71b6716b7cecd290fe01049adaa743b66181e448370ad69f705aef0a8a1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/sles/12/omnibus-toolchain-3.0.17-1.sles12.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "cb5f1fa5a0a908ce94c46716ca99cfe2b127aeb2",
+          "sha256": "fac4bcccfc1444d5c3d16b9225137096ed833fcc367bb17e7a22b0e85ca7413b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/sles/12/omnibus-toolchain-3.0.27-1.sles12.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "ff08b78154bf954792ec21a2345e2d7468ab63cb",
+          "sha256": "c04ca145c54ae4bd8b6d4ffc1bc63fc0d7ce6660a599ae1656f3accb5e6eea6f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/sles/12/omnibus-toolchain-3.0.28-1.sles12.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "bbaaebcc63980c3daeb2fec282768e000d33a003",
+          "sha256": "1f300209156b702762e3ef3e2bd2d077f5b2ad9643a75a7b6c5a867a9562bd0e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/sles/12/omnibus-toolchain-3.0.29-1.sles12.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "80b8c1a63be92db6126615c73f7e1c93a6612b06",
+          "sha256": "0b5ff80eb80b4147ea6575035e00014e3cd6bd4b33fee1e742953d78d2c48e9b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/sles/12/omnibus-toolchain-3.0.31-1.sles12.x86_64.rpm"
         }
       }
     },
@@ -8607,6 +9662,36 @@
           "sha1": "fda42ca8523f46f1a0ead438e737b12247d8f3c1",
           "sha256": "9cfc69a3b96b01975284ac88965218bec9b99a6ba361f7df48e4bd3fdf63d1a4",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/sles/15/omnibus-toolchain-3.0.0-1.sles12.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "ca7bea336ba5908d6e78ee0fe712ad2540802932",
+          "sha256": "b0ecc0eaa7720f6d38fc72096f13bbd7503c9c21115e390d378c28cb28a73ab3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/sles/15/omnibus-toolchain-3.0.16-1.sles12.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "865e97307e4475278877548cc030d9c00355b90a",
+          "sha256": "18cbb71b6716b7cecd290fe01049adaa743b66181e448370ad69f705aef0a8a1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/sles/15/omnibus-toolchain-3.0.17-1.sles12.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "cb5f1fa5a0a908ce94c46716ca99cfe2b127aeb2",
+          "sha256": "fac4bcccfc1444d5c3d16b9225137096ed833fcc367bb17e7a22b0e85ca7413b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/sles/15/omnibus-toolchain-3.0.27-1.sles12.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "ff08b78154bf954792ec21a2345e2d7468ab63cb",
+          "sha256": "c04ca145c54ae4bd8b6d4ffc1bc63fc0d7ce6660a599ae1656f3accb5e6eea6f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/sles/15/omnibus-toolchain-3.0.28-1.sles12.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "bbaaebcc63980c3daeb2fec282768e000d33a003",
+          "sha256": "1f300209156b702762e3ef3e2bd2d077f5b2ad9643a75a7b6c5a867a9562bd0e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/sles/15/omnibus-toolchain-3.0.29-1.sles12.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "80b8c1a63be92db6126615c73f7e1c93a6612b06",
+          "sha256": "0b5ff80eb80b4147ea6575035e00014e3cd6bd4b33fee1e742953d78d2c48e9b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/sles/15/omnibus-toolchain-3.0.31-1.sles12.x86_64.rpm"
         }
       },
       "s390x": {
@@ -8689,6 +9774,36 @@
           "sha1": "184a67b5c88215384ba4f486fd88b6897b9f6f68",
           "sha256": "f0229d3e6e3c6273b95e333612b1650a5ca517b8a68e65cc241dc5f95932a376",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/sles/15/omnibus-toolchain-3.0.0-1.sles12.s390x.rpm"
+        },
+        "3.0.16": {
+          "sha1": "81cbad467a4c2e2ac0401a3611973a7735e0df3f",
+          "sha256": "80cf2959ecb318a9ad8f9ab57f6e81492dba269d6d4cb625d4ab817becd71ea3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/sles/15/omnibus-toolchain-3.0.16-1.sles12.s390x.rpm"
+        },
+        "3.0.17": {
+          "sha1": "b1c2db52c0d40ba414a16927ddeac13bc86f16b2",
+          "sha256": "c09538389cfe439e20027e0cd994db612a3f3b58c15a7d5d269853354c9a4293",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/sles/15/omnibus-toolchain-3.0.17-1.sles12.s390x.rpm"
+        },
+        "3.0.27": {
+          "sha1": "fbcbd933679f0f137aa4ce47e34547762d158bc9",
+          "sha256": "4ab8040acd5cd64b58f2c39ec58d79f7a2fb2c91d38e918c4a8a861ba39ab515",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/sles/15/omnibus-toolchain-3.0.27-1.sles12.s390x.rpm"
+        },
+        "3.0.28": {
+          "sha1": "db23afb1da7c382c7c61e39ceaad4be114ad5826",
+          "sha256": "da6c67943581edd3dd51916557aa84407847469e05db56c7651232d5aa8d0417",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/sles/15/omnibus-toolchain-3.0.28-1.sles12.s390x.rpm"
+        },
+        "3.0.29": {
+          "sha1": "3ff113d1c55d709902f3cc656808044f6f99b085",
+          "sha256": "23237568626f92e939296af991b4e799f12ae28439ca319f51f86cc60244ab16",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/sles/15/omnibus-toolchain-3.0.29-1.sles12.s390x.rpm"
+        },
+        "3.0.31": {
+          "sha1": "a601ae04c5bbf977701e346634a8c4f47d95678b",
+          "sha256": "18c21a3bbbe9f56c82ab2eb7b8d52a05e753fe1229f58e5a3eb5f370542a169e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/sles/15/omnibus-toolchain-3.0.31-1.sles12.s390x.rpm"
         }
       },
       "aarch64": {
@@ -8731,6 +9846,36 @@
           "sha1": "6fb285137744ee3e1731ae2b7dbe568a8c8f5565",
           "sha256": "12ce6cac767e330bd99d41a15c9f74f5673c37d8d4eb3a8767bac9c51d82aff1",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/sles/15/omnibus-toolchain-3.0.0-1.sles15.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "fa1571b0f82757f97d015b1d31a28687cfc5c34a",
+          "sha256": "2170c459ba3bbe028f323ffd86ad98549806a388857dfffa8647d6d901cbde04",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/sles/15/omnibus-toolchain-3.0.16-1.sles15.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "e35e9cae74f5a096567be1e20da9f3852ab29579",
+          "sha256": "4c80a85402e873956c2aea9b3c399286cd4c20195623c78a2ab8044d57c5c591",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/sles/15/omnibus-toolchain-3.0.17-1.sles15.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "454eac52516cf70234f876925ca9b01860f0a98d",
+          "sha256": "20afe61fa5aa33421f61b88bf81b946c991fbc34c0f464b4c0042da8bf7428c0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/sles/15/omnibus-toolchain-3.0.27-1.sles15.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "5ab0eca77c3bfe890d81a9d5f968b7525aadf71c",
+          "sha256": "43207c9200b03560b2573b91927011951a1a5d8d29ae17ce8785b8772d142964",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/sles/15/omnibus-toolchain-3.0.28-1.sles15.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "7cec9ae352679953eac34804307400bc27f21e1d",
+          "sha256": "bb031b23545541cb9060d96445ab89b9dcf2a8c0ca0c21606900cb455f5e2ca8",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/sles/15/omnibus-toolchain-3.0.29-1.sles15.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "3875625b8b011ac68687abe607972531a6014700",
+          "sha256": "5fbc9e4b897b3b78a589730e0b88a2975f34a1ac7f3e4a071b1e19412d9cdb7b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/sles/15/omnibus-toolchain-3.0.31-1.sles15.aarch64.rpm"
         }
       }
     }
@@ -9198,6 +10343,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/2012/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/2012/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/2012/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/2012/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/2012/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/2012/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/2012/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -9529,6 +10704,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/2012r2/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/2012r2/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/2012r2/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/2012r2/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/2012r2/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/2012r2/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/2012r2/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -9910,6 +11115,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/10/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/10/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/10/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/10/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/10/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/10/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/10/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -10221,6 +11456,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/2016/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/2016/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/2016/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/2016/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/2016/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/2016/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/2016/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       },
       "i386": {
@@ -10387,6 +11652,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/2019/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/2019/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/2019/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/2019/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/2019/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/2019/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/2019/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -10401,6 +11696,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/11/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/11/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/11/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/11/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/11/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/11/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/11/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -10415,6 +11740,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/2022/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/2022/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/2022/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/2022/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/2022/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/2022/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/2022/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     },
@@ -10429,6 +11784,36 @@
           "sha1": "feeb1a06ced81f9e0cb6cafdd1d36e0a99501e58",
           "sha256": "94442309fa77f64cae953815453f8379a597ab17295f5c79c27138fcfdaca363",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/windows/8/omnibus-toolchain-3.0.0-1-x64.msi"
+        },
+        "3.0.16": {
+          "sha1": "b939a9391989953220b5fbaf8c8b32d2eabf6738",
+          "sha256": "17ca453df32ffb4259ace4b3fb9369ce2e7b2d0ca9308ecfdbfff4544aca7ab9",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/windows/8/omnibus-toolchain-3.0.16-1-x64.msi"
+        },
+        "3.0.17": {
+          "sha1": "87d07752200e806bcb5423fb6b67a0704629e69b",
+          "sha256": "79de59e0aaa76f001f2691b7e8b3752d40aebf484b62808178b3c83fb7846354",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/windows/8/omnibus-toolchain-3.0.17-1-x64.msi"
+        },
+        "3.0.27": {
+          "sha1": "4d8e8b0d13617424f7142498bafbecf62de3373f",
+          "sha256": "192b6e90b9545c83e289842e67eaa6431f52c9868bf2abc79aecfbaf96bf892b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/windows/8/omnibus-toolchain-3.0.27-1-x64.msi"
+        },
+        "3.0.28": {
+          "sha1": "0523a78c4598fc49624a51561e263ee11ac5a963",
+          "sha256": "5be62d916aa80f1134b0f8fa8589b424eacbd59dc5c5ac83d4c44495c4aa10f5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/windows/8/omnibus-toolchain-3.0.28-1-x64.msi"
+        },
+        "3.0.29": {
+          "sha1": "1c34fa76813a6c0e6f780832d59f32d97b37a77e",
+          "sha256": "8e170d4688641c7a80b20bc9423e354c3b9fd8e953e5ccf0eecdabc43b98b5f7",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/windows/8/omnibus-toolchain-3.0.29-1-x64.msi"
+        },
+        "3.0.31": {
+          "sha1": "91a5b36fc5c912df88858c8fbf7dcbf7d4ff8588",
+          "sha256": "5e63d99700d7c17f302d11df0fb5a3b42b293ca8d95cc515aa5d4168921206ed",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/windows/8/omnibus-toolchain-3.0.31-1-x64.msi"
         }
       }
     }
@@ -10445,6 +11830,36 @@
           "sha1": "622e6cc8a2d7046b9b7e62f5e0ab22ec2a49f52d",
           "sha256": "9f9401712e6eb4109733c8877939a939c250b5e16af00c2de298bf616981cf20",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/amazon/2/omnibus-toolchain-3.0.0-1.el7.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "fed0db0c6199871345a0a874cf581293d93a75c5",
+          "sha256": "87a227dbe6d046c4b18e3f11239ca86327615e5088376db451545e17916d5af6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/amazon/2/omnibus-toolchain-3.0.16-1.el7.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "b5c97f5314cf503ce14b7f29623c5bb6b58d7999",
+          "sha256": "c7cb1330dcdb755ce15bbd9620e5588113345d0ce1c6281206a154fac9ee6aa1",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/amazon/2/omnibus-toolchain-3.0.17-1.el7.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "0d1aea46e4885e0388269ece9b2eb86fb221a873",
+          "sha256": "6c702a21cae1c866c1ebeae89107480ed3235d876cc38ea09f77982ec19ef345",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/amazon/2/omnibus-toolchain-3.0.27-1.el7.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "e4b7b835b47579cd652bf2a3b1b4ca18f258c7ee",
+          "sha256": "133aa814b972c566b26420cd14616b735e38e45718c4e7efe7ca32aa37f44077",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2/omnibus-toolchain-3.0.28-1.el7.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "e475cf0b129cfb12bfd80a33456f167b295740d4",
+          "sha256": "5e27f968e41c342a66c4935dfa4333d06b4ca3a085b16fe5151b5cab3c326d35",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2/omnibus-toolchain-3.0.29-1.el7.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "839d4d859c71cda7cd2d18ed8a6349487f6ae413",
+          "sha256": "0a669f90e411a6d837aed200e8e6bbcc833cd6444a4a4258aef8cc9f7aeb401b",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2/omnibus-toolchain-3.0.31-1.el7.x86_64.rpm"
         }
       },
       "aarch64": {
@@ -10457,6 +11872,36 @@
           "sha1": "2ca1434c0d293da9ec5209e8b2ef8cecd4242ddb",
           "sha256": "c68aa731d97ffb738884d9794e2debd01622e0adaabccfc271a1608141474d29",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/amazon/2/omnibus-toolchain-3.0.0-1.el7.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "2c910bb4a73aca318f5f2114eb6f46d60313d288",
+          "sha256": "dbab83b9dbc73d22e79feb235a1f2ef000a041fb9381ceae00ee04d23633301f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/amazon/2/omnibus-toolchain-3.0.16-1.el7.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "dd2ea338e88e9adfadab0b413f4ae158a6c161e6",
+          "sha256": "d33e0c6d62e031b2602e53691fbf2dea1410d94e3a91efaacb09514ff32eb12f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/amazon/2/omnibus-toolchain-3.0.17-1.el7.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "00872abaf11b03e4b2f363124ae5970ef60f8bbf",
+          "sha256": "6bc8878ced34ffd32909fef34c9d946b2ec4940adf33896915cee1c586fa2d84",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/amazon/2/omnibus-toolchain-3.0.27-1.el7.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "f74a86b1f57ddcec9ca855adc7639ec775393d0e",
+          "sha256": "c06eb7640307d7cdd170b875f84dfb3143e11839a1bd5856759605cdff5e8186",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2/omnibus-toolchain-3.0.28-1.el7.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "67c856ccea86ba7c32562f36c07b126ee7a8766d",
+          "sha256": "ea70e6fdc1a35705c61661a058562f58ec943b2f9713912ae9fec72bf4fa76c5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2/omnibus-toolchain-3.0.29-1.el7.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "46e06023417323d41f9db2e2e8dbe267cdf3630a",
+          "sha256": "c7cba942ceab01f62ba1c51bf37a4747a3ce3ee307e87b48918511c3a993d525",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2/omnibus-toolchain-3.0.31-1.el7.aarch64.rpm"
         }
       }
     },
@@ -10466,6 +11911,36 @@
           "sha1": "d7a5b6c63d2a13a833de18acd338fef95f3dbf59",
           "sha256": "55eff8974067e1cafd5eb523402012f615116b48a9cfa8430837ab54012e39d6",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/amazon/2022/omnibus-toolchain-3.0.0-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "514ea4748a05a06bbb33fd712f4dbde8c4a4a40e",
+          "sha256": "f18a43dbab458b770bc9e3f0d0813bbf10b497bc8bf8656d66f477242214d107",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/amazon/2022/omnibus-toolchain-3.0.16-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "83b01cb947a801017a404cef38d5f1d324402190",
+          "sha256": "8e103c0d65492bfd7774e7f3e083c8067e90c7b99bdd7171c917c203cd1dee34",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/amazon/2022/omnibus-toolchain-3.0.17-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "5dfb23e5e27f2b18bc5874d34d72fc2d0d22cbda",
+          "sha256": "432744c0c4648c0afe12ec23c4baf290a72835fcf5b5372987c4e6031e05936d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/amazon/2022/omnibus-toolchain-3.0.27-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "800517cada2737afe01d0f4add616d1b4c334493",
+          "sha256": "83fbea5004d9a6a6fd5c535ac50106c8d3f3f2df11aa5cdfa6290403695db582",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2022/omnibus-toolchain-3.0.28-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "6de0c0e1819640816f142187a96b0abced2aa7cd",
+          "sha256": "70796a28f93fe2b39c07f0592e811dfb41d0f7484ab738ab1ef42ca47a052422",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2022/omnibus-toolchain-3.0.29-1.amazon2022.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "c6b8b1341b7eb9c255eec779dfaeac66d6254d32",
+          "sha256": "7accdd43d12c8e65afa0849ec8cc283998ced9b89de8ef06c504b0ae44282923",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2022/omnibus-toolchain-3.0.31-1.amazon2022.aarch64.rpm"
         }
       },
       "x86_64": {
@@ -10473,11 +11948,176 @@
           "sha1": "f58758b64b04a4da7120287c54f0b507a74e94a4",
           "sha256": "352a486aab2a9828ae9f54735bb31db6717ebaf51432b2810f1f5b4ef31e3dde",
           "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.0/amazon/2022/omnibus-toolchain-3.0.0-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.16": {
+          "sha1": "fe7d7944d8df90bc2a8f3de240445c38567734a3",
+          "sha256": "21fc586618619c20e2fb25d2a47d4fde979bf5a440c0440908b6140507e22baa",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.16/amazon/2022/omnibus-toolchain-3.0.16-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.17": {
+          "sha1": "d697ada5a83af3e20df5ac92a7790108dec2cc8b",
+          "sha256": "f83ef812887c57be45bfcaa0db1ff01362bb84148dc98561804258e7f162f8df",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/amazon/2022/omnibus-toolchain-3.0.17-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "05a837044bcac89521909753e5a51147069c7500",
+          "sha256": "b118bd99a45a621cd604a4c719edc175aef052965fedeca34d88061e642c1cfc",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/amazon/2022/omnibus-toolchain-3.0.27-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "c72c255a69003625d2bab6ba51768f1a29941e5b",
+          "sha256": "a21b428545b83a3c27dbab87bd846c51bf9d9dc3078bd8dd7c0505610cd10692",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2022/omnibus-toolchain-3.0.28-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "fb1ce7744a318f10b9e229b2979493535c284735",
+          "sha256": "9199d539161db858ff276365b9f95c21b38728c5bd8a2b358ec75f4428012546",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2022/omnibus-toolchain-3.0.29-1.amazon2022.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "ad2038ce492d0bae0c23fc8be8f9fc8825dacf22",
+          "sha256": "8af7897ba30b85db97f1b8af0009275b4b812597749a33536c52202b62b239f2",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2022/omnibus-toolchain-3.0.31-1.amazon2022.x86_64.rpm"
+        }
+      }
+    },
+    "2023": {
+      "aarch64": {
+        "3.0.28": {
+          "sha1": "6cadb0585069e8901c0f1591fe3bd637c4f74ffc",
+          "sha256": "1d466990946c2a10e1b76092160b7cb83c1701da8897d708e1e62ec6adc13e52",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2023/omnibus-toolchain-3.0.28-1.amazon2023.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "39ff73ba545ff57405dbae171916c26ba6d8ab30",
+          "sha256": "6357a61b8c938196e91785b128a8677cdcfd2e9c92c91653bcaf4a9ba24d7bf4",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2023/omnibus-toolchain-3.0.29-1.amazon2023.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "df6d24aeef1a19bca65ef559e921af5856a999a5",
+          "sha256": "95be8f7a36aa69b6f6d201df3d3fa7736c811b95d5459031e6e9f059a81323c0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2023/omnibus-toolchain-3.0.31-1.amazon2023.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.0.28": {
+          "sha1": "b29bf9e984bad1d505f1ffe75f0b650d9e7a81b2",
+          "sha256": "935ffe20b20229c5fbd77127b36bd4694c6ee602d4f8104b8bbff644f5355c15",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/amazon/2023/omnibus-toolchain-3.0.28-1.amazon2023.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "6d4aff078d0a9320eee232f7d69bf90e52dac16e",
+          "sha256": "a8d4a6894238a39ca53bf81198e4ec83c84713e966aa7bf7864fde8d56e21d1f",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/amazon/2023/omnibus-toolchain-3.0.29-1.amazon2023.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "afee74ef5e94c8ecb994f3018e4bb8af7dc1e3a2",
+          "sha256": "5d1b18781b3f902b50c1304ce4dc38b7c8541b316d6921fba6b2fd86bdeae9b3",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/amazon/2023/omnibus-toolchain-3.0.31-1.amazon2023.x86_64.rpm"
+        }
+      }
+    }
+  },
+  "rocky": {
+    "8": {
+      "x86_64": {
+        "3.0.17": {
+          "sha1": "14de1e6a0817d186c0aeabe185b442ae968d917d",
+          "sha256": "3aeb47c62ae4432ce645ff643e441e5364f076d0830a40e1d49a761c85823229",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.17/rocky/8/omnibus-toolchain-3.0.17-1.rocky8.x86_64.rpm"
+        },
+        "3.0.27": {
+          "sha1": "31989d70359a533cb91373db3df8e622fcd70ed8",
+          "sha256": "14fa0ee1439b3b03e9710bb61a9a1cbb0ab1ca2ca2e3ccab25ed115f0bca2d1e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/rocky/8/omnibus-toolchain-3.0.27-1.rocky8.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "3863e8c3ff83413d5e6004119b0852bf36bab823",
+          "sha256": "42c4a8f74c1db44324c12bf06dc6951cc3b4367a7ccab0b05be08fda1c85b20e",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/rocky/8/omnibus-toolchain-3.0.28-1.rocky8.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "728513396963710911cc4be5555b57d47e659c48",
+          "sha256": "530d8a280d191632092db5f3d7dd867f012f210083d76ccc6a7f4463aca6bc8a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/rocky/8/omnibus-toolchain-3.0.29-1.rocky8.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "60059ea995f64cccfba0fb229b3abb572be3f3a2",
+          "sha256": "2a01e8355123e9bc4f798fd139a123bf55e4f7bbe051f6e40f83913658004334",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/rocky/8/omnibus-toolchain-3.0.31-1.rocky8.x86_64.rpm"
+        }
+      },
+      "aarch64": {
+        "3.0.27": {
+          "sha1": "ab7e9edb287c52b656df80984b966b5123142d16",
+          "sha256": "1e13c4b841c3172cfa7ef3c7942b1c271403d86e274adcd4a79513bbab8fe515",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/rocky/8/omnibus-toolchain-3.0.27-1.rocky8.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "5737d7f9c050ff278f9cd78e4f61dbe9b52ce9ad",
+          "sha256": "ce33266793fa831f20a5a092f46ed2526ff942231a0b7321f66ac9a9e43a7fb0",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/rocky/8/omnibus-toolchain-3.0.28-1.rocky8.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "137eb4548f1903f713171576d3c8bc5692baae5c",
+          "sha256": "738a96e05900c9dae0c7af08bfa9eafedd393fc028a8a9cf885f637c1f9c623d",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/rocky/8/omnibus-toolchain-3.0.29-1.rocky8.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "d50905d601deb959fcf11649bb75f670d099dcc0",
+          "sha256": "1d010e266caadab3f1b980a1ade23f23f356b437b29521891d44ccf6de1a3225",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/rocky/8/omnibus-toolchain-3.0.31-1.rocky8.aarch64.rpm"
+        }
+      }
+    },
+    "9": {
+      "aarch64": {
+        "3.0.27": {
+          "sha1": "110f84750237d452d30f9671896e5829507a430c",
+          "sha256": "a282e8812e5036a35e8faefbc45a75a03812cf86f78443d58aad16fe71c10696",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/rocky/9/omnibus-toolchain-3.0.27-1.rocky9.aarch64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "01e4fd6601d76575eccdfb60a32437b948afc483",
+          "sha256": "17dc34043c784ba3a6d89577f64f20b56e8dda99b4a8694672a649e16d3a017a",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/rocky/9/omnibus-toolchain-3.0.28-1.rocky9.aarch64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "4a9b9a14e2700cafe6fd1eed87f1d64d0b08b882",
+          "sha256": "4358f2ec2f623c3ffeb19a66c3c9e03f00cc858357c01f63a7b1b6193e92b4b6",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/rocky/9/omnibus-toolchain-3.0.29-1.rocky9.aarch64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "5ab20444fd4a86d6562045eca029a4060054cf54",
+          "sha256": "da76c06eb0ce7d604c1b28281c109cb39623c1051b2c6a6a3c06c305b72aa807",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/rocky/9/omnibus-toolchain-3.0.31-1.rocky9.aarch64.rpm"
+        }
+      },
+      "x86_64": {
+        "3.0.27": {
+          "sha1": "04f287c1ecfb71b9393cd047bfdd09635cfe264b",
+          "sha256": "18ad2359ca15984ca89c27bba5995d6a83a2e4b246e9bd88f7e4a7ab119ce818",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.27/rocky/9/omnibus-toolchain-3.0.27-1.rocky9.x86_64.rpm"
+        },
+        "3.0.28": {
+          "sha1": "659ac0bf620f0ea13dcaffe60f1b9f7ff3055cf2",
+          "sha256": "195da13162528a3bc805fa74aa6e17f37065520c652f079f304ba55947906dd5",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.28/rocky/9/omnibus-toolchain-3.0.28-1.rocky9.x86_64.rpm"
+        },
+        "3.0.29": {
+          "sha1": "051487117815f3b31d2f214717b2f572c62af307",
+          "sha256": "a05c2d80bc7d1018ea099e4eac90a9a3bb9230b32675c588ca498cea2fc24b69",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.29/rocky/9/omnibus-toolchain-3.0.29-1.rocky9.x86_64.rpm"
+        },
+        "3.0.31": {
+          "sha1": "e4aed5057a1b813b031045f12fbccc0cd24988a4",
+          "sha256": "e03984eff9c403c7a16e3627f133ec1a6f57ba4f76002fba5e4d7958a3dad5bf",
+          "url": "https://packages.chef.io/files/stable/omnibus-toolchain/3.0.31/rocky/9/omnibus-toolchain-3.0.31-1.rocky9.x86_64.rpm"
         }
       }
     }
   },
   "run_data": {
-    "timestamp": "2022-06-03 00:14:00 +0000"
+    "timestamp": "2024-09-14 08:10:51 -0400"
   }
 }

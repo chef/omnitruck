@@ -198,9 +198,31 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-
+  
+    # Get package information
     package_info = get_package_info
-    redirect package_info["url"]
+  
+    # Grab org url
+    original_url = package_info["url"]
+  
+    # Debug output of original URL
+    # puts "Debug Info - Original URL: #{original_url}"
+  
+    # amazon 2 rewrite nonsense
+    if original_url.include?("/amazon/2023/") && params[:pv] == "2"
+      # Rewrite the URL for Amazon Linux 2
+      rewritten_url = original_url
+                       .gsub(/\/amazon\/2023\//, "/amazon/2/")
+                       .gsub(/.amazon2023/, ".amazon2")
+  
+      # uncomment for debug
+      # puts "Debug Info - Rewritten URL: #{rewritten_url}"
+  
+      redirect rewritten_url
+    else
+      # Redirect to the original URL if no rewrite needed
+      redirect original_url
+    end
   end
 
   get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
@@ -388,27 +410,21 @@ class Omnitruck < Sinatra::Base
     current_platform = params['p']
     current_platform_version = params['pv']
     current_arch = params['m']
-
+    current_version = params['v']
     # Create VersionResolver here to take advantage of #parse_version_string
-    # method which is called in the constructor. This will return nil or an Opscode::Version instance
     opscode_version = Chef::VersionResolver.new(
-      params['v'],
+      current_version,
       cache.manifest_for(current_project, channel),
       channel,
       current_project
     ).target_version
-
     # Set ceiling version if nil in place of latest version. This makes comparisons easier.
     opscode_version = Opscode::Version.parse('999.999.999') if opscode_version.nil?
-
-    # Windows artifacts require special handling
-    # 1) If no architecture is provided we default to i386
-    # 2) Internally we always use i386 to represent 32-bit artifacts, not i686
+    # Windows artifacts require special handling (as before)
     current_arch = if params["p"] == "windows" &&
       (current_arch.nil? || current_arch.empty? || current_arch == "i686")
                      "i386"
                    else
-                     # Map `uname -m` returned architectures into our internal representations
                      case current_arch
                      when *%w{ arm64 aarch64 }       then 'aarch64'
                      when *%w{ x86_64 amd64 x64 }    then 'x86_64'
@@ -417,60 +433,52 @@ class Omnitruck < Sinatra::Base
                      else current_arch
                      end
                    end
-
-    # SLES/SUSE requests may need to be modified before returning metadata.
-    # If s390x architecture is requested we never modify the metadata.
+    # Output current environment details for debugging purposes
+    # puts "*****************"
+    # puts "Current Project: #{current_project}"
+    # puts "Current Platform: #{current_platform}"
+    # puts "Current Platform Version: #{current_platform_version}"
+    # puts "Current Architecture: #{current_arch}"
+    # puts "Current Version: #{current_version}"
+    # puts "*****************"
+    remap_to_el = false
+    # Handle SLES/SUSE as before (this section remains unchanged)
     if %{sles suse opensuse-leap}.include?(current_platform) && current_arch != "s390x"
       current_platform = 'sles'
-      # Here we map specific project versions that started building
-      # native SLES packages. This is used to determine which projects
-      # need to be remapped to EL before a certain version.
       native_sles_project_version = OmnitruckDist::SLES_PROJECT_VERSIONS
-
-      # Locate native sles version for project if it exists
       sles_project_version = native_sles_project_version[current_project]
-
-      remap_to_el = false
-
-      # If sles_project_version is nil (no projects listed with a native SLES version)
-      # then always remap to EL
-      if sles_project_version.nil?
-        remap_to_el = true
-      # If requested project version is a partial version then we parse new versions
-      # using high version limits to simulate latest version for given values
-      elsif opscode_version.mixlib_version.is_a?(Opscode::Version::Incomplete)
-        opscode_version = if opscode_version.minor.nil?
-                            # Parse with high minor and patch versions
-                            Opscode::Version.parse("#{opscode_version.major}.9999.9999")
-                          else
-                            # Parse with high patch version
-                            Opscode::Version.parse("#{opscode_version.major}.#{opscode_version.minor}.9999")
-                          end
-        # If the new parsed version is less than the native sles version then remap
-        remap_to_el = true if opscode_version < Opscode::Version.parse(sles_project_version)
-      # If requested version is a SemVer do a simple compare
-      elsif opscode_version < Opscode::Version.parse(sles_project_version)
-        remap_to_el = true
+      remap_to_el = true if sles_project_version.nil? || opscode_version < Opscode::Version.parse(sles_project_version)
+    end
+    # Amazon-specific logic, this is so dirty, needs cleaning. 
+    if current_platform == "amazon" && current_platform_version == "2"
+      product_version_threshold = Opscode::Version.parse("15.10.12")
+      puts "Requested product version: #{opscode_version}"
+      if opscode_version >= product_version_threshold
+        puts "Requested version is >= 15.10.12. Keeping platform as Amazon with version 2."
+        current_platform = "amazon"
+        current_platform_version = "2"
+        remap_to_el = false  # Ensure remap_to_el is disabled for Amazon Linux 2 and versions >= 15.10.12
       else
-        remap_to_el = false
+        puts "Requested version is < 15.10.12. Remapping to EL."
+        remap_to_el = true
       end
     end
-
-    # Remap to el if triggered
+    # Only remap to EL if remap_to_el is true, and it isn't Amazon Linux 2 with version >= 15.10.12
     if remap_to_el
+      current_platform_version = if current_platform == "amazon" && current_platform_version == "2"
+                                   "7"
+                                 else
+                                   current_platform_version.to_f <= 11 ? "5" : "6"
+                                 end
       current_platform = "el"
-      current_platform_version = current_platform_version.to_f <= 11 ? "5" : "6"
-    end
-
-    # We need to manage automate/delivery this in this method, not #project.
-    # If we try to handle this in #project we have to make an assumption to
-    # always return automate results when the VERSIONS api is called for delivery.
+                                end
+    # Handle automate/delivery based on version
     if %w{automate delivery}.include?(project)
       current_project = opscode_version < Opscode::Version.parse('0.7.0') ? 'delivery' : 'automate'
     end
-
+    # Return the package info using the updated current values
     Chef::VersionResolver.new(
-      params['v'],
+      current_version,
       cache.manifest_for(current_project, channel),
       channel,
       current_project

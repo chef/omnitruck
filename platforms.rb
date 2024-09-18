@@ -109,8 +109,9 @@ end
 
 platform "amazon" do
   remap do |opts|
-    # map "version 1" amazon linux and amazon linux 2 to RHEL
-    if /201\d\.\d/.match?(opts[:version]) || opts[:version] == "2"
+    if opts[:version] == "2"
+      "amazon"  # Ensure Amazon Linux 2 is not mapped to "el"
+    elsif /201\d\.\d/.match?(opts[:version])
       "el"
     else
       "amazon"
@@ -118,17 +119,38 @@ platform "amazon" do
   end
 
   version_remap do |opts|
-    if /201\d\.\d/.match?(opts[:version])
-      # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
-      "6"
-    elsif opts[:version] == "2"
-      # map Amazon Linux 2 to RHEL 7
+    if opts[:version] == "2"
       "7"
+    elsif /201\d\.\d/.match?(opts[:version])
+      "6"
     else
       opts[:version]
     end
   end
 end
+
+# platform "amazon" do
+#   remap do |opts|
+#     # map "version 1" amazon linux and amazon linux 2 to RHEL
+#     if /201\d\.\d/.match?(opts[:version]) || opts[:version] == "2"
+#       "el"
+#     else
+#       "amazon"
+#     end
+#   end
+
+#   version_remap do |opts|
+#     if /201\d\.\d/.match?(opts[:version])
+#       # map "version 1" amazon linux to RHEL 6. These are named by the year/month ubuntu style
+#       "6"
+#     elsif opts[:version] == "2"
+#       # map Amazon Linux 2 to RHEL 7
+#       "7"
+#     else
+#       opts[:version]
+#     end
+#   end
+# end
 
 # Unsupported Variants
 #
