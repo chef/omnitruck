@@ -1383,7 +1383,7 @@ context 'Omnitruck' do
 
             expect(parsed_metadata['version']).to eq(response_match_data['version'])
             expect(parsed_metadata['url']).to eq(response_match_data['url'])
-            expect(parsedMetadata['sha256']).to eq(response_match_data['sha256'])
+            expect(parsed_metadata['sha256']).to eq(response_match_data['sha256'])
             expect(parsed_metadata['sha1']).to eq(response_match_data['sha1'])
           elsif legacy_endpoint =~ /platform_names/
             # we check that response is valid JSON.
