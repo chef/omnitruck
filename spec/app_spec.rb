@@ -91,42 +91,30 @@ context 'Omnitruck' do
 
     let(:endpoint) { nil }
 
-    # shared_examples_for 'a correct package info' do
-    #   context 'download' do
-    #     let(:endpoint) { "/#{channel}/#{project}/download" }
+    shared_examples_for 'a correct package info' do
+      context 'download' do
+        let(:endpoint) { "/#{channel}/#{project}/download" }
 
-    #     it "should serve a redirect package " do
-    #       get(endpoint, params)
-    #       puts "Params passed to download: #{params}"
-    #       puts "Expected Info: #{expected_info}"
-    #       expect(last_response).to be_redirect
-    #       follow_redirect!
-    #       puts "Redirected to URL: #{last_request.url}"
-    #       expect(last_request.url).to eq(expected_info[:url])
-    #     end
-    #   end
+        it "should serve a redirect package " do
+          get(endpoint, params)
+          expect(last_response).to be_redirect
+          follow_redirect!
+          expect(last_request.url).to eq(expected_info[:url])
+        end
+      end
 
-      ## the problem we have here is that the latest version of the prdocuts, do not include old platforms. so the tests are faling. 
-      ## todo ##
-      ## we need to update these tests to account for the latest product version, as well as test old prodcut versions that map to the right platform. IE:
-      ##        expected: "https://packages.chef.io/files/stable/chef/17.10.3/el/6/chef-17.10.3-1.el6.x86_64.rpm"
-      ##        got: "https://packages.chef.io/files/stable/chef/18.3.0/el/6/chef-18.3.0-1.el6.x86_64.rpm"
-      ## this will fail because el/6 does not have a chef 18.3.0 valid installer.... recomend moving the tests to something like: context 'legacy metadata' 
-      # context 'metadata' do
-      #   let(:endpoint) { "/#{channel}/#{project}/metadata" }
+      context 'metadata' do
+        let(:endpoint) { "/#{channel}/#{project}/metadata" }
 
-      #   it "should serve JSON metadata for package" do
-      #     get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-      #     metadata_json = last_response.body
-      #     parsed_json = JSON.parse(metadata_json)
-      #     puts "Params passed to metadata: #{params}"
-      #     puts "Expected JSON Metadata: #{expected_info}"
-      #     puts "Received JSON Metadata: #{parsed_json}"
-      #     expect(parsed_json['version']).to eq(expected_info[:version])
-      #     expect(parsed_json['url']).to eq(expected_info[:url])
-      #     expect(parsed_json['sha256']).to eq(expected_info[:sha256])
-      #     expect(parsed_json['sha1']).to eq(expected_info[:sha1])
-      #   end
+        it "should serve JSON metadata for package" do
+          get(endpoint, params, "HTTP_ACCEPT" => "application/json")
+          metadata_json = last_response.body
+          parsed_json = JSON.parse(metadata_json)
+          expect(parsed_json['version']).to eq(expected_info[:version])
+          expect(parsed_json['url']).to eq(expected_info[:url])
+          expect(parsed_json['sha256']).to eq(expected_info[:sha256])
+          expect(parsed_json['sha1']).to eq(expected_info[:sha1])
+        end
 
         it "should serve plain text metadata for package" do
           get(endpoint, params, "HTTP_ACCEPT" => "text/plain")
@@ -1422,4 +1410,4 @@ context 'Omnitruck' do
       end
     end
   end
-# end
+end
