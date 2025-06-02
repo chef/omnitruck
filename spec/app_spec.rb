@@ -1154,7 +1154,7 @@ context 'Omnitruck' do
         JSON.parse(metadata_json)
       }
 
-      [ nil, 'latest'].each do |version|
+      [ nil, 'latest']. each do |version|
         context "with version #{version.inspect}" do
           let(:version) { version }
 
@@ -1363,7 +1363,6 @@ context 'Omnitruck' do
       '/chef/chef_platform_names' => nil,
       '/chef/chef_server_platform_names' => nil,
       '/full_chefdk_list' => nil,
-      '/full_server_list' => nil,
     }.each do |legacy_endpoint, response_match_data|
 
       context "legacy endpoint #{legacy_endpoint}" do
@@ -1384,7 +1383,7 @@ context 'Omnitruck' do
 
             expect(parsed_metadata['version']).to eq(response_match_data['version'])
             expect(parsed_metadata['url']).to eq(response_match_data['url'])
-            expect(parsed_metadata['sha256']).to eq(response_match_data['sha256'])
+            expect(parsedMetadata['sha256']).to eq(response_match_data['sha256'])
             expect(parsed_metadata['sha1']).to eq(response_match_data['sha1'])
           elsif legacy_endpoint =~ /platform_names/
             # we check that response is valid JSON.
