@@ -1,0 +1,34 @@
+services:
+  redis:
+    build:
+      context: .
+      dockerfile: Dockerfile.redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - omnitruck-dev
+
+  omnitruck:
+    build:
+      context: .
+      dockerfile: Dockerfile.omnitruck
+    ports:
+      - "9393:9393"
+    volumes:
+      - ..:/app
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - BUNDLE_DISABLE_SHARED_GEMS=true
+      - BUNDLE_APP_CONFIG=/app/.bundle
+    depends_on:
+      - redis
+    networks:
+      - omnitruck-dev
+
+volumes:
+  redis-data:
+
+networks:
+  omnitruck-dev:

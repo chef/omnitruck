@@ -1,0 +1,37 @@
+FROM ruby:3.1.6-alpine
+
+ENV APP_ROOT=/app
+ENV RACK_ENV=development
+ENV LANG=C.UTF-8
+# Ensure bundler doesn't use system gems
+ENV BUNDLE_DISABLE_SHARED_GEMS=true
+ENV BUNDLE_APP_CONFIG=$APP_ROOT/.bundle
+
+WORKDIR $APP_ROOT
+
+# Install build dependencies for native extensions
+RUN apk add --no-cache --update \
+    build-base \
+    linux-headers \
+    git \
+    tzdata \
+    curl \
+    openssl-dev \
+    libc-dev \
+    bash
+
+# Install bundler with specific version for consistency
+RUN gem install bundler -v '2.3.26' --no-document
+
+# Copy the entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Set ENTRYPOINT to run our script before the main command
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Expose the development port
+EXPOSE 9393
+
+# Use unicorn instead of shotgun since it's already installed
+CMD ["bundle", "exec", "unicorn", "-l", "0.0.0.0:9393"]
