@@ -462,18 +462,26 @@ class Omnitruck < Sinatra::Base
       sles_project_version = native_sles_project_version[current_project]
       remap_to_el = true if sles_project_version.nil? || opscode_version < Opscode::Version.parse(sles_project_version)
     end
-    # Amazon-specific logic, this is so dirty, needs cleaning. 
+    # Amazon-specific logic
     if current_platform == "amazon" && current_platform_version == "2"
-      product_version_threshold = Opscode::Version.parse("15.10.12")
-      puts "Requested product version: #{opscode_version}"
-      if opscode_version >= product_version_threshold
-        puts "Requested version is >= 15.10.12. Keeping platform as Amazon with version 2."
-        current_platform = "amazon"
-        current_platform_version = "2"
-        remap_to_el = false  # Ensure remap_to_el is disabled for Amazon Linux 2 and versions >= 15.10.12
-      else
-        puts "Requested version is < 15.10.12. Remapping to EL."
+      # Special handling for chef-client - always map to EL7
+      if current_project == "chef"
+        puts "Chef Client detected on Amazon Linux 2 - forcing remap to EL7"
         remap_to_el = true
+      else
+        # For other products like chef-server-core, use version threshold
+        product_version_threshold = Opscode::Version.parse("15.10.12")
+        puts "Non-client product requested: #{current_project}, version: #{opscode_version}"
+        
+        if opscode_version >= product_version_threshold
+          puts "Requested version is >= 15.10.12. Keeping platform as Amazon with version 2."
+          current_platform = "amazon"
+          current_platform_version = "2"
+          remap_to_el = false
+        else
+          puts "Requested version is < 15.10.12. Remapping to EL."
+          remap_to_el = true
+        end
       end
     end
     # Only remap to EL if remap_to_el is true, and it isn't Amazon Linux 2 with version >= 15.10.12
