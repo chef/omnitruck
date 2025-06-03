@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.36 -->
-## [0.1.36](https://github.com/chef/omnitruck/tree/0.1.36) (2024-09-18)
+<!-- latest_release 0.1.37 -->
+## [0.1.37](https://github.com/chef/omnitruck/tree/0.1.37) (2025-06-03)
 
 #### Merged Pull Requests
-- Sean simmons progress/chef 15585 omnitruck amazon2 fix [#614](https://github.com/chef/omnitruck/pull/614) ([sean-simmons-progress](https://github.com/sean-simmons-progress))
+- local testing this worked [#629](https://github.com/chef/omnitruck/pull/629) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- local testing this worked [#629](https://github.com/chef/omnitruck/pull/629) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.37 -->
 - Sean simmons progress/chef 15585 omnitruck amazon2 fix [#614](https://github.com/chef/omnitruck/pull/614) ([sean-simmons-progress](https://github.com/sean-simmons-progress)) <!-- 0.1.36 -->
 - Sean simmons progress/chef 15585 omnitruck amazon2 fix [#612](https://github.com/chef/omnitruck/pull/612) ([sean-simmons-progress](https://github.com/sean-simmons-progress)) <!-- 0.1.35 -->
 - promote amazon-1 changes [#607](https://github.com/chef/omnitruck/pull/607) ([muthuja](https://github.com/muthuja)) <!-- 0.1.34 -->
