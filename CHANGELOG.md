@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.38 -->
-## [0.1.38](https://github.com/chef/omnitruck/tree/0.1.38) (2025-06-04)
+<!-- latest_release 0.1.39 -->
+## [0.1.39](https://github.com/chef/omnitruck/tree/0.1.39) (2025-06-04)
 
 #### Merged Pull Requests
-- Sean simmons progress/chef 22505 infra client 18 6 2 for al 2 x 86 64 architecture failing with 404 error [#630](https://github.com/chef/omnitruck/pull/630) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
+- updating hpa [#631](https://github.com/chef/omnitruck/pull/631) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- updating hpa [#631](https://github.com/chef/omnitruck/pull/631) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.39 -->
 - Sean simmons progress/chef 22505 infra client 18 6 2 for al 2 x 86 64 architecture failing with 404 error [#630](https://github.com/chef/omnitruck/pull/630) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.38 -->
 - local testing this worked [#629](https://github.com/chef/omnitruck/pull/629) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.37 -->
 - Sean simmons progress/chef 15585 omnitruck amazon2 fix [#614](https://github.com/chef/omnitruck/pull/614) ([sean-simmons-progress](https://github.com/sean-simmons-progress)) <!-- 0.1.36 -->
