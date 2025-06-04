@@ -1,6 +1,6 @@
 ---
 {{- if .Values.autoscaling -}}
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "omnitruck.fullname" . }}
@@ -19,5 +19,7 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: {{ default "80" .Values.autoscaling.targetCPUUtilization | int }}
+      target:
+        type: Utilization
+        averageUtilization: {{ default "80" .Values.autoscaling.targetCPUUtilization | int }}
 {{- end -}}
