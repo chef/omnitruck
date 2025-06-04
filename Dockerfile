@@ -1,4 +1,4 @@
-FROM ruby:alpine
+FROM ruby:3.1.6-alpine
 
 LABEL maintainer="releng@chef.io"
 
