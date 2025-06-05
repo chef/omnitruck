@@ -222,6 +222,14 @@ bundle exec unicorn
 5. load the data into your local running redis server by dropping to root and running `ruby redisManual.rb`
    1. this is still a WIP, the format that the file is in now does load the data into the format that is expected.
 
+## Architecture Documentation
+
+### Architectural Decision Records (ADRs)
+
+Need to add an ADR? Follow these instructions [here](ADR/readme.md).
+
+We use Architectural Decision Records to document important architectural decisions made in this project. ADRs provide context around technical choices, making it easier for future contributors to understand our reasoning.
+
 ## License
 
 - Copyright:: Copyright (c) 2010-2019 Chef Software, Inc.
