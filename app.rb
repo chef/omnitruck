@@ -198,31 +198,50 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-  
+
     # Get package information
     package_info = get_package_info
-  
+
     # Grab org url
     original_url = package_info["url"]
-  
+
     # Debug output of original URL
-    # puts "Debug Info - Original URL: #{original_url}"
-  
-    # amazon 2 rewrite nonsense
-    if original_url.include?("/amazon/2023/") && params[:pv] == "2"
-      # Rewrite the URL for Amazon Linux 2
-      rewritten_url = original_url
-                       .gsub(/\/amazon\/2023\//, "/amazon/2/")
-                       .gsub(/.amazon2023/, ".amazon2")
-  
-      # uncomment for debug
-      # puts "Debug Info - Rewritten URL: #{rewritten_url}"
-  
-      redirect rewritten_url
-    else
-      # Redirect to the original URL if no rewrite needed
-      redirect original_url
+    puts "DEBUG - Download: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}"
+    puts "DEBUG - Original URL: #{original_url}"
+
+    # Special case handling for Amazon Linux 2
+    if params['p'] == "amazon" && params['pv'] == "2"
+      # For chef-workstation on Amazon Linux 2, use EL7 packages (highest priority)
+      if params['project'] == "chef-workstation"
+        puts "DEBUG - Chef Workstation detected on Amazon Linux 2"
+        # Handle both amazon/2/ and amazon/2023/ paths
+        rewritten_url = if original_url.include?("/amazon/2023/")
+          original_url
+            .gsub(/\/amazon\/2023\//, "/el/7/")
+            .gsub(/[-.]amazon2023\./, "-el7.")
+        else
+          original_url
+            .gsub(/\/amazon\/2\//, "/el/7/")
+            .gsub(/[-.]amazon2\./, "-el7.")
+        end
+        puts "DEBUG - Chef Workstation URL rewritten to: #{rewritten_url}"
+        redirect rewritten_url
+        return
+      # Handle other products with amazon/2023/ in URL
+      elsif original_url.include?("/amazon/2023/")
+        # Case: Rewrite from Amazon 2023 to Amazon 2
+        rewritten_url = original_url
+                         .gsub(/\/amazon\/2023\//, "/amazon/2/")
+                         .gsub(/-amazon2023/, "-amazon2")
+                         .gsub(/.amazon2023/, ".amazon2")
+        puts "DEBUG - Amazon 2023 URL rewritten to: #{rewritten_url}"
+        redirect rewritten_url
+        return
+      end
     end
+
+    # Redirect to the original URL if no rewrite needed
+    redirect original_url
   end
 
   # another dirty hack to handle amazon 2, and how the commercial downloads api handles / uses the metadata. All this needs to be rewritten to include amazon2 as a valid platform. 
@@ -241,22 +260,45 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
+    
     # Get package information
     package_info = get_package_info
     # Original URL from package info
     original_url = package_info["url"]
-    # Check if the URL needs to be rewritten for Amazon Linux 2
-    if original_url.include?("/amazon/2023/") && params[:pv] == "2"
-      # Rewrite the URL for Amazon Linux 2
-      rewritten_url = original_url
-                       .gsub(/\/amazon\/2023\//, "/amazon/2/")
-                       .gsub(/-amazon2023/, "-amazon2")
-                       .gsub(/.amazon2023/, ".amazon2")
-      # Update the package_info with the rewritten URL
-      package_info["url"] = rewritten_url
-      # Debug output of the rewritten URL
-      puts "Debug Info - Rewritten Metadata URL: #{rewritten_url}"
+    
+    # Debug the important variables
+    puts "DEBUG - Metadata: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}"
+    puts "DEBUG - Original URL: #{original_url}"
+    
+    # Special case handling for Amazon Linux 2
+    if params['p'] == "amazon" && params['pv'] == "2"
+      # For chef-workstation on Amazon Linux 2, use EL7 packages (highest priority)
+      if params['project'] == "chef-workstation"
+        puts "DEBUG - Chef Workstation detected on Amazon Linux 2"
+        # Handle both amazon/2/ and amazon/2023/ paths
+        rewritten_url = if original_url.include?("/amazon/2023/")
+          original_url
+            .gsub(/\/amazon\/2023\//, "/el/7/")
+            .gsub(/[-.]amazon2023\./, "-el7.")
+        else
+          original_url
+            .gsub(/\/amazon\/2\//, "/el/7/")
+            .gsub(/[-.]amazon2\./, "-el7.")
+        end
+        package_info["url"] = rewritten_url
+        puts "DEBUG - Chef Workstation URL rewritten to: #{package_info["url"]}"
+      # Handle other products with amazon/2023/ in URL
+      elsif original_url.include?("/amazon/2023/")
+        # Case 1: Rewrite from Amazon 2023 to Amazon 2
+        rewritten_url = original_url
+                         .gsub(/\/amazon\/2023\//, "/amazon/2/")
+                         .gsub(/-amazon2023/, "-amazon2")
+                         .gsub(/.amazon2023/, ".amazon2")
+        package_info["url"] = rewritten_url
+        puts "DEBUG - Amazon 2023 URL rewritten to: #{package_info["url"]}"
+      end
     end
+    
     # Respond with the updated package stuff
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
