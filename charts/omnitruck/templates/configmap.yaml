@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "omnitruck.fullname" . }}-config
+  labels:
+    {{- include "omnitruck.commonLabels" . | nindent 4 }}
+data:
+  LOG_LEVEL: {{ .Values.logging.level | default "INFO" | quote }}
+  {{- if .Values.logging.additionalConfig }}
+  {{- toYaml .Values.logging.additionalConfig | nindent 2 }}
+  {{- end }}

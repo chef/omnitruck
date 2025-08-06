@@ -63,8 +63,19 @@ class Omnitruck < Sinatra::Base
 
     set :logging, nil
     logger = Logger.new STDOUT
-    logger.level = Logger::INFO
+    logger.level = ENV['LOG_LEVEL'] ? Logger.const_get(ENV['LOG_LEVEL']) : Logger::INFO
     logger.datetime_format = '%a %d-%m-%Y %H%M '
+    # Use JSON format for logging in production
+    if ENV['RACK_ENV'] == 'production'
+      logger.formatter = proc do |severity, datetime, progname, msg|
+        {
+          timestamp: datetime.iso8601,
+          level: severity,
+          message: msg,
+          progname: progname
+        }.to_json + "\n"
+      end
+    end
     set :logging, logger
 
     reporter = Trashed::Reporter.new
@@ -188,6 +199,14 @@ class Omnitruck < Sinatra::Base
     end
   end
 
+  # Add a general error handler to log all exceptions
+  error do
+    err = env['sinatra.error']
+    settings.logging.error("#{err.class}: #{err.message}")
+    settings.logging.error(err.backtrace.join("\n"))
+    halt 500, "Server error"
+  end
+
   #########################################################################
   # Endpoints
   #########################################################################
@@ -206,14 +225,14 @@ class Omnitruck < Sinatra::Base
     original_url = package_info["url"]
 
     # Debug output of original URL
-    puts "DEBUG - Download: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}"
-    puts "DEBUG - Original URL: #{original_url}"
+    settings.logging.info("Download request: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}")
+    settings.logging.debug("Original URL: #{original_url}")
 
     # Special case handling for Amazon Linux 2
     if params['p'] == "amazon" && params['pv'] == "2"
       # For chef-workstation on Amazon Linux 2, use EL7 packages (highest priority)
       if params['project'] == "chef-workstation"
-        puts "DEBUG - Chef Workstation detected on Amazon Linux 2"
+        settings.logging.info("Chef Workstation detected on Amazon Linux 2")
         # Handle both amazon/2/ and amazon/2023/ paths
         rewritten_url = if original_url.include?("/amazon/2023/")
           original_url
@@ -224,7 +243,7 @@ class Omnitruck < Sinatra::Base
             .gsub(/\/amazon\/2\//, "/el/7/")
             .gsub(/[-.]amazon2\./, "-el7.")
         end
-        puts "DEBUG - Chef Workstation URL rewritten to: #{rewritten_url}"
+        settings.logging.info("Chef Workstation URL rewritten to: #{rewritten_url}")
         redirect rewritten_url
         return
       # Handle other products with amazon/2023/ in URL
@@ -234,7 +253,7 @@ class Omnitruck < Sinatra::Base
                          .gsub(/\/amazon\/2023\//, "/amazon/2/")
                          .gsub(/-amazon2023/, "-amazon2")
                          .gsub(/.amazon2023/, ".amazon2")
-        puts "DEBUG - Amazon 2023 URL rewritten to: #{rewritten_url}"
+        settings.logging.info("Amazon 2023 URL rewritten to: #{rewritten_url}")
         redirect rewritten_url
         return
       end
@@ -267,14 +286,14 @@ class Omnitruck < Sinatra::Base
     original_url = package_info["url"]
     
     # Debug the important variables
-    puts "DEBUG - Metadata: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}"
-    puts "DEBUG - Original URL: #{original_url}"
+    settings.logging.info("Metadata request: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}")
+    settings.logging.debug("Original URL: #{original_url}")
     
     # Special case handling for Amazon Linux 2
     if params['p'] == "amazon" && params['pv'] == "2"
       # For chef-workstation on Amazon Linux 2, use EL7 packages (highest priority)
       if params['project'] == "chef-workstation"
-        puts "DEBUG - Chef Workstation detected on Amazon Linux 2"
+        settings.logging.info("Chef Workstation detected on Amazon Linux 2")
         # Handle both amazon/2/ and amazon/2023/ paths
         rewritten_url = if original_url.include?("/amazon/2023/")
           original_url
@@ -286,7 +305,7 @@ class Omnitruck < Sinatra::Base
             .gsub(/[-.]amazon2\./, "-el7.")
         end
         package_info["url"] = rewritten_url
-        puts "DEBUG - Chef Workstation URL rewritten to: #{package_info["url"]}"
+        settings.logging.info("Chef Workstation URL rewritten to: #{package_info["url"]}")
       # Handle other products with amazon/2023/ in URL
       elsif original_url.include?("/amazon/2023/")
         # Case 1: Rewrite from Amazon 2023 to Amazon 2
@@ -295,7 +314,7 @@ class Omnitruck < Sinatra::Base
                          .gsub(/-amazon2023/, "-amazon2")
                          .gsub(/.amazon2023/, ".amazon2")
         package_info["url"] = rewritten_url
-        puts "DEBUG - Amazon 2023 URL rewritten to: #{package_info["url"]}"
+        settings.logging.info("DEBUG - Amazon 2023 URL rewritten to: #{package_info["url"]}")
       end
     end
     
@@ -508,20 +527,20 @@ class Omnitruck < Sinatra::Base
     if current_platform == "amazon" && current_platform_version == "2"
       # Special handling for chef-client - always map to EL7
       if current_project == "chef"
-        puts "Chef Client detected on Amazon Linux 2 - forcing remap to EL7"
+        settings.logging.info("Chef Client detected on Amazon Linux 2 - forcing remap to EL7")
         remap_to_el = true
       else
         # For other products like chef-server-core, use version threshold
         product_version_threshold = Opscode::Version.parse("15.10.12")
-        puts "Non-client product requested: #{current_project}, version: #{opscode_version}"
+        settings.logging.info("Non-client product requested: #{current_project}, version: #{opscode_version}")
         
         if opscode_version >= product_version_threshold
-          puts "Requested version is >= 15.10.12. Keeping platform as Amazon with version 2."
+          settings.logging.info("Requested version is >= 15.10.12. Keeping platform as Amazon with version 2.")
           current_platform = "amazon"
           current_platform_version = "2"
           remap_to_el = false
         else
-          puts "Requested version is < 15.10.12. Remapping to EL."
+          settings.logging.info("Requested version is < 15.10.12. Remapping to EL.")
           remap_to_el = true
         end
       end
