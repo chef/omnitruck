@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.40 -->
-## [0.1.40](https://github.com/chef/omnitruck/tree/0.1.40) (2025-06-04)
+<!-- latest_release 0.1.41 -->
+## [0.1.41](https://github.com/chef/omnitruck/tree/0.1.41) (2025-08-07)
 
 #### Merged Pull Requests
-- Sean simmons progress/chef 22505 api autoscaler [#632](https://github.com/chef/omnitruck/pull/632) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
+- this is working for local testing, getting this out on stage [#638](https://github.com/chef/omnitruck/pull/638) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- this is working for local testing, getting this out on stage [#638](https://github.com/chef/omnitruck/pull/638) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.41 -->
 - Sean simmons progress/chef 22505 api autoscaler [#632](https://github.com/chef/omnitruck/pull/632) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.40 -->
 - updating hpa [#631](https://github.com/chef/omnitruck/pull/631) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.39 -->
 - Sean simmons progress/chef 22505 infra client 18 6 2 for al 2 x 86 64 architecture failing with 404 error [#630](https://github.com/chef/omnitruck/pull/630) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.38 -->
