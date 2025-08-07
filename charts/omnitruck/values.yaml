@@ -112,3 +112,7 @@ redis:
   # architecture: standalone
   # auth:
   #   enabled: false
+
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARN, ERROR, FATAL
+  additionalConfig: {}

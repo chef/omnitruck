@@ -24,6 +24,9 @@ spec:
       {{ if .Values.image -}}
       containers:
         - name: {{ include "omnitruck.fullname" . }}
+          envFrom:
+            - configMapRef:
+                name: {{ include "omnitruck.fullname" . }}-config
           {{ if .Values.image.lifecycle -}}
           lifecycle:
             {{- toYaml .Values.image.lifecycle | nindent 12 }}

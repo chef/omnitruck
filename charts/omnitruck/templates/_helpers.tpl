@@ -46,10 +46,13 @@ Create the name of the service account to use
 {{- include $template (dict "Chart" (dict "Name" (last $subchart)) "Values" $values "Release" $dot.Release "Capabilities" $dot.Capabilities) }}
 {{- end }}
 
-{{/*
-Omnitruck container environment variables
-*/}}
+{{/* Omnitruck Container Environment Variables */}}
 {{- define "omnitruck.containerEnvironmentVariables" -}}
 - name: REDIS_URL
   value: redis://{{ printf "%s-master" (include  "call-nested" (list . "redis" "common.names.fullname")) }}
+- name: CONFIG_SOURCE
+  value: "kubernetes-configmap"  
+{{- with .Values.env }}
+{{- toYaml . }}
+{{- end }}
 {{- end }}
