@@ -237,11 +237,11 @@ class Omnitruck < Sinatra::Base
         rewritten_url = if original_url.include?("/amazon/2023/")
           original_url
             .gsub(/\/amazon\/2023\//, "/el/7/")
-            .gsub(/[-.]amazon2023\./, "-el7.")
+            .gsub(/\.amazon2023\./, ".el7.")
         else
           original_url
             .gsub(/\/amazon\/2\//, "/el/7/")
-            .gsub(/[-.]amazon2\./, "-el7.")
+            .gsub(/\.amazon2\./, ".el7.")
         end
         settings.logging.info("Chef Workstation URL rewritten to: #{rewritten_url}")
         redirect rewritten_url
@@ -298,11 +298,11 @@ class Omnitruck < Sinatra::Base
         rewritten_url = if original_url.include?("/amazon/2023/")
           original_url
             .gsub(/\/amazon\/2023\//, "/el/7/")
-            .gsub(/[-.]amazon2023\./, "-el7.")
+            .gsub(/[-.]amazon2023\./, ".el7.")
         else
           original_url
             .gsub(/\/amazon\/2\//, "/el/7/")
-            .gsub(/[-.]amazon2\./, "-el7.")
+            .gsub(/[-.]amazon2\./, ".el7.")
         end
         package_info["url"] = rewritten_url
         settings.logging.info("Chef Workstation URL rewritten to: #{package_info["url"]}")
