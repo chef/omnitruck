@@ -16,7 +16,8 @@ helm_charts:
 
 # These are our Buildkite pipelines where deploys take place
 pipelines:
-  - verify
+  - verify:
+      public: true
   - docker/build
 
 subscriptions:
