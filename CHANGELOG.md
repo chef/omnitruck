@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.42 -->
-## [0.1.42](https://github.com/chef/omnitruck/tree/0.1.42) (2025-08-07)
+<!-- latest_release 0.1.43 -->
+## [0.1.43](https://github.com/chef/omnitruck/tree/0.1.43) (2025-09-03)
 
 #### Merged Pull Requests
-- hot fix for removing - to . [#639](https://github.com/chef/omnitruck/pull/639) ([sean-sype-simmons](https://github.com/sean-sype-simmons))
+- switch to bitnamilegacy repo [#643](https://github.com/chef/omnitruck/pull/643) ([borisicbs](https://github.com/borisicbs))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- switch to bitnamilegacy repo [#643](https://github.com/chef/omnitruck/pull/643) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.43 -->
 - hot fix for removing - to . [#639](https://github.com/chef/omnitruck/pull/639) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.42 -->
 - this is working for local testing, getting this out on stage [#638](https://github.com/chef/omnitruck/pull/638) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.41 -->
 - Sean simmons progress/chef 22505 api autoscaler [#632](https://github.com/chef/omnitruck/pull/632) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.40 -->
