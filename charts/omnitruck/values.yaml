@@ -115,19 +115,19 @@ redis:
   sentinel:
     image:
       repository: bitnamylegacy/redis-sentinel
-      tag: 6.2.7-debian-11-r66
+      tag: "6.2.7-debian-11-r66"
   metrics:
     image:
       repository: bitnamylegacy/redis-exporter
-      tag: 1.57.0-debian-11-r9
+      tag: "1.57.0-debian-11-r9"
   volumePermissions:
     image:
       registry: bitnamylegacy/bitnami-shell
-      tag: 11-debian-11-r99
+      tag: "11-debian-11-r99"
   sysctl:
     image:
       registry: bitnamylegacy/bitnami-shell
-      tag: 11-debian-11-r99
+      tag: "11-debian-11-r99"
   # architecture: standalone
   # auth:
   #   enabled: false
