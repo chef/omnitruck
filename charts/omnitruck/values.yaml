@@ -109,6 +109,25 @@ cronSchedule:
 redis:
   # redis.enabled will setup redis as the default data store
   enabled: true
+  image:
+    repository: bitnamilegacy/redis
+    tag: "6.2.7-debian-11-r66"
+  sentinel:
+    image:
+      repository: bitnamylegacy/redis-sentinel
+      tag: "6.2.7-debian-11-r66"
+  metrics:
+    image:
+      repository: bitnamylegacy/redis-exporter
+      tag: "1.57.0-debian-11-r9"
+  volumePermissions:
+    image:
+      registry: bitnamylegacy/bitnami-shell
+      tag: "11-debian-11-r99"
+  sysctl:
+    image:
+      registry: bitnamylegacy/bitnami-shell
+      tag: "11-debian-11-r99"
   # architecture: standalone
   # auth:
   #   enabled: false
