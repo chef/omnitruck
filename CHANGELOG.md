@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.44 -->
-## [0.1.44](https://github.com/chef/omnitruck/tree/0.1.44) (2025-09-16)
+<!-- latest_release 0.1.45 -->
+## [0.1.45](https://github.com/chef/omnitruck/tree/0.1.45) (2025-09-16)
 
 #### Merged Pull Requests
-- Switching to bitnamilegacy repository [#644](https://github.com/chef/omnitruck/pull/644) ([borisicbs](https://github.com/borisicbs))
+- Switching to bitnamilegacy repository [#645](https://github.com/chef/omnitruck/pull/645) ([borisicbs](https://github.com/borisicbs))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Switching to bitnamilegacy repository [#645](https://github.com/chef/omnitruck/pull/645) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.45 -->
 - Switching to bitnamilegacy repository [#644](https://github.com/chef/omnitruck/pull/644) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.44 -->
 - switch to bitnamilegacy repo [#643](https://github.com/chef/omnitruck/pull/643) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.43 -->
 - hot fix for removing - to . [#639](https://github.com/chef/omnitruck/pull/639) ([sean-sype-simmons](https://github.com/sean-sype-simmons)) <!-- 0.1.42 -->
