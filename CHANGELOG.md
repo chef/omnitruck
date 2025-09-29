@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.1.45 -->
-## [0.1.45](https://github.com/chef/omnitruck/tree/0.1.45) (2025-09-16)
+<!-- latest_release 0.1.46 -->
+## [0.1.46](https://github.com/chef/omnitruck/tree/0.1.46) (2025-09-29)
 
 #### Merged Pull Requests
-- Switching to bitnamilegacy repository [#645](https://github.com/chef/omnitruck/pull/645) ([borisicbs](https://github.com/borisicbs))
+- Boris borisov progress/chef 25470 migration of all bitnami helm charts [#650](https://github.com/chef/omnitruck/pull/650) ([borisicbs](https://github.com/borisicbs))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- Boris borisov progress/chef 25470 migration of all bitnami helm charts [#650](https://github.com/chef/omnitruck/pull/650) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.46 -->
 - Switching to bitnamilegacy repository [#645](https://github.com/chef/omnitruck/pull/645) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.45 -->
 - Switching to bitnamilegacy repository [#644](https://github.com/chef/omnitruck/pull/644) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.44 -->
 - switch to bitnamilegacy repo [#643](https://github.com/chef/omnitruck/pull/643) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.43 -->
