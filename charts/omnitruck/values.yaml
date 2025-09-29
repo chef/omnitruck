@@ -112,22 +112,32 @@ redis:
   image:
     repository: bitnamilegacy/redis
     tag: "6.2.7-debian-11-r66"
+    pullSecrets:
+      - dockerio-creds
   sentinel:
     image:
       repository: bitnamylegacy/redis-sentinel
       tag: "6.2.7-debian-11-r66"
+      pullSecrets:
+        - dockerio-creds
   metrics:
     image:
       repository: bitnamylegacy/redis-exporter
       tag: "1.57.0-debian-11-r9"
+      pullSecrets:
+        - dockerio-creds
   volumePermissions:
     image:
       registry: bitnamylegacy/bitnami-shell
       tag: "11-debian-11-r99"
+      pullSecrets:
+        - dockerio-creds
   sysctl:
     image:
       registry: bitnamylegacy/bitnami-shell
       tag: "11-debian-11-r99"
+      pullSecrets:
+        - dockerio-creds
   # architecture: standalone
   # auth:
   #   enabled: false
