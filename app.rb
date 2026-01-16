@@ -171,6 +171,7 @@ class Omnitruck < Sinatra::Base
   #
   get /install\.(?<extension>[\w]+)/ do
     param :extension, String, required: true
+    param :license_id, String
 
     case params['extension']
     when 'sh'
@@ -665,7 +666,9 @@ class Omnitruck < Sinatra::Base
   #   Contents of the install.sh script
   #
   def prepare_install_sh
-    Mixlib::Install.install_sh(base_url: url(settings.virtual_path).chomp('/'))
+    context = { base_url: url(settings.virtual_path).chomp('/') }
+    context[:license_id] = params['license_id'] if params['license_id']
+    Mixlib::Install.install_sh(context)
   end
 
   #
@@ -675,6 +678,8 @@ class Omnitruck < Sinatra::Base
   #   Contents of the install.ps1 script
   #
   def prepare_install_ps1
-    Mixlib::Install.install_ps1(base_url: url(settings.virtual_path).chomp('/'))
+    context = { base_url: url(settings.virtual_path).chomp('/') }
+    context[:license_id] = params['license_id'] if params['license_id']
+    Mixlib::Install.install_ps1(context)
   end
 end
