@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install
-  revision: 1c3261ef68c3ba1ba3a380d04b617d7d99a0f3ff
-  branch: main
+  revision: 2addca5ad7736d5661e1294dd0fb1f5606a65d9a
+  branch: check-install
   specs:
-    mixlib-install (3.12.30)
+    mixlib-install (3.14.0)
       mixlib-shellout
       mixlib-versioning
       thor
@@ -13,11 +13,11 @@ GEM
   specs:
     backports (3.20.2)
     byebug (11.1.3)
-    chef-utils (18.3.0)
+    chef-utils (18.9.4)
       concurrent-ruby
     coderay (1.1.3)
     colorize (0.8.1)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.3.6)
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -30,7 +30,7 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0212)
-    mixlib-shellout (3.2.7)
+    mixlib-shellout (3.3.9)
       chef-utils
     mixlib-versioning (1.1.0)
     multi_json (1.15.0)
@@ -92,7 +92,7 @@ GEM
     sinatra-param (1.6.0)
       sinatra (>= 1.3)
     statsd-ruby (1.5.0)
-    thor (1.3.0)
+    thor (1.5.0)
     tilt (2.0.10)
     trashed (3.2.7)
       statsd-ruby (~> 1.1)
@@ -110,7 +110,7 @@ PLATFORMS
 DEPENDENCIES
   colorize
   json
-  mixlib-install (>= 3.11.23)!
+  mixlib-install (>= 3.14.0)!
   mixlib-versioning (~> 1.1.0)
   pry-byebug
   rack-test
