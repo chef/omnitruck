@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/chef/mixlib-install
-  revision: 2addca5ad7736d5661e1294dd0fb1f5606a65d9a
-  branch: check-install
+  revision: da50e201710530b9ccd5204a65779ad3a64116d3
+  branch: package-manager
   specs:
-    mixlib-install (3.14.0)
+    mixlib-install (3.15.0)
       mixlib-shellout
       mixlib-versioning
       thor
