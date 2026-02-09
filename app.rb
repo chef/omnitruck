@@ -667,6 +667,8 @@ class Omnitruck < Sinatra::Base
   #
   def prepare_install_sh
     context = { base_url: url(settings.virtual_path).chomp('/') }
+    # Allow base_url override from query parameter
+    context[:base_url] = params['base_url'] if params['base_url']
     context[:license_id] = params['license_id'] if params['license_id']
     Mixlib::Install.install_sh(context)
   end
@@ -679,6 +681,8 @@ class Omnitruck < Sinatra::Base
   #
   def prepare_install_ps1
     context = { base_url: url(settings.virtual_path).chomp('/') }
+    # Allow base_url override from query parameter
+    context[:base_url] = params['base_url'] if params['base_url']
     context[:license_id] = params['license_id'] if params['license_id']
     Mixlib::Install.install_ps1(context)
   end
