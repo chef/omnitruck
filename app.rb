@@ -172,6 +172,7 @@ class Omnitruck < Sinatra::Base
   get /install\.(?<extension>[\w]+)/ do
     param :extension, String, required: true
     param :license_id, String
+    param :base_url, String
 
     case params['extension']
     when 'sh'
