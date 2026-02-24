@@ -12,7 +12,7 @@ gem "rest-client"
 gem 'rake'
 gem 'redis'
 gem 'mixlib-versioning', '~> 1.1.0'
-gem "mixlib-install", '>= 3.15.0', git: "https://github.com/chef/mixlib-install", branch: "package-manager" # TODO: bump version and remove the git reference once this PR is merged: https://github.com/chef/mixlib-install/pull/417
+gem "mixlib-install", '>= 3.16.0' # 3.16.0+ is required for new chef-ice product support
 gem 'trashed'
 
 group :test do
