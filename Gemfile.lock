@@ -25,7 +25,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     json (2.6.1)
-    kgio (2.11.3)
+    kgio (2.11.4)
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
@@ -46,7 +46,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    raindrops (0.19.1)
+    raindrops (0.20.0)
     rake (13.0.6)
     rb-readline (0.5.5)
     redis (4.4.0)
@@ -99,7 +99,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    unicorn (6.0.0)
+    unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     yajl-ruby (1.4.1)
