@@ -12,9 +12,8 @@ gem "rest-client"
 gem 'rake'
 gem 'redis'
 gem 'mixlib-versioning', '>= 1.1.0'
-# 3.16.0+ is required for new chef-ice product support
-gem 'mixlib-install', '>= 3.16.0', git: 'https://github.com/chef/mixlib-install.git', branch: 'pm-optional'
-gem 'trashed'
+# 3.17.0+ is required for new chef-ice and inspec-enterprise product support
+gem 'mixlib-install', '>= 3.17.0'
 
 group :test do
   gem 'rspec'
