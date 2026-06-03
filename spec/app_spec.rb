@@ -3,7 +3,7 @@
 # # Author:: Stephen Delano (stephen@opscode.com)
 # # Author:: Seth Chisamore (sethc@opscode.com)
 # # Author:: Lamont Granquist (lamont@opscode.com)
-# # Copyright:: Copyright (c) 2010-2013 Chef Software, Inc.
+# # Copyright:: Copyright (c) 2012-2026 Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.
 # # License:: Apache License, Version 2.0
 # #
 # # Licensed under the Apache License, Version 2.0 (the "License");
