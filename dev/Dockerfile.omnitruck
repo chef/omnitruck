@@ -1,4 +1,4 @@
-FROM ruby:3.1.6-alpine
+FROM ruby:3.4.9-alpine
 
 ENV APP_ROOT=/app
 ENV RACK_ENV=development
@@ -21,7 +21,7 @@ RUN apk add --no-cache --update \
     bash
 
 # Install bundler with specific version for consistency
-RUN gem install bundler -v '2.3.26' --no-document
+RUN gem install bundler -v '2.6.9' --no-document
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
@@ -34,4 +34,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 9393
 
 # Use unicorn instead of shotgun since it's already installed
-CMD ["bundle", "exec", "unicorn", "-l", "0.0.0.0:9393"]
+CMD ["bundle", "exec", "puma", "-l", "0.0.0.0:9393"]

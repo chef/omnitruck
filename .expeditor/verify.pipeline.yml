@@ -7,7 +7,9 @@ expeditor:
 steps:
   - label: ":ruby: unit"
     command:
-      - bundle install --binstubs --path=vendor/bundle
+      - bundle config set --local path 'vendor/bundle'
+      - bundle install
+      - bundle binstubs --all
       - bundle exec rspec
     expeditor:
       executor:

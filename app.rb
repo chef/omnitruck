@@ -56,6 +56,9 @@ class Omnitruck < Sinatra::Base
     set :allow_methods, "GET"
     set :allow_headers, "content-type,if-modified-since"
 
+    # Allow all hosts - omnitruck is a public API; empty list = no restrictions
+    set :host_authorization, permitted_hosts: []
+
     set :raise_errors, false
     set :show_exceptions, false
 
@@ -151,7 +154,7 @@ class Omnitruck < Sinatra::Base
     [status, headers, body]
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/versions\/?/ do
     pass unless project_allowed(project)
     redirect_url = "/#{channel}/#{project}/packages"
     redirect_url += "?v=#{params['v']}" unless params['v'].nil?
@@ -169,7 +172,7 @@ class Omnitruck < Sinatra::Base
   #
   # Serve up the installer script
   #
-  get /install\.(?<extension>[\w]+)/ do
+  get /\/install\.(?<extension>[\w]+)/ do
     param :extension, String, required: true
     param :license_id, String
     param :base_url, String
@@ -213,7 +216,7 @@ class Omnitruck < Sinatra::Base
   # Endpoints
   #########################################################################
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/download\/?/ do
     param :channel, String, default: 'stable'
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
     param :p,       String, required: true
@@ -265,8 +268,8 @@ class Omnitruck < Sinatra::Base
     redirect original_url
   end
 
-  # another dirty hack to handle amazon 2, and how the commercial downloads api handles / uses the metadata. All this needs to be rewritten to include amazon2 as a valid platform. 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?$/ do
+  # another dirty hack to handle amazon 2, and how the commercial downloads api handles / uses the metadata. All this needs to be rewritten to include amazon2 as a valid platform.
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/metadata\/?/ do
     # Legacy params which affect the default channel
     param :prerelease, Boolean
     param :nightlies,  Boolean
@@ -281,16 +284,16 @@ class Omnitruck < Sinatra::Base
     param :p,       String, required: true
     param :pv,      String, required: true
     param :m,       String, required: true
-    
+
     # Get package information
     package_info = get_package_info
     # Original URL from package info
     original_url = package_info["url"]
-    
+
     # Debug the important variables
     settings.logging.info("Metadata request: Project=#{params['project']}, Platform=#{params['p']}, Version=#{params['pv']}")
     settings.logging.debug("Original URL: #{original_url}")
-    
+
     # Special case handling for Amazon Linux 2
     if params['p'] == "amazon" && params['pv'] == "2"
       # For chef-workstation on Amazon Linux 2, use EL7 packages (highest priority)
@@ -319,7 +322,7 @@ class Omnitruck < Sinatra::Base
         settings.logging.info("DEBUG - Amazon 2023 URL rewritten to: #{package_info["url"]}")
       end
     end
-    
+
     # Respond with the updated package stuff
     if request.accept? 'text/plain'
       parse_plain_text(package_info)
@@ -329,7 +332,7 @@ class Omnitruck < Sinatra::Base
     end
   end
 
-  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?$/ do
+  get /(?<channel>\/[\w]+)?\/(?<project>[\w-]+)\/packages\/?/ do
     param :channel, String, default: 'stable'
     param :project, String, in: Chef::Cache::KNOWN_PROJECTS, required: true
     param :flatten, Boolean
@@ -359,7 +362,7 @@ class Omnitruck < Sinatra::Base
     JSON.pretty_generate(available_versions.last)
   end
 
-  get /architectures/ do
+  get /\/architectures/ do
     content_type :json
 
     JSON.pretty_generate(
@@ -367,7 +370,7 @@ class Omnitruck < Sinatra::Base
     )
   end
 
-  get /platforms/ do
+  get /\/platforms/ do
     content_type :json
 
     JSON.pretty_generate({
@@ -535,7 +538,7 @@ class Omnitruck < Sinatra::Base
         # For other products like chef-server-core, use version threshold
         product_version_threshold = Opscode::Version.parse("15.10.12")
         settings.logging.info("Non-client product requested: #{current_project}, version: #{opscode_version}")
-        
+
         if opscode_version >= product_version_threshold
           settings.logging.info("Requested version is >= 15.10.12. Keeping platform as Amazon with version 2.")
           current_platform = "amazon"

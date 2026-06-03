@@ -1,4 +1,4 @@
-FROM ruby:3.1.6-alpine
+FROM ruby:3.4.9-alpine
 
 LABEL maintainer="releng@chef.io"
 
@@ -32,4 +32,4 @@ WORKDIR $APP_ROOT
 
 USER releng
 
-CMD bundle exec unicorn
+CMD bundle exec puma

@@ -134,6 +134,8 @@ class MockRedis
   # fixtures in the data/ directory
   def get(key)
     File.read(File.join(SPEC_DATA, "#{key}-manifest.json"))
+  rescue Errno::ENOENT
+    nil
   end
 
   def set(key, value)
