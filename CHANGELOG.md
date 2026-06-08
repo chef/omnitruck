@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.2.0 -->
-## [0.2.0](https://github.com/chef/omnitruck/tree/0.2.0) (2026-06-08)
+<!-- latest_release 0.2.1 -->
+## [0.2.1](https://github.com/chef/omnitruck/tree/0.2.1) (2026-06-08)
 
 #### Merged Pull Requests
-- CHEF-29762 add license_id parameter to install scripts call [#660](https://github.com/chef/omnitruck/pull/660) ([Stromweld](https://github.com/Stromweld))
+- pin docker api version to 1.44 to fix docker build error [#665](https://github.com/chef/omnitruck/pull/665) ([muthuja](https://github.com/muthuja))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- pin docker api version to 1.44 to fix docker build error [#665](https://github.com/chef/omnitruck/pull/665) ([muthuja](https://github.com/muthuja)) <!-- 0.2.1 -->
 - CHEF-29762 add license_id parameter to install scripts call [#660](https://github.com/chef/omnitruck/pull/660) ([Stromweld](https://github.com/Stromweld)) <!-- 0.2.0 -->
 - Boris borisov progress/chef 25470 migration of all bitnami helm charts [#650](https://github.com/chef/omnitruck/pull/650) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.46 -->
 - Switching to bitnamilegacy repository [#645](https://github.com/chef/omnitruck/pull/645) ([borisicbs](https://github.com/borisicbs)) <!-- 0.1.45 -->
