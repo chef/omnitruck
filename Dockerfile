@@ -6,7 +6,7 @@ RUN apk update && apk upgrade \
     && apk add --no-cache bash git openssh make cmake gcc libc-dev build-base
 
 RUN set -x \
-    # Run as non-root user
+    #### Run as non-root user
     && addgroup --system --gid 22430 releng \
     && adduser --system --disabled-password --ingroup releng --no-create-home \
         --gecos "releng user" --shell /bin/false \
