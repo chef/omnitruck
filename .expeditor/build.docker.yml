@@ -1,5 +1,5 @@
 image_registry: chefes
 env:
-  VERSION: "0.2.1"
+  VERSION: "0.2.2"
   DOCKER_API_VERSION: "1.44"
 dobi_file: dobi.yaml
