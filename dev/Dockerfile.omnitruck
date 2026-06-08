@@ -33,5 +33,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 # Expose the development port
 EXPOSE 9393
 
-# Use unicorn instead of shotgun since it's already installed
-CMD ["bundle", "exec", "puma", "-l", "0.0.0.0:9393"]
+# Run Puma with config.ru from the app directory
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb", "-b", "tcp://0.0.0.0:9393", "config.ru"]
