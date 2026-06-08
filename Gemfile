@@ -1,27 +1,28 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 1.4', '< 2'
+gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-cors'
 gem 'sinatra-param'
-gem 'unicorn'
+gem 'puma'
 gem 'json'
 gem 'colorize'
 gem 'yajl-ruby'
-gem "rest-client"
+gem 'rest-client'
 gem 'rake'
 gem 'redis'
-gem 'mixlib-versioning', '~> 1.1.0'
-gem "mixlib-install", '>= 3.11.23', git: "https://github.com/chef/mixlib-install", branch: "main"
+gem 'statsd-ruby'
 gem 'trashed'
+gem 'mixlib-versioning', '>= 1.1.0'
+# 3.17.0+ is required for new chef-ice and inspec-enterprise product support
+gem 'mixlib-install', '>= 3.17.0'
 
 group :test do
   gem 'rspec'
   gem 'rspec-legacy_formatters'
-  gem 'rspec-rerun', '~> 1.1.0'
+  gem 'rspec-rerun', '>= 1.1.0'
   gem 'rspec-its'
   gem 'rack-test'
   gem 'rspec_junit_formatter'
   gem 'pry-byebug'
-  gem 'rb-readline'
 end

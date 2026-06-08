@@ -25,9 +25,7 @@ require 'forwardable'
 
 module Opscode
   class Version
-    SUPPORTED_FORMATS = Mixlib::Versioning::DEFAULT_FORMATS + [
-      Opscode::Version::Incomplete
-    ]
+    SUPPORTED_FORMATS = [Opscode::Version::Incomplete] + Mixlib::Versioning::DEFAULT_FORMATS
     extend Forwardable
 
     include Comparable

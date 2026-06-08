@@ -1,1380 +1,548 @@
-# #--
-# # Author:: Tyler Cloke (tyler@opscode.com)
-# # Author:: Stephen Delano (stephen@opscode.com)
-# # Author:: Seth Chisamore (sethc@opscode.com)
-# # Author:: Lamont Granquist (lamont@opscode.com)
-# # Copyright:: Copyright (c) 2010-2013 Chef Software, Inc.
-# # License:: Apache License, Version 2.0
-# #
-# # Licensed under the Apache License, Version 2.0 (the "License");
-# # you may not use this file except in compliance with the License.
-# # You may obtain a copy of the License at
-# #
-# #     http://www.apache.org/licenses/LICENSE-2.0
-# #
-# # Unless required by applicable law or agreed to in writing, software
-# # distributed under the License is distributed on an "AS IS" BASIS,
-# # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# # See the License for the specific language governing permissions and
-# # limitations under the License.
-# #
-
-# require 'spec_helper'
-# require 'uri'
-
-# context 'Omnitruck' do
-#   def app
-#     Omnitruck
-#   end
-
-#   context "/products endpoint" do
-#     it "returns all the products" do
-#       get("/products")
-
-#       response = JSON.parse(last_response.body)
-#       Chef::Cache::KNOWN_PROJECTS.each do |project|
-#         response.include?(project)
-#       end
-#     end
-#   end
-
-#   context "/platforms endpoint" do
-#     it "returns JSON data" do
-#       get("/platforms")
-#       expect(last_response.header['Content-Type']).to include 'application/json'
-#     end
-#   end
-
-#   context "/architectures endpoint" do
-#     it "returns all the architectures" do
-#       get("/architectures")
-
-#       response = JSON.parse(last_response.body)
-#       Mixlib::Install::Options::SUPPORTED_ARCHITECTURES.each do |arch|
-#         response.include?(arch)
-#       end
-#     end
-#   end
-
-#   context "download / metadata endpoints" do
-#     let(:channel) { nil }
-#     let(:project){ nil }
-#     let(:project_version){ nil }
-#     let(:platform) { nil }
-#     let(:platform_version) { nil }
-#     let(:architecture) { nil }
-#     let(:params) do
-#       params = {}
-#       params[:v] = project_version if project_version
-#       params[:p] = platform if platform
-#       params[:pv] = platform_version if platform_version
-#       params[:m] = architecture if architecture
-#       params
-#     end
-
-#     let(:expected_project) { project }
-#     let(:expected_channel) { channel }
-#     let(:expected_platform) { platform }
-#     let(:expected_platform_version) { platform_version }
-#     let(:expected_architecture) { architecture }
-#     let(:expected_version) { project_version }
-#     let(:expected_info) do
-#       record = spec_data_record(expected_channel, expected_project, expected_platform, expected_platform_version, expected_architecture, expected_version)
-
-#       {
-#         url: record['url'],
-#         sha256: record['sha256'],
-#         sha1: record['sha1'],
-#         version: expected_version,
-#       }
-#     end
-
-#     let(:endpoint) { nil }
-
-#     # shared_examples_for 'a correct package info' do
-#     #   context 'download' do
-#     #     let(:endpoint) { "/#{channel}/#{project}/download" }
-
-#     #     it "should serve a redirect package " do
-#     #       get(endpoint, params)
-#     #       puts "Params passed to download: #{params}"
-#     #       puts "Expected Info: #{expected_info}"
-#     #       expect(last_response).to be_redirect
-#     #       follow_redirect!
-#     #       puts "Redirected to URL: #{last_request.url}"
-#     #       expect(last_request.url).to eq(expected_info[:url])
-#     #     end
-#     #   end
-
-#       ## the problem we have here is that the latest version of the prdocuts, do not include old platforms. so the tests are faling. 
-#       ## todo ##
-#       ## we need to update these tests to account for the latest product version, as well as test old prodcut versions that map to the right platform. IE:
-#       ##        expected: "https://packages.chef.io/files/stable/chef/17.10.3/el/6/chef-17.10.3-1.el6.x86_64.rpm"
-#       ##        got: "https://packages.chef.io/files/stable/chef/18.3.0/el/6/chef-18.3.0-1.el6.x86_64.rpm"
-#       ## this will fail because el/6 does not have a chef 18.3.0 valid installer.... recomend moving the tests to something like: context 'legacy metadata' 
-#       # context 'metadata' do
-#       #   let(:endpoint) { "/#{channel}/#{project}/metadata" }
-
-#       #   it "should serve JSON metadata for package" do
-#       #     get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-#       #     metadata_json = last_response.body
-#       #     parsed_json = JSON.parse(metadata_json)
-#       #     puts "Params passed to metadata: #{params}"
-#       #     puts "Expected JSON Metadata: #{expected_info}"
-#       #     puts "Received JSON Metadata: #{parsed_json}"
-#       #     expect(parsed_json['version']).to eq(expected_info[:version])
-#       #     expect(parsed_json['url']).to eq(expected_info[:url])
-#       #     expect(parsed_json['sha256']).to eq(expected_info[:sha256])
-#       #     expect(parsed_json['sha1']).to eq(expected_info[:sha1])
-#       #   end
-
-#         it "should serve plain text metadata for package" do
-#           get(endpoint, params, "HTTP_ACCEPT" => "text/plain")
-#           text_metadata = last_response.body
-#           parsed_metadata = text_metadata.lines.inject({}) do |metadata, line|
-#             key, value = line.strip.split("\t")
-#             metadata[key] = value
-#             metadata
-#           end
-
-#           expect(parsed_metadata['version']).to eq(expected_info[:version])
-#           expect(parsed_metadata['url']).to eq(expected_info[:url])
-#           expect(parsed_metadata['sha256']).to eq(expected_info[:sha256])
-#           expect(parsed_metadata['sha1']).to eq(expected_info[:sha1])
-#         end
-#       end
-
-#       context "an incorrect version" do
-#         let(:endpoint) { "/#{channel}/#{project}/download" }
-
-#         context "download" do
-#           it "should 404" do
-#             params['v'] = '0.0.0'
-#             get(endpoint, params)
-#             expect(last_response).to be_not_found
-#           end
-#         end
-
-#         context "metadata" do
-#           let(:endpoint) { "/#{channel}/#{project}/metadata" }
-#           it "should 404" do
-#             params['v'] = '0.0.0'
-#             get(endpoint, params)
-#             expect(last_response).to be_not_found
-#           end
-#         end
-#       end
-
-#       context "an incorrect platform" do
-#         let(:endpoint) { "/#{channel}/#{project}/download" }
-
-#         context "download" do
-#           it "should 404" do
-#             params['p'] = 'foo'
-#             get(endpoint, params)
-#             expect(last_response).to be_not_found
-#           end
-#         end
-
-#         context "metadata" do
-#           let(:endpoint) { "/#{channel}/#{project}/metadata" }
-#           it "should 404" do
-#             params['p'] = 'foo'
-#             get(endpoint, params)
-#             expect(last_response).to be_not_found
-#           end
-#         end
-#       end
-#     end
-
-#     context 'automate and delivery' do
-#       let(:channel) { 'stable' }
-#       let(:platform) { 'el' }
-#       let(:platform_version) { '6' }
-#       let(:architecture) { 'x86_64' }
-
-#       shared_examples_for 'automate and delivery compatibility' do
-#         let(:expected_project) { 'automate' }
-
-#         context 'without a version' do
-#           let(:project_version) { nil }
-#           let(:expected_version) { '1.8.96' }
-
-#           it_behaves_like 'a correct package info'
-#         end
-
-#         context 'latest version' do
-#           let(:project_version) { 'latest' }
-#           let(:expected_version) { '1.8.96' }
-
-#           it_behaves_like 'a correct package info'
-#         end
-
-#         context 'automate version' do
-#           let(:project_version) { '0.7.61' }
-
-#           it_behaves_like 'a correct package info'
-#         end
-
-#         context 'delivery version' do
-#           let(:project_version) { '0.4.199' }
-#           let(:expected_project) { 'delivery' }
-
-#           it_behaves_like 'a correct package info'
-#         end
-#       end
-
-#       %w(automate delivery).each do |proj|
-#         context "for #{proj}" do
-#           let(:project) { proj }
-
-#           it_behaves_like 'automate and delivery compatibility'
-#         end
-#       end
-#     end
-
-#     context "for chef" do
-#       let(:project) { "chef" }
-
-#       context 'for stable' do
-#         let(:channel) { 'stable' }
-
-#         context 'for amazon linux' do
-#           let(:platform) { 'amazon' }
-
-#           context 'for 2018.03' do
-#             let(:expected_platform) { 'el' }
-#             let(:platform_version) { '2018.03' }
-#             let(:expected_platform_version) { '6' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           context 'for 2' do
-#             let(:expected_platform) { 'el' }
-#             let(:platform_version) { '2' }
-#             let(:expected_platform_version) { '7' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           context 'for 2022' do
-#             # Even though this block is for stable, the only place we have an amazon linux 2022 build is current
-#             let(:channel) { 'current' }
-#             let(:platform_version) { '2022' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_current_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-
-#         context 'for mac_os_x' do
-#           let(:platform) { 'mac_os_x' }
-
-#           context 'for 10.7' do
-#             let(:platform_version) { '10.7' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '12.2.1' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           # YOLO mode
-#           context 'for 10.12' do
-#             let(:platform_version) { '10.12' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '15.2.20' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           context 'for 11' do
-#             let(:platform_version) { '11' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-
-#             context 'for arm64' do
-#               let(:architecture) { 'arm64' }
-
-#               # Temporary test(s) to handle our split world where we may not have a native build
-#               context 'without native build' do
-#                 let(:expected_architecture) { 'x86_64' }
-
-#                 context 'with a version' do
-#                   let(:project_version) { "15.17.4" }
-#                   let(:expected_platform_version) { '10.15' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-
-#               context 'with native build' do
-#                 let(:expected_platform_version) { '11' }
-#                 let(:expected_architecture) { 'aarch64' }
-
-#                 context 'with a version' do
-#                   let(:project_version) { '17.10.3' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-#             end
-#           end
-
-#           context 'with mix of 11.x and 11' do
-#             let(:architecture) { 'x86_64' }
-#             let(:project_version) { "17.8.25" }
-
-#             context 'with 10.x' do
-#               let(:platform_version) { '10.15' }
-
-#               it_behaves_like 'a correct package info'
-#             end
-
-#             # version fallback comparison
-#             context 'with 11.0' do
-#               let(:platform_version) { '11.0' }
-#               let(:expected_platform_version) { '11' }
-
-#               it_behaves_like 'a correct package info'
-#             end
-
-#             # version fallback comparison / yolo mode
-#             context 'with 11.10' do
-#               let(:platform_version) { '11.10' }
-#               let(:expected_platform_version) { '11' }
-
-#               it_behaves_like 'a correct package info'
-#             end
-
-#             context 'with 11' do
-#               let(:platform_version) { '11' }
-
-#               it_behaves_like 'a correct package info'
-#             end
-#           end
-#         end
-
-#         # SLES 11 covers use cases in their entirety.
-#         # Edge cases and basic platform and project version differences
-#         # are covered as one-off tests.
-#         context 'for sles' do
-#           let(:platform) { 'sles' }
-
-#           shared_examples_for 'sles artifacts' do
-#             let(:expected_platform) { 'sles' }
-
-#             context 'for 11' do
-#               let(:platform_version) { '11' }
-
-#               context 'for i686' do
-#                 let(:architecture) { 'i686' }
-#                 let(:expected_platform) { 'el' }
-#                 let(:expected_platform_version) { '5' }
-#                 let(:expected_architecture) { 'i386' }
-
-#                 context 'with a version' do
-#                   let(:project_version) { '12.0.3' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-
-#               context 'for s390x' do
-#                 let(:architecture) { 's390x' }
-
-#                 context 'without a version' do
-#                   let(:project_version) { nil }
-#                   let(:expected_version) { '15.1.36' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with pre-native sles build version (no remapping)' do
-#                   let(:project_version) { '12.20.3' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-
-#               context 'for x86_64' do
-#                 let(:architecture) { 'x86_64' }
-
-#                 context 'without a version' do
-#                   let(:project_version) { nil }
-#                   let(:expected_version) { '15.1.36' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with latest version' do
-#                   let(:project_version) { 'latest' }
-#                   let(:expected_version) { '15.1.36' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with first native sles build version' do
-#                   let(:project_version) { '12.21.1' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with non-native sles build version' do
-#                   let(:project_version) { '12.20.3' }
-#                   let(:expected_platform) { 'el' }
-#                   let(:expected_platform_version) { '5' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'for a latest non-native sles project (manage)' do
-#                   let(:project) { 'manage' }
-#                   let(:project_version) { nil }
-#                   let(:expected_platform) { 'el' }
-#                   let(:expected_platform_version) { '5' }
-#                   let(:expected_version) { '2.5.8' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-#             end
-
-#             context 'for 12' do
-#               let(:platform_version) { '12' }
-
-#               context 'for x86_64' do
-#                 let(:architecture) { 'x86_64'}
-
-#                 context 'with first native sles build version' do
-#                   let(:project_version) { '12.21.1' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with partial 12 project_version' do
-#                   let(:project_version) { '12' }
-#                   let(:expected_version) { '12.22.5' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with partial 12.21 project_version' do
-#                   let(:project_version) { '12.21' }
-#                   let(:expected_version) { '12.21.31' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with non-native sles build version partial version 12.20' do
-#                   let(:project_version) { '12.20' }
-#                   let(:expected_version) { '12.20.3' }
-#                   let(:expected_platform) { 'el' }
-#                   let(:expected_platform_version) { '6' }
-#                   let(:expected_architecture) { 'x86_64' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with partial 13 project_version' do
-#                   let(:project_version) { '13' }
-#                   let(:expected_version) { '13.12.14' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with partial 13.1 project_version' do
-#                   let(:project_version) { '13.1' }
-#                   let(:expected_version) { '13.1.31' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with 13.1.31 project_version' do
-#                   let(:project_version) { '13.1.31' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with non-native sles build version' do
-#                   let(:project_version) { '12.20.3' }
-#                   let(:expected_platform) { 'el' }
-#                   let(:expected_platform_version) { '6' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'for automate' do
-#                   let(:project) { 'automate' }
-
-#                   context 'with first native sles build version' do
-#                     let(:project_version) { '0.8.5' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with non-native sles build version' do
-#                     let(:project_version) { '0.7.61' }
-#                     let(:expected_platform) { 'el' }
-#                     let(:expected_platform_version) { '6' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-#                 end
-
-#                 context 'for chef-server' do
-#                   let(:project) { 'chef-server' }
-
-#                   context 'with first native sles build version' do
-#                     let(:project_version) { '12.15.0' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with non-native sles build version' do
-#                     let(:project_version) { '12.13.0' }
-#                     let(:expected_platform) { 'el' }
-#                     let(:expected_platform_version) { '6' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-#                 end
-
-#                 context 'for chefdk' do
-#                   let(:project) { 'chefdk' }
-
-#                   context 'with first native sles build version' do
-#                     let(:project_version) { '1.3.43' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with non-native sles build version' do
-#                     let(:project_version) { '1.3.40' }
-#                     let(:expected_platform) { 'el' }
-#                     let(:expected_platform_version) { '6' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-#                 end
-
-#                 context 'for inspec' do
-#                   let(:project) { 'inspec' }
-
-#                   context 'with first native sles build version' do
-#                     let(:project_version) { '1.20.0' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with non-native sles build version' do
-#                     let(:project_version) { '1.19.2' }
-#                     let(:expected_platform) { 'el' }
-#                     let(:expected_platform_version) { '6' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-#                 end
-#               end
-#             end
-#           end
-
-#           it_behaves_like 'sles artifacts'
-
-#           context 'when suse' do
-#             let(:platform) { 'suse' }
-
-#             it_behaves_like 'sles artifacts'
-#           end
-
-#           context 'when opensuse-leap' do
-#             let(:platform) { 'opensuse-leap' }
-
-#             it_behaves_like 'sles artifacts'
-#           end
-#         end
-
-#         context 'for ubuntu' do
-#           let(:platform) { 'ubuntu' }
-
-#           context 'for 12.04' do
-#             let(:platform_version) { '12.04' }
-
-#             context 'for i686' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '13.4.24' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-
-#               context 'with "latest"' do
-#                 let(:project_version) { 'latest' }
-#                 let(:expected_version) { '13.4.24' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-
-#               context 'with partial version' do
-#                 let(:project_version) { '12.1' }
-#                 let(:expected_version) { '12.1.2' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-
-#               context 'with full version' do
-#                 let(:project_version) { '10.24.0' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           # Here we are testing an edge condition of yolo mode.
-#           # Cache has 12.6.1 version for 13.04 but it does not have it for 14.04
-#           # Yolo mode should serve the 13.04 artifact when asked latest on 14.04
-#           context 'for 14.04' do
-#             let(:platform_version) { '14.04' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'with "latest"' do
-#                 let(:project_version) { 'latest' }
-#                 let(:expected_version) { '15.1.36' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           # What we're testing on this next one is if yolo is sorting numerically or lexicographically
-#           # If we're getting string compares we'll get "10.04" as our yolo version, but we want to do a
-#           # numeric compare and get 12.04 instead:
-#           #   String (Wrong): "101" < "10" < "12"
-#           #   Integer (Right): 10 < 12 < 101
-#           context 'for extreme yolo version 101.04' do
-#             let(:platform_version) { '101.04' }
-#             let(:expected_platform_version) { '20.04' }
-
-#             context 'for i686' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-
-#         context 'for windows' do
-#           let(:platform) { 'windows' }
-#           let(:x86_64_only) { %w{ 8 } }
-
-#           %w{
-#             2019
-#             2016
-#             2012
-#             2012r2
-#             10
-#             8
-#           }.each do |windows_platform_version|
-
-#             context "for #{windows_platform_version}" do
-#               let(:platform_version) { windows_platform_version }
-
-#               %w{
-#                 i386
-#                 i686
-#               }.each do |architecture|
-
-#                 context "for #{architecture}" do
-#                   let(:architecture) { architecture }
-#                   let(:expected_architecture) { 'i386' }
-#                   let(:expected_platform_version) { (windows_platform_version == '2012') ? '2012' : '2012r2' }
-
-#                   context 'with specific version' do
-#                     let(:project_version) { '12.6.0' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with only a partial version specification' do
-#                     let(:project_version) { '12.9' }
-#                     let(:expected_version) { '12.9.41' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-
-#                   context 'with specific version that has an x86_64 package' do
-#                     let(:project_version) { '12.7.2' }
-
-#                     it_behaves_like 'a correct package info'
-#                   end
-#                 end
-#               end
-
-#               context "for x86_64" do
-#                 let(:architecture) { "x86_64" }
-#                 let(:exepcted_platform_version) { windows_platform_version }
-
-#                 context 'without a version' do
-#                   let(:project_version) { nil }
-#                   let(:expected_version) { latest_stable_chef }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with specific version that has an x86_64 package' do
-#                   let(:project_version) { '15.12.22' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with a version only specifying major' do
-#                   let(:project_version) { "15" }
-#                   let(:expected_version) { '15.17.4' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-
-#                 context 'with a version only specifing major and minor' do
-#                   let(:project_version) { "15.12" }
-#                   let(:expected_version) { '15.12.22' }
-
-#                   it_behaves_like 'a correct package info'
-#                 end
-#               end
-#             end
-#           end
-
-#           [nil, "12", "13.10", "15.0.300"].each do |v|
-#             context "for version #{v}" do
-#               let(:project_version) { v }
-
-#               context 'with 32 and 64 bit artifacts' do
-#                 let(:platform_version) { "2008r2" }
-#                 let(:endpoint) { "/#{channel}/#{project}/metadata" }
-
-#                 %w{i386 i686}.each do |arch|
-#                   context "for #{arch}" do
-#                     let(:architecture) { arch }
-
-#                     it 'should return 32 bit artifact' do
-#                       get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-#                       metadata_json = last_response.body
-#                       parsed_json = JSON.parse(metadata_json)
-
-#                       expect(parsed_json['url']).to match(/x86/)
-#                       expect(parsed_json['url']).not_to match(/i686/)
-#                       expect(parsed_json['url']).not_to match(/x86_64/)
-#                     end
-#                   end
-#                 end
-
-#                 context "for x86_64" do
-#                   let(:architecture) { "x86_64" }
-
-#                   it 'should return 64 bit artifact' do
-#                     get(endpoint, params, "HTTP_ACCEPT" => "application/json")
-#                     metadata_json = last_response.body
-#                     parsed_json = JSON.parse(metadata_json)
-
-#                     expect(parsed_json['url']).not_to match(/i386/)
-#                     expect(parsed_json['url']).not_to match(/i686/)
-#                     expect(parsed_json['url']).to match(/x64/)
-#                   end
-#                 end
-#               end
-#             end
-#           end
-#         end
-
-#         context 'for nexus' do
-#           let(:platform) { 'nexus' }
-
-#           context 'for 7.0(3)I2(2)' do
-#             let(:platform_version) { '7.0(3)I2(2)' }
-#             let(:expected_platform_version) { '7' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '12.19.33' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-
-#         context 'for fedora' do
-#           let(:platform) { 'fedora' }
-#           let(:expected_platform) { 'el' }
-
-#           context 'for 14 (Arista!)' do
-#             let(:platform_version) { '14' }
-#             let(:expected_platform_version) { '6' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-
-#           context 'for 28' do
-#             let(:platform_version) { '28' }
-#             let(:expected_platform_version) { '7' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-
-#         context 'for ios_xr' do
-#           let(:platform) { 'ios_xr' }
-
-#           context 'for 6.0.0.14I' do
-#             let(:platform_version) { '6.0.0.14I' }
-#             let(:expected_platform_version) { '6' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '12.19.33' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-
-#       context 'for current' do
-#         let(:channel) { 'current' }
-
-#         context 'for solaris2' do
-#           let(:platform) { 'solaris2' }
-
-#           context 'for 5.11' do
-#             let(:platform_version) { '5.11' }
-
-#             context 'for sun4v' do
-#               let(:architecture) { 'sun4v' }
-#               let(:expected_architecture) { 'sparc' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_current_chef }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-
-#     context 'for chef-workstation' do
-#       let(:project) { "chef-workstation" }
-
-#       context 'for stable' do
-#         let(:channel) { 'stable' }
-
-#         context 'for windows' do
-#           let(:platform) { 'windows' }
-
-#           context 'for 2008r2' do
-#             let(:platform_version) { '2008r2' }
-#             let(:expected_platform_version) { '11' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef_workstation }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-
-#       context 'for current' do
-#         let(:channel) { 'current' }
-
-#         context 'for mac_os_x' do
-#           let(:platform) { 'mac_os_x' }
-
-#           context 'for 12' do
-#             let(:platform_version) { '12' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_current_chef_workstation }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-
-#     context 'for chef-server' do
-#       let(:project) { "chef-server" }
-
-#       context 'for stable' do
-#         let(:channel) { 'stable' }
-
-#         context 'for el' do
-#           let(:platform) { 'el' }
-
-#           context 'for 7' do
-#             let(:platform_version) { '7' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { latest_stable_chef_server }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-
-#     context 'for angrychef' do
-#       let(:project) { "angrychef" }
-
-#       context 'for stable' do
-#         let(:channel) { 'stable' }
-
-#         context 'for debian' do
-#           let(:platform) { 'debian' }
-
-#           context 'for 6' do
-#             let(:platform_version) { '6' }
-
-#             context 'for x86_64' do
-#               let(:architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '12.18.31' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-
-#       context 'for stable' do
-#         let(:channel) { 'stable' }
-
-#         context 'for freebsd' do
-#           let(:platform) { 'freebsd' }
-
-#           context 'for 10' do
-#             let(:platform_version) { '10' }
-
-#             context 'for amd64' do
-#               let(:architecture) { 'amd64' }
-#               let(:expected_architecture) { 'x86_64' }
-
-#               context 'without a version' do
-#                 let(:project_version) { nil }
-#                 let(:expected_version) { '15.0.293' }
-
-#                 it_behaves_like 'a correct package info'
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-
-#     # We need to return all versions of 64-bit artifacts on stable channel
-#     # except chef after a specific version.
-#     context "for AngryChef 64-bit artifacts" do
-#       let(:project) { "angrychef" }
-#       let(:channel) { 'stable' }
-#       let(:platform) { 'windows' }
-#       let(:platform_version) { '2008r2' }
-#       let(:architecture) { 'x86_64' }
-#       let(:project_version) { '12.9.38' }
-
-#       it_behaves_like 'a correct package info'
-#     end
-
-#   # end
-
-#   context '/<CHANNEL>/<PROJECT>/packages endpoint' do
-#     real_projects.each do |project|
-#       context "for #{project}" do
-#         let(:endpoint){ "/stable/#{project}/packages" }
-
-#         it "exists" do
-#           get(endpoint)
-#           expect(last_response).to be_ok
-#         end
-
-#         it "returns the correct JSON data" do
-#           get(endpoint)
-#           expect(last_response.header['Content-Type']).to include 'application/json'
-#           response = JSON.parse(last_response.body)
-#           # automate/delivery manifests are identical. latest artifacts will always be automate
-#           project = 'automate' if project == 'delivery'
-#           expect(last_response.body).to match(project) unless response.empty?
-#         end
-#       end
-#     end
-
-#     context "for stable chefdk" do
-#       let(:endpoint) { '/stable/chefdk/packages' }
-#       let(:params) { { v: version } }
-#       let(:versions_output) {
-#         get(endpoint, params)
-#         metadata_json = last_response.body
-#         JSON.parse(metadata_json)
-#       }
-
-#       [ nil, 'latest'].each do |version|
-#         context "with version #{version.inspect}" do
-#           let(:version) { version }
-
-#           it 'returns the latest version for each platform, platform_version and architecture' do
-#             expect(versions_output.keys.length).to eq(6)
-
-#             versions_output.each do |p, data|
-#               data.each do |pv, data|
-#                 data.each do |m, metadata|
-#                   expect(metadata['sha1']).to match /^[0-9a-f]{40}$/
-#                   expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
-#                   expect(metadata['url']).to match 'http'
-#                   expect(metadata['version']).to eq(latest_stable_chefdk)
-#                 end
-#               end
-#             end
-#           end
-#         end
-#       end
-
-#       context 'with version 0.6' do
-#         let(:version) { '0.6' }
-
-#         it 'returns the latest starting with 0.6 for each platform, platform_version and architecture' do
-#           expect(versions_output.keys.length).to eq(5)
-
-#           versions_output.each do |p, data|
-#             data.each do |pv, data|
-#               data.each do |m, metadata|
-#                 expect(metadata['sha1']).to match /^[0-9a-f]{40}$/
-#                 expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
-#                 expect(metadata['url']).to match 'http'
-#                 # 0.6.2 is the latest on the 0.6.X series
-#                 expect(metadata['version']).to eq('0.6.2')
-#               end
-#             end
-#           end
-#         end
-#       end
-
-#       context 'with version 0.7.0' do
-#         let(:version) { '0.7.0' }
-
-#         it 'returns version 0.7.0 for each platform, platform_version and architecture' do
-#           expect(versions_output.keys.length).to eq(5)
-
-#           versions_output.each do |p, data|
-#             data.each do |pv, data|
-#               data.each do |m, metadata|
-#                 expect(metadata['sha1']).to match /^[0-9a-f]{40}$/
-#                 expect(metadata['sha256']).to match /^[0-9a-f]{64}$/
-#                 expect(metadata['url']).to match 'http'
-#                 # We expect the exact version here
-#                 expect(metadata['version']).to eq('0.7.0')
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-
-#     context "for current chef-workstation" do
-#       let(:endpoint) { '/current/chef-workstation/packages' }
-#       let(:params) { { v: version } }
-#       let(:versions_output) {
-#         get(endpoint, params)
-#         metadata_json = last_response.body
-#         JSON.parse(metadata_json)
-#       }
-#     end
-#   end
-
-#   context '/<CHANNEL>/<PROJECT>/versions/all endpoint' do
-#     real_projects.each do |project|
-#       context "for #{project}" do
-#         let(:endpoint){ "/stable/#{project}/versions/all" }
-
-#         it "exists" do
-#           get(endpoint)
-#           expect(last_response).to be_ok
-#         end
-
-#         it "returns the correct JSON data" do
-#           get(endpoint)
-#           expect(last_response.header['Content-Type']).to include 'application/json'
-#           response = JSON.parse(last_response.body)
-#           expect(response).to be_an_instance_of(Array)
-#           expect(response.length).to be > 1
-#         end
-#       end
-#     end
-#   end
-
-#   context '/<CHANNEL>/<PROJECT>/versions/latest endpoint' do
-#     real_projects.each do |project|
-#       context "for #{project}" do
-#         let(:endpoint){ "/stable/#{project}/versions/latest" }
-
-#         it "exists" do
-#           get(endpoint)
-#           expect(last_response).to be_ok
-#         end
-
-#         it "returns the correct JSON data" do
-#           get(endpoint)
-#           expect(last_response.header['Content-Type']).to include 'application/json'
-#           response = JSON.parse(last_response.body)
-#           expect(response).to be_an_instance_of(String)
-#         end
-#       end
-#     end
-#   end
-
-#   context "install script" do
-#     %w(
-#       sh
-#       ps1
-#     ).each do |extension|
-#       context "/install.#{extension}" do
-#         let(:install_script) { "/install.#{extension}" }
-#         it "exists" do
-#           get install_script
-#           expect(last_response).to be_ok
-#         end
-#       end
-#     end
-
-#     context "unknown extension" do
-#       it "returns a 404" do
-#         get "/stable/chef/install.poop"
-#         expect(last_response).to be_not_found
-#       end
-#     end
-#   end
-
-#   context "/_status" do
-#     let(:endpoint){"/_status"}
-#     let(:expected_timestamp) do
-#       JSON.parse(File.read(File.join(SPEC_DATA, "stable/chef-manifest.json")))["run_data"]["timestamp"]
-#     end
-
-#     it "exists" do
-#       get endpoint
-#       expect(last_response).to be_ok
-#     end
-
-#     it "returns JSON data" do
-#       get endpoint
-#       expect(last_response.header['Content-Type']).to include 'application/json'
-#     end
-
-#     it "returns the timestamp of the last poller run" do
-#       get endpoint
-#       expect(JSON.parse(last_response.body)["timestamp"]).to eq(expected_timestamp)
-#     end
-#   end
-
-#   context "legacy behavior" do
-#     let(:prerelease){ nil }
-#     let(:nightlies){ nil }
-
-#     let(:params) do
-#       params = {}
-#       params[:p] = 'ubuntu'
-#       params[:pv] = '18.04'
-#       params[:m] = 'x86_64'
-#       params[:prerelease] = prerelease unless prerelease.nil? # could be false, explicitly
-#       params[:nightlies] = nightlies unless nightlies.nil?    # could be false, explicitly
-#       params
-#     end
-
-#     %w(
-#       nightlies
-#       prerelease
-#     ).each do |legacy_param|
-
-#       context "#{legacy_param} param" do
-#         let(:endpoint) { '/metadata' }
-#         let(legacy_param.to_sym) { true }
-
-#         it "returns a package from the current channel" do
-#           get(endpoint, params)
-#           expect(last_response.body).to match("https://packages.chef.io/files/current")
-#         end
-#       end
-
-#     end
-
-#     {
-#       '/download' => spec_data_record('stable', 'chef', 'ubuntu', '18.04', 'x86_64', latest_stable_chef)['url'],
-#       '/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server)['url'],
-#       '/chef/download-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server)['url'],
-#       '/metadata' => spec_data_record('stable', 'chef', 'ubuntu', '18.04', 'x86_64', latest_stable_chef).merge({ 'version' => latest_stable_chef }),
-#       '/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
-#       '/chef/metadata-server' => spec_data_record('stable', 'chef-server', 'ubuntu', '18.04', 'x86_64', latest_stable_chef_server).merge({ 'version' => latest_stable_chef_server }),
-#       '/chef/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
-#       '/install.msi' => 'http://example.org/stable/chef/download?p=windows&pv=2008r2&m=i386',
-#       '/full_client_list' => nil,
-#       '/full_list' => nil,
-#       '/full_server_list' => nil,
-#       '/chef/full_client_list' => nil,
-#       '/chef/full_list' => nil,
-#       '/chef/full_server_list' => nil,
-#       '/chef_platform_names' => nil,
-#       '/chef_server_platform_names' => nil,
-#       '/chef/chef_platform_names' => nil,
-#       '/chef/chef_server_platform_names' => nil,
-#       '/full_chefdk_list' => nil,
-#       '/full_server_list' => nil,
-#     }.each do |legacy_endpoint, response_match_data|
-
-#       context "legacy endpoint #{legacy_endpoint}" do
-#         let(:endpoint) { legacy_endpoint }
-
-#         it "returns the correct response data" do
-#           get(endpoint, params)
-
-#           if legacy_endpoint =~ /download/ || legacy_endpoint =~ /install\.msi/
-#             follow_redirect!
-#             expect(last_request.url).to match(response_match_data)
-#           elsif legacy_endpoint =~ /metadata/
-#             parsed_metadata = last_response.body.lines.inject({}) do |metadata, line|
-#               key, value = line.strip.split("\t")
-#               metadata[key] = value
-#               metadata
-#             end
-
-#             expect(parsed_metadata['version']).to eq(response_match_data['version'])
-#             expect(parsed_metadata['url']).to eq(response_match_data['url'])
-#             expect(parsed_metadata['sha256']).to eq(response_match_data['sha256'])
-#             expect(parsed_metadata['sha1']).to eq(response_match_data['sha1'])
-#           elsif legacy_endpoint =~ /platform_names/
-#             # we check that response is valid JSON.
-#             expect{JSON.parse(last_response.body)}.not_to raise_error
-#           else
-#             parsed_json = JSON.parse(last_response.body)
-
-#             # we check a certain hash structure that needs to be present in these endpoints
-#             parsed_json.each do |platform, data|
-#               data.each do |platform_version, data|
-#                 data.each do |architecture, metadata|
-#                   expect(metadata['url']).to be_a(String)
-#                   expect(metadata['sha1']).to be_a(String)
-#                   expect(metadata['sha256']).to be_a(String)
-#                   expect(metadata['version']).to be_a(String)
-#                 end
-#               end
-#             end
-
-#           end
-#         end
-
-#       end
-#     end
-#   end
-# # end
+#--
+# Author:: Tyler Cloke (tyler@opscode.com)
+# Author:: Stephen Delano (stephen@opscode.com)
+# Author:: Seth Chisamore (sethc@opscode.com)
+# Author:: Lamont Granquist (lamont@opscode.com)
+# Copyright:: Copyright (c) 2010-2024 Chef Software, Inc.
+# License:: Apache License, Version 2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+require 'spec_helper'
+require 'uri'
+
+context 'Omnitruck' do
+  def app
+    Omnitruck
+  end
+
+  # Accept: application/json is required for all metadata/JSON endpoints because
+  # the metadata endpoint checks request.accept?('text/plain') and responds with
+  # plain text when the Accept header matches (including the default */*).
+  JSON_ACCEPT = { 'HTTP_ACCEPT' => 'application/json' }.freeze
+
+  # ---------------------------------------------------------------------------
+  # Info / status endpoints
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /products' do
+    it 'returns a JSON array of known products' do
+      get '/products'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      products = JSON.parse(last_response.body)
+      expect(products).to be_an(Array)
+      expect(products).to include('chef', 'chef-workstation', 'chefdk', 'inspec')
+    end
+  end
+
+  describe 'GET /platforms' do
+    it 'returns a JSON hash of supported platforms' do
+      get '/platforms'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      platforms = JSON.parse(last_response.body)
+      expect(platforms).to be_a(Hash)
+      expect(platforms['ubuntu']).to eq('Ubuntu Linux')
+      expect(platforms['windows']).to eq('Windows')
+      expect(platforms['el']).to eq('Red Hat Enterprise Linux/CentOS')
+      expect(platforms['mac_os_x']).to eq('macOS')
+    end
+  end
+
+  describe 'GET /architectures' do
+    it 'returns a JSON array of supported architectures' do
+      get '/architectures'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      archs = JSON.parse(last_response.body)
+      expect(archs).to be_an(Array)
+      expect(archs).not_to be_empty
+      expect(archs).to include('x86_64')
+    end
+  end
+
+  describe 'GET /_healthz' do
+    it 'returns 204 No Content' do
+      get '/_healthz'
+      expect(last_response.status).to eq(204)
+    end
+  end
+
+  describe 'GET /_version' do
+    it 'returns version information as JSON' do
+      get '/_version'
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['version']).to match(/\d+\.\d+\.\d+/)
+    end
+  end
+
+  describe 'GET /_status' do
+    it 'returns a timestamp JSON from the stable chef manifest' do
+      get '/_status'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      data = JSON.parse(last_response.body)
+      expect(data).to have_key('timestamp')
+      expect(data['timestamp']).to eq('2024-09-14 06:26:34 -0400')
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Metadata endpoint
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /stable/chef/metadata' do
+    let(:el7_params) { { p: 'el', pv: '7', m: 'x86_64' } }
+
+    context 'with el/7/x86_64, no version specified' do
+      it 'returns JSON metadata for the latest stable chef version' do
+        get '/stable/chef/metadata', el7_params, JSON_ACCEPT
+        expect(last_response).to be_ok
+        expect(last_response.content_type).to include('application/json')
+        data = JSON.parse(last_response.body)
+        expect(data['version']).to eq(latest_stable_chef)
+        expect(data['url']).to include('/stable/chef/')
+        expect(data['url']).to include('/el/7/')
+        expect(data['sha256']).not_to be_nil
+        expect(data['sha256']).not_to be_empty
+        expect(data['sha1']).not_to be_nil
+        expect(data['sha1']).not_to be_empty
+      end
+
+      it 'returns plain-text metadata when Accept: text/plain' do
+        get '/stable/chef/metadata', el7_params, 'HTTP_ACCEPT' => 'text/plain'
+        expect(last_response).to be_ok
+        parsed = last_response.body.lines.inject({}) do |h, line|
+          k, v = line.strip.split("\t")
+          h[k] = v unless k.nil?
+          h
+        end
+        expect(parsed['version']).to eq(latest_stable_chef)
+        expect(parsed['url']).to include('/stable/chef/')
+        expect(parsed['sha256']).not_to be_empty
+        expect(parsed['sha1']).not_to be_empty
+      end
+    end
+
+    context 'with an explicit version' do
+      it 'returns metadata for the specified version' do
+        get '/stable/chef/metadata', el7_params.merge(v: latest_stable_chef), JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['version']).to eq(latest_stable_chef)
+      end
+    end
+
+    context 'with ubuntu 20.04/x86_64' do
+      it 'returns a .deb package URL' do
+        get '/stable/chef/metadata', { p: 'ubuntu', pv: '20.04', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['url']).to include('ubuntu')
+        expect(data['url']).to end_with('.deb')
+      end
+    end
+
+    context 'with windows 2019/x86_64' do
+      it 'returns a .msi package URL' do
+        get '/stable/chef/metadata', { p: 'windows', pv: '2019', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['url']).to include('windows')
+        expect(data['url']).to end_with('.msi')
+      end
+    end
+
+    context 'with sles 12/x86_64 (native SLES build threshold exceeded)' do
+      it 'returns a native SLES package URL' do
+        get '/stable/chef/metadata', { p: 'sles', pv: '12', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['url']).not_to be_empty
+        expect(data['url']).to include('sles')
+      end
+    end
+
+    context 'with an invalid version' do
+      it 'returns 404' do
+        get '/stable/chef/metadata', el7_params.merge(v: '0.0.0'), JSON_ACCEPT
+        expect(last_response.status).to eq(404)
+      end
+    end
+
+    context 'with an invalid platform' do
+      it 'returns 404' do
+        get '/stable/chef/metadata', { p: 'fakeos', pv: '99', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response.status).to eq(404)
+      end
+    end
+
+    context 'with explicit stable channel and prerelease=true' do
+      it 'still uses the stable channel from the explicit URL segment' do
+        get '/stable/chef/metadata', el7_params.merge(prerelease: 'true'), JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['version']).to eq(latest_stable_chef)
+      end
+    end
+  end
+
+  describe 'GET /current/chef/metadata' do
+    let(:el7_params) { { p: 'el', pv: '7', m: 'x86_64' } }
+
+    it 'returns metadata from the current channel' do
+      get '/current/chef/metadata', el7_params, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['version']).to eq(latest_current_chef)
+      expect(data['url']).to include('/current/chef/')
+    end
+  end
+
+  describe 'GET /chef/metadata (no explicit channel)' do
+    let(:el7_params) { { p: 'el', pv: '7', m: 'x86_64' } }
+
+    it 'defaults to stable channel when no prerelease param is given' do
+      get '/chef/metadata', el7_params, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['version']).to eq(latest_stable_chef)
+    end
+
+    it 'uses current channel when prerelease=true is given' do
+      get '/chef/metadata', el7_params.merge(prerelease: 'true'), JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['version']).to eq(latest_current_chef)
+    end
+
+    it 'uses current channel when nightlies=true is given' do
+      get '/chef/metadata', el7_params.merge(nightlies: 'true'), JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['version']).to eq(latest_current_chef)
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Download endpoint
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /stable/chef/download' do
+    let(:el7_params) { { p: 'el', pv: '7', m: 'x86_64' } }
+
+    it 'redirects to the el/7 package URL' do
+      get '/stable/chef/download', el7_params
+      expect(last_response).to be_redirect
+      expect(last_response.location).to include('/stable/chef/')
+      expect(last_response.location).to include('/el/7/')
+    end
+
+    it 'redirects ubuntu packages to .deb URLs' do
+      get '/stable/chef/download', { p: 'ubuntu', pv: '20.04', m: 'x86_64' }
+      expect(last_response).to be_redirect
+      expect(last_response.location).to include('ubuntu')
+      expect(last_response.location).to end_with('.deb')
+    end
+
+    it 'normalizes i686 to i386 for windows packages (32-bit URL)' do
+      get '/stable/chef/download', { p: 'windows', pv: '2019', m: 'i686' }
+      expect(last_response).to be_redirect
+      # Windows 32-bit packages use x86 in the filename (not x86_64)
+      expect(last_response.location).to include('windows')
+      expect(last_response.location).to end_with('.msi')
+      expect(last_response.location).not_to include('x86_64')
+    end
+
+    it 'normalizes arm64 to aarch64 for linux packages' do
+      get '/stable/chef/download', { p: 'ubuntu', pv: '20.04', m: 'arm64' }
+      expect(last_response).to be_redirect
+      # Ubuntu arm64 packages use arm64 in the filename (manifest key is aarch64)
+      expect(last_response.location).to include('ubuntu')
+      expect(last_response.location).to end_with('.deb')
+      expect(last_response.location).to include('arm64')
+    end
+
+    context 'with an invalid version' do
+      it 'returns 404' do
+        get '/stable/chef/download', el7_params.merge(v: '0.0.0')
+        expect(last_response.status).to eq(404)
+      end
+    end
+
+    context 'with an invalid platform' do
+      it 'returns 404' do
+        get '/stable/chef/download', { p: 'fakeos', pv: '99', m: 'x86_64' }
+        expect(last_response.status).to eq(404)
+      end
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Packages endpoint
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /stable/chef/packages' do
+    it 'returns a nested JSON package list' do
+      get '/stable/chef/packages'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      data = JSON.parse(last_response.body)
+      expect(data).to be_a(Hash)
+      expect(data).to have_key('el')
+      expect(data['el']).to have_key('7')
+      expect(data['el']['7']).to have_key('x86_64')
+      pkg = data['el']['7']['x86_64']
+      expect(pkg).to have_key('url')
+      expect(pkg).to have_key('sha256')
+      expect(pkg).to have_key('version')
+    end
+
+    it 'returns a flattened JSON package list with flatten=true' do
+      get '/stable/chef/packages', { flatten: 'true' }
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to be_a(Hash)
+      # Flattened: each platform value is an array of package hashes
+      first_platform_pkgs = data.values.first
+      expect(first_platform_pkgs).to be_an(Array)
+      first_pkg = first_platform_pkgs.first
+      expect(first_pkg).to have_key('url')
+      expect(first_pkg).to have_key('platform_version')
+      expect(first_pkg).to have_key('architecture')
+    end
+  end
+
+  describe 'GET /current/chef/packages' do
+    it 'returns packages from the current channel' do
+      get '/current/chef/packages'
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to be_a(Hash)
+      expect(data).to have_key('el')
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Versions endpoints (stubs Mixlib::Install to avoid network calls)
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /stable/chef/versions/all' do
+    before do
+      allow(Mixlib::Install).to receive(:available_versions)
+        .with('chef', 'stable')
+        .and_return(['18.3.0', '18.4.0', '18.5.0'])
+    end
+
+    it 'returns all available versions as a JSON array' do
+      get '/stable/chef/versions/all'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+      data = JSON.parse(last_response.body)
+      expect(data).to eq(['18.3.0', '18.4.0', '18.5.0'])
+    end
+  end
+
+  describe 'GET /stable/chef/versions/latest' do
+    before do
+      allow(Mixlib::Install).to receive(:available_versions)
+        .with('chef', 'stable')
+        .and_return(['18.3.0', '18.4.0', '18.5.0'])
+    end
+
+    it 'returns the latest version as a JSON string' do
+      get '/stable/chef/versions/latest'
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to eq('18.5.0')
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Amazon Linux 2 URL rewriting
+  # ---------------------------------------------------------------------------
+
+  describe 'Amazon Linux 2 URL rewriting' do
+    context 'chef on amazon/2 (metadata)' do
+      it 'remaps internally to el/7 packages' do
+        get '/stable/chef/metadata', { p: 'amazon', pv: '2', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        # chef on amazon/2 is remapped to el/7 in get_package_info
+        expect(data['url']).to include('/el/7/')
+      end
+    end
+
+    context 'chef on amazon/2 (download)' do
+      it 'redirects to an el/7 package URL' do
+        get '/stable/chef/download', { p: 'amazon', pv: '2', m: 'x86_64' }
+        expect(last_response).to be_redirect
+        expect(last_response.location).to include('/el/7/')
+      end
+    end
+
+    context 'chef-workstation on amazon/2 (metadata)' do
+      it 'rewrites the amazon/2 URL to el/7 in the response' do
+        get '/stable/chef-workstation/metadata', { p: 'amazon', pv: '2', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        # URL is rewritten from /amazon/2/ to /el/7/ for chef-workstation
+        expect(data['url']).to include('/el/7/')
+        expect(data['url']).not_to include('/amazon/2/')
+      end
+    end
+
+    context 'chef-workstation on amazon/2 (download)' do
+      it 'redirects to an el/7 URL' do
+        get '/stable/chef-workstation/download', { p: 'amazon', pv: '2', m: 'x86_64' }
+        expect(last_response).to be_redirect
+        expect(last_response.location).to include('/el/7/')
+      end
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # SLES platform remapping
+  # ---------------------------------------------------------------------------
+
+  describe 'SLES platform handling' do
+    context 'with sles/12/x86_64 and latest chef (above native-build threshold)' do
+      it 'serves native SLES packages without remapping to EL' do
+        get '/stable/chef/metadata', { p: 'sles', pv: '12', m: 'x86_64' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['url']).to include('sles')
+        expect(data['url']).not_to include('/el/')
+      end
+    end
+
+    context 'with sles/11/x86_64 and a version below the native-build threshold' do
+      it 'remaps to EL packages for pre-native-build versions' do
+        # 12.0.3 < SLES_PROJECT_VERSIONS["chef"] (12.21.1) => remaps to EL
+        # sles pv 11 <= 11 maps to el/5
+        get '/stable/chef/metadata', { p: 'sles', pv: '11', m: 'x86_64', v: '12.0.3' }, JSON_ACCEPT
+        expect(last_response).to be_ok
+        data = JSON.parse(last_response.body)
+        expect(data['url']).to include('/el/')
+      end
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Legacy redirects
+  # ---------------------------------------------------------------------------
+
+  describe 'legacy redirects' do
+    it 'GET /download passes through to /chef/download' do
+      get '/download', { p: 'el', pv: '7', m: 'x86_64' }
+      expect(last_response).to be_redirect
+    end
+
+    it 'GET /metadata passes through to /chef/metadata and returns JSON' do
+      get '/metadata', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to have_key('url')
+    end
+
+    it 'GET /download-server passes through to /chef-server/download' do
+      get '/download-server', { p: 'el', pv: '7', m: 'x86_64' }
+      expect(last_response).to be_redirect
+    end
+
+    it 'GET /metadata-server passes through to /chef-server/metadata' do
+      get '/metadata-server', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to have_key('url')
+    end
+
+    it 'GET /full_client_list passes through to /chef/packages' do
+      get '/full_client_list'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+    end
+
+    it 'GET /full_server_list passes through to /chef-server/packages' do
+      get '/full_server_list'
+      expect(last_response).to be_ok
+      expect(last_response.content_type).to include('application/json')
+    end
+
+    it 'GET /chef_platform_names returns platforms JSON (via direct legacy redirect to /platforms)' do
+      # /chef_platform_names is in the legacy hash: '/chef_platform_names' => '/platforms'
+      # It calls /platforms directly (not via /chef/platforms), so returns 200 with JSON
+      get '/chef_platform_names'
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data).to have_key('ubuntu')
+      expect(data).to have_key('windows')
+    end
+
+    it 'GET /chef/metadata-chefdk passes through to /chefdk/metadata' do
+      get '/chef/metadata-chefdk', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['url']).to include('chefdk')
+    end
+
+    it 'GET /install.msi redirects to a windows download URL' do
+      get '/install.msi'
+      expect(last_response).to be_redirect
+      expect(last_response.location).to include('download')
+      expect(last_response.location).to include('windows')
+    end
+
+    it 'GET /chef/install.msi redirects to a windows download URL' do
+      get '/chef/install.msi'
+      expect(last_response).to be_redirect
+      expect(last_response.location).to include('download')
+    end
+  end
+
+  # ---------------------------------------------------------------------------
+  # Multiple projects
+  # ---------------------------------------------------------------------------
+
+  describe 'GET /stable/chefdk/metadata' do
+    it 'returns chefdk package metadata for the latest stable version' do
+      get '/stable/chefdk/metadata', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['url']).to include('chefdk')
+      expect(data['version']).to eq(latest_stable_chefdk)
+    end
+  end
+
+  describe 'GET /stable/inspec/metadata' do
+    it 'returns inspec package metadata' do
+      get '/stable/inspec/metadata', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['url']).to include('inspec')
+    end
+  end
+
+  describe 'GET /stable/chef-workstation/metadata' do
+    it 'returns chef-workstation metadata for the latest stable version' do
+      get '/stable/chef-workstation/metadata', { p: 'el', pv: '7', m: 'x86_64' }, JSON_ACCEPT
+      expect(last_response).to be_ok
+      data = JSON.parse(last_response.body)
+      expect(data['url']).to include('chef-workstation')
+      expect(data['version']).to eq(latest_stable_chef_workstation)
+    end
+  end
+end
