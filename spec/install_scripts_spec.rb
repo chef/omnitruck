@@ -45,6 +45,16 @@ describe 'Omnitruck Install Scripts' do
       end
     end
 
+    context 'without base_url parameter' do
+      it 'does not hardcode server URL in script' do
+        get '/install.sh'
+        expect(last_response).to be_ok
+        expect(last_response.body).to include('#!/bin/sh')
+        # Must NOT contain a hardcoded base_api_url set to the server's own http URL
+        expect(last_response.body).not_to match(/base_api_url="http[^"]*"/)
+      end
+    end
+
     context 'with both license_id and base_url parameters' do
       it 'includes both in the generated script' do
         get '/install.sh', { license_id: 'test-license-123', base_url: 'https://custom.chef.io' }
@@ -52,6 +62,19 @@ describe 'Omnitruck Install Scripts' do
         expect(last_response.body).to include('#!/bin/sh')
         expect(last_response.body).to include('license_id="test-license-123"')
         expect(last_response.body).to include('base_api_url="https://custom.chef.io"')
+      end
+    end
+
+    context 'with license_id but without base_url' do
+      it 'allows license routing (does not pre-set base_api_url from server URL)' do
+        get '/install.sh', { license_id: 'trial-license-123' }
+        expect(last_response).to be_ok
+        expect(last_response.body).to include('#!/bin/sh')
+        expect(last_response.body).to include('license_id="trial-license-123"')
+        # The fix: base_api_url must NOT be pre-set to the server's own URL,
+        # which would prevent the license-routing logic from choosing the correct endpoint
+        expect(last_response.body).not_to include("if [ -z \"$base_api_url\" ]; then\n    base_api_url=\"http")
+        expect(last_response.body).not_to match(/base_api_url="http[^"]*"/)
       end
     end
   end
@@ -91,12 +114,32 @@ describe 'Omnitruck Install Scripts' do
       end
     end
 
+    context 'without base_url parameter' do
+      it 'does not hardcode server URL in script' do
+        get '/install.ps1'
+        expect(last_response).to be_ok
+        # Must NOT contain a hardcoded $base_server_uri set to the server's own http URL
+        expect(last_response.body).not_to match(/\$base_server_uri = "http[^"]*"/)
+      end
+    end
+
     context 'with both license_id and base_url parameters' do
       it 'includes both in the generated script' do
         get '/install.ps1', { license_id: 'trial-license-456', base_url: 'https://custom.chef.io' }
         expect(last_response).to be_ok
         expect(last_response.body).to include('$license_id = \'trial-license-456\'')
         expect(last_response.body).to include('$base_server_uri = "https://custom.chef.io"')
+      end
+    end
+
+    context 'with license_id but without base_url' do
+      it 'allows license routing (does not pre-set $base_server_uri from server URL)' do
+        get '/install.ps1', { license_id: 'trial-license-456' }
+        expect(last_response).to be_ok
+        expect(last_response.body).to include('$license_id = \'trial-license-456\'')
+        # The fix: $base_server_uri must NOT be pre-set to the server's own URL,
+        # which would prevent the license-routing logic from choosing the correct endpoint
+        expect(last_response.body).not_to match(/\$base_server_uri = "http[^"]*"/)
       end
     end
   end
