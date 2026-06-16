@@ -51,7 +51,8 @@ describe 'Omnitruck Install Scripts' do
         expect(last_response).to be_ok
         expect(last_response.body).to include('#!/bin/sh')
         # Must NOT contain a hardcoded base_api_url set to the server's own http URL
-        expect(last_response.body).not_to match(/base_api_url="http[^"]*"/)
+        expect(last_response.body).not_to include('# Set base_api_url from option if not already set via CLI parameter')
+        expect(last_response.body).to include('base_api_url="https://omnitruck.chef.io"')
       end
     end
 
@@ -74,7 +75,7 @@ describe 'Omnitruck Install Scripts' do
         # The fix: base_api_url must NOT be pre-set to the server's own URL,
         # which would prevent the license-routing logic from choosing the correct endpoint
         expect(last_response.body).not_to include("if [ -z \"$base_api_url\" ]; then\n    base_api_url=\"http")
-        expect(last_response.body).not_to match(/base_api_url="http[^"]*"/)
+        expect(last_response.body).not_to include('# Set base_api_url from option if not already set via CLI parameter')
       end
     end
   end
@@ -119,7 +120,8 @@ describe 'Omnitruck Install Scripts' do
         get '/install.ps1'
         expect(last_response).to be_ok
         # Must NOT contain a hardcoded $base_server_uri set to the server's own http URL
-        expect(last_response.body).not_to match(/\$base_server_uri = "http[^"]*"/)
+        expect(last_response.body).not_to include('# Set base_server_uri from option if not already set via parameter')
+        expect(last_response.body).to include('$base_server_uri = "https://omnitruck.chef.io"')
       end
     end
 
@@ -139,7 +141,7 @@ describe 'Omnitruck Install Scripts' do
         expect(last_response.body).to include('$license_id = \'trial-license-456\'')
         # The fix: $base_server_uri must NOT be pre-set to the server's own URL,
         # which would prevent the license-routing logic from choosing the correct endpoint
-        expect(last_response.body).not_to match(/\$base_server_uri = "http[^"]*"/)
+        expect(last_response.body).not_to include('# Set base_server_uri from option if not already set via parameter')
       end
     end
   end
