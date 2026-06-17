@@ -74,8 +74,8 @@ describe 'Omnitruck Install Scripts' do
         expect(last_response.body).to include('license_id="trial-license-123"')
         # The fix: base_api_url must NOT be pre-set to the server's own URL,
         # which would prevent the license-routing logic from choosing the correct endpoint
-        expect(last_response.body).not_to include("if [ -z \"$base_api_url\" ]; then\n    base_api_url=\"http")
-        expect(last_response.body).not_to include('# Set base_api_url from option if not already set via CLI parameter')
+        server_url = last_request.base_url
+        expect(last_response.body).not_to include(server_url)
       end
     end
   end
