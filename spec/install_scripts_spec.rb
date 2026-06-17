@@ -50,8 +50,8 @@ describe 'Omnitruck Install Scripts' do
         get '/install.sh'
         expect(last_response).to be_ok
         expect(last_response.body).to include('#!/bin/sh')
-        # Must NOT contain a hardcoded base_api_url set to the server's own http URL
-        expect(last_response.body).not_to include('# Set base_api_url from option if not already set via CLI parameter')
+        server_url = last_request.base_url
+        expect(last_response.body).not_to include(server_url)
         expect(last_response.body).to include('base_api_url="https://omnitruck.chef.io"')
       end
     end
