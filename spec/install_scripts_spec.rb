@@ -120,9 +120,9 @@ describe 'Omnitruck Install Scripts' do
         get '/install.ps1'
         expect(last_response).to be_ok
         # Must NOT contain a hardcoded $base_server_uri set to the server's own http URL
-        expect(last_response.body).not_to include('# Set base_server_uri from option if not already set via parameter')
+        server_url = last_request.base_url
+        expect(last_response.body).not_to include(server_url)
         expect(last_response.body).to include('$base_server_uri = "https://omnitruck.chef.io"')
-      end
     end
 
     context 'with both license_id and base_url parameters' do
