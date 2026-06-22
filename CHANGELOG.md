@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.2.2 -->
-## [0.2.2](https://github.com/chef/omnitruck/tree/0.2.2) (2026-06-08)
+<!-- latest_release 0.2.3 -->
+## [0.2.3](https://github.com/chef/omnitruck/tree/0.2.3) (2026-06-22)
 
 #### Merged Pull Requests
-- change to get relenge-services pr [#666](https://github.com/chef/omnitruck/pull/666) ([muthuja](https://github.com/muthuja))
+- fix: stop hardcoding server URL as base_url in install script generation [#667](https://github.com/chef/omnitruck/pull/667) ([Stromweld](https://github.com/Stromweld))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- fix: stop hardcoding server URL as base_url in install script generation [#667](https://github.com/chef/omnitruck/pull/667) ([Stromweld](https://github.com/Stromweld)) <!-- 0.2.3 -->
 - change to get relenge-services pr [#666](https://github.com/chef/omnitruck/pull/666) ([muthuja](https://github.com/muthuja)) <!-- 0.2.2 -->
 - pin docker api version to 1.44 to fix docker build error [#665](https://github.com/chef/omnitruck/pull/665) ([muthuja](https://github.com/muthuja)) <!-- 0.2.1 -->
 - CHEF-29762 add license_id parameter to install scripts call [#660](https://github.com/chef/omnitruck/pull/660) ([Stromweld](https://github.com/Stromweld)) <!-- 0.2.0 -->
