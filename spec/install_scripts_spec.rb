@@ -123,6 +123,7 @@ describe 'Omnitruck Install Scripts' do
         server_url = last_request.base_url
         expect(last_response.body).not_to include(server_url)
         expect(last_response.body).to include('$base_server_uri = "https://omnitruck.chef.io"')
+      end
     end
 
     context 'with both license_id and base_url parameters' do
