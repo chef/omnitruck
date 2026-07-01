@@ -3,7 +3,7 @@ FROM ruby:3.4.9-alpine
 LABEL maintainer="releng@chef.io"
 
 RUN apk update && apk upgrade \
-    && apk add --no-cache bash git openssh make cmake gcc libc-dev build-base wget
+    && apk add --no-cache bash git openssh make cmake gcc libc-dev build-base
 
 RUN set -x \
     #### Run as non-root user

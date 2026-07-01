@@ -6,7 +6,7 @@ expeditor:
       timeout_in_minutes: 60
 
 steps:
-  # Stage 1: Fast unit tests without Redis
+  # Unit tests without Redis
   - label: ":ruby: Unit Tests"
     command:
       - bundle config set --local path 'vendor/bundle'
@@ -19,12 +19,11 @@ steps:
           environment:
             - RACK_ENV=test
 
-  # Stage 2: Integration tests with Redis
+  # Integration tests with Redis
   - label: ":redis: Integration Tests with Redis"
     command:
       - apt-get update || true
       - apt-get install -y redis-server
-      - redis-server --version
       - redis-server --daemonize yes
       - sleep 2
       - redis-cli ping
