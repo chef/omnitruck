@@ -15,7 +15,8 @@ gem 'statsd-ruby'
 gem 'trashed'
 gem 'mixlib-versioning', '>= 1.1.0'
 # 3.17.0+ is required for new chef-ice and inspec-enterprise product support
-gem 'mixlib-install', '>= 3.17.0'
+# Testing CHEF-35767 fix from branch
+gem 'mixlib-install', git: 'https://github.com/chef/mixlib-install.git', branch: 'CHEF-35767-fix-cmdline-filename-filetype-extraction/muthuja'
 
 group :test do
   gem 'rspec'

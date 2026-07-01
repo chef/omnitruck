@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/chef/mixlib-install.git
+  revision: a30b605a2ebda07c73f3a9e4ce65b8de8a933180
+  branch: CHEF-35767-fix-cmdline-filename-filetype-extraction/muthuja
+  specs:
+    mixlib-install (3.17.2)
+      mixlib-shellout
+      mixlib-versioning
+      ostruct
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -23,11 +34,6 @@ GEM
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
     mime-types-data (3.2026.0414)
-    mixlib-install (3.17.0)
-      mixlib-shellout
-      mixlib-versioning
-      ostruct
-      thor
     mixlib-shellout (3.4.10)
       chef-utils
     mixlib-versioning (1.2.12)
@@ -120,7 +126,7 @@ PLATFORMS
 DEPENDENCIES
   colorize
   json
-  mixlib-install (>= 3.17.0)
+  mixlib-install!
   mixlib-versioning (>= 1.1.0)
   pry-byebug
   puma
