@@ -4,31 +4,36 @@ expeditor:
   defaults:
     buildkite:
       timeout_in_minutes: 60
+
 steps:
-  - label: ":ruby: unit"
+  # Unit tests without Redis
+  - label: ":ruby: Unit Tests"
     command:
       - bundle config set --local path 'vendor/bundle'
-      - bundle install
+      - bundle install --jobs=4
       - bundle binstubs --all
-      - bundle exec rspec
+      - bundle exec rspec --format progress
     expeditor:
       executor:
         docker:
+          environment:
+            - RACK_ENV=test
 
-  # - label: ":ruby: functional"
-  #   command:
-  #     - cp config/config.yml.example config/config.yml
-  #     - sudo apt-get update
-  #     - sudo apt-get install -y redis
-  #     - redis-server &
-  #     - bundle install --path vendor/bundle
-  #     - bundle exec ./poller
-  #     - bundle exec unicorn -E development &
-  #     - sleep 10
-  #     - ps -ef |grep unicorn
-  #     - .expeditor/buildkite/smoke.sh
-  #   expeditor:
-  #     executor:
-  #       docker:
-  #         environment:
-  #             - ENVIRONMENT=verify
+  # Integration tests with Redis
+  - label: ":redis: Integration Tests with Redis"
+    command:
+      - apt-get update || true
+      - apt-get install -y redis-server
+      - redis-server --daemonize yes
+      - sleep 2
+      - redis-cli ping
+      - bundle config set --local path 'vendor/bundle'
+      - bundle install --jobs=4
+      - timeout 180 bundle exec ./poller || echo "Poller timed out"
+      - bundle exec rspec --format documentation
+    expeditor:
+      executor:
+        docker:
+          environment:
+            - RACK_ENV=test
+            - REDIS_URL=redis://localhost:6379
