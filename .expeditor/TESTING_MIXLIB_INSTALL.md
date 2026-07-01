@@ -1,167 +1,84 @@
-# Testing mixlib-install Changes with Omnitruck CI
-
-This document explains how to test mixlib-install changes in the omnitruck CI/CD pipeline.
+# Testing mixlib-install with Omnitruck
 
 ## Overview
 
-Omnitruck depends on `mixlib-install` gem to generate install scripts. When changes are made to mixlib-install, they need to be tested with omnitruck before releasing.
+Omnitruck depends on `mixlib-install` gem to generate install scripts. Compatibility tests run automatically on every PR.
 
-## Testing Approaches
+## Automated Tests
 
-### 1. Automated Regression Tests
+**File:** `spec/mixlib_install_integration_spec.rb` (4 tests)
 
-**Location:** `spec/mixlib_install_integration_spec.rb`
-
-These tests automatically run in CI and verify:
-- Install script generation with various parameter combinations
-- Filetype extraction (CHEF-35767 regression test)
-- `license_id` + `-f` flag compatibility
-- Bash and PowerShell script syntax validation
-- mixlib-install version compatibility (>= 3.17.0)
+Tests verify:
+- mixlib-install version >= 3.17.0
+- Bash script generation
+- PowerShell script generation  
+- `-f` flag support for custom filenames
 
 **Run locally:**
 ```bash
-bundle exec rspec spec/mixlib_install_integration_spec.rb --format documentation
+bundle exec rspec spec/mixlib_install_integration_spec.rb
 ```
 
-### 2. Test with Specific mixlib-install Version
+## CI Pipeline
 
-To test omnitruck with a specific mixlib-install version or branch:
+Two stages run on every commit:
 
-**Option A: Test with a specific released version**
-```bash
-# Set environment variable
-export MIXLIB_INSTALL_VERSION="3.17.2"
+**Stage 1: Unit Tests** (~1-2 min)
+- All 137 tests (133 original + 4 mixlib-install)
+- Fast, no Redis required
 
-# Run the test script
-./.expeditor/buildkite/test-mixlib-install.sh
+**Stage 2: Integration Tests** (~3-5 min)  
+- All 137 tests with Redis cache
+- Runs poller to populate data
 
-# Run tests
-bundle exec rspec --format documentation
-```
+## Testing mixlib-install Changes
 
-**Option B: Test with a development branch**
-```bash
-# Set environment variable
-export MIXLIB_INSTALL_BRANCH="CHEF-35767-fix-cmdline-filename-filetype-extraction"
+To test a mixlib-install PR before release:
 
-# Run the test script
-./.expeditor/buildkite/test-mixlib-install.sh
-
-# Run tests
-bundle exec rspec --format documentation
-```
-
-### 3. Trigger CI with Custom mixlib-install Version
-
-The CI pipeline includes an optional stage that tests with custom mixlib-install versions.
-
-**Trigger via Buildkite:**
-
-1. Go to the Buildkite build
-2. Click "New Build"
-3. Add environment variables:
-   - `MIXLIB_INSTALL_VERSION=3.17.2` (for released versions)
-   - OR `MIXLIB_INSTALL_BRANCH=your-branch-name` (for development branches)
-
-This will trigger the "Test with Custom mixlib-install" stage.
-
-**Trigger via Expeditor:**
-
-In your PR description or commit message, add:
-```
-expeditor:buildkite:
-  MIXLIB_INSTALL_BRANCH: CHEF-35767-fix-cmdline-filename-filetype-extraction
-```
-
-## CI Pipeline Stages
-
-### Stage 1: Unit Tests
-- Fast tests without Redis
-- ~1-2 minutes
-- Runs on every commit
-
-### Stage 2: Integration Tests with Redis
-- Full test suite (133 tests)
-- Includes poller cache population
-- Uses default mixlib-install version from Gemfile
-- ~3-5 minutes
-
-### Stage 3: Custom mixlib-install Testing (Optional)
-- Only runs when `MIXLIB_INSTALL_VERSION` or `MIXLIB_INSTALL_BRANCH` is set
-- Installs custom mixlib-install version
-- Runs full test suite with custom version
-- ~3-5 minutes
-
-## Testing Workflow for mixlib-install Changes
-
-### Scenario 1: Testing a mixlib-install PR
-
-1. **Create your mixlib-install PR** with changes
-2. **Note the branch name** (e.g., `CHEF-35767-fix-cmdline-filename-filetype-extraction`)
-3. **Test locally in omnitruck:**
-   ```bash
-   cd /path/to/omnitruck
-   export MIXLIB_INSTALL_BRANCH="your-branch-name"
-   ./.expeditor/buildkite/test-mixlib-install.sh
-   bundle exec rspec --format documentation
+1. **Update Gemfile:**
+   ```ruby
+   gem 'mixlib-install', git: 'https://github.com/chef/mixlib-install.git', branch: 'your-branch'
    ```
-4. **If tests pass locally**, trigger CI with custom version:
-   - Go to omnitruck Buildkite
-   - New Build with `MIXLIB_INSTALL_BRANCH=your-branch-name`
-5. **If CI passes**, your mixlib-install PR is safe to merge
 
-### Scenario 2: Verifying a mixlib-install Release
-
-1. **After mixlib-install is released** (e.g., v3.17.2)
-2. **Test with new version:**
+2. **Test locally:**
    ```bash
-   export MIXLIB_INSTALL_VERSION="3.17.2"
-   ./.expeditor/buildkite/test-mixlib-install.sh
-   bundle exec rspec --format documentation
+   bundle install
+   bundle exec rspec
    ```
-3. **If tests pass**, update omnitruck's Gemfile:
+
+3. **Push to CI:**
+   ```bash
+   git add Gemfile Gemfile.lock
+   git commit -s -m "Test with mixlib-install branch"
+   git push
+   ```
+
+CI automatically tests your mixlib-install changes.
+
+## Updating mixlib-install Version
+
+When a new version is released:
+
+1. Update `Gemfile`:
    ```ruby
    gem 'mixlib-install', '>= 3.17.2'
    ```
-4. **Commit and push** - CI will test automatically
 
-### Scenario 3: Adding Tests for New mixlib-install Features
+2. Test and commit:
+   ```bash
+   bundle update mixlib-install
+   bundle exec rspec
+   git commit -am "Update mixlib-install to 3.17.2"
+   ```
 
-When adding new features to mixlib-install that omnitruck will use:
+## What Gets Tested
 
-1. **Add tests to** `spec/mixlib_install_integration_spec.rb`
-2. **Run tests locally** to ensure they fail without changes
-3. **Test with your mixlib-install branch** (see Scenario 1)
-4. **Verify tests pass** with your changes
-5. **Commit tests to omnitruck** first
-6. **Merge mixlib-install PR** after omnitruck tests are in place
+- ✅ Install script generation works
+- ✅ -f flag for custom filenames
+- ✅ Bash and PowerShell scripts
+- ✅ mixlib-install version >= 3.17.0
 
-## Known Issues Tested
-
-### CHEF-35767: Filetype Extraction Bug
-**Problem:** When using `-f chef-workstation.deb` with `license_id`, filetype was set to empty string, causing "invalid Filetype" error.
-
-**Test:** `spec/mixlib_install_integration_spec.rb` includes regression tests for this issue.
-
-**Verification:**
-```bash
-# Generate script with license_id
-curl "http://localhost:9393/install.sh?license_id=test-123" > /tmp/test-install.sh
-
-# Check that filetype extraction is correct
-grep -A5 "cmdline_filename" /tmp/test-install.sh
-
-# Should NOT contain: filetype=""
-# Should contain: filetype extraction logic with validation
-```
-
-## Files
-
-- `.expeditor/buildkite/test-mixlib-install.sh` - Script to install custom mixlib-install version
-- `spec/mixlib_install_integration_spec.rb` - Integration and regression tests
-- `.expeditor/verify.pipeline.yml` - CI pipeline configuration with optional custom version stage
-
-## Questions?
-
-Contact the Chef Infra team or see [ADR/readme.md](../ADR/readme.md) for architecture decisions.
+These tests catch issues when:
+- Omnitruck code affects script generation
+- mixlib-install gem version changes
+- New features are added
