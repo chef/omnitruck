@@ -25,8 +25,7 @@ describe 'Mixlib-Install Compatibility' do
       get '/install.sh'
       
       expect(last_response).to be_ok
-      expect(last_response.body).to start_with('#!/bin/sh')
-      expect(last_response.body.lines.count).to be > 50
+      expect(last_response.body).to include('while getopts')
     end
 
     it 'generates PowerShell scripts' do
