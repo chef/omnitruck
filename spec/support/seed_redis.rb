@@ -8,8 +8,6 @@
 # Key format matches what Chef::Cache / poller writes: "<channel>/<project>"
 
 require "redis"
-require "json"
-
 SPEC_DATA = File.expand_path("../../data", __FILE__)
 
 redis_url = ENV["REDIS_URL"]
