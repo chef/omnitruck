@@ -256,8 +256,8 @@ Two stages run automatically on every commit:
 - Fast, no Redis required
 
 **Stage 2: Integration Tests** (~3-5 min)
-- Runs poller against a real Redis instance to validate cache population
-- Runs the full RSpec suite
+- Starts a local Redis and seeds it from `spec/data` fixtures (no network)
+- Runs the full RSpec suite plus `spec/redis_integration_spec.rb` against real Redis
 
 ### Testing mixlib-install Changes
 
