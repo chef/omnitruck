@@ -255,9 +255,9 @@ Two stages run automatically on every commit:
 - Full RSpec suite
 - Fast, no Redis required
 
-**Stage 2: Integration Tests** (~3-5 min)  
-- All 137 tests with Redis cache
-- Runs poller to populate data
+**Stage 2: Integration Tests** (~3-5 min)
+- Runs poller against a real Redis instance to validate cache population
+- Runs the full RSpec suite
 
 ### Testing mixlib-install Changes
 
