@@ -32,7 +32,10 @@ steps:
       - redis-cli ping
       - bundle config set --local path 'vendor/bundle'
       - bundle install --jobs=4
-      - timeout 180 bundle exec ./poller
+      # Seed Redis from fixture files instead of hitting packages.chef.io.
+      # The full poller (which fetches from the network) is not appropriate
+      # for a per-PR gate; it belongs in a dedicated nightly job.
+      - bundle exec ruby spec/support/seed_redis.rb
       - bundle exec rspec --format documentation
       - OMNITRUCK_USE_REAL_REDIS=1 bundle exec rspec spec/redis_integration_spec.rb --format documentation
     expeditor:
