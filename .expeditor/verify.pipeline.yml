@@ -22,15 +22,16 @@ steps:
   # Integration tests with Redis
   - label: ":redis: Integration Tests with Redis"
     command:
-      - apt-get update || true
-      - apt-get install -y redis-server
+      - apt-get update -o Acquire::Retries=3
+      - apt-get install -y --no-install-recommends redis-server
       - redis-server --daemonize yes
       - sleep 2
       - redis-cli ping
       - bundle config set --local path 'vendor/bundle'
       - bundle install --jobs=4
-      - timeout 180 bundle exec ./poller || echo "Poller timed out"
+      - timeout 180 bundle exec ./poller
       - bundle exec rspec --format documentation
+      - OMNITRUCK_USE_REAL_REDIS=1 bundle exec rspec spec/redis_integration_spec.rb --format documentation
     expeditor:
       executor:
         docker:
