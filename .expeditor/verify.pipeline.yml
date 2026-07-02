@@ -22,6 +22,9 @@ steps:
   # Integration tests with Redis
   - label: ":redis: Integration Tests with Redis"
     command:
+      # Remove stale/broken third-party repos baked into the base image so that
+      # apt-get update can still fail fast on real Ubuntu repo errors.
+      - find /etc/apt/sources.list.d/ \( -name '*pgdg*' -o -name '*helm*' \) -delete
       - apt-get update -o Acquire::Retries=3
       - apt-get install -y --no-install-recommends redis-server
       - redis-server --daemonize yes
