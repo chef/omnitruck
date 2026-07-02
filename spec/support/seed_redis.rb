@@ -12,8 +12,8 @@ require "json"
 
 SPEC_DATA = File.expand_path("../../data", __FILE__)
 
-redis = Redis.new
-
+redis_url = ENV["REDIS_URL"]
+redis = redis_url && !redis_url.empty? ? Redis.new(url: redis_url) : Redis.new
 count = 0
 Dir["#{SPEC_DATA}/**/*-manifest.json"].sort.each do |file|
   m = file.match(%r{/data/(\w+)/(.+)-manifest\.json$})
