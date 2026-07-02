@@ -252,7 +252,7 @@ Tests verify:
 Two stages run automatically on every commit:
 
 **Stage 1: Unit Tests** (~1-2 min)
-- All 137 tests (133 original + 4 mixlib-install)
+- Full RSpec suite
 - Fast, no Redis required
 
 **Stage 2: Integration Tests** (~3-5 min)  
