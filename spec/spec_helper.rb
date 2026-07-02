@@ -143,7 +143,4 @@ class MockRedis
   end
 end
 
-unless ENV['OMNITRUCK_USE_REAL_REDIS'] == '1'
-  Object.send(:remove_const, :Redis) if Object.const_defined?(:Redis)
-  Redis = MockRedis
-end
+Redis = MockRedis
