@@ -4,31 +4,42 @@ expeditor:
   defaults:
     buildkite:
       timeout_in_minutes: 60
+
 steps:
-  - label: ":ruby: unit"
+  # Unit tests - runs the full RSpec suite with MockRedis fixtures
+  - label: ":ruby: Run RSpec Test Suite"
     command:
       - bundle config set --local path 'vendor/bundle'
-      - bundle install
-      - bundle binstubs --all
-      - bundle exec rspec
+      - bundle install --jobs=4
+      - bundle exec rspec --format progress
     expeditor:
       executor:
         docker:
+          environment:
+            - RACK_ENV=test
 
-  # - label: ":ruby: functional"
-  #   command:
-  #     - cp config/config.yml.example config/config.yml
-  #     - sudo apt-get update
-  #     - sudo apt-get install -y redis
-  #     - redis-server &
-  #     - bundle install --path vendor/bundle
-  #     - bundle exec ./poller
-  #     - bundle exec unicorn -E development &
-  #     - sleep 10
-  #     - ps -ef |grep unicorn
-  #     - .expeditor/buildkite/smoke.sh
-  #   expeditor:
-  #     executor:
-  #       docker:
-  #         environment:
-  #             - ENVIRONMENT=verify
+  # Integration tests with a real Redis instance
+  - label: ":redis: Integration Tests with Redis"
+    command:
+      # Remove stale/broken third-party repos baked into the base image so that
+      # apt-get update can still fail fast on real Ubuntu repo errors.
+      - find /etc/apt/sources.list.d/ \( -name '*pgdg*' -o -name '*helm*' \) -delete
+      - apt-get update -o Acquire::Retries=3
+      - apt-get install -y --no-install-recommends redis-server
+      - redis-server --daemonize yes
+      - sleep 2
+      - redis-cli ping
+      - bundle config set --local path 'vendor/bundle'
+      - bundle install --jobs=4
+      # Seed Redis from fixture files instead of hitting packages.chef.io.
+      # The full poller (which fetches from the network) is not appropriate
+      # for a per-PR gate; it belongs in a dedicated nightly job.
+      - bundle exec ruby spec/support/seed_redis.rb
+      - bundle exec rspec --format documentation --exclude-pattern "**/redis_integration_spec.rb"
+      - OMNITRUCK_USE_REAL_REDIS=1 bundle exec rspec spec/redis_integration_spec.rb --format documentation
+    expeditor:
+      executor:
+        docker:
+          environment:
+            - RACK_ENV=test
+            - REDIS_URL=redis://localhost:6379

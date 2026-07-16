@@ -222,6 +222,83 @@ bundle exec unicorn
 5. load the data into your local running redis server by dropping to root and running `ruby redisManual.rb`
    1. this is still a WIP, the format that the file is in now does load the data into the format that is expected.
 
+## Testing
+
+### Running Tests Locally
+
+```bash
+# Run all tests
+bundle exec rspec
+
+# Run with detailed output
+bundle exec rspec --format documentation
+
+# Run specific test file
+bundle exec rspec spec/mixlib_install_integration_spec.rb
+```
+
+### Automated Tests
+
+**File:** `spec/mixlib_install_integration_spec.rb` (4 tests)
+
+Tests verify:
+- mixlib-install version >= 3.17.0
+- Bash script generation
+- PowerShell script generation  
+- `-f` flag support for custom filenames
+
+### CI Pipeline
+
+Two stages run automatically on every commit:
+
+**Stage 1: Unit Tests** (~1-2 min)
+- Full RSpec suite
+- Fast, no Redis required
+
+**Stage 2: Integration Tests** (~3-5 min)
+- Starts a local Redis and seeds it from `spec/data` fixtures (no network)
+- Runs the full RSpec suite plus `spec/redis_integration_spec.rb` against real Redis
+
+### Testing mixlib-install Changes
+
+To test a mixlib-install PR before release:
+
+1. **Update Gemfile:**
+   ```ruby
+   gem 'mixlib-install', git: 'https://github.com/chef/mixlib-install.git', branch: 'your-branch'
+   ```
+
+2. **Test locally:**
+   ```bash
+   bundle install
+   bundle exec rspec
+   ```
+
+3. **Push to CI:**
+   ```bash
+   git add Gemfile Gemfile.lock
+   git commit -s -m "Test with mixlib-install branch"
+   git push
+   ```
+
+CI automatically tests your mixlib-install changes.
+
+### Updating mixlib-install Version
+
+When a new version is released:
+
+1. Update `Gemfile`:
+   ```ruby
+   gem 'mixlib-install', '>= 3.17.2'
+   ```
+
+2. Test and commit:
+   ```bash
+   bundle update mixlib-install
+   bundle exec rspec
+   git commit -am "Update mixlib-install to 3.17.2"
+   ```
+
 ## Architecture Documentation
 
 ### Architectural Decision Records (ADRs)
