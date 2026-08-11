@@ -224,7 +224,7 @@ bundle exec unicorn
 
 ## Testing
 
-### Running Tests Locally
+###### Running Tests Locally
 
 ```bash
 # Run all tests
