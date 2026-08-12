@@ -1,16 +1,17 @@
 # Changelog
 
-<!-- latest_release 0.2.4 -->
-## [0.2.4](https://github.com/chef/omnitruck/tree/0.2.4) (2026-08-07)
+<!-- latest_release 0.2.5 -->
+## [0.2.5](https://github.com/chef/omnitruck/tree/0.2.5) (2026-08-12)
 
 #### Merged Pull Requests
-- updating latets version of mixlib-install [#671](https://github.com/chef/omnitruck/pull/671) ([muthuja](https://github.com/muthuja))
+- bump pr in relenge-services [#673](https://github.com/chef/omnitruck/pull/673) ([muthuja](https://github.com/muthuja))
 <!-- latest_release -->
 
 <!-- release_rollup -->
 ### Changes since latest stable release
 
 #### Merged Pull Requests
+- bump pr in relenge-services [#673](https://github.com/chef/omnitruck/pull/673) ([muthuja](https://github.com/muthuja)) <!-- 0.2.5 -->
 - updating latets version of mixlib-install [#671](https://github.com/chef/omnitruck/pull/671) ([muthuja](https://github.com/muthuja)) <!-- 0.2.4 -->
 - fix: stop hardcoding server URL as base_url in install script generation [#667](https://github.com/chef/omnitruck/pull/667) ([Stromweld](https://github.com/Stromweld)) <!-- 0.2.3 -->
 - change to get relenge-services pr [#666](https://github.com/chef/omnitruck/pull/666) ([muthuja](https://github.com/muthuja)) <!-- 0.2.2 -->
