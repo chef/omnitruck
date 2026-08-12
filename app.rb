@@ -96,7 +96,7 @@ class Omnitruck < Sinatra::Base
   #
   # These routes existed at a time when Omnitruck did not support 1..n
   # projects. Any new applications should use the project-based variant
-  # which each of these internally redirect to.
+  # which each of these internally redirect to...
   #
   #########################################################################
 

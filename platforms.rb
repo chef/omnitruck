@@ -1,7 +1,7 @@
 #
 # We now support the same platform names that ohai uses, please
 # keep this API consistent with ohai.  The old "el" platform is still
-# canonical for redhat, but should be considered deprecated.
+# canonical for redhat, but should be considered deprecated....
 #
 
 
